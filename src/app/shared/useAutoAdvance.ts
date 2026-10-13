@@ -41,9 +41,11 @@ export function useAutoAdvance({ enabled, onAdvance }: Options): AutoAdvance {
   // Held in a ref so a re-created callback does not restart a running timer,
   // which would silently extend the delay every time the parent re-rendered.
   const onAdvanceRef = useRef(onAdvance);
+  const enabledRef = useRef(enabled);
   useEffect(() => {
     onAdvanceRef.current = onAdvance;
-  }, [onAdvance]);
+    enabledRef.current = enabled;
+  }, [onAdvance, enabled]);
 
   const cancel = useCallback(() => {
     if (timerRef.current !== null) {
@@ -53,22 +55,19 @@ export function useAutoAdvance({ enabled, onAdvance }: Options): AutoAdvance {
     setIsPending(false);
   }, []);
 
-  const schedule = useCallback(
-    (delayMs: number) => {
-      if (!enabled) return;
-      if (timerRef.current !== null) clearTimeout(timerRef.current);
-      setIsPending(true);
-      timerRef.current = setTimeout(() => {
-        timerRef.current = null;
-        setIsPending(false);
-        onAdvanceRef.current();
-      }, delayMs);
-    },
-    [enabled]
-  );
+  const schedule = useCallback((delayMs: number) => {
+    if (!enabledRef.current) return;
+    if (timerRef.current !== null) clearTimeout(timerRef.current);
+    setIsPending(true);
+    timerRef.current = setTimeout(() => {
+      timerRef.current = null;
+      setIsPending(false);
+      if (enabledRef.current) onAdvanceRef.current();
+    }, delayMs);
+  }, []);
 
-  // Leaving the exercise must not fire a queued advance into an unmounted tree.
-  useEffect(() => cancel, [cancel]);
+  // Cancel on preference changes as well as unmount, before a stale timer can fire.
+  useEffect(() => cancel, [enabled, cancel]);
 
   return { schedule, cancel, isPending };
 }

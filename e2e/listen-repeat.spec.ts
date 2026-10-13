@@ -1,17 +1,24 @@
 import { expect, test } from "@playwright/test";
 import path from "node:path";
+import sharp from "sharp";
 import AxeBuilder from "@axe-core/playwright";
 import { FOCUSED_LESSON_WORD_LIMIT } from "../src/app/lesson/lessonSequence";
 
 // Layout checks decode the real local image corpus without relying on live R2.
 // Keep the service worker from bypassing these deterministic request fixtures.
 test.use({ viewport: { width: 390, height: 844 }, serviceWorkers: "block" });
-test.beforeEach(async ({ page }) => {
+test.beforeEach(async ({ page, browserName }) => {
   await page.route("**/word-images/construction-site/*.avif", async (route) => {
     const filename = new URL(route.request().url()).pathname.split("/").pop()!;
     await route.fulfill({
-      path: path.resolve("public/word-images/construction-site", filename),
-      contentType: "image/avif",
+      ...(browserName === "webkit"
+        ? {
+            body: await sharp(path.resolve("public/word-images/construction-site", filename))
+              .png()
+              .toBuffer(),
+          }
+        : { path: path.resolve("public/word-images/construction-site", filename) }),
+      contentType: browserName === "webkit" ? "image/png" : "image/avif",
     });
   });
 });
@@ -113,7 +120,8 @@ for (const viewport of [
     );
     await page.keyboard.press("ArrowLeft");
     const details = page.getByRole("button", { name: "Word details", exact: true });
-    await details.click();
+    await details.focus();
+    await details.press("Enter");
     const detailsSurface =
       viewport.width >= 1280
         ? page.getByRole("complementary", { name: /^Details for / })

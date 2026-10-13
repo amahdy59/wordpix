@@ -165,7 +165,8 @@ test("practice keyboard keeps focus on the selected answer during feedback", asy
   await expect(answers).toBeVisible({ timeout: 30_000 });
   const answer = answers.getByRole("button").first();
   await answer.focus();
-  await page.keyboard.press("Enter");
+  await expect(answer).toBeFocused();
+  await answer.press("Enter");
   await expect(answer).toHaveAttribute("aria-disabled", "true");
   await expect(answer).toBeFocused();
 });

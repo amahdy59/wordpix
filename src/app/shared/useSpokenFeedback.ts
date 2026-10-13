@@ -5,6 +5,8 @@ import { useAudio } from "./useAudio";
 import { audioUrl } from "./assetUrls";
 
 const CHIME_CLEARANCE_MS = 180;
+// Short feedback must not leave continuation waiting forever on stalled media/TTS.
+export const FEEDBACK_STALL_TIMEOUT_MS = 12000;
 
 export const SPOKEN_ADVANCE_DELAY_MS = {
   correct: 1200,
@@ -32,6 +34,7 @@ export function useSpokenFeedback(): SpokenFeedback {
   const enabled = accessibility.spokenFeedback !== false;
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const stallTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const variantRef = useRef(0);
   const isPlayingRef = useRef(false);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
@@ -42,12 +45,16 @@ export function useSpokenFeedback(): SpokenFeedback {
 
   const { speak, stop } = useAudio({
     onEnded: () => {
+      if (stallTimerRef.current !== null) clearTimeout(stallTimerRef.current);
+      stallTimerRef.current = null;
       isPlayingRef.current = false;
       const onComplete = onCompleteRef.current;
       onCompleteRef.current = null;
       if (onComplete) onComplete();
     },
     onError: () => {
+      if (stallTimerRef.current !== null) clearTimeout(stallTimerRef.current);
+      stallTimerRef.current = null;
       isPlayingRef.current = false;
       const onComplete = onCompleteRef.current;
       onCompleteRef.current = null;
@@ -57,6 +64,10 @@ export function useSpokenFeedback(): SpokenFeedback {
 
   const cancel = useCallback(() => {
     requestRef.current += 1;
+    if (stallTimerRef.current !== null) {
+      clearTimeout(stallTimerRef.current);
+      stallTimerRef.current = null;
+    }
     if (timerRef.current !== null) {
       clearTimeout(timerRef.current);
       timerRef.current = null;
@@ -87,6 +98,12 @@ export function useSpokenFeedback(): SpokenFeedback {
       const isCurrent = () => requestRef.current === generation;
 
       onCompleteRef.current = onComplete || null;
+      stallTimerRef.current = setTimeout(() => {
+        if (!isCurrent()) return;
+        const complete = onCompleteRef.current;
+        cancel();
+        complete?.();
+      }, FEEDBACK_STALL_TIMEOUT_MS);
 
       const sequence = buildFeedbackSequence({
         correct: input.correct,
@@ -111,6 +128,8 @@ export function useSpokenFeedback(): SpokenFeedback {
           const playNext = () => {
             if (!isCurrent()) return;
             if (currentIndex >= sequence.length) {
+              if (stallTimerRef.current !== null) clearTimeout(stallTimerRef.current);
+              stallTimerRef.current = null;
               isPlayingRef.current = false;
               const complete = onCompleteRef.current;
               onCompleteRef.current = null;

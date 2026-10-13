@@ -1,4 +1,5 @@
 import { expect, test, type Page } from "@playwright/test";
+import { reloadOffline } from "./offlineReload";
 
 type OfflineSnapshot = {
   accessibilityTextSize?: string;
@@ -41,7 +42,11 @@ test("offline changes survive reload and remain queued for later sync", async ({
   const browserErrors: string[] = [];
   page.on("pageerror", (error) => browserErrors.push(error.message));
   page.on("console", (message) => {
-    if (message.type() === "error") browserErrors.push(message.text());
+    if (
+      message.type() === "error" &&
+      !/^Failed to load resource: net::ERR_(INTERNET_DISCONNECTED|FAILED)$/.test(message.text())
+    )
+      browserErrors.push(message.text());
   });
 
   await page.goto("/wordpix/#/home");
@@ -67,7 +72,7 @@ test("offline changes survive reload and remain queued for later sync", async ({
   await context.setOffline(true);
   await page.evaluate(() => window.dispatchEvent(new Event("offline")));
   await expect(page.getByRole("status").filter({ hasText: "You're offline" })).toBeVisible();
-  await page.reload({ waitUntil: "domcontentloaded" });
+  await reloadOffline(page);
   await expect(page.getByRole("main")).toBeVisible();
   // Chromium's network emulation blocks requests but does not update
   // navigator.onLine in this environment, so exercise the browser event that
@@ -101,8 +106,22 @@ test("a rejected sign-in preserves credentials and guest access", async ({ page 
   page.on("pageerror", (error) => browserErrors.push(error.message));
 
   await page.route("**/auth/v1/token**", async (route) => {
+    if (route.request().method() === "OPTIONS") {
+      await route.fulfill({
+        status: 204,
+        headers: {
+          "access-control-allow-origin": "*",
+          "access-control-allow-methods": "POST, OPTIONS",
+          "access-control-allow-headers":
+            route.request().headers()["access-control-request-headers"] ??
+            "authorization, apikey, content-type, x-client-info",
+        },
+      });
+      return;
+    }
     await route.fulfill({
       status: 400,
+      headers: { "access-control-allow-origin": "*" },
       contentType: "application/json",
       body: JSON.stringify({
         error: "invalid_grant",

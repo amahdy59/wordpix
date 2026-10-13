@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { reloadOffline } from "./offlineReload";
 
 test("word details fetch bounded shards and survive a cached offline reload", async ({
   page,
@@ -55,7 +56,7 @@ test("word details fetch bounded shards and survive a cached offline reload", as
     .toBe(true);
 
   await context.setOffline(true);
-  await page.reload({ waitUntil: "domcontentloaded" });
+  await reloadOffline(page);
   await page.getByRole("button", { name: "Word details", exact: true }).click();
   await expect(page.getByRole("region", { name: /^Examples/ })).toBeVisible();
   await context.setOffline(false);

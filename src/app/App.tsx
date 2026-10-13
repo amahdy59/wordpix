@@ -160,7 +160,11 @@ function AppInner() {
         reducedMotion={reduceMotion ? "always" : "user"}
         transition={{ type: "spring", bounce: 0, duration: 0.4 }}
       >
-        <UpdatePrompt />
+        <UpdatePrompt
+          defer={
+            !["home", "learn", "explore", "profile", "library", "release-notes"].includes(state.id)
+          }
+        />
         {/*
           `role="status"` rather than a bare div.
           The element is visually hidden but is still page content, so axe's

@@ -25,6 +25,8 @@ import { useProgress } from "../data/progress";
 import { REVIEW_GROUP_ID } from "../data/courseCatalog";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
 import { Button, FilterChip, PageContainer, PageHeader } from "../shared";
+import { getDuePronunciationReviews } from "../learning/foundations/pronunciationProgress";
+import { useReviewDate } from "../shared/useReviewDate";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -47,7 +49,12 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
   const numeralSystem = accessibility?.numeralSystem ?? "western";
 
   // 1. Spaced-Repetition Review Queue Calculations
-  const todayStr = getLocalDateString(new Date());
+  const reviewDate = useReviewDate();
+  const todayStr = getLocalDateString(reviewDate);
+  const pronunciationReviews = getDuePronunciationReviews(
+    learnerState.pronunciationProgress ?? {},
+    reviewDate
+  );
 
   const memoryItems = useMemo(() => {
     const entries = Object.entries(progress.wordMemory ?? {});
@@ -286,6 +293,34 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               className="min-h-[44px] shrink-0"
             >
               {t("practice.startLearning", { defaultValue: "Start First Lesson" })}
+            </Button>
+          </div>
+        )}
+        {pronunciationReviews.length > 0 && (
+          <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-card p-4">
+            <div>
+              <h2 className="text-lg font-bold text-foreground">
+                {t("pronunciationEnhancements.dueTitle")}
+              </h2>
+              <p className="text-sm text-foreground">
+                {t("pronunciationEnhancements.dueDescription", {
+                  count: pronunciationReviews.reduce(
+                    (count, review) => count + review.targets.length,
+                    0
+                  ),
+                })}
+              </p>
+            </div>
+            <Button
+              variant="primary"
+              onClick={() =>
+                dispatch({
+                  type: "OPEN_FIGMA_PRONUNCIATION",
+                  lessonNumber: pronunciationReviews[0].lessonNumber,
+                })
+              }
+            >
+              {t("pronunciationEnhancements.reviewAction")}
             </Button>
           </div>
         )}

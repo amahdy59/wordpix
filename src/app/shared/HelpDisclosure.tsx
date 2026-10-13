@@ -49,11 +49,6 @@ export function HelpDisclosure({ label, children, variant = "inline", className 
       onToggle={(event) => setOpen(event.currentTarget.open)}
     >
       <summary
-        onBlur={(event) => {
-          if (variant === "icon" && !ref.current?.contains(event.relatedTarget)) {
-            if (ref.current) ref.current.open = false;
-          }
-        }}
         onKeyDown={(event) => {
           if (event.key === "Escape" && ref.current?.open) {
             event.stopPropagation();

@@ -270,8 +270,8 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         <div
           ref={stageContainerRef}
           id="hadith-stage-panel"
-          role="tabpanel"
-          aria-labelledby={`hadith-tab-${stage}`}
+          role="region"
+          aria-label={t(`hadith.stageLabels.${stage}`)}
           className="w-full"
         >
           {stage === "read-listen" && (

@@ -21,6 +21,8 @@ interface Options {
   volume?: number;
   /** Prefer a matching content-addressed clip bundled in public/audio. */
   preferLocal?: boolean;
+  /** Scored listening must never silently replace its reference with device speech. */
+  allowDeviceFallback?: boolean;
   /** Keep complete passages intact when browser speech is the fallback. */
   preserveText?: boolean;
   /** Reports native media progress for synchronized transcript highlighting. */
@@ -154,6 +156,7 @@ export function useAudio({
   pitch = 1,
   volume = 1,
   preferLocal = false,
+  allowDeviceFallback = true,
   preserveText = false,
   onEnded,
   onError,
@@ -303,7 +306,7 @@ export function useAudio({
       };
 
       // Spend the gesture now, before the first `await`. See `unlockSynthesis`.
-      if (synthRef.current) unlockSynthesis(synthRef.current);
+      if (synthRef.current && allowDeviceFallback) unlockSynthesis(synthRef.current);
 
       const clearStall = () => {
         if (stallTimerRef.current !== null) {
@@ -314,6 +317,10 @@ export function useAudio({
 
       const fallbackToSynthesis = (fallbackText: string, fallbackLang: string) => {
         if (!isCurrent()) return;
+        if (!allowDeviceFallback) {
+          publish("error");
+          return;
+        }
         timeUpdateRef.current?.(0, 0);
         currentAudioRef.current?.pause();
         currentAudioRef.current = null;
@@ -658,7 +665,7 @@ export function useAudio({
           if (!played) playRemainingFallbacks();
         });
     },
-    [lang, pitch, volume, preferLocal, preserveText, stop]
+    [lang, pitch, volume, preferLocal, preserveText, allowDeviceFallback, stop]
   );
 
   const pause = useCallback(() => {

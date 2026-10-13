@@ -26,6 +26,7 @@ export function usePrivateRecording({
   const [recordingBlob, setRecordingBlob] = useState<Blob | null>(null);
   const [durationMs, setDurationMs] = useState(0);
   const [elapsedMs, setElapsedMs] = useState(0);
+  const generationRef = useRef(0);
   const recorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const chunksRef = useRef<Blob[]>([]);
@@ -62,9 +63,14 @@ export function usePrivateRecording({
   const start = useCallback(async () => {
     if (!supported || status === "recording" || status === "requesting") return;
     deleteRecording();
+    const generation = ++generationRef.current;
     setStatus("requesting");
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+      if (generation !== generationRef.current) {
+        stream.getTracks().forEach((track) => track.stop());
+        return;
+      }
       streamRef.current = stream;
       const recorder = new MediaRecorder(stream);
       recorderRef.current = recorder;
@@ -73,10 +79,13 @@ export function usePrivateRecording({
         if (event.data.size > 0) chunksRef.current.push(event.data);
       };
       recorder.onerror = () => {
+        recorder.onstop = null;
+        if (recorder.state === "recording") recorder.stop();
         stopTracks();
         setStatus("error");
       };
       recorder.onstop = () => {
+        if (generation !== generationRef.current) return;
         stopTracks();
         if (chunksRef.current.length === 0) {
           setStatus("error");
@@ -101,6 +110,7 @@ export function usePrivateRecording({
       }, 250);
       timeoutRef.current = window.setTimeout(stop, safeMaxDurationMs);
     } catch (error) {
+      if (generation !== generationRef.current) return;
       stopTracks();
       const permissionDenied =
         error instanceof DOMException &&
@@ -111,7 +121,12 @@ export function usePrivateRecording({
 
   useEffect(
     () => () => {
+      generationRef.current += 1;
       const recorder = recorderRef.current;
+      if (recorder) {
+        recorder.onstop = null;
+        recorder.ondataavailable = null;
+      }
       if (recorder?.state === "recording") recorder.stop();
       stopTracks();
       if (urlRef.current) URL.revokeObjectURL(urlRef.current);

@@ -1,14 +1,96 @@
 {
-  "version": "0.1.28",
+  "version": "0.1.30",
   "notes": [
-    "Added accessible keyboard shortcuts cheat-sheet modal accessible via '?' key and desktop sidebar navigation.",
-    "Enhanced bidirectional text isolation with bdi elements and surfaced prominent learning outcomes on Home cards."
+    "Pronunciation lessons check every target and keep speaking reflection separate from listening results.",
+    "Closer word matching, clearer audio availability and pronunciation reviews in Practice."
   ],
   "notesAr": [
-    "إضافة دليل اختصارات لوحة المفاتيح عبر زر '?' والشريط الجانبي لسطح المكتب.",
-    "تعزيز عزل النصوص ثنائية الاتجاه بوسوم bdi وإبراز أهداف الدروس بوضوح في الصفحة الرئيسية."
+    "تختبر دروس النطق كل هدف وتفصل التقييم الذاتي للتحدث عن نتائج الاستماع.",
+    "مطابقة أدق للكلمات وتوضيح توفر الصوت ومراجعات للنطق في تبويب التدريب."
   ],
   "releases": [
+    {
+      "id": "0.1.30",
+      "version": "0.1.30",
+      "date": "2026-10-13",
+      "title": {
+        "en": "Word-by-word pronunciation practice",
+        "ar": "تدريب النطق كلمةً بكلمة"
+      },
+      "changes": [
+        {
+          "id": "pronunciation-target-coverage",
+          "category": "improved",
+          "en": "Listening and speaking opportunities cover every lesson target. Progress resumes by target, with local reflection and speaking feedback kept separate from listening results.",
+          "ar": "تغطي فرص الاستماع والتحدث كل هدف في الدرس. يُستأنف التقدم حسب الهدف مع فصل التقييم الذاتي وملاحظات التحدث عن نتائج الاستماع."
+        },
+        {
+          "id": "precise-word-recognition",
+          "category": "fixed",
+          "en": "Recognition checks no longer accept extra endings or similar spellings such as pinned or pen as a match for pin. Transcription results no longer award spoken mastery.",
+          "ar": "لم تعد اختبارات التعرف تقبل النهايات الإضافية أو التهجئات المتشابهة مثل pinned أو pen بوصفها مطابقة لكلمة pin. لم تعد نتائج تحويل الكلام إلى نص تمنح إتقان التحدث."
+        },
+        {
+          "id": "audio-quality-availability",
+          "category": "improved",
+          "en": "The reported pin audio issue is marked as awaiting review and excluded from scored listening. Existing audio and image mappings are preserved.",
+          "ar": "وُضعت مشكلة الصوت المبلغ عنها لكلمة pin قيد المراجعة واستُبعدت من تقييم الاستماع. حُفظت روابط الأصوات والصور الحالية."
+        },
+        {
+          "id": "pronunciation-target-reviews",
+          "category": "added",
+          "en": "Due pronunciation targets appear in Practice. Word results distinguish listening, self-reflection and unassessed speaking.",
+          "ar": "تظهر أهداف النطق المستحقة للمراجعة في تبويب التدريب. تميز نتائج الكلمات بين الاستماع والتقييم الذاتي والتحدث غير المقيّم."
+        },
+        {
+          "id": "pronunciation-clear-responsive-flow",
+          "category": "improved",
+          "en": "Listening checks hide image clues, speaking has a dedicated step, and continuation controls stay in the page flow at enlarged text sizes. Recording and model playback cannot overlap.",
+          "ar": "تخفي اختبارات الاستماع تلميحات الصور، وللتحدث خطوة مخصصة، وتبقى أزرار المتابعة ضمن الصفحة عند تكبير النص. لا يتداخل التسجيل مع تشغيل النموذج."
+        }
+      ]
+    },
+    {
+      "id": "0.1.29",
+      "version": "0.1.29",
+      "date": "2026-10-13",
+      "title": {
+        "en": "Focused lessons and reliable pronunciation progress",
+        "ar": "دروس أكثر تركيزًا وتقدّم موثوق في النطق"
+      },
+      "changes": [
+        {
+          "id": "focused-course-navigation",
+          "category": "improved",
+          "en": "Course lessons show the current step with an optional outline. Pronunciation lessons have shorter instructions, optional sound tips and one main next action.",
+          "ar": "تعرض الدورات الخطوة الحالية مع قائمة اختيارية للخطوات. أصبحت تعليمات النطق أقصر مع إرشادات اختيارية وإجراء تالٍ رئيسي واحد."
+        },
+        {
+          "id": "pronunciation-session-integrity",
+          "category": "fixed",
+          "en": "New pronunciation attempts save individual answers for accurate resume and prevent repeated questions from increasing the score. Older checkpoints retain historical progress and start a new scored attempt.",
+          "ar": "تحفظ محاولات النطق الجديدة الإجابات الفردية لاستئناف دقيق وتمنع زيادة النتيجة عند تكرار الأسئلة. تحتفظ نقاط التوقف القديمة بالتقدّم السابق وتبدأ محاولة تقييم جديدة."
+        },
+        {
+          "id": "pronunciation-search-access",
+          "category": "improved",
+          "en": "Pronunciation browsing uses compact rows and searches words, sounds and Arabic guidance. Keyboard focus stays on answered choices, lesson details contain focus, and automatic continuation is off by default for new learners.",
+          "ar": "أصبح تصفح النطق أكثر اختصارًا ويدعم البحث في الكلمات والأصوات والإرشادات العربية. يبقى التركيز على الإجابة المختارة وتُحصر الحركة داخل تفاصيل الدرس، ويتوقف الانتقال التلقائي افتراضيًا للمتعلمين الجدد."
+        },
+        {
+          "id": "uninterrupted-learning-updates",
+          "category": "improved",
+          "en": "Update notices wait until you leave a learning activity, with release details available on demand.",
+          "ar": "تنتظر إشعارات التحديث حتى تغادر نشاط التعلّم، مع عرض التفاصيل عند الطلب."
+        },
+        {
+          "id": "spoken-feedback-recovery",
+          "category": "fixed",
+          "en": "Stalled spoken feedback no longer leaves automatic continuation waiting indefinitely; manual continuation remains available.",
+          "ar": "لم يعد تعثّر الصوت يترك الانتقال التلقائي في انتظار مفتوح؛ وتظل المتابعة اليدوية متاحة."
+        }
+      ]
+    },
     {
       "id": "0.1.28",
       "version": "0.1.28",

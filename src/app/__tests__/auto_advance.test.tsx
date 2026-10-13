@@ -116,6 +116,21 @@ describe("useAutoAdvance", () => {
     expect(onAdvance).not.toHaveBeenCalled();
   });
 
+  it("cancels pending work and ignores an old schedule callback after opt-out", () => {
+    const onAdvance = vi.fn();
+    const { result, rerender } = renderHook(
+      ({ enabled }) => useAutoAdvance({ enabled, onAdvance }),
+      { initialProps: { enabled: true } }
+    );
+    const staleSchedule = result.current.schedule;
+    act(() => result.current.schedule(900));
+    rerender({ enabled: false });
+    act(() => staleSchedule(900));
+    act(() => vi.advanceTimersByTime(1000));
+    expect(onAdvance).not.toHaveBeenCalled();
+    expect(result.current.isPending).toBe(false);
+  });
+
   it("does not fire into an unmounted exercise", () => {
     const onAdvance = vi.fn();
     const { result, unmount } = renderHook(() => useAutoAdvance({ enabled: true, onAdvance }));
@@ -147,8 +162,8 @@ describe("useAutoAdvance", () => {
 });
 
 describe("auto-advance is defeatable", () => {
-  it("is on by default", () => {
-    expect(DEFAULT_ACCESSIBILITY.autoAdvance).toBe(true);
+  it("requires an explicit opt-in for new learners", () => {
+    expect(DEFAULT_ACCESSIBILITY.autoAdvance).toBe(false);
   });
 
   it("exists as a preference, so the timing can be switched off (WCAG 2.2.1)", () => {

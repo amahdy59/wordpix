@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Sparkles, DownloadCloud, X } from "lucide-react";
 import { useI18n } from "../context/I18nContext";
 import { PrimaryButton } from "./PrimaryButton";
+import { HelpDisclosure } from "./HelpDisclosure";
 
 interface UpdateEventDetail {
   worker: ServiceWorker;
   notes: string[];
 }
 
-export function UpdatePrompt() {
+export function UpdatePrompt({ defer = false }: { defer?: boolean }) {
   const { t } = useI18n();
+  const reduceMotion = useReducedMotion();
   const [updateData, setUpdateData] = useState<UpdateEventDetail | null>(null);
   const [isUpdating, setIsUpdating] = useState(false);
 
@@ -43,12 +45,12 @@ export function UpdatePrompt() {
 
   return (
     <AnimatePresence>
-      {updateData && (
-        <div className="fixed bottom-20 md:bottom-6 end-6 z-50 pointer-events-none flex justify-end">
+      {updateData && !defer && (
+        <div className="fixed bottom-20 md:bottom-6 start-4 end-4 sm:start-auto sm:end-6 z-50 pointer-events-none flex justify-end">
           <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            initial={reduceMotion ? false : { y: 20 }}
+            animate={{ y: 0 }}
+            exit={reduceMotion ? undefined : { y: 20 }}
             className="bg-wp-card border border-primary/20 p-5 rounded-3xl shadow-2xl w-full max-w-sm pointer-events-auto relative"
           >
             <button
@@ -73,7 +75,7 @@ export function UpdatePrompt() {
               </div>
             </div>
 
-            <div className="bg-secondary rounded-2xl p-4 mb-5 border border-border">
+            <HelpDisclosure label={t("updatePrompt.whatsNew")} className="mb-3">
               <div className="flex items-center gap-2 mb-2 text-wp-amber-foreground">
                 <Sparkles className="size-4" />
                 <span className="font-sans font-bold text-xs uppercase tracking-wider">
@@ -91,7 +93,7 @@ export function UpdatePrompt() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </HelpDisclosure>
 
             <PrimaryButton
               label={isUpdating ? t("updatePrompt.refreshing") : t("updatePrompt.updateRefresh")}

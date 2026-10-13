@@ -17,6 +17,7 @@ import {
   completePronunciationLesson,
   migrateLegacyPronunciationProgress,
   type PronunciationProgress,
+  type PronunciationSession,
 } from "../learning/foundations/pronunciationProgress";
 import {
   checkpointHadithLesson,
@@ -121,7 +122,7 @@ export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   includeSpeaking: true,
   includeListening: true,
   timedExercises: true,
-  autoAdvance: true,
+  autoAdvance: false,
   spokenFeedback: true,
   reduceMotion: false,
 };
@@ -274,7 +275,11 @@ interface LearnerContextType {
     scorePercent: number,
     currentStage: number
   ) => void;
-  recordPronunciationCheckpoint: (lessonId: string, currentStage: number) => void;
+  recordPronunciationCheckpoint: (
+    lessonId: string,
+    currentStage: number,
+    session?: PronunciationSession
+  ) => void;
   recordHadithCheckpoint: (
     lessonId: string,
     currentStage: number,
@@ -693,14 +698,16 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
   );
 
   const recordPronunciationCheckpoint = useCallback(
-    (lessonId: string, currentStage: number) => {
+    (lessonId: string, currentStage: number, session?: PronunciationSession) => {
       updateStateAndPersist((prev) => ({
         nextState: {
           ...prev,
           pronunciationProgress: checkpointPronunciationLesson(
             prev.pronunciationProgress,
             lessonId,
-            currentStage
+            currentStage,
+            new Date(),
+            session
           ),
         },
       }));

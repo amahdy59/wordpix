@@ -1,15 +1,13 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { pronunciationMatches } from "./pronunciationSearch";
+import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import { ArrowLeft, Headphones, Search } from "lucide-react";
 import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
 import { useI18n } from "../../../i18n";
 import { CurriculumFilterTabs } from "../../shared/CurriculumFilterTabs";
 import { CurriculumHeroHeader } from "../../shared/CurriculumHeroHeader";
-import {
-  FIGMA_PRONUNCIATION_LESSONS,
-  PRONUNCIATION_CHAPTERS,
-  getFigmaPronunciationActivityData,
-} from "./figmaPronunciationCatalog";
+import { FIGMA_PRONUNCIATION_LESSONS, PRONUNCIATION_CHAPTERS } from "./figmaPronunciationCatalog";
 import { PronunciationLessonCard } from "./PronunciationLessonCard";
 import { PronunciationLessonInfoModal } from "./PronunciationLessonInfoModal";
 import { Button, EmptyState } from "../../shared";
@@ -18,16 +16,61 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
+type Filter = "all" | "due" | "in-progress" | "mastered";
+function readBrowseState(): { query: string; filter: Filter } {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem("wordpix:pronunciation-browse") ?? "{}") as {
+      query?: unknown;
+      filter?: unknown;
+    };
+    return {
+      query: typeof saved.query === "string" ? saved.query : "",
+      filter: ["all", "due", "in-progress", "mastered"].includes(String(saved.filter))
+        ? (saved.filter as Filter)
+        : "all",
+    };
+  } catch {
+    return { query: "", filter: "all" };
+  }
+}
+
 export function PronunciationCurriculumScreen({ dispatch }: Props) {
   const { t } = useI18n();
   const { state } = useLearner();
-  const [query, setQuery] = useState("");
-  const [filter, setFilter] = useState<"all" | "due" | "in-progress" | "mastered">("all");
+  const [query, setQuery] = useState(() => readBrowseState().query);
+  const [filter, setFilter] = useState<Filter>(() => readBrowseState().filter);
   const [selectedLessonForInfo, setSelectedLessonForInfo] = useState<number | null>(null);
-  const [now] = useState(() => Date.now());
-  const normalizedQuery = query.trim().toLocaleLowerCase("en-US");
-  const completed = Object.values(state.pronunciationProgress).filter(
-    (entry) => entry.status === "mastered"
+  const [now, setNow] = useState(() => Date.now());
+  useEffect(() => {
+    try {
+      sessionStorage.setItem("wordpix:pronunciation-browse", JSON.stringify({ query, filter }));
+    } catch {
+      /* Browsing still works when storage is unavailable. */
+    }
+  }, [query, filter]);
+  useEffect(() => {
+    let timer: ReturnType<typeof setTimeout>;
+    const refresh = () => {
+      clearTimeout(timer);
+      const current = new Date();
+      setNow(current.getTime());
+      const midnight = new Date(current);
+      midnight.setHours(24, 0, 0, 0);
+      timer = setTimeout(refresh, midnight.getTime() - current.getTime() + 100);
+    };
+    refresh();
+    window.addEventListener("focus", refresh);
+    document.addEventListener("visibilitychange", refresh);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("focus", refresh);
+      document.removeEventListener("visibilitychange", refresh);
+    };
+  }, []);
+  const completed = FIGMA_PRONUNCIATION_LESSONS.filter(
+    (lesson) =>
+      state.pronunciationProgress[`lesson-${String(lesson.number).padStart(2, "0")}`]?.status ===
+      "mastered"
   ).length;
   const isDue = useCallback(
     (nextReviewAt?: string) => {
@@ -49,6 +92,12 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
         state.pronunciationProgress[`lesson-${String(lesson.number).padStart(2, "0")}`]?.status;
       return status === "in-progress";
     }) ??
+    FIGMA_PRONUNCIATION_LESSONS.find((lesson) =>
+      isDue(
+        state.pronunciationProgress[`lesson-${String(lesson.number).padStart(2, "0")}`]
+          ?.nextReviewAt
+      )
+    ) ??
     FIGMA_PRONUNCIATION_LESSONS.find((lesson) => {
       const status =
         state.pronunciationProgress[`lesson-${String(lesson.number).padStart(2, "0")}`]?.status;
@@ -67,14 +116,10 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
           if (filter === "mastered" && progress?.status !== "mastered") return false;
           if (filter === "in-progress" && progress?.status !== "in-progress") return false;
           if (filter === "due" && !isDue(progress?.nextReviewAt)) return false;
-          if (!normalizedQuery) return true;
-          const activity = getFigmaPronunciationActivityData(lesson.number);
-          return `${lesson.number} ${activity.title} ${activity.objective}`
-            .toLocaleLowerCase("en-US")
-            .includes(normalizedQuery);
+          return pronunciationMatches(lesson.number, query);
         }),
       })).filter((chapter) => chapter.lessons.length > 0),
-    [filter, isDue, normalizedQuery, state.pronunciationProgress]
+    [filter, isDue, query, state.pronunciationProgress]
   );
 
   return (
@@ -82,22 +127,20 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
       className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
       aria-labelledby="pronunciation-curriculum-title"
     >
-      <div className="wp-container-content wp-layout-gutter flex flex-col gap-6 py-4 sm:py-8">
+      <div className="wp-container-content wp-layout-gutter flex flex-col gap-4 py-4 sm:py-8">
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => dispatch({ type: "GO", to: "explore" })}
+          onClick={() => dispatch({ type: "GO", to: "learn" })}
           className="w-fit"
           iconLeft={<ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />}
         >
-          {t("pronunciation.backToLearningPath")}
+          {t("lessonShell.backToLearn")}
         </Button>
 
         <CurriculumHeroHeader
           titleId="pronunciation-curriculum-title"
-          badge={t("pronunciation.curriculumBadge")}
           title={t("pronunciation.curriculumTitle")}
-          description={t("pronunciation.curriculumDescription")}
           metrics={[
             { label: t("pronunciation.summaryMastered"), value: completed },
             { label: t("pronunciation.summaryDue"), value: due },
@@ -113,32 +156,59 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
               className="sm:w-auto"
               iconLeft={<Headphones className="size-5" aria-hidden />}
             >
-              {t("pronunciation.continueCurriculum", { number: nextLesson.number })}
+              {t(
+                state.pronunciationProgress[`lesson-${String(nextLesson.number).padStart(2, "0")}`]
+                  ?.status === "in-progress"
+                  ? "lessonShell.resumeLesson"
+                  : completed === FIGMA_PRONUNCIATION_LESSONS.length ||
+                      isDue(
+                        state.pronunciationProgress[
+                          `lesson-${String(nextLesson.number).padStart(2, "0")}`
+                        ]?.nextReviewAt
+                      )
+                    ? "lessonShell.reviewLesson"
+                    : "lessonShell.startLesson",
+                { number: nextLesson.number }
+              )}
             </Button>
           }
         >
-          <CurriculumFilterTabs
-            label={t("pronunciation.filtersLabel")}
-            value={filter}
-            onChange={setFilter}
-            panelId="pronunciation-lesson-results"
-            options={[
-              {
-                value: "all",
-                label: t("pronunciation.filterAll"),
-                count: FIGMA_PRONUNCIATION_LESSONS.length,
-              },
-              { value: "due", label: t("pronunciation.filterDue"), count: due },
-              {
-                value: "in-progress",
-                label: t("pronunciation.filterInProgress"),
-                count: Object.values(state.pronunciationProgress).filter(
-                  (entry) => entry.status === "in-progress"
-                ).length,
-              },
-              { value: "mastered", label: t("pronunciation.filterMastered"), count: completed },
-            ]}
-          />
+          <HelpDisclosure
+            label={t("lessonShell.filterSummary", {
+              filter: t(
+                filter === "all"
+                  ? "pronunciation.filterAll"
+                  : filter === "due"
+                    ? "pronunciation.filterDue"
+                    : filter === "in-progress"
+                      ? "pronunciation.filterInProgress"
+                      : "pronunciation.filterMastered"
+              ),
+            })}
+          >
+            <CurriculumFilterTabs
+              label={t("pronunciation.filtersLabel")}
+              value={filter}
+              onChange={setFilter}
+              panelId="pronunciation-lesson-results"
+              options={[
+                {
+                  value: "all",
+                  label: t("pronunciation.filterAll"),
+                  count: FIGMA_PRONUNCIATION_LESSONS.length,
+                },
+                { value: "due", label: t("pronunciation.filterDue"), count: due },
+                {
+                  value: "in-progress",
+                  label: t("pronunciation.filterInProgress"),
+                  count: Object.values(state.pronunciationProgress).filter(
+                    (entry) => entry.status === "in-progress"
+                  ).length,
+                },
+                { value: "mastered", label: t("pronunciation.filterMastered"), count: completed },
+              ]}
+            />
+          </HelpDisclosure>
         </CurriculumHeroHeader>
 
         <div>
@@ -163,10 +233,29 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
 
         {chapters.length > 1 && (
           <nav
-            className="sticky top-2 z-10 rounded-2xl border border-border bg-background/95 p-2 shadow-wp-sm backdrop-blur"
+            className="border-b border-border pb-2"
             aria-label={t("pronunciation.chapterJumpLabel")}
           >
-            <div className="flex snap-x gap-2 overflow-x-auto pb-1">
+            <label className="flex flex-wrap items-center gap-2 text-base font-bold sm:hidden">
+              <span className="sr-only">{t("pronunciation.chapterJumpLabel")}</span>
+              <select
+                className="min-h-11 w-full rounded-xl border border-border bg-card px-3 text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+                defaultValue=""
+                onChange={(event) => {
+                  document.getElementById(event.target.value)?.scrollIntoView({ block: "start" });
+                }}
+              >
+                <option value="" disabled>
+                  {t("lessonShell.chooseChapter")}
+                </option>
+                {chapters.map((chapter) => (
+                  <option key={chapter.start} value={`pronunciation-chapter-${chapter.index + 1}`}>
+                    {t(chapter.titleKey)}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <div className="hidden flex-wrap gap-2 sm:flex">
               {chapters.map((chapter) => (
                 <button
                   key={chapter.start}
@@ -198,7 +287,9 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
             className="space-y-5"
           >
             {chapters.map((chapter) => {
-              const chapterCompleted = chapter.lessons.filter(
+              const chapterCompleted = FIGMA_PRONUNCIATION_LESSONS.filter(
+                (lesson) => lesson.number >= chapter.start && lesson.number <= chapter.end
+              ).filter(
                 (lesson) =>
                   state.pronunciationProgress[`lesson-${String(lesson.number).padStart(2, "0")}`]
                     ?.status === "mastered"
@@ -207,13 +298,10 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
                 <section
                   key={chapter.start}
                   id={`pronunciation-chapter-${chapter.index + 1}`}
-                  className="scroll-mt-24 rounded-3xl border border-border bg-card p-4 shadow-wp-xs sm:p-6"
+                  className="scroll-mt-4 border-b border-border pb-5"
                 >
                   <div className="flex flex-wrap items-end justify-between gap-3">
                     <div>
-                      <p className="text-sm font-black uppercase tracking-wide text-primary">
-                        {t("pronunciation.chapterNumber", { number: chapter.index + 1 })}
-                      </p>
                       <h2 className="mt-1 text-xl font-black text-foreground">
                         {t(chapter.titleKey)}
                       </h2>
@@ -259,8 +347,21 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
             title={t("pronunciation.noResultsTitle")}
             description={t("pronunciation.noResultsDescription")}
             live="polite"
+            action={
+              <Button
+                onClick={() => {
+                  setQuery("");
+                  setFilter("all");
+                }}
+              >
+                {t("lessonShell.resetFilters")}
+              </Button>
+            }
           />
         )}
+        <HelpDisclosure label={t("help.aboutCourse")}>
+          <p>{t("pronunciation.curriculumDescription")}</p>
+        </HelpDisclosure>
       </div>
 
       <PronunciationLessonInfoModal

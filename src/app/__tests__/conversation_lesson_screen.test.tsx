@@ -4,8 +4,17 @@ import { ConversationLessonScreen } from "../learning/conversation/ConversationL
 import { LearnerProvider } from "../context/LearnerContext";
 import { I18nProvider } from "../../i18n";
 
+function lessonStep(label: string | RegExp) {
+  const nav = screen.getByRole("navigation", { name: "Lesson sections" });
+  const details = nav.querySelector("details")!;
+  if (!details.open) fireEvent.click(within(nav).getByText("All steps"));
+  return within(nav).getByRole("button", {
+    name: typeof label === "string" ? new RegExp(" · " + label + "(?: ·|$)") : label,
+  });
+}
+
 describe("ConversationLessonScreen Component", () => {
-  it("groups Unit 1 into four sections without losing its seven-stage progress", () => {
+  it("shows one current step and an outline without losing seven-stage progress", () => {
     const dispatch = vi.fn();
     const { container } = render(
       <I18nProvider>
@@ -24,14 +33,15 @@ describe("ConversationLessonScreen Component", () => {
     ]);
     const nav = screen.getByRole("navigation", { name: "Lesson sections" });
     for (const label of [
-      "Read & listen",
-      "Language",
-      "Practice",
-      "Review & apply",
       "Warm-up",
       "Reading",
+      "Language Bank",
+      "Toolkit",
+      "Quiz",
+      "Discussion",
+      "Challenge",
     ]) {
-      expect(within(nav).getByRole("button", { name: label })).toBeDefined();
+      expect(lessonStep(label)).toBeDefined();
     }
     expect(within(nav).getByRole("progressbar")).toHaveAttribute("aria-valuemax", "7");
   });
@@ -46,13 +56,13 @@ describe("ConversationLessonScreen Component", () => {
       </I18nProvider>
     );
 
-    expect(screen.getByRole("button", { name: "Language" })).toBeEnabled();
+    expect(lessonStep("Language Bank")).toBeEnabled();
 
     fireEvent.click(screen.getAllByRole("radio", { name: /vote/i })[0]);
     fireEvent.click(screen.getByRole("button", { name: /continue to reading/i }));
     fireEvent.click(screen.getByRole("button", { name: /continue to language bank/i }));
 
-    const vocabTab = screen.getByRole("button", { name: "Language" });
+    const vocabTab = lessonStep("Language Bank");
     expect(vocabTab).toBeEnabled();
 
     // Should display Language Bank items
@@ -70,11 +80,8 @@ describe("ConversationLessonScreen Component", () => {
       </I18nProvider>
     );
 
-    expect(screen.getByRole("button", { name: "Challenge" })).toHaveAttribute(
-      "aria-current",
-      "step"
-    );
-    expect(screen.getByRole("button", { name: "Review & apply" })).toBeEnabled();
+    expect(lessonStep("Challenge")).toHaveAttribute("aria-current", "step");
+    expect(lessonStep("Discussion")).toBeEnabled();
   });
 
   it("renders quick vote options on warmup stage", () => {

@@ -5,6 +5,15 @@ import { BusinessCurriculumScreen } from "../learning/business/BusinessCurriculu
 import { LearnerProvider, useLearner } from "../context/LearnerContext";
 import { I18nProvider } from "../../i18n";
 
+function lessonStep(label: string | RegExp) {
+  const nav = screen.getByRole("navigation", { name: "Lesson sections" });
+  const details = nav.querySelector("details")!;
+  if (!details.open) fireEvent.click(within(nav).getByText("All steps"));
+  return within(nav).getByRole("button", {
+    name: typeof label === "string" ? new RegExp(" · " + label + "(?: ·|$)") : label,
+  });
+}
+
 describe("Business Learning Screens & Spaced Repetition", () => {
   it("does not award XP when a caller requests completion without learning evidence", () => {
     function CompletionProbe() {
@@ -46,8 +55,8 @@ describe("Business Learning Screens & Spaced Repetition", () => {
         </LearnerProvider>
       </I18nProvider>
     );
-    fireEvent.click(screen.getByRole("button", { name: "Review & apply" }));
-    fireEvent.click(screen.getByRole("button", { name: "Speak" }));
+    fireEvent.click(lessonStep("Review"));
+    fireEvent.click(lessonStep("Speak"));
     fireEvent.click(screen.getByRole("button", { name: /Continue to Review & Confidence/i }));
     expect(
       within(screen.getByRole("navigation", { name: "Lesson sections" })).getByRole("progressbar")
@@ -60,7 +69,7 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     expect(evidence.completedStages).toEqual([]);
     expect(evidence.quizBestScore).toBeUndefined();
   });
-  it("groups Unit 02 into four sections and exposes its initial recall stages", () => {
+  it("shows an optional outline containing all nine stages", () => {
     const dispatch = vi.fn();
     const { container } = render(
       <I18nProvider>
@@ -80,15 +89,17 @@ describe("Business Learning Screens & Spaced Repetition", () => {
 
     const nav = screen.getByRole("navigation", { name: "Lesson sections" });
     for (const label of [
-      "Read & listen",
-      "Language",
-      "Practice",
-      "Review & apply",
       "Recall",
       "Warm-Up",
       "Input",
+      "Vocab",
+      "Usage",
+      "Quiz",
+      "Discuss",
+      "Speak",
+      "Review",
     ]) {
-      expect(within(nav).getByRole("button", { name: label })).toBeDefined();
+      expect(lessonStep(label)).toBeDefined();
     }
     expect(within(nav).getByRole("progressbar")).toHaveAttribute("aria-valuemax", "9");
   });
@@ -103,10 +114,19 @@ describe("Business Learning Screens & Spaced Repetition", () => {
       </I18nProvider>
     );
 
-    const desktopNav = screen.getByRole("navigation", { name: "Lesson sections" });
-    expect(within(desktopNav).getByRole("button", { name: "Recall" })).toBeEnabled();
-    for (const label of ["Warm-Up", "Language", "Practice", "Review & apply"]) {
-      expect(within(desktopNav).getByRole("button", { name: label })).toBeEnabled();
+    expect(lessonStep("Recall")).toBeEnabled();
+    for (const label of [
+      "Recall",
+      "Warm-Up",
+      "Input",
+      "Vocab",
+      "Usage",
+      "Quiz",
+      "Discuss",
+      "Speak",
+      "Review",
+    ]) {
+      expect(lessonStep(label)).toBeEnabled();
     }
   });
 
@@ -249,9 +269,9 @@ describe("Business Learning Screens & Spaced Repetition", () => {
     );
 
     const desktopNav = screen.getByRole("navigation", { name: "Lesson sections" });
-    const warmupBtn = within(desktopNav).getByRole("button", { name: /Warm-Up/i });
-    const inputBtn = within(desktopNav).getByRole("button", { name: "Input" });
-    const vocabBtn = within(desktopNav).getByRole("button", { name: "Language" });
+    const warmupBtn = lessonStep(/Warm-Up/i);
+    const inputBtn = lessonStep("Input");
+    const vocabBtn = lessonStep("Vocab");
 
     expect(warmupBtn.getAttribute("aria-current")).toBe("step");
     expect(inputBtn.hasAttribute("disabled")).toBe(false);

@@ -41,7 +41,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const [playbackError, setPlaybackError] = useState(false);
   const [showExit, setShowExit] = useState(false);
   const [slowMode, setSlowMode] = useState(false);
-  const reportedSpeechAttempts = useRef(new Set<string>());
   const { lexicon, lexiconFailed, retryLexicon } = useLexicon(
     words.slice(activeWordIndex, activeWordIndex + 1).map((word) => word.id)
   );
@@ -97,19 +96,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     audioLevel,
     reset: resetSpeech,
   } = useSpeechRecognition({ lang: "en-US" });
-
-  useEffect(() => {
-    if (!attempt || !currentWord) return;
-    const key = `${currentWord.id}:${attempt.heard}:${attempt.accuracy}`;
-    if (reportedSpeechAttempts.current.has(key)) return;
-    reportedSpeechAttempts.current.add(key);
-    dispatch({
-      type: "LESSON_ATTEMPT",
-      wordId: currentWord.id,
-      correct: attempt.matched,
-      dimension: "spoken-production",
-    });
-  }, [attempt, currentWord, dispatch]);
 
   const playWord = useCallback(() => {
     setPlaybackError(false);

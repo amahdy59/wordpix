@@ -1,9 +1,11 @@
-import { useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
+import { useModalA11y } from "../../shared/useModalA11y";
 import { Headphones, Volume2, X, Sparkles, Lightbulb } from "lucide-react";
 import { useI18n } from "../../../i18n";
 import {
   getFigmaPronunciationActivityData,
   getPronunciationChapter,
+  FIGMA_PRONUNCIATION_LESSONS,
 } from "./figmaPronunciationCatalog";
 
 interface PronunciationLessonInfoModalProps {
@@ -18,35 +20,17 @@ export function PronunciationLessonInfoModal({
   onStartLesson,
 }: PronunciationLessonInfoModalProps) {
   const { t } = useI18n();
-  const dialogRef = useRef<HTMLDivElement>(null);
-  const closeButtonRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    if (lessonNumber === null) return;
-
-    // Focus close button on open
-    closeButtonRef.current?.focus();
-
-    // Trap Escape key
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        e.preventDefault();
-        onClose();
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [lessonNumber, onClose]);
+  const dialogRef = useModalA11y({ isOpen: lessonNumber !== null, onDismiss: onClose });
 
   if (lessonNumber === null) return null;
 
   const activity = getFigmaPronunciationActivityData(lessonNumber);
   const chapter = getPronunciationChapter(lessonNumber);
 
-  return (
+  return createPortal(
     <div
       role="presentation"
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm animate-fade-in"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/60 p-4 backdrop-blur-sm motion-safe:animate-fade-in"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -63,7 +47,10 @@ export function PronunciationLessonInfoModal({
           <div className="min-w-0 pe-4">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-2.5 py-0.5 text-sm font-black uppercase text-primary">
               <Volume2 className="size-3.5" aria-hidden />
-              {t("pronunciation.badge", { current: lessonNumber, total: 68 })}
+              {t("pronunciation.badge", {
+                current: lessonNumber,
+                total: FIGMA_PRONUNCIATION_LESSONS.length,
+              })}
             </span>
             <h2
               id="pronunciation-modal-title"
@@ -76,7 +63,6 @@ export function PronunciationLessonInfoModal({
             <p className="mt-0.5 text-sm font-bold text-muted-foreground">{t(chapter.titleKey)}</p>
           </div>
           <button
-            ref={closeButtonRef}
             type="button"
             onClick={onClose}
             aria-label={t("pronunciation.modalClose") || "Close"}
@@ -208,6 +194,7 @@ export function PronunciationLessonInfoModal({
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

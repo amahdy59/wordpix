@@ -50,13 +50,9 @@ describe("transcriptMatches", () => {
     expect(transcriptMatches("Wardrobe!", "wardrobe")).toBe(true);
   });
 
-  /**
-   * Recognition engines routinely return a near-spelling for a single spoken
-   * word. Demanding an exact string would fail a learner who said it correctly.
-   */
-  it("tolerates a small engine slip", () => {
-    expect(transcriptMatches("wardrobes", "Wardrobe")).toBe(true);
-    expect(transcriptMatches("nightstands", "Nightstand")).toBe(true);
+  it("keeps extra endings distinct", () => {
+    expect(transcriptMatches("wardrobes", "Wardrobe")).toBe(false);
+    expect(transcriptMatches("nightstands", "Nightstand")).toBe(false);
   });
 
   it("still rejects a genuinely different word", () => {
@@ -70,10 +66,8 @@ describe("transcriptMatches", () => {
   });
 
   it("does not let tolerance swallow short words", () => {
-    // "bed" and "bad" differ by one, but tolerance for a 3-letter target is 1,
-    // so this documents the deliberate trade-off rather than pretending it is
-    // stricter than it is.
     expect(transcriptMatches("desk", "bed")).toBe(false);
+    expect(transcriptMatches("bad", "bed")).toBe(false);
   });
 });
 

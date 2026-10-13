@@ -19,6 +19,7 @@ export default defineConfig({
     trace: "on-first-retry",
   },
   projects: [
+    { name: "mobile-webkit", use: { ...devices["iPhone 13"] } },
     {
       name: "chromium",
       use: { ...devices["Desktop Chrome"] },

@@ -178,8 +178,10 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     });
 
     await page.getByRole("button", { name: "Red", exact: true }).click();
+    await page.getByRole("button", { name: "Continue", exact: true }).click();
     await expect(page.getByRole("button", { name: "Purple", exact: true })).toBeVisible();
     await page.getByRole("button", { name: "Purple", exact: true }).click();
+    await page.getByRole("button", { name: "Continue", exact: true }).click();
     await expect(page.getByRole("button", { name: "Indigo", exact: true })).toBeVisible();
     await page.getByRole("button", { name: "Indigo", exact: true }).click();
 

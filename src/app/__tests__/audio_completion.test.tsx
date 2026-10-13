@@ -17,6 +17,22 @@ vi.mock("../context/LearnerContext", () => ({
   useLearner: () => ({ state: { accessibility: { speechRate: 1 } } }),
 }));
 afterEach(() => vi.unstubAllGlobals());
+it("does not replace an unavailable assessment reference with device speech", () => {
+  const speak = vi.fn();
+  vi.stubGlobal("speechSynthesis", {
+    speak,
+    cancel: vi.fn(),
+    getVoices: () => [],
+    addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
+  });
+  const onError = vi.fn();
+  const { result } = renderHook(() => useAudio({ allowDeviceFallback: false, onError }));
+  act(() => result.current.speak("bed"));
+  expect(result.current.status).toBe("error");
+  expect(speak).not.toHaveBeenCalled();
+  expect(onError).toHaveBeenCalledOnce();
+});
 it("notifies natural completion but ignores an ending after stop or replacement", () => {
   const speak = vi.fn();
   vi.stubGlobal("speechSynthesis", {

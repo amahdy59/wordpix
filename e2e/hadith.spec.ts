@@ -8,7 +8,8 @@ test("all Hadith routes use the requested lesson and one canonical source block"
   await expect(page.getByRole("heading", { name: "Hope, Prayer, and Forgiveness" })).toBeVisible();
   await expect(page.getByRole("main").getByText("Lesson 42 of 42", { exact: true })).toBeVisible();
 
-  await page.getByRole("tab", { name: /Read & Listen/ }).click();
+  await page.getByText("All steps", { exact: true }).click();
+  await page.getByRole("button", { name: /Read & Listen/ }).click();
   const canonical = page.getByText(/O son of Adam, so long as you call upon Me/i, {
     exact: true,
   });
@@ -33,7 +34,8 @@ test("Hadith lesson is accessible and contained on mobile", async ({ page }) => 
 
 test("Hadith 2 practice provides ten questions and restores the next stage", async ({ page }) => {
   await page.goto("/#/hadith/lesson-2", { waitUntil: "domcontentloaded" });
-  await page.getByRole("tab", { name: /Practice/ }).click();
+  await page.getByText("All steps", { exact: true }).click();
+  await page.getByRole("button", { name: /Practice/ }).click();
 
   await page.getByRole("radio", { name: "Jibril (Gabriel)", exact: true }).click();
   await expect(page.locator("[data-quiz-question]")).toHaveCount(1);
@@ -51,9 +53,8 @@ test("Hadith 2 practice provides ten questions and restores the next stage", asy
   }
   await expect(page.getByText(/3 of 10 answered/)).toBeVisible();
   await page.getByRole("button", { name: "Continue", exact: true }).click();
-  await expect(page.getByRole("tab", { name: "Review & Apply", exact: true })).toHaveAttribute(
-    "aria-current",
-    "step"
+  await expect(page.locator("summary").filter({ hasText: "Step 4 of 4" })).toContainText(
+    "Review & Apply"
   );
   await expect
     .poll(() =>
@@ -85,9 +86,8 @@ test("Hadith 2 practice provides ten questions and restores the next stage", asy
   await expect(
     page.getByRole("heading", { name: "Questions That Teach Religion", exact: true })
   ).toBeVisible();
-  await expect(page.getByRole("tab", { name: "Review & Apply", exact: true })).toHaveAttribute(
-    "aria-current",
-    "step"
+  await expect(page.locator("summary").filter({ hasText: "Step 4 of 4" })).toContainText(
+    "Review & Apply"
   );
   await expect(page.getByText("Saved progress restored", { exact: true })).toBeVisible();
 });
@@ -101,7 +101,8 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
   await expect(page.getByRole("button", { name: /Warm-up/ })).toHaveCount(0);
   await expect(page.getByRole("radio", { name: "Slow", exact: true })).toHaveCount(2);
 
-  await page.getByRole("tab", { name: /Vocabulary/ }).click();
+  await page.getByText("All steps", { exact: true }).click();
+  await page.getByRole("button", { name: /Vocabulary/ }).click();
   await expect(
     page.getByRole("heading", { name: "Core expressions, pictures, and use" })
   ).toBeVisible();
@@ -114,7 +115,8 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
     page.getByRole("button", { name: "Play pronunciation for thoughtful action", exact: true })
   ).toBeVisible();
 
-  await page.getByRole("tab", { name: /Practice/ }).click();
+  await page.getByText("All steps", { exact: true }).click();
+  await page.getByRole("button", { name: /Practice/ }).click();
   await expect(page.locator("[data-quiz-question]")).toHaveCount(1);
   await expect(page.getByRole("progressbar", { name: "Practice completion" })).toHaveAttribute(
     "aria-valuemax",
@@ -132,7 +134,8 @@ test("Hadith 1 pilot presents a complete visual and interactive learning flow", 
       name: /What main message does the Hadith teach about an action/,
     })
   ).toBeVisible();
-  await page.getByRole("tab", { name: "Review & Apply", exact: true }).click();
+  await page.getByText("All steps", { exact: true }).click();
+  await page.getByRole("button", { name: "Review & Apply" }).click();
   await expect(page.getByRole("heading", { name: "Guided discussion" })).toBeVisible();
   await expect(page.getByText("Show sample answer", { exact: true })).toHaveCount(1);
 

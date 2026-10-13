@@ -157,20 +157,6 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
                         </>
                       )}
                     </span>
-                    {attempt.accuracy > 0 && (
-                      <span
-                        className={`text-xs font-black px-2.5 py-1 rounded-full ${
-                          attempt.accuracy >= 75
-                            ? "bg-wp-green text-wp-text-on-green"
-                            : "bg-wp-amber text-wp-text-on-amber"
-                        }`}
-                      >
-                        {t("echoPractice.matchGrade", {
-                          percent: attempt.accuracy,
-                          grade: attempt.grade.toUpperCase(),
-                        })}
-                      </span>
-                    )}
                   </div>
                   <span className="font-sans text-xs text-muted-foreground">
                     {attempt.heard

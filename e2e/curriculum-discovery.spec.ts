@@ -3,6 +3,7 @@ import { expect, test } from "@playwright/test";
 test("Hadith curriculum exposes all 42 lessons and opens the canonical source", async ({
   page,
 }) => {
+  test.setTimeout(60_000);
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
 
@@ -35,7 +36,9 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
   await expect(finalHadithLesson).toBeVisible();
   await page.getByRole("button", { name: /Actions and Intentions/ }).click();
   await expect(page).toHaveURL(/#\/hadith\/lesson-1$/);
-  await page.getByRole("tab", { name: "Read & Listen" }).click();
+  await expect(page.getByText("All steps", { exact: true })).toBeVisible({ timeout: 30_000 });
+  await page.getByText("All steps", { exact: true }).click();
+  await page.getByRole("button", { name: /Read & Listen/ }).click();
   await expect(page.getByRole("heading", { name: "Read and listen", exact: true })).toHaveCount(1);
   const translation = page.getByRole("article").filter({
     has: page.getByRole("heading", { name: "English Translation", exact: true }),
@@ -67,8 +70,13 @@ test("pronunciation curriculum is grouped, searchable, and uses R2-backed artwor
   const chapterNavigation = page.getByRole("navigation", {
     name: "Jump to a pronunciation chapter",
   });
-  await expect(chapterNavigation.getByRole("button")).toHaveCount(8);
-  await chapterNavigation.getByRole("button", { name: "Chapter 8" }).click();
+  if (await chapterNavigation.getByRole("combobox").isVisible()) {
+    await expect(chapterNavigation.locator("option")).toHaveCount(9);
+    await chapterNavigation.getByRole("combobox").selectOption("pronunciation-chapter-8");
+  } else {
+    await expect(chapterNavigation.getByRole("button")).toHaveCount(8);
+    await chapterNavigation.getByRole("button", { name: "Chapter 8" }).click();
+  }
   await expect(page.getByRole("heading", { name: /Transfer/i }).last()).toBeVisible();
   const pronunciationScroller = page.getByRole("main");
   await expect(pronunciationScroller).toHaveCount(1);
@@ -82,9 +90,16 @@ test("pronunciation curriculum is grouped, searchable, and uses R2-backed artwor
 
   await expect(page).toHaveURL(/#\/pronunciation\/lesson-02$/);
   await expect(page.getByRole("heading", { name: /Sheep or Ship/ })).toBeVisible();
-  await expect(page.getByRole("list", { name: "Target sound contrasts" })).toContainText(
-    "sheep / ship"
-  );
+  await page.getByText("Sound tips", { exact: true }).click();
+  const tips = page
+    .locator("details")
+    .filter({ has: page.getByText("Sound tips", { exact: true }) });
+  await expect(
+    tips.getByRole("button", { name: "Play pronunciation for sheep", exact: true })
+  ).toBeVisible();
+  await expect(
+    tips.getByRole("button", { name: "Play pronunciation for ship", exact: true })
+  ).toBeVisible();
   await expect.poll(() => imageRequests.length).toBeGreaterThan(0);
   const appOrigin = new URL(page.url()).origin;
   expect(

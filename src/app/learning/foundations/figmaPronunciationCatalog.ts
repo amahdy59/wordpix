@@ -396,14 +396,22 @@ export function getPronunciationQuestion(
   number: number,
   stage: 1 | 2 | 3 | 4,
   trial: number,
-  childMode: boolean = false
+  childMode: boolean = false,
+  savedTargetId?: string
 ) {
   const activity = getFigmaPronunciationActivityData(number);
-  const pool =
+  const authoredPool =
     stage === 4 && activity.transferItems.length
       ? activity.transferItems
       : [...activity.teachItems, ...activity.guidedItems, ...activity.independentItems];
-  const target = pool[(number * 7 + (stage - 1) * 5 + trial * 3) % pool.length];
+  // Meaning is a short supported check; listening and speaking cover every target.
+  const pool = stage === 2 ? authoredPool.slice(0, 3) : authoredPool;
+  const target =
+    pool.find(
+      (item) =>
+        savedTargetId ===
+        `target:${encodeURIComponent(item.label.trim().toLocaleLowerCase("en-US"))}`
+    ) ?? pool[(number * 7 + (stage - 1) * 5 + trial) % pool.length];
   if (!target) throw new Error(`Pronunciation lesson ${number} has no question targets`);
   const partner = getPronunciationContrastPartner(activity, target.label);
   const normalized = (label: string) => label.trim().toLocaleLowerCase("en-US");

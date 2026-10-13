@@ -152,10 +152,10 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
             type="button"
             onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
             className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-xl px-2.5 font-bold text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-            aria-label="Back to Business English Curriculum"
+            aria-label={t("business.curriculumNavLabel")}
           >
             <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
-            <span className="hidden sm:inline text-base">{t("business.curriculumNavLabel")}</span>
+            <span className="text-base">{t("lessonShell.back")}</span>
           </button>
 
           <div className="h-4 w-px bg-border hidden sm:block" aria-hidden />

@@ -54,7 +54,8 @@ for (const course of ["conversation", "business", "hadith", "pronunciation"]) {
     await page.goto(`/#/${course}`, { waitUntil: "domcontentloaded" });
     const header = page.getByRole("main").locator("header").first();
     await expect(header.getByRole("heading", { level: 1 })).toBeVisible({ timeout: 20_000 });
-    const help = header
+    const help = page
+      .getByRole("main")
       .locator("details")
       .filter({ has: page.getByText("About this course", { exact: true }) });
     await expect(help).not.toHaveAttribute("open", "");
