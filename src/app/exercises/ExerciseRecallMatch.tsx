@@ -195,7 +195,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </>
       }
     >
-      <div className="wp-container-immersive relative flex min-h-[560px] flex-1 flex-col gap-4 sm:min-h-[640px] sm:gap-5 lg:min-h-[320px]">
+      <div className="wp-container-immersive relative flex min-h-0 flex-1 flex-col gap-4 sm:min-h-[500px] sm:gap-5 lg:min-h-[320px]">
         <div className="flex shrink-0 flex-col items-center justify-between gap-3 sm:flex-row">
           <div className="text-center sm:text-start">
             <p className="font-sans text-sm font-bold text-foreground sm:text-base">
@@ -259,7 +259,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleCardClick(card)}
-                className={`group relative block min-h-[120px] w-full overflow-hidden rounded-2xl shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${cardStateStyle}`}
+                className={`group relative block aspect-square sm:aspect-auto min-h-[120px] w-full overflow-hidden rounded-2xl shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${cardStateStyle}`}
               >
                 <span
                   aria-hidden
@@ -274,7 +274,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover block"
+                    className="size-full object-cover object-center block"
                     // Every option is on screen and has to be looked at to
                     // answer, so lazy loading only delays the question.
                     loading="eager"

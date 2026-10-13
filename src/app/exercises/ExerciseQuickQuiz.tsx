@@ -174,7 +174,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         </div>
       }
     >
-      <div className="relative flex min-h-[560px] w-full flex-1 flex-col gap-3.5 sm:min-h-[640px] sm:gap-5 lg:min-h-[320px]">
+      <div className="relative flex min-h-0 w-full flex-1 flex-col gap-3.5 sm:min-h-[500px] sm:gap-5 lg:min-h-[320px]">
         {/* Question card */}
         <div className="flex shrink-0 flex-col gap-3 py-2">
           <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
@@ -220,7 +220,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 aria-pressed={isSelected}
                 aria-disabled={feedback !== null}
                 onClick={() => handleSelect(option.id)}
-                className={`group relative block min-h-[120px] w-full overflow-hidden rounded-2xl border-2 shadow-wp-sm transition-colors duration-200 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:rounded-3xl ${borderStyle}`}
+                className={`group relative block aspect-square sm:aspect-auto min-h-[120px] w-full overflow-hidden rounded-2xl border-2 shadow-wp-sm transition-colors duration-200 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:rounded-3xl ${borderStyle}`}
               >
                 {/* Keyboard shortcut badge */}
                 <span
@@ -237,7 +237,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover block"
+                    className="size-full object-cover object-center block"
                     // Every option is on screen and has to be looked at to
                     // answer, so lazy loading only delays the question.
                     loading="eager"

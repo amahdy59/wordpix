@@ -28,33 +28,45 @@ export function CurriculumHeroHeader({
 }: Props) {
   const { t } = useI18n();
   return (
-    <header className="space-y-4 py-2">
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <h1
-          id={titleId}
-          className="min-w-0 break-words text-2xl font-black text-foreground sm:text-3xl"
-        >
-          {title}
-        </h1>
-        {badge && <span className="text-sm font-semibold text-foreground">{badge}</span>}
+    <header className="space-y-3 py-1">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <div className="min-w-0 space-y-1.5">
+          <div className="flex flex-wrap items-center gap-2.5">
+            <h1
+              id={titleId}
+              className="min-w-0 break-words text-2xl font-black text-foreground sm:text-3xl"
+            >
+              {title}
+            </h1>
+            {badge && (
+              <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-bold text-primary border border-primary/20">
+                {badge}
+              </span>
+            )}
+          </div>
+          {metrics.length > 0 && (
+            <dl className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-muted-foreground sm:text-sm">
+              {metrics.map(({ label, value }) => (
+                <div key={label} className="flex items-baseline gap-1.5">
+                  <dt>{label}:</dt>
+                  <dd className="font-bold text-foreground">{value}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
+        </div>
+        {action && <div className="shrink-0">{action}</div>}
       </div>
-      {metrics.length > 0 && (
-        <dl className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-foreground">
-          {metrics.map(({ label, value }) => (
-            <div key={label} className="flex items-baseline gap-2">
-              <dt>{label}</dt>
-              <dd className="font-bold">{value}</dd>
-            </div>
-          ))}
-        </dl>
+      {(description || children) && (
+        <div className="flex flex-wrap items-center gap-3">
+          {description && (
+            <HelpDisclosure label={t("help.aboutCourse")}>
+              <p>{description}</p>
+            </HelpDisclosure>
+          )}
+          {children}
+        </div>
       )}
-      <div>{action}</div>
-      {description && (
-        <HelpDisclosure label={t("help.aboutCourse")}>
-          <p>{description}</p>
-        </HelpDisclosure>
-      )}
-      {children}
     </header>
   );
 }

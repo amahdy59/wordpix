@@ -108,7 +108,9 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
           <HelpDisclosure label={t("help.sourceDetails")}>
             <p>{t("hadith.canonicalScopeNote")}</p>
           </HelpDisclosure>
+        </CurriculumHeroHeader>
 
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <CurriculumFilterTabs
             label={t("hadith.filtersLabel")}
             value={filter}
@@ -121,15 +123,12 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
               { value: "mastered", label: t("hadith.filterMastered"), count: completed },
             ]}
           />
-        </CurriculumHeroHeader>
-
-        <div>
-          <label htmlFor="hadith-search" className="text-base font-bold text-foreground">
-            {t("hadith.searchLabel")}
-          </label>
-          <div className="relative mt-2">
+          <div className="relative w-full md:w-72 lg:w-80 shrink-0">
+            <label htmlFor="hadith-search" className="sr-only">
+              {t("hadith.searchLabel")}
+            </label>
             <Search
-              className="pointer-events-none absolute start-4 top-1/2 size-5 -translate-y-1/2 text-muted-foreground"
+              className="pointer-events-none absolute start-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
               aria-hidden
             />
             <input
@@ -138,7 +137,8 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder={t("hadith.searchPlaceholder")}
-              className="min-h-12 w-full rounded-2xl border border-border bg-card py-3 ps-12 pe-4 text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-label={t("hadith.searchLabel")}
+              className="min-h-11 w-full rounded-xl border border-border bg-card py-2.5 ps-10 pe-4 text-sm font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             />
           </div>
         </div>

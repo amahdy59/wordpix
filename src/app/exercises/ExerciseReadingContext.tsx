@@ -109,13 +109,14 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
           <div className="space-y-3 sm:space-y-5">
             {cluster.microReading.media && failedImage !== cluster.microReading.media.imagePath ? (
               <MediaFrame
-                fit="contain"
+                fit="cover"
                 as="figure"
                 aspect="scene"
                 className="mx-auto w-full max-w-3xl"
               >
                 <QuestionImage
                   media={cluster.microReading.media}
+                  className="size-full object-cover object-center"
                   decoding="async"
                   onExhausted={() => setFailedImage(cluster.microReading.media!.imagePath)}
                 />

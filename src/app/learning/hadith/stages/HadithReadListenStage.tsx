@@ -91,8 +91,17 @@ export function HadithReadListenStage({
           </button>
         </div>
       </header>
-      <div className={parallelReading ? "grid min-w-0 gap-4 lg:grid-cols-2" : "space-y-4"}>
-        <article aria-labelledby="hadith-arabic-heading" className="min-w-0 space-y-5">
+      <div
+        className={
+          parallelReading
+            ? "grid min-w-0 gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16 items-start"
+            : "space-y-8 sm:space-y-10 divide-y divide-border/60 [&>article:last-child]:pt-8"
+        }
+      >
+        <article
+          aria-labelledby="hadith-arabic-heading"
+          className="min-w-0 space-y-5 lg:pe-6 xl:pe-8"
+        >
           <h3 id="hadith-arabic-heading" className="text-base font-semibold text-foreground">
             {t("hadith.arabic")}
           </h3>
@@ -107,14 +116,17 @@ export function HadithReadListenStage({
             label={t("hadith.listenArabic")}
           />
           <p
-            className="wp-prose whitespace-pre-line font-arabic text-2xl leading-loose text-foreground"
+            className="wp-prose whitespace-pre-line font-arabic text-2xl sm:text-3xl leading-[2.2] sm:leading-[2.4] text-foreground"
             lang="ar"
             dir="rtl"
           >
             {source.arabic}
           </p>
         </article>
-        <article aria-labelledby="hadith-english-heading" className="min-w-0 space-y-5">
+        <article
+          aria-labelledby="hadith-english-heading"
+          className="min-w-0 space-y-5 lg:ps-6 xl:ps-8 lg:border-s lg:border-border/60 rtl:lg:border-s-0 rtl:lg:border-e rtl:lg:border-border/60"
+        >
           <h3 id="hadith-english-heading" className="text-base font-semibold text-foreground">
             {t("hadith.englishTranslation")}
           </h3>
@@ -129,7 +141,7 @@ export function HadithReadListenStage({
             label={t("hadith.listenTranslation")}
           />
           <div
-            className="wp-prose space-y-6 text-base text-foreground sm:text-lg"
+            className="wp-prose space-y-6 text-base text-foreground sm:text-lg leading-relaxed"
             lang="en"
             dir="ltr"
           >

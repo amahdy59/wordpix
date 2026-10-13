@@ -110,10 +110,14 @@ export function SentenceQuestionSupport({
   return (
     <div className="flex min-w-0 flex-col gap-2 sm:gap-3">
       {hasImage ? (
-        <MediaFrame fit="contain" aspect="scene" className="w-full max-h-48 sm:max-h-none">
+        <MediaFrame
+          fit="cover"
+          aspect="recognition"
+          className="w-full max-h-60 sm:max-h-72 lg:max-h-80 shadow-wp-xs"
+        >
           <QuestionImage
             media={media}
-            className="size-full object-contain"
+            className="size-full object-cover object-center"
             loading="eager"
             {...{ fetchpriority: "high" }}
             onExhausted={() => setFailedImage(media.imagePath)}

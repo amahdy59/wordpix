@@ -1,14 +1,49 @@
 {
-  "version": "0.1.25",
+  "version": "0.1.26",
   "notes": [
-    "Completed 100% of the 200-unit curriculum listening scenarios (840 lessons across Pre-A1 through C1) with an authentic 5-character ensemble powered by ElevenLabs v4.",
-    "Generated 1,680 synchronized SRT and VTT subtitle files and a master video timing manifest for full transcription and video production readiness."
+    "Optimized exercise imagery and question cards: full container filling with cover fit, centered focal points, and adaptive 1:1 mobile proportions eliminating subject slicing.",
+    "Streamlined curriculum headers with compact inline toolbar layout and enhanced Hadith parallel reading with generous spacing and Tashkeel diacritics line-height."
   ],
   "notesAr": [
-    "اكتمال تسجيلات وسيناريوهات الاستماع الصوتي بنسبة 100% لجميع وحدات المنهج الـ 200 (840 درساً من Pre-A1 إلى C1) بطاقم من 5 شخصيات واقعية مدعومة بنموذج ElevenLabs v4.",
-    "توليد 1680 ملف ترجمة متزامن بصيغتي SRT وVTT وبيان توقيت شامل يربط الحوارات النصية بدقة لإنتاج الفيديو وتصدير النصوص."
+    "تحسين صور التدريبات وبطاقات الأسئلة: ملء الحاويات بأسلوب cover ومحاذاة البؤرة في المنتصف وأبعاد مربعة متجاوبة على الهواتف تمنع قص العناصر.",
+    "تبسيط ترويسات المناهج بشريط أدوات مدمج وأنيق، وتوسيع الفراغ بين النص العربي والترجمة الإنجليزية في منهج الحديث مع زيادة التباعد الرأسي لعلامات التشكيل."
   ],
   "releases": [
+    {
+      "id": "0.1.26",
+      "version": "0.1.26",
+      "date": "2026-10-13",
+      "title": {
+        "en": "Exercise Imagery Fitting, Compact Curriculum Header & Hadith Bilingual Layout Polish",
+        "ar": "تحسين احتواء صور التدريبات، وتبسيط ترويسات المناهج، وتوسيع تباعد نصوص الحديث"
+      },
+      "changes": [
+        {
+          "id": "exercise-imagery-container-fill-and-centering",
+          "category": "improved",
+          "en": "Configured MediaFrame and QuestionImage to fill card containers with cover fit and centered focal points, eliminating dark letterboxing bands.",
+          "ar": "ضبط إطارات الوسائط وصور الأسئلة لتملأ بطاقاتها بالكامل بأسلوب الغطاء الممتد ومحاذاة المنتصف، والتخلص من الأشرطة الداكنة الجانبية."
+        },
+        {
+          "id": "adaptive-card-proportions-mobile",
+          "category": "improved",
+          "en": "Set aspect-square mobile proportions on immersive image choice cards in QuickQuiz and RecallMatch, preventing 2x2 grids from stretching into tall portrait slits that cut off subjects.",
+          "ar": "تطبيق نسب مربعة متجاوبة على بطاقات خيارات الصور في تدريبات الاختبار السريع ومطابقة السماع على الهواتف، لمنع استطالتها وتجنب قص أطراف الصور."
+        },
+        {
+          "id": "compact-curriculum-header-toolbar",
+          "category": "improved",
+          "en": "Streamlined CurriculumHeroHeader into a unified row with title, metrics, and action CTA, and integrated filters and search into a single responsive toolbar bringing lesson cards immediately above the fold.",
+          "ar": "تبسيط ترويسة المنهج CurriculumHeroHeader في صف واحد يجمع العنوان والإحصاءات وزر المتابعة، ودمج الفلاتر والبحث في شريط أدوات متجاوب يُظهر بطاقات الدروس مباشرة."
+        },
+        {
+          "id": "hadith-parallel-reading-spacing-tashkeel",
+          "category": "improved",
+          "en": "Expanded parallel reading gutters to 48px-64px with subtle column divider separation, and increased Arabic line-height to 2.4 for clear, comfortable Tashkeel diacritics reading.",
+          "ar": "توسيع المسافة بين قراءة النص العربي والترجمة الإنجليزية إلى 48-64 بكسل مع فاصل أنيق بين العمودين، وزيادة التباعد الرأسي للخط العربي إلى 2.4 لقراءة مريحة لعلامات التشكيل."
+        }
+      ]
+    },
     {
       "id": "0.1.25",
       "version": "0.1.25",
