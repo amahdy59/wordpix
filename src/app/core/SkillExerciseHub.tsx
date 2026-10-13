@@ -146,6 +146,15 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                       <span>{t("masteryReview.dayStreak", { count: progress.streak })}</span>
                     </span>
                   )}
+                  {overdueList.length > 0 && (
+                    <span className="inline-flex items-center gap-1 text-sm font-bold text-feedback-error-foreground bg-feedback-error-surface px-2.5 py-0.5 rounded-full border border-feedback-error-border">
+                      <span>
+                        {t("dashboard.overdueBadge", {
+                          count: formatNumber(overdueList.length, numeralSystem),
+                        })}
+                      </span>
+                    </span>
+                  )}
                 </div>
 
                 <h2 className="font-sans text-xl sm:text-2xl font-black text-foreground leading-tight">

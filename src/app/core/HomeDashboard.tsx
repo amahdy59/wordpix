@@ -162,6 +162,11 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl mt-4">
                     {activeLesson.name}
                   </h2>
+                  {activeLesson.description && (
+                    <p className="font-sans text-base text-muted-foreground font-medium mt-1.5 leading-relaxed line-clamp-2">
+                      {activeLesson.description}
+                    </p>
+                  )}
                   <HelpDisclosure label={t("help.aboutLesson")}>
                     <p>{activeLesson.description}</p>
                   </HelpDisclosure>

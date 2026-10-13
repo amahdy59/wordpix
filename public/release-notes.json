@@ -1,14 +1,43 @@
 {
-  "version": "0.1.27",
+  "version": "0.1.28",
   "notes": [
-    "Eliminated remaining raw hex color codes with semantic theme tokens and WCAG AAA (≥7:1) contrast ratios across light and dark modes.",
-    "Added 100% Arabic translation coverage for lesson results, milestone notches on progress bars, and debounced screen-reader announcements."
+    "Added accessible keyboard shortcuts cheat-sheet modal accessible via '?' key and desktop sidebar navigation.",
+    "Enhanced bidirectional text isolation with bdi elements and surfaced prominent learning outcomes on Home cards."
   ],
   "notesAr": [
-    "استبدال رموز الألوان المباشرة برموز تصميم دلالية تحقق تباين WCAG AAA (7:1 فما فوق) في النمطين الفاتح والداكن.",
-    "إكمال التعريب بنسبة 100% لشاشات نتائج الدروس، وإضافة علامات محطات إنجاز واضحة لأشرطة التقدم، وتنظيم إشعارات قارئات الشاشة."
+    "إضافة دليل اختصارات لوحة المفاتيح عبر زر '?' والشريط الجانبي لسطح المكتب.",
+    "تعزيز عزل النصوص ثنائية الاتجاه بوسوم bdi وإبراز أهداف الدروس بوضوح في الصفحة الرئيسية."
   ],
   "releases": [
+    {
+      "id": "0.1.28",
+      "version": "0.1.28",
+      "date": "2026-10-13",
+      "title": {
+        "en": "Keyboard Shortcuts Cheat-Sheet, Bidirectional Text Isolation & Learning Outcomes Clarity",
+        "ar": "دليل اختصارات لوحة المفاتيح وعزل النصوص ثنائية الاتجاه وإبراز أهداف التعلم"
+      },
+      "changes": [
+        {
+          "id": "keyboard-shortcuts-modal-toggle",
+          "category": "added",
+          "en": "Integrated an accessible keyboard shortcuts cheat-sheet modal triggered by the '?' key or the desktop sidebar navigation.",
+          "ar": "دمج نافذة منبثقة سهلة الوصول لاختصارات لوحة المفاتيح تُفتح بالضغط على مفتاح '?' أو عبر الشريط الجانبي."
+        },
+        {
+          "id": "bilingual-bidirectional-isolation",
+          "category": "improved",
+          "en": "Applied bdi isolation to English and Arabic text blocks to eliminate punctuation flipping and bidi bleed in RTL mode.",
+          "ar": "تطبيق عناصر العزل ثنائي الاتجاه bdi لمنع انقلاب علامات الترقيم أو تداخل الاتجاهات في النمط العربي."
+        },
+        {
+          "id": "home-and-practice-outcomes-clarity",
+          "category": "improved",
+          "en": "Surfaced clear learning outcomes directly on Home cards and added overdue status badges to daily practice reviews.",
+          "ar": "إبراز أهداف التعلم المباشرة على بطاقات الصفحة الرئيسية وإضافة شارة واضحة للكلمات المتأخرة في تبويب التدريب."
+        }
+      ]
+    },
     {
       "id": "0.1.27",
       "version": "0.1.27",

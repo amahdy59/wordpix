@@ -1,5 +1,5 @@
 import { lazy, memo, Suspense, useState } from "react";
-import { BookOpen, Sliders } from "lucide-react";
+import { BookOpen, Sliders, Keyboard } from "lucide-react";
 import type { TabId, Action } from "../types";
 import { ThemeToggle } from "./ThemeToggle";
 import { TABS } from "./BottomTabBar";
@@ -12,9 +12,14 @@ const SettingsModal = lazy(() =>
 interface Props {
   activeTab: TabId;
   dispatch: React.Dispatch<Action>;
+  onOpenShortcuts?: () => void;
 }
 
-export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Props) {
+export const SidebarNav = memo(function SidebarNav({
+  activeTab,
+  dispatch,
+  onOpenShortcuts,
+}: Props) {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const { t } = useI18n();
 
@@ -81,15 +86,33 @@ export const SidebarNav = memo(function SidebarNav({ activeTab, dispatch }: Prop
       </div>
 
       {/* Utilities stay separate from the primary navigation. */}
-      <div className="flex flex-col items-stretch gap-3 px-4">
+      <div className="flex flex-col items-stretch gap-2.5 px-4">
+        {onOpenShortcuts && (
+          <button
+            type="button"
+            onClick={onOpenShortcuts}
+            title={t("shortcuts.title")}
+            aria-label={t("shortcuts.title")}
+            className="h-11 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
+          >
+            <Keyboard className="size-5 shrink-0" aria-hidden="true" />
+            <span className="font-sans font-semibold text-base ms-3 group-hover:text-foreground transition-colors">
+              {t("shortcuts.title")}
+            </span>
+            <kbd className="ms-auto px-1.5 py-0.5 bg-secondary text-primary font-mono text-xs rounded border border-border/80">
+              ?
+            </kbd>
+          </button>
+        )}
+
         <button
           type="button"
           onClick={() => setShowSettingsModal(true)}
           title={t("settings.title")}
           aria-label={t("settings.title")}
-          className="h-12 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
+          className="h-11 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
         >
-          <Sliders className="size-5 shrink-0" />
+          <Sliders className="size-5 shrink-0" aria-hidden="true" />
           <span className="font-sans font-semibold text-base ms-3 group-hover:text-foreground transition-colors">
             {t("nav.settings")}
           </span>

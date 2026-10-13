@@ -1,9 +1,10 @@
-import { memo } from "react";
+import { memo, useEffect, useState } from "react";
 import type { TabId, Action } from "../types";
 import { SidebarNav } from "./SidebarNav";
 import { BottomTabBar } from "./BottomTabBar";
 import { MobileHeader } from "./MobileHeader";
 import { NetworkStatusBanner } from "./NetworkStatusBanner";
+import { KeyboardShortcutsModal } from "./KeyboardShortcutsModal";
 
 interface Props {
   activeTab: TabId;
@@ -18,10 +19,40 @@ interface Props {
  * Desktop (1024px+): Fully labelled sidebar; no intermediate clipped icon rail.
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
+  const [showShortcutsModal, setShowShortcutsModal] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+      const target = e.target;
+      if (
+        target instanceof HTMLElement &&
+        (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)
+      ) {
+        return;
+      }
+      if (e.key === "?" || (e.shiftKey && e.key === "/")) {
+        e.preventDefault();
+        setShowShortcutsModal((prev) => !prev);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
     <div className="h-dvh max-h-dvh w-full max-w-full overflow-hidden bg-background flex flex-col lg:flex-row relative">
+      <KeyboardShortcutsModal
+        isOpen={showShortcutsModal}
+        onClose={() => setShowShortcutsModal(false)}
+      />
+
       {/* Left sidebar — visible on md+ only. Hugs the left edge natively. */}
-      <SidebarNav activeTab={activeTab} dispatch={dispatch} />
+      <SidebarNav
+        activeTab={activeTab}
+        dispatch={dispatch}
+        onOpenShortcuts={() => setShowShortcutsModal(true)}
+      />
 
       {/* Main Content Column */}
       <div className="flex-1 flex flex-col min-w-0 h-dvh overflow-hidden relative">
