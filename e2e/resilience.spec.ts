@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { type Page } from "@playwright/test";
 import { expect, test } from "./offlineTest";
 import { reloadOffline } from "./offlineReload";
@@ -41,31 +42,23 @@ test("offline changes survive reload and remain queued for later sync", async ({
 }) => {
   test.setTimeout(60_000);
   const browserErrors: string[] = [];
-  let serverOutageStarted = false;
   page.on("pageerror", (error) => browserErrors.push(error.message));
   page.on("console", (message) => {
     if (
       message.type() === "error" &&
-      // Timestamped update metadata intentionally misses the offline cache.
-      // Accept only this expected transport failure after the outage starts;
-      // WebKit can deliver its console message after connectivity is restored.
-      !(
-        serverOutageStarted &&
-        /^Failed to fetch release notes: TypeError: (Load failed|Failed to fetch)$/.test(
-          message.text()
-        )
-      ) &&
       !/^Failed to load resource: net::ERR_(INTERNET_DISCONNECTED|FAILED)$/.test(message.text())
     )
       browserErrors.push(message.text());
   });
 
-  await page.goto("/wordpix/#/home");
+  await page.goto("/wordpix/#/home", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.getByRole("main").getByRole("heading", { level: 1 })).toBeVisible();
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
-  await page.reload();
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.getByRole("main")).toBeVisible();
   await expect
     .poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller)))
@@ -80,7 +73,6 @@ test("offline changes survive reload and remain queued for later sync", async ({
     .toMatchObject({ accessibilityTextSize: "xlarge", queuedAccessibilityMutations: 1 });
   await page.getByRole("button", { name: "Close settings" }).click();
 
-  serverOutageStarted = true;
   offlineServer.setOffline(true);
   // The proxy blocks real requests; mirror the browser's connectivity flag
   // in the new document because no operating-system network is disconnected.
@@ -152,7 +144,8 @@ test.describe("mocked authentication", () => {
       });
     });
 
-    await page.goto("/wordpix/#/profile");
+    await page.goto("/wordpix/#/profile", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     await page.getByRole("button", { name: "Sign in to sync progress", exact: true }).click();
     // Opening the dialog moves focus after paint. Finish that transition
     // before typing, otherwise WebKit can redirect the remaining keystrokes.
@@ -174,7 +167,8 @@ test.describe("mocked authentication", () => {
 });
 
 test("a preserved sync failure exposes a clear recovery action", async ({ page }) => {
-  await page.goto("/wordpix/#/home");
+  await page.goto("/wordpix/#/home", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.getByRole("main")).toBeVisible();
   await page.evaluate(
     () =>

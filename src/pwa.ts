@@ -20,20 +20,25 @@ export function registerServiceWorker() {
 
           newWorker.addEventListener("statechange", async () => {
             if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+              let notes: string[] = [];
               try {
                 const res = await fetch("./release-notes.json?t=" + Date.now());
+                if (!res.ok) throw new Error("Update summary is unavailable");
                 const releaseNotes = await res.json();
-
-                const event = new CustomEvent("wp-update-available", {
-                  detail: {
-                    worker: newWorker,
-                    notes: releaseNotes.notes,
-                  },
-                });
-                window.dispatchEvent(event);
-              } catch (err) {
-                console.error("Failed to fetch release notes:", err);
+                if (Array.isArray(releaseNotes.notes)) {
+                  notes = releaseNotes.notes.filter(
+                    (note: unknown): note is string => typeof note === "string"
+                  );
+                }
+              } catch {
+                // Optional metadata can be unavailable during an offline
+                // reload. The installed update still has to be offered.
               }
+              window.dispatchEvent(
+                new CustomEvent("wp-update-available", {
+                  detail: { worker: newWorker, notes },
+                })
+              );
             }
           });
         });

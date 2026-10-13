@@ -79,3 +79,5 @@ Ordinary UI tests block service workers to avoid WebKit CacheStorage/navigation 
 Worker registration tolerates a disabled API resolving without a registration, with a regression test proving that no error is logged and the application remains usable.
 
 The authentication test waits for the dialog's after-paint focus transition before typing. Pronunciation tests wait for document readiness and their activity controls rather than every remote asset's load event. Multi-step flows have a bounded 60-second total budget. Incidental course-help and recall screenshots were removed after WebKit hung on capture with all behavior assertions already passed; keyboard, layout, content, accessibility and persistence assertions remain.
+
+The follow-up now applies document readiness throughout the browser suite and waits for WordPix's styles to be applied before measuring layout. Worker update notices no longer depend on fetching optional release metadata: the installed update is offered with no summary when metadata is unavailable. A regression test covers this case, and the offline browser test no longer allows a release-metadata application error.

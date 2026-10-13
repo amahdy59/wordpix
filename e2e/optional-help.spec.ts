@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -9,7 +10,8 @@ for (const lang of ["en", "ar"] as const) {
       localStorage.setItem("wordpix:interface-lang", language);
     }, lang);
     await page.setViewportSize({ width: 320, height: 760 });
-    await page.goto("/#/conversation");
+    await page.goto("/#/conversation", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     const card = page.getByRole("article").first();
     const trigger = card.locator("summary");
     const details = card.locator("details");
@@ -52,6 +54,7 @@ for (const course of ["conversation", "business", "hadith", "pronunciation"]) {
     page,
   }) => {
     await page.goto(`/#/${course}`, { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     const header = page.getByRole("main").locator("header").first();
     await expect(header.getByRole("heading", { level: 1 })).toBeVisible({ timeout: 20_000 });
     const help = page

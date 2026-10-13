@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -7,7 +8,8 @@ test("Business recall supports answer-later navigation and retains checked answe
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.goto("/#/business/unit-02/recall");
+  await page.goto("/#/business/unit-02/recall", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.getByRole("heading", { name: /which word or phrase/i })).toBeVisible({
     timeout: 30_000,
   });

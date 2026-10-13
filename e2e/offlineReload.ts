@@ -1,4 +1,5 @@
 import { expect, type Page } from "@playwright/test";
+import { waitForStyles } from "./waitForStyles";
 
 /** WebKit can report a navigation error after its service worker restores a new document. */
 export async function reloadOffline(page: Page) {
@@ -16,4 +17,5 @@ export async function reloadOffline(page: Page) {
   await expect
     .poll(() => page.evaluate(() => Reflect.get(window, "__wordpixBeforeOfflineReload")))
     .toBeUndefined();
+  await waitForStyles(page);
 }

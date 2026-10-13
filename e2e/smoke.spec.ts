@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { test, expect } from "@playwright/test";
 
 test("library defers the dictionary until a lesson needs it", async ({ page }) => {
@@ -8,7 +9,8 @@ test("library defers the dictionary until a lesson needs it", async ({ page }) =
   await page.addInitScript(() => {
     localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "library" }));
   });
-  await page.goto("/");
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page
     .getByRole("button", { name: /A1 Foundations/ })
     .first()
@@ -17,14 +19,16 @@ test("library defers the dictionary until a lesson needs it", async ({ page }) =
   expect(lexiconShardRequests.size).toBe(0);
 
   // The empty review screen has no words to look up, so it fetches nothing.
-  await page.goto("/#/review");
+  await page.goto("/#/review", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.getByRole("heading", { name: "No memory data yet" })).toBeVisible();
   expect(lexiconShardRequests.size).toBe(0);
 
   // Starting a lesson requests only the active word shard and, at most, one
   // speculative next-word shard. The former monolithic dictionary chunk no
   // longer exists, so this assertion follows the bounded shard contract.
-  await page.goto("/#/learn/construction-site");
+  await page.goto("/#/learn/construction-site", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page.getByRole("heading", { name: /Construction Site/i }).waitFor({ timeout: 15000 });
   await page
     .getByRole("button", { name: /^Start lesson:/ })
@@ -44,7 +48,8 @@ test("learn path links to the optional library", async ({ page }) => {
     localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
   });
 
-  await page.goto("/");
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page.waitForLoadState("networkidle");
   await page.getByRole("heading", { name: "Your learning path" }).waitFor({ timeout: 15000 });
   await page.getByRole("button", { name: "Browse vocabulary library", exact: true }).click();
@@ -61,7 +66,8 @@ test("practice renders one application shell", async ({ page }) => {
     localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "practice" }));
   });
 
-  await page.goto("/#/practice");
+  await page.goto("/#/practice", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.getByRole("heading", { name: "Practice by skill" })).toBeVisible();
   await expect(page.getByRole("navigation", { name: "Main navigation" })).toHaveCount(1);
   await expect(page.locator("#main-content")).toHaveCount(1);

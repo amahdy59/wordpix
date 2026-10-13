@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import fs from "node:fs";
 import path from "node:path";
 import { expect, test } from "@playwright/test";
@@ -42,6 +43,7 @@ test("Pin or Pen includes the spoken target and its authored contrast without im
     });
   });
   await page.goto("/#/pronunciation/lesson-03", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
   await page.getByRole("button", { name: "Play model pronunciation" }).click();
   const answer = page.getByRole("button", { name: new RegExp(`^Option \\d+: ${firstTarget(3)}$`) });
@@ -93,6 +95,7 @@ test("pronunciation uses the reconciled R2 manifest key", async ({ page }) => {
   });
 
   await page.goto("/#/pronunciation/lesson-01", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.getByRole("heading", { name: /same or different/i })).toBeVisible();
   await page.getByRole("button", { name: "Play model pronunciation" }).click();
   await expect.poll(() => audioRequests.some((url) => url.endsWith(expectedKey!))).toBe(true);
@@ -112,6 +115,7 @@ test("replaying feedback pauses automatic continuation after explicit opt-in", a
   });
 
   await page.goto("/#/pronunciation/lesson-01", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
   await expect(page.getByText(progressText(1, 1), { exact: true })).toBeVisible();
   await page.getByLabel("Lesson options", { exact: true }).click();
@@ -137,6 +141,7 @@ test("replaying feedback pauses automatic continuation after explicit opt-in", a
 
 test("manual pronunciation feedback preserves focus and survives reload", async ({ page }) => {
   await page.goto("/#/pronunciation/lesson-03", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
   const answer = page.getByRole("button", { name: new RegExp(`^Option \\d+: ${firstTarget(3)}$`) });
   await answer.focus();
@@ -174,11 +179,13 @@ test("manual pronunciation feedback preserves focus and survives reload", async 
     )
     .toBe(1);
   await page.reload({ waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.getByText(progressText(3, 2), { exact: true })).toBeVisible();
 });
 
 test("pronunciation details contain focus and return it to the opener", async ({ page }) => {
   await page.goto("/#/pronunciation", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   const opener = page.getByRole("button", { name: /details for lesson 2$/i });
   await opener.click();
   const dialog = page.getByRole("dialog");
@@ -197,6 +204,7 @@ test("pronunciation keeps the activity accessible in Arabic at enlarged text", a
   await page.addInitScript(() => localStorage.setItem("wordpix:interface-lang", "ar"));
   await page.setViewportSize({ width: 360, height: 740 });
   await page.goto("/#/pronunciation/lesson-02", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
   await expect(page.getByRole("button", { name: "ابدأ الاستماع", exact: true })).toBeVisible();
   await page.evaluate(() => {
@@ -220,6 +228,7 @@ test("pronunciation automatic continuation is explicitly enabled", async ({ page
     route.fulfill({ body: fs.readFileSync(fixture), contentType: "audio/mpeg" })
   );
   await page.goto("/#/pronunciation/lesson-01", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
   await page.getByLabel("Lesson options", { exact: true }).click();
   await page.getByRole("button", { name: "Automatic next question: off" }).click();
@@ -241,6 +250,7 @@ test("speaking offers an honest local alternative at narrow width and persists i
   page.on("pageerror", (error) => errors.push(error.message));
   await page.setViewportSize({ width: 320, height: 740 });
   await page.goto("/#/pronunciation/lesson-02", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.getByRole("button", { name: "Start listening", exact: true })).toBeVisible();
   await page.evaluate(
     () =>
@@ -284,6 +294,7 @@ test("speaking offers an honest local alternative at narrow width and persists i
       })
   );
   await page.reload({ waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(
     page.getByRole("heading", { name: "Say this word, compare your recording, then continue." })
   ).toBeVisible();
