@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { I18nProvider } from "../../i18n";
 import { SpeechRecordCompare } from "../shared/SpeechRecordCompare";
@@ -92,4 +92,17 @@ describe("SpeechRecordCompare", () => {
     await user.click(screen.getByRole("button", { name: "Delete private recording" }));
     expect(recording.deleteRecording).toHaveBeenCalledTimes(1);
   });
+  it.each(["recording", "requesting"] as const)(
+    "stops hidden media when a studio is collapsed during %s",
+    (status) => {
+      recording.status = status;
+      renderStudio();
+      const details = screen.getByText("Listen, record, and compare").closest("details")!;
+      details.open = false;
+      fireEvent(details, new Event("toggle"));
+      expect(audio.stop).toHaveBeenCalled();
+      if (status === "requesting") expect(recording.deleteRecording).toHaveBeenCalled();
+      else expect(recording.stop).toHaveBeenCalled();
+    }
+  );
 });

@@ -25,6 +25,8 @@ import {
   pronunciationTargetId,
   pronunciationTrialCount,
   getPronunciationTargets,
+  pronunciationContentRevision,
+  resumablePronunciationSession,
 } from "./pronunciationTargets";
 import type { PronunciationSession, PronunciationTargetEvidence } from "./pronunciationProgress";
 
@@ -76,21 +78,17 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   const lessonId = `lesson-${String(lessonNumber).padStart(2, "0")}`;
   const progress = state.pronunciationProgress[lessonId];
   const activity = getFigmaPronunciationActivityData(lessonNumber);
+  const savedSession = resumablePronunciationSession(
+    lessonNumber,
+    progress?.currentStage ?? 0,
+    progress?.session
+  );
   // Legacy checkpoints lack scored evidence: retain historical progress and start a fair new attempt.
   const [stage, setStage] = useState<Stage>(() =>
-    progress?.session?.version === 2
-      ? (Math.min(4, Math.max(0, progress.currentStage)) as Stage)
-      : 0
+    savedSession ? (progress!.currentStage as Stage) : 0
   );
   const [session, setSession] = useState<PronunciationSession>(() => {
-    if (progress?.session?.version !== 2) return emptySession();
-    return {
-      ...progress.session,
-      trial: Math.min(
-        progress.session.trial,
-        Math.max(0, pronunciationTrialCount(lessonNumber, stage) - 1)
-      ),
-    };
+    return savedSession ?? emptySession();
   });
   const sessionRef = useRef(session);
   const finishedRef = useRef(false);
@@ -143,6 +141,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   const save = (nextStage: Stage, nextSession: PronunciationSession) => {
     const saved: PronunciationSession = {
       ...nextSession,
+      contentRevision: pronunciationContentRevision(lessonNumber),
       currentTargetId:
         nextStage > 0
           ? pronunciationTargetId(

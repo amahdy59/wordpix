@@ -15,6 +15,7 @@ import { useI18n } from "../../../../i18n";
 import { getHadithReviewIntervalDays, type HadithConfidence } from "../hadithProgress";
 import type { ParsedReviewItem, ParsedSpeakTask } from "../hadithLessonContent";
 import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
+import { SpeechRecordCompare } from "../../../shared/SpeechRecordCompare";
 
 interface Props {
   reviewItems: ParsedReviewItem[];
@@ -313,6 +314,16 @@ export function HadithReviewStage({
           </article>
         ))}
       </div>
+
+      <SpeechRecordCompare
+        target={discussionQuestion}
+        modelText={speakTask?.modelDialogue.join(" ") || sourceExcerpt}
+        title={t("hadith.speakingStudio")}
+        description={t("hadith.speakingStudioHelp")}
+        maxDurationSeconds={90}
+        defaultOpen={false}
+        compact
+      />
 
       {/* Part 3: Metacognitive Confidence Rating */}
       <fieldset

@@ -16,6 +16,7 @@ import { useAudio } from "./useAudio";
 import { usePrivateRecording } from "./usePrivateRecording";
 import { OnlinePronunciationFeedback } from "./OnlinePronunciationFeedback";
 import { onlineAssessmentEnabled } from "./pronunciationAssessment";
+import { AudioRecoveryStatus } from "./AudioRecoveryStatus";
 
 interface SpeechRecordCompareProps {
   target: string;
@@ -27,6 +28,7 @@ interface SpeechRecordCompareProps {
   compact?: boolean;
   modelAudioKey?: string;
   modelUnavailable?: boolean;
+  modelLabel?: string;
   pronunciationFeedback?: boolean;
   onEvidence?: (value: "reflected" | "assessed") => void;
 }
@@ -101,6 +103,7 @@ export function SpeechRecordCompare({
   compact = false,
   modelAudioKey,
   modelUnavailable = false,
+  modelLabel,
   pronunciationFeedback = false,
   onEvidence,
 }: SpeechRecordCompareProps) {
@@ -129,11 +132,16 @@ export function SpeechRecordCompare({
   return (
     <details
       open={defaultOpen || undefined}
+      onToggle={(event) => {
+        if (event.currentTarget.open) return;
+        audio.stop();
+        learnerAudioRef.current?.pause();
+        if (recording.status === "requesting") recording.deleteRecording();
+        else if (recording.status === "recording") recording.stop();
+      }}
       className="group overflow-hidden rounded-3xl border border-border bg-card shadow-wp-sm"
     >
-      <summary
-        className={`flex min-h-14 cursor-pointer list-none items-center gap-3 px-5 py-4 text-start ${focusRing}`}
-      >
+      <summary className="flex min-h-14 cursor-pointer list-none items-center gap-3 px-5 py-4 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[-3px] focus-visible:outline-primary">
         <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
           <Mic className="size-5" aria-hidden />
         </span>
@@ -176,10 +184,16 @@ export function SpeechRecordCompare({
               >
                 1
               </span>
-              <h3 className="font-black text-foreground">{t("speechPractice.listenTitle")}</h3>
+              <h3 className="font-black text-foreground">
+                {modelLabel ?? t("speechPractice.listenTitle")}
+              </h3>
             </div>
             {!compact && (
-              <p className="mt-3 text-sm font-semibold leading-relaxed text-muted-foreground">
+              <p
+                className="mt-3 text-sm font-semibold leading-relaxed text-muted-foreground"
+                lang="en"
+                dir="ltr"
+              >
                 {modelText}
               </p>
             )}
@@ -210,7 +224,9 @@ export function SpeechRecordCompare({
               ) : (
                 <Volume2 className="size-4" aria-hidden />
               )}
-              {isAudioPending ? t("speechPractice.stopModel") : t("speechPractice.playModel")}
+              {isAudioPending
+                ? t("speechPractice.stopModel")
+                : (modelLabel ?? t("speechPractice.playModel"))}
             </button>
             {modelUnavailable && (
               <p className="mt-3 text-sm text-foreground" role="status">
@@ -222,11 +238,7 @@ export function SpeechRecordCompare({
                 {t("speechPractice.modelUnavailable")}
               </p>
             )}
-            {audio.isError && (
-              <p className="mt-3 text-sm font-bold text-destructive" role="alert">
-                {t("speechPractice.modelError")}
-              </p>
-            )}
+            <AudioRecoveryStatus failed={audio.isError} />
           </li>
 
           <li

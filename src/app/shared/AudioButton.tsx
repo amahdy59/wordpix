@@ -1,5 +1,6 @@
 import { memo } from "react";
 import { Volume2, Loader2, VolumeX } from "lucide-react";
+import { useI18n } from "../../i18n";
 
 interface Props {
   onPlay: () => void;
@@ -28,20 +29,22 @@ export const AudioButton = memo(function AudioButton({
   isPlaying = false,
   isLoading = false,
   isError = false,
-  label = "Play pronunciation",
+  label,
   size = "md",
   className = "",
 }: Props) {
+  const { t } = useI18n();
+  const actionLabel = label ?? t("audioRecovery.play");
   const isActive = isPlaying || isLoading;
   const audioState = isError ? "error" : isActive ? "active" : "idle";
 
   const computedLabel = isError
-    ? `${label} (retry audio)`
+    ? t("audioRecovery.retryLabel", { label: actionLabel })
     : isLoading
-      ? `${label} (loading audio)`
+      ? t("audioRecovery.loadingLabel", { label: actionLabel })
       : isPlaying
-        ? `${label} (playing)`
-        : label;
+        ? t("audioRecovery.playingLabel", { label: actionLabel })
+        : actionLabel;
 
   return (
     <button

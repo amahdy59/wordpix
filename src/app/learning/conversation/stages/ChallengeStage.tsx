@@ -135,6 +135,8 @@ export function ChallengeStage({
       </section>
 
       <SpeechRecordCompare
+        defaultOpen={false}
+        compact
         target={unit.speakingChallenge.scenario}
         modelText={unit.speakingChallenge.usefulFrames.join(" ")}
         title={t("conversation.challengeSpeakingStudio")}

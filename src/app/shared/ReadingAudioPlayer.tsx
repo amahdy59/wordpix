@@ -3,6 +3,7 @@ import { LoaderCircle, Pause, Play, RotateCcw } from "lucide-react";
 import { useI18n } from "../../i18n";
 import type { AudioController } from "./useAudio";
 import { PlaybackSpeedControl } from "./PlaybackSpeedControl";
+import { useAudioRecoveryMessage } from "./AudioRecoveryStatus";
 
 interface Props {
   audio: AudioController;
@@ -37,11 +38,11 @@ export function ReadingAudioPlayer({
   const playing = active && audio.isPlaying;
   const paused = active && audio.isPaused;
   const hasTimeline = active && audio.source === "recording" && audio.duration > 0;
-  const unavailable = !audio.isSupported || (active && audio.isError);
+  const recoveryMessage = useAudioRecoveryMessage(active && audio.isError, audio.isSupported);
   const status = !enabled
     ? t("readingPlayer.disabled")
-    : unavailable
-      ? t("readingPlayer.error")
+    : recoveryMessage
+      ? recoveryMessage
       : busy
         ? t(audio.status === "buffering" ? "readingPlayer.buffering" : "readingPlayer.loading")
         : active && audio.source === "device"
