@@ -1,7 +1,7 @@
 # Focused practice and safer resume
 
 This follow-up is isolated on `codex/learning-reliability`, based on
-`1b93be1e`. The other chat owns the shared checkout's release, deployment,
+`cee4ddc1` (including the earlier `1b93be1e` learning changes). The other chat owns the shared checkout's release, deployment,
 CI, PWA and existing browser-test changes. Integrate this branch only after
 that work settles, preserving its release history and fixes.
 
@@ -39,13 +39,20 @@ Navigation, curriculum order and course completion gates are preserved.
 
 ## Automated checks
 
+Verified on this isolated branch: TypeScript, all 154 unit-test files (2,871
+tests), lint, production build and bundle budget passed. The five related
+browser specs passed all 87 scenarios across mobile WebKit, Chromium and
+mobile Chrome. The separate visual suite passed 11 scenarios, comparing
+24 committed Windows/Chromium screenshots. This is focused change coverage;
+the combined main branch still requires its release gates after integration.
+
 Run the repository gates in order:
 
 1. `npx tsc --noEmit`
 2. `npx vitest run`
 3. `pnpm run lint`
 4. `pnpm run build`
-5. `$env:WORDPIX_E2E_PORT='6285'; npx playwright test e2e/learning-decluttering.spec.ts e2e/optional-help.spec.ts e2e/pronunciation-audio.spec.ts e2e/conversation.spec.ts e2e/hadith.spec.ts`
+5. `$env:WORDPIX_E2E_PORT='6286'; npx playwright test e2e/learning-decluttering.spec.ts e2e/pronunciation-audio.spec.ts e2e/conversation.spec.ts e2e/hadith.spec.ts e2e/word-groups.spec.ts`
 
 The new learning matrix exercises English/Arabic, light/dark, 390px normal
 text and 320px at the app's 150% setting, keyboard disclosure operation,
@@ -63,6 +70,16 @@ because browser glyph rasterization and system fonts differ. The dedicated
 config avoids forcing a Windows baseline onto deployment's Linux renderer.
 Remote font CSS is replaced only in the visual test fixture to stabilize
 captures. Tests do not alter production assets or mappings.
+
+Pronunciation can retry a transient playback failure without leaving the lesson.
+Missing/quarantined clips and unsupported playback remain unavailable; a failed
+listening check cannot accept a scored answer before recovery.
+
+The Windows WebKit runner rejects the native test clips. Its two playback-state
+cases use an HTTP-backed media adapter with nonempty PCM fixtures and explicit
+success/error events. The requested authored clip keys are still checked against
+the existing manifest. Chromium retains native decoding. These tests do not
+assess pronunciation audio quality or verify physical Safari playback.
 
 ## Device and adult-learner validation — pending human sessions
 

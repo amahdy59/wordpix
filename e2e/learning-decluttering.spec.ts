@@ -1,10 +1,37 @@
 import { expect, test } from "@playwright/test";
 import type { Locator, TestInfo } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { installWebKitPlaybackFixture, playbackFixture } from "./audioFixture";
 
 // Screenshot fixtures must own HTTP interception across full-page navigation.
 // Offline/service-worker behavior has its own real-storage browser coverage.
 test.use({ serviceWorkers: "block" });
+
+test("pronunciation retries a failed clip before accepting a scored response", async ({
+  page,
+}, info) => {
+  test.setTimeout(60_000);
+  await installWebKitPlaybackFixture(page, info);
+  let available = false;
+  await page.route("**/audio/**/*.mp3", (route) =>
+    available
+      ? route.fulfill({ body: playbackFixture(), contentType: "audio/wav" })
+      : route.abort("failed")
+  );
+  await page.goto("/#/pronunciation/lesson-03");
+  await page.getByRole("button", { name: "Start listening", exact: true }).click();
+  await page.getByRole("button", { name: "Play model pronunciation", exact: true }).click();
+  const retry = page.getByRole("button", { name: "Try audio again", exact: true });
+  await expect(retry).toBeEnabled();
+  const answer = page.getByRole("button", { name: /^Option \d+: led$/ });
+  await expect(answer).toHaveAttribute("aria-disabled", "true");
+  await expect(page.getByRole("alert")).toContainText("try again");
+  available = true;
+  await retry.click();
+  await expect(answer).toHaveAttribute("aria-disabled", "false");
+  await answer.click();
+  await expect(page.getByRole("status").filter({ hasText: "Correct" })).toBeVisible();
+});
 
 async function capture(locator: Locator, name: string, info: TestInfo) {
   if (info.config.metadata.visualBaselines) {
@@ -87,9 +114,16 @@ for (const language of ["en", "ar"] as const) {
           name: language === "en" ? "Start recording" : "بدء التسجيل",
           exact: true,
         });
-        await expect(start).toBeAttached();
-        await start.scrollIntoViewIfNeeded();
-        await expect(start).toBeVisible();
+        const unavailable = studio.getByRole("status").filter({
+          hasText:
+            language === "en"
+              ? /Recording is unavailable in this browser/
+              : /التسجيل غير متاح في هذا المتصفح/,
+        });
+        const recordControl = start.or(unavailable);
+        await expect(recordControl).toHaveCount(1);
+        await recordControl.scrollIntoViewIfNeeded();
+        await expect(recordControl).toBeVisible();
         await capture(
           page.getByRole("main"),
           `studio-open-${language}-${theme}-${textSize}.png`,

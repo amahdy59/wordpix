@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { expect, test } from "@playwright/test";
+import { installWebKitPlaybackFixture, playbackFixture } from "./audioFixture";
 const authoredLessons = JSON.parse(
   fs.readFileSync(
     path.resolve("src/app/learning/foundations/figmaPronunciationContent.json"),
@@ -26,19 +27,16 @@ test.use({ serviceWorkers: "block" });
 
 test("Pin or Pen includes the spoken target and its authored contrast without image clues", async ({
   page,
-}) => {
+}, info) => {
+  await installWebKitPlaybackFixture(page, info);
   const requests: string[] = [];
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.route("**/audio/**/*.mp3", async (route) => {
     requests.push(route.request().url());
     await route.fulfill({
-      body: fs.readFileSync(
-        path.resolve(
-          "public/audio/00/00d352d1588016d7ba44e0bf1547b1255f1960d25b7a23aec8ed1bd941ced8a9.mp3"
-        )
-      ),
-      contentType: "audio/mpeg",
+      body: playbackFixture(),
+      contentType: "audio/wav",
     });
   });
   await page.goto("/#/pronunciation/lesson-03", { waitUntil: "domcontentloaded" });
