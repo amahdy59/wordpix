@@ -67,7 +67,7 @@ export const AudioButton = memo(function AudioButton({
       ) : isLoading ? (
         <Loader2 className={`${ICON_CLASSES[size]} motion-safe:animate-spin`} aria-hidden="true" />
       ) : isPlaying ? (
-        <Volume2 className={ICON_CLASSES[size]} aria-hidden="true" />
+        <Volume2 className={`${ICON_CLASSES[size]} motion-safe:animate-pulse`} aria-hidden="true" />
       ) : (
         <Volume2 className={ICON_CLASSES[size]} aria-hidden="true" />
       )}

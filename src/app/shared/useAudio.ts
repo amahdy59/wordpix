@@ -91,6 +91,15 @@ function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisV
 const MAX_AUDIO_CACHE_SIZE = 64;
 const audioCache = new Map<string, string>();
 
+/** Ensures natural vocal frequencies without robotic pitch drops at slower playback rates. */
+function applyPlaybackRate(audio: HTMLAudioElement, rate: number): void {
+  audio.playbackRate = rate;
+  const audioAny = audio as unknown as Record<string, boolean>;
+  audioAny.preservesPitch = true;
+  audioAny.mozPreservesPitch = true;
+  audioAny.webkitPreservesPitch = true;
+}
+
 /**
  * Whether `speechSynthesis` has been unlocked by a real user gesture yet.
  *
@@ -201,7 +210,7 @@ export function useAudio({
   const rateRef = useRef(effectiveRate);
   useEffect(() => {
     rateRef.current = effectiveRate;
-    if (currentAudioRef.current) currentAudioRef.current.playbackRate = effectiveRate;
+    if (currentAudioRef.current) applyPlaybackRate(currentAudioRef.current, effectiveRate);
   }, [effectiveRate]);
 
   const stop = useCallback(() => {
@@ -375,7 +384,7 @@ export function useAudio({
       const playBlobUrl = (blobUrl: string) => {
         if (!isCurrent()) return;
         const audio = new Audio(blobUrl);
-        audio.playbackRate = rateRef.current;
+        applyPlaybackRate(audio, rateRef.current);
         audio.volume = volume;
         audio.ontimeupdate = () => {
           reportProgress(audio);
@@ -523,7 +532,7 @@ export function useAudio({
           }
           const audio = new Audio(url);
           audio.preload = "auto";
-          audio.playbackRate = rateRef.current;
+          applyPlaybackRate(audio, rateRef.current);
           audio.volume = volume;
           let started = false;
           let settled = false;

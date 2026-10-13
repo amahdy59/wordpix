@@ -25,7 +25,7 @@ import { AuthModal } from "../../features/auth/AuthModal";
 import { staggerContainer, staggerItem } from "../shared/animations";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { useI18n } from "../context/I18nContext";
-import { Button, EmptyState, PageContainer, PageHeader, Surface } from "../shared";
+import { Button, EmptyState, PageContainer, PageHeader, Surface, ProgressBar } from "../shared";
 import { summarizeSkillMastery, type MasteryDimension } from "../../features/gamification/sm2";
 
 const SettingsModal = lazy(() =>
@@ -315,19 +315,71 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                 }
               />
             ) : (
-              <dl className="grid grid-cols-2 gap-4 border-y border-border py-4 sm:grid-cols-3">
-                {STATS.map(({ value, label, icon: Icon, color }) => (
-                  <div key={label} className="flex flex-col gap-2 px-2">
-                    <dt className="flex items-center gap-2 font-sans text-sm font-bold leading-tight text-foreground">
-                      <Icon className={`size-4 shrink-0 ${color}`} aria-hidden />
-                      {label}
-                    </dt>
-                    <dd className="font-sans text-2xl font-black leading-none text-foreground">
-                      {value}
-                    </dd>
+              <>
+                <dl className="grid grid-cols-2 gap-4 border-y border-border py-4 sm:grid-cols-3">
+                  {STATS.map(({ value, label, icon: Icon, color }) => (
+                    <div key={label} className="flex flex-col gap-2 px-2">
+                      <dt className="flex items-center gap-2 font-sans text-sm font-bold leading-tight text-foreground">
+                        <Icon className={`size-4 shrink-0 ${color}`} aria-hidden />
+                        {label}
+                      </dt>
+                      <dd className="font-sans text-2xl font-black leading-none text-foreground">
+                        {value}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+                <div className="mt-4 flex flex-col gap-2 rounded-2xl border border-border bg-wp-card p-4 shadow-wp-xs">
+                  <div className="flex items-center justify-between text-xs font-bold">
+                    <span className="text-foreground">{t("lesson.retentionBalance")}</span>
+                    <span className="text-primary font-black">
+                      {t("lesson.wordsTracked", { count: memoryValues.length })}
+                    </span>
                   </div>
-                ))}
-              </dl>
+                  <div
+                    className="relative flex h-3 w-full overflow-hidden rounded-full border border-border bg-muted"
+                    role="img"
+                    aria-label={`${t("lesson.retentionBalance")}: ${strongCount} ${t("lesson.strongRetention")}, ${familiarCount} ${t("lesson.familiarRetention")}, ${learningCount} ${t("lesson.learningRetention")}`}
+                  >
+                    <div
+                      style={{ width: `${Math.round((strongCount / memoryValues.length) * 100)}%` }}
+                      className="h-full bg-wp-green transition-all"
+                    />
+                    <div
+                      style={{
+                        width: `${Math.round((familiarCount / memoryValues.length) * 100)}%`,
+                      }}
+                      className="h-full bg-wp-blue transition-all"
+                    />
+                    <div
+                      style={{
+                        width: `${Math.round((learningCount / memoryValues.length) * 100)}%`,
+                      }}
+                      className="h-full bg-wp-amber transition-all"
+                    />
+                  </div>
+                  <div className="mt-1 flex flex-wrap items-center justify-between text-[11px] font-bold text-muted-foreground">
+                    <span className="flex items-center gap-1.5">
+                      <span className="size-2 rounded-full bg-wp-green" aria-hidden="true" />
+                      <span>
+                        {t("lesson.strongRetention")} ({strongCount})
+                      </span>
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <span className="size-2 rounded-full bg-wp-blue" aria-hidden="true" />
+                      <span>
+                        {t("lesson.familiarRetention")} ({familiarCount})
+                      </span>
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <span className="size-2 rounded-full bg-wp-amber" aria-hidden="true" />
+                      <span>
+                        {t("lesson.learningRetention")} ({learningCount})
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </>
             )}
             <HelpDisclosure label={t("help.aboutProgress")}>
               <dl className="space-y-3">
@@ -394,14 +446,14 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                           {t("profile.skillAccuracy", { percent: summary.accuracy })}
                         </span>
                       </div>
-                      <progress
-                        value={summary.accuracy}
-                        max={100}
-                        aria-label={t("profile.skillProgressAria", {
+                      <ProgressBar
+                        progressPercent={summary.accuracy}
+                        size="sm"
+                        showMilestones
+                        ariaLabel={t("profile.skillProgressAria", {
                           skill: meta.label,
                           percent: summary.accuracy,
                         })}
-                        className="h-2 w-full overflow-hidden rounded-full accent-primary"
                       />
                     </div>
                   ) : (

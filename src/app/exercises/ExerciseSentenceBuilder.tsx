@@ -241,7 +241,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                               position: blankIndex + 1,
                             })}
                             onClick={() => handleRemoveTile(blankIndex)}
-                            className="min-h-11 rounded-xl bg-primary px-3.5 py-2 font-sans text-sm font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-70 sm:text-base"
+                            className="min-h-11 rounded-xl bg-primary px-3.5 py-2 font-sans text-sm font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-70 sm:text-base"
                           >
                             {placedWord}
                           </motion.button>
@@ -265,7 +265,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
               <div
                 role="group"
                 aria-label={t("exercise.availableWordsAria")}
-                className="grid w-full grid-cols-2 gap-2.5 sm:grid-cols-3"
+                className="flex w-full flex-wrap items-stretch justify-center gap-2 sm:gap-2.5"
                 dir="ltr"
                 lang="en"
               >
@@ -287,7 +287,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                         position: placed.length + 1,
                       })}
                       onClick={() => handleTileClick(item)}
-                      className="min-h-11 rounded-xl border-2 border-border bg-wp-card px-4 py-2.5 font-sans text-sm font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-30 sm:text-base"
+                      className="min-h-11 min-w-[5.5rem] flex-1 sm:flex-initial rounded-xl border-2 border-border bg-wp-card px-4 py-2.5 font-sans text-sm font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-30 sm:text-base break-words text-center"
                     >
                       {item}
                     </motion.button>

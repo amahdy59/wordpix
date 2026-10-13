@@ -1,14 +1,55 @@
 {
-  "version": "0.1.26",
+  "version": "0.1.27",
   "notes": [
-    "Optimized exercise imagery and question cards: full container filling with cover fit, centered focal points, and adaptive 1:1 mobile proportions eliminating subject slicing.",
-    "Streamlined curriculum headers with compact inline toolbar layout and enhanced Hadith parallel reading with generous spacing and Tashkeel diacritics line-height."
+    "Eliminated remaining raw hex color codes with semantic theme tokens and WCAG AAA (≥7:1) contrast ratios across light and dark modes.",
+    "Added 100% Arabic translation coverage for lesson results, milestone notches on progress bars, and debounced screen-reader announcements."
   ],
   "notesAr": [
-    "تحسين صور التدريبات وبطاقات الأسئلة: ملء الحاويات بأسلوب cover ومحاذاة البؤرة في المنتصف وأبعاد مربعة متجاوبة على الهواتف تمنع قص العناصر.",
-    "تبسيط ترويسات المناهج بشريط أدوات مدمج وأنيق، وتوسيع الفراغ بين النص العربي والترجمة الإنجليزية في منهج الحديث مع زيادة التباعد الرأسي لعلامات التشكيل."
+    "استبدال رموز الألوان المباشرة برموز تصميم دلالية تحقق تباين WCAG AAA (7:1 فما فوق) في النمطين الفاتح والداكن.",
+    "إكمال التعريب بنسبة 100% لشاشات نتائج الدروس، وإضافة علامات محطات إنجاز واضحة لأشرطة التقدم، وتنظيم إشعارات قارئات الشاشة."
   ],
   "releases": [
+    {
+      "id": "0.1.27",
+      "version": "0.1.27",
+      "date": "2026-10-13",
+      "title": {
+        "en": "Accessibility, Visual Design, Bilingual Strings & Data Visualization Polish",
+        "ar": "تحسينات إمكانية الوصول، والتصميم البصري، والتعريب الكامل، والتمثيل البياني للبيانات"
+      },
+      "changes": [
+        {
+          "id": "bilingual-lesson-completion-results",
+          "category": "improved",
+          "en": "Fully localized lesson completion, test results, breakdown stats, and bonus chips into English and Arabic with localized numeral formatting.",
+          "ar": "تعريب كامل لشاشات اكتمال الدروس ونتائج الاختبارات والإحصاءات ونقاط المكافآت مع دعم الأرقام المعربة."
+        },
+        {
+          "id": "semantic-topic-tokens-wcag-aaa",
+          "category": "improved",
+          "en": "Replaced hardcoded hex colors in fallback imagery with semantic topic tokens maintaining ≥7:1 WCAG AAA contrast in both light and dark modes.",
+          "ar": "استبدال الألوان اليدوية في صور الكلمات البديلة برموز موضوعية تحقق تباين WCAG AAA لا يقل عن 7:1 في الوضعين الفاتح والداكن."
+        },
+        {
+          "id": "audio-pitch-preservation-natural-speed",
+          "category": "improved",
+          "en": "Ensured audio pitch is preserved across all playback speeds (0.75x to 1.25x) to eliminate distortion and chipmunk effects during slow listening practice.",
+          "ar": "الحفاظ على نبرة الصوت الطبيعية عند تغيير سرعة النطق (من 0.75x إلى 1.25x) لمنع التشويه الصوتي في التدريبات البطيئة."
+        },
+        {
+          "id": "progress-milestones-and-retention-balance",
+          "category": "added",
+          "en": "Added dual-encoded milestone landmarks to progress bars and introduced an accessible visual retention balance gauge in Profile stats.",
+          "ar": "إضافة علامات بارزة لأشرطة التقدم وإدراج مقياس بصري متوازن لحفظ المفردات في الملف الشخصي مع دعم قارئات الشاشة."
+        },
+        {
+          "id": "responsive-sentence-builder-touch-targets",
+          "category": "improved",
+          "en": "Enhanced sentence builder word bank with adaptive wrapping and resilient 44x44px minimum touch targets preventing button clipping on narrow viewports.",
+          "ar": "تحسين بنك كلمات تركيب الجمل مع التفاف متجاوب وأبعاد لمس لا تقل عن 44×44 بكسل لمنع اقتطاع الأزرار على الشاشات الصغيرة."
+        }
+      ]
+    },
     {
       "id": "0.1.26",
       "version": "0.1.26",

@@ -14,6 +14,7 @@ import { getWords } from "../data/vocabulary";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
 import { useI18n } from "../../i18n";
+import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { ASSESSMENT_PASS_PERCENT } from "./assessmentBlueprint";
 
 interface Props {
@@ -99,6 +100,35 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const groupWords = getWords(wordQueue, resolveUnitForLesson(lessonId).id);
   const nextGroup = getNextGroupChronological(lessonId);
 
+  const { accessibility } = useAccessibility();
+  const num = (v: number) => formatNumber(v, accessibility.numeralSystem);
+
+  const badgeLabel = isAssessment
+    ? assessmentPassed
+      ? t("lesson.unitTestPassed")
+      : t("lesson.morePracticeNeeded")
+    : isStrongSession
+      ? t("lesson.strongSession")
+      : t("lesson.sessionComplete");
+
+  const titleText = isAssessment
+    ? assessmentPassed
+      ? t("lesson.passedTitle")
+      : t("lesson.keepPracticingTitle")
+    : isStrongSession
+      ? t("lesson.groupPracticedWell", { group: group.name })
+      : t("lesson.groupCompleted", { group: group.name });
+
+  const descText = isAssessment
+    ? assessmentPassed
+      ? t("lesson.assessmentPassedDesc")
+      : t("lesson.assessmentFailedDesc", { percent: num(ASSESSMENT_PASS_PERCENT) })
+    : isStrongSession
+      ? t("lesson.strongSessionDesc", { count: num(groupWords.length) })
+      : t("lesson.completedSessionDesc", { count: num(groupWords.length) });
+
+  const starsAriaLabel = t("lesson.starsLabel", { count: num(stars.filter(Boolean).length) });
+
   return (
     <div className="bg-secondary min-h-dvh flex flex-col lg:flex-row lg:overflow-hidden relative">
       {/* ── Desktop Left: Celebration visual ────────────────────────────────── */}
@@ -118,29 +148,13 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           </motion.div>
           <div>
             <span className="font-sans font-bold text-xs text-wp-amber-foreground bg-wp-amber/10 border border-wp-amber/20 px-3 py-1 rounded-full uppercase tracking-wider">
-              {isAssessment
-                ? assessmentPassed
-                  ? "Unit Test Passed"
-                  : "More Practice Needed"
-                : isStrongSession
-                  ? "Strong Session"
-                  : "Session Complete"}
+              {badgeLabel}
             </span>
             <h1 className="font-sans font-black text-white text-4xl xl:text-5xl leading-tight tracking-tight mt-2">
-              {isAssessment
-                ? assessmentPassed
-                  ? "Passed!"
-                  : "Keep Practicing!"
-                : `${group.name} ${isStrongSession ? "Practiced Well!" : "Completed!"}`}
+              {titleText}
             </h1>
             <p className="font-sans font-semibold text-wp-text-on-panel-muted text-base mt-2">
-              {isAssessment
-                ? assessmentPassed
-                  ? `You demonstrated the sampled objectives. They are scheduled for spaced review.`
-                  : `Reach ${ASSESSMENT_PASS_PERCENT}% across the sampled objectives to pass this checkpoint.`
-                : isStrongSession
-                  ? `You recalled these ${groupWords.length} words well in this session.`
-                  : `You completed practice for ${groupWords.length} words.`}
+              {descText}
             </p>
           </div>
           <motion.div
@@ -152,7 +166,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                 : { delay: 0.2, type: "spring", stiffness: 300, damping: 20 }
             }
             className="flex gap-3 items-center"
-            aria-label={`${stars.filter(Boolean).length} out of 3 stars`}
+            aria-label={starsAriaLabel}
           >
             {stars.map((filled, i) => (
               <Star
@@ -182,27 +196,11 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             </motion.div>
             <div>
               <span className="font-sans font-bold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full uppercase tracking-wider">
-                {isAssessment
-                  ? assessmentPassed
-                    ? "Unit Test Passed"
-                    : "More Practice Needed"
-                  : isStrongSession
-                    ? "Strong Session"
-                    : "Session Complete"}
+                {badgeLabel}
               </span>
-              <h1 className="font-sans font-black text-foreground text-3xl mt-1">
-                {isAssessment ? (assessmentPassed ? "Passed!" : "Keep Practicing!") : group.name}
-              </h1>
+              <h1 className="font-sans font-black text-foreground text-3xl mt-1">{titleText}</h1>
             </div>
-            <p className="font-sans font-semibold text-muted-foreground text-sm">
-              {isAssessment
-                ? assessmentPassed
-                  ? `You demonstrated the sampled objectives. They are scheduled for spaced review.`
-                  : `Reach ${ASSESSMENT_PASS_PERCENT}% across the sampled objectives to pass this checkpoint.`
-                : isStrongSession
-                  ? `Recalled ${groupWords.length} vocabulary words well in this session.`
-                  : `Completed session for ${groupWords.length} words.`}
-            </p>
+            <p className="font-sans font-semibold text-muted-foreground text-sm">{descText}</p>
             <motion.div
               initial={reduceMotion ? false : { y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -212,7 +210,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                   : { delay: 0.2, type: "spring", stiffness: 300, damping: 20 }
               }
               className="flex gap-2 items-center"
-              aria-label={`${stars.filter(Boolean).length} out of 3 stars`}
+              aria-label={starsAriaLabel}
             >
               {stars.map((filled, i) => (
                 <Star
@@ -261,20 +259,20 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           <div className="grid grid-cols-3 gap-3 w-full">
             {[
               {
-                value: `${groupWords.length}`,
-                label: "Group Words",
+                value: num(groupWords.length),
+                label: t("lesson.groupWords"),
                 color: "text-primary",
                 bg: "bg-secondary",
               },
               {
-                value: `${accuracy}%`,
-                label: "Accuracy",
+                value: `${num(accuracy)}%`,
+                label: t("lesson.accuracy"),
                 color: "text-wp-blue-foreground",
                 bg: "bg-wp-blue/10",
               },
               {
-                value: `+${xp}`,
-                label: "XP Earned",
+                value: `+${num(xp)}`,
+                label: t("lesson.xpEarned"),
                 color: "text-wp-green",
                 bg: "bg-wp-green-light",
               },
@@ -297,17 +295,23 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             <div className="w-full bg-wp-card border border-border rounded-2xl p-4 flex flex-col gap-1.5 shadow-wp-xs">
               <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-0.5">
                 <Sparkles className="size-4 text-wp-amber-foreground" aria-hidden />
-                <span>{t("lesson.howEarnedXp", { xp })}</span>
+                <span>{t("lesson.howEarnedXp", { xp: num(xp) })}</span>
               </div>
               <dl className="flex flex-col gap-1">
                 {[
                   {
-                    label: `${correct} correct answer${correct === 1 ? "" : "s"}`,
+                    label:
+                      correct === 1
+                        ? t("lesson.correctAnswerSingular")
+                        : t("lesson.correctAnswersCount", { count: num(correct) }),
                     value: xpBreakdown.correctAnswers,
                   },
-                  { label: "Lesson completed", value: xpBreakdown.lessonComplete },
-                  { label: "Perfect session", value: xpBreakdown.perfectSession },
-                  { label: `${progress.streak}-day streak`, value: xpBreakdown.streak },
+                  { label: t("lesson.lessonCompletedBonus"), value: xpBreakdown.lessonComplete },
+                  { label: t("lesson.perfectSessionBonus"), value: xpBreakdown.perfectSession },
+                  {
+                    label: t("lesson.streakBonus", { streak: num(progress.streak) }),
+                    value: xpBreakdown.streak,
+                  },
                 ]
                   .filter((row) => row.value > 0)
                   .map((row) => (
@@ -316,7 +320,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                       className="flex items-center justify-between font-sans text-xs"
                     >
                       <dt className="text-muted-foreground font-medium">{row.label}</dt>
-                      <dd className="text-foreground font-bold">+{row.value}</dd>
+                      <dd className="text-foreground font-bold">+{num(row.value)}</dd>
                     </div>
                   ))}
               </dl>

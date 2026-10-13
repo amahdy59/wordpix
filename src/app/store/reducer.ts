@@ -162,9 +162,26 @@ export function reducer(state: Screen, action: Action): Screen {
   return state;
 }
 
+let announceTimeout: ReturnType<typeof setTimeout> | null = null;
+
 export function ariaLiveAnnounce(msg: string) {
+  if (typeof document === "undefined") return;
   const el = document.getElementById("a11y-live-region");
-  if (el) el.textContent = msg;
+  if (!el) return;
+
+  if (announceTimeout !== null) {
+    clearTimeout(announceTimeout);
+  }
+
+  // Clear identical announcements first so assistive technology registers a DOM mutation
+  if (el.textContent === msg) {
+    el.textContent = "";
+  }
+
+  announceTimeout = setTimeout(() => {
+    el.textContent = msg;
+    announceTimeout = null;
+  }, 50);
 }
 
 export function describeScreen(
