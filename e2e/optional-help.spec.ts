@@ -50,7 +50,7 @@ for (const lang of ["en", "ar"] as const) {
 for (const course of ["conversation", "business", "hadith", "pronunciation"]) {
   test(`${course} orientation is optional while the next lesson stays available`, async ({
     page,
-  }, testInfo) => {
+  }) => {
     await page.goto(`/#/${course}`, { waitUntil: "domcontentloaded" });
     const header = page.getByRole("main").locator("header").first();
     await expect(header.getByRole("heading", { level: 1 })).toBeVisible({ timeout: 20_000 });
@@ -64,9 +64,5 @@ for (const course of ["conversation", "business", "hadith", "pronunciation"]) {
     await expect(header.getByRole("button").first()).toBeEnabled();
     await help.locator("summary").press("Escape");
     await expect(help).not.toHaveAttribute("open", "");
-    await page.screenshot({
-      path: `output/simplified-${course}-${testInfo.project.name}.png`,
-      animations: "disabled",
-    });
   });
 }

@@ -8,7 +8,10 @@ test.beforeEach(async ({ page }) => {
 test("phone tabs and skill choices remain visible with enlarged text", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 720 });
   await page.goto("/#/practice", { waitUntil: "domcontentloaded" });
-  await page.getByRole("button", { name: "Settings & Accessibility", exact: true }).click();
+  await page
+    .getByRole("banner", { name: "Mobile navigation" })
+    .getByRole("button", { name: "Settings & Accessibility", exact: true })
+    .click();
   await page.getByRole("button", { name: "150%", exact: true }).click();
   await page.getByRole("button", { name: "Close settings", exact: true }).click();
 
@@ -82,8 +85,19 @@ test("Arabic practice cards and mobile utilities have translated names", async (
 
 test("main tabs retain enhanced text contrast on phones", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/#/home", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("main h1")).toBeVisible();
+  await expect(page.getByRole("complementary", { name: "Sidebar navigation" })).toBeHidden();
   for (const tab of ["home", "learn", "practice", "library", "profile"]) {
-    await page.goto(`/#/${tab}`);
+    await page.evaluate((route) => {
+      window.location.hash = `/${route}`;
+    }, tab);
+    await expect(page).toHaveURL(new RegExp(`#/${tab}$`));
+    await expect(
+      page
+        .getByRole("navigation", { name: "Main navigation", exact: true })
+        .getByRole("button", { name: tab[0].toUpperCase() + tab.slice(1), exact: true })
+    ).toHaveAttribute("aria-current", "page");
     await expect(page.locator("main h1")).toBeVisible();
     const scan = await new AxeBuilder({ page }).withRules(["color-contrast-enhanced"]).analyze();
     expect(scan.violations, `${tab} enhanced text contrast`).toEqual([]);
@@ -110,11 +124,18 @@ test("pronunciation lesson cards do not overflow their phone scroll container", 
       elements.every((element) => element.scrollWidth <= element.clientWidth)
     )
   ).toBe(true);
-  await page.goto("/#/practice", { waitUntil: "domcontentloaded" });
-  await page.getByRole("button", { name: "Settings & Accessibility", exact: true }).click();
+  await page.evaluate(() => {
+    window.location.hash = "/practice";
+  });
+  await page
+    .getByRole("banner", { name: "Mobile navigation" })
+    .getByRole("button", { name: "Settings & Accessibility", exact: true })
+    .click();
   await page.getByRole("button", { name: "150%", exact: true }).click();
   await page.getByRole("button", { name: "Close settings", exact: true }).click();
-  await page.goto("/#/pronunciation", { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => {
+    window.location.hash = "/pronunciation";
+  });
   await expect(
     page.getByRole("heading", { name: "Pronunciation curriculum", exact: true })
   ).toBeVisible();

@@ -11,6 +11,9 @@ export function registerServiceWorker() {
     navigator.serviceWorker
       .register("./sw.js")
       .then((registration) => {
+        // A disabled worker API can resolve without a registration (including
+        // WebKit automation). The application remains usable without PWA hooks.
+        if (!registration) return;
         registration.addEventListener("updatefound", () => {
           const newWorker = registration.installing;
           if (!newWorker) return;

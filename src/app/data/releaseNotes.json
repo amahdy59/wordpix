@@ -1,14 +1,30 @@
 {
-  "version": "0.1.30",
+  "version": "0.1.31",
   "notes": [
-    "Pronunciation lessons check every target and keep speaking reflection separate from listening results.",
-    "Closer word matching, clearer audio availability and pronunciation reviews in Practice."
+    "Stronger checks protect saved offline progress and mobile learning flows before each release."
   ],
-  "notesAr": [
-    "تختبر دروس النطق كل هدف وتفصل التقييم الذاتي للتحدث عن نتائج الاستماع.",
-    "مطابقة أدق للكلمات وتوضيح توفر الصوت ومراجعات للنطق في تبويب التدريب."
-  ],
+  "notesAr": ["فحوصات أقوى لحماية التقدم المحفوظ دون اتصال وتجربة التعلم على الهاتف قبل كل إصدار."],
   "releases": [
+    {
+      "id": "0.1.31",
+      "version": "0.1.31",
+      "date": "2026-10-13",
+      "title": { "en": "More reliable release checks", "ar": "فحوصات إصدار أكثر موثوقية" },
+      "changes": [
+        {
+          "id": "browser-release-protection",
+          "category": "improved",
+          "en": "Releases check offline progress recovery, sign-in errors and mobile learning layouts across desktop and phone browsers before publication.",
+          "ar": "تتحقق الإصدارات من استعادة التقدم دون اتصال وأخطاء تسجيل الدخول وتخطيطات التعلم على الهاتف عبر متصفحات الحاسوب والهاتف قبل النشر."
+        },
+        {
+          "id": "disabled-worker-recovery",
+          "category": "fixed",
+          "en": "The app handles unavailable offline registration without interrupting learning.",
+          "ar": "يتعامل التطبيق مع عدم توفر التسجيل للعمل دون اتصال دون مقاطعة التعلم."
+        }
+      ]
+    },
     {
       "id": "0.1.30",
       "version": "0.1.30",

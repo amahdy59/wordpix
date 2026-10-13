@@ -9,6 +9,9 @@ if (!Number.isSafeInteger(testWorkers) || testWorkers < 1) {
 
 export default defineConfig({
   testDir: "./e2e",
+  // Multi-step learning flows also run axe and capture screenshots. Keep
+  // their total budget separate from individual assertion timeouts.
+  timeout: 60_000,
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
@@ -16,6 +19,9 @@ export default defineConfig({
   reporter: "html",
   use: {
     baseURL: testBaseURL,
+    // UI tests must not race service-worker CacheStorage writes or bypass
+    // HTTP interception. The dedicated offline fixture explicitly opts in.
+    serviceWorkers: "block",
     trace: "on-first-retry",
   },
   projects: [

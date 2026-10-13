@@ -1,4 +1,5 @@
-import { expect, test, type Page } from "@playwright/test";
+import { type Page } from "@playwright/test";
+import { expect, test } from "./offlineTest";
 import { reloadOffline } from "./offlineReload";
 
 type OfflineSnapshot = {
@@ -36,21 +37,31 @@ async function readOfflineSnapshot(page: Page): Promise<OfflineSnapshot> {
 
 test("offline changes survive reload and remain queued for later sync", async ({
   page,
-  context,
+  offlineServer,
 }) => {
   test.setTimeout(60_000);
   const browserErrors: string[] = [];
+  let serverOutageStarted = false;
   page.on("pageerror", (error) => browserErrors.push(error.message));
   page.on("console", (message) => {
     if (
       message.type() === "error" &&
+      // Timestamped update metadata intentionally misses the offline cache.
+      // Accept only this expected transport failure after the outage starts;
+      // WebKit can deliver its console message after connectivity is restored.
+      !(
+        serverOutageStarted &&
+        /^Failed to fetch release notes: TypeError: (Load failed|Failed to fetch)$/.test(
+          message.text()
+        )
+      ) &&
       !/^Failed to load resource: net::ERR_(INTERNET_DISCONNECTED|FAILED)$/.test(message.text())
     )
       browserErrors.push(message.text());
   });
 
   await page.goto("/wordpix/#/home");
-  await expect(page.getByRole("main")).toBeVisible();
+  await expect(page.getByRole("main").getByRole("heading", { level: 1 })).toBeVisible();
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
@@ -69,11 +80,17 @@ test("offline changes survive reload and remain queued for later sync", async ({
     .toMatchObject({ accessibilityTextSize: "xlarge", queuedAccessibilityMutations: 1 });
   await page.getByRole("button", { name: "Close settings" }).click();
 
-  await context.setOffline(true);
+  serverOutageStarted = true;
+  offlineServer.setOffline(true);
+  // The proxy blocks real requests; mirror the browser's connectivity flag
+  // in the new document because no operating-system network is disconnected.
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, "onLine", { configurable: true, get: () => false });
+  });
   await page.evaluate(() => window.dispatchEvent(new Event("offline")));
   await expect(page.getByRole("status").filter({ hasText: "You're offline" })).toBeVisible();
   await reloadOffline(page);
-  await expect(page.getByRole("main")).toBeVisible();
+  await expect(page.getByRole("main").getByRole("heading", { level: 1 })).toBeVisible();
   // Chromium's network emulation blocks requests but does not update
   // navigator.onLine in this environment, so exercise the browser event that
   // production devices emit when connectivity changes.
@@ -89,8 +106,11 @@ test("offline changes survive reload and remain queued for later sync", async ({
       queuedAccessibilityMutations: 1,
     });
 
-  await context.setOffline(false);
-  await page.evaluate(() => window.dispatchEvent(new Event("online")));
+  offlineServer.setOffline(false);
+  await page.evaluate(() => {
+    Object.defineProperty(navigator, "onLine", { configurable: true, get: () => true });
+    window.dispatchEvent(new Event("online"));
+  });
   await expect(page.getByRole("status").filter({ hasText: "Back online" })).toBeVisible();
   await expect
     .poll(() => readOfflineSnapshot(page))
@@ -101,49 +121,56 @@ test("offline changes survive reload and remain queued for later sync", async ({
   expect(browserErrors).toEqual([]);
 });
 
-test("a rejected sign-in preserves credentials and guest access", async ({ page }) => {
-  const browserErrors: string[] = [];
-  page.on("pageerror", (error) => browserErrors.push(error.message));
+test.describe("mocked authentication", () => {
+  test.use({ serviceWorkers: "block" });
+  test("a rejected sign-in preserves credentials and guest access", async ({ page }) => {
+    const browserErrors: string[] = [];
+    page.on("pageerror", (error) => browserErrors.push(error.message));
 
-  await page.route("**/auth/v1/token**", async (route) => {
-    if (route.request().method() === "OPTIONS") {
+    await page.route("**/auth/v1/token**", async (route) => {
+      if (route.request().method() === "OPTIONS") {
+        await route.fulfill({
+          status: 204,
+          headers: {
+            "access-control-allow-origin": "*",
+            "access-control-allow-methods": "POST, OPTIONS",
+            "access-control-allow-headers":
+              route.request().headers()["access-control-request-headers"] ??
+              "authorization, apikey, content-type, x-client-info",
+          },
+        });
+        return;
+      }
       await route.fulfill({
-        status: 204,
-        headers: {
-          "access-control-allow-origin": "*",
-          "access-control-allow-methods": "POST, OPTIONS",
-          "access-control-allow-headers":
-            route.request().headers()["access-control-request-headers"] ??
-            "authorization, apikey, content-type, x-client-info",
-        },
+        status: 400,
+        headers: { "access-control-allow-origin": "*" },
+        contentType: "application/json",
+        body: JSON.stringify({
+          error: "invalid_grant",
+          error_description: "Invalid login credentials",
+        }),
       });
-      return;
-    }
-    await route.fulfill({
-      status: 400,
-      headers: { "access-control-allow-origin": "*" },
-      contentType: "application/json",
-      body: JSON.stringify({
-        error: "invalid_grant",
-        error_description: "Invalid login credentials",
-      }),
     });
+
+    await page.goto("/wordpix/#/profile");
+    await page.getByRole("button", { name: "Sign in to sync progress", exact: true }).click();
+    // Opening the dialog moves focus after paint. Finish that transition
+    // before typing, otherwise WebKit can redirect the remaining keystrokes.
+    await expect(page.getByRole("button", { name: "Close authentication modal" })).toBeFocused();
+    const email = page.getByLabel("Email address");
+    const password = page.getByLabel("Password");
+    await email.pressSequentially("offline-test@example.invalid");
+    await expect(email).toHaveValue("offline-test@example.invalid");
+    await password.fill("not-a-real-password");
+    await page.getByRole("button", { name: "Sign In", exact: true }).click();
+
+    await expect(page.getByRole("alert")).toContainText("Invalid login credentials");
+    await expect(email).toHaveValue("offline-test@example.invalid");
+    await expect(password).toHaveValue("not-a-real-password");
+    await expect(page.getByRole("dialog", { name: "Welcome Back" })).toBeVisible();
+    await expect(page.getByRole("button", { name: "Continue as Guest" })).toBeEnabled();
+    expect(browserErrors).toEqual([]);
   });
-
-  await page.goto("/wordpix/#/profile");
-  await page.getByRole("button", { name: "Sign in to sync progress", exact: true }).click();
-  const email = page.getByLabel("Email address");
-  const password = page.getByLabel("Password");
-  await email.fill("offline-test@example.invalid");
-  await password.fill("not-a-real-password");
-  await page.getByRole("button", { name: "Sign In", exact: true }).click();
-
-  await expect(page.getByRole("alert")).toContainText("Invalid login credentials");
-  await expect(email).toHaveValue("offline-test@example.invalid");
-  await expect(password).toHaveValue("not-a-real-password");
-  await expect(page.getByRole("dialog", { name: "Welcome Back" })).toBeVisible();
-  await expect(page.getByRole("button", { name: "Continue as Guest" })).toBeEnabled();
-  expect(browserErrors).toEqual([]);
 });
 
 test("a preserved sync failure exposes a clear recovery action", async ({ page }) => {

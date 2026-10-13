@@ -37,8 +37,4 @@ test("Business recall supports answer-later navigation and retains checked answe
     .analyze();
   expect(audit.violations).toEqual([]);
   expect(errors).toEqual([]);
-  await page.screenshot({
-    path: `output/playwright/guided-recall-${test.info().project.name}.png`,
-    fullPage: true,
-  });
 });

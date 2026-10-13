@@ -23,6 +23,18 @@ afterEach(() => {
 });
 
 describe("service worker registration", () => {
+  it("keeps the app usable when worker registration is disabled", async () => {
+    const register = mockServiceWorker();
+    register.mockResolvedValue(undefined);
+    vi.spyOn(document, "readyState", "get").mockReturnValue("complete");
+    const error = vi.spyOn(console, "error").mockImplementation(() => undefined);
+
+    registerServiceWorker();
+    await new Promise((resolve) => setTimeout(resolve, 0));
+
+    expect(register).toHaveBeenCalledOnce();
+    expect(error).not.toHaveBeenCalled();
+  });
   it("registers immediately when React mounts after window load", () => {
     const register = mockServiceWorker();
     vi.spyOn(document, "readyState", "get").mockReturnValue("complete");

@@ -1,9 +1,9 @@
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./offlineTest";
 import { reloadOffline } from "./offlineReload";
 
 test("word details fetch bounded shards and survive a cached offline reload", async ({
   page,
-  context,
+  offlineServer,
 }) => {
   test.setTimeout(60_000);
   const scripts = new Set<string>();
@@ -55,10 +55,10 @@ test("word details fetch bounded shards and survive a cached offline reload", as
     )
     .toBe(true);
 
-  await context.setOffline(true);
+  offlineServer.setOffline(true);
   await reloadOffline(page);
   await page.getByRole("button", { name: "Word details", exact: true }).click();
   await expect(page.getByRole("region", { name: /^Examples/ })).toBeVisible();
-  await context.setOffline(false);
+  offlineServer.setOffline(false);
   expect(errors).toEqual([]);
 });

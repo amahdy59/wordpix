@@ -7,7 +7,7 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
 
-  await page.goto("/#/hadith");
+  await page.goto("/#/hadith", { waitUntil: "domcontentloaded" });
 
   await expect(page.getByRole("heading", { name: "Hadith English curriculum" })).toBeVisible();
   const results = page.getByRole("tabpanel");
@@ -63,7 +63,7 @@ test("pronunciation curriculum is grouped, searchable, and uses R2-backed artwor
     if (request.url().includes("/pronunciation/v1/")) imageRequests.push(request.url());
   });
 
-  await page.goto("/#/pronunciation");
+  await page.goto("/#/pronunciation", { waitUntil: "domcontentloaded" });
 
   await expect(page.getByRole("heading", { name: "Pronunciation curriculum" })).toBeVisible();
   await expect(page.getByRole("heading", { name: /Sound contrasts/i })).toBeVisible();
