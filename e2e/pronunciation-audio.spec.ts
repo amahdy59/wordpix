@@ -95,7 +95,9 @@ test("pronunciation uses the reconciled R2 manifest key", async ({ page }) => {
   await page.goto("/#/pronunciation/lesson-01", { waitUntil: "domcontentloaded" });
   await waitForStyles(page);
   await expect(page.getByRole("heading", { name: /same or different/i })).toBeVisible();
-  await page.getByRole("button", { name: "Play model pronunciation" }).click();
+  const playButton = page.getByRole("button", { name: "Play model pronunciation" });
+  await expect(playButton).toBeVisible();
+  await playButton.click();
   await expect.poll(() => audioRequests.some((url) => url.endsWith(expectedKey!))).toBe(true);
   expect(pageErrors).toEqual([]);
 });
