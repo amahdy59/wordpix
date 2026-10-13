@@ -125,6 +125,7 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
       </header>
 
       <SpeechRecordCompare
+        defaultOpen={false}
         target={speakData.description || t("hadith.pilot.speak.description")}
         modelText={modelText}
         title={t("hadith.speakingStudio")}

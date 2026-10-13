@@ -174,6 +174,7 @@ export function BusinessVocabularyStage({ unit, onNext }: Props) {
           activeAudioText={activeAudioText}
           isPlaying={audio.isPlaying}
           isAudioError={audio.isError}
+          isAudioLoading={audio.isLoading}
         />
       )}
 

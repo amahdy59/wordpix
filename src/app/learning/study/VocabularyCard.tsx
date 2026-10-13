@@ -2,7 +2,9 @@ import { useState } from "react";
 import type { VocabularyItem } from "../../data/lessons";
 import type { WordMetaEntry, UnitLearningMaterials } from "../types";
 import { useAudio } from "../../shared/useAudio";
-import { Volume2, ChevronDown, ChevronUp, Eye } from "lucide-react";
+import { ChevronDown, ChevronUp, Eye } from "lucide-react";
+import { AudioButton } from "../../shared/AudioButton";
+import { AudioRecoveryStatus } from "../../shared/AudioRecoveryStatus";
 import { WordImage } from "../../shared/WordImage";
 import { useI18n } from "../../../i18n";
 
@@ -25,7 +27,7 @@ export function VocabularyCard({
 }: Props) {
   const { t } = useI18n();
   const [speechRate, setSpeechRate] = useState<0.8 | 1.0 | 1.2>(1.0);
-  const { speak, stop } = useAudio({ lang: "en-US", rate: speechRate });
+  const audio = useAudio({ lang: "en-US", rate: speechRate });
   const [showDetails, setShowDetails] = useState(false);
   const [showImmersionArabic, setShowImmersionArabic] = useState(false);
 
@@ -35,8 +37,8 @@ export function VocabularyCard({
   );
 
   const handleAudio = () => {
-    stop();
-    speak(word.label);
+    audio.stop();
+    audio.speak(word.label);
   };
 
   const cycleSpeed = () => {
@@ -70,7 +72,7 @@ export function VocabularyCard({
             </button>
           </div>
         ) : (
-          <div className="w-full flex flex-col items-center animate-in fade-in zoom-in-95 duration-200">
+          <div className="w-full flex flex-col items-center motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-95 duration-200">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-foreground mb-1.5 break-words max-w-full tracking-tight">
               {word.label}
             </h3>
@@ -91,25 +93,24 @@ export function VocabularyCard({
                       (word as { arabic?: string; ar?: string }).ar}
                   </span>
                 )}
-              <button
-                type="button"
-                onClick={handleAudio}
-                className="size-10 shrink-0 rounded-xl bg-secondary text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
-                aria-label={`Listen to ${word.label}`}
-                title={`Listen to ${word.label} (Press A)`}
-              >
-                <Volume2 className="size-5" aria-hidden />
-              </button>
+              <AudioButton
+                onPlay={handleAudio}
+                isPlaying={audio.isPlaying}
+                isLoading={audio.isLoading}
+                isError={audio.isError}
+                label={t("pronunciationEnhancements.playWord", { word: word.label })}
+                size="sm"
+              />
               <button
                 type="button"
                 onClick={cycleSpeed}
                 className="px-2.5 py-1 text-sm font-mono font-bold rounded-xl bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-                aria-label={`Speech playback speed: ${speechRate.toFixed(1)}x. Click to change.`}
-                title={`Change speech playback speed`}
+                aria-label={t("audioRecovery.speedLabel", { rate: speechRate.toFixed(1) })}
               >
                 {`${speechRate.toFixed(1)}x`}
               </button>
             </div>
+            <AudioRecoveryStatus failed={audio.isError} supported={audio.isSupported} />
 
             <div className="w-full border-t border-border/70 pt-3 text-start">
               <button
@@ -134,7 +135,7 @@ export function VocabularyCard({
               {showDetails && (
                 <div
                   id={`word-details-${word.id}`}
-                  className="mt-2 space-y-3 animate-in fade-in slide-in-from-top-1 duration-150 p-3 rounded-2xl bg-secondary/20 border border-border/60"
+                  className="mt-2 space-y-3 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-top-1 duration-150 p-3 rounded-2xl bg-secondary/20 border border-border/60"
                 >
                   {word.description && (
                     <div>

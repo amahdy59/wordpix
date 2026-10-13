@@ -276,6 +276,7 @@ export function HadithVocabularyStage({
         activeAudioText={activeAudioText}
         isPlaying={audio.isPlaying}
         isAudioError={audio.isError}
+        isAudioLoading={audio.isLoading}
         showArabic={true}
         allowViewToggle={true}
         hideCaption={true}

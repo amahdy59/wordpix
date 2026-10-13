@@ -2377,5 +2377,17 @@
     },
     "recordingPrivacyTitle": "Recording privacy",
     "recordCompareTitle": "Record and compare"
+  },
+  "audioRecovery": {
+    "play": "Play pronunciation",
+    "retryLabel": "{label} (retry audio)",
+    "loadingLabel": "{label} (loading audio)",
+    "playingLabel": "{label} (playing)",
+    "failed": "This audio could not play. Check your volume and try again. You can continue reading.",
+    "offline": "This audio could not play while you are offline. Reconnect and retry, or continue reading.",
+    "unsupported": "Audio is unavailable in this browser. You can continue reading.",
+    "speedLabel": "Speech playback speed: {rate}x. Activate to change.",
+    "moreWords": "More words ({count})",
+    "listenBrief": "Listen to the speaking brief"
   }
 }

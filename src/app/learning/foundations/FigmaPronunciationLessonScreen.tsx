@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Check, Volume2 } from "lucide-react";
 import type { Action } from "../../types";
 import { CourseLessonNavigation } from "../../shared/CourseLessonNavigation";
 import { HelpDisclosure } from "../../shared/HelpDisclosure";
+import { useAudioRecoveryMessage } from "../../shared/AudioRecoveryStatus";
 import { useAudio } from "../../shared/useAudio";
 import { ADVANCE_DELAY_MS, useAutoAdvance } from "../../shared/useAutoAdvance";
 import { useSpokenFeedback } from "../../shared/useSpokenFeedback";
@@ -25,6 +26,8 @@ import {
   pronunciationTargetId,
   pronunciationTrialCount,
   getPronunciationTargets,
+  pronunciationContentRevision,
+  resumablePronunciationSession,
 } from "./pronunciationTargets";
 import type { PronunciationSession, PronunciationTargetEvidence } from "./pronunciationProgress";
 
@@ -76,21 +79,17 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   const lessonId = `lesson-${String(lessonNumber).padStart(2, "0")}`;
   const progress = state.pronunciationProgress[lessonId];
   const activity = getFigmaPronunciationActivityData(lessonNumber);
+  const savedSession = resumablePronunciationSession(
+    lessonNumber,
+    progress?.currentStage ?? 0,
+    progress?.session
+  );
   // Legacy checkpoints lack scored evidence: retain historical progress and start a fair new attempt.
   const [stage, setStage] = useState<Stage>(() =>
-    progress?.session?.version === 2
-      ? (Math.min(4, Math.max(0, progress.currentStage)) as Stage)
-      : 0
+    savedSession ? (progress!.currentStage as Stage) : 0
   );
   const [session, setSession] = useState<PronunciationSession>(() => {
-    if (progress?.session?.version !== 2) return emptySession();
-    return {
-      ...progress.session,
-      trial: Math.min(
-        progress.session.trial,
-        Math.max(0, pronunciationTrialCount(lessonNumber, stage) - 1)
-      ),
-    };
+    return savedSession ?? emptySession();
   });
   const sessionRef = useRef(session);
   const finishedRef = useRef(false);
@@ -119,10 +118,11 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     question?.target ??
     activity.items.find((item) => item.label.toLowerCase() === activity.model.toLowerCase()) ??
     activity.items[0];
-  const audioUnavailable =
-    isError ||
+  const clipUnavailable =
     hasReportedPronunciationAudioIssue(target?.label ?? activity.model) ||
     !getPronunciationAudioClip(target?.label ?? activity.model);
+  const audioUnavailable = clipUnavailable || isError || status === "unsupported";
+  const recoveryMessage = useAudioRecoveryMessage(isError, status !== "unsupported");
   const targetId = pronunciationTargetId(target?.label ?? activity.model);
   const trials = pronunciationTrialCount(lessonNumber, stage);
   const speakingEvidence = session.targetEvidence?.[targetId]?.speaking;
@@ -143,6 +143,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   const save = (nextStage: Stage, nextSession: PronunciationSession) => {
     const saved: PronunciationSession = {
       ...nextSession,
+      contentRevision: pronunciationContentRevision(lessonNumber),
       currentTargetId:
         nextStage > 0
           ? pronunciationTargetId(
@@ -545,7 +546,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 <div className="flex flex-wrap items-center gap-2">
                   <button
                     type="button"
-                    disabled={audioUnavailable}
+                    disabled={clipUnavailable || status === "unsupported"}
                     aria-busy={status === "loading"}
                     className={`min-h-11 ${buttonClass} border-primary text-primary`}
                     onClick={() =>
@@ -555,7 +556,11 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     }
                   >
                     <Volume2 className="size-5" aria-hidden />
-                    {isPlaying ? t("lessonShell.stopAudio") : t("pronunciation.play")}
+                    {isPlaying
+                      ? t("lessonShell.stopAudio")
+                      : isError && !clipUnavailable
+                        ? t("readingPlayer.retry")
+                        : t("pronunciation.play")}
                   </button>
                   <button
                     type="button"
@@ -586,9 +591,9 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   </button>
                 </div>
               )}
-              {isError && (
+              {recoveryMessage && (
                 <p role="alert" className="text-base text-foreground">
-                  {t("speechPractice.modelError")}
+                  {recoveryMessage}
                 </p>
               )}
               {stage === 0 ? (

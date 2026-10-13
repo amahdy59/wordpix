@@ -45,6 +45,16 @@ export function usePrivateRecording({
   }, []);
 
   const deleteRecording = useCallback(() => {
+    // A late permission response must not start a hidden or discarded recording.
+    generationRef.current += 1;
+    const recorder = recorderRef.current;
+    if (recorder) {
+      recorder.onstop = null;
+      recorder.ondataavailable = null;
+      if (recorder.state === "recording") recorder.stop();
+    }
+    recorderRef.current = null;
+    stopTracks();
     if (urlRef.current) URL.revokeObjectURL(urlRef.current);
     urlRef.current = null;
     setRecordingUrl(null);
@@ -52,7 +62,7 @@ export function usePrivateRecording({
     setDurationMs(0);
     setElapsedMs(0);
     setStatus(supported ? "idle" : "unsupported");
-  }, [supported]);
+  }, [supported, stopTracks]);
 
   const stop = useCallback(() => {
     const recorder = recorderRef.current;

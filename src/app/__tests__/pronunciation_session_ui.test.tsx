@@ -70,6 +70,17 @@ describe("pronunciation lesson session", () => {
     fireEvent.click(screen.getByRole("button", { name: "Next question" }));
     expect(mocks.checkpoint.mock.calls.at(-1)![2].outcomes).toEqual({});
   });
+  it("offers retry after a runtime failure without allowing a scored answer before recovery", () => {
+    mocks.error = true;
+    renderLesson();
+    fireEvent.click(screen.getByRole("button", { name: "Start listening" }));
+    const retry = screen.getByRole("button", { name: "Try audio again" });
+    expect(retry).toBeEnabled();
+    expect(answer(1, 0)).toHaveAttribute("aria-disabled", "true");
+    fireEvent.click(retry);
+    expect(mocks.speak).toHaveBeenCalled();
+    expect(mocks.checkpoint.mock.calls.at(-1)![2].outcomes).toEqual({});
+  });
   it("retains focus on a correct choice and prevents repeat scoring", () => {
     renderLesson();
     expect(mocks.speak).not.toHaveBeenCalled();

@@ -1,15 +1,51 @@
 {
-  "version": "0.1.31",
+  "version": "0.1.32",
   "notes": [
-    "Stronger checks protect saved offline progress and mobile learning flows before each release."
+    "More focused speaking activities and clearer audio recovery.",
+    "Safer pronunciation resume preserves previous learning evidence."
   ],
-  "notesAr": ["فحوصات أقوى لحماية التقدم المحفوظ دون اتصال وتجربة التعلم على الهاتف قبل كل إصدار."],
+  "notesAr": [
+    "أنشطة تحدث أكثر تركيزًا وإرشادات أوضح لاستعادة الصوت.",
+    "استئناف أكثر أمانًا للنطق مع الحفاظ على أدلة التعلم السابقة."
+  ],
   "releases": [
+    {
+      "id": "0.1.32",
+      "version": "0.1.32",
+      "date": "2026-10-13",
+      "title": {
+        "en": "Focused practice and safer resume",
+        "ar": "تدريب أكثر تركيزًا واستئناف أكثر أمانًا"
+      },
+      "changes": [
+        {
+          "id": "safe-pronunciation-resume",
+          "category": "fixed",
+          "en": "Pronunciation attempts recover safely from invalid saved values and changed lesson targets while preserving previous scores and word evidence.",
+          "ar": "تستعيد محاولات النطق حالتها بأمان عند وجود قيم محفوظة غير صالحة أو تغير أهداف الدرس، مع الحفاظ على النتائج السابقة وأدلة الكلمات."
+        },
+        {
+          "id": "focused-speaking-and-glossaries",
+          "category": "improved",
+          "en": "Business, Conversation and Hadith keep optional recording behind an expandable panel. Longer reading glossaries show six words first, with every remaining word available on request.",
+          "ar": "تضع دورات الأعمال والمحادثة والحديث التسجيل الاختياري داخل لوحة قابلة للفتح. تعرض قوائم مفردات القراءة الطويلة ست كلمات أولًا مع إتاحة بقية الكلمات عند الطلب."
+        },
+        {
+          "id": "audio-recovery-and-private-recording",
+          "category": "fixed",
+          "en": "Audio failures explain how to retry online or offline. Business speaking uses the private recorder, and closing a recording panel stops hidden playback and microphone activity. Pronunciation playback failures can be retried without leaving the lesson.",
+          "ar": "توضح أخطاء الصوت كيفية إعادة المحاولة مع الاتصال أو بدونه. يستخدم تدريب الأعمال المسجّل الخاص، ويوقف إغلاق لوحة التسجيل تشغيل الصوت والميكروفون المخفيين. يمكن إعادة محاولة تشغيل الصوت في دروس النطق دون مغادرة الدرس."
+        }
+      ]
+    },
     {
       "id": "0.1.31",
       "version": "0.1.31",
       "date": "2026-10-13",
-      "title": { "en": "More reliable release checks", "ar": "فحوصات إصدار أكثر موثوقية" },
+      "title": {
+        "en": "More reliable release checks",
+        "ar": "فحوصات إصدار أكثر موثوقية"
+      },
       "changes": [
         {
           "id": "browser-release-protection",
