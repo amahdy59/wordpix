@@ -37,6 +37,8 @@ export { CurriculumTopicCard } from "./CurriculumTopicCard";
 export type { CurriculumTopicCardProps } from "./CurriculumTopicCard";
 
 export { HelpDisclosure } from "./HelpDisclosure";
+export { LessonActionDock } from "./LessonActionDock";
+export type { LessonActionDockProps } from "./LessonActionDock";
 
 export { CurriculumHeroHeader } from "./CurriculumHeroHeader";
 export { UnitVideoPlayer } from "./UnitVideoPlayer";
