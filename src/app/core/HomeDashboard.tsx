@@ -113,7 +113,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "release-notes" })}
-            className="flex min-h-[36px] items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 font-sans text-xs font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all shadow-wp-xs"
+            className="flex min-h-[44px] items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-2 font-sans text-xs sm:text-sm font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all shadow-wp-xs"
             aria-label={t("releaseNotes.viewTitle", { defaultValue: "What's New in WordPix" })}
           >
             <Sparkles className="size-3.5 text-primary" aria-hidden />
