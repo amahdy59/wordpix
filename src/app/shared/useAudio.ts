@@ -131,6 +131,51 @@ function unlockSynthesis(synth: SpeechSynthesis): void {
   }
 }
 
+let audioUnlocked = false;
+
+export function unlockAudio(): void {
+  if (audioUnlocked || typeof window === "undefined") return;
+  audioUnlocked = true;
+  try {
+    const silentAudio = new Audio(
+      "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA="
+    );
+    silentAudio.volume = 0;
+    const playPromise = silentAudio.play();
+    if (playPromise) {
+      playPromise.catch(() => {
+        audioUnlocked = false;
+      });
+    }
+  } catch {
+    audioUnlocked = false;
+  }
+}
+
+if (typeof window !== "undefined") {
+  const onFirstInteraction = () => {
+    unlockAudio();
+    if (window.speechSynthesis) unlockSynthesis(window.speechSynthesis);
+    window.removeEventListener("pointerdown", onFirstInteraction, true);
+    window.removeEventListener("keydown", onFirstInteraction, true);
+  };
+  window.addEventListener("pointerdown", onFirstInteraction, { capture: true, once: true });
+  window.addEventListener("keydown", onFirstInteraction, { capture: true, once: true });
+}
+
+export function preloadAudioClip(urlOrKey: string): void {
+  if (typeof window === "undefined" || !urlOrKey) return;
+  const isKey = /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(urlOrKey);
+  const primaryUrl = isKey ? (assetUrl(urlOrKey) ?? resolveAssetUrl(`/${urlOrKey}`)) : urlOrKey;
+  if (!primaryUrl) return;
+  const cacheKey = `cdn:${primaryUrl}`;
+  if (audioCache.has(cacheKey)) return;
+
+  const audio = new Audio();
+  audio.preload = "auto";
+  audio.src = primaryUrl;
+}
+
 function cacheAudioUrl(key: string, url: string) {
   if (audioCache.has(key)) return;
   if (audioCache.size >= MAX_AUDIO_CACHE_SIZE) {
@@ -421,9 +466,16 @@ export function useAudio({
         };
 
         currentAudioRef.current = audio;
-        audio.play().catch(() => {
+        audio.play().catch((err: unknown) => {
           if (!isCurrent()) return;
           clearStall();
+          const isAbort = err instanceof Error && err.name === "AbortError";
+          const isNotAllowed = err instanceof Error && err.name === "NotAllowedError";
+          if (isAbort) return;
+          if (isNotAllowed) {
+            publish("idle");
+            return;
+          }
           fallbackToSynthesis(cleanText, targetLang);
         });
       };
@@ -443,8 +495,14 @@ export function useAudio({
           objectKey && /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(objectKey)
             ? assetUrl(objectKey)
             : null;
+        const localExplicitUrl =
+          objectKey && /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(objectKey)
+            ? resolveAssetUrl(`/${objectKey}`)
+            : null;
         const urls = explicitUrl
-          ? [explicitUrl]
+          ? preferLocal && localExplicitUrl
+            ? [localExplicitUrl, explicitUrl]
+            : [explicitUrl, ...(localExplicitUrl ? [localExplicitUrl] : [])]
           : hasAssetHost()
             ? await audioUrls(pronunciationAsset.text, [
                 pronunciationAsset.profile,
@@ -608,12 +666,23 @@ export function useAudio({
             }
           }, MEDIA_STREAM_TIMEOUT_MS);
 
-          audio.play().catch(() => {
+          audio.play().catch((err: unknown) => {
             if (!isCurrent()) {
               settle(true);
               return;
             }
             clearStall();
+            const isAbort = err instanceof Error && err.name === "AbortError";
+            const isNotAllowed = err instanceof Error && err.name === "NotAllowedError";
+            if (isAbort) {
+              settle(true);
+              return;
+            }
+            if (isNotAllowed) {
+              publish("idle");
+              settle(true);
+              return;
+            }
             settle(false);
           });
         });

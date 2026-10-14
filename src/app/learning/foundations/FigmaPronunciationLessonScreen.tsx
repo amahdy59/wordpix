@@ -97,7 +97,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   const [completedScore, setCompletedScore] = useState<number | null>(null);
   const [slowPlayback, setSlowPlayback] = useState(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
-  const { speak, stop, isPlaying, isError, status } = useAudio({
+  const { speak, stop, isError, status } = useAudio({
     lang: "en-US",
     rate: slowPlayback ? 0.75 : 1,
     preferLocal: true,
@@ -299,6 +299,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     shortcutRef.current = { selectAnswer, play, advance };
   });
 
+  const lastAutoplayKeyRef = useRef<string>("");
   // Automatically play audio prompts on listening questions (Stage 1: Listen, Stage 4: Transfer)
   useEffect(() => {
     if (completedScore !== null || finishedRef.current) return;
@@ -307,18 +308,23 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     if (audioUnavailable) return;
     if (state.accessibility.includeListening === false) return;
 
+    const trialKey = `${stage}:${session.trial}:${target?.label ?? activity.model}`;
+    if (lastAutoplayKeyRef.current === trialKey) return;
+    lastAutoplayKeyRef.current = trialKey;
+
     const timer = setTimeout(() => {
       if (sessionRef.current.answer === null && !finishedRef.current) {
         shortcutRef.current.play();
       }
-    }, 300);
+    }, 250);
 
     return () => clearTimeout(timer);
   }, [
     stage,
     session.trial,
     session.answer,
-    session.currentTargetId,
+    target?.label,
+    activity.model,
     completedScore,
     audioUnavailable,
     state.accessibility.includeListening,
@@ -580,13 +586,13 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     aria-busy={status === "loading"}
                     className={`min-h-11 ${buttonClass} border-primary text-primary`}
                     onClick={() =>
-                      isPlaying
+                      status === "playing"
                         ? stop()
                         : speak(target?.label ?? activity.model, undefined, clip?.objectKey)
                     }
                   >
                     <Volume2 className="size-5" aria-hidden />
-                    {isPlaying
+                    {status === "playing"
                       ? t("lessonShell.stopAudio")
                       : isError && !clipUnavailable
                         ? t("readingPlayer.retry")
@@ -686,7 +692,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 </>
               ) : stage === 3 ? (
                 <div className="space-y-3">
-                  {target && !target.context && target.imageRef && (
+                  {target && target.imageRef && (
                     <div className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-border bg-card">
                       <WordImage item={target} className="aspect-[16/9] w-full object-cover" />
                     </div>

@@ -1,16 +1,45 @@
 {
-  "version": "0.1.35",
+  "version": "0.1.36",
   "notes": [
-    "Listening discrimination questions automatically play target word audio on load.",
-    "Questions advance automatically after feedback by default, defeatable via settings.",
-    "Clean eleven_v4 natural pronunciation clips synthesized for van, bat, and pet."
+    "Improved audio autoplay reliability and timing across all pronunciation listening checks.",
+    "Eliminated audio interruption race conditions when tapping playback controls during load.",
+    "Guaranteed visual image illustrations across all pronunciation practice stages."
   ],
   "notesAr": [
-    "تشغيل تلقائي للصوت في أسئلة التمييز السمعي بمجرد ظهور السؤال.",
-    "الانتقال التلقائي للأسئلة بعد الإجابة مفعل افتراضيًا، مع خيار تعطيله من الإعدادات.",
-    "تسجيلات طبيعية نقية بنموذج eleven_v4 لكلمات van و bat و pet لضمان دقة مخارج الحروف."
+    "تحسين موثوقية وتوقيت التشغيل التلقائي للصوت في جميع اختبارات الاستماع للنطق.",
+    "معالجة انقطاع الصوت العرضي عند النقر على عناصر التحكم أثناء التحميل.",
+    "ضمان ظهور الصور التوضيحية لجميع الكلمات في كافة مراحل تدريب النطق."
   ],
   "releases": [
+    {
+      "id": "0.1.36",
+      "version": "0.1.36",
+      "date": "2026-10-14",
+      "title": {
+        "en": "Pronunciation audio reliability & full image coverage",
+        "ar": "موثوقية صوت النطق والتغطية الكاملة للصور"
+      },
+      "changes": [
+        {
+          "id": "pronunciation-autoplay-resilience",
+          "category": "improved",
+          "en": "Hardened audio autoplay lifecycle and timing across consecutive listening trials, preventing false error states from browser autoplay restrictions.",
+          "ar": "تعزيز موثوقية التشغيل التلقائي للصوت عبر الأسئلة المتتالية ومعالجة قيود المتصفحات بمرونة دون إيقاف التفاعل."
+        },
+        {
+          "id": "audio-loading-interaction-resilience",
+          "category": "fixed",
+          "en": "Clicking the pronunciation play control while media is loading or buffering no longer cancels playback.",
+          "ar": "النقر على زر تشغيل النطق أثناء تحميل الصوت لم يعد يلغي التشغيل، بل يبدأه فوراً بإذن المستخدم المباشر."
+        },
+        {
+          "id": "pronunciation-stage3-images",
+          "category": "improved",
+          "en": "Rendered visual images for every pronunciation target word in Stage 3 speaking practice.",
+          "ar": "عرض الصور التوضيحية لجميع الكلمات المستهدفة في مرحلة التحدث والتسجيل (المرحلة 3)."
+        }
+      ]
+    },
     {
       "id": "0.1.35",
       "version": "0.1.35",

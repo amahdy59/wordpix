@@ -15,7 +15,10 @@ const mocks = vi.hoisted(() => ({
   checkpoint: vi.fn(),
   complete: vi.fn(),
   speak: vi.fn(),
+  stop: vi.fn(),
+  preload: vi.fn(),
   error: false,
+  status: "idle",
   autoAdvance: false,
   speakFeedback: vi.fn((_input: unknown, onComplete?: () => void) => {
     onComplete?.();
@@ -36,11 +39,13 @@ vi.mock("../context/LearnerContext", async (importOriginal) => ({
 vi.mock("../shared/useAudio", () => ({
   useAudio: () => ({
     speak: mocks.speak,
-    stop: vi.fn(),
-    isPlaying: false,
+    stop: mocks.stop,
+    isPlaying: mocks.status === "playing" || mocks.status === "loading",
     isError: mocks.error,
-    status: "idle",
+    status: mocks.status,
   }),
+  preloadAudioClip: (key: string) => mocks.preload(key),
+  unlockAudio: vi.fn(),
 }));
 vi.mock("../shared/useSpokenFeedback", () => ({
   useSpokenFeedback: () => ({ speakFeedback: mocks.speakFeedback, cancel: vi.fn() }),
@@ -223,5 +228,41 @@ describe("pronunciation lesson session", () => {
     });
     expect(mocks.speak).toHaveBeenCalled();
     vi.useRealTimers();
+  });
+
+  it("autoplays prompt audio across consecutive trials in listening stage", () => {
+    vi.useFakeTimers();
+    mocks.autoAdvance = true;
+    renderLesson();
+    fireEvent.click(screen.getByRole("button", { name: "Start listening" }));
+    act(() => {
+      vi.advanceTimersByTime(350);
+    });
+    expect(mocks.speak).toHaveBeenCalledTimes(1);
+
+    // Answer Check 1 correctly
+    fireEvent.click(answer(1, 0));
+    // Advance timers for feedback and autoAdvance
+    act(() => {
+      vi.advanceTimersByTime(1500);
+    });
+    // Check 2 should be active; advance timers for Check 2 autoplay
+    act(() => {
+      vi.advanceTimersByTime(350);
+    });
+    expect(mocks.speak).toHaveBeenCalledTimes(2);
+    vi.useRealTimers();
+  });
+
+  it("does not stop audio when play button is clicked while status is loading", () => {
+    mocks.status = "loading";
+    renderLesson();
+    fireEvent.click(screen.getByRole("button", { name: "Start listening" }));
+    mocks.stop.mockClear();
+    mocks.speak.mockClear();
+    const playButton = screen.getByRole("button", { name: "Play model pronunciation" });
+    fireEvent.click(playButton);
+    expect(mocks.stop).not.toHaveBeenCalled();
+    expect(mocks.speak).toHaveBeenCalled();
   });
 });
