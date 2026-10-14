@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import { I18nProvider } from "../../i18n";
 import { FigmaPronunciationLessonScreen } from "../learning/foundations/FigmaPronunciationLessonScreen";
 import {
@@ -16,11 +16,18 @@ const mocks = vi.hoisted(() => ({
   complete: vi.fn(),
   speak: vi.fn(),
   error: false,
+  autoAdvance: false,
+  speakFeedback: vi.fn((_input: unknown, onComplete?: () => void) => {
+    onComplete?.();
+  }),
 }));
 vi.mock("../context/LearnerContext", async (importOriginal) => ({
   ...(await importOriginal<typeof import("../context/LearnerContext")>()),
   useLearner: () => ({
-    state: { pronunciationProgress: mocks.progress, accessibility: { autoAdvance: false } },
+    state: {
+      pronunciationProgress: mocks.progress,
+      accessibility: { autoAdvance: mocks.autoAdvance },
+    },
     setAccessibility: vi.fn(),
     recordPronunciationCheckpoint: mocks.checkpoint,
     recordPronunciationCompletion: mocks.complete,
@@ -36,7 +43,7 @@ vi.mock("../shared/useAudio", () => ({
   }),
 }));
 vi.mock("../shared/useSpokenFeedback", () => ({
-  useSpokenFeedback: () => ({ speakFeedback: vi.fn(), cancel: vi.fn() }),
+  useSpokenFeedback: () => ({ speakFeedback: mocks.speakFeedback, cancel: vi.fn() }),
 }));
 vi.mock("../learning/foundations/PrivateRecordCompare", () => ({
   PrivateRecordCompare: () => null,
@@ -148,5 +155,60 @@ describe("pronunciation lesson session", () => {
     const saved = mocks.checkpoint.mock.calls.at(-1)![2];
     expect(saved.attempts).toBe(0);
     expect(saved.outcomes[pronunciationEvidenceKey(1, question.target.label)]).toBe(false);
+  });
+  it("enables manual question advance in transfer stage without requiring speaking evidence", () => {
+    const trials = pronunciationTrialCount(3, 4);
+    mocks.progress["lesson-03"] = {
+      status: "in-progress",
+      currentStage: 4,
+      bestScorePercent: 0,
+      sessions: 0,
+      updatedAt: new Date().toISOString(),
+      session: {
+        version: 2,
+        trial: 0,
+        attempts: 0,
+        answer: null,
+        unlockedStage: 4,
+        outcomes: {},
+        targetEvidence: {},
+      },
+    };
+    renderLesson();
+    expect(screen.getByText(new RegExp(`^Check 1 of ${trials} in this stage$`))).toBeVisible();
+    fireEvent.click(answer(4, 0));
+    const nextButton = screen.getByRole("button", { name: "Next question" });
+    expect(nextButton).toBeVisible();
+    fireEvent.click(nextButton);
+    expect(screen.getByText(new RegExp(`^Check 2 of ${trials} in this stage$`))).toBeVisible();
+  });
+  it("automatically advances to next question in transfer stage when autoAdvance is enabled", () => {
+    vi.useFakeTimers();
+    mocks.autoAdvance = true;
+    const trials = pronunciationTrialCount(3, 4);
+    mocks.progress["lesson-03"] = {
+      status: "in-progress",
+      currentStage: 4,
+      bestScorePercent: 0,
+      sessions: 0,
+      updatedAt: new Date().toISOString(),
+      session: {
+        version: 2,
+        trial: 0,
+        attempts: 0,
+        answer: null,
+        unlockedStage: 4,
+        outcomes: {},
+        targetEvidence: {},
+      },
+    };
+    renderLesson();
+    expect(screen.getByText(new RegExp(`^Check 1 of ${trials} in this stage$`))).toBeVisible();
+    fireEvent.click(answer(4, 0));
+    act(() => {
+      vi.advanceTimersByTime(1200);
+    });
+    expect(screen.getByText(new RegExp(`^Check 2 of ${trials} in this stage$`))).toBeVisible();
+    vi.useRealTimers();
   });
 });

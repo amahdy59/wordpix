@@ -1,16 +1,33 @@
 {
-  "version": "0.1.33",
+  "version": "0.1.34",
   "notes": [
-    "Every pronunciation question choice and speaking card now displays its authored illustration.",
-    "More focused speaking activities and clearer audio recovery.",
+    "Fixed question advancement and auto-advance in pronunciation transfer checks.",
+    "Every pronunciation question choice and speaking card displays its authored illustration.",
     "Upgraded full pronunciation curriculum with studio-grade eleven_v4 dual-speaker audio."
   ],
   "notesAr": [
+    "إصلاح تقدم الأسئلة والانتقال التلقائي في اختبارات نقل النطق.",
     "تعرض جميع خيارات أسئلة النطق وبطاقات التحدث رسوماتها التوضيحية المعتمدة.",
-    "أنشطة تحدث أكثر تركيزًا وإرشادات أوضح لاستعادة الصوت.",
     "ترقية منهاج النطق بالكامل بتسجيلات eleven_v4 فائقة النقاء مع دعم النقل الصوتي متعدد الأصوات."
   ],
   "releases": [
+    {
+      "id": "0.1.34",
+      "version": "0.1.34",
+      "date": "2026-10-14",
+      "title": {
+        "en": "Pronunciation transfer progression & auto-advance",
+        "ar": "تقدم تدريبات نقل النطق والانتقال التلقائي"
+      },
+      "changes": [
+        {
+          "id": "pronunciation-transfer-progression",
+          "category": "fixed",
+          "en": "Fixed question advancement and auto-advance in pronunciation transfer checks so learners smoothly advance after answering.",
+          "ar": "إصلاح تقدم الأسئلة والانتقال التلقائي في اختبارات نقل النطق لضمان انتقال المتعلمين بسلاسة بعد الإجابة."
+        }
+      ]
+    },
     {
       "id": "0.1.33",
       "version": "0.1.33",

@@ -132,8 +132,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     stage === 0 ||
     (stage === 3
       ? speakingDone
-      : (passed || session.attempts >= 2 || session.answer === "__unavailable__") &&
-        (stage !== 4 || speakingDone));
+      : passed || session.attempts >= 2 || session.answer === "__unavailable__");
   const questionId = pronunciationEvidenceKey(stage, target?.label ?? activity.model);
   const clip = getPronunciationAudioClip(target?.label ?? activity.model, stage === 4);
   const play = (text = target?.label ?? activity.model) => {
@@ -244,7 +243,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
         chosenLabel: correct ? null : value,
       },
       () => {
-        if (correct && stage !== 4 && generation === generationRef.current)
+        if (correct && generation === generationRef.current)
           autoAdvance.schedule(ADVANCE_DELAY_MS.correct);
       }
     );
@@ -691,6 +690,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     <button
                       key={item.label}
                       type="button"
+                      tabIndex={0}
                       aria-pressed={session.answer === item.label}
                       aria-disabled={passed || audioUnavailable}
                       aria-label={t("pronunciation.choiceLabel", {
@@ -821,24 +821,6 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 <p>{t("pronunciation.previousBest", { score: progress.bestScorePercent })}</p>
               )}
             </HelpDisclosure>
-            {stage === 4 && (
-              <div onFocusCapture={clearPending} onPointerDownCapture={clearPending}>
-                <PrivateRecordCompare
-                  key={questionId}
-                  target={target?.label ?? activity.model}
-                  onEvidence={recordSpeaking}
-                />
-                {!speakingDone && (
-                  <button
-                    type="button"
-                    className={buttonClass}
-                    onClick={() => recordSpeaking("unassessed")}
-                  >
-                    {t("pronunciationEnhancements.skipSpeaking")}
-                  </button>
-                )}
-              </div>
-            )}
             <div className="wp-sticky-controls relative z-30 border-t border-border bg-background py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
               {canAdvance ? (
                 <button
@@ -860,8 +842,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               ) : (
                 <p className="text-center text-base text-foreground">
                   {t(
-                    stage === 3 ||
-                      (stage === 4 && (passed || session.attempts >= 2 || audioUnavailable))
+                    stage === 3
                       ? "pronunciationEnhancements.sayInstruction"
                       : "pronunciation.answerPrompt"
                   )}

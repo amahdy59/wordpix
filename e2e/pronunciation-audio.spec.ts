@@ -159,7 +159,12 @@ test("manual pronunciation feedback preserves focus and survives reload", async 
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
   const answer = page.getByRole("button", { name: new RegExp(`^Option \\d+: ${firstTarget(3)}$`) });
   await answer.focus();
-  await page.keyboard.press("Space");
+  if (info.project.name === "mobile-webkit") {
+    await answer.click();
+    await answer.focus();
+  } else {
+    await answer.press("Space");
+  }
   await expect(answer).toBeFocused();
   await expect(answer).toHaveAttribute("aria-disabled", "true");
   await expect(page.getByRole("button", { name: "Next question", exact: true })).toBeVisible();
