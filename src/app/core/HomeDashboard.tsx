@@ -1,6 +1,14 @@
 import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo } from "react";
-import { ArrowRight, RotateCcw, WifiOff, CheckCircle2, Library, BookOpen } from "lucide-react";
+import {
+  ArrowRight,
+  RotateCcw,
+  WifiOff,
+  CheckCircle2,
+  Library,
+  BookOpen,
+  Sparkles,
+} from "lucide-react";
 import { getDueWordsForReview, type WordLearningState } from "../../features/gamification/sm2";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
@@ -13,7 +21,6 @@ import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { useLearner } from "../context/LearnerContext";
 import { PageContainer, Section, Card, Badge, ProgressBar } from "../shared";
-import { ReleaseNotesCard } from "./ReleaseNotesCard";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { staggerContainer, staggerItem } from "../shared/animations";
 
@@ -83,14 +90,14 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
 
   return (
     <PageContainer size="wide">
-      {/* Top Learner Greeting */}
+      {/* Top Learner Greeting & Header Actions */}
       <header className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex min-w-0 items-center gap-3.5">
           <div className="relative size-12 lg:size-14 shrink-0 rounded-full overflow-hidden border-2 border-primary/20 shadow-wp-xs">
             <LearnerAvatar />
           </div>
           <div className="min-w-0">
-            <h1 className="font-sans font-black text-foreground text-xl lg:text-2xl leading-tight">
+            <h1 className="font-sans font-bold text-foreground text-xl lg:text-2xl leading-tight">
               {t("dashboard.welcomeLearner", { greeting })}
             </h1>
             <p className="font-sans font-medium text-muted-foreground text-sm lg:text-base mt-0.5">
@@ -102,30 +109,42 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </div>
         </div>
 
-        {offline && offline.ready && (
-          <Badge variant="teal" size="md" className="self-start sm:self-auto">
-            <WifiOff className="size-3.5" aria-hidden />
-            <span>{t("dashboard.offlineReady")}</span>
-          </Badge>
-        )}
-        {offline && !offline.ready && offline.cached > 0 && (
-          <Badge variant="muted" size="md" className="self-start sm:self-auto">
-            <WifiOff className="size-3.5" aria-hidden />
-            <span>
-              {t("dashboard.offlineSaving", { cached: offline.cached, total: offline.total })}
-            </span>
-          </Badge>
-        )}
-        {offline && !offline.ready && offline.cached === 0 && (
-          <Badge variant="muted" size="md" className="self-start sm:self-auto">
-            <WifiOff className="size-3.5" aria-hidden />
-            <span>
-              {navigator.onLine
-                ? t("dashboard.offlineNeedsConnection")
-                : t("dashboard.offlineUnavailable")}
-            </span>
-          </Badge>
-        )}
+        <div className="flex flex-wrap items-center gap-2 self-start sm:self-auto">
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "release-notes" })}
+            className="flex min-h-[36px] items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 font-sans text-xs font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all shadow-wp-xs"
+            aria-label={t("releaseNotes.viewTitle", { defaultValue: "What's New in WordPix" })}
+          >
+            <Sparkles className="size-3.5 text-primary" aria-hidden />
+            <span>{t("releaseNotes.badge", { defaultValue: "What's New" })}</span>
+          </button>
+
+          {offline && offline.ready && (
+            <Badge variant="teal" size="md">
+              <WifiOff className="size-3.5" aria-hidden />
+              <span>{t("dashboard.offlineReady")}</span>
+            </Badge>
+          )}
+          {offline && !offline.ready && offline.cached > 0 && (
+            <Badge variant="muted" size="md">
+              <WifiOff className="size-3.5" aria-hidden />
+              <span>
+                {t("dashboard.offlineSaving", { cached: offline.cached, total: offline.total })}
+              </span>
+            </Badge>
+          )}
+          {offline && !offline.ready && offline.cached === 0 && (
+            <Badge variant="muted" size="md">
+              <WifiOff className="size-3.5" aria-hidden />
+              <span>
+                {navigator.onLine
+                  ? t("dashboard.offlineNeedsConnection")
+                  : t("dashboard.offlineUnavailable")}
+              </span>
+            </Badge>
+          )}
+        </div>
       </header>
 
       {/* Main Content: one column beside the compact desktop shell, then split once space allows. */}
@@ -159,7 +178,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                 </div>
 
                 <div>
-                  <h2 className="font-sans font-black text-foreground text-2xl lg:text-3xl mt-4">
+                  <h2 className="font-sans font-bold text-foreground text-2xl lg:text-3xl mt-4">
                     {activeLesson.name}
                   </h2>
                   {activeLesson.description && (
@@ -186,7 +205,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         wordQueue: activeLesson.wordIds,
                       })
                     }
-                    className="flex-1 w-full bg-primary rounded-2xl py-3.5 font-sans font-black text-primary-foreground text-base min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-md transition-colors flex items-center justify-center gap-2"
+                    className="flex-1 w-full bg-primary rounded-2xl py-3.5 font-sans font-bold text-primary-foreground text-base min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs transition-colors flex items-center justify-center gap-2"
                   >
                     <BookOpen className="size-5 shrink-0" />
                     <span>
@@ -215,7 +234,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     }
                     title={t("dashboard.studyGuideAria", { unit: activeUnit.name })}
                     aria-label={t("dashboard.studyGuideAria", { unit: activeUnit.name })}
-                    className="w-full sm:w-auto px-3 py-2 text-foreground hover:bg-muted rounded-xl font-sans font-bold text-base min-h-[52px] flex items-center justify-center gap-2 transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
+                    className="w-full sm:w-auto px-4 py-2 border border-border bg-card text-foreground hover:bg-secondary hover:border-primary/40 rounded-2xl font-sans font-semibold text-base min-h-[52px] flex items-center justify-center gap-2 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
                     <Library className="size-4 shrink-0" />
                     <span>{t("dashboard.studyGuide")}</span>
@@ -349,15 +368,6 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           })}
         />
       </section>
-      <button
-        type="button"
-        onClick={() => dispatch({ type: "GO", to: "learn" })}
-        className="inline-flex min-h-11 items-center justify-between gap-3 border-t border-border py-3 text-start font-semibold text-foreground hover:text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-      >
-        {t("learn.specialCurricula")}
-        <ArrowRight className="size-4 shrink-0 rtl:rotate-180" aria-hidden />
-      </button>
-      <ReleaseNotesCard />
     </PageContainer>
   );
 });

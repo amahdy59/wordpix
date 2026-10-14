@@ -47,7 +47,7 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     const dispatch = vi.fn();
     renderWithProviders(<HomeDashboard dispatch={dispatch} />);
 
-    await screen.findByRole("button", { name: "Dismiss release notes" });
+    expect(screen.getByRole("button", { name: /What's New/i })).toBeInTheDocument();
     expect(screen.getByText("Daily Vocabulary Target")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Study materials for/i })).toBeInTheDocument();
     expect(screen.getByText("Recommended next")).toBeInTheDocument();
