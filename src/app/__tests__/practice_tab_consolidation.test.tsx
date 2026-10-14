@@ -72,8 +72,8 @@ describe("Practice Tab & Review Consolidation", () => {
     expect(screen.getByText(/words due/i)).toBeInTheDocument();
     expect(screen.getByText(/5 day streak/i)).toBeInTheDocument();
 
-    // Clicking "Review Now" starts the review session
-    const reviewBtn = screen.getByRole("button", { name: /Review 2 now/i });
+    // Clicking "Smart Review" starts the review session
+    const reviewBtn = screen.getByRole("button", { name: /Smart Review|Review 2 now/i });
     fireEvent.click(reviewBtn);
 
     expect(dispatch).toHaveBeenCalledWith({

@@ -77,7 +77,8 @@
     "done": "تم",
     "returnToExplore": "العودة إلى مسار التعلّم",
     "checkAnswer": "تحقّق من الإجابة",
-    "playing": "جارٍ التشغيل…"
+    "playing": "جارٍ التشغيل…",
+    "all": "الكل"
   },
   "auth": {
     "email": "البريد الإلكتروني",
@@ -526,7 +527,8 @@
     "nextScheduled": "موعد المراجعات القادمة: {{time}}.",
     "noReviewsTitle": "لا توجد مراجعات مستحقة بعد",
     "noReviewsDesc": "تظهر المراجعات المتباعدة هنا بعد دراسة أول وحدة مفردات.",
-    "startLearning": "ابدأ الدرس الأول"
+    "startLearning": "ابدأ الدرس الأول",
+    "smartBatch": "ذكية"
   },
   "settings": {
     "openSettings": "فتح الإعدادات",
@@ -947,12 +949,12 @@
         "description": "استمع إلى محادثة واختر ردًا مناسبًا."
       },
       "listen-selective-shadowing": {
-        "title": "الترديد مع النموذج",
+        "title": "استمع وردد",
         "description": "كرّر جملة وراجع الإيقاع والنبر."
       },
       "listen-warmup-review": {
-        "title": "مراجعة سريعة",
-        "description": "راجع الكلمات واختبر مدى تذكّرك لها."
+        "title": "تذكّر سريع للكلمات",
+        "description": "اختبر ذاكرتك سريعاً على أحدث الكلمات."
       },
       "listen-podcast-comprehension": {
         "title": "فهم مقطع صوتي",
@@ -963,7 +965,7 @@
         "description": "استخدم صورة لاختيار المعنى المناسب."
       },
       "read-progressive-reveal": {
-        "title": "القراءة خطوة بخطوة",
+        "title": "قراءة خطوة بخطوة",
         "description": "اقرأ مقطعًا جملةً جملةً ثم أجب عن الأسئلة."
       },
       "read-error-detection": {
@@ -987,11 +989,11 @@
         "description": "اعثر على الأخطاء في نصوص قصيرة وصحّحها."
       },
       "read-confidence-check": {
-        "title": "تقييم فهم المفردات",
-        "description": "راجع فهمك للمفردات قبل بدء الدرس."
+        "title": "فحص جاهزية الكلمات",
+        "description": "تحقق من مدى ثقتك بالكلمات الأساسية قبل القراءة."
       },
       "speak-echo-practice": {
-        "title": "تدريب النطق",
+        "title": "انطق وطابق",
         "description": "انطق كلمة بصوت عالٍ وراجع النتيجة."
       },
       "speak-scenario-response": {
@@ -1015,7 +1017,7 @@
         "description": "كوّن سلسلة من الكلمات وتدرّب على تذكّرها."
       },
       "speak-self-repair": {
-        "title": "تصحيح كلامك",
+        "title": "اكتشف وصحّح",
         "description": "صحّح جملة ثم انطق الصياغة المحسّنة."
       },
       "write-caption-builder": {
@@ -1023,8 +1025,8 @@
         "description": "استخدم قائمة كلمات لكتابة وصف لصورة."
       },
       "write-sentence-assembly": {
-        "title": "ترتيب الجملة",
-        "description": "رتّب بطاقات الكلمات لتكوين جملة."
+        "title": "بناء الجملة",
+        "description": "رتّب بطاقات الكلمات لتكوين جملة تامة."
       },
       "write-photo-journal": {
         "title": "يوميات الصور",
@@ -1047,7 +1049,7 @@
         "description": "اكتب قصة قصيرة باستخدام كلمات تربط الأفكار."
       },
       "write-timed-sprint": {
-        "title": "تدريب كتابة المفردات",
+        "title": "سباق الكتابة السريع",
         "description": "تدرّب على كتابة كلمات المفردات بدقة."
       }
     },
@@ -1087,6 +1089,9 @@
     "todayReview": "مراجعة اليوم",
     "countsSummary": "{overdue} متأخرة · {due} مستحقة اليوم",
     "reviewNow": "مراجعة {count} الآن",
+    "smartReviewAction": "مراجعة ذكية ({count} كلمات)",
+    "estimatedDuration": "حوالي {minutes} د",
+    "allCaughtUpDesc": "أنجزت جميع المراجعات! تدرّب على أي مهارة أدناه لتثبيت حفظك.",
     "allCaughtUp": "أنجزت جميع المراجعات",
     "retentionTip": "قليل دائم يساعدك على التذكر لفترة أطول.",
     "noDataTitle": "لا توجد بيانات ذاكرة بعد",

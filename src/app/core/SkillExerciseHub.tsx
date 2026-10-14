@@ -17,6 +17,8 @@ import {
   RotateCcw,
   BookOpen,
   Mic,
+  Headphones,
+  PenTool,
 } from "lucide-react";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { useLearner } from "../context/LearnerContext";
@@ -32,7 +34,14 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-const DEFAULT_REVIEW_SESSION_SIZE = 5;
+const DEFAULT_REVIEW_SESSION_SIZE = 10;
+
+const CATEGORY_ICONS: Record<SkillCategory, React.ComponentType<{ className?: string }>> = {
+  listening: Headphones,
+  reading: BookOpen,
+  speaking: Mic,
+  writing: PenTool,
+};
 
 /**
  * Practice Tab: Consolidates Spaced-Repetition Daily Review and Multimodal Skill Drills.
@@ -80,6 +89,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
   const [selectedBatchSize, setSelectedBatchSize] = useState<number>(DEFAULT_REVIEW_SESSION_SIZE);
   const totalDue = overdueList.length + dueTodayList.length;
   const sessionSize = Math.min(selectedBatchSize, totalDue);
+  const estimatedMinutes = Math.max(1, Math.ceil(sessionSize * 0.3));
 
   const hasLearningHistory =
     (learnerState.learnerProgress?.sessionsCompleted ?? 0) > 0 ||
@@ -138,7 +148,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
           <div className="rounded-2xl border border-primary/30 bg-secondary p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="flex items-start gap-4">
               <div className="size-14 sm:size-16 rounded-2xl bg-primary text-primary-foreground flex flex-col items-center justify-center shrink-0 shadow-wp-xs">
-                <span className="text-3xl sm:text-4xl font-black leading-none">{totalDue}</span>
+                <span className="text-3xl sm:text-4xl font-bold leading-none">{totalDue}</span>
                 <span className="text-sm font-bold mt-1">{t("masteryReview.wordsDue")}</span>
               </div>
 
@@ -147,6 +157,15 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                   <span className="inline-flex items-center gap-1.5 text-sm font-bold text-primary">
                     <Clock className="size-3.5" aria-hidden="true" />
                     <span>{t("masteryReview.todayReview")}</span>
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-xs font-semibold text-muted-foreground bg-card px-2.5 py-0.5 rounded-full border border-border">
+                    <Clock className="size-3 text-muted-foreground" aria-hidden="true" />
+                    <span>
+                      {t("masteryReview.estimatedDuration", {
+                        minutes: formatNumber(estimatedMinutes, numeralSystem),
+                        defaultValue: `~${estimatedMinutes} min`,
+                      })}
+                    </span>
                   </span>
                   {progress.streak > 0 && (
                     <span className="inline-flex items-center gap-1 text-sm font-bold text-wp-amber-foreground bg-wp-amber/10 px-2 py-0.5 rounded-full">
@@ -165,7 +184,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                   )}
                 </div>
 
-                <h2 className="font-sans text-xl sm:text-2xl font-black text-foreground leading-tight">
+                <h2 className="font-sans text-xl sm:text-2xl font-bold text-foreground leading-tight">
                   {t("masteryReview.title")}
                 </h2>
 
@@ -179,29 +198,29 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
             </div>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
-              {totalDue > 5 && (
+              {totalDue > 10 && (
                 <div
                   className="flex items-center gap-1.5 self-start sm:self-center"
                   role="group"
                   aria-label={t("masteryReview.wordsDue")}
                 >
-                  {[5, 10, totalDue]
+                  {[10, totalDue]
                     .filter((size, i, arr) => arr.indexOf(size) === i)
                     .map((size) => (
                       <button
                         key={size}
                         type="button"
                         onClick={() => setSelectedBatchSize(size)}
-                        className={`min-h-[44px] px-3 py-1.5 rounded-xl text-sm font-bold font-sans transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
+                        className={`min-h-[44px] px-3.5 py-1.5 rounded-xl text-sm font-bold font-sans transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                           selectedBatchSize === size
                             ? "bg-primary text-primary-foreground shadow-wp-xs"
-                            : "bg-wp-card text-foreground hover:bg-muted border border-border"
+                            : "bg-card text-foreground hover:bg-secondary border border-border"
                         }`}
                         aria-pressed={selectedBatchSize === size}
                       >
                         {size === totalDue
                           ? `${formatNumber(size, numeralSystem)} (${t("action.all", { defaultValue: "All" })})`
-                          : formatNumber(size, numeralSystem)}
+                          : `${formatNumber(size, numeralSystem)} (${t("practice.smartBatch", { defaultValue: "Smart" })})`}
                       </button>
                     ))}
                 </div>
@@ -212,9 +231,15 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 size="lg"
                 iconLeft={<Play className="size-4 fill-current" aria-hidden="true" />}
                 onClick={startReviewSession}
-                className="min-h-[48px] px-6 shadow-wp-md"
+                className="min-h-[48px] px-6 shadow-wp-xs font-bold rounded-2xl"
               >
-                {t("masteryReview.reviewNow", { count: sessionSize })}
+                {t("masteryReview.smartReviewAction", {
+                  count: formatNumber(sessionSize, numeralSystem),
+                  defaultValue: t("masteryReview.reviewNow", {
+                    count: formatNumber(sessionSize, numeralSystem),
+                    defaultValue: `Smart Review (${formatNumber(sessionSize, numeralSystem)} words)`,
+                  }),
+                })}
               </Button>
 
               <Button
@@ -222,7 +247,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 size="lg"
                 iconLeft={<BookOpen className="size-4" aria-hidden="true" />}
                 onClick={() => dispatch({ type: "GO", to: "review" })}
-                className="min-h-[48px]"
+                className="min-h-[48px] rounded-2xl"
               >
                 {t("masteryReview.badge")}
               </Button>
@@ -236,7 +261,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               </div>
               <div className="flex flex-col gap-0.5">
                 <div className="flex items-center gap-2">
-                  <h2 className="font-sans font-black text-base sm:text-lg text-foreground">
+                  <h2 className="font-sans font-bold text-base sm:text-lg text-foreground">
                     {t("masteryReview.allCaughtUp")}
                   </h2>
                   {progress.streak > 0 && (
@@ -252,7 +277,10 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                         time: nextScheduledDateStr,
                         defaultValue: `Next reviews scheduled for ${nextScheduledDateStr}. Great job keeping your memory strong!`,
                       })
-                    : t("masteryReview.subtitle")}
+                    : t("masteryReview.allCaughtUpDesc", {
+                        defaultValue:
+                          "You're all caught up! Practice any skill below to strengthen memory.",
+                      })}
                 </p>
               </div>
             </div>
@@ -274,7 +302,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 <BookOpen className="size-6" aria-hidden="true" />
               </div>
               <div className="flex flex-col gap-0.5">
-                <h2 className="font-sans font-black text-base sm:text-lg text-foreground">
+                <h2 className="font-sans font-bold text-base sm:text-lg text-foreground">
                   {t("practice.noReviewsTitle", { defaultValue: "No reviews due yet" })}
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground font-medium">
@@ -390,12 +418,21 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
                 className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 pe-16 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors group"
               >
-                <div>
+                <div className="min-w-0 flex-1">
                   <div className="flex items-center justify-between gap-2">
-                    <h3 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors leading-tight">
-                      {t(`skillHub.exercises.${ex.id}.title`)}
-                    </h3>
-                    <span className="shrink-0 font-sans text-sm font-bold text-primary">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-secondary text-primary border border-primary/20">
+                        {(() => {
+                          const IconComp = CATEGORY_ICONS[ex.category] ?? Headphones;
+                          return <IconComp className="size-3" aria-hidden="true" />;
+                        })()}
+                        <span>{t(`skillHub.${ex.category}`, { defaultValue: ex.category })}</span>
+                      </span>
+                      <h3 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors leading-tight">
+                        {t(`skillHub.exercises.${ex.id}.title`)}
+                      </h3>
+                    </div>
+                    <span className="shrink-0 font-sans text-xs font-bold px-2 py-0.5 rounded-md bg-muted text-foreground border border-border">
                       {`${ex.minimumLevel ?? "A1"}+`}
                     </span>
                   </div>

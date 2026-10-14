@@ -77,7 +77,8 @@
     "done": "Done",
     "returnToExplore": "Return to learning path",
     "checkAnswer": "Check answer",
-    "playing": "Playing…"
+    "playing": "Playing…",
+    "all": "All"
   },
   "auth": {
     "email": "Email address",
@@ -526,7 +527,8 @@
     "nextScheduled": "Next reviews scheduled for {{time}}.",
     "noReviewsTitle": "No reviews due yet",
     "noReviewsDesc": "Spaced reviews appear here after you study your first vocabulary unit.",
-    "startLearning": "Start first lesson"
+    "startLearning": "Start first lesson",
+    "smartBatch": "Smart"
   },
   "settings": {
     "openSettings": "Open settings",
@@ -947,12 +949,12 @@
         "description": "Listen to a conversation and choose a useful reply."
       },
       "listen-selective-shadowing": {
-        "title": "Selective Shadowing",
+        "title": "Listen & Repeat",
         "description": "Repeat a sentence and check your rhythm and stress."
       },
       "listen-warmup-review": {
-        "title": "Warm-up Refresher",
-        "description": "Review words and check how well you remember them."
+        "title": "Quick Word Recall",
+        "description": "Quickly test your memory on recent vocabulary."
       },
       "listen-podcast-comprehension": {
         "title": "Podcast Comprehension",
@@ -963,7 +965,7 @@
         "description": "Use a picture to choose the meaning that fits."
       },
       "read-progressive-reveal": {
-        "title": "Progressive Reveal",
+        "title": "Step-by-Step Reading",
         "description": "Read a passage one sentence at a time, then answer questions."
       },
       "read-error-detection": {
@@ -987,11 +989,11 @@
         "description": "Find and fix mistakes in short captions."
       },
       "read-confidence-check": {
-        "title": "Confidence Check",
-        "description": "Check your understanding of vocabulary before a lesson."
+        "title": "Word Readiness Check",
+        "description": "Check your understanding of key words before reading."
       },
       "speak-echo-practice": {
-        "title": "Echo Practice",
+        "title": "Pronounce & Match",
         "description": "Say a word aloud and check the result."
       },
       "speak-scenario-response": {
@@ -1015,7 +1017,7 @@
         "description": "Build a chain of words and practise remembering them."
       },
       "speak-self-repair": {
-        "title": "Self-Repair",
+        "title": "Spot & Correct",
         "description": "Correct a sentence, then say the improved version aloud."
       },
       "write-caption-builder": {
@@ -1023,8 +1025,8 @@
         "description": "Use a word bank to write a caption for a picture."
       },
       "write-sentence-assembly": {
-        "title": "Sentence Assembly Arcade",
-        "description": "Put word tiles in order to build a sentence."
+        "title": "Build a Sentence",
+        "description": "Put word tiles in order to build a complete sentence."
       },
       "write-photo-journal": {
         "title": "Photo Journal",
@@ -1047,7 +1049,7 @@
         "description": "Write a short story using words that connect ideas."
       },
       "write-timed-sprint": {
-        "title": "Timed Writing Sprint",
+        "title": "Quick Typing Sprint",
         "description": "Practise typing vocabulary words accurately."
       }
     },
@@ -1087,6 +1089,9 @@
     "todayReview": "Today's review",
     "countsSummary": "{overdue} overdue · {due} due today",
     "reviewNow": "Review {count} now",
+    "smartReviewAction": "Smart Review ({count} words)",
+    "estimatedDuration": "~{minutes} min",
+    "allCaughtUpDesc": "You're all caught up! Practice any skill below to strengthen memory.",
     "allCaughtUp": "All caught up",
     "retentionTip": "A little and often helps you remember for longer.",
     "noDataTitle": "No memory data yet",
