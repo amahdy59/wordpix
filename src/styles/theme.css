@@ -69,8 +69,9 @@
   --wp-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
 
   /* Font families & Typographic Rhythm */
-  --wp-font-base: "Inter", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --wp-font-arabic: "Noto Sans Arabic", "Cairo", sans-serif;
+  --wp-font-base:
+    "Inter Variable", "Inter", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --wp-font-arabic: "Noto Sans Arabic Variable", "Noto Sans Arabic", "Cairo", sans-serif;
   --wp-line-height-arabic: 1.65;
   --wp-letter-spacing-arabic: 0px;
   --font-arabic-line-height: var(--wp-line-height-arabic);
