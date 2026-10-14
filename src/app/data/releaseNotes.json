@@ -1,16 +1,57 @@
 {
-  "version": "0.1.37",
+  "version": "0.1.38",
   "notes": [
-    "Added a global option in Settings to disable pronunciation exercises across WordPix.",
-    "Filtered pronunciation courses and reviews from Learn and Practice tabs when disabled.",
-    "Provided accessible re-enable screens when visiting pronunciation lessons directly."
+    "Self-hosted variable fonts (Inter & Noto Sans Arabic) with zero network dependency and enhanced Arabic typography.",
+    "Lesson Focus Mode that suppresses bottom navigation during drills to prevent accidental taps and keyboard collisions.",
+    "Decluttered home dashboard, sticky CEFR level switcher on the learning path, and streamlined plain-language practice reviews."
   ],
   "notesAr": [
-    "إضافة خيار عام في الإعدادات لتعطيل تمارين النطق عبر تطبيق WordPix.",
-    "إخفاء مسارات النطق والمراجعات من تبويبي التعلم والممارسة عند تعطيل النطق.",
-    "توفير واجهات وصول ميسّرة مع زر إعادة التفعيل عند الوصول المباشر لدروس النطق."
+    "استضافة خطوط متغيرة محلياً (Inter و Noto Sans Arabic) بدون اعتماد على الشبكة مع تحسين طباعة النصوص العربية.",
+    "وضع التركيز في الدروس الذي يُخفي شريط التنقل السفلي أثناء التدريبات لمنع اللمسات غير المقصودة وتداخل لوحة المفاتيح.",
+    "تبسيط الصفحة الرئيسية، وإضافة شريط تنقل مثبت لمستويات CEFR في مسار التعلم، وتسهيل مراجعات التدريب بلغة واضحة."
   ],
   "releases": [
+    {
+      "id": "0.1.38",
+      "version": "0.1.38",
+      "date": "2026-10-15",
+      "title": {
+        "en": "Modernized typography, responsive focus mode & curriculum navigation",
+        "ar": "تحديث الخطوط والطباعة، وضع التركيز للدروس، وتسهيل تصفح المنهج"
+      },
+      "changes": [
+        {
+          "id": "typography-variable-fonts",
+          "category": "improved",
+          "en": "Integrated self-hosted Inter Variable and Noto Sans Arabic Variable with canonical type scale tokens and optimized Arabic line height.",
+          "ar": "دمج خطوط متغيرة مستضافة ذاتياً (Inter و Noto Sans Arabic) مع مقياس طباعي موحد وضبط مريح لارتفاع الأسطر العربية."
+        },
+        {
+          "id": "lesson-focus-mode",
+          "category": "added",
+          "en": "Introduced LessonActionDock and auto-concealing bottom tab navigation during active drills for a clutter-free learning focus.",
+          "ar": "إضافة وضع التركيز للدروس مع إخفاء شريط التنقل السفلي أثناء التمارين لتوفير تجربة تعليمية مريحة ومركزة."
+        },
+        {
+          "id": "learning-path-cefr-switcher",
+          "category": "added",
+          "en": "Added a sticky horizontal CEFR level switcher (Pre-A1 to C1 and Specialist) for rapid curriculum jumping.",
+          "ar": "إضافة شريط تنقل أفقي مثبت لمستويات CEFR (من Pre-A1 إلى C1 والتخصصي) للانتقال السريع في المنهج."
+        },
+        {
+          "id": "home-dashboard-decluttering",
+          "category": "improved",
+          "en": "Relocated full release notes into an accessible header pill, elevating the primary daily learning goal and study guide.",
+          "ar": "نقل سجل التحديثات إلى زر وصول أنيق في الترويسة مع إبراز الهدف اليومي الأساسي ودليل الدراسة."
+        },
+        {
+          "id": "practice-plain-language",
+          "category": "improved",
+          "en": "Streamlined daily SRS reviews to a Smart Review (10 words) action and replaced academic linguistic jargon with plain adult learner language.",
+          "ar": "تبسيط مراجعات التكرار المتباعد إلى مراجعة ذكية (١٠ كلمات) واستبدال المصطلحات الأكاديمية بعبارات واضحة وسهلة."
+        }
+      ]
+    },
     {
       "id": "0.1.37",
       "version": "0.1.37",
