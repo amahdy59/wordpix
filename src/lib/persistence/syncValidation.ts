@@ -25,6 +25,7 @@ const accessibilitySchema = z
     numeralSystem: z.enum(["western", "arabic"]),
     includeSpeaking: z.boolean(),
     includeListening: z.boolean(),
+    includePronunciation: z.boolean().default(true),
     timedExercises: z.boolean(),
     autoAdvance: z.boolean(),
     spokenFeedback: z.boolean(),

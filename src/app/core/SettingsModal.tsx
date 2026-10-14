@@ -53,6 +53,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
     numeralSystem,
     includeSpeaking,
     includeListening,
+    includePronunciation,
     timedExercises,
     autoAdvance,
     spokenFeedback,
@@ -473,6 +474,35 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     }`}
                   >
                     {includeSpeaking ? t("settings.enabled") : t("settings.disabled")}
+                  </button>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <span className="font-sans font-bold text-foreground text-sm">
+                      {t("settings.pronunciationExercises")}
+                    </span>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.pronunciationExercisesHint")}</p>
+                    </HelpDisclosure>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setAccessibility({ includePronunciation: !includePronunciation })
+                    }
+                    aria-pressed={includePronunciation}
+                    aria-label={t("settings.toggleLabel", {
+                      setting: t("settings.pronunciationExercises"),
+                      state: includePronunciation ? t("settings.enabled") : t("settings.disabled"),
+                    })}
+                    className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      includePronunciation
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                        : "bg-muted text-muted-foreground border-border"
+                    }`}
+                  >
+                    {includePronunciation ? t("settings.enabled") : t("settings.disabled")}
                   </button>
                 </div>
 

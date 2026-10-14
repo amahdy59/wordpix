@@ -566,6 +566,8 @@
     "learningHeading": "Learning & Cognitive Accessibility",
     "speakingDrills": "Include Speaking Drills",
     "speakingDrillsHint": "Disable if practicing in quiet environments.",
+    "pronunciationExercises": "Include Pronunciation Exercises",
+    "pronunciationExercisesHint": "Hide the pronunciation curriculum and bypass pronunciation drills.",
     "timedExercises": "Timed Exercises",
     "timedExercisesHint": "Turn off to remove every countdown. Timers can also be paused or extended while running.",
     "autoAdvance": "Move On Automatically",
@@ -1397,6 +1399,10 @@
     "transferChecklistMeaning": "The situation makes both meanings clear."
   },
   "pronunciation": {
+    "disabledTitle": "Pronunciation Exercises Disabled",
+    "disabledNotice": "Pronunciation exercises are currently turned off in your accessibility settings. You can re-enable them anytime in Settings to continue.",
+    "enableNow": "Enable Pronunciation Exercises",
+    "backToLearn": "Back to Learn",
     "back": "Back to curriculum",
     "backToLearningPath": "Back to learning path",
     "curriculumBadge": "68-lesson pronunciation pathway",

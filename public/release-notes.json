@@ -1,16 +1,45 @@
 {
-  "version": "0.1.36",
+  "version": "0.1.37",
   "notes": [
-    "Improved audio autoplay reliability and timing across all pronunciation listening checks.",
-    "Eliminated audio interruption race conditions when tapping playback controls during load.",
-    "Guaranteed visual image illustrations across all pronunciation practice stages."
+    "Added a global option in Settings to disable pronunciation exercises across WordPix.",
+    "Filtered pronunciation courses and reviews from Learn and Practice tabs when disabled.",
+    "Provided accessible re-enable screens when visiting pronunciation lessons directly."
   ],
   "notesAr": [
-    "تحسين موثوقية وتوقيت التشغيل التلقائي للصوت في جميع اختبارات الاستماع للنطق.",
-    "معالجة انقطاع الصوت العرضي عند النقر على عناصر التحكم أثناء التحميل.",
-    "ضمان ظهور الصور التوضيحية لجميع الكلمات في كافة مراحل تدريب النطق."
+    "إضافة خيار عام في الإعدادات لتعطيل تمارين النطق عبر تطبيق WordPix.",
+    "إخفاء مسارات النطق والمراجعات من تبويبي التعلم والممارسة عند تعطيل النطق.",
+    "توفير واجهات وصول ميسّرة مع زر إعادة التفعيل عند الوصول المباشر لدروس النطق."
   ],
   "releases": [
+    {
+      "id": "0.1.37",
+      "version": "0.1.37",
+      "date": "2026-10-14",
+      "title": {
+        "en": "Global option to disable pronunciation exercises",
+        "ar": "خيار عام لتعطيل تمارين النطق"
+      },
+      "changes": [
+        {
+          "id": "global-pronunciation-toggle",
+          "category": "added",
+          "en": "Added a persistent 'Include Pronunciation Exercises' accessibility toggle in Settings.",
+          "ar": "إضافة خيار دائم في إعدادات إمكانية الوصول لتضمين أو تعطيل تمارين النطق."
+        },
+        {
+          "id": "learn-practice-pronunciation-filtering",
+          "category": "improved",
+          "en": "Omitted the Pronunciation Foundations course from Learn and Practice tabs when pronunciation is disabled.",
+          "ar": "إخفاء مسار ومراجعات منهج النطق من تبويبي التعلم والممارسة عند تعطيل الخيار."
+        },
+        {
+          "id": "pronunciation-graceful-fallback",
+          "category": "improved",
+          "en": "Added an accessible fallback screen with a 1-click re-enable button when navigating directly to pronunciation URLs while disabled.",
+          "ar": "إضافة واجهة واضحة وسهلة الوصول مع زر تفعيل مباشر عند زيارة روابط النطق أثناء التعطيل."
+        }
+      ]
+    },
     {
       "id": "0.1.36",
       "version": "0.1.36",

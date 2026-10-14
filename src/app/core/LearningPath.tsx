@@ -363,41 +363,43 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-            className="group min-h-[132px] rounded-2xl border border-border bg-wp-card p-4 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 flex flex-col justify-between"
-          >
-            <div>
-              <div className="flex items-center justify-between gap-2">
-                <Headphones className="size-7 text-primary" aria-hidden />
-                <span className="rounded-full bg-secondary px-2 py-0.5 text-sm font-bold text-primary border border-primary/20">
-                  {t("learn.pronunciationScope")}
-                </span>
-              </div>
+          {learnerState.accessibility?.includePronunciation !== false && (
+            <button
+              type="button"
+              onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
+              className="group min-h-[132px] rounded-2xl border border-border bg-wp-card p-4 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 flex flex-col justify-between"
+            >
+              <div>
+                <div className="flex items-center justify-between gap-2">
+                  <Headphones className="size-7 text-primary" aria-hidden />
+                  <span className="rounded-full bg-secondary px-2 py-0.5 text-sm font-bold text-primary border border-primary/20">
+                    {t("learn.pronunciationScope")}
+                  </span>
+                </div>
 
-              <h3 className="mt-2 text-lg font-black text-foreground">
-                {t("pronunciation.curriculumTitle")}
-              </h3>
-              <p className="mt-1 text-sm leading-5 text-muted-foreground">
-                {t("help.completed", {
-                  completed: pronunciationMastered,
-                  total: 68,
-                })}
-              </p>
-              <div className="mt-2.5">
-                <ProgressBar
-                  progressPercent={Math.round((pronunciationMastered / 68) * 100)}
-                  ariaLabel={t("pronunciation.curriculumTitle")}
-                  size="sm"
-                />
+                <h3 className="mt-2 text-lg font-black text-foreground">
+                  {t("pronunciation.curriculumTitle")}
+                </h3>
+                <p className="mt-1 text-sm leading-5 text-muted-foreground">
+                  {t("help.completed", {
+                    completed: pronunciationMastered,
+                    total: 68,
+                  })}
+                </p>
+                <div className="mt-2.5">
+                  <ProgressBar
+                    progressPercent={Math.round((pronunciationMastered / 68) * 100)}
+                    ariaLabel={t("pronunciation.curriculumTitle")}
+                    size="sm"
+                  />
+                </div>
               </div>
-            </div>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
-              {t("pronunciation.viewCurriculum")}
-              <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-            </span>
-          </button>
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
+                {t("pronunciation.viewCurriculum")}
+                <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+              </span>
+            </button>
+          )}
 
           <button
             type="button"

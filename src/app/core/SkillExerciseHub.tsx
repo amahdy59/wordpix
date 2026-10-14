@@ -46,6 +46,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
   const learnerLevel = learnerState?.preferences?.englishLevel ?? "A1";
   const includeSpeaking = accessibility?.includeSpeaking ?? true;
   const includeListening = accessibility?.includeListening ?? true;
+  const includePronunciation = accessibility?.includePronunciation ?? true;
   const numeralSystem = accessibility?.numeralSystem ?? "western";
 
   // 1. Spaced-Repetition Review Queue Calculations
@@ -296,7 +297,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
             </Button>
           </div>
         )}
-        {pronunciationReviews.length > 0 && (
+        {includePronunciation && pronunciationReviews.length > 0 && (
           <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-card p-4">
             <div>
               <h2 className="text-lg font-bold text-foreground">

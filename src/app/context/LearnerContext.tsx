@@ -84,6 +84,7 @@ export interface AccessibilityPreferences {
   numeralSystem: NumeralSystem;
   includeSpeaking: boolean;
   includeListening: boolean;
+  includePronunciation: boolean;
   /**
    * When false, no exercise imposes a time limit at all.
    *
@@ -121,6 +122,7 @@ export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   numeralSystem: "western",
   includeSpeaking: true,
   includeListening: true,
+  includePronunciation: true,
   timedExercises: true,
   autoAdvance: false,
   spokenFeedback: true,

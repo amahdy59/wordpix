@@ -34,6 +34,7 @@ vi.mock("../shared/useAccessibilityPreferences", () => ({
     accessibility: {
       includeSpeaking: true,
       includeListening: true,
+      includePronunciation: true,
       numeralSystem: "western",
     },
   }),

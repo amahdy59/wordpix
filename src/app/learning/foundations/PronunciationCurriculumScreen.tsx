@@ -36,7 +36,7 @@ function readBrowseState(): { query: string; filter: Filter } {
 
 export function PronunciationCurriculumScreen({ dispatch }: Props) {
   const { t } = useI18n();
-  const { state } = useLearner();
+  const { state, setAccessibility } = useLearner();
   const [query, setQuery] = useState(() => readBrowseState().query);
   const [filter, setFilter] = useState<Filter>(() => readBrowseState().filter);
   const [selectedLessonForInfo, setSelectedLessonForInfo] = useState<number | null>(null);
@@ -121,6 +121,58 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
       })).filter((chapter) => chapter.lessons.length > 0),
     [filter, isDue, query, state.pronunciationProgress]
   );
+
+  if (state.accessibility.includePronunciation === false) {
+    return (
+      <div
+        className="h-full min-h-0 overflow-y-auto bg-background pb-24 overscroll-y-contain"
+        aria-labelledby="pronunciation-disabled-title"
+      >
+        <div className="wp-container-content wp-layout-gutter flex flex-col gap-6 py-6 sm:py-12">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => dispatch({ type: "GO", to: "learn" })}
+            className="w-fit"
+            iconLeft={<ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />}
+          >
+            {t("lessonShell.backToLearn")}
+          </Button>
+
+          <div className="flex flex-col items-center justify-center rounded-3xl border border-border bg-card p-6 text-center shadow-wp-xs sm:p-12">
+            <div className="flex size-16 items-center justify-center rounded-2xl bg-muted text-muted-foreground">
+              <Headphones className="size-8" aria-hidden />
+            </div>
+            <h1
+              id="pronunciation-disabled-title"
+              className="mt-4 text-2xl font-black text-foreground sm:text-3xl"
+            >
+              {t("pronunciation.disabledTitle")}
+            </h1>
+            <p className="mt-2 max-w-md text-base text-muted-foreground">
+              {t("pronunciation.disabledNotice")}
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Button
+                variant="primary"
+                size="md"
+                onClick={() => setAccessibility({ includePronunciation: true })}
+              >
+                {t("pronunciation.enableNow")}
+              </Button>
+              <Button
+                variant="secondary"
+                size="md"
+                onClick={() => dispatch({ type: "GO", to: "learn" })}
+              >
+                {t("pronunciation.backToLearn")}
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Check, Volume2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Headphones, Volume2 } from "lucide-react";
 import type { Action } from "../../types";
+import { Button } from "../../shared/Button";
 import { CourseLessonNavigation } from "../../shared/CourseLessonNavigation";
 import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import { useAudioRecoveryMessage } from "../../shared/AudioRecoveryStatus";
@@ -368,6 +369,58 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
           ? t("pronunciationEnhancements.sayInstruction")
           : t("pronunciation.chooseHeard");
   const buttonClass = `inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-border px-3 py-2 text-base font-bold text-foreground hover:bg-muted ${focusRing}`;
+  if (state.accessibility.includePronunciation === false) {
+    return (
+      <div
+        className="wp-lesson-session min-h-dvh w-full overflow-y-auto bg-background"
+        aria-labelledby="pronunciation-disabled-title"
+      >
+        <div className="wp-container-reading wp-layout-gutter flex flex-col gap-6 py-6 sm:py-12">
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => dispatch({ type: "GO", to: "learn" })}
+            className="w-fit"
+            iconLeft={<ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />}
+          >
+            {t("lessonShell.backToLearn")}
+          </Button>
+
+          <div className="flex flex-col items-center justify-center rounded-3xl border border-border bg-card p-6 text-center shadow-wp-xs sm:p-12">
+            <div className="flex size-16 items-center justify-center rounded-2xl bg-muted text-muted-foreground">
+              <Headphones className="size-8" aria-hidden />
+            </div>
+            <h1
+              id="pronunciation-disabled-title"
+              className="mt-4 text-2xl font-black text-foreground sm:text-3xl"
+            >
+              {t("pronunciation.disabledTitle")}
+            </h1>
+            <p className="mt-2 max-w-md text-base text-muted-foreground">
+              {t("pronunciation.disabledNotice")}
+            </p>
+            <div className="mt-6 flex flex-wrap justify-center gap-3">
+              <Button
+                variant="primary"
+                size="md"
+                onClick={() => setAccessibility({ includePronunciation: true })}
+              >
+                {t("pronunciation.enableNow")}
+              </Button>
+              <Button
+                variant="secondary"
+                size="md"
+                onClick={() => dispatch({ type: "GO", to: "learn" })}
+              >
+                {t("pronunciation.backToLearn")}
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       className="wp-lesson-session min-h-dvh w-full overflow-y-auto bg-background"
