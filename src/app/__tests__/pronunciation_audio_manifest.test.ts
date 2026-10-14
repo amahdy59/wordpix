@@ -46,4 +46,17 @@ describe("pronunciation audio manifest", () => {
     expect(script).not.toMatch(/\br2\.(?:put|remove)\s*\(/);
     expect(script).not.toContain("ELEVENLABS_API_KEY");
   });
+
+  it("resolves van, bat, and pet to clean natural clips without phoneme markup", () => {
+    for (const word of ["van", "bat", "pet"]) {
+      const primary = getPronunciationAudioClip(word, false);
+      const transfer = getPronunciationAudioClip(word, true);
+      expect(primary).not.toBeNull();
+      expect(transfer).not.toBeNull();
+      expect(primary?.profile.modelId).toBe("eleven_v4");
+      expect(transfer?.profile.modelId).toBe("eleven_v4");
+      expect(primary?.synthesisText).toBe(word);
+      expect(transfer?.synthesisText).toBe(word);
+    }
+  });
 });

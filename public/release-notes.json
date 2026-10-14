@@ -1,16 +1,45 @@
 {
-  "version": "0.1.34",
+  "version": "0.1.35",
   "notes": [
-    "Fixed question advancement and auto-advance in pronunciation transfer checks.",
-    "Every pronunciation question choice and speaking card displays its authored illustration.",
-    "Upgraded full pronunciation curriculum with studio-grade eleven_v4 dual-speaker audio."
+    "Listening discrimination questions automatically play target word audio on load.",
+    "Questions advance automatically after feedback by default, defeatable via settings.",
+    "Clean eleven_v4 natural pronunciation clips synthesized for van, bat, and pet."
   ],
   "notesAr": [
-    "إصلاح تقدم الأسئلة والانتقال التلقائي في اختبارات نقل النطق.",
-    "تعرض جميع خيارات أسئلة النطق وبطاقات التحدث رسوماتها التوضيحية المعتمدة.",
-    "ترقية منهاج النطق بالكامل بتسجيلات eleven_v4 فائقة النقاء مع دعم النقل الصوتي متعدد الأصوات."
+    "تشغيل تلقائي للصوت في أسئلة التمييز السمعي بمجرد ظهور السؤال.",
+    "الانتقال التلقائي للأسئلة بعد الإجابة مفعل افتراضيًا، مع خيار تعطيله من الإعدادات.",
+    "تسجيلات طبيعية نقية بنموذج eleven_v4 لكلمات van و bat و pet لضمان دقة مخارج الحروف."
   ],
   "releases": [
+    {
+      "id": "0.1.35",
+      "version": "0.1.35",
+      "date": "2026-10-14",
+      "title": {
+        "en": "Listening autoplay, default auto-advance & clean pronunciation audio",
+        "ar": "التشغيل التلقائي للاستماع، والانتقال التلقائي الافتراضي، وضبط صوت النطق"
+      },
+      "changes": [
+        {
+          "id": "pronunciation-listening-autoplay",
+          "category": "improved",
+          "en": "Listening discrimination stages automatically play the target word prompt upon loading each question.",
+          "ar": "تشغيل تلقائي للصوت المستهدف في مراحل التمييز السمعي بمجرد تحميل السؤال دون الحاجة للنقر اليدوي."
+        },
+        {
+          "id": "auto-advance-default",
+          "category": "improved",
+          "en": "Questions advance automatically after feedback by default, with easy pause and disable controls in options and settings.",
+          "ar": "الانتقال التلقائي للسؤال التالي بعد تقييم الإجابة مفعل افتراضيًا، مع إمكانية إيقافه أو تعطيله بسهولة."
+        },
+        {
+          "id": "pronunciation-natural-audio",
+          "category": "fixed",
+          "en": "Generated clean eleven_v4 natural voice clips for van, bat, and pet, removing phoneme artifacts.",
+          "ar": "توليد تسجيلات طبيعية فائقة النقاء بنموذج eleven_v4 لكلمات van و bat و pet وإزالة الشوائب الصوتية السابقة."
+        }
+      ]
+    },
     {
       "id": "0.1.34",
       "version": "0.1.34",

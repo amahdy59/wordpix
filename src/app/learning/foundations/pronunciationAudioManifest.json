@@ -764,26 +764,26 @@
     ],
     "van": [
       {
-        "objectKey": "audio/8a/8ad29bf194c0cd5b0291679aa3f0584e535aed8ba343f45879cd766ae2fb5772.mp3",
+        "objectKey": "audio/a3/a3dd127bb31cd72737ebd9e2af48e9641bcf92b3ebf8b9d3ede67a28210e9e1a.mp3",
         "displayText": "van",
-        "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"V AE1 N\">van</phoneme>",
+        "synthesisText": "van",
         "speaker": "nichalia",
         "profile": {
           "voiceId": "XfNU2rGpBa01ckF309OY",
-          "modelId": "eleven_flash_v2",
+          "modelId": "eleven_v4",
           "stability": 0.7,
           "similarityBoost": 0.75
         },
         "source": "derived-profile"
       },
       {
-        "objectKey": "audio/ba/ba93f52d552ad6f50e703e5fdfa2bceba8db10bbc6896203f0cc1b51b1898f27.mp3",
+        "objectKey": "audio/0e/0ed61a2dfb5e95d8defbdb6df7b43b4b4fa0c1f8d6b46284eda29cf74d53f582.mp3",
         "displayText": "van",
-        "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"V AE1 N\">van</phoneme>",
+        "synthesisText": "van",
         "speaker": "alice",
         "profile": {
           "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
-          "modelId": "eleven_flash_v2",
+          "modelId": "eleven_v4",
           "stability": 0.7,
           "similarityBoost": 0.75
         },
@@ -3235,26 +3235,39 @@
     ],
     "bat": [
       {
-        "objectKey": "audio/51/51b0ef54623f53382022b3f36d35d40fd6f7f8b625e11cea67a5c224696f6a09.mp3",
+        "objectKey": "audio/d6/d6b98ca60f6b385777ebfb704bf5c429818fd36db1ca92b2077900b2db1c7696.mp3",
         "displayText": "bat",
-        "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"B AE1 T\">bat</phoneme>",
+        "synthesisText": "bat",
         "speaker": "nichalia",
         "profile": {
           "voiceId": "XfNU2rGpBa01ckF309OY",
-          "modelId": "eleven_flash_v2",
+          "modelId": "eleven_v4",
           "stability": 0.7,
           "similarityBoost": 0.75
         },
         "source": "derived-profile"
       },
       {
-        "objectKey": "audio/5a/5acebb3f997376acc5c7f6c84a6416ede80718d722fb9969c4b8529306e8d344.mp3",
+        "objectKey": "audio/d2/d2215b63f64544d4fe4f052239c107bb25c005ade87e198489aff7f149204cf5.mp3",
         "displayText": "bat",
-        "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"B AE1 T\">bat</phoneme>",
+        "synthesisText": "bat",
+        "speaker": "nichalia",
+        "profile": {
+          "voiceId": "XfNU2rGpBa01ckF309OY",
+          "modelId": "eleven_turbo_v2_5",
+          "stability": 0.7,
+          "similarityBoost": 0.75
+        },
+        "source": "derived-profile"
+      },
+      {
+        "objectKey": "audio/93/9381f8b000e3c9457875f87e13c30f9a5f5365511c1ec4d6b5cbbae1489f2405.mp3",
+        "displayText": "bat",
+        "synthesisText": "bat",
         "speaker": "alice",
         "profile": {
           "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
-          "modelId": "eleven_flash_v2",
+          "modelId": "eleven_v4",
           "stability": 0.7,
           "similarityBoost": 0.75
         },
@@ -4733,26 +4746,26 @@
     ],
     "pet": [
       {
-        "objectKey": "audio/b8/b850da4df34db0c608b6107f7986bcaa5714f24af5518c619aa09c7b3c519185.mp3",
+        "objectKey": "audio/82/827fb52b095c9658900a1acf433a3edadd8f6aac946048eab3f81870b1ab2b57.mp3",
         "displayText": "pet",
-        "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"P EH1 T\">pet</phoneme>",
+        "synthesisText": "pet",
         "speaker": "nichalia",
         "profile": {
           "voiceId": "XfNU2rGpBa01ckF309OY",
-          "modelId": "eleven_flash_v2",
+          "modelId": "eleven_v4",
           "stability": 0.7,
           "similarityBoost": 0.75
         },
         "source": "derived-profile"
       },
       {
-        "objectKey": "audio/b4/b4582affff87b65b8ddd7726aa70ce02f57fbce2c920b4687b58b4a735e4fdec.mp3",
+        "objectKey": "audio/e0/e0dd1c9d9acb964c88607695f25b4e9d66d7e24454197d5c508febf20bb4e86e.mp3",
         "displayText": "pet",
-        "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"P EH1 T\">pet</phoneme>",
+        "synthesisText": "pet",
         "speaker": "alice",
         "profile": {
           "voiceId": "Xb7hH8MSUJpSbSDYk0k2",
-          "modelId": "eleven_flash_v2",
+          "modelId": "eleven_v4",
           "stability": 0.7,
           "similarityBoost": 0.75
         },

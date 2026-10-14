@@ -201,8 +201,12 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     });
     requestAnimationFrame(() => headingRef.current?.focus());
   };
+  // Pronunciation drills default to automatic progression, defeatable via Lesson Options or pause control.
+  const [drillAutoAdvance, setDrillAutoAdvance] = useState(true);
+  const isAutoAdvance = state.accessibility.autoAdvance || drillAutoAdvance;
+
   const autoAdvance = useAutoAdvance({
-    enabled: state.accessibility.autoAdvance,
+    enabled: isAutoAdvance,
     onAdvance: advance,
   });
   const clearPending = () => {
@@ -284,7 +288,6 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   useEffect(() => {
     headingRef.current?.focus();
   }, []);
-  // Audio starts only through an explicit learner action, so it cannot interrupt reading or recording.
   useEffect(
     () => () => {
       generationRef.current += 1;
@@ -295,6 +298,31 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   useEffect(() => {
     shortcutRef.current = { selectAnswer, play, advance };
   });
+
+  // Automatically play audio prompts on listening questions (Stage 1: Listen, Stage 4: Transfer)
+  useEffect(() => {
+    if (completedScore !== null || finishedRef.current) return;
+    if (stage !== 1 && stage !== 4) return;
+    if (session.answer !== null) return;
+    if (audioUnavailable) return;
+    if (state.accessibility.includeListening === false) return;
+
+    const timer = setTimeout(() => {
+      if (sessionRef.current.answer === null && !finishedRef.current) {
+        shortcutRef.current.play();
+      }
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [
+    stage,
+    session.trial,
+    session.answer,
+    session.currentTargetId,
+    completedScore,
+    audioUnavailable,
+    state.accessibility.includeListening,
+  ]);
   useEffect(() => {
     const handleKey = (event: KeyboardEvent) => {
       if (
@@ -373,14 +401,17 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               )}
               <button
                 type="button"
-                aria-pressed={state.accessibility.autoAdvance}
+                aria-pressed={isAutoAdvance}
                 className={buttonClass}
                 onClick={() => {
                   clearPending();
-                  setAccessibility({ autoAdvance: !state.accessibility.autoAdvance });
+                  if (state.accessibility.autoAdvance) {
+                    setAccessibility({ autoAdvance: false });
+                  }
+                  setDrillAutoAdvance(!isAutoAdvance);
                 }}
               >
-                {t(state.accessibility.autoAdvance ? "lessonShell.autoOn" : "lessonShell.autoOff")}
+                {t(isAutoAdvance ? "lessonShell.autoOn" : "lessonShell.autoOff")}
               </button>
             </HelpDisclosure>
           )}
@@ -855,6 +886,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   onClick={() => {
                     clearPending();
                     setAccessibility({ autoAdvance: false });
+                    setDrillAutoAdvance(false);
                   }}
                 >
                   {t("lessonShell.pauseAdvance")}

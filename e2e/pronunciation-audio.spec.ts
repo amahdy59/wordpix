@@ -130,7 +130,6 @@ test("replaying feedback pauses automatic continuation after explicit opt-in", a
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
   await expect(page.getByText(progressText(1, 1), { exact: true })).toBeVisible();
   await page.getByLabel("Lesson options", { exact: true }).click();
-  await page.getByRole("button", { name: "Automatic next question: off" }).click();
   await expect(page.getByRole("button", { name: "Automatic next question: on" })).toHaveAttribute(
     "aria-pressed",
     "true"
@@ -239,7 +238,9 @@ test("pronunciation keeps the activity accessible in Arabic at enlarged text", a
   );
 });
 
-test("pronunciation automatic continuation is explicitly enabled", async ({ page }, info) => {
+test("pronunciation automatic continuation is enabled by default and advances after feedback", async ({
+  page,
+}, info) => {
   await installWebKitPlaybackFixture(page, info);
   const fixture = path.resolve(
     "public/audio/00/00d352d1588016d7ba44e0bf1547b1255f1960d25b7a23aec8ed1bd941ced8a9.mp3"
@@ -251,7 +252,6 @@ test("pronunciation automatic continuation is explicitly enabled", async ({ page
   await waitForStyles(page);
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
   await page.getByLabel("Lesson options", { exact: true }).click();
-  await page.getByRole("button", { name: "Automatic next question: off" }).click();
   await expect(page.getByRole("button", { name: "Automatic next question: on" })).toHaveAttribute(
     "aria-pressed",
     "true"

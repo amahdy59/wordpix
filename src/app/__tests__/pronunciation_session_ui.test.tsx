@@ -211,4 +211,17 @@ describe("pronunciation lesson session", () => {
     expect(screen.getByText(new RegExp(`^Check 2 of ${trials} in this stage$`))).toBeVisible();
     vi.useRealTimers();
   });
+
+  it("automatically plays target audio upon entering a listening stage", () => {
+    vi.useFakeTimers();
+    renderLesson();
+    expect(mocks.speak).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole("button", { name: "Start listening" }));
+    expect(mocks.speak).not.toHaveBeenCalled();
+    act(() => {
+      vi.advanceTimersByTime(350);
+    });
+    expect(mocks.speak).toHaveBeenCalled();
+    vi.useRealTimers();
+  });
 });
