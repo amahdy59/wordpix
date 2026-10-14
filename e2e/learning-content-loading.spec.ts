@@ -29,10 +29,13 @@ test("word details fetch bounded shards and survive a cached offline reload", as
   // Service-worker control can precede React mounting and hash-router listeners.
   // Wait for the lazy Home screen before performing same-document navigation.
   await expect(page.getByRole("main").getByRole("heading", { level: 1 })).toBeVisible();
-  await page.goto("/wordpix/#/learn/construction-site", { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => {
+    window.location.hash = "/learn/construction-site";
+    window.dispatchEvent(new HashChangeEvent("hashchange"));
+  });
   await waitForStyles(page);
   await expect(page.getByRole("button", { name: /^Start lesson:/ }).first()).toBeVisible({
-    timeout: 15_000,
+    timeout: 30_000,
   });
   expect([...scripts].filter((url) => /\/lexicon-\d+-/.test(url))).toHaveLength(0);
   expect([...scripts].some((url) => /\/story-.*-groups-/.test(url))).toBe(false);

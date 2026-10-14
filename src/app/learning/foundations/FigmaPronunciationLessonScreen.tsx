@@ -656,6 +656,11 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 </>
               ) : stage === 3 ? (
                 <div className="space-y-3">
+                  {target && !target.context && target.imageRef && (
+                    <div className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-border bg-card">
+                      <WordImage item={target} className="aspect-[16/9] w-full object-cover" />
+                    </div>
+                  )}
                   <p className="text-2xl font-bold text-foreground" lang="en" dir="ltr">
                     {target?.label}
                   </p>
@@ -696,7 +701,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                       className={`overflow-hidden rounded-2xl border-2 bg-card text-start font-bold ${focusRing} ${session.answer === item.label ? (passed ? "border-feedback-success bg-feedback-success-surface" : "border-feedback-error-border bg-feedback-error-surface") : "border-border hover:border-primary"}`}
                       dir="ltr"
                     >
-                      {stage === 2 && !item.context && (
+                      {Boolean(item.imageRef) && (
                         <WordImage
                           item={item}
                           className="block aspect-[16/9] w-full object-cover"

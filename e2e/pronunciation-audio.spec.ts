@@ -26,7 +26,7 @@ const progressText = (number: number, current: number) =>
 // Playwright's route hooks; offline behavior is covered in resilience.spec.ts.
 test.use({ serviceWorkers: "block" });
 
-test("Pin or Pen includes the spoken target and its authored contrast without image clues", async ({
+test("Pin or Pen includes the spoken target and its authored contrast with visual image support", async ({
   page,
 }, info) => {
   await installWebKitPlaybackFixture(page, info);
@@ -38,6 +38,13 @@ test("Pin or Pen includes the spoken target and its authored contrast without im
     await route.fulfill({
       body: playbackFixture(),
       contentType: "audio/wav",
+    });
+  });
+  await page.route("**/pronunciation/v1/images/**", async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: "image/svg+xml",
+      body: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96"><rect width="96" height="96" fill="silver"/></svg>',
     });
   });
   await page.goto("/#/pronunciation/lesson-03", { waitUntil: "domcontentloaded" });
@@ -53,7 +60,7 @@ test("Pin or Pen includes the spoken target and its authored contrast without im
   ).toBeVisible();
   const clip = manifest.clips[firstTarget(3)].find((clip) => clip.source === "derived-profile")!;
   await expect.poll(() => requests.some((url) => url.endsWith(clip.objectKey))).toBe(true);
-  await expect(answer.locator("img")).toHaveCount(0);
+  await expect(answer.locator("img")).toHaveCount(1);
   await answer.focus();
   await page.keyboard.press("Space");
   await expect(page.getByRole("status").filter({ hasText: "Correct" })).toBeVisible();
@@ -69,7 +76,8 @@ const manifest = JSON.parse(
   clips: Record<string, Array<{ objectKey: string; displayText: string; source: string }>>;
 };
 
-test("pronunciation uses the reconciled R2 manifest key", async ({ page }) => {
+test("pronunciation uses the reconciled R2 manifest key", async ({ page }, info) => {
+  await installWebKitPlaybackFixture(page, info);
   const pageErrors: string[] = [];
   const audioRequests: string[] = [];
   const fixture = path.resolve(
@@ -102,7 +110,10 @@ test("pronunciation uses the reconciled R2 manifest key", async ({ page }) => {
   expect(pageErrors).toEqual([]);
 });
 
-test("replaying feedback pauses automatic continuation after explicit opt-in", async ({ page }) => {
+test("replaying feedback pauses automatic continuation after explicit opt-in", async ({
+  page,
+}, info) => {
+  await installWebKitPlaybackFixture(page, info);
   const fixture = path.resolve(
     "public/audio/00/00d352d1588016d7ba44e0bf1547b1255f1960d25b7a23aec8ed1bd941ced8a9.mp3"
   );
@@ -139,7 +150,10 @@ test("replaying feedback pauses automatic continuation after explicit opt-in", a
   });
 });
 
-test("manual pronunciation feedback preserves focus and survives reload", async ({ page }) => {
+test("manual pronunciation feedback preserves focus and survives reload", async ({
+  page,
+}, info) => {
+  await installWebKitPlaybackFixture(page, info);
   await page.goto("/#/pronunciation/lesson-03", { waitUntil: "domcontentloaded" });
   await waitForStyles(page);
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
@@ -220,7 +234,8 @@ test("pronunciation keeps the activity accessible in Arabic at enlarged text", a
   );
 });
 
-test("pronunciation automatic continuation is explicitly enabled", async ({ page }) => {
+test("pronunciation automatic continuation is explicitly enabled", async ({ page }, info) => {
+  await installWebKitPlaybackFixture(page, info);
   const fixture = path.resolve(
     "public/audio/00/00d352d1588016d7ba44e0bf1547b1255f1960d25b7a23aec8ed1bd941ced8a9.mp3"
   );
@@ -246,6 +261,7 @@ test("pronunciation automatic continuation is explicitly enabled", async ({ page
 test("speaking offers an honest local alternative at narrow width and persists it", async ({
   page,
 }, testInfo) => {
+  await installWebKitPlaybackFixture(page, testInfo);
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.setViewportSize({ width: 320, height: 740 });

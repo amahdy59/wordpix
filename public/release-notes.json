@@ -1,16 +1,33 @@
 {
-  "version": "0.1.32",
+  "version": "0.1.33",
   "notes": [
+    "Every pronunciation question choice and speaking card now displays its authored illustration.",
     "More focused speaking activities and clearer audio recovery.",
-    "Safer pronunciation resume preserves previous learning evidence.",
     "Upgraded full pronunciation curriculum with studio-grade eleven_v4 dual-speaker audio."
   ],
   "notesAr": [
+    "تعرض جميع خيارات أسئلة النطق وبطاقات التحدث رسوماتها التوضيحية المعتمدة.",
     "أنشطة تحدث أكثر تركيزًا وإرشادات أوضح لاستعادة الصوت.",
-    "استئناف أكثر أمانًا للنطق مع الحفاظ على أدلة التعلم السابقة.",
     "ترقية منهاج النطق بالكامل بتسجيلات eleven_v4 فائقة النقاء مع دعم النقل الصوتي متعدد الأصوات."
   ],
   "releases": [
+    {
+      "id": "0.1.33",
+      "version": "0.1.33",
+      "date": "2026-10-14",
+      "title": {
+        "en": "Pronunciation visual illustrations",
+        "ar": "الرسومات التوضيحية لتدريبات النطق"
+      },
+      "changes": [
+        {
+          "id": "pronunciation-question-images",
+          "category": "improved",
+          "en": "Every question choice and speaking target across all pronunciation stages now displays its authored illustration alongside clear audio.",
+          "ar": "تعرض جميع خيارات الأسئلة وأهداف التحدث عبر جميع مراحل النطق رسوماتها التوضيحية المعتمدة إلى جانب الصوت فائق النقاء."
+        }
+      ]
+    },
     {
       "id": "0.1.32",
       "version": "0.1.32",
