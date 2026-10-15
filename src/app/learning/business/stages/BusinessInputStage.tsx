@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, Pause, Volume2 } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
@@ -22,6 +22,11 @@ interface Props {
 export function BusinessInputStage({ unit, onNext }: Props) {
   const { t } = useI18n();
   const [playingIdx, setPlayingIdx] = useState<number | "full" | null>(null);
+  const [fullStep, setFullStep] = useState<number | null>(null);
+  const fullStepRef = useRef<number | null>(null);
+  useEffect(() => {
+    fullStepRef.current = fullStep;
+  }, [fullStep]);
   const [activeTerm, setActiveTerm] = useState<string | null>(null);
   const [playbackRate, setPlaybackRate] = useState(0.85);
   const { state } = useLearner();
@@ -33,11 +38,53 @@ export function BusinessInputStage({ unit, onNext }: Props) {
     () => getBusinessInputPresentation(unit.mainInput),
     [unit.mainInput]
   );
+  const scenarioQueue = useMemo(() => {
+    const items: { idx: number | "context"; text: string }[] = [];
+    if (presentation.showContext && unit.mainInput.context.trim()) {
+      items.push({ idx: "context", text: unit.mainInput.context });
+    }
+    unit.mainInput.dialogue.forEach((line, idx) => {
+      if (presentation.visibleLineIndices.has(idx)) {
+        items.push({ idx, text: line.text });
+      }
+    });
+    return items;
+  }, [presentation, unit.mainInput]);
+
+  const playFullScenario = (stepIndex: number = 0) => {
+    if (!listeningEnabled || !audio.isSupported) return;
+    if (fullRecording) {
+      setPlayingIdx("full");
+      setFullStep(null);
+      audio.speak(fullText, "en-US", fullRecording.key);
+      return;
+    }
+    if (stepIndex >= scenarioQueue.length) {
+      setPlayingIdx(null);
+      setFullStep(null);
+      return;
+    }
+    setPlayingIdx("full");
+    setFullStep(stepIndex);
+    const item = scenarioQueue[stepIndex];
+    audio.speak(item.text, "en-US", getBusinessReadingAudio(unit.id, item.text)?.key);
+  };
+
   const audio = useAudio({
     lang: "en-US",
     rate: playbackRate,
     preserveText: true,
-    onEnded: () => setPlayingIdx(null),
+    onEnded: () => {
+      if (fullStepRef.current !== null) {
+        const nextStep = fullStepRef.current + 1;
+        if (nextStep < scenarioQueue.length) {
+          playFullScenario(nextStep);
+          return;
+        }
+      }
+      setPlayingIdx(null);
+      setFullStep(null);
+    },
   });
   const vocabTerms = useMemo(() => unit.languageBank.map((item) => item.term), [unit.languageBank]);
   const presentTerms = useMemo(
@@ -59,10 +106,12 @@ export function BusinessInputStage({ unit, onNext }: Props) {
   }, [activeTerm, unit.languageBank]);
   const startTrack = (text: string, idx: number | "full") => {
     if (!listeningEnabled || !audio.isSupported) return;
+    setFullStep(null);
     setPlayingIdx(idx);
     audio.speak(text, "en-US", getBusinessReadingAudio(unit.id, text)?.key);
   };
   const playParagraph = (text: string, idx: number) => {
+    setFullStep(null);
     if (playingIdx === idx && audio.isPaused) audio.resume();
     else if (playingIdx === idx && audio.isPlaying) {
       if (audio.isLoading) audio.stop();
@@ -103,8 +152,8 @@ export function BusinessInputStage({ unit, onNext }: Props) {
           <ReadingAudioPlayer
             audio={audio}
             active={playingIdx !== null}
-            onPlay={() => startTrack(fullText, "full")}
-            onRestart={() => startTrack(fullText, "full")}
+            onPlay={() => playFullScenario(0)}
+            onRestart={() => playFullScenario(0)}
             rate={playbackRate}
             onRateChange={setPlaybackRate}
             enabled={listeningEnabled}
@@ -118,9 +167,23 @@ export function BusinessInputStage({ unit, onNext }: Props) {
               <p>
                 <TimedPassageText
                   text={unit.mainInput.context}
-                  spans={fullRecording?.spans}
-                  time={playingIdx === "full" ? time : null}
-                  offset={unit.mainInput.title.length + 2}
+                  spans={
+                    fullRecording
+                      ? fullRecording.spans
+                      : getBusinessReadingAudio(unit.id, unit.mainInput.context)?.spans
+                  }
+                  time={
+                    fullRecording
+                      ? playingIdx === "full"
+                        ? time
+                        : null
+                      : playingIdx === "full" &&
+                          fullStep !== null &&
+                          scenarioQueue[fullStep]?.idx === "context"
+                        ? time
+                        : null
+                  }
+                  offset={fullRecording ? unit.mainInput.title.length + 2 : 0}
                   vocabTerms={vocabTerms}
                   interactiveVocabulary={false}
                 />
@@ -130,18 +193,24 @@ export function BusinessInputStage({ unit, onNext }: Props) {
               if (!presentation.visibleLineIndices.has(idx)) return null;
               const narrator = line.speaker.trim().toLowerCase() === "narrator";
               const selected = playingIdx === idx;
-              const recording =
-                playingIdx === "full" ? fullRecording : getBusinessReadingAudio(unit.id, line.text);
-              const offset =
-                playingIdx === "full"
-                  ? unit.mainInput.title.length +
-                    2 +
-                    unit.mainInput.context.length +
-                    1 +
-                    unit.mainInput.dialogue
-                      .slice(0, idx)
-                      .reduce((sum, previous) => sum + previous.text.length + 1, 0)
-                  : 0;
+              const isLineActiveInFull =
+                playingIdx === "full" &&
+                !fullRecording &&
+                fullStep !== null &&
+                scenarioQueue[fullStep]?.idx === idx;
+              const isFullMonolithic = playingIdx === "full" && Boolean(fullRecording);
+              const recording = isFullMonolithic
+                ? fullRecording
+                : getBusinessReadingAudio(unit.id, line.text);
+              const offset = isFullMonolithic
+                ? unit.mainInput.title.length +
+                  2 +
+                  unit.mainInput.context.length +
+                  1 +
+                  unit.mainInput.dialogue
+                    .slice(0, idx)
+                    .reduce((sum, previous) => sum + previous.text.length + 1, 0)
+                : 0;
               return (
                 <div key={idx} className="flex min-w-0 items-start gap-2 sm:gap-4">
                   <div className="min-w-0 flex-1">
@@ -152,7 +221,7 @@ export function BusinessInputStage({ unit, onNext }: Props) {
                       <TimedPassageText
                         text={line.text}
                         spans={recording?.spans}
-                        time={playingIdx === "full" || selected ? time : null}
+                        time={isFullMonolithic || isLineActiveInFull || selected ? time : null}
                         offset={offset}
                         vocabTerms={vocabTerms}
                         interactiveVocabulary={false}
@@ -164,18 +233,18 @@ export function BusinessInputStage({ unit, onNext }: Props) {
                       type="button"
                       onClick={() => playParagraph(line.text, idx)}
                       disabled={!audio.isSupported}
-                      aria-pressed={selected && audio.isPlaying}
+                      aria-pressed={(selected || isLineActiveInFull) && audio.isPlaying}
                       aria-label={t(
-                        selected && audio.isPaused
+                        (selected || isLineActiveInFull) && audio.isPaused
                           ? "readingPlayer.resumeParagraph"
-                          : selected && audio.isPlaying
+                          : (selected || isLineActiveInFull) && audio.isPlaying
                             ? "readingPlayer.pauseParagraph"
                             : "conversation.listenParagraph",
                         { number: idx + 1 }
                       )}
                       className="inline-flex size-11 shrink-0 items-center justify-center rounded-xl text-foreground hover:bg-secondary disabled:opacity-60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >
-                      {selected && audio.isPlaying ? (
+                      {(selected || isLineActiveInFull) && audio.isPlaying ? (
                         <Pause className="size-4" aria-hidden />
                       ) : (
                         <Volume2 className="size-4" aria-hidden />

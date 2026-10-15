@@ -1,16 +1,45 @@
 {
-  "version": "0.1.38",
+  "version": "0.1.39",
   "notes": [
-    "Self-hosted variable fonts (Inter & Noto Sans Arabic) with zero network dependency and enhanced Arabic typography.",
-    "Lesson Focus Mode that suppresses bottom navigation during drills to prevent accidental taps and keyboard collisions.",
-    "Decluttered home dashboard, sticky CEFR level switcher on the learning path, and streamlined plain-language practice reviews."
+    "Studio-quality multi-character voice acting across Business English scenarios with distinct voices for narration, male colleagues, and female executives.",
+    "Chained multi-actor scenario player that advances naturally with real-time sentence synchronization and visual speaker badging.",
+    "Corrected dialogue speaker attribution in workplace case studies, restoring character names and role badges."
   ],
   "notesAr": [
-    "استضافة خطوط متغيرة محلياً (Inter و Noto Sans Arabic) بدون اعتماد على الشبكة مع تحسين طباعة النصوص العربية.",
-    "وضع التركيز في الدروس الذي يُخفي شريط التنقل السفلي أثناء التدريبات لمنع اللمسات غير المقصودة وتداخل لوحة المفاتيح.",
-    "تبسيط الصفحة الرئيسية، وإضافة شريط تنقل مثبت لمستويات CEFR في مسار التعلم، وتسهيل مراجعات التدريب بلغة واضحة."
+    "أداء صوتي احترافي متعدد الشخصيات لسيناريوهات القراءة في منهج الأعمال مع أصوات مميزة للراوي والزملاء والإداريات.",
+    "مشغل متسلسل ذكي للسيناريوهات يتنقل بين الشخصيات بتزامن دقيق على مستوى الجمل وتمييز بصري للمتحدث.",
+    "تصحيح تسميات المتحدثين في دراسات الحالة وسيناريوهات العمل مع استعادة أسماء الشخصيات ورتبها."
   ],
   "releases": [
+    {
+      "id": "0.1.39",
+      "version": "0.1.39",
+      "date": "2026-10-15",
+      "title": {
+        "en": "Multi-voice character audio for Business English curriculum",
+        "ar": "تسجيلات صوتية متعددة الشخصيات لمنهج اللغة الإنجليزية للأعمال"
+      },
+      "changes": [
+        {
+          "id": "business-multivoice-audio",
+          "category": "added",
+          "en": "Studio-quality multi-character voice acting across Business English reading scenarios with distinct casting for narration, male colleagues, and female executives.",
+          "ar": "أداء صوتي احترافي متعدد الشخصيات لسيناريوهات القراءة في منهج الأعمال مع أصوات مميزة للراوي والزملاء والإداريات."
+        },
+        {
+          "id": "business-chained-scenario-player",
+          "category": "improved",
+          "en": "Introduced chained scenario playback that flows naturally between characters in sequence with real-time sentence synchronization and visual speaker badging.",
+          "ar": "مشغل متسلسل ذكي للسيناريوهات يتنقل بين الشخصيات بتزامن دقيق على مستوى الجمل وتمييز بصري للمتحدث."
+        },
+        {
+          "id": "business-speaker-attribution",
+          "category": "fixed",
+          "en": "Corrected dialogue speaker attribution in workplace case studies, restoring character names and role badges in early business units.",
+          "ar": "تصحيح تسميات المتحدثين في دراسات الحالة وسيناريوهات العمل مع استعادة أسماء الشخصيات ورتبها."
+        }
+      ]
+    },
     {
       "id": "0.1.38",
       "version": "0.1.38",
