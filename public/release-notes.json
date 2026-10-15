@@ -1,14 +1,66 @@
 {
-  "version": "0.1.42",
+  "version": "0.1.44",
   "notes": [
-    "Interleaved lesson progression dividing vocabulary into 4–5 word micro-cycles followed by synthesis, eliminating repetitive drills while preserving 100% of questions.",
-    "Smart visual framing with ambient backdrops for exercise choices, ensuring complete visibility of numbers and subjects without cropping."
+    "Embedded authentic conversational listening scenarios across all 200 unit study materials and active lesson stories with multi-character audio, live subtitles, and sentence replay.",
+    "Integrated UnitScenarioPlayer into Study Overview, Use-in-Context dialogues, and lesson story transfer stages with HTTP range streaming."
   ],
   "notesAr": [
-    "مسار دروس تداخلي يقسم المفردات إلى حلقات مصغرة من 4–5 كلمات تليها مرحلة تركيب وتطبيق، لتفادي التكرار الممل مع الحفاظ على كامل الأسئلة.",
-    "تأطير بصري ذكي مع خلفيات انسيابية لخيارات التمارين، لضمان ظهور كامل للأرقام والموضوعات دون أي اقتطاع عبر الشاشات."
+    "دمج سيناريوهات الاستماع الحوارية الواقعية عبر المواد الدراسية لجميع الوحدات الـ 200 والقصص التعليمية بأصوات متعددة وترجمة متزامنة وتشغيل لكل جملة.",
+    "تضمين مشغل السيناريوهات UnitScenarioPlayer في نظرة عامة على الوحدة وتدريبات الاستخدام السياقي ومراحل القصة مع دعم البث الجزئي للصوت."
   ],
   "releases": [
+    {
+      "id": "0.1.44",
+      "version": "0.1.44",
+      "date": "2026-10-15",
+      "title": {
+        "en": "Authentic Listening Scenarios Integrated into Unit Materials and Lesson Stories",
+        "ar": "دمج سيناريوهات الاستماع الواقعية ضمن المواد الدراسية والقصص التعليمية"
+      },
+      "changes": [
+        {
+          "id": "unit-scenario-player",
+          "category": "added",
+          "en": "Launched accessible UnitScenarioPlayer featuring multi-character playback, real-time line synchronization, individual sentence repeat buttons, speed controls (0.75x–1.25x), and target vocabulary badges.",
+          "ar": "إطلاق مشغل السيناريوهات التفاعلي UnitScenarioPlayer بأداء صوتي متعدد الشخصيات، تزامن لحظي مع الأسطر، أزرار استماع للجمل المنفردة، وتحكم بالسرعة مع شارات المفردات."
+        },
+        {
+          "id": "study-materials-scenario-integration",
+          "category": "improved",
+          "en": "Wired listening scenarios directly into Unit Study Materials Overview and the 'Use in context' dialogue activity stream for all 200 curriculum units.",
+          "ar": "ربط سيناريوهات الاستماع مباشرة بصفحة نظرة عامة على المواد الدراسية وقسم الحوار ضمن تدريبات الاستخدام السياقي لكافة وحدات المنهج الـ 200."
+        },
+        {
+          "id": "lesson-story-scenario-transfer",
+          "category": "improved",
+          "en": "Connected authentic scenario dialogues into the Story Climax & Reading Context stage of core vocabulary lessons, providing natural conversational transfer.",
+          "ar": "ربط حوارات السيناريوهات الأصيلة بمرحلة القراءة والقصة في الدروس التفاعلية، مما يوفر تطبيقاً حوارياً طبيعياً للمفردات المتعلمة."
+        }
+      ]
+    },
+    {
+      "id": "0.1.43",
+      "version": "0.1.43",
+      "date": "2026-10-15",
+      "title": {
+        "en": "Studio audio parity for core Starter reading passages (Units 01–10)",
+        "ar": "تسجيلات صوتية احترافية لنصوص القراءة للوحدات التأسيسية (01–10)"
+      },
+      "changes": [
+        {
+          "id": "starter-passages-audio",
+          "category": "added",
+          "en": "Generated and uploaded native studio audio recordings using Nichalia Schwartz (eleven_turbo_v2_5) for reading passages across Starter Units 01–10 (Numbers & Counting, Colors, Shapes, Family, Bedroom, Kitchen, Living Room, Fruits, Bathroom, and Emotions).",
+          "ar": "توليد ورفع تسجيلات استوديو صوتية احترافية بصوت Nichalia Schwartz لنصوص القراءة عبر الوحدات التأسيسية من 01 إلى 10 (الأرقام والعد، الألوان، الأشكال، العائلة، غرفة النوم، المطبخ، غرفة المعيشة، الفواكه، الحمام، والمشاعر)."
+        },
+        {
+          "id": "audio-lookup-dual-hash",
+          "category": "improved",
+          "en": "Enhanced useAudio pregenerated clip resolver to cross-reference both authored text with natural hyphens and normalized vocabulary slugs, eliminating synthesis fallback on hyphenated prose.",
+          "ar": "ترقية نظام البحث عن المقاطع الصوتية في useAudio للتحقق من النص الأصلي بالواصلات اللغوية إلى جانب المعرفات المجردة، لمنع الرجوع إلى الصوت التخليقي في النصوص المركبة."
+        }
+      ]
+    },
     {
       "id": "0.1.42",
       "version": "0.1.42",

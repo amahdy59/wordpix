@@ -126,7 +126,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   }, [stop]);
 
   const handleSelectWordIndex = useCallback(
-    (index: number) => {
+    (index: number, autoPlay = false) => {
       const nextIndex = Math.min(Math.max(index, 0), words.length - 1);
       if (nextIndex === activeWordIndex) return;
       if (advanceTimer.current) clearTimeout(advanceTimer.current);
@@ -134,8 +134,15 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       resetSpeech();
       setPlaybackError(false);
       setActiveWordIndex(nextIndex);
+      if (autoPlay && !continuous) {
+        const nextWord = words[nextIndex];
+        if (nextWord) {
+          setPlaybackError(false);
+          speak(nextWord.label);
+        }
+      }
     },
-    [activeWordIndex, resetSpeech, stop, words.length]
+    [activeWordIndex, continuous, resetSpeech, speak, stop, words]
   );
   const group = useMemo(
     () =>
@@ -185,7 +192,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         handleSelectWordIndex(activeWordIndex - 1);
       } else if (e.key === (isRtl ? "ArrowLeft" : "ArrowRight")) {
         e.preventDefault();
-        handleSelectWordIndex(activeWordIndex + 1);
+        handleSelectWordIndex(activeWordIndex + 1, true);
       } else if (
         e.code === "Space" &&
         (e.target === document.body || e.target === document.documentElement)
@@ -213,7 +220,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     const diff = document.documentElement.dir === "rtl" ? -horizontal : horizontal;
     if (Math.abs(diff) > 40 && Math.abs(horizontal) > Math.abs(vertical)) {
       if (diff < 0 && activeWordIndex < words.length - 1) {
-        handleSelectWordIndex(activeWordIndex + 1);
+        handleSelectWordIndex(activeWordIndex + 1, true);
       } else if (diff > 0 && activeWordIndex > 0) {
         handleSelectWordIndex(activeWordIndex - 1);
       }
@@ -370,7 +377,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                   pausePlayback();
                   resetSpeech();
                   dispatch({ type: "LESSON_NEXT" });
-                } else handleSelectWordIndex(activeWordIndex + 1);
+                } else handleSelectWordIndex(activeWordIndex + 1, true);
               }}
               className="absolute z-10 end-6 lg:-end-14 top-[calc(clamp(10rem,26dvh,22rem)/2+1rem)] lg:top-1/2 -translate-y-1/2 size-11 rounded-full bg-wp-card border border-border text-primary shadow-md grid place-items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >

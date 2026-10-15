@@ -1,8 +1,70 @@
 import { defineConfig, type PluginOption } from "vite";
 import { execFileSync } from "node:child_process";
+import fs from "node:fs";
+import type { IncomingMessage, ServerResponse } from "node:http";
 import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+
+function scenarioAudioServer(): PluginOption {
+  const handler = (req: IncomingMessage, res: ServerResponse, next: (err?: unknown) => void) => {
+    const rawUrl = req.url || "";
+    const cleanUrl = rawUrl.split("?")[0];
+    const prefix1 = "/wordpix/assets/audio/scenarios/";
+    const prefix2 = "/assets/audio/scenarios/";
+    let subPath: string | null = null;
+    if (cleanUrl.startsWith(prefix1)) {
+      subPath = cleanUrl.slice(prefix1.length);
+    } else if (cleanUrl.startsWith(prefix2)) {
+      subPath = cleanUrl.slice(prefix2.length);
+    }
+    if (!subPath) return next();
+
+    const decoded = decodeURIComponent(subPath);
+    const filePath = path.resolve(__dirname, "assets/audio/scenarios", decoded);
+    if (!fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) {
+      return next();
+    }
+
+    const stat = fs.statSync(filePath);
+    let contentType = "application/octet-stream";
+    if (filePath.endsWith(".mp3")) contentType = "audio/mpeg";
+    else if (filePath.endsWith(".vtt")) contentType = "text/vtt";
+    else if (filePath.endsWith(".srt")) contentType = "text/plain";
+
+    const range = req.headers.range;
+    if (range) {
+      const parts = range.replace(/bytes=/, "").split("-");
+      const start = parseInt(parts[0], 10);
+      const end = parts[1] ? parseInt(parts[1], 10) : stat.size - 1;
+      const chunksize = end - start + 1;
+      res.writeHead(206, {
+        "Content-Range": `bytes ${start}-${end}/${stat.size}`,
+        "Accept-Ranges": "bytes",
+        "Content-Length": chunksize,
+        "Content-Type": contentType,
+      });
+      fs.createReadStream(filePath, { start, end }).pipe(res);
+    } else {
+      res.writeHead(200, {
+        "Content-Length": stat.size,
+        "Accept-Ranges": "bytes",
+        "Content-Type": contentType,
+      });
+      fs.createReadStream(filePath).pipe(res);
+    }
+  };
+
+  return {
+    name: "scenario-audio-server",
+    configureServer(server) {
+      server.middlewares.use(handler);
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use(handler);
+    },
+  };
+}
 
 function figmaAssetResolver() {
   return {
@@ -53,7 +115,14 @@ export default defineConfig(async () => {
   }
   return {
     base: "/wordpix/",
-    plugins: [buildProvenance(), figmaAssetResolver(), react(), tailwindcss(), ...extraPlugins],
+    plugins: [
+      buildProvenance(),
+      figmaAssetResolver(),
+      scenarioAudioServer(),
+      react(),
+      tailwindcss(),
+      ...extraPlugins,
+    ],
     // Must stay in step with the "paths" block in tsconfig.json. Three of the
     // previous six aliases (@shared, @types, @constants) pointed at directories
     // that do not exist — the real locations are src/app/shared, src/app/types.ts,
@@ -124,6 +193,9 @@ export default defineConfig(async () => {
             }
             if (id.includes("curriculumAudioManifest")) {
               return "curriculum-audio-manifest";
+            }
+            if (id.includes("curriculumScenarios")) {
+              return "curriculum-scenarios";
             }
             if (id.includes("src/i18n/")) {
               // en.json ships synchronously (default + fallback locale); ar.json

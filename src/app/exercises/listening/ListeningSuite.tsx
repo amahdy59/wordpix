@@ -1,4 +1,4 @@
-import { memo, useCallback, useMemo, useState } from "react";
+import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { Action } from "../../types";
 import { BEDROOM_VOCABULARY } from "../../data/courseCatalog";
 
@@ -40,6 +40,13 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
     []
   );
   const sentence = `The cat is sleeping on the ${target.label.toLowerCase()}`;
+
+  useEffect(() => {
+    const t = setTimeout(() => {
+      speak(sentence);
+    }, 250);
+    return () => clearTimeout(t);
+  }, [sentence, speak]);
 
   const reveal = useCallback(() => {
     setResult((current) => current ?? "incorrect");

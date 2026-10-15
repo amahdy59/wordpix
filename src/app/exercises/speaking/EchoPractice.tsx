@@ -44,6 +44,13 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
   void SPEECH_UNSUPPORTED_NOTE;
 
   useEffect(() => {
+    const t = setTimeout(() => {
+      speak(target.label);
+    }, 250);
+    return () => clearTimeout(t);
+  }, [target.label, speak]);
+
+  useEffect(() => {
     if (!attempt) return;
     if (attempt.matched) playCorrect();
     else playIncorrect();

@@ -19,7 +19,6 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
-import { answerLayout } from "../shared/answerLayout";
 
 interface Props {
   step: number;
@@ -182,24 +181,64 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           />
         }
         activity={
-          <div className={answerLayout(options.map((option) => option.label))} dir="ltr" lang="en">
-            {options.map((option, index) => (
-              <motion.button
-                key={option.id}
-                type="button"
-                whileTap={!reduceMotion && feedback === null ? { scale: 0.95 } : {}}
-                transition={{ duration: 0.1 }}
-                aria-pressed={selectedId === option.id}
-                aria-disabled={feedback !== null || undefined}
-                onClick={() => handleSelect(option.id)}
-                className="flex min-h-[48px] items-center justify-between rounded-xl border-2 border-border bg-wp-card p-2.5 font-sans text-base font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none sm:min-h-[52px] sm:p-3 sm:text-lg"
-              >
-                <span className="capitalize">{option.label.toLowerCase()}</span>
-                <span className="hidden rounded-md bg-muted px-2 py-0.5 text-xs font-bold text-muted-foreground sm:inline-block">
-                  {index + 1}
-                </span>
-              </motion.button>
-            ))}
+          <div
+            className="flex flex-col gap-3 sm:gap-3.5 w-full flex-1 justify-center"
+            role="group"
+            aria-label={t("exercise.wordChoicesAria")}
+            dir="ltr"
+            lang="en"
+          >
+            {options.map((option, index) => {
+              const isSelected = selectedId === option.id;
+              const isCorrect = option.id === currentTargetWord.id;
+              const showRevealed = feedback === "incorrect" && isCorrect;
+
+              let stateClasses =
+                "border-border bg-wp-card text-foreground hover:border-primary/70 hover:bg-secondary/40 shadow-wp-xs hover:shadow-wp-sm";
+              if (isSelected) {
+                if (feedback === "correct") {
+                  stateClasses =
+                    "border-wp-green bg-wp-green-light/40 dark:bg-wp-green/20 text-foreground shadow-wp-sm";
+                } else if (feedback === "incorrect") {
+                  stateClasses =
+                    "border-wp-rose bg-wp-rose-light/40 dark:bg-wp-rose/20 text-foreground shadow-wp-sm";
+                } else {
+                  stateClasses = "border-primary bg-secondary text-primary shadow-wp-sm";
+                }
+              } else if (showRevealed) {
+                stateClasses =
+                  "border-wp-green bg-wp-green-light/20 dark:bg-wp-green/10 text-foreground";
+              }
+
+              return (
+                <motion.button
+                  key={option.id}
+                  type="button"
+                  whileTap={!reduceMotion && feedback === null ? { scale: 0.98 } : {}}
+                  transition={{ duration: 0.1 }}
+                  aria-pressed={isSelected}
+                  aria-disabled={feedback !== null || undefined}
+                  onClick={() => handleSelect(option.id)}
+                  className={`group flex min-h-[56px] sm:min-h-[64px] lg:min-h-[70px] w-full items-center justify-between rounded-2xl border-2 p-3.5 sm:p-5 font-sans text-lg sm:text-xl font-bold transition-all motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${stateClasses}`}
+                >
+                  <span className="flex items-center gap-3">
+                    {isSelected && feedback === "correct" && (
+                      <CheckCircle2 className="size-5 text-wp-green shrink-0" aria-hidden="true" />
+                    )}
+                    {isSelected && feedback === "incorrect" && (
+                      <XCircle className="size-5 text-destructive shrink-0" aria-hidden="true" />
+                    )}
+                    {showRevealed && (
+                      <CheckCircle2 className="size-5 text-wp-green shrink-0" aria-hidden="true" />
+                    )}
+                    <span className="capitalize">{option.label.toLowerCase()}</span>
+                  </span>
+                  <span className="hidden rounded-lg border border-border/80 bg-muted px-2.5 py-1 text-xs font-mono font-bold text-muted-foreground group-hover:border-primary/40 group-hover:text-primary sm:inline-block">
+                    {index + 1}
+                  </span>
+                </motion.button>
+              );
+            })}
           </div>
         }
         feedback={

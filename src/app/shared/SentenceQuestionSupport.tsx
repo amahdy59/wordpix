@@ -108,12 +108,12 @@ export function SentenceQuestionSupport({
       ? t("exercise.meaningClue")
       : t("exercise.wordToPractice");
   return (
-    <div className="flex min-w-0 flex-col gap-2 sm:gap-3">
+    <div className="flex min-w-0 flex-1 flex-col gap-3 sm:gap-4 h-full">
       {hasImage ? (
         <MediaFrame
           fit="cover"
           aspect="recognition"
-          className="w-full max-h-60 sm:max-h-72 lg:max-h-80 shadow-wp-xs"
+          className="w-full flex-1 min-h-[220px] sm:min-h-[280px] lg:min-h-[340px] max-h-[min(55vh,480px)] aspect-[4/3] lg:aspect-auto shadow-wp-sm"
         >
           <QuestionImage
             media={media}
@@ -126,14 +126,14 @@ export function SentenceQuestionSupport({
       ) : (
         <ScenePlaceholder />
       )}
-      <div className="flex flex-wrap items-center gap-2 rounded-xl border border-border bg-wp-card p-2 sm:p-3">
+      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-wp-card p-3 sm:p-4 shadow-wp-xs shrink-0">
         <p
           lang="en"
           dir="ltr"
-          className="min-w-0 flex-1 basis-36 text-start text-base leading-relaxed text-foreground"
+          className="min-w-0 flex-1 basis-36 text-start text-base sm:text-lg leading-relaxed text-foreground"
         >
-          <span className="font-semibold">{clueLabel}: </span>
-          {clue}
+          <span className="font-bold text-foreground">{clueLabel}: </span>
+          <span className="font-semibold text-primary">{clue}</span>
         </p>
         <Button
           variant="outline"
@@ -151,6 +151,7 @@ export function SentenceQuestionSupport({
           aria-describedby={!answered ? audioHintId : undefined}
           iconLeft={<Volume2 className="size-4" aria-hidden />}
           onClick={() => (audio.isPlaying ? audio.stop() : audio.play())}
+          className="shrink-0 min-h-[44px] min-w-[44px] px-4 font-semibold"
         >
           {audio.isPlaying
             ? t("action.stop")

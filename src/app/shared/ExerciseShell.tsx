@@ -95,7 +95,7 @@ export const ExerciseShell = memo(function ExerciseShell({
             className={
               layout === "media"
                 ? "w-full flex flex-1 min-h-0 flex-col gap-4 justify-start pb-3"
-                : "w-full flex flex-col gap-3.5 sm:gap-5 justify-start pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:pb-8"
+                : "w-full flex flex-1 min-h-0 flex-col gap-3.5 sm:gap-5 justify-start pb-[calc(env(safe-area-inset-bottom)+1rem)] sm:pb-8"
             }
           >
             {children}

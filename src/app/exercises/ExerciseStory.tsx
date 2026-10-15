@@ -36,6 +36,8 @@ import { loadLessonStory } from "../data/lessonStoryLoader";
 import { rotateOptions } from "../data/lessonContext";
 import { LessonTransferPractice } from "./LessonTransferPractice";
 import { QuestionImage } from "../shared/QuestionImage";
+import { getScenarioForLesson } from "../data/scenarios/scenarioService";
+import { UnitScenarioPlayer } from "../learning/study/UnitScenarioPlayer";
 
 interface Props {
   step: number;
@@ -65,6 +67,8 @@ export const ExerciseStory = memo(function ExerciseStory({
     | { lessonId: string; attempt: number; status: "error" }
     | null
   >(null);
+
+  const lessonScenario = useMemo(() => getScenarioForLesson(lessonId), [lessonId]);
 
   const phraseGroups = useMemo(() => {
     const phrases = usageData?.usage.phrases ?? [];
@@ -711,6 +715,15 @@ export const ExerciseStory = memo(function ExerciseStory({
         {/* ── SECTION 3: USAGE SCENES (OR FALLBACK DIALOGUE) ─────────────── */}
         {activeSection === "dialogue" && (
           <div className="flex flex-col gap-4">
+            {lessonScenario && (
+              <UnitScenarioPlayer
+                scenarios={[lessonScenario]}
+                onInspectWord={(term: string) => {
+                  const match = words.find((w) => w.label.toLowerCase() === term.toLowerCase());
+                  if (match) setInspectedWord(match);
+                }}
+              />
+            )}
             {usageData?.usage?.scenes && usageData.usage.scenes.length > 0 ? (
               <div className="flex flex-col gap-4">
                 {/* Header with Goal */}

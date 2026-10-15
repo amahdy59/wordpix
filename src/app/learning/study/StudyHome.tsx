@@ -21,6 +21,9 @@ import { useI18n } from "../../../i18n";
 import { getCurriculumStageLabel, type UnitCurriculumDesign } from "../curriculumModel";
 import { UnitVideoPlayer } from "../../shared";
 import { getUnitVideo } from "../../data/trialVideoData";
+import { getScenariosForUnit } from "../../data/scenarios/scenarioService";
+import { UnitScenarioPlayer } from "./UnitScenarioPlayer";
+import { useMemo } from "react";
 
 interface Props {
   unit: CourseUnit;
@@ -59,6 +62,7 @@ export function StudyHome({
   const percent = Math.round((completedCoreNodes.length / (coreNodes.length || 1)) * 100);
   const reviewDueCount = progress.reviewWordIds.length;
   const unitVideo = getUnitVideo(unit.id);
+  const unitScenarios = useMemo(() => getScenariosForUnit(unit.id), [unit.id]);
 
   // Prioritize the first incomplete core node, falling back to last active or first
   const continueNode =
@@ -150,6 +154,8 @@ export function StudyHome({
             />
           </div>
         )}
+
+        {unitScenarios.length > 0 && <UnitScenarioPlayer scenarios={unitScenarios} />}
 
         {unitVideo && (
           <section

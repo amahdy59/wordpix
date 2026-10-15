@@ -18,7 +18,6 @@ import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
-import { answerLayout } from "../shared/answerLayout";
 
 interface Props {
   step: number;
@@ -163,39 +162,108 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
           />
         }
         activity={
-          <div className="space-y-4">
+          <div className="flex flex-col gap-4 sm:gap-5 flex-1 h-full justify-between">
             {hasBlank && (
-              <p
+              <div
                 lang="en"
                 dir="ltr"
                 aria-label={t("exercise.gapFillSentenceAria", { sentence: clozeSentence })}
-                className="rounded-2xl border border-border bg-wp-card p-3 text-start font-sans text-lg font-semibold leading-relaxed text-foreground shadow-wp-xs sm:p-5 sm:text-2xl"
+                className="rounded-2xl sm:rounded-3xl border-2 border-border bg-wp-card p-5 sm:p-7 text-start font-sans shadow-wp-xs sm:shadow-wp-sm flex flex-col justify-center min-h-[96px] sm:min-h-[112px]"
               >
-                {clozeSentence}
-              </p>
+                <p className="text-xl sm:text-2xl lg:text-3xl font-bold leading-relaxed text-foreground">
+                  {clozeSentence.includes("_____")
+                    ? (() => {
+                        const parts = clozeSentence.split("_____");
+                        const selectedOption = selectedId
+                          ? options.find((o) => o.id === selectedId)
+                          : null;
+                        return (
+                          <>
+                            <span>{parts[0]}</span>
+                            <span
+                              className={`inline-flex items-center justify-center min-w-[4rem] sm:min-w-[5.5rem] px-3.5 py-1 mx-1.5 rounded-xl border-2 border-dashed font-bold transition-all text-center align-middle shadow-xs ${
+                                selectedOption
+                                  ? feedback === "correct"
+                                    ? "border-wp-green bg-wp-green-light/40 dark:bg-wp-green/20 text-wp-green"
+                                    : feedback === "incorrect"
+                                      ? "border-wp-rose bg-wp-rose-light/40 dark:bg-wp-rose/20 text-wp-rose"
+                                      : "border-primary bg-primary/10 text-primary"
+                                  : "border-primary/60 bg-primary/5 text-primary"
+                              }`}
+                              aria-hidden="true"
+                            >
+                              {selectedOption ? selectedOption.label : "_____"}
+                            </span>
+                            <span>{parts[1]}</span>
+                          </>
+                        );
+                      })()
+                    : clozeSentence}
+                </p>
+              </div>
             )}
             <div
-              className={answerLayout(options.map((option) => option.label))}
+              className="flex flex-col gap-3 sm:gap-3.5 w-full flex-1 justify-center"
               role="group"
               aria-label={t("exercise.gapFillChoicesAria")}
               dir="ltr"
               lang="en"
             >
-              {options.map((option, index) => (
-                <button
-                  key={option.id}
-                  type="button"
-                  aria-pressed={selectedId === option.id}
-                  aria-disabled={feedback !== null || undefined}
-                  onClick={() => handleSelect(option.id)}
-                  className="flex min-h-[48px] items-center justify-between rounded-xl border-2 border-border bg-wp-card p-2.5 font-sans text-base font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none sm:min-h-[52px] sm:p-3 sm:text-lg"
-                >
-                  <span>{option.label}</span>
-                  <span className="hidden rounded-md bg-muted px-2 py-0.5 text-xs text-muted-foreground sm:inline-block">
-                    {index + 1}
-                  </span>
-                </button>
-              ))}
+              {options.map((option, index) => {
+                const isSelected = selectedId === option.id;
+                const isCorrect = option.id === currentTargetWord.id;
+                const showRevealed = feedback === "incorrect" && isCorrect;
+
+                let stateClasses =
+                  "border-border bg-wp-card text-foreground hover:border-primary/70 hover:bg-secondary/40 shadow-wp-xs hover:shadow-wp-sm";
+                if (isSelected) {
+                  if (feedback === "correct") {
+                    stateClasses =
+                      "border-wp-green bg-wp-green-light/40 dark:bg-wp-green/20 text-foreground shadow-wp-sm";
+                  } else if (feedback === "incorrect") {
+                    stateClasses =
+                      "border-wp-rose bg-wp-rose-light/40 dark:bg-wp-rose/20 text-foreground shadow-wp-sm";
+                  } else {
+                    stateClasses = "border-primary bg-secondary text-primary shadow-wp-sm";
+                  }
+                } else if (showRevealed) {
+                  stateClasses =
+                    "border-wp-green bg-wp-green-light/20 dark:bg-wp-green/10 text-foreground";
+                }
+
+                return (
+                  <button
+                    key={option.id}
+                    type="button"
+                    aria-pressed={isSelected}
+                    aria-disabled={feedback !== null || undefined}
+                    onClick={() => handleSelect(option.id)}
+                    className={`group flex min-h-[56px] sm:min-h-[64px] lg:min-h-[70px] w-full items-center justify-between rounded-2xl border-2 p-3.5 sm:p-5 font-sans text-lg sm:text-xl font-bold transition-all motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${stateClasses}`}
+                  >
+                    <span className="flex items-center gap-3">
+                      {isSelected && feedback === "correct" && (
+                        <CheckCircle2
+                          className="size-5 text-wp-green shrink-0"
+                          aria-hidden="true"
+                        />
+                      )}
+                      {isSelected && feedback === "incorrect" && (
+                        <XCircle className="size-5 text-destructive shrink-0" aria-hidden="true" />
+                      )}
+                      {showRevealed && (
+                        <CheckCircle2
+                          className="size-5 text-wp-green shrink-0"
+                          aria-hidden="true"
+                        />
+                      )}
+                      <span>{option.label}</span>
+                    </span>
+                    <span className="hidden rounded-lg border border-border/80 bg-muted px-2.5 py-1 text-xs font-mono font-bold text-muted-foreground group-hover:border-primary/40 group-hover:text-primary sm:inline-block">
+                      {index + 1}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
           </div>
         }

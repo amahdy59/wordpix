@@ -281,4 +281,26 @@ describe("Listen and repeat mobile focus", () => {
       vi.useRealTimers();
     }
   });
+
+  it("automatically plays audio when advancing to next word in manual mode", () => {
+    render(
+      <ExerciseListenRepeat
+        step={1}
+        words={BEDROOM_VOCABULARY.slice(0, 3)}
+        lessonId="bedroom-1"
+        dispatch={vi.fn()}
+      />
+    );
+
+    // Initial card does not autoplay in manual mode
+    expect(audio.speak).not.toHaveBeenCalled();
+
+    // Advancing via next button autoplays the newly active word
+    fireEvent.click(screen.getByRole("button", { name: "Next word" }));
+    expect(audio.speak).toHaveBeenCalledWith(BEDROOM_VOCABULARY[1].label);
+
+    // Advancing via keyboard shortcut ArrowRight autoplays the next word
+    fireEvent.keyDown(window, { key: "ArrowRight" });
+    expect(audio.speak).toHaveBeenCalledWith(BEDROOM_VOCABULARY[2].label);
+  });
 });

@@ -18,6 +18,10 @@ import {
   Globe,
 } from "lucide-react";
 import { useI18n } from "../../../i18n";
+import { getScenariosForUnit } from "../../data/scenarios/scenarioService";
+import { loadedUnitVocabulary, loadedVocabulary } from "../../data/vocabulary";
+import { UnitScenarioPlayer } from "./UnitScenarioPlayer";
+import { useMemo } from "react";
 
 interface Props {
   node: StudyNode | undefined;
@@ -64,6 +68,7 @@ export function UseItArea({
   onNextActivity,
 }: Props) {
   const { t } = useI18n();
+  const unitScenarios = useMemo(() => getScenariosForUnit(unitId), [unitId]);
 
   if (!node) {
     return (
@@ -145,7 +150,29 @@ export function UseItArea({
           </div>
         )}
         {node.type === "dialogue" && (
-          <DialogueSection materials={materials} unitId={unitId} onInspectWord={onInspectWord} />
+          <div className="space-y-6">
+            {unitScenarios.length > 0 && (
+              <UnitScenarioPlayer
+                scenarios={unitScenarios}
+                onInspectWord={(term) => {
+                  const unitWords = loadedUnitVocabulary(unitId);
+                  const match =
+                    unitWords.find(
+                      (w) =>
+                        w.label.toLowerCase() === term.toLowerCase() ||
+                        w.id.toLowerCase() === term.toLowerCase()
+                    ) ??
+                    loadedVocabulary().find(
+                      (w) =>
+                        w.label.toLowerCase() === term.toLowerCase() ||
+                        w.id.toLowerCase() === term.toLowerCase()
+                    );
+                  if (match) onInspectWord(match);
+                }}
+              />
+            )}
+            <DialogueSection materials={materials} unitId={unitId} onInspectWord={onInspectWord} />
+          </div>
         )}
         {node.type === "mistakes" && <MistakesSection materials={materials} />}
         {node.type === "culture" && <CultureSection materials={materials} />}

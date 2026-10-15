@@ -43,12 +43,12 @@ export function ExerciseFamilyTemplate({
     <section
       data-exercise-family={family}
       aria-labelledby={instructionId}
-      className={`${measureByFamily[family]} flex w-full flex-col gap-4 sm:gap-5 ${className}`}
+      className={`${measureByFamily[family]} flex w-full flex-1 min-h-0 flex-col gap-4 sm:gap-6 ${className}`}
     >
-      <header className="text-start sm:text-center">
+      <header className="text-start sm:text-center shrink-0">
         <h2
           id={instructionId}
-          className="text-balance font-sans text-lg font-bold leading-snug text-foreground sm:text-xl"
+          className="text-balance font-sans text-lg font-bold leading-snug text-foreground sm:text-xl lg:text-2xl"
         >
           {instruction}
         </h2>
@@ -58,10 +58,14 @@ export function ExerciseFamilyTemplate({
       </header>
 
       <div
-        className={media ? "grid min-w-0 gap-4 lg:grid-cols-2 lg:items-center lg:gap-6" : "min-w-0"}
+        className={
+          media
+            ? "grid min-w-0 flex-1 gap-5 lg:grid-cols-2 lg:items-stretch lg:gap-8 min-h-0"
+            : "min-w-0 flex-1 flex flex-col"
+        }
       >
         {media && (
-          <div data-exercise-zone="media" className="min-w-0">
+          <div data-exercise-zone="media" className="min-w-0 flex flex-col">
             {media}
           </div>
         )}
@@ -69,19 +73,19 @@ export function ExerciseFamilyTemplate({
           data-exercise-zone="activity"
           role="group"
           aria-label={activityLabel}
-          className="min-w-0"
+          className="min-w-0 flex flex-col flex-1"
         >
           {activity}
         </div>
       </div>
 
-      <div data-exercise-zone="feedback" className={feedback ? "" : "hidden"}>
+      <div data-exercise-zone="feedback" className={`shrink-0 ${feedback ? "" : "hidden"}`}>
         {feedback}
       </div>
 
       <div
         data-exercise-zone="action"
-        className={action ? "flex min-h-11 items-center justify-end" : "hidden"}
+        className={`shrink-0 ${action ? "flex min-h-11 items-center justify-end" : "hidden"}`}
       >
         {action}
       </div>

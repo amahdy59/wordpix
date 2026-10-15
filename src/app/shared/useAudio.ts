@@ -504,10 +504,18 @@ export function useAudio({
             ? [localExplicitUrl, explicitUrl]
             : [explicitUrl, ...(localExplicitUrl ? [localExplicitUrl] : [])]
           : hasAssetHost()
-            ? await audioUrls(pronunciationAsset.text, [
-                pronunciationAsset.profile,
-                AUDIO_PROFILE_V4,
-              ])
+            ? [
+                ...(await audioUrls(text.includes(" ") ? text : pronunciationAsset.text, [
+                  pronunciationAsset.profile,
+                  AUDIO_PROFILE_V4,
+                ])),
+                ...(cleanText !== text
+                  ? await audioUrls(text.includes(" ") ? pronunciationAsset.text : text, [
+                      pronunciationAsset.profile,
+                      AUDIO_PROFILE_V4,
+                    ])
+                  : []),
+              ]
             : preferLocal || usesPronunciationOverride
               ? [
                   resolveAssetUrl(

@@ -69,21 +69,19 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     if (queue.isComplete && feedback === null) dispatch({ type: "LESSON_NEXT" });
   }, [queue.isComplete, feedback, dispatch]);
 
+  const currentQuestionKey = `${queue.position}:${currentTargetWord.id}`;
   useEffect(() => {
     stop();
-    const wordId = currentTargetWord.id;
-    if (hasSpokenRef.current[wordId]) return undefined;
+    if (hasSpokenRef.current[currentQuestionKey]) return undefined;
     // The flag is set when the prompt actually plays, not when it is
-    // scheduled. Setting it up front meant a cleanup that ran before the
-    // timer — StrictMode's double effect in development does exactly that —
-    // cancelled the only playback and then marked the word as already spoken,
-    // so the question was asked with no audio and no way to get it back.
+    // scheduled. Keyed by queue position and word id so retried questions and
+    // consecutive words each play their audio prompt automatically.
     const t = setTimeout(() => {
-      hasSpokenRef.current[wordId] = true;
+      hasSpokenRef.current[currentQuestionKey] = true;
       speak(currentTargetWord.label);
-    }, 400);
+    }, 200);
     return () => clearTimeout(t);
-  }, [currentTargetWord.id, currentTargetWord.label, speak, stop]);
+  }, [currentQuestionKey, currentTargetWord.label, speak, stop]);
 
   const replayAudio = useCallback(() => {
     stop();

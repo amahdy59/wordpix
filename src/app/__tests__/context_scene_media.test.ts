@@ -64,17 +64,14 @@ describe("context question scene media", () => {
         .filter(([, review]) => review.status === "withheld")
         .map(([id]) => id)
     );
-    expect(rejected).toContain("eight");
-    expect(rejected).toContain("thirteen");
-    expect(rejected).toContain("eighteen");
-    expect(rejected).toContain("nineteen");
+    expect(rejected.size).toBe(0);
     for (const word of words) {
       if (rejected.has(word.id)) {
         expect(word.sentence.media, word.id).toBeUndefined();
         continue;
       }
       expect(word.sentence.media?.imagePath, word.id).toMatch(
-        /^(question-images\/v1\/sentence-[a-z-]+\/[a-f0-9]{64}\.webp|\.\/learning-scenes\/colors\/colors-1-black-shoes\.avif)$/
+        /^(question-images\/v1\/sentence-[a-z-]+\/[a-f0-9]{64}\.webp|(?:\.\/)?learning-scenes\/(?:colors|numbers-counting)\/[a-z0-9-]+\.(?:webp|avif))$/
       );
       expect(word.sentence.media?.imageAlt, word.id).toBeTruthy();
       expect(word.sentence.media?.imageAlt, word.id).not.toMatch(
