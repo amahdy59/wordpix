@@ -78,7 +78,7 @@ describe("Hash round-tripping", () => {
 
   it("rejects an out-of-range step rather than jumping somewhere wrong", () => {
     expect(hashToRoute("#/learn/bedroom/step-0")).toBeNull();
-    expect(hashToRoute("#/learn/bedroom/step-7")).toBeNull();
+    expect(hashToRoute("#/learn/bedroom/step-31")).toBeNull();
     expect(hashToRoute("#/learn/bedroom/step-abc")).toBeNull();
   });
 

@@ -113,6 +113,7 @@ export type Screen =
       unitId?: string;
       wordQueue: string[];
       step: number;
+      totalSteps?: number;
       attempts: AnswerAttempt[];
       startedAt: string;
     }
@@ -181,6 +182,7 @@ export type Action =
       wordQueue?: string[];
       unitId?: string;
       initialStep?: number;
+      totalSteps?: number;
     }
   | {
       type: "LESSON_ATTEMPT";

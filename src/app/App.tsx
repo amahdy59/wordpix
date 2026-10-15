@@ -17,7 +17,7 @@ import { RouterView } from "./router/RouterView";
 import { UpdatePrompt } from "./shared/UpdatePrompt";
 import { MotionConfig } from "framer-motion";
 import { purgeLegacyAudioCredentials } from "./shared/audioSecurity";
-import { getLessonSequence } from "./lesson/lessonSequence";
+import { buildInterleavedLessonPlan } from "./lesson/lessonSequence";
 
 function AppInner() {
   const { t } = useI18n();
@@ -141,10 +141,12 @@ function AppInner() {
       state.id === "lesson"
         ? state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT"
           ? 1
-          : getLessonSequence(
+          : (state.totalSteps ??
+            buildInterleavedLessonPlan(
+              state.wordQueue,
               learnerState.preferences.englishLevel,
               learnerState.accessibility.includeListening
-            ).length
+            ).length)
         : undefined;
     ariaLiveAnnounce(describeScreen(state, t, lessonStageCount));
   }, [

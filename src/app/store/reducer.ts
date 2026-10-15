@@ -5,7 +5,7 @@ import {
   resolveGroup,
   resolveUnitForLesson,
 } from "../data/courseCatalog";
-import { MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
+import { CANONICAL_STAGE_COUNT, MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
 
 export const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 export const TABBED_IDS: ReadonlySet<string> = new Set([
@@ -109,6 +109,7 @@ export function reducer(state: Screen, action: Action): Screen {
       unitId: action.unitId,
       wordQueue: queue,
       step: initialStep,
+      totalSteps: action.totalSteps,
       attempts: [],
       startedAt: new Date().toISOString(),
     };
@@ -132,7 +133,8 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_NEXT") {
     if (state.id !== "lesson") return state;
-    if (state.step >= MAX_LESSON_STAGE_COUNT - 1) {
+    const maxSteps = state.totalSteps ?? CANONICAL_STAGE_COUNT;
+    if (state.step >= maxSteps - 1) {
       return {
         id: "lesson-complete",
         mode: state.mode,
@@ -155,7 +157,8 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_GOTO_STEP") {
     if (state.id !== "lesson") return state;
-    if (action.step < 0 || action.step >= MAX_LESSON_STAGE_COUNT) return state;
+    const maxSteps = state.totalSteps ?? CANONICAL_STAGE_COUNT;
+    if (action.step < 0 || action.step >= maxSteps) return state;
     if (action.step === state.step) return state;
     return { ...state, step: action.step };
   }
@@ -187,7 +190,7 @@ export function ariaLiveAnnounce(msg: string) {
 export function describeScreen(
   screen: Screen,
   t: (key: string, options?: Record<string, string | number>) => string,
-  lessonStageCount = MAX_LESSON_STAGE_COUNT
+  lessonStageCount = CANONICAL_STAGE_COUNT
 ): string {
   switch (screen.id) {
     case "onboarding":
@@ -210,7 +213,7 @@ export function describeScreen(
     case "lesson":
       return t("lesson.stageProgress", {
         current: screen.step + 1,
-        total: lessonStageCount,
+        total: screen.totalSteps ?? lessonStageCount,
       });
     case "lesson-complete":
       return "Session complete";

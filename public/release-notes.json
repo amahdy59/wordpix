@@ -1,14 +1,31 @@
 {
-  "version": "0.1.41",
+  "version": "0.1.42",
   "notes": [
-    "Smart visual framing with ambient backdrops for exercise choices, ensuring complete visibility of numbers and subjects without cropping.",
-    "Stabilized WebKit offline test reload resilience and stylesheet synchronization across browser automation suites."
+    "Interleaved lesson progression dividing vocabulary into 4–5 word micro-cycles followed by synthesis, eliminating repetitive drills while preserving 100% of questions.",
+    "Smart visual framing with ambient backdrops for exercise choices, ensuring complete visibility of numbers and subjects without cropping."
   ],
   "notesAr": [
-    "تأطير بصري ذكي مع خلفيات انسيابية لخيارات التمارين، لضمان ظهور كامل للأرقام والموضوعات دون أي اقتطاع عبر الشاشات.",
-    "تعزيز استقرار اختبارات WebKit لإعادة التحميل دون اتصال ومزامنة أوراق الأنماط في بيئات الاختبار الآلية."
+    "مسار دروس تداخلي يقسم المفردات إلى حلقات مصغرة من 4–5 كلمات تليها مرحلة تركيب وتطبيق، لتفادي التكرار الممل مع الحفاظ على كامل الأسئلة.",
+    "تأطير بصري ذكي مع خلفيات انسيابية لخيارات التمارين، لضمان ظهور كامل للأرقام والموضوعات دون أي اقتطاع عبر الشاشات."
   ],
   "releases": [
+    {
+      "id": "0.1.42",
+      "version": "0.1.42",
+      "date": "2026-10-15",
+      "title": {
+        "en": "Interleaved lesson flow and anti-drill micro-cycles",
+        "ar": "مسار الدروس التداخلي والحلقات التعليمية المتنوعة"
+      },
+      "changes": [
+        {
+          "id": "interleaved-lesson-flow",
+          "category": "improved",
+          "en": "Redesigned lesson progression with pedagogical interleaving: vocabulary sets are partitioned into balanced 4–5 word micro-cycles (Presentation → Active Retrieval → Context Application) followed by a comprehensive synthesis phase (Sentence Building → Checkpoint → Reading Transfer), eliminating fatigue while preserving 100% of questions.",
+          "ar": "إعادة تصميم مسار الدروس بنظام التداخل البيداغوجي: تقسيم الكلمات إلى حلقات مصغرة من 4–5 كلمات (استماع ونطق ← استرجاع وتطابق ← سياق وفراغات) متبوعة بمرحلة تركيب شاملة (بناء جمل ← نقطة تحقق ← قراءة وسياق)، لمنع الإجهاد المعرفي مع الحفاظ التام على جميع الأسئلة."
+        }
+      ]
+    },
     {
       "id": "0.1.41",
       "version": "0.1.41",

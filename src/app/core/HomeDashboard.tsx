@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { nextGroupToStudy, resolveUnitForLesson, REVIEW_GROUP_ID } from "../data/courseCatalog";
+import { buildInterleavedLessonPlan } from "../lesson/lessonSequence";
 import { getLocalDateString } from "../../features/gamification/streak";
 
 import { useOfflineReadiness } from "../shared/useOfflineReadiness";
@@ -196,15 +197,22 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     whileHover={{ scale: 1.015 }}
                     whileTap={{ scale: 0.98 }}
                     type="button"
-                    onClick={() =>
+                    onClick={() => {
+                      const words = activeLesson.wordIds;
+                      const plan = buildInterleavedLessonPlan(
+                        words,
+                        learnerState.preferences.englishLevel,
+                        learnerState.accessibility.includeListening
+                      );
                       dispatch({
                         type: "START_LESSON",
                         lessonId: activeLesson.id,
                         unitId: activeUnit.id,
                         mode: "NEW_LESSON",
-                        wordQueue: activeLesson.wordIds,
-                      })
-                    }
+                        wordQueue: words,
+                        totalSteps: plan.length,
+                      });
+                    }}
                     className="flex-1 w-full bg-primary rounded-2xl py-3.5 font-sans font-bold text-primary-foreground text-base min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs transition-colors flex items-center justify-center gap-2"
                   >
                     <BookOpen className="size-5 shrink-0" />
@@ -275,14 +283,21 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     whileHover={{ scale: 1.015 }}
                     whileTap={{ scale: 0.98 }}
                     type="button"
-                    onClick={() =>
+                    onClick={() => {
+                      const words = dueWords.slice(0, 15).map((w: WordLearningState) => w.wordId);
+                      const plan = buildInterleavedLessonPlan(
+                        words,
+                        learnerState.preferences.englishLevel,
+                        learnerState.accessibility.includeListening
+                      );
                       dispatch({
                         type: "START_LESSON",
                         lessonId: REVIEW_GROUP_ID,
                         mode: "SMART_REVIEW",
-                        wordQueue: dueWords.slice(0, 15).map((w: WordLearningState) => w.wordId),
-                      })
-                    }
+                        wordQueue: words,
+                        totalSteps: plan.length,
+                      });
+                    }}
                     className="w-full bg-secondary hover:bg-secondary text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-base min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
                   >
                     <span>
@@ -330,15 +345,22 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     </p>
                     <button
                       type="button"
-                      onClick={() =>
+                      onClick={() => {
+                        const words = activeLesson.wordIds;
+                        const plan = buildInterleavedLessonPlan(
+                          words,
+                          learnerState.preferences.englishLevel,
+                          learnerState.accessibility.includeListening
+                        );
                         dispatch({
                           type: "START_LESSON",
                           lessonId: activeLesson.id,
                           unitId: activeUnit.id,
                           mode: "NEW_LESSON",
-                          wordQueue: activeLesson.wordIds,
-                        })
-                      }
+                          wordQueue: words,
+                          totalSteps: plan.length,
+                        });
+                      }}
                       className="mt-2.5 min-h-11 rounded-xl bg-primary px-4 py-2 text-sm font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >
                       {t("dashboard.startFirstLesson", { defaultValue: "Start First Lesson" })}

@@ -1,4 +1,4 @@
-import { lazy, Suspense, useMemo } from "react";
+import { lazy, Suspense, useMemo, useCallback } from "react";
 import { motion } from "framer-motion";
 import type { Screen, Action, TabId } from "../types";
 import { resolveGroup, resolveUnitForLesson, DEFAULT_UNIT_ID } from "../data/courseCatalog";
@@ -121,7 +121,11 @@ const ExerciseReadingContext = lazy(() =>
 );
 
 import { SKILL_EXERCISES } from "../exercises/registry";
-import { getLessonSequence, type ExerciseStep } from "../lesson/lessonSequence";
+import {
+  buildInterleavedLessonPlan,
+  type ExerciseStep,
+  type InterleavedStep,
+} from "../lesson/lessonSequence";
 import { getAuthoredLessonContent } from "../exercises/content/authoredLessonContent";
 
 const LoadingFallback = () => {
@@ -262,13 +266,6 @@ function LessonRoute({
   const { state: learnerState } = useLearner();
   const isAssessment = state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT";
 
-  const exSequence = isAssessment
-    ? (["quiz"] as const)
-    : getLessonSequence(
-        learnerState.preferences.englishLevel,
-        learnerState.accessibility.includeListening
-      );
-
   const { lessonId, wordQueue } = state;
   // Joined, not the array itself: `wordQueue` is rebuilt by the reducer on
   // every attempt, so depending on its identity would defeat the memo.
@@ -285,7 +282,60 @@ function LessonRoute({
     return fallback.length > 0 ? fallback : NO_WORDS;
   }, [lessonId, wordQueueKey]);
 
-  if (state.step >= exSequence.length) {
+  const interleavedPlan = useMemo(() => {
+    if (isAssessment) {
+      const assessmentStep: InterleavedStep = {
+        stepIndex: 0,
+        exercise: "quiz",
+        wordIds: activeGroupWords.map((w) => w.id),
+        chunkIndex: 0,
+        totalChunks: 1,
+        isSynthesis: true,
+      };
+      return [assessmentStep];
+    }
+    const ids = activeGroupWords.map((w) => w.id);
+    return buildInterleavedLessonPlan(
+      ids,
+      learnerState.preferences.englishLevel,
+      learnerState.accessibility.includeListening
+    );
+  }, [
+    isAssessment,
+    activeGroupWords,
+    learnerState.preferences.englishLevel,
+    learnerState.accessibility.includeListening,
+  ]);
+
+  const handleLessonNext = useCallback(() => {
+    if (state.step >= interleavedPlan.length - 1) {
+      dispatch({ type: "GO", to: "lesson-complete" });
+    } else {
+      dispatch({ type: "LESSON_NEXT" });
+    }
+  }, [state.step, interleavedPlan.length, dispatch]);
+
+  const wrappedDispatch = useCallback(
+    (action: Action) => {
+      if (action.type === "LESSON_NEXT") {
+        handleLessonNext();
+      } else {
+        dispatch(action);
+      }
+    },
+    [handleLessonNext, dispatch]
+  );
+
+  const currentPlanStep = interleavedPlan[state.step];
+  const stepWords = useMemo(() => {
+    if (!currentPlanStep) return NO_WORDS;
+    if (currentPlanStep.isSynthesis) return activeGroupWords;
+    const wordIdSet = new Set(currentPlanStep.wordIds);
+    const chunkWords = activeGroupWords.filter((w) => wordIdSet.has(w.id));
+    return chunkWords.length > 0 ? chunkWords : activeGroupWords;
+  }, [currentPlanStep, activeGroupWords]);
+
+  if (state.step >= interleavedPlan.length) {
     return (
       <LessonCompleteResults
         sessionId={state.sessionId}
@@ -303,12 +353,12 @@ function LessonRoute({
     return <LessonRouteError dispatch={dispatch} />;
   }
 
-  const ex: ExerciseStep = exSequence[state.step];
+  const ex: ExerciseStep = currentPlanStep.exercise;
   const drillProps = {
-    words: activeGroupWords,
+    words: stepWords,
     step: state.step,
     lessonId: state.lessonId,
-    dispatch,
+    dispatch: wrappedDispatch,
   };
 
   if (ex === "listen") return <ExerciseListenRepeat {...drillProps} />;

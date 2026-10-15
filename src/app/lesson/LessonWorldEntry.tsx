@@ -20,7 +20,12 @@ import { useProgress } from "../data/progress";
 import { useI18n } from "../../i18n";
 import { useLearner } from "../context/LearnerContext";
 import { getUnitCurriculumDesign } from "../learning/curriculumModel";
-import { getLessonStepLabels, getStoryStepIndex, selectPracticeWordQueue } from "./lessonSequence";
+import {
+  getLessonStepLabels,
+  getStoryStepIndex,
+  selectPracticeWordQueue,
+  buildInterleavedLessonPlan,
+} from "./lessonSequence";
 import { buildUnitAssessmentSample } from "./assessmentBlueprint";
 
 interface Props {
@@ -98,12 +103,19 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
       dispatch({ type: "OPEN_HADITH_LESSON", lessonId: "hadith-01" });
       return;
     }
+    const words = selectPracticeWordQueue(group.wordIds, progress.wordMemory);
+    const plan = buildInterleavedLessonPlan(
+      words,
+      learnerState.preferences.englishLevel,
+      learnerState.accessibility.includeListening
+    );
     dispatch({
       type: "START_LESSON",
       lessonId: group.id,
       unitId: world.id,
       mode: "NEW_LESSON",
-      wordQueue: selectPracticeWordQueue(group.wordIds, progress.wordMemory),
+      wordQueue: words,
+      totalSteps: plan.length,
       initialStep,
     });
   };
@@ -126,6 +138,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
       unitId: world.id,
       mode: "UNIT_ASSESSMENT",
       wordQueue: selected,
+      totalSteps: 1,
     });
   };
 

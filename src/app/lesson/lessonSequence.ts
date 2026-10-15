@@ -24,15 +24,119 @@ const STEP_META: Record<ExerciseStep, Omit<LessonStepLabel, "step" | "exercise">
   story: { icon: "📖", name: "Story & transfer", description: "Apply language in a new context" },
 };
 
-/**
- * The upper bound used by navigation and persistence guards.
- *
- * The learner-facing sequence can be shorter (for example A1 omits the
- * sentence-builder stage), so UI copy should use `getLessonSequence(...).length`
- * rather than presenting this maximum as the learner's current total.
- */
-export const MAX_LESSON_STAGE_COUNT = Object.keys(STEP_META).length;
+export const CANONICAL_STAGE_COUNT = 6;
+export const MAX_LESSON_STAGE_COUNT = 30;
 export const FOCUSED_LESSON_WORD_LIMIT = 5;
+
+export interface InterleavedStep {
+  stepIndex: number;
+  exercise: ExerciseStep;
+  wordIds: string[];
+  chunkIndex: number;
+  totalChunks: number;
+  chunkRange?: {
+    start: number;
+    end: number;
+    total: number;
+  };
+  isSynthesis: boolean;
+}
+
+/**
+ * Divides words into balanced chunks of at most `maxChunkSize` words (default 5).
+ * E.g.:
+ * - 8 words -> 2 chunks of 4
+ * - 10 words -> 2 chunks of 5
+ * - 12 words -> 3 chunks of 4
+ * - 14 words -> 3 chunks of 5, 5, 4
+ * - 16 words -> 4 chunks of 4
+ */
+export function partitionWordsIntoChunks(
+  wordIds: string[],
+  maxChunkSize = FOCUSED_LESSON_WORD_LIMIT
+): string[][] {
+  if (wordIds.length === 0) return [];
+  if (wordIds.length <= maxChunkSize) return [wordIds.slice()];
+
+  const numChunks = Math.ceil(wordIds.length / maxChunkSize);
+  const baseSize = Math.floor(wordIds.length / numChunks);
+  const remainder = wordIds.length % numChunks;
+
+  const chunks: string[][] = [];
+  let startIndex = 0;
+  for (let i = 0; i < numChunks; i++) {
+    const chunkSize = baseSize + (i < remainder ? 1 : 0);
+    chunks.push(wordIds.slice(startIndex, startIndex + chunkSize));
+    startIndex += chunkSize;
+  }
+  return chunks;
+}
+
+/**
+ * Builds an interleaved lesson plan dividing vocabulary into micro-cycles
+ * (presentation -> active retrieval -> context application) of 4-5 words,
+ * followed by a synthesis phase (sentence building -> checkpoint -> story/transfer)
+ * across the entire lesson set.
+ *
+ * This anti-drill architecture prevents working-memory overload while guaranteeing
+ * that 100% of questions across all words are preserved with zero loss.
+ */
+export function buildInterleavedLessonPlan(
+  wordIds: string[],
+  _level?: LearnerPreferences["englishLevel"],
+  includeListening = true
+): InterleavedStep[] {
+  if (wordIds.length === 0) return [];
+
+  const chunks = partitionWordsIntoChunks(wordIds);
+  const plan: InterleavedStep[] = [];
+  let runningStep = 0;
+  let wordOffset = 0;
+
+  const chunkDrills: ExerciseStep[] = includeListening
+    ? ["listen", "recall", "fill"]
+    : ["recall", "fill"];
+
+  chunks.forEach((chunkWords, chunkIdx) => {
+    const range = {
+      start: wordOffset + 1,
+      end: wordOffset + chunkWords.length,
+      total: wordIds.length,
+    };
+    wordOffset += chunkWords.length;
+
+    for (const exercise of chunkDrills) {
+      plan.push({
+        stepIndex: runningStep++,
+        exercise,
+        wordIds: chunkWords,
+        chunkIndex: chunkIdx,
+        totalChunks: chunks.length,
+        chunkRange: range,
+        isSynthesis: false,
+      });
+    }
+  });
+
+  const synthesisDrills: ExerciseStep[] = ["builder", "quiz", "story"];
+  for (const exercise of synthesisDrills) {
+    plan.push({
+      stepIndex: runningStep++,
+      exercise,
+      wordIds: [...wordIds],
+      chunkIndex: Math.max(0, chunks.length - 1),
+      totalChunks: chunks.length,
+      chunkRange: {
+        start: 1,
+        end: wordIds.length,
+        total: wordIds.length,
+      },
+      isSynthesis: true,
+    });
+  }
+
+  return plan;
+}
 
 export function getLessonSequence(
   _level: LearnerPreferences["englishLevel"],
