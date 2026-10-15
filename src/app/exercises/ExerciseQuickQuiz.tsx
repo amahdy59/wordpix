@@ -5,7 +5,7 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence, getDistractors } from "./exerciseContent";
 import { identifySentence } from "../content/wordGrammar";
 import { shuffleArray } from "../../utils/shuffle";
-import { WordImage } from "../shared/WordImage";
+import { WordImage, getWordImageSrc } from "../shared/WordImage";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
@@ -231,13 +231,23 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 </span>
 
                 {/* Image */}
-                <div className="size-full relative bg-muted">
+                <div className="size-full relative bg-muted overflow-hidden">
+                  {/* Atmospheric blurred ambient fill so the card is always rich and colorful without empty gaps */}
+                  <div className="absolute inset-0 size-full overflow-hidden pointer-events-none select-none">
+                    <img
+                      src={getWordImageSrc(option, "thumb")}
+                      alt=""
+                      aria-hidden="true"
+                      className="size-full object-cover object-center blur-lg scale-110 opacity-30 dark:opacity-20"
+                    />
+                  </div>
+
                   <WordImage
                     word={option}
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover object-center block"
+                    className="relative z-0 size-full object-contain object-center block p-2 sm:p-3 drop-shadow-sm"
                     // Every option is on screen and has to be looked at to
                     // answer, so lazy loading only delays the question.
                     loading="eager"

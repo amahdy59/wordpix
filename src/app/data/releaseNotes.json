@@ -1,16 +1,37 @@
 {
-  "version": "0.1.40",
+  "version": "0.1.41",
   "notes": [
-    "Studio audio parity for 283 contextual usage sentences and transit phrases across core curriculum units.",
-    "Added authentic native audio recordings for 41 foundational reading passages across Pre-A1 Starter units.",
-    "Registered studio audio keys for all 23 compound terms in Business, Conversation, and Hadith curricula."
+    "Smart visual framing with ambient backdrops for exercise choices, ensuring complete visibility of numbers and subjects without cropping.",
+    "Stabilized WebKit offline test reload resilience and stylesheet synchronization across browser automation suites."
   ],
   "notesAr": [
-    "تسجيلات صوتية استوديو لـ 283 جملة استخدام سياقية وعبارات المواصلات في وحدات المنهج الأساسي.",
-    "إضافة تسجيلات صوتية طبيعية عالية الجودة لـ 41 نص قراءة تأسيسي لوحدات المستوى التمهيدي Pre-A1.",
-    "تسجيل مفاتيح صوتية استوديو لجميع المصطلحات والعبارات المركبة الـ 23 في مناهج الأعمال والمحادثة والحديث."
+    "تأطير بصري ذكي مع خلفيات انسيابية لخيارات التمارين، لضمان ظهور كامل للأرقام والموضوعات دون أي اقتطاع عبر الشاشات.",
+    "تعزيز استقرار اختبارات WebKit لإعادة التحميل دون اتصال ومزامنة أوراق الأنماط في بيئات الاختبار الآلية."
   ],
   "releases": [
+    {
+      "id": "0.1.41",
+      "version": "0.1.41",
+      "date": "2026-10-15",
+      "title": {
+        "en": "Immersive image framing and cross-platform test resilience",
+        "ar": "تأطير بصري ذكي وتثبيت موثوقية الاختبارات عبر المتصفحات"
+      },
+      "changes": [
+        {
+          "id": "exercise-image-framing",
+          "category": "improved",
+          "en": "Implemented ambient-fill layered presentation for Quick Quiz and Audio Match image options, preventing extreme cropping of wide photos and numbers across mobile and desktop screens.",
+          "ar": "تطبيق عرض بصري مزدوج مع خلفية ضبابية انسيابية لبطاقات الاختبار الصوتي والسريع، مما يمنع اقتطاع الأرقام والصور العريضة عبر مختلف أحجام الشاشات."
+        },
+        {
+          "id": "e2e-webkit-resilience",
+          "category": "improved",
+          "en": "Optimized stylesheet evaluation and offline reload synchronization for WebKit in CI Playwright test suites.",
+          "ar": "تحسين فحص تحميل الأنماط وإعادة التحميل في وضع عدم الاتصال لمتصفح WebKit ضمن بيئة الاختبارات المؤتمتة."
+        }
+      ]
+    },
     {
       "id": "0.1.40",
       "version": "0.1.40",

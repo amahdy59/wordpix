@@ -4,7 +4,7 @@ import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getDistractors } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
-import { WordImage } from "../shared/WordImage";
+import { WordImage, getWordImageSrc } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
 import { Volume2, CheckCircle2, XCircle, Keyboard, ArrowRight } from "lucide-react";
 import { useSound } from "../shared/useSound";
@@ -268,13 +268,23 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                   {idx + 1}
                 </span>
 
-                <div className="size-full relative bg-muted after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
+                <div className="size-full relative bg-muted overflow-hidden after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
+                  {/* Atmospheric blurred ambient fill so the card is always rich and colorful without empty gaps */}
+                  <div className="absolute inset-0 size-full overflow-hidden pointer-events-none select-none">
+                    <img
+                      src={getWordImageSrc(card, "thumb")}
+                      alt=""
+                      aria-hidden="true"
+                      className="size-full object-cover object-center blur-lg scale-110 opacity-30 dark:opacity-20"
+                    />
+                  </div>
+
                   <WordImage
                     word={card}
                     altMode="assessment"
                     optionIndex={idx}
                     checked={isSelected || isRevealedAnswer}
-                    className="size-full object-cover object-center block"
+                    className="relative z-0 size-full object-contain object-center block p-2 sm:p-3 drop-shadow-sm"
                     // Every option is on screen and has to be looked at to
                     // answer, so lazy loading only delays the question.
                     loading="eager"

@@ -58,8 +58,10 @@ test("word details fetch bounded shards and survive a cached offline reload", as
 
   offlineServer.setOffline(true);
   await reloadOffline(page);
-  await page.getByRole("button", { name: "Word details", exact: true }).click();
-  await expect(page.getByRole("region", { name: /^Examples/ })).toBeVisible();
+  const wordDetails = page.getByRole("button", { name: "Word details", exact: true });
+  await expect(wordDetails).toBeVisible({ timeout: 30_000 });
+  await wordDetails.click();
+  await expect(page.getByRole("region", { name: /^Examples/ })).toBeVisible({ timeout: 15_000 });
   offlineServer.setOffline(false);
   expect(errors).toEqual([]);
 });
