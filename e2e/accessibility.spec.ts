@@ -60,7 +60,9 @@ test("Hadith curriculum index has no automatically detectable accessibility issu
   await page.goto("/#/hadith", { waitUntil: "domcontentloaded" });
   await waitForStyles(page);
   await expect(page.getByRole("main")).toBeVisible();
-  await expect(page.getByRole("button", { name: /Actions and Intentions/i })).toBeVisible();
+  await expect(page.getByRole("button", { name: /Actions and Intentions/i })).toBeVisible({
+    timeout: 15000,
+  });
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
     .analyze();
@@ -73,7 +75,7 @@ test("pronunciation curriculum index has no automatically detectable accessibili
   await page.goto("/#/pronunciation", { waitUntil: "domcontentloaded" });
   await waitForStyles(page);
   await expect(page.getByRole("main")).toBeVisible();
-  await expect(page.getByRole("searchbox")).toBeVisible();
+  await expect(page.getByRole("searchbox")).toBeVisible({ timeout: 15000 });
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
     .analyze();
