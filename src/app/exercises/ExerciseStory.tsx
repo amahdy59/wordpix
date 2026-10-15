@@ -1109,10 +1109,24 @@ export const ExerciseStory = memo(function ExerciseStory({
                           >
                             <strong>{t("story.usagePhraseArabic")}:</strong> {phrase.arabicMeaning}
                           </p>
-                          <p className="text-xs italic leading-relaxed text-muted-foreground">
-                            <strong className="not-italic">{t("story.usagePhraseExample")}:</strong>{" "}
-                            {phrase.example}
-                          </p>
+                          <div className="flex items-center justify-between gap-2">
+                            <p className="text-xs italic leading-relaxed text-muted-foreground flex-1 min-w-0">
+                              <strong className="not-italic">
+                                {t("story.usagePhraseExample")}:
+                              </strong>{" "}
+                              {phrase.example}
+                            </p>
+                            {phrase.example && (
+                              <button
+                                type="button"
+                                onClick={() => speak(phrase.example)}
+                                aria-label={`Listen to example: ${phrase.example}`}
+                                className="inline-flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-xl border border-primary/20 bg-wp-card text-primary hover:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+                              >
+                                <Volume2 className="size-4" aria-hidden />
+                              </button>
+                            )}
+                          </div>
                           <p className="text-xs leading-relaxed text-muted-foreground">
                             <strong className="text-foreground">
                               {t("story.usagePhrasePattern")}:

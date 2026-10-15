@@ -423,9 +423,24 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
                 </span>
               </div>
               <p className="text-base text-foreground mt-1.5 leading-relaxed">{phrase.meaning}</p>
-              <p className="text-sm sm:text-base text-muted-foreground italic mt-1.5 border-s-2 border-primary/30 ps-2.5">
-                &ldquo;{phrase.example}&rdquo;
-              </p>
+              <div className="flex items-center justify-between gap-2 mt-1.5 border-s-2 border-primary/30 ps-2.5">
+                <p className="text-sm sm:text-base text-muted-foreground italic flex-1 min-w-0">
+                  &ldquo;{phrase.example}&rdquo;
+                </p>
+                {phrase.example && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      stop();
+                      speak(phrase.example);
+                    }}
+                    className="size-11 shrink-0 rounded-xl bg-secondary/80 text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
+                    aria-label={`Listen to example: ${phrase.example}`}
+                  >
+                    <Volume2 className="size-4" aria-hidden />
+                  </button>
+                )}
+              </div>
             </div>
             <button
               type="button"
