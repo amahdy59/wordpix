@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import {
   getScenariosForUnit,
   getScenarioForLesson,
@@ -98,5 +98,73 @@ describe("UnitScenarioPlayer component", () => {
 
     fireEvent.click(screen.getByRole("tab", { name: "Part 2" }));
     expect(screen.getByText("Evening Dinner")).toBeDefined();
+  });
+
+  it("displays clear section and lesson indications", () => {
+    const secondScenario: ScenarioLesson = {
+      ...mockScenario,
+      lessonId: "test-unit-2",
+      titleEn: "Evening Dinner",
+      titleAr: "عشاء المساء",
+    };
+
+    render(
+      <UnitScenarioPlayer
+        scenarios={[mockScenario, secondScenario]}
+        sectionTitle="Basic Vocabulary 1"
+      />
+    );
+
+    // Displays lesson badge and section label
+    expect(screen.getByText("Lesson 1:")).toBeDefined();
+    expect(screen.getByText("Lesson 1 of 2")).toBeDefined();
+    expect(screen.getByText("· Basic Vocabulary 1")).toBeDefined();
+  });
+
+  it("falls back gracefully to speech synthesis on play when audio cannot load", async () => {
+    const mockSpeak = vi.fn();
+    const mockCancel = vi.fn();
+    const mockGetVoices = vi.fn().mockReturnValue([
+      { name: "George", lang: "en-GB" },
+      { name: "Samantha", lang: "en-US" },
+    ]);
+
+    class MockUtterance {
+      text: string;
+      voice: SpeechSynthesisVoice | null = null;
+      pitch = 1;
+      rate = 1;
+      lang = "en-US";
+      onstart: (() => void) | null = null;
+      onend: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      constructor(text: string) {
+        this.text = text;
+      }
+    }
+
+    vi.stubGlobal("speechSynthesis", {
+      speak: mockSpeak,
+      cancel: mockCancel,
+      getVoices: mockGetVoices,
+    });
+    vi.stubGlobal("SpeechSynthesisUtterance", MockUtterance);
+
+    const playSpy = vi
+      .spyOn(window.HTMLMediaElement.prototype, "play")
+      .mockRejectedValue(new Error("MEDIA_ERR_SRC_NOT_SUPPORTED"));
+
+    render(<UnitScenarioPlayer scenarios={[mockScenario]} />);
+
+    const playBtn = screen.getByRole("button", { name: /Meeting at the Majlis/i });
+    fireEvent.click(playBtn);
+
+    await waitFor(() => {
+      expect(mockCancel).toHaveBeenCalled();
+      expect(mockSpeak).toHaveBeenCalled();
+    });
+
+    playSpy.mockRestore();
+    vi.unstubAllGlobals();
   });
 });

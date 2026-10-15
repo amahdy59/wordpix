@@ -155,7 +155,20 @@ export function StudyHome({
           </div>
         )}
 
-        {unitScenarios.length > 0 && <UnitScenarioPlayer scenarios={unitScenarios} />}
+        {unitScenarios.length > 0 && (
+          <UnitScenarioPlayer
+            scenarios={unitScenarios}
+            onInspectWord={(word) => {
+              const normalized = word.trim().toLowerCase();
+              const matchingNode = nodes.find(
+                (n) => n.area === "learn" && n.wordIds?.some((w) => w.toLowerCase() === normalized)
+              );
+              if (matchingNode) {
+                onSelectNode(matchingNode.id);
+              }
+            }}
+          />
+        )}
 
         {unitVideo && (
           <section

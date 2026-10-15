@@ -26,11 +26,40 @@ function scenarioAudioServer(): PluginOption {
       return next();
     }
 
+    if (req.method === "OPTIONS") {
+      res.writeHead(204, {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+        "Access-Control-Allow-Headers": "Range, Content-Type, Accept",
+      });
+      res.end();
+      return;
+    }
+
     const stat = fs.statSync(filePath);
     let contentType = "application/octet-stream";
     if (filePath.endsWith(".mp3")) contentType = "audio/mpeg";
     else if (filePath.endsWith(".vtt")) contentType = "text/vtt";
     else if (filePath.endsWith(".srt")) contentType = "text/plain";
+
+    const commonHeaders: Record<string, string | number> = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+      "Access-Control-Allow-Headers": "Range, Content-Type, Accept",
+      "Access-Control-Expose-Headers": "Content-Range, Content-Length, Accept-Ranges",
+      "Accept-Ranges": "bytes",
+      "Cache-Control": "public, max-age=3600",
+      "Content-Type": contentType,
+    };
+
+    if (req.method === "HEAD") {
+      res.writeHead(200, {
+        ...commonHeaders,
+        "Content-Length": stat.size,
+      });
+      res.end();
+      return;
+    }
 
     const range = req.headers.range;
     if (range) {
@@ -39,17 +68,15 @@ function scenarioAudioServer(): PluginOption {
       const end = parts[1] ? parseInt(parts[1], 10) : stat.size - 1;
       const chunksize = end - start + 1;
       res.writeHead(206, {
+        ...commonHeaders,
         "Content-Range": `bytes ${start}-${end}/${stat.size}`,
-        "Accept-Ranges": "bytes",
         "Content-Length": chunksize,
-        "Content-Type": contentType,
       });
       fs.createReadStream(filePath, { start, end }).pipe(res);
     } else {
       res.writeHead(200, {
+        ...commonHeaders,
         "Content-Length": stat.size,
-        "Accept-Ranges": "bytes",
-        "Content-Type": contentType,
       });
       fs.createReadStream(filePath).pipe(res);
     }

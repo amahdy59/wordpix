@@ -13,6 +13,8 @@ import { Select } from "../../shared/Select";
 import type { VocabularyItem } from "../../data/lessons";
 import { useI18n } from "../../../i18n";
 import { useLexicon } from "../../shared/useLexicon";
+import { findScenarioForWords } from "../../data/scenarios/scenarioService";
+import { UnitScenarioPlayer } from "./UnitScenarioPlayer";
 
 interface Props {
   node: StudyNode;
@@ -87,6 +89,11 @@ export function LearnArea({
     }));
     onNextActivity();
   };
+  const lessonScenario = useMemo(
+    () => findScenarioForWords(materials.unitId, node.wordIds ?? []),
+    [materials.unitId, node.wordIds]
+  );
+
   if (!words.length)
     return <p className="p-8 text-center text-muted-foreground">{t("study.noVocabFound")}</p>;
 
@@ -105,6 +112,23 @@ export function LearnArea({
           {t("study.progressCount", { studied: studiedCount, total: words.length })}
         </p>
       </header>
+
+      {lessonScenario && (
+        <section aria-label="Lesson Video Context" className="space-y-2">
+          <UnitScenarioPlayer
+            scenarios={[lessonScenario]}
+            sectionTitle={node.title}
+            compact={false}
+            onInspectWord={(wordText) => {
+              const normalized = wordText.trim().toLowerCase();
+              const found = words.find(
+                (w) => w.label.toLowerCase() === normalized || w.id.toLowerCase() === normalized
+              );
+              if (found) setInspectedWord(found);
+            }}
+          />
+        </section>
+      )}
       <section
         aria-label={t("study.filterVocabulary")}
         className="grid gap-3 rounded-2xl border border-border bg-wp-card p-3 sm:grid-cols-[minmax(0,1fr)_12rem]"

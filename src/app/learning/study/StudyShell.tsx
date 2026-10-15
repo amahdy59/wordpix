@@ -10,6 +10,7 @@ import {
   X,
   Menu,
   Languages,
+  Headphones,
 } from "lucide-react";
 import type { UnitLearningMaterials } from "../types";
 import type { CourseUnit } from "../../data/lessons";
@@ -22,6 +23,8 @@ import { UseItArea } from "./UseItArea";
 import { PracticeArea } from "./PracticeArea";
 import { ReferenceArea } from "./ReferenceArea";
 import { ReviewArea } from "./ReviewArea";
+import { UnitScenarioPlayer } from "./UnitScenarioPlayer";
+import { getScenariosForUnit, findScenarioForWords } from "../../data/scenarios/scenarioService";
 import type { UnitStudyProgress, StudyArea } from "./types";
 import type { Action } from "../../types";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
@@ -64,6 +67,7 @@ export function StudyShell({
     () => getUnitCurriculumDesign(unit, materials),
     [materials, unit]
   );
+  const unitScenarios = React.useMemo(() => getScenariosForUnit(unitId), [unitId]);
 
   // Navigation state is URL/state-driven. Area-only links open the first activity.
   const requestedArea = STUDY_AREAS.includes(initialArea as StudyArea)
@@ -547,6 +551,12 @@ export function StudyShell({
                     {areaNodes.map((node) => {
                       const isActive = currentNodeId === node.id;
                       const progressVal = nodeProgress(node.id);
+                      const matchingScenario =
+                        node.type === "vocabulary"
+                          ? findScenarioForWords(unitId, node.wordIds ?? [])
+                          : undefined;
+                      const isScenarioNode = node.type === "scenario";
+
                       return (
                         <button
                           key={node.id}
@@ -560,16 +570,22 @@ export function StudyShell({
                         >
                           <span
                             className={`flex size-5 shrink-0 items-center justify-center rounded-full border transition-colors ${
-                              progressVal === 100
+                              isScenarioNode
                                 ? isActive
                                   ? "border-primary-foreground bg-primary-foreground text-primary"
-                                  : "border-wp-green bg-wp-green text-wp-text-on-green"
-                                : isActive
-                                  ? "border-primary-foreground/60"
-                                  : "border-border"
+                                  : "border-primary/50 bg-primary/15 text-primary"
+                                : progressVal === 100
+                                  ? isActive
+                                    ? "border-primary-foreground bg-primary-foreground text-primary"
+                                    : "border-wp-green bg-wp-green text-wp-text-on-green"
+                                  : isActive
+                                    ? "border-primary-foreground/60"
+                                    : "border-border"
                             }`}
                           >
-                            {progressVal === 100 ? (
+                            {isScenarioNode ? (
+                              <Headphones aria-hidden size={12} strokeWidth={2.5} />
+                            ) : progressVal === 100 ? (
                               <Check aria-hidden size={13} strokeWidth={3} />
                             ) : (
                               <span
@@ -585,6 +601,20 @@ export function StudyShell({
                             <span title={node.title} className="block truncate">
                               {node.title}
                             </span>
+                            {matchingScenario && (
+                              <span
+                                className={`flex items-center gap-1.5 text-xs font-semibold mt-0.5 truncate ${
+                                  isActive ? "text-primary-foreground/90" : "text-primary"
+                                }`}
+                                title={`${t("study.videoContext") || "Video Context"}: ${matchingScenario.titleEn}`}
+                              >
+                                <Headphones className="size-3 shrink-0" aria-hidden="true" />
+                                <span className="truncate">
+                                  {t("study.videoPrefix", { defaultValue: "Video:" })}{" "}
+                                  {matchingScenario.titleEn}
+                                </span>
+                              </span>
+                            )}
                             {node.estimatedMinutes && (
                               <span
                                 className={`block text-sm ${
@@ -626,17 +656,50 @@ export function StudyShell({
             />
           ) : (
             <>
-              {currentArea === "learn" && activeNode && (
-                <LearnArea
-                  key={activeNode.id}
-                  node={activeNode}
-                  materials={materials}
-                  progress={progress}
-                  onProgressUpdate={setStoredProgress}
-                  onNextActivity={handleNextActivity}
-                  immersionMode={immersionMode}
-                />
-              )}
+              {currentArea === "learn" &&
+                activeNode &&
+                (activeNode.type === "scenario" ? (
+                  <div className="wp-container-content wp-layout-gutter py-4 md:py-6 space-y-4">
+                    <header className="space-y-1">
+                      <p className="text-sm font-bold uppercase tracking-wider text-primary flex items-center gap-2">
+                        <Headphones className="size-4" aria-hidden />
+                        <span>{t("study.videoContext") || "Authentic Video Context"}</span>
+                      </p>
+                      <h1 className="text-2xl font-black text-foreground">
+                        {t("study.scenariosForUnit", {
+                          unit: unit.name,
+                          defaultValue: `${unit.name} · Authentic Scenarios`,
+                        })}
+                      </h1>
+                      <p className="text-base text-muted-foreground">
+                        {t("study.scenariosDesc", {
+                          defaultValue:
+                            "Authentic native dialogue scenarios featuring target vocabulary in real-world everyday contexts.",
+                        })}
+                      </p>
+                    </header>
+                    <UnitScenarioPlayer
+                      scenarios={unitScenarios}
+                      onInspectWord={(wordText) => {
+                        const normalized = wordText.trim().toLowerCase();
+                        const found = unit.wordIds.find((id) => id.toLowerCase() === normalized);
+                        if (found) {
+                          setInspectedWord({ id: found, label: wordText } as VocabularyItem);
+                        }
+                      }}
+                    />
+                  </div>
+                ) : (
+                  <LearnArea
+                    key={activeNode.id}
+                    node={activeNode}
+                    materials={materials}
+                    progress={progress}
+                    onProgressUpdate={setStoredProgress}
+                    onNextActivity={handleNextActivity}
+                    immersionMode={immersionMode}
+                  />
+                ))}
               {currentArea === "use" && (
                 <UseItArea
                   node={activeNode}

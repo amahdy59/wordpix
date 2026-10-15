@@ -1,14 +1,49 @@
 {
-  "version": "0.1.44",
+  "version": "0.1.45",
   "notes": [
-    "Embedded authentic conversational listening scenarios across all 200 unit study materials and active lesson stories with multi-character audio, live subtitles, and sentence replay.",
-    "Integrated UnitScenarioPlayer into Study Overview, Use-in-Context dialogues, and lesson story transfer stages with HTTP range streaming."
+    "Added character speech synthesis fallback for scenario dialogue audio ensuring 100% resilient playback on static hosting and offline.",
+    "Integrated video context scenarios directly into lesson views (LearnArea) and left panel navigation with clear section attribution."
   ],
   "notesAr": [
-    "دمج سيناريوهات الاستماع الحوارية الواقعية عبر المواد الدراسية لجميع الوحدات الـ 200 والقصص التعليمية بأصوات متعددة وترجمة متزامنة وتشغيل لكل جملة.",
-    "تضمين مشغل السيناريوهات UnitScenarioPlayer في نظرة عامة على الوحدة وتدريبات الاستخدام السياقي ومراحل القصة مع دعم البث الجزئي للصوت."
+    "إضافة دعم أصوات الكلام الاصطناعية لشخصيات سيناريوهات الاستماع لضمان تشغيل الصوت في جميع البيئات والوضع غير المتصل.",
+    "دمج سيناريوهات سياق الفيديو مباشرة داخل شاشات الدروس ولوحة التنقل الجانبية مع توضيح القسم والدرس التابع له."
   ],
   "releases": [
+    {
+      "id": "0.1.45",
+      "version": "0.1.45",
+      "date": "2026-10-15",
+      "title": {
+        "en": "Resilient Speech Audio Fallback and In-Lesson Video Context Navigation",
+        "ar": "تشغيل صوتي بديل مرن ودمج سياق الفيديو داخل الدروس وشريط التنقل"
+      },
+      "changes": [
+        {
+          "id": "scenario-audio-speech-fallback",
+          "category": "improved",
+          "en": "Equipped UnitScenarioPlayer with a resilient character speech synthesis engine (Tariq UK, Adam US, Omar AU) that activates seamlessly whenever network audio files are unavailable, ensuring continuous dialogue playback across all platforms.",
+          "ar": "تزويد مشغل السيناريوهات بنظام توليد أصوات كلام متعدد الشخصيات يعمل تلقائياً عند تعذر تحميل الملفات الصوتية عبر الشبكة لضمان استمرارية الاستماع."
+        },
+        {
+          "id": "scenario-section-attribution",
+          "category": "improved",
+          "en": "Added explicit lesson and section labeling (e.g. 'Lesson 1 of 4', 'Part 1 (Lesson 1)') across all scenario player cards, headers, and tabs to clearly indicate curriculum lesson attribution.",
+          "ar": "إضافة تصنيف واضح يحدد الدرس والقسم الذي ينتمي إليه كل سيناريو تفاعلي عبر جميع شارات وبطاقات المشغل."
+        },
+        {
+          "id": "in-lesson-scenario-integration",
+          "category": "added",
+          "en": "Embedded authentic video context scenarios directly into LearnArea lesson study screens with interactive target word inspection linked to dictionary definitions and pronunciation.",
+          "ar": "تضمين سيناريوهات سياق الفيديو مباشرة داخل شاشة دراسة المفردات مع إمكانية فحص الكلمات المستهدفة والاستماع لنطقها."
+        },
+        {
+          "id": "left-panel-scenario-navigation",
+          "category": "added",
+          "en": "Integrated video context scenario badges into lesson nodes in the StudyShell sidebar navigation and provided a dedicated Video Context Scenarios study node.",
+          "ar": "إدراج شارات سياق الفيديو في شريط التنقل الجانبي لقائمة الدروس وتوفير محطة دراسية مخصصة لسيناريوهات الفيديو."
+        }
+      ]
+    },
     {
       "id": "0.1.44",
       "version": "0.1.44",

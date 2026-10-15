@@ -1,12 +1,14 @@
 import { useState, useRef, useEffect, useMemo, useCallback } from "react";
 import { Play, Pause, RotateCcw, Volume2, Headphones } from "lucide-react";
 import type { ScenarioLesson, ScenarioLine } from "../../data/scenarios/scenarioService";
+import { getScenarioDisplayInfo } from "../../data/scenarios/scenarioService";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
 import { useI18n } from "../../../i18n";
 
 interface Props {
   scenarios: ScenarioLesson[];
   initialLessonId?: string;
+  sectionTitle?: string;
   onInspectWord?: (wordText: string) => void;
   className?: string;
   compact?: boolean;
@@ -35,6 +37,14 @@ const SPEAKER_THEMES: Record<string, { badge: string; border: string }> = {
   },
 };
 
+const SPEAKER_SPEECH_PARAMS: Record<string, { pitch: number; rateMultiplier: number }> = {
+  Tariq: { pitch: 1.0, rateMultiplier: 0.95 },
+  Adam: { pitch: 1.15, rateMultiplier: 1.05 },
+  Omar: { pitch: 0.85, rateMultiplier: 0.9 },
+  Layla: { pitch: 1.1, rateMultiplier: 1.0 },
+  Hana: { pitch: 1.2, rateMultiplier: 1.0 },
+};
+
 function formatSeconds(sec: number): string {
   if (!Number.isFinite(sec) || sec < 0) return "0:00";
   const m = Math.floor(sec / 60);
@@ -42,9 +52,34 @@ function formatSeconds(sec: number): string {
   return `${m}:${s < 10 ? "0" : ""}${s}`;
 }
 
+function getSpeakerVoice(speaker: string): SpeechSynthesisVoice | null {
+  if (typeof window === "undefined" || !("speechSynthesis" in window) || !window.speechSynthesis) {
+    return null;
+  }
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices.length) return null;
+
+  const targetLang =
+    speaker === "Tariq"
+      ? "en-gb"
+      : speaker === "Omar"
+        ? "en-au"
+        : speaker === "Adam"
+          ? "en-us"
+          : "en-us";
+
+  const targetVoice = voices.find(
+    (v) => v.lang.toLowerCase() === targetLang || v.lang.toLowerCase().startsWith(targetLang)
+  );
+  if (targetVoice) return targetVoice;
+
+  return voices.find((v) => v.lang.toLowerCase().startsWith("en")) ?? voices[0] ?? null;
+}
+
 export function UnitScenarioPlayer({
   scenarios,
   initialLessonId,
+  sectionTitle,
   onInspectWord,
   className = "",
   compact = false,
@@ -66,12 +101,33 @@ export function UnitScenarioPlayer({
   const [duration, setDuration] = useState(0);
   const [playbackRate, setPlaybackRate] = useState(1.0);
   const [activeClipIndex, setActiveClipIndex] = useState<number | null>(null);
+  const [audioMode, setAudioMode] = useState<"native" | "synthesized">("native");
+
+  const synthPlayingRef = useRef(false);
+  const synthTimerRef = useRef<number | null>(null);
+
+  const displayInfo = useMemo(
+    () => (activeScenario ? getScenarioDisplayInfo(activeScenario, scenarios) : null),
+    [activeScenario, scenarios]
+  );
+
+  const stopSynthesizedPlayback = useCallback(() => {
+    synthPlayingRef.current = false;
+    if (synthTimerRef.current) {
+      clearTimeout(synthTimerRef.current);
+      synthTimerRef.current = null;
+    }
+    if (typeof window !== "undefined" && "speechSynthesis" in window && window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+  }, []);
 
   const handleSelectScenario = (idx: number) => {
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
     }
+    stopSynthesizedPlayback();
     setSelectedIdx(idx);
     setIsPlaying(false);
     setCurrentTime(0);
@@ -100,12 +156,121 @@ export function UnitScenarioPlayer({
     );
   }, [activeScenario, currentTime, isPlaying, activeClipIndex]);
 
+  const speakLineAtRef = useRef<(lineIdx: number, isSequential: boolean) => void>(() => {});
+
+  // Synthesized sequential speech engine
+  const speakLineAt = useCallback(
+    (lineIdx: number, isSequential: boolean) => {
+      if (!activeScenario || !activeScenario.lines[lineIdx]) {
+        setIsPlaying(false);
+        setActiveClipIndex(null);
+        synthPlayingRef.current = false;
+        return;
+      }
+
+      const line = activeScenario.lines[lineIdx];
+      const synth =
+        typeof window !== "undefined" && "speechSynthesis" in window
+          ? window.speechSynthesis
+          : null;
+      const UtteranceClass =
+        typeof window !== "undefined" && "SpeechSynthesisUtterance" in window
+          ? window.SpeechSynthesisUtterance
+          : typeof SpeechSynthesisUtterance !== "undefined"
+            ? SpeechSynthesisUtterance
+            : null;
+
+      if (!synth || !UtteranceClass) {
+        setIsPlaying(false);
+        return;
+      }
+
+      synth.cancel();
+      const utterance = new UtteranceClass(line.text);
+      const voice = getSpeakerVoice(line.speaker);
+      if (voice) utterance.voice = voice;
+
+      const params = SPEAKER_SPEECH_PARAMS[line.speaker] || { pitch: 1.0, rateMultiplier: 1.0 };
+      utterance.pitch = params.pitch;
+      utterance.rate = playbackRate * params.rateMultiplier;
+      utterance.lang = voice?.lang || "en-US";
+
+      utterance.onstart = () => {
+        setIsPlaying(true);
+        setActiveClipIndex(lineIdx);
+        setCurrentTime(line.startSeconds);
+      };
+
+      utterance.onend = () => {
+        if (!synthPlayingRef.current || !isSequential) {
+          setIsPlaying(false);
+          setActiveClipIndex(null);
+          return;
+        }
+
+        const nextIdx = lineIdx + 1;
+        if (nextIdx < activeScenario.lines.length) {
+          setCurrentTime(line.endSeconds);
+          synthTimerRef.current = window.setTimeout(() => {
+            if (synthPlayingRef.current) {
+              speakLineAtRef.current(nextIdx, true);
+            }
+          }, 350);
+        } else {
+          synthPlayingRef.current = false;
+          setIsPlaying(false);
+          setActiveClipIndex(null);
+          setCurrentTime(activeScenario.totalDurationSeconds || line.endSeconds);
+        }
+      };
+
+      utterance.onerror = () => {
+        setIsPlaying(false);
+        setActiveClipIndex(null);
+        synthPlayingRef.current = false;
+      };
+
+      synth.speak(utterance);
+    },
+    [activeScenario, playbackRate]
+  );
+
+  useEffect(() => {
+    speakLineAtRef.current = speakLineAt;
+  }, [speakLineAt]);
+
+  const startSynthesizedPlayback = useCallback(
+    (fromLineIdx: number) => {
+      setAudioMode("synthesized");
+      synthPlayingRef.current = true;
+      setIsPlaying(true);
+      speakLineAt(fromLineIdx, true);
+    },
+    [speakLineAt]
+  );
+
   const toggleMasterPlay = useCallback(() => {
+    if (audioMode === "synthesized") {
+      if (isPlaying) {
+        stopSynthesizedPlayback();
+        setIsPlaying(false);
+      } else {
+        const startIdx =
+          activeScenario?.lines.findIndex(
+            (l) => currentTime >= l.startSeconds && currentTime < l.endSeconds
+          ) ?? 0;
+        startSynthesizedPlayback(startIdx >= 0 ? startIdx : 0);
+      }
+      return;
+    }
+
     const audio = audioRef.current;
-    if (!audio) return;
+    if (!audio) {
+      startSynthesizedPlayback(0);
+      return;
+    }
 
     if (activeClipIndex !== null) {
-      // Switching from single clip back to master
       setActiveClipIndex(null);
       audio.src = masterAudioUrl;
       audio.currentTime = 0;
@@ -113,7 +278,9 @@ export function UnitScenarioPlayer({
       audio
         .play()
         .then(() => setIsPlaying(true))
-        .catch(() => setIsPlaying(false));
+        .catch(() => {
+          startSynthesizedPlayback(0);
+        });
       return;
     }
 
@@ -124,31 +291,73 @@ export function UnitScenarioPlayer({
       audio
         .play()
         .then(() => setIsPlaying(true))
-        .catch(() => setIsPlaying(false));
+        .catch(() => {
+          // Native media cannot play or failed to fetch (e.g. 404 in prod)
+          startSynthesizedPlayback(0);
+        });
     }
-  }, [isPlaying, activeClipIndex, masterAudioUrl, playbackRate]);
+  }, [
+    audioMode,
+    isPlaying,
+    activeClipIndex,
+    masterAudioUrl,
+    playbackRate,
+    stopSynthesizedPlayback,
+    startSynthesizedPlayback,
+    activeScenario,
+    currentTime,
+  ]);
 
   const restartMaster = useCallback(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
+    stopSynthesizedPlayback();
+    setCurrentTime(0);
     setActiveClipIndex(null);
+
+    if (audioMode === "synthesized") {
+      startSynthesizedPlayback(0);
+      return;
+    }
+
+    const audio = audioRef.current;
+    if (!audio) {
+      startSynthesizedPlayback(0);
+      return;
+    }
+
     audio.src = masterAudioUrl;
     audio.currentTime = 0;
     audio.playbackRate = playbackRate;
     audio
       .play()
       .then(() => setIsPlaying(true))
-      .catch(() => setIsPlaying(false));
-  }, [masterAudioUrl, playbackRate]);
+      .catch(() => {
+        startSynthesizedPlayback(0);
+      });
+  }, [audioMode, masterAudioUrl, playbackRate, startSynthesizedPlayback, stopSynthesizedPlayback]);
 
   const playSingleClip = useCallback(
     (line: ScenarioLine, idx: number) => {
-      const audio = audioRef.current;
-      if (!audio) return;
-
       if (activeClipIndex === idx && isPlaying) {
-        audio.pause();
+        if (audioMode === "synthesized") {
+          stopSynthesizedPlayback();
+        } else {
+          audioRef.current?.pause();
+        }
         setIsPlaying(false);
+        setActiveClipIndex(null);
+        return;
+      }
+
+      if (audioMode === "synthesized") {
+        synthPlayingRef.current = false;
+        speakLineAt(idx, false);
+        return;
+      }
+
+      const audio = audioRef.current;
+      if (!audio) {
+        setAudioMode("synthesized");
+        speakLineAt(idx, false);
         return;
       }
 
@@ -160,13 +369,16 @@ export function UnitScenarioPlayer({
       audio
         .play()
         .then(() => setIsPlaying(true))
-        .catch(() => setIsPlaying(false));
+        .catch(() => {
+          setAudioMode("synthesized");
+          speakLineAt(idx, false);
+        });
     },
-    [activeClipIndex, isPlaying, playbackRate]
+    [activeClipIndex, isPlaying, audioMode, playbackRate, speakLineAt, stopSynthesizedPlayback]
   );
 
   const handleTimeUpdate = () => {
-    if (!audioRef.current) return;
+    if (!audioRef.current || audioMode === "synthesized") return;
     setCurrentTime(audioRef.current.currentTime);
   };
 
@@ -178,7 +390,6 @@ export function UnitScenarioPlayer({
   const handleAudioEnded = () => {
     setIsPlaying(false);
     if (activeClipIndex !== null) {
-      // Return to master audio source ready to play
       setActiveClipIndex(null);
       if (audioRef.current) {
         audioRef.current.src = masterAudioUrl;
@@ -187,15 +398,44 @@ export function UnitScenarioPlayer({
     }
   };
 
+  const handleAudioError = () => {
+    // When the network MP3 fails (e.g. 404 on static hosting), fall back to synthesized voice mode
+    setAudioMode("synthesized");
+  };
+
   const handleScrub = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newTime = parseFloat(e.target.value);
     setCurrentTime(newTime);
+
+    if (audioMode === "synthesized") {
+      if (isPlaying) {
+        stopSynthesizedPlayback();
+        const nextIdx =
+          activeScenario?.lines.findIndex(
+            (l) => newTime >= l.startSeconds && newTime <= l.endSeconds
+          ) ?? 0;
+        startSynthesizedPlayback(nextIdx >= 0 ? nextIdx : 0);
+      }
+      return;
+    }
+
     if (audioRef.current && activeClipIndex === null) {
       audioRef.current.currentTime = newTime;
     }
   };
 
-  if (!activeScenario) return null;
+  // Cleanup on unmount or scenario switch
+  useEffect(() => {
+    const audioElement = audioRef.current;
+    return () => {
+      stopSynthesizedPlayback();
+      if (audioElement) {
+        audioElement.pause();
+      }
+    };
+  }, [stopSynthesizedPlayback]);
+
+  if (!activeScenario || !displayInfo) return null;
 
   return (
     <section
@@ -211,6 +451,7 @@ export function UnitScenarioPlayer({
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
         onEnded={handleAudioEnded}
+        onError={handleAudioError}
         preload="metadata"
       >
         <track kind="captions" />
@@ -219,14 +460,31 @@ export function UnitScenarioPlayer({
       {/* Header & Scenario Switcher */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border/70 pb-4">
         <div>
-          <div className="flex items-center gap-2 mb-1">
+          <div className="flex flex-wrap items-center gap-2 mb-1.5">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-primary/15 text-primary border border-primary/20">
               <Headphones className="size-3.5" aria-hidden="true" />
-              <span>{t("study.videoContext") || "Authentic Listening Scenario"}</span>
+              <span>{t("study.videoContext") || "Authentic Video Context"}</span>
             </span>
-            <span className="text-xs font-semibold text-muted-foreground">
-              {activeScenario.lessonId}
+
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-secondary text-foreground border border-border">
+              <span>{displayInfo.sectionLabel}</span>
             </span>
+
+            {sectionTitle && (
+              <span className="text-xs font-semibold text-muted-foreground truncate max-w-[260px]">
+                · {sectionTitle}
+              </span>
+            )}
+
+            {audioMode === "synthesized" && (
+              <span
+                className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-secondary/80 text-muted-foreground border border-border"
+                title="Character speech synthesis active"
+              >
+                <Volume2 className="size-3 text-primary" aria-hidden="true" />
+                <span>{t("study.speechAudio") || "Speech Audio"}</span>
+              </span>
+            )}
           </div>
 
           <h2
@@ -235,7 +493,8 @@ export function UnitScenarioPlayer({
             lang="en"
             dir="ltr"
           >
-            {activeScenario.titleEn}
+            <span className="text-primary me-2 font-bold">{displayInfo.badgeLabel}:</span>
+            <span>{activeScenario.titleEn}</span>
           </h2>
           {activeScenario.titleAr && (
             <p
@@ -257,20 +516,28 @@ export function UnitScenarioPlayer({
           >
             {scenarios.map((s, idx) => {
               const isCurrent = idx === selectedIdx;
+              const sInfo = getScenarioDisplayInfo(s, scenarios);
               return (
                 <button
                   key={s.lessonId}
                   role="tab"
                   type="button"
                   aria-selected={isCurrent}
+                  aria-label={`Part ${idx + 1}`}
                   onClick={() => handleSelectScenario(idx)}
+                  title={`${sInfo.sectionLabel}: ${s.titleEn}`}
                   className={`min-h-[44px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary ${
                     isCurrent
                       ? "bg-primary text-primary-foreground shadow-xs"
                       : "text-muted-foreground hover:text-foreground hover:bg-card/70"
                   }`}
                 >
-                  {t("study.scenarioPart", { count: idx + 1, defaultValue: `Part ${idx + 1}` })}
+                  <span>
+                    {t("study.scenarioPart", { count: idx + 1, defaultValue: `Part ${idx + 1}` })}
+                  </span>
+                  <span className="ms-1 opacity-85 font-normal" aria-hidden="true">
+                    ({sInfo.badgeLabel})
+                  </span>
                 </button>
               );
             })}
