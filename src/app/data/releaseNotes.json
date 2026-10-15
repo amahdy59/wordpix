@@ -1,16 +1,45 @@
 {
-  "version": "0.1.39",
+  "version": "0.1.40",
   "notes": [
-    "Studio-quality multi-character voice acting across Business English scenarios with distinct voices for narration, male colleagues, and female executives.",
-    "Chained multi-actor scenario player that advances naturally with real-time sentence synchronization and visual speaker badging.",
-    "Corrected dialogue speaker attribution in workplace case studies, restoring character names and role badges."
+    "Studio audio parity for 283 contextual usage sentences and transit phrases across core curriculum units.",
+    "Added authentic native audio recordings for 41 foundational reading passages across Pre-A1 Starter units.",
+    "Registered studio audio keys for all 23 compound terms in Business, Conversation, and Hadith curricula."
   ],
   "notesAr": [
-    "أداء صوتي احترافي متعدد الشخصيات لسيناريوهات القراءة في منهج الأعمال مع أصوات مميزة للراوي والزملاء والإداريات.",
-    "مشغل متسلسل ذكي للسيناريوهات يتنقل بين الشخصيات بتزامن دقيق على مستوى الجمل وتمييز بصري للمتحدث.",
-    "تصحيح تسميات المتحدثين في دراسات الحالة وسيناريوهات العمل مع استعادة أسماء الشخصيات ورتبها."
+    "تسجيلات صوتية استوديو لـ 283 جملة استخدام سياقية وعبارات المواصلات في وحدات المنهج الأساسي.",
+    "إضافة تسجيلات صوتية طبيعية عالية الجودة لـ 41 نص قراءة تأسيسي لوحدات المستوى التمهيدي Pre-A1.",
+    "تسجيل مفاتيح صوتية استوديو لجميع المصطلحات والعبارات المركبة الـ 23 في مناهج الأعمال والمحادثة والحديث."
   ],
   "releases": [
+    {
+      "id": "0.1.40",
+      "version": "0.1.40",
+      "date": "2026-10-15",
+      "title": {
+        "en": "Studio audio parity for contextual phrases, usage examples, and starter reading",
+        "ar": "تسجيلات صوتية احترافية للعبارات السياقية وأمثلة الاستخدام ونصوص القراءة التأسيسية"
+      },
+      "changes": [
+        {
+          "id": "curriculum-usage-examples-audio",
+          "category": "added",
+          "en": "Studio-quality narration for 283 contextual usage example sentences across core curriculum lessons, eliminating robotic speech synthesis fallbacks.",
+          "ar": "تسجيلات استوديو عالية النقاء لـ 283 جملة استخدام سياقية في دروس المنهج الأساسي، مما يلغي الاعتماد على النطق الآلي."
+        },
+        {
+          "id": "starter-passages-audio",
+          "category": "added",
+          "en": "Added authentic native audio recordings for 41 foundational reading passages across Pre-A1 Starter units (Numbers, Colors, Shapes, Family, Rooms, Food).",
+          "ar": "إضافة تسجيلات صوتية طبيعية متقنة لـ 41 نص قراءة تأسيسي في وحدات المستوى التمهيدي (الأرقام، الألوان، الأشكال، العائلة، غرف المنزل، والأطعمة)."
+        },
+        {
+          "id": "special-curriculum-compounds-audio",
+          "category": "improved",
+          "en": "Expanded curriculum audio manifest with verified studio keys for 23 compound terms across Business, Conversation, and Hadith courses.",
+          "ar": "توسيع فهرس التسجيلات الصوتية بمفاتيح استوديو مؤكدة لـ 23 مصطلحاً مركباً عبر دورات الأعمال والمحادثة والحديث."
+        }
+      ]
+    },
     {
       "id": "0.1.39",
       "version": "0.1.39",
