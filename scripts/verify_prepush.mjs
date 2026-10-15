@@ -43,6 +43,11 @@ const steps = [
     description: "Ensuring zero-error production build output",
   },
   {
+    name: "Bundle Budget Verification",
+    command: "pnpm run check:bundle",
+    description: "Enforcing bundle limits across runtime chunks and curriculum data shards",
+  },
+  {
     name: "E2E Accessibility & Responsive Matrix",
     command: "pnpm run test:e2e",
     description: "Running cross-viewport Playwright axe accessibility and navigation suite",
