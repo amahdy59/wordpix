@@ -119,8 +119,13 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
         tabIndex={-1}
         className="bg-wp-card border-t sm:border border-border rounded-t-[28px] sm:rounded-3xl w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col my-0 sm:my-auto max-h-[92dvh] pb-[env(safe-area-inset-bottom)] sm:pb-0 outline-none"
       >
+        <div
+          className="sm:hidden w-10 h-1 bg-muted-foreground/30 rounded-full mx-auto my-2 shrink-0"
+          aria-hidden="true"
+        />
+
         {/* Modal Header */}
-        <div className="p-5 md:p-6 border-b border-border flex items-center justify-between bg-muted/40 shrink-0">
+        <div className="p-4 sm:p-5 md:p-6 border-b border-border flex items-center justify-between bg-muted/40 shrink-0">
           <div className="flex items-center gap-3">
             <div className="size-10 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center shadow-xs">
               <Sliders className="size-5" />

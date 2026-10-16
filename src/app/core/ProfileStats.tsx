@@ -16,11 +16,13 @@ import {
   Mic,
   Route,
   Sliders,
+  Download,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { useAuth } from "../context/AuthContext";
+import { usePwaInstall } from "../shared/usePwaInstall";
 import { AuthModal } from "../../features/auth/AuthModal";
 import { staggerContainer, staggerItem } from "../shared/animations";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
@@ -40,6 +42,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
   const { t } = useI18n();
   const { progress, setPreferences } = useProgress();
   const { user, signOut } = useAuth();
+  const { canInstall, install } = usePwaInstall();
 
   const [showAuthModal, setShowAuthModal] = useState(false);
 
@@ -167,7 +170,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="flex w-full flex-col gap-4 pb-4"
+        className="flex w-full flex-col gap-4 sm:gap-5"
       >
         {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
         {showSettings && (
@@ -199,7 +202,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                 <LearnerAvatar />
               </div>
 
-              <div className="flex flex-col items-center md:items-start gap-1">
+              <div className="flex flex-col items-start gap-1">
                 <div className="flex flex-wrap items-center gap-2 mt-1">
                   <span className="bg-secondary text-primary font-sans font-semibold text-sm px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
                     <Flame className="size-3.5 text-wp-amber-foreground" />
@@ -226,6 +229,18 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
 
             {/* Account actions; global appearance and accessibility live in the sidebar. */}
             <motion.div variants={staggerItem} className="flex flex-wrap items-center gap-2.5">
+              {canInstall && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={install}
+                  aria-label={t("pwa.installApp", { defaultValue: "Install WordPix App" })}
+                  iconLeft={<Download className="size-4 text-primary" aria-hidden />}
+                  className="rounded-xl font-bold"
+                >
+                  <span>{t("pwa.installApp", { defaultValue: "Install App" })}</span>
+                </Button>
+              )}
               <Button
                 variant="outline"
                 size="sm"

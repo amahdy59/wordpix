@@ -192,7 +192,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                   </HelpDisclosure>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center gap-3 mt-4">
+                <div className="flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 mt-4">
                   <motion.button
                     whileHover={{ scale: 1.015 }}
                     whileTap={{ scale: 0.98 }}
@@ -213,7 +213,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         totalSteps: plan.length,
                       });
                     }}
-                    className="flex-1 w-full bg-primary rounded-2xl py-3.5 font-sans font-bold text-primary-foreground text-base min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs transition-colors flex items-center justify-center gap-2"
+                    className="flex-1 w-full bg-primary rounded-2xl py-3 sm:py-3.5 font-sans font-bold text-primary-foreground text-sm sm:text-base min-h-[48px] sm:min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs transition-colors flex items-center justify-center gap-2"
                   >
                     <BookOpen className="size-5 shrink-0" />
                     <span>
@@ -242,7 +242,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     }
                     title={t("dashboard.studyGuideAria", { unit: activeUnit.name })}
                     aria-label={t("dashboard.studyGuideAria", { unit: activeUnit.name })}
-                    className="w-full sm:w-auto px-4 py-2 border border-border bg-card text-foreground hover:bg-secondary hover:border-primary/40 rounded-2xl font-sans font-semibold text-base min-h-[52px] flex items-center justify-center gap-2 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    className="w-full sm:w-auto px-4 py-2 border border-border bg-card text-foreground hover:bg-secondary hover:border-primary/40 rounded-2xl font-sans font-semibold text-sm sm:text-base min-h-[44px] sm:min-h-[52px] flex items-center justify-center gap-2 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
                     <Library className="size-4 shrink-0" />
                     <span>{t("dashboard.studyGuide")}</span>
@@ -298,7 +298,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         totalSteps: plan.length,
                       });
                     }}
-                    className="w-full bg-secondary hover:bg-secondary text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-base min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-wp-blue"
+                    className="w-full bg-secondary hover:bg-secondary text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-base min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
                     <span>
                       {t("dashboard.reviewNowWords", {

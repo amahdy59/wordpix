@@ -67,6 +67,8 @@
   --wp-shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.06);
   --wp-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --wp-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --wp-shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.12), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
+  --wp-shadow-xl: 0 20px 35px -5px rgba(0, 0, 0, 0.16), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 
   /* Font families & Typographic Rhythm */
   --wp-font-base:
@@ -344,6 +346,8 @@
   --shadow-wp-xs: var(--wp-shadow-xs);
   --shadow-wp-sm: var(--wp-shadow-sm);
   --shadow-wp-md: var(--wp-shadow-md);
+  --shadow-wp-lg: var(--wp-shadow-lg);
+  --shadow-wp-xl: var(--wp-shadow-xl);
 
   --font-sans: var(--wp-font-base);
   --font-arabic: var(--wp-font-arabic);

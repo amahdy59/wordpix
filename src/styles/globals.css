@@ -491,6 +491,12 @@
   .shadow-wp-md {
     box-shadow: var(--wp-shadow-md);
   }
+  .shadow-wp-lg {
+    box-shadow: var(--wp-shadow-lg);
+  }
+  .shadow-wp-xl {
+    box-shadow: var(--wp-shadow-xl);
+  }
 }
 
 @layer base {

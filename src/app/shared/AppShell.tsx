@@ -20,6 +20,12 @@ interface Props {
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
   const [showShortcutsModal, setShowShortcutsModal] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = (e: React.UIEvent<HTMLElement>) => {
+    const scrolled = e.currentTarget.scrollTop > 8;
+    if (scrolled !== isScrolled) setIsScrolled(scrolled);
+  };
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -57,12 +63,13 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
       {/* Main Content Column */}
       <div className="flex-1 flex flex-col min-w-0 h-dvh overflow-hidden relative">
         {/* Mobile Header - hidden on lg+ */}
-        <MobileHeader dispatch={dispatch} />
+        <MobileHeader dispatch={dispatch} isScrolled={isScrolled} />
 
         {/* Scrollable content area */}
         <main
           id="main-content"
-          className="flex-1 overflow-y-auto pb-[calc(env(safe-area-inset-bottom)+96px)] scroll-pb-[calc(env(safe-area-inset-bottom)+96px)] lg:pb-8 lg:scroll-pb-6 pt-4 sm:pt-6 lg:pt-8 -webkit-overflow-scrolling-touch"
+          onScroll={handleScroll}
+          className="flex-1 overflow-y-auto overscroll-y-contain pb-[calc(env(safe-area-inset-bottom)+96px)] scroll-pb-[calc(env(safe-area-inset-bottom)+96px)] lg:pb-8 lg:scroll-pb-6 pt-4 sm:pt-6 lg:pt-8 -webkit-overflow-scrolling-touch"
           tabIndex={-1}
         >
           {/* A single fluid canvas keeps every tab aligned while still using wide screens well. */}

@@ -38,13 +38,14 @@ export const PageHeader = memo(function PageHeader({
 
   const containerStyles =
     variant === "hero"
-      ? "grid gap-3 border-b border-border pb-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center"
-      : "flex flex-col sm:flex-row sm:items-end justify-between gap-4 py-1 sm:py-2";
-  const headingStyles = headingLevel === "h1" ? "text-2xl sm:text-3xl" : "text-lg sm:text-xl";
+      ? "grid gap-2.5 sm:gap-3 border-b border-border pb-3 sm:pb-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center"
+      : "flex flex-col sm:flex-row sm:items-end justify-between gap-3 sm:gap-4 py-1 sm:py-2";
+  const headingStyles =
+    headingLevel === "h1" ? "text-xl sm:text-2xl lg:text-3xl" : "text-base sm:text-lg lg:text-xl";
 
   return (
     <header className={`${containerStyles} ${className}`}>
-      <div className="min-w-0 flex items-start gap-3 sm:gap-4">
+      <div className="min-w-0 flex items-start gap-2.5 sm:gap-4">
         {onBack && (
           <div className="mt-1 shrink-0">
             <IconButton
@@ -59,20 +60,20 @@ export const PageHeader = memo(function PageHeader({
 
         <div className="min-w-0 flex-1">
           {eyebrow && (
-            <div className="mb-2 flex items-center gap-2 text-sm font-bold text-primary">
+            <div className="mb-1.5 sm:mb-2 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-bold text-primary">
               {eyebrow}
             </div>
           )}
 
           <HeadingTag
             id={titleId}
-            className={`font-sans ${headingStyles} font-black leading-[1.15] text-foreground tracking-tight text-balance`}
+            className={`font-sans ${headingStyles} font-black leading-[1.2] text-foreground tracking-tight text-balance`}
           >
             {title}
           </HeadingTag>
 
           {subtitle && (
-            <p className="mt-2 max-w-3xl text-base sm:text-base font-medium leading-7 text-muted-foreground text-pretty">
+            <p className="mt-1 sm:mt-2 max-w-3xl text-sm sm:text-base font-medium leading-relaxed text-muted-foreground text-pretty">
               {subtitle}
             </p>
           )}
@@ -80,7 +81,9 @@ export const PageHeader = memo(function PageHeader({
       </div>
 
       {actions && (
-        <div className="flex flex-wrap items-center gap-3 shrink-0 lg:justify-end">{actions}</div>
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3 shrink-0 lg:justify-end">
+          {actions}
+        </div>
       )}
     </header>
   );

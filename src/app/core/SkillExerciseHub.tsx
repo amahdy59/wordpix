@@ -145,20 +145,22 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
       {/* ── Section 1: Reviews Due Today (Spaced-Repetition Hero) ──────────────── */}
       <section aria-label={t("masteryReview.todayReview")} className="flex flex-col gap-3">
         {totalDue > 0 ? (
-          <div className="rounded-2xl border border-primary/30 bg-secondary p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div className="flex items-start gap-4">
-              <div className="size-14 sm:size-16 rounded-2xl bg-primary text-primary-foreground flex flex-col items-center justify-center shrink-0 shadow-wp-xs">
-                <span className="text-3xl sm:text-4xl font-bold leading-none">{totalDue}</span>
-                <span className="text-sm font-bold mt-1">{t("masteryReview.wordsDue")}</span>
+          <div className="rounded-2xl border border-primary/30 bg-secondary p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6">
+            <div className="flex items-start gap-3 sm:gap-4">
+              <div className="size-12 sm:size-16 rounded-xl sm:rounded-2xl bg-primary text-primary-foreground flex flex-col items-center justify-center shrink-0 shadow-wp-xs">
+                <span className="text-2xl sm:text-4xl font-bold leading-none">{totalDue}</span>
+                <span className="text-xs sm:text-sm font-bold mt-0.5 sm:mt-1">
+                  {t("masteryReview.wordsDue")}
+                </span>
               </div>
 
-              <div className="min-w-0 flex flex-col gap-1.5">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="inline-flex items-center gap-1.5 text-sm font-bold text-primary">
+              <div className="min-w-0 flex flex-col gap-1 sm:gap-1.5">
+                <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                  <span className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-primary">
                     <Clock className="size-3.5" aria-hidden="true" />
                     <span>{t("masteryReview.todayReview")}</span>
                   </span>
-                  <span className="inline-flex items-center gap-1 text-xs font-semibold text-muted-foreground bg-card px-2.5 py-0.5 rounded-full border border-border">
+                  <span className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-muted-foreground bg-card px-2 sm:px-2.5 py-0.5 rounded-full border border-border">
                     <Clock className="size-3 text-muted-foreground" aria-hidden="true" />
                     <span>
                       {t("masteryReview.estimatedDuration", {
@@ -168,13 +170,13 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                     </span>
                   </span>
                   {progress.streak > 0 && (
-                    <span className="inline-flex items-center gap-1 text-sm font-bold text-wp-amber-foreground bg-wp-amber/10 px-2 py-0.5 rounded-full">
+                    <span className="inline-flex items-center gap-1 text-xs sm:text-sm font-bold text-wp-amber-foreground bg-wp-amber/10 px-2 py-0.5 rounded-full">
                       <Flame className="size-3.5" aria-hidden="true" />
                       <span>{t("masteryReview.dayStreak", { count: progress.streak })}</span>
                     </span>
                   )}
                   {overdueList.length > 0 && (
-                    <span className="inline-flex items-center gap-1 text-sm font-bold text-feedback-error-foreground bg-feedback-error-surface px-2.5 py-0.5 rounded-full border border-feedback-error-border">
+                    <span className="inline-flex items-center gap-1 text-xs sm:text-sm font-bold text-feedback-error-foreground bg-feedback-error-surface px-2 sm:px-2.5 py-0.5 rounded-full border border-feedback-error-border">
                       <span>
                         {t("dashboard.overdueBadge", {
                           count: formatNumber(overdueList.length, numeralSystem),
@@ -184,11 +186,11 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                   )}
                 </div>
 
-                <h2 className="font-sans text-xl sm:text-2xl font-bold text-foreground leading-tight">
+                <h2 className="font-sans text-lg sm:text-2xl font-bold text-foreground leading-tight">
                   {t("masteryReview.title")}
                 </h2>
 
-                <p className="text-base text-muted-foreground font-medium leading-relaxed max-w-xl">
+                <p className="text-sm sm:text-base text-muted-foreground font-medium leading-relaxed max-w-xl">
                   {t("masteryReview.countsSummary", {
                     overdue: overdueList.length,
                     due: dueTodayList.length,
@@ -197,7 +199,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 shrink-0">
               {totalDue > 10 && (
                 <div
                   className="flex items-center gap-1.5 self-start sm:self-center"
@@ -379,7 +381,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
         <div
           role="radiogroup"
           aria-label={t("skillHub.categoriesAria")}
-          className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,9rem),1fr))] gap-2 p-1 sm:flex sm:flex-wrap"
+          className="grid grid-cols-2 gap-2 p-1 sm:flex sm:flex-wrap"
         >
           {categories.map(({ id, labelBase, icon: Icon }) => {
             const count = availableExercises.filter((e) => e.category === id).length;

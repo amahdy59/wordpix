@@ -66,7 +66,10 @@ export const LessonHeader = memo(function LessonHeader({
         <div className="shrink-0">
           <BackButton onClick={onBack} />
         </div>
-        <h1 title={title} className="wp-type-body-emphasis text-center flex-1 min-w-0 break-words">
+        <h1
+          title={title}
+          className="wp-type-page-title text-foreground text-center flex-1 min-w-0 break-words"
+        >
           {title}
         </h1>
         <div className="shrink-0">

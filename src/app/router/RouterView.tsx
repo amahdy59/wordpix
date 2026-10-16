@@ -132,15 +132,43 @@ const LoadingFallback = () => {
   const { t } = useI18n();
   return (
     <div
-      className="flex-1 flex items-center justify-center min-h-[300px] p-6 text-center"
+      className="flex-1 w-full max-w-full flex flex-col gap-4 py-2"
       aria-live="polite"
+      aria-label={t("app.loading")}
     >
-      <div className="flex flex-col items-center gap-3">
+      <span className="sr-only">{t("app.loading")}</span>
+
+      {/* Skeleton Header */}
+      <div className="flex flex-col gap-2 pb-3 border-b border-border/40">
         <div
-          className="size-10 rounded-full border-4 border-primary border-t-transparent motion-safe:animate-spin"
-          aria-hidden
+          className="h-4 w-28 rounded-full bg-muted/70 motion-safe:animate-pulse"
+          aria-hidden="true"
         />
-        <p className="font-sans font-semibold text-muted-foreground text-sm">{t("app.loading")}</p>
+        <div
+          className="h-8 w-56 rounded-xl bg-muted motion-safe:animate-pulse"
+          aria-hidden="true"
+        />
+      </div>
+
+      {/* Skeleton Primary Card */}
+      <div
+        className="rounded-2xl border border-border/50 bg-card p-5 flex flex-col gap-3 motion-safe:animate-pulse"
+        aria-hidden="true"
+      >
+        <div className="flex items-center justify-between gap-3">
+          <div className="h-5 w-32 rounded-full bg-muted" />
+          <div className="h-5 w-20 rounded-full bg-muted" />
+        </div>
+        <div className="h-7 w-3/4 rounded-xl bg-muted mt-2" />
+        <div className="h-4 w-full rounded-md bg-muted/60" />
+        <div className="h-4 w-2/3 rounded-md bg-muted/60" />
+        <div className="h-12 w-full rounded-2xl bg-muted mt-2" />
+      </div>
+
+      {/* Skeleton Secondary Row Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-1" aria-hidden="true">
+        <div className="h-28 rounded-2xl border border-border/40 bg-card/60 p-4 motion-safe:animate-pulse" />
+        <div className="h-28 rounded-2xl border border-border/40 bg-card/60 p-4 motion-safe:animate-pulse" />
       </div>
     </div>
   );

@@ -149,7 +149,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
   return (
-    <div className="wp-container-content flex flex-col gap-4 p-4 md:gap-6 md:p-8">
+    <div className="wp-container-content flex flex-col gap-4 py-2 sm:gap-5">
       <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <p className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider mb-2">

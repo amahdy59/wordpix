@@ -45,7 +45,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   layout = "standard",
 }: Props) {
   const [showExitModal, setShowExitModal] = useState(false);
-  const Content = layout === "media" ? "section" : "main";
+  const Content = "section";
   const canvasClass =
     layout === "media" ? "wp-container-immersive wp-exercise-immersive" : "wp-container-content";
 

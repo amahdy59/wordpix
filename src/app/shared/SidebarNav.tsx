@@ -86,7 +86,7 @@ export const SidebarNav = memo(function SidebarNav({
       </div>
 
       {/* Utilities stay separate from the primary navigation. */}
-      <div className="flex flex-col items-stretch gap-2.5 px-4">
+      <div className="flex flex-col items-stretch gap-2.5 px-6">
         {onOpenShortcuts && (
           <button
             type="button"

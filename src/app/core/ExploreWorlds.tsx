@@ -5,7 +5,14 @@ import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { COURSE_UNITS, type CourseUnit } from "../data/courseCatalog";
 import { CEFR_STAGES, CURRICULUM_SEQUENCE } from "../data/curriculumSequence";
-import { Badge, CurriculumTopicCard, ProgressBar, FilterChip, PageHeader } from "../shared";
+import {
+  Badge,
+  CurriculumTopicCard,
+  ProgressBar,
+  FilterChip,
+  PageHeader,
+  PageContainer,
+} from "../shared";
 import { staggerContainer, staggerItem } from "../shared/animations";
 import { useI18n } from "../context/I18nContext";
 import { resolveAssetUrl } from "../../utils/assetUrl";
@@ -243,305 +250,307 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
           : null;
 
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      animate="visible"
-      className="wp-container-wide flex flex-col gap-4 sm:gap-5"
-    >
-      {/* Page Header */}
-      <motion.div variants={staggerItem}>
-        <PageHeader variant="plain" title={t("nav.library")} />
-      </motion.div>
-
-      {/* Search & Filter Controls */}
+    <PageContainer size="wide">
       <motion.div
-        variants={staggerItem}
-        className="wp-sticky-controls sticky top-0 z-20 flex flex-col gap-2 bg-background py-2"
+        variants={staggerContainer}
+        initial="hidden"
+        animate="visible"
+        className="flex w-full flex-col gap-4 sm:gap-5"
       >
-        {/* Search Input */}
-        <div className="relative w-full">
-          <label
-            htmlFor={searchInputId}
-            className="mb-2 block text-sm font-semibold text-foreground"
-          >
-            {t("explore.searchLabel")}
-          </label>
-          <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none text-muted-foreground">
-            <Search className="size-4" aria-hidden="true" />
+        {/* Page Header */}
+        <motion.div variants={staggerItem}>
+          <PageHeader variant="plain" title={t("nav.library")} />
+        </motion.div>
+
+        {/* Search & Filter Controls */}
+        <motion.div
+          variants={staggerItem}
+          className="wp-sticky-controls sticky top-0 z-20 flex flex-col gap-2 bg-background py-2"
+        >
+          {/* Search Input */}
+          <div className="relative w-full">
+            <label
+              htmlFor={searchInputId}
+              className="mb-2 block text-sm font-semibold text-foreground"
+            >
+              {t("explore.searchLabel")}
+            </label>
+            <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none text-muted-foreground">
+              <Search className="size-4" aria-hidden="true" />
+            </div>
+            <input
+              id={searchInputId}
+              type="search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder={t("explore.searchPlaceholder")}
+              className="w-full bg-wp-card text-foreground placeholder:text-muted-foreground border border-border rounded-xl py-2.5 ps-10 pe-12 text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px]"
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery("")}
+                aria-label={t("explore.clearSearchInput")}
+                className="absolute inset-y-0 end-0 flex items-center pe-3 text-muted-foreground hover:text-foreground min-h-[44px] min-w-[44px] justify-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+              >
+                <X className="size-4" aria-hidden="true" />
+              </button>
+            )}
           </div>
-          <input
-            id={searchInputId}
-            type="search"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder={t("explore.searchPlaceholder")}
-            className="w-full bg-wp-card text-foreground placeholder:text-muted-foreground border border-border rounded-xl py-2.5 ps-10 pe-12 text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px]"
-          />
-          {searchQuery && (
+          <p className="text-sm text-muted-foreground px-1">
+            {t("explore.searchClarification", {
+              defaultValue: "Word searches return topic units containing matching vocabulary.",
+            })}
+          </p>
+
+          <details className="group rounded-2xl border border-border bg-wp-card p-3">
+            <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 rounded-xl px-1 font-bold text-sm text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
+              <div className="flex items-center gap-2 flex-wrap min-w-0">
+                <span>{t("explore.filterOptions")}</span>
+                {(selectedStageId !== "all" || masteryFilter !== "all") && (
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {selectedStageId !== "all" && (
+                      <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
+                        {activeStage?.stage.label ?? selectedStageId}
+                      </span>
+                    )}
+                    {masteryFilter !== "all" && masteryLabel && (
+                      <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
+                        {masteryLabel}
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
+              <ChevronDown
+                className="size-5 shrink-0 group-open:rotate-180 motion-safe:transition-transform"
+                aria-hidden
+              />
+            </summary>
+            <div className="mt-3 flex flex-col gap-3">
+              {/* CEFR Stage Filter Chips */}
+              <div
+                role="radiogroup"
+                aria-label={t("explore.collectionNavigation")}
+                className="flex flex-wrap items-center gap-2 pb-1"
+              >
+                <FilterChip
+                  label={t("explore.allLevels")}
+                  selected={selectedStageId === "all"}
+                  selectionMode="single"
+                  onToggle={() => setSelectedStageId("all")}
+                  count={allCurriculumUnits.length}
+                  size="sm"
+                />
+
+                {CEFR_STAGES.map((stage) => {
+                  const isSelected = selectedStageId === stage.id;
+                  const count = stage.end - stage.start;
+                  return (
+                    <FilterChip
+                      key={stage.id}
+                      label={stage.label}
+                      selected={isSelected}
+                      selectionMode="single"
+                      onToggle={() => setSelectedStageId(stage.id)}
+                      count={count}
+                      size="sm"
+                    />
+                  );
+                })}
+              </div>
+
+              {/* Mastery Status Filter Chips */}
+              <div
+                role="radiogroup"
+                aria-label={t("explore.masteryFilterAria")}
+                className="flex flex-wrap items-center gap-2 pb-1 text-xs"
+              >
+                <span className="text-muted-foreground font-semibold text-xs shrink-0 ps-1">
+                  {t("explore.filterStatus")}
+                </span>
+                <FilterChip
+                  label={t("explore.statusAll")}
+                  selected={masteryFilter === "all"}
+                  selectionMode="single"
+                  onToggle={() => setMasteryFilter("all")}
+                  size="sm"
+                />
+                <FilterChip
+                  label={t("explore.statusMastered")}
+                  selected={masteryFilter === "mastered"}
+                  selectionMode="single"
+                  onToggle={() => setMasteryFilter("mastered")}
+                  count={overallStats.completedUnits}
+                  size="sm"
+                />
+                <FilterChip
+                  label={t("explore.statusInProgress")}
+                  selected={masteryFilter === "in-progress"}
+                  selectionMode="single"
+                  onToggle={() => setMasteryFilter("in-progress")}
+                  size="sm"
+                />
+                <FilterChip
+                  label={t("explore.statusNotStarted")}
+                  selected={masteryFilter === "not-started"}
+                  selectionMode="single"
+                  onToggle={() => setMasteryFilter("not-started")}
+                  size="sm"
+                />
+              </div>
+            </div>
+          </details>
+        </motion.div>
+
+        {/* Results Header / Active Filters bar */}
+        <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground font-medium px-1">
+          <span role="status" aria-live="polite" aria-atomic="true">
+            {t("explore.unitsFound", { count: filteredUnits.length })}
+          </span>
+          {hasActiveFilters && (
             <button
               type="button"
-              onClick={() => setSearchQuery("")}
-              aria-label={t("explore.clearSearchInput")}
-              className="absolute inset-y-0 end-0 flex items-center pe-3 text-muted-foreground hover:text-foreground min-h-[44px] min-w-[44px] justify-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+              onClick={clearAllFilters}
+              className="text-primary underline font-bold min-h-[44px] flex items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
             >
-              <X className="size-4" aria-hidden="true" />
+              {t("explore.clearSearch")}
             </button>
           )}
         </div>
-        <p className="text-sm text-muted-foreground px-1">
-          {t("explore.searchClarification", {
-            defaultValue: "Word searches return topic units containing matching vocabulary.",
-          })}
-        </p>
 
-        <details className="group rounded-2xl border border-border bg-wp-card p-3">
-          <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 rounded-xl px-1 font-bold text-sm text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
-            <div className="flex items-center gap-2 flex-wrap min-w-0">
-              <span>{t("explore.filterOptions")}</span>
-              {(selectedStageId !== "all" || masteryFilter !== "all") && (
-                <div className="flex items-center gap-1.5 flex-wrap">
-                  {selectedStageId !== "all" && (
-                    <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
-                      {activeStage?.stage.label ?? selectedStageId}
-                    </span>
-                  )}
-                  {masteryFilter !== "all" && masteryLabel && (
-                    <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
-                      {masteryLabel}
-                    </span>
-                  )}
-                </div>
-              )}
-            </div>
-            <ChevronDown
-              className="size-5 shrink-0 group-open:rotate-180 motion-safe:transition-transform"
-              aria-hidden
-            />
-          </summary>
-          <div className="mt-3 flex flex-col gap-3">
-            {/* CEFR Stage Filter Chips */}
-            <div
-              role="radiogroup"
-              aria-label={t("explore.collectionNavigation")}
-              className="flex flex-wrap items-center gap-2 pb-1"
+        {/* Main Content: Grouped Stages vs Flat Filtered Grid */}
+        {filteredUnits.length === 0 ? (
+          <div className="p-8 text-center bg-wp-card rounded-3xl border border-border flex flex-col items-center gap-3">
+            <Compass className="size-10 text-muted-foreground opacity-50" aria-hidden="true" />
+            <p className="font-bold text-foreground text-base">
+              {t("explore.noUnitsFound", { query: searchQuery || t("explore.selectedFilters") })}
+            </p>
+            <button
+              type="button"
+              onClick={clearAllFilters}
+              className="text-sm font-semibold text-primary underline focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary min-h-[44px] flex items-center"
             >
-              <FilterChip
-                label={t("explore.allLevels")}
-                selected={selectedStageId === "all"}
-                selectionMode="single"
-                onToggle={() => setSelectedStageId("all")}
-                count={allCurriculumUnits.length}
-                size="sm"
-              />
-
-              {CEFR_STAGES.map((stage) => {
-                const isSelected = selectedStageId === stage.id;
-                const count = stage.end - stage.start;
-                return (
-                  <FilterChip
-                    key={stage.id}
-                    label={stage.label}
-                    selected={isSelected}
-                    selectionMode="single"
-                    onToggle={() => setSelectedStageId(stage.id)}
-                    count={count}
-                    size="sm"
-                  />
-                );
-              })}
-            </div>
-
-            {/* Mastery Status Filter Chips */}
-            <div
-              role="radiogroup"
-              aria-label={t("explore.masteryFilterAria")}
-              className="flex flex-wrap items-center gap-2 pb-1 text-xs"
-            >
-              <span className="text-muted-foreground font-semibold text-xs shrink-0 ps-1">
-                {t("explore.filterStatus")}
-              </span>
-              <FilterChip
-                label={t("explore.statusAll")}
-                selected={masteryFilter === "all"}
-                selectionMode="single"
-                onToggle={() => setMasteryFilter("all")}
-                size="sm"
-              />
-              <FilterChip
-                label={t("explore.statusMastered")}
-                selected={masteryFilter === "mastered"}
-                selectionMode="single"
-                onToggle={() => setMasteryFilter("mastered")}
-                count={overallStats.completedUnits}
-                size="sm"
-              />
-              <FilterChip
-                label={t("explore.statusInProgress")}
-                selected={masteryFilter === "in-progress"}
-                selectionMode="single"
-                onToggle={() => setMasteryFilter("in-progress")}
-                size="sm"
-              />
-              <FilterChip
-                label={t("explore.statusNotStarted")}
-                selected={masteryFilter === "not-started"}
-                selectionMode="single"
-                onToggle={() => setMasteryFilter("not-started")}
-                size="sm"
-              />
-            </div>
+              {t("explore.clearSearch")}
+            </button>
           </div>
-        </details>
-      </motion.div>
+        ) : !hasActiveFilters ? (
+          /* Default Stage-Grouped View */
+          <div className="flex flex-col gap-6">
+            {stageGroups.map(({ stage, units, stats }) => {
+              const isExpanded = expandedModules[stage.id] ?? false;
 
-      {/* Results Header / Active Filters bar */}
-      <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground font-medium px-1">
-        <span role="status" aria-live="polite" aria-atomic="true">
-          {t("explore.unitsFound", { count: filteredUnits.length })}
-        </span>
-        {hasActiveFilters && (
-          <button
-            type="button"
-            onClick={clearAllFilters}
-            className="text-primary underline font-bold min-h-[44px] flex items-center focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
-          >
-            {t("explore.clearSearch")}
-          </button>
-        )}
-      </div>
-
-      {/* Main Content: Grouped Stages vs Flat Filtered Grid */}
-      {filteredUnits.length === 0 ? (
-        <div className="p-8 text-center bg-wp-card rounded-3xl border border-border flex flex-col items-center gap-3">
-          <Compass className="size-10 text-muted-foreground opacity-50" aria-hidden="true" />
-          <p className="font-bold text-foreground text-base">
-            {t("explore.noUnitsFound", { query: searchQuery || t("explore.selectedFilters") })}
-          </p>
-          <button
-            type="button"
-            onClick={clearAllFilters}
-            className="text-sm font-semibold text-primary underline focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary min-h-[44px] flex items-center"
-          >
-            {t("explore.clearSearch")}
-          </button>
-        </div>
-      ) : !hasActiveFilters ? (
-        /* Default Stage-Grouped View */
-        <div className="flex flex-col gap-6">
-          {stageGroups.map(({ stage, units, stats }) => {
-            const isExpanded = expandedModules[stage.id] ?? false;
-
-            return (
-              <section
-                key={stage.id}
-                aria-labelledby={`stage-heading-${stage.id}`}
-                className="flex flex-col gap-4 border-t border-border pt-4 sm:pt-6"
-              >
-                {/* Stage Accordion Header */}
-                <button
-                  type="button"
-                  onClick={() => toggleStageExpand(stage.id)}
-                  aria-expanded={isExpanded}
-                  className="w-full flex items-center justify-between gap-4 p-2 min-h-[44px] rounded-2xl text-start hover:bg-muted/30 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors cursor-pointer"
+              return (
+                <section
+                  key={stage.id}
+                  aria-labelledby={`stage-heading-${stage.id}`}
+                  className="flex flex-col gap-4 border-t border-border pt-4 sm:pt-6"
                 >
-                  <div className="flex flex-col gap-1">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <Badge variant="primary" size="sm">
-                        {stage.cefr}
-                      </Badge>
-                      <span className="text-xs font-semibold text-muted-foreground">
-                        {t("explore.moduleStats", {
-                          units: stats.unitCount,
-                          words: stats.totalWords,
-                        })}
-                      </span>
-                    </div>
-                    <h2
-                      id={`stage-heading-${stage.id}`}
-                      className="font-sans font-black text-foreground text-xl sm:text-2xl"
-                    >
-                      {stage.label}
-                    </h2>
-                  </div>
-
-                  <div className="flex items-center gap-3 shrink-0">
-                    {stats.masteredWords > 0 && (
-                      <div className="hidden flex-col items-end gap-1 sm:flex">
-                        <span className="text-xs font-bold text-foreground">
-                          {t("explore.percentComplete", { percent: stats.percent })}
-                        </span>
-                        <span className="text-[11px] text-muted-foreground">
-                          {t("explore.masteredCount", {
-                            mastered: stats.masteredWords,
-                            total: stats.totalWords,
+                  {/* Stage Accordion Header */}
+                  <button
+                    type="button"
+                    onClick={() => toggleStageExpand(stage.id)}
+                    aria-expanded={isExpanded}
+                    className="w-full flex items-center justify-between gap-4 p-2 min-h-[44px] rounded-2xl text-start hover:bg-muted/30 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-colors cursor-pointer"
+                  >
+                    <div className="flex flex-col gap-1">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <Badge variant="primary" size="sm">
+                          {stage.cefr}
+                        </Badge>
+                        <span className="text-xs font-semibold text-muted-foreground">
+                          {t("explore.moduleStats", {
+                            units: stats.unitCount,
+                            words: stats.totalWords,
                           })}
                         </span>
                       </div>
-                    )}
-                    <div
-                      className={`p-2 rounded-full bg-wp-card border border-border transition-transform duration-200 ${
-                        isExpanded ? "rotate-180" : ""
-                      }`}
-                    >
-                      <ChevronDown className="size-5 text-foreground" aria-hidden="true" />
+                      <h2
+                        id={`stage-heading-${stage.id}`}
+                        className="font-sans font-black text-foreground text-xl sm:text-2xl"
+                      >
+                        {stage.label}
+                      </h2>
                     </div>
-                  </div>
-                </button>
 
-                {stats.masteredWords > 0 && (
-                  <div className="px-2">
-                    <ProgressBar
-                      progressPercent={stats.percent}
-                      label={`${stage.label} progress`}
-                      labelRight={`${stats.percent}% (${stats.masteredWords}/${stats.totalWords} words)`}
-                      ariaLabel={`${stage.label} progress: ${stats.percent}%`}
-                    />
-                  </div>
-                )}
+                    <div className="flex items-center gap-3 shrink-0">
+                      {stats.masteredWords > 0 && (
+                        <div className="hidden flex-col items-end gap-1 sm:flex">
+                          <span className="text-xs font-bold text-foreground">
+                            {t("explore.percentComplete", { percent: stats.percent })}
+                          </span>
+                          <span className="text-[11px] text-muted-foreground">
+                            {t("explore.masteredCount", {
+                              mastered: stats.masteredWords,
+                              total: stats.totalWords,
+                            })}
+                          </span>
+                        </div>
+                      )}
+                      <div
+                        className={`p-2 rounded-full bg-wp-card border border-border transition-transform duration-200 ${
+                          isExpanded ? "rotate-180" : ""
+                        }`}
+                      >
+                        <ChevronDown className="size-5 text-foreground" aria-hidden="true" />
+                      </div>
+                    </div>
+                  </button>
 
-                {/* Units Grid */}
-                <AnimatePresence initial={false}>
-                  {isExpanded && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.25, ease: "easeInOut" }}
-                      className="grid grid-cols-1 gap-4 pt-2 md:grid-cols-2 xl:grid-cols-3"
-                    >
-                      {units.map((unit) => (
-                        <UnitCard
-                          key={unit.id}
-                          unit={unit}
-                          stats={unitStatsMap.get(unit.id)}
-                          dispatch={dispatch}
-                          t={t}
-                        />
-                      ))}
-                    </motion.div>
+                  {stats.masteredWords > 0 && (
+                    <div className="px-2">
+                      <ProgressBar
+                        progressPercent={stats.percent}
+                        label={`${stage.label} progress`}
+                        labelRight={`${stats.percent}% (${stats.masteredWords}/${stats.totalWords} words)`}
+                        ariaLabel={`${stage.label} progress: ${stats.percent}%`}
+                      />
+                    </div>
                   )}
-                </AnimatePresence>
-              </section>
-            );
-          })}
-        </div>
-      ) : (
-        /* Flat Filtered Grid */
-        <div className="flex flex-col">
-          {filteredUnits.map((unit) => (
-            <UnitCard
-              compact
-              key={unit.id}
-              unit={unit}
-              stats={unitStatsMap.get(unit.id)}
-              dispatch={dispatch}
-              t={t}
-            />
-          ))}
-        </div>
-      )}
-    </motion.div>
+
+                  {/* Units Grid */}
+                  <AnimatePresence initial={false}>
+                    {isExpanded && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.25, ease: "easeInOut" }}
+                        className="grid grid-cols-1 gap-4 pt-2 md:grid-cols-2 xl:grid-cols-3"
+                      >
+                        {units.map((unit) => (
+                          <UnitCard
+                            key={unit.id}
+                            unit={unit}
+                            stats={unitStatsMap.get(unit.id)}
+                            dispatch={dispatch}
+                            t={t}
+                          />
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </section>
+              );
+            })}
+          </div>
+        ) : (
+          /* Flat Filtered Grid */
+          <div className="flex flex-col">
+            {filteredUnits.map((unit) => (
+              <UnitCard
+                compact
+                key={unit.id}
+                unit={unit}
+                stats={unitStatsMap.get(unit.id)}
+                dispatch={dispatch}
+                t={t}
+              />
+            ))}
+          </div>
+        )}
+      </motion.div>
+    </PageContainer>
   );
 });
 

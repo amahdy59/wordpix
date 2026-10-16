@@ -163,7 +163,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
                 {eyebrow}
               </span>
             )}
-            <h3 className="line-clamp-2 font-sans text-base font-black leading-snug text-foreground transition-colors group-hover:text-primary sm:text-lg">
+            <h3 className="line-clamp-2 font-sans text-base font-black leading-normal text-foreground transition-colors group-hover:text-primary sm:text-lg">
               {title}
             </h3>
           </div>

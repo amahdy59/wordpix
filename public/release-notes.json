@@ -1,14 +1,49 @@
 {
-  "version": "0.1.46",
+  "version": "0.1.47",
   "notes": [
-    "Synchronized authentic scenario audio recordings and WebVTT subtitles to Cloudflare R2 cloud hosting for high-fidelity native voice playback on the live website.",
-    "Integrated CDN asset routing and accessible subtitle tracks into the scenario media player."
+    "Harmonized application margins, sidebar alignment, and fluid layout gutters across all primary learning tabs.",
+    "Unified modal elevation shadows, landmark semantics, and typographic line clearance for bilingual English and Arabic reading."
   ],
   "notesAr": [
-    "مزامنة تسجيلات السيناريوهات الصوتية الأصلية وملفات الترجمة إلى استضافة Cloudflare R2 السحابية لتشغيل أصوات المتحدثين بجودة عالية على الموقع المباشر.",
-    "ربط توجيه مسارات الوسائط بشبكة CDN وإدراج مسارات الترجمة النصية الشاملة في مشغل السيناريوهات."
+    "توحيد الهوامش ومحاذاة الشريط الجانبي والتخطيط الانسيابي عبر جميع تبويبات التعلم الرئيسية.",
+    "تحسين ظلال النوافذ المنبثقة وهيكلية المعالم والمسافات الرأسية للحروف لضمان وضوح النصوص الإنجليزية والعربية."
   ],
   "releases": [
+    {
+      "id": "0.1.47",
+      "version": "0.1.47",
+      "date": "2026-10-16",
+      "title": {
+        "en": "Design System Alignment, Layout Consistency, and Elevation Polishing",
+        "ar": "محاذاة نظام التصميم واتساق التخطيط وتحسين التباين والظلال"
+      },
+      "changes": [
+        {
+          "id": "layout-fluid-bleed-and-gutters",
+          "category": "improved",
+          "en": "Harmonized container measures across all tabs with PageContainer, fixed double-gutter padding in review screens, and aligned sticky filter bars to fluid viewport gutters.",
+          "ar": "توحيد قياسات الحاويات عبر كافة التبويبات باستخدام PageContainer، وإصلاح تضاعف الهوامش في شاشة المراجعة، ومحاذاة أشرطة التصفية المثبتة مع الهوامش الانسيابية."
+        },
+        {
+          "id": "elevation-shadow-tokens",
+          "category": "added",
+          "en": "Introduced missing high-elevation design tokens (--shadow-wp-lg, --shadow-wp-xl) in the theme layer, restoring tactile depth and focus separation to modals and dropdowns.",
+          "ar": "إضافة رموز الظلال المرتفعة (--shadow-wp-lg و --shadow-wp-xl) إلى نظام السمات، مما يعيد عمق الرؤية والفصل البصري للنوافذ المنبثقة والقوائم المنسدلة."
+        },
+        {
+          "id": "a11y-landmarks-and-focus",
+          "category": "fixed",
+          "en": "Eliminated nested main landmark violations in standard exercise drills, standardized SidebarNav vertical alignment, and unified focus indicator styles.",
+          "ar": "معالجة تداخل معالم الصفحة الرئيسية في تدريبات الدروس، وتوحيد المحاذاة الرأسية للشريط الجانبي، وضبط أنماط مؤشرات التركيز."
+        },
+        {
+          "id": "typography-arabic-clearance",
+          "category": "improved",
+          "en": "Enhanced card title line height and elevated LessonHeader title typography to protect Arabic diacritics from clipping during multi-line clamping.",
+          "ar": "تحسين الارتفاع الرأسي لأسماء البطاقات وعناوين الدروس لمنع اقتطاع علامات التشكيل في النصوص العربية عند تعدد الأسطر."
+        }
+      ]
+    },
     {
       "id": "0.1.46",
       "version": "0.1.46",

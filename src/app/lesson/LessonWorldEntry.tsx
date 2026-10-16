@@ -171,7 +171,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
         </span>
       </header>
       <section aria-label="Word groups" className="flex-1 overflow-y-auto min-h-0">
-        <div className="w-full max-w-[1040px] mx-auto p-4 lg:p-8 pb-[max(6rem,env(safe-area-inset-bottom))]">
+        <div className="wp-container-content wp-layout-gutter py-4 lg:py-8 pb-[max(6rem,env(safe-area-inset-bottom))]">
           <div className="mb-6 flex flex-col gap-4">
             <div className="rounded-3xl border border-primary/30 bg-secondary p-5 sm:p-6 shadow-wp-xs">
               <div className="flex items-center gap-2 flex-wrap">
