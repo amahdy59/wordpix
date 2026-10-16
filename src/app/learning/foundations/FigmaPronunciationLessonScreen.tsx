@@ -1,5 +1,13 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Check, Headphones, Volume2 } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  FastForward,
+  Headphones,
+  MicOff,
+  Volume2,
+} from "lucide-react";
 import type { Action } from "../../types";
 import { Button } from "../../shared/Button";
 import { CourseLessonNavigation } from "../../shared/CourseLessonNavigation";
@@ -50,6 +58,28 @@ const emptySession = (): PronunciationSession => ({
   unlockedStage: 0,
   outcomes: {},
 });
+
+function populateUnassessedSpeaking(
+  current: Record<string, PronunciationTargetEvidence> | undefined,
+  targets: readonly FigmaPronunciationImage[]
+): Record<string, PronunciationTargetEvidence> {
+  const updated = { ...current };
+  const now = Date.now();
+  const nextReview = new Date(now + 86400000).toISOString();
+  const updatedIso = new Date(now).toISOString();
+  for (const item of targets) {
+    const tId = pronunciationTargetId(item.label);
+    if (!updated[tId]?.speaking) {
+      updated[tId] = {
+        ...updated[tId],
+        speaking: "unassessed",
+        updatedAt: updatedIso,
+        nextReviewAt: nextReview,
+      };
+    }
+  }
+  return updated;
+}
 
 function WordImage({ item, className }: { item: FigmaPronunciationImage; className: string }) {
   const [failed, setFailed] = useState(false);
@@ -190,14 +220,20 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
       requestAnimationFrame(() => headingRef.current?.focus());
       return;
     }
-    const nextStage = (stage === 0 || current.trial === trials - 1 ? stage + 1 : stage) as Stage;
+    let nextStage = (stage === 0 || current.trial === trials - 1 ? stage + 1 : stage) as Stage;
+    let nextEvidence = current.targetEvidence;
+    if (nextStage === 3 && state.accessibility.includeSpeaking === false) {
+      const stage3Targets = getPronunciationTargets(lessonNumber, false);
+      nextEvidence = populateUnassessedSpeaking(current.targetEvidence, stage3Targets);
+      nextStage = 4;
+    }
     save(nextStage, {
       trial: nextStage === stage ? current.trial + 1 : 0,
       attempts: 0,
       answer: null,
       outcomes,
       version: 2,
-      targetEvidence: current.targetEvidence,
+      targetEvidence: nextEvidence,
       unlockedStage: Math.max(current.unlockedStage, nextStage),
     });
     requestAnimationFrame(() => headingRef.current?.focus());
@@ -269,6 +305,23 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
         },
       },
     });
+  };
+  const skipEntireSpeakingSection = () => {
+    clearPending();
+    const current = sessionRef.current;
+    const stage3Targets = getPronunciationTargets(lessonNumber, false);
+    const updatedTargetEvidence = populateUnassessedSpeaking(current.targetEvidence, stage3Targets);
+    const nextStage: Stage = 4;
+    save(nextStage, {
+      ...current,
+      trial: 0,
+      attempts: 0,
+      answer: null,
+      currentTargetId: undefined,
+      targetEvidence: updatedTargetEvidence,
+      unlockedStage: Math.max(current.unlockedStage, nextStage),
+    });
+    requestAnimationFrame(() => headingRef.current?.focus());
   };
   const reset = () => {
     clearPending();
@@ -472,6 +525,31 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               >
                 {t(isAutoAdvance ? "lessonShell.autoOn" : "lessonShell.autoOff")}
               </button>
+              {stage === 3 && (
+                <button type="button" className={buttonClass} onClick={skipEntireSpeakingSection}>
+                  <FastForward className="size-4 rtl:rotate-180 text-primary" aria-hidden />
+                  {t("pronunciationEnhancements.skipSpeakingSection")}
+                </button>
+              )}
+              <button
+                type="button"
+                aria-pressed={state.accessibility.includeSpeaking}
+                className={buttonClass}
+                onClick={() => {
+                  clearPending();
+                  const nextVal = !state.accessibility.includeSpeaking;
+                  setAccessibility({ includeSpeaking: nextVal });
+                  if (!nextVal && stage === 3) {
+                    skipEntireSpeakingSection();
+                  }
+                }}
+              >
+                {t("pronunciationEnhancements.speakingToggle", {
+                  state: state.accessibility.includeSpeaking
+                    ? t("settings.enabled")
+                    : t("settings.disabled"),
+                })}
+              </button>
             </HelpDisclosure>
           )}
         </div>
@@ -611,9 +689,24 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 {instruction}
               </h2>
               {stage > 0 && (
-                <p role="status" className="text-sm text-foreground">
-                  {t("pronunciation.checkProgress", { current: session.trial + 1, total: trials })}
-                </p>
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <p role="status" className="text-sm font-semibold text-muted-foreground">
+                    {t("pronunciation.checkProgress", {
+                      current: session.trial + 1,
+                      total: trials,
+                    })}
+                  </p>
+                  {stage === 3 && state.accessibility.includeSpeaking !== false && (
+                    <button
+                      type="button"
+                      onClick={skipEntireSpeakingSection}
+                      className={`min-h-11 ${buttonClass} text-sm`}
+                    >
+                      <FastForward className="size-4 rtl:rotate-180 text-primary" aria-hidden />
+                      <span>{t("pronunciationEnhancements.skipSpeakingSection")}</span>
+                    </button>
+                  )}
+                </div>
               )}
               {stage === 0 && (
                 <p className="text-sm text-foreground">
@@ -744,36 +837,101 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   )}
                 </>
               ) : stage === 3 ? (
-                <div className="space-y-3">
-                  {target && target.imageRef && (
-                    <div className="mx-auto max-w-xs overflow-hidden rounded-2xl border border-border bg-card">
-                      <WordImage item={target} className="aspect-[16/9] w-full object-cover" />
+                state.accessibility.includeSpeaking === false ? (
+                  <div className="flex flex-col items-center justify-center rounded-3xl border border-border bg-card p-6 text-center sm:p-10 space-y-4 shadow-wp-xs">
+                    <div className="flex size-14 items-center justify-center rounded-2xl bg-muted text-muted-foreground">
+                      <MicOff className="size-7" aria-hidden />
                     </div>
-                  )}
-                  <p className="text-2xl font-bold text-foreground" lang="en" dir="ltr">
-                    {target?.label}
-                  </p>
-                  <PrivateRecordCompare
-                    key={questionId}
-                    target={target?.label ?? activity.model}
-                    defaultOpen
-                    onEvidence={recordSpeaking}
-                  />
-                  {!speakingDone && (
-                    <button
-                      type="button"
-                      className={buttonClass}
-                      onClick={() => recordSpeaking("unassessed")}
-                    >
-                      {t("pronunciationEnhancements.skipSpeaking")}
-                    </button>
-                  )}
-                  {speakingDone && (
-                    <p role="status" className="text-sm text-foreground">
-                      {t(`pronunciationEnhancements.evidence.${speakingEvidence}`)}
-                    </p>
-                  )}
-                </div>
+                    <h3 className="text-xl font-bold text-foreground">
+                      {t("pronunciationEnhancements.speakingDisabledInSettings")}
+                    </h3>
+                    <div className="flex flex-wrap justify-center gap-3 pt-2">
+                      <button
+                        type="button"
+                        className={`min-h-11 ${buttonClass} bg-primary text-primary-foreground hover:bg-primary/90`}
+                        onClick={() => setAccessibility({ includeSpeaking: true })}
+                      >
+                        {t("settings.enabled")}
+                      </button>
+                      <button
+                        type="button"
+                        className={buttonClass}
+                        onClick={skipEntireSpeakingSection}
+                      >
+                        {t("lessonShell.nextStep", {
+                          name: t("lessonShell.stages.transfer"),
+                        })}
+                      </button>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    {/* Hero Prompt Card */}
+                    <div className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-card p-6 sm:p-8 text-center shadow-wp-xs">
+                      {target && target.imageRef && (
+                        <div className="w-full max-w-sm overflow-hidden rounded-2xl border border-border/80 bg-muted/20 shadow-wp-xs">
+                          <WordImage item={target} className="aspect-[16/9] w-full object-cover" />
+                        </div>
+                      )}
+                      <div className="flex flex-col items-center gap-2">
+                        <h3
+                          className="text-3xl sm:text-4xl font-black tracking-tight text-foreground"
+                          lang="en"
+                          dir="ltr"
+                        >
+                          {target?.label}
+                        </h3>
+                        {getStressBeatPattern(lessonNumber, target?.label ?? "") && (
+                          <span
+                            className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-bold text-primary"
+                            aria-label={t("pronunciation.rhythmBeatAria", {
+                              beat: getStressBeatPattern(lessonNumber, target?.label ?? "")!,
+                            })}
+                          >
+                            {getStressBeatPattern(lessonNumber, target?.label ?? "")}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Recording Interface */}
+                    <PrivateRecordCompare
+                      key={questionId}
+                      target={target?.label ?? activity.model}
+                      defaultOpen
+                      noDetails
+                      onEvidence={recordSpeaking}
+                    />
+
+                    {/* Actions and status */}
+                    {!speakingDone && (
+                      <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
+                        <button
+                          type="button"
+                          className={buttonClass}
+                          onClick={() => recordSpeaking("unassessed")}
+                        >
+                          {t("pronunciationEnhancements.skipSpeaking")}
+                        </button>
+                        <button
+                          type="button"
+                          className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-border px-3 py-2 text-base font-bold text-foreground hover:bg-muted ${focusRing}`}
+                          onClick={skipEntireSpeakingSection}
+                        >
+                          <FastForward className="size-4 rtl:rotate-180 text-primary" aria-hidden />
+                          <span>{t("pronunciationEnhancements.skipSpeakingSection")}</span>
+                        </button>
+                      </div>
+                    )}
+                    {speakingDone && (
+                      <div className="rounded-2xl border border-border bg-secondary/40 p-4">
+                        <p role="status" className="text-sm font-bold text-foreground">
+                          {t(`pronunciationEnhancements.evidence.${speakingEvidence}`)}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )
               ) : (
                 <div className="grid gap-3 sm:grid-cols-2">
                   {question?.choices.map((item, index) => (

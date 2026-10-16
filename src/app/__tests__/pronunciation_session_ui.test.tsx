@@ -20,6 +20,8 @@ const mocks = vi.hoisted(() => ({
   error: false,
   status: "idle",
   autoAdvance: false,
+  includeSpeaking: true,
+  setAccessibility: vi.fn(),
   speakFeedback: vi.fn((_input: unknown, onComplete?: () => void) => {
     onComplete?.();
   }),
@@ -29,9 +31,12 @@ vi.mock("../context/LearnerContext", async (importOriginal) => ({
   useLearner: () => ({
     state: {
       pronunciationProgress: mocks.progress,
-      accessibility: { autoAdvance: mocks.autoAdvance },
+      accessibility: {
+        autoAdvance: mocks.autoAdvance,
+        includeSpeaking: mocks.includeSpeaking,
+      },
     },
-    setAccessibility: vi.fn(),
+    setAccessibility: mocks.setAccessibility,
     recordPronunciationCheckpoint: mocks.checkpoint,
     recordPronunciationCompletion: mocks.complete,
   }),
@@ -71,6 +76,7 @@ describe("pronunciation lesson session", () => {
   beforeEach(() => {
     mocks.progress = {};
     mocks.error = false;
+    mocks.includeSpeaking = true;
     vi.clearAllMocks();
   });
   it("keeps unavailable audio pending instead of recording a learner error", () => {
@@ -264,5 +270,132 @@ describe("pronunciation lesson session", () => {
     fireEvent.click(playButton);
     expect(mocks.stop).not.toHaveBeenCalled();
     expect(mocks.speak).toHaveBeenCalled();
+  });
+
+  it("allows skipping the entire speaking section in stage 3 and advances directly to transfer stage", () => {
+    const stage3Targets = pronunciationTrialCount(3, 3);
+    mocks.progress["lesson-03"] = {
+      status: "in-progress",
+      currentStage: 3,
+      bestScorePercent: 0,
+      sessions: 0,
+      updatedAt: new Date().toISOString(),
+      session: {
+        version: 2,
+        trial: 0,
+        attempts: 0,
+        answer: null,
+        unlockedStage: 3,
+        outcomes: {},
+        targetEvidence: {},
+      },
+    };
+    renderLesson();
+    expect(
+      screen.getByText(new RegExp(`^Check 1 of ${stage3Targets} in this stage$`))
+    ).toBeVisible();
+    const skipButtons = screen.getAllByRole("button", { name: "Skip speaking section" });
+    expect(skipButtons.length).toBeGreaterThanOrEqual(1);
+
+    fireEvent.click(skipButtons[0]);
+
+    expect(mocks.checkpoint).toHaveBeenCalled();
+    const lastCall = mocks.checkpoint.mock.calls.at(-1)!;
+    expect(lastCall[1]).toBe(4);
+    expect(lastCall[2].unlockedStage).toBe(4);
+
+    const evidence = lastCall[2].targetEvidence;
+    expect(Object.keys(evidence).length).toBe(stage3Targets);
+    for (const tId of Object.keys(evidence)) {
+      expect(evidence[tId].speaking).toBe("unassessed");
+    }
+
+    const transferTrials = pronunciationTrialCount(3, 4);
+    expect(
+      screen.getByText(new RegExp(`^Check 1 of ${transferTrials} in this stage$`))
+    ).toBeVisible();
+  });
+
+  it("skips stage 3 automatically when includeSpeaking is disabled in accessibility", () => {
+    mocks.includeSpeaking = false;
+    const meaningTrials = pronunciationTrialCount(3, 2);
+    mocks.progress["lesson-03"] = {
+      status: "in-progress",
+      currentStage: 2,
+      bestScorePercent: 0,
+      sessions: 0,
+      updatedAt: new Date().toISOString(),
+      session: {
+        version: 2,
+        trial: meaningTrials - 1,
+        attempts: 0,
+        answer: null,
+        unlockedStage: 2,
+        outcomes: {},
+        targetEvidence: {},
+      },
+    };
+    renderLesson();
+    fireEvent.click(answer(2, meaningTrials - 1));
+    const nextButton = screen.getByRole("button", { name: /Next:/ });
+    fireEvent.click(nextButton);
+
+    expect(mocks.checkpoint).toHaveBeenCalled();
+    const lastCall = mocks.checkpoint.mock.calls.at(-1)!;
+    expect(lastCall[1]).toBe(4);
+  });
+
+  it("shows disabled message when navigating to stage 3 with includeSpeaking disabled and allows re-enabling", () => {
+    mocks.includeSpeaking = false;
+    mocks.progress["lesson-03"] = {
+      status: "in-progress",
+      currentStage: 3,
+      bestScorePercent: 0,
+      sessions: 0,
+      updatedAt: new Date().toISOString(),
+      session: {
+        version: 2,
+        trial: 0,
+        attempts: 0,
+        answer: null,
+        unlockedStage: 3,
+        outcomes: {},
+        targetEvidence: {},
+      },
+    };
+    renderLesson();
+    expect(
+      screen.getByText("Speaking exercises are currently disabled in your settings.")
+    ).toBeVisible();
+    const enableButton = screen.getByRole("button", { name: "Enabled" });
+    fireEvent.click(enableButton);
+    expect(mocks.setAccessibility).toHaveBeenCalledWith({ includeSpeaking: true });
+  });
+
+  it("allows skipping speaking section from lesson options menu in stage 3", () => {
+    mocks.progress["lesson-03"] = {
+      status: "in-progress",
+      currentStage: 3,
+      bestScorePercent: 0,
+      sessions: 0,
+      updatedAt: new Date().toISOString(),
+      session: {
+        version: 2,
+        trial: 1,
+        attempts: 0,
+        answer: null,
+        unlockedStage: 3,
+        outcomes: {},
+        targetEvidence: {},
+      },
+    };
+    renderLesson();
+    fireEvent.click(screen.getByLabelText("Lesson options"));
+    const skipOptionsButton = screen.getAllByRole("button", { name: "Skip speaking section" });
+    fireEvent.click(skipOptionsButton.at(-1)!);
+
+    expect(mocks.checkpoint).toHaveBeenCalled();
+    const lastCall = mocks.checkpoint.mock.calls.at(-1)!;
+    expect(lastCall[1]).toBe(4);
   });
 });

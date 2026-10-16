@@ -1,14 +1,47 @@
 {
-  "version": "0.1.48",
+  "version": "0.1.49",
   "notes": [
-    "Re-architected the Settings modal into a dedicated, searchable Settings and Accessibility page with instant keyboard shortcuts.",
-    "Introduced categorized preference navigation, live interactive appearance previews, and reinforced data reset confirmations."
+    "Restored studio-grade phoneme-constrained audio for pronunciation targets, achieved 100% audio coverage across all 4 learning tracks, and enhanced speaking practice accessibility."
   ],
   "notesAr": [
-    "تحويل قائمة الإعدادات إلى صفحة كاملة مخصصة وقابلة للبحث الفوري مع اختصارات لوحة المفاتيح.",
-    "إضافة تصفية الإعدادات حسب الفئات، ومعاينة حية وفورية لتأثير الخط والتباين، مع تأكيد أمان إضافي لإعادة ضبط البيانات."
+    "استعادة التسجيلات الصوتية عالية الدقة للأصوات الحساسة مع ضمان تغطية صوتية بنسبة 100% عبر كافة المسارات، وتعزيز إتاحة تمارين تسجيل الصوت والتحدث."
   ],
   "releases": [
+    {
+      "id": "0.1.49",
+      "version": "0.1.49",
+      "date": "2026-10-16",
+      "title": {
+        "en": "Complete Curriculum Audio Coverage, Studio Phonemic Synthesis, and Speaking Practice Accessibility",
+        "ar": "تغطية صوتية شاملة للمناهج، وضبط نطق الأصوات الدقيقة، وتعزيز إتاحة تمارين التحدث"
+      },
+      "changes": [
+        {
+          "id": "pronunciation-audio-fidelity",
+          "category": "improved",
+          "en": "Synthesized clean, studio-grade audio for critical vowel minimal pairs such as 'pin' using CMU ARPAbet phonemic constraints, resolving quarantine blocks across foundational lessons.",
+          "ar": "توليد تسجيلات صوتية استوديو نقية للأزواج الصوتية الدقيقة مثل كلمة 'pin' باستخدام الضبط الفونيمي الدقيق وفك الحظر عن الدروس التأسيسية."
+        },
+        {
+          "id": "curriculum-audio-coverage",
+          "category": "improved",
+          "en": "Achieved 100% audio coverage across all 4 learning tracks (68 Pronunciation lessons, 200 Core Vocabulary units, Hadith, Conversation, and Business) with zero missing clips.",
+          "ar": "تحقيق تغطية صوتية متكاملة بنسبة 100% عبر كافة مسارات التعلم الأربعة (68 درساً في النطق، و200 وحدة مفردات، ومسارات الحديث والمحادثة والأعمال) دون أي ملفات مفقودة."
+        },
+        {
+          "id": "speaking-practice-accessibility",
+          "category": "improved",
+          "en": "Refined pronunciation and speech record-and-compare components with WCAG 2.2 AAA visual feedback, live state announcers for screen readers, and clear error recovery.",
+          "ar": "تحسين مكونات تسجيل ومقارنة النطق بتغذية بصرية مطابقة لمعايير WCAG 2.2 AAA وإعلانات فورية لقارئات الشاشة وإرشادات واضحة للتعامل مع الأخطاء."
+        },
+        {
+          "id": "audio-integrity-auditing",
+          "category": "added",
+          "en": "Introduced a comprehensive audio coverage and integrity validation runner to continuously guard against missing media assets across all curriculum levels.",
+          "ar": "إضافة أداة تدقيق شاملة للتحقق الآلي المستمر من اكتمال وسلامة الملفات الصوتية لكافة المستويات والمناهج."
+        }
+      ]
+    },
     {
       "id": "0.1.48",
       "version": "0.1.48",

@@ -99,5 +99,11 @@
     "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"S T AE1 N D\">stand</phoneme>",
     "profile": { "modelId": "eleven_flash_v2" },
     "reason": "Make every consonant in the isolated word explicit."
+  },
+  {
+    "matches": ["Pin", "pin"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"P IH1 N\">pin</phoneme>",
+    "profile": { "modelId": "eleven_v4" },
+    "reason": "Keep the isolated word on the clean short-i sound /pɪn/ without trailing speech or confusion with pinned."
   }
 ]

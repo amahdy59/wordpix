@@ -6,10 +6,12 @@ import { getPronunciationAudioClip } from "./pronunciationAudioManifest";
 export function PrivateRecordCompare({
   target,
   defaultOpen = false,
+  noDetails = false,
   onEvidence,
 }: {
   target: string;
   defaultOpen?: boolean;
+  noDetails?: boolean;
   onEvidence?: (value: "reflected" | "assessed") => void;
 }) {
   const { t } = useI18n();
@@ -19,6 +21,7 @@ export function PrivateRecordCompare({
       modelText={target}
       title={t("pronunciationEnhancements.recordCompareTitle")}
       defaultOpen={defaultOpen}
+      noDetails={noDetails}
       modelUnavailable={
         hasReportedPronunciationAudioIssue(target) || !getPronunciationAudioClip(target)
       }

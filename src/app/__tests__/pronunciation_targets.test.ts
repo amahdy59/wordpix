@@ -38,8 +38,9 @@ describe("complete pronunciation target coverage", () => {
     expect(transcriptMatches("a pin here", "pin here")).toBe(true);
     expect(transcriptMatches("a pinned here", "pin here")).toBe(false);
   });
-  it("quarantines the reported pin audio issue without changing an asset reference", () => {
-    expect(hasReportedPronunciationAudioIssue("Pin")).toBe(true);
+  it("verifies no reported pronunciation audio issues remain active", () => {
+    expect(hasReportedPronunciationAudioIssue("Pin")).toBe(false);
+    expect(hasReportedPronunciationAudioIssue("pin")).toBe(false);
     expect(hasReportedPronunciationAudioIssue("pen")).toBe(false);
   });
 });

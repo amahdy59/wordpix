@@ -105,4 +105,18 @@ describe("SpeechRecordCompare", () => {
       else expect(recording.stop).toHaveBeenCalled();
     }
   );
+
+  it("renders as an open section without details/summary when noDetails is true", () => {
+    const { container } = render(
+      <I18nProvider>
+        <SpeechRecordCompare target="ship" modelText="ship" noDetails />
+      </I18nProvider>
+    );
+    const region = screen.getByRole("region", { name: "Listen, record, and compare" });
+    expect(region).toBeVisible();
+    expect(region.tagName.toLowerCase()).toBe("section");
+    expect(screen.getByRole("heading", { name: "Listen, record, and compare" })).toBeVisible();
+    // Verify outer element is not details
+    expect(container.firstElementChild?.tagName.toLowerCase()).toBe("section");
+  });
 });
