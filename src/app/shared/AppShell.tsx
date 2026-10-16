@@ -5,6 +5,7 @@ import { BottomTabBar } from "./BottomTabBar";
 import { MobileHeader } from "./MobileHeader";
 import { NetworkStatusBanner } from "./NetworkStatusBanner";
 import { KeyboardShortcutsModal } from "./KeyboardShortcutsModal";
+import { useI18n } from "../context/I18nContext";
 
 interface Props {
   activeTab: TabId;
@@ -19,6 +20,7 @@ interface Props {
  * Desktop (1024px+): Fully labelled sidebar; no intermediate clipped icon rail.
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
+  const { t } = useI18n();
   const [showShortcutsModal, setShowShortcutsModal] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -48,6 +50,12 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
 
   return (
     <div className="h-dvh max-h-dvh w-full max-w-full overflow-hidden bg-background flex flex-col lg:flex-row relative">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-50 focus:px-4 focus:py-2.5 focus:rounded-xl focus:bg-primary focus:text-primary-foreground focus:shadow-lg focus:outline focus:outline-[3px] focus:outline-offset-2 focus:outline-primary font-bold text-sm"
+      >
+        {t("app.skipToContent")}
+      </a>
       <KeyboardShortcutsModal
         isOpen={showShortcutsModal}
         onClose={() => setShowShortcutsModal(false)}

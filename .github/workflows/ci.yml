@@ -13,7 +13,7 @@ jobs:
     env:
       # Both the production build and the later ANALYZE rebuild must use the
       # same public asset origin. The analysis step overwrites dist before E2E.
-      VITE_ASSET_BASE_URL: ${{ vars.VITE_ASSET_BASE_URL }}
+      VITE_ASSET_BASE_URL: ${{ vars.VITE_ASSET_BASE_URL || 'https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev' }}
     steps:
       - uses: actions/checkout@v7
 

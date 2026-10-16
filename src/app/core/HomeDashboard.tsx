@@ -298,7 +298,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         totalSteps: plan.length,
                       });
                     }}
-                    className="w-full bg-secondary hover:bg-secondary text-primary border border-primary/20 rounded-xl py-3 font-sans font-bold text-base min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    className="w-full bg-secondary hover:bg-secondary/80 text-primary border border-primary/20 hover:border-primary/40 rounded-xl py-3 font-sans font-bold text-base min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs"
                   >
                     <span>
                       {t("dashboard.reviewNowWords", {
@@ -324,7 +324,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     <button
                       type="button"
                       onClick={() => dispatch({ type: "GO", to: "practice" })}
-                      className="mt-2 min-h-11 rounded-xl border border-wp-green/30 bg-background px-4 py-2 text-base font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      className="mt-2 min-h-11 rounded-xl border border-wp-green/30 bg-background hover:bg-secondary px-4 py-2 text-base font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer transition-colors shadow-wp-xs"
                     >
                       {t("dashboard.practiseSkill")}
                     </button>
@@ -361,7 +361,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                           totalSteps: plan.length,
                         });
                       }}
-                      className="mt-2.5 min-h-11 rounded-xl bg-primary px-4 py-2 text-sm font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      className="mt-2.5 min-h-11 rounded-xl bg-primary hover:bg-primary/90 px-4 py-2 text-sm font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer transition-colors shadow-wp-xs"
                     >
                       {t("dashboard.startFirstLesson", { defaultValue: "Start First Lesson" })}
                     </button>

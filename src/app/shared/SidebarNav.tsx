@@ -31,9 +31,9 @@ export const SidebarNav = memo(function SidebarNav({
           onClick={() => dispatch({ type: "GO", to: "home" })}
           title={t("nav.home")}
           aria-label={t("nav.home")}
-          className="flex w-full items-center justify-start gap-3 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all group"
+          className="flex w-full items-center justify-start gap-3 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer transition-all group"
         >
-          <div className="size-11 rounded-2xl bg-primary flex items-center justify-center shadow-wp-xs group-transition-all shrink-0">
+          <div className="size-11 rounded-2xl bg-primary flex items-center justify-center shadow-wp-xs motion-safe:transition-transform motion-safe:group-hover:scale-105 duration-200 shrink-0">
             <BookOpen className="size-5 text-primary-foreground" />
           </div>
           <span className="font-sans font-bold text-foreground tracking-tight text-xl">
@@ -57,7 +57,7 @@ export const SidebarNav = memo(function SidebarNav({
                 className={`
                   relative min-h-11 w-full py-2 px-4 rounded-xl flex items-center justify-start
                   focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2
-                  focus-visible:outline-primary transition-all group
+                  focus-visible:outline-primary cursor-pointer transition-all group
                   ${
                     isActive
                       ? "bg-secondary text-primary border border-transparent"
@@ -82,7 +82,7 @@ export const SidebarNav = memo(function SidebarNav({
             onClick={onOpenShortcuts}
             title={t("shortcuts.title")}
             aria-label={t("shortcuts.title")}
-            className="h-11 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
+            className="h-11 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer group"
           >
             <Keyboard className="size-5 shrink-0" aria-hidden="true" />
             <span className="font-sans font-semibold text-base ms-3 group-hover:text-foreground transition-colors">
@@ -99,7 +99,7 @@ export const SidebarNav = memo(function SidebarNav({
           onClick={() => dispatch({ type: "GO", to: "settings" })}
           title={t("settings.title")}
           aria-label={t("settings.title")}
-          className="h-11 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"
+          className="h-11 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer group"
         >
           <Sliders className="size-5 shrink-0" aria-hidden="true" />
           <span className="font-sans font-semibold text-base ms-3 group-hover:text-foreground transition-colors">

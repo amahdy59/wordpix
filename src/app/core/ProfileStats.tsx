@@ -282,9 +282,9 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                       role="radio"
                       aria-checked={selected}
                       onClick={() => setPreferences({ englishLevel: lvl })}
-                      className={`min-h-[44px] min-w-[44px] flex-1 rounded-lg px-2.5 py-1.5 text-xs font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      className={`min-h-[44px] min-w-[44px] flex-1 rounded-lg px-2.5 py-1.5 text-xs font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
                         selected
-                          ? "bg-primary text-primary-foreground shadow-xs"
+                          ? "bg-primary text-primary-foreground shadow-wp-xs"
                           : "text-muted-foreground hover:bg-secondary hover:text-foreground"
                       }`}
                     >
@@ -492,7 +492,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "release-notes" })}
-            className="mt-3 inline-flex min-h-11 items-center rounded-xl border border-primary bg-secondary px-4 py-2 text-base font-semibold text-primary hover:bg-card focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="mt-3 inline-flex min-h-11 items-center rounded-xl border border-primary/30 bg-secondary px-4 py-2 text-base font-semibold text-primary hover:bg-secondary/80 hover:border-primary/50 shadow-wp-xs transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             {t("releaseNotes.viewAll")}
           </button>

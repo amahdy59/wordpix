@@ -1,12 +1,53 @@
 {
-  "version": "0.1.50",
+  "version": "0.1.51",
   "notes": [
-    "Added automated pre-push audio coverage gates, enhanced speaking practice with instant silence auto-trimming, and sharded curriculum scenarios into lightweight data partitions."
+    "Restored scenario audio streaming reliability, fixed sentence illustration rendering, eliminated mobile exercise layout overlap, and enabled automatic audio prompts for listening questions."
   ],
   "notesAr": [
-    "دمج الفحص الصوتي الشامل ضمن بوابات النشر المسبق، وتوفير قص فوري تلقائي للصمت في تسجيلات التحدث، وتقسيم حوارات المنهج إلى أجزاء بيانات سريعة وخفيفة."
+    "استعادة موثوقية البث الصوتي للحوارات عبر سحابة R2، وإصلاح ظهور الصور التوضيحية لأسئلة الجمل، ومعالجة تداخل العناصر على شاشات الجوال، وتشغيل الصوت تلقائياً لأسئلة الاستماع."
   ],
   "releases": [
+    {
+      "id": "0.1.51",
+      "version": "0.1.51",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Scenario Audio Streaming Reliability, Mobile Exercise Layouts, and Visual Experience Polish",
+        "ar": "موثوقية البث الصوتي للحوارات، تحسين تخطيط التمارين للجوال، وتحسينات بصرية شاملة"
+      },
+      "changes": [
+        {
+          "id": "scenario-audio-cdn-fallback",
+          "category": "fixed",
+          "en": "Configured seamless Cloudflare R2 audio resolution fallback and guarded scenario player initialization, preventing unexpected dropback to robotic text-to-speech.",
+          "ar": "توفير مسار احتياطي موثوق للبث الصوتي من Cloudflare R2 وحماية مشغل الحوارات من التحول غير المقصود إلى النطق الآلي."
+        },
+        {
+          "id": "sentence-question-media-resolution",
+          "category": "fixed",
+          "en": "Resolved sentence builder media contextual alignment, ensuring verified illustrations and scenes render reliably instead of placeholder cards.",
+          "ar": "إصلاح مطابقة الصور السياقية لأسئلة بناء الجمل، مما يضمن عرض الرسومات التوضيحية المعتمدة بدقة بدلاً من البطاقات البديلة المؤقتة."
+        },
+        {
+          "id": "mobile-exercise-layout-overlap",
+          "category": "improved",
+          "en": "Refined mobile viewport constraints in exercise shell and family templates, eliminating element collision between feedback panels and question cards while preserving accessible touch targets.",
+          "ar": "معالجة قيود التخطيط على شاشات الهواتف في قوالب التمارين لمنع تداخل لوحات النتائج مع بطاقات الأسئلة مع الحفاظ على مساحات لمس مريحة ومطابقة للمعايير."
+        },
+        {
+          "id": "audio-question-autoplay",
+          "category": "added",
+          "en": "Introduced automatic debounced audio playback for listening-focused questions upon presentation, honoring learner preferences and accessibility listening settings.",
+          "ar": "تشغيل الصوت تلقائياً وبسلاسة فور ظهور أسئلة الاستماع مع مراعاة تفضيلات المتعلم وإعدادات إمكانية الوصول."
+        },
+        {
+          "id": "visual-ui-declutter-polish",
+          "category": "improved",
+          "en": "Polished visual hierarchy, decluttered surface treatments, and enhanced responsive padding and focus visibility across core navigation, library search, and onboarding screens.",
+          "ar": "تحسين التدرج البصري، وتبسيط الواجهات، وضبط الهوامش ومؤشرات التركيز عبر شاشات التنقل، والبحث في المكتبة، وشاشات التهيئة."
+        }
+      ]
+    },
     {
       "id": "0.1.50",
       "version": "0.1.50",

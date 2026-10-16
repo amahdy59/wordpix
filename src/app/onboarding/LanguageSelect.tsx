@@ -199,7 +199,7 @@ export function LanguageSelect({ dispatch }: Props) {
             <button
               type="button"
               onClick={() => setIsPlacementOpen(true)}
-              className="w-full py-2.5 px-4 rounded-xl border border-primary/30 bg-secondary hover:bg-secondary text-primary font-sans font-bold text-xs flex items-center justify-center gap-2 transition-colors min-h-[44px]"
+              className="w-full py-2.5 px-4 rounded-xl border border-primary/30 bg-secondary hover:bg-secondary/80 hover:border-primary/50 text-primary font-sans font-bold text-xs flex items-center justify-center gap-2 transition-colors min-h-[44px] cursor-pointer shadow-wp-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <HelpCircle className="size-4" />
               <span>{t("onboarding.testMyLevel")}</span>
@@ -300,12 +300,12 @@ export function LanguageSelect({ dispatch }: Props) {
           <button
             type="button"
             onClick={handleStart}
-            className="w-full bg-wp-blue rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
-              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
+            className="w-full bg-primary rounded-xl py-4 font-sans font-bold text-primary-foreground text-base min-h-[52px]
+              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
               shadow-sm transition-all flex items-center justify-center gap-2"
           >
             <span>{t("onboarding.startLearning")}</span>
-            <ArrowRight className="size-5" />
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
           </button>
         </footer>
 

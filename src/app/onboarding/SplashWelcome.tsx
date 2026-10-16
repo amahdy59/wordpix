@@ -48,7 +48,7 @@ export function SplashWelcome({ dispatch }: Props) {
         {/* Brand Header Left */}
         <div className="relative z-10 flex items-center gap-3">
           <div className="size-10 rounded-2xl bg-primary flex items-center justify-center shadow-md">
-            <BookOpen className="size-5 text-white" />
+            <BookOpen className="size-5 text-primary-foreground" />
           </div>
           <span className="font-sans font-black text-white text-xl tracking-tight">
             {t("app.title")}
@@ -94,7 +94,7 @@ export function SplashWelcome({ dispatch }: Props) {
         <header className="md:hidden w-full flex items-center justify-between z-10 shrink-0">
           <div className="flex items-center gap-2">
             <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs">
-              <BookOpen className="size-4 text-white" />
+              <BookOpen className="size-4 text-primary-foreground" />
             </div>
             <span className="font-sans font-bold text-foreground text-base tracking-tight">
               {t("app.title")}
@@ -224,12 +224,12 @@ export function SplashWelcome({ dispatch }: Props) {
           <button
             type="button"
             onClick={advance}
-            className="w-full bg-wp-blue rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
-              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
+            className="w-full bg-primary rounded-xl py-4 font-sans font-bold text-primary-foreground text-base min-h-[52px]
+              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
               shadow-sm transition-all flex items-center justify-center gap-2"
           >
             <span>{t("action.getStarted")}</span>
-            <ArrowRight className="size-5" />
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
           </button>
           <button
             type="button"

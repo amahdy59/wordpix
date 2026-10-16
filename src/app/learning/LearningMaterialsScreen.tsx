@@ -846,6 +846,7 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
               {t("learningMaterials.posLabel")}
             </label>
             <Select
+              id="pos-filter"
               ariaLabel={t("learningMaterials.posLabel")}
               value={posFilter}
               onChange={(value) => setPosFilter(value)}

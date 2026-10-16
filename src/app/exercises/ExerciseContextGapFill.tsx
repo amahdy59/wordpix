@@ -162,7 +162,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
           />
         }
         activity={
-          <div className="flex flex-col gap-4 sm:gap-5 flex-1 h-full justify-between">
+          <div className="flex flex-col gap-3.5 sm:gap-5 w-full">
             {hasBlank && (
               <div
                 lang="en"
@@ -203,7 +203,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
               </div>
             )}
             <div
-              className="flex flex-col gap-3 sm:gap-3.5 w-full flex-1 justify-center"
+              className="flex flex-col gap-3 sm:gap-3.5 w-full"
               role="group"
               aria-label={t("exercise.gapFillChoicesAria")}
               dir="ltr"

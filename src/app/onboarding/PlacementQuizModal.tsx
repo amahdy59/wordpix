@@ -152,7 +152,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
               key={opt.id}
               type="button"
               onClick={() => handleSelectOption(opt.id)}
-              className="bg-background border border-border rounded-2xl p-2 flex flex-col items-center gap-1.5 hover:border-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all min-h-[44px]"
+              className="bg-wp-card border border-border rounded-2xl p-2 flex flex-col items-center gap-1.5 hover:border-primary/50 hover:bg-secondary/40 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all min-h-[44px] cursor-pointer shadow-wp-xs"
             >
               <div className="h-24 w-full rounded-xl overflow-hidden bg-muted">
                 <WordImage

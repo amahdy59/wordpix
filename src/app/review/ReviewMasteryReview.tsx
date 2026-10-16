@@ -193,7 +193,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
             type="button"
             onClick={startReviewOrPractice}
             disabled={loadError}
-            className={`mt-3 min-h-12 rounded-xl px-4 md:px-6 bg-primary text-primary-foreground font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-60 ${focus}`}
+            className={`mt-3 min-h-12 rounded-xl px-4 md:px-6 bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-60 shadow-wp-xs transition-all cursor-pointer ${focus}`}
           >
             {totalDue
               ? t("masteryReview.reviewNow", { count: sessionSize })
@@ -234,7 +234,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                   key={word.id}
                   type="button"
                   onClick={() => setSelectedWord(word)}
-                  className={`${!expanded[key] && index > 0 ? (index < 3 ? "hidden md:flex" : "hidden") : "flex"} min-w-0 text-start items-center gap-3 bg-wp-card border border-border rounded-xl p-2 shadow-wp-xs ${focus}`}
+                  className={`${!expanded[key] && index > 0 ? (index < 3 ? "hidden md:flex" : "hidden") : "flex"} min-w-0 text-start items-center gap-3 bg-wp-card border border-border hover:border-primary/40 rounded-xl p-2 shadow-wp-xs transition-all cursor-pointer ${focus}`}
                 >
                   <WordImage
                     word={word}
@@ -268,7 +268,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                 aria-expanded={!!expanded[key]}
                 aria-controls={`review-${key}`}
                 onClick={() => setExpanded((value) => ({ ...value, [key]: !value[key] }))}
-                className={`${items.length <= 3 ? "md:hidden" : ""} min-h-11 mt-2 px-2 text-primary text-sm font-semibold rounded-lg ${focus}`}
+                className={`${items.length <= 3 ? "md:hidden" : ""} min-h-11 mt-2 px-2 text-primary hover:underline text-sm font-semibold rounded-lg cursor-pointer ${focus}`}
               >
                 {expanded[key]
                   ? t("masteryReview.showFewer")
@@ -291,7 +291,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
-          className={`min-h-12 px-5 rounded-xl border border-primary/20 bg-secondary text-primary font-bold text-sm flex items-center justify-center gap-2 ${focus}`}
+          className={`min-h-12 px-5 rounded-xl border border-primary/20 bg-secondary text-primary hover:bg-secondary/80 hover:border-primary/40 shadow-wp-xs font-bold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${focus}`}
         >
           {t("masteryReview.browseDrills")}
           <ArrowRight className="size-4" aria-hidden />

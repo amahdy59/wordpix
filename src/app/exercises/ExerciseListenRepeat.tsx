@@ -4,11 +4,9 @@ import { resolveGroup, resolveUnitForLesson, type VocabularyItem } from "../data
 import { ExitConfirmModal } from "../shared/ExitConfirmModal";
 import { useAudio } from "../shared/useAudio";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
-import { ChevronRight, ChevronLeft, Mic, CheckCircle2, BookOpen, X } from "lucide-react";
+import { ChevronRight, ChevronLeft, BookOpen, X, Volume2 } from "lucide-react";
 import { WordImage } from "../shared/WordImage";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
-import { useSpeechRecognition } from "../shared/useSpeechRecognition";
-// Unit fields paint first; the shared loader enhances the active word.
 import type { LexiconEntry } from "../data/lexiconDictionary";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { WordDetailsContent } from "../shared/WordDetailsContent";
@@ -32,30 +30,35 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 }: Props) {
   const { t } = useI18n();
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
-  const [inspectedWord, setInspectedWord] = useState<VocabularyItem | null>(null);
-  const [desktopDetails, setDesktopDetails] = useState(false);
+  const [desktopDetails, setDesktopDetails] = useState<boolean>(false);
+  const [showDetails, setShowDetails] = useState<boolean | null>(null);
   const detailsTriggerRef = useRef<HTMLButtonElement>(null);
   const detailsCloseRef = useRef<HTMLButtonElement>(null);
   const [bilingual, setBilingual] = useState(true);
-  const [continuous, setContinuous] = useState(false);
+  const [continuous, setContinuous] = useState(true);
   const [playbackError, setPlaybackError] = useState(false);
   const [showExit, setShowExit] = useState(false);
-  const [slowMode, setSlowMode] = useState(false);
   const { lexicon, lexiconFailed, retryLexicon } = useLexicon(
     words.slice(activeWordIndex, activeWordIndex + 1).map((word) => word.id)
   );
+
   // Warm only the next card. A speculative failure never blocks the current one.
   useEffect(() => {
     const next = words[activeWordIndex + 1];
     if (next) void loadLexicon([next.id]).catch(() => undefined);
   }, [words, activeWordIndex]);
+
   const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const unit = resolveUnitForLesson(lessonId);
   const { accessibility } = useAccessibility();
   const speed = accessibility.speechRate;
+
+  const currentWord = words[activeWordIndex] || words[0];
+  const isLastWord = activeWordIndex === words.length - 1;
+
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({
     lang: "en-US",
-    rate: slowMode ? speed * 0.65 : speed,
+    rate: speed,
     onError: () => {
       setPlaybackError(true);
       setContinuous(false);
@@ -68,82 +71,71 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       }
       advanceTimer.current = setTimeout(
         () => setActiveWordIndex((index) => Math.min(index + 1, words.length - 1)),
-        1200
+        500
       );
     },
   });
 
-  const currentWord = words[activeWordIndex] || words[0];
-  const isLastWord = activeWordIndex === words.length - 1;
   useEffect(() => {
     const query = window.matchMedia("(min-width: 1280px)");
     const update = () => setDesktopDetails(query.matches);
     update();
-    query.addEventListener("change", update);
-    return () => query.removeEventListener("change", update);
+    const handleChange = () => {
+      update();
+      setShowDetails(null);
+    };
+    query.addEventListener("change", handleChange);
+    return () => query.removeEventListener("change", handleChange);
   }, []);
-  useEffect(() => {
-    if (desktopDetails && inspectedWord) detailsCloseRef.current?.focus();
-  }, [desktopDetails, inspectedWord]);
-  usePrefetchImage(isLastWord ? null : words[activeWordIndex + 1]);
 
-  const {
-    listen,
-    stop: stopListening,
-    status: speechStatus,
-    isListening,
-    attempt,
-    audioLevel,
-    reset: resetSpeech,
-  } = useSpeechRecognition({ lang: "en-US" });
+  const isDetailsVisible = showDetails ?? desktopDetails;
+
+  usePrefetchImage(isLastWord ? null : words[activeWordIndex + 1]);
 
   const playWord = useCallback(() => {
     setPlaybackError(false);
     speak(currentWord.label);
   }, [speak, currentWord.label]);
 
+  // Autoplay audio on card mount and whenever the active word changes
   useEffect(() => {
-    if (continuous) speak(currentWord.label);
+    if (currentWord?.label) {
+      speak(currentWord.label);
+    }
     return () => {
       if (advanceTimer.current) clearTimeout(advanceTimer.current);
       stop();
     };
-  }, [continuous, activeWordIndex, currentWord.label, speak, stop]);
-  const pausePlayback = () => {
+  }, [activeWordIndex, currentWord?.label, speak, stop]);
+
+  const pausePlayback = useCallback(() => {
     setContinuous(false);
     if (advanceTimer.current) clearTimeout(advanceTimer.current);
     stop();
-  };
+  }, [stop]);
+
   useEffect(() => {
     const pauseWhenHidden = () => {
       if (document.hidden) {
-        setContinuous(false);
-        stop();
+        pausePlayback();
       }
     };
     document.addEventListener("visibilitychange", pauseWhenHidden);
     return () => document.removeEventListener("visibilitychange", pauseWhenHidden);
-  }, [stop]);
+  }, [pausePlayback]);
 
   const handleSelectWordIndex = useCallback(
-    (index: number, autoPlay = false) => {
+    (index: number) => {
       const nextIndex = Math.min(Math.max(index, 0), words.length - 1);
       if (nextIndex === activeWordIndex) return;
       if (advanceTimer.current) clearTimeout(advanceTimer.current);
       stop();
-      resetSpeech();
       setPlaybackError(false);
       setActiveWordIndex(nextIndex);
-      if (autoPlay && !continuous) {
-        const nextWord = words[nextIndex];
-        if (nextWord) {
-          setPlaybackError(false);
-          speak(nextWord.label);
-        }
-      }
     },
-    [activeWordIndex, continuous, resetSpeech, speak, stop, words]
+    [activeWordIndex, stop, words.length]
   );
+
   const group = useMemo(
     () =>
       resolveGroup(
@@ -155,25 +147,30 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   const handleToggle = useCallback(() => {
     if (isPlaying || continuous) {
-      setContinuous(false);
-      if (advanceTimer.current) clearTimeout(advanceTimer.current);
-      stop();
+      pausePlayback();
     } else {
-      if (isListening) stopListening();
       playWord();
     }
-  }, [isPlaying, continuous, stop, playWord, isListening, stopListening]);
+  }, [isPlaying, continuous, pausePlayback, playWord]);
+
+  const handleOpenDetails = useCallback(() => {
+    pausePlayback();
+    setShowDetails(true);
+    if (desktopDetails) {
+      requestAnimationFrame(() => detailsCloseRef.current?.focus());
+    }
+  }, [desktopDetails, pausePlayback]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (inspectedWord && e.key === "Escape") {
+      if (isDetailsVisible && e.key === "Escape") {
         e.preventDefault();
-        setInspectedWord(null);
+        setShowDetails(false);
         requestAnimationFrame(() => detailsTriggerRef.current?.focus());
         return;
       }
       if (
-        inspectedWord ||
+        (isDetailsVisible && !desktopDetails) ||
         (e.target instanceof HTMLElement && !!e.target.closest("[data-listen-selector]")) ||
         e.altKey ||
         e.ctrlKey ||
@@ -192,7 +189,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         handleSelectWordIndex(activeWordIndex - 1);
       } else if (e.key === (isRtl ? "ArrowLeft" : "ArrowRight")) {
         e.preventDefault();
-        handleSelectWordIndex(activeWordIndex + 1, true);
+        handleSelectWordIndex(activeWordIndex + 1);
       } else if (
         e.code === "Space" &&
         (e.target === document.body || e.target === document.documentElement)
@@ -204,7 +201,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [activeWordIndex, handleSelectWordIndex, inspectedWord, handleToggle]);
+  }, [activeWordIndex, handleSelectWordIndex, isDetailsVisible, desktopDetails, handleToggle]);
 
   // Touch swipe gesture support for mobile
   const touchStartX = useRef<number | null>(null);
@@ -220,7 +217,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     const diff = document.documentElement.dir === "rtl" ? -horizontal : horizontal;
     if (Math.abs(diff) > 40 && Math.abs(horizontal) > Math.abs(vertical)) {
       if (diff < 0 && activeWordIndex < words.length - 1) {
-        handleSelectWordIndex(activeWordIndex + 1, true);
+        handleSelectWordIndex(activeWordIndex + 1);
       } else if (diff > 0 && activeWordIndex > 0) {
         handleSelectWordIndex(activeWordIndex - 1);
       }
@@ -246,11 +243,14 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       options={[manualLabel, continuousLabel]}
       selected={continuous ? continuousLabel : manualLabel}
       onChange={(value) => {
-        resetSpeech();
-        if (value === manualLabel) pausePlayback();
-        else {
+        if (value === manualLabel) {
+          pausePlayback();
+        } else {
           setPlaybackError(false);
           setContinuous(true);
+          if (!isPlaying) {
+            speak(currentWord.label);
+          }
         }
       }}
     />
@@ -280,11 +280,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             type="button"
             onClick={() => {
               pausePlayback();
-              resetSpeech();
               dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
             }}
             aria-label={t("listenRepeat.backToUnit", { unit: unit.name })}
-            className="justify-self-start inline-flex items-center gap-2 min-h-11 min-w-11 rounded-xl px-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="justify-self-start inline-flex items-center gap-2 min-h-11 min-w-11 rounded-xl px-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             <ChevronLeft className="size-5 rtl:rotate-180" aria-hidden />
             <span className="hidden lg:inline">
@@ -298,10 +297,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               type="button"
               onClick={() => {
                 pausePlayback();
-                resetSpeech();
                 setShowExit(true);
               }}
-              className="min-h-11 min-w-11 px-2 rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="min-h-11 min-w-11 px-2 rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
             >
               {t("listenRepeat.exit")}
             </button>
@@ -337,7 +335,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       </header>
       <section
         aria-label={t("listenRepeat.exerciseSection", { group: group.name })}
-        className="flex-1 min-h-0 overflow-y-auto p-4 lg:px-20 lg:py-8 pb-[max(1rem,env(safe-area-inset-bottom))]"
+        className="flex-1 min-h-0 overflow-y-auto p-3 sm:p-4 lg:px-10 xl:px-16 lg:py-6 pb-[max(1rem,env(safe-area-inset-bottom))]"
       >
         <div role="status" aria-live="polite" aria-atomic="true" className="sr-only">
           {isPlaying
@@ -350,20 +348,22 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         </div>
 
         <div className="wp-container-wide relative flex min-h-0 flex-col gap-4">
-          {/* Direct word selection is useful on larger screens but duplicates
-            progress and navigation on a phone. */}
           {/* Main Flashcard Container with Swipe Support */}
           <div
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
-            className={`w-full min-w-0 grid grid-cols-1 ${inspectedWord && desktopDetails ? "lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,1.5fr)_minmax(16rem,0.9fr)_minmax(20rem,1fr)]" : "lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]"} gap-4 lg:gap-0 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-4 shadow-wp-md relative`}
+            className={`w-full min-w-0 grid grid-cols-1 ${
+              desktopDetails && isDetailsVisible
+                ? "md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,1.5fr)_minmax(16rem,0.9fr)_minmax(20rem,1fr)]"
+                : "md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]"
+            } gap-4 md:gap-6 xl:gap-0 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-wp-md relative`}
           >
             <button
               type="button"
               aria-label={t("listenRepeat.previousWord")}
               disabled={activeWordIndex === 0}
               onClick={() => handleSelectWordIndex(activeWordIndex - 1)}
-              className="absolute z-10 start-6 lg:-start-14 top-[calc(clamp(10rem,26dvh,22rem)/2+1rem)] lg:top-1/2 -translate-y-1/2 size-11 rounded-full bg-wp-card border border-border text-primary shadow-md grid place-items-center disabled:opacity-40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="absolute z-10 start-3 sm:start-4 lg:-start-6 xl:-start-7 top-[calc(clamp(14rem,35vw,22rem)/2)] md:top-1/2 -translate-y-1/2 size-11 rounded-full bg-wp-card/95 backdrop-blur-xs border border-border text-primary shadow-md grid place-items-center disabled:opacity-30 disabled:pointer-events-none hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all cursor-pointer"
             >
               <ChevronLeft className="size-5 rtl:rotate-180" aria-hidden />
             </button>
@@ -375,293 +375,159 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
               onClick={() => {
                 if (isLastWord) {
                   pausePlayback();
-                  resetSpeech();
                   dispatch({ type: "LESSON_NEXT" });
-                } else handleSelectWordIndex(activeWordIndex + 1, true);
+                } else {
+                  handleSelectWordIndex(activeWordIndex + 1);
+                }
               }}
-              className="absolute z-10 end-6 lg:-end-14 top-[calc(clamp(10rem,26dvh,22rem)/2+1rem)] lg:top-1/2 -translate-y-1/2 size-11 rounded-full bg-wp-card border border-border text-primary shadow-md grid place-items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="absolute z-10 end-3 sm:end-4 lg:-end-6 xl:-end-7 top-[calc(clamp(14rem,35vw,22rem)/2)] md:top-1/2 -translate-y-1/2 size-11 rounded-full bg-wp-card/95 backdrop-blur-xs border border-border text-primary shadow-md grid place-items-center hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all cursor-pointer"
             >
               <ChevronRight className="size-5 rtl:rotate-180" aria-hidden />
             </button>
-            {/* The picture is the learning material, so it stays unobstructed. */}
-            <div className="w-full min-w-0 relative rounded-xl sm:rounded-2xl overflow-hidden bg-muted h-[clamp(10rem,26dvh,22rem)] lg:h-auto lg:min-h-[32rem]">
+
+            {/* Prominent Image: adapts beautifully to mobile, tablet, and wide desktop displays */}
+            <div className="w-full min-w-0 relative rounded-xl sm:rounded-2xl overflow-hidden bg-muted aspect-[4/3] min-h-[220px] max-h-[360px] sm:aspect-[16/10] sm:max-h-[400px] md:aspect-auto md:h-full md:min-h-[28rem] lg:min-h-[34rem] xl:min-h-[38rem] max-h-[44rem] shadow-xs">
               <WordImage
                 word={currentWord}
                 className="w-full h-full absolute inset-0 object-cover"
-
                 loading="eager"
                 fetchPriority="high"
               />
             </div>
 
-            {/* Dedicated Word Info & Actions Section Below Image */}
-            <div className="flex flex-col justify-center gap-4 min-w-0 lg:ps-6 lg:py-4">
+            {/* Dedicated Word Info & Actions Section */}
+            <div className="flex flex-col justify-center gap-4 min-w-0 md:ps-6 lg:px-6 lg:py-2">
               {/* Word Name, Phonetic, and Arabic Meaning */}
-              <div className="flex flex-col gap-4 lg:gap-6">
-                <div className="flex flex-col min-w-0">
-                  <div className="flex flex-col gap-1.5 lg:gap-2" lang="en" dir="ltr">
-                    <h2 className="font-sans font-black text-foreground text-3xl sm:text-4xl xl:text-5xl leading-tight capitalize break-words">
-                      {currentWord.label}
-                    </h2>
-                    <span className="font-sans font-medium text-muted-foreground text-xs sm:text-sm font-mono">
-                      /
-                      {lexiconEntry?.phonetic
-                        ? lexiconEntry.phonetic.replace(/^\/|\/$/g, "")
-                        : currentWord.phonetic.replace(/^\/|\/$/g, "")}
-                      /
-                    </span>
-                  </div>
-                  {/* Dropped entirely when there is no gloss: an English string
-                    in here would be laid out right-to-left and announced as
-                    Arabic. */}
-                  {bilingual && showArabicTranslation && (
-                    <p
-                      className="font-arabic font-bold text-foreground text-lg sm:text-xl mt-2 lg:mt-4 text-start self-start"
-                      dir="rtl"
-                      lang="ar"
-                    >
-                      {arabicTranslation}
-                    </p>
-                  )}
-                  {lexiconFailed && (
-                    <div role="alert" className="flex flex-wrap items-center gap-2 mt-2 lg:mt-4">
-                      <p className="font-sans text-xs text-muted-foreground">
-                        {t("vocabularyPreload.loadErrorDesc")}
-                      </p>
-                      <button
-                        type="button"
-                        onClick={retryLexicon}
-                        className="min-h-[44px] px-4 rounded-xl bg-secondary border border-border text-primary font-sans font-bold text-xs sm:text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
-                      >
-                        {t("action.tryAgain")}
-                      </button>
-                    </div>
-                  )}
+              <div className="flex flex-col min-w-0">
+                <div className="flex flex-col gap-1.5 lg:gap-2" lang="en" dir="ltr">
+                  <h2 className="font-sans font-black text-foreground text-3xl sm:text-4xl xl:text-5xl leading-tight capitalize break-words">
+                    {currentWord.label}
+                  </h2>
+                  <span className="font-sans font-medium text-muted-foreground text-xs sm:text-sm font-mono">
+                    /
+                    {lexiconEntry?.phonetic
+                      ? lexiconEntry.phonetic.replace(/^\/|\/$/g, "")
+                      : currentWord.phonetic.replace(/^\/|\/$/g, "")}
+                    /
+                  </span>
                 </div>
-
-                {/* Action Buttons: Listen & Speak */}
-                <div
-                  className="grid grid-cols-1 min-[360px]:grid-cols-2 lg:grid-cols-1 gap-3"
-                  aria-label={t("listenRepeat.pronunciationPractice")}
-                >
-                  {/* Listen button */}
-                  <button
-                    type="button"
-                    onClick={handleToggle}
-                    aria-pressed={isPlaying || continuous}
-                    aria-label={
-                      isPlaying || continuous
-                        ? t("listenRepeat.stopAudioFor", { word: currentWord.label })
-                        : t("listenRepeat.playAudioFor", { word: currentWord.label })
-                    }
-                    className="flex items-center justify-center gap-2 px-3 py-2 min-h-[48px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-md hover:bg-primary motion-safe:active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
+                {/* Dropped entirely when there is no gloss: an English string
+                  in here would be laid out right-to-left and announced as
+                  Arabic. */}
+                {bilingual && showArabicTranslation && (
+                  <p
+                    className="font-arabic font-bold text-foreground text-lg sm:text-xl lg:text-2xl mt-2 lg:mt-3 text-start self-start"
+                    dir="rtl"
+                    lang="ar"
                   >
-                    <span>
-                      {isPlaying || continuous
-                        ? t("listenRepeat.stopAudio")
-                        : t("listenRepeat.listen")}
-                    </span>
-                  </button>
-
-                  {/* Slow / Normal speed toggle */}
-                  <button
-                    type="button"
-                    onClick={() => {
-                      stop();
-                      setSlowMode((prev) => !prev);
-                    }}
-                    aria-pressed={slowMode}
-                    aria-label={
-                      slowMode
-                        ? t("listenRepeat.normalSpeedFor", { word: currentWord.label })
-                        : t("listenRepeat.slowPlayFor", { word: currentWord.label })
-                    }
-                    className={`min-h-[48px] px-3 py-2 rounded-xl transition-all flex items-center justify-center gap-2 border font-sans font-bold text-sm shadow-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer ${
-                      slowMode
-                        ? "bg-secondary border-primary text-primary"
-                        : "bg-card border-border text-muted-foreground hover:border-primary hover:bg-secondary"
-                    }`}
-                  >
-                    <span>
-                      {slowMode ? t("listenRepeat.normalSpeed") : t("listenRepeat.slowPlay")}
-                    </span>
-                  </button>
-
-                  {/* Microphone Practice Button */}
-                  {
+                    {arabicTranslation}
+                  </p>
+                )}
+                {lexiconFailed && (
+                  <div role="alert" className="flex flex-wrap items-center gap-2 mt-2 lg:mt-3">
+                    <p className="font-sans text-xs text-muted-foreground">
+                      {t("vocabularyPreload.loadErrorDesc")}
+                    </p>
                     <button
                       type="button"
-                      onClick={() => {
-                        if (isListening) stopListening();
-                        else {
-                          pausePlayback();
-                          listen(currentWord.label);
-                        }
-                      }}
-                      disabled={speechStatus === "unsupported"}
-                      aria-label={
-                        isListening
-                          ? t("listenRepeat.stopRecording")
-                          : t("listenRepeat.practiceSpeakingFor", { word: currentWord.label })
-                      }
-                      className={`min-h-[48px] px-3 py-2 rounded-xl transition-all flex items-center justify-center gap-2 border font-sans font-bold text-sm shadow-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer ${
-                        attempt?.matched
-                          ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                          : isListening
-                            ? "bg-wp-rose text-wp-text-on-rose border-wp-rose motion-safe:animate-pulse"
-                            : "bg-wp-card text-foreground hover:bg-secondary border-border"
-                      }`}
+                      onClick={retryLexicon}
+                      className="min-h-[44px] px-4 rounded-xl bg-secondary border border-border text-primary font-sans font-bold text-xs sm:text-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
                     >
-                      <span>
-                        {attempt?.matched
-                          ? t("listenRepeat.recognized")
-                          : isListening
-                            ? t("listenRepeat.stopListening")
-                            : t("listenRepeat.practiceSpeaking")}
-                      </span>
+                      {t("action.tryAgain")}
                     </button>
-                  }
-                </div>
+                  </div>
+                )}
               </div>
 
-              {!attempt && speechStatus === "idle" && (
-                <p className="font-sans text-xs text-muted-foreground">
-                  {t("listenRepeat.speakingOptional")}
-                </p>
-              )}
+              {/* Action Buttons: Listen only */}
+              <div className="flex flex-col gap-2 mt-1">
+                <button
+                  type="button"
+                  onClick={handleToggle}
+                  aria-pressed={isPlaying || continuous}
+                  aria-label={
+                    isPlaying || continuous
+                      ? t("listenRepeat.stopAudioFor", { word: currentWord.label })
+                      : t("listenRepeat.playAudioFor", { word: currentWord.label })
+                  }
+                  className="w-full flex items-center justify-center gap-2.5 px-4 py-3 min-h-[48px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm sm:text-base shadow-md hover:bg-primary motion-safe:active:scale-95 transition-all focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+                >
+                  <Volume2 className="size-5 shrink-0" aria-hidden />
+                  <span>
+                    {isPlaying || continuous
+                      ? t("listenRepeat.stopAudio")
+                      : t("listenRepeat.listen")}
+                  </span>
+                </button>
+              </div>
 
-              <div className="mt-2">
-                <p className="text-sm font-semibold mb-2">{t("listenRepeat.playback")}</p>
+              {/* Playback Mode (Manual / Continuous) */}
+              <div className="mt-1">
+                <p className="text-xs sm:text-sm font-semibold text-muted-foreground mb-1.5">
+                  {t("listenRepeat.playback")}
+                </p>
                 {playbackSelector}
               </div>
 
+              {/* Word Details button: always accessible for learner to explore details */}
               <button
                 ref={detailsTriggerRef}
                 type="button"
-                onClick={() => {
-                  pausePlayback();
-                  resetSpeech();
-                  setInspectedWord(currentWord);
-                }}
+                onClick={handleOpenDetails}
                 aria-haspopup={desktopDetails ? undefined : "dialog"}
                 aria-controls={desktopDetails ? "word-details-panel" : undefined}
-                aria-expanded={!!inspectedWord}
-                className="w-full flex items-center justify-start gap-2 py-3 px-4 min-h-[48px] rounded-xl bg-secondary border border-border text-primary text-xs sm:text-sm font-sans font-semibold hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer"
+                aria-expanded={isDetailsVisible}
+                className="w-full flex items-center justify-between gap-2 py-3 px-4 min-h-[48px] rounded-xl bg-secondary border border-border text-primary text-xs sm:text-sm font-sans font-semibold hover:bg-secondary/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer transition-colors"
               >
-                <BookOpen className="size-4" aria-hidden />
-                <span>{t("listenRepeat.wordDetails")}</span>
-                <ChevronRight className="size-5 ms-auto" aria-hidden />
+                <div className="flex items-center gap-2">
+                  <BookOpen className="size-4 shrink-0" aria-hidden />
+                  <span>{t("listenRepeat.wordDetails")}</span>
+                </div>
+                <ChevronRight className="size-5 rtl:rotate-180 text-muted-foreground" aria-hidden />
               </button>
             </div>
 
-            {inspectedWord && desktopDetails && (
+            {/* Word Details automatically displayed on big screens */}
+            {desktopDetails && isDetailsVisible && (
               <aside
                 id="word-details-panel"
-                aria-label={t("listenRepeat.detailsFor", { word: inspectedWord.label })}
-                className="hidden xl:flex min-h-0 max-h-[32rem] ms-4 border-s border-border bg-muted/20 rounded-e-2xl flex-col overflow-hidden"
+                aria-label={t("listenRepeat.detailsFor", { word: currentWord.label })}
+                className="hidden xl:flex min-h-0 h-full max-h-[34rem] xl:max-h-[38rem] ms-4 border-s border-border bg-muted/15 rounded-e-2xl sm:rounded-e-3xl flex-col overflow-hidden"
               >
                 <div className="shrink-0 flex items-center justify-between gap-3 p-4 border-b border-border bg-wp-card">
                   <div className="min-w-0">
                     <p className="text-xs font-bold uppercase tracking-wide text-primary">
                       {t("listenRepeat.wordDetails")}
                     </p>
-                    <h2 className="font-black text-xl text-foreground truncate">
-                      {inspectedWord.label}
+                    <h2 className="font-black text-lg xl:text-xl text-foreground truncate">
+                      {currentWord.label}
                     </h2>
                   </div>
                   <button
                     ref={detailsCloseRef}
                     type="button"
                     onClick={() => {
-                      setInspectedWord(null);
+                      setShowDetails(false);
                       requestAnimationFrame(() => detailsTriggerRef.current?.focus());
                     }}
                     aria-label={t("listenRepeat.closeWordDetails")}
-                    className="size-11 grid place-items-center rounded-xl border border-border text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    className="size-11 grid place-items-center rounded-xl border border-border text-foreground hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
                   >
                     <X className="size-5" aria-hidden />
                   </button>
                 </div>
-                <WordDetailsContent
-                  word={inspectedWord}
-                  unitId={unit.id}
-                  bilingual={bilingual}
-                  className="bg-wp-card"
-                />
+                <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain">
+                  <WordDetailsContent
+                    word={currentWord}
+                    unitId={unit.id}
+                    bilingual={bilingual}
+                    className="bg-transparent"
+                  />
+                </div>
               </aside>
             )}
           </div>
 
-          {/* Real-Time Speech Feedback Banner with Live Waveform */}
-          {speechStatus === "listening" && (
-            <div className="bg-secondary border border-primary/30 rounded-xl px-3 py-2 flex items-center justify-between gap-2 shrink-0">
-              <div className="flex items-center gap-2">
-                <Mic className="size-4 text-primary motion-safe:animate-bounce" aria-hidden />
-                <span className="font-sans text-xs font-bold text-primary">
-                  {t("listenRepeat.listeningPrompt", { word: currentWord.label })}
-                </span>
-              </div>
-              <div className="flex items-center gap-1">
-                {[0.5, 1.0, 0.7, 1.2, 0.6].map((m, i) => {
-                  const h = Math.max(6, Math.min(20, Math.round((audioLevel * m) / 5 + 6)));
-                  return (
-                    <span
-                      key={i}
-                      style={{ height: `${h}px` }}
-                      className="w-1 bg-primary rounded-full transition-all duration-75"
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {attempt?.matched && (
-            <div
-              role="status"
-              className="bg-wp-green/10 border border-wp-green/30 rounded-xl px-3 py-2 flex items-center gap-2 shrink-0"
-            >
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="size-3.5 text-wp-green" aria-hidden />
-                <span className="font-sans text-xs font-bold text-wp-green">
-                  {t("listenRepeat.wordRecognized")}
-                </span>
-              </div>
-            </div>
-          )}
-
-          {attempt && !attempt.matched && (
-            <div
-              role="status"
-              className="bg-wp-amber/10 border border-wp-amber/30 rounded-xl px-3 py-2"
-            >
-              <p className="font-sans text-xs font-bold text-wp-amber-foreground">
-                {t("listenRepeat.tryAgainPrompt", { word: currentWord.label })}
-              </p>
-            </div>
-          )}
-
-          {speechStatus === "denied" && (
-            <p role="status" className="font-sans text-muted-foreground text-xs text-center">
-              {t("listenRepeat.micBlocked")}
-            </p>
-          )}
-          {speechStatus === "no-speech" && (
-            <p role="status" className="font-sans text-muted-foreground text-xs text-center">
-              {t("listenRepeat.couldNotHear")}
-            </p>
-          )}
-          {speechStatus === "error" && (
-            <p role="status" className="font-sans text-muted-foreground text-xs text-center">
-              {t("listenRepeat.speakingUnavailable")}
-            </p>
-          )}
-
-          {speechStatus === "unsupported" && (
-            <p className="text-sm text-muted-foreground" role="status">
-              {t("listenRepeat.speakingUnsupported")}
-            </p>
-          )}
           {!isSupported && (
             <p className="font-sans text-muted-foreground text-xs text-center">
               {t("listenRepeat.synthesisUnsupported")}
@@ -712,10 +578,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       <WordInspectorModal
         lessonPanel
         bilingual={bilingual}
-        word={inspectedWord}
+        word={currentWord}
         unitId={unit.id}
-        isOpen={!!inspectedWord && !desktopDetails}
-        onClose={() => setInspectedWord(null)}
+        isOpen={isDetailsVisible && !desktopDetails}
+        onClose={() => setShowDetails(false)}
       />
     </div>
   );
@@ -737,7 +603,7 @@ function ListenSelector({
       role="radiogroup"
       aria-label={label}
       data-listen-selector
-      className="flex rounded-xl ring-1 ring-inset ring-border bg-wp-card"
+      className="flex rounded-xl ring-1 ring-inset ring-border bg-wp-card p-0.5"
     >
       {options.map((option) => (
         <button
@@ -746,7 +612,11 @@ function ListenSelector({
           role="radio"
           aria-checked={selected === option}
           onClick={() => onChange(option)}
-          className={`flex-1 min-h-11 px-4 rounded-lg text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${selected === option ? "bg-secondary text-primary ring-1 ring-inset ring-primary/30" : "text-muted-foreground"}`}
+          className={`flex-1 min-h-11 px-4 rounded-lg text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer transition-all ${
+            selected === option
+              ? "bg-secondary text-primary ring-1 ring-inset ring-primary/30 shadow-xs"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
         >
           {option}
         </button>

@@ -215,10 +215,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       onClick={() => setInterfaceLang(lang)}
                       aria-pressed={interfaceLang === lang}
                       lang={lang}
-                      className={`px-3 py-1.5 min-h-[44px] rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      className={`px-3.5 py-1.5 min-h-[44px] rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
                         interfaceLang === lang
                           ? "bg-primary text-primary-foreground shadow-xs"
-                          : "text-muted-foreground hover:text-foreground"
+                          : "text-muted-foreground hover:text-foreground hover:bg-muted"
                       }`}
                     >
                       {lang === "ar" ? t("settings.arabic") : t("settings.english")}
@@ -247,10 +247,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     setting: t("settings.highContrast"),
                     state: highContrast ? t("settings.enabled") : t("settings.disabled"),
                   })}
-                  className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                  className={`px-3.5 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                     highContrast
-                      ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                      : "bg-muted text-muted-foreground border-border"
+                      ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                      : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                   }`}
                 >
                   {highContrast ? t("settings.enabledContrast") : t("settings.disabled")}
@@ -277,10 +277,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     setting: t("settings.reduceMotion"),
                     state: reduceMotion ? t("settings.enabled") : t("settings.disabled"),
                   })}
-                  className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                  className={`px-3.5 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                     reduceMotion
-                      ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                      : "bg-muted text-muted-foreground border-border"
+                      ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                      : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                   }`}
                 >
                   {reduceMotion ? t("settings.enabled") : t("settings.disabled")}

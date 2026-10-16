@@ -486,10 +486,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         setting: t("settings.highContrast"),
                         state: highContrast ? t("settings.enabled") : t("settings.disabled"),
                       })}
-                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                         highContrast
-                          ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                          : "bg-muted text-muted-foreground border-border"
+                          ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                          : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                       }`}
                     >
                       {highContrast ? t("settings.enabledContrast") : t("settings.disabled")}
@@ -520,10 +520,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         setting: t("settings.reduceMotion"),
                         state: reduceMotion ? t("settings.enabled") : t("settings.disabled"),
                       })}
-                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                         reduceMotion
-                          ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                          : "bg-muted text-muted-foreground border-border"
+                          ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                          : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                       }`}
                     >
                       {reduceMotion ? t("settings.enabled") : t("settings.disabled")}
@@ -559,8 +559,8 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                           aria-pressed={textSize === sz}
                           className={`min-h-[44px] min-w-[44px] px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
                             textSize === sz
-                              ? "bg-primary text-primary-foreground shadow-xs"
-                              : "text-muted-foreground hover:text-foreground"
+                              ? "bg-primary text-primary-foreground shadow-wp-xs"
+                              : "text-muted-foreground hover:text-foreground hover:bg-muted/80"
                           }`}
                         >
                           {sz === "standard" ? "100%" : sz === "large" ? "125%" : "150%"}
@@ -610,8 +610,8 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                           lang={lang}
                           className={`px-3.5 py-2 min-h-[44px] rounded-lg text-xs sm:text-sm font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
                             interfaceLang === lang
-                              ? "bg-primary text-primary-foreground shadow-xs"
-                              : "text-muted-foreground hover:text-foreground"
+                              ? "bg-primary text-primary-foreground shadow-wp-xs"
+                              : "text-muted-foreground hover:text-foreground hover:bg-muted/80"
                           }`}
                         >
                           {lang === "ar" ? t("settings.arabic") : t("settings.english")}
@@ -647,8 +647,8 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         aria-pressed={numeralSystem === "western"}
                         className={`min-h-[44px] min-w-[44px] px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
                           numeralSystem === "western"
-                            ? "bg-primary text-primary-foreground shadow-xs"
-                            : "text-muted-foreground hover:text-foreground"
+                            ? "bg-primary text-primary-foreground shadow-wp-xs"
+                            : "text-muted-foreground hover:text-foreground hover:bg-muted/80"
                         }`}
                       >
                         {"1, 2, 3"}
@@ -659,8 +659,8 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         aria-pressed={numeralSystem === "arabic"}
                         className={`min-h-[44px] min-w-[44px] px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
                           numeralSystem === "arabic"
-                            ? "bg-primary text-primary-foreground shadow-xs"
-                            : "text-muted-foreground hover:text-foreground"
+                            ? "bg-primary text-primary-foreground shadow-wp-xs"
+                            : "text-muted-foreground hover:text-foreground hover:bg-muted/80"
                         }`}
                       >
                         {"١, ٢, ٣"}
@@ -708,8 +708,8 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                           aria-pressed={speechRate === sp}
                           className={`min-h-[44px] min-w-[44px] px-3 py-1.5 rounded-lg text-xs sm:text-sm font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
                             speechRate === sp
-                              ? "bg-primary text-primary-foreground shadow-xs"
-                              : "text-muted-foreground hover:text-foreground"
+                              ? "bg-primary text-primary-foreground shadow-wp-xs"
+                              : "text-muted-foreground hover:text-foreground hover:bg-muted/80"
                           }`}
                         >
                           {`${sp}x`}
@@ -742,10 +742,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         setting: t("settings.speakAnswers"),
                         state: spokenFeedback ? t("settings.enabled") : t("settings.disabled"),
                       })}
-                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                         spokenFeedback
-                          ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                          : "bg-muted text-muted-foreground border-border"
+                          ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                          : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                       }`}
                     >
                       {spokenFeedback ? t("settings.enabled") : t("settings.disabled")}
@@ -883,10 +883,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         setting: t("settings.speakingDrills"),
                         state: includeSpeaking ? t("settings.enabled") : t("settings.disabled"),
                       })}
-                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                         includeSpeaking
-                          ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                          : "bg-muted text-muted-foreground border-border"
+                          ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                          : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                       }`}
                     >
                       {includeSpeaking ? t("settings.enabled") : t("settings.disabled")}
@@ -921,10 +921,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                           ? t("settings.enabled")
                           : t("settings.disabled"),
                       })}
-                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                         includePronunciation
-                          ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                          : "bg-muted text-muted-foreground border-border"
+                          ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                          : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                       }`}
                     >
                       {includePronunciation ? t("settings.enabled") : t("settings.disabled")}
@@ -955,10 +955,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         setting: t("settings.timedExercises"),
                         state: timedExercises ? t("settings.enabled") : t("settings.disabled"),
                       })}
-                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                         timedExercises
-                          ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                          : "bg-muted text-muted-foreground border-border"
+                          ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                          : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                       }`}
                     >
                       {timedExercises ? t("settings.enabled") : t("settings.disabled")}
@@ -989,10 +989,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         setting: t("settings.autoAdvance"),
                         state: autoAdvance ? t("settings.enabled") : t("settings.disabled"),
                       })}
-                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                         autoAdvance
-                          ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                          : "bg-muted text-muted-foreground border-border"
+                          ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                          : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                       }`}
                     >
                       {autoAdvance ? t("settings.enabled") : t("settings.disabled")}
@@ -1023,10 +1023,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         setting: t("settings.listeningDrills"),
                         state: includeListening ? t("settings.enabled") : t("settings.disabled"),
                       })}
-                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                         includeListening
-                          ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                          : "bg-muted text-muted-foreground border-border"
+                          ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                          : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
                       }`}
                     >
                       {includeListening ? t("settings.enabled") : t("settings.disabled")}
@@ -1066,7 +1066,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                     type="button"
                     disabled={isPreloading}
                     onClick={handlePreloadAll}
-                    className="px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-xs sm:text-sm shadow-xs disabled:opacity-50 transition-all shrink-0 flex items-center justify-center gap-2 min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+                    className="px-5 py-2.5 rounded-xl bg-primary text-primary-foreground font-sans font-bold text-xs sm:text-sm shadow-wp-xs hover:bg-primary/90 disabled:opacity-50 transition-all shrink-0 flex items-center justify-center gap-2 min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
                   >
                     {isPreloading ? (
                       <span>
@@ -1141,14 +1141,14 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         resetToZero();
                         setConfirmReset(false);
                       }}
-                      className="px-4 py-2 min-h-[44px] rounded-xl bg-wp-rose text-wp-text-on-rose text-xs sm:text-sm font-sans font-bold shadow-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-rose cursor-pointer"
+                      className="px-4 py-2 min-h-[44px] rounded-xl bg-wp-rose text-wp-text-on-rose text-xs sm:text-sm font-sans font-bold shadow-wp-xs hover:opacity-95 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-rose cursor-pointer"
                     >
                       {t("settings.confirmReset")}
                     </button>
                     <button
                       type="button"
                       onClick={() => setConfirmReset(false)}
-                      className="px-4 py-2 min-h-[44px] rounded-xl bg-card text-muted-foreground text-xs sm:text-sm font-sans font-bold border border-border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+                      className="px-4 py-2 min-h-[44px] rounded-xl bg-card text-muted-foreground text-xs sm:text-sm font-sans font-bold border border-border shadow-wp-xs hover:bg-muted/80 hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
                     >
                       {t("settings.cancel")}
                     </button>
@@ -1157,7 +1157,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                   <button
                     type="button"
                     onClick={() => setConfirmReset(true)}
-                    className="px-4 py-2 min-h-[44px] rounded-xl bg-card text-wp-rose border border-wp-rose/30 font-sans font-bold text-xs sm:text-sm hover:bg-wp-rose/20 transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-rose cursor-pointer"
+                    className="px-4 py-2 min-h-[44px] rounded-xl bg-card text-wp-rose border border-wp-rose/30 font-sans font-bold text-xs sm:text-sm shadow-wp-xs hover:bg-wp-rose/20 transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-rose cursor-pointer"
                   >
                     {t("settings.resetData")}
                   </button>
@@ -1215,7 +1215,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                 type="button"
                 onClick={() => speak("Bed. The lamp is on the nightstand beside the bed.")}
                 aria-label={`Test pronunciation at ${speechRate}x speed`}
-                className="mt-1 w-full min-h-[44px] py-2 px-3 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-card font-sans font-bold text-xs flex items-center justify-center gap-2 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+                className="mt-1 w-full min-h-[44px] py-2 px-3 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-secondary/80 hover:border-primary/40 shadow-wp-xs font-sans font-bold text-xs flex items-center justify-center gap-2 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
               >
                 <Volume2 className="size-4" aria-hidden="true" />
                 <span>{`Pronounce (${speechRate}x)`}</span>

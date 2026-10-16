@@ -48,7 +48,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = 
           // the 32px logo row was below the minimum touch target everywhere.
           className="flex items-center gap-2 min-h-[44px] pe-2 group focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg"
         >
-          <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs group-transition-all">
+          <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs motion-safe:transition-transform motion-safe:group-hover:scale-105 duration-200">
             <BookOpen className="size-4 text-primary-foreground" aria-hidden />
           </div>
           <span className="font-sans font-bold text-foreground tracking-tight text-lg">
@@ -65,7 +65,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = 
             onClick={() => dispatch({ type: "GO", to: "settings" })}
             title={t("settings.title")}
             aria-label={t("settings.title")}
-            className="size-10 min-h-[44px] min-w-[44px] rounded-full flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="size-11 min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             <Sliders className="size-5" aria-hidden />
           </button>

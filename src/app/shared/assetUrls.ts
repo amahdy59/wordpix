@@ -59,10 +59,10 @@ export interface AudioProfile {
  * speech synthesis, which is the right behaviour for a local dev checkout with
  * no bucket configured.
  */
-export const ASSET_BASE_URL: string = (import.meta.env?.VITE_ASSET_BASE_URL ?? "").replace(
-  /\/+$/,
-  ""
-);
+const DEFAULT_CDN_BASE = "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev";
+export const ASSET_BASE_URL: string = (
+  import.meta.env?.VITE_ASSET_BASE_URL ?? (import.meta.env?.MODE === "test" ? "" : DEFAULT_CDN_BASE)
+).replace(/\/+$/, "");
 
 export function hasAssetHost(): boolean {
   return ASSET_BASE_URL.length > 0;

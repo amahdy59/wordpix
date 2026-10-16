@@ -22,7 +22,9 @@ export function applySceneLearningContext(scene) {
     scenario: context.scenario,
     check: { ...scene.check, question: context.question },
     imageBrief: context.imageBrief,
-    ...(scene.imagePath ? { imagePurpose: "word-reference" } : {}),
+    ...(scene.imagePath && context.scenario !== scene.scenario
+      ? { imagePurpose: "word-reference" }
+      : {}),
   };
   delete revised.learningContext;
   return revised;

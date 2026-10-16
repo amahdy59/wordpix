@@ -213,9 +213,9 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                         key={size}
                         type="button"
                         onClick={() => setSelectedBatchSize(size)}
-                        className={`min-h-[44px] px-3.5 py-1.5 rounded-xl text-sm font-bold font-sans transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                        className={`min-h-[44px] px-3.5 py-1.5 rounded-xl text-sm font-bold font-sans transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
                           selectedBatchSize === size
-                            ? "bg-primary text-primary-foreground shadow-wp-xs"
+                            ? "bg-primary text-primary-foreground"
                             : "bg-card text-foreground hover:bg-secondary border border-border"
                         }`}
                         aria-pressed={selectedBatchSize === size}
@@ -418,7 +418,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               <button
                 type="button"
                 onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
-                className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 pe-16 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors group"
+                className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 pe-16 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors cursor-pointer group"
               >
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center justify-between gap-2">

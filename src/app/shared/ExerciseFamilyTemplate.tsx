@@ -43,7 +43,7 @@ export function ExerciseFamilyTemplate({
     <section
       data-exercise-family={family}
       aria-labelledby={instructionId}
-      className={`${measureByFamily[family]} flex w-full flex-1 min-h-0 flex-col gap-4 sm:gap-6 ${className}`}
+      className={`${measureByFamily[family]} flex w-full flex-col gap-4 sm:gap-6 min-h-0 lg:flex-1 ${className}`}
     >
       <header className="text-start sm:text-center shrink-0">
         <h2
@@ -60,12 +60,12 @@ export function ExerciseFamilyTemplate({
       <div
         className={
           media
-            ? "grid min-w-0 flex-1 gap-5 lg:grid-cols-2 lg:items-stretch lg:gap-8 min-h-0"
-            : "min-w-0 flex-1 flex flex-col"
+            ? "flex flex-col gap-4 min-w-0 w-full lg:grid lg:flex-1 lg:grid-cols-2 lg:items-stretch lg:gap-8 lg:min-h-0"
+            : "min-w-0 flex flex-col w-full lg:flex-1"
         }
       >
         {media && (
-          <div data-exercise-zone="media" className="min-w-0 flex flex-col">
+          <div data-exercise-zone="media" className="min-w-0 flex flex-col w-full">
             {media}
           </div>
         )}
@@ -73,19 +73,19 @@ export function ExerciseFamilyTemplate({
           data-exercise-zone="activity"
           role="group"
           aria-label={activityLabel}
-          className="min-w-0 flex flex-col flex-1"
+          className="min-w-0 flex flex-col w-full lg:flex-1"
         >
           {activity}
         </div>
       </div>
 
-      <div data-exercise-zone="feedback" className={`shrink-0 ${feedback ? "" : "hidden"}`}>
+      <div data-exercise-zone="feedback" className={`shrink-0 w-full ${feedback ? "" : "hidden"}`}>
         {feedback}
       </div>
 
       <div
         data-exercise-zone="action"
-        className={`shrink-0 ${action ? "flex min-h-11 items-center justify-end" : "hidden"}`}
+        className={`shrink-0 w-full ${action ? "flex min-h-11 items-center justify-end" : "hidden"}`}
       >
         {action}
       </div>

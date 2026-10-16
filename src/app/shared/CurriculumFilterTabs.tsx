@@ -75,7 +75,7 @@ export function CurriculumFilterTabs<T extends string>({
                 }
               }
             }}
-            className={`min-h-11 rounded-xl border px-3 text-sm font-black transition-colors motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${selected ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card text-foreground hover:border-primary/50 hover:bg-secondary"}`}
+            className={`min-h-11 rounded-xl border px-3 text-sm font-black transition-colors motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${selected ? "border-primary bg-primary text-primary-foreground shadow-wp-xs" : "border-border bg-wp-card text-foreground hover:border-primary/50 hover:bg-secondary"}`}
           >
             {option.label}
             {option.count !== undefined && (

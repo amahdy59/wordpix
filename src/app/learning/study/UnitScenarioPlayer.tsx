@@ -426,8 +426,10 @@ export function UnitScenarioPlayer({
   };
 
   const handleAudioError = () => {
-    // When the network MP3 fails (e.g. 404 on static hosting), fall back to synthesized voice mode
-    setAudioMode("synthesized");
+    // When playback of active network audio fails, fall back to synthesized voice mode
+    if (isPlaying) {
+      setAudioMode("synthesized");
+    }
   };
 
   const handleScrub = (e: React.ChangeEvent<HTMLInputElement>) => {

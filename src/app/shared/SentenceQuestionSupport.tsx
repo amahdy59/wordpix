@@ -1,4 +1,4 @@
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { ImageOff, Volume2 } from "lucide-react";
 import type { VocabularyItem } from "../data/courseCatalog";
 import type { LessonUsageData } from "../data/usageTypes";
@@ -8,6 +8,7 @@ import { QuestionImage } from "./QuestionImage";
 import { PLACEHOLDER_DESCRIPTION } from "../data/placeholderDescription";
 import { useI18n } from "../context/I18nContext";
 import { useSentenceAudio } from "./useSentenceAudio";
+import { useAccessibility } from "./useAccessibilityPreferences";
 import { Button } from "./Button";
 import { MediaFrame } from "./MediaFrame";
 
@@ -53,18 +54,38 @@ export function SentenceQuestionSupport({
   prompt,
   media,
   answered,
+  autoPlay = false,
 }: {
   word: VocabularyItem;
   sentence: string;
   prompt: string;
   media?: PilotSentenceMedia;
   answered: boolean;
+  autoPlay?: boolean;
 }) {
   const { t } = useI18n();
+  const { accessibility } = useAccessibility();
   const [failedImage, setFailedImage] = useState<string | null>(null);
   const audioHintId = useId();
   const audio = useSentenceAudio(answered ? sentence : prompt);
   const hasImage = media && failedImage !== media.imagePath;
+
+  const hasSpokenRef = useRef<Record<string, boolean>>({});
+  const questionKey = `${word.id}:${prompt}`;
+
+  useEffect(() => {
+    if (!autoPlay || !accessibility.includeListening || answered) return undefined;
+    if (hasSpokenRef.current[questionKey]) return undefined;
+    const timer = setTimeout(() => {
+      hasSpokenRef.current[questionKey] = true;
+      audio.play();
+    }, 250);
+    return () => {
+      clearTimeout(timer);
+      audio.stop();
+    };
+  }, [autoPlay, questionKey, answered, accessibility.includeListening, audio]);
+
   // A definition remains available to keyboard and screen-reader learners and
   // provides evidence when an essential visual is unavailable. Do not show a
   // second unfinished sentence or silently substitute vocabulary artwork.
@@ -113,7 +134,7 @@ export function SentenceQuestionSupport({
         <MediaFrame
           fit="cover"
           aspect="recognition"
-          className="w-full flex-1 min-h-[220px] sm:min-h-[280px] lg:min-h-[340px] max-h-[min(55vh,480px)] aspect-[4/3] lg:aspect-auto shadow-wp-sm"
+          className="w-full min-h-[160px] sm:min-h-[220px] lg:min-h-[300px] max-h-[200px] sm:max-h-[300px] lg:max-h-[480px] aspect-video sm:aspect-[4/3] lg:aspect-auto shadow-wp-sm lg:flex-1"
         >
           <QuestionImage
             media={media}

@@ -59,7 +59,7 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
             type="button"
             onClick={onClose}
             aria-label={t("shortcuts.closeAria")}
-            className="wp-touch-target size-11 min-h-[44px] min-w-[44px] rounded-full hover:bg-muted text-muted-foreground hover:text-foreground flex items-center justify-center transition-colors focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
+            className="wp-touch-target size-11 min-h-[44px] min-w-[44px] rounded-full hover:bg-muted text-muted-foreground hover:text-foreground flex items-center justify-center transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             <X className="size-5" />
           </button>
@@ -81,7 +81,7 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
         <button
           type="button"
           onClick={onClose}
-          className="w-full bg-primary rounded-xl py-3 font-sans font-bold text-primary-foreground text-sm min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all shadow-sm"
+          className="w-full bg-primary hover:bg-primary/90 rounded-xl py-3 font-sans font-bold text-primary-foreground text-sm min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all shadow-sm cursor-pointer"
         >
           {t("action.gotIt")}
         </button>

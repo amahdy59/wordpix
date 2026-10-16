@@ -439,7 +439,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                                 )
                               )
                             }
-                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
                           >
                             <div className="size-8 rounded-lg bg-wp-amber/10 text-wp-amber-foreground flex items-center justify-center shrink-0">
                               <BookOpen className="size-4" />
@@ -459,7 +459,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                             type="button"
                             role="menuitem"
                             onClick={() => handleBrowseWords(g.id)}
-                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
                           >
                             <div className="size-8 rounded-lg bg-secondary text-primary flex items-center justify-center shrink-0">
                               <Compass className="size-4" />
@@ -479,7 +479,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                             type="button"
                             role="menuitem"
                             onClick={() => handleStartGroup(g.id, 0)}
-                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
                           >
                             <div className="size-8 rounded-lg bg-wp-green-light text-wp-green flex items-center justify-center shrink-0">
                               <Play className="size-4 fill-current" />
@@ -504,7 +504,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                                 e.stopPropagation();
                                 setExpandedStepMenuId(expandedStepMenuId === g.id ? null : g.id);
                               }}
-                              className="cursor-pointer w-full text-start flex items-center justify-between px-3 py-2 rounded-xl hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+                              className="cursor-pointer w-full text-start flex items-center justify-between px-3 py-2 rounded-xl hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
                               aria-expanded={expandedStepMenuId === g.id}
                               aria-controls={`step-menu-${g.id}`}
                               aria-haspopup="menu"
@@ -536,7 +536,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                                     type="button"
                                     role="menuitem"
                                     onClick={() => handleStartGroup(g.id, item.step)}
-                                    className="cursor-pointer w-full text-start flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary min-h-[44px]"
+                                    className="cursor-pointer w-full text-start flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
                                   >
                                     <span className="text-base">{item.icon}</span>
                                     <div className="flex-1 min-w-0">

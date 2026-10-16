@@ -95,7 +95,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
         onClick={onClick}
         aria-label={ariaLabel}
         aria-current={isCurrent ? "step" : undefined}
-        className={`flex min-h-11 min-w-11 flex-1 ${layout === "row" ? "flex-row items-center gap-3 rounded-xl" : "flex-col justify-between overflow-hidden rounded-2xl"} text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]`}
+        className={`flex min-h-11 min-w-11 flex-1 ${layout === "row" ? "flex-row items-center gap-3 rounded-xl" : "flex-col justify-between overflow-hidden rounded-2xl"} text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99] cursor-pointer`}
       >
         {/* Prominent Media Cover */}
         <div

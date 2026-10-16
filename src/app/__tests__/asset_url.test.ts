@@ -61,4 +61,11 @@ describe("resolveAssetUrl", () => {
       "/wordpix/word-images/first-aid-room/cold-pack.avif"
     );
   });
+
+  it("keeps local unuploaded assets like anatomical crown on the local origin", () => {
+    vi.stubEnv("BASE_URL", "/wordpix/");
+    expect(resolveAssetUrl("/word-images/human-body-head-and-face/crown.avif")).toBe(
+      "/wordpix/word-images/human-body-head-and-face/crown.avif"
+    );
+  });
 });

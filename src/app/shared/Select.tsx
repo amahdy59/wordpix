@@ -8,6 +8,7 @@ export interface SelectOption {
 }
 
 export interface SelectProps {
+  id?: string;
   value: string;
   onChange: (value: string) => void;
   options: SelectOption[];
@@ -17,6 +18,7 @@ export interface SelectProps {
 }
 
 export function Select({
+  id,
   value,
   onChange,
   options,
@@ -27,8 +29,10 @@ export function Select({
   const [isOpen, setIsOpen] = useState(false);
   const [opensAbove, setOpensAbove] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const listboxRef = useRef<HTMLUListElement>(null);
-  const listboxId = useId();
+  const generatedId = useId();
+  const listboxId = `select-listbox-${id ?? generatedId}`;
 
   const selectedOption = options.find((o) => o.value === value);
 
@@ -43,6 +47,14 @@ export function Select({
     document.addEventListener("mousedown", handleDocumentClick);
     return () => document.removeEventListener("mousedown", handleDocumentClick);
   }, [isOpen]);
+
+  // Scroll active option into view when opened or when selection changes
+  useEffect(() => {
+    if (isOpen && value) {
+      const activeEl = document.getElementById(`opt-${value}`);
+      activeEl?.scrollIntoView({ block: "nearest" });
+    }
+  }, [isOpen, value]);
 
   // Keep the popup inside the usable viewport. Selects commonly appear near the
   // bottom of scroll panels, where always opening downward makes the final
@@ -70,16 +82,16 @@ export function Select({
 
   const handleKeyDown = (e: KeyboardEvent<HTMLButtonElement>) => {
     if (!isOpen) {
-      if (e.key === "Enter" || e.key === " " || e.key === "ArrowDown") {
+      if (e.key === "Enter" || e.key === " " || e.key === "ArrowDown" || e.key === "ArrowUp") {
         e.preventDefault();
         setIsOpen(true);
       }
       return;
     }
 
-    if (e.key === "Escape") {
+    if (e.key === "Escape" || e.key === "Tab") {
       setIsOpen(false);
-      containerRef.current?.focus();
+      buttonRef.current?.focus();
       return;
     }
 
@@ -92,16 +104,24 @@ export function Select({
       e.preventDefault();
       const prev = currentIndex - 1 < 0 ? options.length - 1 : currentIndex - 1;
       onChange(options[prev].value);
+    } else if (e.key === "Home") {
+      e.preventDefault();
+      if (options.length > 0) onChange(options[0].value);
+    } else if (e.key === "End") {
+      e.preventDefault();
+      if (options.length > 0) onChange(options[options.length - 1].value);
     } else if (e.key === "Enter" || e.key === " ") {
       e.preventDefault();
       setIsOpen(false);
-      containerRef.current?.focus();
+      buttonRef.current?.focus();
     }
   };
 
   return (
     <div ref={containerRef} className={`relative ${className}`}>
       <button
+        ref={buttonRef}
+        id={id}
         type="button"
         role="combobox"
         aria-controls={listboxId}
@@ -110,7 +130,7 @@ export function Select({
         aria-label={ariaLabel}
         onClick={() => setIsOpen(!isOpen)}
         onKeyDown={handleKeyDown}
-        className="w-full flex items-center justify-between gap-2 px-3.5 py-2.5 min-h-[44px] rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 transition-colors bg-inherit border-inherit text-inherit font-inherit"
+        className="w-full flex items-center justify-between gap-2 px-3.5 py-2.5 min-h-[44px] rounded-xl outline-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary hover:border-primary/50 transition-colors bg-inherit border-inherit text-inherit font-inherit cursor-pointer"
         style={{ minWidth: 0 }}
       >
         <span className="truncate block">
@@ -138,7 +158,7 @@ export function Select({
               id={listboxId}
               role="listbox"
               tabIndex={-1}
-              aria-activedescendant={value}
+              aria-activedescendant={value ? `opt-${value}` : undefined}
               className="max-h-[min(15rem,calc(100dvh-2rem))] overflow-y-auto overscroll-contain py-1"
             >
               {options.map((option) => {
@@ -147,23 +167,25 @@ export function Select({
                   <li
                     key={option.value}
                     role="option"
-                    id={option.value}
+                    id={`opt-${option.value}`}
                     aria-selected={isSelected}
                     onClick={() => {
                       onChange(option.value);
                       setIsOpen(false);
+                      buttonRef.current?.focus();
                     }}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
                         e.preventDefault();
                         onChange(option.value);
                         setIsOpen(false);
+                        buttonRef.current?.focus();
                       }
                     }}
                     className={`flex items-center justify-between gap-2 px-4 py-3 min-h-[44px] cursor-pointer text-sm font-semibold transition-colors ${
                       isSelected
-                        ? "bg-secondary text-primary"
-                        : "text-foreground hover:bg-secondary hover:text-foreground"
+                        ? "bg-secondary text-primary font-bold"
+                        : "text-foreground hover:bg-secondary/70 hover:text-foreground"
                     }`}
                   >
                     <span className="truncate">{option.label}</span>

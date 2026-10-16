@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { pronunciationMatches } from "./pronunciationSearch";
 import { HelpDisclosure } from "../../shared/HelpDisclosure";
-import { ArrowLeft, Headphones, Search } from "lucide-react";
+import { ArrowLeft, ChevronDown, Headphones, Search } from "lucide-react";
 import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
 import { useI18n } from "../../../i18n";
@@ -288,24 +288,34 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
             className="border-b border-border pb-2"
             aria-label={t("pronunciation.chapterJumpLabel")}
           >
-            <label className="flex flex-wrap items-center gap-2 text-base font-bold sm:hidden">
+            <label className="flex flex-col gap-1.5 text-base font-bold sm:hidden">
               <span className="sr-only">{t("pronunciation.chapterJumpLabel")}</span>
-              <select
-                className="min-h-11 w-full rounded-xl border border-border bg-card px-3 text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
-                defaultValue=""
-                onChange={(event) => {
-                  document.getElementById(event.target.value)?.scrollIntoView({ block: "start" });
-                }}
-              >
-                <option value="" disabled>
-                  {t("lessonShell.chooseChapter")}
-                </option>
-                {chapters.map((chapter) => (
-                  <option key={chapter.start} value={`pronunciation-chapter-${chapter.index + 1}`}>
-                    {t(chapter.titleKey)}
+              <div className="relative">
+                <select
+                  className="min-h-[44px] w-full appearance-none rounded-xl border border-border bg-wp-card ps-3.5 pe-10 py-2.5 text-base font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary hover:border-primary/50 shadow-wp-xs transition-colors cursor-pointer"
+                  defaultValue=""
+                  onChange={(event) => {
+                    document.getElementById(event.target.value)?.scrollIntoView({ block: "start" });
+                  }}
+                >
+                  <option value="" disabled>
+                    {t("lessonShell.chooseChapter")}
                   </option>
-                ))}
-              </select>
+                  {chapters.map((chapter) => (
+                    <option
+                      key={chapter.start}
+                      value={`pronunciation-chapter-${chapter.index + 1}`}
+                      className="bg-wp-card text-foreground"
+                    >
+                      {t(chapter.titleKey)}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown
+                  className="pointer-events-none absolute end-3.5 top-1/2 -translate-y-1/2 size-4 text-muted-foreground"
+                  aria-hidden="true"
+                />
+              </div>
             </label>
             <div className="hidden flex-wrap gap-2 sm:flex">
               {chapters.map((chapter) => (

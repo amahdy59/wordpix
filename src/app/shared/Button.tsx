@@ -15,21 +15,23 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: "bg-primary text-primary-foreground shadow-wp-xs border border-transparent ",
+  primary:
+    "bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/95 shadow-wp-xs border border-transparent",
   secondary:
-    "bg-secondary text-primary hover:bg-secondary/80 border border-primary/25 shadow-wp-xs ",
+    "bg-secondary text-primary hover:bg-secondary/80 active:bg-secondary/90 border border-primary/25 shadow-wp-xs",
   outline:
     "bg-wp-card border border-border text-foreground hover:border-primary/50 hover:bg-muted/40 shadow-wp-xs active:bg-muted/60",
   ghost:
     "bg-transparent text-foreground hover:bg-muted/60 border border-transparent active:bg-muted/80",
-  destructive: "bg-destructive text-destructive-foreground shadow-wp-xs border border-transparent ",
+  destructive:
+    "bg-destructive text-destructive-foreground hover:bg-destructive/90 active:bg-destructive/95 shadow-wp-xs border border-transparent",
 };
 
 const sizeStyles: Record<ButtonSize, string> = {
-  sm: "min-h-[44px] px-3 py-2 text-sm gap-1.5 rounded-xl",
-  md: "min-h-[44px] px-3 py-2 text-base gap-2 rounded-xl",
-  lg: "min-h-[48px] px-4 py-2.5 text-base gap-2.5 rounded-2xl",
-  xl: "min-h-[56px] px-5 py-3 text-lg gap-3 rounded-2xl",
+  sm: "min-h-[44px] px-3.5 py-2 text-sm gap-1.5 rounded-xl",
+  md: "min-h-[44px] px-4 py-2.5 text-base gap-2 rounded-xl",
+  lg: "min-h-[48px] px-5 py-3 text-base gap-2.5 rounded-2xl",
+  xl: "min-h-[56px] px-6 py-3.5 text-lg gap-3 rounded-2xl",
 };
 
 /**

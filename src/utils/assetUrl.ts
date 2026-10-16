@@ -13,7 +13,10 @@ import vocabularySelections from "../app/generated/reviewedVocabularyImageSelect
  * Left alone: absolute URLs (a CDN, a data: URI) and paths that already carry
  * the base, so calling this twice is safe.
  */
-const PUBLIC_ASSET_BASE_URL = (import.meta.env?.VITE_ASSET_BASE_URL ?? "").replace(/\/+$/, "");
+const DEFAULT_CDN_BASE = "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev";
+const PUBLIC_ASSET_BASE_URL = (
+  import.meta.env?.VITE_ASSET_BASE_URL ?? (import.meta.env?.MODE === "test" ? "" : DEFAULT_CDN_BASE)
+).replace(/\/+$/, "");
 
 export function resolveAssetUrl(path: string): string {
   if (!path) return path;
@@ -72,11 +75,16 @@ export function resolveAssetUrl(path: string): string {
     return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
   }
 
+  // Unuploaded local asset replacements stay on the local origin until published to R2.
+  const LOCAL_ASSET_OVERRIDES = new Set(["word-images/human-body-head-and-face/crown.avif"]);
+
   // Media is uploaded to R2 under a stable prefix. Keep application assets
   // (for example /release-notes.json) on the Vite origin.
+  // Unuploaded local replacements remain on the local origin until published.
   if (
     (import.meta.env.MODE !== "test" &&
       PUBLIC_ASSET_BASE_URL &&
+      !LOCAL_ASSET_OVERRIDES.has(relative) &&
       /^(?:word-images|scene-images|phrase-images)\//.test(relative)) ||
     /^pronunciation\//.test(relative)
   ) {

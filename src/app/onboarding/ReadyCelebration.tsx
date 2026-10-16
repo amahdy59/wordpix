@@ -101,12 +101,12 @@ export function ReadyCelebration({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: flagshipWorld.id })}
-            className="w-full bg-wp-blue rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
-              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
+            className="w-full bg-primary rounded-xl py-4 font-sans font-bold text-primary-foreground text-base min-h-[52px]
+              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
               shadow-sm transition-all flex items-center justify-center gap-2"
           >
             <span>{t("onboarding.startLearningGroup")}</span>
-            <ArrowRight className="size-5" />
+            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
           </button>
         </footer>
 

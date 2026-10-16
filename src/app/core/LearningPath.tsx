@@ -242,7 +242,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
               returnTo: "learn",
             })
           }
-          className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transform-none lg:w-auto"
+          className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary hover:bg-primary/90 px-6 py-3 font-bold text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transform-none lg:w-auto transition-all cursor-pointer"
         >
           <BookOpen className="size-5" aria-hidden />
           <span>{t("learn.continueUnit")}</span>
@@ -255,7 +255,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         onClick={() => setShowPictureWorldPath((value) => !value)}
         aria-expanded={showPictureWorldPath}
         aria-controls="picture-world-path"
-        className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-2xl border border-border bg-wp-card p-4 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5"
+        className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-2xl border border-border bg-wp-card hover:bg-secondary/50 hover:border-primary/40 p-4 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 transition-colors cursor-pointer"
       >
         <span>
           <span className="block text-sm font-bold text-primary">{t("learn.routeBadge")}</span>
@@ -309,7 +309,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                     onClick={() => setExpandedPhase(isExpanded ? -1 : phaseIndex)}
                     aria-expanded={isExpanded}
                     aria-controls={`path-phase-content-${phaseIndex}`}
-                    className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-xl px-2 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-xl px-2 text-start hover:bg-secondary/60 transition-colors cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
                     <span>
                       <span

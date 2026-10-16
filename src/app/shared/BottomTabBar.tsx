@@ -41,7 +41,7 @@ export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: 
                 triggerHaptic("selection");
                 dispatch({ type: "GO", to: id });
               }}
-              className={`group flex min-w-[56px] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl min-h-[56px] py-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:transition-colors ${
+              className={`group flex min-w-[56px] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl min-h-[56px] py-1 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer motion-safe:transition-colors ${
                 isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"
               }`}
             >
