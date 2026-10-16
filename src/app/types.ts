@@ -77,6 +77,7 @@ export type Screen =
   | { id: "practice" }
   | { id: "review" }
   | { id: "profile" }
+  | { id: "settings" }
   | { id: "release-notes" }
   | {
       id: "lesson-entry";
@@ -142,6 +143,7 @@ export type GoTarget =
   | "hadith-curriculum"
   | "conversation-curriculum"
   | "business-curriculum"
+  | "settings"
   | "release-notes";
 
 export type Action =

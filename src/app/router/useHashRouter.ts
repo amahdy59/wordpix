@@ -47,6 +47,10 @@ const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> 
   "#/practice": { title: "WordPix — Skill Practice", getScreen: () => ({ id: "practice" }) },
   "#/review": { title: "WordPix — Daily Review", getScreen: () => ({ id: "review" }) },
   "#/profile": { title: "WordPix — Learner Profile", getScreen: () => ({ id: "profile" }) },
+  "#/settings": {
+    title: "WordPix — Settings & Accessibility",
+    getScreen: () => ({ id: "settings" }),
+  },
   "#/release-notes": {
     title: "WordPix — Release Notes",
     getScreen: () => ({ id: "release-notes" }),
@@ -130,6 +134,8 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "practice") return { hash: "#/practice", title: "WordPix — Skill Practice" };
   if (screen.id === "review") return { hash: "#/review", title: "WordPix — Daily Review" };
   if (screen.id === "profile") return { hash: "#/profile", title: "WordPix — Learner Profile" };
+  if (screen.id === "settings")
+    return { hash: "#/settings", title: "WordPix — Settings & Accessibility" };
   if (screen.id === "release-notes")
     return { hash: "#/release-notes", title: "WordPix — Release Notes" };
   if (screen.id === "lesson-entry") {

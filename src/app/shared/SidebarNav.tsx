@@ -1,13 +1,9 @@
-import { lazy, memo, Suspense, useState } from "react";
+import { memo } from "react";
 import { BookOpen, Sliders, Keyboard } from "lucide-react";
 import type { TabId, Action } from "../types";
 import { ThemeToggle } from "./ThemeToggle";
 import { TABS } from "./BottomTabBar";
 import { useI18n } from "../context/I18nContext";
-
-const SettingsModal = lazy(() =>
-  import("../core/SettingsModal").then((m) => ({ default: m.SettingsModal }))
-);
 
 interface Props {
   activeTab: TabId;
@@ -20,7 +16,6 @@ export const SidebarNav = memo(function SidebarNav({
   dispatch,
   onOpenShortcuts,
 }: Props) {
-  const [showSettingsModal, setShowSettingsModal] = useState(false);
   const { t } = useI18n();
 
   return (
@@ -29,12 +24,6 @@ export const SidebarNav = memo(function SidebarNav({
                  w-[240px] shrink-0 h-dvh sticky top-0 start-0 overflow-y-auto py-5 justify-between select-none z-30"
       aria-label={t("nav.sidebarLabel")}
     >
-      {showSettingsModal && (
-        <Suspense fallback={null}>
-          <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
-        </Suspense>
-      )}
-
       {/* Top Brand Logo */}
       <div className="flex flex-col items-stretch px-6 gap-6">
         <button
@@ -107,7 +96,7 @@ export const SidebarNav = memo(function SidebarNav({
 
         <button
           type="button"
-          onClick={() => setShowSettingsModal(true)}
+          onClick={() => dispatch({ type: "GO", to: "settings" })}
           title={t("settings.title")}
           aria-label={t("settings.title")}
           className="h-11 w-full px-4 rounded-xl border border-transparent flex items-center justify-start text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary group"

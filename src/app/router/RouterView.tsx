@@ -36,6 +36,9 @@ const ReleaseNotesPage = lazy(() =>
 const SkillExerciseHub = lazy(() =>
   import("../core/SkillExerciseHub").then((m) => ({ default: m.SkillExerciseHub }))
 );
+const SettingsPage = lazy(() =>
+  import("../core/SettingsPage").then((m) => ({ default: m.SettingsPage }))
+);
 
 // Lazy-loaded lesson and exercise screens
 const ReviewMasteryReview = lazy(() =>
@@ -427,6 +430,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     if (state.id === "practice") return <SkillExerciseHub dispatch={dispatch} />;
     if (state.id === "review") return <ReviewMasteryReview dispatch={dispatch} />;
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
+    if (state.id === "settings") return <SettingsPage dispatch={dispatch} />;
     if (state.id === "release-notes") return <ReleaseNotesPage dispatch={dispatch} />;
     if (state.id === "lesson-entry")
       return (
@@ -561,7 +565,9 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
                 ? "practice"
                 : state.id === "explore"
                   ? "learn"
-                  : state.id) as TabId
+                  : state.id === "settings"
+                    ? "profile"
+                    : state.id) as TabId
             }
             dispatch={dispatch}
           >

@@ -17,6 +17,7 @@ export const TABBED_IDS: ReadonlySet<string> = new Set([
   "review",
   "skill-hub",
   "profile",
+  "settings",
 ]);
 
 export const STORAGE_KEY = "wordpix:learner-state:v4";

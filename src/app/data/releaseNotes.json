@@ -1,14 +1,49 @@
 {
-  "version": "0.1.47",
+  "version": "0.1.48",
   "notes": [
-    "Harmonized application margins, sidebar alignment, and fluid layout gutters across all primary learning tabs.",
-    "Unified modal elevation shadows, landmark semantics, and typographic line clearance for bilingual English and Arabic reading."
+    "Re-architected the Settings modal into a dedicated, searchable Settings and Accessibility page with instant keyboard shortcuts.",
+    "Introduced categorized preference navigation, live interactive appearance previews, and reinforced data reset confirmations."
   ],
   "notesAr": [
-    "توحيد الهوامش ومحاذاة الشريط الجانبي والتخطيط الانسيابي عبر جميع تبويبات التعلم الرئيسية.",
-    "تحسين ظلال النوافذ المنبثقة وهيكلية المعالم والمسافات الرأسية للحروف لضمان وضوح النصوص الإنجليزية والعربية."
+    "تحويل قائمة الإعدادات إلى صفحة كاملة مخصصة وقابلة للبحث الفوري مع اختصارات لوحة المفاتيح.",
+    "إضافة تصفية الإعدادات حسب الفئات، ومعاينة حية وفورية لتأثير الخط والتباين، مع تأكيد أمان إضافي لإعادة ضبط البيانات."
   ],
   "releases": [
+    {
+      "id": "0.1.48",
+      "version": "0.1.48",
+      "date": "2026-10-16",
+      "title": {
+        "en": "Dedicated Accessible Settings Page, Searchable Preferences, and Live Display Preview",
+        "ar": "صفحة إعدادات مخصصة وشاملة، والبحث الفوري في التفضيلات، ومعاينة المظهر الحية"
+      },
+      "changes": [
+        {
+          "id": "settings-page-redesign",
+          "category": "added",
+          "en": "Transformed the monolithic settings modal into a dedicated page accessible via sidebar, mobile header, and direct #/settings route with full WCAG 2.2 AAA keyboard and focus navigation.",
+          "ar": "تحويل نافذة الإعدادات المنبثقة إلى صفحة مخصصة يمكن الوصول إليها من الشريط الجانبي والترويسة والمسار المباشر #/settings مع دعم كامل لإمكانية الوصول والتنقل بلوحة المفاتيح."
+        },
+        {
+          "id": "settings-live-search",
+          "category": "added",
+          "en": "Added real-time searchable settings filtering by keyword and category pills with debounced input and an accessible aria-live status announcer.",
+          "ar": "إضافة ميزة البحث الفوري في الإعدادات حسب الكلمات المفتاحية وفئات التفضيلات مع إعلانات صوتية فورية لقارئات الشاشة."
+        },
+        {
+          "id": "settings-live-preview",
+          "category": "added",
+          "en": "Introduced a live interactive preview card demonstrating text scaling, numeral systems, theme modes, and speech rate in a sample vocabulary learning card.",
+          "ar": "إضافة بطاقة معاينة حية وتفاعلية توضح تأثير تكبير النصوص ونظام الأرقام والمظهر وسرعة النطق فورياً على بطاقة المفردات."
+        },
+        {
+          "id": "settings-safe-data-reset",
+          "category": "improved",
+          "en": "Reinforced the local progress reset action with a two-step confirmation pattern to prevent accidental erasure of study streaks and spaced repetition progress.",
+          "ar": "تعزيز أمان إعادة ضبط البيانات المحلية بنمط تأكيد ثنائي الخطوات لتجنب المسح العرضي لسجلات التكرار المتباعد والتتابع اليومي."
+        }
+      ]
+    },
     {
       "id": "0.1.47",
       "version": "0.1.47",

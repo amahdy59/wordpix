@@ -1,5 +1,5 @@
 import { HelpDisclosure } from "../shared/HelpDisclosure";
-import { lazy, memo, Suspense, useMemo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import {
   Flame,
   Sparkles,
@@ -29,10 +29,6 @@ import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { useI18n } from "../context/I18nContext";
 import { Button, EmptyState, PageContainer, PageHeader, Surface, ProgressBar } from "../shared";
 import { summarizeSkillMastery, type MasteryDimension } from "../../features/gamification/sm2";
-
-const SettingsModal = lazy(() =>
-  import("./SettingsModal").then((m) => ({ default: m.SettingsModal }))
-);
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -162,8 +158,6 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
     },
   ];
 
-  const [showSettings, setShowSettings] = useState(false);
-
   return (
     <PageContainer size="wide">
       <motion.div
@@ -173,11 +167,6 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
         className="flex w-full flex-col gap-4 sm:gap-5"
       >
         {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
-        {showSettings && (
-          <Suspense fallback={null}>
-            <SettingsModal isOpen onClose={() => setShowSettings(false)} />
-          </Suspense>
-        )}
 
         <PageHeader
           variant="plain"
@@ -244,7 +233,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
               <Button
                 variant="outline"
                 size="sm"
-                onClick={() => setShowSettings(true)}
+                onClick={() => dispatch({ type: "GO", to: "settings" })}
                 aria-label={t("settings.title")}
                 iconLeft={<Sliders className="size-4" aria-hidden />}
               >
@@ -485,7 +474,11 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
           <h2 id="profile-settings-heading" className="text-lg font-bold text-foreground">
             {t("settings.title")}
           </h2>
-          <Button variant="outline" className="mt-2" onClick={() => setShowSettings(true)}>
+          <Button
+            variant="outline"
+            className="mt-2"
+            onClick={() => dispatch({ type: "GO", to: "settings" })}
+          >
             {t("settings.openSettings")}
           </Button>
         </section>

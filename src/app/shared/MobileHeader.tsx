@@ -1,12 +1,8 @@
-import { lazy, memo, Suspense, useState } from "react";
+import { memo } from "react";
 import { BookOpen, Sliders } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import type { Action } from "../types";
 import { useI18n } from "../context/I18nContext";
-
-const SettingsModal = lazy(() =>
-  import("../core/SettingsModal").then((m) => ({ default: m.SettingsModal }))
-);
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -15,21 +11,14 @@ interface Props {
 
 /**
  * A native-feeling mobile sticky header.
- * Provides access to the brand logo, Theme toggle, and Settings modal
+ * Provides access to the brand logo, Theme toggle, and Settings page
  * (which are otherwise trapped in the desktop-only SidebarNav).
  */
 export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = false }: Props) {
-  const [showSettingsModal, setShowSettingsModal] = useState(false);
   const { t } = useI18n();
 
   return (
     <>
-      {showSettingsModal && (
-        <Suspense fallback={null}>
-          <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
-        </Suspense>
-      )}
-
       {/*
         The safe-area inset is folded into the height rather than bought with
         `box-content`.
@@ -73,7 +62,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = 
 
           <button
             type="button"
-            onClick={() => setShowSettingsModal(true)}
+            onClick={() => dispatch({ type: "GO", to: "settings" })}
             title={t("settings.title")}
             aria-label={t("settings.title")}
             className="size-10 min-h-[44px] min-w-[44px] rounded-full flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
