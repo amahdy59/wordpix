@@ -62,6 +62,16 @@ export function resolveAssetUrl(path: string): string {
     return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
   }
 
+  // Authentic conversational scenario audio and WebVTT subtitle files are hosted
+  // on Cloudflare R2 under assets/audio/scenarios/...
+  if (
+    import.meta.env.MODE !== "test" &&
+    PUBLIC_ASSET_BASE_URL &&
+    /^assets\/audio\/scenarios\//.test(relative)
+  ) {
+    return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
+  }
+
   // Media is uploaded to R2 under a stable prefix. Keep application assets
   // (for example /release-notes.json) on the Vite origin.
   if (

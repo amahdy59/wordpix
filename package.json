@@ -46,6 +46,7 @@
     "audio:plan": "node scripts/generate_audio.cjs --dry-run",
     "audio:subscription": "node scripts/check_elevenlabs_subscription.mjs",
     "audio:reconcile": "node scripts/generate_audio.cjs --reconcile",
+    "assets:scenarios:upload": "node scripts/upload_scenario_audio_to_r2.cjs",
     "build": "node scripts/build_release_notes.mjs && node scripts/build_group_thumbnails.mjs && node scripts/shard_specialist_catalogs.mjs && node scripts/shard_learning_content.mjs && vite build",
     "check:bundle": "node scripts/check_bundle_budget.mjs",
     "check:content-shards": "node scripts/shard_learning_content.mjs --check",

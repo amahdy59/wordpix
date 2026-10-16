@@ -1,14 +1,49 @@
 {
-  "version": "0.1.45",
+  "version": "0.1.46",
   "notes": [
-    "Added character speech synthesis fallback for scenario dialogue audio ensuring 100% resilient playback on static hosting and offline.",
-    "Integrated video context scenarios directly into lesson views (LearnArea) and left panel navigation with clear section attribution."
+    "Synchronized authentic scenario audio recordings and WebVTT subtitles to Cloudflare R2 cloud hosting for high-fidelity native voice playback on the live website.",
+    "Integrated CDN asset routing and accessible subtitle tracks into the scenario media player."
   ],
   "notesAr": [
-    "إضافة دعم أصوات الكلام الاصطناعية لشخصيات سيناريوهات الاستماع لضمان تشغيل الصوت في جميع البيئات والوضع غير المتصل.",
-    "دمج سيناريوهات سياق الفيديو مباشرة داخل شاشات الدروس ولوحة التنقل الجانبية مع توضيح القسم والدرس التابع له."
+    "مزامنة تسجيلات السيناريوهات الصوتية الأصلية وملفات الترجمة إلى استضافة Cloudflare R2 السحابية لتشغيل أصوات المتحدثين بجودة عالية على الموقع المباشر.",
+    "ربط توجيه مسارات الوسائط بشبكة CDN وإدراج مسارات الترجمة النصية الشاملة في مشغل السيناريوهات."
   ],
   "releases": [
+    {
+      "id": "0.1.46",
+      "version": "0.1.46",
+      "date": "2026-10-16",
+      "title": {
+        "en": "Cloud Media Hosting for Scenario Audio and Accessible Subtitles",
+        "ar": "استضافة وسائط السيناريوهات الصوتية سحابياً والترجمة النصية الشاملة"
+      },
+      "changes": [
+        {
+          "id": "scenario-cloud-r2-hosting",
+          "category": "improved",
+          "en": "Synchronized authentic scenario audio recordings and WebVTT subtitle files to Cloudflare R2 edge storage, delivering high-fidelity native speaker voice audio to website learners.",
+          "ar": "مزامنة كافة تسجيلات السيناريوهات الصوتية وملفات الترجمة إلى استضافة Cloudflare R2 السحابية لتشغيل أصوات المتحدثين الأصليين بجودة عالية على الموقع."
+        },
+        {
+          "id": "scenario-asset-cdn-routing",
+          "category": "improved",
+          "en": "Configured production asset URL resolver to route scenario media and subtitle paths directly to the public CDN edge with instant graceful fallback.",
+          "ar": "تهيئة نظام توجيه مسارات الوسائط لتشغيل ملفات السيناريوهات والترجمة من شبكة توصيل المحتوى CDN تلقائياً."
+        },
+        {
+          "id": "scenario-vtt-subtitles",
+          "category": "added",
+          "en": "Equipped the scenario media player with automated WebVTT subtitle track integration and improved audio preloading for seamless accessibility compliance (WCAG 2.2 AAA).",
+          "ar": "تزويد مشغل السيناريوهات بمسار ترجمة WebVTT تلقائي وتحسين التحميل المسبق للصوت لضمان التوافق مع معايير إمكانية الوصول WCAG 2.2 AAA."
+        },
+        {
+          "id": "scenario-r2-upload-tooling",
+          "category": "added",
+          "en": "Created dedicated, strictly additive scenario asset synchronization tool with automated integrity verification and progress monitoring.",
+          "ar": "إنشاء أداة مزامنة سحابية مخصصة وآمنة تماماً لرفع وسائط السيناريوهات مع التحقق التلقائي من سلامة الروابط."
+        }
+      ]
+    },
     {
       "id": "0.1.45",
       "version": "0.1.45",

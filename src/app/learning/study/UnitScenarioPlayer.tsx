@@ -122,17 +122,37 @@ export function UnitScenarioPlayer({
     }
   }, []);
 
-  const handleSelectScenario = (idx: number) => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
+  const handleSelectScenario = useCallback(
+    (idx: number) => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+      stopSynthesizedPlayback();
+      setSelectedIdx(idx);
+      setIsPlaying(false);
+      setCurrentTime(0);
+      setActiveClipIndex(null);
+      setAudioMode("native");
+    },
+    [stopSynthesizedPlayback]
+  );
+
+  // Sync selected scenario if initialLessonId prop changes dynamically
+  const [prevLessonId, setPrevLessonId] = useState(initialLessonId);
+  if (initialLessonId !== prevLessonId) {
+    setPrevLessonId(initialLessonId);
+    if (initialLessonId) {
+      const idx = scenarios.findIndex((s) => s.lessonId === initialLessonId);
+      if (idx !== -1 && idx !== selectedIdx) {
+        setSelectedIdx(idx);
+        setIsPlaying(false);
+        setCurrentTime(0);
+        setActiveClipIndex(null);
+        setAudioMode("native");
+      }
     }
-    stopSynthesizedPlayback();
-    setSelectedIdx(idx);
-    setIsPlaying(false);
-    setCurrentTime(0);
-    setActiveClipIndex(null);
-  };
+  }
 
   // Handle rate change
   useEffect(() => {
@@ -145,6 +165,13 @@ export function UnitScenarioPlayer({
   const masterAudioUrl = useMemo(() => {
     if (!activeScenario?.masterAudioRelative) return "";
     return resolveAssetUrl(activeScenario.masterAudioRelative);
+  }, [activeScenario]);
+
+  // Master VTT subtitle track URL for accessible captions
+  const vttUrl = useMemo(() => {
+    if (!activeScenario?.masterAudioRelative) return "";
+    const vttRelative = activeScenario.masterAudioRelative.replace(/_full\.mp3$/, ".vtt");
+    return resolveAssetUrl(vttRelative);
   }, [activeScenario]);
 
   // Identify which line is active during master playback
@@ -454,7 +481,7 @@ export function UnitScenarioPlayer({
         onError={handleAudioError}
         preload="metadata"
       >
-        <track kind="captions" />
+        <track kind="captions" src={vttUrl} srcLang="en" label="English Captions" default />
       </audio>
 
       {/* Header & Scenario Switcher */}

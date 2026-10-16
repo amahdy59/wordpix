@@ -680,6 +680,9 @@ export function StudyShell({
                     </header>
                     <UnitScenarioPlayer
                       scenarios={unitScenarios}
+                      initialLessonId={
+                        activeNode?.id?.startsWith(unit.id) ? activeNode.id : undefined
+                      }
                       onInspectWord={(wordText) => {
                         const normalized = wordText.trim().toLowerCase();
                         const found = unit.wordIds.find((id) => id.toLowerCase() === normalized);
