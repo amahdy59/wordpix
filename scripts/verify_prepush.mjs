@@ -32,10 +32,20 @@ const steps = [
     description: "Checking React hooks and accessibility lints",
   },
   {
+    name: "Full Audio Coverage & Manifest Integrity",
+    command: "pnpm run audio:audit:all",
+    description: "Auditing 100% audio coverage across all 4 tracks and 200 vocabulary units",
+  },
+  {
     name: "Image Generation Safety Guards",
     command:
       "node --test scripts/tests/check-generation-preflight.mjs scripts/tests/check-gemini-scene-batch.mjs scripts/tests/check-image-review-policy.mjs",
     description: "Checking review digests, explicit holds, prompt integrity and no-text policy",
+  },
+  {
+    name: "Curriculum & Scenario Shard Consistency",
+    command: "pnpm run check:content-shards && pnpm run check:scenario-shards",
+    description: "Verifying curriculum and scenario data shards match source catalogues",
   },
   {
     name: "Production Bundle Build",

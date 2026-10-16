@@ -1,12 +1,47 @@
 {
-  "version": "0.1.49",
+  "version": "0.1.50",
   "notes": [
-    "Restored studio-grade phoneme-constrained audio for pronunciation targets, achieved 100% audio coverage across all 4 learning tracks, and enhanced speaking practice accessibility."
+    "Added automated pre-push audio coverage gates, enhanced speaking practice with instant silence auto-trimming, and sharded curriculum scenarios into lightweight data partitions."
   ],
   "notesAr": [
-    "استعادة التسجيلات الصوتية عالية الدقة للأصوات الحساسة مع ضمان تغطية صوتية بنسبة 100% عبر كافة المسارات، وتعزيز إتاحة تمارين تسجيل الصوت والتحدث."
+    "دمج الفحص الصوتي الشامل ضمن بوابات النشر المسبق، وتوفير قص فوري تلقائي للصمت في تسجيلات التحدث، وتقسيم حوارات المنهج إلى أجزاء بيانات سريعة وخفيفة."
   ],
   "releases": [
+    {
+      "id": "0.1.50",
+      "version": "0.1.50",
+      "date": "2026-10-16",
+      "title": {
+        "en": "Pre-Push Audio Hardening, Speaking Silence Trimming, and Dialogue Sharding",
+        "ar": "تعزيز بوابات التحقق الصوتي، والقص التلقائي لصمت التسجيلات، وتقسيم حوارات المنهج"
+      },
+      "changes": [
+        {
+          "id": "ci-prepush-audio-gate",
+          "category": "improved",
+          "en": "Integrated the comprehensive audio coverage and integrity audit directly into the automated pre-push pipeline to continuously prevent missing media assets from entering main.",
+          "ar": "دمج التدقيق الصوتي الشامل ضمن بوابات النشر المسبق الآلية لضمان عدم وصول أي نقص في الملفات الصوتية إلى الفرع الرئيسي."
+        },
+        {
+          "id": "speaking-silence-auto-trimming",
+          "category": "improved",
+          "en": "Engineered automatic leading and trailing silence trimming for learner recordings using the Web Audio API with lossless PCM WAV encoding, eliminating dead air for immediate playback.",
+          "ar": "تطوير ميزة القص التلقائي للصمت في بداية ونهاية تسجيلات المتعلم باستخدام واجهة Web Audio API وإعادة الترميز الدقيق لتوفير تشغيل فوري وسلس دون فترات انتظار."
+        },
+        {
+          "id": "scenario-data-sharding",
+          "category": "improved",
+          "en": "Partitioned the monolithic 1.59 MB curriculum scenarios dataset into four bounded 50-unit shards, eliminating bundle size warnings and lowering peak mobile memory usage.",
+          "ar": "تقسيم حزمة حوارات المنهج الضخمة (1.59 ميغابايت) إلى أربعة أجزاء مستقلة سعة كل منها 50 وحدة، مما أزال تحذيرات حجم الحزم وخفّض استهلاك الذاكرة على الهواتف."
+        },
+        {
+          "id": "script-catalog-hygiene",
+          "category": "fixed",
+          "en": "Pruned obsolete package script aliases and added automated shard-consistency validators to the build verification ladder.",
+          "ar": "تنظيف الأوامر البرمجية القديمة وغير المستخدمة وإضافة أدوات تحقق آلي لضمان اتساق أجزاء البيانات ضمن سلسلة البناء."
+        }
+      ]
+    },
     {
       "id": "0.1.49",
       "version": "0.1.49",

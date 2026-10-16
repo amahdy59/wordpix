@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { trimAudioSilence } from "./audioTrimmer";
 
 export type PrivateRecordingStatus =
   "unsupported" | "idle" | "requesting" | "recording" | "ready" | "denied" | "error";
@@ -94,16 +95,18 @@ export function usePrivateRecording({
         stopTracks();
         setStatus("error");
       };
-      recorder.onstop = () => {
+      recorder.onstop = async () => {
         if (generation !== generationRef.current) return;
         stopTracks();
         if (chunksRef.current.length === 0) {
           setStatus("error");
           return;
         }
-        const blob = new Blob(chunksRef.current, {
+        const rawBlob = new Blob(chunksRef.current, {
           type: recorder.mimeType || "audio/webm",
         });
+        const blob = await trimAudioSilence(rawBlob);
+        if (generation !== generationRef.current) return;
         const url = URL.createObjectURL(blob);
         urlRef.current = url;
         setRecordingBlob(blob);

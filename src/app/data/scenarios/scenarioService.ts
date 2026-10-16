@@ -1,4 +1,7 @@
-import scenariosData from "./curriculumScenarios.json";
+import shard001To050 from "./curriculumScenarios.units-001-050.json";
+import shard051To100 from "./curriculumScenarios.units-051-100.json";
+import shard101To150 from "./curriculumScenarios.units-101-150.json";
+import shard151To200 from "./curriculumScenarios.units-151-200.json";
 
 export interface ScenarioLine {
   speaker: string;
@@ -19,7 +22,12 @@ export interface ScenarioLesson {
   lines: ScenarioLine[];
 }
 
-const allScenarios: ScenarioLesson[] = scenariosData as ScenarioLesson[];
+const allScenarios: ScenarioLesson[] = [
+  ...shard001To050,
+  ...shard051To100,
+  ...shard101To150,
+  ...shard151To200,
+] as ScenarioLesson[];
 
 const scenariosByUnit = new Map<string, ScenarioLesson[]>();
 const scenariosByLesson = new Map<string, ScenarioLesson>();

@@ -185,6 +185,7 @@ test("practice keyboard keeps focus on the selected answer during feedback", asy
   const answers = page.locator('#study-content [role="group"]');
   await expect(answers).toBeVisible({ timeout: 30_000 });
   const answer = answers.getByRole("button").first();
+  await expect(answer).toBeVisible({ timeout: 10_000 });
   await answer.focus();
   await expect(answer).toBeFocused();
   await answer.press("Enter");

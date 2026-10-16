@@ -221,8 +221,17 @@ export default defineConfig(async () => {
             if (id.includes("curriculumAudioManifest")) {
               return "curriculum-audio-manifest";
             }
-            if (id.includes("curriculumScenarios")) {
-              return "curriculum-scenarios";
+            if (id.includes("curriculumScenarios.units-001-050")) {
+              return "curriculum-scenarios-001-050";
+            }
+            if (id.includes("curriculumScenarios.units-051-100")) {
+              return "curriculum-scenarios-051-100";
+            }
+            if (id.includes("curriculumScenarios.units-101-150")) {
+              return "curriculum-scenarios-101-150";
+            }
+            if (id.includes("curriculumScenarios.units-151-200")) {
+              return "curriculum-scenarios-151-200";
             }
             if (id.includes("src/i18n/")) {
               // en.json ships synchronously (default + fallback locale); ar.json
