@@ -31,11 +31,11 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const { t } = useI18n();
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
   const [desktopDetails, setDesktopDetails] = useState<boolean>(false);
-  const [showDetails, setShowDetails] = useState<boolean | null>(null);
+  const [showDetails, setShowDetails] = useState<boolean>(false);
   const detailsTriggerRef = useRef<HTMLButtonElement>(null);
   const detailsCloseRef = useRef<HTMLButtonElement>(null);
   const [bilingual, setBilingual] = useState(true);
-  const [continuous, setContinuous] = useState(true);
+  const [continuous, setContinuous] = useState(false);
   const [playbackError, setPlaybackError] = useState(false);
   const [showExit, setShowExit] = useState(false);
   const { lexicon, lexiconFailed, retryLexicon } = useLexicon(
@@ -82,13 +82,13 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     update();
     const handleChange = () => {
       update();
-      setShowDetails(null);
+      setShowDetails(false);
     };
     query.addEventListener("change", handleChange);
     return () => query.removeEventListener("change", handleChange);
   }, []);
 
-  const isDetailsVisible = showDetails ?? desktopDetails;
+  const isDetailsVisible = showDetails;
 
   usePrefetchImage(isLastWord ? null : words[activeWordIndex + 1]);
 
@@ -97,16 +97,16 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     speak(currentWord.label);
   }, [speak, currentWord.label]);
 
-  // Autoplay audio on card mount and whenever the active word changes
+  // Play audio when continuous mode is active or when word changes in continuous mode
   useEffect(() => {
-    if (currentWord?.label) {
+    if (continuous && currentWord?.label) {
       speak(currentWord.label);
     }
     return () => {
       if (advanceTimer.current) clearTimeout(advanceTimer.current);
       stop();
     };
-  }, [activeWordIndex, currentWord?.label, speak, stop]);
+  }, [continuous, activeWordIndex, currentWord?.label, speak, stop]);
 
   const pausePlayback = useCallback(() => {
     setContinuous(false);
@@ -132,8 +132,14 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
       stop();
       setPlaybackError(false);
       setActiveWordIndex(nextIndex);
+      if (!continuous) {
+        const nextWord = words[nextIndex];
+        if (nextWord) {
+          speak(nextWord.label);
+        }
+      }
     },
-    [activeWordIndex, stop, words.length]
+    [activeWordIndex, continuous, speak, stop, words]
   );
 
   const group = useMemo(
@@ -354,9 +360,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             onTouchEnd={handleTouchEnd}
             className={`w-full min-w-0 grid grid-cols-1 ${
               desktopDetails && isDetailsVisible
-                ? "md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,1.5fr)_minmax(16rem,0.9fr)_minmax(20rem,1fr)]"
-                : "md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]"
-            } gap-4 md:gap-6 xl:gap-0 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-wp-md relative`}
+                ? "lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)] xl:grid-cols-[minmax(0,1.5fr)_minmax(16rem,0.9fr)_minmax(20rem,1fr)]"
+                : "lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)]"
+            } gap-4 lg:gap-0 bg-wp-card border border-border rounded-2xl sm:rounded-3xl p-4 shadow-wp-md relative`}
           >
             <button
               type="button"

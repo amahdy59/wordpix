@@ -40,8 +40,8 @@ it("renders modern command searchbar with shortcut hint and exposed level chips"
   const searchbox = screen.getByRole("searchbox");
   expect(searchbox).toBeInTheDocument();
 
-  // Exposed CEFR level chips are directly available without opening an accordion
-  const stageGroup = screen.getByRole("radiogroup", { name: /Filter by CEFR stage/i });
+  // Level filter chips in collection navigation
+  const stageGroup = screen.getByRole("radiogroup", { name: /Filter vocabulary collections/i });
   expect(stageGroup).toBeInTheDocument();
   expect(within(stageGroup).getByRole("radio", { name: /All/i })).toBeInTheDocument();
   expect(within(stageGroup).getByRole("radio", { name: /Pre-A1/i })).toBeInTheDocument();

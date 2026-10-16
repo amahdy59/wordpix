@@ -113,6 +113,7 @@ describe("Listen and repeat mobile focus", () => {
       />
     );
     const trigger = screen.getByRole("button", { name: "Word details" });
+    fireEvent.click(trigger);
     const panel = await screen.findByRole("complementary", { name: /Details for/i });
     expect(panel).toHaveClass("overflow-hidden");
     expect(panel.querySelector(".overflow-y-auto")).not.toBeNull();
@@ -124,7 +125,7 @@ describe("Listen and repeat mobile focus", () => {
     window.matchMedia = original;
   });
 
-  it("plays audio automatically on card load and allows replay via listen button", () => {
+  it("waits for the learner to request audio", () => {
     render(
       <ExerciseListenRepeat
         step={1}
@@ -134,14 +135,7 @@ describe("Listen and repeat mobile focus", () => {
       />
     );
 
-    // Initial card autoplays audio
-    expect(audio.speak).toHaveBeenCalledWith(BEDROOM_VOCABULARY[0].label);
-
-    // Allows replay via listen button when in manual mode
-    audio.speak.mockClear();
-    // Stop continuous mode
-    fireEvent.click(screen.getByRole("button", { name: /Stop audio pronunciation/i }));
-    // Now in manual mode, clicking listen plays again
+    expect(audio.speak).not.toHaveBeenCalled();
     fireEvent.click(screen.getByRole("button", { name: /Play audio pronunciation/i }));
     expect(audio.speak).toHaveBeenCalledWith(BEDROOM_VOCABULARY[0].label);
   });
@@ -206,7 +200,7 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      // Continuous is active by default; initial word was spoken
+      fireEvent.click(screen.getByRole("radio", { name: "Continuous" }));
       expect(audio.speak).toHaveBeenLastCalledWith(BEDROOM_VOCABULARY[0].label);
       act(() => {
         audio.ended?.();
@@ -235,7 +229,7 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      // Continuous is active by default
+      fireEvent.click(screen.getByRole("radio", { name: "Continuous" }));
       act(() => audio.ended?.());
       fireEvent.click(screen.getByRole("button", { name: "Word details" }));
       act(() => vi.advanceTimersByTime(5000));
@@ -276,7 +270,7 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      // Continuous is active by default
+      fireEvent.click(screen.getByRole("radio", { name: "Continuous" }));
       act(() => audio.ended?.());
       fireEvent.click(screen.getByRole("button", { name: /Stop audio pronunciation/ }));
       act(() => vi.advanceTimersByTime(5000));
@@ -297,12 +291,8 @@ describe("Listen and repeat mobile focus", () => {
       />
     );
 
-    // Initial card autoplays on load
-    expect(audio.speak).toHaveBeenCalledWith(BEDROOM_VOCABULARY[0].label);
-
-    // Switch to manual mode
-    fireEvent.click(screen.getByRole("radio", { name: "Manual" }));
-    audio.speak.mockClear();
+    // Initial card does not autoplay on load in manual mode
+    expect(audio.speak).not.toHaveBeenCalled();
 
     // Advancing via next button autoplays the newly active word
     fireEvent.click(screen.getByRole("button", { name: "Next word" }));

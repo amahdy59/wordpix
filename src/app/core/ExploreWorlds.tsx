@@ -370,6 +370,11 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
     }
   };
 
+  const activeStage = useMemo(
+    () => CEFR_STAGES.find((s) => s.id === selectedStageId),
+    [selectedStageId]
+  );
+
   const hasActiveFilters =
     searchQuery.trim() !== "" || selectedStageId !== "all" || masteryFilter !== "all";
 
@@ -473,88 +478,129 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
             </div>
           </div>
 
-          {/* Row 1: CEFR Stage Level Filter Chips */}
-          <div
-            role="radiogroup"
-            aria-label={t("explore.filterStageAria")}
-            className="flex items-center gap-1.5 overflow-x-auto pb-0.5 pt-0.5 no-scrollbar scroll-smooth"
-          >
-            <FilterChip
-              label={t("explore.filterAll")}
-              selected={selectedStageId === "all"}
-              selectionMode="single"
-              onToggle={() => setSelectedStageId("all")}
-              count={allCurriculumUnits.length}
-              size="sm"
-            />
-            {CEFR_STAGES.map((stage) => {
-              const isSelected = selectedStageId === stage.id;
-              const count = stage.end - stage.start;
-              return (
+          {/* Collapsible Filter Disclosure */}
+          <details className="group rounded-2xl border border-border bg-wp-card p-3">
+            <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-2 rounded-xl px-1 font-bold text-sm text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
+              <div className="flex items-center gap-2 flex-wrap min-w-0">
+                <span>{t("explore.filterOptions")}</span>
+                {(selectedStageId !== "all" || masteryFilter !== "all") && (
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {selectedStageId !== "all" && (
+                      <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
+                        {activeStage?.label ?? selectedStageId}
+                      </span>
+                    )}
+                    {masteryFilter !== "all" && (
+                      <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-semibold text-primary border border-primary/20">
+                        {masteryFilter === "mastered"
+                          ? t("explore.statusMastered")
+                          : masteryFilter === "in-progress"
+                            ? t("explore.statusInProgress")
+                            : t("explore.statusNotStarted")}
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
+              <ChevronDown
+                className="size-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180"
+                aria-hidden="true"
+              />
+            </summary>
+
+            <div className="flex flex-col gap-3 pt-3">
+              {/* Row 1: CEFR Stage Level Filter Chips */}
+              <div
+                role="radiogroup"
+                aria-label={t("explore.collectionNavigation")}
+                className="flex flex-wrap items-center gap-1.5 pb-0.5 pt-0.5"
+              >
                 <FilterChip
-                  key={stage.id}
-                  label={stage.label}
-                  selected={isSelected}
+                  label={t("explore.filterAll")}
+                  selected={selectedStageId === "all"}
                   selectionMode="single"
-                  onToggle={() => setSelectedStageId(stage.id)}
-                  count={count}
+                  onToggle={() => setSelectedStageId("all")}
+                  count={allCurriculumUnits.length}
                   size="sm"
                 />
-              );
-            })}
-          </div>
+                {CEFR_STAGES.map((stage) => {
+                  const isSelected = selectedStageId === stage.id;
+                  const count = stage.end - stage.start;
+                  return (
+                    <FilterChip
+                      key={stage.id}
+                      label={stage.label}
+                      selected={isSelected}
+                      selectionMode="single"
+                      onToggle={() => setSelectedStageId(stage.id)}
+                      count={count}
+                      size="sm"
+                    />
+                  );
+                })}
+              </div>
 
-          {/* Row 2: Mastery Status Filter & Reset Trigger */}
-          <div
-            role="radiogroup"
-            aria-label={t("explore.masteryFilterAria")}
-            className="flex flex-wrap items-center justify-between gap-2 text-xs"
-          >
-            <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 no-scrollbar">
-              <span className="text-muted-foreground font-semibold text-xs shrink-0 pe-1">
-                {t("explore.filterStatus")}
-              </span>
-              <FilterChip
-                label={t("explore.statusAll")}
-                selected={masteryFilter === "all"}
-                selectionMode="single"
-                onToggle={() => setMasteryFilter("all")}
-                size="sm"
-              />
-              <FilterChip
-                label={t("explore.statusMastered")}
-                selected={masteryFilter === "mastered"}
-                selectionMode="single"
-                onToggle={() => setMasteryFilter("mastered")}
-                count={overallStats.completedUnits}
-                size="sm"
-              />
-              <FilterChip
-                label={t("explore.statusInProgress")}
-                selected={masteryFilter === "in-progress"}
-                selectionMode="single"
-                onToggle={() => setMasteryFilter("in-progress")}
-                size="sm"
-              />
-              <FilterChip
-                label={t("explore.statusNotStarted")}
-                selected={masteryFilter === "not-started"}
-                selectionMode="single"
-                onToggle={() => setMasteryFilter("not-started")}
-                size="sm"
-              />
-            </div>
-
-            {hasActiveFilters && (
-              <button
-                type="button"
-                onClick={clearAllFilters}
-                className="flex min-h-[44px] items-center gap-1.5 font-bold text-primary hover:underline px-2 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shrink-0"
+              {/* Row 2: Mastery Status Filter & Reset Trigger */}
+              <div
+                role="radiogroup"
+                aria-label={t("explore.masteryFilterAria")}
+                className="flex flex-wrap items-center justify-between gap-2 text-xs"
               >
-                <RotateCcw className="size-3.5" aria-hidden="true" />
-                <span>{t("explore.resetFilters")}</span>
-              </button>
-            )}
+                <div className="flex flex-wrap items-center gap-1.5 pb-0.5">
+                  <span className="text-muted-foreground font-semibold text-xs shrink-0 pe-1">
+                    {t("explore.filterStatus")}
+                  </span>
+                  <FilterChip
+                    label={t("explore.statusAll")}
+                    selected={masteryFilter === "all"}
+                    selectionMode="single"
+                    onToggle={() => setMasteryFilter("all")}
+                    size="sm"
+                  />
+                  <FilterChip
+                    label={t("explore.statusMastered")}
+                    selected={masteryFilter === "mastered"}
+                    selectionMode="single"
+                    onToggle={() => setMasteryFilter("mastered")}
+                    count={overallStats.completedUnits}
+                    size="sm"
+                  />
+                  <FilterChip
+                    label={t("explore.statusInProgress")}
+                    selected={masteryFilter === "in-progress"}
+                    selectionMode="single"
+                    onToggle={() => setMasteryFilter("in-progress")}
+                    size="sm"
+                  />
+                  <FilterChip
+                    label={t("explore.statusNotStarted")}
+                    selected={masteryFilter === "not-started"}
+                    selectionMode="single"
+                    onToggle={() => setMasteryFilter("not-started")}
+                    size="sm"
+                  />
+                </div>
+
+                {hasActiveFilters && (
+                  <button
+                    type="button"
+                    onClick={clearAllFilters}
+                    className="flex min-h-[44px] items-center gap-1.5 font-bold text-primary hover:underline px-2 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shrink-0"
+                  >
+                    <RotateCcw className="size-3.5" aria-hidden="true" />
+                    <span>{t("explore.resetFilters")}</span>
+                  </button>
+                )}
+              </div>
+            </div>
+          </details>
+
+          {/* Results Header / Active Filters bar */}
+          {/* Results Status announcement */}
+          <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground font-medium px-1">
+            <span role="status" aria-live="polite" aria-atomic="true">
+              {t("explore.unitsFound", { count: filteredUnits.length })}
+            </span>
           </div>
         </motion.div>
 
@@ -594,7 +640,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
         {isSearchActive && (
           <div className="flex flex-col gap-3">
             <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-medium text-muted-foreground px-1">
-              <span role="status" aria-live="polite" aria-atomic="true">
+              <span>
                 {t("explore.unitsAndWordsFound", {
                   units: filteredUnits.length,
                   words: matchingWordRefs.length,
