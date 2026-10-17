@@ -69,6 +69,13 @@ test("library lookup announces results and exposes optional filters", async ({ p
   await expect(levels).toBeVisible();
   await levels.getByRole("radio", { name: "A1 Foundations", exact: true }).click();
   await expect(page.getByRole("status").filter({ hasText: "Found 36 units" })).toBeVisible();
+  const selectedLabel = levels
+    .getByRole("radio", { name: "A1 Foundations", exact: true })
+    .getByText("A1 Foundations", { exact: true });
+  // WebKit can expose the previous style to axe during a filter rerender.
+  // Verify the actual selected foreground has settled before the full audit.
+  await expect(selectedLabel).toHaveCSS("color", "rgb(255, 255, 255)");
+  await expect(selectedLabel).toHaveCSS("font-weight", "700");
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
     .analyze();
