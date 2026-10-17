@@ -37,7 +37,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const detailsTriggerRef = useRef<HTMLButtonElement>(null);
   const detailsCloseRef = useRef<HTMLButtonElement>(null);
   const [bilingual, setBilingual] = useState(true);
-  const [continuous, setContinuous] = useState(false);
+  const [continuous, setContinuous] = useState(true);
   const [playbackError, setPlaybackError] = useState(false);
   const [showExit, setShowExit] = useState(false);
   const { lexicon, lexiconFailed, retryLexicon } = useLexicon(
@@ -99,16 +99,20 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
     speak(currentWord.label);
   }, [speak, currentWord.label]);
 
-  // Play audio when continuous mode is active or when word changes in continuous mode
+  // Automatic mode starts each clip. Manual navigation plays synchronously in
+  // the gesture handler; changing cards must not clean up and cancel that clip.
   useEffect(() => {
     if (continuous && currentWord?.label) {
       speak(currentWord.label);
     }
+  }, [continuous, activeWordIndex, currentWord?.label, speak]);
+
+  useEffect(() => {
     return () => {
       if (advanceTimer.current) clearTimeout(advanceTimer.current);
       stop();
     };
-  }, [continuous, activeWordIndex, currentWord?.label, speak, stop]);
+  }, [stop]);
 
   const pausePlayback = useCallback(() => {
     setContinuous(false);
@@ -256,9 +260,6 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
         } else {
           setPlaybackError(false);
           setContinuous(true);
-          if (!isPlaying) {
-            speak(currentWord.label);
-          }
         }
       }}
     />

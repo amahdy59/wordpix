@@ -1,12 +1,29 @@
 {
-  "version": "0.1.52",
+  "version": "0.1.53",
   "notes": [
-    "Clearer lesson journeys, resumable vocabulary steps, less distracting text, and more adaptable navigation and settings."
+    "Listen and Repeat starts in Automatic mode and plays each new word when you advance in either playback mode."
   ],
   "notesAr": [
-    "مسارات أوضح للدروس، واستئناف خطوات المفردات، ونصوص أقل تشتيتًا، وتحسين مرونة التنقل والإعدادات."
+    "يبدأ تمرين الاستماع والترديد بالوضع التلقائي، ويشغّل نطق كل كلمة جديدة عند الانتقال إليها في كلا وضعي التشغيل."
   ],
   "releases": [
+    {
+      "id": "0.1.53",
+      "version": "0.1.53",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Reliable automatic word playback",
+        "ar": "تشغيل تلقائي موثوق لنطق الكلمات"
+      },
+      "changes": [
+        {
+          "id": "listen-repeat-autoplay",
+          "category": "fixed",
+          "en": "Listen and Repeat starts in Automatic mode and plays each new word when you advance in either playback mode.",
+          "ar": "يبدأ تمرين الاستماع والترديد بالوضع التلقائي، ويشغّل نطق كل كلمة جديدة عند الانتقال إليها في كلا وضعي التشغيل."
+        }
+      ]
+    },
     {
       "id": "0.1.52",
       "version": "0.1.52",

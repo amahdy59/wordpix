@@ -8,6 +8,7 @@ import { WordDetailsContent } from "../shared/WordDetailsContent";
 const audio = vi.hoisted(() => ({
   speak: vi.fn(),
   stop: vi.fn(),
+  playingLabel: null as string | null,
   ended: undefined as (() => void) | undefined,
 }));
 
@@ -60,6 +61,13 @@ vi.mock("../data/lexiconLoader", () => ({
 
 describe("Listen and repeat mobile focus", () => {
   beforeEach(() => {
+    audio.playingLabel = null;
+    audio.speak.mockImplementation((label: string) => {
+      audio.playingLabel = label;
+    });
+    audio.stop.mockImplementation(() => {
+      audio.playingLabel = null;
+    });
     audio.speak.mockClear();
     audio.stop.mockClear();
     speech.listen.mockClear();
@@ -125,7 +133,7 @@ describe("Listen and repeat mobile focus", () => {
     window.matchMedia = original;
   });
 
-  it("waits for the learner to request audio", () => {
+  it("defaults to automatic playback and starts the first word", () => {
     render(
       <ExerciseListenRepeat
         step={1}
@@ -135,9 +143,12 @@ describe("Listen and repeat mobile focus", () => {
       />
     );
 
-    expect(audio.speak).not.toHaveBeenCalled();
-    fireEvent.click(screen.getByRole("button", { name: /Play audio pronunciation/i }));
-    expect(audio.speak).toHaveBeenCalledWith(BEDROOM_VOCABULARY[0].label);
+    expect(screen.getByRole("radio", { name: "Automatic" })).toHaveAttribute(
+      "aria-checked",
+      "true"
+    );
+    expect(audio.speak).toHaveBeenCalledExactlyOnceWith(BEDROOM_VOCABULARY[0].label);
+    expect(audio.playingLabel).toBe(BEDROOM_VOCABULARY[0].label);
   });
 
   it("uses Next word until the final word, then continues the lesson", () => {
@@ -200,7 +211,7 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      fireEvent.click(screen.getByRole("radio", { name: "Continuous" }));
+      fireEvent.click(screen.getByRole("radio", { name: "Automatic" }));
       expect(audio.speak).toHaveBeenLastCalledWith(BEDROOM_VOCABULARY[0].label);
       act(() => {
         audio.ended?.();
@@ -229,7 +240,7 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      fireEvent.click(screen.getByRole("radio", { name: "Continuous" }));
+      fireEvent.click(screen.getByRole("radio", { name: "Automatic" }));
       act(() => audio.ended?.());
       fireEvent.click(screen.getByRole("button", { name: "Word details" }));
       act(() => vi.advanceTimersByTime(5000));
@@ -270,7 +281,7 @@ describe("Listen and repeat mobile focus", () => {
           dispatch={vi.fn()}
         />
       );
-      fireEvent.click(screen.getByRole("radio", { name: "Continuous" }));
+      fireEvent.click(screen.getByRole("radio", { name: "Automatic" }));
       act(() => audio.ended?.());
       fireEvent.click(screen.getByRole("button", { name: /Stop audio pronunciation/ }));
       act(() => vi.advanceTimersByTime(5000));
@@ -291,16 +302,35 @@ describe("Listen and repeat mobile focus", () => {
       />
     );
 
-    // Initial card does not autoplay on load in manual mode
-    expect(audio.speak).not.toHaveBeenCalled();
+    fireEvent.click(screen.getByRole("radio", { name: "Manual" }));
+    audio.speak.mockClear();
 
     // Advancing via next button autoplays the newly active word
     fireEvent.click(screen.getByRole("button", { name: "Next word" }));
-    expect(audio.speak).toHaveBeenCalledWith(BEDROOM_VOCABULARY[1].label);
+    expect(audio.speak).toHaveBeenCalledExactlyOnceWith(BEDROOM_VOCABULARY[1].label);
+    expect(audio.playingLabel).toBe(BEDROOM_VOCABULARY[1].label);
 
     // Advancing via keyboard shortcut ArrowRight autoplays the next word
     audio.speak.mockClear();
     fireEvent.keyDown(window, { key: "ArrowRight" });
-    expect(audio.speak).toHaveBeenCalledWith(BEDROOM_VOCABULARY[2].label);
+    expect(audio.speak).toHaveBeenCalledExactlyOnceWith(BEDROOM_VOCABULARY[2].label);
+    expect(audio.playingLabel).toBe(BEDROOM_VOCABULARY[2].label);
+  });
+
+  it("plays Next once in automatic mode and stops playback when leaving", () => {
+    const { unmount } = render(
+      <ExerciseListenRepeat
+        step={1}
+        words={BEDROOM_VOCABULARY.slice(0, 3)}
+        lessonId="bedroom-1"
+        dispatch={vi.fn()}
+      />
+    );
+    audio.speak.mockClear();
+    fireEvent.click(screen.getByRole("button", { name: "Next word" }));
+    expect(audio.speak).toHaveBeenCalledExactlyOnceWith(BEDROOM_VOCABULARY[1].label);
+    expect(audio.playingLabel).toBe(BEDROOM_VOCABULARY[1].label);
+    unmount();
+    expect(audio.playingLabel).toBeNull();
   });
 });
