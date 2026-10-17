@@ -354,13 +354,15 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   });
 
   const lastAutoplayKeyRef = useRef<string>("");
-  // Automatically play audio prompts on listening questions (Stage 1: Listen, Stage 4: Transfer)
+  const isListeningStage = stage === 1 || stage === 2 || stage === 4;
+  // Automatically play audio prompts on listening questions (Stage 1: Discrimination, Stage 2: Meaning, Stage 4: Transfer)
   useEffect(() => {
     if (completedScore !== null || finishedRef.current) return;
-    if (stage !== 1 && stage !== 4) return;
+    if (!isListeningStage) return;
     if (session.answer !== null) return;
     if (audioUnavailable) return;
     if (state.accessibility.includeListening === false) return;
+    if (state.accessibility.autoPlayAudio === false) return;
 
     const trialKey = `${stage}:${session.trial}:${target?.label ?? activity.model}`;
     if (lastAutoplayKeyRef.current === trialKey) return;
@@ -375,6 +377,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     return () => clearTimeout(timer);
   }, [
     stage,
+    isListeningStage,
     session.trial,
     session.answer,
     target?.label,
@@ -382,6 +385,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     completedScore,
     audioUnavailable,
     state.accessibility.includeListening,
+    state.accessibility.autoPlayAudio,
   ]);
   useEffect(() => {
     const handleKey = (event: KeyboardEvent) => {
@@ -550,6 +554,24 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     : t("settings.disabled"),
                 })}
               </button>
+              <button
+                type="button"
+                aria-pressed={state.accessibility.autoPlayAudio !== false}
+                className={buttonClass}
+                onClick={() => {
+                  clearPending();
+                  setAccessibility({
+                    autoPlayAudio: !(state.accessibility.autoPlayAudio !== false),
+                  });
+                }}
+              >
+                {t("pronunciationEnhancements.autoPlayAudioToggle", {
+                  state:
+                    state.accessibility.autoPlayAudio !== false
+                      ? t("settings.enabled")
+                      : t("settings.disabled"),
+                })}
+              </button>
             </HelpDisclosure>
           )}
         </div>
@@ -593,19 +615,22 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   getPronunciationTargets(lessonNumber, true).length,
               })}
             </p>
-            <HelpDisclosure label={t("pronunciationEnhancements.wordResults")}>
+            <div className="rounded-2xl border border-border bg-card p-4 space-y-2">
+              <p className="text-sm font-bold text-foreground">
+                {t("pronunciationEnhancements.wordResults")}
+              </p>
               <ul className="space-y-2">
                 {activity.items.map((item) => {
                   const evidence = session.targetEvidence?.[pronunciationTargetId(item.label)];
                   return (
                     <li
                       key={pronunciationTargetId(item.label)}
-                      className="flex flex-wrap justify-between gap-2"
+                      className="flex flex-wrap justify-between gap-2 text-sm"
                     >
                       <bdi lang="en" dir="ltr">
                         {item.label}
                       </bdi>
-                      <span>
+                      <span className="text-muted-foreground">
                         {t(
                           evidence?.listening === true
                             ? "pronunciationEnhancements.listenChecked"
@@ -620,7 +645,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   );
                 })}
               </ul>
-            </HelpDisclosure>
+            </div>
             <div className="flex flex-wrap gap-3">
               <button type="button" className={buttonClass} onClick={reset}>
                 {t("pronunciation.reviewAgain")}
@@ -637,22 +662,27 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 {nextLesson ? t("pronunciation.nextLesson") : t("pronunciation.back")}
               </button>
             </div>
-            <HelpDisclosure label={t("pronunciation.usageReviewTitle")}>
-              {activity.reviewSentences.map((sentence) => (
-                <div key={sentence}>
-                  <button
-                    type="button"
-                    className={buttonClass}
-                    lang="en"
-                    dir="ltr"
-                    onClick={() => play(sentence)}
-                  >
-                    {sentence}
-                  </button>
-                  <PrivateRecordCompare target={sentence} />
-                </div>
-              ))}
-            </HelpDisclosure>
+            {activity.reviewSentences.length > 0 && (
+              <div className="rounded-2xl border border-border bg-card p-4 space-y-3">
+                <p className="text-sm font-bold text-foreground">
+                  {t("pronunciation.usageReviewTitle")}
+                </p>
+                {activity.reviewSentences.map((sentence) => (
+                  <div key={sentence}>
+                    <button
+                      type="button"
+                      className={buttonClass}
+                      lang="en"
+                      dir="ltr"
+                      onClick={() => play(sentence)}
+                    >
+                      {sentence}
+                    </button>
+                    <PrivateRecordCompare target={sentence} />
+                  </div>
+                ))}
+              </div>
+            )}
           </section>
         ) : (
           <>
@@ -709,18 +739,13 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 </div>
               )}
               {stage === 0 && (
-                <details>
-                  <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-sm font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
-                    {t("ux.sessionDetails")}
-                  </summary>
-                  <p className="text-sm text-foreground">
-                    {t("pronunciationEnhancements.coverageGoal", {
-                      count:
-                        getPronunciationTargets(lessonNumber, false).length +
-                        getPronunciationTargets(lessonNumber, true).length,
-                    })}
-                  </p>{" "}
-                </details>
+                <p className="text-sm text-muted-foreground font-medium">
+                  {t("pronunciationEnhancements.coverageGoal", {
+                    count:
+                      getPronunciationTargets(lessonNumber, false).length +
+                      getPronunciationTargets(lessonNumber, true).length,
+                  })}
+                </p>
               )}
               {stage === 4 &&
                 clip?.speaker ===
@@ -786,7 +811,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               {stage === 0 ? (
                 <>
                   <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-                    {activity.items.slice(0, 4).map((item) => (
+                    {activity.items.map((item) => (
                       <button
                         key={item.label}
                         type="button"
@@ -811,35 +836,6 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                       </button>
                     ))}
                   </div>
-                  {activity.items.length > 4 && (
-                    <HelpDisclosure
-                      label={t("lessonShell.moreWords", { count: activity.items.length - 4 })}
-                    >
-                      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-                        {activity.items.slice(4).map((item) => (
-                          <button
-                            key={item.label}
-                            type="button"
-                            className={`min-h-11 overflow-hidden rounded-xl border border-border bg-card ${focusRing}`}
-                            onClick={() => play(item.label)}
-                            disabled={hasReportedPronunciationAudioIssue(item.label)}
-                            title={
-                              hasReportedPronunciationAudioIssue(item.label)
-                                ? t("pronunciationEnhancements.audioPending")
-                                : undefined
-                            }
-                            lang="en"
-                            dir="ltr"
-                          >
-                            <WordImage item={item} className="aspect-square w-full object-cover" />
-                            <span className="flex min-h-11 items-center justify-center p-2">
-                              {item.label}
-                            </span>
-                          </button>
-                        ))}
-                      </div>
-                    </HelpDisclosure>
-                  )}
                 </>
               ) : stage === 3 ? (
                 state.accessibility.includeSpeaking === false ? (
@@ -1024,55 +1020,63 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               )}
             </section>
             <HelpDisclosure label={t("lessonShell.soundTips")}>
-              <p lang="en" dir="ltr">
-                {activity.focus}
-              </p>
-              <ul className="space-y-2" lang="en" dir="ltr">
-                {activity.articulationCues.map((cue) => (
-                  <li key={cue} className="space-y-1">
-                    <p>{cue}</p>
-                    <button type="button" className={buttonClass} onClick={() => play(cue)}>
-                      <Volume2 className="size-4" aria-hidden />
-                      {t("pronunciation.listenToContrast")}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-              <div className="flex flex-wrap gap-2">
-                {activity.contrastPairs.map(([a, b]) => (
-                  <div key={`${a}:${b}`} className="flex flex-wrap gap-1" lang="en" dir="ltr">
-                    {[a, b].map((word, index) => (
-                      <button
-                        key={`${word}:${index}`}
-                        type="button"
-                        aria-label={t("pronunciation.playWord", { word })}
-                        className={buttonClass}
-                        onClick={() => play(word)}
-                      >
-                        {word}
+              <div className="space-y-3">
+                {activity.focus && (
+                  <p lang="en" dir="ltr" className="text-sm text-foreground">
+                    {activity.focus}
+                  </p>
+                )}
+                <ul className="space-y-2" lang="en" dir="ltr">
+                  {activity.articulationCues.map((cue) => (
+                    <li key={cue} className="space-y-1">
+                      <p className="text-sm text-foreground">{cue}</p>
+                      <button type="button" className={buttonClass} onClick={() => play(cue)}>
+                        <Volume2 className="size-4" aria-hidden />
+                        {t("pronunciation.listenToContrast")}
                       </button>
-                    ))}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  {activity.contrastPairs.map(([a, b]) => (
+                    <div key={`${a}:${b}`} className="flex flex-wrap gap-1" lang="en" dir="ltr">
+                      {[a, b].map((word, index) => (
+                        <button
+                          key={`${word}:${index}`}
+                          type="button"
+                          aria-label={t("pronunciation.playWord", { word })}
+                          className={buttonClass}
+                          onClick={() => play(word)}
+                        >
+                          {word}
+                        </button>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+                {activity.arabicSpeakerTip && (
+                  <div className="space-y-1 text-sm text-muted-foreground">
+                    <p lang="en" dir="ltr">
+                      {activity.arabicSpeakerTip.tipEn}
+                    </p>
+                    <p lang="ar" dir="rtl">
+                      {activity.arabicSpeakerTip.tipAr}
+                    </p>
                   </div>
-                ))}
+                )}
               </div>
-              {activity.arabicSpeakerTip && (
-                <>
-                  <p lang="en" dir="ltr">
-                    {activity.arabicSpeakerTip.tipEn}
-                  </p>
-                  <p lang="ar" dir="rtl">
-                    {activity.arabicSpeakerTip.tipAr}
-                  </p>
-                </>
-              )}
             </HelpDisclosure>
             <HelpDisclosure label={t("lessonShell.aboutLesson")}>
-              <p lang="en" dir="ltr">
-                {activity.objective}
-              </p>
-              {progress && (
-                <p>{t("pronunciation.previousBest", { score: progress.bestScorePercent })}</p>
-              )}
+              <div className="space-y-2">
+                <p lang="en" dir="ltr" className="text-sm text-foreground">
+                  {activity.objective}
+                </p>
+                {progress && (
+                  <p className="text-sm text-muted-foreground">
+                    {t("pronunciation.previousBest", { score: progress.bestScorePercent })}
+                  </p>
+                )}
+              </div>
             </HelpDisclosure>
             <div className="wp-sticky-controls relative z-30 border-t border-border bg-background py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
               {canAdvance ? (

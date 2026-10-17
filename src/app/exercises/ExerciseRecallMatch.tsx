@@ -72,6 +72,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const currentQuestionKey = `${queue.position}:${currentTargetWord.id}`;
   useEffect(() => {
     stop();
+    if (accessibility.autoPlayAudio === false) return undefined;
     if (hasSpokenRef.current[currentQuestionKey]) return undefined;
     // The flag is set when the prompt actually plays, not when it is
     // scheduled. Keyed by queue position and word id so retried questions and
@@ -81,7 +82,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       speak(currentTargetWord.label);
     }, 200);
     return () => clearTimeout(t);
-  }, [currentQuestionKey, currentTargetWord.label, speak, stop]);
+  }, [currentQuestionKey, currentTargetWord.label, speak, stop, accessibility.autoPlayAudio]);
 
   const replayAudio = useCallback(() => {
     stop();

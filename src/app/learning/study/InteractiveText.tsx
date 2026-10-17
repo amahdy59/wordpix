@@ -64,7 +64,7 @@ export function InteractiveText({ text, unitId, onInspectWord, className }: Prop
               key={index}
               type="button"
               onClick={() => onInspectWord(word)}
-              className="text-primary font-medium hover:underline focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary rounded-xs px-[2px] -mx-[2px]"
+              className="inline rounded px-1 py-0.5 -mx-0.5 align-baseline cursor-pointer touch-manipulation font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4 bg-primary/8 hover:bg-primary/15 hover:decoration-primary hover:text-primary active:bg-primary/20 motion-safe:active:scale-[0.99] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:bg-primary/15 motion-safe:transition-colors"
               title={`Tap to inspect "${part}"`}
               aria-label={`Inspect vocabulary word: ${part}`}
             >

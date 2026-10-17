@@ -1,4 +1,3 @@
-import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo, useState } from "react";
 import {
   ArrowRight,
@@ -225,9 +224,9 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <h2 id="recommended-heading" className="text-xl font-bold text-foreground sm:text-2xl">
             {recommendedUnit.name}
           </h2>
-          <HelpDisclosure label={t("help.aboutLesson")}>
-            <p>{getUnitCurriculumDesign(recommendedUnit).outcome}</p>
-          </HelpDisclosure>
+          <p className="mt-1 text-sm sm:text-base text-muted-foreground font-medium">
+            {getUnitCurriculumDesign(recommendedUnit).outcome}
+          </p>
         </div>
         <button
           type="button"

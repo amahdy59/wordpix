@@ -21,6 +21,7 @@ const mocks = vi.hoisted(() => ({
   status: "idle",
   autoAdvance: false,
   includeSpeaking: true,
+  autoPlayAudio: true,
   setAccessibility: vi.fn(),
   speakFeedback: vi.fn((_input: unknown, onComplete?: () => void) => {
     onComplete?.();
@@ -34,6 +35,7 @@ vi.mock("../context/LearnerContext", async (importOriginal) => ({
       accessibility: {
         autoAdvance: mocks.autoAdvance,
         includeSpeaking: mocks.includeSpeaking,
+        autoPlayAudio: mocks.autoPlayAudio,
       },
     },
     setAccessibility: mocks.setAccessibility,
@@ -77,6 +79,7 @@ describe("pronunciation lesson session", () => {
     mocks.progress = {};
     mocks.error = false;
     mocks.includeSpeaking = true;
+    mocks.autoPlayAudio = true;
     vi.clearAllMocks();
   });
   it("keeps unavailable audio pending instead of recording a learner error", () => {
@@ -258,6 +261,67 @@ describe("pronunciation lesson session", () => {
     });
     expect(mocks.speak).toHaveBeenCalledTimes(2);
     vi.useRealTimers();
+  });
+
+  it("autoplays prompt audio across consecutive trials in stage 2 (meaning)", () => {
+    vi.useFakeTimers();
+    mocks.autoAdvance = true;
+    mocks.progress["lesson-03"] = {
+      status: "in-progress",
+      currentStage: 2,
+      bestScorePercent: 0,
+      sessions: 1,
+      updatedAt: new Date().toISOString(),
+      session: {
+        trial: 0,
+        attempts: 0,
+        answer: null,
+        unlockedStage: 2,
+        outcomes: {},
+        version: 2,
+      },
+    };
+    renderLesson();
+    // Entering stage 2 Check 1 autoplays
+    act(() => {
+      vi.advanceTimersByTime(350);
+    });
+    expect(mocks.speak).toHaveBeenCalledTimes(1);
+
+    // Answer Check 1
+    fireEvent.click(answer(2, 0));
+    // Advance timers for feedback and autoAdvance
+    act(() => {
+      vi.advanceTimersByTime(1500);
+    });
+    // Check 2 should be active; advance timers for Check 2 autoplay
+    act(() => {
+      vi.advanceTimersByTime(350);
+    });
+    expect(mocks.speak).toHaveBeenCalledTimes(2);
+    vi.useRealTimers();
+  });
+
+  it("does not autoplay audio when autoPlayAudio is disabled in accessibility settings", () => {
+    vi.useFakeTimers();
+    mocks.autoPlayAudio = false;
+    renderLesson();
+    fireEvent.click(screen.getByRole("button", { name: "Start listening" }));
+    act(() => {
+      vi.advanceTimersByTime(500);
+    });
+    expect(mocks.speak).not.toHaveBeenCalled();
+    vi.useRealTimers();
+  });
+
+  it("allows toggling autoPlayAudio from lesson options menu", () => {
+    renderLesson();
+    fireEvent.click(screen.getByLabelText("Lesson options"));
+    const toggleButton = screen.getByRole("button", {
+      name: /Auto-play question audio: Enabled/i,
+    });
+    fireEvent.click(toggleButton);
+    expect(mocks.setAccessibility).toHaveBeenCalledWith({ autoPlayAudio: false });
   });
 
   it("does not stop audio when play button is clicked while status is loading", () => {

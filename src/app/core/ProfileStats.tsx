@@ -1,5 +1,5 @@
-import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo, useState } from "react";
+import { HelpDisclosure } from "../shared/HelpDisclosure";
 import {
   Flame,
   Sparkles,
@@ -411,12 +411,16 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
 
         <details
           open={skillSummaries.some((summary) => summary.attempts > 0)}
-          className="rounded-xl border border-border p-4"
+          className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-wp-xs"
         >
           <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-base font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
             {t("ux.skillDetails")}
           </summary>
-          <motion.section variants={staggerItem} aria-labelledby="skill-mastery-heading">
+          <motion.section
+            variants={staggerItem}
+            aria-labelledby="skill-mastery-heading"
+            className="pt-2"
+          >
             <div className="mb-3">
               <h2
                 id="skill-mastery-heading"

@@ -119,13 +119,41 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    fireEvent.click(screen.getByRole("button", { name: /more activities and reference/i }));
+    fireEvent.click(screen.getByRole("button", { name: /study materials & reference/i }));
 
     expect(dispatch).toHaveBeenCalledWith({
       type: "GO",
       to: "learning-materials",
       unitId: "bedroom",
       area: "learn",
+      returnTo: "lesson-entry",
+    });
+  });
+
+  it("allows opening Unit Study Materials directly from the options menu", () => {
+    const dispatch = vi.fn();
+    render(
+      <I18nProvider>
+        <LessonWorldEntry unitId="bedroom" dispatch={dispatch} />
+      </I18nProvider>
+    );
+
+    const trigger = screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0];
+    fireEvent.click(trigger);
+
+    const studyMaterialsButton = screen.getByRole("menuitem", {
+      name: /Study materials & reference/i,
+    });
+    expect(studyMaterialsButton).toBeInTheDocument();
+
+    fireEvent.click(studyMaterialsButton);
+
+    expect(dispatch).toHaveBeenCalledWith({
+      type: "GO",
+      to: "learning-materials",
+      unitId: "bedroom",
+      area: "learn",
+      returnTo: "lesson-entry",
     });
   });
 });

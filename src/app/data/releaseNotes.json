@@ -1,8 +1,86 @@
 {
-  "version": "0.1.54",
-  "notes": ["Selected library filter labels stay readable when switching filters in Safari."],
-  "notesAr": ["تبقى تسميات مرشحات المكتبة المحددة واضحة عند التبديل بينها في سفاري."],
+  "version": "0.1.58",
+  "notes": [
+    "Cleaned up cluttered text across the app, making UI elements self-explanatory and removing unnecessary collapsibles and disclosures for a more direct, distraction-free experience."
+  ],
+  "notesAr": [
+    "تبسيط النصوص وإزالة التفاصيل غير الضرورية في جميع أنحاء التطبيق، وجعل الواجهة واضحة بذاتها مع الاستغناء عن القوائم المطوية لتجربة تعليمية مباشرة وسلسة."
+  ],
   "releases": [
+    {
+      "id": "0.1.58",
+      "version": "0.1.58",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Self-explanatory UI and global elimination of clutter text and unnecessary collapsibles",
+        "ar": "واجهة ذاتية التوضيح وإزالة النصوص الفائضة والقوائم المطوية غير الضرورية"
+      },
+      "changes": [
+        {
+          "id": "self-explanatory-ui-no-clutter",
+          "category": "improved",
+          "en": "Removed redundant boilerplate descriptions, outcome tags, and explanatory hints globally across unit entries, settings, curriculum hubs, and learning stages. Replaced unnecessary collapsibles and hidden disclosures with clean, direct, immediately accessible content.",
+          "ar": "تمت إزالة النصوص الوصفية المتكررة ووسوم المخرجات والتلميحات التوضيحية الفائضة عبر شاشات الدروس والإعدادات ومراحل التعلم. كما تم استبدال القوائم المطوية غير الضرورية بعرض مباشر ونظيف ومتاح فوريًا للمتعلم."
+        }
+      ]
+    },
+    {
+      "id": "0.1.57",
+      "version": "0.1.57",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Interactive vocabulary highlights in reading passages",
+        "ar": "إبراز المفردات التفاعلية في نصوص القراءة"
+      },
+      "changes": [
+        {
+          "id": "interactive-reading-passage-vocabulary",
+          "category": "improved",
+          "en": "Words from the vocabulary section appearing in reading passages (Business English, Conversation, and Hadith) are now styled with a modern highlight and underline. Clicking any word opens its vocabulary detail modal showing its image, definition, example sentence, and pronunciation audio.",
+          "ar": "أصبحت الكلمات الواردة في قسم المفردات والتي تظهر داخل نصوص القراءة (الإنجليزية للأعمال، والمحادثة، والحديث الشريف) مميزة بتنسيق وتسطير عصري وأنيق. يتيح النقر على أي كلمة فتح نافذة التفاصيل الخاصة بها للاطلاع على الصورة والتعريف والجملة النموذجية والاستماع للنطق."
+        }
+      ]
+    },
+    {
+      "id": "0.1.56",
+      "version": "0.1.56",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Single-row recall controls and auto-progress",
+        "ar": "عناصر تحكم موحدة في صف واحد والانتقال التلقائي"
+      },
+      "changes": [
+        {
+          "id": "recall-controls-and-autoprogress",
+          "category": "improved",
+          "en": "Recall stage controls are now aligned in a single row according to UX best practices. Selecting the correct answer automatically advances to the next question after half a second, while preserving the ability to navigate back.",
+          "ar": "أصبحت عناصر التحكم في مرحلة الاستدعاء محاذاة في صف واحد وفقًا لأفضل ممارسات تجربة المستخدم، مع الانتقال تلقائيًا إلى السؤال التالي بعد نصف ثانية عند اختيار الإجابة الصحيحة مع إمكانية الرجوع للسؤال السابق في أي وقت."
+        }
+      ]
+    },
+    {
+      "id": "0.1.55",
+      "version": "0.1.55",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Direct lesson access, study materials navigation, and audio playback",
+        "ar": "الوصول المباشر للتمارين، وتصفح المواد الدراسية، وتشغيل الصوت"
+      },
+      "changes": [
+        {
+          "id": "direct-lesson-entry-and-study-materials-navigation",
+          "category": "fixed",
+          "en": "Unit cards in the library now open exercises directly with quick access to study materials, active lesson groups resume seamlessly, and study guide navigation reliably returns to your original screen.",
+          "ar": "تفتح بطاقات الوحدات في المكتبة التمارين مباشرة مع إمكانية الوصول السريع للمواد الدراسية، واستئناف مجموعات الكلمات الجارية بسلاسة، مع عودة زر الرجوع بالدليل الدراسي إلى شاشتك السابقة بدقة."
+        },
+        {
+          "id": "question-audio-autoplay",
+          "category": "fixed",
+          "en": "Audio-based questions now automatically play their audio prompts across all stages, including pronunciation meaning checks, with a global setting to switch to manual playback.",
+          "ar": "تشغّل الأسئلة الصوتية مقاطعها الصوتية تلقائيًا عبر جميع المراحل بما في ذلك تدريبات معاني النطق، مع خيار في الإعدادات للتبديل إلى التشغيل اليدوي."
+        }
+      ]
+    },
     {
       "id": "0.1.54",
       "version": "0.1.54",

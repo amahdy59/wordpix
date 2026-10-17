@@ -74,7 +74,13 @@ export function SentenceQuestionSupport({
   const questionKey = `${word.id}:${prompt}`;
 
   useEffect(() => {
-    if (!autoPlay || !accessibility.includeListening || answered) return undefined;
+    if (
+      !autoPlay ||
+      accessibility.autoPlayAudio === false ||
+      !accessibility.includeListening ||
+      answered
+    )
+      return undefined;
     if (hasSpokenRef.current[questionKey]) return undefined;
     const timer = setTimeout(() => {
       hasSpokenRef.current[questionKey] = true;
@@ -84,7 +90,14 @@ export function SentenceQuestionSupport({
       clearTimeout(timer);
       audio.stop();
     };
-  }, [autoPlay, questionKey, answered, accessibility.includeListening, audio]);
+  }, [
+    autoPlay,
+    questionKey,
+    answered,
+    accessibility.includeListening,
+    accessibility.autoPlayAudio,
+    audio,
+  ]);
 
   // A definition remains available to keyboard and screen-reader learners and
   // provides evidence when an essential visual is unavailable. Do not show a

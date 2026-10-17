@@ -1,4 +1,3 @@
-import { HelpDisclosure } from "../../../shared/HelpDisclosure";
 import { useI18n } from "../../../../i18n";
 import type { ParsedOverview } from "../hadithLessonContent";
 
@@ -31,8 +30,6 @@ export function HadithOverviewSummary({ overview }: { overview: ParsedOverview }
 }
 
 export function HadithOverviewStage({ overview }: Props) {
-  const { t } = useI18n();
-
   return (
     <section className="wp-container-content space-y-6" aria-labelledby="stage-overview-heading">
       <h2
@@ -43,17 +40,17 @@ export function HadithOverviewStage({ overview }: Props) {
         {overview.title}
       </h2>
       <HadithOverviewSummary overview={overview} />
-      <HelpDisclosure label={t("help.aboutLesson")}>
-        <p>{overview.purpose}</p>
-        <ol className="space-y-3">
+      <div className="rounded-2xl border border-border bg-card p-4 space-y-3">
+        <p className="text-base text-muted-foreground">{overview.purpose}</p>
+        <ol className="space-y-2">
           {overview.outcomes.map((outcome) => (
             <li key={outcome.id}>
-              <p className="font-bold">{outcome.title}</p>
-              <p>{outcome.description}</p>
+              <p className="font-bold text-foreground text-sm">{outcome.title}</p>
+              <p className="text-sm text-muted-foreground">{outcome.description}</p>
             </li>
           ))}
         </ol>
-      </HelpDisclosure>
+      </div>
     </section>
   );
 }

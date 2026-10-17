@@ -45,7 +45,14 @@ export function HadithReadListenStage({
     () => getPassageVocabularyTerms(source.translation, terms),
     [source.translation, terms]
   );
-  const selected = vocabulary.find((item) => item.term === activeTerm);
+  const openTerm = (term: string) => {
+    if (audio.status === "loading") audio.stop();
+    else audio.pause();
+    setActiveTerm(term);
+  };
+  const selected = activeTerm
+    ? vocabulary.find((entry) => entry.term.toLowerCase() === activeTerm.toLowerCase())
+    : undefined;
   const item = selected
     ? {
         id: `hadith-${lessonNumber}-${selected.term}`,
@@ -153,7 +160,8 @@ export function HadithReadListenStage({
                   <RichPassageText
                     text={paragraph}
                     vocabTerms={terms}
-                    interactiveVocabulary={false}
+                    onTermClick={openTerm}
+                    interactiveVocabulary={true}
                   />
                 </p>
               ))}
@@ -161,14 +169,7 @@ export function HadithReadListenStage({
           <p className="text-sm text-foreground">
             <bdi>{source.citation}</bdi>
           </p>
-          <ReadingVocabulary
-            terms={presentTerms}
-            onSelect={(term) => {
-              if (audio.status === "loading") audio.stop();
-              else audio.pause();
-              setActiveTerm(term);
-            }}
-          />
+          <ReadingVocabulary terms={presentTerms} onSelect={openTerm} />
         </article>
       </div>
       <VocabularyDetailModal

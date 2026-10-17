@@ -88,8 +88,13 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
   // Speak the prompt audio when a listening task opens.
   useEffect(() => {
-    if (task?.audioText) speak(task.audioText);
-  }, [task, speak]);
+    if (accessibility.autoPlayAudio === false) return undefined;
+    if (!task?.audioText) return undefined;
+    const t = setTimeout(() => {
+      speak(task.audioText as string);
+    }, 200);
+    return () => clearTimeout(t);
+  }, [task, speak, accessibility.autoPlayAudio]);
 
   const resetAnswer = useCallback(() => {
     setChoice(null);

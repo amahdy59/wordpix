@@ -2,9 +2,7 @@ import { useState } from "react";
 import {
   Check,
   CheckCircle2,
-  ChevronDown,
   Eye,
-  HelpCircle,
   Lightbulb,
   MessageCircle,
   RotateCcw,
@@ -143,17 +141,12 @@ export function HadithReviewStage({
                     </p>
 
                     {item.hint && (
-                      <details className="group mt-2">
-                        <summary
-                          className={`inline-flex min-h-11 cursor-pointer list-none items-center gap-1.5 text-sm font-bold text-primary hover:underline ${focusRing}`}
-                        >
-                          <HelpCircle className="size-3.5" aria-hidden />
-                          <span>{t("hadith.hintLabel") || "Need a hint?"}</span>
-                        </summary>
-                        <p className="mt-1.5 rounded-xl bg-muted/60 p-3 text-sm font-medium text-foreground">
-                          {item.hint}
-                        </p>
-                      </details>
+                      <p className="mt-2 rounded-xl bg-muted/60 p-2.5 text-xs font-medium text-muted-foreground">
+                        <span className="font-bold text-foreground me-1">
+                          {t("hadith.hintLabel") || "Hint"}:
+                        </span>
+                        {item.hint}
+                      </p>
                     )}
                   </div>
                 </div>
@@ -285,23 +278,15 @@ export function HadithReviewStage({
           </div>
         )}
 
-        <details className="group mt-4 rounded-xl border border-border bg-background/50">
-          <summary
-            className={`flex min-h-11 cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-black text-primary transition-colors hover:bg-muted ${focusRing}`}
-          >
-            <span className="inline-flex items-center gap-1.5">
+        {discussionAnswer && (
+          <div className="mt-4 rounded-xl border border-border bg-background/50 p-4 text-sm font-medium leading-relaxed text-foreground">
+            <span className="mb-1.5 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-primary">
               <Sparkles className="size-3.5" aria-hidden />
-              {t("hadith.showSampleAnswer") || "View sample reflection"}
+              {t("hadith.showSampleAnswer") || "Sample reflection"}
             </span>
-            <ChevronDown
-              className="size-4 text-muted-foreground transition-transform duration-200 group-open:rotate-180"
-              aria-hidden
-            />
-          </summary>
-          <div className="border-t border-border p-4 text-sm font-medium leading-relaxed text-foreground">
-            {discussionAnswer}
+            <p>{discussionAnswer}</p>
           </div>
-        </details>
+        )}
       </section>
 
       <div className="grid gap-3 md:grid-cols-3" aria-label={t("hadith.discussionLabel")}>

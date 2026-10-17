@@ -92,7 +92,10 @@ export function BusinessInputStage({ unit, onNext }: Props) {
     [fullText, vocabTerms]
   );
   const selectedVocabItem = useMemo<VocabularyTableItem | null>(() => {
-    const match = unit.languageBank.find((item) => item.term === activeTerm);
+    if (!activeTerm) return null;
+    const match = unit.languageBank.find(
+      (item) => item.term.toLowerCase() === activeTerm.toLowerCase()
+    );
     return match
       ? {
           id: match.id,
@@ -145,7 +148,8 @@ export function BusinessInputStage({ unit, onNext }: Props) {
               <RichPassageText
                 text={presentation.title}
                 vocabTerms={vocabTerms}
-                interactiveVocabulary={false}
+                onTermClick={openTerm}
+                interactiveVocabulary={true}
               />
             </h2>
           </header>
@@ -185,7 +189,8 @@ export function BusinessInputStage({ unit, onNext }: Props) {
                   }
                   offset={fullRecording ? unit.mainInput.title.length + 2 : 0}
                   vocabTerms={vocabTerms}
-                  interactiveVocabulary={false}
+                  onTermClick={openTerm}
+                  interactiveVocabulary={true}
                 />
               </p>
             )}
@@ -224,7 +229,8 @@ export function BusinessInputStage({ unit, onNext }: Props) {
                         time={isFullMonolithic || isLineActiveInFull || selected ? time : null}
                         offset={offset}
                         vocabTerms={vocabTerms}
-                        interactiveVocabulary={false}
+                        onTermClick={openTerm}
+                        interactiveVocabulary={true}
                       />
                     </p>
                   </div>

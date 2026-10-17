@@ -41,6 +41,7 @@ export function reducer(state: Screen, action: Action): Screen {
         unitId: action.unitId,
         area: action.area,
         nodeId: action.nodeId,
+        returnTo: action.returnTo,
       };
     if (action.to === "skill-hub") return { id: "skill-hub" };
     if (action.to === "onboarding") return { id: "onboarding", step: "splash" };

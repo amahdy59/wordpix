@@ -276,15 +276,18 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         >
           {stage === "read-listen" && (
             <div className="space-y-6">
-              <details className="rounded-2xl border border-border p-4">
-                <summary className="min-h-11 cursor-pointer rounded-xl py-2 font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
+              <section
+                className="rounded-2xl border border-border bg-card p-4 sm:p-5"
+                aria-label={t("ux.beforeReading")}
+              >
+                <h2 className="mb-3 text-base font-bold text-foreground">
                   {t("ux.beforeReading")}
-                </summary>
+                </h2>
                 <HadithWarmupStage
                   warmup={parsedStages.warmup}
                   onProceedToText={scrollToHadithText}
                 />
-              </details>
+              </section>
               <HadithReadListenStage
                 source={lesson.source}
                 onPlayAudio={playTrack}

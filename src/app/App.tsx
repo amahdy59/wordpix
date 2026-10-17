@@ -86,6 +86,7 @@ function AppInner() {
         unitId: screen.unitId,
         area: screen.area,
         nodeId: screen.nodeId,
+        returnTo: screen.returnTo,
       });
       return;
     }

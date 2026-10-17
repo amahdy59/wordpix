@@ -60,23 +60,18 @@ export function BusinessDiscussionStage({ unit, onNext }: Props) {
               </span>
             </div>
             {guidance.length > 0 && (
-              <details className="mt-2 ms-10 group">
-                <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-sm font-semibold text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
-                  {t("courseLesson.showDiscussionGuidance")}
-                </summary>
-                <ul className="space-y-2 border-s-2 border-border ps-3">
-                  {guidance.map((item) => (
-                    <li
-                      key={item.id}
-                      className="text-base leading-relaxed text-foreground"
-                      lang="en"
-                      dir="ltr"
-                    >
-                      <RichPassageText text={item.prompt} />
-                    </li>
-                  ))}
-                </ul>
-              </details>
+              <ul className="mt-2 ms-10 space-y-1.5 border-s-2 border-primary/30 ps-3">
+                {guidance.map((item) => (
+                  <li
+                    key={item.id}
+                    className="text-sm leading-relaxed text-muted-foreground"
+                    lang="en"
+                    dir="ltr"
+                  >
+                    <RichPassageText text={item.prompt} />
+                  </li>
+                ))}
+              </ul>
             )}
           </li>
         ))}

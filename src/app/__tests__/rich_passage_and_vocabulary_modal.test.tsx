@@ -122,10 +122,9 @@ describe("ReadingStage integration", () => {
 
     expect(screen.getByRole("heading", { name: "Words in this reading" })).toBeDefined();
 
-    // Clicking a term in the Target Terms pill row opens the word modal
-    // (Note: "biometric" appears both in the summary and in the target pills!)
+    // "biometric" appears both in the summary and in the target pills, both are clickable!
     const biometricButtons = screen.getAllByRole("button", { name: /learn about biometric/i });
-    expect(biometricButtons).toHaveLength(1);
+    expect(biometricButtons).toHaveLength(2);
     fireEvent.click(biometricButtons[0]);
 
     const dialog = screen.getByRole("dialog");

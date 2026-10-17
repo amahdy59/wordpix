@@ -152,10 +152,6 @@ describe("Business Learning Screens & Spaced Repetition", () => {
       fireEvent.change(input, { target: { value: "role" } });
     }
 
-    // Check answer
-    const checkBtn = screen.getByRole("button", { name: /check answer/i });
-    fireEvent.click(checkBtn);
-
     fireEvent.click(screen.getByText(/optional: how did that feel/i));
     // Answer revealed, rate confidence
     expect(screen.getByText(/how easily did you recall this item/i)).toBeDefined();

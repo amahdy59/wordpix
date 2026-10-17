@@ -32,27 +32,59 @@ export function BusinessRecallStage({
   const [showHint, setShowHint] = useState(false);
   const [ratings, setRatings] = useState<Record<string, string>>({});
   const heading = useRef<HTMLHeadingElement>(null);
+  const autoTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const current = prompts[activeIdx];
   const options = current ? recallChoices(current, unit) : [];
   const submitted = current ? answers[current.id] : undefined;
   const correctAnswer = current?.correctAnswer ?? current?.targetWord;
   const correct = submitted === correctAnswer;
   const answeredCount = prompts.filter((prompt) => answers[prompt.id] !== undefined).length;
+
   useEffect(() => {
     heading.current?.focus();
   }, [activeIdx]);
+
+  useEffect(() => {
+    return () => {
+      if (autoTimer.current) clearTimeout(autoTimer.current);
+    };
+  }, []);
+
   const move = (index: number) => {
+    if (autoTimer.current) clearTimeout(autoTimer.current);
     setActiveIdx(index);
     setSelection(undefined);
     setShowHint(false);
   };
-  const check = () => {
-    if (!current || !selection || submitted !== undefined) return;
-    const next = { ...answers, [current.id]: selection };
+
+  const handleSelectAnswer = (value: string) => {
+    if (!current || submitted !== undefined) return;
+    setSelection(value);
+    const next = { ...answers, [current.id]: value };
     setAnswers(next);
-    onSaveAnswer?.(current.id, selection);
+    onSaveAnswer?.(current.id, value);
     if (prompts.every((prompt) => next[prompt.id] !== undefined)) onComplete?.();
+
+    const isCorrect = value === correctAnswer;
+    if (isCorrect) {
+      if (autoTimer.current) clearTimeout(autoTimer.current);
+      autoTimer.current = setTimeout(() => {
+        if (activeIdx < prompts.length - 1) {
+          move(activeIdx + 1);
+        } else if (prompts.every((prompt) => next[prompt.id] !== undefined)) {
+          onNext();
+        } else {
+          const firstUnanswered = prompts.findIndex((p) => next[p.id] === undefined);
+          if (firstUnanswered !== -1) {
+            move(firstUnanswered);
+          } else {
+            onNext();
+          }
+        }
+      }, 500);
+    }
   };
+
   if (!current || !unit.recall)
     return (
       <div className="space-y-4 py-4">
@@ -111,7 +143,7 @@ export function BusinessRecallStage({
         <ChoiceOptionGroup
           label={t("business.recall.choicesLabel")}
           value={submitted ?? selection}
-          onChange={setSelection}
+          onChange={handleSelectAnswer}
           disabled={submitted !== undefined}
           correctValue={correctAnswer}
           revealFeedback={submitted !== undefined}
@@ -126,32 +158,6 @@ export function BusinessRecallStage({
             accessibleLabel: option,
           }))}
         />
-        {submitted === undefined && (
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            {current.hint ? (
-              <button
-                type="button"
-                aria-expanded={showHint}
-                aria-controls={`hint-${current.id}`}
-                onClick={() => setShowHint(!showHint)}
-                className={`min-h-11 ${button} inline-flex items-center gap-2 text-primary hover:bg-secondary`}
-              >
-                <HelpCircle className="size-4" aria-hidden />
-                {t("business.recall.needHint")}
-              </button>
-            ) : (
-              <span />
-            )}
-            <button
-              type="button"
-              onClick={check}
-              disabled={!selection}
-              className={`min-h-11 ${button} bg-primary text-primary-foreground disabled:opacity-50 disabled:cursor-not-allowed`}
-            >
-              {t("business.recall.checkAnswer")}
-            </button>
-          </div>
-        )}
         {current.hint && (
           <p
             hidden={!showHint}
@@ -178,13 +184,11 @@ export function BusinessRecallStage({
                 {current.modelSentence}
               </p>
             )}
-            <details>
-              <summary
-                className={`min-h-11 ${button} flex cursor-pointer items-center text-primary`}
-              >
+            <div className="pt-2">
+              <span className="block text-sm font-semibold text-primary mb-1">
                 {t("business.recall.optionalRating")}
-              </summary>
-              <p className="py-2 text-sm text-muted-foreground">
+              </span>
+              <p className="mb-2 text-xs font-semibold text-muted-foreground">
                 {t("business.recall.selfRatingPrompt")}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -203,7 +207,7 @@ export function BusinessRecallStage({
                   </button>
                 ))}
               </div>
-            </details>
+            </div>
           </div>
         )}
       </section>
@@ -211,33 +215,73 @@ export function BusinessRecallStage({
         aria-label={t("courseLesson.questionNavigation")}
         className="flex flex-wrap items-center justify-between gap-3 border-t border-border pt-4"
       >
-        <button
-          type="button"
-          disabled={activeIdx === 0}
-          onClick={() => move(activeIdx - 1)}
-          className={`min-h-11 ${button} inline-flex items-center gap-2 border border-border text-foreground disabled:opacity-50`}
-        >
-          <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-          {t("quiz.previousQuestion")}
-        </button>
-        {activeIdx < prompts.length - 1 && (
+        <div className="flex flex-wrap items-center gap-2">
           <button
             type="button"
-            onClick={() => move(activeIdx + 1)}
-            className={`min-h-11 ${button} inline-flex items-center gap-2 bg-primary text-primary-foreground`}
+            disabled={activeIdx === 0}
+            onClick={() => move(activeIdx - 1)}
+            aria-label={t("quiz.previousQuestion")}
+            className={`min-h-11 ${button} inline-flex items-center gap-2 border border-border bg-card text-foreground transition-colors hover:bg-muted disabled:opacity-40 disabled:pointer-events-none`}
           >
-            {submitted === undefined ? t("quiz.skipQuestion") : t("quiz.nextQuestion")}
-            <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+            <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+            <span>{t("quiz.previousQuestion")}</span>
           </button>
-        )}
+          {current.hint && (
+            <button
+              type="button"
+              aria-expanded={showHint}
+              aria-controls={`hint-${current.id}`}
+              onClick={() => setShowHint(!showHint)}
+              className={`min-h-11 ${button} inline-flex items-center gap-1.5 text-primary transition-colors hover:bg-secondary/60`}
+            >
+              <HelpCircle className="size-4" aria-hidden />
+              <span>{t("business.recall.needHint")}</span>
+            </button>
+          )}
+        </div>
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+          <button
+            type="button"
+            className={`min-h-11 ${button} text-sm font-semibold text-muted-foreground transition-colors hover:bg-muted/50 hover:text-foreground`}
+            onClick={() => {
+              if (autoTimer.current) clearTimeout(autoTimer.current);
+              onNext();
+            }}
+          >
+            {t("business.recall.beginLessonWarmup")}
+          </button>
+          {activeIdx < prompts.length - 1 ? (
+            <button
+              type="button"
+              onClick={() => move(activeIdx + 1)}
+              className={`min-h-11 ${button} inline-flex items-center gap-2 transition-all ${
+                submitted === undefined
+                  ? "border border-border bg-card text-foreground hover:bg-muted"
+                  : "bg-primary text-primary-foreground shadow-wp-xs hover:bg-primary/90 motion-safe:active:scale-[0.98]"
+              }`}
+            >
+              <span>
+                {submitted === undefined ? t("quiz.skipQuestion") : t("quiz.nextQuestion")}
+              </span>
+              <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+            </button>
+          ) : (
+            submitted !== undefined && (
+              <button
+                type="button"
+                onClick={() => {
+                  if (autoTimer.current) clearTimeout(autoTimer.current);
+                  onNext();
+                }}
+                className={`min-h-11 ${button} inline-flex items-center gap-2 bg-primary text-primary-foreground shadow-wp-xs transition-all hover:bg-primary/90 motion-safe:active:scale-[0.98]`}
+              >
+                <span>{t("business.recall.beginLessonWarmup")}</span>
+                <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+              </button>
+            )
+          )}
+        </div>
       </nav>
-      <button
-        type="button"
-        className={`min-h-11 ${button} self-end text-primary underline underline-offset-4 hover:bg-secondary`}
-        onClick={onNext}
-      >
-        {t("business.recall.beginLessonWarmup")}
-      </button>
     </div>
   );
 }

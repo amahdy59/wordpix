@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  ArrowDown,
-  BookOpen,
-  ChevronDown,
-  Lightbulb,
-  MessageSquareQuote,
-  Sparkles,
-} from "lucide-react";
+import { ArrowDown, BookOpen, Lightbulb, MessageSquareQuote, Sparkles } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { ParsedWarmup } from "../hadithLessonContent";
 import { ChoiceOptionGroup } from "../../../shared/ChoiceOptionGroup";
@@ -91,41 +84,27 @@ export function HadithWarmupStage({
           </div>
 
           {warmup.previewTerms.length > 0 && (
-            <details className="group overflow-hidden rounded-2xl border border-border bg-background transition-colors">
-              <summary
-                className={`flex min-h-12 cursor-pointer list-none items-center justify-between px-4 py-3 text-base font-black text-foreground transition-colors hover:bg-muted/50 ${focusRing}`}
-              >
-                <span className="inline-flex items-center gap-2">
-                  <Sparkles className="size-4 text-primary" aria-hidden />
-                  {t("hadith.pilot.warmup.previewTitle") || "Preview key expressions"}
-                </span>
-                <ChevronDown
-                  className="size-4 text-muted-foreground transition-transform duration-200 motion-reduce:transition-none group-open:rotate-180"
-                  aria-hidden
-                />
-              </summary>
-              <div className="border-t border-border p-4">
-                <dl className="grid gap-2.5">
-                  {warmup.previewTerms.map((item) => (
-                    <div
-                      key={item.term}
-                      className="flex flex-col gap-0.5 rounded-xl border border-border/80 bg-muted/30 px-3.5 py-2.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-3"
-                    >
-                      <dt
-                        className="shrink-0 text-base font-black text-primary"
-                        lang="en"
-                        dir="ltr"
-                      >
-                        {item.term}
-                      </dt>
-                      <dd className="text-sm font-semibold leading-relaxed text-muted-foreground sm:text-end">
-                        {item.meaning}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            </details>
+            <div className="overflow-hidden rounded-2xl border border-border bg-card p-4">
+              <span className="mb-3 inline-flex items-center gap-2 text-sm font-black text-foreground">
+                <Sparkles className="size-4 text-primary" aria-hidden />
+                {t("hadith.pilot.warmup.previewTitle") || "Key expressions"}
+              </span>
+              <dl className="grid gap-2">
+                {warmup.previewTerms.map((item) => (
+                  <div
+                    key={item.term}
+                    className="flex flex-col gap-0.5 rounded-xl border border-border/80 bg-muted/30 px-3.5 py-2.5 sm:flex-row sm:items-baseline sm:justify-between sm:gap-3"
+                  >
+                    <dt className="shrink-0 text-base font-black text-primary" lang="en" dir="ltr">
+                      {item.term}
+                    </dt>
+                    <dd className="text-sm font-semibold leading-relaxed text-muted-foreground sm:text-end">
+                      {item.meaning}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           )}
         </div>
 

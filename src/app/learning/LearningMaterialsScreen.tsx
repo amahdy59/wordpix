@@ -20,6 +20,7 @@ interface Props {
   unitId?: string;
   area?: string;
   nodeId?: string;
+  returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice" | "lesson-entry";
   dispatch: React.Dispatch<Action>;
 }
 
@@ -42,6 +43,7 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   unitId,
   area,
   nodeId,
+  returnTo,
   dispatch,
 }: Props) {
   const { t } = useI18n();
@@ -72,8 +74,12 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   }, [unit.id, loadAttempt]);
 
   const handleBack = useCallback(() => {
-    dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
-  }, [dispatch, unit.id]);
+    if (returnTo && returnTo !== "lesson-entry") {
+      dispatch({ type: "GO", to: returnTo });
+    } else {
+      dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
+    }
+  }, [dispatch, returnTo, unit.id]);
 
   if (status === "loading") {
     return (

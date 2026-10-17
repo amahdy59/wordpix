@@ -8,6 +8,7 @@ import { useAudio } from "../../shared/useAudio";
 import { useSound } from "../../shared/useSound";
 import { useSpeechRecognition } from "../../shared/useSpeechRecognition";
 import { useI18n } from "../../context/I18nContext";
+import { useAccessibility } from "../../shared/useAccessibilityPreferences";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -31,6 +32,7 @@ const SELF_RATINGS: { id: SelfRating; label: string; response: string }[] = [
 
 export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dispatch }: Props) {
   const { t } = useI18n();
+  const { accessibility } = useAccessibility();
   const [rating, setRating] = useState<SelfRating | null>(null);
   const { speak } = useAudio();
   const { playClick, playCorrect, playIncorrect } = useSound();
@@ -44,11 +46,12 @@ export const ExSpeakingEchoPractice = memo(function ExSpeakingEchoPractice({ dis
   void SPEECH_UNSUPPORTED_NOTE;
 
   useEffect(() => {
+    if (accessibility.autoPlayAudio === false) return undefined;
     const t = setTimeout(() => {
       speak(target.label);
     }, 250);
     return () => clearTimeout(t);
-  }, [target.label, speak]);
+  }, [target.label, speak, accessibility.autoPlayAudio]);
 
   useEffect(() => {
     if (!attempt) return;

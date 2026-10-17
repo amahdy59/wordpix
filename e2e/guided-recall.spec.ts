@@ -19,7 +19,6 @@ test("Business recall supports answer-later navigation and retains checked answe
   await expect(page.getByText("Question 2 of 7", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: /previous question/i }).click();
   await page.getByRole("radio", { name: "role", exact: true }).click();
-  await page.getByRole("button", { name: /check answer/i }).click();
   await expect(page.getByRole("status").filter({ hasText: /correct/i })).toContainText(/correct/i);
   await page.getByRole("button", { name: /begin lesson warm-up/i }).click();
   await page.getByText("All steps", { exact: true }).click();

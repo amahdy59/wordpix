@@ -26,7 +26,6 @@ import { Button } from "../shared/Button";
 import { PageContainer } from "../shared/PageContainer";
 import { PageHeader } from "../shared/PageHeader";
 import { Surface } from "../shared/Surface";
-import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { COURSE_UNITS } from "../data/courseCatalog";
 import { loadUnitVocabulary } from "../data/vocabulary";
 import { loadLessonStory } from "../data/lessonStoryLoader";
@@ -110,6 +109,22 @@ const SETTING_ITEMS: SettingItem[] = [
     keywords: ["feedback", "spoken", "voice", "audio", "chime", "sound", "answers"],
   },
   {
+    id: "autoPlayAudio",
+    category: "audio",
+    titleKey: "settings.autoPlayAudio",
+    descriptionKey: "settings.autoPlayAudioHint",
+    keywords: [
+      "autoplay",
+      "audio",
+      "sound",
+      "question",
+      "automatic",
+      "manual",
+      "playback",
+      "voice",
+    ],
+  },
+  {
     id: "targetLevel",
     category: "learning",
     titleKey: "settings.targetLevel",
@@ -190,6 +205,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
     autoAdvance,
     spokenFeedback,
     reduceMotion,
+    autoPlayAudio,
   } = accessibility;
 
   const [searchQuery, setSearchQuery] = useState("");
@@ -673,7 +689,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
           )}
 
           {/* SECTION 3: AUDIO & PRONUNCIATION */}
-          {(isVisible("speechRate") || isVisible("voiceEngine") || isVisible("spokenFeedback")) && (
+          {(isVisible("speechRate") ||
+            isVisible("voiceEngine") ||
+            isVisible("spokenFeedback") ||
+            isVisible("autoPlayAudio")) && (
             <section className="flex flex-col gap-3" aria-labelledby="heading-audio">
               <h2
                 id="heading-audio"
@@ -719,9 +738,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                   </div>
                 )}
 
-                {isVisible("speechRate") && isVisible("spokenFeedback") && (
-                  <hr className="border-border/60" />
-                )}
+                {isVisible("speechRate") &&
+                  (isVisible("spokenFeedback") || isVisible("autoPlayAudio")) && (
+                    <hr className="border-border/60" />
+                  )}
 
                 {/* Spoken Feedback Toggle */}
                 {isVisible("spokenFeedback") && (
@@ -753,8 +773,42 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                   </div>
                 )}
 
+                {isVisible("spokenFeedback") && isVisible("autoPlayAudio") && (
+                  <hr className="border-border/60" />
+                )}
+
+                {/* Auto-Play Question Audio Toggle */}
+                {isVisible("autoPlayAudio") && (
+                  <div className="flex flex-wrap items-center justify-between gap-4">
+                    <div className="max-w-md">
+                      <span className="font-sans font-bold text-foreground text-sm sm:text-base">
+                        {t("settings.autoPlayAudio")}
+                      </span>
+                      <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-0.5">
+                        {t("settings.autoPlayAudioHint")}
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setAccessibility({ autoPlayAudio: !autoPlayAudio })}
+                      aria-pressed={autoPlayAudio}
+                      aria-label={t("settings.toggleLabel", {
+                        setting: t("settings.autoPlayAudio"),
+                        state: autoPlayAudio ? t("settings.enabled") : t("settings.disabled"),
+                      })}
+                      className={`px-4 py-2 min-h-[44px] rounded-full font-sans font-bold text-xs sm:text-sm transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
+                        autoPlayAudio
+                          ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
+                          : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
+                      }`}
+                    >
+                      {autoPlayAudio ? t("settings.enabled") : t("settings.disabled")}
+                    </button>
+                  </div>
+                )}
+
                 {isVisible("voiceEngine") && (
-                  <HelpDisclosure label={t("ux.audioTest")}>
+                  <>
                     <hr className="border-border/60" />
                     {/* Voice Engine Preview */}
                     <div className="flex flex-col gap-3 bg-muted/40 p-4 rounded-2xl border border-border">
@@ -798,11 +852,11 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                           </button>
                         </div>
                       </div>
-                      <HelpDisclosure label={t("help.howItWorks")}>
-                        <p>{t("settings.audioEngineDesc")}</p>
-                      </HelpDisclosure>
+                      <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-0.5">
+                        {t("settings.audioEngineDesc")}
+                      </p>
                     </div>
-                  </HelpDisclosure>
+                  </>
                 )}
               </Surface>
             </section>
@@ -876,9 +930,9 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                       <span className="font-sans font-bold text-foreground text-sm sm:text-base">
                         {t("settings.speakingDrills")}
                       </span>
-                      <HelpDisclosure label={t("help.howItWorks")}>
-                        <p>{t("settings.speakingDrillsHint")}</p>
-                      </HelpDisclosure>
+                      <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-0.5">
+                        {t("settings.speakingDrillsHint")}
+                      </p>
                     </div>
                     <button
                       type="button"
@@ -910,9 +964,9 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                       <span className="font-sans font-bold text-foreground text-sm sm:text-base">
                         {t("settings.pronunciationExercises")}
                       </span>
-                      <HelpDisclosure label={t("help.howItWorks")}>
-                        <p>{t("settings.pronunciationExercisesHint")}</p>
-                      </HelpDisclosure>
+                      <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-0.5">
+                        {t("settings.pronunciationExercisesHint")}
+                      </p>
                     </div>
                     <button
                       type="button"
@@ -948,9 +1002,9 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                       <span className="font-sans font-bold text-foreground text-sm sm:text-base">
                         {t("settings.timedExercises")}
                       </span>
-                      <HelpDisclosure label={t("help.howItWorks")}>
-                        <p>{t("settings.timedExercisesHint")}</p>
-                      </HelpDisclosure>
+                      <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-0.5">
+                        {t("settings.timedExercisesHint")}
+                      </p>
                     </div>
                     <button
                       type="button"
@@ -982,9 +1036,9 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                       <span className="font-sans font-bold text-foreground text-sm sm:text-base">
                         {t("settings.autoAdvance")}
                       </span>
-                      <HelpDisclosure label={t("help.howItWorks")}>
-                        <p>{t("settings.autoAdvanceHint")}</p>
-                      </HelpDisclosure>
+                      <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-0.5">
+                        {t("settings.autoAdvanceHint")}
+                      </p>
                     </div>
                     <button
                       type="button"
@@ -1016,9 +1070,9 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                       <span className="font-sans font-bold text-foreground text-sm sm:text-base">
                         {t("settings.listeningDrills")}
                       </span>
-                      <HelpDisclosure label={t("help.howItWorks")}>
-                        <p>{t("settings.listeningDrillsHint")}</p>
-                      </HelpDisclosure>
+                      <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-0.5">
+                        {t("settings.listeningDrillsHint")}
+                      </p>
                     </div>
                     <button
                       type="button"
@@ -1178,89 +1232,84 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
 
         {/* Live Preview Sticky Sidebar Column */}
         <aside aria-label={t("settings.livePreviewTitle")} className="2xl:sticky 2xl:top-6">
-          <details>
-            <summary className="min-h-11 cursor-pointer rounded-xl py-2 font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
-              {t("settings.livePreviewTitle")}
-            </summary>
-            <Surface className="p-5 border border-border flex flex-col gap-4 shadow-sm">
-              <div className="flex items-center justify-between">
-                <span className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-                  <Sparkles className="size-3.5 text-primary" aria-hidden="true" />
-                  <span>{t("settings.livePreviewTitle")}</span>
-                </span>
-                <span className="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-secondary text-primary">
-                  {textSize === "standard" ? "100%" : textSize === "large" ? "125%" : "150%"}
+          <Surface className="p-5 border border-border flex flex-col gap-4 shadow-sm">
+            <div className="flex items-center justify-between">
+              <span className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
+                <Sparkles className="size-3.5 text-primary" aria-hidden="true" />
+                <span>{t("settings.livePreviewTitle")}</span>
+              </span>
+              <span className="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-secondary text-primary">
+                {textSize === "standard" ? "100%" : textSize === "large" ? "125%" : "150%"}
+              </span>
+            </div>
+
+            <p className="font-sans text-xs text-muted-foreground">
+              {t("settings.livePreviewDesc")}
+            </p>
+
+            {/* Simulated Word Learning Card */}
+            <div className="rounded-2xl border border-border bg-background p-4 flex flex-col gap-3">
+              <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
+                <span>{formatNumber("1 / 20", numeralSystem)}</span>
+                <span className="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-bold">
+                  {state.preferences.englishLevel}
                 </span>
               </div>
 
-              <p className="font-sans text-xs text-muted-foreground">
-                {t("settings.livePreviewDesc")}
+              <div className="space-y-1">
+                <div className="flex items-baseline justify-between gap-2">
+                  <h3 className="font-sans font-black text-foreground text-xl sm:text-2xl">
+                    {t("settings.previewCardWord")}
+                  </h3>
+                  <span className="font-mono text-xs text-muted-foreground">
+                    {t("settings.previewCardPhonetic")}
+                  </span>
+                </div>
+                <p className="font-sans text-sm font-semibold text-primary">
+                  {t("settings.previewCardArabic")}
+                </p>
+              </div>
+
+              <p className="font-sans text-xs sm:text-sm text-foreground/90 leading-relaxed border-t border-border/50 pt-2">
+                {t("settings.livePreviewSentence")}
               </p>
 
-              {/* Simulated Word Learning Card */}
-              <div className="rounded-2xl border border-border bg-background p-4 flex flex-col gap-3">
-                <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
-                  <span>{formatNumber("1 / 20", numeralSystem)}</span>
-                  <span className="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-bold">
-                    {state.preferences.englishLevel}
-                  </span>
-                </div>
+              <button
+                type="button"
+                onClick={() => speak("Bed. The lamp is on the nightstand beside the bed.")}
+                aria-label={`Test pronunciation at ${speechRate}x speed`}
+                className="mt-1 w-full min-h-[44px] py-2 px-3 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-secondary/80 hover:border-primary/40 shadow-wp-xs font-sans font-bold text-xs flex items-center justify-center gap-2 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+              >
+                <Volume2 className="size-4" aria-hidden="true" />
+                <span>{`Pronounce (${speechRate}x)`}</span>
+              </button>
+            </div>
 
-                <div className="space-y-1">
-                  <div className="flex items-baseline justify-between gap-2">
-                    <h3 className="font-sans font-black text-foreground text-xl sm:text-2xl">
-                      {t("settings.previewCardWord")}
-                    </h3>
-                    <span className="font-mono text-xs text-muted-foreground">
-                      {t("settings.previewCardPhonetic")}
-                    </span>
-                  </div>
-                  <p className="font-sans text-sm font-semibold text-primary">
-                    {t("settings.previewCardArabic")}
-                  </p>
-                </div>
-
-                <p className="font-sans text-xs sm:text-sm text-foreground/90 leading-relaxed border-t border-border/50 pt-2">
-                  {t("settings.livePreviewSentence")}
-                </p>
-
-                <button
-                  type="button"
-                  onClick={() => speak("Bed. The lamp is on the nightstand beside the bed.")}
-                  aria-label={`Test pronunciation at ${speechRate}x speed`}
-                  className="mt-1 w-full min-h-[44px] py-2 px-3 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-secondary/80 hover:border-primary/40 shadow-wp-xs font-sans font-bold text-xs flex items-center justify-center gap-2 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
-                >
-                  <Volume2 className="size-4" aria-hidden="true" />
-                  <span>{`Pronounce (${speechRate}x)`}</span>
-                </button>
-              </div>
-
-              {/* Quick Status Pill Bar */}
-              <div className="flex flex-wrap gap-1.5 text-[11px] font-sans font-semibold text-muted-foreground pt-1">
-                <span className="px-2.5 py-1 rounded-lg bg-muted border border-border">
-                  {resolvedTheme === "dark" ? t("settings.theme.dark") : t("settings.theme.light")}
+            {/* Quick Status Pill Bar */}
+            <div className="flex flex-wrap gap-1.5 text-[11px] font-sans font-semibold text-muted-foreground pt-1">
+              <span className="px-2.5 py-1 rounded-lg bg-muted border border-border">
+                {resolvedTheme === "dark" ? t("settings.theme.dark") : t("settings.theme.light")}
+              </span>
+              <span className="px-2.5 py-1 rounded-lg bg-muted border border-border">
+                {numeralSystem === "arabic" ? "١, ٢, ٣" : "1, 2, 3"}
+              </span>
+              {highContrast && (
+                <span className="px-2.5 py-1 rounded-lg bg-wp-green/15 text-wp-green border border-wp-green/30">
+                  {t("settings.enabledContrast")}
                 </span>
-                <span className="px-2.5 py-1 rounded-lg bg-muted border border-border">
-                  {numeralSystem === "arabic" ? "١, ٢, ٣" : "1, 2, 3"}
+              )}
+              {reduceMotion && (
+                <span className="px-2.5 py-1 rounded-lg bg-wp-blue/15 text-wp-blue border border-wp-blue/30">
+                  {t("settings.reduceMotion")}
                 </span>
-                {highContrast && (
-                  <span className="px-2.5 py-1 rounded-lg bg-wp-green/15 text-wp-green border border-wp-green/30">
-                    {t("settings.enabledContrast")}
-                  </span>
-                )}
-                {reduceMotion && (
-                  <span className="px-2.5 py-1 rounded-lg bg-wp-blue/15 text-wp-blue border border-wp-blue/30">
-                    {t("settings.reduceMotion")}
-                  </span>
-                )}
-                {!timedExercises && (
-                  <span className="px-2.5 py-1 rounded-lg bg-wp-amber/15 text-wp-amber-foreground border border-wp-amber/30">
-                    {t("settings.timedExercises")}
-                  </span>
-                )}
-              </div>
-            </Surface>
-          </details>
+              )}
+              {!timedExercises && (
+                <span className="px-2.5 py-1 rounded-lg bg-wp-amber/15 text-wp-amber-foreground border border-wp-amber/30">
+                  {t("settings.timedExercises")}
+                </span>
+              )}
+            </div>
+          </Surface>
         </aside>
       </div>
     </PageContainer>

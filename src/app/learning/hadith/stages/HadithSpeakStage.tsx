@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, Mic, Sparkles, Volume2 } from "lucide-react";
+import { Mic, Sparkles, Volume2 } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import { useAudio } from "../../../shared/useAudio";
 import { SpeechRecordCompare } from "../../../shared/SpeechRecordCompare";
@@ -86,42 +86,34 @@ export function HadithSpeakStage({ speak: speakData }: Props) {
           </div>
         )}
 
-        {/* Model Answer Drawer */}
-        <details className="group mt-6 overflow-hidden rounded-2xl border border-border bg-background transition-colors open:bg-card">
-          <summary
-            className={`flex min-h-12 cursor-pointer list-none items-center justify-between p-4 font-black text-foreground transition-colors hover:bg-muted/50 ${focusRing}`}
-          >
-            <span>{t("hadith.showSampleAnswer") || "Show sample answer"}</span>
-            <ChevronDown
-              className="size-4 text-muted-foreground transition-transform duration-200 group-open:rotate-180"
-              aria-hidden
-            />
-          </summary>
-          <div className="border-t border-border p-5">
-            <div className="rounded-xl bg-muted/60 p-4">
-              <p
-                className="wp-prose text-base font-medium leading-relaxed text-foreground"
-                lang="en"
-                dir="ltr"
-              >
-                {modelText}
-              </p>
-            </div>
-            <button
-              type="button"
-              onClick={() => playAudio(modelText)}
-              aria-busy={isPlaying}
-              className={`mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border border-primary px-4 text-base font-black text-primary transition-all hover:bg-secondary motion-safe:active:scale-[0.98] ${focusRing}`}
+        {/* Model Answer */}
+        <div className="mt-6 overflow-hidden rounded-2xl border border-border bg-card p-5">
+          <span className="mb-2 block text-xs font-bold uppercase tracking-wider text-primary">
+            {t("hadith.showSampleAnswer") || "Sample answer"}
+          </span>
+          <div className="rounded-xl bg-muted/60 p-4">
+            <p
+              className="wp-prose text-base font-medium leading-relaxed text-foreground"
+              lang="en"
+              dir="ltr"
             >
-              <Volume2 className="size-4" aria-hidden />
-              <span>
-                {isPlaying
-                  ? t("hadith.playing") || "Playing…"
-                  : t("hadith.playModel") || "Play sample pronunciation"}
-              </span>
-            </button>
+              {modelText}
+            </p>
           </div>
-        </details>
+          <button
+            type="button"
+            onClick={() => playAudio(modelText)}
+            aria-busy={isPlaying}
+            className={`mt-4 inline-flex min-h-11 items-center gap-2 rounded-xl border border-primary px-4 text-base font-black text-primary transition-all hover:bg-secondary motion-safe:active:scale-[0.98] ${focusRing}`}
+          >
+            <Volume2 className="size-4" aria-hidden />
+            <span>
+              {isPlaying
+                ? t("hadith.playing") || "Playing…"
+                : t("hadith.playModel") || "Play sample pronunciation"}
+            </span>
+          </button>
+        </div>
       </header>
 
       <SpeechRecordCompare

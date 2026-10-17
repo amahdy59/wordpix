@@ -1,4 +1,3 @@
-import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useState } from "react";
 import { createPortal } from "react-dom";
 import {
@@ -58,6 +57,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
     autoAdvance,
     spokenFeedback,
     reduceMotion,
+    autoPlayAudio,
   } = accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
   const [isPreloading, setIsPreloading] = useState(false);
@@ -446,9 +446,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     </button>
                   </div>
                 </div>
-                <HelpDisclosure label={t("help.howItWorks")}>
-                  <p>{t("settings.audioEngineDesc")}</p>
-                </HelpDisclosure>
+                <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                  {t("settings.audioEngineDesc")}
+                </p>
               </div>
 
               <hr className="border-border/60" />
@@ -460,9 +460,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.speakingDrills")}
                     </span>
-                    <HelpDisclosure label={t("help.howItWorks")}>
-                      <p>{t("settings.speakingDrillsHint")}</p>
-                    </HelpDisclosure>
+                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                      {t("settings.speakingDrillsHint")}
+                    </p>
                   </div>
                   <button
                     type="button"
@@ -487,9 +487,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.pronunciationExercises")}
                     </span>
-                    <HelpDisclosure label={t("help.howItWorks")}>
-                      <p>{t("settings.pronunciationExercisesHint")}</p>
-                    </HelpDisclosure>
+                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                      {t("settings.pronunciationExercisesHint")}
+                    </p>
                   </div>
                   <button
                     type="button"
@@ -516,9 +516,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.timedExercises")}
                     </span>
-                    <HelpDisclosure label={t("help.howItWorks")}>
-                      <p>{t("settings.timedExercisesHint")}</p>
-                    </HelpDisclosure>
+                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                      {t("settings.timedExercisesHint")}
+                    </p>
                   </div>
                   <button
                     type="button"
@@ -543,9 +543,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.autoAdvance")}
                     </span>
-                    <HelpDisclosure label={t("help.howItWorks")}>
-                      <p>{t("settings.autoAdvanceHint")}</p>
-                    </HelpDisclosure>
+                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                      {t("settings.autoAdvanceHint")}
+                    </p>
                   </div>
                   <button
                     type="button"
@@ -570,9 +570,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.speakAnswers")}
                     </span>
-                    <HelpDisclosure label={t("help.howItWorks")}>
-                      <p>{t("settings.speakAnswersHint")}</p>
-                    </HelpDisclosure>
+                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                      {t("settings.speakAnswersHint")}
+                    </p>
                   </div>
                   <button
                     type="button"
@@ -595,11 +595,38 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
+                      {t("settings.autoPlayAudio")}
+                    </span>
+                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                      {t("settings.autoPlayAudioHint")}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setAccessibility({ autoPlayAudio: !autoPlayAudio })}
+                    aria-pressed={autoPlayAudio}
+                    aria-label={t("settings.toggleLabel", {
+                      setting: t("settings.autoPlayAudio"),
+                      state: autoPlayAudio ? t("settings.enabled") : t("settings.disabled"),
+                    })}
+                    className={`shrink-0 px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      autoPlayAudio
+                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                        : "bg-muted text-muted-foreground border-border"
+                    }`}
+                  >
+                    {autoPlayAudio ? t("settings.enabled") : t("settings.disabled")}
+                  </button>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.listeningDrills")}
                     </span>
-                    <HelpDisclosure label={t("help.howItWorks")}>
-                      <p>{t("settings.listeningDrillsHint")}</p>
-                    </HelpDisclosure>
+                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                      {t("settings.listeningDrillsHint")}
+                    </p>
                   </div>
                   <button
                     type="button"

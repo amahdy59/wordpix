@@ -25,7 +25,7 @@ interface Props {
   className?: string;
   /** Raw-text offsets of the provider-timed sentence. Keeps controls mounted. */
   highlightRange?: { start: number; end: number };
-  /** Continuous reading uses marks; the adjacent glossary owns word actions. */
+  /** Vocabulary highlights are interactive when onTermClick is provided, or rendered as decorated marks. */
   interactiveVocabulary?: boolean;
 }
 
@@ -183,16 +183,33 @@ export const RichPassageText = memo(function RichPassageText({
               </strong>
             );
 
-          case "vocab":
-            if (!interactiveVocabulary)
+          case "vocab": {
+            const isAudioActive = Boolean(
+              highlightRange &&
+              highlightRange.end > token.start &&
+              highlightRange.start < token.start + token.text.length
+            );
+            const isInteractive = interactiveVocabulary;
+
+            if (!isInteractive) {
               return (
                 <mark
                   key={i}
-                  className="bg-transparent font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4"
+                  className={[
+                    "inline rounded px-1 py-0.5 -mx-0.5 align-baseline",
+                    isAudioActive ? "bg-transparent" : "bg-primary/8",
+                    "font-semibold text-foreground",
+                    "underline decoration-primary decoration-2 underline-offset-4",
+                    token.bold ? "font-black" : "font-semibold",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
                 >
                   {content(token)}
                 </mark>
               );
+            }
+
             return (
               <button
                 key={i}
@@ -203,12 +220,14 @@ export const RichPassageText = memo(function RichPassageText({
                   `Learn more about ${token.term}`
                 }
                 className={[
-                  "inline-flex min-h-11 min-w-11 items-baseline rounded-md px-1 py-0.5 mx-0.5 align-baseline cursor-pointer motion-safe:transition-colors",
-                  "bg-secondary text-primary border border-primary/25",
-                  "underline decoration-primary/60 decoration-2 underline-offset-2",
-                  "hover:bg-secondary hover:border-primary/50 motion-safe:active:scale-[0.98]",
-                  "focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary",
-                  token.bold ? "font-black" : "font-bold",
+                  "inline rounded px-1 py-0.5 -mx-0.5 align-baseline cursor-pointer touch-manipulation",
+                  isAudioActive ? "bg-transparent" : "bg-primary/8",
+                  "font-semibold text-foreground",
+                  "underline decoration-primary decoration-2 underline-offset-4",
+                  "hover:bg-primary/15 hover:decoration-primary hover:text-primary active:bg-primary/20 motion-safe:active:scale-[0.99]",
+                  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:bg-primary/15",
+                  "motion-safe:transition-colors",
+                  token.bold ? "font-black" : "font-semibold",
                 ]
                   .filter(Boolean)
                   .join(" ")}
@@ -216,6 +235,7 @@ export const RichPassageText = memo(function RichPassageText({
                 {content(token)}
               </button>
             );
+          }
         }
       })}
     </span>

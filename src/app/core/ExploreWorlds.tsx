@@ -989,9 +989,9 @@ const UnitCard = memo(function UnitCard({
       tooltipText={curriculum.outcome}
       statusIcon={<Play className="size-3.5 shrink-0" aria-hidden="true" />}
       statusText={t("explore.wordsBadge", { count: totalWords })}
-      actionLabel={t("study.referenceGuideTitle")}
+      actionLabel={t("action.continue")}
       onClick={() =>
-        dispatch({ type: "GO", to: "learning-materials", unitId: unit.id, area: "reference" })
+        dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id, returnTo: "library" })
       }
       secondaryAction={
         <div className="flex flex-col gap-2.5">
@@ -1014,10 +1014,11 @@ const UnitCard = memo(function UnitCard({
                 to: "learning-materials",
                 unitId: unit.id,
                 area: "learn",
+                returnTo: "library",
               })
             }
-            title={t("dashboard.studyGuideAria", { unit: unit.name })}
-            aria-label={t("dashboard.studyGuideAria", { unit: unit.name })}
+            title={t("explore.studyMaterialsAria", { unit: unit.name })}
+            aria-label={t("explore.studyMaterialsAria", { unit: unit.name })}
             className="min-h-[44px] w-full px-3 py-2 bg-secondary text-primary hover:bg-secondary/80 border border-primary/20 rounded-xl font-sans font-bold text-xs sm:text-sm flex items-center justify-center gap-1.5 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
           >
             <BookOpen className="size-4 shrink-0" aria-hidden="true" />

@@ -1,4 +1,3 @@
-import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo, useState } from "react";
 import type { Action, SkillCategory } from "../types";
 import {
@@ -410,7 +409,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               <button
                 type="button"
                 onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
-                className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 pe-16 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors cursor-pointer group"
+                className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors cursor-pointer group"
               >
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center justify-between gap-2">
@@ -420,6 +419,9 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                       </h3>
                     </div>
                   </div>
+                  <p className="font-sans text-sm text-muted-foreground mt-1 line-clamp-1">
+                    {t(`skillHub.exercises.${ex.id}.description`)}
+                  </p>
 
                   <div className="flex items-center gap-1.5 flex-wrap mt-2">
                     {ex.requiresMic && (
@@ -447,13 +449,6 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                   />
                 </div>
               </button>
-              <HelpDisclosure
-                variant="icon"
-                label={t("help.aboutTopic", { title: t(`skillHub.exercises.${ex.id}.title`) })}
-                className="absolute end-2 top-2 z-10"
-              >
-                {t(`skillHub.exercises.${ex.id}.description`)}
-              </HelpDisclosure>
             </article>
           ))}
         </div>

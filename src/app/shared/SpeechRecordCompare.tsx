@@ -1,4 +1,3 @@
-import { HelpDisclosure } from "./HelpDisclosure";
 import { useEffect, useId, useRef, useState } from "react";
 import {
   CheckCircle2,
@@ -134,9 +133,9 @@ export function SpeechRecordCompare({
   const bodyContent = (
     <div className={`space-y-5 ${noDetails ? "" : "border-t border-border p-5 sm:p-6"}`}>
       {!compact && (
-        <HelpDisclosure label={t("help.howItWorks")}>
-          <p>{description ?? t("speechPractice.subtitle")}</p>
-        </HelpDisclosure>
+        <p className="text-base text-muted-foreground leading-relaxed">
+          {description ?? t("speechPractice.subtitle")}
+        </p>
       )}
       {!compact && (
         <div className="flex items-start gap-3 rounded-2xl border border-primary/25 bg-secondary p-4">
@@ -350,27 +349,18 @@ export function SpeechRecordCompare({
         )}
       </ol>
       {compact && (
-        <>
-          <HelpDisclosure label={t("help.howItWorks")}>
-            <p>{description ?? t("speechPractice.subtitle")}</p>
-          </HelpDisclosure>
-          <p id={`${id}-privacy`} className="sr-only">
+        <div className="space-y-1">
+          <p className="text-sm text-muted-foreground">
+            {description ?? t("speechPractice.subtitle")}
+          </p>
+          <p id={`${id}-privacy`} className="text-xs text-muted-foreground">
             {t(
               pronunciationFeedback && onlineAssessmentEnabled()
                 ? "pronunciationEnhancements.recordingPrivacy"
                 : "speechPractice.privacy"
             )}
           </p>
-          <HelpDisclosure label={t("pronunciationEnhancements.recordingPrivacyTitle")}>
-            <p className="text-sm text-foreground">
-              {t(
-                pronunciationFeedback && onlineAssessmentEnabled()
-                  ? "pronunciationEnhancements.recordingPrivacy"
-                  : "speechPractice.privacy"
-              )}
-            </p>
-          </HelpDisclosure>
-        </>
+        </div>
       )}
 
       {recording.recordingUrl && (

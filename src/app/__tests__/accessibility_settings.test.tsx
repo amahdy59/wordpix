@@ -203,6 +203,19 @@ describe("SettingsModal drives persisted state", () => {
     });
   });
 
+  it("exposes an autoPlayAudio toggle that updates persisted accessibility state", async () => {
+    const user = userEvent.setup();
+    renderSettings();
+
+    const toggle = screen.getByRole("button", {
+      name: /Auto-Play Question Audio: Enabled/i,
+    });
+    expect(toggle).toHaveAttribute("aria-pressed", "true");
+
+    await user.click(toggle);
+    expect(toggle).toHaveAttribute("aria-pressed", "false");
+  });
+
   /**
    * The footer button said "Save & Close Settings", implying a pending commit
    * that never existed — nothing was ever saved. Changes apply immediately, so

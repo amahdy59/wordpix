@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { pronunciationMatches } from "./pronunciationSearch";
-import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import { ArrowLeft, ChevronDown, Headphones, Search } from "lucide-react";
 import type { Action } from "../../types";
 import { useLearner } from "../../context/LearnerContext";
@@ -193,6 +192,7 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
         <CurriculumHeroHeader
           titleId="pronunciation-curriculum-title"
           title={t("pronunciation.curriculumTitle")}
+          description={t("pronunciation.curriculumDescription")}
           metrics={[
             { label: t("pronunciation.summaryMastered"), value: completed },
             { label: t("pronunciation.summaryDue"), value: due },
@@ -225,42 +225,28 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
             </Button>
           }
         >
-          <HelpDisclosure
-            label={t("lessonShell.filterSummary", {
-              filter: t(
-                filter === "all"
-                  ? "pronunciation.filterAll"
-                  : filter === "due"
-                    ? "pronunciation.filterDue"
-                    : filter === "in-progress"
-                      ? "pronunciation.filterInProgress"
-                      : "pronunciation.filterMastered"
-              ),
-            })}
-          >
-            <CurriculumFilterTabs
-              label={t("pronunciation.filtersLabel")}
-              value={filter}
-              onChange={setFilter}
-              panelId="pronunciation-lesson-results"
-              options={[
-                {
-                  value: "all",
-                  label: t("pronunciation.filterAll"),
-                  count: FIGMA_PRONUNCIATION_LESSONS.length,
-                },
-                { value: "due", label: t("pronunciation.filterDue"), count: due },
-                {
-                  value: "in-progress",
-                  label: t("pronunciation.filterInProgress"),
-                  count: Object.values(state.pronunciationProgress).filter(
-                    (entry) => entry.status === "in-progress"
-                  ).length,
-                },
-                { value: "mastered", label: t("pronunciation.filterMastered"), count: completed },
-              ]}
-            />
-          </HelpDisclosure>
+          <CurriculumFilterTabs
+            label={t("pronunciation.filtersLabel")}
+            value={filter}
+            onChange={setFilter}
+            panelId="pronunciation-lesson-results"
+            options={[
+              {
+                value: "all",
+                label: t("pronunciation.filterAll"),
+                count: FIGMA_PRONUNCIATION_LESSONS.length,
+              },
+              { value: "due", label: t("pronunciation.filterDue"), count: due },
+              {
+                value: "in-progress",
+                label: t("pronunciation.filterInProgress"),
+                count: Object.values(state.pronunciationProgress).filter(
+                  (entry) => entry.status === "in-progress"
+                ).length,
+              },
+              { value: "mastered", label: t("pronunciation.filterMastered"), count: completed },
+            ]}
+          />
         </CurriculumHeroHeader>
 
         <div>
@@ -421,9 +407,6 @@ export function PronunciationCurriculumScreen({ dispatch }: Props) {
             }
           />
         )}
-        <HelpDisclosure label={t("help.aboutCourse")}>
-          <p>{t("pronunciation.curriculumDescription")}</p>
-        </HelpDisclosure>
       </div>
 
       <PronunciationLessonInfoModal

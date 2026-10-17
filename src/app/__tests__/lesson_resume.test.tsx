@@ -73,4 +73,15 @@ describe("Unit-scoped lesson resumption", () => {
     expect(dispatch).toHaveBeenCalledWith({ type: "RESUME_LESSON", unitId: "bedroom" });
     expect(dispatch).not.toHaveBeenCalledWith(expect.objectContaining({ type: "START_LESSON" }));
   });
+
+  it("resumes when clicking the in-progress group card directly", () => {
+    saveLessonResume(saved);
+    const dispatch = vi.fn();
+    render(<LessonWorldEntry unitId="bedroom" dispatch={dispatch} />);
+    fireEvent.click(
+      screen.getByRole("button", { name: new RegExp(`group 1.*${group.name}`, "i") })
+    );
+    expect(dispatch).toHaveBeenCalledWith({ type: "RESUME_LESSON", unitId: "bedroom" });
+    expect(dispatch).not.toHaveBeenCalledWith(expect.objectContaining({ type: "START_LESSON" }));
+  });
 });

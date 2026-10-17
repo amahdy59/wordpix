@@ -187,6 +187,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         to: "learning-materials",
                         unitId: activeUnit.id,
                         area: "reference",
+                        returnTo: "home",
                       })
                     }
                     title={t("dashboard.studyGuideAria", { unit: activeUnit.name })}

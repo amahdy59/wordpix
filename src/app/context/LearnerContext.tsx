@@ -113,6 +113,11 @@ export interface AccessibilityPreferences {
    */
   spokenFeedback: boolean;
   reduceMotion: boolean;
+  /**
+   * When true (default), any audio-based question automatically plays its audio prompt
+   * upon loading. When false (manual mode), the learner must click the play button.
+   */
+  autoPlayAudio: boolean;
 }
 
 export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
@@ -127,6 +132,7 @@ export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   autoAdvance: false,
   spokenFeedback: true,
   reduceMotion: false,
+  autoPlayAudio: true,
 };
 
 /** Root font-size multiplier per text-size step. */
@@ -241,6 +247,9 @@ function migrateState(savedData: unknown): LearnerStateSchema {
     accessibility: {
       ...DEFAULT_ACCESSIBILITY,
       ...(saved.accessibility as Partial<AccessibilityPreferences> | undefined),
+      autoPlayAudio:
+        (saved.accessibility as Partial<AccessibilityPreferences> | undefined)?.autoPlayAudio ??
+        DEFAULT_ACCESSIBILITY.autoPlayAudio,
     },
     learnerProgress: {
       ...INITIAL_LEARNER_STATE.learnerProgress,

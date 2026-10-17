@@ -61,7 +61,7 @@ export function CurriculumHeroHeader({
         <div className="flex flex-wrap items-center gap-3">
           {description && (
             <HelpDisclosure label={t("help.aboutCourse")}>
-              <p>{description}</p>
+              <p className="text-base text-muted-foreground leading-relaxed">{description}</p>
             </HelpDisclosure>
           )}
           {children}

@@ -142,4 +142,17 @@ describe("study materials routing", () => {
     const back = reducer(opened, { type: "GO", to: "lesson-entry", unitId: "bathroom" });
     expect(back).toEqual({ id: "lesson-entry", unitId: "bathroom" });
   });
+
+  it("preserves returnTo and routes back to origin", () => {
+    const opened = reducer(
+      { id: "library" },
+      { type: "GO", to: "learning-materials", unitId: "bathroom", returnTo: "library" }
+    );
+    expect(opened).toEqual({ id: "learning-materials", unitId: "bathroom", returnTo: "library" });
+
+    const returnDestination =
+      "returnTo" in opened && opened.returnTo ? opened.returnTo : "lesson-entry";
+    const back = reducer(opened, { type: "GO", to: returnDestination });
+    expect(back).toEqual({ id: "library" });
+  });
 });

@@ -87,7 +87,13 @@ export type Screen =
   /** Self-paced word browsing for one group — no session, no scoring. */
   | { id: "learn-words"; lessonId: string }
   /** Reference and self-paced practice for one unit, imported from Figma. */
-  | { id: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
+  | {
+      id: "learning-materials";
+      unitId?: string;
+      area?: string;
+      nodeId?: string;
+      returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice" | "lesson-entry";
+    }
   | { id: "pronunciation-curriculum" }
   | { id: "figma-pronunciation-lesson"; lessonNumber: number }
   | { id: "hadith-curriculum" }
@@ -155,7 +161,14 @@ export type Action =
       unitId?: string;
       returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice";
     }
-  | { type: "GO"; to: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
+  | {
+      type: "GO";
+      to: "learning-materials";
+      unitId?: string;
+      area?: string;
+      nodeId?: string;
+      returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice" | "lesson-entry";
+    }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
   /** Enters self-paced word browsing for one group. */
   | { type: "GO_LEARN_WORDS"; lessonId: string }

@@ -1,4 +1,3 @@
-import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import type { CourseUnit } from "../../data/lessons";
 import type { StudyNode, UnitStudyProgress, StudyArea } from "./types";
 import type { Action } from "../../types";
@@ -101,58 +100,53 @@ export function StudyHome({
           </h1>
         </div>
 
-        <HelpDisclosure label={t("help.aboutLesson")}>
-          <section
-            aria-labelledby="unit-outcome-heading"
-            className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-secondary p-4 sm:p-6"
-          >
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-primary px-3 py-1 text-sm font-bold text-primary-foreground">
-                {curriculumDesign.reviewStatus === "authored"
-                  ? `CEFR ${curriculumDesign.cefr}`
-                  : t("study.suggestedLevel", { level: curriculumDesign.cefr })}
+        <section
+          aria-labelledby="unit-outcome-heading"
+          className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-secondary p-4 sm:p-6"
+        >
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="rounded-full bg-primary px-3 py-1 text-sm font-bold text-primary-foreground">
+              {curriculumDesign.reviewStatus === "authored"
+                ? `CEFR ${curriculumDesign.cefr}`
+                : t("study.suggestedLevel", { level: curriculumDesign.cefr })}
+            </span>
+            {curriculumDesign.reviewStatus === "authored" && (
+              <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-sm font-bold text-foreground">
+                GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
               </span>
-              {curriculumDesign.reviewStatus === "authored" && (
-                <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-sm font-bold text-foreground">
-                  GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
-                </span>
-              )}
-              <span className="rounded-full border border-border bg-card px-3 py-1 text-sm font-bold capitalize text-muted-foreground">
-                {t("study.pathwayType", { type: curriculumDesign.archetype })}
-              </span>
-            </div>
-            {curriculumDesign.reviewStatus === "provisional" && (
-              <p className="mt-3 text-base text-muted-foreground">{t("study.provisionalUnit")}</p>
             )}
-            <h2 id="unit-outcome-heading" className="mt-4 text-lg font-bold text-foreground">
-              {t("study.outcomeHeading")}
-            </h2>
-            <p className="mt-1 text-base leading-relaxed text-muted-foreground">
-              {curriculumDesign.outcome}
-            </p>
-            <ul className="mt-4 grid gap-2 sm:grid-cols-2" aria-label={t("ux.learningGoals")}>
-              {curriculumDesign.canDo.map((goal) => (
-                <li
-                  key={goal}
-                  className="flex items-start gap-2 text-base leading-relaxed text-foreground"
-                >
-                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-wp-green" aria-hidden />
-                  <span>{goal}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-4 border-t border-primary/20 pt-3 text-base font-semibold text-foreground">
-              <span className="text-primary">{t("study.finalMissionLabel")} </span>
-              {curriculumDesign.finalTask}
-            </p>
-          </section>
-        </HelpDisclosure>
+            <span className="rounded-full border border-border bg-card px-3 py-1 text-sm font-bold capitalize text-muted-foreground">
+              {t("study.pathwayType", { type: curriculumDesign.archetype })}
+            </span>
+          </div>
+          {curriculumDesign.reviewStatus === "provisional" && (
+            <p className="mt-3 text-base text-muted-foreground">{t("study.provisionalUnit")}</p>
+          )}
+          <h2 id="unit-outcome-heading" className="mt-4 text-lg font-bold text-foreground">
+            {t("study.outcomeHeading")}
+          </h2>
+          <p className="mt-1 text-base leading-relaxed text-muted-foreground">
+            {curriculumDesign.outcome}
+          </p>
+          <ul className="mt-4 grid gap-2 sm:grid-cols-2" aria-label={t("ux.learningGoals")}>
+            {curriculumDesign.canDo.map((goal) => (
+              <li
+                key={goal}
+                className="flex items-start gap-2 text-base leading-relaxed text-foreground"
+              >
+                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-wp-green" aria-hidden />
+                <span>{goal}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 border-t border-primary/20 pt-3 text-base font-semibold text-foreground">
+            <span className="text-primary">{t("study.finalMissionLabel")} </span>
+            {curriculumDesign.finalTask}
+          </p>
+        </section>
 
-        <details className="rounded-2xl border border-border p-4">
-          <summary className="min-h-11 cursor-pointer rounded-xl py-2 font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
-            {t("ux.previewContext")}
-          </summary>
-          <div className="mt-3 space-y-4">
+        {(unit.heroImage || unitScenarios.length > 0 || unitVideo) && (
+          <div className="space-y-4">
             {unit.heroImage && (
               <div className="rounded-2xl sm:rounded-3xl overflow-hidden bg-muted h-36 sm:h-52 relative border border-border/60 shadow-xs">
                 <img
@@ -216,7 +210,7 @@ export function StudyHome({
               </section>
             )}
           </div>
-        </details>
+        )}
         {/* Progress Summary Card */}
         <div className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-border bg-card shadow-xs space-y-3 sm:space-y-4">
           <div className="flex justify-between items-center text-base font-bold">

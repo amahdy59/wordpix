@@ -42,7 +42,10 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
     [fullText, unit.reading.inShort.summary, vocabTerms]
   );
   const selectedVocabItem = useMemo<VocabularyTableItem | null>(() => {
-    const item = unit.languageBank.find((entry) => entry.term === activeTerm);
+    if (!activeTerm) return null;
+    const item = unit.languageBank.find(
+      (entry) => entry.term.toLowerCase() === activeTerm.toLowerCase()
+    );
     return item
       ? {
           id: item.id,
@@ -95,7 +98,8 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
               <RichPassageText
                 text={unit.reading.title}
                 vocabTerms={vocabTerms}
-                interactiveVocabulary={false}
+                onTermClick={openTerm}
+                interactiveVocabulary={true}
               />
             </h2>
           </header>
@@ -140,7 +144,8 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
                       offset={offset}
                       time={activeTrack === "full" || selected ? time : null}
                       vocabTerms={vocabTerms}
-                      interactiveVocabulary={false}
+                      onTermClick={openTerm}
+                      interactiveVocabulary={true}
                     />
                   </p>
                   <button
@@ -179,7 +184,8 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
               <RichPassageText
                 text={unit.reading.inShort.summary}
                 vocabTerms={vocabTerms}
-                interactiveVocabulary={false}
+                onTermClick={openTerm}
+                interactiveVocabulary={true}
               />
             </p>
           </section>

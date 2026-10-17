@@ -183,9 +183,6 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
           <div className="mb-6 flex flex-col gap-4">
             <div className="rounded-3xl border border-primary/30 bg-secondary p-5 sm:p-6 shadow-wp-xs">
               <div className="flex items-center gap-2 flex-wrap">
-                <span className="text-sm font-bold tracking-normal text-primary">
-                  {t("lesson.unitOutcome")}
-                </span>
                 <span className="text-sm font-bold text-muted-foreground">
                   {t("lesson.groupsStarted", {
                     started: startedGroups,
@@ -195,9 +192,6 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
               </div>
               <p className="mt-2 text-xl sm:text-2xl font-bold text-foreground leading-snug">
                 {curriculum.outcome}
-              </p>
-              <p className="mt-1 text-base text-muted-foreground leading-relaxed">
-                {world.description}
               </p>
 
               <div className="mt-4 flex flex-wrap items-center gap-3">
@@ -227,6 +221,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                             to: "learning-materials",
                             unitId: world.id,
                             area: "learn",
+                            returnTo: "lesson-entry",
                           })
                     }
                     className={secondaryAction}
@@ -265,12 +260,6 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                   })}
                 </p>
               )}
-              <p className="mt-2.5 text-sm text-muted-foreground">
-                {t("lesson.testOutHint", {
-                  defaultValue:
-                    "Test out: complete a quick assessment covering all unit words to mark them mastered.",
-                })}
-              </p>
             </div>
 
             <div className="flex items-center justify-between">
@@ -308,7 +297,13 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                 >
                   <button
                     type="button"
-                    onClick={() => handleStartGroup(g.id)}
+                    onClick={() => {
+                      if (resume && resume.lessonId === g.id) {
+                        dispatch({ type: "RESUME_LESSON", unitId: world.id });
+                      } else {
+                        handleStartGroup(g.id);
+                      }
+                    }}
                     aria-label={t("ux.groupAction", {
                       action,
                       number: index + 1,
@@ -528,7 +523,39 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                             </div>
                           </button>
 
-                          {/* 3. Practice Drills */}
+                          {/* 3. Unit Study Materials */}
+                          {hasLearningMaterials(world.id) && (
+                            <button
+                              type="button"
+                              role="menuitem"
+                              onClick={() => {
+                                setOpenMenuId(null);
+                                setExpandedStepMenuId(null);
+                                dispatch({
+                                  type: "GO",
+                                  to: "learning-materials",
+                                  unitId: world.id,
+                                  area: "learn",
+                                  returnTo: "lesson-entry",
+                                });
+                              }}
+                              className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
+                            >
+                              <div className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                                <BookOpen className="size-4" />
+                              </div>
+                              <div className="flex-1">
+                                <p className="font-sans font-semibold text-base leading-tight text-foreground">
+                                  {t("lesson.studyMaterialsBtn")}
+                                </p>
+                                <p className="font-sans text-sm text-muted-foreground">
+                                  {t("lesson.studyMaterialsDesc")}
+                                </p>
+                              </div>
+                            </button>
+                          )}
+
+                          {/* 4. Practice Drills */}
                           <button
                             type="button"
                             role="menuitem"

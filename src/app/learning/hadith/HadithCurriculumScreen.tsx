@@ -1,4 +1,3 @@
-import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import { useMemo, useState } from "react";
 import { ArrowLeft, BookOpen, Clock3, Search } from "lucide-react";
 import type { Action } from "../../types";
@@ -105,9 +104,7 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
             </Button>
           }
         >
-          <HelpDisclosure label={t("help.sourceDetails")}>
-            <p>{t("hadith.canonicalScopeNote")}</p>
-          </HelpDisclosure>
+          <p className="text-sm text-muted-foreground mt-1">{t("hadith.canonicalScopeNote")}</p>
         </CurriculumHeroHeader>
 
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">

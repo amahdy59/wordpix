@@ -75,25 +75,34 @@ export function UpdatePrompt({ defer = false }: { defer?: boolean }) {
               </div>
             </div>
 
-            <HelpDisclosure label={t("updatePrompt.whatsNew")} className="mb-3">
-              <div className="flex items-center gap-2 mb-2 text-wp-amber-foreground">
-                <Sparkles className="size-4" />
-                <span className="font-sans font-bold text-xs uppercase tracking-wider">
-                  {t("updatePrompt.whatsNew")}
-                </span>
-              </div>
-              <ul className="flex flex-col gap-2">
-                {updateData.notes.slice(0, 3).map((note, idx) => (
-                  <li
-                    key={idx}
-                    className="font-sans text-sm text-foreground flex items-start gap-2"
-                  >
-                    <span className="text-wp-blue-foreground shrink-0 mt-0.5">•</span>
-                    <span className="leading-tight">{note}</span>
-                  </li>
-                ))}
-              </ul>
-            </HelpDisclosure>
+            {updateData.notes && updateData.notes.length > 0 && (
+              <HelpDisclosure label={t("updatePrompt.whatsNew")} className="mb-4">
+                <div className="rounded-xl border border-border/60 bg-muted/30 p-3 mt-2">
+                  <div className="flex items-center gap-2 mb-2 text-wp-amber-foreground">
+                    <Sparkles className="size-4 shrink-0" aria-hidden="true" />
+                    <span className="font-sans font-bold text-xs uppercase tracking-wider">
+                      {t("updatePrompt.whatsNew")}
+                    </span>
+                  </div>
+                  <ul className="flex flex-col gap-1.5">
+                    {updateData.notes.slice(0, 3).map((note, idx) => (
+                      <li
+                        key={idx}
+                        className="font-sans text-sm text-foreground flex items-start gap-2"
+                      >
+                        <span
+                          className="text-wp-blue-foreground shrink-0 mt-0.5"
+                          aria-hidden="true"
+                        >
+                          •
+                        </span>
+                        <span className="leading-tight">{note}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </HelpDisclosure>
+            )}
 
             <PrimaryButton
               label={isUpdating ? t("updatePrompt.refreshing") : t("updatePrompt.updateRefresh")}

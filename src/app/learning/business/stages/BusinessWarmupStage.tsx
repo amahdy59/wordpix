@@ -42,56 +42,51 @@ export function BusinessWarmupStage({
 
   return (
     <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
-      <details className="rounded-xl border border-border p-3">
-        <summary className="min-h-11 cursor-pointer rounded-lg py-2 font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
-          {t("ux.learningGoals")}
-        </summary>
-        {/* Essential Question Hero Card with Thumbnail */}
-        <section
-          className="overflow-hidden rounded-2xl border border-border bg-card grid gap-3 p-4 sm:p-5 md:grid-cols-[minmax(0,1fr)_8rem] md:items-start"
-          aria-labelledby="big-question-heading"
-        >
-          {unit.heroImageSrc && (
-            <div className="relative hidden aspect-[4/3] overflow-hidden rounded-xl bg-muted md:col-start-2 md:row-start-1 md:block">
-              <img
-                src={resolveAssetUrl(unit.heroImageSrc)}
-                alt=""
-                aria-hidden="true"
-                className="h-full w-full object-cover object-center"
-                loading="lazy"
-                onError={(e) => {
-                  (e.currentTarget as HTMLElement).style.display = "none";
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+      {/* Essential Question Hero Card with Thumbnail */}
+      <section
+        className="overflow-hidden rounded-2xl border border-border bg-card grid gap-3 p-4 sm:p-5 md:grid-cols-[minmax(0,1fr)_8rem] md:items-start"
+        aria-labelledby="big-question-heading"
+      >
+        {unit.heroImageSrc && (
+          <div className="relative hidden aspect-[4/3] overflow-hidden rounded-xl bg-muted md:col-start-2 md:row-start-1 md:block">
+            <img
+              src={resolveAssetUrl(unit.heroImageSrc)}
+              alt=""
+              aria-hidden="true"
+              className="h-full w-full object-cover object-center"
+              loading="lazy"
+              onError={(e) => {
+                (e.currentTarget as HTMLElement).style.display = "none";
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+          </div>
+        )}
+        <div className="min-w-0 md:col-start-1 md:row-start-1">
+          <p className="text-sm font-semibold text-primary">
+            {t("business.warmup.essentialQuestion")}
+          </p>
+          <h2
+            id="big-question-heading"
+            lang="en"
+            dir="ltr"
+            className="wp-type-stage-title mt-2 font-bold text-foreground tracking-tight leading-snug"
+          >
+            {`“${unit.essentialQuestion}”`}
+          </h2>
+          {unit.speakingGoal && (
+            <div className="mt-3 flex items-start gap-2 border-s-2 border-primary ps-3 text-base font-semibold text-primary">
+              <CheckCircle2 className="size-5 shrink-0 mt-0.5" aria-hidden />
+              <div>
+                <span className="font-bold me-1.5">{t("business.warmup.speakingGoalLabel")}</span>
+                <bdi lang="en" dir="ltr">
+                  {unit.speakingGoal}
+                </bdi>
+              </div>
             </div>
           )}
-          <div className="min-w-0 md:col-start-1 md:row-start-1">
-            <p className="text-sm font-semibold text-primary">
-              {t("business.warmup.essentialQuestion")}
-            </p>
-            <h2
-              id="big-question-heading"
-              lang="en"
-              dir="ltr"
-              className="wp-type-stage-title mt-2 font-bold text-foreground tracking-tight leading-snug"
-            >
-              {`“${unit.essentialQuestion}”`}
-            </h2>
-            {unit.speakingGoal && (
-              <div className="mt-3 flex items-start gap-2 border-s-2 border-primary ps-3 text-base font-semibold text-primary">
-                <CheckCircle2 className="size-5 shrink-0 mt-0.5" aria-hidden />
-                <div>
-                  <span className="font-bold me-1.5">{t("business.warmup.speakingGoalLabel")}</span>
-                  <bdi lang="en" dir="ltr">
-                    {unit.speakingGoal}
-                  </bdi>
-                </div>
-              </div>
-            )}
-          </div>
-        </section>
-      </details>
+        </div>
+      </section>
 
       {/* Multiple-Choice Warm-up Workplace Scenarios */}
       <section className="space-y-3" aria-labelledby="reflection-prompts-title">

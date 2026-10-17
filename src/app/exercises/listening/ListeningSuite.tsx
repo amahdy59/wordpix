@@ -42,11 +42,12 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
   const sentence = `The cat is sleeping on the ${target.label.toLowerCase()}`;
 
   useEffect(() => {
+    if (accessibility.autoPlayAudio === false) return undefined;
     const t = setTimeout(() => {
       speak(sentence);
     }, 250);
     return () => clearTimeout(t);
-  }, [sentence, speak]);
+  }, [sentence, speak, accessibility.autoPlayAudio]);
 
   const reveal = useCallback(() => {
     setResult((current) => current ?? "incorrect");

@@ -1,4 +1,3 @@
-import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import { useState, useMemo, type Dispatch, type KeyboardEvent } from "react";
 import {
   ArrowLeft,
@@ -223,43 +222,35 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
             </div>
           </div>
 
-          <HelpDisclosure
-            label={
-              selectedTag === "All Topics"
-                ? t("help.topicFilters")
-                : t("help.topicFiltersActive", { topic: selectedTag })
-            }
+          {/* Domain / Competency Topic Filter Pills */}
+          <div
+            className="flex items-center gap-1.5 overflow-x-auto py-1"
+            role="group"
+            aria-label={t("help.topicFilters")}
           >
-            {/* Domain / Competency Topic Filter Pills */}
-            <div
-              className="flex items-center gap-1.5 overflow-x-auto py-1"
-              role="group"
-              aria-label={t("help.topicFilters")}
-            >
-              <span className="inline-flex items-center gap-1 text-sm font-bold text-muted-foreground me-1 shrink-0">
-                <Tag className="size-3" aria-hidden />
-                {t("business.topicsLabel")}
-              </span>
-              {DOMAIN_TAGS.map((tag) => {
-                const isSelected = selectedTag === tag;
-                return (
-                  <button
-                    key={t(`help.businessTopics.${DOMAIN_TAGS.indexOf(tag)}`)}
-                    type="button"
-                    aria-pressed={isSelected}
-                    onClick={() => setSelectedTag(tag)}
-                    className={`inline-flex min-h-11 shrink-0 items-center rounded-full px-3.5 py-1.5 text-sm font-bold transition-all ${
-                      isSelected
-                        ? "bg-foreground text-background shadow-wp-xs"
-                        : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
-                    }`}
-                  >
-                    {t(`help.businessTopics.${DOMAIN_TAGS.indexOf(tag)}`)}
-                  </button>
-                );
-              })}
-            </div>
-          </HelpDisclosure>
+            <span className="inline-flex items-center gap-1 text-sm font-bold text-muted-foreground me-1 shrink-0">
+              <Tag className="size-3" aria-hidden />
+              {t("business.topicsLabel")}
+            </span>
+            {DOMAIN_TAGS.map((tag) => {
+              const isSelected = selectedTag === tag;
+              return (
+                <button
+                  key={t(`help.businessTopics.${DOMAIN_TAGS.indexOf(tag)}`)}
+                  type="button"
+                  aria-pressed={isSelected}
+                  onClick={() => setSelectedTag(tag)}
+                  className={`inline-flex min-h-11 shrink-0 items-center rounded-full px-3.5 py-1.5 text-sm font-bold transition-all ${
+                    isSelected
+                      ? "bg-foreground text-background shadow-wp-xs"
+                      : "bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground"
+                  }`}
+                >
+                  {t(`help.businessTopics.${DOMAIN_TAGS.indexOf(tag)}`)}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Units Grid */}
@@ -338,84 +329,82 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
         </section>
 
         {/* Course Section Milestones */}
-        <HelpDisclosure label={t("business.credentialsTitle")}>
-          <section
-            aria-labelledby="milestones-heading"
-            className="flex flex-col gap-4 rounded-3xl border border-border bg-card p-6 shadow-wp-xs"
-          >
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Award className="size-5 text-primary" aria-hidden />
-                <h2 id="milestones-heading" className="text-lg font-black text-foreground">
-                  {t("business.credentialsTitle")}
-                </h2>
-              </div>
-              <span className="text-sm font-bold text-muted-foreground">
-                {t("business.credentialsSubtitle")}
-              </span>
+        <section
+          aria-labelledby="milestones-heading"
+          className="flex flex-col gap-4 rounded-3xl border border-border bg-card p-6 shadow-wp-xs"
+        >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Award className="size-5 text-primary" aria-hidden />
+              <h2 id="milestones-heading" className="text-lg font-black text-foreground">
+                {t("business.credentialsTitle")}
+              </h2>
             </div>
+            <span className="text-sm font-bold text-muted-foreground">
+              {t("business.credentialsSubtitle")}
+            </span>
+          </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-              {BUSINESS_SECTION_MILESTONES.map((milestone) => {
-                const sectionUnits = BUSINESS_UNITS.filter(
-                  (u) => u.sectionNumber === milestone.sectionNumber
-                );
-                const sectionMastered = sectionUnits.filter(
-                  (u) => progressState[u.id]?.status === "mastered"
-                ).length;
-                const isSectionCertified =
-                  sectionUnits.length > 0 && sectionMastered === sectionUnits.length;
-                const isStarted = sectionMastered > 0;
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+            {BUSINESS_SECTION_MILESTONES.map((milestone) => {
+              const sectionUnits = BUSINESS_UNITS.filter(
+                (u) => u.sectionNumber === milestone.sectionNumber
+              );
+              const sectionMastered = sectionUnits.filter(
+                (u) => progressState[u.id]?.status === "mastered"
+              ).length;
+              const isSectionCertified =
+                sectionUnits.length > 0 && sectionMastered === sectionUnits.length;
+              const isStarted = sectionMastered > 0;
 
-                return (
-                  <div
-                    key={milestone.sectionNumber}
-                    className={`flex flex-col justify-between p-4 rounded-2xl border transition-all ${
-                      isSectionCertified
-                        ? "border-accent/40 bg-feedback-success-surface shadow-wp-xs ring-1 ring-accent/30"
-                        : isStarted
-                          ? "border-primary/40 bg-secondary"
-                          : "border-border bg-muted/20"
-                    }`}
-                  >
-                    <div className="flex items-start justify-between gap-2">
-                      <span className="text-2xl" role="img" aria-label={milestone.title}>
-                        {milestone.badge}
+              return (
+                <div
+                  key={milestone.sectionNumber}
+                  className={`flex flex-col justify-between p-4 rounded-2xl border transition-all ${
+                    isSectionCertified
+                      ? "border-accent/40 bg-feedback-success-surface shadow-wp-xs ring-1 ring-accent/30"
+                      : isStarted
+                        ? "border-primary/40 bg-secondary"
+                        : "border-border bg-muted/20"
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <span className="text-2xl" role="img" aria-label={milestone.title}>
+                      {milestone.badge}
+                    </span>
+                    {isSectionCertified ? (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-feedback-success-surface px-2 py-0.5 text-sm font-black text-feedback-success-foreground uppercase">
+                        <CheckCircle2 className="size-3" aria-hidden />
+                        {t("business.certifiedBadge")}
                       </span>
-                      {isSectionCertified ? (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-feedback-success-surface px-2 py-0.5 text-sm font-black text-feedback-success-foreground uppercase">
-                          <CheckCircle2 className="size-3" aria-hidden />
-                          {t("business.certifiedBadge")}
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-sm font-bold text-muted-foreground">
-                          {t("business.sectionUnitsCount", {
-                            mastered: sectionMastered,
-                            total: sectionUnits.length,
-                          })}
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="mt-3">
-                      <div className="flex items-center gap-1.5">
-                        <span className="rounded bg-secondary px-1.5 py-0.2 text-sm font-black text-primary">
-                          {milestone.level}
-                        </span>
-                        <h3 className="text-base font-black text-foreground line-clamp-1">
-                          {milestone.title}
-                        </h3>
-                      </div>
-                      <p className="mt-1 text-sm text-muted-foreground font-medium line-clamp-2">
-                        {milestone.description}
-                      </p>
-                    </div>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-sm font-bold text-muted-foreground">
+                        {t("business.sectionUnitsCount", {
+                          mastered: sectionMastered,
+                          total: sectionUnits.length,
+                        })}
+                      </span>
+                    )}
                   </div>
-                );
-              })}
-            </div>
-          </section>
-        </HelpDisclosure>
+
+                  <div className="mt-3">
+                    <div className="flex items-center gap-1.5">
+                      <span className="rounded bg-secondary px-1.5 py-0.2 text-sm font-black text-primary">
+                        {milestone.level}
+                      </span>
+                      <h3 className="text-base font-black text-foreground line-clamp-1">
+                        {milestone.title}
+                      </h3>
+                    </div>
+                    <p className="mt-1 text-sm text-muted-foreground font-medium line-clamp-2">
+                      {milestone.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
       </div>
     </div>
   );

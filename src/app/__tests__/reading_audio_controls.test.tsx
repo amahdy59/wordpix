@@ -171,17 +171,35 @@ describe("continuous reading and canonical vocabulary", () => {
     expect(
       within(article)
         .getAllByText("safety stock", { exact: true })
-        .some((node) => node.tagName === "MARK")
+        .some((node) => node.tagName === "BUTTON")
     ).toBe(true);
-    expect(within(article).getByText("stress testing", { exact: false }).tagName).toBe("MARK");
+    expect(within(article).getByText("stress testing", { exact: false }).tagName).toBe("BUTTON");
     expect(screen.queryByRole("heading", { name: "Executive Transcript" })).not.toBeInTheDocument();
+
+    // Clicking the word directly inside the passage opens the word details modal
+    const passageWord = within(article).getAllByRole("button", {
+      name: /learn about safety stock/i,
+    })[0];
+    passageWord.focus();
+    fireEvent.click(passageWord);
+    let dialog = screen.getByRole("dialog");
+    expect(within(dialog).getByRole("heading", { name: "safety stock" })).toBeVisible();
+    expect(
+      within(dialog).getByText(
+        authored.languageBank.find((item) => item.term === "safety stock")!.definition
+      )
+    ).toBeVisible();
+    fireEvent.click(within(dialog).getByRole("button", { name: /^close$/i }));
+    await waitFor(() => expect(passageWord).toHaveFocus());
+
+    // Clicking from the glossary pill row also works as expected
     const word = within(screen.getByRole("region", { name: "Words in this reading" })).getByRole(
       "button",
       { name: /learn about safety stock/i }
     );
     word.focus();
     fireEvent.click(word);
-    const dialog = screen.getByRole("dialog");
+    dialog = screen.getByRole("dialog");
     expect(within(dialog).getByRole("heading", { name: "safety stock" })).toBeVisible();
     expect(
       within(dialog).getByText(

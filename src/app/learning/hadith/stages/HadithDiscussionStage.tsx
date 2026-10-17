@@ -1,4 +1,4 @@
-import { ChevronDown, Lightbulb, MessageCircle, MessagesSquare } from "lucide-react";
+import { Lightbulb, MessageCircle, MessagesSquare } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { ParsedReviewItem } from "../hadithLessonContent";
 
@@ -7,9 +7,6 @@ interface Props {
   translation: string;
   reviewItems: readonly ParsedReviewItem[];
 }
-
-const focusRing =
-  "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
 export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }: Props) {
   const { t } = useI18n();
@@ -67,29 +64,19 @@ export function HadithDiscussionStage({ lessonTitle, translation, reviewItems }:
                 </div>
               </div>
 
-              <details className="group border-t border-border bg-muted/20">
-                <summary
-                  className={`flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-4 py-2 font-black text-primary hover:bg-secondary sm:px-4 ${focusRing}`}
+              <div className="border-t border-border bg-muted/20 px-5 py-4 sm:px-6">
+                <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-primary mb-1.5">
+                  <Lightbulb className="size-3.5" aria-hidden />
+                  {t("hadith.showSampleAnswer")}
+                </span>
+                <p
+                  className="text-base font-semibold leading-7 text-foreground"
+                  lang="en"
+                  dir="ltr"
                 >
-                  <span className="inline-flex items-center gap-2">
-                    <Lightbulb className="size-4" aria-hidden />
-                    {t("hadith.showSampleAnswer")}
-                  </span>
-                  <ChevronDown
-                    className="size-5 transition-transform motion-reduce:transition-none group-open:rotate-180"
-                    aria-hidden
-                  />
-                </summary>
-                <div className="border-t border-border px-5 py-4 sm:px-6">
-                  <p
-                    className="text-base font-semibold leading-7 text-foreground"
-                    lang="en"
-                    dir="ltr"
-                  >
-                    {item.answer}
-                  </p>
-                </div>
-              </details>
+                  {item.answer}
+                </p>
+              </div>
             </article>
           </li>
         ))}

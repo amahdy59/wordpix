@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { useI18n } from "../../i18n";
-import { HelpDisclosure } from "./HelpDisclosure";
 import {
   assessPronunciation,
   AssessmentError,
@@ -122,16 +121,17 @@ export function OnlinePronunciationFeedback({ blob, target, onAssessed }: Props)
                     : "pronunciationEnhancements.compareCue"
               )}
             </p>
-            <HelpDisclosure label={t("pronunciationEnhancements.soundDetails")}>
-              <p>
+            <div className="rounded-xl border border-border bg-card p-3 space-y-2 text-sm">
+              <p className="font-semibold text-foreground">
+                {t("pronunciationEnhancements.soundDetails")}:{" "}
                 {t("pronunciationEnhancements.estimate", {
                   score: Math.round(state.result.accuracy),
                 })}
               </p>
-              <ul className="space-y-2">
+              <ul className="space-y-1.5 text-muted-foreground">
                 {state.result.words.map((word, index) => (
                   <li key={`${word.word}:${index}`}>
-                    <bdi lang="en" dir="ltr">
+                    <bdi lang="en" dir="ltr" className="font-medium text-foreground">
                       {word.word}
                     </bdi>
                     <span>
@@ -141,7 +141,7 @@ export function OnlinePronunciationFeedback({ blob, target, onAssessed }: Props)
                         score: Math.round(word.accuracy),
                       })}
                     </span>
-                    <ul>
+                    <ul className="ps-3 space-y-0.5">
                       {word.phonemes.map((phoneme, phonemeIndex) => (
                         <li key={`${phoneme.phoneme}:${phonemeIndex}`}>
                           <bdi dir="ltr">{phoneme.phoneme}</bdi>
@@ -158,7 +158,7 @@ export function OnlinePronunciationFeedback({ blob, target, onAssessed }: Props)
                   </li>
                 ))}
               </ul>
-            </HelpDisclosure>
+            </div>
           </div>
         )}
       </div>

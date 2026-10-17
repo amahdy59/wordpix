@@ -471,6 +471,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
           unitId={state.unitId ?? DEFAULT_UNIT_ID}
           area={state.area}
           nodeId={state.nodeId}
+          returnTo={state.returnTo}
           dispatch={dispatch}
         />
       );
