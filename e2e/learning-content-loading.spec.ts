@@ -1,18 +1,12 @@
 import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "./offlineTest";
 import { reloadOffline } from "./offlineReload";
-import { playbackFixture } from "./audioFixture";
 
 test("word details fetch bounded shards and survive a cached offline reload", async ({
   page,
   offlineServer,
 }) => {
   test.setTimeout(60_000);
-  // This spec verifies cached dictionary modules. Keep automatic word audio
-  // deterministic without depending on the live media host during reloads.
-  await page.route("**/audio/**/*.mp3", (route) =>
-    route.fulfill({ body: playbackFixture(), contentType: "audio/wav" })
-  );
   const scripts = new Set<string>();
   const errors: string[] = [];
   page.on("request", (request) => {
@@ -20,6 +14,14 @@ test("word details fetch bounded shards and survive a cached offline reload", as
   });
   page.on("pageerror", (error) => errors.push(error.message));
   page.on("console", (message) => {
+    // Offline narration may try an uncached clip. Its handled network failure
+    // does not mean the dictionary modules failed to load from the cache.
+    if (
+      message.type() === "error" &&
+      /\/audio\/.*\.mp3/.test(message.location().url) &&
+      /Failed to load resource/.test(message.text())
+    )
+      return;
     if (message.type() === "error") errors.push(message.text());
   });
   await page.goto("/wordpix/#/learn/construction-site", { waitUntil: "domcontentloaded" });
