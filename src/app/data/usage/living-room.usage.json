@@ -59,7 +59,8 @@
             "expectedAnswer": "Coffee Table"
           },
           "imageBrief": "Sofa and armchair beside low coffee table with two drinking glasses. No labels, personal details or highlighted table.",
-          "imageAlt": "Sofa and armchair beside low coffee table with two drinking glasses."
+          "imageAlt": "Sofa and armchair beside low coffee table with two drinking glasses.",
+          "imagePath": "scene-images/living-room-dining-seating-scene.webp"
         },
         {
           "chunkNumber": 2,
@@ -71,7 +72,8 @@
             "expectedAnswer": "Ottoman"
           },
           "imageBrief": "Padded backless ottoman beside small side table and rocking chair with curved runners. No labels or highlighted object.",
-          "imageAlt": "Padded backless ottoman beside small side table and rocking chair with curved runners."
+          "imageAlt": "Padded backless ottoman beside small side table and rocking chair with curved runners.",
+          "imagePath": "scene-images/living-room-seating.webp"
         },
         {
           "chunkNumber": 3,
@@ -83,7 +85,8 @@
             "expectedAnswer": "Bench"
           },
           "imageBrief": "Dining table with one chair and separate long bench on opposite side. No faces, labelled seating or highlighted answer.",
-          "imageAlt": "Dining table with one chair and separate long bench on opposite side."
+          "imageAlt": "A solid wooden entryway bench with clean lines and sturdy legs along an apartment wall.",
+          "imagePath": "scene-images/living-room-1-usage-scene-3.webp"
         },
         {
           "chunkNumber": 4,
@@ -297,7 +300,8 @@
             "expectedAnswer": "Remote Control"
           },
           "imageBrief": "Handheld remote with blank buttons on table beside speaker and unbranded game console, television off. No readable labels.",
-          "imageAlt": "Handheld remote with blank buttons on table beside speaker and unbranded game console, television off."
+          "imageAlt": "Handheld remote with blank buttons on table beside speaker and unbranded game console, television off.",
+          "imagePath": "scene-images/living-room-remote-speaker-console.webp"
         },
         {
           "chunkNumber": 4,
@@ -471,7 +475,8 @@
             "expectedAnswer": "Floor Lamp"
           },
           "imageBrief": "Tall floor lamp beside sofa, small table lamp on side table and simple ceiling light. No labels or highlighted lamp.",
-          "imageAlt": "Tall floor lamp beside sofa, small table lamp on side table and simple ceiling light."
+          "imageAlt": "Tall floor lamp beside sofa, small table lamp on side table and simple ceiling light.",
+          "imagePath": "scene-images/living-room-floor-lamp-sofa.webp"
         },
         {
           "chunkNumber": 2,
@@ -483,7 +488,8 @@
             "expectedAnswer": "Chandelier"
           },
           "imageBrief": "Chandelier hanging above dining table; spare bulb in closed plain box and unlit candle on stable holder. No live electrical repair, text or flame.",
-          "imageAlt": "Chandelier hanging above dining table; spare bulb in closed plain box and unlit candle on stable holder."
+          "imageAlt": "A minimalist multi-light pendant chandelier suspended cleanly from a high ceiling.",
+          "imagePath": "scene-images/living-room-3-usage-scene-2.webp"
         },
         {
           "chunkNumber": 3,
@@ -495,7 +501,8 @@
             "expectedAnswer": "Candle Holder"
           },
           "imageBrief": "Unlit candle in stable candle holder beside boxed string lights and picture frame. No readable text or open flame.",
-          "imageAlt": "Unlit candle in stable candle holder beside boxed string lights and picture frame."
+          "imageAlt": "A polished ceramic candle holder supporting a single unlit taper candle on a mantelpiece.",
+          "imagePath": "scene-images/living-room-3-usage-scene-3.webp"
         },
         {
           "chunkNumber": 4,
@@ -527,7 +534,8 @@
             "expectedAnswer": "Rug"
           },
           "imageBrief": "Distinct small rug on edge-to-edge carpet beside window curtain. No highlighted covering or readable text.",
-          "imageAlt": "Distinct small rug on edge-to-edge carpet beside window curtain."
+          "imageAlt": "Distinct small rug on edge-to-edge carpet beside window curtain.",
+          "imagePath": "scene-images/living-room-area-rug-carpet.webp"
         }
       ]
     },
@@ -701,7 +709,8 @@
             "expectedAnswer": "Vase"
           },
           "imageBrief": "Flowers in vase beside photo frame and abstract painted picture above. No private photo details, text or artist signature.",
-          "imageAlt": "Flowers in vase beside photo frame and abstract painted picture above."
+          "imageAlt": "Flowers in vase beside photo frame and abstract painted picture above.",
+          "imagePath": "scene-images/living-room-framed-painting-vase.webp"
         },
         {
           "chunkNumber": 4,
@@ -891,7 +900,8 @@
             "expectedAnswer": "Headphones"
           },
           "imageBrief": "Headphones beside closed phone, intact charger and television screen off. No private audio transcript, readable text or tangled wiring.",
-          "imageAlt": "Headphones beside closed phone, intact charger and television screen off."
+          "imageAlt": "Headphones beside closed phone, intact charger and television screen off.",
+          "imagePath": "scene-images/living-room-entertainment-charging.webp"
         },
         {
           "chunkNumber": 3,
@@ -903,7 +913,8 @@
             "expectedAnswer": "Read a Book"
           },
           "imageBrief": "Open book with blank pages on adult home table beside closed board game and speaker. Written passage states activity; no readable text.",
-          "imageAlt": "Open book with blank pages on adult home table beside closed board game and speaker."
+          "imageAlt": "An open hardcover book with clean printed pages resting on a comfortable armchair cushion.",
+          "imagePath": "scene-images/living-room-5-usage-scene-3.webp"
         },
         {
           "chunkNumber": 4,
@@ -915,7 +926,8 @@
             "expectedAnswer": "Chat"
           },
           "imageBrief": "Two adult chairs beside coffee table with cups. No facial inference, dialogue bubbles, labels or readable text.",
-          "imageAlt": "Two adult chairs beside coffee table with cups."
+          "imageAlt": "Two adult chairs beside coffee table with cups.",
+          "imagePath": "scene-images/living-room-moving-day-chat.webp"
         },
         {
           "chunkNumber": 5,
@@ -927,7 +939,8 @@
             "expectedAnswer": "Take a Nap"
           },
           "imageBrief": "Unoccupied sofa with cushion and folded throw blanket in adult living room. Written context defines nap; no sleeping person or medical inference.",
-          "imageAlt": "Unoccupied sofa with cushion and folded throw blanket in adult living room."
+          "imageAlt": "Unoccupied sofa with cushion and folded throw blanket in adult living room.",
+          "imagePath": "scene-images/living-room-action-taking-nap.webp"
         }
       ]
     },

@@ -59,7 +59,8 @@
             "expectedAnswer": "Clock"
           },
           "imageBrief": "Plain wall clock with blank tick marks beside an unworn wristwatch on table. No written digits, labels or highlighting; source text supplies wall position.",
-          "imageAlt": "Plain wall clock with blank tick marks beside an unworn wristwatch on table."
+          "imageAlt": "A plain round wall clock with tick marks hangs on a light wall beside an unworn wristwatch resting on a wooden table.",
+          "imagePath": "scene-images/telling-time-1-usage-scene-1.webp"
         },
         {
           "chunkNumber": 2,
@@ -71,7 +72,8 @@
             "expectedAnswer": "Minute Hand"
           },
           "imageBrief": "One analogue clock with distinct shorter hour hand, longer minute hand and thin second hand. Tick marks only; no highlighted hand, numbers or labels.",
-          "imageAlt": "One analogue clock with distinct shorter hour hand, longer minute hand and thin second hand."
+          "imageAlt": "An analogue clock face with tick marks shows a shorter hour hand and a longer minute hand pointing upward, with a thin second hand.",
+          "imagePath": "scene-images/telling-time-1-usage-scene-2.webp"
         },
         {
           "chunkNumber": 3,
@@ -83,7 +85,8 @@
             "expectedAnswer": "Alarm Clock"
           },
           "imageBrief": "Unbranded alarm clock with alarm bells beside blank digital-clock display and small sundial model. No readable digits, sound rays, labels or false exact-time claim.",
-          "imageAlt": "Unbranded alarm clock with alarm bells beside blank digital-clock display and small sundial model."
+          "imageAlt": "A classic twin-bell analogue alarm clock rests on a surface beside an unlit digital clock display and a small sundial model.",
+          "imagePath": "scene-images/telling-time-1-usage-scene-3.webp"
         },
         {
           "chunkNumber": 4,
@@ -95,7 +98,8 @@
             "expectedAnswer": "Hourglass"
           },
           "imageBrief": "Simple hourglass with sand visibly in two chambers and narrow neck. No false specific duration, labels or digits.",
-          "imageAlt": "Simple hourglass with sand visibly in two chambers and narrow neck."
+          "imageAlt": "A glass hourglass with fine sand flowing from the upper chamber through a narrow neck into the lower chamber.",
+          "imagePath": "scene-images/telling-time-1-usage-scene-4.webp"
         },
         {
           "chunkNumber": 5,
@@ -107,7 +111,8 @@
             "expectedAnswer": "Hour"
           },
           "imageBrief": "Meeting table with closed folder and unlabelled clock with tick marks. Passage supplies durations; no readable duration chart or labels.",
-          "imageAlt": "Meeting table with closed folder and unlabelled clock with tick marks."
+          "imageAlt": "An unlabelled analogue wall clock with tick marks hangs in an office meeting room above a conference table with a folder.",
+          "imagePath": "scene-images/telling-time-1-usage-scene-5.webp"
         }
       ],
       "phrases": []
@@ -242,7 +247,8 @@
             "expectedAnswer": "Noon"
           },
           "imageBrief": "Daylight office lunch table with no clock or readable schedule. Written passage supplies noon rather than shadow-based exact time.",
-          "imageAlt": "Daylight office lunch table with no clock or readable schedule."
+          "imageAlt": "Bright midday sunlight illuminates a park path with very short shadows cast directly beneath trees.",
+          "imagePath": "scene-images/telling-time-2-usage-scene-1.webp"
         },
         {
           "chunkNumber": 2,
@@ -254,7 +260,8 @@
             "expectedAnswer": "Dusk"
           },
           "imageBrief": "Natural evening sky after sunset with fading light and no visible sun above horizon. No clock, text or exact-location sunset timing claim.",
-          "imageAlt": "Natural evening sky after sunset with fading light and no visible sun above horizon."
+          "imageAlt": "Warm twilight colors streak the evening sky as the sun dips below the horizon over a quiet urban skyline.",
+          "imagePath": "scene-images/telling-time-2-usage-scene-2.webp"
         },
         {
           "chunkNumber": 3,
@@ -266,7 +273,8 @@
             "expectedAnswer": "Half Past"
           },
           "imageBrief": "One analogue clock showing nine thirty: minute hand at bottom six-position, hour hand exactly halfway between nine and ten positions. Tick marks only, no digits or highlighted hand.",
-          "imageAlt": "One analogue clock showing nine thirty: minute hand at bottom six-position, hour hand exactly halfway between nine and ten positions."
+          "imageAlt": "An analogue clock face with tick marks shows the minute hand pointing directly down to the six and the hour hand halfway between numerals.",
+          "imagePath": "scene-images/telling-time-2-usage-scene-3.webp"
         },
         {
           "chunkNumber": 4,
@@ -278,7 +286,8 @@
             "expectedAnswer": "Five Past"
           },
           "imageBrief": "One analogue clock showing two oh five: minute hand at one-position, hour hand slightly past two. Tick marks only, no digits, labels or competing clock.",
-          "imageAlt": "One analogue clock showing two oh five: minute hand at one-position, hour hand slightly past two."
+          "imageAlt": "An analogue clock face with tick marks shows the minute hand pointing slightly past the top at the one position.",
+          "imagePath": "scene-images/telling-time-2-usage-scene-4.webp"
         },
         {
           "chunkNumber": 5,
@@ -290,7 +299,8 @@
             "expectedAnswer": "Five To"
           },
           "imageBrief": "One analogue clock showing seven fifty-five: minute hand at eleven-position and hour hand just before eight. Tick marks only, no labels or numbers.",
-          "imageAlt": "One analogue clock showing seven fifty-five: minute hand at eleven-position and hour hand just before eight."
+          "imageAlt": "An analogue clock face with tick marks shows the minute hand pointing at the eleven position, five minutes before the hour.",
+          "imagePath": "scene-images/telling-time-2-usage-scene-5.webp"
         }
       ],
       "phrases": []
@@ -425,7 +435,8 @@
             "expectedAnswer": "Morning"
           },
           "imageBrief": "Adult office desk in daylight with blank planner and no readable schedule. Passage supplies morning; no inferred hour from window.",
-          "imageAlt": "Adult office desk in daylight with blank planner and no readable schedule."
+          "imageAlt": "Early morning sunlight streams through a window onto an office desk with a warm cup of coffee and a daily notebook.",
+          "imagePath": "scene-images/telling-time-3-usage-scene-1.webp"
         },
         {
           "chunkNumber": 2,
@@ -437,7 +448,8 @@
             "expectedAnswer": "Night"
           },
           "imageBrief": "Ordinary outdoor scene at night with dark sky and safely lit street, no sunrise/sunset collage or text.",
-          "imageAlt": "Ordinary outdoor scene at night with dark sky and safely lit street, no sunrise/sunset collage or text."
+          "imageAlt": "A calm nighttime city scene with stars and a dark sky visible through a wide window beside a dimly lit desk lamp.",
+          "imagePath": "scene-images/telling-time-3-usage-scene-2.webp"
         },
         {
           "chunkNumber": 3,
@@ -449,7 +461,8 @@
             "expectedAnswer": "Midday"
           },
           "imageBrief": "Ordinary daylight lunch table; written text identifies midday. No exact-time shadow claims or readable clock.",
-          "imageAlt": "Ordinary daylight lunch table; written text identifies midday."
+          "imageAlt": "Direct overhead natural sunlight casts minimal shadows on an open courtyard with benches.",
+          "imagePath": "scene-images/telling-time-3-usage-scene-3.webp"
         },
         {
           "chunkNumber": 4,
@@ -461,7 +474,8 @@
             "expectedAnswer": "Nightfall"
           },
           "imageBrief": "Ordinary street at the onset of evening darkness, no readable shop signs, clock or time labels.",
-          "imageAlt": "Ordinary street at the onset of evening darkness, no readable shop signs, clock or time labels."
+          "imageAlt": "Deep evening blue settles into night over a quiet town street as streetlights begin to illuminate the road.",
+          "imagePath": "scene-images/telling-time-3-usage-scene-4.webp"
         },
         {
           "chunkNumber": 5,
@@ -473,7 +487,8 @@
             "expectedAnswer": "On Time"
           },
           "imageBrief": "Adult reception with plain appointment folder and unlabelled tick-mark clock. Text supplies exact arrival and appointment agreement; no highlighted person or readable schedule.",
-          "imageAlt": "Adult reception with plain appointment folder and unlabelled tick-mark clock."
+          "imageAlt": "A commuter train rests precisely at the station platform beside a platform clock.",
+          "imagePath": "scene-images/telling-time-3-usage-scene-5.webp"
         }
       ],
       "phrases": []
@@ -588,7 +603,8 @@
             "expectedAnswer": "Ahead of Time"
           },
           "imageBrief": "Completed work folder on adult office table with blank calendar. Written context supplies deadline and completion dates; no labels or fake overtime indicator.",
-          "imageAlt": "Completed work folder on adult office table with blank calendar."
+          "imageAlt": "An airport departure lounge with tidy seating and boarding gate displays before passengers arrive.",
+          "imagePath": "scene-images/telling-time-4-usage-scene-1.webp"
         },
         {
           "chunkNumber": 2,
@@ -600,7 +616,8 @@
             "expectedAnswer": "Countdown"
           },
           "imageBrief": "Unbranded countdown timer beside stopwatch, both displays blank. Text states remaining versus elapsed time; no labels or invented timer digits.",
-          "imageAlt": "Unbranded countdown timer beside stopwatch, both displays blank."
+          "imageAlt": "A digital countdown timer display on a table beside project blueprints, counting down remaining minutes.",
+          "imagePath": "scene-images/telling-time-4-usage-scene-2.webp"
         }
       ],
       "phrases": []

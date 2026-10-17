@@ -37,7 +37,7 @@ const HEROES: Case[] = [
   },
   {
     file: "shared/SentenceQuestionSupport.tsx",
-    anchor: "media={media}",
+    anchor: "media={activeMedia}",
     high: true,
     tag: "QuestionImage",
   },
@@ -59,7 +59,7 @@ function wordImageCall(source: string, anchor: string, tag = "WordImage"): strin
   if (tag === "SentenceQuestionSupport") {
     return wordImageCall(
       read("shared/SentenceQuestionSupport.tsx"),
-      "media={media}",
+      "media={activeMedia}",
       "QuestionImage"
     );
   }

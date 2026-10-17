@@ -1,12 +1,58 @@
 {
-  "version": "0.1.60",
+  "version": "0.1.62",
   "notes": [
-    "Added visible desktop keyboard shortcut badges on Continue buttons, integrated an accessible keyboard shortcut cheatsheet modal (accessible via '?' or the header icon), and introduced predictive asset preloading for subsequent lesson audio and images."
+    "Introduced a responsive side-rail workspace for pronunciation lessons with zero-scroll question autofocus, expanded curriculum scene illustration coverage with 184 reviewed scene images mapped across 13 units, and enabled automatic visual card fallbacks in sentence exercises."
   ],
   "notesAr": [
-    "تمت إضافة شارات مرئية لاختصارات لوحة المفاتيح على أزرار المتابعة على أجهزة سطح المكتب، ودمج نافذة إرشادية لاختصارات لوحة المفاتيح (يمكن فتحها بالضغط على '?' أو أيقونة الترويسة)، وتفعيل التحميل المسبق الذكي لصور ومقاطع الصوت للدروس التالية."
+    "إطلاق مساحة عمل جانبية لدروس النطق تضمن التركيز الكامل على السؤال والخيارات بدون تمرير، مع توسيع تغطية المشاهد المصورة بربط 184 مشهداً عبر 13 وحدة دراسية وتفعيل استرجاع تلقائي لصور المفردات."
   ],
   "releases": [
+    {
+      "id": "0.1.62",
+      "version": "0.1.62",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Pronunciation lesson side-rail workspace and zero-scroll autofocus",
+        "ar": "مساحة عمل جانبية لدروس النطق وتركيز تلقائي كامل على السؤال والخيارات بدون تمرير"
+      },
+      "changes": [
+        {
+          "id": "pronunciation-side-rail-workspace",
+          "category": "improved",
+          "en": "Revamped the pronunciation lesson layout into a responsive two-column side-rail workspace on desktop and tablet, consolidating the header, navigation, and disclosures into a side rail while dedicating the central stage exclusively to the audio question and choices.",
+          "ar": "تحديث تخطيط دروس النطق إلى مساحة عمل ثنائية الأعمدة على الشاشات الكبيرة، ودمج شريط التنقل والخيارات في شريط جانبي مخصص، مع منح المساحة الرئيسية بالكامل للسؤال الصوتي والخيارات."
+        },
+        {
+          "id": "pronunciation-choices-autofocus",
+          "category": "improved",
+          "en": "Optimized choice card dimensions with responsive height constraints and keyboard hotkey badges [1]-[4], allowing all four choices and prompt to fit completely above the fold without vertical scrolling.",
+          "ar": "تحسين أبعاد بطاقات الخيارات وتحديد ارتفاعها مع شارات الاختصارات [1]-[4] لتظهر جميع الخيارات الأربعة والسؤال في نطاق الشاشة مباشرة وبدون أي تمرير رأسي."
+        }
+      ]
+    },
+    {
+      "id": "0.1.61",
+      "version": "0.1.61",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Expanded curriculum scene illustrations and enhanced fallback resolution",
+        "ar": "توسيع تغطية المشاهد التعليمية المصورة وتحسين آلية استرجاع الصور البديلة"
+      },
+      "changes": [
+        {
+          "id": "curriculum-scene-illustrations-expanded",
+          "category": "improved",
+          "en": "Integrated 184 approved bespoke scene illustrations across 13 curriculum units (bakery, coffee shop, nature, calendar, spatial relations, and home suites) into local asset resolution.",
+          "ar": "ربط 184 مشهداً تعليمياً مصوراً معتمداً عبر 13 وحدة دراسية (المخبز، المقهى، الطبيعة، التقويم، العلاقات المكانية، والمنزل) مع دعم التحميل المحلي السلس."
+        },
+        {
+          "id": "bedroom-complete-illustration-and-fallback",
+          "category": "improved",
+          "en": "Achieved 100% bespoke scene illustration for The Bedroom unit and implemented an intelligent multi-stage visual fallback ensuring exercises display relevant vocabulary item imagery when sentence scenes are pending.",
+          "ar": "تحقيق نسبة 100% في المشاهد المصورة لوحدة غرفة النوم وإضافة آلية ذكية متعددة المراحل لعرض صور المفردات ذات الصلة تلقائياً في التمارين عند عدم توفر مشهد جملة مخصص."
+        }
+      ]
+    },
     {
       "id": "0.1.60",
       "version": "0.1.60",

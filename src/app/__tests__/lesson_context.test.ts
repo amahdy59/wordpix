@@ -83,13 +83,13 @@ describe("lesson context helpers", () => {
     expect(getRichSentence(word, usageWithTransfer, 1).full).toContain("returns the basket");
   });
 
-  it("prefers a curated example and otherwise uses the lesson scene", () => {
+  it("prefers the lesson scene and otherwise falls back to a curated example", () => {
     expect(
       getRichSentence({ ...word, exampleUsage: "She put the bread in her basket." }, usage).full
+    ).toBe("Maya carries a basket while she walks to the fruit stall.");
+    expect(
+      getRichSentence({ ...word, exampleUsage: "She put the bread in her basket." }, null).full
     ).toBe("She put the bread in her basket.");
-    expect(getRichSentence(word, usage).full).toBe(
-      "Maya carries a basket while she walks to the fruit stall."
-    );
     expect(
       getRichSentence({ ...word, exampleUsage: "The basket was used during the activity." }, usage)
         .full

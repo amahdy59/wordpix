@@ -84,8 +84,8 @@ describe("sentence question evidence", () => {
     ).toBeUndefined();
   });
 
-  it("uses a labelled placeholder and a numeric clue instead of unrelated artwork", () => {
-    render(
+  it("falls back to vocabulary image when scene media is absent, or placeholder when no image exists", () => {
+    const { unmount } = render(
       <I18nProvider>
         <SentenceQuestionSupport
           word={word}
@@ -95,13 +95,26 @@ describe("sentence question evidence", () => {
         />
       </I18nProvider>
     );
-    expect(screen.getByText(/We’re updating this image/i)).toBeVisible();
+    expect(screen.getByRole("img")).toBeVisible();
     expect(screen.getByText("5")).toBeVisible();
-    expect(screen.queryByRole("img")).not.toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
     expect(speak).toHaveBeenLastCalledWith("There are", undefined, undefined, {
       synthesisOnly: true,
     });
+    unmount();
+
+    render(
+      <I18nProvider>
+        <SentenceQuestionSupport
+          word={{ ...word, img: "" }}
+          sentence="There are five cups."
+          prompt="There are _____ cups."
+          answered={false}
+        />
+      </I18nProvider>
+    );
+    expect(screen.getByText(/We’re updating this image/i)).toBeVisible();
+    expect(screen.queryByRole("img")).not.toBeInTheDocument();
   });
 
   it("pauses once for a multiword gap, then reads the remaining context without the answer", () => {
@@ -180,7 +193,7 @@ describe("sentence question evidence", () => {
     expect(screen.getByRole("button", { name: /Listen to the sentence/i })).toBeVisible();
   });
 
-  it("recovers from a missing scene file without substituting vocabulary media", () => {
+  it("recovers from a missing scene file by falling back to vocabulary media, then to placeholder", () => {
     const media = resolveSentenceMedia("five", "I can see five books.");
     render(
       <I18nProvider>
@@ -193,8 +206,12 @@ describe("sentence question evidence", () => {
         />
       </I18nProvider>
     );
-    const image = screen.getByRole("img");
-    fireEvent.error(image);
+    const sceneImage = screen.getByRole("img");
+    expect(sceneImage).toHaveAttribute("src", expect.stringContaining("question-images"));
+    fireEvent.error(sceneImage);
+    const fallbackImage = screen.getByRole("img");
+    expect(fallbackImage).toHaveAttribute("src", expect.stringContaining("word-images/five"));
+    fireEvent.error(fallbackImage);
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
     expect(screen.getByText(/We’re updating this image/i)).toBeVisible();
     fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));

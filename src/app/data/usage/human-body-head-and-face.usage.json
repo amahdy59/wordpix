@@ -59,7 +59,8 @@
             "expectedAnswer": "Scalp"
           },
           "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Exterior head-model reference; do not expose living tissue. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageAlt": "A clinical examination of the scalp covering a patient's head in a bright clinic setting.",
+          "imagePath": "scene-images/head-scalp-examination-medical.webp"
         },
         {
           "chunkNumber": 2,
@@ -71,7 +72,8 @@
             "expectedAnswer": "Crown"
           },
           "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Plain educational head form; do not substitute a royal or dental crown. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageAlt": "A barber neatly trimming hair around the temple and forehead area.",
+          "imagePath": "scene-images/head-haircut-temple-forehead.webp"
         },
         {
           "chunkNumber": 3,
@@ -83,7 +85,8 @@
             "expectedAnswer": "Chin"
           },
           "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent head-and-neck model in side view. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageAlt": "A passport portrait photograph clearly displaying the jaw and chin.",
+          "imagePath": "scene-images/head-passport-photo-jaw-chin.webp"
         },
         {
           "chunkNumber": 4,
@@ -95,7 +98,8 @@
             "expectedAnswer": "Throat"
           },
           "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified head-section model; internal route must be independently checked. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageAlt": "A healthcare consultation examining the throat and eye area.",
+          "imagePath": "scene-images/head-pharmacy-consultation-throat-eye.webp"
         },
         {
           "chunkNumber": 5,
@@ -107,7 +111,8 @@
             "expectedAnswer": "Pupil"
           },
           "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent eye-model close-up with an anatomically accurate central pupil. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageAlt": "An optometrist testing a patient's eye and pupil during an examination.",
+          "imagePath": "scene-images/head-optometrist-eye-pupil-test.webp"
         }
       ],
       "phrases": []

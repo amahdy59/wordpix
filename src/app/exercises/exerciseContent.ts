@@ -533,16 +533,16 @@ export function getRichSentence(
 ): RichSentence {
   const authoredSentence = getAuthoredSentence(word.id);
   const curatedSentence = RICH_CONTEXT_SENTENCES[word.id];
-  const candidates = [
-    authoredSentence?.full,
-    curatedSentence?.full,
-    isUsefulExample(word.exampleUsage) ? word.exampleUsage.trim() : undefined,
-    ...findLessonContextSentences(word, usage),
-  ].filter((sentence): sentence is string => {
+  const lessonContextSentences = findLessonContextSentences(word, usage);
+  const filterCandidate = (
+    sentence: string | undefined,
+    enforceOwnership = true
+  ): sentence is string => {
     if (!isUsefulExample(sentence) || !isStandaloneExample(sentence)) return false;
     // Construction and gap fill must actually assess the selected target.
     // Inflected examples remain available as reading, not an unrelated blank.
     if (sentenceCloze(sentence, word.label) === sentence) return false;
+    if (!enforceOwnership) return true;
     const mentionedTargets =
       usage?.targetWordsEnglish.filter((label) => sentenceCloze(sentence, label) !== sentence) ??
       [];
@@ -558,7 +558,24 @@ export function getRichSentence(
       owner.toLowerCase() === word.label.toLowerCase() &&
       !(mentionedTargets.length >= 3 && /[,;:]/u.test(sentence))
     );
-  });
+  };
+
+  const primaryCandidates = [
+    authoredSentence?.full,
+    curatedSentence?.full,
+    ...lessonContextSentences,
+    isUsefulExample(word.exampleUsage) ? word.exampleUsage.trim() : undefined,
+  ].filter((s): s is string => filterCandidate(s, true));
+
+  const candidates =
+    primaryCandidates.length > 0
+      ? primaryCandidates
+      : [
+          authoredSentence?.full,
+          curatedSentence?.full,
+          ...lessonContextSentences,
+          isUsefulExample(word.exampleUsage) ? word.exampleUsage.trim() : undefined,
+        ].filter((s): s is string => filterCandidate(s, false));
   const uniqueCandidates = [...new Set(candidates)];
   const selected =
     uniqueCandidates[Math.min(Math.max(0, contextIndex), uniqueCandidates.length - 1)];

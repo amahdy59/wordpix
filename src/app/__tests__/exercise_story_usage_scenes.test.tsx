@@ -128,7 +128,20 @@ describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
 
   it("reconciles un-illustrated scene chunks with approved matching vocabulary word image", async () => {
     const dispatch = vi.fn();
-    render(<ExerciseStory step={5} words={mockFarmWords} lessonId="farm-1" dispatch={dispatch} />);
+    const mockAirportWords: VocabularyItem[] = [
+      {
+        id: "check-in-counter",
+        label: "check-in counter",
+        phonetic: "ˈtʃek.ɪn ˌkaʊn.tər",
+        img: "./word-images/airport/check-in-counter.webp",
+        topic: "airport",
+        description:
+          "An empty airport check-in counter with a blank monitor, baggage conveyor and queue barriers beside large terminal windows.",
+      },
+    ];
+    render(
+      <ExerciseStory step={5} words={mockAirportWords} lessonId="airport-1" dispatch={dispatch} />
+    );
 
     const usageButton = await screen.findByRole("button", { name: /3\. Usage Scenes/i });
     fireEvent.click(usageButton);
@@ -137,8 +150,26 @@ describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
     expect(await screen.findByText(/Vocabulary reference:/i)).toBeInTheDocument();
     // And that the word description is rendered as the visual brief
     expect(
-      screen.getByText("A large domesticated animal raised for milk or beef.")
+      screen.getByText(
+        "An empty airport check-in counter with a blank monitor, baggage conveyor and queue barriers beside large terminal windows."
+      )
     ).toBeInTheDocument();
+  });
+
+  it("renders bespoke scene illustration when scene has dedicated imagePath mapped", async () => {
+    const dispatch = vi.fn();
+    render(<ExerciseStory step={5} words={mockFarmWords} lessonId="farm-1" dispatch={dispatch} />);
+
+    const usageButton = await screen.findByRole("button", { name: /3\. Usage Scenes/i });
+    fireEvent.click(usageButton);
+
+    // Verify bespoke scene image is rendered instead of vocabulary reference
+    expect(screen.queryByText(/Vocabulary reference:/i)).not.toBeInTheDocument();
+    const sceneImg = await screen.findByRole("img", {
+      name: /A dairy cow standing peacefully in a lush green pasture beside a wooden fence/i,
+    });
+    expect(sceneImg).toBeInTheDocument();
+    expect(sceneImg).toHaveAttribute("src", expect.stringContaining("farm-1-usage-scene-1.webp"));
   });
 
   it("renders phrase illustration image when phrase has imagePath mapped", async () => {

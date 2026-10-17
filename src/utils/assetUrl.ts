@@ -1,5 +1,6 @@
 import { FIGMA_IMAGE_REPLACEMENTS } from "../generated/figmaImageReplacements";
 import vocabularySelections from "../app/generated/reviewedVocabularyImageSelections.json";
+import localAssetOverrides from "../app/generated/localAssetOverrides.json";
 
 /**
  * Resolves an app-relative asset path against Vite's configured base.
@@ -76,7 +77,7 @@ export function resolveAssetUrl(path: string): string {
   }
 
   // Unuploaded local asset replacements stay on the local origin until published to R2.
-  const LOCAL_ASSET_OVERRIDES = new Set(["word-images/human-body-head-and-face/crown.avif"]);
+  const LOCAL_ASSET_OVERRIDES = new Set(localAssetOverrides);
 
   // Media is uploaded to R2 under a stable prefix. Keep application assets
   // (for example /release-notes.json) on the Vite origin.

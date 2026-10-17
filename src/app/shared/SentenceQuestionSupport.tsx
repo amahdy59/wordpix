@@ -25,7 +25,11 @@ export function resolveSentenceMedia(
       candidate.imagePath &&
       candidate.imageAlt &&
       candidate.imagePurpose !== "word-reference" &&
-      candidate.scenario.includes(sentence)
+      (candidate.scenario.includes(sentence) ||
+        Boolean(
+          candidate.learningContext?.scenario &&
+          candidate.learningContext.scenario.includes(sentence)
+        ))
   );
   return scene?.imagePath && scene.imageAlt
     ? { imagePath: scene.imagePath, imageAlt: scene.imageAlt, imageFallbacks: scene.imageFallbacks }
@@ -65,10 +69,30 @@ export function SentenceQuestionSupport({
 }) {
   const { t } = useI18n();
   const { accessibility } = useAccessibility();
-  const [failedImage, setFailedImage] = useState<string | null>(null);
-  const audioHintId = useId();
+  const [activeQuestionKey, setActiveQuestionKey] = useState(`${word.id}:${sentence}`);
+  const [failedImages, setFailedImages] = useState<ReadonlySet<string>>(() => new Set());
+  if (activeQuestionKey !== `${word.id}:${sentence}`) {
+    setActiveQuestionKey(`${word.id}:${sentence}`);
+    setFailedImages(new Set());
+  }
+
   const audio = useSentenceAudio(answered ? sentence : prompt);
-  const hasImage = media && failedImage !== media.imagePath;
+  const audioHintId = useId();
+
+  const fallbackMedia: PilotSentenceMedia | undefined =
+    word.img && !failedImages.has(word.img)
+      ? {
+          imagePath: word.img,
+          imageAlt:
+            word.description && word.description !== PLACEHOLDER_DESCRIPTION
+              ? word.description
+              : word.label,
+        }
+      : undefined;
+
+  const activeMedia =
+    (media && !failedImages.has(media.imagePath) ? media : undefined) ?? fallbackMedia;
+  const hasImage = Boolean(activeMedia);
 
   const hasSpokenRef = useRef<Record<string, boolean>>({});
   const questionKey = `${word.id}:${prompt}`;
@@ -143,22 +167,23 @@ export function SentenceQuestionSupport({
       : t("exercise.wordToPractice");
   return (
     <div className="flex min-w-0 flex-col gap-3 sm:gap-4 w-full">
-      {hasImage ? (
+      {hasImage && activeMedia ? (
         <MediaFrame
           fit="cover"
           aspect="recognition"
           className="w-full min-h-[160px] sm:min-h-[220px] lg:min-h-[300px] max-h-[200px] sm:max-h-[300px] lg:max-h-[480px] aspect-video sm:aspect-[4/3] lg:aspect-auto shadow-wp-sm"
         >
           <QuestionImage
-            media={media}
+            key={activeMedia.imagePath}
+            media={activeMedia}
             className="size-full object-cover object-center"
             loading="eager"
             {...{ fetchpriority: "high" }}
-            onExhausted={() => setFailedImage(media.imagePath)}
+            onExhausted={() => setFailedImages((prev) => new Set(prev).add(activeMedia.imagePath))}
           />
         </MediaFrame>
       ) : (
-        <ScenePlaceholder />
+        <ScenePlaceholder clue={clue} />
       )}
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-wp-card p-3 sm:p-4 shadow-wp-xs shrink-0">
         <p

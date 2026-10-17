@@ -59,7 +59,8 @@
             "expectedAnswer": "Nightstand"
           },
           "imageBrief": "Adult bedroom with phone screen off on small bedside table beside bed; dresser in background. No readable text or labels.",
-          "imageAlt": "Adult bedroom with phone screen off on small bedside table beside bed; dresser in background."
+          "imageAlt": "Maya puts her phone on the nightstand beside her bed with a dresser in the background.",
+          "imagePath": "scene-images/bedroom-bed-nightstand-dresser.webp"
         },
         {
           "chunkNumber": 2,
@@ -71,7 +72,8 @@
             "expectedAnswer": "Wardrobe"
           },
           "imageBrief": "Wardrobe open to reveal a hanging jacket, beside desk and chair. No labels or private information.",
-          "imageAlt": "Wardrobe open to reveal a hanging jacket, beside desk and chair."
+          "imageAlt": "A wooden wardrobe beside a bedroom desk and chair.",
+          "imagePath": "scene-images/bedroom-wardrobe-closet.webp"
         },
         {
           "chunkNumber": 3,
@@ -83,7 +85,7 @@
             "expectedAnswer": "Stool"
           },
           "imageBrief": "Photorealistic adult bedroom showing Bookshelf, Mirror, and Stool naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "An adult bedroom contains several everyday furniture or personal items.",
+          "imageAlt": "A simple backless stool below a wall mirror beside a bookshelf in a bedroom.",
           "learningContext": {
             "sourceScenario": "During an adult bedroom setup or home check, the tenant reviews bookshelf, mirror, and stool. They need the item that is a simple seat without a back.",
             "sourceQuestion": "Which item best matches what the tenant needs?",
@@ -91,7 +93,8 @@
             "scenario": "Rana uses a stool, a seat without a back, below the mirror. The bookshelf is beside it.",
             "question": "Which item is the seat without a back?",
             "imageBrief": "Backless stool below a wall mirror beside a bookshelf with blank book spines. Realistic reflection without extra duplicated objects."
-          }
+          },
+          "imagePath": "scene-images/bedroom-stool-mirror-bookshelf.webp"
         },
         {
           "chunkNumber": 4,
@@ -103,7 +106,7 @@
             "expectedAnswer": "Chest of Drawers"
           },
           "imageBrief": "Photorealistic adult bedroom showing Chest of Drawers, Pillow, and Blanket naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "An adult bedroom contains several everyday furniture or personal items.",
+          "imageAlt": "A chest of drawers beside a bed with a pillow and folded blanket.",
           "learningContext": {
             "sourceScenario": "During an adult bedroom setup or home check, the tenant reviews chest of drawers, pillow, and blanket. They need the item that has several drawers for storing clothes.",
             "sourceQuestion": "Which piece of furniture is highlighted for the move?",
@@ -111,7 +114,8 @@
             "scenario": "Maya takes a blanket from the chest of drawers and places it beside her pillow. The chest of drawers is furniture with several drawers.",
             "question": "Which furniture has several drawers?",
             "imageBrief": "Chest of drawers with one open drawer containing a folded blanket; pillow on nearby bed. No highlighted furniture or text."
-          }
+          },
+          "imagePath": "scene-images/bedroom-chest-of-drawers.webp"
         },
         {
           "chunkNumber": 5,
@@ -123,7 +127,7 @@
             "expectedAnswer": "Sheet"
           },
           "imageBrief": "Photorealistic adult bedroom showing Sheet, Mattress, and Duvet naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "An adult bedroom contains several everyday furniture or personal items.",
+          "imageAlt": "A white fitted sheet on a firm mattress with a duvet.",
           "learningContext": {
             "sourceScenario": "During an adult bedroom setup or home check, the tenant reviews sheet, mattress, and duvet. They need the item that is a piece of bed linen placed on or over the mattress.",
             "sourceQuestion": "Which item best matches what the tenant needs?",
@@ -131,7 +135,8 @@
             "scenario": "Samir places a clean sheet directly over the mattress. He puts the duvet above the sheet.",
             "question": "What does Samir place directly over the mattress?",
             "imageBrief": "Adult bed with thin fitted sheet clearly covering mattress and folded thick duvet at foot. No labels, readable fabric tags or person in bed."
-          }
+          },
+          "imagePath": "scene-images/bedroom-fitted-bed-sheet.webp"
         }
       ]
     },
@@ -265,7 +270,8 @@
             "expectedAnswer": "Comforter"
           },
           "imageBrief": "Made adult bed with thick filled comforter and pillow in pillowcase, cushion on nearby chair. No labels.",
-          "imageAlt": "Made adult bed with thick filled comforter and pillow in pillowcase, cushion on nearby chair."
+          "imageAlt": "A thick comforter duvet neatly spread across a bed.",
+          "imagePath": "scene-images/bedroom-thick-padded-comforter.webp"
         },
         {
           "chunkNumber": 2,
@@ -277,7 +283,8 @@
             "expectedAnswer": "Bed Frame"
           },
           "imageBrief": "Bed with frame rails visible below mattress and headboard behind; lamp on bedside table. No construction or repair demonstration.",
-          "imageAlt": "Bed with frame rails visible below mattress and headboard behind; lamp on bedside table."
+          "imageAlt": "A sturdy wooden bed frame with slats supporting a mattress.",
+          "imagePath": "scene-images/bedroom-sturdy-bed-frame.webp"
         },
         {
           "chunkNumber": 3,
@@ -289,7 +296,7 @@
             "expectedAnswer": "Curtain"
           },
           "imageBrief": "Photorealistic adult bedroom showing Curtain, Window, and Door naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "An adult bedroom contains several everyday furniture or personal items.",
+          "imageAlt": "Floor-length curtains framing a bedroom window beside an interior door.",
           "learningContext": {
             "sourceScenario": "During an adult bedroom setup or home check, the tenant reviews curtain, window, and door. They need the item that covers a window for privacy or to block light.",
             "sourceQuestion": "Which item best matches what the tenant needs?",
@@ -297,7 +304,8 @@
             "scenario": "Rana opens the cloth curtain covering her window. She closes the bedroom door.",
             "question": "Which cloth covering does Rana open?",
             "imageBrief": "Adult bedroom window with cloth curtain drawn to one side and closed door. No visible private address or labels."
-          }
+          },
+          "imagePath": "scene-images/bedroom-window-curtains.webp"
         },
         {
           "chunkNumber": 4,
@@ -309,7 +317,8 @@
             "expectedAnswer": "Carpet"
           },
           "imageBrief": "Bedroom with edge-to-edge grey carpet and separate small patterned rug, ceiling light visible. Exact distinct floor coverings without labels.",
-          "imageAlt": "Bedroom with edge-to-edge grey carpet and separate small patterned rug, ceiling light visible."
+          "imageAlt": "Wall-to-wall fitted carpet in an adult bedroom.",
+          "imagePath": "scene-images/bedroom-wall-to-wall-carpet.webp"
         },
         {
           "chunkNumber": 5,
@@ -321,7 +330,8 @@
             "expectedAnswer": "Outlet"
           },
           "imageBrief": "Intact unbranded wall socket and light switch in adult bedroom with window blinds. No exposed wires, plug handling or readable electrical specifications.",
-          "imageAlt": "Intact unbranded wall socket and light switch in adult bedroom with window blinds."
+          "imageAlt": "A grounded wall electrical outlet in a bedroom.",
+          "imagePath": "scene-images/bedroom-electrical-wall-outlet.webp"
         }
       ]
     },
@@ -455,7 +465,8 @@
             "expectedAnswer": "Alarm Clock"
           },
           "imageBrief": "Unlabelled alarm clock with visible alarm bells beside picture frame, ordinary wall clock farther away. Clock faces have blank tick marks and no digits; supplied text gives time.",
-          "imageAlt": "Unlabelled alarm clock with visible alarm bells beside picture frame, ordinary wall clock farther away."
+          "imageAlt": "An alarm clock on a bedside nightstand.",
+          "imagePath": "scene-images/bedroom-alarm-clock-nightstand.webp"
         },
         {
           "chunkNumber": 2,
@@ -467,7 +478,7 @@
             "expectedAnswer": "Plant"
           },
           "imageBrief": "Photorealistic adult bedroom showing Plant, Vase, and Candle naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "An adult bedroom contains several everyday furniture or personal items.",
+          "imageAlt": "A potted indoor plant beside a vase and candle on a dresser.",
           "learningContext": {
             "sourceScenario": "During an adult bedroom setup or home check, the tenant reviews plant, vase, and candle. They need the item that is a living decorative plant kept indoors.",
             "sourceQuestion": "Which item best matches what the tenant needs?",
@@ -475,7 +486,8 @@
             "scenario": "Salma waters the living plant near the window. A vase and an unlit candle are on the shelf.",
             "question": "Which living item does Salma water?",
             "imageBrief": "Potted living houseplant by window, empty vase and unlit candle on separate shelf. No flame, labels or unsafe electrical contact."
-          }
+          },
+          "imagePath": "scene-images/bedroom-potted-indoor-plant.webp"
         },
         {
           "chunkNumber": 3,
@@ -487,7 +499,7 @@
             "expectedAnswer": "Wastebasket"
           },
           "imageBrief": "Photorealistic adult bedroom showing Calendar, Tissue Box, and Wastebasket naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "An adult bedroom contains several everyday furniture or personal items.",
+          "imageAlt": "A small metal wastebasket beside a bedroom desk.",
           "learningContext": {
             "sourceScenario": "During an adult bedroom setup or home check, the tenant reviews calendar, tissue box, and wastebasket. They need the item that holds small pieces of rubbish.",
             "sourceQuestion": "Where should the used tissue go?",
@@ -495,7 +507,8 @@
             "scenario": "Tariq takes a tissue from the tissue box. He puts the used tissue in the wastebasket below the calendar.",
             "question": "Where does Tariq put the used tissue?",
             "imageBrief": "Plain tissue box on desk and small wastebasket below a wall calendar with blank grid; no dates, tissue branding or readable labels."
-          }
+          },
+          "imagePath": "scene-images/bedroom-metal-wastebasket.webp"
         },
         {
           "chunkNumber": 4,
@@ -507,7 +520,8 @@
             "expectedAnswer": "Hanger"
           },
           "imageBrief": "Shirt on clothes hanger inside wardrobe; folded pajamas and indoor slippers nearby. No readable labels.",
-          "imageAlt": "Shirt on clothes hanger inside wardrobe; folded pajamas and indoor slippers nearby."
+          "imageAlt": "Hangers in a wardrobe with folded pajamas and slippers.",
+          "imagePath": "scene-images/bedroom-hangers-pajamas-slippers.webp"
         },
         {
           "chunkNumber": 5,
@@ -519,7 +533,8 @@
             "expectedAnswer": "Robe"
           },
           "imageBrief": "Adult bedroom with robe on hook behind door, small gift teddy bear on shelf and unlettered landscape poster. No child framing or private photographs.",
-          "imageAlt": "Adult bedroom with robe on hook behind door, small gift teddy bear on shelf and unlettered landscape poster."
+          "imageAlt": "An adult bathrobe draped over an armchair in a bedroom.",
+          "imagePath": "scene-images/bedroom-adult-robe-chair.webp"
         }
       ]
     },
@@ -649,7 +664,8 @@
             "expectedAnswer": "Glasses"
           },
           "imageBrief": "Pair of eyeglasses beside closed photo album and two books with blank covers. No visual diagnosis or readable text.",
-          "imageAlt": "Pair of eyeglasses beside closed photo album and two books with blank covers."
+          "imageAlt": "Reading glasses resting on a desk beside an album.",
+          "imagePath": "scene-images/bedroom-reading-glasses-album.webp"
         },
         {
           "chunkNumber": 2,
@@ -661,7 +677,8 @@
             "expectedAnswer": "Backpack"
           },
           "imageBrief": "Backpack with two shoulder straps and phone screen off in open pocket; closed jewelry box on shelf. No brand, jewellery wealth claim or text.",
-          "imageAlt": "Backpack with two shoulder straps and phone screen off in open pocket; closed jewelry box on shelf."
+          "imageAlt": "A travel backpack and jewelry box on a bedroom dresser.",
+          "imagePath": "scene-images/bedroom-backpack-jewelry-box.webp"
         },
         {
           "chunkNumber": 3,
@@ -673,7 +690,8 @@
             "expectedAnswer": "Charger"
           },
           "imageBrief": "Unbranded laptop screen off beside intact charger and headphones on hard desk surface. No open wiring, electrical repair or labels.",
-          "imageAlt": "Unbranded laptop screen off beside intact charger and headphones on hard desk surface."
+          "imageAlt": "A wall charger plugged into a laptop on a desk.",
+          "imagePath": "scene-images/bedroom-wall-charger-laptop.webp"
         },
         {
           "chunkNumber": 4,
@@ -685,7 +703,7 @@
             "expectedAnswer": "Tablet"
           },
           "imageBrief": "Photorealistic adult bedroom showing Tablet, Speaker, and Reading Light naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "An adult bedroom contains several everyday furniture or personal items.",
+          "imageAlt": "A tablet in a charging stand beside a speaker and reading lamp.",
           "learningContext": {
             "sourceScenario": "During an adult bedroom setup or home check, the tenant reviews tablet, speaker, and reading light. They need the item that is a portable touchscreen computer.",
             "sourceQuestion": "Which item best matches what the tenant needs?",
@@ -693,7 +711,8 @@
             "scenario": "Rana reads on her tablet, a portable touchscreen computer. A speaker and reading light are beside her chair.",
             "question": "Which item is the touchscreen computer?",
             "imageBrief": "Plain tablet with screen off beside compact speaker and reading lamp. No logos, readable screen text or ambiguous paper book as tablet."
-          }
+          },
+          "imagePath": "scene-images/bedroom-bedside-tablet-stand.webp"
         },
         {
           "chunkNumber": 5,
@@ -705,7 +724,7 @@
             "expectedAnswer": "Remote Control"
           },
           "imageBrief": "Photorealistic adult bedroom showing Remote Control naturally arranged in a realistic home interior; clean practical setting, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "An adult bedroom contains several everyday furniture or personal items.",
+          "imageAlt": "A modern remote control on a bedside nightstand.",
           "learningContext": {
             "sourceScenario": "During an adult bedroom setup or home check, the tenant reviews remote control. They need the item that operates equipment from a distance.",
             "sourceQuestion": "Which item best matches what the tenant needs?",
@@ -713,7 +732,8 @@
             "scenario": "Lina uses a remote control to turn off the television from her chair. She leaves the device on the nightstand.",
             "question": "Which device operates the television from a distance?",
             "imageBrief": "Unbranded handheld remote with blank buttons on bedside table and television screen off. No readable labels or highlighted device."
-          }
+          },
+          "imagePath": "scene-images/bedroom-remote-control.webp"
         }
       ]
     },
