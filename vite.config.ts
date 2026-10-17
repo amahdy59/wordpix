@@ -141,7 +141,12 @@ export default defineConfig(async () => {
     }
   }
   return {
-    base: "/wordpix/",
+    base:
+      process.env.VITE_BASE_PATH ||
+      process.env.BASE_PATH ||
+      (process.env.CF_PAGES || process.env.CLOUDFLARE || process.env.HOME === "/opt/buildhome"
+        ? "/"
+        : "/wordpix/"),
     plugins: [
       buildProvenance(),
       figmaAssetResolver(),
