@@ -1,12 +1,18 @@
 import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "./offlineTest";
 import { reloadOffline } from "./offlineReload";
+import { playbackFixture } from "./audioFixture";
 
 test("word details fetch bounded shards and survive a cached offline reload", async ({
   page,
   offlineServer,
 }) => {
   test.setTimeout(60_000);
+  // This spec verifies cached dictionary modules. Keep automatic word audio
+  // deterministic without depending on the live media host during reloads.
+  await page.route("**/audio/**/*.mp3", (route) =>
+    route.fulfill({ body: playbackFixture(), contentType: "audio/wav" })
+  );
   const scripts = new Set<string>();
   const errors: string[] = [];
   page.on("request", (request) => {
