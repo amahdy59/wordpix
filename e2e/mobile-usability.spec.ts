@@ -134,12 +134,14 @@ test("pronunciation lesson cards do not overflow their phone scroll container", 
   await page.evaluate(() => {
     window.location.hash = "/practice";
   });
+  await expect(page.getByRole("heading", { name: "Practice", exact: true })).toBeVisible();
   await page
     .getByRole("banner", { name: "Mobile navigation" })
     .getByRole("button", { name: "Settings & Accessibility", exact: true })
     .click();
   await page.getByRole("button", { name: "150%", exact: true }).click();
   await page.getByRole("button", { name: "Close settings", exact: true }).click();
+  await expect(page.getByRole("button", { name: "Close settings", exact: true })).toHaveCount(0);
   await page.evaluate(() => {
     window.location.hash = "/pronunciation";
   });
