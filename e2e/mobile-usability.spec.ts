@@ -44,13 +44,13 @@ test("the guided path comes before specialist courses", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/#/learn", { waitUntil: "domcontentloaded" });
   await waitForStyles(page);
-  const path = page.getByRole("button", { name: /View full learning path/ });
-  const courses = page.getByRole("region", { name: "Specialized learning curricula" });
+  const path = page.getByRole("button", { name: /Vocabulary path/ });
+  const courses = page.getByRole("region", { name: "Specialist courses" });
   await expect(path).toBeVisible();
   const pathBox = await path.boundingBox();
   const coursesBox = await courses.boundingBox();
   expect(pathBox!.y).toBeLessThan(coursesBox!.y);
-  await path.click();
+  await expect(path).toHaveAttribute("aria-expanded", "true");
   await expect(page.locator("#picture-world-path")).toBeVisible();
 });
 

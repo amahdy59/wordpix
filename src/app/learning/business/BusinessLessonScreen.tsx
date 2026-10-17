@@ -155,7 +155,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
             aria-label={t("business.curriculumNavLabel")}
           >
             <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
-            <span className="text-base">{t("lessonShell.back")}</span>
+            <span className="text-base">{t("ux.backToCourse")}</span>
           </button>
 
           <div className="h-4 w-px bg-border hidden sm:block" aria-hidden />

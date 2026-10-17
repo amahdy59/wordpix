@@ -143,7 +143,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
               className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl px-2.5 py-1 text-sm font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-              <span>{t("conversation.allUnits")}</span>
+              <span>{t("ux.backToCourse")}</span>
             </button>
 
             <div className="flex items-center gap-2">

@@ -19,7 +19,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
 
     // Verify first lesson card is visible and accessible
-    const startButton = page.getByRole("button", { name: /^Start lesson:/ }).first();
+    const startButton = page.getByRole("button", { name: /^Start: group/ }).first();
     await expect(startButton).toBeVisible();
 
     const buttonHeight = await startButton.evaluate((el) => el.getBoundingClientRect().height);
@@ -57,7 +57,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await waitForStyles(page);
     await page.getByRole("heading", { name: /Numbers & Counting/i }).waitFor({ timeout: 15_000 });
 
-    const startButton = page.getByRole("button", { name: /^Start lesson:/ }).first();
+    const startButton = page.getByRole("button", { name: /^Start: group/ }).first();
     await expect(startButton).toBeVisible();
 
     // Ensure no horizontal scrollbar on mobile
@@ -94,7 +94,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await waitForStyles(page);
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
     await page
-      .getByRole("button", { name: /^Start lesson:/ })
+      .getByRole("button", { name: /^Start: group/ })
       .first()
       .click();
     await page.evaluate(() => {
@@ -135,7 +135,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await waitForStyles(page);
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
     await page
-      .getByRole("button", { name: /^Start lesson:/ })
+      .getByRole("button", { name: /^Start: group/ })
       .first()
       .click();
     await page.evaluate(() => {
@@ -176,7 +176,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await waitForStyles(page);
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
     await page
-      .getByRole("button", { name: /^Start lesson:/ })
+      .getByRole("button", { name: /^Start: group/ })
       .first()
       .click();
     await page.evaluate(() => {
@@ -212,6 +212,8 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await waitForStyles(page);
     await page.getByRole("button", { name: "Profile", exact: true }).click();
 
+    await expect(page.getByRole("heading", { name: "How you can use your words" })).toBeHidden();
+    await page.locator("summary").filter({ hasText: "About your learning progress" }).click();
     await expect(page.getByRole("heading", { name: "How you can use your words" })).toBeVisible();
     for (const skill of [
       "Visual recognition",

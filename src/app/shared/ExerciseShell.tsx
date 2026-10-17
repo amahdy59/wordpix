@@ -1,3 +1,4 @@
+import { useLessonSession } from "./LessonSessionContext";
 import { memo, useState } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
@@ -44,6 +45,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   progressLabel,
   layout = "standard",
 }: Props) {
+  const session = useLessonSession();
   const [showExitModal, setShowExitModal] = useState(false);
   const Content = "section";
   const canvasClass =
@@ -70,7 +72,8 @@ export const ExerciseShell = memo(function ExerciseShell({
         onCancel={() => setShowExitModal(false)}
         onConfirm={() => {
           setShowExitModal(false);
-          dispatch({ type: "GO", to: "home" });
+          if (session) session.onExit();
+          else dispatch({ type: "GO", to: "practice" });
         }}
       />
       {/* ── RIGHT PANEL: Desktop & Mobile Exercise Main View ────────────────── */}

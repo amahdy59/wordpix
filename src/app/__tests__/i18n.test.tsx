@@ -83,6 +83,12 @@ describe("Translation bundles", () => {
 });
 
 describe("lookup and interpolate", () => {
+  it("accepts both placeholder conventions without leaving braces around counts", () => {
+    expect(interpolate("{{count}} groups · {count} total", { count: 4 })).toBe(
+      "4 groups · 4 total"
+    );
+    expect(interpolate("{{unknown}}", { count: 4 })).toBe("{{unknown}}");
+  });
   it("resolves nested dotted keys", () => {
     expect(lookup(en, "nav.home")).toBe("Home");
   });

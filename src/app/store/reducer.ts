@@ -1,3 +1,4 @@
+import { readLessonResume } from "../lesson/lessonResume";
 import type { Screen, Action, OnboardStep } from "../types";
 import {
   COURSE_UNITS,
@@ -23,6 +24,7 @@ export const TABBED_IDS: ReadonlySet<string> = new Set([
 export const STORAGE_KEY = "wordpix:learner-state:v4";
 
 export function reducer(state: Screen, action: Action): Screen {
+  if (action.type === "RESUME_LESSON") return readLessonResume(action.unitId) ?? state;
   if (action.type === "ONBOARD_NEXT") {
     if (state.id !== "onboarding") return state;
     const i = ONBOARD_STEPS.indexOf(state.step);

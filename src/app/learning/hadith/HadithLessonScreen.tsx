@@ -190,7 +190,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             className={`inline-flex min-h-11 w-fit items-center gap-2 rounded-xl border border-border bg-card px-3.5 font-bold text-foreground shadow-wp-xs transition-colors hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
           >
             <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-            <span>{t("hadith.backToCurriculum") || "Back to curriculum"}</span>
+            <span>{t("ux.backToCourse") || "Back to curriculum"}</span>
           </button>
 
           <div className="flex flex-wrap items-center gap-2.5">
@@ -276,10 +276,15 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
         >
           {stage === "read-listen" && (
             <div className="space-y-6">
-              <HadithWarmupStage
-                warmup={parsedStages.warmup}
-                onProceedToText={scrollToHadithText}
-              />
+              <details className="rounded-2xl border border-border p-4">
+                <summary className="min-h-11 cursor-pointer rounded-xl py-2 font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
+                  {t("ux.beforeReading")}
+                </summary>
+                <HadithWarmupStage
+                  warmup={parsedStages.warmup}
+                  onProceedToText={scrollToHadithText}
+                />
+              </details>
               <HadithReadListenStage
                 source={lesson.source}
                 onPlayAudio={playTrack}

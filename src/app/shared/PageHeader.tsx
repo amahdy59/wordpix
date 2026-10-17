@@ -67,7 +67,7 @@ export const PageHeader = memo(function PageHeader({
 
           <HeadingTag
             id={titleId}
-            className={`font-sans ${headingStyles} font-black leading-[1.2] text-foreground tracking-tight text-balance`}
+            className={`font-sans ${headingStyles} font-bold leading-[1.3] text-foreground tracking-tight text-balance`}
           >
             {title}
           </HeadingTag>

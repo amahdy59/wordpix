@@ -24,7 +24,10 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
     await page.setViewportSize({ width: 320, height: 720 });
     await page.goto("/", { waitUntil: "domcontentloaded" });
     await waitForStyles(page);
-    await page.getByRole("button", { name: /View full learning path/i }).click();
+    await expect(page.getByRole("button", { name: /Vocabulary path/i })).toHaveAttribute(
+      "aria-expanded",
+      "true"
+    );
     await expect(page.getByRole("button", { name: /A1 Foundations/i })).toBeVisible();
     await page.getByRole("button", { name: /A1 Foundations/i }).click();
     await expect(page.getByRole("button", { name: /The Farm/i }).first()).toBeVisible();

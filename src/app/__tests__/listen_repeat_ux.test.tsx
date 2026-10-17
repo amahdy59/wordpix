@@ -153,10 +153,10 @@ describe("Listen and repeat mobile focus", () => {
 
     fireEvent.click(screen.getByRole("button", { name: /Next word/i }));
     expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuetext", "Word 2 of 2");
-    expect(screen.getByRole("button", { name: /Continue to sentences/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Continue to Audio Match/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Previous word" })).toBeEnabled();
 
-    fireEvent.click(screen.getByRole("button", { name: /Continue to sentences/i }));
+    fireEvent.click(screen.getByRole("button", { name: /Continue to Audio Match/i }));
     expect(dispatch).toHaveBeenCalledWith({ type: "LESSON_NEXT" });
   });
 

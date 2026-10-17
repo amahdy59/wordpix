@@ -31,7 +31,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = 
         Nothing scrolled sideways to reveal it, which is why it went unnoticed.
       */}
       <header
-        className={`lg:hidden sticky top-0 z-40 shrink-0 w-full flex items-center justify-between px-4 h-[calc(3.5rem+env(safe-area-inset-top))] pt-[env(safe-area-inset-top)] backdrop-blur-xl border-b motion-safe:transition-all motion-safe:duration-200 ${
+        className={`lg:hidden sticky top-0 z-40 shrink-0 w-full flex items-center justify-between flex-wrap gap-2 px-4 py-1 min-h-[calc(3.5rem+env(safe-area-inset-top))] pt-[env(safe-area-inset-top)] backdrop-blur-xl border-b motion-safe:transition-all motion-safe:duration-200 ${
           isScrolled
             ? "bg-background/95 border-border shadow-wp-xs"
             : "bg-background/80 border-border/40"
@@ -57,7 +57,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = 
         </button>
 
         {/* Utilities */}
-        <div className="flex items-center gap-1">
+        <div className="flex flex-wrap items-center gap-1">
           <ThemeToggle compact />
 
           <button

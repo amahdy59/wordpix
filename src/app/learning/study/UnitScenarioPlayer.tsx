@@ -496,7 +496,9 @@ export function UnitScenarioPlayer({
             </span>
 
             <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-secondary text-foreground border border-border">
-              <span>{displayInfo.sectionLabel}</span>
+              <span>
+                {t("ux.lessonCount", { current: selectedIdx + 1, total: scenarios.length })}
+              </span>
             </span>
 
             {sectionTitle && (
@@ -508,7 +510,7 @@ export function UnitScenarioPlayer({
             {audioMode === "synthesized" && (
               <span
                 className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-secondary/80 text-muted-foreground border border-border"
-                title="Character speech synthesis active"
+                title={t("study.speechAudio")}
               >
                 <Volume2 className="size-3 text-primary" aria-hidden="true" />
                 <span>{t("study.speechAudio") || "Speech Audio"}</span>
@@ -518,11 +520,13 @@ export function UnitScenarioPlayer({
 
           <h2
             id="scenario-player-heading"
-            className="text-lg sm:text-xl font-black text-foreground"
+            className="text-lg sm:text-xl font-bold text-foreground"
             lang="en"
             dir="ltr"
           >
-            <span className="text-primary me-2 font-bold">{displayInfo.badgeLabel}:</span>
+            <span className="text-primary me-2 font-bold">
+              {t("ux.lessonNumber", { number: selectedIdx + 1 })}:
+            </span>
             <span>{activeScenario.titleEn}</span>
           </h2>
           {activeScenario.titleAr && (
@@ -540,7 +544,7 @@ export function UnitScenarioPlayer({
         {scenarios.length > 1 && (
           <div
             role="tablist"
-            aria-label="Scenario parts"
+            aria-label={t("ux.scenarioParts")}
             className="flex flex-wrap gap-1.5 p-1 rounded-xl bg-secondary/80 self-start sm:self-auto"
           >
             {scenarios.map((s, idx) => {
@@ -552,7 +556,7 @@ export function UnitScenarioPlayer({
                   role="tab"
                   type="button"
                   aria-selected={isCurrent}
-                  aria-label={`Part ${idx + 1}`}
+                  aria-label={t("study.scenarioPart", { count: idx + 1 })}
                   onClick={() => handleSelectScenario(idx)}
                   title={`${sInfo.sectionLabel}: ${s.titleEn}`}
                   className={`min-h-[44px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary ${
@@ -564,9 +568,7 @@ export function UnitScenarioPlayer({
                   <span>
                     {t("study.scenarioPart", { count: idx + 1, defaultValue: `Part ${idx + 1}` })}
                   </span>
-                  <span className="ms-1 opacity-85 font-normal" aria-hidden="true">
-                    ({sInfo.badgeLabel})
-                  </span>
+                  <span className="ms-1 opacity-85 font-normal" aria-hidden="true"></span>
                 </button>
               );
             })}
@@ -653,7 +655,7 @@ export function UnitScenarioPlayer({
             aria-valuetext={`${formatSeconds(currentTime)} of ${formatSeconds(
               duration || activeScenario.totalDurationSeconds
             )}`}
-            className="w-full h-2 rounded-lg bg-border accent-primary cursor-pointer disabled:opacity-50"
+            className="w-full min-h-[44px] rounded-lg bg-border accent-primary cursor-pointer disabled:opacity-50"
           />
         </div>
       </div>
@@ -673,7 +675,7 @@ export function UnitScenarioPlayer({
                 key={word}
                 type="button"
                 onClick={() => onInspectWord?.(word)}
-                className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-secondary hover:bg-secondary/80 text-foreground border border-border focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary transition-colors cursor-pointer"
+                className="min-h-[44px] min-w-[44px] px-2.5 py-2 rounded-lg text-sm font-semibold bg-secondary hover:bg-secondary/80 text-foreground border border-border focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary transition-colors cursor-pointer"
                 title={`Inspect word: ${word}`}
               >
                 {word}

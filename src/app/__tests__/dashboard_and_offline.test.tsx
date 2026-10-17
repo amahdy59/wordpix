@@ -47,11 +47,11 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     const dispatch = vi.fn();
     renderWithProviders(<HomeDashboard dispatch={dispatch} />);
 
-    expect(screen.getByRole("button", { name: /What's New/i })).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: /What's New/i })).not.toBeInTheDocument();
     expect(screen.getByText("Daily Vocabulary Target")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /Study materials for/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Unit reference:/i })).toBeInTheDocument();
     expect(screen.getByText("Recommended next")).toBeInTheDocument();
-    expect(screen.getByText("Reviews unlock after your first lesson")).toBeInTheDocument();
+    expect(screen.getByText("Reviews follow your first lesson")).toBeInTheDocument();
     expect(screen.queryByText(/Excellent memory retention/i)).not.toBeInTheDocument();
   });
 
@@ -65,9 +65,10 @@ describe("HomeDashboard Gamification & Daily Goals", () => {
     expect(
       screen.queryByRole("heading", { name: "First letters and words" })
     ).not.toBeInTheDocument();
-    expect(screen.queryByText("General English words mastered")).not.toBeInTheDocument();
+    expect(screen.getByText("General English words mastered")).toBeInTheDocument();
 
-    await user.click(screen.getByRole("button", { name: /View full learning path/i }));
+    await user.click(screen.getByRole("button", { name: /Vocabulary path/i }));
+    await user.click(screen.getByRole("button", { name: /Vocabulary path/i }));
     expect(screen.getByText("General English words mastered")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /C1 Mastery/i })).toBeInTheDocument();
   });
@@ -97,10 +98,10 @@ describe("SettingsModal Offline Preloader", () => {
     vi.mocked(loadUnitVocabulary).mockRejectedValueOnce(new Error("offline"));
     const user = userEvent.setup();
     renderWithProviders(<SettingsModal isOpen onClose={vi.fn()} />);
-    await user.click(screen.getByRole("button", { name: /Preload All Units/i }));
+    await user.click(screen.getByRole("button", { name: /Load vocabulary for this visit/i }));
     expect(await screen.findByRole("alert")).toHaveTextContent("could not be loaded");
     expect(screen.queryByText(/Vocabulary loaded|Ready Offline!/i)).not.toBeInTheDocument();
-    await user.click(screen.getByRole("button", { name: /Preload All Units/i }));
+    await user.click(screen.getByRole("button", { name: /Load vocabulary for this visit/i }));
     expect(await screen.findByText("Vocabulary loaded")).toBeInTheDocument();
     expect(screen.queryByRole("alert")).not.toBeInTheDocument();
   });
@@ -110,10 +111,10 @@ describe("SettingsModal Offline Preloader", () => {
 
     renderWithProviders(<SettingsModal isOpen={true} onClose={onClose} />);
 
-    expect(screen.getByText(/Offline Readiness & Storage/i)).toBeInTheDocument();
+    expect(screen.getByText(/Vocabulary availability/i)).toBeInTheDocument();
     expect(screen.getByText(/Load vocabulary \(201 units\)/i)).toBeInTheDocument();
 
-    const preloadBtn = screen.getByRole("button", { name: /Preload All Units/i });
+    const preloadBtn = screen.getByRole("button", { name: /Load vocabulary for this visit/i });
     expect(preloadBtn).toBeInTheDocument();
 
     // Trigger preload

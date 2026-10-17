@@ -517,6 +517,12 @@ body {
   overscroll-behavior-y: none;
 }
 
+/* Reflow the five destinations into rows when text enlargement needs more space. */
+.wp-bottom-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 3rem), 1fr));
+}
+
 /* ─── Forced colors (Windows High Contrast) ────────────────────────────────
    Map focus, selection, and status surfaces to system colors so the UI stays
    legible when the OS overrides author colors. No `forced-color-adjust: none`

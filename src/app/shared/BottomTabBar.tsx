@@ -27,7 +27,7 @@ export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: 
       aria-label={t("nav.label")}
       className="bg-background/95 backdrop-blur-xl border-t border-border shadow-wp-xs pb-[env(safe-area-inset-bottom)] lg:hidden select-none"
     >
-      <div className="flex items-center justify-around px-1 py-1">
+      <div className="wp-bottom-tabs items-stretch gap-0.5 px-1 py-1">
         {TABS.map(({ id, labelKey, icon: Icon }) => {
           const isActive = id === activeTab;
           const label = t(labelKey);
@@ -41,12 +41,12 @@ export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: 
                 triggerHaptic("selection");
                 dispatch({ type: "GO", to: id });
               }}
-              className={`group flex min-w-[56px] flex-1 flex-col items-center justify-center gap-0.5 rounded-xl min-h-[56px] py-1 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer motion-safe:transition-colors ${
+              className={`group flex min-w-0 w-full flex-col items-center justify-center gap-0.5 rounded-xl min-h-[56px] py-1 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer motion-safe:transition-colors ${
                 isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               <div
-                className={`relative flex items-center justify-center w-12 h-7 rounded-full motion-safe:transition-all ${
+                className={`relative flex items-center justify-center w-12 max-w-full h-7 rounded-full motion-safe:transition-all ${
                   isActive
                     ? "bg-secondary text-primary shadow-wp-xs"
                     : "text-muted-foreground group-hover:text-foreground group-hover:bg-muted/40"
@@ -55,7 +55,7 @@ export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: 
                 <Icon className="size-5" aria-hidden />
               </div>
               <span
-                className={`font-sans text-[11px] leading-tight tracking-tight text-center truncate max-w-full px-0.5 ${
+                className={`font-sans text-xs leading-tight text-center break-words max-w-full px-0.5 ${
                   isActive ? "font-bold text-primary" : "font-semibold text-muted-foreground"
                 }`}
               >

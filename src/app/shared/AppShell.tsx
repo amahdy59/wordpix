@@ -1,11 +1,10 @@
-import { memo, useEffect, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import type { TabId, Action } from "../types";
 import { SidebarNav } from "./SidebarNav";
 import { BottomTabBar } from "./BottomTabBar";
 import { MobileHeader } from "./MobileHeader";
 import { NetworkStatusBanner } from "./NetworkStatusBanner";
 import { KeyboardShortcutsModal } from "./KeyboardShortcutsModal";
-import { useI18n } from "../context/I18nContext";
 
 interface Props {
   activeTab: TabId;
@@ -20,9 +19,26 @@ interface Props {
  * Desktop (1024px+): Fully labelled sidebar; no intermediate clipped icon rail.
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
-  const { t } = useI18n();
   const [showShortcutsModal, setShowShortcutsModal] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const bottomNavRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = bottomNavRef.current;
+    if (!element) return;
+    const update = () =>
+      document.documentElement.style.setProperty(
+        "--wp-bottom-nav-height",
+        `${element.getBoundingClientRect().height + 24}px`
+      );
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(element);
+    return () => {
+      observer.disconnect();
+      document.documentElement.style.removeProperty("--wp-bottom-nav-height");
+    };
+  }, []);
 
   const handleScroll = (e: React.UIEvent<HTMLElement>) => {
     const scrolled = e.currentTarget.scrollTop > 8;
@@ -50,12 +66,6 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
 
   return (
     <div className="h-dvh max-h-dvh w-full max-w-full overflow-hidden bg-background flex flex-col lg:flex-row relative">
-      <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-50 focus:px-4 focus:py-2.5 focus:rounded-xl focus:bg-primary focus:text-primary-foreground focus:shadow-lg focus:outline focus:outline-[3px] focus:outline-offset-2 focus:outline-primary font-bold text-sm"
-      >
-        {t("app.skipToContent")}
-      </a>
       <KeyboardShortcutsModal
         isOpen={showShortcutsModal}
         onClose={() => setShowShortcutsModal(false)}
@@ -77,7 +87,7 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
         <main
           id="main-content"
           onScroll={handleScroll}
-          className="flex-1 overflow-y-auto overscroll-y-contain pb-[calc(env(safe-area-inset-bottom)+96px)] scroll-pb-[calc(env(safe-area-inset-bottom)+96px)] lg:pb-8 lg:scroll-pb-6 pt-4 sm:pt-6 lg:pt-8 -webkit-overflow-scrolling-touch"
+          className="flex-1 overflow-y-auto overscroll-y-contain pb-[var(--wp-bottom-nav-height,96px)] scroll-pb-[var(--wp-bottom-nav-height,96px)] lg:pb-8 lg:scroll-pb-6 pt-4 sm:pt-6 lg:pt-8 -webkit-overflow-scrolling-touch"
           tabIndex={-1}
         >
           {/* A single fluid canvas keeps every tab aligned while still using wide screens well. */}
@@ -89,7 +99,11 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
       </div>
 
       {/* Mobile bottom bar — hidden on lg+ */}
-      <div className="lg:hidden fixed bottom-0 inset-x-0 z-40" aria-hidden="false">
+      <div
+        ref={bottomNavRef}
+        className="lg:hidden fixed bottom-0 inset-x-0 z-40"
+        aria-hidden="false"
+      >
         <BottomTabBar activeTab={activeTab} dispatch={dispatch} />
       </div>
     </div>

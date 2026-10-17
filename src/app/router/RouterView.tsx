@@ -7,6 +7,7 @@ import type { VocabularyItem } from "../data/lessons";
 import { UnitVocabularyGate } from "./UnitVocabularyGate";
 import { useI18n } from "../context/I18nContext";
 import { useLearner } from "../context/LearnerContext";
+import { LessonSessionContext } from "../shared/LessonSessionContext";
 import { AppShell } from "../shared/AppShell";
 import { Button, FeedbackPanel } from "../shared";
 import { TABBED_IDS } from "../store/reducer";
@@ -392,21 +393,42 @@ function LessonRoute({
     dispatch: wrappedDispatch,
   };
 
-  if (ex === "listen") return <ExerciseListenRepeat {...drillProps} />;
-  if (ex === "recall") return <ExerciseRecallMatch {...drillProps} />;
-  if (ex === "fill") {
-    return <ExerciseContextGapFill {...drillProps} />;
-  }
-  if (ex === "builder") return <ExerciseSentenceBuilder {...drillProps} />;
-  if (ex === "quiz") return <ExerciseQuickQuiz {...drillProps} />;
-  if (ex === "story") {
-    return getAuthoredLessonContent(lessonId) ? (
-      <ExerciseReadingContext {...drillProps} />
-    ) : (
-      <ExerciseStory {...drillProps} />
-    );
-  }
-  return null;
+  const renderExercise = () => {
+    if (ex === "listen") return <ExerciseListenRepeat {...drillProps} />;
+    if (ex === "recall") return <ExerciseRecallMatch {...drillProps} />;
+    if (ex === "fill") {
+      return <ExerciseContextGapFill {...drillProps} />;
+    }
+    if (ex === "builder") return <ExerciseSentenceBuilder {...drillProps} />;
+    if (ex === "quiz") return <ExerciseQuickQuiz {...drillProps} />;
+    if (ex === "story") {
+      return getAuthoredLessonContent(lessonId) ? (
+        <ExerciseReadingContext {...drillProps} />
+      ) : (
+        <ExerciseStory {...drillProps} />
+      );
+    }
+    return null;
+  };
+  return (
+    <LessonSessionContext.Provider
+      value={{
+        current: state.step + 1,
+        total: interleavedPlan.length,
+        nextExercise: interleavedPlan[state.step + 1]?.exercise ?? "complete",
+        onExit: () =>
+          state.mode === "SMART_REVIEW" || state.mode === "SKILL_PRACTICE"
+            ? dispatch({ type: "GO", to: "practice" })
+            : dispatch({
+                type: "GO",
+                to: "lesson-entry",
+                unitId: state.unitId ?? resolveUnitForLesson(state.lessonId).id,
+              }),
+      }}
+    >
+      {renderExercise()}
+    </LessonSessionContext.Provider>
+  );
 }
 
 export interface RouterViewProps {

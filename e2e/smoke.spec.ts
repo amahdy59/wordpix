@@ -31,7 +31,7 @@ test("library defers the dictionary until a lesson needs it", async ({ page }) =
   await waitForStyles(page);
   await page.getByRole("heading", { name: /Construction Site/i }).waitFor({ timeout: 15000 });
   await page
-    .getByRole("button", { name: /^Start lesson:/ })
+    .getByRole("button", { name: /^Start: group/ })
     .first()
     .click();
   await expect(page.getByRole("heading", { name: "Listen & repeat" })).toBeVisible();

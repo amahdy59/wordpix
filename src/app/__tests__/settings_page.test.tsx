@@ -37,20 +37,20 @@ describe("SettingsPage Component", () => {
     const searchInput = screen.getByPlaceholderText(/search settings/i);
 
     // Initially high contrast and audio controls are visible
-    expect(screen.getByText(/high contrast mode/i)).toBeInTheDocument();
-    expect(screen.getByText(/pronunciation speech rate/i)).toBeInTheDocument();
+    expect(screen.getByText(/higher contrast/i)).toBeInTheDocument();
+    expect(screen.queryByText(/pronunciation speech rate/i)).not.toBeInTheDocument();
 
     // Search for "contrast"
     await user.type(searchInput, "contrast");
 
-    expect(screen.getByText(/high contrast mode/i)).toBeInTheDocument();
+    expect(screen.getByText(/higher contrast/i)).toBeInTheDocument();
     expect(screen.queryByText(/pronunciation speech rate/i)).not.toBeInTheDocument();
 
     // Clear search
     const clearButton = screen.getByLabelText(/clear search/i);
     await user.click(clearButton);
 
-    expect(screen.getByText(/pronunciation speech rate/i)).toBeInTheDocument();
+    expect(screen.queryByText(/pronunciation speech rate/i)).not.toBeInTheDocument();
   });
 
   it("filters setting items by category pills", async () => {
@@ -62,14 +62,14 @@ describe("SettingsPage Component", () => {
     await user.click(audioCategoryBtn);
 
     expect(screen.getByText(/pronunciation speech rate/i)).toBeInTheDocument();
-    expect(screen.queryByText(/high contrast mode/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/higher contrast/i)).not.toBeInTheDocument();
   });
 
   it("toggles high contrast mode and updates aria-pressed", async () => {
     const user = userEvent.setup();
     renderSettingsPage();
 
-    const contrastToggle = screen.getByRole("button", { name: /high contrast/i });
+    const contrastToggle = screen.getByRole("button", { name: /higher contrast/i });
     expect(contrastToggle).toHaveAttribute("aria-pressed", "false");
 
     await user.click(contrastToggle);
@@ -91,6 +91,7 @@ describe("SettingsPage Component", () => {
     const user = userEvent.setup();
     renderSettingsPage();
 
+    await user.click(screen.getByRole("button", { name: /language & numbers/i }));
     const arabicNumeralsBtn = screen.getByRole("button", { name: "١, ٢, ٣" });
     expect(arabicNumeralsBtn).toHaveAttribute("aria-pressed", "false");
 
@@ -102,6 +103,7 @@ describe("SettingsPage Component", () => {
     const user = userEvent.setup();
     renderSettingsPage();
 
+    await user.click(screen.getByRole("button", { name: /data & privacy/i }));
     const resetDataBtn = screen.getByRole("button", { name: /reset data/i });
     await user.click(resetDataBtn);
 

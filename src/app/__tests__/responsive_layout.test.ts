@@ -79,8 +79,8 @@ describe("AppShell responsive components", () => {
 
   it("keeps five mobile destinations flexible at 320px", () => {
     const source = stripComments(read("shared/BottomTabBar.tsx"));
-    expect(source).toMatch(/min-w-\[56px\]/);
-    expect(source).toMatch(/flex-1/);
+    expect(source).toContain("wp-bottom-tabs");
+    expect(source).toContain("min-w-0 w-full");
     expect(source).not.toMatch(/w-\[72px\]/);
   });
 
@@ -98,7 +98,7 @@ describe("AppShell responsive components", () => {
 
   it("reserves keyboard scroll space above the fixed mobile navigation", () => {
     const source = stripComments(read("shared/AppShell.tsx"));
-    expect(source).toContain("scroll-pb-[calc(env(safe-area-inset-bottom)+96px)]");
+    expect(source).toContain("scroll-pb-[var(--wp-bottom-nav-height,96px)]");
     expect(source).toContain("lg:scroll-pb-6");
   });
 });
@@ -179,7 +179,7 @@ describe("HomeDashboard 2-Column Responsive Desktop Grid", () => {
 
   it("stacks identity and connection status on narrow phones", () => {
     expect(source).toMatch(/flex flex-col items-stretch gap-3 sm:flex-row/);
-    expect(source).toMatch(/self-start sm:self-auto/);
+    expect(source).not.toContain("dashboard.offlineSaving");
   });
 });
 

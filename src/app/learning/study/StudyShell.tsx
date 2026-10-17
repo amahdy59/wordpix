@@ -140,6 +140,7 @@ export function StudyShell({
   // Focus trap and Escape key listener for mobile drawer modal
   useEffect(() => {
     if (!isMobileDrawerOpen) return;
+    drawerRef.current?.querySelector<HTMLElement>("button")?.focus();
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         closeDrawer();
@@ -169,7 +170,7 @@ export function StudyShell({
     // 1. Resume last unfinished
     if (progress.lastNodeId) {
       const node = nodes.find((n) => n.id === progress.lastNodeId);
-      if (node) {
+      if (node && !progress.completedNodeIds.includes(node.id)) {
         dispatch({
           type: "GO",
           to: "learning-materials",
@@ -182,7 +183,13 @@ export function StudyShell({
     }
 
     // 2. Start first
-    const firstNode = nodes[0];
+    const firstNode =
+      nodes.find(
+        (node) =>
+          node.area !== "reference" &&
+          node.isCore !== false &&
+          !progress.completedNodeIds.includes(node.id)
+      ) ?? nodes[0];
     if (firstNode) {
       dispatch({
         type: "GO",
@@ -263,14 +270,6 @@ export function StudyShell({
     return Math.round((started / node.wordIds.length) * 100);
   };
 
-  const areaProgress = (area: StudyArea) => {
-    const areaNodes = nodes.filter((node) => node.area === area);
-    if (!areaNodes.length) return 0;
-    return Math.round(
-      areaNodes.reduce((total, node) => total + nodeProgress(node.id), 0) / areaNodes.length
-    );
-  };
-
   const coreNodes = nodes.filter((n) => n.area !== "reference" && n.isCore !== false);
   const overallProgress = coreNodes.length
     ? Math.round(
@@ -289,122 +288,54 @@ export function StudyShell({
   return (
     <div className="flex flex-col h-full bg-background text-foreground overflow-hidden">
       {/* 1. Global Sticky Header across Home & Activities */}
-      <header className="sticky top-0 z-30 flex shrink-0 items-center justify-between border-b border-border bg-background/95 px-4 py-2.5 backdrop-blur shadow-xs gap-3">
-        <div className="flex items-center gap-3 min-w-0">
+      <header className="shrink-0 flex flex-wrap items-center justify-between gap-3 border-b border-border bg-card px-4 py-3">
+        <div className="flex min-w-0 flex-1 items-center gap-2">
           <button
-            onClick={() => {
-              if (currentArea === "home") {
-                dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
-              } else {
-                handleBackToHome();
-              }
-            }}
-            className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-secondary/70 text-foreground hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
+            type="button"
+            onClick={() =>
+              currentArea === "home"
+                ? dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+                : handleBackToHome()
+            }
             aria-label={
               currentArea === "home"
-                ? `Back to ${unit.name} unit entry`
-                : `Back to ${unit.name} overview`
+                ? t("study.backToUnit", { unit: unit.name })
+                : t("study.overview")
             }
+            className="min-h-11 min-w-11 shrink-0 rounded-xl p-2 text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <ArrowLeft className="size-5" aria-hidden />
+            <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           </button>
-
-          <div className="min-w-0 flex-1">
-            <nav
-              aria-label="Breadcrumb"
-              className="flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-muted-foreground flex-wrap"
-            >
-              <span className="truncate max-w-[120px] sm:max-w-none">{unit.name}</span>
-              {currentArea !== "home" && (
-                <>
-                  <span className="opacity-40" aria-hidden>
-                    /
-                  </span>
-                  <span className="text-primary font-bold">{areaMeta[currentArea].label}</span>
-                </>
-              )}
-            </nav>
-            <div className="text-base sm:text-base font-extrabold text-foreground mt-0.5 tracking-tight line-clamp-2 break-words">
-              {currentArea === "home"
-                ? `${unit.name} Overview`
-                : (activeNode?.title ?? areaMeta[currentArea].label)}
-            </div>
+          <div className="min-w-0">
+            <p lang="en" dir="ltr" className="break-words text-base font-bold text-foreground">
+              {unit.name}
+            </p>
+            {currentArea !== "home" && (
+              <p className="text-sm text-muted-foreground">{areaMeta[currentArea].label}</p>
+            )}
           </div>
         </div>
-
-        <div className="flex items-center gap-2.5 shrink-0">
-          {/* Immersion Mode Toggle */}
+        <div className="flex max-w-full flex-wrap items-center gap-2">
           <button
             type="button"
             onClick={toggleImmersionMode}
             aria-pressed={immersionMode}
-            aria-label={`Language scaffold mode: ${immersionMode ? "English Immersion (Arabic masked)" : "Bilingual (Arabic shown)"}. Click to toggle.`}
-            title={
-              immersionMode
-                ? "Immersion Mode active (Arabic hidden)"
-                : "Bilingual Mode active (Arabic visible)"
-            }
-            className={`flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl border text-sm font-bold transition-colors min-h-11 min-w-11 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-              immersionMode
-                ? "bg-wp-teal/10 text-wp-teal border-wp-teal/30"
-                : "bg-secondary text-muted-foreground hover:text-foreground border-border"
-            }`}
+            aria-label={`${t("ux.languageSupport")}: ${t(immersionMode ? "listenRepeat.immersion" : "listenRepeat.bilingual")}`}
+            className="min-h-11 min-w-11 rounded-xl border border-border px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <Languages className="size-4 shrink-0" aria-hidden />
-            <span className="hidden md:inline">{immersionMode ? "Immersion" : "Bilingual"}</span>
+            <Languages className="inline size-4 me-2" aria-hidden />
+            {t(immersionMode ? "listenRepeat.immersion" : "listenRepeat.bilingual")}
           </button>
-
-          {/* Progress Pill on Header */}
-          <div
-            className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/80 border border-border/80 text-sm font-bold"
-            role="status"
-            aria-label={`Unit mastery progress: ${overallProgress}%`}
-          >
-            <span className="size-2 rounded-full bg-primary" aria-hidden />
-            <span className="text-foreground">
-              {t("study.percentDone", { percent: overallProgress })}
-            </span>
-          </div>
-
-          {/* Quick Area Jump Tabs (Desktop) */}
-          <div className="hidden xl:flex items-center gap-1 bg-secondary/40 p-1 rounded-xl border border-border/60">
-            <button
-              onClick={handleBackToHome}
-              className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-colors min-h-[44px] ${
-                currentArea === "home"
-                  ? "bg-primary text-primary-foreground shadow-xs"
-                  : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
-              }`}
-            >
-              {t("study.overview")}
-            </button>
-            {STUDY_AREAS.map((area) => {
-              const isActive = currentArea === area;
-              return (
-                <button
-                  key={area}
-                  onClick={() => handleAreaSelect(area)}
-                  className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-colors min-h-[44px] ${
-                    isActive
-                      ? "bg-primary text-primary-foreground shadow-xs"
-                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
-                  }`}
-                >
-                  {t(`help.studyAreas.${area}`)}
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Mobile Drawer Toggle */}
           <button
+            type="button"
             ref={contentsBtnRef}
             onClick={() => setIsMobileDrawerOpen(true)}
-            className="lg:hidden flex items-center gap-1.5 px-3 py-2 rounded-xl bg-secondary text-foreground text-sm font-bold border border-border hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
-            aria-label="Open unit activities menu"
+            aria-haspopup="dialog"
+            aria-expanded={isMobileDrawerOpen}
+            className="lg:hidden min-h-11 min-w-11 rounded-xl border border-border px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <Menu className="size-4" aria-hidden />
-            <span>{t("study.unitActivities", { defaultValue: "Unit Activities" })}</span>
+            <Menu className="inline size-4 me-2" aria-hidden />
+            {t("study.unitActivities")}
           </button>
         </div>
       </header>
@@ -425,7 +356,7 @@ export function StudyShell({
           ref={drawerRef}
           role={isMobileDrawerOpen ? "dialog" : undefined}
           aria-modal={isMobileDrawerOpen ? "true" : undefined}
-          aria-label={`${unit.name} study navigation`}
+          aria-label={t("study.unitActivities")}
           className={`
             fixed inset-0 z-40 bg-card/95 backdrop-blur
             lg:static lg:flex lg:w-80 lg:shrink-0 lg:flex-col lg:h-full lg:overflow-y-auto lg:border-e lg:border-border lg:bg-card/70 lg:backdrop-blur
@@ -459,7 +390,7 @@ export function StudyShell({
                     aria-valuenow={overallProgress}
                     aria-valuemin={0}
                     aria-valuemax={100}
-                    aria-label={`Overall progress for ${unit.name}: ${overallProgress}%`}
+                    aria-label={t("study.percentDone", { percent: overallProgress })}
                   />
                 </div>
               </div>
@@ -468,7 +399,7 @@ export function StudyShell({
             <button
               onClick={closeDrawer}
               className="lg:hidden flex size-11 items-center justify-center rounded-xl bg-secondary text-foreground hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shrink-0 min-h-[44px] min-w-[44px]"
-              aria-label="Close navigation menu"
+              aria-label={t("action.close")}
             >
               <X className="size-5" aria-hidden />
             </button>
@@ -479,7 +410,6 @@ export function StudyShell({
               const areaNodes = nodes.filter((n) => n.area === area);
               if (areaNodes.length === 0) return null;
               const expanded = expandedAreas.has(area);
-              const progressValue = areaProgress(area);
               const AreaIcon = areaMeta[area].icon;
               const isCurrentAreaActive = currentArea === area;
 
@@ -514,24 +444,7 @@ export function StudyShell({
                           <span className="font-bold text-base text-foreground">
                             {t(`help.studyAreas.${area}`)}
                           </span>
-                          {area !== "reference" && (
-                            <span className="text-sm font-bold text-muted-foreground">
-                              {progressValue}%
-                            </span>
-                          )}
                         </span>
-
-                        {area !== "reference" && (
-                          <span
-                            className="mt-1.5 block h-1.5 overflow-hidden rounded-full bg-secondary"
-                            aria-hidden="true"
-                          >
-                            <span
-                              className="block h-full rounded-full bg-primary transition-all duration-300"
-                              style={{ width: `${progressValue}%` }}
-                            />
-                          </span>
-                        )}
                       </span>
                       <ChevronDown
                         aria-hidden
@@ -598,7 +511,7 @@ export function StudyShell({
                             )}
                           </span>
                           <span className="min-w-0 flex-1">
-                            <span title={node.title} className="block truncate">
+                            <span title={node.title} className="block break-words">
                               {node.title}
                             </span>
                             {matchingScenario && (
@@ -642,6 +555,7 @@ export function StudyShell({
           tabIndex={-1}
           ref={focusRef}
           aria-hidden={isMobileDrawerOpen ? "true" : undefined}
+          {...(isMobileDrawerOpen ? { inert: "" } : {})}
         >
           {currentArea === "home" ? (
             <StudyHome
@@ -737,46 +651,6 @@ export function StudyShell({
           )}
         </div>
       </div>
-
-      {/* 3. Mobile Bottom Horizontal Navigation Bar */}
-      <nav
-        aria-label="Study Areas Mobile Navigation"
-        className="lg:hidden shrink-0 border-t border-border bg-card/95 backdrop-blur px-2 py-1 flex items-center justify-around z-20 pb-[max(env(safe-area-inset-bottom),6px)]"
-      >
-        <button
-          type="button"
-          onClick={handleBackToHome}
-          className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-sm font-bold transition-all min-h-[44px] min-w-[44px] ${
-            currentArea === "home"
-              ? "text-primary bg-secondary shadow-2xs font-extrabold"
-              : "text-muted-foreground hover:text-foreground"
-          }`}
-          aria-current={currentArea === "home" ? "page" : undefined}
-        >
-          <BookOpen className="size-4 mb-0.5" aria-hidden />
-          <span>{t("study.home")}</span>
-        </button>
-        {STUDY_AREAS.map((area) => {
-          const isActive = currentArea === area;
-          const Icon = areaMeta[area].icon;
-          return (
-            <button
-              key={area}
-              type="button"
-              onClick={() => handleAreaSelect(area)}
-              className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-sm font-bold transition-all min-h-[44px] min-w-[44px] ${
-                isActive
-                  ? "text-primary bg-secondary shadow-2xs font-extrabold"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-              aria-current={isActive ? "page" : undefined}
-            >
-              <Icon className="size-4 mb-0.5" aria-hidden />
-              <span>{areaMeta[area].label.split(" ")[0]}</span>
-            </button>
-          );
-        })}
-      </nav>
 
       {/* Vocabulary Inspector Modal */}
       <WordInspectorModal

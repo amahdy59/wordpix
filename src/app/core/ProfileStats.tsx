@@ -199,7 +199,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                       ? t("profile.streakActive", { streak: progress.streak })
                       : t("profile.streakReady")}
                   </span>
-                  {progress.streakFreezeAvailable > 0 && (
+                  {progress.streak > 0 && progress.streakFreezeAvailable > 0 && (
                     <span className="bg-secondary text-foreground font-sans font-medium text-xs px-2.5 py-1 rounded-full border border-border flex items-center gap-1.5">
                       <ShieldCheck className="size-3.5 text-wp-green" />
                       {t("profile.streakShieldActive")}
@@ -260,6 +260,9 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
               )}
             </motion.div>
 
+            <p className="text-sm text-muted-foreground">
+              {t("ux.levelCoverage", { level: progress.englishLevel })}
+            </p>
             {/* Target CEFR Level Quick-Switcher */}
             <motion.div
               variants={staggerItem}
@@ -273,7 +276,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                 aria-label={t("settings.targetLevel")}
                 className="flex flex-wrap items-center gap-1 rounded-xl border border-border bg-muted/40 p-1"
               >
-                {(["A1", "A2", "B1", "B2", "C1"] as const).map((lvl) => {
+                {(["A1", "A2", "B1", "B2", "C1", "C2"] as const).map((lvl) => {
                   const selected = progress.englishLevel === lvl;
                   return (
                     <button
@@ -406,82 +409,81 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
           </motion.section>
         </div>
 
-        <motion.section variants={staggerItem} aria-labelledby="skill-mastery-heading">
-          <div className="mb-3">
-            <h2 id="skill-mastery-heading" className="font-sans text-lg font-bold text-foreground">
-              {t("profile.skillMasteryTitle")}
-            </h2>
-            <p className="mt-1 max-w-3xl font-sans text-base leading-relaxed text-muted-foreground">
-              {t("profile.skillMasteryDescription")}
-            </p>
-          </div>
-          <div className="flex flex-col divide-y divide-border border-y border-border">
-            {skillSummaries.map((summary) => {
-              const meta = skillMeta[summary.dimension];
-              const Icon = meta.icon;
-              return (
-                <Surface
-                  key={summary.dimension}
-                  variant="flat"
-                  radius="none"
-                  padding="none"
-                  className="grid min-w-0 gap-3 py-4 sm:grid-cols-[minmax(10rem,0.7fr)_minmax(0,1.3fr)] sm:items-center"
-                >
-                  <div className="flex items-start gap-3">
-                    <span className="flex size-11 shrink-0 items-center justify-center text-primary">
-                      <Icon className="size-5" aria-hidden />
-                    </span>
-                    <div className="min-w-0">
-                      <h3 className="font-sans text-base font-bold text-foreground">
-                        {meta.label}
-                      </h3>
-                    </div>
-                  </div>
-                  {summary.attempts > 0 ? (
-                    <div className="space-y-2">
-                      <div className="flex items-baseline justify-between gap-3 text-base">
-                        <span className="font-semibold text-foreground">
-                          {t("profile.skillEvidence", {
-                            established: summary.establishedWords,
-                            practiced: summary.practicedWords,
-                          })}
-                        </span>
-                        <span className="font-black text-primary">
-                          {t("profile.skillAccuracy", { percent: summary.accuracy })}
-                        </span>
+        <details
+          open={skillSummaries.some((summary) => summary.attempts > 0)}
+          className="rounded-xl border border-border p-4"
+        >
+          <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-base font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
+            {t("ux.skillDetails")}
+          </summary>
+          <motion.section variants={staggerItem} aria-labelledby="skill-mastery-heading">
+            <div className="mb-3">
+              <h2
+                id="skill-mastery-heading"
+                className="font-sans text-lg font-bold text-foreground"
+              >
+                {t("profile.skillMasteryTitle")}
+              </h2>
+              <p className="mt-1 max-w-3xl font-sans text-base leading-relaxed text-muted-foreground">
+                {t("profile.skillMasteryDescription")}
+              </p>
+            </div>
+            <div className="flex flex-col divide-y divide-border border-y border-border">
+              {skillSummaries.map((summary) => {
+                const meta = skillMeta[summary.dimension];
+                const Icon = meta.icon;
+                return (
+                  <Surface
+                    key={summary.dimension}
+                    variant="flat"
+                    radius="none"
+                    padding="none"
+                    className="grid min-w-0 gap-3 py-4 sm:grid-cols-[minmax(10rem,0.7fr)_minmax(0,1.3fr)] sm:items-center"
+                  >
+                    <div className="flex items-start gap-3">
+                      <span className="flex size-11 shrink-0 items-center justify-center text-primary">
+                        <Icon className="size-5" aria-hidden />
+                      </span>
+                      <div className="min-w-0">
+                        <h3 className="font-sans text-base font-bold text-foreground">
+                          {meta.label}
+                        </h3>
                       </div>
-                      <ProgressBar
-                        progressPercent={summary.accuracy}
-                        size="sm"
-                        showMilestones
-                        ariaLabel={t("profile.skillProgressAria", {
-                          skill: meta.label,
-                          percent: summary.accuracy,
-                        })}
-                      />
                     </div>
-                  ) : (
-                    <p className="font-sans text-sm font-semibold text-muted-foreground">
-                      {t("profile.skillNotPracticed")}
-                    </p>
-                  )}
-                </Surface>
-              );
-            })}
-          </div>
-        </motion.section>
-        <section className="border-t border-border py-3" aria-labelledby="profile-settings-heading">
-          <h2 id="profile-settings-heading" className="text-lg font-bold text-foreground">
-            {t("settings.title")}
-          </h2>
-          <Button
-            variant="outline"
-            className="mt-2"
-            onClick={() => dispatch({ type: "GO", to: "settings" })}
-          >
-            {t("settings.openSettings")}
-          </Button>
-        </section>
+                    {summary.attempts > 0 ? (
+                      <div className="space-y-2">
+                        <div className="flex items-baseline justify-between gap-3 text-base">
+                          <span className="font-semibold text-foreground">
+                            {t("profile.skillEvidence", {
+                              established: summary.establishedWords,
+                              practiced: summary.practicedWords,
+                            })}
+                          </span>
+                          <span className="font-black text-primary">
+                            {t("profile.skillAccuracy", { percent: summary.accuracy })}
+                          </span>
+                        </div>
+                        <ProgressBar
+                          progressPercent={summary.accuracy}
+                          size="sm"
+                          showMilestones
+                          ariaLabel={t("profile.skillProgressAria", {
+                            skill: meta.label,
+                            percent: summary.accuracy,
+                          })}
+                        />
+                      </div>
+                    ) : (
+                      <p className="font-sans text-sm font-semibold text-muted-foreground">
+                        {t("profile.skillNotPracticed")}
+                      </p>
+                    )}
+                  </Surface>
+                );
+              })}
+            </div>
+          </motion.section>
+        </details>
         <section className="border-t border-border py-3" aria-labelledby="release-notes-heading">
           <h2 id="release-notes-heading" className="text-lg font-bold text-foreground">
             {t("releaseNotes.pageTitle")}

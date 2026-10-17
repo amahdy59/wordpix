@@ -9,6 +9,7 @@ if (!Number.isSafeInteger(testWorkers) || testWorkers < 1) {
 
 export default defineConfig({
   testDir: "./e2e",
+  outputDir: process.env.WORDPIX_E2E_OUTPUT_DIR ?? "test-results",
   // Multi-step learning flows also run axe and capture screenshots. Keep
   // their total budget separate from individual assertion timeouts.
   timeout: 60_000,

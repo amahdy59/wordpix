@@ -26,7 +26,7 @@ describe("LearningPath Sticky CEFR Switcher", () => {
     expect(within(nav).getByRole("button", { name: "B1" })).toBeInTheDocument();
     expect(within(nav).getByRole("button", { name: "B2" })).toBeInTheDocument();
     expect(within(nav).getByRole("button", { name: "C1" })).toBeInTheDocument();
-    expect(within(nav).getByRole("button", { name: /^Specialist$/i })).toBeInTheDocument();
+    expect(within(nav).queryByRole("button", { name: /^Specialist$/i })).not.toBeInTheDocument();
   });
 
   it("clicking a CEFR level pill reveals and expands that curriculum phase", async () => {
@@ -34,7 +34,7 @@ describe("LearningPath Sticky CEFR Switcher", () => {
     renderWithProviders(<LearningPath dispatch={vi.fn()} />);
 
     // Initially the full path is collapsed
-    expect(screen.queryByText("General English words mastered")).not.toBeInTheDocument();
+    expect(screen.getByText("General English words mastered")).toBeInTheDocument();
 
     const nav = screen.getByRole("navigation", { name: /CEFR Levels/i });
     const b1Pill = within(nav).getByRole("button", { name: "B1" });
@@ -45,21 +45,11 @@ describe("LearningPath Sticky CEFR Switcher", () => {
     expect(screen.getByText("B1 Wider World")).toBeInTheDocument();
   });
 
-  it("clicking the Specialist pill scrolls towards special curricula", async () => {
+  it("keeps specialist courses separate from CEFR selection", async () => {
     const user = userEvent.setup();
-    renderWithProviders(<LearningPath dispatch={vi.fn()} />);
-
-    const nav = screen.getByRole("navigation", { name: /CEFR Levels/i });
-    const specialistPill = within(nav).getByRole("button", { name: /^Specialist$/i });
-    expect(specialistPill).toBeInTheDocument();
-
-    const scrollSpy = vi.fn();
-    const section = document.getElementById("special-curricula-section");
-    if (section) {
-      section.scrollIntoView = scrollSpy;
-    }
-
-    await user.click(specialistPill);
-    expect(scrollSpy).toHaveBeenCalled();
+    const dispatch = vi.fn();
+    renderWithProviders(<LearningPath dispatch={dispatch} />);
+    await user.click(screen.getByRole("button", { name: /Pronunciation curriculum/i }));
+    expect(dispatch).toHaveBeenCalledWith({ type: "GO", to: "pronunciation-curriculum" });
   });
 });

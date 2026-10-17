@@ -25,14 +25,14 @@ test("word details fetch bounded shards and survive a cached offline reload", as
   await expect
     .poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller)))
     .toBe(true);
-  await expect(page.getByRole("button", { name: /^Start lesson:/ }).first()).toBeVisible({
+  await expect(page.getByRole("button", { name: /^Start: group/ }).first()).toBeVisible({
     timeout: 30_000,
   });
   expect([...scripts].filter((url) => /\/lexicon-\d+-/.test(url))).toHaveLength(0);
   expect([...scripts].some((url) => /\/story-.*-groups-/.test(url))).toBe(false);
 
   await page
-    .getByRole("button", { name: /^Start lesson:/ })
+    .getByRole("button", { name: /^Start: group/ })
     .first()
     .click();
   await page.getByRole("button", { name: "Word details", exact: true }).click();

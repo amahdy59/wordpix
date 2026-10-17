@@ -5,6 +5,11 @@ import { tmpdir } from "node:os";
 import { resolve, join } from "node:path";
 import { pathToFileURL, fileURLToPath } from "node:url";
 
+if (process.env.WORDPIX_READ_ONLY_MEDIA === "1") {
+  console.log("Media preservation enabled; keeping existing thumbnails unchanged.");
+  process.exit(0);
+}
+
 // Generate only group-cover images; preserve aspect ratio for focal-point cropping in CSS.
 const temporary = await mkdtemp(join(tmpdir(), "wordpix-groups-"));
 try {

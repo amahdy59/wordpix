@@ -1,12 +1,53 @@
 {
-  "version": "0.1.51",
+  "version": "0.1.52",
   "notes": [
-    "Restored scenario audio streaming reliability, fixed sentence illustration rendering, eliminated mobile exercise layout overlap, and enabled automatic audio prompts for listening questions."
+    "Clearer lesson journeys, resumable vocabulary steps, less distracting text, and more adaptable navigation and settings."
   ],
   "notesAr": [
-    "استعادة موثوقية البث الصوتي للحوارات عبر سحابة R2، وإصلاح ظهور الصور التوضيحية لأسئلة الجمل، ومعالجة تداخل العناصر على شاشات الجوال، وتشغيل الصوت تلقائياً لأسئلة الاستماع."
+    "مسارات أوضح للدروس، واستئناف خطوات المفردات، ونصوص أقل تشتيتًا، وتحسين مرونة التنقل والإعدادات."
   ],
   "releases": [
+    {
+      "id": "0.1.52",
+      "version": "0.1.52",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Clearer learning flow and responsive navigation",
+        "ar": "مسار تعلّم أوضح وتنقل أكثر مرونة"
+      },
+      "changes": [
+        {
+          "id": "learning-journey",
+          "category": "improved",
+          "en": "Home and Learn lead to a consistent unit start. Vocabulary lessons can resume their saved step from the unit page.",
+          "ar": "تنتقل الرئيسية والتعلّم إلى بداية موحّدة للوحدة، ويمكن استئناف خطوة درس المفردات المحفوظة من صفحة الوحدة."
+        },
+        {
+          "id": "responsive-navigation",
+          "category": "fixed",
+          "en": "Study controls wrap at larger text sizes, unit activities have a dedicated mobile menu, and navigation reserves room for wrapped labels.",
+          "ar": "تلتف أدوات الدراسة عند تكبير النص، وتتوفر قائمة خاصة بأنشطة الوحدة على الهاتف، مع مساحة مناسبة لتسميات التنقل الممتدة."
+        },
+        {
+          "id": "focused-content",
+          "category": "improved",
+          "en": "Removed duplicate start actions and routine Home notices, exposed the current vocabulary path, and shortened repeated instructions across practice and specialist lessons.",
+          "ar": "إزالة أزرار البدء المكررة والتنبيهات الروتينية من الرئيسية، وإظهار مسار المفردات الحالي، واختصار الإرشادات المتكررة في التدريب والدروس المتخصصة."
+        },
+        {
+          "id": "bilingual-controls",
+          "category": "fixed",
+          "en": "Corrected count formatting, localized more interface labels and feedback, enlarged scenario word targets, and preserved links to specific study activities.",
+          "ar": "تصحيح تنسيق الأعداد، وتعريب المزيد من تسميات الواجهة والتغذية الراجعة، وتكبير أزرار كلمات الحوار، والحفاظ على روابط أنشطة الدراسة المحددة."
+        },
+        {
+          "id": "settings-clarity",
+          "category": "improved",
+          "en": "Settings open in focused categories, audio tests and previews are optional, and target-level coverage and vocabulary loading are described more clearly.",
+          "ar": "تفتح الإعدادات ضمن فئات محددة، مع تجارب صوت ومعاينات اختيارية، وتوضيح تغطية المستويات وتحميل المفردات."
+        }
+      ]
+    },
     {
       "id": "0.1.51",
       "version": "0.1.51",

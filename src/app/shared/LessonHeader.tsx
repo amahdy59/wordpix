@@ -1,3 +1,5 @@
+import { useLessonSession } from "./LessonSessionContext";
+import { useI18n } from "../context/I18nContext";
 import { memo } from "react";
 import { BackButton } from "./BackButton";
 import { CloseButton } from "./CloseButton";
@@ -49,6 +51,8 @@ export const LessonHeader = memo(function LessonHeader({
   onBack,
   onClose,
 }: Props) {
+  const session = useLessonSession();
+  const { t } = useI18n();
   const safeTotal = Math.max(1, total);
   const safeCurrent = Math.min(Math.max(current, 0), safeTotal);
   const pct = Math.round((safeCurrent / safeTotal) * 100);
@@ -59,12 +63,12 @@ export const LessonHeader = memo(function LessonHeader({
     // bar — was the only content on the page outside any landmark, which axe
     // flags and which leaves a screen-reader user unable to jump to it.
     <header
-      aria-label="Lesson"
+      aria-label={t("ux.lessonNavigation")}
       className={`wp-layout-gutter flex flex-col gap-2 py-3 relative shrink-0 w-full ${className}`}
     >
       <div className="content-stretch flex items-center justify-between relative shrink-0 w-full gap-3">
         <div className="shrink-0">
-          <BackButton onClick={onBack} />
+          <BackButton onClick={onBack} aria-label={t("action.back")} />
         </div>
         <h1
           title={title}
@@ -73,10 +77,15 @@ export const LessonHeader = memo(function LessonHeader({
           {title}
         </h1>
         <div className="shrink-0">
-          <CloseButton onClick={onClose} />
+          <CloseButton onClick={onClose} aria-label={t("listenRepeat.exit")} />
         </div>
       </div>
 
+      {session && (
+        <p className="text-sm text-muted-foreground">
+          {t("ux.sessionStep", { current: session.current, total: session.total })}
+        </p>
+      )}
       {/* Optional subtitle row — group name + question/sentence counter */}
       {subtitle && (
         <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-base font-sans font-semibold text-muted-foreground [&>span]:min-w-0 [&>span]:break-words">

@@ -81,7 +81,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
     )
   );
   const [expandedPhase, setExpandedPhase] = useState(currentPhaseIndex);
-  const [showPictureWorldPath, setShowPictureWorldPath] = useState(false);
+  const [showPictureWorldPath, setShowPictureWorldPath] = useState(true);
 
   const pronunciationMastered = useMemo(
     () =>
@@ -165,7 +165,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             size="md"
             iconLeft={<Library className="size-4" aria-hidden />}
             onClick={() => dispatch({ type: "GO", to: "library" })}
-            className="hidden sm:inline-flex"
+            className="hidden md:inline-flex"
           >
             {t("learn.pictureWorlds")}
           </Button>
@@ -177,7 +177,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         aria-label={t("learn.cefrLevels", { defaultValue: "CEFR Levels" })}
         className="sticky top-0 z-20 -mx-[var(--wp-layout-gutter-inline)] px-[var(--wp-layout-gutter-inline)] py-2.5 bg-background/90 backdrop-blur-md border-b border-border transition-colors"
       >
-        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth">
+        <div className="flex flex-wrap items-center gap-2">
           {CEFR_STAGES.map((stage, idx) => {
             const isActive = showPictureWorldPath && expandedPhase === idx;
             return (
@@ -189,10 +189,17 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   setExpandedPhase(idx);
                   setTimeout(() => {
                     const el = document.getElementById(`path-phase-${idx}`);
-                    el?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+                    el?.scrollIntoView({
+                      behavior:
+                        learnerState.accessibility.reduceMotion ||
+                        window.matchMedia("(prefers-reduced-motion: reduce)").matches
+                          ? "instant"
+                          : "smooth",
+                      block: "nearest",
+                    });
                   }, 50);
                 }}
-                className={`min-h-[44px] px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                className={`min-h-[44px] min-w-[44px] px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                   isActive
                     ? "bg-primary text-primary-foreground shadow-wp-xs"
                     : "bg-card text-muted-foreground hover:text-foreground hover:bg-secondary border border-border"
@@ -203,16 +210,6 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
               </button>
             );
           })}
-          <button
-            type="button"
-            onClick={() => {
-              const el = document.getElementById("special-curricula-section");
-              el?.scrollIntoView({ behavior: "smooth", block: "start" });
-            }}
-            className="min-h-[44px] px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary bg-card text-muted-foreground hover:text-foreground hover:bg-secondary border border-border"
-          >
-            {t("learn.specialistShort", { defaultValue: "Specialist" })}
-          </button>
         </div>
       </nav>
 
@@ -252,6 +249,23 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
 
       <button
         type="button"
+        onClick={() =>
+          document.getElementById("special-curricula-section")?.scrollIntoView({
+            block: "start",
+            behavior:
+              learnerState.accessibility.reduceMotion ||
+              window.matchMedia("(prefers-reduced-motion: reduce)").matches
+                ? "instant"
+                : "smooth",
+          })
+        }
+        className="min-h-11 self-start rounded-xl px-3 py-2 text-sm font-semibold text-primary underline underline-offset-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >
+        {t("ux.browseCourses")}
+      </button>
+
+      <button
+        type="button"
         onClick={() => setShowPictureWorldPath((value) => !value)}
         aria-expanded={showPictureWorldPath}
         aria-controls="picture-world-path"
@@ -261,9 +275,6 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           <span className="block text-sm font-bold text-primary">{t("learn.routeBadge")}</span>
           <span className="mt-1 block text-lg font-bold text-foreground">
             {t("learn.routeToggle")}
-          </span>
-          <span className="mt-1 block text-base font-medium text-muted-foreground">
-            {t("learn.routeHint")}
           </span>
         </span>
         <ChevronDown

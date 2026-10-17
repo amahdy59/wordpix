@@ -490,7 +490,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             }}
           >
             <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-            {t("lessonShell.back")}
+            {t("ux.backToCourse")}
           </button>
           {completedScore === null && (
             <HelpDisclosure label={t("lessonShell.options")} variant="icon">
@@ -709,13 +709,18 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 </div>
               )}
               {stage === 0 && (
-                <p className="text-sm text-foreground">
-                  {t("pronunciationEnhancements.coverageGoal", {
-                    count:
-                      getPronunciationTargets(lessonNumber, false).length +
-                      getPronunciationTargets(lessonNumber, true).length,
-                  })}
-                </p>
+                <details>
+                  <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-sm font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
+                    {t("ux.sessionDetails")}
+                  </summary>
+                  <p className="text-sm text-foreground">
+                    {t("pronunciationEnhancements.coverageGoal", {
+                      count:
+                        getPronunciationTargets(lessonNumber, false).length +
+                        getPronunciationTargets(lessonNumber, true).length,
+                    })}
+                  </p>{" "}
+                </details>
               )}
               {stage === 4 &&
                 clip?.speaker ===

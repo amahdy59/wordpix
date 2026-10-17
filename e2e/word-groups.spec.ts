@@ -12,7 +12,7 @@ for (const width of [320, 390, 768, 1280, 1600]) {
     );
     await page.goto("/#/learn/bathroom", { waitUntil: "domcontentloaded" });
     await waitForStyles(page);
-    const list = page.getByRole("region", { name: "Word groups" });
+    const list = page.getByRole("region", { name: "Select a Word Group" });
     await expect(list.getByRole("heading", { name: "Select a Word Group" })).toBeVisible();
     const cards = list.locator("li[data-menu-container]");
     expect(await cards.count()).toBeGreaterThan(0);
@@ -36,7 +36,7 @@ for (const width of [320, 390, 768, 1280, 1600]) {
       await card.screenshot({
         path: testInfo.outputPath(`${await card.getAttribute("data-menu-container")}.png`),
       });
-      const primary = card.getByRole("button", { name: /^Start lesson:/ });
+      const primary = card.getByRole("button", { name: /^Start: group/ });
       await expect(primary).toHaveCount(1);
       expect(
         await primary.evaluate((el) => el.getBoundingClientRect().height)
@@ -50,7 +50,7 @@ for (const width of [320, 390, 768, 1280, 1600]) {
       (await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21aa"]).analyze())
         .violations
     ).toEqual([]);
-    const options = cards.first().getByRole("button", { name: /More options/ });
+    const options = cards.first().getByRole("button", { name: /Options for/ });
     await options.click();
     await expect(page.getByRole("menuitem", { name: /Read Story/ })).toBeFocused();
 
@@ -77,7 +77,7 @@ for (const width of [320, 390, 768, 1280, 1600]) {
     await expect(options).toBeFocused();
     await cards
       .first()
-      .getByRole("button", { name: /^Start lesson:/ })
+      .getByRole("button", { name: /^Start: group/ })
       .click();
     await expect(page.getByRole("heading", { name: "Listen & repeat" })).toBeVisible();
   });

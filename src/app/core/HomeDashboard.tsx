@@ -1,23 +1,15 @@
-import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo } from "react";
-import {
-  ArrowRight,
-  RotateCcw,
-  WifiOff,
-  CheckCircle2,
-  Library,
-  BookOpen,
-  Sparkles,
-} from "lucide-react";
+import { ArrowRight, RotateCcw, CheckCircle2, Library, BookOpen } from "lucide-react";
 import { getDueWordsForReview, type WordLearningState } from "../../features/gamification/sm2";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { nextGroupToStudy, resolveUnitForLesson, REVIEW_GROUP_ID } from "../data/courseCatalog";
+import { COURSE_UNITS, LEARNING_PATH_UNIT_IDS, REVIEW_GROUP_ID } from "../data/courseCatalog";
 import { buildInterleavedLessonPlan } from "../lesson/lessonSequence";
+import { recommendPathUnit } from "../learning/recommendPathUnit";
+import { getUnitCurriculumDesign } from "../learning/curriculumModel";
 import { getLocalDateString } from "../../features/gamification/streak";
 
-import { useOfflineReadiness } from "../shared/useOfflineReadiness";
 import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { useLearner } from "../context/LearnerContext";
@@ -44,11 +36,16 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   const num = (v: number) => formatNumber(v, accessibility.numeralSystem);
   const greeting = t(getGreetingKey(new Date().getHours()));
 
-  const activeLesson = useMemo(
-    () => nextGroupToStudy((wordId) => progress.wordMemory[wordId]?.mastery === "strong"),
-    [progress.wordMemory]
-  );
-  const activeUnit = useMemo(() => resolveUnitForLesson(activeLesson.id), [activeLesson.id]);
+  const activeUnit =
+    recommendPathUnit(
+      LEARNING_PATH_UNIT_IDS.map((id) => COURSE_UNITS[id]),
+      learnerState.preferences.startingUnitId,
+      progress.wordMemory
+    ) ?? COURSE_UNITS[LEARNING_PATH_UNIT_IDS[0]];
+  const activeLesson =
+    activeUnit.groups.find((group) =>
+      group.wordIds.some((id) => progress.wordMemory[id]?.mastery !== "strong")
+    ) ?? activeUnit.groups[0];
   const lessonWordsSeen = useMemo(
     () => activeLesson.wordIds.filter((wordId) => Boolean(progress.wordMemory[wordId])).length,
     [activeLesson.wordIds, progress.wordMemory]
@@ -60,7 +57,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
       ).length,
     [activeLesson.wordIds, progress.wordMemory]
   );
-  const estimatedMinutes = Math.max(2, Math.ceil(Math.max(1, remainingWords) * 0.75));
+  const estimatedMinutes = Math.max(2, Math.ceil(Math.max(1, Math.min(5, remainingWords)) * 0.75));
   const { dueWords, overdueWords } = useMemo(() => {
     const all = getDueWordsForReview(progress.wordMemory);
     const startOfTodayIso = new Date(new Date().setHours(0, 0, 0, 0)).toISOString();
@@ -87,10 +84,8 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
   const dailyTargetPct = Math.min(100, Math.round((todayReviewedCount / dailyWordTarget) * 100));
   const isDailyTargetMet = todayReviewedCount >= dailyWordTarget;
 
-  const offline = useOfflineReadiness(activeUnit.id);
-
   return (
-    <PageContainer size="wide">
+    <PageContainer size="content">
       {/* Top Learner Greeting & Header Actions */}
       <header className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex min-w-0 items-center gap-3.5">
@@ -108,43 +103,6 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
               })}
             </p>
           </div>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-2 self-start sm:self-auto">
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "GO", to: "release-notes" })}
-            className="flex min-h-[44px] items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-2 font-sans text-xs sm:text-sm font-semibold text-muted-foreground hover:bg-secondary hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all shadow-wp-xs"
-            aria-label={t("releaseNotes.viewTitle", { defaultValue: "What's New in WordPix" })}
-          >
-            <Sparkles className="size-3.5 text-primary" aria-hidden />
-            <span>{t("releaseNotes.badge", { defaultValue: "What's New" })}</span>
-          </button>
-
-          {offline && offline.ready && (
-            <Badge variant="teal" size="md">
-              <WifiOff className="size-3.5" aria-hidden />
-              <span>{t("dashboard.offlineReady")}</span>
-            </Badge>
-          )}
-          {offline && !offline.ready && offline.cached > 0 && (
-            <Badge variant="muted" size="md">
-              <WifiOff className="size-3.5" aria-hidden />
-              <span>
-                {t("dashboard.offlineSaving", { cached: offline.cached, total: offline.total })}
-              </span>
-            </Badge>
-          )}
-          {offline && !offline.ready && offline.cached === 0 && (
-            <Badge variant="muted" size="md">
-              <WifiOff className="size-3.5" aria-hidden />
-              <span>
-                {navigator.onLine
-                  ? t("dashboard.offlineNeedsConnection")
-                  : t("dashboard.offlineUnavailable")}
-              </span>
-            </Badge>
-          )}
         </div>
       </header>
 
@@ -180,16 +138,15 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
 
                 <div>
                   <h2 className="font-sans font-bold text-foreground text-2xl lg:text-3xl mt-4">
-                    {activeLesson.name}
+                    {activeUnit.name}
                   </h2>
-                  {activeLesson.description && (
-                    <p className="font-sans text-base text-muted-foreground font-medium mt-1.5 leading-relaxed line-clamp-2">
-                      {activeLesson.description}
-                    </p>
-                  )}
-                  <HelpDisclosure label={t("help.aboutLesson")}>
-                    <p>{activeLesson.description}</p>
-                  </HelpDisclosure>
+                  <p
+                    lang="en"
+                    dir="ltr"
+                    className="mt-2 text-base text-muted-foreground leading-relaxed"
+                  >
+                    {getUnitCurriculumDesign(activeUnit).outcome}
+                  </p>
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 mt-4">
@@ -197,32 +154,24 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     whileHover={{ scale: 1.015 }}
                     whileTap={{ scale: 0.98 }}
                     type="button"
-                    onClick={() => {
-                      const words = activeLesson.wordIds;
-                      const plan = buildInterleavedLessonPlan(
-                        words,
-                        learnerState.preferences.englishLevel,
-                        learnerState.accessibility.includeListening
-                      );
+                    onClick={() =>
                       dispatch({
-                        type: "START_LESSON",
-                        lessonId: activeLesson.id,
+                        type: "GO",
+                        to: "lesson-entry",
                         unitId: activeUnit.id,
-                        mode: "NEW_LESSON",
-                        wordQueue: words,
-                        totalSteps: plan.length,
-                      });
-                    }}
+                        returnTo: "home",
+                      })
+                    }
                     className="flex-1 w-full bg-primary rounded-2xl py-3 sm:py-3.5 font-sans font-bold text-primary-foreground text-sm sm:text-base min-h-[48px] sm:min-h-[52px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs transition-colors flex items-center justify-center gap-2"
                   >
                     <BookOpen className="size-5 shrink-0" />
                     <span>
                       {lessonWordsSeen > 0
                         ? t("dashboard.todayContinue", {
-                            title: activeLesson.name,
+                            title: activeUnit.name,
                           })
                         : t("dashboard.todayStart", {
-                            title: activeLesson.name,
+                            title: activeUnit.name,
                           })}
                     </span>
                     <ArrowRight className="size-5 shrink-0 rtl:rotate-180" />
@@ -237,7 +186,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                         type: "GO",
                         to: "learning-materials",
                         unitId: activeUnit.id,
-                        area: "learn",
+                        area: "reference",
                       })
                     }
                     title={t("dashboard.studyGuideAria", { unit: activeUnit.name })}
@@ -343,28 +292,6 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     <p className="mt-1 font-sans text-sm leading-relaxed text-muted-foreground">
                       {t("dashboard.reviewReadyDesc")}
                     </p>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        const words = activeLesson.wordIds;
-                        const plan = buildInterleavedLessonPlan(
-                          words,
-                          learnerState.preferences.englishLevel,
-                          learnerState.accessibility.includeListening
-                        );
-                        dispatch({
-                          type: "START_LESSON",
-                          lessonId: activeLesson.id,
-                          unitId: activeUnit.id,
-                          mode: "NEW_LESSON",
-                          wordQueue: words,
-                          totalSteps: plan.length,
-                        });
-                      }}
-                      className="mt-2.5 min-h-11 rounded-xl bg-primary hover:bg-primary/90 px-4 py-2 text-sm font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer transition-colors shadow-wp-xs"
-                    >
-                      {t("dashboard.startFirstLesson", { defaultValue: "Start First Lesson" })}
-                    </button>
                   </div>
                 </div>
               )}

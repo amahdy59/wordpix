@@ -332,7 +332,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
                         transition={reduceMotion ? { duration: 0 } : { delay: 0.15 }}
                         className="font-sans font-black text-white text-sm sm:text-base drop-shadow text-center px-2"
                       >
-                        {showIncorrectOverlay ? "Wrong" : "Correct!"}
+                        {t(showIncorrectOverlay ? "ux.tryAgain" : "ux.correct")}
                       </motion.span>
                     </motion.div>
                   )}
@@ -351,7 +351,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
               transition={reduceMotion ? { duration: 0 } : { delay: 0.3 }}
-              className={`shrink-0 rounded-2xl px-5 py-3 flex items-center justify-between gap-3 border ${
+              className={`shrink-0 rounded-2xl px-5 py-3 flex flex-wrap items-center justify-between gap-3 border ${
                 feedback === "correct"
                   ? "bg-wp-green/10 border-wp-green/30"
                   : "bg-wp-rose/10 border-wp-rose/30"
@@ -359,9 +359,18 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             >
               <span className="font-sans font-semibold text-foreground text-sm">
                 {feedback === "correct"
-                  ? "✓ Excellent!"
-                  : `✕ The picture you heard was "${currentTargetWord.label}".`}
+                  ? t("ux.correct")
+                  : t("ux.matchHint", { word: currentTargetWord.label })}
               </span>
+              {feedback === "incorrect" && (
+                <button
+                  type="button"
+                  onClick={replayAudio}
+                  className="min-h-11 min-w-11 rounded-xl border border-border px-3 py-2 text-sm font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                >
+                  {t("ux.listenAgain")}
+                </button>
+              )}
               <button
                 type="button"
                 onClick={handleContinue}

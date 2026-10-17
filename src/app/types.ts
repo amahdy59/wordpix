@@ -82,7 +82,7 @@ export type Screen =
   | {
       id: "lesson-entry";
       unitId?: string;
-      returnTo?: "explore" | "library" | "learn" | "profile" | "practice";
+      returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice";
     }
   /** Self-paced word browsing for one group — no session, no scoring. */
   | { id: "learn-words"; lessonId: string }
@@ -153,7 +153,7 @@ export type Action =
       type: "GO";
       to: "lesson-entry";
       unitId?: string;
-      returnTo?: "explore" | "library" | "learn" | "profile" | "practice";
+      returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice";
     }
   | { type: "GO"; to: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
@@ -192,6 +192,7 @@ export type Action =
       correct: boolean;
       dimension?: MasteryDimension;
     }
+  | { type: "RESUME_LESSON"; unitId: string }
   | { type: "LESSON_NEXT" }
   | { type: "LESSON_PREVIOUS" }
   /** Jump to a specific 0-based step, used when the browser Back/Forward

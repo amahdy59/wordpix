@@ -17,8 +17,6 @@ import {
   RotateCcw,
   BookOpen,
   Mic,
-  Headphones,
-  PenTool,
 } from "lucide-react";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { useLearner } from "../context/LearnerContext";
@@ -35,13 +33,6 @@ interface Props {
 }
 
 const DEFAULT_REVIEW_SESSION_SIZE = 10;
-
-const CATEGORY_ICONS: Record<SkillCategory, React.ComponentType<{ className?: string }>> = {
-  listening: Headphones,
-  reading: BookOpen,
-  speaking: Mic,
-  writing: PenTool,
-};
 
 /**
  * Practice Tab: Consolidates Spaced-Repetition Daily Review and Multimodal Skill Drills.
@@ -411,6 +402,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
           })}
         </div>
 
+        <p className="text-sm text-muted-foreground">{t("ux.practicePace")}</p>
         {/* Exercises Grid */}
         <div className="flex flex-col divide-y divide-border">
           {categoryExercises.map((ex) => (
@@ -423,28 +415,13 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex items-center gap-2 flex-wrap">
-                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-secondary text-primary border border-primary/20">
-                        {(() => {
-                          const IconComp = CATEGORY_ICONS[ex.category] ?? Headphones;
-                          return <IconComp className="size-3" aria-hidden="true" />;
-                        })()}
-                        <span>{t(`skillHub.${ex.category}`, { defaultValue: ex.category })}</span>
-                      </span>
                       <h3 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors leading-tight">
                         {t(`skillHub.exercises.${ex.id}.title`)}
                       </h3>
                     </div>
-                    <span className="shrink-0 font-sans text-xs font-bold px-2 py-0.5 rounded-md bg-muted text-foreground border border-border">
-                      {`${ex.minimumLevel ?? "A1"}+`}
-                    </span>
                   </div>
 
                   <div className="flex items-center gap-1.5 flex-wrap mt-2">
-                    {!ex.isTimed && (
-                      <span className="text-sm font-semibold text-muted-foreground">
-                        {t("skillHub.estimatedTime")}
-                      </span>
-                    )}
                     {ex.requiresMic && (
                       <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
                         <Mic className="size-3" aria-hidden="true" />
@@ -457,11 +434,6 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                       <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
                         <Clock className="size-3" aria-hidden="true" />
                         <span>{t("skillHub.timedDrill", { defaultValue: "Timed drill" })}</span>
-                      </span>
-                    )}
-                    {!ex.isTimed && (
-                      <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
-                        <span>{t("skillHub.selfPaced", { defaultValue: "Self-paced" })}</span>
                       </span>
                     )}
                   </div>

@@ -193,7 +193,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
   } = accessibility;
 
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState<SettingCategory>("all");
+  const [selectedCategory, setSelectedCategory] = useState<SettingCategory>("appearance");
   const [confirmReset, setConfirmReset] = useState(false);
 
   // Offline preloading states
@@ -261,7 +261,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
   const filteredSettingIds = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
     return SETTING_ITEMS.filter((item) => {
-      if (selectedCategory !== "all" && item.category !== selectedCategory) {
+      if (!searchQuery.trim() && selectedCategory !== "all" && item.category !== selectedCategory) {
         return false;
       }
       if (!query) return true;
@@ -367,7 +367,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
         {/* Category Filter Pills */}
         <nav
           aria-label={t("settings.categoryAll")}
-          className="flex items-center gap-1.5 overflow-x-auto py-1 scrollbar-none"
+          className="flex flex-wrap items-center gap-2 py-1"
         >
           {categories.map(({ id, labelKey, icon: Icon }) => {
             const isActive = selectedCategory === id;
@@ -392,7 +392,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
       </div>
 
       {/* Main Grid: Settings Sections + Interactive Live Preview */}
-      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_340px] xl:grid-cols-[minmax(0,1fr)_380px] gap-6 items-start">
+      <div className="grid grid-cols-1 2xl:grid-cols-[minmax(0,1fr)_340px] gap-6 items-start">
         {/* Settings Column */}
         <div className="flex flex-col gap-6">
           {/* Empty State when no search matches */}
@@ -450,7 +450,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                     <button
                       type="button"
                       onClick={toggleTheme}
-                      aria-label={`${t("settings.themeLabel")}: ${theme}. ${t("settings.themeActivate")}`}
+                      aria-label={`${t("settings.themeLabel")}: ${t(`settings.theme.${theme}`)}. ${t("settings.themeActivate")}`}
                       className="px-4 py-2.5 min-h-[44px] rounded-xl bg-card border border-border hover:border-primary font-sans font-bold text-xs sm:text-sm text-foreground flex items-center gap-2 shadow-xs transition-all shrink-0 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
                     >
                       {resolvedTheme === "dark" ? (
@@ -458,7 +458,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                       ) : (
                         <Moon className="size-4 text-wp-blue-foreground" aria-hidden="true" />
                       )}
-                      <span className="capitalize">{theme}</span>
+                      <span>{t(`settings.theme.${theme}`)}</span>
                     </button>
                   </div>
                 )}
@@ -754,7 +754,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                 )}
 
                 {isVisible("voiceEngine") && (
-                  <>
+                  <HelpDisclosure label={t("ux.audioTest")}>
                     <hr className="border-border/60" />
                     {/* Voice Engine Preview */}
                     <div className="flex flex-col gap-3 bg-muted/40 p-4 rounded-2xl border border-border">
@@ -802,12 +802,17 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                         <p>{t("settings.audioEngineDesc")}</p>
                       </HelpDisclosure>
                     </div>
-                  </>
+                  </HelpDisclosure>
                 )}
               </Surface>
             </section>
           )}
 
+          {isVisible("targetLevel") && (
+            <p className="text-sm text-muted-foreground">
+              {t("ux.levelCoverage", { level: state.preferences.englishLevel })}
+            </p>
+          )}
           {/* SECTION 4: LEARNING & DRILL MODALITIES */}
           {(isVisible("targetLevel") ||
             isVisible("speakingDrills") ||
@@ -1139,6 +1144,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                       type="button"
                       onClick={() => {
                         resetToZero();
+                        for (const key of Object.keys(localStorage)) {
+                          if (key.startsWith("wordpix:lesson-resume:"))
+                            localStorage.removeItem(key);
+                        }
                         setConfirmReset(false);
                       }}
                       className="px-4 py-2 min-h-[44px] rounded-xl bg-wp-rose text-wp-text-on-rose text-xs sm:text-sm font-sans font-bold shadow-wp-xs hover:opacity-95 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-rose cursor-pointer"
@@ -1168,85 +1177,90 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
         </div>
 
         {/* Live Preview Sticky Sidebar Column */}
-        <aside aria-label={t("settings.livePreviewTitle")} className="lg:sticky lg:top-6">
-          <Surface className="p-5 border border-border flex flex-col gap-4 shadow-sm">
-            <div className="flex items-center justify-between">
-              <span className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
-                <Sparkles className="size-3.5 text-primary" aria-hidden="true" />
-                <span>{t("settings.livePreviewTitle")}</span>
-              </span>
-              <span className="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-secondary text-primary">
-                {textSize === "standard" ? "100%" : textSize === "large" ? "125%" : "150%"}
-              </span>
-            </div>
-
-            <p className="font-sans text-xs text-muted-foreground">
-              {t("settings.livePreviewDesc")}
-            </p>
-
-            {/* Simulated Word Learning Card */}
-            <div className="rounded-2xl border border-border bg-background p-4 flex flex-col gap-3">
-              <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
-                <span>{formatNumber("1 / 20", numeralSystem)}</span>
-                <span className="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-bold">
-                  {state.preferences.englishLevel}
+        <aside aria-label={t("settings.livePreviewTitle")} className="2xl:sticky 2xl:top-6">
+          <details>
+            <summary className="min-h-11 cursor-pointer rounded-xl py-2 font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
+              {t("settings.livePreviewTitle")}
+            </summary>
+            <Surface className="p-5 border border-border flex flex-col gap-4 shadow-sm">
+              <div className="flex items-center justify-between">
+                <span className="font-sans font-bold text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5">
+                  <Sparkles className="size-3.5 text-primary" aria-hidden="true" />
+                  <span>{t("settings.livePreviewTitle")}</span>
+                </span>
+                <span className="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-full bg-secondary text-primary">
+                  {textSize === "standard" ? "100%" : textSize === "large" ? "125%" : "150%"}
                 </span>
               </div>
 
-              <div className="space-y-1">
-                <div className="flex items-baseline justify-between gap-2">
-                  <h3 className="font-sans font-black text-foreground text-xl sm:text-2xl">
-                    {t("settings.previewCardWord")}
-                  </h3>
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {t("settings.previewCardPhonetic")}
-                  </span>
-                </div>
-                <p className="font-sans text-sm font-semibold text-primary">
-                  {t("settings.previewCardArabic")}
-                </p>
-              </div>
-
-              <p className="font-sans text-xs sm:text-sm text-foreground/90 leading-relaxed border-t border-border/50 pt-2">
-                {t("settings.livePreviewSentence")}
+              <p className="font-sans text-xs text-muted-foreground">
+                {t("settings.livePreviewDesc")}
               </p>
 
-              <button
-                type="button"
-                onClick={() => speak("Bed. The lamp is on the nightstand beside the bed.")}
-                aria-label={`Test pronunciation at ${speechRate}x speed`}
-                className="mt-1 w-full min-h-[44px] py-2 px-3 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-secondary/80 hover:border-primary/40 shadow-wp-xs font-sans font-bold text-xs flex items-center justify-center gap-2 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
-              >
-                <Volume2 className="size-4" aria-hidden="true" />
-                <span>{`Pronounce (${speechRate}x)`}</span>
-              </button>
-            </div>
+              {/* Simulated Word Learning Card */}
+              <div className="rounded-2xl border border-border bg-background p-4 flex flex-col gap-3">
+                <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
+                  <span>{formatNumber("1 / 20", numeralSystem)}</span>
+                  <span className="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-bold">
+                    {state.preferences.englishLevel}
+                  </span>
+                </div>
 
-            {/* Quick Status Pill Bar */}
-            <div className="flex flex-wrap gap-1.5 text-[11px] font-sans font-semibold text-muted-foreground pt-1">
-              <span className="px-2.5 py-1 rounded-lg bg-muted border border-border">
-                {resolvedTheme === "dark" ? t("settings.theme.dark") : t("settings.theme.light")}
-              </span>
-              <span className="px-2.5 py-1 rounded-lg bg-muted border border-border">
-                {numeralSystem === "arabic" ? "١, ٢, ٣" : "1, 2, 3"}
-              </span>
-              {highContrast && (
-                <span className="px-2.5 py-1 rounded-lg bg-wp-green/15 text-wp-green border border-wp-green/30">
-                  {t("settings.enabledContrast")}
+                <div className="space-y-1">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <h3 className="font-sans font-black text-foreground text-xl sm:text-2xl">
+                      {t("settings.previewCardWord")}
+                    </h3>
+                    <span className="font-mono text-xs text-muted-foreground">
+                      {t("settings.previewCardPhonetic")}
+                    </span>
+                  </div>
+                  <p className="font-sans text-sm font-semibold text-primary">
+                    {t("settings.previewCardArabic")}
+                  </p>
+                </div>
+
+                <p className="font-sans text-xs sm:text-sm text-foreground/90 leading-relaxed border-t border-border/50 pt-2">
+                  {t("settings.livePreviewSentence")}
+                </p>
+
+                <button
+                  type="button"
+                  onClick={() => speak("Bed. The lamp is on the nightstand beside the bed.")}
+                  aria-label={`Test pronunciation at ${speechRate}x speed`}
+                  className="mt-1 w-full min-h-[44px] py-2 px-3 rounded-xl bg-secondary text-primary border border-primary/20 hover:bg-secondary/80 hover:border-primary/40 shadow-wp-xs font-sans font-bold text-xs flex items-center justify-center gap-2 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+                >
+                  <Volume2 className="size-4" aria-hidden="true" />
+                  <span>{`Pronounce (${speechRate}x)`}</span>
+                </button>
+              </div>
+
+              {/* Quick Status Pill Bar */}
+              <div className="flex flex-wrap gap-1.5 text-[11px] font-sans font-semibold text-muted-foreground pt-1">
+                <span className="px-2.5 py-1 rounded-lg bg-muted border border-border">
+                  {resolvedTheme === "dark" ? t("settings.theme.dark") : t("settings.theme.light")}
                 </span>
-              )}
-              {reduceMotion && (
-                <span className="px-2.5 py-1 rounded-lg bg-wp-blue/15 text-wp-blue border border-wp-blue/30">
-                  {t("settings.reduceMotion")}
+                <span className="px-2.5 py-1 rounded-lg bg-muted border border-border">
+                  {numeralSystem === "arabic" ? "١, ٢, ٣" : "1, 2, 3"}
                 </span>
-              )}
-              {!timedExercises && (
-                <span className="px-2.5 py-1 rounded-lg bg-wp-amber/15 text-wp-amber-foreground border border-wp-amber/30">
-                  {t("settings.timedExercises")}
-                </span>
-              )}
-            </div>
-          </Surface>
+                {highContrast && (
+                  <span className="px-2.5 py-1 rounded-lg bg-wp-green/15 text-wp-green border border-wp-green/30">
+                    {t("settings.enabledContrast")}
+                  </span>
+                )}
+                {reduceMotion && (
+                  <span className="px-2.5 py-1 rounded-lg bg-wp-blue/15 text-wp-blue border border-wp-blue/30">
+                    {t("settings.reduceMotion")}
+                  </span>
+                )}
+                {!timedExercises && (
+                  <span className="px-2.5 py-1 rounded-lg bg-wp-amber/15 text-wp-amber-foreground border border-wp-amber/30">
+                    {t("settings.timedExercises")}
+                  </span>
+                )}
+              </div>
+            </Surface>
+          </details>
         </aside>
       </div>
     </PageContainer>

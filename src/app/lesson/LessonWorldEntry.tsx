@@ -1,3 +1,4 @@
+import { readLessonResume } from "./lessonResume";
 import { memo, useState, useEffect } from "react";
 import type { Action } from "../types";
 
@@ -32,7 +33,7 @@ interface Props {
   unitId?: string;
   dispatch: React.Dispatch<Action>;
   /** Where the back button should navigate. Defaults to "explore". */
-  returnTo?: "explore" | "library" | "learn" | "profile" | "practice";
+  returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice";
 }
 
 export const LessonWorldEntry = memo(function LessonWorldEntry({
@@ -60,6 +61,13 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
     return mastery === "familiar" || mastery === "strong";
   };
 
+  const resume = readLessonResume(world.id);
+  const recommendedGroup =
+    world.groups.find(
+      (group) => !group.wordIds.every((id) => progress.wordMemory[id]?.mastery === "strong")
+    ) ?? world.groups[0];
+  const recommendedWords =
+    resume?.wordQueue ?? selectPracticeWordQueue(recommendedGroup.wordIds, progress.wordMemory);
   const startedGroups = world.groups.filter((g) => g.wordIds.some(isWordStarted)).length;
   const secondaryAction =
     "min-h-12 rounded-xl border border-border bg-wp-card px-4 py-2 text-foreground font-semibold inline-flex items-center justify-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-secondary";
@@ -170,12 +178,12 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
           </span>
         </span>
       </header>
-      <section aria-label="Word groups" className="flex-1 overflow-y-auto min-h-0">
+      <section aria-label={t("lesson.selectWordGroup")} className="flex-1 overflow-y-auto min-h-0">
         <div className="wp-container-content wp-layout-gutter py-4 lg:py-8 pb-[max(6rem,env(safe-area-inset-bottom))]">
           <div className="mb-6 flex flex-col gap-4">
             <div className="rounded-3xl border border-primary/30 bg-secondary p-5 sm:p-6 shadow-wp-xs">
               <div className="flex items-center gap-2 flex-wrap">
-                <span className="text-sm font-black uppercase tracking-wider text-primary">
+                <span className="text-sm font-bold tracking-normal text-primary">
                   {t("lesson.unitOutcome")}
                 </span>
                 <span className="text-sm font-bold text-muted-foreground">
@@ -185,7 +193,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                   })}
                 </span>
               </div>
-              <p className="mt-2 text-xl sm:text-2xl font-black text-foreground leading-snug">
+              <p className="mt-2 text-xl sm:text-2xl font-bold text-foreground leading-snug">
                 {curriculum.outcome}
               </p>
               <p className="mt-1 text-base text-muted-foreground leading-relaxed">
@@ -193,6 +201,21 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
               </p>
 
               <div className="mt-4 flex flex-wrap items-center gap-3">
+                {recommendedGroup && (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      resume
+                        ? dispatch({ type: "RESUME_LESSON", unitId: world.id })
+                        : handleStartGroup(recommendedGroup.id)
+                    }
+                    className="min-h-12 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  >
+                    {resume
+                      ? t("ux.resume")
+                      : t("ux.startGroup", { number: world.groups.indexOf(recommendedGroup) + 1 })}
+                  </button>
+                )}
                 {hasLearningMaterials(world.id) && (
                   <button
                     type="button"
@@ -206,7 +229,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                             area: "learn",
                           })
                     }
-                    className="min-h-12 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary inline-flex items-center gap-2 shadow-wp-xs"
+                    className={secondaryAction}
                   >
                     <BookOpen className="size-4 shrink-0" aria-hidden="true" />
                     <span>
@@ -220,13 +243,28 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                   type="button"
                   onClick={handleTakeAssessment}
                   className={secondaryAction}
-                  title="Demonstrate mastery of this unit to skip ahead"
+                  title={t("lesson.testOutHint")}
                 >
                   <GraduationCap className="size-5 shrink-0" aria-hidden="true" />
                   <span>{t("lesson.testOut")}</span>
                 </button>
               </div>
 
+              {recommendedGroup && (
+                <p className="mt-3 text-sm text-muted-foreground">
+                  {t("ux.sessionEffort", {
+                    words: recommendedWords.length,
+                    steps:
+                      resume?.totalSteps ??
+                      buildInterleavedLessonPlan(
+                        recommendedWords,
+                        learnerState.preferences.englishLevel,
+                        learnerState.accessibility.includeListening
+                      ).length,
+                    minutes: Math.ceil(recommendedWords.length * 0.75),
+                  })}
+                </p>
+              )}
               <p className="mt-2.5 text-sm text-muted-foreground">
                 {t("lesson.testOutHint", {
                   defaultValue:
@@ -236,7 +274,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
             </div>
 
             <div className="flex items-center justify-between">
-              <h2 className="font-sans font-black text-lg text-foreground">
+              <h2 className="font-sans font-bold text-lg text-foreground">
                 {t("lesson.selectWordGroup")}
               </h2>
               <span className="text-sm font-medium text-muted-foreground">
@@ -252,10 +290,12 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
               const learnedCount = g.wordIds.filter(isWordSecure).length;
               const isCompleted = learnedCount === g.wordIds.length && g.wordIds.length > 0;
               const hasStarted = g.wordIds.some(isWordStarted) && !isCompleted;
-              const action = isCompleted ? "Review" : hasStarted ? "Continue" : "Start";
+              const action = t(
+                isCompleted ? "ux.review" : hasStarted ? "action.continue" : "ux.start"
+              );
               const count = learnedCount
-                ? `${learnedCount} of ${g.wordIds.length} learned`
-                : `${g.wordIds.length} words`;
+                ? t("ux.wordsLearned", { current: learnedCount, total: g.wordIds.length })
+                : t("explore.wordsBadge", { count: g.wordIds.length });
               const words = getWords(g.wordIds, world.id);
               const samples = words.slice(0, 4).map((word) => word.label);
               const remainder = g.wordIds.length - samples.length;
@@ -269,7 +309,16 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                   <button
                     type="button"
                     onClick={() => handleStartGroup(g.id)}
-                    aria-label={`${action} lesson: ${g.name}. Group ${index + 1}. ${isCompleted ? "Completed. " : hasStarted ? "In progress. " : ""}${count}.`}
+                    aria-label={t("ux.groupAction", {
+                      action,
+                      number: index + 1,
+                      title: g.name,
+                      theme: t("ux.groupTitle", {
+                        number: index + 1,
+                        words: samples.slice(0, 2).join(" · ") || g.name,
+                      }),
+                      count,
+                    })}
                     className="min-w-0 flex-1 rounded-xl p-4 pb-14 sm:pb-4 flex items-center gap-3 sm:gap-6 text-start focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-secondary/50"
                   >
                     <span className="shrink-0 w-20 h-20 sm:w-28 sm:h-24 rounded-xl overflow-hidden bg-muted">
@@ -286,7 +335,12 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                       )}
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block font-bold text-lg text-foreground">{g.name}</span>
+                      <span className="block font-bold text-lg text-foreground">
+                        {t("ux.groupTitle", {
+                          number: index + 1,
+                          words: samples.slice(0, 2).join(" · ") || g.name,
+                        })}
+                      </span>
                       {samples.length > 0 && (
                         <span className="block text-base text-muted-foreground mt-1 break-words">
                           {samples.join(" · ")}
@@ -295,7 +349,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                       )}
                       {learnedCount > 0 && (
                         <span className="inline-block text-base font-semibold text-primary bg-secondary rounded-lg px-2 mt-2">
-                          {isCompleted ? "Completed" : "In progress"}
+                          {t(isCompleted ? "ux.completed" : "ux.inProgress")}
                         </span>
                       )}
                       <span className="block text-base text-foreground mt-2">{count}</span>
@@ -326,7 +380,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                   {learnedCount > 0 && (
                     <progress
                       className="sr-only"
-                      aria-label={`${g.name} words learned`}
+                      aria-label={t("ux.groupProgress", { title: g.name })}
                       value={learnedCount}
                       max={g.wordIds.length}
                     />
@@ -352,7 +406,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                       aria-haspopup="menu"
                       aria-expanded={isMenuOpen}
                       aria-controls={`menu-dropdown-${g.id}`}
-                      aria-label={`More options and quick navigation for ${g.name}`}
+                      aria-label={t("ux.groupOptions", { title: g.name })}
                       onClick={(e) => {
                         e.stopPropagation();
                         setOpenMenuId(isMenuOpen ? null : g.id);
@@ -418,7 +472,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                           }`}
                         >
                           <div className="px-3 py-2 border-b border-border/60 mb-1">
-                            <p className="font-sans font-bold text-sm text-foreground uppercase tracking-wider">
+                            <p className="font-sans font-bold text-sm text-foreground tracking-normal">
                               {t("lesson.lessonOptions")}
                             </p>
                             <p className="font-sans text-sm text-muted-foreground truncate">
@@ -541,7 +595,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                                     <span className="text-base">{item.icon}</span>
                                     <div className="flex-1 min-w-0">
                                       <p className="font-sans font-medium text-sm truncate">
-                                        {item.step + 1}. {item.name}
+                                        {item.step + 1}. {t(`ux.exercises.${item.exercise}`)}
                                       </p>
                                     </div>
                                   </button>

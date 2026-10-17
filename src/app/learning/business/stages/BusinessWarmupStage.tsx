@@ -1,12 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import {
-  MessageSquare,
-  ArrowRight,
-  HelpCircle,
-  CheckCircle2,
-  Lightbulb,
-  Sparkles,
-} from "lucide-react";
+import { ArrowRight, HelpCircle, CheckCircle2, Lightbulb, Sparkles } from "lucide-react";
 import { useI18n } from "../../../../i18n";
 import type { BusinessUnit } from "../businessTypes";
 import { resolveAssetUrl } from "../../../../utils/assetUrl";
@@ -49,62 +42,56 @@ export function BusinessWarmupStage({
 
   return (
     <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
-      {/* Header Tag */}
-      <div className="flex flex-wrap items-center justify-between gap-2">
-        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
-          <MessageSquare className="size-4" aria-hidden />
-          {t("business.warmup.stageTag")}
-        </span>
-        <span className="text-sm font-semibold text-muted-foreground">
-          {`${unit.level} · ${unit.sectionTitle}`}
-        </span>
-      </div>
-
-      {/* Essential Question Hero Card with Thumbnail */}
-      <section
-        className="overflow-hidden rounded-2xl border border-border bg-card grid gap-3 p-4 sm:p-5 md:grid-cols-[minmax(0,1fr)_8rem] md:items-start"
-        aria-labelledby="big-question-heading"
-      >
-        {unit.heroImageSrc && (
-          <div className="relative hidden aspect-[4/3] overflow-hidden rounded-xl bg-muted md:col-start-2 md:row-start-1 md:block">
-            <img
-              src={resolveAssetUrl(unit.heroImageSrc)}
-              alt=""
-              aria-hidden="true"
-              className="h-full w-full object-cover object-center"
-              loading="lazy"
-              onError={(e) => {
-                (e.currentTarget as HTMLElement).style.display = "none";
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
-          </div>
-        )}
-        <div className="min-w-0 md:col-start-1 md:row-start-1">
-          <p className="text-sm font-semibold text-primary">
-            {t("business.warmup.essentialQuestion")}
-          </p>
-          <h2
-            id="big-question-heading"
-            lang="en"
-            dir="ltr"
-            className="wp-type-stage-title mt-2 font-black text-foreground tracking-tight leading-snug"
-          >
-            {`“${unit.essentialQuestion}”`}
-          </h2>
-          {unit.speakingGoal && (
-            <div className="mt-3 flex items-start gap-2 border-s-2 border-primary ps-3 text-base font-semibold text-primary">
-              <CheckCircle2 className="size-5 shrink-0 mt-0.5" aria-hidden />
-              <div>
-                <span className="font-bold me-1.5">{t("business.warmup.speakingGoalLabel")}</span>
-                <bdi lang="en" dir="ltr">
-                  {unit.speakingGoal}
-                </bdi>
-              </div>
+      <details className="rounded-xl border border-border p-3">
+        <summary className="min-h-11 cursor-pointer rounded-lg py-2 font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
+          {t("ux.learningGoals")}
+        </summary>
+        {/* Essential Question Hero Card with Thumbnail */}
+        <section
+          className="overflow-hidden rounded-2xl border border-border bg-card grid gap-3 p-4 sm:p-5 md:grid-cols-[minmax(0,1fr)_8rem] md:items-start"
+          aria-labelledby="big-question-heading"
+        >
+          {unit.heroImageSrc && (
+            <div className="relative hidden aspect-[4/3] overflow-hidden rounded-xl bg-muted md:col-start-2 md:row-start-1 md:block">
+              <img
+                src={resolveAssetUrl(unit.heroImageSrc)}
+                alt=""
+                aria-hidden="true"
+                className="h-full w-full object-cover object-center"
+                loading="lazy"
+                onError={(e) => {
+                  (e.currentTarget as HTMLElement).style.display = "none";
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
             </div>
           )}
-        </div>
-      </section>
+          <div className="min-w-0 md:col-start-1 md:row-start-1">
+            <p className="text-sm font-semibold text-primary">
+              {t("business.warmup.essentialQuestion")}
+            </p>
+            <h2
+              id="big-question-heading"
+              lang="en"
+              dir="ltr"
+              className="wp-type-stage-title mt-2 font-bold text-foreground tracking-tight leading-snug"
+            >
+              {`“${unit.essentialQuestion}”`}
+            </h2>
+            {unit.speakingGoal && (
+              <div className="mt-3 flex items-start gap-2 border-s-2 border-primary ps-3 text-base font-semibold text-primary">
+                <CheckCircle2 className="size-5 shrink-0 mt-0.5" aria-hidden />
+                <div>
+                  <span className="font-bold me-1.5">{t("business.warmup.speakingGoalLabel")}</span>
+                  <bdi lang="en" dir="ltr">
+                    {unit.speakingGoal}
+                  </bdi>
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      </details>
 
       {/* Multiple-Choice Warm-up Workplace Scenarios */}
       <section className="space-y-3" aria-labelledby="reflection-prompts-title">
@@ -114,7 +101,7 @@ export function BusinessWarmupStage({
               <HelpCircle className="size-5 text-primary" aria-hidden />
               <h2
                 id="reflection-prompts-title"
-                className="wp-type-stage-title text-lg font-black text-foreground"
+                className="wp-type-stage-title text-lg font-bold text-foreground"
               >
                 {t("business.warmup.reflectHeading")}
               </h2>
@@ -125,7 +112,7 @@ export function BusinessWarmupStage({
           </div>
 
           <span
-            className={`self-start sm:self-auto shrink-0 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-black transition-colors ${
+            className={`self-start sm:self-auto shrink-0 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-bold transition-colors ${
               allAnswered
                 ? "bg-feedback-success-surface text-feedback-success-foreground border border-accent/30"
                 : "bg-muted text-muted-foreground"
@@ -146,7 +133,6 @@ export function BusinessWarmupStage({
         </p>
         <div className="mt-3 flex flex-col gap-3">
           {prompts.slice(activeIdx, activeIdx + 1).map((prompt) => {
-            const idx = activeIdx;
             const hasOptions = Array.isArray(prompt.options) && prompt.options.length > 0;
             const selectedKey = selectedAnswers[prompt.id];
             const isAnswered = Boolean(selectedKey);
@@ -156,9 +142,6 @@ export function BusinessWarmupStage({
               <div key={prompt.id} className="flex flex-col gap-4">
                 {/* Question Prompt */}
                 <div className="flex items-start gap-3">
-                  <span className="flex size-7 shrink-0 items-center justify-center rounded-lg bg-secondary font-black text-sm text-primary mt-0.5">
-                    {idx + 1}
-                  </span>
                   <h3
                     lang="en"
                     dir="ltr"
@@ -224,11 +207,11 @@ export function BusinessWarmupStage({
                     <Lightbulb className="size-5 shrink-0 text-primary mt-0.5" aria-hidden />
                     <div className="flex-1 min-w-0">
                       <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                        <h4 className="font-black text-sm sm:text-base text-foreground uppercase tracking-wider">
+                        <h4 className="font-bold text-sm sm:text-base text-foreground tracking-normal">
                           {t("business.warmup.feedbackTitle")}
                         </h4>
                         {prompt.correctAnswer && (
-                          <span className="rounded-md bg-secondary px-2 py-0.5 text-sm font-black text-primary uppercase tracking-wide">
+                          <span className="rounded-md bg-secondary px-2 py-0.5 text-sm font-bold text-primary uppercase tracking-wide">
                             {isCorrect
                               ? t("business.warmup.recommendedBadge")
                               : t("business.warmup.bestPracticeOption", {

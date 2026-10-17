@@ -88,8 +88,12 @@ export function lookup(bundle: unknown, key: string): string | undefined {
 /** Replaces {name} placeholders. Missing values are left visible, not blanked. */
 export function interpolate(template: string, values?: TranslationValues): string {
   if (!values) return template;
-  return template.replace(/\{(\w+)\}/g, (match, name: string) =>
-    name in values ? String(values[name]) : match
+  return template.replace(
+    /\{\{(\w+)\}\}|\{(\w+)\}/g,
+    (match, doubleName: string | undefined, singleName: string | undefined) => {
+      const name = doubleName ?? singleName ?? "";
+      return name in values ? String(values[name]) : match;
+    }
   );
 }
 
@@ -144,7 +148,10 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
       // itself — a visible key is a better bug report than an empty string.
       const active = interfaceLang === "en" ? en : lazyBundles[interfaceLang];
       const template =
-        (active !== undefined ? lookup(active, key) : undefined) ?? lookup(en, key) ?? key;
+        (active !== undefined ? lookup(active, key) : undefined) ??
+        lookup(en, key) ??
+        values?.defaultValue?.toString() ??
+        key;
       return interpolate(template, values);
     },
     [interfaceLang, lazyBundles]
@@ -164,7 +171,7 @@ const defaultContext: I18nContextType = {
   dir: "ltr",
   setInterfaceLang: () => {},
   t: (key: string, values?: TranslationValues) => {
-    const raw = lookup(en, key);
+    const raw = lookup(en, key) ?? values?.defaultValue?.toString();
     if (!raw) return key;
     return interpolate(raw, values);
   },

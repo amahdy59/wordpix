@@ -606,34 +606,39 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
 
         {/* Empty-State Topic Discovery Chips */}
         {!hasActiveFilters && (
-          <motion.div variants={staggerItem} className="flex flex-col gap-2.5">
-            <div className="flex items-center justify-between gap-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                {t("explore.popularTopics")}
-              </span>
-              <button
-                type="button"
-                onClick={toggleExpandAll}
-                className="flex min-h-[44px] items-center gap-1.5 text-xs font-semibold text-primary hover:underline px-2 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
-              >
-                <ChevronsUpDown className="size-3.5" aria-hidden="true" />
-                <span>{areAllExpanded ? t("explore.collapseAll") : t("explore.expandAll")}</span>
-              </button>
-            </div>
-            <div className="flex flex-wrap items-center gap-2">
-              {POPULAR_TOPICS.map((topic) => (
+          <details className="rounded-xl border border-border p-3">
+            <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-sm font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
+              {t("explore.popularTopics")}
+            </summary>
+            <motion.div variants={staggerItem} className="flex flex-col gap-2.5">
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+                  {t("explore.popularTopics")}
+                </span>
                 <button
-                  key={topic.id}
                   type="button"
-                  onClick={() => setSearchQuery(topic.query)}
-                  className="flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-wp-card px-3 py-1.5 text-xs sm:text-sm font-semibold text-foreground hover:border-primary/40 hover:bg-secondary/40 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs"
+                  onClick={toggleExpandAll}
+                  className="flex min-h-[44px] items-center gap-1.5 text-xs font-semibold text-primary hover:underline px-2 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
                 >
-                  <span aria-hidden="true">{topic.icon}</span>
-                  <span>{t(topic.labelKey)}</span>
+                  <ChevronsUpDown className="size-3.5" aria-hidden="true" />
+                  <span>{areAllExpanded ? t("explore.collapseAll") : t("explore.expandAll")}</span>
                 </button>
-              ))}
-            </div>
-          </motion.div>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                {POPULAR_TOPICS.map((topic) => (
+                  <button
+                    key={topic.id}
+                    type="button"
+                    onClick={() => setSearchQuery(topic.query)}
+                    className="flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-wp-card px-3 py-1.5 text-xs sm:text-sm font-semibold text-foreground hover:border-primary/40 hover:bg-secondary/40 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs"
+                  >
+                    <span aria-hidden="true">{topic.icon}</span>
+                    <span>{t(topic.labelKey)}</span>
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          </details>
         )}
 
         {/* Results Feedback & Search Result Scope Tabs */}

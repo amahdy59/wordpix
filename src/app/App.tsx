@@ -17,6 +17,7 @@ import { RouterView } from "./router/RouterView";
 import { UpdatePrompt } from "./shared/UpdatePrompt";
 import { MotionConfig } from "framer-motion";
 import { purgeLegacyAudioCredentials } from "./shared/audioSecurity";
+import { saveLessonResume } from "./lesson/lessonResume";
 import { buildInterleavedLessonPlan } from "./lesson/lessonSequence";
 
 function AppInner() {
@@ -74,8 +75,18 @@ function AppInner() {
     // it, and nothing passed it along. Every shared or bookmarked link to a
     // unit — #/learn/bathroom, #/learn/bakery/study — therefore opened The
     // Bedroom, because the reducer fell back to DEFAULT_UNIT_ID.
-    if (screen.id === "lesson-entry" || screen.id === "learning-materials") {
-      dispatch({ type: "GO", to: screen.id, unitId: screen.unitId });
+    if (screen.id === "lesson-entry") {
+      dispatch({ type: "GO", to: screen.id, unitId: screen.unitId, returnTo: screen.returnTo });
+      return;
+    }
+    if (screen.id === "learning-materials") {
+      dispatch({
+        type: "GO",
+        to: screen.id,
+        unitId: screen.unitId,
+        area: screen.area,
+        nodeId: screen.nodeId,
+      });
       return;
     }
     if (screen.id === "figma-pronunciation-lesson") {
@@ -131,10 +142,24 @@ function AppInner() {
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      saveLessonResume(
+        state.id === "lesson"
+          ? {
+              ...state,
+              totalSteps:
+                state.totalSteps ??
+                buildInterleavedLessonPlan(
+                  state.wordQueue,
+                  learnerState.preferences.englishLevel,
+                  learnerState.accessibility.includeListening
+                ).length,
+            }
+          : state
+      );
     } catch (error) {
       console.warn("Could not persist navigation state.", error);
     }
-  }, [state]);
+  }, [state, learnerState.preferences.englishLevel, learnerState.accessibility.includeListening]);
 
   useEffect(() => {
     const lessonStageCount =

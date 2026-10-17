@@ -16,7 +16,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const triggerButtons = screen.getAllByLabelText(/More options and quick navigation for/i);
+    const triggerButtons = screen.getAllByLabelText(/Options for/i);
     expect(triggerButtons.length).toBeGreaterThan(0);
     expect(triggerButtons[0]).toHaveAttribute("aria-haspopup", "menu");
     expect(triggerButtons[0]).toHaveAttribute("aria-expanded", "false");
@@ -30,9 +30,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(
-      new RegExp(`More options and quick navigation for ${firstGroupName}`, "i")
-    )[0];
+    const trigger = screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0];
     fireEvent.click(trigger);
 
     expect(trigger).toHaveAttribute("aria-expanded", "true");
@@ -59,9 +57,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(
-      new RegExp(`More options and quick navigation for ${firstGroupName}`, "i")
-    )[0];
+    const trigger = screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0];
     fireEvent.click(trigger);
 
     const flashcardsButton = screen.getByRole("menuitem", { name: /Browse Words/i });
@@ -84,9 +80,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(
-      new RegExp(`More options and quick navigation for ${firstGroupName}`, "i")
-    )[0];
+    const trigger = screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0];
     fireEvent.click(trigger);
     expect(trigger).toHaveAttribute("aria-expanded", "true");
 
@@ -102,11 +96,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    fireEvent.click(
-      screen.getAllByLabelText(
-        new RegExp(`More options and quick navigation for ${firstGroupName}`, "i")
-      )[0]
-    );
+    fireEvent.click(screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0]);
 
     const stepMenuTrigger = screen.getByRole("menuitem", { name: /Jump to Step/i });
     expect(stepMenuTrigger).toHaveAttribute("aria-haspopup", "menu");
@@ -129,7 +119,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    fireEvent.click(screen.getByRole("button", { name: /study materials/i }));
+    fireEvent.click(screen.getByRole("button", { name: /more activities and reference/i }));
 
     expect(dispatch).toHaveBeenCalledWith({
       type: "GO",

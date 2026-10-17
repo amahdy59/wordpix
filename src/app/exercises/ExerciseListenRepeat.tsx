@@ -1,3 +1,4 @@
+import { useLessonSession } from "../shared/LessonSessionContext";
 import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
 import { resolveGroup, resolveUnitForLesson, type VocabularyItem } from "../data/courseCatalog";
@@ -29,6 +30,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   dispatch,
 }: Props) {
   const { t } = useI18n();
+  const session = useLessonSession();
   const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
   const [desktopDetails, setDesktopDetails] = useState<boolean>(false);
   const [showDetails, setShowDetails] = useState<boolean>(false);
@@ -281,7 +283,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   return (
     <div className="h-dvh bg-background flex flex-col overflow-hidden">
       <header className="shrink-0 p-4 lg:px-8 border-b border-border">
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+        <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2">
           <button
             type="button"
             onClick={() => {
@@ -311,6 +313,11 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             </button>
           </div>
         </div>
+        {session && (
+          <p className="mt-2 text-sm text-muted-foreground">
+            {t("ux.sessionStep", { current: session.current, total: session.total })}
+          </p>
+        )}
         <div className="lg:hidden mt-3">{modeSelector}</div>
         <div className="flex justify-between gap-4 mt-4 text-sm font-semibold">
           <span>{unit.name}</span>
@@ -375,17 +382,9 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             </button>
             <button
               type="button"
-              aria-label={
-                isLastWord ? t("listenRepeat.continueToSentences") : t("listenRepeat.nextWord")
-              }
-              onClick={() => {
-                if (isLastWord) {
-                  pausePlayback();
-                  dispatch({ type: "LESSON_NEXT" });
-                } else {
-                  handleSelectWordIndex(activeWordIndex + 1);
-                }
-              }}
+              aria-label={t("listenRepeat.nextWord")}
+              disabled={isLastWord}
+              onClick={() => handleSelectWordIndex(activeWordIndex + 1)}
               className="absolute z-10 end-3 sm:end-4 lg:-end-6 xl:-end-7 top-[calc(clamp(14rem,35vw,22rem)/2)] md:top-1/2 -translate-y-1/2 size-11 rounded-full bg-wp-card/95 backdrop-blur-xs border border-border text-primary shadow-md grid place-items-center hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all cursor-pointer"
             >
               <ChevronRight className="size-5 rtl:rotate-180" aria-hidden />
@@ -576,10 +575,28 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
           </span>
         </div>
       </section>
+      {isLastWord && (
+        <footer className="shrink-0 border-t border-border px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+          <button
+            type="button"
+            onClick={() => {
+              pausePlayback();
+              dispatch({ type: "LESSON_NEXT" });
+            }}
+            className="min-h-11 w-full rounded-xl bg-primary px-4 py-3 font-semibold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {t("ux.continueTo", {
+              activity: t(`ux.exercises.${session?.nextExercise ?? "recall"}`),
+            })}
+          </button>
+        </footer>
+      )}
       <ExitConfirmModal
         isOpen={showExit}
         onCancel={() => setShowExit(false)}
-        onConfirm={() => dispatch({ type: "GO", to: "home" })}
+        onConfirm={() =>
+          session ? session.onExit() : dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+        }
       />
       <WordInspectorModal
         lessonPanel
