@@ -96,6 +96,13 @@ for (const viewport of [
       .first()
       .click();
     await page.getByRole("heading", { name: "Listen & repeat" }).waitFor({ timeout: 15_000 });
+    await expect(page.getByRole("radio", { name: "Automatic", exact: true })).toHaveAttribute(
+      "aria-checked",
+      "true"
+    );
+    // Keep layout/keyboard assertions on one card while automatic playback is
+    // covered separately by the playback regression tests.
+    await page.getByRole("radio", { name: "Manual", exact: true }).click();
     const hero = page.locator('img[fetchpriority="high"]');
     const listen = page.getByRole("button", { name: /Play audio pronunciation/ });
     await expect(hero).toBeVisible();
