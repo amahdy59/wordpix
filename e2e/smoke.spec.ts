@@ -51,7 +51,7 @@ test("learn path links to the optional library", async ({ page }) => {
   await page.goto("/", { waitUntil: "domcontentloaded" });
   await waitForStyles(page);
   await page.waitForLoadState("networkidle");
-  await page.getByRole("heading", { name: "Your learning path" }).waitFor({ timeout: 15000 });
+  await page.getByRole("heading", { name: "Learn", exact: true }).waitFor({ timeout: 15000 });
   await page.getByRole("button", { name: "Browse vocabulary library", exact: true }).click();
   await expect(page).toHaveURL(/#\/library$/);
   await page
