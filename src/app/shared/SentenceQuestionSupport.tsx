@@ -142,12 +142,12 @@ export function SentenceQuestionSupport({
       ? t("exercise.meaningClue")
       : t("exercise.wordToPractice");
   return (
-    <div className="flex min-w-0 flex-1 flex-col gap-3 sm:gap-4 h-full">
+    <div className="flex min-w-0 flex-col gap-3 sm:gap-4 w-full">
       {hasImage ? (
         <MediaFrame
           fit="cover"
           aspect="recognition"
-          className="w-full min-h-[160px] sm:min-h-[220px] lg:min-h-[300px] max-h-[200px] sm:max-h-[300px] lg:max-h-[480px] aspect-video sm:aspect-[4/3] lg:aspect-auto shadow-wp-sm lg:flex-1"
+          className="w-full min-h-[160px] sm:min-h-[220px] lg:min-h-[300px] max-h-[200px] sm:max-h-[300px] lg:max-h-[480px] aspect-video sm:aspect-[4/3] lg:aspect-auto shadow-wp-sm"
         >
           <QuestionImage
             media={media}

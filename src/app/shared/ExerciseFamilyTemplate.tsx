@@ -43,7 +43,7 @@ export function ExerciseFamilyTemplate({
     <section
       data-exercise-family={family}
       aria-labelledby={instructionId}
-      className={`${measureByFamily[family]} flex w-full flex-col gap-4 sm:gap-6 min-h-0 lg:flex-1 ${className}`}
+      className={`${measureByFamily[family]} flex w-full flex-col gap-4 sm:gap-6 ${className}`}
     >
       <header className="text-start sm:text-center shrink-0">
         <h2
@@ -60,8 +60,8 @@ export function ExerciseFamilyTemplate({
       <div
         className={
           media
-            ? "flex flex-col gap-4 min-w-0 w-full lg:grid lg:flex-1 lg:grid-cols-2 lg:items-stretch lg:gap-8 lg:min-h-0"
-            : "min-w-0 flex flex-col w-full lg:flex-1"
+            ? "flex flex-col gap-4 min-w-0 w-full lg:grid lg:grid-cols-2 lg:items-start lg:gap-8"
+            : "min-w-0 flex flex-col w-full"
         }
       >
         {media && (
@@ -73,7 +73,7 @@ export function ExerciseFamilyTemplate({
           data-exercise-zone="activity"
           role="group"
           aria-label={activityLabel}
-          className="min-w-0 flex flex-col w-full lg:flex-1"
+          className="min-w-0 flex flex-col w-full"
         >
           {activity}
         </div>

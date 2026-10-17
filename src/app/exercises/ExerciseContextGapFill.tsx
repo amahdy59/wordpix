@@ -83,20 +83,12 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
         correct,
         dimension: "contextual-comprehension",
       });
-      if (accessibility.autoAdvance) {
-        autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
-      }
+      autoAdvance.schedule(
+        correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect,
+        correct
+      );
     },
-    [
-      accessibility.autoAdvance,
-      autoAdvance,
-      currentTargetWord.id,
-      dispatch,
-      feedback,
-      playClick,
-      playCorrect,
-      playIncorrect,
-    ]
+    [autoAdvance, currentTargetWord.id, dispatch, feedback, playClick, playCorrect, playIncorrect]
   );
 
   const handleContinue = useCallback(() => {
@@ -113,6 +105,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
   useExerciseHotkeys({
     optionCount: options.length,
     onSelectIndex: selectByIndex,
+    onContinue: feedback !== null ? handleContinue : undefined,
     disabled: feedback !== null,
   });
 
@@ -268,53 +261,45 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
           </div>
         }
         feedback={
-          feedback ? (
+          feedback === "incorrect" ? (
             <FeedbackPanel
-              tone={feedback === "correct" ? "success" : "error"}
-              title={
-                feedback === "correct" ? t("exercise.correctTitle") : t("exercise.notQuiteTitle")
-              }
+              tone="error"
+              title={t("exercise.notQuiteTitle")}
               description={
-                feedback === "incorrect" ? (
-                  <span className="flex flex-col gap-1">
-                    <span
-                      className="text-sm font-medium leading-relaxed text-muted-foreground"
-                      lang="en"
-                      dir="ltr"
-                    >
-                      {fullSentence}
-                    </span>
-                    {currentTargetWord.description && (
-                      <span className="text-xs leading-snug text-foreground/75" lang="en" dir="ltr">
-                        {currentTargetWord.description}
-                      </span>
-                    )}
-                    {currentTargetWord.arabicTranslation && (
-                      <span
-                        className="font-arabic text-sm font-semibold text-foreground/80"
-                        dir="rtl"
-                        lang="ar"
-                      >
-                        {currentTargetWord.arabicTranslation}
-                      </span>
-                    )}
+                <span className="flex flex-col gap-1">
+                  <span
+                    className="text-sm font-medium leading-relaxed text-muted-foreground"
+                    lang="en"
+                    dir="ltr"
+                  >
+                    {fullSentence}
                   </span>
-                ) : (
-                  fullSentence
-                )
+                  {currentTargetWord.description && (
+                    <span className="text-xs leading-snug text-foreground/75" lang="en" dir="ltr">
+                      {currentTargetWord.description}
+                    </span>
+                  )}
+                  {currentTargetWord.arabicTranslation && (
+                    <span
+                      className="font-arabic text-sm font-semibold text-foreground/80"
+                      dir="rtl"
+                      lang="ar"
+                    >
+                      {currentTargetWord.arabicTranslation}
+                    </span>
+                  )}
+                </span>
               }
-              icon={
-                feedback === "correct" ? (
-                  <CheckCircle2 className="size-6 text-wp-green" aria-hidden />
-                ) : (
-                  <XCircle className="size-6 text-destructive" aria-hidden />
-                )
-              }
+              icon={<XCircle className="size-6 text-destructive" aria-hidden />}
             />
+          ) : feedback === "correct" ? (
+            <p className="sr-only" role="status" aria-live="polite">
+              {t("exercise.correctTitle")}
+            </p>
           ) : undefined
         }
         action={
-          feedback !== null && !accessibility.autoAdvance ? (
+          feedback === "incorrect" && !accessibility.autoAdvance ? (
             <Button
               size="lg"
               iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}

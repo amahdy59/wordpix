@@ -22,6 +22,8 @@ interface Options {
   onReplayAudio?: () => void;
   /** Optional action to toggle keyboard shortcuts cheatsheet modal (?) */
   onToggleHelp?: () => void;
+  /** Optional action to continue to next question on Enter key when answered/feedback shown */
+  onContinue?: () => void;
   /** Suspend all hotkeys, e.g. while a modal owns the keyboard. */
   disabled?: boolean;
 }
@@ -45,17 +47,20 @@ export function useExerciseHotkeys({
   onSelectIndex,
   onReplayAudio,
   onToggleHelp,
+  onContinue,
   disabled = false,
 }: Options) {
   // Held in refs so re-created callbacks do not detach and re-attach the
   // listener on every render.
-  const handlers = useRef({ onSelectIndex, onReplayAudio, onToggleHelp, optionCount });
+  const handlers = useRef({ onSelectIndex, onReplayAudio, onToggleHelp, onContinue, optionCount });
   useEffect(() => {
-    handlers.current = { onSelectIndex, onReplayAudio, onToggleHelp, optionCount };
-  }, [onSelectIndex, onReplayAudio, onToggleHelp, optionCount]);
+    handlers.current = { onSelectIndex, onReplayAudio, onToggleHelp, onContinue, optionCount };
+  }, [onSelectIndex, onReplayAudio, onToggleHelp, onContinue, optionCount]);
+
+  const hasContinue = Boolean(onContinue);
 
   useEffect(() => {
-    if (disabled) return undefined;
+    if (disabled && !hasContinue) return undefined;
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.repeat || hasModifier(event) || isTextEntryTarget(event.target)) return;
@@ -64,6 +69,7 @@ export function useExerciseHotkeys({
         onSelectIndex: select,
         onReplayAudio: replay,
         onToggleHelp: toggleHelp,
+        onContinue: cont,
         optionCount: count,
       } = handlers.current;
 
@@ -82,6 +88,14 @@ export function useExerciseHotkeys({
           '[role="dialog"][aria-modal="true"], [role="alertdialog"], [role="menu"]'
         ) !== null;
       if (overlayOpen) return;
+
+      if (cont && event.key === "Enter") {
+        event.preventDefault();
+        cont();
+        return;
+      }
+
+      if (disabled) return;
 
       if (replay) {
         const focusIsOnAControl =
@@ -104,5 +118,5 @@ export function useExerciseHotkeys({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [disabled]);
+  }, [disabled, hasContinue]);
 }

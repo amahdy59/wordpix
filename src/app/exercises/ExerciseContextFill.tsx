@@ -93,7 +93,8 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         },
         () => {
           autoAdvance.schedule(
-            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect
+            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect,
+            correct
           );
         }
       );
@@ -132,6 +133,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   useExerciseHotkeys({
     optionCount: options.length,
     onSelectIndex: selectByIndex,
+    onContinue: feedback !== null ? handleContinue : undefined,
     disabled: feedback !== null,
   });
 
@@ -242,25 +244,21 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           </div>
         }
         feedback={
-          feedback ? (
+          feedback === "incorrect" ? (
             <FeedbackPanel
-              tone={feedback === "correct" ? "success" : "error"}
-              title={
-                feedback === "correct" ? t("exercise.correctTitle") : t("exercise.notQuiteTitle")
-              }
+              tone="error"
+              title={t("exercise.notQuiteTitle")}
               description={answerSentence}
-              icon={
-                feedback === "correct" ? (
-                  <CheckCircle2 className="size-6 text-wp-green" aria-hidden />
-                ) : (
-                  <XCircle className="size-6 text-destructive" aria-hidden />
-                )
-              }
+              icon={<XCircle className="size-6 text-destructive" aria-hidden />}
             />
+          ) : feedback === "correct" ? (
+            <p className="sr-only" role="status" aria-live="polite">
+              {t("exercise.correctTitle")}
+            </p>
           ) : undefined
         }
         action={
-          feedback !== null && !accessibility.autoAdvance ? (
+          feedback === "incorrect" && !accessibility.autoAdvance ? (
             <Button
               size="lg"
               iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}

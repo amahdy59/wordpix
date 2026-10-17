@@ -77,7 +77,10 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         correct,
         dimension: "controlled-production",
       });
-      autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
+      autoAdvance.schedule(
+        correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect,
+        correct
+      );
     },
     [answer, playCorrect, playIncorrect, dispatch, currentTargetWord.id, autoAdvance]
   );
@@ -122,6 +125,23 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     autoAdvance.cancel();
     advanceNext();
   }, [autoAdvance, advanceNext]);
+
+  useEffect(() => {
+    if (feedback === null) return undefined;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== "Enter") return;
+      const target = event.target as HTMLElement | null;
+      if (
+        target &&
+        (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable)
+      )
+        return;
+      event.preventDefault();
+      handleContinue();
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [feedback, handleContinue]);
   const handleSkipToReading = useCallback(() => {
     autoAdvance.cancel();
     dispatch({ type: "LESSON_GOTO_STEP", step: step + 2 });
@@ -310,24 +330,12 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
           </div>
         }
         feedback={
-          feedback ? (
+          feedback === "incorrect" ? (
             <FeedbackPanel
-              tone={feedback === "correct" ? "success" : "error"}
-              title={
-                feedback === "correct" ? t("exercise.correctTitle") : t("exercise.notQuiteTitle")
-              }
-              description={
-                feedback === "correct"
-                  ? t("exercise.correctSentence", { sentence })
-                  : t("exercise.incorrectSentence", { sentence })
-              }
-              icon={
-                feedback === "correct" ? (
-                  <CheckCircle2 className="size-6 text-wp-green" aria-hidden />
-                ) : (
-                  <XCircle className="size-6 text-destructive" aria-hidden />
-                )
-              }
+              tone="error"
+              title={t("exercise.notQuiteTitle")}
+              description={t("exercise.incorrectSentence", { sentence })}
+              icon={<XCircle className="size-6 text-destructive" aria-hidden />}
             />
           ) : undefined
         }
@@ -341,7 +349,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
             >
               {t("exercise.skipToReading")}
             </Button>
-            {feedback !== null && !accessibility.autoAdvance && (
+            {feedback === "incorrect" && !accessibility.autoAdvance && (
               <Button
                 size="lg"
                 iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}

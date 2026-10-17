@@ -166,6 +166,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     optionCount: displayCards.length,
     onSelectIndex: selectByIndex,
     onReplayAudio: replayAudio,
+    onContinue: feedback !== null ? handleContinue : undefined,
     disabled: feedback !== null,
   });
 

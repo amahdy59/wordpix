@@ -131,6 +131,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   useExerciseHotkeys({
     optionCount: options.length,
     onSelectIndex: selectByIndex,
+    onContinue: feedback !== null ? handleContinue : undefined,
     disabled: feedback !== null,
   });
 
@@ -317,26 +318,20 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               : ""}
         </span>
 
-        {/* Continue strip — appears below grid after answer, replaces old AnswerFeedback bar */}
+        {/* Continue strip — appears below grid only after incorrect answer when manual advance is preferred */}
         <AnimatePresence>
-          {feedback !== null && !accessibility.autoAdvance && (
+          {feedback === "incorrect" && !accessibility.autoAdvance && (
             <motion.div
               key="continue-strip"
               initial={reduceMotion ? false : { opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
               transition={reduceMotion ? { duration: 0 } : { delay: 0.3 }}
-              className={`shrink-0 rounded-2xl px-5 py-3 flex flex-col gap-2 border ${
-                feedback === "correct"
-                  ? "bg-wp-green/10 border-wp-green/30"
-                  : "bg-wp-rose/10 border-wp-rose/30"
-              }`}
+              className="shrink-0 rounded-2xl px-5 py-3 flex flex-col gap-2 border bg-wp-rose/10 border-wp-rose/30"
             >
               <div className="flex items-center justify-between gap-3">
                 <span className="font-sans font-semibold text-foreground text-sm">
-                  {feedback === "correct"
-                    ? `✓ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`
-                    : `✗ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`}
+                  {`✗ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`}
                 </span>
                 <button
                   type="button"

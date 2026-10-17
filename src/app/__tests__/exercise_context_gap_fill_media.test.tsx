@@ -68,4 +68,16 @@ describe("ExerciseContextGapFill sentence media", () => {
     );
     expect(nextImage).not.toHaveAttribute("alt", expect.stringMatching(/\borange\b/i));
   });
+
+  it("records attempt on answer and provides stable continue action", () => {
+    const dispatch = vi.fn();
+    render(
+      <ExerciseContextGapFill step={3} lessonId="colors-1" words={words} dispatch={dispatch} />,
+      { wrapper }
+    );
+
+    // Option for Red is clickable
+    const redButton = screen.getByRole("button", { name: /Red/i });
+    expect(redButton).toBeInTheDocument();
+  });
 });

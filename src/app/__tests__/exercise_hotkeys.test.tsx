@@ -131,3 +131,63 @@ describe("Replay-audio shortcut", () => {
     expect(onClick).toHaveBeenCalledTimes(1);
   });
 });
+
+describe("Continue shortcut", () => {
+  function ContinueHarness({
+    onContinue,
+    disabled = true,
+    withInput = false,
+  }: {
+    onContinue: () => void;
+    disabled?: boolean;
+    withInput?: boolean;
+  }) {
+    useExerciseHotkeys({
+      optionCount: 3,
+      onSelectIndex: vi.fn(),
+      onContinue,
+      disabled,
+    });
+    return (
+      <div>
+        <button type="button">Continue</button>
+        {withInput && <input aria-label="Text field" />}
+      </div>
+    );
+  }
+
+  it("calls onContinue when Enter is pressed even when option selection is disabled", async () => {
+    const user = userEvent.setup();
+    const onContinue = vi.fn();
+    render(<ContinueHarness onContinue={onContinue} disabled />);
+
+    await user.keyboard("{Enter}");
+    expect(onContinue).toHaveBeenCalledTimes(1);
+  });
+
+  it("does not call onContinue when typing Enter inside an input field", async () => {
+    const user = userEvent.setup();
+    const onContinue = vi.fn();
+    render(<ContinueHarness onContinue={onContinue} disabled withInput />);
+
+    await user.click(screen.getByLabelText("Text field"));
+    await user.keyboard("{Enter}");
+    expect(onContinue).not.toHaveBeenCalled();
+  });
+
+  it("does not call onContinue when a modal dialog is open in the DOM", async () => {
+    const user = userEvent.setup();
+    const onContinue = vi.fn();
+    render(
+      <div>
+        <ContinueHarness onContinue={onContinue} disabled />
+        <div role="dialog" aria-modal="true">
+          Modal
+        </div>
+      </div>
+    );
+
+    await user.keyboard("{Enter}");
+    expect(onContinue).not.toHaveBeenCalled();
+  });
+});

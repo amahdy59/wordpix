@@ -1,12 +1,29 @@
 {
-  "version": "0.1.58",
+  "version": "0.1.59",
   "notes": [
-    "Cleaned up cluttered text across the app, making UI elements self-explanatory and removing unnecessary collapsibles and disclosures for a more direct, distraction-free experience."
+    "Drill exercises now advance automatically on correct answers without requiring extra clicks, and keyboard users can press Enter to continue immediately after any response."
   ],
   "notesAr": [
-    "تبسيط النصوص وإزالة التفاصيل غير الضرورية في جميع أنحاء التطبيق، وجعل الواجهة واضحة بذاتها مع الاستغناء عن القوائم المطوية لتجربة تعليمية مباشرة وسلسة."
+    "تتقدم التمارين التدريبية الآن تلقائيًا فور الإجابة الصحيحة دون الحاجة لنقرات إضافية، مع إمكانية الضغط على زر Enter لمتابعة التمرين فورًا باستخدام لوحة المفاتيح."
   ],
   "releases": [
+    {
+      "id": "0.1.59",
+      "version": "0.1.59",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Seamless drill autoprogress and keyboard continuation",
+        "ar": "انتقال تلقائي سلس بين التمارين ودعم المتابعة عبر لوحة المفاتيح"
+      },
+      "changes": [
+        {
+          "id": "drill-autoprogress-and-enter-hotkey",
+          "category": "improved",
+          "en": "Enabled smooth auto-advance upon correct answers across recall, sentence builder, context fill, context gap fill, and quick quiz exercises. Added keyboard Enter key support to instantly proceed to the next question.",
+          "ar": "تم تفعيل الانتقال التلقائي السلس عند الإجابة الصحيحة عبر تمارين الاستدعاء وبناء الجمل وملء الفراغات والاختبار السريع، بالإضافة إلى دعم الضغط على زر Enter للمتابعة الفورية إلى السؤال التالي."
+        }
+      ]
+    },
     {
       "id": "0.1.58",
       "version": "0.1.58",

@@ -105,6 +105,17 @@ describe("useAutoAdvance", () => {
     expect(result.current.isPending).toBe(false);
   });
 
+  it("forces advance when force is true even if auto-advance is disabled", () => {
+    const onAdvance = vi.fn();
+    const { result } = renderHook(() => useAutoAdvance({ enabled: false, onAdvance }));
+
+    act(() => result.current.schedule(ADVANCE_DELAY_MS.correct, true));
+    expect(onAdvance).not.toHaveBeenCalled();
+
+    act(() => vi.advanceTimersByTime(ADVANCE_DELAY_MS.correct));
+    expect(onAdvance).toHaveBeenCalledTimes(1);
+  });
+
   it("cancels a pending advance", () => {
     const onAdvance = vi.fn();
     const { result } = renderHook(() => useAutoAdvance({ enabled: true, onAdvance }));
