@@ -27,6 +27,28 @@ export function playbackFixture(): Buffer {
   return bytes;
 }
 
+/** Content/cache specs do not exercise narration. Keep their native media
+ * element inert without routing requests (routing disables Chromium's cache).
+ * Playback behavior is covered by the dedicated audio specs.
+ */
+export async function disableNarrationForContentTest(page: Page) {
+  await page.addInitScript(() => {
+    const NativeAudio = window.Audio;
+    window.Audio = function () {
+      const element = new NativeAudio();
+      let source = "";
+      Object.defineProperty(element, "src", {
+        get: () => source,
+        set: (value: string) => {
+          source = value;
+        },
+      });
+      element.play = () => Promise.resolve();
+      return element;
+    } as unknown as typeof Audio;
+  });
+}
+
 /** The Windows WebKit runner rejects both test MP3 and PCM clips.
  * Its UI contract is exercised through real HTTP/cache reads, with deterministic
  * media events. Chromium retains native decoding; physical Safari is a manual gate.

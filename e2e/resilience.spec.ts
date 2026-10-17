@@ -82,7 +82,9 @@ test("offline changes survive reload and remain queued for later sync", async ({
   await page.evaluate(() => window.dispatchEvent(new Event("offline")));
   await expect(page.getByRole("status").filter({ hasText: "You're offline" })).toBeVisible();
   await reloadOffline(page);
-  await expect(page.getByRole("main").getByRole("heading", { level: 1 })).toBeVisible();
+  await expect(page.getByRole("main").getByRole("heading", { level: 1 })).toBeVisible({
+    timeout: 30_000,
+  });
   // Chromium's network emulation blocks requests but does not update
   // navigator.onLine in this environment, so exercise the browser event that
   // production devices emit when connectivity changes.

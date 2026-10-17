@@ -1,8 +1,12 @@
 import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { disableNarrationForContentTest } from "./audioFixture";
 
 test.describe("Authored lesson flow (Phase 4 & 5)", () => {
+  test.beforeEach(async ({ page }) => {
+    await disableNarrationForContentTest(page);
+  });
   test("loads authored Colors unit with reviewed glosses, sentences, and accessible controls", async ({
     page,
   }) => {
