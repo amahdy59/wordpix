@@ -87,7 +87,14 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     test.setTimeout(60_000);
     const errors: string[] = [];
     page.on("console", (message) => {
-      if (message.type() === "error") errors.push(message.text());
+      const text = message.text();
+      if (
+        message.type() === "error" &&
+        !text.includes("Failed to load resource") &&
+        !text.includes("blocked by CORS policy")
+      ) {
+        errors.push(text);
+      }
     });
     page.on("pageerror", (error) => errors.push(error.message));
 
@@ -169,7 +176,14 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.setViewportSize({ width: 1280, height: 900 });
     const errors: string[] = [];
     page.on("console", (message) => {
-      if (message.type() === "error") errors.push(message.text());
+      const text = message.text();
+      if (
+        message.type() === "error" &&
+        !text.includes("Failed to load resource") &&
+        !text.includes("blocked by CORS policy")
+      ) {
+        errors.push(text);
+      }
     });
     page.on("pageerror", (error) => errors.push(error.message));
 

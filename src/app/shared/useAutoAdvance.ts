@@ -26,8 +26,10 @@ interface Options {
 }
 
 export interface AutoAdvance {
-  /** Schedules the advance. Calling again replaces any pending one. */
-  schedule: (delayMs: number) => void;
+  /** Schedules the advance. Calling again replaces any pending one.
+   * If force is true, schedules even when auto-advance preference is disabled (e.g. for correct answers).
+   */
+  schedule: (delayMs: number, force?: boolean) => void;
   /** Cancels a pending advance — e.g. the learner pressed Continue first. */
   cancel: () => void;
   /** True while an advance is pending, for progress affordances. */
@@ -55,14 +57,14 @@ export function useAutoAdvance({ enabled, onAdvance }: Options): AutoAdvance {
     setIsPending(false);
   }, []);
 
-  const schedule = useCallback((delayMs: number) => {
-    if (!enabledRef.current) return;
+  const schedule = useCallback((delayMs: number, force = false) => {
+    if (!enabledRef.current && !force) return;
     if (timerRef.current !== null) clearTimeout(timerRef.current);
     setIsPending(true);
     timerRef.current = setTimeout(() => {
       timerRef.current = null;
       setIsPending(false);
-      if (enabledRef.current) onAdvanceRef.current();
+      if (enabledRef.current || force) onAdvanceRef.current();
     }, delayMs);
   }, []);
 

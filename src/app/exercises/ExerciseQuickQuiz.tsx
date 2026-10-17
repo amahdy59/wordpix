@@ -86,7 +86,8 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         () => {
           // Extra 200ms pause after voice finishes so it doesn't snap instantly
           autoAdvance.schedule(
-            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect
+            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect,
+            correct
           );
         }
       );

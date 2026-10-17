@@ -119,7 +119,8 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         },
         () => {
           autoAdvance.schedule(
-            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect
+            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect,
+            correct
           );
         }
       );
@@ -343,35 +344,36 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           })}
         </ImmersiveImageChoiceGrid>
 
-        {/* Continue strip — replaces old AnswerFeedback bar */}
+        {/* Feedback status announcement for screen readers */}
+        <p className="sr-only" role="status" aria-live="polite">
+          {feedback === "correct"
+            ? t("ux.correct")
+            : feedback === "incorrect"
+              ? t("ux.tryAgain")
+              : ""}
+        </p>
+
+        {/* Continue strip — only shown on incorrect answers when manual advance is preferred */}
         <AnimatePresence>
-          {feedback !== null && !accessibility.autoAdvance && (
+          {feedback === "incorrect" && !accessibility.autoAdvance && (
             <motion.div
               key="continue-strip"
               initial={reduceMotion ? false : { opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
               transition={reduceMotion ? { duration: 0 } : { delay: 0.3 }}
-              className={`shrink-0 rounded-2xl px-5 py-3 flex flex-wrap items-center justify-between gap-3 border ${
-                feedback === "correct"
-                  ? "bg-wp-green/10 border-wp-green/30"
-                  : "bg-wp-rose/10 border-wp-rose/30"
-              }`}
+              className="shrink-0 rounded-2xl px-5 py-3 flex flex-wrap items-center justify-between gap-3 border bg-wp-rose/10 border-wp-rose/30"
             >
               <span className="font-sans font-semibold text-foreground text-sm">
-                {feedback === "correct"
-                  ? t("ux.correct")
-                  : t("ux.matchHint", { word: currentTargetWord.label })}
+                {t("ux.matchHint", { word: currentTargetWord.label })}
               </span>
-              {feedback === "incorrect" && (
-                <button
-                  type="button"
-                  onClick={replayAudio}
-                  className="min-h-11 min-w-11 rounded-xl border border-border px-3 py-2 text-sm font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-                >
-                  {t("ux.listenAgain")}
-                </button>
-              )}
+              <button
+                type="button"
+                onClick={replayAudio}
+                className="min-h-11 min-w-11 rounded-xl border border-border px-3 py-2 text-sm font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                {t("ux.listenAgain")}
+              </button>
               <button
                 type="button"
                 onClick={handleContinue}
