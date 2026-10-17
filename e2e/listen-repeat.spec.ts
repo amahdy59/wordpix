@@ -4,11 +4,13 @@ import path from "node:path";
 import sharp from "sharp";
 import AxeBuilder from "@axe-core/playwright";
 import { FOCUSED_LESSON_WORD_LIMIT } from "../src/app/lesson/lessonSequence";
+import { disableNarrationForContentTest } from "./audioFixture";
 
 // Layout checks decode the real local image corpus without relying on live R2.
 // Keep the service worker from bypassing these deterministic request fixtures.
 test.use({ viewport: { width: 390, height: 844 }, serviceWorkers: "block" });
 test.beforeEach(async ({ page, browserName }) => {
+  await disableNarrationForContentTest(page);
   await page.route("**/word-images/construction-site/*.avif", async (route) => {
     const filename = new URL(route.request().url()).pathname.split("/").pop()!;
     await route.fulfill({

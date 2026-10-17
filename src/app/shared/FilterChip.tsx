@@ -103,6 +103,7 @@ export const FilterChip = forwardRef<HTMLButtonElement, FilterChipProps>(functio
         </span>
       )}
       <span
+        style={{ color: selected ? "var(--primary-foreground)" : "var(--foreground)" }}
         className={`min-w-0 break-words leading-tight ${selected ? "text-primary-foreground font-bold" : "text-foreground font-semibold"}`}
       >
         {label}

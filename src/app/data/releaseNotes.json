@@ -1,12 +1,25 @@
 {
-  "version": "0.1.53",
-  "notes": [
-    "Listen and Repeat starts in Automatic mode and plays each new word when you advance in either playback mode."
-  ],
-  "notesAr": [
-    "يبدأ تمرين الاستماع والترديد بالوضع التلقائي، ويشغّل نطق كل كلمة جديدة عند الانتقال إليها في كلا وضعي التشغيل."
-  ],
+  "version": "0.1.54",
+  "notes": ["Selected library filter labels stay readable when switching filters in Safari."],
+  "notesAr": ["تبقى تسميات مرشحات المكتبة المحددة واضحة عند التبديل بينها في سفاري."],
   "releases": [
+    {
+      "id": "0.1.54",
+      "version": "0.1.54",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Clearer selected filters",
+        "ar": "مرشحات محددة أكثر وضوحًا"
+      },
+      "changes": [
+        {
+          "id": "safari-filter-labels",
+          "category": "fixed",
+          "en": "Selected library filter labels stay readable when switching filters in Safari.",
+          "ar": "تبقى تسميات مرشحات المكتبة المحددة واضحة عند التبديل بينها في سفاري."
+        }
+      ]
+    },
     {
       "id": "0.1.53",
       "version": "0.1.53",
