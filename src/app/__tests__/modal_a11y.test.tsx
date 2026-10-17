@@ -40,7 +40,8 @@ describe("ExitConfirmModal accessibility", () => {
     const dialog = await screen.findByRole("alertdialog");
     expect(dialog).toHaveAttribute("aria-modal", "true");
     expect(dialog).toHaveAccessibleName("Leave this lesson?");
-    expect(dialog).toHaveAccessibleDescription(/submitted answers are saved/i);
+    expect(dialog).toHaveAccessibleDescription(/Completed learning remains saved/i);
+    expect(dialog).toHaveAccessibleDescription(/Unfinished review sessions restart/i);
   });
 
   it("focuses the non-destructive action first", async () => {
