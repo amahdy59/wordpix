@@ -39,6 +39,10 @@ edited. No R2 mutation commands were used. Release verification uses
 Vite preserves the output directory and does not recopy the public media corpus.
 Normal builds retain their existing behavior when this option is absent.
 
+The shared filter label explicitly uses the selected foreground token, and chip
+state changes avoid foreground/background interpolation. This also avoids a
+WebKit inherited-label contrast failure found by the browser release gate.
+
 The local verification snapshot covers 60,056 existing media/caption files in
 public, assets, src/assets, audio_backup, dist, and visual-test baselines. A byte
 comparison is performed after release tooling. E2E artifacts use a new output
