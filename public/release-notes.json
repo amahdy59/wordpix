@@ -1,12 +1,35 @@
 {
-  "version": "0.1.59",
+  "version": "0.1.60",
   "notes": [
-    "Drill exercises now advance automatically on correct answers without requiring extra clicks, and keyboard users can press Enter to continue immediately after any response."
+    "Added visible desktop keyboard shortcut badges on Continue buttons, integrated an accessible keyboard shortcut cheatsheet modal (accessible via '?' or the header icon), and introduced predictive asset preloading for subsequent lesson audio and images."
   ],
   "notesAr": [
-    "تتقدم التمارين التدريبية الآن تلقائيًا فور الإجابة الصحيحة دون الحاجة لنقرات إضافية، مع إمكانية الضغط على زر Enter لمتابعة التمرين فورًا باستخدام لوحة المفاتيح."
+    "تمت إضافة شارات مرئية لاختصارات لوحة المفاتيح على أزرار المتابعة على أجهزة سطح المكتب، ودمج نافذة إرشادية لاختصارات لوحة المفاتيح (يمكن فتحها بالضغط على '?' أو أيقونة الترويسة)، وتفعيل التحميل المسبق الذكي لصور ومقاطع الصوت للدروس التالية."
   ],
   "releases": [
+    {
+      "id": "0.1.60",
+      "version": "0.1.60",
+      "date": "2026-10-17",
+      "title": {
+        "en": "Visual keyboard badges, shortcut cheatsheet, and predictive asset preloading",
+        "ar": "شارات اختصارات لوحة المفاتيح ودليل الاختصارات والتحميل المسبق الذكي للأصول"
+      },
+      "changes": [
+        {
+          "id": "keyboard-badges-and-cheatsheet",
+          "category": "improved",
+          "en": "Added visual keyboard shortcut badges ('↵ Enter') on desktop Continue buttons across exercise modes without cluttering screen reader labels. Added an accessible keyboard shortcut cheatsheet modal reachable via '?' key or the header button.",
+          "ar": "إضافة شارات بصرية لاختصارات لوحة المفاتيح ('↵ Enter') على أزرار المتابعة لشاشات الحواسيب دون التأثير على قارئات الشاشة، مع توفير نافذة إرشادية للاختصارات عبر الضغط على '?' أو زر لوحة المفاتيح في الترويسة."
+        },
+        {
+          "id": "predictive-asset-preloading",
+          "category": "improved",
+          "en": "Introduced predictive background preloading for subsequent lesson images and high-fidelity curriculum audio as learners near completion, while respecting browser Save-Data preferences.",
+          "ar": "تفعيل ميزة التحميل المسبق الذكي في الخلفية لصور ومقاطع صوت الدرس التالي عند اقتراب المتعلم من إتمام درسه الحالي، مع مراعاة إعدادات توفير البيانات (Save-Data)."
+        }
+      ]
+    },
     {
       "id": "0.1.59",
       "version": "0.1.59",

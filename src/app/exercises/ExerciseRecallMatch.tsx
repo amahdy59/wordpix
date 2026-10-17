@@ -5,6 +5,7 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { getDistractors } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
 import { WordImage, getWordImageSrc } from "../shared/WordImage";
+import { Button } from "../shared/Button";
 import { useAudio } from "../shared/useAudio";
 import { Volume2, CheckCircle2, XCircle, Keyboard, ArrowRight } from "lucide-react";
 import { useSound } from "../shared/useSound";
@@ -375,14 +376,14 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
               >
                 {t("ux.listenAgain")}
               </button>
-              <button
-                type="button"
+              <Button
                 onClick={handleContinue}
-                className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
+                hotkey="↵ Enter"
+                size="sm"
+                iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
               >
                 {t("action.continue")}
-                <ArrowRight className="size-4" aria-hidden />
-              </button>
+              </Button>
             </motion.div>
           )}
         </AnimatePresence>

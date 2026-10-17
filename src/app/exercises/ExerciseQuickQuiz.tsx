@@ -6,6 +6,7 @@ import { getRichSentence, getDistractors } from "./exerciseContent";
 import { identifySentence } from "../content/wordGrammar";
 import { shuffleArray } from "../../utils/shuffle";
 import { WordImage, getWordImageSrc } from "../shared/WordImage";
+import { Button } from "../shared/Button";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
@@ -333,14 +334,14 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 <span className="font-sans font-semibold text-foreground text-sm">
                   {`✗ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`}
                 </span>
-                <button
-                  type="button"
+                <Button
                   onClick={handleContinue}
-                  className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
+                  hotkey="↵ Enter"
+                  size="sm"
+                  iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
                 >
                   {t("action.continue")}
-                  <ArrowRight className="size-4" aria-hidden />
-                </button>
+                </Button>
               </div>
               {/* "Why incorrect" contextual explanation */}
               {feedback === "incorrect" && (

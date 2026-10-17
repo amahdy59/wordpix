@@ -12,6 +12,8 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   iconLeft?: ReactNode;
   iconRight?: ReactNode;
   children?: ReactNode;
+  /** Optional keyboard shortcut badge, e.g. "↵ Enter" */
+  hotkey?: string;
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -49,6 +51,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
     iconLeft,
     iconRight,
     children,
+    hotkey,
     disabled = false,
     type = "button",
     className = "",
@@ -105,6 +108,14 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
         <>
           {iconLeft && <span className="shrink-0 leading-none">{iconLeft}</span>}
           {children && <span>{children}</span>}
+          {hotkey && (
+            <kbd
+              aria-hidden="true"
+              className="hidden sm:inline-flex items-center px-1.5 py-0.5 text-[11px] font-mono font-semibold rounded bg-current/15 text-inherit border border-current/25 tracking-tight shrink-0 select-none"
+            >
+              {hotkey}
+            </kbd>
+          )}
           {iconRight && <span className="shrink-0 leading-none">{iconRight}</span>}
         </>
       )}

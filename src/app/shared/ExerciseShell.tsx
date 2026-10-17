@@ -1,10 +1,12 @@
 import { useLessonSession } from "./LessonSessionContext";
-import { memo, useState } from "react";
+import { memo, useState, useEffect } from "react";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { LessonHeader } from "./LessonHeader";
 import { HomeIndicator } from "./HomeIndicator";
 import { ExitConfirmModal } from "./ExitConfirmModal";
+import { KeyboardShortcutsModal } from "./KeyboardShortcutsModal";
+import { usePredictiveLessonPreload } from "./usePredictiveLessonPreload";
 import { MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
 
 export type ExerciseMode = "teach" | "guided" | "retrieval" | "assessment";
@@ -47,9 +49,32 @@ export const ExerciseShell = memo(function ExerciseShell({
 }: Props) {
   const session = useLessonSession();
   const [showExitModal, setShowExitModal] = useState(false);
+  const [showShortcutsModal, setShowShortcutsModal] = useState(false);
   const Content = "section";
   const canvasClass =
     layout === "media" ? "wp-container-immersive wp-exercise-immersive" : "wp-container-content";
+
+  // Predictive asset preloading warms up next group assets when nearing completion (step >= 3)
+  usePredictiveLessonPreload(lessonId, step);
+
+  // Toggle keyboard shortcuts cheat sheet with '?' or 'Shift+/'
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (
+        e.target instanceof HTMLInputElement ||
+        e.target instanceof HTMLTextAreaElement ||
+        (e.target as HTMLElement)?.isContentEditable
+      ) {
+        return;
+      }
+      if (e.key === "?" || (e.shiftKey && e.key === "/")) {
+        e.preventDefault();
+        setShowShortcutsModal((prev) => !prev);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   // `lessonId` used to default to "essential-furniture" and fall back to the
   // first group on an unknown id, so a review session — or any lesson whose id
@@ -76,6 +101,10 @@ export const ExerciseShell = memo(function ExerciseShell({
           else dispatch({ type: "GO", to: "practice" });
         }}
       />
+      <KeyboardShortcutsModal
+        isOpen={showShortcutsModal}
+        onClose={() => setShowShortcutsModal(false)}
+      />
       {/* ── RIGHT PANEL: Desktop & Mobile Exercise Main View ────────────────── */}
       <div className="flex-1 flex flex-col h-dvh overflow-hidden relative">
         <LessonHeader
@@ -87,6 +116,7 @@ export const ExerciseShell = memo(function ExerciseShell({
           progressLabel={progressLabel}
           onBack={() => dispatch({ type: "LESSON_PREVIOUS" })}
           onClose={() => setShowExitModal(true)}
+          onOpenShortcuts={() => setShowShortcutsModal(true)}
         />
 
         {/* Adaptive activity stage: compact and top-anchored when space is abundant. */}

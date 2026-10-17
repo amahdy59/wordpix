@@ -81,6 +81,26 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
     }
     return undefined;
   }, [accessibility.autoAdvance, handleContinue, isLastCluster, selected]);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+      if (e.key === "Enter" && selected) {
+        e.preventDefault();
+        handleContinue();
+        return;
+      }
+      if (selected === null && cluster) {
+        const num = parseInt(e.key, 10);
+        if (!isNaN(num) && num >= 1 && num <= cluster.retrieval.options.length) {
+          e.preventDefault();
+          handleSelect(cluster.retrieval.options[num - 1]);
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [cluster, handleContinue, handleSelect, selected]);
   if (!lesson || !cluster) return null;
 
   return (
@@ -196,6 +216,7 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
           selected && (!accessibility.autoAdvance || isLastCluster) ? (
             <Button
               size="lg"
+              hotkey="↵ Enter"
               iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
               onClick={handleContinue}
             >

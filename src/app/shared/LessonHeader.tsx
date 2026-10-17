@@ -1,6 +1,7 @@
 import { useLessonSession } from "./LessonSessionContext";
 import { useI18n } from "../context/I18nContext";
 import { memo } from "react";
+import { Keyboard } from "lucide-react";
 import { BackButton } from "./BackButton";
 import { CloseButton } from "./CloseButton";
 import { ProgressBar } from "./ProgressBar";
@@ -33,6 +34,8 @@ interface Props {
   progressAriaValueText?: string;
   onBack: () => void;
   onClose: () => void;
+  /** Optional callback to open keyboard shortcuts cheatsheet modal */
+  onOpenShortcuts?: () => void;
 }
 
 /**
@@ -50,6 +53,7 @@ export const LessonHeader = memo(function LessonHeader({
   progressAriaValueText,
   onBack,
   onClose,
+  onOpenShortcuts,
 }: Props) {
   const session = useLessonSession();
   const { t } = useI18n();
@@ -76,7 +80,18 @@ export const LessonHeader = memo(function LessonHeader({
         >
           {title}
         </h1>
-        <div className="shrink-0">
+        <div className="shrink-0 flex items-center gap-1.5">
+          {onOpenShortcuts && (
+            <button
+              type="button"
+              onClick={onOpenShortcuts}
+              aria-label={t("shortcuts.title")}
+              title={`${t("shortcuts.title")} (?)`}
+              className="hidden sm:inline-flex items-center justify-center size-11 min-h-[44px] min-w-[44px] rounded-full border border-border bg-wp-card text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+            >
+              <Keyboard className="size-5" aria-hidden="true" />
+            </button>
+          )}
           <CloseButton onClick={onClose} aria-label={t("listenRepeat.exit")} />
         </div>
       </div>

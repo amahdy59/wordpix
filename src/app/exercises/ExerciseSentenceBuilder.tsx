@@ -352,6 +352,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
             {feedback === "incorrect" && !accessibility.autoAdvance && (
               <Button
                 size="lg"
+                hotkey="↵ Enter"
                 iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
                 onClick={handleContinue}
               >
