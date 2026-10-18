@@ -10,14 +10,21 @@ export function recallChoices(prompt: BusinessRecallPrompt, unit: BusinessUnit):
     ...unit.languageBank.map((item) => item.term),
   ];
   const seen = new Set([answer.toLocaleLowerCase()]);
-  const distractors = candidates
-    .filter((candidate) => {
-      const key = candidate.trim().toLocaleLowerCase();
-      if (!key || seen.has(key) || candidate.includes(" ") !== phrases) return false;
-      seen.add(key);
-      return true;
-    })
-    .slice(0, 3);
+  const eligible = candidates.filter((candidate) => {
+    const key = candidate.trim().toLocaleLowerCase();
+    if (!key || seen.has(key) || candidate.includes(" ") !== phrases) return false;
+    seen.add(key);
+    return true;
+  });
+  const promptSeed = [...prompt.id].reduce((sum, char) => sum * 31 + char.charCodeAt(0), 0) >>> 0;
+  const shuffled = [...eligible];
+  let state = promptSeed;
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    state = (state * 1664525 + 1013904223) >>> 0;
+    const j = state % (i + 1);
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  const distractors = shuffled.slice(0, 3);
   const position =
     [...prompt.id].reduce((sum, char) => sum + char.charCodeAt(0), 0) % (distractors.length + 1);
   distractors.splice(position, 0, answer);

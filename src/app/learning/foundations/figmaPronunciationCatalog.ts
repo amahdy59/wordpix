@@ -327,15 +327,27 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
     teachItems[0]?.label ??
     items[0]?.label ??
     title;
-  const contrastLine = lesson.text.find((line) => line.includes("|") && /(?:\/|–|—)/.test(line));
-  const contrastPairs = (contrastLine?.split("|") ?? [])
-    .map((pair) =>
-      pair
-        .trim()
-        .split(/\s*(?:\/|–|—)\s*/)
-        .filter(Boolean)
+  const contrastLines = lesson.text.filter((line) => line.includes("|") && /(?:\/|–|—)/.test(line));
+  const contrastPairs = contrastLines
+    .flatMap((line) =>
+      line.split("|").map((pair) =>
+        pair
+          .trim()
+          .replace(
+            /^(?:Initial|Final|Review|Fresh transfer|Transfer|Unseen testing targets|Production bank):\s*/i,
+            ""
+          )
+          .replace(/\s*\([^)]*\)/g, "")
+          .replace(/\s*\[[^\]]*\]/g, "")
+          .split(/\s*(?:\/|–|—)\s*/)
+          .map((item) => item.trim())
+          .filter(Boolean)
+      )
     )
-    .filter((pair): pair is [string, string] => pair.length === 2)
+    .filter(
+      (pair): pair is [string, string] =>
+        pair.length === 2 && pair[0].toLowerCase() !== pair[1].toLowerCase()
+    )
     .map(([first, second]) => [first, second] as const);
   const focus =
     valueAfter(lesson.text, /^(?:Linguistic Focus|Acoustic Cue|Contrast Focus|Focus):/i) ??
@@ -416,17 +428,31 @@ export function getPronunciationQuestion(
   const partner = getPronunciationContrastPartner(activity, target.label);
   const normalized = (label: string) => label.trim().toLocaleLowerCase("en-US");
   const partnerItem = activity.items.find(
-    (item) => partner && normalized(item.label) === normalized(partner)
+    (item) =>
+      partner &&
+      normalized(item.label) === normalized(partner) &&
+      normalized(item.label) !== normalized(target.label)
   );
-  const candidates = uniqueItems([
-    target,
-    ...(partnerItem ? [partnerItem] : []),
-    ...pool,
-    ...activity.items,
-  ]);
   const count = childMode || stage <= 2 ? 2 : 4;
+  const remainingCandidates = uniqueItems(
+    [...pool, ...activity.items].filter((item) => {
+      const norm = normalized(item.label);
+      return (
+        norm !== normalized(target.label) &&
+        (!partnerItem || norm !== normalized(partnerItem.label))
+      );
+    })
+  );
+  // Shuffled candidate pool seeded dynamically per trial so distractors vary across questions
+  const distractorSeed = number * 10007 + stage * 1009 + trial * 97 + 11;
+  const shuffledCandidates = seededPronunciationShuffle(remainingCandidates, distractorSeed);
+  const needed = count - 1 - (partnerItem ? 1 : 0);
+  const selectedDistractors = [
+    ...(partnerItem ? [partnerItem] : []),
+    ...shuffledCandidates.slice(0, needed),
+  ];
   const choices = seededPronunciationShuffle(
-    candidates.slice(0, count),
+    [target, ...selectedDistractors],
     number * 31 + stage * 17 + trial * 13
   );
   if (choices.length < 2) throw new Error(`Pronunciation lesson ${number} needs a distractor`);

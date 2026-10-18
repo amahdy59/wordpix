@@ -1,12 +1,41 @@
 {
-  "version": "0.1.64",
+  "version": "0.1.65",
   "notes": [
-    "Introduced a standardized, WCAG 2.2 AAA compliant DropdownMenu component following the Untitled UI v8 design system, replacing unstyled stacked pills with structured action lists and accessible toggle switches with full keyboard navigation."
+    "Fixed exercise distractor selection across curricula to dynamically shuffle choice options, eliminating repeated distractor bias (such as 'cat' showing on every question) and aligning pronunciation exercises with authored minimal pair contrasts."
   ],
   "notesAr": [
-    "إطلاق مكوّن القوائم المنسدلة DropdownMenu الموحّد والمطابق لمعايير WCAG 2.2 AAA ونظام Untitled UI v8، واستبدال الأزرار المتراكمة العشوائية بقوائم إجراءات منظمة ومفاتيح تبديل تفاعلية مع دعم كامل للتنقل عبر لوحة المفاتيح."
+    "إصلاح خوارزمية اختيار الإجابات المشوشة في التمارين عبر مختلف المناهج لخلط الخيارات عشوائياً بشكل ديناميكي، مما يمنع تكرار نفس الكلمة (مثل ظهور 'cat' في كل سؤال) ومحاذاة تمارين النطق مع أزواج التباين الصوتي المصممة."
   ],
   "releases": [
+    {
+      "id": "0.1.65",
+      "version": "0.1.65",
+      "date": "2026-10-18",
+      "title": {
+        "en": "Dynamic exercise distractor shuffling, elimination prevention, and minimal pair contrast alignment",
+        "ar": "خلط عشوائي ديناميكي للخيارات في التمارين، منع أسلوب الاستبعاد، ومحاذاة أزواج التباين الصوتي"
+      },
+      "changes": [
+        {
+          "id": "dynamic-distractor-shuffling",
+          "category": "fixed",
+          "en": "Fixed question distractor generation to dynamically shuffle candidate choices before slicing, eliminating repeated distractor bias (such as 'cat' showing on every question) and preventing answer elimination shortcuts.",
+          "ar": "إصلاح توليد خيارات الإجابات المشوشة في التمارين عبر خلطها عشوائياً بشكل ديناميكي قبل الاقتطاع، مما يمنع تكرار نفس الكلمة المشوشة (مثل ظهور كلمة 'cat' في كل سؤال) ويقضي على حل الأسئلة بطريقة الاستبعاد السهلة."
+        },
+        {
+          "id": "pronunciation-contrast-pairs-complete",
+          "category": "improved",
+          "en": "Extracted all authored minimal pair contrast lines across pronunciation lessons (such as 'pig/big' and 'cat/fish'), prioritizing pedagogically authentic contrasts over generic fallback words.",
+          "ar": "استخراج كافة أسطر أزواج التباين الصوتي المصممة في دروس النطق (مثل 'pig/big' و 'cat/fish')، مع إعطاء الأولوية للتباينات الصوتية التعليمية الدقيقة بدلاً من الكلمات البديلة العامة."
+        },
+        {
+          "id": "global-practice-variety",
+          "category": "improved",
+          "en": "Applied dynamic distractor shuffling globally across practice and business recall exercises so question options vary naturally across different trials and attempts.",
+          "ar": "تطبيق الخلط الديناميكي للخيارات المشوشة شمولياً عبر تمارين الممارسة وتذكر مفردات الأعمال لتتنوع خيارات الأسئلة بشكل طبيعي عبر المحاولات المختلفة."
+        }
+      ]
+    },
     {
       "id": "0.1.64",
       "version": "0.1.64",
