@@ -142,7 +142,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                 }))}
                 media={
                   exercise.type === "image-choice" ? (
-                    <figure className="mx-auto w-full max-w-64 overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
+                    <figure className="mx-auto w-full max-w-sm sm:max-w-md overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
                       <HadithImageClue
                         key={exercise.id}
                         imageRef={exercise.imageRef}

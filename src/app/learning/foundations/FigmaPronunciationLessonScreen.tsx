@@ -459,8 +459,8 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
         ))}
       </ul>
       <div className="flex flex-wrap gap-2">
-        {activity.contrastPairs.map(([a, b]) => (
-          <div key={`${a}:${b}`} className="flex flex-wrap gap-1" lang="en" dir="ltr">
+        {activity.contrastPairs.map(([a, b], pairIndex) => (
+          <div key={`${a}:${b}:${pairIndex}`} className="flex flex-wrap gap-1" lang="en" dir="ltr">
             {[a, b].map((word, index) => (
               <button
                 key={`${word}:${index}`}
@@ -558,7 +558,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
       className="wp-lesson-session min-h-dvh w-full overflow-y-auto bg-background"
       aria-labelledby="pronunciation-title"
     >
-      <div className="wp-container-content wp-layout-gutter py-4 sm:py-6">
+      <div className="wp-container-wide wp-layout-gutter py-4 sm:py-6 flex flex-col min-h-[calc(100dvh-1.5rem)]">
         {completedScore !== null ? (
           <div className="mx-auto max-w-2xl flex flex-col gap-6">
             <div className="flex items-center justify-between">
@@ -684,9 +684,9 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </section>
           </div>
         ) : (
-          <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
+          <div className="flex flex-col lg:flex-row lg:items-stretch lg:gap-8 flex-1 min-h-0">
             {/* Side-Rail Workspace on Desktop (lg+) / Context Header on Mobile */}
-            <aside className="w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
+            <aside className="w-full lg:w-80 lg:shrink-0 lg:self-start lg:sticky lg:top-6 flex flex-col gap-4">
               <div className="flex items-center justify-between gap-2">
                 <button
                   type="button"
@@ -881,7 +881,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </aside>
 
             {/* Main Focus Stage: dedicated exclusively to the question, prompt, audio, and choices */}
-            <div className="flex-1 min-w-0 flex flex-col gap-4">
+            <div className="flex-1 min-w-0 flex flex-col justify-between gap-4">
               {progress?.status === "in-progress" && progress.session?.version !== 2 && (
                 <p role="status" className="text-sm text-foreground">
                   {t("lessonShell.legacyResume")}
@@ -889,8 +889,11 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               )}
 
               {/* Focused Question Header & Audio Controls */}
-              <section className="space-y-4" aria-labelledby="pronunciation-instruction">
-                <div className="rounded-2xl border border-border bg-card p-4 sm:p-5 shadow-wp-xs space-y-3">
+              <section
+                className="flex-1 min-h-0 flex flex-col gap-4"
+                aria-labelledby="pronunciation-instruction"
+              >
+                <div className="rounded-2xl border border-border bg-card p-4 sm:p-5 shadow-wp-xs space-y-3 shrink-0">
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <h2
                       id="pronunciation-instruction"
@@ -1002,7 +1005,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
 
                 {/* Stage Exercise Area */}
                 {stage === 0 ? (
-                  <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  <div className="flex-1 min-h-0 grid grid-cols-2 gap-3.5 sm:grid-cols-4 auto-rows-fr">
                     {activity.items.map((item) => (
                       <button
                         key={item.label}
@@ -1015,11 +1018,16 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                             : undefined
                         }
                         onClick={() => play(item.label)}
-                        className={`min-h-11 overflow-hidden rounded-xl border border-border bg-card ${focusRing}`}
+                        className={`group flex flex-col min-h-11 overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary hover:shadow-wp-sm ${focusRing}`}
                       >
-                        <WordImage item={item} className="aspect-square w-full object-cover" />
+                        <div className="relative w-full flex-1 min-h-[140px] sm:min-h-[180px] overflow-hidden bg-muted/40">
+                          <WordImage
+                            item={item}
+                            className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
+                          />
+                        </div>
                         <span
-                          className="flex min-h-11 items-center justify-center px-2 py-2 font-bold"
+                          className="flex min-h-12 shrink-0 items-center justify-center px-3 py-2 text-base font-bold text-foreground border-t border-border/70 bg-card"
                           lang="en"
                           dir="ltr"
                         >
@@ -1061,10 +1069,10 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                       {/* Hero Prompt Card */}
                       <div className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-card p-6 sm:p-8 text-center shadow-wp-xs">
                         {target && target.imageRef && (
-                          <div className="w-full max-w-sm overflow-hidden rounded-2xl border border-border/80 bg-muted/20 shadow-wp-xs">
+                          <div className="w-full max-w-md sm:max-w-xl overflow-hidden rounded-2xl border border-border/80 bg-muted/20 shadow-wp-xs">
                             <WordImage
                               item={target}
-                              className="aspect-[16/9] w-full object-cover"
+                              className="aspect-[16/10] sm:aspect-[16/9] w-full object-cover object-center"
                             />
                           </div>
                         )}
@@ -1131,66 +1139,82 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     </div>
                   )
                 ) : (
-                  <div className="grid gap-3.5 sm:grid-cols-2">
-                    {question?.choices.map((item, index) => (
-                      <button
-                        key={item.label}
-                        type="button"
-                        tabIndex={0}
-                        aria-pressed={session.answer === item.label}
-                        aria-disabled={passed || audioUnavailable}
-                        aria-label={t("pronunciation.choiceLabel", {
-                          number: index + 1,
-                          word: item.label,
-                        })}
-                        onClick={() => selectAnswer(item.label)}
-                        className={`group overflow-hidden rounded-2xl border-2 bg-card text-start font-bold transition-all ${focusRing} ${
-                          session.answer === item.label
-                            ? passed
-                              ? "border-feedback-success bg-feedback-success-surface"
-                              : "border-feedback-error-border bg-feedback-error-surface"
-                            : "border-border hover:border-primary hover:shadow-wp-xs"
-                        }`}
-                        dir="ltr"
-                      >
-                        {Boolean(item.imageRef) && (
-                          <WordImage
-                            item={item}
-                            className="block h-28 sm:h-36 w-full object-cover transition-transform group-hover:scale-[1.02] motion-reduce:group-hover:scale-100"
-                          />
-                        )}
-                        <div className="flex min-h-12 items-center justify-between gap-2 px-3.5 py-2">
-                          <span className="flex items-center gap-2">
-                            {passed && session.answer === item.label && (
-                              <Check
-                                className="size-5 text-feedback-success shrink-0"
-                                aria-hidden
-                              />
-                            )}
-                            <span
-                              lang="en"
-                              dir="ltr"
-                              className="min-w-0 break-words text-base font-bold text-foreground"
+                  <div className="flex-1 min-h-0 flex flex-col">
+                    <div
+                      className={`grid min-h-0 w-full flex-1 gap-4 ${
+                        question?.choices.length === 2
+                          ? "grid-cols-1 sm:grid-cols-2"
+                          : "grid-cols-2 lg:grid-cols-4"
+                      }`}
+                    >
+                      {question?.choices.map((item, index) => (
+                        <button
+                          key={item.label}
+                          type="button"
+                          tabIndex={0}
+                          aria-pressed={session.answer === item.label}
+                          aria-disabled={passed || audioUnavailable}
+                          aria-label={t("pronunciation.choiceLabel", {
+                            number: index + 1,
+                            word: item.label,
+                          })}
+                          onClick={() => selectAnswer(item.label)}
+                          className={`group flex flex-col h-full min-h-0 overflow-hidden rounded-2xl border-2 bg-card text-start font-bold transition-all ${focusRing} ${
+                            session.answer === item.label
+                              ? passed
+                                ? "border-feedback-success bg-feedback-success-surface"
+                                : "border-feedback-error-border bg-feedback-error-surface"
+                              : "border-border hover:border-primary hover:shadow-wp-sm"
+                          }`}
+                          dir="ltr"
+                        >
+                          {Boolean(item.imageRef) && (
+                            <div
+                              className={`relative w-full flex-1 min-h-[220px] sm:min-h-[280px] md:min-h-[340px] ${
+                                question?.choices.length === 2
+                                  ? "lg:min-h-[380px] xl:min-h-[440px]"
+                                  : "lg:min-h-[220px] xl:min-h-[280px]"
+                              } overflow-hidden bg-muted/40`}
                             >
-                              {item.label}
-                            </span>
-                            {getStressBeatPattern(lessonNumber, item.label) && (
+                              <WordImage
+                                item={item}
+                                className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
+                              />
+                            </div>
+                          )}
+                          <div className="flex min-h-12 shrink-0 items-center justify-between gap-2 px-4 py-3 bg-card border-t border-border/70">
+                            <span className="flex items-center gap-2">
+                              {passed && session.answer === item.label && (
+                                <Check
+                                  className="size-5 text-feedback-success shrink-0"
+                                  aria-hidden
+                                />
+                              )}
                               <span
-                                className="rounded bg-secondary/80 px-1.5 py-0.5 text-xs font-bold text-primary"
-                                aria-label={t("pronunciation.rhythmBeatAria", {
-                                  beat: getStressBeatPattern(lessonNumber, item.label)!,
-                                })}
+                                lang="en"
+                                dir="ltr"
+                                className="min-w-0 break-words text-lg sm:text-xl font-black text-foreground"
                               >
-                                {getStressBeatPattern(lessonNumber, item.label)}
+                                {item.label}
                               </span>
-                            )}
-                          </span>
-                          <kbd className="hidden sm:inline-flex h-5 min-w-5 items-center justify-center rounded border border-border bg-muted px-1.5 font-mono text-[11px] font-semibold text-muted-foreground shadow-wp-xs">
-                            {index + 1}
-                          </kbd>
-                        </div>
-                      </button>
-                    ))}
+                              {getStressBeatPattern(lessonNumber, item.label) && (
+                                <span
+                                  className="rounded bg-secondary/80 px-2 py-0.5 text-xs font-bold text-primary"
+                                  aria-label={t("pronunciation.rhythmBeatAria", {
+                                    beat: getStressBeatPattern(lessonNumber, item.label)!,
+                                  })}
+                                >
+                                  {getStressBeatPattern(lessonNumber, item.label)}
+                                </span>
+                              )}
+                            </span>
+                            <kbd className="hidden sm:inline-flex h-6 min-w-6 items-center justify-center rounded-lg border border-border bg-muted px-2 font-mono text-xs font-bold text-muted-foreground shadow-wp-xs">
+                              {index + 1}
+                            </kbd>
+                          </div>
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 )}
 
@@ -1239,24 +1263,48 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               </section>
 
               {/* Sticky Action Footer */}
-              <div className="wp-sticky-controls relative z-30 border-t border-border bg-background py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+              <div className="wp-sticky-controls relative z-30 shrink-0 border-t border-border bg-background py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
                 {canAdvance ? (
-                  <button
-                    type="button"
-                    onClick={advance}
-                    className={`flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-base font-bold text-primary-foreground ${focusRing}`}
-                  >
-                    {stage === 0
-                      ? t("lessonShell.startListening")
-                      : session.trial < trials - 1
-                        ? t("lessonShell.nextQuestion")
-                        : stage === 4
-                          ? t("lessonShell.seeResults")
-                          : t("lessonShell.nextStep", {
-                              name: t(`lessonShell.stages.${STAGES[stage + 1]}`),
-                            })}
-                    <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-                  </button>
+                  <div className="flex flex-col gap-2">
+                    <button
+                      type="button"
+                      onClick={advance}
+                      className={`flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-base font-bold text-primary-foreground ${focusRing}`}
+                    >
+                      {stage === 0
+                        ? t("lessonShell.startListening")
+                        : session.trial < trials - 1
+                          ? t("lessonShell.nextQuestion")
+                          : stage === 4
+                            ? t("lessonShell.seeResults")
+                            : t("lessonShell.nextStep", {
+                                name: t(`lessonShell.stages.${STAGES[stage + 1]}`),
+                              })}
+                      <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+                    </button>
+                    {autoAdvance.isPending && (
+                      <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
+                        <p className="text-sm font-semibold text-primary flex items-center gap-2">
+                          <span
+                            className="size-2 rounded-full bg-primary animate-ping"
+                            aria-hidden
+                          />
+                          {t("lessonShell.autoAdvancing")}
+                        </p>
+                        <button
+                          type="button"
+                          className={`min-h-11 ${buttonClass} text-sm px-4`}
+                          onClick={() => {
+                            clearPending();
+                            setAccessibility({ autoAdvance: false });
+                            setDrillAutoAdvance(false);
+                          }}
+                        >
+                          {t("lessonShell.pauseAdvance")}
+                        </button>
+                      </div>
+                    )}
+                  </div>
                 ) : (
                   <p className="text-center text-base text-foreground">
                     {t(
@@ -1265,19 +1313,6 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                         : "pronunciation.answerPrompt"
                     )}
                   </p>
-                )}
-                {autoAdvance.isPending && (
-                  <button
-                    type="button"
-                    className={`min-h-11 ${buttonClass} mt-2 w-full`}
-                    onClick={() => {
-                      clearPending();
-                      setAccessibility({ autoAdvance: false });
-                      setDrillAutoAdvance(false);
-                    }}
-                  >
-                    {t("lessonShell.pauseAdvance")}
-                  </button>
                 )}
               </div>
             </div>

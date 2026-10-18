@@ -1,12 +1,35 @@
 {
-  "version": "0.1.65",
+  "version": "0.1.66",
   "notes": [
-    "Fixed exercise distractor selection across curricula to dynamically shuffle choice options, eliminating repeated distractor bias (such as 'cat' showing on every question) and aligning pronunciation exercises with authored minimal pair contrasts."
+    "Optimized pronunciation and exercise layouts to efficiently utilize screen whitespace on desktop displays with larger responsive images, and streamlined auto-advance progression with live status feedback and pause controls."
   ],
   "notesAr": [
-    "إصلاح خوارزمية اختيار الإجابات المشوشة في التمارين عبر مختلف المناهج لخلط الخيارات عشوائياً بشكل ديناميكي، مما يمنع تكرار نفس الكلمة (مثل ظهور 'cat' في كل سؤال) ومحاذاة تمارين النطق مع أزواج التباين الصوتي المصممة."
+    "تحسين تخطيط تمارين النطق والأسئلة للاستفادة المثلى من المساحات البيضاء على الشاشات الكبيرة بصور متجاوبة أكبر، وتبسيط التنقل التلقائي بمؤشر تقدم مباشر وأدوات تحكم في الإيقاف المؤقت."
   ],
   "releases": [
+    {
+      "id": "0.1.66",
+      "version": "0.1.66",
+      "date": "2026-10-18",
+      "title": {
+        "en": "Viewport whitespace optimization, responsive card scaling, and streamlined auto-advance controls",
+        "ar": "تحسين استغلال المساحات البيضاء للشاشات، تحجيم البطاقات المتجاوب، وأدوات تحكم سلسة في التقدم التلقائي"
+      },
+      "changes": [
+        {
+          "id": "whitespace-and-image-scaling",
+          "category": "improved",
+          "en": "Optimized pronunciation and skill practice exercise layouts to eliminate dead viewport whitespace on desktop viewports, expanding card images up to 440px with responsive aspect ratios for immersive visual learning.",
+          "ar": "تحسين تخطيط تمارين النطق وممارسة المهارات للاستفادة الكاملة من المساحات البيضاء على الشاشات الكبيرة، وتوسيع صور البطاقات حتى 440 بكسل مع نسب أبعاد متجاوبة لتجربة تعلم بصري متكاملة."
+        },
+        {
+          "id": "auto-advance-status-indicator",
+          "category": "improved",
+          "en": "Streamlined auto-advance navigation with clear live progress feedback and one-click pause controls while preserving instant manual progression.",
+          "ar": "تحسين التنقل التلقائي بمؤشر تقدم مباشر وأدوات إيقاف مؤقت بنقرة واحدة مع الحفاظ على إمكانية التقدم اليدوي الفوري."
+        }
+      ]
+    },
     {
       "id": "0.1.65",
       "version": "0.1.65",
