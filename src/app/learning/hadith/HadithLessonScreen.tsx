@@ -1,8 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Check, RotateCcw } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, RotateCcw, SlidersHorizontal } from "lucide-react";
 import type { Action } from "../../types";
 import { useI18n } from "../../../i18n";
 import { useAudio } from "../../shared/useAudio";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+} from "../../shared/DropdownMenu";
 import { useLearner } from "../../context/LearnerContext";
 import { HADITH_STAGE_IDS, HADITH_LESSONS, getHadithLesson } from "./hadithCurriculum";
 import { FIGMA_HADITH_LESSONS } from "./figmaHadithCatalog";
@@ -196,30 +203,33 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
                 <span>{t("ux.backToCourse") || "Back to curriculum"}</span>
               </button>
 
-              <details className="group shrink-0 relative">
-                <summary
-                  aria-label={t("hadith.lessonDetails")}
-                  className={`inline-flex min-h-11 cursor-pointer list-none items-center rounded-xl border border-border bg-card px-3 py-2 text-sm font-bold text-foreground transition-colors hover:bg-muted ${focusRing}`}
+              <DropdownMenu>
+                <DropdownMenuTrigger
+                  ariaLabel={t("hadith.lessonDetails")}
+                  title={t("hadith.lessonDetails")}
+                  className={`inline-flex min-h-11 items-center gap-1.5 rounded-xl border border-border bg-card px-3.5 py-2 text-sm font-bold text-foreground transition-colors hover:bg-muted ${focusRing}`}
+                  icon={<SlidersHorizontal className="size-4" aria-hidden="true" />}
                 >
-                  <span aria-hidden className="sm:hidden">
-                    {t("hadith.lessonDetailsShort")}
-                  </span>
-                  <span aria-hidden className="hidden sm:inline">
-                    {t("hadith.lessonDetails")}
-                  </span>
-                </summary>
-                <div className="absolute end-0 top-full mt-2 z-50 w-72 sm:w-80 rounded-2xl border border-border bg-card p-4 shadow-wp-lg">
+                  <span className="sm:hidden">{t("hadith.lessonDetailsShort")}</span>
+                  <span className="hidden sm:inline">{t("hadith.lessonDetails")}</span>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent
+                  align="end"
+                  className="w-[calc(100vw-2rem)] max-w-sm sm:w-80 p-3"
+                >
+                  <div className="border-b border-border/60 pb-2 mb-2">
+                    <p className="text-sm font-bold text-foreground">{t("hadith.lessonDetails")}</p>
+                  </div>
                   <HadithOverviewSummary overview={parsedStages.overview} />
-                  <button
-                    type="button"
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem
+                    icon={<RotateCcw className="size-4" aria-hidden="true" />}
                     onClick={reset}
-                    className={`mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-border bg-background px-3 text-sm font-bold text-foreground hover:bg-muted ${focusRing}`}
                   >
-                    <RotateCcw className="size-4" aria-hidden />
                     {t("hadith.resetLesson")}
-                  </button>
-                </div>
-              </details>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
 
             {/* Lesson Context Card */}

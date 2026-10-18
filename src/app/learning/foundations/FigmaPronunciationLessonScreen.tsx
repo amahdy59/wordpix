@@ -5,13 +5,26 @@ import {
   Check,
   FastForward,
   Headphones,
+  Mic,
   MicOff,
+  RotateCcw,
+  SlidersHorizontal,
   Volume2,
+  Zap,
 } from "lucide-react";
 import type { Action } from "../../types";
 import { Button } from "../../shared/Button";
 import { CourseLessonNavigation } from "../../shared/CourseLessonNavigation";
 import { HelpDisclosure } from "../../shared/HelpDisclosure";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuToggleItem,
+  DropdownMenuSeparator,
+  DropdownMenuLabel,
+} from "../../shared/DropdownMenu";
 import { useAudioRecoveryMessage } from "../../shared/AudioRecoveryStatus";
 import { useAudio } from "../../shared/useAudio";
 import { ADVANCE_DELAY_MS, useAutoAdvance } from "../../shared/useAutoAdvance";
@@ -686,90 +699,128 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
                   {t("ux.backToCourse")}
                 </button>
-                <HelpDisclosure label={t("lessonShell.options")} variant="icon">
-                  <button type="button" className={buttonClass} onClick={reset}>
-                    {t("lessonShell.restart")}
-                  </button>
-                  {previousLesson && (
-                    <button
-                      type="button"
-                      className={buttonClass}
-                      onClick={() => go(previousLesson.number)}
-                    >
-                      {t("pronunciation.previousLesson")}
-                    </button>
-                  )}
-                  {nextLesson && (
-                    <button
-                      type="button"
-                      className={buttonClass}
-                      onClick={() => go(nextLesson.number)}
-                    >
-                      {t("pronunciation.nextLesson")}
-                    </button>
-                  )}
-                  <button
-                    type="button"
-                    aria-pressed={isAutoAdvance}
+                <DropdownMenu>
+                  <DropdownMenuTrigger
+                    ariaLabel={t("lessonShell.options")}
+                    title={t("lessonShell.options")}
                     className={buttonClass}
-                    onClick={() => {
-                      clearPending();
-                      if (state.accessibility.autoAdvance) {
-                        setAccessibility({ autoAdvance: false });
-                      }
-                      setDrillAutoAdvance(!isAutoAdvance);
-                    }}
+                    icon={<SlidersHorizontal className="size-5" aria-hidden="true" />}
+                  />
+                  <DropdownMenuContent
+                    align="end"
+                    className="w-[calc(100vw-2rem)] max-w-xs sm:w-80"
                   >
-                    {t(isAutoAdvance ? "lessonShell.autoOn" : "lessonShell.autoOff")}
-                  </button>
-                  {stage === 3 && (
-                    <button
-                      type="button"
-                      className={buttonClass}
-                      onClick={skipEntireSpeakingSection}
+                    <div className="border-b border-border/60 px-3 py-2 mb-1">
+                      <p className="text-sm font-bold text-foreground">
+                        {t("lessonShell.options")}
+                      </p>
+                      <p className="truncate text-xs text-muted-foreground">{activity.title}</p>
+                    </div>
+
+                    <DropdownMenuLabel>{t("lessonShell.actions")}</DropdownMenuLabel>
+                    <DropdownMenuItem
+                      icon={<RotateCcw className="size-4" aria-hidden="true" />}
+                      onClick={reset}
                     >
-                      <FastForward className="size-4 rtl:rotate-180 text-primary" aria-hidden />
-                      {t("pronunciationEnhancements.skipSpeakingSection")}
-                    </button>
-                  )}
-                  <button
-                    type="button"
-                    aria-pressed={state.accessibility.includeSpeaking}
-                    className={buttonClass}
-                    onClick={() => {
-                      clearPending();
-                      const nextVal = !state.accessibility.includeSpeaking;
-                      setAccessibility({ includeSpeaking: nextVal });
-                      if (!nextVal && stage === 3) {
-                        skipEntireSpeakingSection();
-                      }
-                    }}
-                  >
-                    {t("pronunciationEnhancements.speakingToggle", {
-                      state: state.accessibility.includeSpeaking
-                        ? t("settings.enabled")
-                        : t("settings.disabled"),
-                    })}
-                  </button>
-                  <button
-                    type="button"
-                    aria-pressed={state.accessibility.autoPlayAudio !== false}
-                    className={buttonClass}
-                    onClick={() => {
-                      clearPending();
-                      setAccessibility({
-                        autoPlayAudio: !(state.accessibility.autoPlayAudio !== false),
-                      });
-                    }}
-                  >
-                    {t("pronunciationEnhancements.autoPlayAudioToggle", {
-                      state:
-                        state.accessibility.autoPlayAudio !== false
+                      {t("lessonShell.restart")}
+                    </DropdownMenuItem>
+                    {previousLesson && (
+                      <DropdownMenuItem
+                        icon={<ArrowLeft className="size-4 rtl:rotate-180" aria-hidden="true" />}
+                        onClick={() => go(previousLesson.number)}
+                      >
+                        {t("pronunciation.previousLesson")}
+                      </DropdownMenuItem>
+                    )}
+                    {nextLesson && (
+                      <DropdownMenuItem
+                        icon={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden="true" />}
+                        onClick={() => go(nextLesson.number)}
+                      >
+                        {t("pronunciation.nextLesson")}
+                      </DropdownMenuItem>
+                    )}
+                    {stage === 3 && (
+                      <DropdownMenuItem
+                        icon={
+                          <FastForward
+                            className="size-4 rtl:rotate-180 text-primary"
+                            aria-hidden="true"
+                          />
+                        }
+                        onClick={skipEntireSpeakingSection}
+                      >
+                        {t("pronunciationEnhancements.skipSpeakingSection")}
+                      </DropdownMenuItem>
+                    )}
+
+                    <DropdownMenuSeparator />
+
+                    <DropdownMenuLabel>{t("lessonShell.preferences")}</DropdownMenuLabel>
+                    <DropdownMenuToggleItem
+                      icon={<Zap className="size-4 text-primary" aria-hidden="true" />}
+                      label={t("lessonShell.autoAdvance")}
+                      description={t("lessonShell.autoAdvanceDesc")}
+                      stateText={t(isAutoAdvance ? "settings.enabled" : "settings.disabled")}
+                      ariaLabel={t(isAutoAdvance ? "lessonShell.autoOn" : "lessonShell.autoOff")}
+                      checked={isAutoAdvance}
+                      onCheckedChange={() => {
+                        clearPending();
+                        if (state.accessibility.autoAdvance) {
+                          setAccessibility({ autoAdvance: false });
+                        }
+                        setDrillAutoAdvance(!isAutoAdvance);
+                      }}
+                    />
+                    <DropdownMenuToggleItem
+                      icon={<Mic className="size-4 text-primary" aria-hidden="true" />}
+                      label={t("lessonShell.speakingExercises")}
+                      description={t("lessonShell.speakingExercisesDesc")}
+                      stateText={t(
+                        state.accessibility.includeSpeaking
+                          ? "settings.enabled"
+                          : "settings.disabled"
+                      )}
+                      ariaLabel={t("pronunciationEnhancements.speakingToggle", {
+                        state: state.accessibility.includeSpeaking
                           ? t("settings.enabled")
                           : t("settings.disabled"),
-                    })}
-                  </button>
-                </HelpDisclosure>
+                      })}
+                      checked={state.accessibility.includeSpeaking}
+                      onCheckedChange={() => {
+                        clearPending();
+                        const nextVal = !state.accessibility.includeSpeaking;
+                        setAccessibility({ includeSpeaking: nextVal });
+                        if (!nextVal && stage === 3) {
+                          skipEntireSpeakingSection();
+                        }
+                      }}
+                    />
+                    <DropdownMenuToggleItem
+                      icon={<Volume2 className="size-4 text-primary" aria-hidden="true" />}
+                      label={t("lessonShell.autoPlayAudio")}
+                      description={t("lessonShell.autoPlayAudioDesc")}
+                      stateText={t(
+                        state.accessibility.autoPlayAudio !== false
+                          ? "settings.enabled"
+                          : "settings.disabled"
+                      )}
+                      ariaLabel={t("pronunciationEnhancements.autoPlayAudioToggle", {
+                        state:
+                          state.accessibility.autoPlayAudio !== false
+                            ? t("settings.enabled")
+                            : t("settings.disabled"),
+                      })}
+                      checked={state.accessibility.autoPlayAudio !== false}
+                      onCheckedChange={() => {
+                        clearPending();
+                        setAccessibility({
+                          autoPlayAudio: !(state.accessibility.autoPlayAudio !== false),
+                        });
+                      }}
+                    />
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
 
               {/* Lesson Context Card */}

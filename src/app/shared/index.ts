@@ -37,6 +37,22 @@ export { CurriculumTopicCard } from "./CurriculumTopicCard";
 export type { CurriculumTopicCardProps } from "./CurriculumTopicCard";
 
 export { HelpDisclosure } from "./HelpDisclosure";
+export {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuToggleItem,
+  DropdownMenuSeparator,
+  DropdownMenuLabel,
+} from "./DropdownMenu";
+export type {
+  DropdownMenuProps,
+  DropdownMenuTriggerProps,
+  DropdownMenuContentProps,
+  DropdownMenuItemProps,
+  DropdownMenuToggleItemProps,
+} from "./DropdownMenu";
 export { LessonActionDock } from "./LessonActionDock";
 export type { LessonActionDockProps } from "./LessonActionDock";
 

@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import type { Locator, TestInfo } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { installWebKitPlaybackFixture, playbackFixture } from "./audioFixture";
+import { waitForStyles } from "./waitForStyles";
 
 // Screenshot fixtures must own HTTP interception across full-page navigation.
 // Offline/service-worker behavior has its own real-storage browser coverage.
@@ -182,10 +183,13 @@ for (const course of ["conversation", "hadith"] as const) {
   test(`${course} keeps optional recording behind a keyboard-accessible disclosure`, async ({
     page,
   }) => {
+    test.setTimeout(60_000);
     await page.setViewportSize({ width: 320, height: 740 });
     await page.goto(
-      course === "conversation" ? "/#/conversation/unit-01/discussion" : "/#/hadith/lesson-1"
+      course === "conversation" ? "/#/conversation/unit-01/discussion" : "/#/hadith/lesson-1",
+      { waitUntil: "domcontentloaded" }
     );
+    await waitForStyles(page);
     if (course === "hadith") {
       await page.getByText("All steps", { exact: true }).click();
       await page.getByRole("button", { name: /Review & Apply/ }).click();

@@ -1,12 +1,41 @@
 {
-  "version": "0.1.63",
+  "version": "0.1.64",
   "notes": [
-    "Achieved 100% bespoke scene illustration coverage for the Supermarket unit with 24 newly mapped verified scenes, extended responsive side-rail workspaces to Hadith, Conversation, and Business lessons, and upgraded search and auth inputs to WCAG 2.2 AAA 3px focus indicators."
+    "Introduced a standardized, WCAG 2.2 AAA compliant DropdownMenu component following the Untitled UI v8 design system, replacing unstyled stacked pills with structured action lists and accessible toggle switches with full keyboard navigation."
   ],
   "notesAr": [
-    "اكتمال التغطية المصورة لمشاهد وحدة السوبرماركت بنسبة 100% مع ربط 24 مشهداً جديداً معتمداً، وتوسيع نطاق مساحات العمل الجانبية لتشمل دروس الحديث والمحادثة والأعمال، وترقية حقول البحث والمصادقة إلى مؤشرات تركيز 3 بكسل مطابقة لمعيار WCAG 2.2 AAA."
+    "إطلاق مكوّن القوائم المنسدلة DropdownMenu الموحّد والمطابق لمعايير WCAG 2.2 AAA ونظام Untitled UI v8، واستبدال الأزرار المتراكمة العشوائية بقوائم إجراءات منظمة ومفاتيح تبديل تفاعلية مع دعم كامل للتنقل عبر لوحة المفاتيح."
   ],
   "releases": [
+    {
+      "id": "0.1.64",
+      "version": "0.1.64",
+      "date": "2026-10-18",
+      "title": {
+        "en": "Design-system dropdown menus, accessible toggle switches, and lesson options architecture",
+        "ar": "قوائم منسدلة مطابقة للنظام التصميمي، مفاتيح تبديل سهلة الوصول، وهندسة خيارات الدروس"
+      },
+      "changes": [
+        {
+          "id": "dropdown-menu-system",
+          "category": "added",
+          "en": "Created a reusable, fully accessible DropdownMenu component system with animated elevation, auto-alignment, collision avoidance, and full WAI-ARIA keyboard navigation (arrows, Home/End, Escape, Tab).",
+          "ar": "إنشاء نظام مكوّنات DropdownMenu قابل لإعادة الاستخدام ومتكامل إمكانية الوصول، يتميز بارتفاع حركي ومحاذاة تلقائية وتفادي الاصطدام بحواف الشاشة ودعم كامل للتنقل بلوحة المفاتيح وفق معايير WAI-ARIA."
+        },
+        {
+          "id": "lesson-options-redesign",
+          "category": "improved",
+          "en": "Overhauled the pronunciation and hadith lesson options menus with categorized sections, semantic action icons, and inline animated switches for auto-advance, speaking checks, and audio autoplay.",
+          "ar": "تحديث شامل لقوائم خيارات دروس النطق والحديث النبوي، وتقسيمها إلى أقسام مصنفة مع أيقونات إجراءات دلالية ومفاتيح تبديل أنيقة للانتقال التلقائي وتمارين التحدث وتشغيل الصوت."
+        },
+        {
+          "id": "small-controls-ux",
+          "category": "improved",
+          "en": "Standardized small interactive controls across the application to enforce 44×44px minimum touch targets, 3px high-contrast visible focus rings, and strict design token compliance.",
+          "ar": "توحيد العناصر التفاعلية الصغيرة عبر التطبيق لضمان أهداف لمس لا تقل عن 44×44 بكسل، وحلقات تركيز بصرية واضحة بقياس 3 بكسل، والالتزام الكامل بالرموز التصميمية الدلالية."
+        }
+      ]
+    },
     {
       "id": "0.1.63",
       "version": "0.1.63",
