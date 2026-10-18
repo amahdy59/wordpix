@@ -431,7 +431,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
           className="wp-sticky-controls sticky top-0 z-20 flex flex-col gap-3 rounded-2xl bg-background/95 backdrop-blur-md py-2 border-b border-border/50"
         >
           {/* Enhanced Command Search Input */}
-          <div className="relative flex items-center w-full rounded-2xl border border-border/90 bg-wp-card shadow-xs transition-all focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20">
+          <div className="relative flex items-center w-full rounded-2xl border border-border/90 bg-wp-card shadow-xs transition-all focus-within:outline focus-within:outline-[3px] focus-within:outline-offset-2 focus-within:outline-primary">
             <div className="ps-3.5 pe-2 flex items-center pointer-events-none text-muted-foreground">
               <Search className="size-5" aria-hidden="true" />
             </div>

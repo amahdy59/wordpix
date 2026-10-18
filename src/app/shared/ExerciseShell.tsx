@@ -128,7 +128,7 @@ export const ExerciseShell = memo(function ExerciseShell({
             className={
               layout === "media"
                 ? "w-full flex flex-1 min-h-0 flex-col gap-4 justify-start pb-3"
-                : "w-full flex flex-col gap-3.5 sm:gap-5 justify-start pb-[calc(env(safe-area-inset-bottom)+1.5rem)] sm:pb-8"
+                : "w-full flex flex-col gap-3.5 sm:gap-5 justify-start pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:pb-8"
             }
           >
             {children}
@@ -137,7 +137,7 @@ export const ExerciseShell = memo(function ExerciseShell({
 
         {footer && (
           <footer
-            className={`${canvasClass} wp-layout-gutter shrink-0 flex flex-col border-t border-border bg-background pb-[calc(env(safe-area-inset-bottom)+0.75rem)] pt-3`}
+            className={`${canvasClass} wp-layout-gutter shrink-0 flex flex-col border-t border-border bg-background pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3`}
           >
             <div className="flex w-full flex-col gap-1.5">{footer}</div>
           </footer>

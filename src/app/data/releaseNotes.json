@@ -1,12 +1,41 @@
 {
-  "version": "0.1.62",
+  "version": "0.1.63",
   "notes": [
-    "Introduced a responsive side-rail workspace for pronunciation lessons with zero-scroll question autofocus, expanded curriculum scene illustration coverage with 184 reviewed scene images mapped across 13 units, and enabled automatic visual card fallbacks in sentence exercises."
+    "Achieved 100% bespoke scene illustration coverage for the Supermarket unit with 24 newly mapped verified scenes, extended responsive side-rail workspaces to Hadith, Conversation, and Business lessons, and upgraded search and auth inputs to WCAG 2.2 AAA 3px focus indicators."
   ],
   "notesAr": [
-    "إطلاق مساحة عمل جانبية لدروس النطق تضمن التركيز الكامل على السؤال والخيارات بدون تمرير، مع توسيع تغطية المشاهد المصورة بربط 184 مشهداً عبر 13 وحدة دراسية وتفعيل استرجاع تلقائي لصور المفردات."
+    "اكتمال التغطية المصورة لمشاهد وحدة السوبرماركت بنسبة 100% مع ربط 24 مشهداً جديداً معتمداً، وتوسيع نطاق مساحات العمل الجانبية لتشمل دروس الحديث والمحادثة والأعمال، وترقية حقول البحث والمصادقة إلى مؤشرات تركيز 3 بكسل مطابقة لمعيار WCAG 2.2 AAA."
   ],
   "releases": [
+    {
+      "id": "0.1.63",
+      "version": "0.1.63",
+      "date": "2026-10-18",
+      "title": {
+        "en": "100% Supermarket scene coverage, side-rail workspaces across curricula, and WCAG AAA focus styling",
+        "ar": "اكتمال مشاهد السوبرماركت بنسبة 100%، مساحات عمل جانبية للمناهج، ومطابقة معايير التركيز البصري الفائقة"
+      },
+      "changes": [
+        {
+          "id": "supermarket-complete-coverage",
+          "category": "improved",
+          "en": "Mapped and activated 24 verified contextual scene illustrations in the Supermarket unit, achieving 100% complete bespoke scene coverage across all 123 scenes and 25 lessons.",
+          "ar": "تفعيل وربط 24 مشهداً تعليمياً مصوراً لوحدة السوبرماركت، لتصل نسبة التغطية المصورة للمشاهد إلى 100% بالكامل عبر كافة المشاهد البالغ عددها 123 مشهداً في 25 درساً."
+        },
+        {
+          "id": "side-rail-workspaces-rollout",
+          "category": "improved",
+          "en": "Extended the responsive Side-Rail Workspace pattern to Hadith, Conversation, and Business lessons, anchoring course context and step navigation in an ergonomic desktop rail while dedicating the central stage exclusively to questions and learning activities.",
+          "ar": "تطبيق نمط مساحة العمل الجانبية على دروس الحديث والمحادثة والأعمال، وتثبيت سياق الدرس والتنقل في شريط جانبي مريح للشاشات الكبيرة مع تخصيص المساحة الرئيسية بالكامل للأسئلة والتفاعل."
+        },
+        {
+          "id": "wcag-aaa-focus-and-touch-standards",
+          "category": "improved",
+          "en": "Upgraded search and authentication inputs to standard 3px WCAG 2.2 AAA visible focus outlines, unified option badges across practice quizzes, and reinforced safe-area insets.",
+          "ar": "ترقية حقول البحث وتسجيل الدخول إلى مؤشرات تركيز بصرية بقياس 3 بكسل مطابقة لمعيار WCAG 2.2 AAA، وتوحيد شارات الخيارات في التمارين وتعزيز أبعاد المناطق الآمنة."
+        }
+      ]
+    },
     {
       "id": "0.1.62",
       "version": "0.1.62",

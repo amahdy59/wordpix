@@ -140,7 +140,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
               id="email"
               type="email"
               required
-              className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+              className="min-h-11 w-full px-4 py-2 rounded-xl border border-border bg-background text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               disabled={isLoading || !!syncUserId}
@@ -154,7 +154,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
               id="password"
               type="password"
               required
-              className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
+              className="min-h-11 w-full px-4 py-2 rounded-xl border border-border bg-background text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               disabled={isLoading || !!syncUserId}

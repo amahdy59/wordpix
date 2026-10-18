@@ -225,12 +225,12 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
                 onClick={() => handleSelect(option.id)}
                 className={`group relative block aspect-square sm:aspect-auto min-h-[120px] w-full overflow-hidden rounded-2xl border-2 shadow-wp-sm transition-colors duration-200 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:rounded-3xl ${borderStyle}`}
               >
-                {/* Keyboard shortcut badge */}
+                {/* Option / Keyboard shortcut badge */}
                 <span
                   aria-hidden
-                  className="hidden sm:block absolute top-2 start-2 z-10 bg-black/60 text-white text-[10px] sm:text-[11px] font-mono font-bold px-2 py-0.5 rounded border border-white/20 shadow-sm backdrop-blur-md pointer-events-none"
+                  className="absolute top-2 start-2 z-10 size-8 sm:size-9 md:size-11 flex items-center justify-center bg-wp-card text-foreground text-sm sm:text-base font-bold rounded-lg border border-border shadow-sm pointer-events-none"
                 >
-                  [{idx + 1}]
+                  {idx + 1}
                 </span>
 
                 {/* Image */}

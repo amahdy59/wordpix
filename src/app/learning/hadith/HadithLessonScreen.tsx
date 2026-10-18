@@ -181,189 +181,190 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
       className="wp-lesson-session min-h-dvh w-full overflow-y-auto bg-background"
       aria-labelledby="hadith-title"
     >
-      <div className="wp-container-content wp-layout-gutter flex flex-col gap-4 py-3 sm:gap-4 sm:py-5">
-        {/* Top Action Bar */}
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
-            className={`inline-flex min-h-11 w-fit items-center gap-2 rounded-xl border border-border bg-card px-3.5 font-bold text-foreground shadow-wp-xs transition-colors hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
-          >
-            <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-            <span>{t("ux.backToCourse") || "Back to curriculum"}</span>
-          </button>
-
-          <div className="flex flex-wrap items-center gap-2.5">
-            {savedProgress && (
-              <p
-                className="sr-only sm:not-sr-only sm:inline-flex sm:items-center sm:gap-1.5 sm:rounded-full sm:bg-secondary sm:px-3 sm:py-1 sm:text-base sm:font-bold sm:text-primary"
-                role="status"
-              >
-                <Check className="size-3.5" aria-hidden />
-                <span>{t("hadith.progressRestored") || "Saved progress restored"}</span>
-              </p>
-            )}
-
-            <p className="sr-only sm:not-sr-only sm:rounded-full sm:border sm:border-border sm:bg-card sm:px-3 sm:py-1 sm:text-base sm:font-bold sm:text-muted-foreground">
-              {t("hadith.lessonProgress", {
-                current: lesson.number,
-                total: HADITH_LESSONS.length,
-              }) || `Lesson ${lesson.number} of ${HADITH_LESSONS.length}`}
-            </p>
-          </div>
-        </div>
-
-        {/* Lesson Header & Stepper */}
-        <header className="border-b border-border pb-3">
-          <div className="flex flex-wrap items-start justify-between gap-4">
-            <div className="min-w-0 flex-1 basis-72">
-              <p className="text-sm font-semibold text-primary">
-                {t("hadith.badge", { number: lesson.number }) || `Hadith ${lesson.number} · B1`}
-              </p>
-              <h1
-                id="hadith-title"
-                lang="en"
-                dir="ltr"
-                className="mt-0.5 break-words text-lg font-bold leading-tight text-foreground sm:mt-1.5 sm:text-2xl"
-              >
-                {lesson.title}
-              </h1>
-            </div>
-
-            <details className="group shrink-0">
-              <summary
-                aria-label={t("hadith.lessonDetails")}
-                className={`inline-flex min-h-11 cursor-pointer list-none items-center rounded-xl border border-border bg-background px-2 py-2 text-base font-bold text-foreground transition-colors hover:bg-muted sm:px-3.5 ${focusRing}`}
-              >
-                <span aria-hidden className="sm:hidden">
-                  {t("hadith.lessonDetailsShort")}
-                </span>
-                <span aria-hidden className="hidden sm:inline">
-                  {t("hadith.lessonDetails")}
-                </span>
-              </summary>
-              <div className="mt-3 w-full max-w-96">
-                <HadithOverviewSummary overview={parsedStages.overview} />
-                <button
-                  type="button"
-                  onClick={reset}
-                  className={`mt-3 inline-flex min-h-11 items-center gap-2 rounded-xl px-3 text-base font-bold text-foreground hover:bg-muted ${focusRing}`}
-                >
-                  <RotateCcw className="size-4" aria-hidden />
-                  {t("hadith.resetLesson")}
-                </button>
-              </div>
-            </details>
-          </div>
-        </header>
-
-        <div className="wp-course-sticky sticky top-0 z-40 border-b border-border bg-background py-2">
-          {/* Accessible responsive lesson stepper */}
-          <HadithStageStepper
-            currentStageIndex={stageIndex}
-            completedStages={savedProgress?.completedStages}
-            onSelectStage={handleStageSelect}
-          />
-        </div>
-
-        {/* Stage Content Container */}
-        <div
-          ref={stageContainerRef}
-          id="hadith-stage-panel"
-          role="region"
-          aria-label={t(`hadith.stageLabels.${stage}`)}
-          className="w-full"
-        >
-          {stage === "read-listen" && (
-            <div className="space-y-6">
-              <section
-                className="rounded-2xl border border-border bg-card p-4 sm:p-5"
-                aria-label={t("ux.beforeReading")}
-              >
-                <h2 className="mb-3 text-base font-bold text-foreground">
-                  {t("ux.beforeReading")}
-                </h2>
-                <HadithWarmupStage
-                  warmup={parsedStages.warmup}
-                  onProceedToText={scrollToHadithText}
-                />
-              </section>
-              <HadithReadListenStage
-                source={lesson.source}
-                onPlayAudio={playTrack}
-                audio={normalAudio}
-                playbackRate={playbackRate}
-                onRateChange={setPlaybackRate}
-                vocabularyLines={lesson.stages.vocabulary.text}
-                lessonNumber={lesson.number}
-                activeTrack={activeTrack}
-              />
-            </div>
-          )}
-
-          {stage === "vocabulary" && (
-            <HadithVocabularyStage
-              lines={lesson.stages.vocabulary.text}
-              lessonNumber={lesson.number}
-            />
-          )}
-
-          {stage === "practice" && exerciseSet && (
-            <HadithPractice exerciseSet={exerciseSet} onScoreChange={setPracticeScore} />
-          )}
-
-          {stage === "review" && (
-            <HadithReviewStage
-              reviewItems={parsedStages.review}
-              speakTask={parsedStages.speak}
-              lessonTitle={lesson.title}
-              translation={lesson.source.translation}
-              confidence={confidence}
-              practiceScore={practiceScore}
-              onSelectConfidence={(c) => {
-                setConfidence(c);
-                setConfidenceError(false);
-              }}
-              confidenceError={confidenceError}
-            />
-          )}
-        </div>
-
-        {/* Keep bottom navigation in flow so it cannot obscure review controls.
-            The compact course rail remains available at the top while scrolling. */}
-        <div className="mt-3 border-t border-border bg-background py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
-          <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(min(100%,8rem),1fr))] items-stretch gap-2 sm:flex sm:items-center sm:justify-between">
-            <div className="flex">
+      <div className="wp-container-shell wp-layout-gutter py-3 sm:py-5">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
+          {/* Side-Rail Workspace on Desktop (lg+) / Compact Header on Mobile */}
+          <aside className="w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
+            {/* Top Action Bar */}
+            <div className="flex items-center justify-between gap-2">
               <button
                 type="button"
-                onClick={goBack}
-                className={`inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-base font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
+                onClick={() => dispatch({ type: "GO", to: "hadith-curriculum" })}
+                className={`inline-flex min-h-11 w-fit items-center gap-2 rounded-xl border border-border bg-card px-3.5 font-bold text-foreground shadow-wp-xs transition-colors hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
               >
                 <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-                <span>{t("hadith.previous") || "Previous"}</span>
+                <span>{t("ux.backToCourse") || "Back to curriculum"}</span>
               </button>
+
+              <details className="group shrink-0 relative">
+                <summary
+                  aria-label={t("hadith.lessonDetails")}
+                  className={`inline-flex min-h-11 cursor-pointer list-none items-center rounded-xl border border-border bg-card px-3 py-2 text-sm font-bold text-foreground transition-colors hover:bg-muted ${focusRing}`}
+                >
+                  <span aria-hidden className="sm:hidden">
+                    {t("hadith.lessonDetailsShort")}
+                  </span>
+                  <span aria-hidden className="hidden sm:inline">
+                    {t("hadith.lessonDetails")}
+                  </span>
+                </summary>
+                <div className="absolute end-0 top-full mt-2 z-50 w-72 sm:w-80 rounded-2xl border border-border bg-card p-4 shadow-wp-lg">
+                  <HadithOverviewSummary overview={parsedStages.overview} />
+                  <button
+                    type="button"
+                    onClick={reset}
+                    className={`mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-border bg-background px-3 text-sm font-bold text-foreground hover:bg-muted ${focusRing}`}
+                  >
+                    <RotateCcw className="size-4" aria-hidden />
+                    {t("hadith.resetLesson")}
+                  </button>
+                </div>
+              </details>
             </div>
 
-            <button
-              type="button"
-              onClick={goNext}
-              className={`inline-flex min-h-12 min-w-0 items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2 text-base font-bold text-primary-foreground shadow-sm transition-all hover:bg-primary motion-safe:active:scale-[0.98] ${focusRing}`}
-            >
-              <span>
-                {stageIndex === HADITH_STAGE_IDS.length - 1
-                  ? lesson.number < HADITH_LESSONS.length
-                    ? t("hadith.nextLesson") || "Next Hadith lesson"
-                    : t("hadith.finishLesson") || "Finish lesson"
-                  : t("hadith.continue") || "Continue"}
-              </span>
-              <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-            </button>
-          </div>
-        </div>
+            {/* Lesson Context Card */}
+            <div className="rounded-2xl border border-border bg-card p-4 shadow-wp-xs space-y-3">
+              <header>
+                <div className="flex items-center justify-between gap-2">
+                  <p className="text-xs sm:text-sm font-semibold text-primary">
+                    {t("hadith.badge", { number: lesson.number }) || `Hadith ${lesson.number} · B1`}
+                  </p>
+                  <p className="rounded-full border border-border bg-card px-2.5 py-0.5 text-xs font-bold text-muted-foreground">
+                    {t("hadith.lessonProgress", {
+                      current: lesson.number,
+                      total: HADITH_LESSONS.length,
+                    }) || `Lesson ${lesson.number} of ${HADITH_LESSONS.length}`}
+                  </p>
+                </div>
+                {savedProgress && (
+                  <p
+                    className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-secondary px-2.5 py-0.5 text-xs font-bold text-primary"
+                    role="status"
+                  >
+                    <Check className="size-3" aria-hidden />
+                    <span>{t("hadith.progressRestored") || "Saved progress restored"}</span>
+                  </p>
+                )}
+                <h1
+                  id="hadith-title"
+                  lang="en"
+                  dir="ltr"
+                  className="mt-1 break-words text-lg sm:text-xl font-bold leading-tight text-foreground"
+                >
+                  {lesson.title}
+                </h1>
+              </header>
 
-        {/* Live Region for Screen Reader Stage Announcements */}
-        <div className="sr-only" role="status" aria-live="polite">
-          {liveAnnouncement}
+              <div className="pt-2 border-t border-border">
+                {/* Accessible responsive lesson stepper */}
+                <HadithStageStepper
+                  currentStageIndex={stageIndex}
+                  completedStages={savedProgress?.completedStages}
+                  onSelectStage={handleStageSelect}
+                />
+              </div>
+            </div>
+          </aside>
+
+          {/* Main Focus Stage: dedicated exclusively to reading/listening, vocabulary, context and practice */}
+          <div
+            ref={stageContainerRef}
+            id="hadith-stage-panel"
+            role="region"
+            aria-label={t(`hadith.stageLabels.${stage}`)}
+            className="flex-1 min-w-0 flex flex-col gap-6"
+          >
+            {stage === "read-listen" && (
+              <div className="space-y-6">
+                <section
+                  className="rounded-2xl border border-border bg-card p-4 sm:p-5"
+                  aria-label={t("ux.beforeReading")}
+                >
+                  <h2 className="mb-3 text-base font-bold text-foreground">
+                    {t("ux.beforeReading")}
+                  </h2>
+                  <HadithWarmupStage
+                    warmup={parsedStages.warmup}
+                    onProceedToText={scrollToHadithText}
+                  />
+                </section>
+                <HadithReadListenStage
+                  source={lesson.source}
+                  onPlayAudio={playTrack}
+                  audio={normalAudio}
+                  playbackRate={playbackRate}
+                  onRateChange={setPlaybackRate}
+                  vocabularyLines={lesson.stages.vocabulary.text}
+                  lessonNumber={lesson.number}
+                  activeTrack={activeTrack}
+                />
+              </div>
+            )}
+
+            {stage === "vocabulary" && (
+              <HadithVocabularyStage
+                lines={lesson.stages.vocabulary.text}
+                lessonNumber={lesson.number}
+              />
+            )}
+
+            {stage === "practice" && exerciseSet && (
+              <HadithPractice exerciseSet={exerciseSet} onScoreChange={setPracticeScore} />
+            )}
+
+            {stage === "review" && (
+              <HadithReviewStage
+                reviewItems={parsedStages.review}
+                speakTask={parsedStages.speak}
+                lessonTitle={lesson.title}
+                translation={lesson.source.translation}
+                confidence={confidence}
+                practiceScore={practiceScore}
+                onSelectConfidence={(c) => {
+                  setConfidence(c);
+                  setConfidenceError(false);
+                }}
+                confidenceError={confidenceError}
+              />
+            )}
+
+            {/* Keep bottom navigation in flow so it cannot obscure review controls.
+              The compact course rail remains available at the top while scrolling. */}
+            <div className="mt-3 border-t border-border bg-background py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+              <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(min(100%,8rem),1fr))] items-stretch gap-2 sm:flex sm:items-center sm:justify-between">
+                <div className="flex">
+                  <button
+                    type="button"
+                    onClick={goBack}
+                    className={`inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border border-border bg-card px-3 py-2 text-base font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.98] ${focusRing}`}
+                  >
+                    <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+                    <span>{t("hadith.previous") || "Previous"}</span>
+                  </button>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={goNext}
+                  className={`inline-flex min-h-12 min-w-0 items-center justify-center gap-2 rounded-xl bg-primary px-3 py-2 text-base font-bold text-primary-foreground shadow-sm transition-all hover:bg-primary motion-safe:active:scale-[0.98] ${focusRing}`}
+                >
+                  <span>
+                    {stageIndex === HADITH_STAGE_IDS.length - 1
+                      ? lesson.number < HADITH_LESSONS.length
+                        ? t("hadith.nextLesson") || "Next Hadith lesson"
+                        : t("hadith.finishLesson") || "Finish lesson"
+                      : t("hadith.continue") || "Continue"}
+                  </span>
+                  <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+                </button>
+              </div>
+            </div>
+
+            {/* Live Region for Screen Reader Stage Announcements */}
+            <div className="sr-only" role="status" aria-live="polite">
+              {liveAnnouncement}
+            </div>
+          </div>
         </div>
       </div>
     </div>

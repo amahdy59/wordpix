@@ -217,7 +217,7 @@ export function BusinessCurriculumScreen({ dispatch }: Props) {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={t("business.searchPlaceholder")}
                 aria-label={t("business.searchPlaceholder")}
-                className="min-h-11 w-full rounded-2xl border border-border bg-card py-2.5 ps-10 pe-4 text-base font-medium text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 shadow-wp-xs"
+                className="min-h-11 w-full rounded-2xl border border-border bg-card py-2.5 ps-10 pe-4 text-base font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shadow-wp-xs"
               />
             </div>
           </div>
