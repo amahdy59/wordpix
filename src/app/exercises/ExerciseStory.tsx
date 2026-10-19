@@ -908,7 +908,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                                       imageFallbacks: currentChunk.imageFallbacks,
                                     }}
                                     loading="eager"
-                                    className="aspect-video w-full object-contain"
+                                    className="w-full max-h-[28dvh] object-contain"
                                     onExhausted={() =>
                                       setFailedSceneImages((current) => ({
                                         ...current,
@@ -955,7 +955,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                               <span className="rounded-full bg-feedback-warning-surface px-2.5 py-0.5 text-xs font-bold text-feedback-warning-foreground">
                                 {t("story.checkContext")}
                               </span>
-                              <h4 className="font-bold text-sm text-foreground">
+                              <h4 data-question-prompt className="wp-question-prompt">
                                 {currentChunk.check.question}
                               </h4>
                             </div>

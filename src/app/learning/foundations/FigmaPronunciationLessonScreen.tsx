@@ -688,7 +688,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
             </section>
           </div>
         ) : (
-          <div className="flex flex-col lg:flex-row lg:items-stretch lg:gap-8 flex-1 min-h-0">
+          <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[20rem_minmax(0,1fr)] lg:grid-rows-[auto_1fr] lg:gap-x-8 flex-1 min-h-0">
             {/* Side-Rail Workspace on Desktop (lg+) / Context Header on Mobile */}
             <aside className="w-full lg:w-80 lg:shrink-0 lg:self-start lg:sticky lg:top-6 flex flex-col gap-4">
               <div className="flex items-center justify-between gap-2">
@@ -872,20 +872,10 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   />
                 </div>
               </div>
-
-              {/* Secondary Reference Disclosures (Side-Rail on Desktop, Reference on Mobile) */}
-              <div className="flex flex-col gap-3">
-                <HelpDisclosure label={t("lessonShell.soundTips")}>
-                  {soundTipsContent}
-                </HelpDisclosure>
-                <HelpDisclosure label={t("lessonShell.aboutLesson")}>
-                  {aboutLessonContent}
-                </HelpDisclosure>
-              </div>
             </aside>
 
             {/* Main Focus Stage: dedicated exclusively to the question, prompt, audio, and choices */}
-            <div className="flex-1 min-w-0 flex flex-col justify-between gap-4">
+            <div className="min-w-0 flex flex-col justify-between gap-4 lg:col-start-2 lg:row-start-1 lg:row-span-2">
               {progress?.status === "in-progress" && progress.session?.version !== 2 && (
                 <p role="status" className="text-sm text-foreground">
                   {t("lessonShell.legacyResume")}
@@ -897,11 +887,12 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 className="flex-1 min-h-0 flex flex-col gap-4"
                 aria-labelledby="pronunciation-instruction"
               >
-                <div className="rounded-2xl border border-border bg-card p-4 sm:p-5 shadow-wp-xs space-y-3 shrink-0">
+                <div className="space-y-3 shrink-0">
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <h2
                       id="pronunciation-instruction"
-                      className="text-lg sm:text-xl font-bold text-foreground"
+                      data-question-prompt
+                      className="wp-question-prompt"
                     >
                       {instruction}
                     </h2>
@@ -1022,9 +1013,9 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                             : undefined
                         }
                         onClick={() => play(item.label)}
-                        className={`group flex flex-col min-h-11 overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary hover:shadow-wp-sm ${focusRing}`}
+                        className={`group flex flex-col self-start min-h-11 overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary hover:shadow-wp-sm ${focusRing}`}
                       >
-                        <div className="relative w-full flex-1 min-h-[140px] sm:min-h-[180px] overflow-hidden bg-muted/40">
+                        <div className="wp-pronunciation-choice-media relative w-full overflow-hidden bg-muted/40">
                           <WordImage
                             item={item}
                             className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
@@ -1147,7 +1138,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     <div
                       className={`grid min-h-0 w-full flex-1 gap-4 ${
                         question?.choices.length === 2
-                          ? "grid-cols-1 sm:grid-cols-2"
+                          ? "grid-cols-2"
                           : "grid-cols-2 lg:grid-cols-4"
                       }`}
                     >
@@ -1163,7 +1154,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                             word: item.label,
                           })}
                           onClick={() => selectAnswer(item.label)}
-                          className={`group flex flex-col h-full min-h-0 overflow-hidden rounded-2xl border-2 bg-card text-start font-bold transition-all ${focusRing} ${
+                          className={`group flex flex-col self-start min-h-11 overflow-hidden rounded-2xl border-2 bg-card text-start font-bold transition-all ${focusRing} ${
                             session.answer === item.label
                               ? passed
                                 ? "border-feedback-success bg-feedback-success-surface"
@@ -1173,13 +1164,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                           dir="ltr"
                         >
                           {Boolean(item.imageRef) && (
-                            <div
-                              className={`relative w-full flex-1 min-h-[220px] sm:min-h-[280px] md:min-h-[340px] ${
-                                question?.choices.length === 2
-                                  ? "lg:min-h-[380px] xl:min-h-[440px]"
-                                  : "lg:min-h-[220px] xl:min-h-[280px]"
-                              } overflow-hidden bg-muted/40`}
-                            >
+                            <div className="wp-pronunciation-choice-media relative w-full overflow-hidden bg-muted/40">
                               <WordImage
                                 item={item}
                                 className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
@@ -1197,7 +1182,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                               <span
                                 lang="en"
                                 dir="ltr"
-                                className="min-w-0 break-words text-lg sm:text-xl font-black text-foreground"
+                                className="min-w-0 break-words text-base font-bold text-foreground"
                               >
                                 {item.label}
                               </span>
@@ -1319,6 +1304,12 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   </p>
                 )}
               </div>
+            </div>
+            <div className="flex flex-col gap-3 lg:col-start-1 lg:row-start-2 lg:self-start">
+              <HelpDisclosure label={t("lessonShell.soundTips")}>{soundTipsContent}</HelpDisclosure>
+              <HelpDisclosure label={t("lessonShell.aboutLesson")}>
+                {aboutLessonContent}
+              </HelpDisclosure>
             </div>
           </div>
         )}

@@ -8,6 +8,7 @@ export interface ExerciseFamilyTemplateProps {
   instruction: ReactNode;
   activityLabel: string;
   activity: ReactNode;
+  prompt?: ReactNode;
   media?: ReactNode;
   helper?: ReactNode;
   feedback?: ReactNode;
@@ -16,10 +17,10 @@ export interface ExerciseFamilyTemplateProps {
 }
 
 const measureByFamily: Record<ExerciseFamily, string> = {
-  "visual-choice": "wp-container-content",
+  "visual-choice": "wp-container-wide",
   "listening-speaking": "wp-container-reading",
-  "text-construction": "wp-container-content",
-  "reading-context": "wp-container-reading",
+  "text-construction": "wp-container-wide",
+  "reading-context": "wp-container-wide",
 };
 
 /**
@@ -31,6 +32,7 @@ export function ExerciseFamilyTemplate({
   instruction,
   activityLabel,
   activity,
+  prompt,
   media,
   helper,
   feedback,
@@ -43,12 +45,12 @@ export function ExerciseFamilyTemplate({
     <section
       data-exercise-family={family}
       aria-labelledby={instructionId}
-      className={`${measureByFamily[family]} flex w-full flex-col gap-4 sm:gap-6 ${className}`}
+      className={`${measureByFamily[family]} wp-question-family flex w-full min-w-0 flex-col ${className}`}
     >
-      <header className="text-start sm:text-center shrink-0">
+      <header className="text-start shrink-0">
         <h2
           id={instructionId}
-          className="text-balance font-sans text-lg font-bold leading-snug text-foreground sm:text-xl lg:text-2xl"
+          className="wp-question-instruction text-pretty font-sans text-foreground"
         >
           {instruction}
         </h2>
@@ -57,13 +59,12 @@ export function ExerciseFamilyTemplate({
         )}
       </header>
 
-      <div
-        className={
-          media
-            ? "flex flex-col gap-4 min-w-0 w-full lg:grid lg:grid-cols-2 lg:items-start lg:gap-8"
-            : "min-w-0 flex flex-col w-full"
-        }
-      >
+      <div className="wp-question-layout">
+        {prompt && (
+          <div data-exercise-zone="prompt" className="min-w-0">
+            {prompt}
+          </div>
+        )}
         {media && (
           <div data-exercise-zone="media" className="min-w-0 flex flex-col w-full">
             {media}

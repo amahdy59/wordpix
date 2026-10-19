@@ -93,14 +93,13 @@ export function MultipleChoiceQuiz({
 
   return (
     <div
-      className={`rounded-2xl border border-border p-4 sm:p-5 bg-card min-w-0 flex flex-col ${
-        reduceMotion ? "" : "animate-in fade-in duration-200"
-      }`}
+      className={`min-w-0 flex flex-col ${reduceMotion ? "" : "animate-in fade-in duration-200"}`}
     >
       {/* Question — English learning content always carries explicit lang+dir */}
       <div
         id={questionId}
-        className="mb-4 font-bold text-lg sm:text-xl text-foreground leading-relaxed"
+        data-question-prompt
+        className="wp-question-prompt mb-4"
         lang="en"
         dir="ltr"
       >

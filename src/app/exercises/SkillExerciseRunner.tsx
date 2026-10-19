@@ -13,6 +13,7 @@ import { useSound } from "../shared/useSound";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { shuffleArray } from "../../utils/shuffle";
 import { useI18n } from "../context/I18nContext";
+import { useDevicePreference, isTextInput } from "../shared/devicePreferences";
 import {
   isChoiceCorrect,
   isEntryCorrect,
@@ -45,6 +46,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 }: Props) {
   const { t } = useI18n();
   const { accessibility } = useAccessibility();
+  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   const { speak } = useAudio();
   const { playCorrect, playIncorrect, playClick } = useSound();
 
@@ -155,17 +157,10 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
   // Keyboard shortcut: number keys 1-9 pick choice options.
   useEffect(() => {
-    if (verdict !== null || !task || task.kind !== "choice") return;
+    if (!shortcutsEnabled || verdict !== null || !task || task.kind !== "choice") return;
 
     const onKey = (e: KeyboardEvent) => {
-      const target = e.target as HTMLElement | null;
-      if (
-        target?.tagName === "INPUT" ||
-        target?.tagName === "TEXTAREA" ||
-        target?.isContentEditable
-      ) {
-        return;
-      }
+      if (e.repeat || e.ctrlKey || e.metaKey || e.altKey || isTextInput(e.target)) return;
       const num = Number.parseInt(e.key, 10);
       if (Number.isNaN(num) || num < 1) return;
       const opt = task.options[num - 1];
@@ -177,7 +172,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [task, verdict, playClick]);
+  }, [task, verdict, playClick, shortcutsEnabled]);
 
   if (!task || finished) {
     const scoredTasks = definition.tasks.filter(isGraded);
@@ -243,7 +238,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
     task.kind === "practice";
 
   return (
-    <div className="min-h-dvh bg-background flex flex-col">
+    <div className="wp-question-screen bg-background">
       <LessonHeader
         title={definition.title}
         current={index + 1}
@@ -261,118 +256,133 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
 
-      <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <p aria-live="polite" aria-atomic="true" className="sr-only">
-          {announcement}
-        </p>
-
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <span className="font-sans font-bold text-sm text-foreground">
-            {t("exercise.questionOf", {
-              current: formatNumber(index + 1, accessibility.numeralSystem),
-              total: formatNumber(definition.tasks.length, accessibility.numeralSystem),
-            })}
-          </span>
-          {definition.timeLimitSeconds !== undefined && (
-            <ExerciseTimer countdown={countdown} enabled={timed} />
-          )}
-        </div>
-
-        {imageWord && (
-          <div className="w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted aspect-[16/10] sm:aspect-[16/9] max-h-[38dvh] relative">
-            <WordImage
-              word={imageWord}
-              altMode={task.kind === "choice" && !task.optionsAreImages ? "assessment" : "learning"}
-              className="size-full object-cover block"
-              loading="eager"
-              fetchPriority="high"
-            />
-          </div>
-        )}
-
-        <div className="py-2 flex items-start justify-between gap-3">
-          <h2 className="font-sans font-bold text-foreground text-lg text-balance">
-            {task.prompt}
-          </h2>
-          {task.audioText && (
-            <button
-              type="button"
-              onClick={() => speak(task.audioText as string)}
-              aria-label={t("exercise.replayAudio")}
-              className="shrink-0 flex items-center gap-1.5 min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-xs font-sans font-bold hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-            >
-              <Volume2 className="size-4" aria-hidden />
-              <span>{t("exercise.replay")}</span>
-            </button>
-          )}
-        </div>
-
-        <TaskBody
-          task={task}
-          disabled={verdict !== null}
-          choice={choice}
-          setChoice={setChoice}
-          entry={entry}
-          setEntry={setEntry}
-          multi={multi}
-          setMulti={setMulti}
-          arrangement={arrangement}
-          setArrangement={setArrangement}
-          tokenPool={tokenPool}
-          placements={placements}
-          setPlacements={setPlacements}
-        />
-
-        {verdict && (
-          <div
-            role="status"
-            className={`rounded-2xl border p-4 flex items-start gap-3 ${
-              verdict === "correct"
-                ? "border-wp-green bg-wp-green-light/40"
-                : verdict === "incorrect"
-                  ? "border-wp-rose bg-wp-rose-light/40"
-                  : "border-border bg-wp-card"
-            }`}
-          >
-            {verdict === "correct" ? (
-              <CheckCircle2 className="size-5 text-wp-green shrink-0 mt-0.5" aria-hidden />
-            ) : verdict === "incorrect" ? (
-              <XCircle className="size-5 text-wp-rose shrink-0 mt-0.5" aria-hidden />
-            ) : null}
-            <p className="font-sans text-sm text-foreground">{task.explanation}</p>
-          </div>
-        )}
-
-        <div className="flex flex-col gap-2">
-          {verdict ? (
-            <PrimaryButton
-              label={
-                index + 1 >= definition.tasks.length
-                  ? t("skillRunner.seeResults")
-                  : t("skillRunner.nextQuestion")
-              }
-              onClick={next}
-            />
-          ) : (
-            <PrimaryButton
-              label={t("skillRunner.checkAnswer")}
-              onClick={check}
-              disabled={!canCheck}
-            />
-          )}
-          {task.kind === "order" && arrangement.length > 0 && !verdict && (
-            <SecondaryButton
-              label={t("skillRunner.clearMySentence")}
-              onClick={() => setArrangement([])}
-            />
-          )}
-        </div>
-
-        {task.kind === "choice" && (
-          <p className="font-sans text-xs text-muted-foreground text-center">
-            {t("skillRunner.optionKeyHint")}
+      <div className="wp-question-scroll wp-layout-gutter flex flex-col">
+        <div className="wp-skill-workspace wp-container-content flex flex-1 min-h-min flex-col gap-3">
+          <p aria-live="polite" aria-atomic="true" className="sr-only">
+            {announcement}
           </p>
-        )}
+
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <span className="font-sans font-bold text-sm text-foreground">
+              {t("exercise.questionOf", {
+                current: formatNumber(index + 1, accessibility.numeralSystem),
+                total: formatNumber(definition.tasks.length, accessibility.numeralSystem),
+              })}
+            </span>
+            {definition.timeLimitSeconds !== undefined && (
+              <ExerciseTimer countdown={countdown} enabled={timed} />
+            )}
+          </div>
+
+          <div className={`wp-question-layout ${imageWord ? "wp-question-with-media" : ""}`}>
+            {imageWord && (
+              <div
+                data-exercise-zone="media"
+                className="wp-question-media overflow-hidden rounded-2xl border border-border bg-muted relative"
+              >
+                <WordImage
+                  word={imageWord}
+                  altMode={
+                    task.kind === "choice" && !task.optionsAreImages ? "assessment" : "learning"
+                  }
+                  className="size-full object-contain block"
+                  loading="eager"
+                  fetchPriority="high"
+                />
+              </div>
+            )}
+
+            <div data-exercise-zone="activity" className="flex min-w-0 flex-col gap-4">
+              <div className="flex items-start justify-between gap-3">
+                <h2 data-question-prompt className="wp-question-prompt font-sans text-pretty">
+                  {task.prompt}
+                </h2>
+                {task.audioText && (
+                  <button
+                    type="button"
+                    onClick={() => speak(task.audioText as string)}
+                    aria-label={t("exercise.replayAudio")}
+                    className="shrink-0 flex items-center gap-1.5 min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-xs font-sans font-bold hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  >
+                    <Volume2 className="size-4" aria-hidden />
+                    <span>{t("exercise.replay")}</span>
+                  </button>
+                )}
+              </div>
+
+              <TaskBody
+                task={task}
+                disabled={verdict !== null}
+                choice={choice}
+                setChoice={setChoice}
+                entry={entry}
+                setEntry={setEntry}
+                multi={multi}
+                setMulti={setMulti}
+                arrangement={arrangement}
+                setArrangement={setArrangement}
+                tokenPool={tokenPool}
+                placements={placements}
+                setPlacements={setPlacements}
+              />
+
+              {verdict && (
+                <div
+                  role="status"
+                  className={`rounded-2xl border p-4 flex items-start gap-3 ${
+                    verdict === "correct"
+                      ? "border-wp-green bg-wp-green-light/40"
+                      : verdict === "incorrect"
+                        ? "border-wp-rose bg-wp-rose-light/40"
+                        : "border-border bg-wp-card"
+                  }`}
+                >
+                  {verdict === "correct" ? (
+                    <CheckCircle2 className="size-5 text-wp-green shrink-0 mt-0.5" aria-hidden />
+                  ) : verdict === "incorrect" ? (
+                    <XCircle className="size-5 text-wp-rose shrink-0 mt-0.5" aria-hidden />
+                  ) : null}
+                  <p className="font-sans text-sm text-foreground">{task.explanation}</p>
+                </div>
+              )}
+
+              <div className="flex flex-col gap-2">
+                {verdict ? (
+                  <PrimaryButton
+                    label={
+                      index + 1 >= definition.tasks.length
+                        ? t("skillRunner.seeResults")
+                        : t("skillRunner.nextQuestion")
+                    }
+                    onClick={next}
+                  />
+                ) : (
+                  <PrimaryButton
+                    label={t(
+                      task.kind === "practice"
+                        ? "skillRunner.completePractice"
+                        : "skillRunner.checkAnswer"
+                    )}
+                    onClick={check}
+                    disabled={!canCheck}
+                  />
+                )}
+                {task.kind === "order" && arrangement.length > 0 && !verdict && (
+                  <SecondaryButton
+                    label={t("skillRunner.clearMySentence")}
+                    onClick={() => setArrangement([])}
+                  />
+                )}
+              </div>
+
+              {task.kind === "choice" && shortcutsEnabled && (
+                <p className="font-sans text-xs text-muted-foreground text-center">
+                  {t("skillRunner.optionKeyHint")}
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -543,7 +553,7 @@ function TaskBody({
 
   if (task.kind === "sort") {
     return (
-      <div className="flex flex-col gap-3">
+      <div className="grid gap-3 sm:grid-cols-2">
         {task.items.map((item) => (
           <div
             key={item.id}

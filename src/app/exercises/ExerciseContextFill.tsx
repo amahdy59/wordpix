@@ -221,7 +221,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                   aria-pressed={isSelected}
                   aria-disabled={feedback !== null || undefined}
                   onClick={() => handleSelect(option.id)}
-                  className={`group flex min-h-[56px] sm:min-h-[64px] lg:min-h-[70px] w-full items-center justify-between rounded-2xl border-2 p-3.5 sm:p-5 font-sans text-lg sm:text-xl font-bold transition-all motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${stateClasses}`}
+                  className={`wp-question-option group flex w-full items-center justify-between gap-3 border font-sans font-semibold transition-all motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${stateClasses}`}
                 >
                   <span className="flex items-center gap-3">
                     {isSelected && feedback === "correct" && (

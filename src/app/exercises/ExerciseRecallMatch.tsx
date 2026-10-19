@@ -197,7 +197,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </>
       }
     >
-      <div className="wp-container-immersive relative flex min-h-0 flex-1 flex-col gap-4 sm:min-h-[500px] sm:gap-5 lg:min-h-[460px] xl:min-h-[520px]">
+      <div className="wp-container-immersive relative flex min-h-0 flex-1 flex-col gap-3 sm:gap-4">
         <div className="flex shrink-0 flex-col items-center justify-between gap-3 sm:flex-row">
           <div className="text-center sm:text-start">
             <p className="font-sans text-sm font-bold text-foreground sm:text-base">

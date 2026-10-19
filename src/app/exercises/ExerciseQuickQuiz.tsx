@@ -177,12 +177,13 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
         </div>
       }
     >
-      <div className="relative flex min-h-0 w-full flex-1 flex-col gap-3.5 sm:min-h-[500px] sm:gap-5 lg:min-h-[460px] xl:min-h-[520px]">
+      <div className="relative flex min-h-0 w-full flex-1 flex-col gap-3 sm:gap-4">
         {/* Question card */}
         <div className="flex shrink-0 flex-col gap-3 py-2">
           <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
             <h2
-              className="font-sans font-black text-foreground text-base sm:text-lg md:text-xl flex-1 text-balance"
+              className="wp-question-prompt font-sans flex-1 text-pretty"
+              data-question-prompt
               data-question="Which picture shows"
             >
               {t("exercise.whichPictureShows", { word: currentTargetWord.label })}

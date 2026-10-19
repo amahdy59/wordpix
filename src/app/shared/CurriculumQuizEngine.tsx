@@ -111,12 +111,13 @@ function QuestionCard({
   const feedbackId = `${engineId}-feedback-${question.id}`;
 
   return (
-    <article
-      className="rounded-2xl border border-border bg-card"
-      aria-labelledby={questionHeadingId}
-    >
+    <article className="min-w-0" aria-labelledby={questionHeadingId}>
       <div
-        className={`p-4 sm:p-5 ${question.media ? "grid items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(12rem,30%)]" : ""}`}
+        className={
+          question.media
+            ? "grid items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(12rem,30%)]"
+            : ""
+        }
       >
         <div className="min-w-0">
           {/* Counter label (single-question mode) */}
@@ -133,8 +134,9 @@ function QuestionCard({
           <h2
             ref={headingRef}
             id={questionHeadingId}
+            data-question-prompt
             tabIndex={-1}
-            className="text-lg font-bold leading-snug text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:text-xl"
+            className="wp-question-prompt focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             {/* Question number badge in desktop multi-question mode */}
             {!showCounter && (
@@ -183,7 +185,7 @@ function QuestionCard({
           role="status"
           aria-live="polite"
           aria-atomic="true"
-          className={`border-t px-6 py-5 transition-all duration-200 ${
+          className={`wp-question-feedback mt-3 border transition-all duration-200 motion-reduce:transition-none ${
             isCorrect
               ? "border-feedback-success-border bg-feedback-success-surface"
               : "border-feedback-error-border bg-feedback-error-surface"

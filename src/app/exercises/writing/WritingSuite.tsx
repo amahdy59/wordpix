@@ -129,7 +129,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
   }
 
   return (
-    <div className="min-h-dvh bg-background flex flex-col">
+    <div className="wp-question-screen bg-background">
       <LessonHeader
         title="Timed Speed Writing Sprint"
         current={9}
@@ -137,38 +137,46 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
         onBack={() => dispatch({ type: "GO", to: "explore" })}
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
-      <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <span className="font-sans font-bold text-sm text-foreground">
-            {t("suites.wordOf", { current: index + 1, total: words.length })}
-          </span>
-          <ExerciseTimer countdown={countdown} enabled={timed} label="Sprint time remaining" />
-        </div>
+      <div className="wp-question-scroll wp-layout-gutter flex flex-col">
+        <div className="wp-skill-workspace wp-container-content flex flex-1 min-h-min flex-col gap-4">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <span className="font-sans font-bold text-sm text-foreground">
+              {t("suites.wordOf", { current: index + 1, total: words.length })}
+            </span>
+            <ExerciseTimer countdown={countdown} enabled={timed} label="Sprint time remaining" />
+          </div>
 
-        <div className="w-full relative rounded-xl overflow-hidden border border-border shadow-wp-lg bg-muted shrink-0 mt-2 mb-4 flex flex-col justify-center">
-          <WordImage
-            word={current}
-            altMode="assessment"
-            optionIndex={index}
-            className="w-full h-auto max-h-[30dvh] sm:max-h-[40dvh] block object-contain rounded-xl"
-          />
-        </div>
+          <div className="wp-question-layout wp-question-with-media">
+            <div className="wp-question-media relative rounded-2xl overflow-hidden border border-border bg-muted">
+              <WordImage
+                word={current}
+                altMode="assessment"
+                optionIndex={index}
+                className="size-full object-contain"
+              />
+            </div>
 
-        <form onSubmit={submit} className="flex flex-col gap-3">
-          <label htmlFor="sprint-entry" className="font-sans font-bold text-sm text-foreground">
-            {t("suites.typeWordForPicture")}
-          </label>
-          <input
-            id="sprint-entry"
-            value={entry}
-            onChange={(e) => setEntry(e.target.value)}
-            autoComplete="off"
-            autoCapitalize="none"
-            spellCheck={false}
-            className="w-full min-h-[52px] bg-wp-card border-2 border-border rounded-2xl px-4 font-sans text-foreground text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-          />
-          <PrimaryButton label={isLast ? "Finish Sprint" : "Next Word"} type="submit" />
-        </form>
+            <form onSubmit={submit} className="flex flex-col gap-3">
+              <label
+                htmlFor="sprint-entry"
+                data-question-prompt
+                className="wp-question-prompt font-sans"
+              >
+                {t("suites.typeWordForPicture")}
+              </label>
+              <input
+                id="sprint-entry"
+                value={entry}
+                onChange={(e) => setEntry(e.target.value)}
+                autoComplete="off"
+                autoCapitalize="none"
+                spellCheck={false}
+                className="w-full min-h-[52px] bg-wp-card border-2 border-border rounded-2xl px-4 font-sans text-foreground text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              />
+              <PrimaryButton label={isLast ? "Finish Sprint" : "Next Word"} type="submit" />
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   );
