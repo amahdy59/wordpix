@@ -7,6 +7,7 @@ import { HomeIndicator } from "./HomeIndicator";
 import { ExitConfirmModal } from "./ExitConfirmModal";
 import { KeyboardShortcutsModal } from "./KeyboardShortcutsModal";
 import { usePredictiveLessonPreload } from "./usePredictiveLessonPreload";
+import { useDevicePreference, isTextInput } from "./devicePreferences";
 import { MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
 
 export type ExerciseMode = "teach" | "guided" | "retrieval" | "assessment";
@@ -48,6 +49,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   layout = "standard",
 }: Props) {
   const session = useLessonSession();
+  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   const [showExitModal, setShowExitModal] = useState(false);
   const [showShortcutsModal, setShowShortcutsModal] = useState(false);
   const Content = "section";
@@ -60,6 +62,15 @@ export const ExerciseShell = memo(function ExerciseShell({
   // Toggle keyboard shortcuts cheat sheet with '?' or 'Shift+/'
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (
+        !shortcutsEnabled ||
+        e.repeat ||
+        e.ctrlKey ||
+        e.metaKey ||
+        e.altKey ||
+        isTextInput(e.target)
+      )
+        return;
       if (
         e.target instanceof HTMLInputElement ||
         e.target instanceof HTMLTextAreaElement ||
@@ -74,7 +85,7 @@ export const ExerciseShell = memo(function ExerciseShell({
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [shortcutsEnabled]);
 
   // `lessonId` used to default to "essential-furniture" and fall back to the
   // first group on an unknown id, so a review session — or any lesson whose id

@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 
+import { useDevicePreference } from "./devicePreferences";
+
 const TEXT_ENTRY_TAGS = new Set(["INPUT", "TEXTAREA", "SELECT"]);
 
 /** True when the user is typing, so number keys must stay literal characters. */
@@ -50,6 +52,7 @@ export function useExerciseHotkeys({
   onContinue,
   disabled = false,
 }: Options) {
+  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   // Held in refs so re-created callbacks do not detach and re-attach the
   // listener on every render.
   const handlers = useRef({ onSelectIndex, onReplayAudio, onToggleHelp, onContinue, optionCount });
@@ -64,6 +67,7 @@ export function useExerciseHotkeys({
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.repeat || hasModifier(event) || isTextEntryTarget(event.target)) return;
+      if (!shortcutsEnabled && event.key.length === 1 && event.key !== " ") return;
 
       const {
         onSelectIndex: select,
@@ -118,5 +122,5 @@ export function useExerciseHotkeys({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [disabled, hasContinue]);
+  }, [disabled, hasContinue, shortcutsEnabled]);
 }

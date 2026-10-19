@@ -1,5 +1,7 @@
 # WCAG 2.2 criterion register — 9 October 2026
 
+Supplemental 19 October evidence is recorded in [the review implementation record](REVIEW_IMPROVEMENTS_2026-10-19.md). It adds independent Library controls, configurable character shortcuts, stable focus during word changes, and bilingual/theme browser coverage (`e2e/review-improvements.spec.ts`, `e2e/mobile-usability.spec.ts`). This evidence does not close a criterion across all pages or complete processes; the statuses below remain partial/open pending the manual and assistive-technology work identified in the record.
+
 Source: [W3C WCAG 2.2 Recommendation](https://www.w3.org/TR/WCAG22/). This register covers all 86 active success criteria. Removed criterion 4.1.1 is excluded.
 
 This is an evidence register, not a conformance claim. Partial automated and browser evidence cannot prove full WCAG AAA conformance. No criterion is marked fully passed without full-page, complete-process and relevant assistive-technology evidence.

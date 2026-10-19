@@ -1,6 +1,6 @@
 import { memo, useMemo } from "react";
 import { ArrowRight, RotateCcw, CheckCircle2, Library, BookOpen } from "lucide-react";
-import { getDueWordsForReview, type WordLearningState } from "../../features/gamification/sm2";
+import { type WordLearningState } from "../../features/gamification/sm2";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
@@ -13,9 +13,16 @@ import { getLocalDateString } from "../../features/gamification/streak";
 import { useI18n } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { useLearner } from "../context/LearnerContext";
-import { PageContainer, Section, Card, Badge, ProgressBar } from "../shared";
+import { PageContainer } from "../shared/PageContainer";
+import { Section } from "../shared/Section";
+import { Card } from "../shared/Card";
+import { Badge } from "../shared/Badge";
+import { ProgressBar } from "../shared/ProgressBar";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { staggerContainer, staggerItem } from "../shared/animations";
+
+import { getReviewSchedule } from "../review/reviewSchedule";
+import { useReviewDate } from "../shared/useReviewDate";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -58,16 +65,15 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     [activeLesson.wordIds, progress.wordMemory]
   );
   const estimatedMinutes = Math.max(2, Math.ceil(Math.max(1, Math.min(5, remainingWords)) * 0.75));
-  const { dueWords, overdueWords } = useMemo(() => {
-    const all = getDueWordsForReview(progress.wordMemory);
-    const startOfTodayIso = new Date(new Date().setHours(0, 0, 0, 0)).toISOString();
-    const overdue = all.filter((w) => w.nextReviewAt && w.nextReviewAt < startOfTodayIso);
-    return { dueWords: all, overdueWords: overdue };
-  }, [progress.wordMemory]);
+  const reviewDate = useReviewDate();
+  const { due: dueWords, overdue: overdueWords } = useMemo(
+    () => getReviewSchedule(progress.wordMemory, reviewDate),
+    [progress.wordMemory, reviewDate]
+  );
   const hasLearningHistory =
     learnerState.learnerProgress.sessionsCompleted > 0 ||
     Object.keys(progress.wordMemory).length > 0;
-  const todayStr = getLocalDateString(new Date());
+  const todayStr = getLocalDateString(reviewDate);
 
   const todayReviewedCount = useMemo(() => {
     let count = 0;
@@ -80,7 +86,8 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     return count;
   }, [progress.wordMemory, todayStr]);
 
-  const dailyWordTarget = 10;
+  // A transparent suggestion derived from the chosen time budget, not a second fixed goal.
+  const dailyWordTarget = Math.max(3, Math.round(progress.dailyGoalMinutes / 0.75));
   const dailyTargetPct = Math.min(100, Math.round((todayReviewedCount / dailyWordTarget) * 100));
   const isDailyTargetMet = todayReviewedCount >= dailyWordTarget;
 
@@ -300,7 +307,13 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
           </motion.div>
         </div>
       </motion.div>
-      <section aria-label={t("dashboard.dailyTarget")} className="w-full">
+      <section
+        aria-label={t("reviewUpdate.dailyPlan", { minutes: num(progress.dailyGoalMinutes) })}
+        className="w-full"
+      >
+        <p className="mb-2 text-sm leading-relaxed text-muted-foreground">
+          {t("reviewUpdate.dailyPlan", { minutes: num(progress.dailyGoalMinutes) })}
+        </p>
         <ProgressBar
           progressPercent={dailyTargetPct}
           label={t("dashboard.dailyTarget")}

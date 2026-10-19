@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useDevicePreference } from "../../shared/devicePreferences";
 import {
   ArrowLeft,
   ArrowRight,
@@ -117,6 +118,7 @@ function WordImage({ item, className }: { item: FigmaPronunciationImage; classNa
 }
 
 export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props) {
+  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   const { t } = useI18n();
   const { state, setAccessibility, recordPronunciationCheckpoint, recordPronunciationCompletion } =
     useLearner();
@@ -402,6 +404,8 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
   ]);
   useEffect(() => {
     const handleKey = (event: KeyboardEvent) => {
+      if (event.repeat || (!shortcutsEnabled && event.key.length === 1 && event.key !== " "))
+        return;
       if (
         event.altKey ||
         event.ctrlKey ||
@@ -429,7 +433,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [question, completedScore, stage]);
+  }, [question, completedScore, stage, shortcutsEnabled]);
   const instruction =
     stage === 0
       ? t("lessonShell.previewInstruction")

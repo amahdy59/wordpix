@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { emitLearningEvent } from "../analytics/learningAnalytics";
 import { useLearner } from "../context/LearnerContext";
 import { getCachedAudio, saveCachedAudio } from "../../lib/persistence/db";
 import { assetUrl, audioKey, audioUrls, AUDIO_PROFILE_V4, hasAssetHost } from "./assetUrls";
@@ -346,7 +347,10 @@ export function useAudio({
       const publish = (next: AudioStatus) => {
         if (isCurrent()) {
           setStatus(next);
-          if (next === "error" || next === "unsupported") errorRef.current?.();
+          if (next === "error" || next === "unsupported") {
+            emitLearningEvent({ name: "media_failed", properties: { category: "audio" } });
+            errorRef.current?.();
+          }
         }
       };
 
@@ -771,6 +775,7 @@ export function useAudio({
       void audio.play().catch(() => {
         if (isMountedRef.current && activeAudioOwner === ownerIdRef.current) {
           setStatus("error");
+          emitLearningEvent({ name: "media_failed", properties: { category: "audio" } });
           errorRef.current?.();
         }
       });

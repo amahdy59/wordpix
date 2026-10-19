@@ -17,14 +17,12 @@ import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { COURSE_UNITS, type CourseUnit } from "../data/courseCatalog";
 import { CEFR_STAGES, CURRICULUM_SEQUENCE } from "../data/curriculumSequence";
-import {
-  Badge,
-  CurriculumTopicCard,
-  ProgressBar,
-  FilterChip,
-  PageHeader,
-  PageContainer,
-} from "../shared";
+import { Badge } from "../shared/Badge";
+import { CurriculumTopicCard } from "../shared/CurriculumTopicCard";
+import { ProgressBar } from "../shared/ProgressBar";
+import { FilterChip } from "../shared/FilterChip";
+import { PageHeader } from "../shared/PageHeader";
+import { PageContainer } from "../shared/PageContainer";
 import { staggerContainer, staggerItem } from "../shared/animations";
 import { useI18n } from "../context/I18nContext";
 import { resolveAssetUrl } from "../../utils/assetUrl";
@@ -33,6 +31,11 @@ import { loadUnitVocabulary } from "../data/vocabulary";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { LibraryWordCard } from "./LibraryWordCard";
 import type { VocabularyItem } from "../data/lessons";
+
+import { useDevicePreference, isTextInput } from "../shared/devicePreferences";
+
+import { loadVocabularySearch, searchVocabulary, type SearchEntry } from "../data/vocabularySearch";
+import { emitLearningEvent } from "../analytics/learningAnalytics";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -46,6 +49,8 @@ interface WordReference {
   unitId: string;
   unitName: string;
   cefr: string;
+  label: string;
+  arabic: string;
 }
 
 const POPULAR_TOPICS = [
@@ -124,6 +129,7 @@ function searchUnits(units: CourseUnit[], query: string): CourseUnit[] {
 export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
   const { progress } = useProgress();
   const { t } = useI18n();
+  const shortcutsEnabled = useDevicePreference("character-shortcuts");
 
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedStageId, setSelectedStageId] = useState<string>("all");
@@ -140,15 +146,38 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
   } | null>(null);
 
   // Loaded vocabulary items map for matching words
+  const [searchIndex, setSearchIndex] = useState<SearchEntry[]>([]);
+  const [indexStatus, setIndexStatus] = useState<"idle" | "loading" | "ready" | "error">("idle");
+  const [indexRetry, setIndexRetry] = useState(0);
+  const [wordLimit, setWordLimit] = useState(36);
+  const [failedUnits, setFailedUnits] = useState<string[]>([]);
+  const [detailsRetry, setDetailsRetry] = useState(0);
   const [loadedWordsMap, setLoadedWordsMap] = useState<Record<string, VocabularyItem>>({});
 
   const searchInputId = useId();
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const searchStarted = useRef(0);
+  useEffect(() => {
+    if (!searchQuery.trim() || indexStatus !== "ready" || searchStarted.current === 0) return;
+    const frame = requestAnimationFrame(() => {
+      emitLearningEvent({
+        name: "search_timing",
+        properties: { milliseconds: Math.round(performance.now() - searchStarted.current) },
+      });
+      searchStarted.current = 0;
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [searchQuery, indexStatus]);
 
   // Global keyboard shortcut '/' to focus search
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (
+        shortcutsEnabled &&
+        !e.ctrlKey &&
+        !e.metaKey &&
+        !e.altKey &&
+        !isTextInput(e.target) &&
         e.key === "/" &&
         document.activeElement !== searchInputRef.current &&
         !["INPUT", "TEXTAREA"].includes(document.activeElement?.tagName ?? "")
@@ -159,7 +188,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [shortcutsEnabled]);
 
   // All 200 vocabulary units mapped from CURRICULUM_SEQUENCE
   const allCurriculumUnits = useMemo<CourseUnit[]>(() => {
@@ -283,69 +312,102 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
     return searchUnits(list, searchQuery);
   }, [allCurriculumUnits, selectedStageId, masteryFilter, searchQuery, unitStatsMap]);
 
-  // Direct matching vocabulary words across units
-  const matchingWordRefs = useMemo(() => {
-    const query = searchQuery.trim();
-    if (!query || query.length < 2) return [];
-    const normQ = normalizeSearchText(query);
-    const rawQ = query.toLowerCase();
-    const refs: WordReference[] = [];
-    const seenWords = new Set<string>();
-
-    for (const unit of allCurriculumUnits) {
-      if (selectedStageId !== "all") {
-        const activeStage = CEFR_STAGES.find((s) => s.id === selectedStageId);
-        if (activeStage) {
-          const stageUnits = allCurriculumUnits.slice(activeStage.start, activeStage.end);
-          if (!stageUnits.some((u) => u.id === unit.id)) continue;
-        }
-      }
-
-      const design = getUnitCurriculumDesign(unit);
-      for (const wordId of unit.wordIds) {
-        const cleanWord = wordId.replace(/-/g, " ");
-        if (cleanWord.includes(rawQ) || normalizeSearchText(cleanWord).includes(normQ)) {
-          if (!seenWords.has(wordId)) {
-            seenWords.add(wordId);
-            refs.push({
-              wordId,
-              unitId: unit.id,
-              unitName: unit.name,
-              cefr: design.cefr,
-            });
-            if (refs.length >= 36) break;
-          }
-        }
-      }
-      if (refs.length >= 36) break;
-    }
-
-    return refs;
-  }, [allCurriculumUnits, searchQuery, selectedStageId]);
-
-  // Load vocabulary definitions for matching words in background
   useEffect(() => {
-    if (matchingWordRefs.length === 0) return;
-    const unitIds = [...new Set(matchingWordRefs.map((r) => r.unitId))];
+    if (!searchQuery.trim()) return;
     let cancelled = false;
-
-    unitIds.forEach((uId) => {
-      loadUnitVocabulary(uId).then((items) => {
-        if (cancelled) return;
-        setLoadedWordsMap((prev) => {
-          const next = { ...prev };
-          items.forEach((item) => {
-            next[item.id] = item;
-          });
-          return next;
-        });
-      });
-    });
-
+    setIndexStatus("loading");
+    void loadVocabularySearch().then(
+      (entries) => {
+        if (!cancelled) {
+          setSearchIndex(entries);
+          setIndexStatus("ready");
+        }
+      },
+      () => {
+        if (!cancelled) setIndexStatus("error");
+      }
+    );
     return () => {
       cancelled = true;
     };
-  }, [matchingWordRefs]);
+  }, [searchQuery, indexRetry]);
+  useEffect(() => {
+    setWordLimit(36);
+  }, [searchQuery, selectedStageId, masteryFilter]);
+
+  const matchingWordRefs = useMemo<WordReference[]>(() => {
+    const stage = CEFR_STAGES.find((item) => item.id === selectedStageId);
+    const eligible = new Set(
+      (stage ? allCurriculumUnits.slice(stage.start, stage.end) : allCurriculumUnits).map(
+        (unit) => unit.id
+      )
+    );
+    return searchVocabulary(searchIndex, searchQuery)
+      .filter(([unitId, wordId]) => {
+        if (!eligible.has(unitId)) return false;
+        const mastery = progress.wordMastery[wordId] ?? 0;
+        return (
+          masteryFilter === "all" ||
+          (masteryFilter === "mastered"
+            ? mastery >= 3
+            : masteryFilter === "in-progress"
+              ? mastery > 0 && mastery < 3
+              : mastery === 0)
+        );
+      })
+      .map(([unitId, wordId, label, arabic, cefr]) => ({
+        unitId,
+        wordId,
+        label,
+        arabic,
+        cefr,
+        unitName: COURSE_UNITS[unitId].name,
+      }));
+  }, [
+    searchIndex,
+    searchQuery,
+    selectedStageId,
+    allCurriculumUnits,
+    masteryFilter,
+    progress.wordMastery,
+  ]);
+  const visibleWordRefs = useMemo(
+    () =>
+      searchScope === "units"
+        ? []
+        : matchingWordRefs.slice(0, searchScope === "words" ? wordLimit : 6),
+    [searchScope, matchingWordRefs, wordLimit]
+  );
+  const visibleUnitIdsKey = [...new Set(visibleWordRefs.map((ref) => ref.unitId))].join("|");
+
+  // Hydrate only visible results, two units at a time, with a retryable failure state.
+  useEffect(() => {
+    const unitIds = visibleUnitIdsKey ? visibleUnitIdsKey.split("|") : [];
+    let cancelled = false;
+    setFailedUnits([]);
+    const hydrate = async () => {
+      for (let offset = 0; offset < unitIds.length && !cancelled; offset += 2) {
+        await Promise.all(
+          unitIds.slice(offset, offset + 2).map(async (unitId) => {
+            try {
+              const items = await loadUnitVocabulary(unitId);
+              if (!cancelled)
+                setLoadedWordsMap((prev) => ({
+                  ...prev,
+                  ...Object.fromEntries(items.map((item) => [unitId + ":" + item.id, item])),
+                }));
+            } catch {
+              if (!cancelled) setFailedUnits((prev) => [...prev, unitId]);
+            }
+          })
+        );
+      }
+    };
+    void hydrate();
+    return () => {
+      cancelled = true;
+    };
+  }, [visibleUnitIdsKey, detailsRetry]);
 
   const toggleStageExpand = (stageId: string) => {
     setExpandedModules((prev) => ({
@@ -391,7 +453,13 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
 
   const handleGoToUnit = useCallback(
     (unitId: string) => {
-      dispatch({ type: "GO", to: "learning-materials", unitId, area: "reference" });
+      dispatch({
+        type: "GO",
+        to: "learning-materials",
+        unitId,
+        area: "reference",
+        returnTo: "library",
+      });
     },
     [dispatch]
   );
@@ -441,7 +509,10 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
               type="search"
               role="searchbox"
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => {
+                searchStarted.current = performance.now();
+                setSearchQuery(e.target.value);
+              }}
               onKeyDown={(e) => {
                 if (e.key === "Escape") {
                   setSearchQuery("");
@@ -450,7 +521,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
               }}
               placeholder={t("explore.searchPlaceholder")}
               aria-label={t("explore.searchLabel")}
-              className="w-full bg-transparent text-foreground placeholder:text-muted-foreground/70 py-3 pe-24 text-base focus:outline-none min-h-[48px]"
+              className="w-full bg-transparent text-foreground placeholder:text-muted-foreground/70 py-3 pe-24 text-base focus:outline-none min-h-[48px] [&::-webkit-search-cancel-button]:appearance-none"
             />
             {/* Action buttons / Shortcut Badge */}
             <div className="absolute inset-y-0 end-0 flex items-center pe-2.5 gap-1.5">
@@ -599,7 +670,14 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
           {/* Results Status announcement */}
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground font-medium px-1">
             <span role="status" aria-live="polite" aria-atomic="true">
-              {t("explore.unitsFound", { count: filteredUnits.length })}
+              {searchQuery.trim()
+                ? indexStatus === "loading"
+                  ? t("reviewUpdate.searchLoading")
+                  : t("explore.unitsAndWordsFound", {
+                      units: filteredUnits.length,
+                      words: matchingWordRefs.length,
+                    })
+                : t("explore.unitsFound", { count: filteredUnits.length })}
             </span>
           </div>
         </motion.div>
@@ -644,15 +722,6 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
         {/* Results Feedback & Search Result Scope Tabs */}
         {isSearchActive && (
           <div className="flex flex-col gap-3">
-            <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-medium text-muted-foreground px-1">
-              <span>
-                {t("explore.unitsAndWordsFound", {
-                  units: filteredUnits.length,
-                  words: matchingWordRefs.length,
-                })}
-              </span>
-            </div>
-
             {/* Scope Tabs: All / Words / Units */}
             <div
               role="tablist"
@@ -714,7 +783,22 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
         )}
 
         {/* Content Section: Empty state vs Search Results vs Default Stage Accordions */}
-        {filteredUnits.length === 0 && matchingWordRefs.length === 0 ? (
+        {indexStatus === "error" && (
+          <div role="alert">
+            <p>{t("reviewUpdate.searchFailed")}</p>
+            <button
+              type="button"
+              className="min-h-11 min-w-11 rounded-xl border border-border px-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              onClick={() => setIndexRetry((value) => value + 1)}
+            >
+              {t("action.retry")}
+            </button>
+          </div>
+        )}
+        {filteredUnits.length === 0 &&
+        matchingWordRefs.length === 0 &&
+        indexStatus !== "loading" &&
+        indexStatus !== "error" ? (
           <div className="p-8 text-center bg-wp-card rounded-3xl border border-border flex flex-col items-center gap-3">
             <Compass className="size-10 text-muted-foreground opacity-50" aria-hidden="true" />
             <p className="font-bold text-foreground text-base">
@@ -757,34 +841,67 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
                 </div>
 
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                  {(searchScope === "words" ? matchingWordRefs : matchingWordRefs.slice(0, 6)).map(
-                    (ref) => {
-                      const item = loadedWordsMap[ref.wordId] ?? {
-                        id: ref.wordId,
-                        label: ref.wordId.replace(/-/g, " "),
-                        phonetic: "",
-                        cefr: ref.cefr,
-                        img: "",
-                        topic: ref.unitName,
-                        description: "",
-                      };
-
+                  {visibleWordRefs.map((ref) => {
+                    const item = loadedWordsMap[ref.unitId + ":" + ref.wordId];
+                    if (!item)
                       return (
-                        <LibraryWordCard
-                          key={`${ref.unitId}-${ref.wordId}`}
-                          word={item}
-                          unitId={ref.unitId}
-                          unitName={ref.unitName}
-                          onInspect={handleInspectWord}
-                          onGoToUnit={handleGoToUnit}
-                        />
+                        <article
+                          key={ref.unitId + ":" + ref.wordId}
+                          aria-busy={!failedUnits.includes(ref.unitId)}
+                          className="rounded-2xl border border-border bg-card p-4"
+                        >
+                          <h3 className="text-base font-semibold" lang="en" dir="ltr">
+                            {ref.label}
+                          </h3>
+                          <p lang="ar" dir="rtl">
+                            {ref.arabic}
+                          </p>
+                          <p className="text-sm text-muted-foreground">
+                            {t(
+                              failedUnits.includes(ref.unitId)
+                                ? "reviewUpdate.detailsFailed"
+                                : "app.loading"
+                            )}
+                          </p>
+                          {failedUnits.includes(ref.unitId) && (
+                            <button
+                              type="button"
+                              onClick={() => setDetailsRetry((value) => value + 1)}
+                              className="min-h-11 min-w-11 rounded-lg px-3 text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                            >
+                              {t("action.retry")}
+                            </button>
+                          )}
+                        </article>
                       );
-                    }
-                  )}
+
+                    return (
+                      <LibraryWordCard
+                        key={`${ref.unitId}-${ref.wordId}`}
+                        word={item}
+                        unitId={ref.unitId}
+                        unitName={ref.unitName}
+                        onInspect={handleInspectWord}
+                        onGoToUnit={handleGoToUnit}
+                      />
+                    );
+                  })}
                 </div>
               </section>
             )}
 
+            {searchScope === "words" && matchingWordRefs.length > wordLimit && (
+              <button
+                type="button"
+                className="min-h-11 rounded-xl border border-border px-4 text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                onClick={() => setWordLimit((value) => value + 36)}
+              >
+                {t("reviewUpdate.moreWords", {
+                  current: wordLimit,
+                  total: matchingWordRefs.length,
+                })}
+              </button>
+            )}
             {/* Matching Topic Units List */}
             {filteredUnits.length > 0 && searchScope !== "words" && (
               <section aria-labelledby="matching-units-heading" className="flex flex-col gap-3">
@@ -989,9 +1106,15 @@ const UnitCard = memo(function UnitCard({
       tooltipText={curriculum.outcome}
       statusIcon={<Play className="size-3.5 shrink-0" aria-hidden="true" />}
       statusText={t("explore.wordsBadge", { count: totalWords })}
-      actionLabel={t("action.continue")}
+      actionLabel={t("dashboard.studyGuide")}
       onClick={() =>
-        dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id, returnTo: "library" })
+        dispatch({
+          type: "GO",
+          to: "learning-materials",
+          area: "reference",
+          unitId: unit.id,
+          returnTo: "library",
+        })
       }
       secondaryAction={
         <div className="flex flex-col gap-2.5">

@@ -180,8 +180,8 @@ describe("lesson and assessment progression", () => {
       correctCount: 0,
       totalQuestions: 3,
     });
-    expect(recommendPlacement(2).startingUnitId).toBe("supermarket");
-    expect(recommendPlacement(3).startingUnitId).toBe("business-communication");
+    expect(recommendPlacement(2).startingUnitId).toBe("numbers-counting");
+    expect(recommendPlacement(3).startingUnitId).toBe("numbers-counting");
     expect(getStartingUnitForLevel("A1")).toBe("numbers-counting");
     expect(getStartingUnitForLevel("A2")).toBe("supermarket");
     expect(getStartingUnitForLevel("B1")).toBe("business-communication");

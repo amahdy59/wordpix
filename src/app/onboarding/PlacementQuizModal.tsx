@@ -1,178 +1,157 @@
-import { memo, useMemo, useState } from "react";
+import { memo, useEffect, useMemo, useState } from "react";
+import { shuffleArray } from "../../utils/shuffle";
 import { createPortal } from "react-dom";
-import { WordImage } from "../shared/WordImage";
-import { BEDROOM_VOCABULARY } from "../data/courseCatalog";
+import { X, Volume2 } from "lucide-react";
 import { useModalA11y } from "../shared/useModalA11y";
 import { IconButton } from "../shared/IconButton";
-import { Sparkles, X } from "lucide-react";
-import { useI18n, type TranslationValues } from "../context/I18nContext";
-import { recommendPlacement, type PlacementRecommendation } from "./placementRecommendation";
+import { useI18n } from "../context/I18nContext";
+import { useAudio } from "../shared/useAudio";
 import { emitLearningEvent } from "../analytics/learningAnalytics";
-import { playCorrectSound, playIncorrectSound } from "../shared/useSound";
-
-// Placement always starts from the default world's vocabulary — there is only
-// one world to place a learner into today. This is also why bedroom is the
-// one unit kept in the main bundle: placement runs before a learner has
-// chosen anything, so its words cannot be fetched on demand.
-const PLACEMENT_VOCABULARY = BEDROOM_VOCABULARY;
+import {
+  PLACEMENT_ITEMS,
+  recommendFromEvidence,
+  type PlacementRecommendation,
+} from "./placementRecommendation";
 
 interface Props {
   isOpen: boolean;
   onClose: () => void;
   onComplete: (recommendation: PlacementRecommendation) => void;
 }
-
-const QUESTIONS: Array<{
-  targetId: string;
-  promptKey: string;
-  promptArgs?: TranslationValues;
-  level: "A1" | "A2" | "B1";
-}> = [
-  {
-    targetId: "pillow",
-    promptKey: "onboarding.quizPrompt1",
-    promptArgs: { word: "pillow" },
-    level: "A1",
-  },
-  {
-    targetId: "nightstand",
-    promptKey: "onboarding.quizPrompt2",
-    promptArgs: { sentence: "I put my lamp on the _______." },
-    level: "A2",
-  },
-  {
-    targetId: "wardrobe",
-    promptKey: "onboarding.quizPrompt3",
-    promptArgs: { sentence: "This is a wardrobe." },
-    level: "B1",
-  },
-];
-
 export const PlacementQuizModal = memo(function PlacementQuizModal({
   isOpen,
   onClose,
   onComplete,
 }: Props) {
   const { t } = useI18n();
-  const [stepIndex, setStepIndex] = useState(0);
-  const [correctCount, setCorrectCount] = useState(0);
+  const [answers, setAnswers] = useState<boolean[]>([]);
+  const [usedTranscript, setUsedTranscript] = useState(false);
   const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
-
-  const currentQ = QUESTIONS[stepIndex] ?? QUESTIONS[0];
-  const targetWord =
-    PLACEMENT_VOCABULARY.find((v) => v.id === currentQ.targetId) ?? PLACEMENT_VOCABULARY[0];
-  const options = useMemo(() => {
-    const distractors = PLACEMENT_VOCABULARY.filter((v) => v.id !== targetWord.id);
-    const selectedDistractors = distractors.slice(stepIndex * 2, stepIndex * 2 + 3);
-    const finalDistractors =
-      selectedDistractors.length === 3 ? selectedDistractors : distractors.slice(0, 3);
-    const targetPos = stepIndex % 4;
-    const result = [...finalDistractors];
-    result.splice(targetPos, 0, targetWord);
-    return result;
-  }, [targetWord, stepIndex]);
-
-  if (!isOpen) return null;
-
-  const handleSelectOption = (wordId: string) => {
-    const isCorrect = wordId === targetWord.id;
-    if (isCorrect) {
-      playCorrectSound();
-    } else {
-      playIncorrectSound();
+  const audio = useAudio({ allowDeviceFallback: true });
+  useEffect(() => {
+    if (isOpen) {
+      setAnswers([]);
+      setUsedTranscript(false);
     }
-    const newCorrect = isCorrect ? correctCount + 1 : correctCount;
-
-    if (stepIndex + 1 < QUESTIONS.length) {
-      setCorrectCount(newCorrect);
-      setStepIndex((i) => i + 1);
-    } else {
-      // Determine level recommendation
-      const recommendation = recommendPlacement(newCorrect, QUESTIONS.length);
+  }, [isOpen]);
+  const item = PLACEMENT_ITEMS[answers.length];
+  const options = useMemo(
+    () => shuffleArray((item?.options ?? []).map((label, index) => ({ label, index }))),
+    [item]
+  );
+  if (!isOpen || !item) return null;
+  const answer = (index: number) => {
+    audio.stop();
+    const next = [...answers, index === item.answer];
+    if (next.length < PLACEMENT_ITEMS.length) setAnswers(next);
+    else {
+      const recommendation = recommendFromEvidence(next, usedTranscript);
       emitLearningEvent({
         name: "placement_completed",
-        properties: {
-          recommendedLevel: recommendation.level,
-          scoreBand:
-            recommendation.level === "B1"
-              ? "ready"
-              : recommendation.level === "A2"
-                ? "developing"
-                : "emerging",
-        },
+        properties: { recommendedLevel: recommendation.level, scoreBand: "provisional" },
       });
       onComplete(recommendation);
       onClose();
     }
   };
-
   return createPortal(
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm">
       <div
         ref={containerRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby="placement-modal-title"
         tabIndex={-1}
-        className="bg-wp-card border border-border rounded-3xl p-5 sm:p-6 w-full max-w-md shadow-2xl flex flex-col gap-4 sm:gap-5 relative outline-none max-h-[92dvh] overflow-y-auto"
+        className="relative flex max-h-[92dvh] w-full max-w-xl flex-col gap-4 overflow-y-auto rounded-3xl border border-border bg-card p-5 shadow-2xl sm:p-6"
       >
         <IconButton
-          icon={<X className="size-5" aria-hidden />}
+          icon={<X aria-hidden className="size-5" />}
           aria-label={t("onboarding.closePlacementAria")}
-          variant="outline"
-          size="sm"
-          onClick={onClose}
-          className="absolute top-4 end-4 rounded-full"
+          onClick={() => {
+            audio.stop();
+            onClose();
+          }}
+          className="absolute end-3 top-3"
         />
-
-        <div>
-          <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-1">
-            <Sparkles className="size-4 text-wp-amber-foreground" />
-            <span>{t("onboarding.adaptiveCheck", { current: stepIndex + 1, total: 3 })}</span>
-          </div>
-          <h2 id="placement-modal-title" className="font-sans font-black text-foreground text-2xl">
-            {t("onboarding.testYourLevel")}
-          </h2>
-          <p className="font-sans text-muted-foreground text-xs mt-1">
-            {t("onboarding.testYourLevelDesc")}
-          </p>
-        </div>
-
-        {/* Question Prompt */}
-        <div className="bg-muted p-4 rounded-2xl border border-border">
-          <p className="font-sans font-bold text-foreground text-base text-center">
-            {t(currentQ.promptKey, currentQ.promptArgs)}
-          </p>
-        </div>
-
-        {/* Options */}
-        <div className="grid grid-cols-2 gap-3">
-          {options.map((opt, idx) => (
+        <h2 id="placement-modal-title" className="pe-12 text-xl font-bold text-foreground">
+          {t("reviewUpdate.placementTitle")}
+        </h2>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          {t("reviewUpdate.placementDescription")}
+        </p>
+        <p role="status" className="text-sm font-semibold text-foreground">
+          {t("reviewUpdate.placementPosition", {
+            current: answers.length + 1,
+            total: PLACEMENT_ITEMS.length,
+          })}
+        </p>
+        {item.audio ? (
+          <div className="space-y-2" key={answers.length}>
+            <p>{t("reviewUpdate.listenPrompt")}</p>
             <button
-              key={opt.id}
               type="button"
-              onClick={() => handleSelectOption(opt.id)}
-              className="bg-wp-card border border-border rounded-2xl p-2 flex flex-col items-center gap-1.5 hover:border-primary/50 hover:bg-secondary/40 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all min-h-[44px] cursor-pointer shadow-wp-xs"
+              aria-pressed={audio.isPlaying}
+              onClick={() => (audio.isPlaying ? audio.stop() : audio.speak(item.prompt))}
+              className="flex min-h-11 items-center gap-2 rounded-xl bg-primary px-4 py-2 font-semibold text-primary-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
-              <div className="h-24 w-full rounded-xl overflow-hidden bg-muted">
-                <WordImage
-                  word={opt}
-                  width="200"
-                  height="150"
-                  className="size-full object-cover"
-                  altMode="assessment"
-                  optionIndex={idx}
-                />
-              </div>
-              {/* No word label here: this is a graded placement question, and
-                  printing the answer under each picture makes it unanswerable
-                  as an assessment. */}
-              <span className="font-sans font-semibold text-xs text-muted-foreground">
-                {t("onboarding.optionNum", { num: idx + 1 })}
-              </span>
+              <Volume2 aria-hidden className="size-5" />
+              {t(audio.isPlaying ? "action.stop" : "action.listen")}
+            </button>
+            <p className="text-sm text-muted-foreground">
+              {t("reviewUpdate.placementAudioSource")}
+            </p>
+            <details
+              onToggle={(event) => {
+                if (event.currentTarget.open) setUsedTranscript(true);
+              }}
+            >
+              <summary className="min-h-11 cursor-pointer rounded-lg py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                {t("reviewUpdate.useTranscript")}
+              </summary>
+              <p lang="en" dir="ltr">
+                {item.prompt}
+              </p>
+            </details>
+            {audio.isError && <p role="status">{t("reviewUpdate.useTranscript")}</p>}
+          </div>
+        ) : (
+          <p
+            lang="en"
+            dir="ltr"
+            className="rounded-xl border border-border bg-muted p-4 text-base leading-relaxed text-foreground"
+          >
+            {item.prompt}
+          </p>
+        )}
+        <div className="flex flex-col gap-2">
+          {options.map(({ label, index }) => (
+            <button
+              key={label}
+              type="button"
+              onClick={() => answer(index)}
+              className="min-h-11 rounded-xl border border-border bg-card px-4 py-3 text-start text-base text-foreground hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              lang="en"
+              dir="ltr"
+            >
+              {label}
             </button>
           ))}
         </div>
+        <button
+          type="button"
+          onClick={() => answer(-1)}
+          className="min-h-11 rounded-lg py-2 text-start text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          {t("reviewUpdate.notSure")}
+        </button>
+        <details>
+          <summary className="min-h-11 cursor-pointer rounded-lg py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+            {t("reviewUpdate.productionSelfCheck")}
+          </summary>
+          <p className="text-sm leading-relaxed text-muted-foreground">
+            {t("reviewUpdate.productionSelfCheckDescription")}
+          </p>
+        </details>
       </div>
     </div>,
     document.body

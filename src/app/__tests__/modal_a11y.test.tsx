@@ -160,7 +160,7 @@ const modalCases: ModalCase[] = [
   },
   {
     name: "PlacementQuizModal",
-    expectedName: "Test Your Level",
+    expectedName: "Find a starting point",
     renderModal: (onClose) => <PlacementQuizModal isOpen onClose={onClose} onComplete={vi.fn()} />,
   },
 ];

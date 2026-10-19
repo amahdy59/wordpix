@@ -123,6 +123,7 @@ export type Screen =
       totalSteps?: number;
       attempts: AnswerAttempt[];
       startedAt: string;
+      activeItemId?: string;
     }
   | {
       id: "lesson-complete";
@@ -206,6 +207,7 @@ export type Action =
       dimension?: MasteryDimension;
     }
   | { type: "RESUME_LESSON"; unitId: string }
+  | { type: "LESSON_SET_ITEM"; wordId: string }
   | { type: "LESSON_NEXT" }
   | { type: "LESSON_PREVIOUS" }
   /** Jump to a specific 0-based step, used when the browser Back/Forward

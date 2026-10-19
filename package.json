@@ -45,8 +45,8 @@
     "audio:subscription": "node scripts/check_elevenlabs_subscription.mjs",
     "audio:reconcile": "node scripts/generate_audio.cjs --reconcile",
     "assets:scenarios:upload": "node scripts/upload_scenario_audio_to_r2.cjs",
-    "build": "node scripts/build_release_notes.mjs && node scripts/build_group_thumbnails.mjs && node scripts/shard_specialist_catalogs.mjs && node scripts/shard_curriculum_scenarios.mjs && node scripts/shard_learning_content.mjs && vite build",
-    "check:bundle": "node scripts/check_bundle_budget.mjs",
+    "build": "node scripts/build_release_notes.mjs && node scripts/build_group_thumbnails.mjs && node scripts/shard_specialist_catalogs.mjs && node scripts/shard_curriculum_scenarios.mjs && node scripts/shard_learning_content.mjs && node scripts/build_search_index.mjs && vite build",
+    "check:bundle": "node scripts/check_bundle_budget.mjs && node scripts/check_route_budgets.mjs",
     "check:content-shards": "node scripts/shard_learning_content.mjs --check",
     "check:scenario-shards": "node scripts/shard_curriculum_scenarios.mjs --check",
     "check:secrets": "node scripts/check_secret_hygiene.mjs",
@@ -54,7 +54,7 @@
     "check:deploy": "node scripts/check_live_deployment.mjs",
     "check:doctor": "node scripts/deployment-doctor.mjs",
     "deploy:watch": "node scripts/watch_deployment.mjs",
-    "dev": "node scripts/build_release_notes.mjs && node scripts/build_group_thumbnails.mjs && node scripts/shard_curriculum_scenarios.mjs && node scripts/shard_learning_content.mjs && vite",
+    "dev": "node scripts/build_release_notes.mjs && node scripts/build_group_thumbnails.mjs && node scripts/shard_curriculum_scenarios.mjs && node scripts/shard_learning_content.mjs && node scripts/build_search_index.mjs && vite",
     "doctor": "node scripts/deployment-doctor.mjs",
     "doctor:fix": "node scripts/deployment-doctor.mjs --auto-fix",
     "lint": "eslint .",
@@ -70,7 +70,8 @@
     "verify": "node scripts/verify_prepush.mjs",
     "verify:deploy": "node scripts/verify_deployment.mjs",
     "verify:staging:auth": "node scripts/verify_staging_auth.mjs",
-    "verify:prepush": "node scripts/verify_prepush.mjs"
+    "verify:prepush": "node scripts/verify_prepush.mjs",
+    "check:search-index": "node scripts/build_search_index.mjs --check"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
@@ -86,6 +87,7 @@
     "react-hook-form": "^7.85.0",
     "react-i18next": "^17.0.11",
     "tw-animate-css": "^1.3.8",
+    "web-vitals": "^6.2.3",
     "zod": "^4.4.3"
   },
   "devDependencies": {

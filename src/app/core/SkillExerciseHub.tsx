@@ -31,6 +31,8 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
+import { getReviewSchedule } from "../review/reviewSchedule";
+
 const DEFAULT_REVIEW_SESSION_SIZE = 10;
 
 /**
@@ -60,21 +62,20 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
     const entries = Object.entries(progress.wordMemory ?? {});
     if (entries.length === 0) return [];
     return entries.flatMap(([wordId, entry]) => {
-      const nextDate = entry.nextReviewAt ? entry.nextReviewAt.split("T")[0] : todayStr;
+      const nextDate = entry.nextReviewAt
+        ? getLocalDateString(new Date(entry.nextReviewAt))
+        : todayStr;
       const daysDiff = calculateDaysBetween(todayStr, nextDate);
       return [{ wordId, entry, daysDiff }];
     });
   }, [progress.wordMemory, todayStr]);
 
-  const overdueList = useMemo(
-    () => memoryItems.filter((item) => item.daysDiff < 0).sort((a, b) => a.daysDiff - b.daysDiff),
-    [memoryItems]
+  const schedule = useMemo(
+    () => getReviewSchedule(progress.wordMemory ?? {}, reviewDate),
+    [progress.wordMemory, reviewDate]
   );
-
-  const dueTodayList = useMemo(
-    () => memoryItems.filter((item) => item.daysDiff === 0),
-    [memoryItems]
-  );
+  const overdueList = schedule.overdue.map((entry) => ({ wordId: entry.wordId, entry }));
+  const dueTodayList = schedule.today.map((entry) => ({ wordId: entry.wordId, entry }));
 
   const [selectedBatchSize, setSelectedBatchSize] = useState<number>(DEFAULT_REVIEW_SESSION_SIZE);
   const totalDue = overdueList.length + dueTodayList.length;
@@ -98,9 +99,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
   }, [memoryItems, t]);
 
   const startReviewSession = () => {
-    const queue = [...overdueList, ...dueTodayList]
-      .slice(0, sessionSize)
-      .map((item) => item.wordId);
+    const queue = schedule.due.slice(0, sessionSize).map((item) => item.wordId);
     if (queue.length === 0) return;
 
     dispatch({

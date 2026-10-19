@@ -8,7 +8,7 @@ vi.mock("../data/progress", () => ({
   useProgress: () => ({ progress: { wordMastery: {} } }),
 }));
 
-it("opens a searched Library unit to lesson entry with returnTo library", () => {
+it("opens a searched Library unit as reference with returnTo library", () => {
   const dispatch = vi.fn();
   const unit = Object.values(COURSE_UNITS).find((item) => item.name === "The Office")!;
   render(
@@ -17,10 +17,11 @@ it("opens a searched Library unit to lesson entry with returnTo library", () => 
     </I18nProvider>
   );
   fireEvent.change(screen.getByRole("searchbox"), { target: { value: "The Office" } });
-  fireEvent.click(screen.getByRole("button", { name: /The Office.*Continue/ }));
+  fireEvent.click(screen.getByRole("button", { name: /The Office.*Unit reference/ }));
   expect(dispatch).toHaveBeenCalledWith({
     type: "GO",
-    to: "lesson-entry",
+    to: "learning-materials",
+    area: "reference",
     unitId: unit.id,
     returnTo: "library",
   });

@@ -78,7 +78,8 @@ it("surfaces matching direct vocabulary words when typing a word search", async 
   fireEvent.change(searchbox, { target: { value: "passport" } });
 
   // Direct vocabulary hit for "passport"
-  expect(await screen.findByText(/passport/i)).toBeInTheDocument();
+  const results = await screen.findAllByRole("heading", { name: /^passport(?::|$)/i });
+  expect(results.length).toBeGreaterThan(0);
 
   // Search scope tabs are displayed
   expect(screen.getByRole("tab", { name: /All/ })).toBeInTheDocument();

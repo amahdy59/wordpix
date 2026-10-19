@@ -31,13 +31,21 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 }: Props) {
   const { t } = useI18n();
   const session = useLessonSession();
-  const [activeWordIndex, setActiveWordIndex] = useState<number>(0);
+  const { accessibility } = useAccessibility();
+  const [activeWordIndex, setActiveWordIndex] = useState<number>(() =>
+    Math.max(
+      0,
+      words.findIndex((word) => word.id === session?.activeItemId)
+    )
+  );
   const [desktopDetails, setDesktopDetails] = useState<boolean>(false);
   const [showDetails, setShowDetails] = useState<boolean>(false);
   const detailsTriggerRef = useRef<HTMLButtonElement>(null);
   const detailsCloseRef = useRef<HTMLButtonElement>(null);
-  const [bilingual, setBilingual] = useState(true);
-  const [continuous, setContinuous] = useState(true);
+  const [bilingual, setBilingual] = useState(() => session?.scaffolding !== "independent");
+  const [continuous, setContinuous] = useState(
+    () => accessibility.autoPlayAudio !== false && session?.scaffolding !== "independent"
+  );
   const [playbackError, setPlaybackError] = useState(false);
   const [showExit, setShowExit] = useState(false);
   const { lexicon, lexiconFailed, retryLexicon } = useLexicon(
@@ -52,10 +60,12 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
 
   const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const unit = resolveUnitForLesson(lessonId);
-  const { accessibility } = useAccessibility();
   const speed = accessibility.speechRate;
 
   const currentWord = words[activeWordIndex] || words[0];
+  useEffect(() => {
+    if (currentWord) session?.onActiveItem?.(currentWord.id);
+  }, [currentWord, session]);
   const isLastWord = activeWordIndex === words.length - 1;
 
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({
@@ -392,7 +402,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
             </button>
 
             {/* Prominent Image: adapts beautifully to mobile, tablet, and wide desktop displays */}
-            <div className="w-full min-w-0 relative rounded-xl sm:rounded-2xl overflow-hidden bg-muted aspect-[4/3] min-h-[220px] max-h-[360px] sm:aspect-[16/10] sm:max-h-[400px] md:aspect-auto md:h-full md:min-h-[28rem] lg:min-h-[34rem] xl:min-h-[38rem] max-h-[44rem] shadow-xs">
+            <div className="w-full min-w-0 relative rounded-xl sm:rounded-2xl overflow-hidden bg-muted aspect-[4/3] min-h-[180px] max-h-[min(48dvh,28rem)] sm:aspect-[16/10] md:aspect-[4/3] md:min-h-0 md:h-auto shadow-xs">
               <WordImage
                 word={currentWord}
                 className="w-full h-full absolute inset-0 object-cover"

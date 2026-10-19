@@ -199,7 +199,9 @@ for (const course of ["conversation", "hadith"] as const) {
     const studio = page.locator("details").filter({ has: page.getByText(label, { exact: true }) });
     await expect(studio).not.toHaveAttribute("open", "");
     const trigger = studio.locator("summary").filter({ hasText: label });
+    await trigger.scrollIntoViewIfNeeded();
     await trigger.focus();
+    await expect(trigger).toBeFocused();
     await trigger.press("Enter");
     await expect(studio).toHaveAttribute("open", "");
     await expect(studio.getByRole("button", { name: "Play model", exact: true })).toBeVisible();

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { resolveUnitForLesson, getNextGroupChronological } from "../data/courseCatalog";
 import { getWords, loadUnitVocabulary } from "../data/vocabulary";
 import { preloadAudioClip } from "./useAudio";
@@ -15,11 +15,9 @@ const preloadedLessonIds = new Set<string>();
  * Honors `Save-Data` preference to respect learner bandwidth budgets.
  */
 export function usePredictiveLessonPreload(lessonId: string | undefined, step: number): void {
-  const preloadedRef = useRef(false);
-
   useEffect(() => {
     // Only preload towards the later stages of a lesson (e.g. step 3+ out of 6)
-    if (!lessonId || step < 3 || preloadedRef.current || preloadedLessonIds.has(lessonId)) {
+    if (!lessonId || step < 3 || preloadedLessonIds.has(lessonId)) {
       return;
     }
 
@@ -27,7 +25,11 @@ export function usePredictiveLessonPreload(lessonId: string | undefined, step: n
     if (
       typeof navigator !== "undefined" &&
       "connection" in navigator &&
-      Boolean((navigator as { connection?: { saveData?: boolean } }).connection?.saveData)
+      ((navigator as { connection?: { saveData?: boolean; effectiveType?: string } }).connection
+        ?.saveData ||
+        ["slow-2g", "2g", "3g"].includes(
+          (navigator as { connection?: { effectiveType?: string } }).connection?.effectiveType ?? ""
+        ))
     ) {
       return;
     }
@@ -57,11 +59,8 @@ export function usePredictiveLessonPreload(lessonId: string | undefined, step: n
         if (words.length === 0) return;
 
         // Mark as preloaded
-        preloadedRef.current = true;
-        preloadedLessonIds.add(lessonId);
-
         // Warm up hero & card images
-        for (const word of words) {
+        for (const word of words.slice(0, 2)) {
           if (isCancelled) break;
           const heroUrl = getWordImageSrc(word, "hero");
           if (heroUrl) {
@@ -74,6 +73,11 @@ export function usePredictiveLessonPreload(lessonId: string | undefined, step: n
           if (audioKey) {
             preloadAudioClip(audioKey);
           }
+        }
+        if (!isCancelled) {
+          preloadedLessonIds.add(lessonId);
+          if (preloadedLessonIds.size > 64)
+            preloadedLessonIds.delete(preloadedLessonIds.values().next().value!);
         }
       } catch {
         // Preloading is strictly best-effort and non-fatal; swallow errors

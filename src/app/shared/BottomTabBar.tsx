@@ -19,7 +19,7 @@ export const TABS: { id: TabId; labelKey: string; icon: React.ElementType }[] = 
   { id: "profile", labelKey: "nav.profile", icon: UserCircle },
 ];
 
-export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: Props) {
+export const BottomTabBar = memo(function BottomTabBar({ activeTab }: Props) {
   const { t } = useI18n();
 
   return (
@@ -32,14 +32,13 @@ export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: 
           const isActive = id === activeTab;
           const label = t(labelKey);
           return (
-            <button
+            <a
               key={id}
-              type="button"
+              href={`#/${id}`}
               aria-label={label}
               aria-current={isActive ? "page" : undefined}
               onClick={() => {
                 triggerHaptic("selection");
-                dispatch({ type: "GO", to: id });
               }}
               className={`group flex min-w-0 w-full flex-col items-center justify-center gap-0.5 rounded-xl min-h-[56px] py-1 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer motion-safe:transition-colors ${
                 isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"
@@ -61,7 +60,7 @@ export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: 
               >
                 {label}
               </span>
-            </button>
+            </a>
           );
         })}
       </div>

@@ -89,6 +89,7 @@ const WORLD_ID_GROUP = Object.keys(COURSE_UNITS)
   .map((id) => id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
   .join("|");
 const LESSON_ENTRY_PATTERN = new RegExp(`^#\\/learn\\/(${WORLD_ID_GROUP})$`);
+const LEARN_WORDS_PATTERN = new RegExp(`^#\\/learn\\/(${WORLD_ID_GROUP})\\/words\\/([a-z0-9-]+)$`);
 const LESSON_STEP_PATTERN = new RegExp(`^#\\/learn\\/(${WORLD_ID_GROUP})\\/step-(\\d+)$`);
 const LESSON_COMPLETE_PATTERN = new RegExp(`^#\\/learn\\/(${WORLD_ID_GROUP})\\/complete$`);
 const LEARNING_MATERIALS_PATTERN = new RegExp(
@@ -141,6 +142,13 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
   if (screen.id === "lesson-entry") {
     const world = COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
     return { hash: `#/learn/${world.id}`, title: `WordPix — ${world.name}` };
+  }
+  if (screen.id === "learn-words") {
+    const world = resolveUnitForLesson(screen.lessonId);
+    return {
+      hash: `#/learn/${world.id}/words/${screen.lessonId}`,
+      title: `WordPix — ${world.name} Vocabulary`,
+    };
   }
   if (screen.id === "learning-materials") {
     const world = COURSE_UNITS[screen.unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
@@ -212,6 +220,18 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
 
 export function hashToRoute(hash: string): RouteIntent | null {
   const normalized = hash.toLowerCase();
+  const wordBrowser = normalized.match(LEARN_WORDS_PATTERN);
+  if (wordBrowser) {
+    const unit = COURSE_UNITS[wordBrowser[1]];
+    const group = unit?.groups.find((item) => item.id === wordBrowser[2]);
+    return group
+      ? {
+          kind: "screen",
+          screen: { id: "learn-words", lessonId: group.id },
+          title: `WordPix — ${unit.name} Vocabulary`,
+        }
+      : null;
+  }
 
   const foundationMatch = normalized.match(FOUNDATION_LESSON_PATTERN);
   const requestedFoundationId = foundationMatch?.[1];
@@ -367,9 +387,8 @@ export function hashToScreen(hash: string): { screen: Screen; title: string } | 
 }
 
 export function useHashRouter(currentScreen: Screen, onRoute: (intent: RouteIntent) => void) {
+  const { hash, title } = screenToHash(currentScreen);
   useEffect(() => {
-    const { hash, title } = screenToHash(currentScreen);
-
     if (window.location.hash !== hash) {
       if (!window.location.hash || window.location.hash === "#/") {
         window.history.replaceState(null, "", hash);
@@ -381,7 +400,7 @@ export function useHashRouter(currentScreen: Screen, onRoute: (intent: RouteInte
 
     const mainEl = document.getElementById("main-content");
     if (mainEl) mainEl.focus({ preventScroll: true });
-  }, [currentScreen]);
+  }, [hash, title]);
 
   const handleHashChange = useCallback(() => {
     const resolved = hashToRoute(window.location.hash);

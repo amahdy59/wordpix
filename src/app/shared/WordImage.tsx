@@ -1,4 +1,5 @@
 import { imageObjectPosition } from "./imageObjectPosition";
+import { emitLearningEvent } from "../analytics/learningAnalytics";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveAssetUrl } from "../../utils/assetUrl";
@@ -187,6 +188,7 @@ export const WordImage = memo(function WordImage({
     setRetryToken((current) => {
       if (current >= 1) {
         setFailed(true);
+        emitLearningEvent({ name: "media_failed", properties: { category: "image" } });
         return current;
       }
       return current + 1;

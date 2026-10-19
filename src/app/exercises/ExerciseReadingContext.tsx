@@ -14,6 +14,8 @@ import { LessonTransferPractice } from "./LessonTransferPractice";
 import { ScenePlaceholder } from "../shared/SentenceQuestionSupport";
 import { answerLayout } from "../shared/answerLayout";
 import { QuestionImage } from "../shared/QuestionImage";
+import { z } from "zod";
+import { useStageCheckpoint } from "../shared/useStageCheckpoint";
 
 interface Props {
   step: number;
@@ -33,9 +35,21 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
   const { playCorrect, playIncorrect, playClick } = useSound();
   const lesson = getAuthoredLessonContent(lessonId);
   const usageState = useLessonUsage(lessonId);
-  const [clusterIndex, setClusterIndex] = useState(0);
+  const [clusterId, setClusterId] = useStageCheckpoint(
+    "reading-cluster",
+    lesson?.clusters[0]?.id ?? "",
+    z.string()
+  );
+  const clusterIndex = Math.max(
+    0,
+    lesson?.clusters.findIndex((item) => item.id === clusterId) ?? 0
+  );
   const [failedImage, setFailedImage] = useState<string | null>(null);
-  const [selected, setSelected] = useState<string | null>(null);
+  const [selected, setSelected] = useStageCheckpoint<string | null>(
+    `reading-answer-${clusterId}`,
+    null,
+    z.string().nullable()
+  );
   const cluster = lesson?.clusters[clusterIndex] ?? null;
   const isLastCluster = Boolean(lesson && clusterIndex === lesson.clusters.length - 1);
   const group = useMemo(
@@ -64,14 +78,14 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
         })
       );
     },
-    [cluster, dispatch, playClick, playCorrect, playIncorrect, selected]
+    [cluster, dispatch, playClick, playCorrect, playIncorrect, selected, setSelected]
   );
   const handleContinue = useCallback(() => {
     if (!lesson || !cluster) return;
     if (clusterIndex >= lesson.clusters.length - 1) dispatch({ type: "LESSON_NEXT" });
-    else setClusterIndex((index) => index + 1);
+    else setClusterId(lesson.clusters[clusterIndex + 1].id);
     setSelected(null);
-  }, [cluster, clusterIndex, dispatch, lesson]);
+  }, [cluster, clusterIndex, dispatch, lesson, setClusterId, setSelected]);
   useEffect(() => {
     // The final answer opens independent production and spaced transfer.
     // Never auto-dismiss that work before the learner can use it.

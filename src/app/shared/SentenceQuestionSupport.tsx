@@ -11,6 +11,7 @@ import { useSentenceAudio } from "./useSentenceAudio";
 import { useAccessibility } from "./useAccessibilityPreferences";
 import { Button } from "./Button";
 import { MediaFrame } from "./MediaFrame";
+import { useLessonSession } from "./LessonSessionContext";
 
 /** A word ID alone cannot establish that an image supports a sentence. */
 export function resolveSentenceMedia(
@@ -69,6 +70,7 @@ export function SentenceQuestionSupport({
 }) {
   const { t } = useI18n();
   const { accessibility } = useAccessibility();
+  const session = useLessonSession();
   const [activeQuestionKey, setActiveQuestionKey] = useState(`${word.id}:${sentence}`);
   const [failedImages, setFailedImages] = useState<ReadonlySet<string>>(() => new Set());
   if (activeQuestionKey !== `${word.id}:${sentence}`) {
@@ -185,40 +187,49 @@ export function SentenceQuestionSupport({
       ) : (
         <ScenePlaceholder clue={clue} />
       )}
-      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-wp-card p-3 sm:p-4 shadow-wp-xs shrink-0">
-        <p
-          lang="en"
-          dir="ltr"
-          className="min-w-0 flex-1 basis-36 text-start text-base sm:text-lg leading-relaxed text-foreground"
-        >
-          <span className="font-bold text-foreground">{clueLabel}: </span>
-          <span className="font-semibold text-primary">{clue}</span>
-        </p>
-        <Button
-          variant="outline"
-          size="md"
-          disabled={!audio.isSupported}
-          aria-pressed={audio.isPlaying}
-          aria-busy={audio.isLoading}
-          aria-label={
-            audio.isPlaying
-              ? t("exercise.stopSentenceAudio")
+      <details
+        key={word.id}
+        open={answered || session?.scaffolding !== "independent"}
+        className="rounded-2xl border border-border bg-card p-3 sm:p-4"
+      >
+        <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-sm font-semibold text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+          {t("reviewUpdate.meaningSupport")}
+        </summary>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p
+            lang="en"
+            dir="ltr"
+            className="min-w-0 flex-1 basis-36 text-start text-base sm:text-lg leading-relaxed text-foreground"
+          >
+            <span className="font-bold text-foreground">{clueLabel}: </span>
+            <span className="font-semibold text-primary">{clue}</span>
+          </p>
+          <Button
+            variant="outline"
+            size="md"
+            disabled={!audio.isSupported}
+            aria-pressed={audio.isPlaying}
+            aria-busy={audio.isLoading}
+            aria-label={
+              audio.isPlaying
+                ? t("exercise.stopSentenceAudio")
+                : audio.isError
+                  ? t("exercise.retrySentenceAudio")
+                  : t("exercise.listenSentence")
+            }
+            aria-describedby={!answered ? audioHintId : undefined}
+            iconLeft={<Volume2 className="size-4" aria-hidden />}
+            onClick={() => (audio.isPlaying ? audio.stop() : audio.play())}
+            className="shrink-0 min-h-[44px] min-w-[44px] px-4 font-semibold"
+          >
+            {audio.isPlaying
+              ? t("action.stop")
               : audio.isError
-                ? t("exercise.retrySentenceAudio")
-                : t("exercise.listenSentence")
-          }
-          aria-describedby={!answered ? audioHintId : undefined}
-          iconLeft={<Volume2 className="size-4" aria-hidden />}
-          onClick={() => (audio.isPlaying ? audio.stop() : audio.play())}
-          className="shrink-0 min-h-[44px] min-w-[44px] px-4 font-semibold"
-        >
-          {audio.isPlaying
-            ? t("action.stop")
-            : audio.isError
-              ? t("action.retry")
-              : t("action.listen")}
-        </Button>
-      </div>
+                ? t("action.retry")
+                : t("action.listen")}
+          </Button>
+        </div>
+      </details>
       {!answered && (
         <span id={audioHintId} className="sr-only">
           {t("exercise.sentenceAudioGapHint")}

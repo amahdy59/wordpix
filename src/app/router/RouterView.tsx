@@ -1,4 +1,5 @@
-import { lazy, Suspense, useMemo, useCallback } from "react";
+import { lazy, Suspense, useMemo, useCallback, useEffect } from "react";
+import { emitLearningEvent } from "../analytics/learningAnalytics";
 import { motion } from "framer-motion";
 import type { Screen, Action, TabId } from "../types";
 import { resolveGroup, resolveUnitForLesson, DEFAULT_UNIT_ID } from "../data/courseCatalog";
@@ -8,14 +9,18 @@ import { UnitVocabularyGate } from "./UnitVocabularyGate";
 import { useI18n } from "../context/I18nContext";
 import { useLearner } from "../context/LearnerContext";
 import { LessonSessionContext } from "../shared/LessonSessionContext";
+import { getLessonScaffolding } from "../lesson/lessonScaffolding";
 import { AppShell } from "../shared/AppShell";
-import { Button, FeedbackPanel } from "../shared";
+import { Button } from "../shared/Button";
+import { FeedbackPanel } from "../shared/FeedbackPanel";
 import { TABBED_IDS } from "../store/reducer";
 import { NetworkStatusBanner } from "../shared/NetworkStatusBanner";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "../onboarding/SplashWelcome";
-import { LanguageSelect } from "../onboarding/LanguageSelect";
+const LanguageSelect = lazy(() =>
+  import("../onboarding/LanguageSelect").then((module) => ({ default: module.LanguageSelect }))
+);
 import { ReadyCelebration } from "../onboarding/ReadyCelebration";
 
 // Synchronous core tab views (home is the default tab and stays eager)
@@ -134,6 +139,15 @@ import { getAuthoredLessonContent } from "../exercises/content/authoredLessonCon
 
 const LoadingFallback = () => {
   const { t } = useI18n();
+  useEffect(() => {
+    const start = performance.now();
+    return () => {
+      emitLearningEvent({
+        name: "route_timing",
+        properties: { milliseconds: Math.round(performance.now() - start) },
+      });
+    };
+  }, []);
   return (
     <div
       className="flex-1 w-full max-w-full flex flex-col gap-4 py-2"
@@ -413,6 +427,16 @@ function LessonRoute({
   return (
     <LessonSessionContext.Provider
       value={{
+        sessionId: state.sessionId,
+        unitId: state.unitId ?? resolveUnitForLesson(state.lessonId).id,
+        attempts: state.attempts,
+        activeItemId: state.activeItemId,
+        onActiveItem: (wordId) => dispatch({ type: "LESSON_SET_ITEM", wordId }),
+        scaffolding: getLessonScaffolding(
+          learnerState.preferences.englishLevel,
+          stepWords.map((word) => word.id),
+          learnerState.wordMemory
+        ),
         current: state.step + 1,
         total: interleavedPlan.length,
         nextExercise: interleavedPlan[state.step + 1]?.exercise ?? "complete",

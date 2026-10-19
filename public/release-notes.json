@@ -1,12 +1,71 @@
 {
-  "version": "0.1.66",
+  "version": "0.1.67",
   "notes": [
-    "Optimized pronunciation and exercise layouts to efficiently utilize screen whitespace on desktop displays with larger responsive images, and streamlined auto-advance progression with live status feedback and pause controls."
+    "Find words in English or Arabic, resume interrupted practice, and manage keyboard shortcuts and offline unit text."
   ],
   "notesAr": [
-    "تحسين تخطيط تمارين النطق والأسئلة للاستفادة المثلى من المساحات البيضاء على الشاشات الكبيرة بصور متجاوبة أكبر، وتبسيط التنقل التلقائي بمؤشر تقدم مباشر وأدوات تحكم في الإيقاف المؤقت."
+    "ابحث عن الكلمات بالإنجليزية أو العربية، واستأنف التدريب بعد الانقطاع، وتحكم في اختصارات لوحة المفاتيح ونصوص الوحدات دون اتصال."
   ],
   "releases": [
+    {
+      "id": "0.1.67",
+      "version": "0.1.67",
+      "date": "2026-10-19",
+      "title": {
+        "en": "Clearer learning, bilingual lookup and reliable practice",
+        "ar": "تعلم أوضح وبحث ثنائي اللغة وممارسة موثوقة"
+      },
+      "changes": [
+        {
+          "id": "bilingual-reference",
+          "category": "improved",
+          "en": "Find vocabulary by English or Arabic meaning, see exact matches first, and browse more results with unit-specific details.",
+          "ar": "ابحث عن المفردات بالإنجليزية أو المعنى العربي، وشاهد التطابقات الدقيقة أولاً، وتصفح المزيد من النتائج مع تفاصيل كل وحدة."
+        },
+        {
+          "id": "starting-guidance",
+          "category": "improved",
+          "en": "An optional broader starting check samples reading, sentence use and listening through advanced topics. Results remain provisional and can be overridden.",
+          "ar": "يفحص اختبار بداية اختياري أوسع القراءة واستخدام الجمل والاستماع حتى الموضوعات المتقدمة. تظل النتائج إرشادية ويمكن تغيير نقطة البداية."
+        },
+        {
+          "id": "practice-continuity",
+          "category": "fixed",
+          "en": "Resume vocabulary at the current word and scored drills at the next unanswered item. Saved reading and sentence-building state helps continue interrupted work.",
+          "ar": "استأنف المفردات من الكلمة الحالية والتمارين المقيمة من السؤال التالي غير المجاب عنه. تساعد حالات القراءة وبناء الجمل المحفوظة في متابعة العمل بعد الانقطاع."
+        },
+        {
+          "id": "review-consistency",
+          "category": "fixed",
+          "en": "Review eligibility now uses the same timestamp rules across Home, Practice and Profile, including local-day labels.",
+          "ar": "أصبح استحقاق المراجعة يستخدم قواعد الوقت نفسها في الرئيسية والممارسة والملف الشخصي، مع تسميات اليوم المحلي."
+        },
+        {
+          "id": "accessible-controls",
+          "category": "improved",
+          "en": "Library audio and word details have separate controls. Navigation supports normal browser links, and character shortcuts can be disabled in Settings.",
+          "ar": "أصبحت للصوت وتفاصيل الكلمات في المكتبة أدوات تحكم منفصلة. يدعم التنقل روابط المتصفح العادية، ويمكن تعطيل اختصارات الحرف الواحد من الإعدادات."
+        },
+        {
+          "id": "focused-learning",
+          "category": "improved",
+          "en": "Clearer session and group sizes, smaller milestones, goal-based vocabulary suggestions and height-aware lesson imagery make the next action easier to understand.",
+          "ar": "تسهل أحجام الجلسة والمجموعة الأوضح، والأهداف المرحلية الصغيرة، والمفردات المقترحة حسب هدفك، والصور المتكيفة مع ارتفاع الشاشة فهم الخطوة التالية."
+        },
+        {
+          "id": "offline-performance",
+          "category": "improved",
+          "en": "Prepare selected unit text for offline reading with progress, cancellation and retry. Reduced duplicate curriculum data, bounded media caching and smaller speculative preloads reduce unnecessary work.",
+          "ar": "جهز نصوص وحدة مختارة للقراءة دون اتصال مع تقدم التنزيل والإلغاء وإعادة المحاولة. يقلل حذف تكرار بيانات المنهج وضبط تخزين الوسائط والتحميل المسبق من العمل غير الضروري."
+        },
+        {
+          "id": "local-diagnostics",
+          "category": "added",
+          "en": "Optional diagnostics stay on this device, are off by default and exclude answers and recordings. You can export or clear the log in Settings; nothing is sent automatically.",
+          "ar": "تبقى بيانات التشخيص الاختيارية على هذا الجهاز، وتكون متوقفة افتراضياً، ولا تشمل الإجابات والتسجيلات. يمكنك تصدير السجل أو مسحه من الإعدادات؛ لا تُرسل أي بيانات تلقائياً."
+        }
+      ]
+    },
     {
       "id": "0.1.66",
       "version": "0.1.66",

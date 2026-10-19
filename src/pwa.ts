@@ -92,7 +92,14 @@ export async function getOfflineReadiness(worldId = DEFAULT_UNIT_ID): Promise<Of
 
   try {
     const cache = await caches.open(CACHE_NAME);
-    const matches = await Promise.all(urls.map((url) => cache.match(url, { ignoreVary: true })));
+    const runtime = await caches.open("wordpix-runtime-v1");
+    const matches = await Promise.all(
+      urls.map(
+        async (url) =>
+          (await cache.match(url, { ignoreVary: true })) ??
+          (await runtime.match(url, { ignoreVary: true }))
+      )
+    );
     const cached = matches.filter(Boolean).length;
     return { cached, total, ready: cached === total };
   } catch {

@@ -27,6 +27,7 @@ const lessonSchema = z.object({
     })
   ),
   startedAt: z.string(),
+  activeItemId: z.string().optional(),
 });
 
 const key = (unitId: string) => `wordpix:lesson-resume:${unitId}`;
@@ -45,7 +46,8 @@ export function readLessonResume(unitId: string): Extract<Screen, { id: "lesson"
       lesson.unitId !== unitId ||
       lesson.step >= lesson.totalSteps ||
       !unit.groups.some((group) => group.id === lesson.lessonId) ||
-      !lesson.wordQueue.every((id) => unit.wordIds.includes(id))
+      !lesson.wordQueue.every((id) => unit.wordIds.includes(id)) ||
+      (lesson.activeItemId !== undefined && !lesson.wordQueue.includes(lesson.activeItemId))
     )
       return null;
     return lesson;
@@ -61,6 +63,19 @@ export function saveLessonResume(screen: Screen): void {
       localStorage.setItem(key(unitId), JSON.stringify({ ...screen, unitId }));
     } else if (screen.id === "lesson-complete" && screen.mode === "NEW_LESSON") {
       localStorage.removeItem(key(screen.unitId ?? resolveUnitForLesson(screen.lessonId).id));
+      const prefix = `wordpix:stage:${screen.unitId ?? resolveUnitForLesson(screen.lessonId).id}:`;
+      for (const name of Object.keys(localStorage)) {
+        if (!name.startsWith(prefix)) continue;
+        try {
+          if (
+            (JSON.parse(localStorage.getItem(name) ?? "null") as { sessionId?: string } | null)
+              ?.sessionId === screen.sessionId
+          )
+            localStorage.removeItem(name);
+        } catch {
+          /* leave unknown data untouched */
+        }
+      }
     }
   } catch {
     // Existing memory/IndexedDB progress remains authoritative when storage is unavailable.

@@ -30,6 +30,9 @@ import { useI18n } from "../context/I18nContext";
 import { Button, EmptyState, PageContainer, PageHeader, Surface, ProgressBar } from "../shared";
 import { summarizeSkillMastery, type MasteryDimension } from "../../features/gamification/sm2";
 
+import { getReviewSchedule } from "../review/reviewSchedule";
+import { useReviewDate } from "../shared/useReviewDate";
+
 interface Props {
   dispatch: React.Dispatch<Action>;
 }
@@ -67,11 +70,8 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
     return totalRecalls === 0 ? null : Math.round((totalCorrect / totalRecalls) * 100);
   }, [memoryValues]);
 
-  const dueCount = useMemo(() => {
-    const now = Date.now();
-    return memoryValues.filter((w) => !w.nextReviewAt || new Date(w.nextReviewAt).getTime() <= now)
-      .length;
-  }, [memoryValues]);
+  const reviewDate = useReviewDate();
+  const dueCount = getReviewSchedule(progress.wordMemory, reviewDate).due.length;
 
   const skillSummaries = useMemo(() => summarizeSkillMastery(memoryValues), [memoryValues]);
   const skillMeta: Record<
@@ -388,7 +388,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                 </div>
               </>
             )}
-            <HelpDisclosure label={t("help.aboutProgress")}>
+            <HelpDisclosure label={t("reviewUpdate.progressTerms")}>
               <dl className="space-y-3">
                 {STATS.map(({ label, description }) => (
                   <div key={label}>

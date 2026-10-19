@@ -68,6 +68,8 @@ await emit("lexiconCore.ts", core);
 const lessonSource = await readFile(`${directory}/lessons.ts`, "utf8");
 const lessonFile = parse("lessons.ts", lessonSource);
 const removals = [];
+const replacements = [];
+const groupedWordIds = new Map();
 const storyIndex = {};
 for (const statement of lessonFile.statements) {
   if (!ts.isVariableStatement(statement)) continue;
@@ -79,9 +81,17 @@ for (const statement of lessonFile.statements) {
     )
       continue;
     const stories = {};
+    const wordIds = [];
     const shard = value.name.getText(lessonFile).toLowerCase().replaceAll("_", "-");
     for (const group of value.initializer.elements) {
       if (!ts.isObjectLiteralExpression(group)) throw new Error("Expected literal lesson");
+      const words = group.properties.find(
+        (property) => property.name?.getText(lessonFile) === "wordIds"
+      );
+      if (words && ts.isArrayLiteralExpression(words.initializer))
+        wordIds.push(
+          ...words.initializer.elements.map((item) => (ts.isStringLiteral(item) ? item.text : null))
+        );
       const id = group.properties.find((p) => p.name?.getText(lessonFile) === "id");
       const story = group.properties.find((p) => p.name?.getText(lessonFile) === "story");
       if (!story) continue;
@@ -95,6 +105,7 @@ for (const statement of lessonFile.statements) {
       if (lessonSource[end] === ",") end++;
       removals.push([story.getStart(lessonFile), end]);
     }
+    groupedWordIds.set(value.name.getText(lessonFile), wordIds);
     if (Object.keys(stories).length)
       await emit(
         `contentChunks/story-${shard}.ts`,
@@ -102,9 +113,43 @@ for (const statement of lessonFile.statements) {
       );
   }
 }
+// Reuse an identical group's ID list rather than shipping every ID twice.
+// Values and ordering are proved equal before replacing; media fields are untouched.
+const units = declaration(lessonFile, "COURSE_UNITS").value.initializer;
+if (!ts.isObjectLiteralExpression(units)) throw new Error("Expected literal curriculum units");
+for (const property of units.properties) {
+  if (!ts.isPropertyAssignment(property) || !ts.isObjectLiteralExpression(property.initializer))
+    continue;
+  const fields = property.initializer.properties;
+  const groups = fields.find((field) => field.name?.getText(lessonFile) === "groups");
+  const words = fields.find((field) => field.name?.getText(lessonFile) === "wordIds");
+  if (
+    !groups ||
+    !words ||
+    !ts.isPropertyAssignment(groups) ||
+    !ts.isPropertyAssignment(words) ||
+    !ts.isIdentifier(groups.initializer) ||
+    !ts.isArrayLiteralExpression(words.initializer)
+  )
+    continue;
+  const original = words.initializer.elements.map((item) =>
+    ts.isStringLiteral(item) ? item.text : null
+  );
+  const grouped = groupedWordIds.get(groups.initializer.text);
+  if (!grouped || original.includes(null) || JSON.stringify(original) !== JSON.stringify(grouped))
+    continue;
+  replacements.push([
+    words.initializer.getStart(lessonFile),
+    words.initializer.end,
+    `${groups.initializer.text}.flatMap((group) => group.wordIds)`,
+  ]);
+}
 let catalogue = lessonSource;
-for (const [start, end] of removals.sort((a, b) => b[0] - a[0]))
-  catalogue = catalogue.slice(0, start) + catalogue.slice(end);
+for (const [start, end, replacement] of [
+  ...removals.map(([start, end]) => [start, end, ""]),
+  ...replacements,
+].sort((a, b) => b[0] - a[0]))
+  catalogue = catalogue.slice(0, start) + replacement + catalogue.slice(end);
 await emit("courseCatalog.ts", catalogue);
 await emit(
   "lessonStoryIndex.ts",

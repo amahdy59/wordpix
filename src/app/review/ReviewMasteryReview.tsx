@@ -19,6 +19,8 @@ import { useI18n } from "../context/I18nContext";
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { WordImage } from "../shared/WordImage";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
+import { getReviewSchedule } from "./reviewSchedule";
+import { useReviewDate } from "../shared/useReviewDate";
 
 /** Words per review session. */
 const REVIEW_SESSION_SIZE = 5;
@@ -35,7 +37,13 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [selectedWord, setSelectedWord] = useState<VocabularyItem | null>(null);
 
-  const todayStr = getLocalDateString(new Date());
+  const reviewDate = useReviewDate();
+  const todayStr = getLocalDateString(reviewDate);
+  const schedule = useMemo(
+    () => getReviewSchedule(progress.wordMemory, reviewDate),
+    [progress.wordMemory, reviewDate]
+  );
+  const eligibleIds = useMemo(() => new Set(schedule.due.map((word) => word.wordId)), [schedule]);
 
   useEffect(() => {
     const memoryWordIds = Object.keys(progress.wordMemory);
@@ -69,7 +77,9 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     return entries.flatMap(([wordId, entry]) => {
       const word = getWords([wordId])[0];
       if (!word) return [];
-      const nextDate = entry.nextReviewAt ? entry.nextReviewAt.split("T")[0] : todayStr;
+      const nextDate = entry.nextReviewAt
+        ? getLocalDateString(new Date(entry.nextReviewAt))
+        : todayStr;
       const daysDiff = calculateDaysBetween(todayStr, nextDate);
       return [{ word, entry, daysDiff }];
     });
@@ -78,28 +88,33 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   const overdueList = useMemo(
     () =>
       memoryItems
-        .filter((item) => item.daysDiff < 0)
+        .filter((item) => item.daysDiff < 0 && eligibleIds.has(item.word.id))
         .sort((a, b) => a.daysDiff - b.daysDiff)
         .map((item) => ({ ...item, daysDiff: Math.abs(item.daysDiff) })),
-    [memoryItems]
+    [memoryItems, eligibleIds]
   );
 
   const dueTodayList = useMemo(
-    () => memoryItems.filter((item) => item.daysDiff === 0),
-    [memoryItems]
+    () => memoryItems.filter((item) => item.daysDiff === 0 && eligibleIds.has(item.word.id)),
+    [memoryItems, eligibleIds]
   );
 
   const upcomingList = useMemo(
-    () => memoryItems.filter((item) => item.daysDiff > 0).sort((a, b) => a.daysDiff - b.daysDiff),
-    [memoryItems]
+    () =>
+      memoryItems
+        .filter((item) => !eligibleIds.has(item.word.id))
+        .sort((a, b) => a.daysDiff - b.daysDiff),
+    [memoryItems, eligibleIds]
   );
 
   const totalDue = overdueList.length + dueTodayList.length;
 
   const startReviewSession = () => {
-    const queue = [...overdueList, ...dueTodayList]
+    const available = new Set(memoryItems.map((item) => item.word.id));
+    const queue = schedule.due
+      .filter((item) => available.has(item.wordId))
       .slice(0, REVIEW_SESSION_SIZE)
-      .map((item) => item.word.id);
+      .map((item) => item.wordId);
     if (queue.length === 0) return;
 
     dispatch({

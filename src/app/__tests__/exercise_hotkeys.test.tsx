@@ -1,7 +1,8 @@
 import { describe, expect, it, vi, beforeEach } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
+import { setDevicePreference } from "../shared/devicePreferences";
 
 interface HarnessProps {
   onSelectIndex: (i: number) => void;
@@ -25,6 +26,20 @@ beforeEach(() => {
 });
 
 describe("Exercise number-key shortcuts", () => {
+  it("respects the device shortcut preference and responds to changes without reloading", async () => {
+    const user = userEvent.setup();
+    const select = vi.fn();
+    const replay = vi.fn();
+    setDevicePreference("character-shortcuts", false);
+    render(<Harness onSelectIndex={select} onReplayAudio={replay} />);
+    await user.keyboard("2r");
+    expect(select).not.toHaveBeenCalled();
+    expect(replay).not.toHaveBeenCalled();
+    act(() => setDevicePreference("character-shortcuts", true));
+    await user.keyboard("2r");
+    expect(select).toHaveBeenCalledExactlyOnceWith(1);
+    expect(replay).toHaveBeenCalledOnce();
+  });
   it("selects the matching option by number key", async () => {
     const user = userEvent.setup();
     const onSelectIndex = vi.fn();

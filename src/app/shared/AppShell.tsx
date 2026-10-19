@@ -6,6 +6,8 @@ import { MobileHeader } from "./MobileHeader";
 import { NetworkStatusBanner } from "./NetworkStatusBanner";
 import { KeyboardShortcutsModal } from "./KeyboardShortcutsModal";
 
+import { useDevicePreference } from "./devicePreferences";
+
 interface Props {
   activeTab: TabId;
   dispatch: React.Dispatch<Action>;
@@ -19,6 +21,7 @@ interface Props {
  * Desktop (1024px+): Fully labelled sidebar; no intermediate clipped icon rail.
  */
 export const AppShell = memo(function AppShell({ activeTab, dispatch, children }: Props) {
+  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   const [showShortcutsModal, setShowShortcutsModal] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const bottomNavRef = useRef<HTMLDivElement>(null);
@@ -47,7 +50,7 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+      if (!shortcutsEnabled || e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
       const target = e.target;
       if (
         target instanceof HTMLElement &&
@@ -62,7 +65,7 @@ export const AppShell = memo(function AppShell({ activeTab, dispatch, children }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [shortcutsEnabled]);
 
   return (
     <div className="h-dvh max-h-dvh w-full max-w-full overflow-hidden bg-background flex flex-col lg:flex-row relative">

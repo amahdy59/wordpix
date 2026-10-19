@@ -5,6 +5,7 @@ import { useI18n } from "../../../context/I18nContext";
 import { formatNumber } from "../../../shared/useAccessibilityPreferences";
 import { useLearner } from "../../../context/LearnerContext";
 import { playCorrectSound, playIncorrectSound } from "../../../shared/useSound";
+import { useDevicePreference } from "../../../shared/devicePreferences";
 
 interface Props {
   itemId: string;
@@ -30,6 +31,7 @@ export function MultipleChoiceQuiz({
   onRetry,
 }: Props) {
   const { t } = useI18n();
+  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   const { state: learnerState } = useLearner();
   const { numeralSystem, reduceMotion } = learnerState.accessibility;
 
@@ -69,7 +71,7 @@ export function MultipleChoiceQuiz({
   // Number-key shortcuts (1–4) scoped to this exercise
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+      if (!shortcutsEnabled || e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
       const target = e.target;
       if (
         target instanceof HTMLElement &&
@@ -85,7 +87,7 @@ export function MultipleChoiceQuiz({
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [options.length, handlePick]);
+  }, [options.length, handlePick, shortcutsEnabled]);
 
   const questionId = `question-label-${itemId}`;
 

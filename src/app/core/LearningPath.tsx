@@ -214,7 +214,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
 
       <section
         aria-labelledby="recommended-heading"
-        className="grid gap-4 rounded-2xl border border-primary/35 bg-secondary p-4 sm:p-5 lg:grid-cols-[1fr_auto] lg:items-center"
+        className="grid gap-4 rounded-2xl border border-primary/35 bg-card p-4 sm:p-5 lg:grid-cols-[1fr_auto] lg:items-center"
       >
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm font-bold text-primary">
@@ -290,7 +290,16 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             </p>
             <h2 className="mt-1 text-xl font-bold text-foreground">{t("learn.routeHeading")}</h2>
 
-            <div className="mt-4 max-w-xl">
+            <p className="text-base font-semibold text-foreground">
+              {t("reviewUpdate.nextMilestone", { unit: recommendedUnit.name })}
+            </p>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              {t("reviewUpdate.phaseExplanation")}
+            </p>
+            <details className="mt-2 max-w-xl">
+              <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-sm text-muted-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                {t("reviewUpdate.catalogProgress")}
+              </summary>
               <ProgressBar
                 progressPercent={pathPercent}
                 label={t("learn.routeMastery")}
@@ -300,7 +309,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   total: totalWords,
                 })}
               />
-            </div>
+            </details>
           </div>
 
           <div className="flex flex-col gap-4">

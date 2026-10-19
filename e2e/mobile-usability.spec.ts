@@ -18,10 +18,10 @@ test("phone tabs and skill choices remain visible with enlarged text", async ({ 
   await page.getByRole("button", { name: "Close settings", exact: true }).click();
 
   const nav = page.getByRole("navigation", { name: "Main navigation", exact: true });
-  await expect(nav.getByRole("button")).toHaveCount(5);
+  await expect(nav.getByRole("link")).toHaveCount(5);
   const group = page.getByRole("radiogroup", { name: "Exercise categories" });
   for (const control of [
-    ...(await nav.getByRole("button").all()),
+    ...(await nav.getByRole("link").all()),
     ...(await group.getByRole("radio").all()),
   ]) {
     await expect(control).toBeVisible();
@@ -109,7 +109,7 @@ test("main tabs retain enhanced text contrast on phones", async ({ page }) => {
     await expect(
       page
         .getByRole("navigation", { name: "Main navigation", exact: true })
-        .getByRole("button", { name: tab[0].toUpperCase() + tab.slice(1), exact: true })
+        .getByRole("link", { name: tab[0].toUpperCase() + tab.slice(1), exact: true })
     ).toHaveAttribute("aria-current", "page");
     await expect(page.locator("main h1")).toBeVisible();
     const scan = await new AxeBuilder({ page }).withRules(["color-contrast-enhanced"]).analyze();

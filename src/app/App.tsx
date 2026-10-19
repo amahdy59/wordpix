@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useCallback } from "react";
+import { useEffect, useReducer, useCallback, useRef } from "react";
 import type { Screen } from "./types";
 import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
@@ -19,6 +19,7 @@ import { MotionConfig } from "framer-motion";
 import { purgeLegacyAudioCredentials } from "./shared/audioSecurity";
 import { saveLessonResume } from "./lesson/lessonResume";
 import { buildInterleavedLessonPlan } from "./lesson/lessonSequence";
+import { useLearningDiagnostics } from "./analytics/useLearningDiagnostics";
 
 function AppInner() {
   const { t } = useI18n();
@@ -46,6 +47,7 @@ function AppInner() {
     }
   );
 
+  useLearningDiagnostics(state);
   const handleRoute = useCallback((intent: RouteIntent) => {
     if (intent.kind === "lesson-step") {
       dispatch({ type: "LESSON_GOTO_STEP", step: intent.step });
@@ -139,6 +141,7 @@ function AppInner() {
   }, []);
 
   useApplyAccessibilityPreferences();
+  const lastAnnouncement = useRef("");
 
   useEffect(() => {
     try {
@@ -174,7 +177,11 @@ function AppInner() {
               learnerState.accessibility.includeListening
             ).length)
         : undefined;
-    ariaLiveAnnounce(describeScreen(state, t, lessonStageCount));
+    const announcement = describeScreen(state, t, lessonStageCount);
+    if (announcement !== lastAnnouncement.current) {
+      lastAnnouncement.current = announcement;
+      ariaLiveAnnounce(announcement);
+    }
   }, [
     learnerState.accessibility.includeListening,
     learnerState.preferences.englishLevel,

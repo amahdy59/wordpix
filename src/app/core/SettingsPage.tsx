@@ -31,6 +31,9 @@ import { loadUnitVocabulary } from "../data/vocabulary";
 import { loadLessonStory } from "../data/lessonStoryLoader";
 import { loadLexicon } from "../data/lexiconLoader";
 
+import { OfflineUnitDownload } from "./OfflineUnitDownload";
+import { DevicePreferenceControls } from "./DevicePreferenceControls";
+
 const SPEECH_RATES = [0.5, 0.75, 1] as const;
 
 export type SettingCategory =
@@ -45,6 +48,20 @@ interface SettingItem {
 }
 
 const SETTING_ITEMS: SettingItem[] = [
+  {
+    id: "characterShortcuts",
+    category: "learning",
+    titleKey: "reviewUpdate.shortcutsTitle",
+    descriptionKey: "reviewUpdate.shortcutsDescription",
+    keywords: ["keyboard", "shortcuts", "speech", "keys"],
+  },
+  {
+    id: "diagnosticsConsent",
+    category: "data",
+    titleKey: "reviewUpdate.diagnosticsTitle",
+    descriptionKey: "reviewUpdate.diagnosticsDescription",
+    keywords: ["privacy", "diagnostics", "performance", "analytics", "consent"],
+  },
   {
     id: "themeMode",
     category: "appearance",
@@ -182,12 +199,15 @@ const SETTING_ITEMS: SettingItem[] = [
   },
 ];
 
+import { useDevicePreference, isTextInput } from "../shared/devicePreferences";
+
 interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
 export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
   const { t, interfaceLang, setInterfaceLang } = useI18n();
+  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   const { state, setPreferences, resetToZero } = useLearner();
   const { theme, resolvedTheme, toggleTheme } = useTheme();
   const { accessibility, setAccessibility } = useAccessibility();
@@ -223,7 +243,17 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
   // Press "/" to focus search box globally (WCAG 2.1.4 / keyboard navigation)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "/" && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (
+        shortcutsEnabled &&
+        !e.ctrlKey &&
+        !e.metaKey &&
+        !e.altKey &&
+        !isTextInput(e.target) &&
+        e.key === "/" &&
+        !e.ctrlKey &&
+        !e.metaKey &&
+        !e.altKey
+      ) {
         const target = e.target;
         if (
           target instanceof HTMLElement &&
@@ -237,7 +267,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [shortcutsEnabled]);
 
   const handlePreloadAll = async () => {
     if (isPreloading) return;
@@ -411,6 +441,12 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
       <div className="grid grid-cols-1 2xl:grid-cols-[minmax(0,1fr)_340px] gap-6 items-start">
         {/* Settings Column */}
         <div className="flex flex-col gap-6">
+          {isVisible("characterShortcuts") && (
+            <DevicePreferenceControls kind="character-shortcuts" />
+          )}
+          {isVisible("diagnosticsConsent") && (
+            <DevicePreferenceControls kind="diagnostics-consent" />
+          )}
           {/* Empty State when no search matches */}
           {filteredSettingIds.length === 0 && (
             <Surface className="p-8 text-center flex flex-col items-center justify-center gap-3">
@@ -1096,6 +1132,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
             </section>
           )}
 
+          {isVisible("offlinePreload") && <OfflineUnitDownload />}
           {/* SECTION 5: OFFLINE PRELOAD */}
           {isVisible("offlinePreload") && (
             <section className="flex flex-col gap-3" aria-labelledby="heading-offline">
@@ -1160,7 +1197,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                       aria-valuenow={preloadProgress}
                       aria-valuemin={0}
                       aria-valuemax={100}
-                      aria-label={`Offline curriculum download progress: ${preloadProgress}%`}
+                      aria-label={t("reviewUpdate.downloadProgress", { progress: preloadProgress })}
                     />
                   </div>
                 )}

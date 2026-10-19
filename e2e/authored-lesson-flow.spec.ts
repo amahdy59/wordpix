@@ -228,7 +228,7 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     });
     await page.goto("/#/home", { waitUntil: "domcontentloaded" });
     await waitForStyles(page);
-    await page.getByRole("button", { name: "Profile", exact: true }).click();
+    await page.getByRole("link", { name: "Profile", exact: true }).click();
 
     await expect(page.getByRole("heading", { name: "How you can use your words" })).toBeHidden();
     await page.locator("summary").filter({ hasText: "About your learning progress" }).click();

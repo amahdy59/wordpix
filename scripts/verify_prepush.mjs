@@ -44,7 +44,8 @@ const steps = [
   },
   {
     name: "Curriculum & Scenario Shard Consistency",
-    command: "pnpm run check:content-shards && pnpm run check:scenario-shards",
+    command:
+      "pnpm run check:content-shards && pnpm run check:scenario-shards && pnpm run check:search-index",
     description: "Verifying curriculum and scenario data shards match source catalogues",
   },
   {

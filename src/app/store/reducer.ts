@@ -118,6 +118,15 @@ export function reducer(state: Screen, action: Action): Screen {
       startedAt: new Date().toISOString(),
     };
   }
+  if (action.type === "LESSON_SET_ITEM") {
+    if (
+      state.id !== "lesson" ||
+      !state.wordQueue.includes(action.wordId) ||
+      state.activeItemId === action.wordId
+    )
+      return state;
+    return { ...state, activeItemId: action.wordId };
+  }
   if (action.type === "LESSON_ATTEMPT") {
     if (state.id !== "lesson") return state;
     const wordId = action.wordId || state.wordQueue[0] || "bed";
@@ -149,7 +158,7 @@ export function reducer(state: Screen, action: Action): Screen {
         attempts: state.attempts,
       };
     }
-    return { ...state, step: state.step + 1 };
+    return { ...state, step: state.step + 1, activeItemId: undefined };
   }
   if (action.type === "LESSON_PREVIOUS") {
     if (state.id !== "lesson") return state;
@@ -157,14 +166,14 @@ export function reducer(state: Screen, action: Action): Screen {
       const unitId = state.unitId || resolveUnitForLesson(state.lessonId).id;
       return { id: "lesson-entry", unitId };
     }
-    return { ...state, step: state.step - 1 };
+    return { ...state, step: state.step - 1, activeItemId: undefined };
   }
   if (action.type === "LESSON_GOTO_STEP") {
     if (state.id !== "lesson") return state;
     const maxSteps = state.totalSteps ?? CANONICAL_STAGE_COUNT;
     if (action.step < 0 || action.step >= maxSteps) return state;
     if (action.step === state.step) return state;
-    return { ...state, step: action.step };
+    return { ...state, step: action.step, activeItemId: undefined };
   }
   return state;
 }

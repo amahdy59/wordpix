@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useReducer } from "react";
 import type { VocabularyItem } from "../data/lessons";
+import { useLessonSession } from "../shared/LessonSessionContext";
 
 /**
  * The order in which a drill asks its words, including words it re-asks.
@@ -75,25 +76,32 @@ export interface DrillQueue {
 }
 
 export function useDrillQueue(words: VocabularyItem[]): DrillQueue {
+  const session = useLessonSession();
   const [state, dispatch] = useReducer(
     reducer,
-    words,
-    (initial): QueueState => ({
-      pending: initial.map((w) => w.id),
-      requeued: [],
-      answered: 0,
-      correctIds: [],
-    })
+    { words, attempts: session?.attempts ?? [], step: (session?.current ?? 1) - 1 },
+    (initial): QueueState => {
+      let restored: QueueState = {
+        pending: initial.words.map((w) => w.id),
+        requeued: [],
+        answered: 0,
+        correctIds: [],
+      };
+      // Reconstruct only submitted attempts in this stage. Replays cannot count
+      // an already-submitted answer twice; missed words retain their retry slot.
+      for (const attempt of initial.attempts.filter((item) => item.exerciseStep === initial.step)) {
+        if (restored.pending[0] === attempt.wordId)
+          restored = reducer(restored, { type: "ANSWER", correct: attempt.correct });
+      }
+      return restored;
+    }
   );
 
   const currentId = state.pending[0];
   const nextId = state.pending[1];
-  const current = useMemo(
-    () => words.find((w) => w.id === currentId) ?? null,
-    [words, currentId]
-  );
+  const current = useMemo(() => words.find((w) => w.id === currentId) ?? null, [words, currentId]);
   const next = useMemo(
-    () => (nextId ? words.find((w) => w.id === nextId) ?? null : null),
+    () => (nextId ? (words.find((w) => w.id === nextId) ?? null) : null),
     [words, nextId]
   );
 

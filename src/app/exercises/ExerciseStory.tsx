@@ -38,6 +38,8 @@ import { LessonTransferPractice } from "./LessonTransferPractice";
 import { QuestionImage } from "../shared/QuestionImage";
 import { getScenarioForLesson } from "../data/scenarios/scenarioService";
 import { UnitScenarioPlayer } from "../learning/study/UnitScenarioPlayer";
+import { z } from "zod";
+import { useStageCheckpoint } from "../shared/useStageCheckpoint";
 
 interface Props {
   step: number;
@@ -58,8 +60,16 @@ export const ExerciseStory = memo(function ExerciseStory({
   const group = resolveGroup(lessonId);
   const [usageData, setUsageData] = useState<LessonUsageData | null>(null);
   const [showOptionalPhrases, setShowOptionalPhrases] = useState(false);
-  const [activeChunkIndex, setActiveChunkIndex] = useState(0);
-  const [chunkAnswers, setChunkAnswers] = useState<Record<number, string>>({});
+  const [activeChunkIndex, setActiveChunkIndex] = useStageCheckpoint(
+    "story-chunk",
+    0,
+    z.number().int().min(0).max(1000)
+  );
+  const [chunkAnswers, setChunkAnswers] = useStageCheckpoint<Record<number, string>>(
+    "story-answers",
+    {},
+    z.record(z.coerce.number(), z.string())
+  );
   const [failedSceneImages, setFailedSceneImages] = useState<Record<string, boolean>>({});
   const [storyAttempt, setStoryAttempt] = useState(0);
   const [passage, setPassage] = useState<

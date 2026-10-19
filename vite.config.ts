@@ -170,6 +170,7 @@ export default defineConfig(async () => {
       },
     },
     build: {
+      manifest: true,
       // Opt-in for release sessions that must preserve every existing local file.
       emptyOutDir:
         process.env.WORDPIX_PRESERVE_BUILD_FILES !== "1" &&
@@ -181,6 +182,7 @@ export default defineConfig(async () => {
           manualChunks(rawId) {
             const id = rawId.replace(/\\/g, "/");
             if (id.includes("node_modules")) {
+              if (id.includes("/web-vitals/")) return "vendor-vitals";
               if (
                 id.includes("/react/") ||
                 id.includes("/react-dom/") ||

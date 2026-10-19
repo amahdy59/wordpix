@@ -47,10 +47,9 @@ export const SidebarNav = memo(function SidebarNav({
             const isActive = activeTab === id;
             const label = t(labelKey);
             return (
-              <button
+              <a
                 key={id}
-                type="button"
-                onClick={() => dispatch({ type: "GO", to: id })}
+                href={`#/${id}`}
                 aria-current={isActive ? "page" : undefined}
                 aria-label={label}
                 title={label}
@@ -68,7 +67,7 @@ export const SidebarNav = memo(function SidebarNav({
                 <Icon className="size-5 shrink-0" aria-hidden />
 
                 <span className="font-sans font-semibold text-base ms-3">{label}</span>
-              </button>
+              </a>
             );
           })}
         </nav>

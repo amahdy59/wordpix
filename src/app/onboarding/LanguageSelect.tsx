@@ -5,7 +5,7 @@ import { HomeIndicator } from "../shared/HomeIndicator";
 import { ArrowRight, Check, BookOpen, Target, Sparkles, Layers, HelpCircle } from "lucide-react";
 import { useProgress } from "../data/progress";
 import { PlacementQuizModal } from "./PlacementQuizModal";
-import type { LearnerGoal } from "../context/LearnerContext";
+import type { EnglishLevel, LearnerGoal } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
 import { getStartingUnitForLevel, type PlacementRecommendation } from "./placementRecommendation";
 import { COURSE_UNITS } from "../data/courseCatalog";
@@ -34,6 +34,18 @@ const LEVELS = [
     subtitleKey: "onboarding.levelB1Subtitle",
     tag: "B1",
   },
+  {
+    id: "b2",
+    titleKey: "reviewUpdate.levelB2",
+    subtitleKey: "reviewUpdate.levelB2Hint",
+    tag: "B2",
+  },
+  {
+    id: "c1",
+    titleKey: "reviewUpdate.levelC1",
+    subtitleKey: "reviewUpdate.levelC1Hint",
+    tag: "C1",
+  },
 ] as const;
 
 const DAILY_GOAL_OPTIONS = [5, 10, 20] as const;
@@ -48,7 +60,7 @@ const GOAL_OPTIONS: Array<{ id: LearnerGoal; labelKey: string }> = [
 
 export function LanguageSelect({ dispatch }: Props) {
   const { t } = useI18n();
-  const [level, setLevel] = useState<"A1" | "A2" | "B1">("A1");
+  const [level, setLevel] = useState<EnglishLevel>("A1");
   const [goalMinutes, setGoalMinutes] = useState<number>(10);
   const [selectedGoal, setSelectedGoal] = useState<LearnerGoal>("everyday");
   const [isPlacementOpen, setIsPlacementOpen] = useState(false);
@@ -160,7 +172,7 @@ export function LanguageSelect({ dispatch }: Props) {
                   type="button"
                   role="radio"
                   aria-checked={isSelected}
-                  onClick={() => setLevel(item.tag as "A1" | "A2" | "B1")}
+                  onClick={() => setLevel(item.tag)}
                   className={`w-full text-start p-4 rounded-2xl border transition-all flex items-center justify-between min-h-[60px] ${
                     isSelected
                       ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
@@ -216,6 +228,9 @@ export function LanguageSelect({ dispatch }: Props) {
                   })}
                 </p>
                 <p className="mt-1 font-sans text-xs leading-relaxed text-muted-foreground">
+                  {placement.listeningAssessed === false && (
+                    <span className="block">{t("reviewUpdate.readingBasis")}</span>
+                  )}
                   {t("onboarding.placementReason", {
                     correct: placement.correctCount,
                     total: placement.totalQuestions,

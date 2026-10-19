@@ -247,6 +247,11 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
 
               {recommendedGroup && (
                 <p className="mt-3 text-sm text-muted-foreground">
+                  {t("reviewUpdate.sessionGroup", {
+                    session: recommendedWords.length,
+                    group: recommendedGroup.wordIds.length,
+                  })}{" "}
+                  ·{" "}
                   {t("ux.sessionEffort", {
                     words: recommendedWords.length,
                     steps:

@@ -44,7 +44,7 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
     await page.goto("/", { waitUntil: "domcontentloaded" });
     await waitForStyles(page);
     await expect(page.getByRole("navigation", { name: "Main navigation" })).toBeVisible();
-    await expect(page.getByRole("button", { name: "Library", exact: true })).toBeVisible();
+    await expect(page.getByRole("link", { name: "Library", exact: true })).toBeVisible();
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2)
     ).toBe(false);

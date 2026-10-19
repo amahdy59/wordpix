@@ -15,6 +15,8 @@ import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
+import { z } from "zod";
+import { useStageCheckpoint } from "../shared/useStageCheckpoint";
 
 interface Props {
   step: number;
@@ -31,7 +33,6 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
 }: Props) {
   const { t } = useI18n();
   const reduceMotion = useReducedMotion();
-  const [placed, setPlaced] = useState<string[]>([]);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
@@ -39,6 +40,11 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   usePrefetchImage(queue.next);
   const usageState = useLessonUsage(lessonId);
   const currentTargetWord = queue.current ?? words[0];
+  const [placed, setPlaced] = useStageCheckpoint<string[]>(
+    `builder-${currentTargetWord.id}`,
+    [],
+    z.array(z.string()).max(100)
+  );
   const usage = usageState.status === "ready" ? usageState.data : null;
   const richSentence = useMemo(
     () => getRichSentence(currentTargetWord, usage, 1),
@@ -49,13 +55,14 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
     [currentTargetWord.label, richSentence.full]
   );
   const answer = completion.answer;
+  if (feedback === null && placed.length >= answer.length && placed.length > 0) setPlaced([]);
   const shuffled = useMemo(() => shuffleArray([...answer]), [answer]);
 
   const advanceNext = useCallback(() => {
     if (feedback !== null) queue.submit(feedback === "correct");
     setPlaced([]);
     setFeedback(null);
-  }, [feedback, queue]);
+  }, [feedback, queue, setPlaced]);
   const autoAdvance = useAutoAdvance({
     enabled: accessibility.autoAdvance,
     onAdvance: advanceNext,
@@ -93,7 +100,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       setPlaced(next);
       if (next.length === answer.length) commit(next);
     },
-    [feedback, playClick, placed, answer.length, commit]
+    [feedback, playClick, placed, answer.length, commit, setPlaced]
   );
   const handleRemoveTile = useCallback(
     (index: number) => {
@@ -101,7 +108,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       playClick();
       setPlaced((items) => items.filter((_, itemIndex) => itemIndex !== index));
     },
-    [feedback, playClick]
+    [feedback, playClick, setPlaced]
   );
 
   useEffect(() => {

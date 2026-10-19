@@ -11,7 +11,7 @@ export function useReviewDate() {
       setNow(current);
       const midnight = new Date(current);
       midnight.setHours(24, 0, 0, 0);
-      timer = setTimeout(refresh, midnight.getTime() - current.getTime() + 100);
+      timer = setTimeout(refresh, Math.min(60_000, midnight.getTime() - current.getTime() + 100));
     };
     refresh();
     window.addEventListener("focus", refresh);
