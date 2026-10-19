@@ -17,6 +17,12 @@
       },
       "changes": [
         {
+          "id": "release-preview-build",
+          "category": "fixed",
+          "en": "Release previews can be built successfully before an update is published.",
+          "ar": "أصبح من الممكن إنشاء معاينات للإصدارات بنجاح قبل نشر التحديث."
+        },
+        {
           "id": "plain-question-prompts",
           "category": "improved",
           "en": "Questions use clear text rather than answer-like cards. Sentence blanks, answer buttons and feedback have distinct visual roles.",
