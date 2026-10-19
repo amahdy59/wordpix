@@ -140,70 +140,71 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
         helper={cluster.microReading.title}
         activityLabel={t("exercise.readingContextActivityAria")}
         activity={
-          <div className="space-y-3 sm:space-y-5">
-            {cluster.microReading.media && failedImage !== cluster.microReading.media.imagePath ? (
-              <MediaFrame
-                fit="cover"
-                as="figure"
-                aspect="scene"
-                className="mx-auto w-full max-w-3xl"
-              >
-                <QuestionImage
-                  media={cluster.microReading.media}
-                  className="size-full object-cover object-center"
-                  decoding="async"
-                  onExhausted={() => setFailedImage(cluster.microReading.media!.imagePath)}
-                />
-              </MediaFrame>
-            ) : cluster.microReading.media ? (
-              <ScenePlaceholder />
-            ) : null}
-            <p
-              lang="en"
-              dir="ltr"
-              className="rounded-2xl border border-border bg-wp-card p-3 font-sans text-base leading-relaxed text-foreground shadow-wp-xs sm:p-6 sm:text-xl"
-            >
-              {cluster.microReading.text}
-            </p>
-            <div className="space-y-3">
-              <div className="flex flex-col gap-1">
-                <span className="font-sans text-xs font-bold uppercase tracking-wider text-primary">
-                  {t("exercise.readingContextQuestion")}
-                </span>
-                <p
-                  className="font-sans text-base sm:text-lg font-bold text-foreground"
-                  lang="en"
-                  dir="ltr"
-                >
-                  {cluster.retrieval.prompt}
-                </p>
-              </div>
-              <div
-                className={answerLayout(cluster.retrieval.options)}
-                role="group"
-                aria-label={t("exercise.readingContextActivityAria")}
-                dir="ltr"
+          <div className="wp-question-layout wp-question-with-media">
+            <div className="flex min-w-0 flex-col gap-3">
+              {cluster.microReading.media &&
+              failedImage !== cluster.microReading.media.imagePath ? (
+                <MediaFrame fit="contain" as="figure" aspect="auto" className="wp-question-media">
+                  <QuestionImage
+                    media={cluster.microReading.media}
+                    className="size-full object-contain object-center"
+                    decoding="async"
+                    onExhausted={() => setFailedImage(cluster.microReading.media!.imagePath)}
+                  />
+                </MediaFrame>
+              ) : cluster.microReading.media ? (
+                <ScenePlaceholder />
+              ) : null}
+              <p
                 lang="en"
+                dir="ltr"
+                className="wp-prose font-sans text-base leading-relaxed text-foreground"
               >
-                {cluster.retrieval.options.map((option) => (
-                  <button
-                    key={option}
-                    type="button"
-                    aria-pressed={selected === option}
-                    aria-disabled={selected !== null || undefined}
-                    onClick={() => handleSelect(option)}
-                    className="min-h-[48px] rounded-xl border-2 border-border bg-wp-card px-4 py-3 text-start font-sans font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none"
-                  >
-                    {option}
-                  </button>
-                ))}
-              </div>
+                {cluster.microReading.text}
+              </p>
             </div>
-            {selected &&
-              lesson &&
-              isLastCluster &&
-              usageState.status === "ready" &&
-              usageState.data && <LessonTransferPractice usage={usageState.data} />}
+            <div className="min-w-0 space-y-3">
+              <div className="space-y-3">
+                <div className="flex flex-col gap-1">
+                  <span className="font-sans text-xs font-bold uppercase tracking-wider text-primary">
+                    {t("exercise.readingContextQuestion")}
+                  </span>
+                  <p
+                    data-question-prompt
+                    className="wp-question-prompt font-sans"
+                    lang="en"
+                    dir="ltr"
+                  >
+                    {cluster.retrieval.prompt}
+                  </p>
+                </div>
+                <div
+                  className={answerLayout(cluster.retrieval.options)}
+                  role="group"
+                  aria-label={t("exercise.readingContextActivityAria")}
+                  dir="ltr"
+                  lang="en"
+                >
+                  {cluster.retrieval.options.map((option) => (
+                    <button
+                      key={option}
+                      type="button"
+                      aria-pressed={selected === option}
+                      aria-disabled={selected !== null || undefined}
+                      onClick={() => handleSelect(option)}
+                      className="min-h-[48px] rounded-xl border-2 border-border bg-wp-card px-4 py-3 text-start font-sans font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none"
+                    >
+                      {option}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {selected &&
+                lesson &&
+                isLastCluster &&
+                usageState.status === "ready" &&
+                usageState.data && <LessonTransferPractice usage={usageState.data} />}
+            </div>
           </div>
         }
         feedback={

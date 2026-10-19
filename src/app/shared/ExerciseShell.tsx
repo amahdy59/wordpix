@@ -54,7 +54,7 @@ export const ExerciseShell = memo(function ExerciseShell({
   const [showShortcutsModal, setShowShortcutsModal] = useState(false);
   const Content = "section";
   const canvasClass =
-    layout === "media" ? "wp-container-immersive wp-exercise-immersive" : "wp-container-content";
+    layout === "media" ? "wp-container-immersive wp-exercise-immersive" : "wp-container-wide";
 
   // Predictive asset preloading warms up next group assets when nearing completion (step >= 3)
   usePredictiveLessonPreload(lessonId, step);
@@ -102,7 +102,7 @@ export const ExerciseShell = memo(function ExerciseShell({
     typeof progress === "number" ? 100 : progress ? progress.total : EXERCISE_STEP_COUNT;
 
   return (
-    <div className="bg-background flex flex-col lg:flex-row h-dvh max-h-dvh overflow-hidden relative">
+    <div className="wp-question-screen bg-background relative">
       <ExitConfirmModal
         isOpen={showExitModal}
         onCancel={() => setShowExitModal(false)}
@@ -117,7 +117,7 @@ export const ExerciseShell = memo(function ExerciseShell({
         onClose={() => setShowShortcutsModal(false)}
       />
       {/* ── RIGHT PANEL: Desktop & Mobile Exercise Main View ────────────────── */}
-      <div className="flex-1 flex flex-col h-dvh overflow-hidden relative">
+      <div className="wp-question-frame flex-1 flex flex-col h-dvh overflow-hidden relative">
         <LessonHeader
           className={canvasClass}
           title={title}
@@ -132,14 +132,14 @@ export const ExerciseShell = memo(function ExerciseShell({
 
         {/* Adaptive activity stage: compact and top-anchored when space is abundant. */}
         <Content
-          className={`${canvasClass} wp-layout-gutter flex-1 overflow-y-auto overflow-x-hidden py-3 sm:py-5 lg:py-6 flex flex-col items-center min-h-0 w-full motion-safe:scroll-smooth`}
+          className={`${canvasClass} wp-layout-gutter wp-question-scroll flex flex-col items-center w-full motion-safe:scroll-smooth`}
           aria-label={`${group.name}: ${title} exercise`}
         >
           <div
             className={
               layout === "media"
                 ? "w-full flex flex-1 min-h-0 flex-col gap-4 justify-start pb-3"
-                : "w-full flex flex-col gap-3.5 sm:gap-5 justify-start pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:pb-8"
+                : "w-full flex flex-1 flex-col gap-3.5 min-h-min justify-start"
             }
           >
             {children}

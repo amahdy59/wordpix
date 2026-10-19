@@ -170,27 +170,23 @@ export function SentenceQuestionSupport({
   return (
     <div className="flex min-w-0 flex-col gap-3 sm:gap-4 w-full">
       {hasImage && activeMedia ? (
-        <MediaFrame
-          fit="cover"
-          aspect="recognition"
-          className="w-full min-h-[160px] sm:min-h-[220px] lg:min-h-[300px] max-h-[200px] sm:max-h-[300px] lg:max-h-[480px] aspect-video sm:aspect-[4/3] lg:aspect-auto shadow-wp-sm"
-        >
+        <MediaFrame fit="contain" aspect="auto" className="wp-question-media">
           <QuestionImage
             key={activeMedia.imagePath}
             media={activeMedia}
-            className="size-full object-cover object-center"
+            className="size-full object-contain object-center"
             loading="eager"
             {...{ fetchpriority: "high" }}
             onExhausted={() => setFailedImages((prev) => new Set(prev).add(activeMedia.imagePath))}
           />
         </MediaFrame>
       ) : (
-        <ScenePlaceholder clue={clue} />
+        <ScenePlaceholder />
       )}
       <details
         key={word.id}
-        open={answered || session?.scaffolding !== "independent"}
-        className="rounded-2xl border border-border bg-card p-3 sm:p-4"
+        open={!hasImage || answered || session?.scaffolding !== "independent"}
+        className="border-t border-border pt-1"
       >
         <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-sm font-semibold text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
           {t("reviewUpdate.meaningSupport")}

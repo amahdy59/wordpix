@@ -162,12 +162,8 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
           const selectedOrder = sequences[exercise.id] ?? [];
           const available = exercise.items.filter((item) => !selectedOrder.includes(item.id));
           return (
-            <fieldset
-              key={exercise.id}
-              data-quiz-question
-              className="rounded-2xl border border-border p-4 sm:p-5"
-            >
-              <legend className="px-2 text-base font-black">
+            <fieldset key={exercise.id} data-quiz-question className="min-w-0">
+              <legend data-question-prompt className="wp-question-prompt">
                 {exerciseIndex + 1}. {exercise.prompt}
               </legend>
               <ol className="mt-4 space-y-2" aria-label={t("hadith.selectedSequence")}>

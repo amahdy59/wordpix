@@ -4,7 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
-import { Button, ExerciseFamilyTemplate, FeedbackPanel, Surface } from "../shared";
+import { Button, ExerciseFamilyTemplate, FeedbackPanel } from "../shared";
 import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
 import { buildSentenceCompletion, getRichSentence } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
@@ -188,7 +188,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
         helper={t("exercise.wordsRemaining", { count: remaining })}
         activityLabel={t("exercise.sentenceBuilderActivityAria")}
         activity={
-          <div className="grid w-full gap-4 lg:grid-cols-[minmax(15rem,0.8fr)_minmax(0,1.2fr)] lg:items-start lg:gap-6">
+          <div className="wp-question-layout wp-question-with-media">
             <SentenceQuestionSupport
               key={currentTargetWord.id}
               word={currentTargetWord}
@@ -205,12 +205,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
             />
 
             <div className="flex min-w-0 flex-col gap-3 sm:gap-4">
-              <Surface
-                variant="card"
-                radius="lg"
-                padding="sm"
-                className="flex w-full flex-col gap-2 border-2 border-primary/30"
-              >
+              <div className="flex w-full flex-col gap-2">
                 <div className="flex items-center justify-between gap-3">
                   <span className="flex items-center gap-1.5 font-sans text-xs font-bold text-primary">
                     {t("exercise.sentenceAssemblyCanvas")}
@@ -232,7 +227,8 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                   </Button>
                 </div>
                 <div
-                  className={`flex min-h-[88px] flex-wrap items-center justify-center gap-x-2 gap-y-3 rounded-xl border border-dashed p-3 text-center font-sans text-base font-bold leading-relaxed transition-colors motion-reduce:transition-none sm:min-h-[96px] sm:p-4 sm:text-lg ${
+                  data-question-prompt
+                  className={`flex min-h-11 flex-wrap items-center gap-x-2 gap-y-3 border-b border-dashed pb-3 font-sans text-base font-bold leading-relaxed transition-colors motion-reduce:transition-none sm:text-lg ${
                     feedback === "correct"
                       ? "border-wp-green bg-wp-green-light/30"
                       : feedback === "incorrect"
@@ -288,7 +284,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                     );
                   })}
                 </div>
-              </Surface>
+              </div>
               <div
                 role="group"
                 aria-label={t("exercise.availableWordsAria")}

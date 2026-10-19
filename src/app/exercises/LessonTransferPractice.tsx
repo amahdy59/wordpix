@@ -49,11 +49,8 @@ export function LessonTransferPractice({ usage }: Props) {
 
         <div className="mt-5 space-y-5">
           {tasks.map((task, index) => (
-            <div
-              key={`${task.prompt}-${index}`}
-              className="rounded-2xl border border-border bg-wp-card p-4"
-            >
-              <p className="block font-sans text-sm font-bold leading-relaxed text-foreground">
+            <div key={`${task.prompt}-${index}`} className="border-t border-border pt-4">
+              <p data-question-prompt className="wp-question-prompt font-sans">
                 {task.prompt.replace(/^Use it:\s*/iu, "")}
               </p>
               <button

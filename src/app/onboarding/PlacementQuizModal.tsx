@@ -115,11 +115,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
             {audio.isError && <p role="status">{t("reviewUpdate.useTranscript")}</p>}
           </div>
         ) : (
-          <p
-            lang="en"
-            dir="ltr"
-            className="rounded-xl border border-border bg-muted p-4 text-base leading-relaxed text-foreground"
-          >
+          <p lang="en" dir="ltr" data-question-prompt className="wp-question-prompt">
             {item.prompt}
           </p>
         )}

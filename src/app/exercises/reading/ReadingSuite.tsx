@@ -33,7 +33,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
   };
 
   return (
-    <div className="min-h-dvh bg-background flex flex-col">
+    <div className="wp-question-screen bg-background">
       <LessonHeader
         title={t("suites.visualContext")}
         current={1}
@@ -42,50 +42,66 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
         onClose={() => dispatch({ type: "GO", to: "explore" })}
       />
 
-      <div className="flex-1 max-w-xl w-full mx-auto p-6 flex flex-col gap-6">
-        <div className="rounded-3xl overflow-hidden border border-border shadow-2xl aspect-[4/3] bg-muted relative">
-          <WordImage
-            word={target}
-            width="600"
-            height="450"
-            className="size-full object-cover"
-            loading="eager"
-            fetchPriority="high"
-          />
-        </div>
+      <div className="wp-question-scroll wp-layout-gutter flex flex-col">
+        <div className="wp-skill-workspace wp-container-content flex flex-1 min-h-min flex-col gap-3">
+          <h2 data-question-prompt className="wp-question-prompt">
+            {t("exercise.chooseCorrectWord")}
+          </h2>
+          <div className="wp-question-layout wp-question-with-media">
+            <div className="wp-question-media rounded-2xl overflow-hidden border border-border bg-muted relative">
+              <WordImage
+                word={target}
+                width="600"
+                height="450"
+                className="size-full object-contain"
+                loading="eager"
+                fetchPriority="high"
+              />
+            </div>
 
-        <div className="grid grid-cols-2 gap-3">
-          {choices.map((c) => (
-            <button
-              key={c}
-              onClick={() => setSelected(c)}
-              className={`p-4 rounded-2xl border font-sans font-bold text-sm min-h-[56px] transition-all ${
-                selected === c
-                  ? "bg-secondary border-primary border-[2px] text-primary"
-                  : "bg-wp-card border-border text-foreground hover:border-primary/40"
-              }`}
-            >
-              {c}
-            </button>
-          ))}
-        </div>
+            <div className="flex min-w-0 flex-col gap-4">
+              <div
+                className="grid grid-cols-2 gap-3"
+                role="group"
+                aria-label={t("exercise.wordChoicesAria")}
+              >
+                {choices.map((c) => (
+                  <button
+                    key={c}
+                    type="button"
+                    onClick={() => setSelected(c)}
+                    aria-pressed={selected === c}
+                    className={`wp-question-option border font-sans font-semibold transition-all motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                      selected === c
+                        ? "bg-secondary border-primary border-[2px] text-primary"
+                        : "bg-wp-card border-border text-foreground hover:border-primary/40"
+                    }`}
+                  >
+                    {c}
+                  </button>
+                ))}
+              </div>
 
-        {checked && (
-          <div className="bg-wp-card border border-border rounded-2xl p-4 flex flex-col gap-2">
-            <span className="font-sans font-bold text-xs text-primary uppercase">
-              {t("suites.whyThisMatters")}
-            </span>
-            <p className="font-sans text-xs text-foreground leading-relaxed">
-              <strong>{`Blanket`}</strong>{" "}
-              {`— a thick cloth cover used on a bed for warmth. Context clue: layered over the mattress and duvet.`}
-            </p>
+              {checked && (
+                <div className="bg-wp-card border border-border rounded-2xl p-4 flex flex-col gap-2">
+                  <span className="font-sans font-bold text-xs text-primary uppercase">
+                    {t("suites.whyThisMatters")}
+                  </span>
+                  <p className="font-sans text-xs text-foreground leading-relaxed">
+                    <strong>{`Blanket`}</strong>{" "}
+                    {`— a thick cloth cover used on a bed for warmth. Context clue: layered over the mattress and duvet.`}
+                  </p>
+                </div>
+              )}
+
+              <PrimaryButton
+                label={checked ? "Next →" : t("action.checkAnswer")}
+                onClick={checked ? () => dispatch({ type: "GO", to: "explore" }) : handleCheck}
+                disabled={!checked && selected === null}
+              />
+            </div>
           </div>
-        )}
-
-        <PrimaryButton
-          label={checked ? "Next →" : t("action.checkAnswer")}
-          onClick={checked ? () => dispatch({ type: "GO", to: "explore" }) : handleCheck}
-        />
+        </div>
       </div>
     </div>
   );

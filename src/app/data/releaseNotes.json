@@ -1,12 +1,53 @@
 {
-  "version": "0.1.67",
+  "version": "0.1.68",
   "notes": [
-    "Find words in English or Arabic, resume interrupted practice, and manage keyboard shortcuts and offline unit text."
+    "Clear question prompts, balanced images and compact exercise layouts keep more of your activity in view."
   ],
   "notesAr": [
-    "ابحث عن الكلمات بالإنجليزية أو العربية، واستأنف التدريب بعد الانقطاع، وتحكم في اختصارات لوحة المفاتيح ونصوص الوحدات دون اتصال."
+    "تحافظ الأسئلة الواضحة والصور المتوازنة وتخطيطات التمارين المدمجة على ظهور مساحة أكبر من النشاط."
   ],
   "releases": [
+    {
+      "id": "0.1.68",
+      "version": "0.1.68",
+      "date": "2026-10-19",
+      "title": {
+        "en": "Clear prompts and balanced practice layouts",
+        "ar": "أسئلة واضحة وتخطيطات تدريب متوازنة"
+      },
+      "changes": [
+        {
+          "id": "release-preview-build",
+          "category": "fixed",
+          "en": "Release previews can be built successfully before an update is published.",
+          "ar": "أصبح من الممكن إنشاء معاينات للإصدارات بنجاح قبل نشر التحديث."
+        },
+        {
+          "id": "plain-question-prompts",
+          "category": "improved",
+          "en": "Questions use clear text rather than answer-like cards. Sentence blanks, answer buttons and feedback have distinct visual roles.",
+          "ar": "تظهر الأسئلة كنص واضح بدلاً من بطاقات تشبه الإجابات. وأصبحت للفراغات وأزرار الإجابة والتغذية الراجعة أدوار بصرية مميزة."
+        },
+        {
+          "id": "balanced-question-workspace",
+          "category": "improved",
+          "en": "Compact headers and height-aware images keep ordinary questions and answers in view. Reading, typing, speaking and specialist quizzes share a clearer layout.",
+          "ar": "تساعد العناوين المدمجة والصور المتكيفة مع ارتفاع الشاشة على إبقاء الأسئلة العادية وإجاباتها ظاهرة. وأصبحت تخطيطات القراءة والكتابة والتحدث والاختبارات المتخصصة أوضح."
+        },
+        {
+          "id": "question-reflow",
+          "category": "improved",
+          "en": "Question layouts adapt to narrow screens and larger text. Long content and expanded help remain scrollable, with keyboard controls reachable.",
+          "ar": "تتكيف تخطيطات الأسئلة مع الشاشات الضيقة والنص الأكبر. وتبقى النصوص الطويلة والمساعدة الموسعة قابلة للتمرير مع إمكانية الوصول إلى أدوات التحكم بلوحة المفاتيح."
+        },
+        {
+          "id": "question-shortcut-scope",
+          "category": "fixed",
+          "en": "Shared answer groups respect the character-shortcut setting. On pages with several questions, number shortcuts apply only to the focused answer group.",
+          "ar": "تحترم مجموعات الإجابات المشتركة إعداد اختصارات الحرف الواحد. وفي الصفحات التي تضم عدة أسئلة، تُطبّق اختصارات الأرقام على مجموعة الإجابات التي تركز عليها لوحة المفاتيح فقط."
+        }
+      ]
+    },
     {
       "id": "0.1.67",
       "version": "0.1.67",

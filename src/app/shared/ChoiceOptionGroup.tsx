@@ -1,6 +1,7 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { answerLayout } from "./answerLayout";
+import { useDevicePreference, isTextInput } from "./devicePreferences";
 
 export interface ChoiceOption<T extends string> {
   value: T;
@@ -35,6 +36,9 @@ export function ChoiceOptionGroup<T extends string>({
   showHotkeys = true,
 }: Props<T>) {
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const shortcutsEnabled = useDevicePreference("character-shortcuts");
+  const hotkeysVisible = showHotkeys && shortcutsEnabled;
 
   const move = (currentIndex: number, direction: -1 | 1) => {
     if (disabled) return;
@@ -47,11 +51,20 @@ export function ChoiceOptionGroup<T extends string>({
 
   // Global 1–4 keyboard shortcuts (pointer-fine devices only)
   useEffect(() => {
-    if (disabled || !showHotkeys) return;
+    if (disabled || !hotkeysVisible) return;
     const handler = (e: KeyboardEvent) => {
-      if (e.metaKey || e.ctrlKey || e.altKey) return;
-      const active = document.activeElement?.tagName;
-      if (active === "INPUT" || active === "TEXTAREA") return;
+      if (e.repeat || e.metaKey || e.ctrlKey || e.altKey || isTextInput(e.target)) return;
+      const overlay = document.querySelector(
+        '[role="dialog"][aria-modal="true"], [role="alertdialog"], [role="menu"]'
+      );
+      if (overlay && !overlay.contains(rootRef.current)) return;
+      // Multi-question pages must never submit the same shortcut to every
+      // question. In that case only the focused answer group handles it.
+      if (
+        document.querySelectorAll('[data-choice-active="true"]').length > 1 &&
+        !rootRef.current?.contains(document.activeElement)
+      )
+        return;
       const numericKey = parseInt(e.key, 10);
       if (numericKey >= 1 && numericKey <= options.length) {
         const target = options[numericKey - 1];
@@ -65,10 +78,12 @@ export function ChoiceOptionGroup<T extends string>({
     const fine = window.matchMedia("(pointer: fine)").matches;
     if (fine) window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [disabled, showHotkeys, options, onChange]);
+  }, [disabled, hotkeysVisible, options, onChange]);
 
   return (
     <div
+      ref={rootRef}
+      data-choice-active={!disabled}
       className={className ?? answerLayout(options.map((option) => option.accessibleLabel))}
       role="radiogroup"
       aria-label={label}
@@ -78,7 +93,8 @@ export function ChoiceOptionGroup<T extends string>({
         const correct = revealFeedback && option.value === correctValue;
         const incorrect = revealFeedback && selected && option.value !== correctValue;
         const muted = revealFeedback && !correct && !incorrect;
-        const hotkeyBadge = showHotkeys && !option.prefix && index < 4 ? String(index + 1) : null;
+        const hotkeyBadge =
+          hotkeysVisible && !option.prefix && index < 4 ? String(index + 1) : null;
         return (
           <button
             key={option.value}

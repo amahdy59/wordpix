@@ -103,6 +103,13 @@
   --wp-layout-immersive: 112.5rem;
   --wp-layout-gutter-inline: clamp(1rem, 0.625rem + 1vw, 2.5rem);
 
+  /* Question layouts scale with readable text and available height, rather
+     than growing every panel when only the viewport width increases. */
+  --wp-question-gap: clamp(0.75rem, 1.5dvh, 1.25rem);
+  --wp-question-instruction-size: var(--wp-text-md);
+  --wp-question-prompt-size: clamp(1.125rem, 1rem + 0.35vw, 1.5rem);
+  --wp-question-media-height: clamp(6rem, 18dvh, 11rem);
+
   /* Semantic Bridge Tokens */
   --background: var(--wp-surface);
   --foreground: var(--wp-text);

@@ -120,10 +120,11 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     expect(choiceCount).toBeLessThanOrEqual(3);
 
     for (let index = 0; index < choiceCount; index += 1) {
-      const choiceHeight = await choices
-        .nth(index)
-        .evaluate((element) => element.getBoundingClientRect().height);
-      expect(choiceHeight).toBeGreaterThanOrEqual(44);
+      await expect
+        .poll(() =>
+          choices.nth(index).evaluate((element) => element.getBoundingClientRect().height)
+        )
+        .toBeGreaterThanOrEqual(44);
     }
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)

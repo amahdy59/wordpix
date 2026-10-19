@@ -144,6 +144,37 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
           </span>
         }
         activityLabel={t("exercise.gapFillActivityAria")}
+        prompt={
+          hasBlank && (
+            <div
+              lang="en"
+              dir="ltr"
+              aria-label={t("exercise.gapFillSentenceAria", { sentence: clozeSentence })}
+              data-question-prompt
+              className="text-start font-sans"
+            >
+              <p className="wp-question-prompt">
+                {clozeSentence.includes("_____")
+                  ? (() => {
+                      const parts = clozeSentence.split("_____");
+                      const selectedOption = selectedId
+                        ? options.find((o) => o.id === selectedId)
+                        : null;
+                      return (
+                        <>
+                          <span>{parts[0]}</span>
+                          <span className="wp-question-blank" aria-hidden="true">
+                            {selectedOption ? selectedOption.label : "_____"}
+                          </span>
+                          <span>{parts[1]}</span>
+                        </>
+                      );
+                    })()
+                  : clozeSentence}
+              </p>
+            </div>
+          )
+        }
         media={
           <SentenceQuestionSupport
             key={currentTargetWord.id}
@@ -156,45 +187,6 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
         }
         activity={
           <div className="flex flex-col gap-3.5 sm:gap-5 w-full">
-            {hasBlank && (
-              <div
-                lang="en"
-                dir="ltr"
-                aria-label={t("exercise.gapFillSentenceAria", { sentence: clozeSentence })}
-                className="rounded-2xl sm:rounded-3xl border-2 border-border bg-wp-card p-5 sm:p-7 text-start font-sans shadow-wp-xs sm:shadow-wp-sm flex flex-col justify-center min-h-[96px] sm:min-h-[112px]"
-              >
-                <p className="text-xl sm:text-2xl lg:text-3xl font-bold leading-relaxed text-foreground">
-                  {clozeSentence.includes("_____")
-                    ? (() => {
-                        const parts = clozeSentence.split("_____");
-                        const selectedOption = selectedId
-                          ? options.find((o) => o.id === selectedId)
-                          : null;
-                        return (
-                          <>
-                            <span>{parts[0]}</span>
-                            <span
-                              className={`inline-flex items-center justify-center min-w-[4rem] sm:min-w-[5.5rem] px-3.5 py-1 mx-1.5 rounded-xl border-2 border-dashed font-bold transition-all text-center align-middle shadow-xs ${
-                                selectedOption
-                                  ? feedback === "correct"
-                                    ? "border-wp-green bg-wp-green-light/40 dark:bg-wp-green/20 text-wp-green"
-                                    : feedback === "incorrect"
-                                      ? "border-wp-rose bg-wp-rose-light/40 dark:bg-wp-rose/20 text-wp-rose"
-                                      : "border-primary bg-primary/10 text-primary"
-                                  : "border-primary/60 bg-primary/5 text-primary"
-                              }`}
-                              aria-hidden="true"
-                            >
-                              {selectedOption ? selectedOption.label : "_____"}
-                            </span>
-                            <span>{parts[1]}</span>
-                          </>
-                        );
-                      })()
-                    : clozeSentence}
-                </p>
-              </div>
-            )}
             <div
               className="flex flex-col gap-3 sm:gap-3.5 w-full"
               role="group"
@@ -231,7 +223,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
                     aria-pressed={isSelected}
                     aria-disabled={feedback !== null || undefined}
                     onClick={() => handleSelect(option.id)}
-                    className={`group flex min-h-[56px] sm:min-h-[64px] lg:min-h-[70px] w-full items-center justify-between rounded-2xl border-2 p-3.5 sm:p-5 font-sans text-lg sm:text-xl font-bold transition-all motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${stateClasses}`}
+                    className={`wp-question-option group flex w-full items-center justify-between gap-3 border font-sans font-semibold transition-all motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${stateClasses}`}
                   >
                     <span className="flex items-center gap-3">
                       {isSelected && feedback === "correct" && (
