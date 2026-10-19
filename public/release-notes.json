@@ -1,12 +1,35 @@
 {
-  "version": "0.1.71",
+  "version": "0.1.72",
   "notes": [
-    "Enterprise social proof onboarding slide showcasing supported companies, interactive sector filters, and responsive logos."
+    "Zero-scroll responsive exercise layout optimization utilizing available whitespace for feedback on tablets and preventing unnecessary scrolling across all screen sizes."
   ],
   "notesAr": [
-    "شريحة بدء استخدام جديدة تعرض شعارات الشركات العالمية المدعومة مع تصفية تفاعلية حسب القطاع."
+    "تحسين التخطيط المتجاوب للتمارين لاستغلال المساحة المتاحة للملاحظات على الأجهزة اللوحية ومنع التمرير غير الضروري على جميع أحجام الشاشات."
   ],
   "releases": [
+    {
+      "id": "0.1.72",
+      "version": "0.1.72",
+      "date": "2026-10-20",
+      "title": {
+        "en": "Zero-scroll responsive exercise layouts for tablets and mobile",
+        "ar": "تخطيطات متجاوبة خالية من التمرير للتمارين على الأجهزة اللوحية والهواتف"
+      },
+      "changes": [
+        {
+          "id": "zero-scroll-tablet-feedback",
+          "category": "improved",
+          "en": "Positioned exercise feedback and continue actions directly underneath question choices on tablets and desktops, utilizing available whitespace and eliminating vertical scrolling.",
+          "ar": "وضع التغذية الراجعة وزر المتابعة مباشرة أسفل خيارات السؤال على الأجهزة اللوحية والمكتبية، مما يستغل المساحة المتاحة ويلغي الحاجة للتمرير العمودي."
+        },
+        {
+          "id": "bounded-responsive-media",
+          "category": "improved",
+          "en": "Bounded exercise instructional media to natural viewport proportions so images never push interactive controls off-screen on tablets or mobile phones.",
+          "ar": "تقييد أحجام وسائط التمارين بنسب تناسب منفذ العرض، بحيث لا تتجاوز الصور الشاشة أو تدفع عناصر التحكم بعيداً عن نظر المتعلم."
+        }
+      ]
+    },
     {
       "id": "0.1.71",
       "version": "0.1.71",

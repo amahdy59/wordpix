@@ -40,7 +40,7 @@ export function FeedbackPanel({
       role={role}
       aria-live={live === "off" ? undefined : live}
       aria-atomic="true"
-      className={`w-full rounded-2xl border p-5 shadow-wp-xs sm:p-6 ${toneStyles[tone]} ${className}`}
+      className={`w-full rounded-2xl border p-3.5 shadow-wp-xs sm:p-4.5 ${toneStyles[tone]} ${className}`}
     >
       <div className="flex items-start gap-3">
         {icon && (

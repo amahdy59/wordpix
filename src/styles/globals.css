@@ -171,33 +171,79 @@
     min-width: 0;
     gap: var(--wp-question-gap);
     align-items: start;
+    grid-template-areas:
+      "prompt"
+      "media"
+      "activity"
+      "feedback"
+      "action";
   }
 
   .wp-question-media {
     width: 100%;
-    height: var(--wp-question-media-height);
     min-height: 0;
     flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .wp-question-layout > [data-exercise-zone="prompt"] {
     grid-area: prompt;
   }
 
-  .wp-question-layout:has(> [data-exercise-zone="prompt"]) {
-    grid-template-areas: "prompt" "activity";
-  }
-
-  .wp-question-layout:has(> [data-exercise-zone="prompt"]):has(> [data-exercise-zone="media"]) {
-    grid-template-areas: "prompt" "media" "activity";
-  }
-
-  .wp-question-layout:has(> [data-exercise-zone="prompt"]) > [data-exercise-zone="media"] {
+  .wp-question-layout > [data-exercise-zone="media"] {
     grid-area: media;
   }
 
-  .wp-question-layout:has(> [data-exercise-zone="prompt"]) > [data-exercise-zone="activity"] {
+  .wp-question-layout > [data-exercise-zone="activity"] {
     grid-area: activity;
+  }
+
+  .wp-question-layout > [data-exercise-zone="feedback"] {
+    grid-area: feedback;
+  }
+
+  .wp-question-layout > [data-exercise-zone="action"] {
+    grid-area: action;
+  }
+
+  .wp-question-layout:has(> [data-exercise-zone="prompt"]):has(> [data-exercise-zone="media"]) {
+    grid-template-areas:
+      "prompt"
+      "media"
+      "activity"
+      "feedback"
+      "action";
+  }
+
+  .wp-question-layout:not(:has(> [data-exercise-zone="prompt"])):has(
+      > [data-exercise-zone="media"]
+    ) {
+    grid-template-areas:
+      "media"
+      "activity"
+      "feedback"
+      "action";
+  }
+
+  .wp-question-layout:has(> [data-exercise-zone="prompt"]):not(
+      :has(> [data-exercise-zone="media"])
+    ) {
+    grid-template-areas:
+      "prompt"
+      "activity"
+      "feedback"
+      "action";
+  }
+
+  .wp-question-layout:not(:has(> [data-exercise-zone="prompt"])):not(
+      :has(> [data-exercise-zone="media"])
+    ) {
+    grid-template-areas:
+      "activity"
+      "feedback"
+      "action";
   }
 
   .wp-question-media > img {
@@ -207,22 +253,27 @@
     object-fit: contain;
   }
 
-  /* Fill the assigned column, letting the picture's own ratio determine
-     height. Questions can scroll instead of shrinking essential evidence. */
+  /* Responsive bounded frame for instructional and scene media:
+     Media never expands beyond the viewport or forces vertical scrolling on tablets
+     or mobile phones. The natural aspect ratio is preserved without cropping. */
   .wp-question-media.wp-question-media--fitted {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    min-height: 6.5rem;
+    height: clamp(6.5rem, 18dvh, 9rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
 
   .wp-question-media.wp-question-media--fitted > img {
-    width: 100%;
-    height: auto;
-    /* Reserve a square before intrinsic dimensions arrive; use the image's
-       own ratio as soon as it loads. */
-    aspect-ratio: auto 1;
+    width: auto;
+    height: 100%;
     max-width: 100%;
-    max-height: none;
+    max-height: 100%;
+    object-fit: contain;
+    aspect-ratio: auto 1;
   }
 
   .wp-question-option {
@@ -328,7 +379,8 @@
     .wp-question-layout:has(> [data-exercise-zone="media"]),
     .wp-question-layout.wp-question-with-media {
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      gap: clamp(1.25rem, 3vw, 3rem);
+      column-gap: clamp(1.25rem, 3vw, 2.5rem);
+      row-gap: var(--wp-question-gap);
       align-items: start;
       flex: 1;
     }
@@ -338,10 +390,39 @@
       --wp-question-media-height: clamp(10rem, 50dvh, 32rem);
     }
 
+    .wp-question-media.wp-question-media--fitted {
+      min-height: 10rem;
+      height: clamp(11rem, 34dvh, 20rem);
+    }
+
+    /* In two-column mode, media occupies the start column spanning all rows.
+       Prompt, activity, feedback, and action stack neatly in the end column.
+       Feedback and action sit directly under the question choices, using the
+       available whitespace rather than pushing content past the screen fold.
+       The fifth row absorbs any leftover height between columns. */
     .wp-question-layout:has(> [data-exercise-zone="prompt"]):has(> [data-exercise-zone="media"]) {
-      grid-template-areas: "media prompt" "media activity";
-      grid-template-rows: auto 1fr;
-      column-gap: clamp(1.25rem, 3vw, 3rem);
+      grid-template-areas:
+        "media prompt"
+        "media activity"
+        "media feedback"
+        "media action"
+        "media .";
+      grid-template-rows: auto auto auto auto 1fr;
+      column-gap: clamp(1.25rem, 3vw, 2.5rem);
+      row-gap: var(--wp-question-gap);
+      align-items: start;
+    }
+
+    .wp-question-layout:not(:has(> [data-exercise-zone="prompt"])):has(
+        > [data-exercise-zone="media"]
+      ) {
+      grid-template-areas:
+        "media activity"
+        "media feedback"
+        "media action"
+        "media .";
+      grid-template-rows: auto auto auto 1fr;
+      column-gap: clamp(1.25rem, 3vw, 2.5rem);
       row-gap: var(--wp-question-gap);
       align-items: start;
     }

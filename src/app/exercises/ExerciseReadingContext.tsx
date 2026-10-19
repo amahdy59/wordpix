@@ -139,77 +139,71 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
         instruction={t("exercise.readingContextInstruction")}
         helper={cluster.microReading.title}
         activityLabel={t("exercise.readingContextActivityAria")}
-        activity={
-          <div className="wp-question-layout wp-question-with-media">
-            <div className="flex min-w-0 flex-col gap-3">
-              {cluster.microReading.media &&
-              failedImage !== cluster.microReading.media.imagePath ? (
-                <MediaFrame
-                  fit="contain"
-                  as="figure"
-                  aspect="auto"
-                  className="wp-question-media wp-question-media--fitted"
-                >
-                  <QuestionImage
-                    media={cluster.microReading.media}
-                    className="size-full object-contain object-center"
-                    decoding="async"
-                    onExhausted={() => setFailedImage(cluster.microReading.media!.imagePath)}
-                  />
-                </MediaFrame>
-              ) : cluster.microReading.media ? (
-                <ScenePlaceholder />
-              ) : null}
-              <p
-                lang="en"
-                dir="ltr"
-                className="wp-prose font-sans text-base leading-relaxed text-foreground"
+        media={
+          <div className="flex min-w-0 flex-col gap-3">
+            {cluster.microReading.media && failedImage !== cluster.microReading.media.imagePath ? (
+              <MediaFrame
+                fit="contain"
+                as="figure"
+                aspect="auto"
+                className="wp-question-media wp-question-media--fitted"
               >
-                {cluster.microReading.text}
-              </p>
-            </div>
-            <div className="min-w-0 space-y-3">
-              <div className="space-y-3">
-                <div className="flex flex-col gap-1">
-                  <span className="font-sans text-xs font-bold uppercase tracking-wider text-primary">
-                    {t("exercise.readingContextQuestion")}
-                  </span>
-                  <p
-                    data-question-prompt
-                    className="wp-question-prompt font-sans"
-                    lang="en"
-                    dir="ltr"
-                  >
-                    {cluster.retrieval.prompt}
-                  </p>
-                </div>
-                <div
-                  className={answerLayout(cluster.retrieval.options)}
-                  role="group"
-                  aria-label={t("exercise.readingContextActivityAria")}
-                  dir="ltr"
-                  lang="en"
+                <QuestionImage
+                  media={cluster.microReading.media}
+                  className="size-full object-contain object-center"
+                  decoding="async"
+                  onExhausted={() => setFailedImage(cluster.microReading.media!.imagePath)}
+                />
+              </MediaFrame>
+            ) : cluster.microReading.media ? (
+              <ScenePlaceholder />
+            ) : null}
+            <p
+              lang="en"
+              dir="ltr"
+              className="wp-prose font-sans text-base leading-relaxed text-foreground"
+            >
+              {cluster.microReading.text}
+            </p>
+          </div>
+        }
+        prompt={
+          <div className="flex flex-col gap-1">
+            <span className="font-sans text-xs font-bold uppercase tracking-wider text-primary">
+              {t("exercise.readingContextQuestion")}
+            </span>
+            <p data-question-prompt className="wp-question-prompt font-sans" lang="en" dir="ltr">
+              {cluster.retrieval.prompt}
+            </p>
+          </div>
+        }
+        activity={
+          <div className="min-w-0 space-y-3">
+            <div
+              className={answerLayout(cluster.retrieval.options)}
+              role="group"
+              aria-label={t("exercise.readingContextActivityAria")}
+              dir="ltr"
+              lang="en"
+            >
+              {cluster.retrieval.options.map((option) => (
+                <button
+                  key={option}
+                  type="button"
+                  aria-pressed={selected === option}
+                  aria-disabled={selected !== null || undefined}
+                  onClick={() => handleSelect(option)}
+                  className="min-h-[48px] rounded-xl border-2 border-border bg-wp-card px-4 py-3 text-start font-sans font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none"
                 >
-                  {cluster.retrieval.options.map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      aria-pressed={selected === option}
-                      aria-disabled={selected !== null || undefined}
-                      onClick={() => handleSelect(option)}
-                      className="min-h-[48px] rounded-xl border-2 border-border bg-wp-card px-4 py-3 text-start font-sans font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none"
-                    >
-                      {option}
-                    </button>
-                  ))}
-                </div>
-              </div>
-              {selected &&
-                lesson &&
-                isLastCluster &&
-                usageState.status === "ready" &&
-                usageState.data && <LessonTransferPractice usage={usageState.data} />}
+                  {option}
+                </button>
+              ))}
             </div>
+            {selected &&
+              lesson &&
+              isLastCluster &&
+              usageState.status === "ready" &&
+              usageState.data && <LessonTransferPractice usage={usageState.data} />}
           </div>
         }
         feedback={

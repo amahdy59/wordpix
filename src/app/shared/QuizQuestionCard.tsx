@@ -80,31 +80,32 @@ export function QuizQuestionCard<T extends string>({
             {media}
           </div>
         )}
+        {answered && (
+          <div
+            role="status"
+            aria-live="polite"
+            className={`wp-question-feedback mt-3 flex flex-wrap gap-3 border text-sm font-semibold leading-6 ${
+              media ? "md:col-start-1" : ""
+            } ${
+              correct
+                ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
+                : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"
+            }`}
+          >
+            {correct ? (
+              <CheckCircle2 className="mt-0.5 size-5 shrink-0" aria-hidden />
+            ) : (
+              <XCircle className="mt-0.5 size-5 shrink-0" aria-hidden />
+            )}
+            <p>
+              <span className="font-black">
+                {correct ? t("practice.correct") : t("practice.notYet")}
+              </span>
+            </p>
+            {feedback && <div className="w-full text-sm leading-relaxed">{feedback}</div>}
+          </div>
+        )}
       </div>
-
-      {answered && (
-        <div
-          role="status"
-          aria-live="polite"
-          className={`wp-question-feedback mt-3 flex flex-wrap gap-3 border text-sm font-semibold leading-6 ${
-            correct
-              ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
-              : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"
-          }`}
-        >
-          {correct ? (
-            <CheckCircle2 className="mt-0.5 size-5 shrink-0" aria-hidden />
-          ) : (
-            <XCircle className="mt-0.5 size-5 shrink-0" aria-hidden />
-          )}
-          <p>
-            <span className="font-black">
-              {correct ? t("practice.correct") : t("practice.notYet")}
-            </span>
-          </p>
-          {feedback && <div className="w-full text-sm leading-relaxed">{feedback}</div>}
-        </div>
-      )}
     </article>
   );
 }

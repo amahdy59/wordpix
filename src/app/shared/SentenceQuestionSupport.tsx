@@ -168,7 +168,10 @@ export function SentenceQuestionSupport({
       ? t("exercise.meaningClue")
       : t("exercise.wordToPractice");
   return (
-    <div className="flex min-w-0 flex-col gap-3 sm:gap-4 w-full">
+    <div
+      data-target-word={word.label.toLowerCase()}
+      className="flex min-w-0 flex-col gap-3 sm:gap-4 w-full"
+    >
       {hasImage && activeMedia ? (
         <MediaFrame
           fit="contain"
@@ -189,7 +192,7 @@ export function SentenceQuestionSupport({
       )}
       <details
         key={word.id}
-        open={!hasImage || answered || session?.scaffolding !== "independent"}
+        open={!hasImage || session?.scaffolding !== "independent"}
         className="border-t border-border pt-1"
       >
         <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-sm font-semibold text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">

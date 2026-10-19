@@ -216,6 +216,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
                   <button
                     key={option.id}
                     type="button"
+                    data-is-target={isCorrect}
                     aria-pressed={isSelected}
                     aria-disabled={feedback !== null || undefined}
                     onClick={() => handleSelect(option.id)}

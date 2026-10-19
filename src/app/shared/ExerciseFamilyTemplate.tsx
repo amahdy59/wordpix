@@ -78,17 +78,18 @@ export function ExerciseFamilyTemplate({
         >
           {activity}
         </div>
-      </div>
-
-      <div data-exercise-zone="feedback" className={`shrink-0 w-full ${feedback ? "" : "hidden"}`}>
-        {feedback}
-      </div>
-
-      <div
-        data-exercise-zone="action"
-        className={`shrink-0 w-full ${action ? "flex min-h-11 items-center justify-end" : "hidden"}`}
-      >
-        {action}
+        <div
+          data-exercise-zone="feedback"
+          className={`shrink-0 w-full min-w-0 ${feedback ? "" : "hidden"}`}
+        >
+          {feedback}
+        </div>
+        <div
+          data-exercise-zone="action"
+          className={`shrink-0 w-full min-w-0 ${action ? "flex min-h-11 items-center justify-end" : "hidden"}`}
+        >
+          {action}
+        </div>
       </div>
     </section>
   );
