@@ -170,7 +170,11 @@ export function SentenceQuestionSupport({
   return (
     <div className="flex min-w-0 flex-col gap-3 sm:gap-4 w-full">
       {hasImage && activeMedia ? (
-        <MediaFrame fit="contain" aspect="auto" className="wp-question-media">
+        <MediaFrame
+          fit="contain"
+          aspect="auto"
+          className="wp-question-media wp-question-media--fitted"
+        >
           <QuestionImage
             key={activeMedia.imagePath}
             media={activeMedia}

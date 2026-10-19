@@ -185,6 +185,10 @@
   }
 
   .wp-question-layout:has(> [data-exercise-zone="prompt"]) {
+    grid-template-areas: "prompt" "activity";
+  }
+
+  .wp-question-layout:has(> [data-exercise-zone="prompt"]):has(> [data-exercise-zone="media"]) {
     grid-template-areas: "prompt" "media" "activity";
   }
 
@@ -203,6 +207,24 @@
     object-fit: contain;
   }
 
+  /* Fill the assigned column, letting the picture's own ratio determine
+     height. Questions can scroll instead of shrinking essential evidence. */
+  .wp-question-media.wp-question-media--fitted {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .wp-question-media.wp-question-media--fitted > img {
+    width: 100%;
+    height: auto;
+    /* Reserve a square before intrinsic dimensions arrive; use the image's
+       own ratio as soon as it loads. */
+    aspect-ratio: auto 1;
+    max-width: 100%;
+    max-height: none;
+  }
+
   .wp-question-option {
     min-height: 3rem;
     padding: 0.75rem 1rem;
@@ -214,12 +236,23 @@
   }
 
   .wp-question-blank {
-    display: inline;
-    margin-inline: 0.25em;
-    padding-inline: 0.25em;
+    display: inline-block;
+    min-inline-size: 3.5ch;
+    max-inline-size: 100%;
+    min-block-size: 1.5em;
+    margin-inline: 0.2em;
+    padding: 0.05em 0.4em;
+    border-radius: var(--wp-radius-md) var(--wp-radius-md) 0 0;
     border-block-end: 2px solid var(--primary);
+    background: var(--secondary);
     color: var(--primary);
-    box-decoration-break: clone;
+    text-align: center;
+    vertical-align: baseline;
+    overflow-wrap: anywhere;
+  }
+
+  .wp-question-blank:not([data-filled="true"])::after {
+    content: "\00a0";
   }
 
   .wp-question-feedback {
@@ -296,7 +329,7 @@
     .wp-question-layout.wp-question-with-media {
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       gap: clamp(1.25rem, 3vw, 3rem);
-      align-items: center;
+      align-items: start;
       flex: 1;
     }
 
@@ -305,16 +338,12 @@
       --wp-question-media-height: clamp(10rem, 50dvh, 32rem);
     }
 
-    .wp-question-layout:has(> [data-exercise-zone="prompt"]) {
+    .wp-question-layout:has(> [data-exercise-zone="prompt"]):has(> [data-exercise-zone="media"]) {
       grid-template-areas: "media prompt" "media activity";
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: auto 1fr;
       column-gap: clamp(1.25rem, 3vw, 3rem);
       row-gap: var(--wp-question-gap);
       align-items: start;
-    }
-
-    .wp-question-layout > [data-exercise-zone="prompt"] {
-      align-self: end;
     }
   }
 

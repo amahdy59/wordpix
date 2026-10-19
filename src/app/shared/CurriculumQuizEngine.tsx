@@ -14,6 +14,7 @@ import { useI18n, type TranslationValues } from "../../i18n";
 import { ChoiceOptionGroup, type ChoiceOption } from "./ChoiceOptionGroup";
 import { playCorrectSound, playIncorrectSound } from "./useSound";
 import { useAudio } from "./useAudio";
+import { ClozeText } from "./SentenceBlank";
 import { getCanDoScenarioForUnit, type CanDoTransferChallenge } from "../data/canDoScenarios";
 
 // ─── Public Types ────────────────────────────────────────────────────────────
@@ -144,7 +145,7 @@ function QuestionCard({
                 {index + 1}
               </span>
             )}
-            {question.stem}
+            <ClozeText text={question.stem} />
           </h2>
 
           {/* Optional media */}

@@ -93,17 +93,63 @@ test("sentence stays usable when its image is unavailable", async ({ page }, inf
   await capture(page, "sentence-image-unavailable", info);
 });
 
+test("fitted media retains a visible frame while its image loads", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  let releaseImage = () => {};
+  const imageReady = new Promise<void>((resolve) => {
+    releaseImage = resolve;
+  });
+  await page.route("**/*", async (route) => {
+    if (route.request().resourceType() !== "image") return route.continue();
+    await imageReady;
+    await route.fulfill({
+      contentType: "image/svg+xml",
+      body: '<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><rect width="1024" height="1024" fill="gray"/></svg>',
+    });
+  });
+  await prepare(page);
+  try {
+    await openCore(page, 3);
+    const frame = page.locator(".wp-question-media").first();
+    await expect(frame).toBeVisible();
+    const pendingBox = (await frame.boundingBox())!;
+    expect(pendingBox.width).toBeGreaterThanOrEqual(100);
+    expect(pendingBox.height).toBeGreaterThanOrEqual(100);
+  } finally {
+    releaseImage();
+  }
+  await expect
+    .poll(() =>
+      page
+        .locator(".wp-question-media img")
+        .first()
+        .evaluate((el: HTMLImageElement) => el.complete && el.naturalWidth > 0)
+    )
+    .toBe(true);
+});
+
 for (const viewport of [
   { width: 390, height: 844 },
+  { width: 820, height: 1180 },
   { width: 1280, height: 720 },
   { width: 1440, height: 900 },
 ]) {
-  test(`sentence prompt is distinct and the entire question fits at ${viewport.width}`, async ({
+  test(`sentence prompt aligns and media fills its column at ${viewport.width}`, async ({
     page,
   }, info) => {
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
     await page.setViewportSize(viewport);
+    // A square fixture reproduces the original letterboxing without relying
+    // on the availability or proportions of remote lesson artwork.
+    await page.route("**/*", (route) =>
+      route.request().resourceType() === "image"
+        ? route.fulfill({
+            contentType: "image/svg+xml",
+            body: '<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><rect width="1024" height="1024" fill="gray"/></svg>',
+          })
+        : route.continue()
+    );
     await prepare(page);
     await openCore(page, 3);
     const prompt = page.getByLabel(/^Sentence with a missing word:/);
@@ -111,19 +157,42 @@ for (const viewport of [
     await expect(choices.getByRole("button")).toHaveCount(3);
     await expect(prompt).toHaveCSS("border-top-width", "0px");
     await expect(prompt).toHaveCSS("padding-top", "0px");
+    await expect(prompt).not.toContainText("____");
+    const media = page.locator(".wp-question-media").first();
+    await expect(media.locator("img")).toBeVisible();
+    const mediaBox = (await media.boundingBox())!;
+    const imageBox = (await media.locator("img").boundingBox())!;
+    expect(Math.abs(mediaBox.width - imageBox.width)).toBeLessThanOrEqual(3);
+    expect(Math.abs(mediaBox.height - imageBox.height)).toBeLessThanOrEqual(3);
+    expect(Math.abs(imageBox.width - imageBox.height)).toBeLessThanOrEqual(1);
+    const mediaColumn = (await page.locator('[data-exercise-zone="media"]').boundingBox())!;
+    expect(Math.abs(mediaBox.width - mediaColumn.width)).toBeLessThanOrEqual(1);
+    if (viewport.width < 768) {
+      expect(mediaBox.width).toBeGreaterThan(viewport.width - 50);
+    }
+    if (viewport.width >= 768) {
+      const promptBox = (await prompt.boundingBox())!;
+      const choicesBox = (await choices.boundingBox())!;
+      expect(Math.abs(promptBox.y - mediaBox.y)).toBeLessThanOrEqual(2);
+      expect(choicesBox.y - (promptBox.y + promptBox.height)).toBeLessThanOrEqual(24);
+    }
     const region = page.getByRole("region", {
       name: "The Five Senses 1: Complete the sentence exercise",
       exact: true,
     });
-    await expect
-      .poll(() => region.evaluate((el) => el.scrollHeight - el.clientHeight))
-      .toBeLessThanOrEqual(2);
+    await expect(region).toBeVisible();
     for (const button of await choices.getByRole("button").all()) {
+      await button.focus();
+      await expect(button).toBeFocused();
+      await expect(button).toBeInViewport();
       const box = await button.boundingBox();
       expect(box!.height).toBeGreaterThanOrEqual(44);
       expect(box!.y).toBeGreaterThanOrEqual(0);
       expect(box!.y + box!.height).toBeLessThanOrEqual(viewport.height);
     }
+    await region.evaluate((el) => {
+      el.scrollTop = 0;
+    });
     await assertNoHorizontalOverflow(page);
     await capture(page, `sentence-${viewport.width}`, info);
     expect(errors).toEqual([]);

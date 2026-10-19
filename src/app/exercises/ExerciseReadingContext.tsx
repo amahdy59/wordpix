@@ -144,7 +144,12 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
             <div className="flex min-w-0 flex-col gap-3">
               {cluster.microReading.media &&
               failedImage !== cluster.microReading.media.imagePath ? (
-                <MediaFrame fit="contain" as="figure" aspect="auto" className="wp-question-media">
+                <MediaFrame
+                  fit="contain"
+                  as="figure"
+                  aspect="auto"
+                  className="wp-question-media wp-question-media--fitted"
+                >
                   <QuestionImage
                     media={cluster.microReading.media}
                     className="size-full object-contain object-center"

@@ -4,6 +4,7 @@ import { useI18n } from "../context/I18nContext";
 import { ChoiceOptionGroup, type ChoiceOption } from "./ChoiceOptionGroup";
 import { playCorrectSound, playIncorrectSound } from "./useSound";
 import { answerLayout } from "./answerLayout";
+import { ClozeText } from "./SentenceBlank";
 
 interface Props<T extends string> {
   id: string;
@@ -48,7 +49,7 @@ export function QuizQuestionCard<T extends string>({
               {index + 1}
             </span>
             <h3 id={headingId} data-question-prompt className="wp-question-prompt">
-              {question}
+              {typeof question === "string" ? <ClozeText text={question} /> : question}
             </h3>
           </div>
 

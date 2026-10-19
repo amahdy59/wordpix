@@ -48,7 +48,7 @@ describe("CurriculumQuizEngine", () => {
       </I18nProvider>
     );
     await userEvent.click(screen.getByRole("button", { name: /next question/i }));
-    expect(screen.getByText(/work ___ clients/i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /work missing word clients/i })).toBeInTheDocument();
     await userEvent.click(screen.getByRole("button", { name: /return to unanswered/i }));
     expect(screen.getByText("What does 'role' mean?")).toBeInTheDocument();
     expect(onComplete).not.toHaveBeenCalled();
@@ -108,7 +108,7 @@ describe("CurriculumQuizEngine", () => {
     await userEvent.click(nextBtn);
 
     // Q2 stem should now be visible
-    expect(screen.getByText(/work ___ clients/i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /work missing word clients/i })).toBeInTheDocument();
   });
 
   it("shows completion screen with score after last question", async () => {

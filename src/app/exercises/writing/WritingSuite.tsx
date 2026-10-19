@@ -147,7 +147,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
           </div>
 
           <div className="wp-question-layout wp-question-with-media">
-            <div className="wp-question-media relative rounded-2xl overflow-hidden border border-border bg-muted">
+            <div className="wp-question-media wp-question-media--fitted relative rounded-2xl overflow-hidden border border-border bg-muted">
               <WordImage
                 word={current}
                 altMode="assessment"

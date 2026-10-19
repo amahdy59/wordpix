@@ -5,6 +5,7 @@ import { X, Volume2 } from "lucide-react";
 import { useModalA11y } from "../shared/useModalA11y";
 import { IconButton } from "../shared/IconButton";
 import { useI18n } from "../context/I18nContext";
+import { ClozeText } from "../shared/SentenceBlank";
 import { useAudio } from "../shared/useAudio";
 import { emitLearningEvent } from "../analytics/learningAnalytics";
 import {
@@ -109,14 +110,14 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
                 {t("reviewUpdate.useTranscript")}
               </summary>
               <p lang="en" dir="ltr">
-                {item.prompt}
+                <ClozeText text={item.prompt} />
               </p>
             </details>
             {audio.isError && <p role="status">{t("reviewUpdate.useTranscript")}</p>}
           </div>
         ) : (
           <p lang="en" dir="ltr" data-question-prompt className="wp-question-prompt">
-            {item.prompt}
+            <ClozeText text={item.prompt} />
           </p>
         )}
         <div className="flex flex-col gap-2">

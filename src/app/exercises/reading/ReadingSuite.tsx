@@ -48,7 +48,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
             {t("exercise.chooseCorrectWord")}
           </h2>
           <div className="wp-question-layout wp-question-with-media">
-            <div className="wp-question-media rounded-2xl overflow-hidden border border-border bg-muted relative">
+            <div className="wp-question-media wp-question-media--fitted rounded-2xl overflow-hidden border border-border bg-muted relative">
               <WordImage
                 word={target}
                 width="600"

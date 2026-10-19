@@ -1,4 +1,5 @@
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
+import { SentenceBlank } from "../shared/SentenceBlank";
 import { ArrowRight, BookOpen, CheckCircle2, PenTool, Undo2, XCircle } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import type { Action } from "../types";
@@ -228,7 +229,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                 </div>
                 <div
                   data-question-prompt
-                  className={`flex min-h-11 flex-wrap items-center gap-x-2 gap-y-3 border-b border-dashed pb-3 font-sans text-base font-bold leading-relaxed transition-colors motion-reduce:transition-none sm:text-lg ${
+                  className={`flex min-h-11 flex-wrap items-center gap-x-2 gap-y-3 rounded-xl border p-3 font-sans text-base font-bold leading-relaxed transition-colors motion-reduce:transition-none sm:text-lg ${
                     feedback === "correct"
                       ? "border-wp-green bg-wp-green-light/30"
                       : feedback === "incorrect"
@@ -269,15 +270,13 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
                             {placedWord}
                           </motion.button>
                         ) : (
-                          <span className="inline-flex min-h-11 min-w-20 items-center justify-center rounded-xl border-2 border-dashed border-primary/60 bg-card px-3 py-2 text-primary">
-                            <span className="sr-only">
-                              {t("exercise.sentenceBlank", {
-                                position: blankIndex + 1,
-                                total: answer.length,
-                              })}
-                            </span>
-                            <span aria-hidden>___</span>
-                          </span>
+                          <SentenceBlank
+                            className="min-h-11 min-w-20"
+                            label={t("exercise.sentenceBlank", {
+                              position: blankIndex + 1,
+                              total: answer.length,
+                            })}
+                          />
                         )}
                         {trailingPunctuation && <span aria-hidden>{trailingPunctuation}</span>}
                       </span>

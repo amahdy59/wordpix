@@ -6,6 +6,7 @@ import { formatNumber } from "../../../shared/useAccessibilityPreferences";
 import { useLearner } from "../../../context/LearnerContext";
 import { playCorrectSound, playIncorrectSound } from "../../../shared/useSound";
 import { useDevicePreference } from "../../../shared/devicePreferences";
+import { ClozeText } from "../../../shared/SentenceBlank";
 
 interface Props {
   itemId: string;
@@ -103,7 +104,7 @@ export function MultipleChoiceQuiz({
         lang="en"
         dir="ltr"
       >
-        {question}
+        {typeof question === "string" ? <ClozeText text={question} /> : question}
       </div>
 
       {/* Answer choices — grouped for screen readers */}

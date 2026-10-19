@@ -3,6 +3,7 @@ import type { UnitLearningMaterials } from "../types";
 import { loadedUnitVocabulary } from "../../data/vocabulary";
 import type { VocabularyItem } from "../../data/lessons";
 import { BLANK_TOKEN } from "../types";
+import { SentenceBlank } from "../../shared/SentenceBlank";
 import { recordWordPractice } from "./progress";
 import type { UnitStudyProgress } from "./types";
 import { useI18n } from "../../context/I18nContext";
@@ -242,12 +243,7 @@ export function PracticeArea({
           {parts.map((part: string, i: number) => (
             <span key={i}>
               {part}
-              {i < parts.length - 1 && (
-                <span
-                  className="inline-block w-16 border-b-2 border-primary mx-1 translate-y-[2px]"
-                  aria-hidden
-                />
-              )}
+              {i < parts.length - 1 && <SentenceBlank />}
             </span>
           ))}
         </span>

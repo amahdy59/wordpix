@@ -6,6 +6,7 @@ import { LessonHeader } from "../shared/LessonHeader";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { WordImage } from "../shared/WordImage";
+import { ClozeText } from "../shared/SentenceBlank";
 import { ExerciseTimer } from "../shared/ExerciseTimer";
 import { useCountdown } from "../shared/useCountdown";
 import { useAudio } from "../shared/useAudio";
@@ -278,7 +279,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
             {imageWord && (
               <div
                 data-exercise-zone="media"
-                className="wp-question-media overflow-hidden rounded-2xl border border-border bg-muted relative"
+                className="wp-question-media wp-question-media--fitted overflow-hidden rounded-2xl border border-border bg-muted relative"
               >
                 <WordImage
                   word={imageWord}
@@ -294,8 +295,13 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
             <div data-exercise-zone="activity" className="flex min-w-0 flex-col gap-4">
               <div className="flex items-start justify-between gap-3">
-                <h2 data-question-prompt className="wp-question-prompt font-sans text-pretty">
-                  {task.prompt}
+                <h2
+                  data-question-prompt
+                  className="wp-question-prompt font-sans text-pretty"
+                  lang="en"
+                  dir="ltr"
+                >
+                  <ClozeText text={task.prompt} />
                 </h2>
                 {task.audioText && (
                   <button

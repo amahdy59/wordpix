@@ -1,12 +1,41 @@
 {
-  "version": "0.1.68",
+  "version": "0.1.69",
   "notes": [
-    "Clear question prompts, balanced images and compact exercise layouts keep more of your activity in view."
+    "Sentence questions align clearly, with full-width image cards and consistent missing-word spaces."
   ],
   "notesAr": [
-    "تحافظ الأسئلة الواضحة والصور المتوازنة وتخطيطات التمارين المدمجة على ظهور مساحة أكبر من النشاط."
+    "تظهر أسئلة الجمل بمحاذاة واضحة، مع بطاقات صور تملأ العرض وفراغات متسقة للكلمات الناقصة."
   ],
   "releases": [
+    {
+      "id": "0.1.69",
+      "version": "0.1.69",
+      "date": "2026-10-19",
+      "title": {
+        "en": "Aligned questions and consistent sentence blanks",
+        "ar": "محاذاة الأسئلة وتوحيد فراغات الجمل"
+      },
+      "changes": [
+        {
+          "id": "question-response-alignment",
+          "category": "fixed",
+          "en": "Sentence prompts start alongside their pictures, with answer choices directly below instead of a large empty space.",
+          "ar": "تبدأ أسئلة الجمل بمحاذاة الصور، وتظهر خيارات الإجابة أسفلها مباشرة دون مساحة فارغة كبيرة."
+        },
+        {
+          "id": "fitted-learning-images",
+          "category": "improved",
+          "en": "Sentence, reading and picture practice images fill the available width on phones and their grid column on tablets and desktop. Image proportions and complete learning clues are preserved; taller questions remain scrollable.",
+          "ar": "تملأ صور تمارين الجمل والقراءة والتدريب المصور العرض المتاح على الهواتف وعمود الشبكة على الأجهزة اللوحية والحواسيب. تُحفظ نسب الصور والقرائن التعليمية كاملة، وتظل الأسئلة الأطول قابلة للتمرير."
+        },
+        {
+          "id": "consistent-sentence-gaps",
+          "category": "improved",
+          "en": "Missing words share a single clear blank style across sentence building, dictation, practice and quizzes, with spoken labels for screen readers.",
+          "ar": "تستخدم الكلمات الناقصة نمط فراغ موحداً وواضحاً في بناء الجمل والإملاء والتدريب والاختبارات، مع تسميات مقروءة لقارئات الشاشة."
+        }
+      ]
+    },
     {
       "id": "0.1.68",
       "version": "0.1.68",

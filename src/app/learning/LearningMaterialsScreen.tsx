@@ -709,6 +709,8 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
             <li
               key={item.id}
               className="text-foreground p-3.5 rounded-2xl border border-border bg-background"
+              lang="en"
+              dir="ltr"
             >
               <label className="flex flex-wrap items-center gap-2 text-base sm:text-base font-medium">
                 <span>
@@ -721,13 +723,14 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
                     setAnswers((prev) => ({ ...prev, [item.id]: e.target.value }));
                     setChecked(false);
                   }}
-                  aria-label={`Answer for sentence ${index + 1}`}
-                  className={`min-w-36 rounded-xl border px-3 py-1.5 bg-background text-foreground text-base font-bold outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] transition-colors ${
+                  aria-label={t("learningMaterials.sentenceAnswerLabel", { number: index + 1 })}
+                  aria-invalid={checked && !isCorrect ? true : undefined}
+                  className={`wp-question-blank w-36 min-w-0 border-0 border-b-2 px-3 py-1.5 text-base font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px] motion-safe:transition-colors ${
                     checked
                       ? isCorrect
-                        ? "border-wp-green bg-wp-green-light/20 text-wp-green"
-                        : "border-destructive bg-destructive/10 text-destructive"
-                      : "border-border hover:border-primary/50"
+                        ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
+                        : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"
+                      : "border-primary"
                   }`}
                 />
                 <span>{after}</span>

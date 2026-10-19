@@ -18,6 +18,7 @@ import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
+import { ClozeText } from "../shared/SentenceBlank";
 
 interface Props {
   step: number;
@@ -149,28 +150,21 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
             <div
               lang="en"
               dir="ltr"
-              aria-label={t("exercise.gapFillSentenceAria", { sentence: clozeSentence })}
+              aria-label={t("exercise.gapFillSentenceAria", {
+                sentence: clozeSentence.replace(
+                  /_{2,}/gu,
+                  options.find((option) => option.id === selectedId)?.label ??
+                    t("exercise.missingWord")
+                ),
+              })}
               data-question-prompt
               className="text-start font-sans"
             >
               <p className="wp-question-prompt">
-                {clozeSentence.includes("_____")
-                  ? (() => {
-                      const parts = clozeSentence.split("_____");
-                      const selectedOption = selectedId
-                        ? options.find((o) => o.id === selectedId)
-                        : null;
-                      return (
-                        <>
-                          <span>{parts[0]}</span>
-                          <span className="wp-question-blank" aria-hidden="true">
-                            {selectedOption ? selectedOption.label : "_____"}
-                          </span>
-                          <span>{parts[1]}</span>
-                        </>
-                      );
-                    })()
-                  : clozeSentence}
+                <ClozeText
+                  text={clozeSentence}
+                  answer={options.find((option) => option.id === selectedId)?.label}
+                />
               </p>
             </div>
           )

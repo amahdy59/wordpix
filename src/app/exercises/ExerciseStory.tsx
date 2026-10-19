@@ -30,6 +30,7 @@ import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { getOrGenerateStoryBundle } from "../data/storyTalesDictionary";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { useI18n } from "../context/I18nContext";
+import { ClozeText } from "../shared/SentenceBlank";
 import { loadLessonUsage } from "../data/usageRegistry";
 import type { LessonUsageData } from "../data/usageTypes";
 import { loadLessonStory } from "../data/lessonStoryLoader";
@@ -956,7 +957,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                                 {t("story.checkContext")}
                               </span>
                               <h4 data-question-prompt className="wp-question-prompt">
-                                {currentChunk.check.question}
+                                <ClozeText text={currentChunk.check.question} />
                               </h4>
                             </div>
 
@@ -1495,7 +1496,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                   </div>
 
                   <h4 className="font-sans font-bold text-foreground text-base sm:text-lg leading-snug">
-                    {currentQ.question}
+                    <ClozeText text={currentQ.question} />
                   </h4>
 
                   {/* 4 Multiple Choice Option Buttons */}

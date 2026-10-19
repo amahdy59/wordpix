@@ -12,6 +12,7 @@ import { useAccessibility } from "../../shared/useAccessibilityPreferences";
 import { useCountdown } from "../../shared/useCountdown";
 import { ExerciseTimer } from "../../shared/ExerciseTimer";
 import { useI18n } from "../../context/I18nContext";
+import { SentenceBlank } from "../../shared/SentenceBlank";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -106,9 +107,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
           <form onSubmit={submit} className="flex flex-col gap-4">
             <h2 data-question-prompt className="wp-question-prompt font-sans" lang="en" dir="ltr">
               {`“The cat is sleeping on the `}
-              <span className="underline text-primary decoration-primary decoration-2 underline-offset-4">
-                {typed || "_______"}
-              </span>
+              <SentenceBlank>{typed}</SentenceBlank>
               {`.”`}
             </h2>
 
