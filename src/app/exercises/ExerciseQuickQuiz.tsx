@@ -5,7 +5,6 @@ import { ExerciseShell } from "../shared/ExerciseShell";
 import { getRichSentence, getDistractors } from "./exerciseContent";
 import { identifySentence } from "../content/wordGrammar";
 import { shuffleArray } from "../../utils/shuffle";
-import { WordImage, getWordImageSrc } from "../shared/WordImage";
 import { Button } from "../shared/Button";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
@@ -14,10 +13,12 @@ import { useSpokenFeedback } from "../shared/useSpokenFeedback";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
-import { HelpCircle, Keyboard, CheckCircle2, XCircle, ArrowRight } from "lucide-react";
+import { HelpCircle, Keyboard, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
 import { ImmersiveImageChoiceGrid } from "../shared/ImmersiveImageChoiceGrid";
+import { ImageChoiceCard } from "../shared/ImageChoiceCard";
+import { useKeyboardShortcutsActive } from "../shared/devicePreferences";
 
 interface Props {
   step: number;
@@ -36,6 +37,7 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
   const reduceMotion = useReducedMotion();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
+  const shortcutsActive = useKeyboardShortcutsActive();
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const spoken = useSpokenFeedback();
@@ -194,121 +196,22 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
           </div>
         </div>
 
-        {/* Immersive 2x2 grid that becomes a full-width row on large screens. */}
         <ImmersiveImageChoiceGrid aria-label={`Which image matches ${currentTargetWord.label}?`}>
-          {options.map((option, idx) => {
-            const isSelected = selectedId === option.id;
-            const isCorrectAnswer = option.id === currentTargetWord.id;
-            const isRevealedAnswer = feedback === "incorrect" && isCorrectAnswer;
-
-            // Border: correct=green, wrong-selected=red, revealed-correct=green, else neutral
-            let borderStyle = "border-border hover:border-primary/60";
-            if (isSelected && feedback === "correct") borderStyle = "border-wp-green";
-            else if (isSelected && feedback === "incorrect") borderStyle = "border-wp-rose";
-            else if (isRevealedAnswer) borderStyle = "border-wp-green";
-
-            // Overlay type for this cell
-            const showCorrectOverlay = isSelected && feedback === "correct";
-            const showIncorrectOverlay = isSelected && feedback === "incorrect";
-
-            return (
-              <motion.button
-                key={option.id}
-                type="button"
-                transition={
-                  reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 400, damping: 17 }
-                }
-                initial={reduceMotion ? false : { opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                aria-label={`Option ${idx + 1} of ${options.length}. Shortcut: press ${idx + 1}. ${option.description}`}
-                aria-pressed={isSelected}
-                aria-disabled={feedback !== null}
-                onClick={() => handleSelect(option.id)}
-                className={`group relative block aspect-square sm:aspect-auto min-h-[120px] w-full overflow-hidden rounded-2xl border-2 shadow-wp-sm transition-colors duration-200 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:rounded-3xl ${borderStyle}`}
-              >
-                {/* Option / Keyboard shortcut badge */}
-                <span
-                  aria-hidden
-                  className="absolute top-2 start-2 z-10 size-8 sm:size-9 md:size-11 flex items-center justify-center bg-wp-card text-foreground text-sm sm:text-base font-bold rounded-lg border border-border shadow-sm pointer-events-none"
-                >
-                  {idx + 1}
-                </span>
-
-                {/* Image */}
-                <div className="size-full relative bg-muted overflow-hidden">
-                  {/* Atmospheric blurred ambient fill so the card is always rich and colorful without empty gaps */}
-                  <div className="absolute inset-0 size-full overflow-hidden pointer-events-none select-none">
-                    <img
-                      src={getWordImageSrc(option, "thumb")}
-                      alt=""
-                      aria-hidden="true"
-                      className="size-full object-cover object-center blur-lg scale-110 opacity-30 dark:opacity-20"
-                    />
-                  </div>
-
-                  <WordImage
-                    word={option}
-                    altMode="assessment"
-                    optionIndex={idx}
-                    checked={isSelected || isRevealedAnswer}
-                    className="relative z-0 size-full object-contain object-center block p-2 sm:p-3 drop-shadow-sm"
-                    // Every option is on screen and has to be looked at to
-                    // answer, so lazy loading only delays the question.
-                    loading="eager"
-                  />
-                </div>
-
-                {/* â”€â”€ Per-image feedback overlay â”€â”€ */}
-                <AnimatePresence>
-                  {(showCorrectOverlay || showIncorrectOverlay) && (
-                    <motion.div
-                      key={`overlay-${option.id}`}
-                      initial={reduceMotion ? false : { opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={reduceMotion ? { duration: 0 } : { duration: 0.18 }}
-                      className={`absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none ${
-                        showIncorrectOverlay
-                          ? "bg-wp-rose/70 backdrop-blur-[2px]"
-                          : "bg-wp-green/70 backdrop-blur-[2px]"
-                      }`}
-                    >
-                      <motion.div
-                        initial={reduceMotion ? false : { scale: 0.3, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        transition={
-                          reduceMotion
-                            ? { duration: 0 }
-                            : { type: "spring", stiffness: 450, damping: 20, delay: 0.05 }
-                        }
-                      >
-                        {showIncorrectOverlay ? (
-                          <XCircle
-                            className="size-10 sm:size-12 text-white drop-shadow-lg"
-                            aria-hidden
-                          />
-                        ) : (
-                          <CheckCircle2
-                            className="size-10 sm:size-12 text-white drop-shadow-lg"
-                            aria-hidden
-                          />
-                        )}
-                      </motion.div>
-
-                      <motion.span
-                        initial={reduceMotion ? false : { y: 6, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={reduceMotion ? { duration: 0 } : { delay: 0.15 }}
-                        className="font-sans font-black text-white text-sm sm:text-base drop-shadow text-center px-2"
-                      >
-                        {showIncorrectOverlay ? "Wrong" : "Correct!"}
-                      </motion.span>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.button>
-            );
-          })}
+          {options.map((option, idx) => (
+            <ImageChoiceCard
+              key={option.id}
+              option={option}
+              index={idx}
+              totalOptions={options.length}
+              isSelected={selectedId === option.id}
+              feedback={feedback}
+              isRevealedAnswer={feedback === "incorrect" && option.id === currentTargetWord.id}
+              disabled={feedback !== null}
+              onClick={() => handleSelect(option.id)}
+              reduceMotion={Boolean(reduceMotion)}
+              showShortcut={shortcutsActive}
+            />
+          ))}
         </ImmersiveImageChoiceGrid>
 
         {/* Screen-reader announcement */}

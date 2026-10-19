@@ -25,7 +25,7 @@ interface Case {
   /** Marker identifying the WordImage call to inspect. */
   anchor: string;
   high: boolean;
-  tag?: "WordImage" | "img" | "QuestionImage" | "SentenceQuestionSupport";
+  tag?: "WordImage" | "img" | "QuestionImage" | "SentenceQuestionSupport" | "ImageChoiceCard";
 }
 
 const HEROES: Case[] = [
@@ -45,8 +45,18 @@ const HEROES: Case[] = [
   { file: "exercises/SkillExerciseRunner.tsx", anchor: "word={imageWord}", high: true },
   // Option grids: on screen and needed to answer, so eager — but four equal
   // tiles have no single LCP candidate, so priority stays default.
-  { file: "exercises/ExerciseQuickQuiz.tsx", anchor: "word={option}", high: false },
-  { file: "exercises/ExerciseRecallMatch.tsx", anchor: "word={card}", high: false },
+  {
+    file: "exercises/ExerciseQuickQuiz.tsx",
+    anchor: "option={option}",
+    high: false,
+    tag: "ImageChoiceCard",
+  },
+  {
+    file: "exercises/ExerciseRecallMatch.tsx",
+    anchor: "option={card}",
+    high: false,
+    tag: "ImageChoiceCard",
+  },
 ];
 
 /** The `<WordImage ... />` call containing `anchor`. */
@@ -62,6 +72,9 @@ function wordImageCall(source: string, anchor: string, tag = "WordImage"): strin
       "media={activeMedia}",
       "QuestionImage"
     );
+  }
+  if (tag === "ImageChoiceCard") {
+    return wordImageCall(read("shared/ImageChoiceCard.tsx"), "word={option}", "WordImage");
   }
   return source.slice(open, close + 2);
 }

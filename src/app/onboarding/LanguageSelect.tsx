@@ -2,7 +2,16 @@ import { useState } from "react";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
-import { ArrowRight, Check, BookOpen, Target, Sparkles, Layers, HelpCircle } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowLeft,
+  Check,
+  BookOpen,
+  Target,
+  Sparkles,
+  Layers,
+  HelpCircle,
+} from "lucide-react";
 import { useProgress } from "../data/progress";
 import { PlacementQuizModal } from "./PlacementQuizModal";
 import type { EnglishLevel, LearnerGoal } from "../context/LearnerContext";
@@ -132,7 +141,7 @@ export function LanguageSelect({ dispatch }: Props) {
 
         <div className="relative z-10 flex items-center gap-2 text-wp-text-on-panel-muted text-xs font-sans font-semibold">
           <Layers className="size-4" />
-          <span>{t("onboarding.step2Config")}</span>
+          <span>{t("onboarding.step3Config")}</span>
         </div>
       </div>
 
@@ -143,7 +152,7 @@ export function LanguageSelect({ dispatch }: Props) {
             {t("onboarding.yourGoal")}
           </span>
           <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-full border border-border">
-            {t("onboarding.step2")}
+            {t("onboarding.step3")}
           </span>
         </header>
 
@@ -312,16 +321,30 @@ export function LanguageSelect({ dispatch }: Props) {
 
         {/* Footer CTA */}
         <footer className="w-full max-w-md mx-auto md:mx-0 pt-4 shrink-0 z-10">
-          <button
-            type="button"
-            onClick={handleStart}
-            className="w-full bg-primary rounded-xl py-4 font-sans font-bold text-primary-foreground text-base min-h-[52px]
-              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
-              shadow-sm transition-all flex items-center justify-center gap-2"
-          >
-            <span>{t("onboarding.startLearning")}</span>
-            <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-          </button>
+          <div className="flex flex-col sm:flex-row items-center gap-2.5">
+            <button
+              type="button"
+              onClick={() => dispatch({ type: "ONBOARD_BACK" })}
+              aria-label={t("onboarding.backStep")}
+              className="w-full sm:w-auto px-5 py-4 bg-card border border-border text-foreground rounded-xl font-sans font-bold text-sm min-h-[52px]
+                hover:border-primary/40 hover:bg-muted transition-colors flex items-center justify-center gap-2
+                focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden="true" />
+              <span>{t("onboarding.backStep")}</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleStart}
+              className="w-full flex-1 bg-primary rounded-xl py-4 font-sans font-bold text-primary-foreground text-base min-h-[52px]
+                focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
+                shadow-sm transition-all flex items-center justify-center gap-2"
+            >
+              <span>{t("onboarding.startLearning")}</span>
+              <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
+            </button>
+          </div>
         </footer>
 
         <div className="md:hidden shrink-0">

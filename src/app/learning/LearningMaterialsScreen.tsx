@@ -1,6 +1,6 @@
 import { ReferenceTable } from "../shared/ReferenceTable";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
-import { Volume2, Eye, EyeOff } from "lucide-react";
+import { Volume2, Eye, EyeOff, CheckCircle2, XCircle } from "lucide-react";
 import { useAudio } from "../shared/useAudio";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
@@ -725,6 +725,7 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
                   }}
                   aria-label={t("learningMaterials.sentenceAnswerLabel", { number: index + 1 })}
                   aria-invalid={checked && !isCorrect ? true : undefined}
+                  aria-describedby={checked && !isCorrect ? `guidance-${item.id}` : undefined}
                   className={`wp-question-blank w-36 min-w-0 border-0 border-b-2 px-3 py-1.5 text-base font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px] motion-safe:transition-colors ${
                     checked
                       ? isCorrect
@@ -734,10 +735,25 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
                   }`}
                 />
                 <span>{after}</span>
+                {checked && isCorrect && (
+                  <span className="inline-flex items-center gap-1 text-feedback-success-foreground font-bold ms-1">
+                    <CheckCircle2 className="size-4 shrink-0" aria-hidden="true" />
+                    <span className="sr-only">{t("exercise.correctTitle")}</span>
+                  </span>
+                )}
                 {checked && !isCorrect && (
-                  <span className="text-sm sm:text-base text-muted-foreground font-bold ms-1">
-                    {t("learningMaterials.correctAnswerPrefix")}{" "}
-                    <span className="text-wp-green">{item.answer}</span>
+                  <span
+                    id={`guidance-${item.id}`}
+                    className="inline-flex items-center gap-1 text-sm sm:text-base text-muted-foreground font-bold ms-1"
+                  >
+                    <XCircle
+                      className="size-4 shrink-0 text-feedback-error-foreground"
+                      aria-hidden="true"
+                    />
+                    <span>
+                      {t("learningMaterials.correctAnswerPrefix")}{" "}
+                      <span className="text-feedback-error-foreground">{item.answer}</span>
+                    </span>
                   </span>
                 )}
               </label>

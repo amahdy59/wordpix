@@ -1,7 +1,7 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { answerLayout } from "./answerLayout";
-import { useDevicePreference, isTextInput } from "./devicePreferences";
+import { useKeyboardShortcutsActive, isTextInput } from "./devicePreferences";
 
 export interface ChoiceOption<T extends string> {
   value: T;
@@ -37,8 +37,8 @@ export function ChoiceOptionGroup<T extends string>({
 }: Props<T>) {
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
   const rootRef = useRef<HTMLDivElement>(null);
-  const shortcutsEnabled = useDevicePreference("character-shortcuts");
-  const hotkeysVisible = showHotkeys && shortcutsEnabled;
+  const shortcutsActive = useKeyboardShortcutsActive();
+  const hotkeysVisible = showHotkeys && shortcutsActive;
 
   const move = (currentIndex: number, direction: -1 | 1) => {
     if (disabled) return;

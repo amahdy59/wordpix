@@ -19,6 +19,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
+import { useKeyboardShortcutsActive } from "../shared/devicePreferences";
 
 interface Props {
   step: number;
@@ -37,6 +38,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   const reduceMotion = useReducedMotion();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
+  const shortcutsActive = useKeyboardShortcutsActive();
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const spoken = useSpokenFeedback();
@@ -167,9 +169,9 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         family="visual-choice"
         instruction={t("exercise.chooseCorrectWord")}
         helper={
-          <span className="hidden sm:inline">
-            {t("exercise.pressNumberToChooseWord", { count: options.length })}
-          </span>
+          shortcutsActive ? (
+            <span>{t("exercise.pressNumberToChooseWord", { count: options.length })}</span>
+          ) : undefined
         }
         activityLabel={t("exercise.wordChoicesAria")}
         media={
@@ -235,9 +237,11 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
                     )}
                     <span className="capitalize">{option.label.toLowerCase()}</span>
                   </span>
-                  <span className="hidden rounded-lg border border-border/80 bg-muted px-2.5 py-1 text-xs font-mono font-bold text-muted-foreground group-hover:border-primary/40 group-hover:text-primary sm:inline-block">
-                    {index + 1}
-                  </span>
+                  {shortcutsActive && (
+                    <span className="rounded-lg border border-border/80 bg-muted px-2.5 py-1 text-xs font-mono font-bold text-muted-foreground group-hover:border-primary/40 group-hover:text-primary inline-block">
+                      {index + 1}
+                    </span>
+                  )}
                 </motion.button>
               );
             })}
@@ -247,6 +251,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           feedback === "incorrect" ? (
             <FeedbackPanel
               tone="error"
+              live="polite"
               title={t("exercise.notQuiteTitle")}
               description={answerSentence}
               icon={<XCircle className="size-6 text-destructive" aria-hidden />}

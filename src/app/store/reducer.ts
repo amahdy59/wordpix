@@ -8,7 +8,7 @@ import {
 } from "../data/courseCatalog";
 import { CANONICAL_STAGE_COUNT, MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
 
-export const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
+export const ONBOARD_STEPS: OnboardStep[] = ["splash", "partners", "language", "ready"];
 export const TABBED_IDS: ReadonlySet<string> = new Set([
   "home",
   "learn",
@@ -31,6 +31,14 @@ export function reducer(state: Screen, action: Action): Screen {
     return i < ONBOARD_STEPS.length - 1
       ? { id: "onboarding", step: ONBOARD_STEPS[i + 1] }
       : { id: "home" };
+  }
+  if (action.type === "ONBOARD_BACK") {
+    if (state.id !== "onboarding") return state;
+    const i = ONBOARD_STEPS.indexOf(state.step);
+    return i > 0 ? { id: "onboarding", step: ONBOARD_STEPS[i - 1] } : state;
+  }
+  if (action.type === "ONBOARD_GOTO") {
+    return { id: "onboarding", step: action.step };
   }
   if (action.type === "GO") {
     if (action.to === "lesson-entry")
@@ -207,7 +215,9 @@ export function describeScreen(
 ): string {
   switch (screen.id) {
     case "onboarding":
-      return `${t("app.title")}: ${screen.step}`;
+      return screen.step === "partners"
+        ? `${t("app.title")}: ${t("onboarding.clientPortfolio")}`
+        : `${t("app.title")}: ${screen.step}`;
     case "home":
       return t("nav.home");
     case "learn":

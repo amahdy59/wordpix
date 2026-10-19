@@ -8,6 +8,7 @@ import { useI18n } from "../../context/I18nContext";
 
 import { BookOpen } from "lucide-react";
 import { useSound } from "../../shared/useSound";
+import { answerLayout } from "../../shared/answerLayout";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -61,7 +62,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
 
             <div className="flex min-w-0 flex-col gap-4">
               <div
-                className="grid grid-cols-2 gap-3"
+                className={answerLayout(choices)}
                 role="group"
                 aria-label={t("exercise.wordChoicesAria")}
               >
@@ -87,7 +88,11 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
                   <span className="font-sans font-bold text-xs text-primary uppercase">
                     {t("suites.whyThisMatters")}
                   </span>
-                  <p className="font-sans text-xs text-foreground leading-relaxed">
+                  <p
+                    className="font-sans text-xs text-foreground leading-relaxed"
+                    lang="en"
+                    dir="ltr"
+                  >
                     <strong>{`Blanket`}</strong>{" "}
                     {`— a thick cloth cover used on a bed for warmth. Context clue: layered over the mattress and duvet.`}
                   </p>
@@ -95,7 +100,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
               )}
 
               <PrimaryButton
-                label={checked ? "Next →" : t("action.checkAnswer")}
+                label={checked ? t("action.continue") : t("action.checkAnswer")}
                 onClick={checked ? () => dispatch({ type: "GO", to: "explore" }) : handleCheck}
                 disabled={!checked && selected === null}
               />

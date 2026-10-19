@@ -18,6 +18,7 @@ import { NetworkStatusBanner } from "../shared/NetworkStatusBanner";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "../onboarding/SplashWelcome";
+import { PartnersWelcome } from "../onboarding/PartnersWelcome";
 const LanguageSelect = lazy(() =>
   import("../onboarding/LanguageSelect").then((module) => ({ default: module.LanguageSelect }))
 );
@@ -467,6 +468,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
   function renderContent() {
     if (state.id === "onboarding") {
       if (state.step === "splash") return <SplashWelcome dispatch={dispatch} />;
+      if (state.step === "partners") return <PartnersWelcome dispatch={dispatch} />;
       if (state.step === "language") return <LanguageSelect dispatch={dispatch} />;
       if (state.step === "ready") return <ReadyCelebration dispatch={dispatch} />;
     }

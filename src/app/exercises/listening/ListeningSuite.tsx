@@ -82,7 +82,7 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
   return (
     <div className="wp-question-screen bg-background">
       <LessonHeader
-        title="Dictation Sprint (Cloze Input)"
+        title={t("suites.dictationSprint")}
         current={3}
         total={9}
         onBack={() => dispatch({ type: "GO", to: "explore" })}
@@ -91,7 +91,11 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
       <div className="wp-question-scroll wp-layout-gutter">
         <div className="wp-container-reading flex flex-col gap-4">
           <div className="flex flex-wrap items-center justify-between gap-3 bg-wp-card border border-border rounded-2xl p-4">
-            <ExerciseTimer countdown={countdown} enabled={timed} label="Dictation time remaining" />
+            <ExerciseTimer
+              countdown={countdown}
+              enabled={timed}
+              label={t("suites.dictationTimeRemaining")}
+            />
             <button
               type="button"
               onClick={handleReplay}
@@ -121,6 +125,8 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
               onChange={(e) => setTyped(e.target.value)}
               disabled={result !== null}
               autoComplete="off"
+              lang="en"
+              dir="ltr"
               placeholder={t("listening.missingWordPlaceholder")}
               className="w-full min-h-[52px] bg-background border border-border rounded-xl p-4 font-sans font-bold text-foreground text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-60"
             />
@@ -130,23 +136,23 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
                 role="status"
                 className={`rounded-2xl border p-4 font-sans text-sm ${
                   result === "correct"
-                    ? "border-wp-green bg-wp-green-light/40 text-foreground"
-                    : "border-wp-rose bg-wp-rose-light/40 text-foreground"
+                    ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground font-semibold"
+                    : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground font-semibold"
                 }`}
               >
                 {result === "correct"
-                  ? `Correct — the word is "${target.label}".`
-                  : `The word was "${target.label}".`}
+                  ? t("suites.dictationCorrect", { word: target.label })
+                  : t("suites.dictationIncorrect", { word: target.label })}
               </div>
             )}
 
             {result ? (
               <PrimaryButton
-                label="Back to Exercises"
+                label={t("suites.backToExercises")}
                 onClick={() => dispatch({ type: "GO", to: "explore" })}
               />
             ) : (
-              <PrimaryButton label="Submit Dictation" type="submit" />
+              <PrimaryButton label={t("suites.submitDictation")} type="submit" />
             )}
           </form>
         </div>

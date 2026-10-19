@@ -96,7 +96,7 @@ export const LibraryWordCard = memo(function LibraryWordCard({
               type="button"
               onClick={handlePlayAudio}
               aria-label={t("explore.listenPronunciation") + `: ${displayLabel}`}
-              className="flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-xl bg-secondary/80 text-primary hover:bg-secondary hover:scale-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs"
+              className="flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-xl bg-secondary/80 text-primary hover:bg-secondary motion-safe:hover:scale-105 motion-safe:active:scale-95 motion-reduce:transform-none motion-safe:transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs"
             >
               <Volume2
                 className={`size-4.5 transition-transform ${isPlaying ? "motion-safe:animate-pulse text-primary" : ""}`}
@@ -108,7 +108,7 @@ export const LibraryWordCard = memo(function LibraryWordCard({
           {/* Arabic Meaning */}
           {word.arabicTranslation && (
             <p
-              className="font-arabic text-sm font-semibold text-primary/95 mt-1 truncate"
+              className="font-arabic text-sm font-semibold text-primary/95 mt-1 break-words text-pretty"
               dir="rtl"
               lang="ar"
             >
@@ -124,10 +124,10 @@ export const LibraryWordCard = memo(function LibraryWordCard({
           type="button"
           onClick={handleUnitClick}
           aria-label={t("explore.inUnit", { unit: unitName })}
-          className="flex min-h-[44px] items-center gap-1.5 truncate font-medium hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg px-1 -ms-1 cursor-pointer"
+          className="flex min-h-[44px] items-center gap-1.5 font-medium hover:text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg px-1 -ms-1 cursor-pointer text-start"
         >
           <Layers className="size-3.5 shrink-0 text-primary/70" aria-hidden="true" />
-          <span className="truncate">{unitName}</span>
+          <span className="break-words line-clamp-2">{unitName}</span>
         </button>
       </div>
     </article>

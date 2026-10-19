@@ -4,10 +4,9 @@ import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getDistractors } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
-import { WordImage, getWordImageSrc } from "../shared/WordImage";
 import { Button } from "../shared/Button";
 import { useAudio } from "../shared/useAudio";
-import { Volume2, CheckCircle2, XCircle, Keyboard, ArrowRight } from "lucide-react";
+import { Volume2, Keyboard, ArrowRight } from "lucide-react";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
@@ -18,6 +17,8 @@ import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
 import { ImmersiveImageChoiceGrid } from "../shared/ImmersiveImageChoiceGrid";
+import { ImageChoiceCard } from "../shared/ImageChoiceCard";
+import { useKeyboardShortcutsActive } from "../shared/devicePreferences";
 
 interface Props {
   step: number;
@@ -36,6 +37,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const reduceMotion = useReducedMotion();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
+  const shortcutsActive = useKeyboardShortcutsActive();
 
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
@@ -229,121 +231,21 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           </p>
         </div>
         <ImmersiveImageChoiceGrid aria-label="Choose matching picture for audio prompt">
-          {displayCards.map((card, idx) => {
-            const isSelected = selectedId === card.id;
-            const isRevealedAnswer = feedback === "incorrect" && card.id === currentTargetWord.id;
-
-            let cardStateStyle =
-              "border-2 border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
-            if (isSelected) {
-              if (feedback === "correct")
-                cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
-              if (feedback === "incorrect")
-                cardStateStyle = "border-2 border-wp-rose bg-wp-rose-light/40 shadow-md";
-            } else if (isRevealedAnswer) {
-              cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
-            }
-
-            // Overlay type for this cell
-            const showCorrectOverlay = isSelected && feedback === "correct";
-            const showIncorrectOverlay = isSelected && feedback === "incorrect";
-
-            return (
-              <motion.button
-                key={card.id}
-                type="button"
-                transition={
-                  reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 400, damping: 17 }
-                }
-                initial={reduceMotion ? false : { opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                aria-label={`Option ${idx + 1} of ${displayCards.length}. Shortcut: press ${idx + 1}. ${card.description}`}
-                aria-pressed={isSelected}
-                aria-disabled={feedback !== null}
-                onClick={() => handleCardClick(card)}
-                className={`group relative block aspect-square sm:aspect-auto min-h-[120px] w-full overflow-hidden rounded-2xl shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${cardStateStyle}`}
-              >
-                <span
-                  aria-hidden
-                  className="absolute top-2 start-2 z-10 size-9 md:size-11 flex items-center justify-center bg-wp-card text-foreground text-base font-bold rounded-lg border border-border shadow-sm pointer-events-none"
-                >
-                  {idx + 1}
-                </span>
-
-                <div className="size-full relative bg-muted overflow-hidden after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
-                  {/* Atmospheric blurred ambient fill so the card is always rich and colorful without empty gaps */}
-                  <div className="absolute inset-0 size-full overflow-hidden pointer-events-none select-none">
-                    <img
-                      src={getWordImageSrc(card, "thumb")}
-                      alt=""
-                      aria-hidden="true"
-                      className="size-full object-cover object-center blur-lg scale-110 opacity-30 dark:opacity-20"
-                    />
-                  </div>
-
-                  <WordImage
-                    word={card}
-                    altMode="assessment"
-                    optionIndex={idx}
-                    checked={isSelected || isRevealedAnswer}
-                    className="relative z-0 size-full object-contain object-center block p-2 sm:p-3 drop-shadow-sm"
-                    // Every option is on screen and has to be looked at to
-                    // answer, so lazy loading only delays the question.
-                    loading="eager"
-                  />
-                </div>
-
-                {/* -- Per-image feedback overlay -- */}
-                <AnimatePresence>
-                  {(showCorrectOverlay || showIncorrectOverlay) && (
-                    <motion.div
-                      key={`overlay-${card.id}`}
-                      initial={reduceMotion ? false : { opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={reduceMotion ? { duration: 0 } : { duration: 0.18 }}
-                      className={`absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none ${
-                        showIncorrectOverlay
-                          ? "bg-wp-rose/70 backdrop-blur-[2px]"
-                          : "bg-wp-green/70 backdrop-blur-[2px]"
-                      }`}
-                    >
-                      <motion.div
-                        initial={reduceMotion ? false : { scale: 0.3, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        transition={
-                          reduceMotion
-                            ? { duration: 0 }
-                            : { type: "spring", stiffness: 450, damping: 20, delay: 0.05 }
-                        }
-                      >
-                        {showIncorrectOverlay ? (
-                          <XCircle
-                            className="size-10 sm:size-12 text-white drop-shadow-lg"
-                            aria-hidden
-                          />
-                        ) : (
-                          <CheckCircle2
-                            className="size-10 sm:size-12 text-white drop-shadow-lg"
-                            aria-hidden
-                          />
-                        )}
-                      </motion.div>
-
-                      <motion.span
-                        initial={reduceMotion ? false : { y: 6, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={reduceMotion ? { duration: 0 } : { delay: 0.15 }}
-                        className="font-sans font-black text-white text-sm sm:text-base drop-shadow text-center px-2"
-                      >
-                        {t(showIncorrectOverlay ? "ux.tryAgain" : "ux.correct")}
-                      </motion.span>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.button>
-            );
-          })}
+          {displayCards.map((card, idx) => (
+            <ImageChoiceCard
+              key={card.id}
+              option={card}
+              index={idx}
+              totalOptions={displayCards.length}
+              isSelected={selectedId === card.id}
+              feedback={feedback}
+              isRevealedAnswer={feedback === "incorrect" && card.id === currentTargetWord.id}
+              disabled={feedback !== null}
+              onClick={() => handleCardClick(card)}
+              reduceMotion={Boolean(reduceMotion)}
+              showShortcut={shortcutsActive}
+            />
+          ))}
         </ImmersiveImageChoiceGrid>
 
         {/* Feedback status announcement for screen readers */}

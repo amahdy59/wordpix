@@ -41,3 +41,19 @@ export function isTextInput(target: EventTarget | null): boolean {
     (target.isContentEditable || ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName))
   );
 }
+
+/** Returns true only when shortcuts are enabled in preferences and a fine pointer (keyboard/mouse) is present. */
+export function useKeyboardShortcutsActive(): boolean {
+  const enabled = useDevicePreference("character-shortcuts");
+  const isFinePointer = useSyncExternalStore(
+    (onStoreChange) => {
+      if (typeof window === "undefined" || !window.matchMedia) return () => {};
+      const mq = window.matchMedia("(pointer: fine)");
+      mq.addEventListener?.("change", onStoreChange);
+      return () => mq.removeEventListener?.("change", onStoreChange);
+    },
+    () => typeof window !== "undefined" && Boolean(window.matchMedia?.("(pointer: fine)").matches),
+    () => true
+  );
+  return enabled && isFinePointer;
+}

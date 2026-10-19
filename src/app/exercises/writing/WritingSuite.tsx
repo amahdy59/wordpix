@@ -93,7 +93,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
     return (
       <div className="min-h-dvh bg-background flex flex-col">
         <LessonHeader
-          title="Timed Speed Writing Sprint"
+          title={t("suites.timedWritingSprint")}
           current={9}
           total={9}
           onBack={() => dispatch({ type: "GO", to: "explore" })}
@@ -112,15 +112,17 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
             </span>
             <p className="font-sans text-sm text-muted-foreground">
               {missed.length === 0
-                ? "Every word correct."
-                : `Worth another look: ${missed
-                    .map((id) => BEDROOM_VOCABULARY.find((w) => w.id === id)?.label)
-                    .filter(Boolean)
-                    .join(", ")}`}
+                ? t("suites.allWordsCorrect")
+                : t("suites.worthAnotherLook", {
+                    words: missed
+                      .map((id) => BEDROOM_VOCABULARY.find((w) => w.id === id)?.label)
+                      .filter(Boolean)
+                      .join(", "),
+                  })}
             </p>
           </div>
           <PrimaryButton
-            label="Back to Exercises"
+            label={t("suites.backToExercises")}
             onClick={() => dispatch({ type: "GO", to: "explore" })}
           />
         </div>
@@ -131,7 +133,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
   return (
     <div className="wp-question-screen bg-background">
       <LessonHeader
-        title="Timed Speed Writing Sprint"
+        title={t("suites.timedWritingSprint")}
         current={9}
         total={9}
         onBack={() => dispatch({ type: "GO", to: "explore" })}
@@ -143,7 +145,11 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
             <span className="font-sans font-bold text-sm text-foreground">
               {t("suites.wordOf", { current: index + 1, total: words.length })}
             </span>
-            <ExerciseTimer countdown={countdown} enabled={timed} label="Sprint time remaining" />
+            <ExerciseTimer
+              countdown={countdown}
+              enabled={timed}
+              label={t("suites.sprintTimeRemaining")}
+            />
           </div>
 
           <div className="wp-question-layout wp-question-with-media">
@@ -171,9 +177,14 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
                 autoComplete="off"
                 autoCapitalize="none"
                 spellCheck={false}
+                lang="en"
+                dir="ltr"
                 className="w-full min-h-[52px] bg-wp-card border-2 border-border rounded-2xl px-4 font-sans text-foreground text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               />
-              <PrimaryButton label={isLast ? "Finish Sprint" : "Next Word"} type="submit" />
+              <PrimaryButton
+                label={isLast ? t("suites.finishSprint") : t("suites.nextWord")}
+                type="submit"
+              />
             </form>
           </div>
         </div>

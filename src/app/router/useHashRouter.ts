@@ -77,6 +77,10 @@ const STATIC_ROUTES: Record<string, { title: string; getScreen: () => Screen }> 
     // Onboarding needs its step: `{ id: "onboarding" }` alone renders nothing.
     getScreen: () => ({ id: "onboarding", step: "splash" }),
   },
+  "#/onboarding/partners": {
+    title: "WordPix — Enterprise & Supported Organizations",
+    getScreen: () => ({ id: "onboarding", step: "partners" }),
+  },
 };
 
 /**

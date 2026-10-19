@@ -121,9 +121,10 @@ describe("Card Grid Responsive Sizing", () => {
 
   it("lets quick-quiz cards fill the available stage instead of capping their size", () => {
     const source = stripComments(read("exercises/ExerciseQuickQuiz.tsx"));
+    const choiceCard = stripComments(read("shared/ImageChoiceCard.tsx"));
 
     expect(source).toContain('layout="media"');
-    expect(source).toContain("object-cover");
+    expect(choiceCard).toContain("object-cover");
     expect(source).not.toMatch(/aspect-\[4\/3\]/);
     expect(source).not.toMatch(/max-h-\[min\(30dvh,220px\)\]/);
   });

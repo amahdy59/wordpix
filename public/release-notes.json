@@ -1,12 +1,64 @@
 {
-  "version": "0.1.69",
+  "version": "0.1.71",
   "notes": [
-    "Sentence questions align clearly, with full-width image cards and consistent missing-word spaces."
+    "Enterprise social proof onboarding slide showcasing supported companies, interactive sector filters, and responsive logos."
   ],
   "notesAr": [
-    "تظهر أسئلة الجمل بمحاذاة واضحة، مع بطاقات صور تملأ العرض وفراغات متسقة للكلمات الناقصة."
+    "شريحة بدء استخدام جديدة تعرض شعارات الشركات العالمية المدعومة مع تصفية تفاعلية حسب القطاع."
   ],
   "releases": [
+    {
+      "id": "0.1.71",
+      "version": "0.1.71",
+      "date": "2026-10-19",
+      "title": {
+        "en": "Enterprise partners onboarding slide and sector showcase",
+        "ar": "شريحة شركاء المؤسسات في بدء الاستخدام واستعراض القطاعات"
+      },
+      "changes": [
+        {
+          "id": "enterprise-partners-slide",
+          "category": "added",
+          "en": "Introduced a dedicated, beautifully designed onboarding slide featuring company logos that we have supported work for, complete with interactive sector filters, real-world impact metrics, and bidirectional step navigation.",
+          "ar": "إضافة شريحة مخصصة ومصممة بأناقة في بدء الاستخدام تعرض شعارات الشركات التي قمنا بدعمها، مع تصفية تفاعلية حسب القطاع ومؤشرات واقعية وإمكانية التنقل للأمام والخلف."
+        },
+        {
+          "id": "accessible-partner-vector-branding",
+          "category": "improved",
+          "en": "Designed crisp, high-contrast SVG vector emblems for global and regional enterprise partners meeting WCAG 2.2 Level AAA requirements across light and dark modes.",
+          "ar": "تصميم شعارات متجهة عالية التباين للشركاء العالميين والإقليميين تتوافق تماماً مع متطلبات إمكانية الوصول WCAG 2.2 المستوى AAA في الوضعين الفاتح والداكن."
+        }
+      ]
+    },
+    {
+      "id": "0.1.70",
+      "version": "0.1.70",
+      "date": "2026-10-19",
+      "title": {
+        "en": "High-contrast visual feedback and localized practice",
+        "ar": "تغذية راجعة بصرية عالية التباين وتمارين معربة"
+      },
+      "changes": [
+        {
+          "id": "image-choice-high-contrast",
+          "category": "improved",
+          "en": "Recognition and recall image choices use a solid, high-contrast status badge guaranteeing WCAG AAA 7:1 readability over any artwork, with unified feedback across exercise families.",
+          "ar": "تستخدم خيارات الصور في التعرف والاستدعاء شارة حالة ذات تباين عالٍ تضمن قراءة واضحة بنسبة 7:1 وفق WCAG AAA على أي عمل فني، مع توحيد التغذية الراجعة عبر التمارين."
+        },
+        {
+          "id": "adaptive-shortcut-hints",
+          "category": "improved",
+          "en": "Keyboard shortcut badges and helper copy only show when hardware shortcuts are active and supported on the current device, keeping touch interfaces clean.",
+          "ar": "تظهر شارات اختصارات لوحة المفاتيح والتعليمات المساعدة فقط عند تفعيل الاختصارات ودعم الجهاز لها، مما يحافظ على وضوح واجهات اللمس."
+        },
+        {
+          "id": "accessible-practice-localization",
+          "category": "improved",
+          "en": "Dictation, speed writing, and reading practice have complete Arabic and English localized copy, accessible error associations, and enhanced touch targets.",
+          "ar": "أصبحت تمارين الإملاء وسرعة الكتابة والقراءة معربة بالكامل بالعربية والإنجليزية مع ربط الأخطاء بمساعدات الوصول وتوسيع أهداف اللمس."
+        }
+      ]
+    },
     {
       "id": "0.1.69",
       "version": "0.1.69",

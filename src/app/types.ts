@@ -11,7 +11,7 @@ export interface WordFamily {
 
 export type WordRegister = "formal" | "casual" | "business" | "academic" | "general";
 
-export type OnboardStep = "splash" | "language" | "ready";
+export type OnboardStep = "splash" | "partners" | "language" | "ready";
 export type TabId = "home" | "learn" | "library" | "practice" | "profile";
 
 export type LearnerMode =
@@ -155,6 +155,8 @@ export type GoTarget =
 
 export type Action =
   | { type: "ONBOARD_NEXT" }
+  | { type: "ONBOARD_BACK" }
+  | { type: "ONBOARD_GOTO"; step: OnboardStep }
   | { type: "GO"; to: Exclude<GoTarget, "lesson-entry" | "learning-materials"> }
   | {
       type: "GO";

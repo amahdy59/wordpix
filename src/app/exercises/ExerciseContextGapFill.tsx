@@ -19,6 +19,7 @@ import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
 import { ClozeText } from "../shared/SentenceBlank";
+import { useKeyboardShortcutsActive } from "../shared/devicePreferences";
 
 interface Props {
   step: number;
@@ -42,6 +43,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
   const currentTargetWord = queue.current ?? words[0];
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
+  const shortcutsActive = useKeyboardShortcutsActive();
 
   const authoredSentence = getAuthoredSentence(currentTargetWord.id);
   const usage = usageState.status === "ready" ? usageState.data : null;
@@ -140,9 +142,9 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
         family="visual-choice"
         instruction={hasBlank ? t("exercise.gapFillInstruction") : t("exercise.chooseMeaningClue")}
         helper={
-          <span className="hidden sm:inline">
-            {t("exercise.pressNumberToChooseWord", { count: options.length })}
-          </span>
+          shortcutsActive ? (
+            <span>{t("exercise.pressNumberToChooseWord", { count: options.length })}</span>
+          ) : undefined
         }
         activityLabel={t("exercise.gapFillActivityAria")}
         prompt={
@@ -237,9 +239,11 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
                       )}
                       <span>{option.label}</span>
                     </span>
-                    <span className="hidden rounded-lg border border-border/80 bg-muted px-2.5 py-1 text-xs font-mono font-bold text-muted-foreground group-hover:border-primary/40 group-hover:text-primary sm:inline-block">
-                      {index + 1}
-                    </span>
+                    {shortcutsActive && (
+                      <span className="rounded-lg border border-border/80 bg-muted px-2.5 py-1 text-xs font-mono font-bold text-muted-foreground group-hover:border-primary/40 group-hover:text-primary inline-block">
+                        {index + 1}
+                      </span>
+                    )}
                   </button>
                 );
               })}
@@ -250,6 +254,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
           feedback === "incorrect" ? (
             <FeedbackPanel
               tone="error"
+              live="polite"
               title={t("exercise.notQuiteTitle")}
               description={
                 <span className="flex flex-col gap-1">

@@ -33,10 +33,11 @@ export function FeedbackPanel({
   className = "",
 }: FeedbackPanelProps) {
   const Title = titleAs as ElementType;
+  const role = live === "assertive" ? "alert" : "status";
 
   return (
     <section
-      role={tone === "error" ? "alert" : "status"}
+      role={role}
       aria-live={live === "off" ? undefined : live}
       aria-atomic="true"
       className={`w-full rounded-2xl border p-5 shadow-wp-xs sm:p-6 ${toneStyles[tone]} ${className}`}

@@ -571,22 +571,28 @@ function TaskBody({
               aria-label={t("skillRunner.categoryForAria", { item: item.label })}
               className="flex gap-2 flex-wrap"
             >
-              {task.buckets.map((bucket) => (
-                <button
-                  key={bucket.id}
-                  type="button"
-                  disabled={disabled}
-                  aria-pressed={placements[item.id] === bucket.id}
-                  onClick={() => setPlacements({ ...placements, [item.id]: bucket.id })}
-                  className={`px-3 min-h-[44px] rounded-xl border-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                    placements[item.id] === bucket.id
-                      ? "border-primary bg-secondary text-primary"
-                      : "border-border bg-background text-muted-foreground hover:border-primary/50"
-                  }`}
-                >
-                  {bucket.label}
-                </button>
-              ))}
+              {task.buckets.map((bucket) => {
+                const isSelected = placements[item.id] === bucket.id;
+                return (
+                  <button
+                    key={bucket.id}
+                    type="button"
+                    disabled={disabled}
+                    aria-pressed={isSelected}
+                    onClick={() => setPlacements({ ...placements, [item.id]: bucket.id })}
+                    className={`inline-flex items-center justify-center gap-1.5 px-3 min-h-[44px] min-w-[44px] rounded-xl border-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors ${
+                      isSelected
+                        ? "border-primary bg-secondary text-primary shadow-xs"
+                        : "border-border bg-background text-muted-foreground hover:border-primary/50"
+                    }`}
+                  >
+                    {isSelected && (
+                      <CheckCircle2 className="size-3.5 shrink-0 text-primary" aria-hidden="true" />
+                    )}
+                    <span>{bucket.label}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
         ))}

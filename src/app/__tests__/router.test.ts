@@ -198,6 +198,8 @@ describe("Reducer purity", () => {
   it("advances onboarding through every step to home", () => {
     let state: Screen = { id: "onboarding", step: "splash" };
     state = reducer(state, { type: "ONBOARD_NEXT" });
+    expect(state).toEqual({ id: "onboarding", step: "partners" });
+    state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "onboarding", step: "language" });
     state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "onboarding", step: "ready" });
