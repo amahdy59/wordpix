@@ -17,7 +17,11 @@ import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
-import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
+import {
+  SentenceQuestionSupport,
+  SentenceMeaningSupport,
+  resolveSentenceMedia,
+} from "../shared/SentenceQuestionSupport";
 import { ClozeText } from "../shared/SentenceBlank";
 import { useKeyboardShortcutsActive } from "../shared/devicePreferences";
 
@@ -121,6 +125,13 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
     [lessonId, words]
   );
 
+  const [imageUnavailable, setImageUnavailable] = useState(false);
+  const [lastTargetId, setLastTargetId] = useState(currentTargetWord.id);
+  if (lastTargetId !== currentTargetWord.id) {
+    setLastTargetId(currentTargetWord.id);
+    setImageUnavailable(false);
+  }
+
   return (
     <ExerciseShell
       step={step}
@@ -148,28 +159,38 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
         }
         activityLabel={t("exercise.gapFillActivityAria")}
         prompt={
-          hasBlank && (
-            <div
-              lang="en"
-              dir="ltr"
-              aria-label={t("exercise.gapFillSentenceAria", {
-                sentence: clozeSentence.replace(
-                  /_{2,}/gu,
-                  options.find((option) => option.id === selectedId)?.label ??
-                    t("exercise.missingWord")
-                ),
-              })}
-              data-question-prompt
-              className="text-start font-sans"
-            >
-              <p className="wp-question-prompt">
-                <ClozeText
-                  text={clozeSentence}
-                  answer={options.find((option) => option.id === selectedId)?.label}
-                />
-              </p>
-            </div>
-          )
+          <div className="flex flex-col gap-3 sm:gap-3.5 w-full">
+            {hasBlank && (
+              <div
+                lang="en"
+                dir="ltr"
+                aria-label={t("exercise.gapFillSentenceAria", {
+                  sentence: clozeSentence.replace(
+                    /_{2,}/gu,
+                    options.find((option) => option.id === selectedId)?.label ??
+                      t("exercise.missingWord")
+                  ),
+                })}
+                data-question-prompt
+                className="text-start font-sans"
+              >
+                <p className="wp-question-prompt">
+                  <ClozeText
+                    text={clozeSentence}
+                    answer={options.find((option) => option.id === selectedId)?.label}
+                  />
+                </p>
+              </div>
+            )}
+            <SentenceMeaningSupport
+              word={currentTargetWord}
+              sentence={fullSentence}
+              prompt={clozeSentence}
+              answered={feedback !== null}
+              hasImage={!imageUnavailable && Boolean(media || currentTargetWord.img)}
+              defaultOpen={imageUnavailable}
+            />
+          </div>
         }
         media={
           <SentenceQuestionSupport
@@ -179,6 +200,8 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
             word={currentTargetWord}
             media={media}
             answered={feedback !== null}
+            showClue={false}
+            onImageExhausted={() => setImageUnavailable(true)}
           />
         }
         activity={

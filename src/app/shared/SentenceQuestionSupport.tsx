@@ -56,7 +56,8 @@ export function ScenePlaceholder({ clue, className = "" }: { clue?: string; clas
 }
 
 export interface SentenceMeaningSupportProps {
-  word: VocabularyItem;
+  word?: VocabularyItem;
+  targetWord?: VocabularyItem;
   sentence: string;
   prompt: string;
   answered: boolean;
@@ -67,7 +68,8 @@ export interface SentenceMeaningSupportProps {
 }
 
 export function SentenceMeaningSupport({
-  word,
+  word: wordProp,
+  targetWord: targetWordProp,
   sentence,
   prompt,
   answered,
@@ -76,6 +78,7 @@ export function SentenceMeaningSupport({
   hasImage,
   className = "",
 }: SentenceMeaningSupportProps) {
+  const word = (targetWordProp ?? wordProp)!;
   const { t } = useI18n();
   const { accessibility } = useAccessibility();
   const session = useLessonSession();
@@ -220,6 +223,7 @@ export function SentenceQuestionSupport({
   answered,
   autoPlay = false,
   showClue = true,
+  onImageExhausted,
   className = "",
 }: {
   word: VocabularyItem;
@@ -229,6 +233,7 @@ export function SentenceQuestionSupport({
   answered: boolean;
   autoPlay?: boolean;
   showClue?: boolean;
+  onImageExhausted?: () => void;
   className?: string;
 }) {
   const [activeQuestionKey, setActiveQuestionKey] = useState(`${word.id}:${sentence}`);
@@ -253,24 +258,33 @@ export function SentenceQuestionSupport({
     (media && !failedImages.has(media.imagePath) ? media : undefined) ?? fallbackMedia;
   const hasImage = Boolean(activeMedia);
 
+  useEffect(() => {
+    if (!hasImage) {
+      onImageExhausted?.();
+    }
+  }, [hasImage, onImageExhausted]);
+
   return (
     <div
       data-target-word={word.label.toLowerCase()}
-      className={`flex min-w-0 flex-col gap-3 sm:gap-4 w-full ${className}`}
+      className={`flex min-w-0 flex-col gap-3 sm:gap-4 w-full h-full ${className}`}
     >
       {hasImage && activeMedia ? (
         <MediaFrame
           fit="contain"
           aspect="auto"
-          className="wp-question-media wp-question-media--fitted"
+          className="wp-question-media wp-question-media--fitted h-full"
         >
           <QuestionImage
             key={activeMedia.imagePath}
             media={activeMedia}
-            className="size-full object-contain object-center"
+            className="w-auto h-auto max-w-full max-h-full object-contain object-center"
             loading="eager"
             {...{ fetchpriority: "high" }}
-            onExhausted={() => setFailedImages((prev) => new Set(prev).add(activeMedia.imagePath))}
+            onExhausted={() => {
+              setFailedImages((prev) => new Set(prev).add(activeMedia.imagePath));
+              onImageExhausted?.();
+            }}
           />
         </MediaFrame>
       ) : (

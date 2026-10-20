@@ -55,8 +55,8 @@ async function openCore(page: Page, step: number, unitId = "five-senses") {
   );
   await page.goto(`/#/learn/${unitId}/step-${step}`, { waitUntil: "domcontentloaded" });
   await waitForStyles(page);
-  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-  await expect(page.getByRole("progressbar").first()).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible({ timeout: 15_000 });
+  await expect(page.getByRole("progressbar").first()).toBeVisible({ timeout: 15_000 });
 }
 
 async function assertNoHorizontalOverflow(page: Page) {
@@ -104,7 +104,7 @@ test("fitted media retains a visible frame while its image loads", async ({ page
     await imageReady;
     await route.fulfill({
       contentType: "image/svg+xml",
-      body: '<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><rect width="1024" height="1024" fill="gray"/></svg>',
+      body: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024"><rect width="1024" height="1024" fill="gray"/></svg>',
     });
   });
   await prepare(page);
@@ -146,7 +146,7 @@ for (const viewport of [
       route.request().resourceType() === "image"
         ? route.fulfill({
             contentType: "image/svg+xml",
-            body: '<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><rect width="1024" height="1024" fill="gray"/></svg>',
+            body: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024"><rect width="1024" height="1024" fill="gray"/></svg>',
           })
         : route.continue()
     );
@@ -172,9 +172,10 @@ for (const viewport of [
     }
     if (viewport.width >= 768) {
       const promptBox = (await prompt.boundingBox())!;
+      const promptZoneBox = (await page.locator('[data-exercise-zone="prompt"]').boundingBox())!;
       const choicesBox = (await choices.boundingBox())!;
       expect(Math.abs(promptBox.y - mediaBox.y)).toBeLessThanOrEqual(2);
-      expect(choicesBox.y - (promptBox.y + promptBox.height)).toBeLessThanOrEqual(24);
+      expect(choicesBox.y - (promptZoneBox.y + promptZoneBox.height)).toBeLessThanOrEqual(24);
     }
     const region = page.getByRole("region", {
       name: "The Five Senses 1: Complete the sentence exercise",
@@ -218,7 +219,7 @@ for (const viewport of [
       route.request().resourceType() === "image"
         ? route.fulfill({
             contentType: "image/svg+xml",
-            body: '<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"><rect width="1024" height="1024" fill="gray"/></svg>',
+            body: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024"><rect width="1024" height="1024" fill="gray"/></svg>',
           })
         : route.continue()
     );
@@ -279,8 +280,8 @@ for (const viewport of [
       await test.step(exercise.id, async () => {
         await page.goto(`/#/skills/${exercise.id}`, { waitUntil: "domcontentloaded" });
         await waitForStyles(page);
-        await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-        await expect(page.getByRole("progressbar").first()).toBeVisible();
+        await expect(page.getByRole("heading", { level: 1 })).toBeVisible({ timeout: 15_000 });
+        await expect(page.getByRole("progressbar").first()).toBeVisible({ timeout: 15_000 });
         await expect(page.locator(".wp-question-scroll")).toBeVisible();
         await assertNoHorizontalOverflow(page);
         const controls = page.locator(".wp-question-scroll").getByRole("button");

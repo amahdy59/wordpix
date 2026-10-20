@@ -1,12 +1,41 @@
 {
-  "version": "0.1.73",
+  "version": "0.1.74",
   "notes": [
-    "Full-stage mobile image cards, zero-overlap question layouts, and compact accessible choices eliminating mobile scrolling."
+    "Fitted vertical media expansion, unified question clue positioning under the prompt, and short-screen viewport alignment ensuring feedback and continue buttons remain above the fold."
   ],
   "notesAr": [
-    "بطاقات صور تملأ الشاشة بالكامل على الهواتف، وتخطيطات أسئلة متجاوبة خالية من التداخل، وخيارات مدمجة تمنع التمرير غير الضروري."
+    "تمدد رأسي للصور التوضيحية لملء المساحة، ومحاذاة تلميحات الأسئلة أسفل جملة السؤال مباشرة، ومواءمة الشاشات المنخفضة لضمان بقاء الملاحظات وزر المتابعة ظاهرة دون تمرير."
   ],
   "releases": [
+    {
+      "id": "0.1.74",
+      "version": "0.1.74",
+      "date": "2026-10-20",
+      "title": {
+        "en": "Fitted vertical media, unified question clue positioning, and short-screen viewport alignment",
+        "ar": "ملاءمة الصور الرأسية، ومحاذاة تلميحات الأسئلة، وتحسين العرض على الشاشات المنخفضة"
+      },
+      "changes": [
+        {
+          "id": "fitted-vertical-media",
+          "category": "improved",
+          "en": "Enforced full vertical expansion for question media containers up to bounded responsive maximums across desktop, tablet, and mobile, presenting crisp, well-proportioned visual illustrations without letterboxing.",
+          "ar": "تحسين التمدد الرأسي لإطارات الصور التوضيحية في الأسئلة لملء المساحة الرأسية المتاحة بحدود متجاوبة مدروسة على مختلف الشاشات لتقديم صور واضحة ومتناسقة دون حواف فارغة."
+        },
+        {
+          "id": "meaning-support-prompt-alignment",
+          "category": "improved",
+          "en": "Moved meaning support and clue toggles directly under the question sentence in the interaction column, maintaining a clean visual hierarchy between instruction media and response controls.",
+          "ar": "نقل قسم الدعم والتلميحات ليكون أسفل جملة السؤال مباشرة في عمود التفاعل، مما يحافظ على التسلسل الهرمي البصري الواضح بين وسائط التوضيح وعناصر الإجابة."
+        },
+        {
+          "id": "short-screen-viewport-fit",
+          "category": "fixed",
+          "en": "Refined question spacing and compact choice heights on short viewports (including 720p and 768p laptops) to guarantee prompt, choices, feedback, and continue buttons remain fully visible above the fold without scroll jumps.",
+          "ar": "ضبط فجوات التخطيط وارتفاع خيارات الإجابة على الشاشات المنخفضة (بما في ذلك شاشات الحواسيب المحمولة بدقة 720p و768p) لضمان بقاء السؤال والخيارات ولوحة الملاحظات وزر المتابعة ظاهرة بالكامل دون الحاجة للتمرير."
+        }
+      ]
+    },
     {
       "id": "0.1.73",
       "version": "0.1.73",

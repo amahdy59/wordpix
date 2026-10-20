@@ -81,7 +81,7 @@ describe("ExerciseContextGapFill sentence media", () => {
     expect(redButton).toBeInTheDocument();
   });
 
-  it("positions the meaning support clue within the media support zone", () => {
+  it("positions the meaning support clue directly below the question prompt in the prompt zone", () => {
     render(
       <ExerciseContextGapFill step={3} lessonId="colors-1" words={words} dispatch={vi.fn()} />,
       { wrapper }
@@ -94,10 +94,8 @@ describe("ExerciseContextGapFill sentence media", () => {
     const promptText = promptZone?.querySelector("[data-question-prompt]");
     expect(promptText).toBeInTheDocument();
 
-    // The meaning support disclosure is inside the media zone
-    const mediaZone = document.querySelector('[data-exercise-zone="media"]');
-    expect(mediaZone).toBeInTheDocument();
+    // The meaning support disclosure is positioned below the prompt within the prompt zone
     const meaningSupport = screen.getByText(/Meaning support — open for a clue/i);
-    expect(mediaZone).toContainElement(meaningSupport);
+    expect(promptZone).toContainElement(meaningSupport);
   });
 });

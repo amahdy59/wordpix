@@ -6,7 +6,11 @@ import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { Button, ExerciseFamilyTemplate, FeedbackPanel } from "../shared";
 import { getAuthoredSentence } from "./content/authoredLessonContent";
-import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
+import {
+  SentenceQuestionSupport,
+  SentenceMeaningSupport,
+  resolveSentenceMedia,
+} from "../shared/SentenceQuestionSupport";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { getRichSentence } from "./exerciseContent";
 import { sentenceCloze } from "./sentenceCloze";
@@ -148,6 +152,13 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     [lessonId, words]
   );
 
+  const [imageUnavailable, setImageUnavailable] = useState(false);
+  const [lastTargetId, setLastTargetId] = useState(currentTargetWord.id);
+  if (lastTargetId !== currentTargetWord.id) {
+    setLastTargetId(currentTargetWord.id);
+    setImageUnavailable(false);
+  }
+
   return (
     <ExerciseShell
       step={step}
@@ -174,6 +185,18 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
           ) : undefined
         }
         activityLabel={t("exercise.wordChoicesAria")}
+        prompt={
+          <div className="flex flex-col gap-3 w-full">
+            <SentenceMeaningSupport
+              targetWord={currentTargetWord}
+              sentence={answerSentence}
+              prompt={sentenceCloze(answerSentence, currentTargetWord.label)}
+              answered={feedback !== null}
+              hasImage={!imageUnavailable && Boolean(media || currentTargetWord.img)}
+              defaultOpen={imageUnavailable}
+            />
+          </div>
+        }
         media={
           <SentenceQuestionSupport
             key={currentTargetWord.id}
@@ -182,6 +205,8 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             prompt={sentenceCloze(answerSentence, currentTargetWord.label)}
             media={media}
             answered={feedback !== null}
+            showClue={false}
+            onImageExhausted={() => setImageUnavailable(true)}
           />
         }
         activity={
