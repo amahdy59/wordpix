@@ -1,12 +1,47 @@
 {
-  "version": "0.1.72",
+  "version": "0.1.73",
   "notes": [
-    "Zero-scroll responsive exercise layout optimization utilizing available whitespace for feedback on tablets and preventing unnecessary scrolling across all screen sizes."
+    "Full-stage mobile image cards, zero-overlap question layouts, and compact accessible choices eliminating mobile scrolling."
   ],
   "notesAr": [
-    "تحسين التخطيط المتجاوب للتمارين لاستغلال المساحة المتاحة للملاحظات على الأجهزة اللوحية ومنع التمرير غير الضروري على جميع أحجام الشاشات."
+    "بطاقات صور تملأ الشاشة بالكامل على الهواتف، وتخطيطات أسئلة متجاوبة خالية من التداخل، وخيارات مدمجة تمنع التمرير غير الضروري."
   ],
   "releases": [
+    {
+      "id": "0.1.73",
+      "version": "0.1.73",
+      "date": "2026-10-20",
+      "title": {
+        "en": "Full-stage mobile cards, zero-overlap layouts, and compact zero-scroll choices",
+        "ar": "بطاقات تملأ الشاشة، وتخطيطات بدون تداخل، وخيارات مدمجة خالية من التمرير على الهواتف"
+      },
+      "changes": [
+        {
+          "id": "mobile-full-screen-image-cards",
+          "category": "improved",
+          "en": "Engineered full-stage mobile image cards in Audio Match and Quick Quiz so images fill their cards completely with object-cover and cards expand vertically to occupy the full stage height in an immersive 2x2 grid without awkward gaps.",
+          "ar": "تطوير بطاقات الصور على الهواتف في تمارين المطابقة الصوتية والاختبار السريع لتملأ الصور البطاقات بالكامل مع ملء البطاقات للمسرح الرأسي بالكامل في شبكة 2x2 تفاعلية بدون فجوات فارغة."
+        },
+        {
+          "id": "mobile-zero-overlap-layout",
+          "category": "fixed",
+          "en": "Enforced a resilient flex-column layout on mobile viewports that eliminates named grid-area collisions, guaranteeing question prompts, media, and in-flow feedback never overlap.",
+          "ar": "تطبيق تخطيط مرن متسلسل على الهواتف يلغي تضارب مناطق الشبكة ويضمن عدم حدوث أي تداخل بصري بين نصوص الأسئلة والوسائط والملاحظات."
+        },
+        {
+          "id": "mobile-zero-scroll-choices",
+          "category": "improved",
+          "en": "Optimized answer choice heights and question media framing to ensure all question elements and choices remain fully visible above the fold on mobile screens without requiring scrolling while strictly maintaining WCAG AAA 44x44px touch targets.",
+          "ar": "تحسين ارتفاع خيارات الإجابة وإطار الوسائط لضمان ظهور كافة عناصر السؤال والخيارات بالكامل فوق خط الطي على الهواتف دون الحاجة إلى التمرير مع الالتزام التام بأهداف لمس 44x44 بكسل."
+        },
+        {
+          "id": "visual-flow-full-bleed-cards",
+          "category": "improved",
+          "en": "Redesigned Visual Flow cards in the Context & Story Suite so photography fills the entire card container with responsive 4:3 framing, WCAG AAA 7:1+ contrast scrims, and distinct sibling actions for dictionary insights and audio pronunciation.",
+          "ar": "إعادة تصميم بطاقات التدفق البصري في مجموعة السياق والقصة بحيث تشغل الصور كامل مساحة البطاقة بإطار 4:3 متجاوب، وتدرجات عالية التباين تتوافق مع معايير WCAG AAA 7:1+، مع أزرار منفصلة لمعلومات القاموس والنطق الصوتي."
+        }
+      ]
+    },
     {
       "id": "0.1.72",
       "version": "0.1.72",

@@ -193,7 +193,7 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
                   aria-pressed={selected === option}
                   aria-disabled={selected !== null || undefined}
                   onClick={() => handleSelect(option)}
-                  className="min-h-[48px] rounded-xl border-2 border-border bg-wp-card px-4 py-3 text-start font-sans font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none"
+                  className="min-h-[44px] sm:min-h-[48px] rounded-xl border-2 border-border bg-wp-card px-3.5 py-2 sm:px-4 sm:py-2.5 text-start font-sans font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none"
                 >
                   {option}
                 </button>

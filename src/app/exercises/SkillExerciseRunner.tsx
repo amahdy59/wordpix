@@ -411,7 +411,7 @@ interface BodyProps {
 }
 
 const optionClasses = (selected: boolean) =>
-  `w-full min-h-[52px] px-4 py-3 rounded-2xl border-2 font-sans font-semibold text-sm text-start transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+  `w-full min-h-[44px] sm:min-h-[48px] px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl border-2 font-sans font-semibold text-sm text-start transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
     selected
       ? "border-primary bg-secondary text-primary"
       : "border-border bg-wp-card text-foreground hover:border-primary/50"

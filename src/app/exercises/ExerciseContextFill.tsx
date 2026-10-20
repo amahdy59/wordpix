@@ -186,7 +186,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         }
         activity={
           <div
-            className="flex flex-col gap-3 sm:gap-3.5 w-full"
+            className="flex flex-col gap-2 sm:gap-2.5 w-full"
             role="group"
             aria-label={t("exercise.wordChoicesAria")}
             dir="ltr"

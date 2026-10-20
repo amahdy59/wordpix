@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, XCircle } from "lucide-react";
-import { WordImage, getWordImageSrc } from "./WordImage";
+import { WordImage } from "./WordImage";
 import { useI18n } from "../context/I18nContext";
 import type { VocabularyItem } from "../data/lessons";
 
@@ -71,7 +71,7 @@ export const ImageChoiceCard = memo(function ImageChoiceCard({
       onClick={() => {
         if (!disabled && feedback === null) onClick();
       }}
-      className={`group relative block aspect-square sm:aspect-auto min-h-[120px] w-full overflow-hidden rounded-2xl border-2 shadow-wp-sm transition-colors duration-200 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:rounded-3xl ${borderStyle} ${className}`}
+      className={`group relative flex flex-col min-h-[44px] h-full w-full overflow-hidden rounded-2xl border-2 shadow-wp-sm transition-colors duration-200 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:rounded-3xl ${borderStyle} ${className}`}
     >
       {/* Option / Keyboard shortcut badge — only rendered when shortcuts are active */}
       {showShortcut && (
@@ -83,23 +83,14 @@ export const ImageChoiceCard = memo(function ImageChoiceCard({
         </span>
       )}
 
-      {/* Image Container with decorative backdrop */}
-      <div className="size-full relative bg-muted overflow-hidden">
-        <div className="absolute inset-0 size-full overflow-hidden pointer-events-none select-none">
-          <img
-            src={getWordImageSrc(option, "thumb")}
-            alt=""
-            aria-hidden="true"
-            className="size-full object-cover object-center blur-lg scale-110 opacity-30 dark:opacity-20"
-          />
-        </div>
-
+      {/* Image Container with full-bleed cover presentation */}
+      <div className="size-full relative bg-muted overflow-hidden flex-1">
         <WordImage
           word={option}
           altMode="assessment"
           optionIndex={index}
           checked={isSelected || isRevealedAnswer}
-          className="relative z-0 size-full object-contain object-center block p-2 sm:p-3 drop-shadow-sm"
+          className="relative z-0 size-full object-cover object-center block"
           loading="eager"
         />
       </div>

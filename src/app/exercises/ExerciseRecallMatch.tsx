@@ -200,12 +200,12 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
       }
     >
       <div className="wp-container-immersive relative flex min-h-0 flex-1 flex-col gap-3 sm:gap-4">
-        <div className="flex shrink-0 flex-col items-center justify-between gap-3 sm:flex-row">
-          <div className="text-center sm:text-start">
+        <div className="flex shrink-0 flex-row items-center justify-between gap-3">
+          <div className="text-start">
             <p className="font-sans text-sm font-bold text-foreground sm:text-base">
               {t("exercise.choosePictureHeard")}
             </p>
-            <div className="mt-1 hidden items-center gap-1.5 text-xs font-medium text-muted-foreground pointer-fine:flex">
+            <div className="mt-0.5 hidden items-center gap-1.5 text-xs font-medium text-muted-foreground pointer-fine:flex">
               <Keyboard className="size-4" aria-hidden />
               <span>{t("exercise.pressNumberRecall", { count: displayCards.length })}</span>
             </div>
@@ -214,13 +214,13 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
             type="button"
             onClick={replayAudio}
             aria-label={t("exercise.replayAudio")}
-            className="flex min-h-12 shrink-0 items-center gap-2 rounded-xl border border-border bg-wp-card px-6 font-bold text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="flex min-h-11 shrink-0 items-center gap-2 rounded-xl border border-border bg-wp-card px-4 py-2 text-sm font-bold text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:px-6"
           >
             <Volume2
-              className={`size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
+              className={`size-4 sm:size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
               aria-hidden
             />
-            {t("exercise.replay")}
+            <span>{t("exercise.replay")}</span>
           </button>
           <p className="sr-only" role="status">
             {isPlaying

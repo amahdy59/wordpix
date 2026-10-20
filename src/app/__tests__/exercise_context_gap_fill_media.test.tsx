@@ -80,4 +80,24 @@ describe("ExerciseContextGapFill sentence media", () => {
     const redButton = screen.getByRole("button", { name: /Red/i });
     expect(redButton).toBeInTheDocument();
   });
+
+  it("positions the meaning support clue within the media support zone", () => {
+    render(
+      <ExerciseContextGapFill step={3} lessonId="colors-1" words={words} dispatch={vi.fn()} />,
+      { wrapper }
+    );
+
+    const promptZone = document.querySelector('[data-exercise-zone="prompt"]');
+    expect(promptZone).toBeInTheDocument();
+
+    // The sentence prompt is inside the prompt zone
+    const promptText = promptZone?.querySelector("[data-question-prompt]");
+    expect(promptText).toBeInTheDocument();
+
+    // The meaning support disclosure is inside the media zone
+    const mediaZone = document.querySelector('[data-exercise-zone="media"]');
+    expect(mediaZone).toBeInTheDocument();
+    const meaningSupport = screen.getByText(/Meaning support — open for a clue/i);
+    expect(mediaZone).toContainElement(meaningSupport);
+  });
 });

@@ -166,17 +166,12 @@
   }
 
   .wp-question-layout {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     min-width: 0;
     gap: var(--wp-question-gap);
-    align-items: start;
-    grid-template-areas:
-      "prompt"
-      "media"
-      "activity"
-      "feedback"
-      "action";
+    align-items: stretch;
   }
 
   .wp-question-media {
@@ -186,64 +181,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .wp-question-layout > [data-exercise-zone="prompt"] {
-    grid-area: prompt;
-  }
-
-  .wp-question-layout > [data-exercise-zone="media"] {
-    grid-area: media;
-  }
-
-  .wp-question-layout > [data-exercise-zone="activity"] {
-    grid-area: activity;
-  }
-
-  .wp-question-layout > [data-exercise-zone="feedback"] {
-    grid-area: feedback;
-  }
-
-  .wp-question-layout > [data-exercise-zone="action"] {
-    grid-area: action;
-  }
-
-  .wp-question-layout:has(> [data-exercise-zone="prompt"]):has(> [data-exercise-zone="media"]) {
-    grid-template-areas:
-      "prompt"
-      "media"
-      "activity"
-      "feedback"
-      "action";
-  }
-
-  .wp-question-layout:not(:has(> [data-exercise-zone="prompt"])):has(
-      > [data-exercise-zone="media"]
-    ) {
-    grid-template-areas:
-      "media"
-      "activity"
-      "feedback"
-      "action";
-  }
-
-  .wp-question-layout:has(> [data-exercise-zone="prompt"]):not(
-      :has(> [data-exercise-zone="media"])
-    ) {
-    grid-template-areas:
-      "prompt"
-      "activity"
-      "feedback"
-      "action";
-  }
-
-  .wp-question-layout:not(:has(> [data-exercise-zone="prompt"])):not(
-      :has(> [data-exercise-zone="media"])
-    ) {
-    grid-template-areas:
-      "activity"
-      "feedback"
-      "action";
   }
 
   .wp-question-media > img {
@@ -259,8 +196,9 @@
   .wp-question-media.wp-question-media--fitted {
     width: 100%;
     max-width: 100%;
-    min-height: 6.5rem;
-    height: clamp(6.5rem, 18dvh, 9rem);
+    min-height: 5.5rem;
+    height: clamp(5.5rem, 16dvh, 8.5rem);
+    max-height: 9rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -277,12 +215,12 @@
   }
 
   .wp-question-option {
-    min-height: 3rem;
-    padding: 0.75rem 1rem;
+    min-height: 44px;
+    padding: 0.5rem 0.875rem;
     border-width: 1px;
     border-radius: var(--wp-radius-xl);
     font-size: var(--wp-text-md);
-    line-height: 1.5;
+    line-height: 1.4;
     overflow-wrap: anywhere;
   }
 
@@ -378,11 +316,32 @@
   @media (min-width: 48rem) {
     .wp-question-layout:has(> [data-exercise-zone="media"]),
     .wp-question-layout.wp-question-with-media {
+      display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       column-gap: clamp(1.25rem, 3vw, 2.5rem);
       row-gap: var(--wp-question-gap);
       align-items: start;
       flex: 1;
+    }
+
+    .wp-question-layout > [data-exercise-zone="prompt"] {
+      grid-area: prompt;
+    }
+
+    .wp-question-layout > [data-exercise-zone="media"] {
+      grid-area: media;
+    }
+
+    .wp-question-layout > [data-exercise-zone="activity"] {
+      grid-area: activity;
+    }
+
+    .wp-question-layout > [data-exercise-zone="feedback"] {
+      grid-area: feedback;
+    }
+
+    .wp-question-layout > [data-exercise-zone="action"] {
+      grid-area: action;
     }
 
     .wp-question-family,
@@ -393,6 +352,12 @@
     .wp-question-media.wp-question-media--fitted {
       min-height: 10rem;
       height: clamp(11rem, 34dvh, 20rem);
+    }
+
+    .wp-question-option {
+      min-height: 3.5rem;
+      padding: 0.875rem 1.25rem;
+      font-size: var(--wp-text-lg);
     }
 
     /* In two-column mode, media occupies the start column spanning all rows.
@@ -431,7 +396,13 @@
   @media (max-height: 35rem) {
     .wp-question-family,
     .wp-skill-workspace {
-      --wp-question-media-height: clamp(6rem, 28dvh, 12rem);
+      --wp-question-media-height: clamp(8rem, 45dvh, 14rem);
+    }
+
+    .wp-question-media.wp-question-media--fitted {
+      min-height: 8rem;
+      height: clamp(8rem, 45dvh, 14rem);
+      max-height: 14rem;
     }
   }
 

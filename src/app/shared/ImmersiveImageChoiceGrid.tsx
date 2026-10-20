@@ -22,7 +22,7 @@ export function ImmersiveImageChoiceGrid({
     <div
       {...props}
       role="group"
-      className={`grid min-h-0 w-full flex-1 auto-rows-fr grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-4 lg:grid-rows-1 xl:gap-6 ${className}`}
+      className={`grid min-h-0 w-full flex-1 auto-rows-fr grid-cols-2 grid-rows-2 gap-2.5 sm:gap-4 lg:grid-cols-4 lg:grid-rows-1 xl:gap-6 ${className}`}
     />
   );
 }

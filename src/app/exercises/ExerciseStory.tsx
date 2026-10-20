@@ -670,51 +670,87 @@ export const ExerciseStory = memo(function ExerciseStory({
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
               {words.map((item) => {
                 const isActive = activeWordId === item.id;
+                const isWordPlaying = isPlaying && activeWordId === item.id;
+
                 return (
-                  // Static card: the word-details action and the audio action
-                  // are sibling buttons, never nested, so there is exactly
-                  // one interactive role per control for keyboard and SR users.
+                  // Static card container: the word-details action and the audio action
+                  // are independent sibling buttons (never nested), ensuring exact HTML validity
+                  // and one interactive role per control for keyboard and screen-reader users.
                   <article
                     key={item.id}
                     className={
-                      "bg-wp-card border rounded-2xl p-3 flex flex-col items-center gap-2.5 shadow-wp-xs transition-all text-center " +
+                      "group relative w-full aspect-[4/3] rounded-3xl overflow-hidden border shadow-wp-xs transition-all hover:shadow-wp-md " +
                       (isActive
-                        ? "border-primary ring-2 ring-primary/20 bg-secondary"
-                        : "border-border")
+                        ? "border-primary ring-2 ring-primary/40 bg-secondary"
+                        : "border-border hover:border-primary/60 bg-wp-card")
                     }
                   >
-                    <div className="size-20 sm:size-24 rounded-xl overflow-hidden bg-muted shrink-0 border border-border relative">
+                    {/* Immersive background media occupying the entire card */}
+                    <div className="absolute inset-0 size-full overflow-hidden bg-muted">
                       <img
                         src={resolveAssetUrl(item.img)}
-                        alt={item.label}
-                        className="size-full object-cover"
+                        alt=""
+                        aria-hidden="true"
+                        className="size-full object-cover object-center transition-transform duration-500 motion-safe:group-hover:scale-105"
+                        loading="lazy"
                       />
-                      <button
-                        type="button"
-                        onClick={() => handlePlayWord(item.label, item.id)}
-                        aria-label={t("story.listenToWord", { word: item.label })}
-                        className="absolute bottom-1.5 end-1.5 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center shadow-md cursor-pointer transition-transform motion-safe:active:scale-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
-                      >
-                        <Volume2 className="size-3.5" aria-hidden />
-                      </button>
+                      {/* Top vignette to preserve floating speaker contrast on bright photos */}
+                      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent via-25% to-transparent pointer-events-none" />
+                      {/* Bottom gradient scrim providing AAA 7:1+ contrast for word typography */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 via-45% to-transparent pointer-events-none" />
                     </div>
 
+                    {/* Primary card action: tapping anywhere on the card opens Oxford/Cambridge dictionary insights */}
                     <button
                       type="button"
                       onClick={() => setInspectedWord(item)}
-                      className="flex flex-col items-center justify-center gap-0.5 rounded-xl border border-transparent hover:border-primary/50 px-3 py-1 min-h-[44px] min-w-[44px] cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+                      aria-label={`${item.label}${item.phonetic ? `, /${item.phonetic}/` : ""}. ${t("story.inspectWordHint")}`}
+                      className="absolute inset-0 size-full z-0 flex flex-col justify-end p-4 sm:p-5 text-start cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary rounded-3xl"
                     >
-                      <span className="font-sans font-bold text-foreground text-sm leading-tight">
-                        {item.label}
-                      </span>
-                      {item.phonetic && (
-                        <span className="font-mono text-[11px] text-muted-foreground">
-                          /{item.phonetic}/
-                        </span>
-                      )}
+                      <div className="flex flex-col gap-1.5 w-full">
+                        <div className="flex items-baseline justify-between gap-2">
+                          <h4 className="font-sans font-black text-white text-base sm:text-lg lg:text-xl leading-tight drop-shadow-sm group-hover:text-primary-foreground transition-colors">
+                            {item.label}
+                          </h4>
+                          {item.phonetic && (
+                            <span className="font-mono text-xs sm:text-sm text-white/95 bg-black/40 border border-white/20 px-2.5 py-0.5 rounded-lg backdrop-blur-md shrink-0">
+                              /{item.phonetic}/
+                            </span>
+                          )}
+                        </div>
+
+                        <div className="flex items-center justify-between gap-2 pt-1 border-t border-white/15 text-xs text-white/80">
+                          <span className="inline-flex items-center gap-1.5 font-medium text-wp-amber-foreground">
+                            <BookOpen className="size-3.5 shrink-0" aria-hidden="true" />
+                            <span>{t("story.inspectDetails")}</span>
+                          </span>
+                          <ArrowRight
+                            className="size-4 text-white/70 rtl:rotate-180 transition-transform motion-safe:group-hover:translate-x-1 rtl:motion-safe:group-hover:-translate-x-1"
+                            aria-hidden="true"
+                          />
+                        </div>
+                      </div>
+                    </button>
+
+                    {/* Audio playback button: independent sibling with min 44x44px target (never nested in button) */}
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handlePlayWord(item.label, item.id);
+                      }}
+                      aria-label={t("story.listenToWord", { word: item.label })}
+                      className={
+                        "absolute top-3 end-3 z-10 size-11 min-h-[44px] min-w-[44px] rounded-full flex items-center justify-center cursor-pointer backdrop-blur-md border shadow-md transition-all motion-safe:active:scale-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white " +
+                        (isWordPlaying
+                          ? "bg-primary text-primary-foreground border-primary motion-safe:animate-pulse ring-2 ring-primary/40"
+                          : "bg-black/60 hover:bg-black/85 text-white border-white/20")
+                      }
+                    >
+                      <Volume2 className="size-4" aria-hidden="true" />
                     </button>
                   </article>
                 );

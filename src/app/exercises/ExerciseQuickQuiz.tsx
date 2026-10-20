@@ -181,8 +181,8 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
     >
       <div className="relative flex min-h-0 w-full flex-1 flex-col gap-3 sm:gap-4">
         {/* Question card */}
-        <div className="flex shrink-0 flex-col gap-3 py-2">
-          <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
+        <div className="flex shrink-0 flex-col py-1 sm:py-2">
+          <div className="flex flex-col items-start justify-between gap-1 sm:flex-row sm:items-center sm:gap-3">
             <h2
               className="wp-question-prompt font-sans flex-1 text-pretty"
               data-question-prompt
