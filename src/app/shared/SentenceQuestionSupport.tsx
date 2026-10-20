@@ -10,8 +10,8 @@ import { useI18n } from "../context/I18nContext";
 import { useSentenceAudio } from "./useSentenceAudio";
 import { useAccessibility } from "./useAccessibilityPreferences";
 import { Button } from "./Button";
-import { MediaFrame } from "./MediaFrame";
 import { useLessonSession } from "./LessonSessionContext";
+import { MediaFrame } from "./MediaFrame";
 
 /** A word ID alone cannot establish that an image supports a sentence. */
 export function resolveSentenceMedia(

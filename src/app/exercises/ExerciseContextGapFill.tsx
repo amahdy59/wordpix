@@ -142,7 +142,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
       progress={{ current: queue.position, total: queue.total }}
       subtitle={
         <>
-          <span className="uppercase tracking-wider">{group.name}</span>
+          <span className="hidden sm:inline uppercase tracking-wider">{group.name}</span>
           <span className="rounded-full border border-primary/20 bg-secondary px-2.5 py-0.5 font-semibold text-primary">
             {t("exercise.sentenceOf", { current: queue.position, total: queue.total })}
           </span>

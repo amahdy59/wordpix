@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useDevicePreference } from "../../shared/devicePreferences";
 import {
   ArrowLeft,
@@ -150,6 +150,20 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     allowDeviceFallback: stage === 0,
   });
   const { speakFeedback, cancel: cancelSpokenFeedback } = useSpokenFeedback();
+  const previewPairs = useMemo(() => {
+    const result: FigmaPronunciationImage[][] = [];
+    for (let i = 0; i < activity.items.length; i += 2) {
+      result.push(activity.items.slice(i, i + 2));
+    }
+    return result;
+  }, [activity.items]);
+  const [previewPairIndex, setPreviewPairIndex] = useState(0);
+  const [prevLessonNumber, setPrevLessonNumber] = useState(lessonNumber);
+  if (prevLessonNumber !== lessonNumber) {
+    setPrevLessonNumber(lessonNumber);
+    setPreviewPairIndex(0);
+  }
+  const currentPair = previewPairs[previewPairIndex] ?? previewPairs[0] ?? [];
   const question =
     stage === 0
       ? null
@@ -828,7 +842,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               </div>
 
               {/* Lesson Context Card */}
-              <div className="rounded-2xl border border-border bg-card p-4 shadow-wp-xs">
+              <div className="rounded-2xl border border-border bg-card p-3 sm:p-4 shadow-wp-xs">
                 <header>
                   <p className="text-xs sm:text-sm font-semibold text-primary">
                     {t("pronunciation.badge", {
@@ -840,7 +854,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     ref={headingRef}
                     tabIndex={-1}
                     id="pronunciation-title"
-                    className={`mt-1 text-xl sm:text-2xl font-bold text-foreground ${focusRing}`}
+                    className={`mt-0.5 text-base sm:text-2xl font-bold text-foreground truncate ${focusRing}`}
                     lang="en"
                     dir="ltr"
                   >
@@ -924,16 +938,6 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     )}
                   </div>
 
-                  {stage === 0 && (
-                    <p className="text-sm text-muted-foreground font-medium">
-                      {t("pronunciationEnhancements.coverageGoal", {
-                        count:
-                          getPronunciationTargets(lessonNumber, false).length +
-                          getPronunciationTargets(lessonNumber, true).length,
-                      })}
-                    </p>
-                  )}
-
                   {stage !== 3 && (
                     <div className="flex flex-wrap items-center gap-3 pt-1">
                       <button
@@ -1000,36 +1004,87 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
 
                 {/* Stage Exercise Area */}
                 {stage === 0 ? (
-                  <div className="flex-1 min-h-0 grid grid-cols-2 gap-3.5 sm:grid-cols-4 auto-rows-fr">
-                    {activity.items.map((item) => (
-                      <button
-                        key={item.label}
-                        type="button"
-                        aria-label={t("pronunciation.playWord", { word: item.label })}
-                        disabled={hasReportedPronunciationAudioIssue(item.label)}
-                        title={
-                          hasReportedPronunciationAudioIssue(item.label)
-                            ? t("pronunciationEnhancements.audioPending")
-                            : undefined
-                        }
-                        onClick={() => play(item.label)}
-                        className={`group flex flex-col self-start min-h-11 overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-primary hover:shadow-wp-sm ${focusRing}`}
-                      >
-                        <div className="wp-pronunciation-choice-media relative w-full overflow-hidden bg-muted/40">
-                          <WordImage
-                            item={item}
-                            className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
-                          />
-                        </div>
-                        <span
-                          className="flex min-h-12 shrink-0 items-center justify-center px-3 py-2 text-base font-bold text-foreground border-t border-border/70 bg-card"
-                          lang="en"
-                          dir="ltr"
+                  <div className="flex-1 min-h-0 flex flex-col justify-between gap-4">
+                    <div className="grid grid-cols-2 gap-3 sm:gap-4 flex-1 min-h-0 items-stretch auto-rows-fr">
+                      {currentPair.map((item) => (
+                        <button
+                          key={item.label}
+                          type="button"
+                          aria-label={t("pronunciation.playWord", { word: item.label })}
+                          disabled={hasReportedPronunciationAudioIssue(item.label)}
+                          title={
+                            hasReportedPronunciationAudioIssue(item.label)
+                              ? t("pronunciationEnhancements.audioPending")
+                              : undefined
+                          }
+                          onClick={() => play(item.label)}
+                          className={`group flex flex-col h-full min-h-0 w-full overflow-hidden rounded-2xl border-2 border-border bg-card transition-all hover:border-primary hover:shadow-wp-sm justify-between ${focusRing}`}
                         >
-                          {item.label}
+                          <div className="wp-pronunciation-choice-media relative w-full flex-1 min-h-0 overflow-hidden bg-muted/40 flex items-center justify-center">
+                            <WordImage
+                              item={item}
+                              className="size-full object-contain object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
+                            />
+                          </div>
+                          <span
+                            className="flex min-h-12 shrink-0 items-center justify-center px-3 py-2 text-base font-bold text-foreground border-t border-border/70 bg-card"
+                            lang="en"
+                            dir="ltr"
+                          >
+                            {item.label}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+
+                    {previewPairs.length > 1 && (
+                      <div className="flex items-center justify-between gap-3 pt-2 shrink-0 border-t border-border/60">
+                        <button
+                          type="button"
+                          disabled={previewPairIndex === 0}
+                          onClick={() => setPreviewPairIndex((prev) => Math.max(0, prev - 1))}
+                          className={`min-h-11 px-4 py-2 rounded-xl border border-border bg-card font-semibold text-foreground hover:bg-muted disabled:opacity-40 disabled:cursor-not-allowed inline-flex items-center gap-2 ${focusRing}`}
+                          aria-label={t("action.previous")}
+                        >
+                          <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+                          <span>{t("action.previous")}</span>
+                        </button>
+                        <span className="text-sm font-bold text-muted-foreground">
+                          {previewPairIndex + 1} / {previewPairs.length}
                         </span>
-                      </button>
-                    ))}
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (previewPairIndex < previewPairs.length - 1) {
+                              setPreviewPairIndex((prev) => prev + 1);
+                            } else {
+                              save(1, {
+                                ...sessionRef.current,
+                                unlockedStage: Math.max(sessionRef.current.unlockedStage, 1),
+                              });
+                              setStage(1);
+                            }
+                          }}
+                          className={`min-h-11 px-4 py-2 rounded-xl font-bold inline-flex items-center gap-2 ${
+                            previewPairIndex < previewPairs.length - 1
+                              ? "border border-border bg-card text-foreground hover:bg-muted"
+                              : "bg-primary text-primary-foreground hover:bg-primary/90"
+                          } ${focusRing}`}
+                          aria-label={
+                            previewPairIndex < previewPairs.length - 1
+                              ? t("action.next")
+                              : t("action.continue")
+                          }
+                        >
+                          <span>
+                            {previewPairIndex < previewPairs.length - 1
+                              ? t("action.next")
+                              : t("action.continue")}
+                          </span>
+                          <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+                        </button>
+                      </div>
+                    )}
                   </div>
                 ) : stage === 3 ? (
                   state.accessibility.includeSpeaking === false ? (
@@ -1067,7 +1122,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                           <div className="w-full max-w-md sm:max-w-xl overflow-hidden rounded-2xl border border-border/80 bg-muted/20 shadow-wp-xs">
                             <WordImage
                               item={target}
-                              className="aspect-[16/10] sm:aspect-[16/9] w-full object-cover object-center"
+                              className="aspect-[16/10] sm:aspect-[16/9] w-full object-contain object-center"
                             />
                           </div>
                         )}
@@ -1136,7 +1191,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                 ) : (
                   <div className="flex-1 min-h-0 flex flex-col">
                     <div
-                      className={`grid min-h-0 w-full flex-1 gap-4 ${
+                      className={`grid min-h-0 w-full flex-1 gap-4 items-stretch auto-rows-fr ${
                         question?.choices.length === 2
                           ? "grid-cols-2"
                           : "grid-cols-2 lg:grid-cols-4"
@@ -1154,7 +1209,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                             word: item.label,
                           })}
                           onClick={() => selectAnswer(item.label)}
-                          className={`group flex flex-col self-start min-h-11 overflow-hidden rounded-2xl border-2 bg-card text-start font-bold transition-all ${focusRing} ${
+                          className={`group flex flex-col h-full min-h-0 w-full overflow-hidden rounded-2xl border-2 bg-card text-start font-bold transition-all justify-between ${focusRing} ${
                             session.answer === item.label
                               ? passed
                                 ? "border-feedback-success bg-feedback-success-surface"
@@ -1164,10 +1219,10 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                           dir="ltr"
                         >
                           {Boolean(item.imageRef) && (
-                            <div className="wp-pronunciation-choice-media relative w-full overflow-hidden bg-muted/40">
+                            <div className="wp-pronunciation-choice-media relative w-full flex-1 min-h-0 overflow-hidden bg-muted/40 flex items-center justify-center">
                               <WordImage
                                 item={item}
-                                className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
+                                className="size-full object-contain object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
                               />
                             </div>
                           )}

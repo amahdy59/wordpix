@@ -47,7 +47,7 @@ export function ExerciseFamilyTemplate({
       aria-labelledby={instructionId}
       className={`${measureByFamily[family]} wp-question-family flex w-full min-w-0 flex-col ${className}`}
     >
-      <header className="text-start shrink-0">
+      <header className={`text-start shrink-0 ${prompt ? "sr-only sm:not-sr-only" : ""}`}>
         <h2
           id={instructionId}
           className="wp-question-instruction text-pretty font-sans text-foreground"

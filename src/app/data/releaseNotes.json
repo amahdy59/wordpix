@@ -1,12 +1,41 @@
 {
-  "version": "0.1.74",
+  "version": "0.1.75",
   "notes": [
-    "Fitted vertical media expansion, unified question clue positioning under the prompt, and short-screen viewport alignment ensuring feedback and continue buttons remain above the fold."
+    "Full-height vertical card media stretching, paired pronunciation previews, and compact mobile exercise headers."
   ],
   "notesAr": [
-    "تمدد رأسي للصور التوضيحية لملء المساحة، ومحاذاة تلميحات الأسئلة أسفل جملة السؤال مباشرة، ومواءمة الشاشات المنخفضة لضمان بقاء الملاحظات وزر المتابعة ظاهرة دون تمرير."
+    "تمدد رأسي كامل لبطاقات وسائط التمارين، ومعاينة ثنائية متوازنة لتمارين النطق، وتبسيط ترويسة التمارين على الهواتف المحمولة."
   ],
   "releases": [
+    {
+      "id": "0.1.75",
+      "version": "0.1.75",
+      "date": "2026-10-20",
+      "title": {
+        "en": "Vertical card media expansion, paired pronunciation preview, and mobile header decluttering",
+        "ar": "تمدد بطاقات الأسئلة رأسياً، ومعاينة أزواج النطق المتوازنة، وتبسيط الترويسة على الهواتف"
+      },
+      "changes": [
+        {
+          "id": "vertical-card-expansion",
+          "category": "improved",
+          "en": "Stretched two-column exercise media containers to fill the vertical height of adjacent prompts and answers, centering images with natural aspect preservation.",
+          "ar": "تمديد إطارات الوسائط في تخطيط العمودين لتشغل الارتفاع الرأسي لعمود التفاعل المجاور مع الحفاظ على النسب الطبيعية والتوسيط الدقيق."
+        },
+        {
+          "id": "paired-pronunciation-preview",
+          "category": "improved",
+          "en": "Organized pronunciation preview into digestible two-word pairs with clear progression controls to optimize mobile focus.",
+          "ar": "تقسيم مرحلة معاينة النطق إلى أزواج ثنائية سهلة الاستيعاب مع أدوات تقدم واضحة لتحسين التركيز على الهواتف المحمولة."
+        },
+        {
+          "id": "mobile-header-decluttering",
+          "category": "improved",
+          "en": "Compacted question headers and concealed redundant group titles on phone screens to dedicate maximum viewport area to interactive exercise content.",
+          "ar": "تبسيط ترويسة الأسئلة وإخفاء اسم المجموعة المكرر على شاشات الهواتف لمنح أكبر مساحة ممكنة لمحتوى التمرين التفاعلي."
+        }
+      ]
+    },
     {
       "id": "0.1.74",
       "version": "0.1.74",

@@ -76,7 +76,7 @@ export const LessonHeader = memo(function LessonHeader({
         </div>
         <h1
           title={title}
-          className="wp-type-page-title text-foreground text-center flex-1 min-w-0 break-words"
+          className="wp-type-page-title text-foreground text-center flex-1 min-w-0 break-words max-sm:text-sm max-sm:font-bold max-sm:truncate"
         >
           {title}
         </h1>
