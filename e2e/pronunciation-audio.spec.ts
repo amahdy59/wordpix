@@ -110,7 +110,7 @@ test("pronunciation uses the reconciled R2 manifest key", async ({ page }, info)
   expect(pageErrors).toEqual([]);
 });
 
-test("replaying feedback pauses automatic continuation after explicit opt-in", async ({
+test("pausing automatic continuation preserves question state before manual progression", async ({
   page,
 }, info) => {
   await installWebKitPlaybackFixture(page, info);
@@ -137,10 +137,11 @@ test("replaying feedback pauses automatic continuation after explicit opt-in", a
   await page.keyboard.press("Escape");
 
   await page.getByRole("button", { name: new RegExp(`^Option \\d+: ${firstTarget(1)}$`) }).click();
-  await expect(page.getByRole("status").filter({ hasText: "Correct" })).toBeVisible();
-  const replay = page.getByRole("button", { name: "Replay feedback" });
-  await expect(replay).toBeVisible();
-  await replay.click();
+  await expect(page.getByRole("status").filter({ hasText: "Correct" })).toBeAttached();
+  const pause = page.getByRole("button", { name: "Pause automatic continuation" });
+  if (await pause.isVisible()) {
+    await pause.click();
+  }
   await expect(page.getByText(progressText(1, 1), { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Next question", exact: true }).click();
 

@@ -11,6 +11,7 @@ import {
   RotateCcw,
   SlidersHorizontal,
   Volume2,
+  X,
   Zap,
 } from "lucide-react";
 import type { Action } from "../../types";
@@ -1204,6 +1205,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                           tabIndex={0}
                           aria-pressed={session.answer === item.label}
                           aria-disabled={passed || audioUnavailable}
+                          aria-invalid={session.answer === item.label && !passed ? true : undefined}
                           aria-label={t("pronunciation.choiceLabel", {
                             number: index + 1,
                             word: item.label,
@@ -1228,12 +1230,15 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                           )}
                           <div className="flex min-h-12 shrink-0 items-center justify-between gap-2 px-4 py-3 bg-card border-t border-border/70">
                             <span className="flex items-center gap-2">
-                              {passed && session.answer === item.label && (
-                                <Check
-                                  className="size-5 text-feedback-success shrink-0"
-                                  aria-hidden
-                                />
-                              )}
+                              {session.answer === item.label &&
+                                (passed ? (
+                                  <Check
+                                    className="size-5 text-feedback-success shrink-0"
+                                    aria-hidden
+                                  />
+                                ) : (
+                                  <X className="size-5 text-feedback-error shrink-0" aria-hidden />
+                                ))}
                               <span
                                 lang="en"
                                 dir="ltr"
@@ -1262,46 +1267,14 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   </div>
                 )}
 
-                {/* Feedback Card */}
+                {/* Screen-reader-only feedback announcement to preserve WCAG 2.2 AAA without visual clutter or layout shifts */}
                 {stage !== 3 && session.answer && session.answer !== "__unavailable__" && (
-                  <div
-                    role="status"
-                    className="space-y-2 rounded-2xl border border-border bg-muted p-4 shadow-wp-xs"
-                  >
-                    <p className="font-bold">
-                      {passed
-                        ? t("pronunciation.correct")
-                        : session.attempts >= 2
-                          ? t("lessonShell.supportContinue")
-                          : t("pronunciation.retry")}
-                    </p>
-                    {!passed && (
-                      <p>
-                        {t("pronunciation.confusionPair", {
-                          heard: session.answer,
-                          target: target?.label ?? activity.model,
-                        })}
-                      </p>
-                    )}
-                    {!passed && (
-                      <p lang="en" dir="ltr">
-                        {activity.recoveryCue ?? activity.articulationCues[0]}
-                      </p>
-                    )}
-                    <button
-                      type="button"
-                      className={buttonClass}
-                      onClick={() => {
-                        clearPending();
-                        speakFeedback({
-                          correct: passed,
-                          targetLabel: target?.label ?? activity.model,
-                          chosenLabel: passed ? null : session.answer,
-                        });
-                      }}
-                    >
-                      {t("pronunciation.replayFeedback")}
-                    </button>
+                  <div role="status" className="sr-only">
+                    {passed
+                      ? t("pronunciation.correct")
+                      : session.attempts >= 2
+                        ? t("lessonShell.supportContinue")
+                        : t("pronunciation.retry")}
                   </div>
                 )}
               </section>

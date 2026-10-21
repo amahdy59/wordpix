@@ -1,12 +1,35 @@
 {
-  "version": "0.1.76",
+  "version": "0.1.77",
   "notes": [
-    "Native studio audio linking for core usage expressions and enhanced sentence builder exercise layout."
+    "Streamlined pronunciation exercise feedback with on-card visual indicators and stable image dimensions."
   ],
   "notesAr": [
-    "ربط التسجيلات الصوتية الاستوديو لعبارات الاستخدام الشائعة وتحسين تخطيط تمرين تركيب الجمل."
+    "تبسيط التعليقات التفاعلية في تمارين النطق بمؤشرات بصرية على البطاقات واستقرار أبعاد الصور."
   ],
   "releases": [
+    {
+      "id": "0.1.77",
+      "version": "0.1.77",
+      "date": "2026-10-22",
+      "title": {
+        "en": "Streamlined pronunciation exercise feedback and stable image layout",
+        "ar": "تبسيط التعليق التفاعلي في تمارين النطق واستقرار أبعاد الصور"
+      },
+      "changes": [
+        {
+          "id": "pronunciation-streamlined-feedback",
+          "category": "improved",
+          "en": "Removed verbose textual feedback panels in pronunciation exercises, relying on crisp on-card visual indicators and native spoken audio feedback.",
+          "ar": "إلغاء البطاقات النصية الطويلة في تمارين النطق والاعتماد على مؤشرات بصرية واضحة داخل البطاقات وتعليق صوتي فوري."
+        },
+        {
+          "id": "pronunciation-stable-image-height",
+          "category": "improved",
+          "en": "Maintained constant image card height during pronunciation choices to prevent layout shift between attempts and progression.",
+          "ar": "تثبيت ارتفاع بطاقات الصور أثناء اختيار الإجابات في تمارين النطق لمنع أي قفزات أو تغير في أبعاد التخطيط."
+        }
+      ]
+    },
     {
       "id": "0.1.76",
       "version": "0.1.76",

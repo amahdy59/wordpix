@@ -462,4 +462,63 @@ describe("pronunciation lesson session", () => {
     const lastCall = mocks.checkpoint.mock.calls.at(-1)!;
     expect(lastCall[1]).toBe(4);
   });
+  it("provides clean audio and visual-on-card feedback without bulky textual cards", () => {
+    renderLesson();
+    fireEvent.click(screen.getByRole("button", { name: "Start listening" }));
+    const question = getPronunciationQuestion(3, 1, 0);
+    const wrong = question.choices.find((item) => item.label !== question.target.label)!;
+    const wrongButton = screen.getByRole("button", {
+      name: new RegExp(`^Option \\d+: ${wrong.label}$`),
+    });
+
+    // Select incorrect choice
+    fireEvent.click(wrongButton);
+
+    // Audio feedback is triggered
+    expect(mocks.speakFeedback).toHaveBeenCalledWith(
+      expect.objectContaining({
+        correct: false,
+        chosenLabel: wrong.label,
+        targetLabel: question.target.label,
+      }),
+      expect.any(Function)
+    );
+
+    // Visual feedback on card: aria-invalid and error border styling
+    expect(wrongButton).toHaveAttribute("aria-invalid", "true");
+    expect(wrongButton.className).toContain("border-feedback-error-border");
+
+    // Textual clutter is removed: no confusion text or Replay feedback button
+    expect(screen.queryByRole("button", { name: "Replay feedback" })).not.toBeInTheDocument();
+    expect(screen.queryByText(/Compare the physical cue/)).not.toBeInTheDocument();
+
+    // Accessible screen-reader announcement is preserved in sr-only role="status"
+    const retryStatus = screen.getByText("Listen once more and try again.");
+    expect(retryStatus).toHaveClass("sr-only");
+    expect(retryStatus).toHaveAttribute("role", "status");
+
+    // Now select correct choice
+    const correctButton = answer(1, 0);
+    fireEvent.click(correctButton);
+
+    // Audio feedback is triggered for correct
+    expect(mocks.speakFeedback).toHaveBeenCalledWith(
+      expect.objectContaining({
+        correct: true,
+        chosenLabel: null,
+        targetLabel: question.target.label,
+      }),
+      expect.any(Function)
+    );
+
+    // Visual feedback on correct card
+    expect(correctButton).toHaveAttribute("aria-disabled", "true");
+    expect(correctButton.className).toContain("border-feedback-success");
+    expect(screen.queryByRole("button", { name: "Replay feedback" })).not.toBeInTheDocument();
+
+    // Screen reader announcement updates to Correct
+    const correctStatus = screen.getByText(/Correct\. You noticed the contrast/);
+    expect(correctStatus).toHaveClass("sr-only");
+    expect(correctStatus).toHaveAttribute("role", "status");
+  });
 });
