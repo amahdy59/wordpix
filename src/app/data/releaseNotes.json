@@ -1,12 +1,35 @@
 {
-  "version": "0.1.75",
+  "version": "0.1.76",
   "notes": [
-    "Full-height vertical card media stretching, paired pronunciation previews, and compact mobile exercise headers."
+    "Native studio audio linking for core usage expressions and enhanced sentence builder exercise layout."
   ],
   "notesAr": [
-    "تمدد رأسي كامل لبطاقات وسائط التمارين، ومعاينة ثنائية متوازنة لتمارين النطق، وتبسيط ترويسة التمارين على الهواتف المحمولة."
+    "ربط التسجيلات الصوتية الاستوديو لعبارات الاستخدام الشائعة وتحسين تخطيط تمرين تركيب الجمل."
   ],
   "releases": [
+    {
+      "id": "0.1.76",
+      "version": "0.1.76",
+      "date": "2026-10-21",
+      "title": {
+        "en": "Usage expression audio linking and sentence builder layout enhancement",
+        "ar": "ربط صوتيات عبارات الاستخدام وتحسين تخطيط تمرين تركيب الجمل"
+      },
+      "changes": [
+        {
+          "id": "usage-phrases-audio-linking",
+          "category": "improved",
+          "en": "Linked 247 native studio audio recordings for core usage phrases with instant direct lookup across lesson materials.",
+          "ar": "ربط 247 تسجيلاً صوتياً استوديو لعبارات الاستخدام مع تشغيل فوري مباشر في مواد الدروس."
+        },
+        {
+          "id": "sentence-builder-media-support",
+          "category": "improved",
+          "en": "Enhanced sentence builder exercise layout with dedicated media support, meaning context, and optimized mobile viewport scrolling.",
+          "ar": "تحسين تخطيط تمرين تركيب الجمل مع دعم الوسائط وسياق المعنى وتحسين التمرير على الهواتف المحمولة."
+        }
+      ]
+    },
     {
       "id": "0.1.75",
       "version": "0.1.75",

@@ -316,6 +316,7 @@ for (const language of ["en", "ar"]) {
     const choices = page.locator('[data-exercise-zone="activity"]').getByRole("button");
     await expect(choices).toHaveCount(3);
     for (const control of await choices.all()) {
+      await control.scrollIntoViewIfNeeded();
       await control.focus();
       await expect(control).toBeFocused();
       await expect(control).toBeInViewport();
@@ -334,9 +335,15 @@ test("sentence builder and reading keep source and response separate", async ({ 
   await openCore(page, 4, "colors");
   const tiles = page.getByRole("group", { name: "Available words", exact: true });
   await expect(tiles.getByRole("button").first()).toBeInViewport();
+  const skipBtn = page.getByRole("button", { name: "Skip to reading", exact: true });
+  await expect(skipBtn).toBeInViewport();
+  const region = page.locator(".wp-question-scroll");
+  await expect
+    .poll(() => region.evaluate((el) => el.scrollHeight - el.clientHeight))
+    .toBeLessThanOrEqual(2);
   await assertNoHorizontalOverflow(page);
   await capture(page, "sentence-builder", info);
-  await page.getByRole("button", { name: "Skip to reading", exact: true }).click();
+  await skipBtn.click();
   await expect(page.locator('[data-exercise-family="reading-context"]')).toBeVisible();
   await assertNoHorizontalOverflow(page);
   const scan = await new AxeBuilder({ page })

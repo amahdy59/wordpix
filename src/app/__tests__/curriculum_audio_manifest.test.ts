@@ -36,4 +36,16 @@ describe("curriculumAudioManifest", () => {
     const upperKey = getCurriculumAudioKey("Motive");
     expect(lowerKey).toBe(upperKey);
   });
+
+  it("resolves short usage phrases to their content-addressed R2 keys", () => {
+    expect(getCurriculumAudioKey("update the software")).toBe(
+      "audio/dd/dd62f7d65a3b46a9598fb91d34312a715e1d9d5d47920c82c07453189f1e527e.mp3"
+    );
+    expect(getCurriculumAudioKey("board the plane")).toBe(
+      "audio/2d/2d8ab33ea5dfe6b07be8b3a72425629483c1669acb7c56bd767c44c9c2b2bb3e.mp3"
+    );
+    expect(getCurriculumAudioKey("check system status")).toBe(
+      "audio/ae/ae300f4f66434f3bcd9347d9c86660d5d0c13de910d06259ef3ea153d847fa01.mp3"
+    );
+  });
 });

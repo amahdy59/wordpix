@@ -103,10 +103,9 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
     await waitForStyles(page);
     await page.waitForLoadState("networkidle");
 
-    const hasDarkClass = await page.evaluate(() =>
-      document.documentElement.classList.contains("dark")
-    );
-    expect(hasDarkClass).toBe(true);
+    await expect
+      .poll(async () => page.evaluate(() => document.documentElement.classList.contains("dark")))
+      .toBe(true);
 
     const accessibilityScanResults = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
