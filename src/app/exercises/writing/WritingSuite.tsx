@@ -158,7 +158,7 @@ export const ExWritingTimedSprint = memo(function ExWritingTimedSprint({ dispatc
                 word={current}
                 altMode="assessment"
                 optionIndex={index}
-                className="size-full object-contain"
+                className="size-full object-cover object-center"
               />
             </div>
 

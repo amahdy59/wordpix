@@ -1019,16 +1019,16 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                               : undefined
                           }
                           onClick={() => play(item.label)}
-                          className={`group flex flex-col h-full min-h-0 w-full overflow-hidden rounded-2xl border-2 border-border bg-card transition-all hover:border-primary hover:shadow-wp-sm justify-between ${focusRing}`}
+                          className={`group flex flex-col h-full min-h-0 w-full overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-border bg-card transition-all hover:border-primary hover:shadow-wp-sm justify-between ${focusRing}`}
                         >
-                          <div className="wp-pronunciation-choice-media relative w-full flex-1 min-h-0 overflow-hidden bg-muted/40 flex items-center justify-center">
+                          <div className="wp-pronunciation-choice-media relative w-full flex-1 min-h-0 overflow-hidden bg-muted flex items-center justify-center">
                             <WordImage
                               item={item}
-                              className="size-full object-contain object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
+                              className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
                             />
                           </div>
                           <span
-                            className="flex min-h-12 shrink-0 items-center justify-center px-3 py-2 text-base font-bold text-foreground border-t border-border/70 bg-card"
+                            className="flex min-h-12 shrink-0 items-center justify-center px-4 py-3 text-base font-bold text-foreground border-t border-border/70 bg-card"
                             lang="en"
                             dir="ltr"
                           >
@@ -1123,7 +1123,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                           <div className="w-full max-w-md sm:max-w-xl overflow-hidden rounded-2xl border border-border/80 bg-muted/20 shadow-wp-xs">
                             <WordImage
                               item={target}
-                              className="aspect-[16/10] sm:aspect-[16/9] w-full object-contain object-center"
+                              className="aspect-[16/10] sm:aspect-[16/9] w-full object-cover object-center"
                             />
                           </div>
                         )}
@@ -1211,7 +1211,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                             word: item.label,
                           })}
                           onClick={() => selectAnswer(item.label)}
-                          className={`group flex flex-col h-full min-h-0 w-full overflow-hidden rounded-2xl border-2 bg-card text-start font-bold transition-all justify-between ${focusRing} ${
+                          className={`group flex flex-col h-full min-h-0 w-full overflow-hidden rounded-2xl sm:rounded-3xl border-2 bg-card text-start font-bold transition-all justify-between ${focusRing} ${
                             session.answer === item.label
                               ? passed
                                 ? "border-feedback-success bg-feedback-success-surface"
@@ -1221,14 +1221,22 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                           dir="ltr"
                         >
                           {Boolean(item.imageRef) && (
-                            <div className="wp-pronunciation-choice-media relative w-full flex-1 min-h-0 overflow-hidden bg-muted/40 flex items-center justify-center">
+                            <div className="wp-pronunciation-choice-media relative w-full flex-1 min-h-0 overflow-hidden bg-muted flex items-center justify-center">
                               <WordImage
                                 item={item}
-                                className="size-full object-contain object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
+                                className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
                               />
                             </div>
                           )}
-                          <div className="flex min-h-12 shrink-0 items-center justify-between gap-2 px-4 py-3 bg-card border-t border-border/70">
+                          <div
+                            className={`flex min-h-12 shrink-0 items-center justify-between gap-2 px-4 py-3 border-t border-border/70 transition-colors ${
+                              session.answer === item.label
+                                ? passed
+                                  ? "bg-feedback-success-surface"
+                                  : "bg-feedback-error-surface"
+                                : "bg-card"
+                            }`}
+                          >
                             <span className="flex items-center gap-2">
                               {session.answer === item.label &&
                                 (passed ? (
@@ -1280,8 +1288,8 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               </section>
 
               {/* Sticky Action Footer */}
-              <div className="wp-sticky-controls relative z-30 shrink-0 border-t border-border bg-background py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
-                {canAdvance ? (
+              {canAdvance && (
+                <div className="wp-sticky-controls relative z-30 shrink-0 border-t border-border bg-background py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
                   <div className="flex flex-col gap-2">
                     <button
                       type="button"
@@ -1322,16 +1330,8 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                       </div>
                     )}
                   </div>
-                ) : (
-                  <p className="text-center text-base text-foreground">
-                    {t(
-                      stage === 3
-                        ? "pronunciationEnhancements.sayInstruction"
-                        : "pronunciation.answerPrompt"
-                    )}
-                  </p>
-                )}
-              </div>
+                </div>
+              )}
             </div>
             <div className="flex flex-col gap-3 lg:col-start-1 lg:row-start-2 lg:self-start">
               <HelpDisclosure label={t("lessonShell.soundTips")}>{soundTipsContent}</HelpDisclosure>

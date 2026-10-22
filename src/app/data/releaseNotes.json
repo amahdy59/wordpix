@@ -1,12 +1,35 @@
 {
-  "version": "0.1.77",
+  "version": "0.1.78",
   "notes": [
-    "Streamlined pronunciation exercise feedback with on-card visual indicators and stable image dimensions."
+    "Enhanced cards across the application with edge-to-edge image filling and removed redundant bottom text clutter for a clean, immersive learning experience."
   ],
   "notesAr": [
-    "تبسيط التعليقات التفاعلية في تمارين النطق بمؤشرات بصرية على البطاقات واستقرار أبعاد الصور."
+    "تحسين بطاقات الصور في جميع أنحاء التطبيق لتملأ الإطار بالكامل دون فراغات بيضاء وإزالة النصوص الزائدة أسفل الشاشة لتجربة تعلم نظيفة ومريحة."
   ],
   "releases": [
+    {
+      "id": "0.1.78",
+      "version": "0.1.78",
+      "date": "2026-10-22",
+      "title": {
+        "en": "Full-bleed card image presentations and distraction-free lesson layout",
+        "ar": "ملء صور البطاقات بالكامل وتصميم دروس خالٍ من التشتت"
+      },
+      "changes": [
+        {
+          "id": "cards-full-bleed-images",
+          "category": "improved",
+          "en": "Configured image cards across pronunciation drills, study decks, reading, writing, and canvas to fill their containers edge-to-edge with object-cover, eliminating empty whitespace and letterboxing.",
+          "ar": "ضبط بطاقات الصور عبر تدريبات النطق وبطاقات المذاكرة والقراءة والكتابة وشاشة المشهد لتملأ حاوياتها بالكامل دون أي فراغات بيضاء أو حواف فارغة."
+        },
+        {
+          "id": "pronunciation-footer-declutter",
+          "category": "improved",
+          "en": "Removed redundant bottom text feedback and prompts in pronunciation exercises, providing full vertical focus to visual choice cards and appearing only when advance actions are active.",
+          "ar": "إزالة النصوص الزائدة ومطالبات المتابعة في الجزء السفلي من تمارين النطق، مما يمنح تركيزاً بصرياً كاملاً لبطاقات الخيارات مع ظهور أزرار المتابعة فقط عند الحاجة."
+        }
+      ]
+    },
     {
       "id": "0.1.77",
       "version": "0.1.77",

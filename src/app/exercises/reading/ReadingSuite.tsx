@@ -54,7 +54,7 @@ export const ExReadingVisualContext = memo(function ExReadingVisualContext({ dis
                 word={target}
                 width="600"
                 height="450"
-                className="size-full object-contain"
+                className="size-full object-cover object-center"
                 loading="eager"
                 fetchPriority="high"
               />

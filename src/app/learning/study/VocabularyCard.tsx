@@ -48,8 +48,12 @@ export function VocabularyCard({
   return (
     <div className="w-full h-full bg-card rounded-3xl border border-border shadow-xs overflow-hidden flex flex-col">
       {/* Image area — fills remaining space, shrinks to fit viewport */}
-      <div className="relative flex-1 min-h-0 bg-muted/60 flex items-center justify-center p-3 sm:p-4 border-b border-border/60">
-        <WordImage word={word} className="w-full h-full object-contain" altMode="learning" />
+      <div className="relative flex-1 min-h-0 bg-muted overflow-hidden border-b border-border/60">
+        <WordImage
+          word={word}
+          className="size-full object-cover object-center"
+          altMode="learning"
+        />
       </div>
 
       {/* Word info — compact, never overflows */}
