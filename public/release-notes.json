@@ -1,12 +1,29 @@
 {
-  "version": "0.1.78",
+  "version": "0.1.79",
   "notes": [
-    "Enhanced cards across the application with edge-to-edge image filling and removed redundant bottom text clutter for a clean, immersive learning experience."
+    "Security update upgrading Vite bundler to 6.4.5 to patch supply chain vulnerabilities and ensure build security."
   ],
   "notesAr": [
-    "تحسين بطاقات الصور في جميع أنحاء التطبيق لتملأ الإطار بالكامل دون فراغات بيضاء وإزالة النصوص الزائدة أسفل الشاشة لتجربة تعلم نظيفة ومريحة."
+    "تحديث أمني بترقية أداة البناء Vite إلى 6.4.5 لمعالجة الثغرات الأمنية وضمان سلامة عملية البناء."
   ],
   "releases": [
+    {
+      "id": "0.1.79",
+      "version": "0.1.79",
+      "date": "2026-10-22",
+      "title": {
+        "en": "Security patch: Vite bundler update",
+        "ar": "تحديث أمني: ترقية أداة بناء الحزم Vite"
+      },
+      "changes": [
+        {
+          "id": "security-vite-upgrade",
+          "category": "fixed",
+          "en": "Updated development and build toolchain to Vite 6.4.5 to resolve Windows path bypass security advisory (GHSA-587h-7wmj-h5pm) and maintain clean security audit gates.",
+          "ar": "تحديث أدوات التطوير والبناء إلى Vite 6.4.5 لمعالجة التحذير الأمني لثغرة مسارات ويندوز والحفاظ على أمان سلاسل التوريد."
+        }
+      ]
+    },
     {
       "id": "0.1.78",
       "version": "0.1.78",

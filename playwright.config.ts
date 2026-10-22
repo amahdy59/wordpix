@@ -15,7 +15,7 @@ export default defineConfig({
   timeout: 60_000,
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 2 : Number(process.env.WORDPIX_E2E_RETRIES ?? 1) || 0,
   workers: testWorkers,
   reporter: "html",
   use: {
