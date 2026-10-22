@@ -14,7 +14,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { HelpCircle, Keyboard, ArrowRight } from "lucide-react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { useReducedMotion } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
 import { ImmersiveImageChoiceGrid } from "../shared/ImmersiveImageChoiceGrid";
 import { ImageChoiceCard } from "../shared/ImageChoiceCard";
@@ -182,17 +182,31 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
       <div className="relative flex min-h-0 w-full flex-1 flex-col gap-3 sm:gap-4">
         {/* Question card */}
         <div className="flex shrink-0 flex-col py-1 sm:py-2">
-          <div className="flex flex-col items-start justify-between gap-1 sm:flex-row sm:items-center sm:gap-3">
-            <h2
-              className="wp-question-prompt font-sans flex-1 text-pretty"
-              data-question-prompt
-              data-question="Which picture shows"
-            >
-              {t("exercise.whichPictureShows", { word: currentTargetWord.label })}
-            </h2>
-            <span className="text-sm font-sans font-semibold text-muted-foreground shrink-0 whitespace-nowrap">
-              /{currentTargetWord.phonetic}/
-            </span>
+          <div className="flex flex-col items-start justify-between gap-1 sm:flex-row sm:items-center sm:gap-3 min-h-11 w-full">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
+              <h2
+                className="wp-question-prompt font-sans flex-1 text-pretty"
+                data-question-prompt
+                data-question="Which picture shows"
+              >
+                {t("exercise.whichPictureShows", { word: currentTargetWord.label })}
+              </h2>
+              <span className="text-sm font-sans font-semibold text-muted-foreground shrink-0 whitespace-nowrap">
+                /{currentTargetWord.phonetic}/
+              </span>
+            </div>
+            {feedback === "incorrect" && !accessibility.autoAdvance && (
+              <div className="shrink-0">
+                <Button
+                  onClick={handleContinue}
+                  hotkey="↵ Enter"
+                  size="sm"
+                  iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
+                >
+                  {t("action.continue")}
+                </Button>
+              </div>
+            )}
           </div>
         </div>
 
@@ -222,57 +236,6 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               ? `Incorrect. The correct answer is ${currentTargetWord.label}.`
               : ""}
         </span>
-
-        {/* Continue strip — appears below grid only after incorrect answer when manual advance is preferred */}
-        <AnimatePresence>
-          {feedback === "incorrect" && !accessibility.autoAdvance && (
-            <motion.div
-              key="continue-strip"
-              initial={reduceMotion ? false : { opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0 }}
-              transition={reduceMotion ? { duration: 0 } : { delay: 0.3 }}
-              className="shrink-0 rounded-2xl px-5 py-3 flex flex-col gap-2 border bg-wp-rose/10 border-wp-rose/30"
-            >
-              <div className="flex items-center justify-between gap-3">
-                <span className="font-sans font-semibold text-foreground text-sm">
-                  {`✗ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`}
-                </span>
-                <Button
-                  onClick={handleContinue}
-                  hotkey="↵ Enter"
-                  size="sm"
-                  iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
-                >
-                  {t("action.continue")}
-                </Button>
-              </div>
-              {/* "Why incorrect" contextual explanation */}
-              {feedback === "incorrect" && (
-                <div className="flex flex-col gap-0.5">
-                  {currentTargetWord.description && (
-                    <p
-                      className="font-sans text-xs text-foreground/80 leading-snug"
-                      lang="en"
-                      dir="ltr"
-                    >
-                      {currentTargetWord.description}
-                    </p>
-                  )}
-                  {currentTargetWord.arabicTranslation && (
-                    <p
-                      className="font-arabic text-sm text-foreground/80 font-semibold"
-                      dir="rtl"
-                      lang="ar"
-                    >
-                      {currentTargetWord.arabicTranslation}
-                    </p>
-                  )}
-                </div>
-              )}
-            </motion.div>
-          )}
-        </AnimatePresence>
       </div>
     </ExerciseShell>
   );

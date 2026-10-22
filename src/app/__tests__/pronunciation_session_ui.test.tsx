@@ -521,4 +521,36 @@ describe("pronunciation lesson session", () => {
     expect(correctStatus).toHaveClass("sr-only");
     expect(correctStatus).toHaveAttribute("role", "status");
   });
+
+  it("keeps Next button and auto-advance toggle at the top header and renders nothing below choices", () => {
+    renderLesson();
+    fireEvent.click(screen.getByRole("button", { name: "Start listening" }));
+
+    // Auto-advance toggle is persistently present at the top header before answering (not intermittent)
+    const autoToggle = screen.getByRole("button", {
+      name: /Automatic next question|Auto-advance|Auto:/i,
+    });
+    expect(autoToggle).toBeVisible();
+
+    // Verify no sticky footer under choices exists
+    expect(document.querySelector(".wp-sticky-controls")).toBeNull();
+
+    // Answer correctly
+    const choice = answer(1, 0);
+    fireEvent.click(choice);
+
+    // Next question button appears at the top header, not below choices
+    const nextButton = screen.getByRole("button", { name: "Next question" });
+    expect(nextButton).toBeVisible();
+    expect(document.querySelector(".wp-sticky-controls")).toBeNull();
+
+    // Auto-advance toggle is still visible and can be toggled to disable progression
+    fireEvent.click(autoToggle);
+    expect(mocks.setAccessibility).toHaveBeenCalledWith({ autoAdvance: false });
+
+    // Choice grid has nothing rendered below it in the choices container
+    const choicesGrid = choice.closest(".grid");
+    expect(choicesGrid).not.toBeNull();
+    expect(choicesGrid?.nextElementSibling).toBeNull();
+  });
 });

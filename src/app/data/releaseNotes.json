@@ -1,12 +1,41 @@
 {
-  "version": "0.1.79",
+  "version": "0.1.80",
   "notes": [
-    "Security update upgrading Vite bundler to 6.4.5 to patch supply chain vulnerabilities and ensure build security."
+    "Modernized 4-choice exercises to balanced 2×2 square grids across desktop, tablet, and mobile; relocated progression controls into the top header dock; and enhanced pronunciation audio streaming directly from Cloudflare R2 with speech synthesis fallback."
   ],
   "notesAr": [
-    "تحديث أمني بترقية أداة البناء Vite إلى 6.4.5 لمعالجة الثغرات الأمنية وضمان سلامة عملية البناء."
+    "تحديث تمارين الخيارات الرباعية لتعتمد شبكة مربعة متوازنة 2×2 عبر جميع الأجهزة؛ ونقل أزرار التقدم إلى الشريط العلوي؛ وتحسين بث ملفات صوت النطق مباشرة من شبكة Cloudflare R2 مع توفير دعم القراءة الآلية كخيار بديل موثوق."
   ],
   "releases": [
+    {
+      "id": "0.1.80",
+      "version": "0.1.80",
+      "date": "2026-10-22",
+      "title": {
+        "en": "2×2 Stage Choice Grid, Top-Docked Action Controls, and Resilient R2 CDN Audio Streaming",
+        "ar": "شبكة خيارات متوازنة 2×2 وأزرار تحكم علوية موحدة وبث صوتي موثوق للنطق"
+      },
+      "changes": [
+        {
+          "id": "responsive-2x2-image-grid",
+          "category": "improved",
+          "en": "Modernized 4-image choice questions from a compressed 1-row layout into a balanced 2×2 grid filling the entire stage across desktop, tablet, and mobile with consistent aspect ratios and smooth scrolling.",
+          "ar": "تحديث أسئلة الاختيار من 4 صور من صف أفقي مضغوط إلى شبكة متوازنة 2×2 تملأ مساحة الشاشة على الحواسيب والأجهزة اللوحية والهواتف مع الحفاظ على النسب والتمرير السلس."
+        },
+        {
+          "id": "top-docked-exercise-controls",
+          "category": "improved",
+          "en": "Repositioned 'Next question' and progression buttons exclusively into the top action header dock alongside audio controls, eliminating bottom buttons and feedback clutter below the images.",
+          "ar": "نقل زر 'السؤال التالي' وعناصر التحكم بالتقدم إلى شريط الإجراءات العلوي بجانب أدوات الصوت، وإلغاء الأزرار والرسائل السفلية لمنح الصور المساحة الكاملة."
+        },
+        {
+          "id": "pronunciation-audio-r2-reliability",
+          "category": "fixed",
+          "en": "Streamlined pronunciation audio to stream directly from Cloudflare R2 rather than hitting local 404/SPA fallbacks, and enabled device speech synthesis fallback to guarantee uninterrupted listening drills.",
+          "ar": "إصلاح تشغيل ملفات صوت النطق بالبث المباشر من شبكة R2 وتفعيل دعم الصوت المدمج تلقائياً لتفادي توقف التدريبات عند انقطاع الشبكة أو حدوث تأخير في البث."
+        }
+      ]
+    },
     {
       "id": "0.1.79",
       "version": "0.1.79",

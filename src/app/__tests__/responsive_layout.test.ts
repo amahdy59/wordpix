@@ -115,8 +115,8 @@ describe("Card Grid Responsive Sizing", () => {
     expect(imageChoiceGrid).toMatch(/flex-1/);
     expect(imageChoiceGrid).toMatch(/auto-rows-fr/);
     expect(imageChoiceGrid).toMatch(/grid-cols-2/);
-    expect(imageChoiceGrid).toMatch(/lg:grid-cols-4/);
-    expect(imageChoiceGrid).toMatch(/lg:grid-rows-1/);
+    expect(imageChoiceGrid).toMatch(/grid-rows-2/);
+    expect(imageChoiceGrid).not.toMatch(/lg:grid-cols-4/);
   });
 
   it("lets quick-quiz cards fill the available stage instead of capping their size", () => {

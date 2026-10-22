@@ -2,6 +2,9 @@
 import { execSync } from "node:child_process";
 import process from "node:process";
 
+// Align local pre-push retries with CI (2 retries) to accommodate full-suite browser timing
+process.env.WORDPIX_E2E_RETRIES = process.env.WORDPIX_E2E_RETRIES || "2";
+
 const colors = {
   reset: "\x1b[0m",
   bold: "\x1b[1m",
