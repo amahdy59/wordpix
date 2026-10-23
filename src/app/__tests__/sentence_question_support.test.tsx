@@ -34,6 +34,17 @@ const word: VocabularyItem = {
 };
 
 describe("sentence question evidence", () => {
+  it("matches the approved folder image only to its exact word and sentence", () => {
+    const sentence = "Maya puts two folders beside the notebook.";
+    expect(resolveSentenceMedia("two", sentence)?.imageAlt).toMatch(/folders/i);
+    expect(resolveSentenceMedia("three", sentence)).toBeUndefined();
+    expect(
+      resolveSentenceMedia("two", "Maya puts three folders beside the notebook.")
+    ).toBeUndefined();
+    expect(resolveSentenceMedia("two", "We have two bags.")?.imagePath).toMatch(
+      /^question-images\/v1\/sentence-two\//
+    );
+  });
   it("blanks a complete multiword target without altering related words", () => {
     expect(sentenceCloze("Keep the bed sheet on the bed.", "Bed sheet")).toBe(
       "Keep the _____ on the bed."

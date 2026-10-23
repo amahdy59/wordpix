@@ -12,6 +12,7 @@ import { useAccessibility } from "./useAccessibilityPreferences";
 import { Button } from "./Button";
 import { useLessonSession } from "./LessonSessionContext";
 import { MediaFrame } from "./MediaFrame";
+import exactSentenceMedia from "../generated/reviewedExactSentenceMedia.json";
 
 /** A word ID alone cannot establish that an image supports a sentence. */
 export function resolveSentenceMedia(
@@ -19,6 +20,13 @@ export function resolveSentenceMedia(
   sentence: string,
   usage?: LessonUsageData | null
 ): PilotSentenceMedia | undefined {
+  const reviewed: Readonly<
+    Record<string, { wordId: string; sentence: string; imagePath: string; imageAlt: string }>
+  > = exactSentenceMedia;
+  const exact = Object.values(reviewed).find(
+    (entry) => entry.wordId === wordId && entry.sentence === sentence
+  );
+  if (exact) return { imagePath: exact.imagePath, imageAlt: exact.imageAlt };
   const authored = getAuthoredSentence(wordId);
   if (authored?.full === sentence && authored.media) return authored.media;
   const scene = usage?.usage.scenes.find(

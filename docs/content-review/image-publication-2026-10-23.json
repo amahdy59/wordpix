@@ -1,0 +1,382 @@
+{
+  "release": "0.1.83",
+  "date": "2026-10-23",
+  "reviewedBy": "User review in this conversation",
+  "approvalScope": "52 scene drafts present in the reviewed gallery snapshot, seven unit covers and one exact-sentence illustration. Runner corrected to opaque full-length training leggings covering both knees.",
+  "uploadPolicy": "Create-only conditional PUT to new content-hashed keys. Existing images and old mappings preserved. No local or remote deletion.",
+  "remoteVerification": "All 60 uploaded images downloaded from R2 and matched against local SHA-256 hashes.",
+  "runner": {
+    "sceneId": "movement-verbs-1-usage-scene-2",
+    "imagePath": "question-images/v2/movement-verbs-1-usage-scene-2/9e636ea2bfbf91e3d8f7b2eb8a43b6deb8f187f67d9aa99759291cb20cb6e292.webp",
+    "sha256": "9e636ea2bfbf91e3d8f7b2eb8a43b6deb8f187f67d9aa99759291cb20cb6e292",
+    "revision": "Opaque black compression leggings beneath original shorts, covering both knees through ankles."
+  },
+  "counts": {
+    "scenes": 52,
+    "covers": 7,
+    "sentenceIllustrations": 1,
+    "previousSceneMappingsPreserved": 192
+  },
+  "assets": [
+    {
+      "id": "daily-action-verbs-1-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-1-usage-scene-1/c3a0cc1789d3e237bfd4b90b13e6295b047f582f34c60d548765590456e07ba3.webp",
+      "sha256": "c3a0cc1789d3e237bfd4b90b13e6295b047f582f34c60d548765590456e07ba3"
+    },
+    {
+      "id": "daily-action-verbs-1-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-1-usage-scene-2/5643b9b908c4be0928da86615913ba91e9b4c21065589271c0b1e1ccfbe7aead.webp",
+      "sha256": "5643b9b908c4be0928da86615913ba91e9b4c21065589271c0b1e1ccfbe7aead"
+    },
+    {
+      "id": "daily-action-verbs-1-usage-scene-3",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-1-usage-scene-3/51ea9b94110e4db7d3d016e58832b7e3ce38c84083281aeab6af8ca03cd774fe.webp",
+      "sha256": "51ea9b94110e4db7d3d016e58832b7e3ce38c84083281aeab6af8ca03cd774fe"
+    },
+    {
+      "id": "daily-action-verbs-1-usage-scene-4",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-1-usage-scene-4/a966af54ae16cf0c22751a5c20a8f4bc23bd2965f0b30095cb7a3a2736acd871.webp",
+      "sha256": "a966af54ae16cf0c22751a5c20a8f4bc23bd2965f0b30095cb7a3a2736acd871"
+    },
+    {
+      "id": "daily-action-verbs-1-usage-scene-5",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-1-usage-scene-5/832b3e9e416bbfc147609f7f3efd5e15875f89804ac86f046e13b8dde8b8ddf8.webp",
+      "sha256": "832b3e9e416bbfc147609f7f3efd5e15875f89804ac86f046e13b8dde8b8ddf8"
+    },
+    {
+      "id": "daily-action-verbs-2-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-2-usage-scene-1/9c75999120bc8192c8c93b81b54e017f4bc1968bc5f3df6f184cbd9fa8540916.webp",
+      "sha256": "9c75999120bc8192c8c93b81b54e017f4bc1968bc5f3df6f184cbd9fa8540916"
+    },
+    {
+      "id": "daily-action-verbs-2-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-2-usage-scene-2/1ffa459487beb9b349bd35b55df1966a2b4581f1421d0cf3183dc05d4b0e17ae.webp",
+      "sha256": "1ffa459487beb9b349bd35b55df1966a2b4581f1421d0cf3183dc05d4b0e17ae"
+    },
+    {
+      "id": "daily-action-verbs-2-usage-scene-3",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-2-usage-scene-3/92e40a7cb21ecd7a8522d0fce9eb73613560d85f9373037b0ee789c612e218de.webp",
+      "sha256": "92e40a7cb21ecd7a8522d0fce9eb73613560d85f9373037b0ee789c612e218de"
+    },
+    {
+      "id": "daily-action-verbs-2-usage-scene-4",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-2-usage-scene-4/3a92fd175d05e340b40b9319792269e69e5f647a8c4224caca869ecf32ff9429.webp",
+      "sha256": "3a92fd175d05e340b40b9319792269e69e5f647a8c4224caca869ecf32ff9429"
+    },
+    {
+      "id": "daily-action-verbs-2-usage-scene-5",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-2-usage-scene-5/6932003cf1b07defdb2b5c5351642a775b837611e8c3db0cc618bd954ddc50f8.webp",
+      "sha256": "6932003cf1b07defdb2b5c5351642a775b837611e8c3db0cc618bd954ddc50f8"
+    },
+    {
+      "id": "daily-action-verbs-3-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-3-usage-scene-1/b4cd81297d3ecae47f98b54374dbcd959dbeb59845c67c9a92e904b25723db1a.webp",
+      "sha256": "b4cd81297d3ecae47f98b54374dbcd959dbeb59845c67c9a92e904b25723db1a"
+    },
+    {
+      "id": "daily-action-verbs-3-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-3-usage-scene-2/7696ba85faf5944369583a9c1d26634a4a33e59110915cea2b3bd029bd316230.webp",
+      "sha256": "7696ba85faf5944369583a9c1d26634a4a33e59110915cea2b3bd029bd316230"
+    },
+    {
+      "id": "daily-action-verbs-3-usage-scene-3",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-3-usage-scene-3/ac80dd0dc15721f2f34c0cad1245c573153be046e8e7ebbc9e5478740488b736.webp",
+      "sha256": "ac80dd0dc15721f2f34c0cad1245c573153be046e8e7ebbc9e5478740488b736"
+    },
+    {
+      "id": "daily-action-verbs-3-usage-scene-4",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-3-usage-scene-4/37c28596eca52a9e3045711b5313d5ea6371077ecc91ea1746429a355b52691c.webp",
+      "sha256": "37c28596eca52a9e3045711b5313d5ea6371077ecc91ea1746429a355b52691c"
+    },
+    {
+      "id": "daily-action-verbs-3-usage-scene-5",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-3-usage-scene-5/bcda90caa2edcb8e26b5548140f593a2222986d896ac3806282ae39d49b177e9.webp",
+      "sha256": "bcda90caa2edcb8e26b5548140f593a2222986d896ac3806282ae39d49b177e9"
+    },
+    {
+      "id": "daily-action-verbs-4-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-4-usage-scene-1/e7773267cc5e59fff305ecd22dee7b1907524d2aa5b395dab8782fe818bcfae8.webp",
+      "sha256": "e7773267cc5e59fff305ecd22dee7b1907524d2aa5b395dab8782fe818bcfae8"
+    },
+    {
+      "id": "daily-action-verbs-4-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/daily-action-verbs-4-usage-scene-2/be781bdad148cebb71dda0ae0e5a43363e98bf39706fa461846244c8b6cf46be.webp",
+      "sha256": "be781bdad148cebb71dda0ae0e5a43363e98bf39706fa461846244c8b6cf46be"
+    },
+    {
+      "id": "giving-directions-1-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-1-usage-scene-1/4afe51c54e4944c74ae7ea207a4738084e136971aa6eefd99c391b9beab1cd04.webp",
+      "sha256": "4afe51c54e4944c74ae7ea207a4738084e136971aa6eefd99c391b9beab1cd04"
+    },
+    {
+      "id": "giving-directions-1-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-1-usage-scene-2/ee239ed67aaf153701e9d4cfdff98c4a2c0f62efd3770ee1e44da0fe636a6ae8.webp",
+      "sha256": "ee239ed67aaf153701e9d4cfdff98c4a2c0f62efd3770ee1e44da0fe636a6ae8"
+    },
+    {
+      "id": "giving-directions-1-usage-scene-3",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-1-usage-scene-3/1e8e52835b089d0e155f28bfabc83bdd738e85131420f6e3452e29275f4f2bcc.webp",
+      "sha256": "1e8e52835b089d0e155f28bfabc83bdd738e85131420f6e3452e29275f4f2bcc"
+    },
+    {
+      "id": "giving-directions-1-usage-scene-4",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-1-usage-scene-4/d7464d8eeca62b3dad9568724063d3662253a22197a29a3f74ae69dc210617ce.webp",
+      "sha256": "d7464d8eeca62b3dad9568724063d3662253a22197a29a3f74ae69dc210617ce"
+    },
+    {
+      "id": "giving-directions-1-usage-scene-5",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-1-usage-scene-5/64332f6491fffaafc70d8624e54c54226d2d67f4a39337a240a5fde39078e944.webp",
+      "sha256": "64332f6491fffaafc70d8624e54c54226d2d67f4a39337a240a5fde39078e944"
+    },
+    {
+      "id": "giving-directions-2-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-2-usage-scene-1/120ee0c16623f984f83d42572cb59c9f1ba81ad8cd9348e79725914199cd2845.webp",
+      "sha256": "120ee0c16623f984f83d42572cb59c9f1ba81ad8cd9348e79725914199cd2845"
+    },
+    {
+      "id": "giving-directions-2-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-2-usage-scene-2/c4398804e50133c54719bcac100510f07d1c4f77ca99b60aecf6f7112e1c90c7.webp",
+      "sha256": "c4398804e50133c54719bcac100510f07d1c4f77ca99b60aecf6f7112e1c90c7"
+    },
+    {
+      "id": "giving-directions-2-usage-scene-3",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-2-usage-scene-3/5129a9e930bf4a525ffbbc5e7937225ea2be72fb89112ae882a2ca4a7b21d526.webp",
+      "sha256": "5129a9e930bf4a525ffbbc5e7937225ea2be72fb89112ae882a2ca4a7b21d526"
+    },
+    {
+      "id": "giving-directions-2-usage-scene-4",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-2-usage-scene-4/5d5f78f46b2b9625f4b141ef2394635226cdeb17288e5cb14af0906bfceb9081.webp",
+      "sha256": "5d5f78f46b2b9625f4b141ef2394635226cdeb17288e5cb14af0906bfceb9081"
+    },
+    {
+      "id": "giving-directions-2-usage-scene-5",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-2-usage-scene-5/d41dc75fe1337a09472d19ef0943e00cea0d508158d812857bc199c95e19481c.webp",
+      "sha256": "d41dc75fe1337a09472d19ef0943e00cea0d508158d812857bc199c95e19481c"
+    },
+    {
+      "id": "giving-directions-3-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-3-usage-scene-1/4f21986984b68a0c49a106479739e22877cad0f403ef29851230ed97cd09c89a.webp",
+      "sha256": "4f21986984b68a0c49a106479739e22877cad0f403ef29851230ed97cd09c89a"
+    },
+    {
+      "id": "giving-directions-3-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-3-usage-scene-2/af6ccbd583ffcbb5fb94777e80dbb4e66660fb2e540763cf05e71368aa983750.webp",
+      "sha256": "af6ccbd583ffcbb5fb94777e80dbb4e66660fb2e540763cf05e71368aa983750"
+    },
+    {
+      "id": "giving-directions-3-usage-scene-3",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-3-usage-scene-3/f03ce618a7c0f65503693fcd8ab19da1a52ffc55f1ba4de612cfeb61271aec04.webp",
+      "sha256": "f03ce618a7c0f65503693fcd8ab19da1a52ffc55f1ba4de612cfeb61271aec04"
+    },
+    {
+      "id": "giving-directions-3-usage-scene-4",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-3-usage-scene-4/adf02331fa18ec8572c84562fb941a799ec64632c625c02137f9dbd78ab2bf7d.webp",
+      "sha256": "adf02331fa18ec8572c84562fb941a799ec64632c625c02137f9dbd78ab2bf7d"
+    },
+    {
+      "id": "giving-directions-3-usage-scene-5",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-3-usage-scene-5/7ca024ccf928d2086c6df23fe2f14add365f0457b0bd8233d32eb706ed1eda01.webp",
+      "sha256": "7ca024ccf928d2086c6df23fe2f14add365f0457b0bd8233d32eb706ed1eda01"
+    },
+    {
+      "id": "giving-directions-4-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-4-usage-scene-1/4e88057e1d7ad507e43c151757daaaff3f5e1924303269b5ca22cb21d9dcad78.webp",
+      "sha256": "4e88057e1d7ad507e43c151757daaaff3f5e1924303269b5ca22cb21d9dcad78"
+    },
+    {
+      "id": "giving-directions-4-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/giving-directions-4-usage-scene-2/2fd8ea00a6b4296a4c9c9e6d0fa7385e827197cebbb093dbc48735a4719a8952.webp",
+      "sha256": "2fd8ea00a6b4296a4c9c9e6d0fa7385e827197cebbb093dbc48735a4719a8952"
+    },
+    {
+      "id": "hand-actions-1-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/hand-actions-1-usage-scene-1/385ebaa9fc985677d8b974b86b28f4191c7a50c49101534a2f2aa4d01e770990.webp",
+      "sha256": "385ebaa9fc985677d8b974b86b28f4191c7a50c49101534a2f2aa4d01e770990"
+    },
+    {
+      "id": "movement-verbs-1-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-1-usage-scene-1/c0b420c79f82e317e47838953fddece10afdc3c53eba94bf59ed84409354f51a.webp",
+      "sha256": "c0b420c79f82e317e47838953fddece10afdc3c53eba94bf59ed84409354f51a"
+    },
+    {
+      "id": "movement-verbs-1-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-1-usage-scene-2/9e636ea2bfbf91e3d8f7b2eb8a43b6deb8f187f67d9aa99759291cb20cb6e292.webp",
+      "sha256": "9e636ea2bfbf91e3d8f7b2eb8a43b6deb8f187f67d9aa99759291cb20cb6e292"
+    },
+    {
+      "id": "movement-verbs-1-usage-scene-3",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-1-usage-scene-3/6837dc1ae6c15295e16ff07e6ae838ec359229740c6a0096824df2186cf2290f.webp",
+      "sha256": "6837dc1ae6c15295e16ff07e6ae838ec359229740c6a0096824df2186cf2290f"
+    },
+    {
+      "id": "movement-verbs-1-usage-scene-4",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-1-usage-scene-4/d329cb577d013683c8e82d8e1c3a86798651aec6f81c3ca98dc2f10005927596.webp",
+      "sha256": "d329cb577d013683c8e82d8e1c3a86798651aec6f81c3ca98dc2f10005927596"
+    },
+    {
+      "id": "movement-verbs-1-usage-scene-5",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-1-usage-scene-5/d86afbf5f558694d9edc9c841a5c416083e7908df0602196a5b391bfbeda6aa7.webp",
+      "sha256": "d86afbf5f558694d9edc9c841a5c416083e7908df0602196a5b391bfbeda6aa7"
+    },
+    {
+      "id": "movement-verbs-2-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-2-usage-scene-1/71be378dcb5115d94d40d810e94be81f9cb8826a6f662e49559d9d989c38d60d.webp",
+      "sha256": "71be378dcb5115d94d40d810e94be81f9cb8826a6f662e49559d9d989c38d60d"
+    },
+    {
+      "id": "movement-verbs-2-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-2-usage-scene-2/50d87965a51fbf587d725a43c051047b4fb3de9003167fb48361ac73e777b9dc.webp",
+      "sha256": "50d87965a51fbf587d725a43c051047b4fb3de9003167fb48361ac73e777b9dc"
+    },
+    {
+      "id": "movement-verbs-2-usage-scene-3",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-2-usage-scene-3/5cda63345bd143c8dd1ce0f076cc4a652c3492575ead155629ee4a2643f9f1d7.webp",
+      "sha256": "5cda63345bd143c8dd1ce0f076cc4a652c3492575ead155629ee4a2643f9f1d7"
+    },
+    {
+      "id": "movement-verbs-2-usage-scene-4",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-2-usage-scene-4/df13944dc065b0d8254ed053efb726d37badf2550bc6addbff259000510ff927.webp",
+      "sha256": "df13944dc065b0d8254ed053efb726d37badf2550bc6addbff259000510ff927"
+    },
+    {
+      "id": "movement-verbs-2-usage-scene-5",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-2-usage-scene-5/a714e045375e2e709209162703494fdcbd5d57ce33dad113fb546c802c9409d9.webp",
+      "sha256": "a714e045375e2e709209162703494fdcbd5d57ce33dad113fb546c802c9409d9"
+    },
+    {
+      "id": "movement-verbs-3-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-3-usage-scene-1/2329d6d97e3a7f0479235829e9264e5536f31ebc5edb4618be1d1e1d8742fee3.webp",
+      "sha256": "2329d6d97e3a7f0479235829e9264e5536f31ebc5edb4618be1d1e1d8742fee3"
+    },
+    {
+      "id": "movement-verbs-3-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-3-usage-scene-2/b9cac6348bd3c68369cdcc904e423311215cf9090c359cca08d024a24e42cf16.webp",
+      "sha256": "b9cac6348bd3c68369cdcc904e423311215cf9090c359cca08d024a24e42cf16"
+    },
+    {
+      "id": "movement-verbs-3-usage-scene-3",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-3-usage-scene-3/d832b0ac4fd740bfcf66b19819d0d1b8519cd126d689096d4720d33fcdd6923a.webp",
+      "sha256": "d832b0ac4fd740bfcf66b19819d0d1b8519cd126d689096d4720d33fcdd6923a"
+    },
+    {
+      "id": "movement-verbs-3-usage-scene-4",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-3-usage-scene-4/c50e93547898e1c670bfd7fbd32974ec6fd913b23a8cca041a6d24e036fc74b0.webp",
+      "sha256": "c50e93547898e1c670bfd7fbd32974ec6fd913b23a8cca041a6d24e036fc74b0"
+    },
+    {
+      "id": "movement-verbs-3-usage-scene-5",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-3-usage-scene-5/0996e528bd550f12aef398b2606aa5a3eefdd19cb63bd65402f1ac0f18e0f5ee.webp",
+      "sha256": "0996e528bd550f12aef398b2606aa5a3eefdd19cb63bd65402f1ac0f18e0f5ee"
+    },
+    {
+      "id": "movement-verbs-4-usage-scene-1",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-4-usage-scene-1/a7141d758a9e7f434e065a6df2aa54ddfe69fca72eaeb3d6cebef41547c24703.webp",
+      "sha256": "a7141d758a9e7f434e065a6df2aa54ddfe69fca72eaeb3d6cebef41547c24703"
+    },
+    {
+      "id": "movement-verbs-4-usage-scene-2",
+      "kind": "scene",
+      "imagePath": "question-images/v2/movement-verbs-4-usage-scene-2/f4205e9aa4df14511624bdadc786873483745ad7c2dcb2c0215b15b092c768fa.webp",
+      "sha256": "f4205e9aa4df14511624bdadc786873483745ad7c2dcb2c0215b15b092c768fa"
+    },
+    {
+      "id": "music-room",
+      "kind": "cover",
+      "imagePath": "./scene-images/music-room-hero-8d64ac3eed54cfc0f3de5d8fd6aa9ae8539e4eccdb953c64d82d0ad561171287.webp",
+      "sha256": "8d64ac3eed54cfc0f3de5d8fd6aa9ae8539e4eccdb953c64d82d0ad561171287"
+    },
+    {
+      "id": "zoo",
+      "kind": "cover",
+      "imagePath": "./scene-images/zoo-hero-92ab8799a73d10f4b4527cbacaf261d135e28884d163ddd1651c8eeaf44fb251.webp",
+      "sha256": "92ab8799a73d10f4b4527cbacaf261d135e28884d163ddd1651c8eeaf44fb251"
+    },
+    {
+      "id": "aquarium",
+      "kind": "cover",
+      "imagePath": "./scene-images/aquarium-hero-d7c5429568d931e1d324393f7ef9b7c76b09e5b4489b20e4ff7cfaaf5d6ca8e6.webp",
+      "sha256": "d7c5429568d931e1d324393f7ef9b7c76b09e5b4489b20e4ff7cfaaf5d6ca8e6"
+    },
+    {
+      "id": "cinema",
+      "kind": "cover",
+      "imagePath": "./scene-images/cinema-hero-d1543037dffa32c7f0e13df624490abab5918952be6288fabaaea04e2141622d.webp",
+      "sha256": "d1543037dffa32c7f0e13df624490abab5918952be6288fabaaea04e2141622d"
+    },
+    {
+      "id": "fire-station",
+      "kind": "cover",
+      "imagePath": "./scene-images/fire-station-hero-5e0d54c9798aae4891a23e2043e886094a255204f05af75b896befc2af043a39.webp",
+      "sha256": "5e0d54c9798aae4891a23e2043e886094a255204f05af75b896befc2af043a39"
+    },
+    {
+      "id": "science-lab",
+      "kind": "cover",
+      "imagePath": "./scene-images/science-lab-hero-940a031422e7e31c1cc50b6749f3ce87969630122d8c888d7d0ee23c34d139fd.webp",
+      "sha256": "940a031422e7e31c1cc50b6749f3ce87969630122d8c888d7d0ee23c34d139fd"
+    },
+    {
+      "id": "space-center",
+      "kind": "cover",
+      "imagePath": "./scene-images/space-center-hero-e99950e6458cb93d19c2edaffcec5cf532343eebdbc54f88e08e31e143b9f694.webp",
+      "sha256": "e99950e6458cb93d19c2edaffcec5cf532343eebdbc54f88e08e31e143b9f694"
+    },
+    {
+      "id": "numbers-counting-1-two-folders-notebook",
+      "kind": "sentence",
+      "imagePath": "question-images/v2/numbers-counting-1-two-folders-notebook/380dbbb1ec13d9b6a43730397c84d356bf44f96becd7904fda9001a807677b1b.webp",
+      "sha256": "380dbbb1ec13d9b6a43730397c84d356bf44f96becd7904fda9001a807677b1b"
+    }
+  ]
+}

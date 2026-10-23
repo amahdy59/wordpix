@@ -35867,6 +35867,8 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
   },
   "fire-station": {
     id: "fire-station",
+    heroImage:
+      "./scene-images/fire-station-hero-5e0d54c9798aae4891a23e2043e886094a255204f05af75b896befc2af043a39.webp",
     name: "L5 Fire Station",
     description:
       "Explore real-life l5 fire station vocabulary through 2D scene discovery, audio practice, recall matching, and sentence building.",
@@ -36141,6 +36143,8 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
   },
   zoo: {
     id: "zoo",
+    heroImage:
+      "./scene-images/zoo-hero-92ab8799a73d10f4b4527cbacaf261d135e28884d163ddd1651c8eeaf44fb251.webp",
     name: "L5 Zoo",
     description:
       "Explore real-life l5 zoo vocabulary through 2D scene discovery, audio practice, recall matching, and sentence building.",
@@ -36284,6 +36288,8 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
   },
   aquarium: {
     id: "aquarium",
+    heroImage:
+      "./scene-images/aquarium-hero-d7c5429568d931e1d324393f7ef9b7c76b09e5b4489b20e4ff7cfaaf5d6ca8e6.webp",
     name: "L6 Aquarium",
     description:
       "Explore real-life l6 aquarium vocabulary through 2D scene discovery, audio practice, recall matching, and sentence building.",
@@ -36488,6 +36494,8 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
   },
   cinema: {
     id: "cinema",
+    heroImage:
+      "./scene-images/cinema-hero-d1543037dffa32c7f0e13df624490abab5918952be6288fabaaea04e2141622d.webp",
     name: "L7 Cinema",
     description:
       "Explore real-life l7 cinema vocabulary through 2D scene discovery, audio practice, recall matching, and sentence building.",
@@ -36558,6 +36566,8 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
   },
   "music-room": {
     id: "music-room",
+    heroImage:
+      "./scene-images/music-room-hero-8d64ac3eed54cfc0f3de5d8fd6aa9ae8539e4eccdb953c64d82d0ad561171287.webp",
     name: "L7 Music Room",
     description:
       "Explore real-life l7 music room vocabulary through 2D scene discovery, audio practice, recall matching, and sentence building.",
@@ -36625,6 +36635,8 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
   },
   "science-lab": {
     id: "science-lab",
+    heroImage:
+      "./scene-images/science-lab-hero-940a031422e7e31c1cc50b6749f3ce87969630122d8c888d7d0ee23c34d139fd.webp",
     name: "L7 Science Lab",
     description:
       "Explore real-life l7 science lab vocabulary through 2D scene discovery, audio practice, recall matching, and sentence building.",
@@ -36695,6 +36707,8 @@ export const COURSE_UNITS: Record<string, CourseUnit> = {
   },
   "space-center": {
     id: "space-center",
+    heroImage:
+      "./scene-images/space-center-hero-e99950e6458cb93d19c2edaffcec5cf532343eebdbc54f88e08e31e143b9f694.webp",
     name: "L7 Space Center",
     description:
       "Explore real-life l7 space center vocabulary through 2D scene discovery, audio practice, recall matching, and sentence building.",

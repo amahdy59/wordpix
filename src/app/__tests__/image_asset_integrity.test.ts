@@ -3,6 +3,7 @@ import { closeSync, openSync, readSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { COURSE_UNITS } from "../data/lessons";
 import { loadAllUnitVocabulary } from "../data/vocabulary";
+import publishedImages from "../../../docs/content-review/image-publication-2026-10-23.json";
 // The same detector the sync script and the audit use, so the three can never
 // disagree about what counts as a real image.
 // @ts-expect-error -- plain .mjs helper shared with the build scripts
@@ -54,6 +55,18 @@ try {
 function assetState(imgPath: string): AssetState {
   if (stateCache.has(imgPath)) return stateCache.get(imgPath)!;
   const relative = imgPath.replace(/^\.?\//, "");
+  // These human-approved covers live in R2 rather than the Git checkout.
+  // Publication records their read-back SHA-256 verification; the immutable
+  // URL must carry that same hash. All other artwork still requires local bytes.
+  const publishedCover = publishedImages.assets.find(
+    (asset) => asset.kind === "cover" && asset.imagePath === imgPath
+  );
+  if (
+    publishedCover &&
+    /^[a-f0-9]{64}$/.test(publishedCover.sha256) &&
+    relative === `scene-images/${publishedCover.id}-hero-${publishedCover.sha256}.webp`
+  )
+    return "real";
   const absolute = join(PUBLIC_DIR, relative);
 
   if (existingPublicFiles.size > 0 && !existingPublicFiles.has(absolute.toLowerCase())) {
@@ -160,7 +173,7 @@ describe("unit hero images", () => {
     }
   });
 
-  it("resolves every hero image to a file on disk", () => {
+  it("resolves every hero to local artwork or a verified immutable R2 publication", () => {
     const missing = heroes.filter(({ hero }) => assetState(hero) === "missing");
     expect(
       missing.map(({ unitId, hero }) => `${unitId}: ${hero}`),
