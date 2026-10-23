@@ -15,6 +15,7 @@ export default tseslint.config(
       ".codex-integration-backup/**",
       ".playwright-cli/**",
       "output/**",
+      "outputs/**",
       "src/imports/**",
       "scripts/**",
       "scratch/**",

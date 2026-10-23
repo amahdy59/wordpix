@@ -1,16 +1,37 @@
 {
-  "version": "0.1.83",
+  "version": "0.1.84",
   "notes": [
-    "Added reviewed reference photographs for 52 scenes in Daily Action Verbs, Giving Directions and Movement Verbs.",
-    "Added covers for Music Room, Zoo, Aquarium, Cinema, Fire Station, Science Lab and Space Center.",
-    "The sentence about placing folders beside a notebook now has a matching illustration."
+    "Added 1,000 reviewed, high-quality illustrations supporting exact practice sentences across curriculum units.",
+    "Expanded visual scenario and sentence coverage to reduce placeholder states in practice exercises."
   ],
   "notesAr": [
-    "أُضيفت صور مرجعية مُراجَعة لـ52 مشهدًا في أفعال الحياة اليومية وإعطاء الاتجاهات وأفعال الحركة.",
-    "أُضيفت صور غلاف لغرفة الموسيقى وحديقة الحيوان وحوض الأحياء المائية والسينما ومحطة الإطفاء ومختبر العلوم ومركز الفضاء.",
-    "أصبحت للجملة التي تصف وضع الملفات بجوار دفتر صورة توضيحية مطابقة."
+    "أُضيفت 1,000 صورة توضيحية مُراجَعة وعالية الجودة لدعم جمل التدريب بدقة عبر وحدات المنهج.",
+    "توسيع التغطية البصرية للمشاهد والجمل التعليمية لتقليص حالات المشاهد المؤقتة في التمارين."
   ],
   "releases": [
+    {
+      "id": "0.1.84",
+      "version": "0.1.84",
+      "date": "2026-10-24",
+      "title": {
+        "en": "Extensive sentence illustration support",
+        "ar": "دعم بصري موسع لجمل التمارين"
+      },
+      "changes": [
+        {
+          "id": "sentence-exercises-visual-illustrations",
+          "category": "added",
+          "en": "Added 1,000 reviewed illustrations supporting exact practice sentences throughout core curriculum units.",
+          "ar": "أُضيفت 1,000 صورة توضيحية مُراجَعة لدعم جمل التمارين النصية عبر وحدات المنهج الأساسية."
+        },
+        {
+          "id": "reduce-sentence-placeholder-states",
+          "category": "improved",
+          "en": "Significantly reduced exercise placeholder states by linking verified sentence illustrations.",
+          "ar": "تقليص ملحوظ للمشاهد المؤقتة في التمارين من خلال ربط صور توضيحية موثوقة ومطابقة للجمل."
+        }
+      ]
+    },
     {
       "id": "0.1.83",
       "version": "0.1.83",
