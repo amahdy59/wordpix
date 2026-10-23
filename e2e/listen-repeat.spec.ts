@@ -149,7 +149,9 @@ for (const viewport of [
         })
         .toBeLessThan(1);
     }
-    await expect(detailsSurface.getByRole("button", { name: "Close word details" })).toBeVisible();
+    await expect(
+      detailsSurface.getByRole("button", { name: /^(Close|Close word details)$/ })
+    ).toBeVisible();
     await page.keyboard.press("Escape");
     await expect(detailsSurface).toHaveCount(0);
     await expect(details).toBeFocused();

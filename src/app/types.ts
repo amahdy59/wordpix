@@ -120,6 +120,7 @@ export type Screen =
       unitId?: string;
       wordQueue: string[];
       step: number;
+      reviewItems?: import("./learning/wordIdentity").ReviewWord[];
       totalSteps?: number;
       attempts: AnswerAttempt[];
       startedAt: string;
@@ -133,6 +134,7 @@ export type Screen =
       unitId?: string;
       wordQueue: string[];
       attempts: AnswerAttempt[];
+      reviewItems?: import("./learning/wordIdentity").ReviewWord[];
     };
 
 /** Every destination GO can reach. Previously widened by an `as TabId` cast. */
@@ -201,6 +203,7 @@ export type Action =
       unitId?: string;
       initialStep?: number;
       totalSteps?: number;
+      reviewItems?: import("./learning/wordIdentity").ReviewWord[];
     }
   | {
       type: "LESSON_ATTEMPT";

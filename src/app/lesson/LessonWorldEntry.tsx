@@ -20,6 +20,7 @@ import { hasLearningMaterials } from "../learning/registry";
 import { useProgress } from "../data/progress";
 import { useI18n } from "../../i18n";
 import { useLearner } from "../context/LearnerContext";
+import { unitWordMemory } from "../learning/wordIdentity";
 import { getUnitCurriculumDesign } from "../learning/curriculumModel";
 import {
   getLessonStepLabels,
@@ -44,7 +45,11 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
   const { t } = useI18n();
   const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   const isHadithUnit = world.id === "hadith-niyyah";
-  const { progress } = useProgress();
+  const { progress: globalProgress } = useProgress();
+  const progress = {
+    ...globalProgress,
+    wordMemory: unitWordMemory(globalProgress.wordMemory, world.id),
+  };
   const { state: learnerState } = useLearner();
   const curriculum = getUnitCurriculumDesign(world);
   const stepLabels = getLessonStepLabels(

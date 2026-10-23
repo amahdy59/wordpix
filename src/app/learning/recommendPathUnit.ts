@@ -1,5 +1,6 @@
 import type { CourseUnit } from "../data/lessons";
 import type { WordLearningState } from "../../features/gamification/sm2";
+import { getWordMemory } from "./wordIdentity";
 
 /** Placement is an entry point, not a one-time suggestion that disappears on first practice. */
 export function recommendPathUnit(
@@ -16,7 +17,10 @@ export function recommendPathUnit(
     units
       .slice(placedIndex)
       .find((unit) =>
-        unit.wordIds.some((id) => !["familiar", "strong"].includes(memory[id]?.mastery ?? "new"))
+        unit.wordIds.some(
+          (id) =>
+            !["familiar", "strong"].includes(getWordMemory(memory, id, unit.id)?.mastery ?? "new")
+        )
       ) ?? units.at(-1)
   );
 }

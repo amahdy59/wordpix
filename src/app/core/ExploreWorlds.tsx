@@ -36,6 +36,7 @@ import { useDevicePreference, isTextInput } from "../shared/devicePreferences";
 
 import { loadVocabularySearch, searchVocabulary, type SearchEntry } from "../data/vocabularySearch";
 import { emitLearningEvent } from "../analytics/learningAnalytics";
+import { getWordMemory, hasWordActivity } from "../learning/wordIdentity";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -204,6 +205,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
       {
         totalWords: number;
         masteredWords: number;
+        startedWords: number;
         percent: number;
         isComplete: boolean;
       }
@@ -212,19 +214,22 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
     allCurriculumUnits.forEach((unit) => {
       const totalWords = unit.wordIds.length;
       const masteredWords = unit.wordIds.filter(
-        (id) => (progress.wordMastery[id] || 0) >= 3
+        (id) => getWordMemory(progress.wordMemory, id, unit.id)?.mastery === "strong"
       ).length;
       const percent = totalWords > 0 ? Math.round((masteredWords / totalWords) * 100) : 0;
       map.set(unit.id, {
         totalWords,
         masteredWords,
+        startedWords: unit.wordIds.filter((id) =>
+          hasWordActivity(getWordMemory(progress.wordMemory, id, unit.id))
+        ).length,
         percent,
         isComplete: percent === 100 && totalWords > 0,
       });
     });
 
     return map;
-  }, [allCurriculumUnits, progress.wordMastery]);
+  }, [allCurriculumUnits, progress.wordMemory]);
 
   // Overall catalog progress summary
   const overallStats = useMemo(() => {
@@ -302,8 +307,8 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
         const stats = unitStatsMap.get(unit.id);
         if (!stats) return false;
         if (masteryFilter === "mastered") return stats.isComplete;
-        if (masteryFilter === "in-progress") return stats.masteredWords > 0 && !stats.isComplete;
-        if (masteryFilter === "not-started") return stats.masteredWords === 0;
+        if (masteryFilter === "in-progress") return stats.startedWords > 0 && !stats.isComplete;
+        if (masteryFilter === "not-started") return stats.startedWords === 0;
         return true;
       });
     }
@@ -345,14 +350,15 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
     return searchVocabulary(searchIndex, searchQuery)
       .filter(([unitId, wordId]) => {
         if (!eligible.has(unitId)) return false;
-        const mastery = progress.wordMastery[wordId] ?? 0;
+        const memory = getWordMemory(progress.wordMemory, wordId, unitId);
+        const mastery = memory?.mastery;
         return (
           masteryFilter === "all" ||
           (masteryFilter === "mastered"
-            ? mastery >= 3
+            ? mastery === "strong"
             : masteryFilter === "in-progress"
-              ? mastery > 0 && mastery < 3
-              : mastery === 0)
+              ? hasWordActivity(memory) && mastery !== "strong"
+              : !hasWordActivity(memory))
         );
       })
       .map(([unitId, wordId, label, arabic, cefr]) => ({
@@ -369,7 +375,7 @@ export const LibraryScreen = memo(function LibraryScreen({ dispatch }: Props) {
     selectedStageId,
     allCurriculumUnits,
     masteryFilter,
-    progress.wordMastery,
+    progress.wordMemory,
   ]);
   const visibleWordRefs = useMemo(
     () =>

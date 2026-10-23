@@ -1,7 +1,12 @@
 import { useLessonSession } from "../shared/LessonSessionContext";
 import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import type { Action } from "../types";
-import { resolveGroup, resolveUnitForLesson, type VocabularyItem } from "../data/courseCatalog";
+import {
+  COURSE_UNITS,
+  resolveGroup,
+  resolveUnitForLesson,
+  type VocabularyItem,
+} from "../data/courseCatalog";
 import { ExitConfirmModal } from "../shared/ExitConfirmModal";
 import { useAudio } from "../shared/useAudio";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
@@ -59,10 +64,10 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   }, [words, activeWordIndex]);
 
   const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const unit = resolveUnitForLesson(lessonId);
   const speed = accessibility.speechRate;
 
   const currentWord = words[activeWordIndex] || words[0];
+  const unit = COURSE_UNITS[currentWord?.topic] ?? resolveUnitForLesson(lessonId);
   useEffect(() => {
     if (currentWord) session?.onActiveItem?.(currentWord.id);
   }, [currentWord, session]);

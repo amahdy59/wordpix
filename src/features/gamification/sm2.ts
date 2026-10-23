@@ -31,6 +31,8 @@ export interface SkillMasterySummary {
 
 export interface WordLearningState {
   wordId: string;
+  /** Unit/sense identity, separate from the immutable content/media identifier. */
+  unitId?: string;
   exposures: number;
   correctRecalls: number;
   incorrectRecalls: number;

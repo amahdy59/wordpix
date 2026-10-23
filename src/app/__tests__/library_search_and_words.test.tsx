@@ -6,6 +6,7 @@ import { LibraryScreen } from "../core/ExploreWorlds";
 vi.mock("../data/progress", () => ({
   useProgress: () => ({
     progress: {
+      wordMemory: {},
       wordMastery: {
         bed: 3,
         pillow: 3,

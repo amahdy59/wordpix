@@ -5,7 +5,7 @@ import { LibraryScreen } from "../core/ExploreWorlds";
 import { COURSE_UNITS } from "../data/courseCatalog";
 
 vi.mock("../data/progress", () => ({
-  useProgress: () => ({ progress: { wordMastery: {} } }),
+  useProgress: () => ({ progress: { wordMastery: {}, wordMemory: {} } }),
 }));
 
 it("opens a searched Library unit as reference with returnTo library", () => {

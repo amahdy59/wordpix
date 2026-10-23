@@ -20,6 +20,7 @@ import { purgeLegacyAudioCredentials } from "./shared/audioSecurity";
 import { saveLessonResume } from "./lesson/lessonResume";
 import { buildInterleavedLessonPlan } from "./lesson/lessonSequence";
 import { useLearningDiagnostics } from "./analytics/useLearningDiagnostics";
+import { parseNavigationState } from "./router/navigationState";
 
 function AppInner() {
   const { t } = useI18n();
@@ -37,10 +38,7 @@ function AppInner() {
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (!saved) return fallback;
-        const parsed = JSON.parse(saved) as { id?: string };
-        if (!parsed || typeof parsed !== "object" || typeof parsed.id !== "string") return fallback;
-        if (parsed.id === "foundation-lesson") return { id: "learn" };
-        return parsed as Screen;
+        return parseNavigationState(JSON.parse(saved)) ?? { id: "home" };
       } catch {
         return fallback;
       }
@@ -231,14 +229,16 @@ const queryClient = new QueryClient({
 
 export default function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <AuthProvider>
-        <LearnerProvider>
-          <I18nProvider>
-            <AppInner />
-          </I18nProvider>
-        </LearnerProvider>
-      </AuthProvider>
-    </QueryClientProvider>
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <AuthProvider>
+          <LearnerProvider>
+            <I18nProvider>
+              <AppInner />
+            </I18nProvider>
+          </LearnerProvider>
+        </AuthProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
   );
 }

@@ -58,9 +58,9 @@ describe("Practice Tab & Review Consolidation", () => {
 
   it("leads with 'Reviews Due Today' hero when words need review", () => {
     fixture.memory = {
-      overdueWord: createMemoryItem("overdueWord", -2),
-      todayWord: createMemoryItem("todayWord", 0),
-      futureWord: createMemoryItem("futureWord", 4),
+      one: createMemoryItem("one", -2),
+      two: createMemoryItem("two", 0),
+      three: createMemoryItem("three", 4),
     };
 
     const dispatch = vi.fn();
@@ -80,7 +80,11 @@ describe("Practice Tab & Review Consolidation", () => {
       type: "START_LESSON",
       lessonId: "daily-review",
       mode: "SMART_REVIEW",
-      wordQueue: ["overdueWord", "todayWord"],
+      wordQueue: ["one", "two"],
+      reviewItems: [
+        { wordId: "one", unitId: "numbers-counting" },
+        { wordId: "two", unitId: "numbers-counting" },
+      ],
     });
   });
 

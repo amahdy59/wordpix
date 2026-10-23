@@ -5,15 +5,27 @@ import { LearnerProvider, useLearner } from "../context/LearnerContext";
 import { XP_RULES } from "../../features/gamification/xp";
 import type { AnswerAttempt } from "../types";
 
-const wrapper = ({ children }: { children: ReactNode }) => <LearnerProvider>{children}</LearnerProvider>;
+const wrapper = ({ children }: { children: ReactNode }) => (
+  <LearnerProvider>{children}</LearnerProvider>
+);
 
 function attempts(correct: number, wrong: number): AnswerAttempt[] {
   const made: AnswerAttempt[] = [];
   for (let i = 0; i < correct; i += 1) {
-    made.push({ exerciseStep: 1, wordId: `w${i}`, correct: true, answeredAt: new Date().toISOString() });
+    made.push({
+      exerciseStep: 1,
+      wordId: `w${i}`,
+      correct: true,
+      answeredAt: new Date().toISOString(),
+    });
   }
   for (let i = 0; i < wrong; i += 1) {
-    made.push({ exerciseStep: 1, wordId: `x${i}`, correct: false, answeredAt: new Date().toISOString() });
+    made.push({
+      exerciseStep: 1,
+      wordId: `x${i}`,
+      correct: false,
+      answeredAt: new Date().toISOString(),
+    });
   }
   return made;
 }
@@ -110,9 +122,20 @@ describe("XP ledger", () => {
     const { result } = renderHook(() => useLearner(), { wrapper });
 
     act(() => {
-      result.current.recordSessionCompletion("s1", attempts(0, 4), ["w0"]);
+      result.current.recordSessionCompletion("s1", attempts(0, 4), ["x0", "x1", "x2", "x3"]);
     });
 
     expect(result.current.state.sessionHistory[0].xp.correctAnswers).toBe(0);
+  });
+  it("does not award completion XP or mutate progress for empty or unassessed sessions", () => {
+    const { result } = renderHook(() => useLearner(), { wrapper });
+    act(() => {
+      result.current.recordSessionCompletion("empty", [], []);
+      result.current.recordSessionCompletion("unloaded", [], ["one"], "numbers-counting");
+      result.current.recordSessionCompletion("partial", attempts(1, 0), ["w0", "unseen"]);
+    });
+    expect(result.current.state.learnerProgress.xp).toBe(0);
+    expect(result.current.state.sessionHistory).toEqual([]);
+    expect(result.current.state.wordMemory).toEqual({});
   });
 });

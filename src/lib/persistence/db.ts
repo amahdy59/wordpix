@@ -5,8 +5,10 @@ import type {
   LearnerProgressStats,
 } from "../../app/context/LearnerContext";
 import type { WordLearningState } from "../../features/gamification/sm2";
+import type { SpecialistMutation } from "./specialistProgress";
 
-export type SyncErrorCategory = "auth_required" | "validation" | "authorization" | "transient";
+export type SyncErrorCategory =
+  "auth_required" | "validation" | "authorization" | "transient" | "backend_required";
 
 export type SyncOperation = {
   ownerId?: string;
@@ -14,6 +16,14 @@ export type SyncOperation = {
   lastSyncAttemptAt?: string;
   lastErrorCategory?: SyncErrorCategory;
 } & (
+  | {
+      id: string;
+      type: "specialist_progress";
+      payload: SpecialistMutation;
+      createdAt: string;
+      status: "pending" | "syncing" | "failed";
+      retryCount: number;
+    }
   | {
       id: string;
       type: "update_preferences";
@@ -142,15 +152,43 @@ export async function getDB() {
  * Falls back to null if not found (letting the context provide defaults).
  */
 export async function getLearnerState(): Promise<LearnerStateSchema | null> {
-  try {
-    const db = await getDB();
-    if (!db) return null;
-    const state = await db.get("learner_state", LEARNER_STATE_KEY);
-    return state ?? null;
-  } catch (e) {
-    console.error("Failed to get learner state", e);
-    return null;
+  const db = await getDB();
+  if (!db) throw new Error("Local storage is unavailable");
+  const state = await db.get("learner_state", LEARNER_STATE_KEY);
+  return state ?? null;
+}
+
+export type LearnerMutation = {
+  [T in SyncOperation["type"]]: {
+    type: T;
+    payload: Extract<SyncOperation, { type: T }>["payload"];
+  };
+}[SyncOperation["type"]];
+
+/** Completion/checkpoint and its sync intent become durable in the same transaction. */
+export async function saveLearnerChange(
+  state: LearnerStateSchema,
+  mutations: readonly LearnerMutation[],
+  changeId: string
+): Promise<void> {
+  const db = await getDB();
+  if (!db) throw new Error("Local storage is unavailable");
+  const tx = db.transaction(["learner_state", "mutation_queue", "sync_metadata"], "readwrite");
+  const metadata = await tx.objectStore("sync_metadata").get("account");
+  await tx.objectStore("learner_state").put(state, LEARNER_STATE_KEY);
+  for (const [index, mutation] of mutations.entries()) {
+    await tx.objectStore("mutation_queue").put({
+      ...mutation,
+      id: `${changeId}:${index}`,
+      ownerId: metadata?.ownerId,
+      payloadVersion: 1,
+      createdAt: new Date().toISOString(),
+      status: "pending",
+      retryCount: 0,
+    } as SyncOperation);
   }
+  await tx.done;
+  notifySyncQueueChanged();
 }
 
 /**
@@ -177,7 +215,7 @@ export async function queueMutation<T extends SyncOperation["type"]>(
 ): Promise<void> {
   try {
     const db = await getDB();
-    if (!db) return;
+    if (!db) throw new Error("Local storage is unavailable");
     const metadata = await db.get("sync_metadata", "account");
     const op = {
       ownerId: metadata?.ownerId,
@@ -193,6 +231,7 @@ export async function queueMutation<T extends SyncOperation["type"]>(
     notifySyncQueueChanged();
   } catch (e) {
     console.error("Failed to queue mutation", e);
+    throw e;
   }
 }
 
@@ -204,7 +243,11 @@ export async function getSyncQueueSummary(): Promise<SyncQueueSummary> {
     (summary, operation) => {
       if (operation.status === "failed") {
         summary.failed += 1;
-        if (operation.lastErrorCategory === "authorization") summary.retryableFailed += 1;
+        if (
+          operation.lastErrorCategory === "authorization" ||
+          operation.lastErrorCategory === "backend_required"
+        )
+          summary.retryableFailed += 1;
       } else summary.pending += 1;
       return summary;
     },

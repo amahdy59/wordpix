@@ -1,11 +1,9 @@
 import { memo, useMemo } from "react";
 import { ArrowRight, RotateCcw, CheckCircle2, Library, BookOpen } from "lucide-react";
-import { type WordLearningState } from "../../features/gamification/sm2";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { COURSE_UNITS, LEARNING_PATH_UNIT_IDS, REVIEW_GROUP_ID } from "../data/courseCatalog";
-import { buildInterleavedLessonPlan } from "../lesson/lessonSequence";
+import { COURSE_UNITS, LEARNING_PATH_UNIT_IDS } from "../data/courseCatalog";
 import { recommendPathUnit } from "../learning/recommendPathUnit";
 import { getUnitCurriculumDesign } from "../learning/curriculumModel";
 import { getLocalDateString } from "../../features/gamification/streak";
@@ -23,6 +21,8 @@ import { staggerContainer, staggerItem } from "../shared/animations";
 
 import { getReviewSchedule } from "../review/reviewSchedule";
 import { useReviewDate } from "../shared/useReviewDate";
+import { reviewSessionAction } from "../review/startReview";
+import { getWordMemory } from "../learning/wordIdentity";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -51,18 +51,24 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
     ) ?? COURSE_UNITS[LEARNING_PATH_UNIT_IDS[0]];
   const activeLesson =
     activeUnit.groups.find((group) =>
-      group.wordIds.some((id) => progress.wordMemory[id]?.mastery !== "strong")
+      group.wordIds.some(
+        (id) => getWordMemory(progress.wordMemory, id, activeUnit.id)?.mastery !== "strong"
+      )
     ) ?? activeUnit.groups[0];
   const lessonWordsSeen = useMemo(
-    () => activeLesson.wordIds.filter((wordId) => Boolean(progress.wordMemory[wordId])).length,
-    [activeLesson.wordIds, progress.wordMemory]
+    () =>
+      activeLesson.wordIds.filter((wordId) =>
+        Boolean(getWordMemory(progress.wordMemory, wordId, activeUnit.id))
+      ).length,
+    [activeLesson.wordIds, activeUnit.id, progress.wordMemory]
   );
   const remainingWords = useMemo(
     () =>
       activeLesson.wordIds.filter(
-        (wordId) => (progress.wordMemory[wordId]?.mastery ?? "new") !== "strong"
+        (wordId) =>
+          (getWordMemory(progress.wordMemory, wordId, activeUnit.id)?.mastery ?? "new") !== "strong"
       ).length,
-    [activeLesson.wordIds, progress.wordMemory]
+    [activeLesson.wordIds, activeUnit.id, progress.wordMemory]
   );
   const estimatedMinutes = Math.max(2, Math.ceil(Math.max(1, Math.min(5, remainingWords)) * 0.75));
   const reviewDate = useReviewDate();
@@ -241,19 +247,8 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     whileTap={{ scale: 0.98 }}
                     type="button"
                     onClick={() => {
-                      const words = dueWords.slice(0, 15).map((w: WordLearningState) => w.wordId);
-                      const plan = buildInterleavedLessonPlan(
-                        words,
-                        learnerState.preferences.englishLevel,
-                        learnerState.accessibility.includeListening
-                      );
-                      dispatch({
-                        type: "START_LESSON",
-                        lessonId: REVIEW_GROUP_ID,
-                        mode: "SMART_REVIEW",
-                        wordQueue: words,
-                        totalSteps: plan.length,
-                      });
+                      const action = reviewSessionAction(dueWords, 15);
+                      if (action) dispatch(action);
                     }}
                     className="w-full bg-secondary hover:bg-secondary/80 text-primary border border-primary/20 hover:border-primary/40 rounded-xl py-3 font-sans font-bold text-base min-h-[44px] transition-colors flex items-center justify-center gap-2 mt-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs"
                   >

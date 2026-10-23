@@ -62,9 +62,24 @@ describe("Practice Tab Streamlining & Plain Language", () => {
   it("shows Smart Review CTA with estimated time and batch options when words > 10", () => {
     // Generate 15 due words
     const mem: Record<string, WordLearningState> = {};
-    for (let i = 0; i < 15; i++) {
-      mem[`word_${i}`] = createMemoryItem(`word_${i}`, -1);
-    }
+    for (const id of [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten",
+      "eleven",
+      "twelve",
+      "thirteen",
+      "fourteen",
+      "fifteen",
+    ])
+      mem[id] = createMemoryItem(id, -1);
     fixture.memory = mem;
 
     const dispatch = vi.fn();
@@ -93,7 +108,8 @@ describe("Practice Tab Streamlining & Plain Language", () => {
       type: "START_LESSON",
       lessonId: "daily-review",
       mode: "SMART_REVIEW",
-      wordQueue: expect.arrayContaining(["word_0", "word_14"]),
+      wordQueue: expect.arrayContaining(["one", "fifteen"]),
+      reviewItems: expect.arrayContaining([{ wordId: "one", unitId: "numbers-counting" }]),
     });
   });
 

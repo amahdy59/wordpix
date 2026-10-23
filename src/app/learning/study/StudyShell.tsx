@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { unitWordMemory } from "../wordIdentity";
 import {
   BookOpen,
   Check,
@@ -57,8 +58,13 @@ export function StudyShell({
     loadStudyProgress(unitId)
   );
   const progress = React.useMemo(
-    () => syncStudyProgressWithWordMemory(storedProgress, learnerState.wordMemory, unit.wordIds),
-    [learnerState.wordMemory, storedProgress, unit.wordIds]
+    () =>
+      syncStudyProgressWithWordMemory(
+        storedProgress,
+        unitWordMemory(learnerState.wordMemory, unitId),
+        unit.wordIds
+      ),
+    [learnerState.wordMemory, storedProgress, unit.wordIds, unitId]
   );
 
   // The curriculum adapter

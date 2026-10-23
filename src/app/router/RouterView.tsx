@@ -15,6 +15,8 @@ import { Button } from "../shared/Button";
 import { FeedbackPanel } from "../shared/FeedbackPanel";
 import { TABBED_IDS } from "../store/reducer";
 import { NetworkStatusBanner } from "../shared/NetworkStatusBanner";
+import { PersistenceStatus } from "../shared/PersistenceStatus";
+import { unitWordMemory, reviewWordMemory } from "../learning/wordIdentity";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "../onboarding/SplashWelcome";
@@ -321,13 +323,16 @@ function LessonRoute({
     // Resolve within the lesson's own unit. Word ids repeat across the
     // course — "mirror" belongs to fifteen units — so an unscoped lookup
     // can hand this drill another unit's photograph of the same thing.
-    const lessonUnitId = resolveUnitForLesson(lessonId).id;
+    const lessonUnitId = state.unitId ?? resolveUnitForLesson(lessonId).id;
     const ids = wordQueueKey ? wordQueueKey.split("|") : [];
-    const groupWords = getWords(ids, lessonUnitId);
-    if (groupWords.length > 0) return groupWords;
+    const groupWords = state.reviewItems
+      ? state.reviewItems.flatMap((item) => getWords([item.wordId], item.unitId))
+      : getWords(ids, lessonUnitId);
+    if (groupWords.length === ids.length && ids.length > 0) return groupWords;
+    if (ids.length > 0) return NO_WORDS;
     const fallback = getWords(resolveGroup(lessonId).wordIds, lessonUnitId);
     return fallback.length > 0 ? fallback : NO_WORDS;
-  }, [lessonId, wordQueueKey]);
+  }, [lessonId, wordQueueKey, state.unitId, state.reviewItems]);
 
   const interleavedPlan = useMemo(() => {
     if (isAssessment) {
@@ -382,6 +387,10 @@ function LessonRoute({
     return chunkWords.length > 0 ? chunkWords : activeGroupWords;
   }, [currentPlanStep, activeGroupWords]);
 
+  if (activeGroupWords.length === 0) {
+    return <LessonRouteError dispatch={dispatch} />;
+  }
+
   if (state.step >= interleavedPlan.length) {
     return (
       <LessonCompleteResults
@@ -390,14 +399,11 @@ function LessonRoute({
         unitId={state.unitId}
         mode={state.mode}
         attempts={state.attempts}
+        reviewItems={state.reviewItems}
         wordQueue={state.wordQueue}
         dispatch={dispatch}
       />
     );
-  }
-
-  if (activeGroupWords.length === 0) {
-    return <LessonRouteError dispatch={dispatch} />;
   }
 
   const ex: ExerciseStep = currentPlanStep.exercise;
@@ -429,14 +435,24 @@ function LessonRoute({
     <LessonSessionContext.Provider
       value={{
         sessionId: state.sessionId,
-        unitId: state.unitId ?? resolveUnitForLesson(state.lessonId).id,
+        unitId:
+          state.reviewItems?.find(
+            (item) => item.wordId === (state.activeItemId ?? stepWords[0]?.id)
+          )?.unitId ??
+          state.unitId ??
+          resolveUnitForLesson(state.lessonId).id,
         attempts: state.attempts,
         activeItemId: state.activeItemId,
         onActiveItem: (wordId) => dispatch({ type: "LESSON_SET_ITEM", wordId }),
         scaffolding: getLessonScaffolding(
           learnerState.preferences.englishLevel,
           stepWords.map((word) => word.id),
-          learnerState.wordMemory
+          state.reviewItems
+            ? reviewWordMemory(learnerState.wordMemory, state.reviewItems)
+            : unitWordMemory(
+                learnerState.wordMemory,
+                state.unitId ?? resolveUnitForLesson(state.lessonId).id
+              )
         ),
         current: state.step + 1,
         total: interleavedPlan.length,
@@ -553,6 +569,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
           mode={state.mode}
           attempts={state.attempts}
           wordQueue={state.wordQueue}
+          reviewItems={state.reviewItems}
           dispatch={dispatch}
         />
       );
@@ -579,8 +596,13 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       transition={{ duration: 0.2, ease: "easeInOut" }}
       className="flex-1 flex flex-col w-full min-h-full"
     >
+      <PersistenceStatus />
       <Suspense fallback={<LoadingFallback />}>
-        <UnitVocabularyGate screen={state} fallback={<LoadingFallback />}>
+        <UnitVocabularyGate
+          screen={state}
+          fallback={<LoadingFallback />}
+          onBackToPath={() => dispatch({ type: "GO", to: "learn" })}
+        >
           {renderContent}
         </UnitVocabularyGate>
       </Suspense>

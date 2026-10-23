@@ -8,6 +8,7 @@ import { type MasteryLevel } from "../context/LearnerContext";
 import { useAudio } from "../shared/useAudio";
 import { X, CheckCircle2 } from "lucide-react";
 import { getAuthoredWord } from "../exercises/content/authoredLessonContent";
+import { getWordMemory } from "../learning/wordIdentity";
 
 interface Props {
   vocabulary: VocabularyItem[];
@@ -137,7 +138,10 @@ export const VocabSidebar = memo(function VocabSidebar({
       <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-2">
         {filteredVocabulary.map((word) => {
           const isSelected = word.id === activeId;
-          const levelNum = progress.wordMastery[word.id] || 0;
+          const mastery = getWordMemory(progress.wordMemory, word.id, word.topic)?.mastery ?? "new";
+          const levelNum = ["new", "learning", "familiar", "strong"].indexOf(
+            mastery
+          ) as MasteryLevel;
           const badge = MASTERY_BADGES[levelNum as MasteryLevel];
           const authored = getAuthoredWord(word.id);
           const arabic = authored?.arabic ?? word.arabicTranslation;

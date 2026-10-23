@@ -117967,7 +117967,7 @@
       "-"
     ],
     "after": [
-      "نابض",
+      "فصل الربيع",
       "صيف",
       "خريف",
       "شتاء",
@@ -126804,15 +126804,15 @@
       "قضاعة"
     ],
     "after": [
-      "تيار كهربائي",
+      "تيار مائي",
       "منحدرات نهرية سريعة",
       "شلال",
       "مسبح",
       "منعطف النهر",
       "دلتا",
       "رافد",
-      "-",
-      "سرير",
+      "ضفة النهر",
+      "قاع النهر",
       "مصب نهر",
       "سمكة",
       "ضفدع",
@@ -127197,7 +127197,7 @@
       "كركند",
       "روبيان",
       "خيار البحر",
-      "إسفنجة",
+      "إسفنج بحري",
       "شعاب مرجان",
       "عشب بحري",
       "عشب بحري كبير",
@@ -127207,7 +127207,7 @@
       "حانة رمل",
       "كهف تحت الماء",
       "تكوين صخري",
-      "تيار كهربائي",
+      "تيار مائي",
       "أنبوب تنفس"
     ]
   },
@@ -148779,5 +148779,86 @@
     "field": "exampleUsage",
     "before": "The slice was used during the activity.",
     "after": "Nadia will slice the model before starting the print."
+  },
+  "community-center/coach/arabicTranslation": {
+    "unit": "community-center",
+    "id": "coach",
+    "field": "arabicTranslation",
+    "before": "حافلة سفر",
+    "after": "مدرّب رياضي"
+  },
+  "coral-reef/current/arabicTranslation": {
+    "unit": "coral-reef",
+    "id": "current",
+    "field": "arabicTranslation",
+    "before": "تيار كهربائي",
+    "after": "تيار مائي"
+  },
+  "river/current/arabicTranslation": {
+    "unit": "river",
+    "id": "current",
+    "field": "arabicTranslation",
+    "before": "تيار كهربائي",
+    "after": "تيار مائي"
+  },
+  "seasons-weather/spring/arabicTranslation": {
+    "unit": "seasons-weather",
+    "id": "spring",
+    "field": "arabicTranslation",
+    "before": "نابض",
+    "after": "فصل الربيع"
+  },
+  "gym/fan/definition": {
+    "unit": "gym",
+    "id": "fan",
+    "field": "definition",
+    "before": "An enthusiastic devotee of sports.",
+    "after": "A device with rotating blades that moves air to cool or ventilate a room."
+  },
+  "gym/fan/exampleUsage": {
+    "unit": "gym",
+    "id": "fan",
+    "field": "exampleUsage",
+    "before": null,
+    "after": "The fan keeps air moving in the gym."
+  },
+  "community-center/community-center-4/targetWordsArabic": {
+    "unit": "community-center",
+    "id": "community-center-4",
+    "field": "targetWordsArabic",
+    "before": [
+      "جهاز عرض",
+      "سبورة بيضاء",
+      "ميكروفون",
+      "مكبر صوت الإعلانات",
+      "ساعة جدارية",
+      "مدرب",
+      "منسق",
+      "متطوع",
+      "عضو",
+      "طفل",
+      "كبير السن",
+      "منقذ سباحة",
+      "حافلة سفر",
+      "موظف استقبال",
+      "عامل نظافة"
+    ],
+    "after": [
+      "جهاز عرض",
+      "سبورة بيضاء",
+      "ميكروفون",
+      "مكبر صوت الإعلانات",
+      "ساعة جدارية",
+      "مدرب",
+      "منسق",
+      "متطوع",
+      "عضو",
+      "طفل",
+      "كبير السن",
+      "منقذ سباحة",
+      "مدرّب رياضي",
+      "موظف استقبال",
+      "عامل نظافة"
+    ]
   }
 }

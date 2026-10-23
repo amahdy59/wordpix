@@ -36,6 +36,73 @@ beforeEach(async () => {
 });
 
 describe("account sync queue", () => {
+  it("uploads specialist checkpoints with their stable operation ID", async () => {
+    const db = (await getDB())!;
+    await db.put("sync_metadata", { ownerId: "alice" }, "account");
+    const payload = {
+      track: "conversation" as const,
+      lessonId: "unit-01",
+      state: {
+        status: "in-progress" as const,
+        currentStage: 0,
+        completedStages: ["warmup" as const],
+        notes: "My reflection",
+        updatedAt: "2026-10-23T10:00:00Z",
+      },
+    };
+    await queueMutation("specialist_progress", payload);
+    const [operation] = await db.getAll("mutation_queue");
+    mocks.rpc.mockResolvedValue({ data: payload.state, error: null });
+    await syncQueue();
+    expect(mocks.rpc).toHaveBeenCalledWith("save_specialist_progress", {
+      operation_id: operation.id,
+      expected_user: "alice",
+      track_name: "conversation",
+      lesson_id: "unit-01",
+      progress_state: payload.state,
+    });
+    expect(await db.count("mutation_queue")).toBe(0);
+  });
+  it("keeps specialist data queued with a visible setup failure until the backend is ready", async () => {
+    const db = (await getDB())!;
+    await db.put("sync_metadata", { ownerId: "alice" }, "account");
+    await queueMutation("specialist_progress", {
+      track: "business",
+      lessonId: "unit-01",
+      state: {
+        status: "in-progress",
+        currentStage: 0,
+        completedStages: [],
+        updatedAt: "2026-10-23T10:00:00Z",
+      },
+    });
+    mocks.rpc.mockResolvedValueOnce({ data: null, error: { code: "PGRST202" } });
+    await syncQueue();
+    expect((await db.getAll("mutation_queue"))[0]).toMatchObject({
+      status: "failed",
+      lastErrorCategory: "backend_required",
+    });
+    mocks.rpc.mockResolvedValue({ data: {}, error: null });
+    await retryFailedSyncOperations();
+    expect(await db.count("mutation_queue")).toBe(0);
+  });
+  it("safely retries a previously quarantined accessibility payload repaired by the shared schema", async () => {
+    const db = (await getDB())!;
+    await db.put("sync_metadata", { ownerId: "alice" }, "account");
+    await queueMutation("update_accessibility", {
+      ...INITIAL_LEARNER_STATE.accessibility,
+      autoPlayAudio: false,
+    });
+    const [operation] = await db.getAll("mutation_queue");
+    await db.put("mutation_queue", {
+      ...operation,
+      status: "failed",
+      lastErrorCategory: "validation",
+    });
+    await syncQueue();
+    expect(mocks.write).toHaveBeenCalledOnce();
+    expect(await db.count("mutation_queue")).toBe(0);
+  });
   it("completes writes across network waits and serializes overlapping flushes", async () => {
     const db = (await getDB())!;
     await db.put("sync_metadata", { ownerId: "alice" }, "account");
@@ -180,7 +247,10 @@ describe("guest migration", () => {
     expect((await db.get("learner_state", LEARNER_STATE_KEY))?.learnerProgress.xp).toBe(120);
     expect(await db.count("mutation_queue")).toBe(0);
     await migrateGuestToAccount("alice");
-    expect(mocks.rpc).toHaveBeenCalledTimes(2);
+    expect(mocks.rpc).toHaveBeenCalledTimes(3);
+    expect(mocks.rpc).toHaveBeenLastCalledWith("get_specialist_progress", {
+      expected_user: "alice",
+    });
   });
   it("preserves progress earned while the migration request is in flight", async () => {
     const db = (await getDB())!;

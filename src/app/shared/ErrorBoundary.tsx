@@ -35,14 +35,9 @@ export class ErrorBoundary extends Component<Props, State> {
     window.location.reload();
   };
 
-  private handleClearAndReload = (): void => {
+  private handleGoHome = (): void => {
     try {
       localStorage.removeItem("wordpix:learner-state:v4");
-      localStorage.removeItem("wordpix:learner:v2");
-      sessionStorage.clear();
-      if (typeof indexedDB !== "undefined") {
-        indexedDB.deleteDatabase("wordpix_offline_db");
-      }
       window.location.hash = "#/home";
     } catch {
       // ignore
@@ -108,11 +103,11 @@ export class ErrorBoundary extends Component<Props, State> {
 
               <button
                 type="button"
-                onClick={this.handleClearAndReload}
+                onClick={this.handleGoHome}
                 className="bg-secondary text-foreground font-sans font-medium rounded-xl px-6 py-2.5 min-h-[44px]
-                  flex items-center justify-center gap-2 w-full text-xs hover:bg-muted transition-colors"
+                  flex items-center justify-center gap-2 w-full text-xs hover:bg-muted transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
-                Reset App &amp; Go Home
+                Go Home · العودة للرئيسية
               </button>
             </div>
           </div>

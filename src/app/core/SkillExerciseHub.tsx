@@ -21,7 +21,6 @@ import { useAccessibility, formatNumber } from "../shared/useAccessibilityPrefer
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
 import { useProgress } from "../data/progress";
-import { REVIEW_GROUP_ID } from "../data/courseCatalog";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
 import { Button, FilterChip, PageContainer, PageHeader } from "../shared";
 import { getDuePronunciationReviews } from "../learning/foundations/pronunciationProgress";
@@ -32,6 +31,7 @@ interface Props {
 }
 
 import { getReviewSchedule } from "../review/reviewSchedule";
+import { reviewSessionAction } from "../review/startReview";
 
 const DEFAULT_REVIEW_SESSION_SIZE = 10;
 
@@ -99,15 +99,8 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
   }, [memoryItems, t]);
 
   const startReviewSession = () => {
-    const queue = schedule.due.slice(0, sessionSize).map((item) => item.wordId);
-    if (queue.length === 0) return;
-
-    dispatch({
-      type: "START_LESSON",
-      lessonId: REVIEW_GROUP_ID,
-      mode: "SMART_REVIEW",
-      wordQueue: queue,
-    });
+    const action = reviewSessionAction(schedule.due, sessionSize);
+    if (action) dispatch(action);
   };
 
   // 2. Multimodal Skill Categories & Drills

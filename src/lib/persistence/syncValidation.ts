@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { accessibilitySchema } from "../../app/shared/accessibilitySchema";
+import { specialistMutationSchema, specialistSnapshotSchema } from "./specialistProgress";
 import type { LearnerStateSchema } from "../../app/context/LearnerContext";
 import type { SyncOperation } from "./db";
 
@@ -14,22 +16,6 @@ const preferencesSchema = z
     goal: z.enum(["everyday", "travel", "work", "school", "conversation", "kids"]),
     theme: z.enum(["system", "light", "dark"]),
     expression: z.enum(["child", "adult"]),
-  })
-  .strict();
-
-const accessibilitySchema = z
-  .object({
-    textSize: z.enum(["standard", "large", "xlarge"]),
-    highContrast: z.boolean(),
-    speechRate: z.number().min(0.5).max(2).finite(),
-    numeralSystem: z.enum(["western", "arabic"]),
-    includeSpeaking: z.boolean(),
-    includeListening: z.boolean(),
-    includePronunciation: z.boolean().default(true),
-    timedExercises: z.boolean(),
-    autoAdvance: z.boolean(),
-    spokenFeedback: z.boolean(),
-    reduceMotion: z.boolean(),
   })
   .strict();
 
@@ -66,6 +52,7 @@ const skillMasterySchema = z
 const wordLearningStateSchema = z
   .object({
     wordId: z.string().min(1).max(200),
+    unitId: z.string().min(1).max(200).optional(),
     exposures: nonNegativeInteger,
     correctRecalls: nonNegativeInteger,
     incorrectRecalls: nonNegativeInteger,
@@ -103,7 +90,7 @@ const sessionRecordSchema = z
   })
   .strict();
 
-const wordMemorySchema = z.record(z.string().min(1).max(200), wordLearningStateSchema);
+const wordMemorySchema = z.record(z.string().min(1).max(500), wordLearningStateSchema);
 
 const operationMetadataSchema = z.object({
   id: z.string().min(1).max(200),
@@ -114,11 +101,15 @@ const operationMetadataSchema = z.object({
   payloadVersion: z.literal(1).optional(),
   lastSyncAttemptAt: z.string().datetime({ offset: true }).optional(),
   lastErrorCategory: z
-    .enum(["auth_required", "validation", "authorization", "transient"])
+    .enum(["auth_required", "validation", "authorization", "transient", "backend_required"])
     .optional(),
 });
 
 const syncOperationSchema = z.discriminatedUnion("type", [
+  operationMetadataSchema.extend({
+    type: z.literal("specialist_progress"),
+    payload: specialistMutationSchema,
+  }),
   operationMetadataSchema.extend({
     type: z.literal("update_preferences"),
     payload: preferencesSchema,
@@ -153,6 +144,7 @@ const migrationResponseSchema = z
     learnerProgress: learnerProgressSchema,
     wordMemory: wordMemorySchema,
     sessionHistory: z.array(sessionRecordSchema).max(100_000),
+    ...specialistSnapshotSchema.shape,
   })
   .passthrough();
 
@@ -165,7 +157,13 @@ export class SyncPayloadValidationError extends Error {
 
 export type ValidatedMigrationResponse = Pick<
   LearnerStateSchema,
-  "learnerProgress" | "wordMemory" | "sessionHistory"
+  | "learnerProgress"
+  | "wordMemory"
+  | "sessionHistory"
+  | "pronunciationProgress"
+  | "hadithProgress"
+  | "conversationProgress"
+  | "businessProgress"
 >;
 
 export function validateSyncOperation(operation: SyncOperation): SyncOperation {

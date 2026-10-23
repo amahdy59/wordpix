@@ -15,6 +15,7 @@ import { COURSE_UNITS, LEARNING_PATH_UNIT_IDS, type CourseUnit } from "../data/c
 import { CEFR_STAGES } from "../data/curriculumSequence";
 import { getUnitCurriculumDesign } from "../learning/curriculumModel";
 import { recommendPathUnit } from "../learning/recommendPathUnit";
+import { getWordMemory } from "../learning/wordIdentity";
 import { useProgress } from "../data/progress";
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
@@ -44,13 +45,15 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
       .filter((unit): unit is CourseUnit => Boolean(unit))
       .map((unit) => {
         const familiar = unit.wordIds.filter((wordId) =>
-          ["familiar", "strong"].includes(progress.wordMemory[wordId]?.mastery ?? "new")
+          ["familiar", "strong"].includes(
+            getWordMemory(progress.wordMemory, wordId, unit.id)?.mastery ?? "new"
+          )
         ).length;
         const mastered = unit.wordIds.filter(
-          (wordId) => (progress.wordMastery[wordId] ?? 0) >= 3
+          (wordId) => getWordMemory(progress.wordMemory, wordId, unit.id)?.mastery === "strong"
         ).length;
         const due = unit.wordIds.filter((wordId) => {
-          const nextReviewAt = progress.wordMemory[wordId]?.nextReviewAt;
+          const nextReviewAt = getWordMemory(progress.wordMemory, wordId, unit.id)?.nextReviewAt;
           return Boolean(nextReviewAt && nextReviewAt <= now);
         }).length;
         return {
@@ -61,7 +64,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           percent: unit.wordIds.length ? Math.round((mastered / unit.wordIds.length) * 100) : 0,
         };
       });
-  }, [progress.wordMastery, progress.wordMemory]);
+  }, [progress.wordMemory]);
 
   const recommendedUnit = recommendPathUnit(
     pathUnits.map((item) => item.unit),

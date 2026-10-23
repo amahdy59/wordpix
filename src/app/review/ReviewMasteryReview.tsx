@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { REVIEW_GROUP_ID, resolveUnitIdForWord, type VocabularyItem } from "../data/courseCatalog";
+import { resolveUnitIdForWord, type VocabularyItem } from "../data/courseCatalog";
 import { getWords, loadUnitVocabulary } from "../data/vocabulary";
 import { useI18n } from "../context/I18nContext";
 
@@ -21,6 +21,8 @@ import { WordImage } from "../shared/WordImage";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
 import { getReviewSchedule } from "./reviewSchedule";
 import { useReviewDate } from "../shared/useReviewDate";
+import { reviewSessionAction } from "./startReview";
+import { wordMemoryKey } from "../learning/wordIdentity";
 
 /** Words per review session. */
 const REVIEW_SESSION_SIZE = 5;
@@ -43,13 +45,21 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     () => getReviewSchedule(progress.wordMemory, reviewDate),
     [progress.wordMemory, reviewDate]
   );
-  const eligibleIds = useMemo(() => new Set(schedule.due.map((word) => word.wordId)), [schedule]);
+  const eligibleIds = useMemo(
+    () =>
+      new Set(
+        schedule.due.map((word) =>
+          word.unitId ? wordMemoryKey(word.unitId, word.wordId) : word.wordId
+        )
+      ),
+    [schedule]
+  );
 
   useEffect(() => {
     const memoryWordIds = Object.keys(progress.wordMemory);
     const unitIds = new Set<string>();
     for (const wId of memoryWordIds) {
-      const uId = resolveUnitIdForWord(wId);
+      const uId = progress.wordMemory[wId].unitId ?? resolveUnitIdForWord(wId);
       if (uId) unitIds.add(uId);
     }
     if (unitIds.size === 0) return;
@@ -74,8 +84,8 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     void loadedCount;
     const entries = Object.entries(progress.wordMemory);
     if (entries.length === 0) return [];
-    return entries.flatMap(([wordId, entry]) => {
-      const word = getWords([wordId])[0];
+    return entries.flatMap(([, entry]) => {
+      const word = getWords([entry.wordId], entry.unitId)[0];
       if (!word) return [];
       const nextDate = entry.nextReviewAt
         ? getLocalDateString(new Date(entry.nextReviewAt))
@@ -88,21 +98,39 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   const overdueList = useMemo(
     () =>
       memoryItems
-        .filter((item) => item.daysDiff < 0 && eligibleIds.has(item.word.id))
+        .filter(
+          (item) =>
+            item.daysDiff < 0 &&
+            eligibleIds.has(
+              item.entry.unitId ? wordMemoryKey(item.entry.unitId, item.word.id) : item.word.id
+            )
+        )
         .sort((a, b) => a.daysDiff - b.daysDiff)
         .map((item) => ({ ...item, daysDiff: Math.abs(item.daysDiff) })),
     [memoryItems, eligibleIds]
   );
 
   const dueTodayList = useMemo(
-    () => memoryItems.filter((item) => item.daysDiff === 0 && eligibleIds.has(item.word.id)),
+    () =>
+      memoryItems.filter(
+        (item) =>
+          item.daysDiff === 0 &&
+          eligibleIds.has(
+            item.entry.unitId ? wordMemoryKey(item.entry.unitId, item.word.id) : item.word.id
+          )
+      ),
     [memoryItems, eligibleIds]
   );
 
   const upcomingList = useMemo(
     () =>
       memoryItems
-        .filter((item) => !eligibleIds.has(item.word.id))
+        .filter(
+          (item) =>
+            !eligibleIds.has(
+              item.entry.unitId ? wordMemoryKey(item.entry.unitId, item.word.id) : item.word.id
+            )
+        )
         .sort((a, b) => a.daysDiff - b.daysDiff),
     [memoryItems, eligibleIds]
   );
@@ -110,19 +138,8 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   const totalDue = overdueList.length + dueTodayList.length;
 
   const startReviewSession = () => {
-    const available = new Set(memoryItems.map((item) => item.word.id));
-    const queue = schedule.due
-      .filter((item) => available.has(item.wordId))
-      .slice(0, REVIEW_SESSION_SIZE)
-      .map((item) => item.wordId);
-    if (queue.length === 0) return;
-
-    dispatch({
-      type: "START_LESSON",
-      lessonId: REVIEW_GROUP_ID,
-      mode: "SMART_REVIEW",
-      wordQueue: queue,
-    });
+    const action = reviewSessionAction(schedule.due, REVIEW_SESSION_SIZE);
+    if (action) dispatch(action);
   };
 
   const startReviewOrPractice = () => {
@@ -244,9 +261,9 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
               <span className="hidden md:block ms-auto text-xs">{note}</span>
             </div>
             <div id={`review-${key}`} className="grid grid-cols-1 md:grid-cols-3 gap-3">
-              {items.map(({ word, daysDiff }, index) => (
+              {items.map(({ word, daysDiff, entry }, index) => (
                 <button
-                  key={word.id}
+                  key={wordMemoryKey(entry.unitId ?? word.topic, word.id)}
                   type="button"
                   onClick={() => setSelectedWord(word)}
                   className={`${!expanded[key] && index > 0 ? (index < 3 ? "hidden md:flex" : "hidden") : "flex"} min-w-0 text-start items-center gap-3 bg-wp-card border border-border hover:border-primary/40 rounded-xl p-2 shadow-wp-xs transition-all cursor-pointer ${focus}`}
@@ -314,6 +331,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
       </section>
       <WordInspectorModal
         word={selectedWord}
+        unitId={selectedWord?.topic}
         isOpen={selectedWord !== null}
         onClose={() => setSelectedWord(null)}
       />

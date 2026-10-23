@@ -32,6 +32,7 @@ import { summarizeSkillMastery, type MasteryDimension } from "../../features/gam
 
 import { getReviewSchedule } from "../review/reviewSchedule";
 import { useReviewDate } from "../shared/useReviewDate";
+import { LegacyProgressNotice } from "../shared/LegacyProgressNotice";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -299,6 +300,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
             </motion.div>
           </Surface>
 
+          <LegacyProgressNotice />
           {/* Stats grid */}
           <motion.section
             variants={staggerItem}

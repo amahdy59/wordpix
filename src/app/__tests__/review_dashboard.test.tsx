@@ -12,10 +12,6 @@ vi.mock("../data/vocabulary", () => ({
   getWords: (ids: string[]) => ids.map((id) => ({ id, label: id, img: "test.webp" })),
   loadUnitVocabulary: async () => [],
 }));
-vi.mock("../data/courseCatalog", () => ({
-  REVIEW_GROUP_ID: "review",
-  resolveUnitIdForWord: () => undefined,
-}));
 vi.mock("../shared/WordImage", () => ({ WordImage: () => <span /> }));
 vi.mock("../shared/WordInspectorModal", () => ({
   WordInspectorModal: ({ word }: { word: { label: string } | null }) =>
@@ -32,18 +28,22 @@ beforeEach(() => {
 describe("review dashboard", () => {
   it("starts only due words, oldest overdue first, without upcoming padding", async () => {
     fixture.memory = {
-      today: memory("today", 0),
-      future: memory("future", 5),
-      overdue: memory("overdue", -3),
+      two: memory("two", 0),
+      three: memory("three", 5),
+      one: memory("one", -3),
     };
     const dispatch = vi.fn();
     render(<ReviewMasteryReview dispatch={dispatch} />);
     await userEvent.click(screen.getByRole("button", { name: "Review 2 now" }));
     expect(dispatch).toHaveBeenCalledWith({
       type: "START_LESSON",
-      lessonId: "review",
+      lessonId: "daily-review",
       mode: "SMART_REVIEW",
-      wordQueue: ["overdue", "today"],
+      wordQueue: ["one", "two"],
+      reviewItems: [
+        { wordId: "one", unitId: "numbers-counting" },
+        { wordId: "two", unitId: "numbers-counting" },
+      ],
     });
   });
   it("offers optional practice without starting future reviews when the due queue is empty", async () => {

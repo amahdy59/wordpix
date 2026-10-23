@@ -223,7 +223,7 @@ export function WordDetailsContent({
                   <button
                     type="button"
                     onClick={() => speak(sentence.en)}
-                    aria-label={`Listen to example ${idx + 1}`}
+                    aria-label={t("wordDetails.listenExample", { number: idx + 1 })}
                     className="flex items-center gap-1 text-xs font-sans font-bold text-primary hover:underline min-h-[44px] px-2"
                   >
                     <Volume2 className="size-3.5" aria-hidden="true" />

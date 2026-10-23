@@ -9,6 +9,7 @@ import { Select } from "../shared/Select";
 import { StudyShell } from "./study/StudyShell";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/courseCatalog";
 import { loadLearningMaterials } from "./registry";
+import { loadUnitVocabulary } from "../data/vocabulary";
 import { BLANK_TOKEN, type PhraseKind, type UnitLearningMaterials } from "./types";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { InteractiveText } from "./study/InteractiveText";
@@ -55,8 +56,8 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   // RouterView keys this screen by unit id, so a different unit remounts with fresh state.
   useEffect(() => {
     let cancelled = false;
-    loadLearningMaterials(unit.id)
-      .then((loaded) => {
+    Promise.all([loadLearningMaterials(unit.id), loadUnitVocabulary(unit.id)])
+      .then(([loaded]) => {
         if (cancelled) return;
         if (!loaded) {
           setStatus("empty");

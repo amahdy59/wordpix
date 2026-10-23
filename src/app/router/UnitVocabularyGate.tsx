@@ -1,4 +1,6 @@
-import { useEffect, useReducer, type ReactNode } from "react";
+import { useEffect, useReducer, useState, type ReactNode } from "react";
+import { useI18n } from "../context/I18nContext";
+import { Button } from "../shared/Button";
 import type { Screen } from "../types";
 import { DEFAULT_UNIT_ID, resolveUnitForLesson } from "../data/courseCatalog";
 import { isUnitLoaded, loadUnitVocabulary } from "../data/vocabulary";
@@ -47,6 +49,7 @@ export function unitIdForScreen(screen: Screen): string | null {
 interface Props {
   screen: Screen;
   fallback: ReactNode;
+  onBackToPath: () => void;
   /**
    * Rendered only once the unit is ready — a function, not an element.
    *
@@ -58,29 +61,67 @@ interface Props {
   children: () => ReactNode;
 }
 
-export function UnitVocabularyGate({ screen, fallback, children }: Props) {
+export function UnitVocabularyGate({ screen, fallback, onBackToPath, children }: Props) {
+  const { t } = useI18n();
   const unitId = unitIdForScreen(screen);
+  const unitIds =
+    "reviewItems" in screen && screen.reviewItems
+      ? [...new Set(screen.reviewItems.map((item) => item.unitId))]
+      : unitId
+        ? [unitId]
+        : [];
+  const unitKey = unitIds.join("|");
   const [, onLoaded] = useReducer((n: number) => n + 1, 0);
+  const [retry, retryLoad] = useReducer((n: number) => n + 1, 0);
+  const [failedKey, setFailedKey] = useState<string | null>(null);
 
   // Read from the cache during render rather than mirrored into state. A unit
   // already in memory is ready on the first frame, so revisiting one never
   // flashes a spinner — and there is no second copy of this fact to fall out
   // of step with the cache.
-  const ready = unitId === null || isUnitLoaded(unitId);
+  const ready = unitIds.every(isUnitLoaded);
 
   useEffect(() => {
-    if (ready || unitId === null) return undefined;
+    if (ready) return undefined;
     let cancelled = false;
-    void loadUnitVocabulary(unitId).then(() => {
-      // Navigating away mid-fetch must not re-render a screen that has already
-      // moved on; the words stay cached either way, so the next visit is
-      // instant regardless.
-      if (!cancelled) onLoaded();
-    });
+    void Promise.all(unitKey.split("|").map((id) => loadUnitVocabulary(id)))
+      .then((words) => {
+        if (words.some((items) => items.length === 0)) throw new Error("Vocabulary unavailable");
+        // Navigating away mid-fetch must not re-render a screen that has already
+        // moved on; the words stay cached either way, so the next visit is
+        // instant regardless.
+        if (!cancelled) onLoaded();
+      })
+      .catch(() => {
+        if (!cancelled) setFailedKey(unitKey);
+      });
     return () => {
       cancelled = true;
     };
-  }, [ready, unitId]);
+  }, [ready, unitKey, retry]);
+
+  if (!ready && failedKey === unitKey)
+    return (
+      <div
+        role="alert"
+        className="space-y-4 rounded-2xl border border-border bg-card p-5 text-foreground"
+      >
+        <p>{t("reliability.contentLoadFailed")}</p>
+        <div className="flex flex-wrap gap-3">
+          <Button
+            onClick={() => {
+              setFailedKey(null);
+              retryLoad();
+            }}
+          >
+            {t("reliability.retry")}
+          </Button>
+          <Button variant="outline" onClick={onBackToPath}>
+            {t("router.backToPath")}
+          </Button>
+        </div>
+      </div>
+    );
 
   return ready ? <>{children()}</> : <>{fallback}</>;
 }

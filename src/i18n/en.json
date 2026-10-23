@@ -99,7 +99,7 @@
     "step2Config": "Step 3 of 3: Learning Goal Configuration",
     "step3Config": "Step 3 of 3: Learning Goal Configuration",
     "yourGoal": "Your Goal",
-    "step1": "Step 1 of 3",
+    "step1": "Step 1 of 2",
     "step2": "Step 2 of 3",
     "step3": "Step 3 of 3",
     "enterpriseProven": "Enterprise & Corporate Proven",
@@ -172,7 +172,6 @@
     "featureReviews": "Adaptive memory reviews",
     "startWithWorld": "Start with {world} ({count} words)",
     "startWithFoundations": "Start with the guided foundations path, then explore picture topics",
-    "step1": "Step 1 of 2",
     "welcomeWordPix": "Welcome to WordPix",
     "masterFaster": "Master Vocabulary Faster",
     "connectWords": "Learn words through pictures. Practise listening, speaking, spelling, and sentence building.",
@@ -534,7 +533,7 @@
     "recallAccuracyDesc": "Recall accuracy in practice",
     "dueForReviewDesc": "Scheduled to strengthen recall",
     "activeStreakDesc": "Consecutive study days",
-    "signedInStatus": "Signed in · Cloud sync active",
+    "signedInStatus": "Signed in · Check sync status for pending changes",
     "guestStorageStatus": "Stored on this device · Sign in to back up and sync"
   },
   "wordDetails": {
@@ -560,7 +559,8 @@
     "posVerb": "Verb",
     "posAdjective": "Adjective",
     "posAdverb": "Adverb",
-    "phonetic": "Phonetic transcription"
+    "phonetic": "Phonetic transcription",
+    "listenExample": "Listen to example {number}"
   },
   "practice": {
     "title": "Practice Session",
@@ -2652,5 +2652,17 @@
     "offlineImages": "Cached images: {cached} of {total}; not included in this text download.",
     "offlineAudio": "Audio: not included; availability depends on previously played recordings.",
     "notSure": "I'm not sure — continue"
+  },
+  "reliability": {
+    "contentLoadFailed": "This lesson could not load. Check your connection and retry. Your progress is safe.",
+    "retry": "Retry",
+    "export": "Download progress backup",
+    "saveFailed": "Your latest changes could not be saved. Keep this tab open and retry, or download a backup.",
+    "saving": "Saving progress",
+    "failed": "Progress not saved",
+    "savingDescription": "Saving your work on this device.",
+    "failedDescription": "Keep this tab open and retry saving your work.",
+    "legacy": "Historical records for {count} words are preserved. Practise each meaning separately to establish its progress.",
+    "signedIn": "Signed in · Check sync status for pending changes"
   }
 }

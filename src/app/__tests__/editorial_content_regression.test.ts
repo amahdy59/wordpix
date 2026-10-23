@@ -6,6 +6,25 @@ import { applySceneLearningContext } from "../data/sceneLearningContext.mjs";
 import readingRepairs from "../../../scripts/reading_editorial_repairs.json";
 
 describe("editorial content regression", () => {
+  it("keeps reviewed polysemous words aligned with their unit's meaning and Arabic", async () => {
+    for (const [unit, id, arabic] of [
+      ["community-center", "coach", "مدرّب رياضي"],
+      ["coral-reef", "current", "تيار مائي"],
+      ["river", "current", "تيار مائي"],
+      ["seasons-weather", "spring", "فصل الربيع"],
+    ] as const) {
+      const word = (await loadUnitVocabulary(unit)).find((item) => item.id === id);
+      expect(word?.arabicTranslation).toBe(arabic);
+      const lessons = (await loadUnitUsageForEditorial(unit))!;
+      for (const lesson of lessons) {
+        const index = lesson.targetWordsEnglish.findIndex((label) => label.toLowerCase() === id);
+        if (index >= 0) expect(lesson.targetWordsArabic[index]).toBe(arabic);
+      }
+    }
+    const fan = (await loadUnitVocabulary("gym")).find((item) => item.id === "fan");
+    expect(fan?.description).toMatch(/rotating blades.*moves air/);
+    expect(fan?.exampleUsage).toBe("The fan keeps air moving in the gym.");
+  });
   it("supplies actual Arabic glosses throughout the curriculum", async () => {
     for (const unit of LEARNING_PATH_UNIT_IDS) {
       const words = await loadUnitVocabulary(unit);

@@ -1,4 +1,5 @@
 import type { VocabularyItem } from "./lessons";
+import { areUnitCatalogDetailsLoaded, loadUnitCatalogDetails } from "./courseCatalog";
 import { VOCABULARY as BEDROOM_VOCABULARY } from "./units/bedroom";
 import {
   BEDROOM_BILINGUAL_CONTENT,
@@ -283,15 +284,22 @@ function applyBilingualContent(
 register("bedroom", applyBilingualContent(BEDROOM_VOCABULARY, BEDROOM_BILINGUAL_CONTENT));
 
 export function isUnitLoaded(unitId: string): boolean {
-  return byUnit.has(unitId);
+  return byUnit.has(unitId) && areUnitCatalogDetailsLoaded(unitId);
 }
 
 export async function loadUnitVocabulary(unitId: string): Promise<VocabularyItem[]> {
   const loaded = byUnit.get(unitId);
-  if (loaded) return loaded;
+  if (loaded) {
+    await loadUnitCatalogDetails(unitId);
+    return loaded;
+  }
   const loader = LOADERS[unitId];
   if (!loader) return [];
-  const [words, bilingualContent] = await Promise.all([loader(), loadBilingualUnit(unitId)]);
+  const [words, bilingualContent] = await Promise.all([
+    loader(),
+    loadBilingualUnit(unitId),
+    loadUnitCatalogDetails(unitId),
+  ]);
   return register(unitId, applyBilingualContent(words, bilingualContent));
 }
 
@@ -316,7 +324,7 @@ export function findLoadedWord(wordId: string): VocabularyItem | undefined {
 export function getWords(wordIds: string[], unitId?: string): VocabularyItem[] {
   const preferred = unitId ? unitIndex.get(unitId) : undefined;
   return wordIds
-    .map((id) => preferred?.get(id) ?? byId.get(id))
+    .map((id) => (unitId ? preferred?.get(id) : byId.get(id)))
     .filter((item): item is VocabularyItem => Boolean(item));
 }
 

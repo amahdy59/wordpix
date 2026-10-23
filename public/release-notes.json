@@ -1,12 +1,78 @@
 {
-  "version": "0.1.80",
+  "version": "0.1.82",
   "notes": [
-    "Modernized 4-choice exercises to balanced 2×2 square grids across desktop, tablet, and mobile; relocated progression controls into the top header dock; and enhanced pronunciation audio streaming directly from Cloudflare R2 with speech synthesis fallback."
+    "Saved links to unavailable lessons and inconsistent review sessions now recover to Home while preserving learning progress.",
+    "If lesson content cannot download, you can retry or return to the learning path."
   ],
   "notesAr": [
-    "تحديث تمارين الخيارات الرباعية لتعتمد شبكة مربعة متوازنة 2×2 عبر جميع الأجهزة؛ ونقل أزرار التقدم إلى الشريط العلوي؛ وتحسين بث ملفات صوت النطق مباشرة من شبكة Cloudflare R2 مع توفير دعم القراءة الآلية كخيار بديل موثوق."
+    "عند استعادة درس لم يعد متاحًا أو جلسة مراجعة غير متسقة، يعود التطبيق إلى الرئيسية مع الحفاظ على تقدم التعلّم.",
+    "عند تعذّر تنزيل محتوى الدرس، يمكنك إعادة المحاولة أو العودة إلى مسار التعلّم."
   ],
   "releases": [
+    {
+      "id": "0.1.82",
+      "version": "0.1.82",
+      "date": "2026-10-23",
+      "title": {
+        "en": "Safer lesson recovery",
+        "ar": "استعادة آمنة للدروس"
+      },
+      "changes": [
+        {
+          "id": "validate-saved-lesson-identities",
+          "category": "fixed",
+          "en": "Saved links to unavailable lessons and inconsistent review sessions now recover to Home while preserving learning progress.",
+          "ar": "عند استعادة درس لم يعد متاحًا أو جلسة مراجعة غير متسقة، يعود التطبيق إلى الرئيسية مع الحفاظ على تقدم التعلّم."
+        },
+        {
+          "id": "leave-unavailable-lesson",
+          "category": "improved",
+          "en": "If lesson content cannot download, you can retry or return to the learning path.",
+          "ar": "عند تعذّر تنزيل محتوى الدرس، يمكنك إعادة المحاولة أو العودة إلى مسار التعلّم."
+        }
+      ]
+    },
+    {
+      "id": "0.1.81",
+      "version": "0.1.81",
+      "date": "2026-10-23",
+      "title": {
+        "en": "Reliable reviews, safer progress, and clearer references",
+        "ar": "مراجعات موثوقة وتقدم محفوظ ومراجع أوضح"
+      },
+      "changes": [
+        {
+          "id": "review-progress-integrity",
+          "category": "fixed",
+          "en": "Daily reviews now load the selected words before practice, preserve each word’s unit and meaning, and award completion credit only after the words have been assessed.",
+          "ar": "تُحمّل المراجعات اليومية الكلمات المحددة قبل التدريب، وتحفظ تقدم كل كلمة بحسب وحدتها ومعناها، ولا تمنح نقاط الإكمال إلا بعد تقييم الكلمات."
+        },
+        {
+          "id": "durable-progress-recovery",
+          "category": "fixed",
+          "en": "Progress and pending sync updates are saved together. Failed saves offer retry and backup controls, and crash recovery returns Home without deleting learner history.",
+          "ar": "يُحفظ التقدم مع تحديثات المزامنة المعلّقة. وعند تعذّر الحفظ تتوفر إعادة المحاولة والنسخ الاحتياطي، وتعود معالجة الأعطال إلى الرئيسية دون حذف سجل التعلّم."
+        },
+        {
+          "id": "specialist-sync-contract",
+          "category": "improved",
+          "en": "Specialist course checkpoints are prepared for account sync, including stage progress and reflections. Cloud support requires the matching server update; pending work remains saved on this device.",
+          "ar": "أُضيف دعم مزامنة مراحل الدورات المتخصصة والتأملات مع الحساب. يتطلب الدعم السحابي تحديث الخادم المقابل، ويظل العمل المعلّق محفوظًا على الجهاز."
+        },
+        {
+          "id": "accessible-reference-improvements",
+          "category": "fixed",
+          "en": "Corrected unit-specific meanings of coach, water current, spring, and the gym fan; localized word-detail controls; and fixed Library filters so started topics appear as in progress.",
+          "ar": "تصحيح معاني المدرّب والتيار المائي وفصل الربيع ومروحة النادي بحسب السياق، وتعريب أدوات تفاصيل الكلمات، وإصلاح مرشحات المكتبة لتعرض الموضوعات التي بدأت دراستها ضمن التقدم الجاري."
+        },
+        {
+          "id": "leaner-curriculum-loading",
+          "category": "improved",
+          "en": "Lesson descriptions load with their unit to reduce the initial download. Historical records with an uncertain word meaning remain available as a backup in Profile.",
+          "ar": "تُحمّل أوصاف الدروس مع وحداتها لتقليل التنزيل الأولي. وتبقى السجلات السابقة التي لم يتحدد معنى كلمتها متاحة للنسخ الاحتياطي في الملف الشخصي."
+        }
+      ]
+    },
     {
       "id": "0.1.80",
       "version": "0.1.80",

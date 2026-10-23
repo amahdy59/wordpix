@@ -209,14 +209,18 @@ export function screenToHash(screen: Screen): { hash: string; title: string } {
     };
   }
   if (screen.id === "lesson") {
-    const world = resolveUnitForLesson(screen.lessonId);
+    const world =
+      COURSE_UNITS[screen.reviewItems?.[0]?.unitId ?? screen.unitId ?? ""] ??
+      resolveUnitForLesson(screen.lessonId);
     return {
       hash: `#/learn/${world.id}/step-${screen.step + 1}`,
       title: `WordPix — ${world.name} Lesson — Stage ${screen.step + 1}`,
     };
   }
   if (screen.id === "lesson-complete") {
-    const world = resolveUnitForLesson(screen.lessonId);
+    const world =
+      COURSE_UNITS[screen.reviewItems?.[0]?.unitId ?? screen.unitId ?? ""] ??
+      resolveUnitForLesson(screen.lessonId);
     return { hash: `#/learn/${world.id}/complete`, title: "WordPix — Session Complete" };
   }
   return { hash: "#/home", title: "WordPix" };

@@ -63,6 +63,7 @@ export function reducer(state: Screen, action: Action): Screen {
           unitId: state.unitId,
           wordQueue: state.wordQueue,
           attempts: state.attempts,
+          reviewItems: state.reviewItems,
         };
       }
       return state;
@@ -124,6 +125,7 @@ export function reducer(state: Screen, action: Action): Screen {
       totalSteps: action.totalSteps,
       attempts: [],
       startedAt: new Date().toISOString(),
+      reviewItems: action.reviewItems,
     };
   }
   if (action.type === "LESSON_SET_ITEM") {
@@ -164,6 +166,7 @@ export function reducer(state: Screen, action: Action): Screen {
         unitId: state.unitId,
         wordQueue: state.wordQueue,
         attempts: state.attempts,
+        reviewItems: state.reviewItems,
       };
     }
     return { ...state, step: state.step + 1, activeItemId: undefined };

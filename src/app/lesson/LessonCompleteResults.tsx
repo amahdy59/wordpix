@@ -16,8 +16,10 @@ import { useSound } from "../shared/useSound";
 import { useI18n } from "../../i18n";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { ASSESSMENT_PASS_PERCENT } from "./assessmentBlueprint";
+import { useLearnerSaveStatus } from "../shared/PersistenceStatus";
 
 interface Props {
+  reviewItems?: import("../learning/wordIdentity").ReviewWord[];
   sessionId?: string;
   attempts: AnswerAttempt[];
   lessonId?: string;
@@ -35,11 +37,13 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   mode = "NEW_LESSON",
   wordQueue = ["bed", "nightstand", "dresser", "wardrobe", "desk"],
   dispatch,
+  reviewItems,
 }: Props) {
   const { progress, recordSessionCompletion, recordUnitAssessmentCompletion } = useProgress();
   const { playLevelUp } = useSound();
   const { t } = useI18n();
   const reduceMotion = useReducedMotion();
+  const saveStatus = useLearnerSaveStatus();
 
   const group = resolveGroup(lessonId, wordQueue);
 
@@ -59,16 +63,49 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
     hasFullCoverage;
 
   useEffect(() => {
+    if (
+      wordQueue.length === 0 ||
+      attempts.length === 0 ||
+      (!isAssessment && !isPreLessonAssessment && !hasFullCoverage)
+    )
+      return;
     if (isAssessment) {
-      if (assessmentPassed) recordUnitAssessmentCompletion(true, wordQueue);
-      recordSessionCompletion(sessionId, attempts, wordQueue);
+      if (assessmentPassed)
+        recordUnitAssessmentCompletion(
+          true,
+          wordQueue,
+          unitId ?? resolveUnitForLesson(lessonId).id
+        );
+      recordSessionCompletion(
+        sessionId,
+        attempts,
+        wordQueue,
+        unitId ?? resolveUnitForLesson(lessonId).id,
+        reviewItems
+      );
     } else if (isPreLessonAssessment) {
       if (assessmentPassed) {
-        recordUnitAssessmentCompletion(true, wordQueue);
+        recordUnitAssessmentCompletion(
+          true,
+          wordQueue,
+          unitId ?? resolveUnitForLesson(lessonId).id
+        );
       }
-      recordSessionCompletion(sessionId, attempts, wordQueue);
+      recordSessionCompletion(
+        sessionId,
+        attempts,
+        wordQueue,
+        unitId ?? resolveUnitForLesson(lessonId).id,
+        reviewItems
+      );
     } else {
-      recordSessionCompletion(sessionId, attempts, wordQueue);
+      recordSessionCompletion(
+        sessionId,
+        attempts,
+        wordQueue,
+        unitId ?? resolveUnitForLesson(lessonId).id,
+        reviewItems
+      );
     }
 
     if ((isAssessment || isPreLessonAssessment) && !assessmentPassed) {
@@ -87,6 +124,9 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
     isPreLessonAssessment,
     assessmentPassed,
     unitId,
+    lessonId,
+    reviewItems,
+    hasFullCoverage,
   ]);
 
   // Read the credited amount back out of the ledger rather than recomputing it.
@@ -97,7 +137,9 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const xpBreakdown = sessionRecord?.xp;
   const xp = xpBreakdown?.total ?? 0;
 
-  const groupWords = getWords(wordQueue, resolveUnitForLesson(lessonId).id);
+  const groupWords = reviewItems
+    ? reviewItems.flatMap((item) => getWords([item.wordId], item.unitId))
+    : getWords(wordQueue, unitId ?? resolveUnitForLesson(lessonId).id);
   const nextGroup = getNextGroupChronological(lessonId);
 
   const { accessibility } = useAccessibility();
@@ -243,15 +285,23 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
               </div>
               <div className="text-start min-w-0">
                 <p className="font-sans text-xs font-bold text-foreground truncate">
-                  {t("lesson.progressSavedTitle")}
+                  {t(
+                    saveStatus === "saved"
+                      ? "lesson.progressSavedTitle"
+                      : `reliability.${saveStatus}`
+                  )}
                 </p>
                 <p className="font-sans text-[11px] text-muted-foreground truncate">
-                  {t("lesson.progressSavedDevice")}
+                  {t(
+                    saveStatus === "saved"
+                      ? "lesson.progressSavedDevice"
+                      : `reliability.${saveStatus}Description`
+                  )}
                 </p>
               </div>
             </div>
             <span className="font-sans text-[10px] font-black uppercase tracking-wider text-wp-green bg-wp-green-light px-2.5 py-1 rounded-full shrink-0">
-              {t("lesson.savedStatus")}
+              {t(saveStatus === "saved" ? "lesson.savedStatus" : `reliability.${saveStatus}`)}
             </span>
           </div>
 
