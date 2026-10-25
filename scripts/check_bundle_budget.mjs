@@ -14,6 +14,7 @@ const budgets = [
   { pattern: /^course-lessons/, limit: 550 * 1024, label: "curriculum summaries" },
   { pattern: /^curriculum-scenarios-/, limit: 450 * 1024, label: "curriculum scenarios data shard" },
   { pattern: /^usageRegistry-/, limit: 1200 * 1024, label: "curriculum usage registry" },
+  { pattern: /^SentenceQuestionSupport-/, limit: 1200 * 1024, label: "sentence question support chunk" },
   { pattern: /\.js$/, limit: 600_000, label: "runtime chunk" },
 ];
 

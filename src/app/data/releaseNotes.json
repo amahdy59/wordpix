@@ -1,14 +1,37 @@
 {
-  "version": "0.1.84",
+  "version": "0.1.85",
   "notes": [
-    "Added 1,000 reviewed, high-quality illustrations supporting exact practice sentences across curriculum units.",
-    "Expanded visual scenario and sentence coverage to reduce placeholder states in practice exercises."
+    "Added 2,036 reviewed, high-quality illustrations supporting exact practice sentences across curriculum units.",
+    "Expanded exact visual scenario and sentence coverage to 2,983 practice exercises."
   ],
   "notesAr": [
-    "أُضيفت 1,000 صورة توضيحية مُراجَعة وعالية الجودة لدعم جمل التدريب بدقة عبر وحدات المنهج.",
-    "توسيع التغطية البصرية للمشاهد والجمل التعليمية لتقليص حالات المشاهد المؤقتة في التمارين."
+    "أُضيفت 2,036 صورة توضيحية مُراجَعة وعالية الجودة لدعم جمل التدريب بدقة عبر وحدات المنهج.",
+    "توسيع التغطية البصرية للمشاهد والجمل التعليمية لتشمل 2,983 تمريناً تدريبياً."
   ],
   "releases": [
+    {
+      "id": "0.1.85",
+      "version": "0.1.85",
+      "date": "2026-10-26",
+      "title": {
+        "en": "Comprehensive sentence illustrations expansion",
+        "ar": "توسيع شامل للصور التوضيحية لجمل التمارين"
+      },
+      "changes": [
+        {
+          "id": "remaining-sentence-visual-illustrations",
+          "category": "added",
+          "en": "Imported and linked 2,036 high-quality illustrations from Figma, bringing total sentence visual coverage to 2,983 exercises.",
+          "ar": "استيراد وربط 2,036 صورة توضيحية عالية الجودة من Figma، ليصل إجمالي التغطية البصرية للجمل إلى 2,983 تمريناً."
+        },
+        {
+          "id": "practice-visual-immersion-expansion",
+          "category": "improved",
+          "en": "Enhanced visual immersion in sentence-builder and gap-fill practice exercises across 15 curriculum categories.",
+          "ar": "تعزيز الانغماس البصري في تمارين بناء الجمل وملء الفراغات عبر 15 فئة تعليمية في المنهج."
+        }
+      ]
+    },
     {
       "id": "0.1.84",
       "version": "0.1.84",
