@@ -147,7 +147,7 @@ export const COSTUME_SHOP_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "have many different roles or responsibilities",
       example:
-        "The shop owner wears many hats — she's the cashier, the tailor, and the costume designer.",
+        "The shop owner wears many hats — he's the cashier, the tailor, and the costume designer.",
     },
     {
       id: "costume-shop-a-wolf-in-sheep-s-clothing",
@@ -173,7 +173,7 @@ export const COSTUME_SHOP_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "pretend to be happy or confident when you're not",
       example:
-        "She put on a brave face and wore the dinosaur suit, even though she wanted the fairy costume.",
+        "He put on a brave face and wore the dinosaur suit, even though he wanted the fairy costume.",
     },
     {
       id: "costume-shop-pull-something-out-of-a-hat",

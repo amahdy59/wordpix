@@ -100,7 +100,7 @@ export const INDOOR_HOBBIES_LEARNING: UnitLearningMaterials = {
       phrase: "get into something",
       kind: "phrasal-verb",
       meaning: "To become interested in a hobby.",
-      example: "She got into pottery during lockdown and now she has her own kiln.",
+      example: "He got into pottery during lockdown and now he has his own kiln.",
     },
     {
       id: "indoor-hobbies-lose-track-of-time",

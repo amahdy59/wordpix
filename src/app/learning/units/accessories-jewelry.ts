@@ -125,7 +125,7 @@ export const ACCESSORIES_JEWELRY_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "An achievement to be proud of.",
       example:
-        "Winning that design award was a real feather in her cap — like a beautiful brooch on her jacket.",
+        "Winning that design award was a real feather in his cap — like a beautiful brooch on his jacket.",
     },
     {
       id: "accessories-jewelry-tighten-your-belt",
@@ -161,7 +161,7 @@ export const ACCESSORIES_JEWELRY_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Something positive in a bad situation.",
       example:
-        "Losing her bracelet had a silver lining — she found a much nicer one while shopping for a replacement.",
+        "Losing his bracelet had a silver lining — he found a much nicer one while shopping for a replacement.",
     },
     {
       id: "accessories-jewelry-keep-under-wraps",

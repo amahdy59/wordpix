@@ -242,7 +242,7 @@ export const WRITING_EXERCISES: Record<string, ExerciseDefinition> = {
         id: "assemble-2",
         kind: "order",
         prompt: "Arrange these words into a correct sentence.",
-        solution: ["She", "hung", "her", "coat", "in", "the", "wardrobe"],
+        solution: ["He", "hung", "his", "coat", "in", "the", "wardrobe"],
         explanation: 'Past tense "hung", then the object, then where it went.',
       },
     ],
@@ -319,7 +319,7 @@ export const WRITING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "article",
         kind: "entry",
-        prompt: 'Correct the article: "She bought a umbrella for the rain."',
+        prompt: 'Correct the article: "He bought a umbrella for the rain."',
         accept: ["an", "an umbrella"],
         explanation: '"Umbrella" starts with a vowel sound, so it takes "an".',
       },
@@ -367,7 +367,7 @@ export const WRITING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "connector",
         kind: "choice",
-        prompt: '"She woke up early. ______ she opened the curtains." Which connector fits?',
+        prompt: '"He woke up early. ______ he opened the curtains." Which connector fits?',
         options: [
           { id: "then", label: "Then", correct: true },
           { id: "however", label: "However" },

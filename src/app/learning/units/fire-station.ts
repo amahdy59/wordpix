@@ -83,7 +83,7 @@ export const FIRE_STATION_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "a difficult first experience that tests your abilities",
       example:
-        "Her first real emergency was a trial by fire — she grabbed the axe, the pike pole, and her gloves and ran in.",
+        "His first real emergency was a trial by fire — he grabbed the axe, the pike pole, and his gloves and ran in.",
     },
     {
       id: "fire-station-spread-like-wildfire",

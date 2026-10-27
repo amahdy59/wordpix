@@ -152,8 +152,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Compost Handling",
-        en: "She scooped dark aged compost with a square shovel to top-dress the garden beds.",
-        ar: "غَرَفَتِ السَّمَادَ النَّاضِجَ بِمِجْرَفَةٍ مُرَبَّعَةٍ لِتَغْذِيَةِ تُرْبَةِ الحَدِيقَةِ.",
+        en: "He scooped dark aged compost with a square shovel to top-dress the garden beds.",
+        ar: "غرف السماد العضوي الداكن بالمجرفة المربعة ليغطي أحواض الزرع بطبقة منه.",
       },
     ],
     exampleSentence:
@@ -223,7 +223,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "draw out",
         meaning: "sketch designs onto pavement",
         arabic: "يَرْسُمُ بِالطَّبَاشِير",
-        example: "She drew out a bright smiling sun with yellow sidewalk chalk.",
+        example: "He drew out a bright smiling sun with yellow sidewalk chalk.",
       },
     ],
     sentences: [
@@ -234,8 +234,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Sidewalk Art",
-        en: "Her colorful chalk drawing of a hopscotch grid invited everyone to jump.",
-        ar: "دَعَا رَسْمُهَا الطَّبَاشِيرِيُّ المُلَوَّنُ لِمُخَطَّطِ الحَجْلَةِ الجَمِيعَ لِلْقَفْزِ.",
+        en: "His colorful chalk drawing of a hopscotch grid invited everyone to jump.",
+        ar: "شجع رسمه الملون لشبكة الحجلة بالطباشير الجميع على القفز.",
       },
       {
         context: "Temporary Art",
@@ -267,14 +267,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "hop through",
         meaning: "jump on one foot across numbered boxes",
         arabic: "يَحْجُلُ عَبْرَ المُرَبَّعَات",
-        example: "She hopped through squares one to ten without losing balance.",
+        example: "He hopped through squares one to ten without losing balance.",
       },
     ],
     sentences: [
       {
         context: "Traditional Games",
-        en: "She tossed a small pebble into square three and hopped through the hopscotch grid.",
-        ar: "أَلْقَتْ حَصَاةً صَغِيرَةً فِي المُرَبَّعِ الثَّالِثِ وَحَجَلَتْ عَبْرَ مُخَطَّطِ لُعْبَةِ الحَجْلَةِ.",
+        en: "He tossed a small pebble into square three and hopped through the hopscotch grid.",
+        ar: "رمى حصاة في المربع الثالث وقفز عبر شبكة الحجلة.",
       },
       {
         context: "Playground Court",
@@ -288,9 +288,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She tossed a small pebble into square three and hopped through the hopscotch grid.",
-    exampleArabic:
-      "أَلْقَتْ حَصَاةً صَغِيرَةً فِي المُرَبَّعِ الثَّالِثِ وَحَجَلَتْ عَبْرَ مُخَطَّطِ لُعْبَةِ الحَجْلَةِ.",
+      "He tossed a small pebble into square three and hopped through the hopscotch grid.",
+    exampleArabic: "رمى حصاة في المربع الثالث وقفز عبر شبكة الحجلة.",
   },
   "comb-hair": {
     id: "comb-hair",
@@ -317,8 +316,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Grooming Routine",
-        en: "She stood before the lighted mirror to gently comb hair and remove tangles.",
-        ar: "وَقَفَتْ أَمَامَ المِرْآةِ المُضَاءَةِ لِتُمَشِّطَ شَعْرَهَا بِلُطْفٍ وَتُزِيلَ التَّشَابُكَ.",
+        en: "He stood before the lighted mirror to gently comb hair and remove tangles.",
+        ar: "وقف أمام المرآة المضاءة ليمشط شعره برفق ويفك تشابكه.",
       },
       {
         context: "Hair Care Tip",
@@ -331,9 +330,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "فَرَقَ خُصَلَ شَعْرِهِ بِتَرْتِيبٍ عَلَى الجَانِبِ الأَيْسَرِ خِلَالَ تَهْيِئَتِهِ الصَّبَاحِيَّةِ.",
       },
     ],
-    exampleSentence: "She stood before the lighted mirror to gently comb hair and remove tangles.",
-    exampleArabic:
-      "وَقَفَتْ أَمَامَ المِرْآةِ المُضَاءَةِ لِتُمَشِّطَ شَعْرَهَا بِلُطْفٍ وَتُزِيلَ التَّشَابُكَ.",
+    exampleSentence: "He stood before the lighted mirror to gently comb hair and remove tangles.",
+    exampleArabic: "وقف أمام المرآة المضاءة ليمشط شعره برفق ويفك تشابكه.",
   },
   bacon: {
     id: "bacon",

@@ -163,7 +163,7 @@ export const COMMUNITY_CENTER_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "someone who works well with others in a group",
       example:
-        "She's a real team player — she helps set up for volleyball, cleans up after Zumba, and volunteers at the daycare.",
+        "He's a real team player — he helps set up for volleyball, cleans up after Zumba, and volunteers at the daycare.",
     },
     {
       id: "community-center-pull-your-weight",

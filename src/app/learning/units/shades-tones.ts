@@ -123,7 +123,7 @@ export const SHADES_TONES_LEARNING: UnitLearningMaterials = {
       phrase: "in a different light",
       kind: "idiom",
       meaning: "From a new perspective.",
-      example: "After hearing her story, I saw the situation in a completely different light.",
+      example: "After hearing his story, I saw the situation in a completely different light.",
     },
     {
       id: "shades-tones-rose-tinted-glasses",
@@ -138,7 +138,7 @@ export const SHADES_TONES_LEARNING: UnitLearningMaterials = {
       phrase: "fade into the background",
       kind: "idiom",
       meaning: "To become unnoticed.",
-      example: "The muted tones of her outfit helped her fade into the background at the party.",
+      example: "The muted tones of his outfit helped him fade into the background at the party.",
     },
     {
       id: "shades-tones-the-darker-side",
@@ -174,7 +174,7 @@ export const SHADES_TONES_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Slightly unwell or inappropriate.",
       example:
-        "She's feeling a bit off-colour today — pale and tired. An off-colour joke is one in poor taste.",
+        "He's feeling a bit off-colour today — pale and tired. An off-colour joke is one in poor taste.",
     },
   ],
   dialogue: {

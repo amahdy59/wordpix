@@ -130,7 +130,7 @@ export const MOVEMENT_VERBS_LEARNING: UnitLearningMaterials = {
       phrase: "take something in your stride",
       kind: "idiom",
       meaning: "To deal with difficulty calmly.",
-      example: "She took the criticism in her stride and improved her work without complaint.",
+      example: "He took the criticism in his stride and improved his work without complaint.",
     },
     {
       id: "movement-verbs-run-out-of",
@@ -161,7 +161,7 @@ export const MOVEMENT_VERBS_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To make more effort than expected.",
       example:
-        "She always goes the extra mile for her students — staying late, preparing extra materials.",
+        "He always goes the extra mile for his students — staying late, preparing extra materials.",
     },
     {
       id: "movement-verbs-stumble-upon",

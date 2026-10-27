@@ -93,7 +93,7 @@ export const SOCIAL_SITUATIONS_LEARNING: UnitLearningMaterials = {
       phrase: "break the ice",
       kind: "idiom",
       meaning: "To start a conversation in an awkward situation.",
-      example: "She told a joke to break the ice at the meeting — everyone relaxed.",
+      example: "He told a joke to break the ice at the meeting — everyone relaxed.",
     },
     {
       id: "social-situations-hit-it-off",
@@ -121,7 +121,7 @@ export const SOCIAL_SITUATIONS_LEARNING: UnitLearningMaterials = {
       phrase: "bite your tongue",
       kind: "idiom",
       meaning: "To stop yourself from saying something.",
-      example: "I wanted to criticise the food, but I bit my tongue — it was her first attempt.",
+      example: "I wanted to criticise the food, but I bit my tongue — it was his first attempt.",
     },
     {
       id: "social-situations-make-a-good-impression",
@@ -153,7 +153,7 @@ export const SOCIAL_SITUATIONS_LEARNING: UnitLearningMaterials = {
       phrase: "a social butterfly",
       kind: "idiom",
       meaning: "Someone who is very sociable and popular.",
-      example: "She's a real social butterfly — she knows everyone at every event.",
+      example: "He's a real social butterfly — he knows everyone at every event.",
     },
     {
       id: "social-situations-keep-someone-at-arm-s-length",

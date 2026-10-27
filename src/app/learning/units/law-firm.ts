@@ -141,7 +141,7 @@ export const LAW_FIRM_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To argue your position.",
       example:
-        "She pleaded her case to the committee, explaining why the project deserved more funding.",
+        "He pleaded his case to the committee, explaining why the project deserved more funding.",
     },
     {
       id: "law-firm-above-the-law",

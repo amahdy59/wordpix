@@ -183,7 +183,7 @@ export const PARK_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "undecided; not taking a side",
       example:
-        "She's sitting on the fence about whether to go jogging around the pond or cycling along the hill.",
+        "He's sitting on the fence about whether to go jogging around the pond or cycling along the hill.",
     },
     {
       id: "park-the-tip-of-the-iceberg",
@@ -217,7 +217,7 @@ export const PARK_LEARNING: UnitLearningMaterials = {
       kind: "phrasal-verb",
       kindInferred: true,
       meaning: "sit comfortably in a relaxed position",
-      example: "She curled up on the grass with a book.",
+      example: "He curled up on the grass with a book.",
     },
   ],
   dialogue: {

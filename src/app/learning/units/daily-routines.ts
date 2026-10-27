@@ -145,7 +145,7 @@ export const DAILY_ROUTINES_LEARNING: UnitLearningMaterials = {
       phrase: "a creature of habit",
       kind: "idiom",
       meaning: "Someone who follows the same routine.",
-      example: "She has the same breakfast every morning — a real creature of habit.",
+      example: "He has the same breakfast every morning — a real creature of habit.",
     },
     {
       id: "daily-routines-call-it-a-night",
@@ -166,7 +166,7 @@ export const DAILY_ROUTINES_LEARNING: UnitLearningMaterials = {
       phrase: "the daily grind",
       kind: "idiom",
       meaning: "The routine of daily work or life.",
-      example: "After years of the daily grind, she took a sabbatical to travel.",
+      example: "After years of the daily grind, he took a sabbatical to travel.",
     },
     {
       id: "daily-routines-sleep-on-it",

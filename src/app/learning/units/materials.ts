@@ -109,7 +109,7 @@ export const MATERIALS_LEARNING: UnitLearningMaterials = {
       phrase: "made of sterner stuff",
       kind: "idiom",
       meaning: "Tough and resilient.",
-      example: "She didn't cry — she's made of sterner stuff, strong as steel.",
+      example: "He didn't cry — he's made of sterner stuff, strong as steel.",
     },
     {
       id: "materials-heart-of-gold",
@@ -138,7 +138,7 @@ export const MATERIALS_LEARNING: UnitLearningMaterials = {
       phrase: "iron will",
       kind: "idiom",
       meaning: "Very strong determination.",
-      example: "She has an iron will — nothing can stop her from achieving her goals.",
+      example: "He has an iron will — nothing can stop him from achieving his goals.",
     },
     {
       id: "materials-wooden-performance",
@@ -167,7 +167,7 @@ export const MATERIALS_LEARNING: UnitLearningMaterials = {
       phrase: "as clear as crystal",
       kind: "idiom",
       meaning: "Perfectly clear and understandable.",
-      example: "Her explanation was as clear as crystal — like looking through glass.",
+      example: "His explanation was as clear as crystal — like looking through glass.",
     },
     {
       id: "materials-marble-halls",

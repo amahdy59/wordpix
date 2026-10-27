@@ -198,7 +198,7 @@ export const FARM_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "very clumsy or careless in a delicate situation",
       example:
-        "The donkey knocked over the fence like a bull in a china shop and scared the hen and her lamb.",
+        "The donkey knocked over the fence like a bull in a china shop and scared the hen and her chicks.",
     },
     {
       id: "farm-reap-what-you-sow",

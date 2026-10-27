@@ -116,14 +116,14 @@ export const COMMUNICATION_VERBS_LEARNING: UnitLearningMaterials = {
       phrase: "speak your mind",
       kind: "idiom",
       meaning: "To say exactly what you think.",
-      example: "She's not afraid to speak her mind — even when it's unpopular.",
+      example: "He's not afraid to speak his mind — even when it's unpopular.",
     },
     {
       id: "communication-verbs-talk-someone-s-ear-off",
       phrase: "talk someone's ear off",
       kind: "idiom",
       meaning: "To talk to someone for a very long time.",
-      example: "My neighbour talked my ear off about her garden — I was stuck for an hour.",
+      example: "My neighbour talked my ear off about his garden — I was stuck for an hour.",
     },
     {
       id: "communication-verbs-have-a-word-with-someone",
@@ -144,7 +144,7 @@ export const COMMUNICATION_VERBS_LEARNING: UnitLearningMaterials = {
       phrase: "drop a hint",
       kind: "idiom",
       meaning: "To suggest something indirectly.",
-      example: "She dropped a hint about wanting a new watch for her birthday.",
+      example: "He dropped a hint about wanting a new watch for his birthday.",
     },
     {
       id: "communication-verbs-give-someone-a-piece-of-your-mind",

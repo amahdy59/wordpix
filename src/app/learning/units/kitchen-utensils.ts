@@ -110,7 +110,7 @@ export const KITCHEN_UTENSILS_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "A smart, clever person.",
       example:
-        "She figured out the recipe instantly — she's a sharp cookie, just like a chef's knife.",
+        "He figured out the recipe instantly — he's a sharp cookie, just like a chef's knife.",
     },
     {
       id: "kitchen-utensils-cut-corners",
@@ -176,7 +176,7 @@ export const KITCHEN_UTENSILS_LEARNING: UnitLearningMaterials = {
       phrase: "hit the nail on the head",
       kind: "idiom",
       meaning: "To be exactly right.",
-      example: "When she said we need a bigger pan, she hit the nail on the head.",
+      example: "When he said we need a bigger pan, he hit the nail on the head.",
     },
   ],
   dialogue: {

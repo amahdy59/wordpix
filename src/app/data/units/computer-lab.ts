@@ -311,6 +311,7 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/computer-lab/upload.avif",
     description: "To send data from your device to an online service.",
     topic: "computer-lab",
+    exampleUsage: "I upload the finished document to the shared folder.",
   },
   {
     id: "charger",
@@ -446,6 +447,7 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/computer-lab/copying.avif",
     description: "Making a duplicate of text or data so you can use another copy.",
     topic: "computer-lab",
+    exampleUsage: "He is copying the document into another folder.",
   },
   {
     id: "pasting",
@@ -482,6 +484,7 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/computer-lab/editing.avif",
     description: "Changing text, images, or other digital content to improve or correct it.",
     topic: "computer-lab",
+    exampleUsage: "He is editing the paragraph to correct a spelling mistake.",
   },
   {
     id: "searching",
@@ -654,6 +657,7 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/computer-lab/click.avif",
     description: "To press a mouse button or screen control once.",
     topic: "computer-lab",
+    exampleUsage: "I click the button to save the document.",
   },
   {
     id: "scroll",

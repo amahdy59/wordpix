@@ -118,7 +118,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "wrap up in",
         meaning: "wrap oneself snugly in a robe",
         arabic: "يَلْتَفُّ فِي الرُّوب",
-        example: "She wrapped up in a plush bathrobe after her shower.",
+        example: "He wrapped up in a plush bathrobe after his shower.",
       },
       {
         phrase: "tie up",
@@ -130,8 +130,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Post-Shower",
-        en: "She wrapped herself in a thick cotton bathrobe after taking a hot shower.",
-        ar: "الْتَفَّتْ فِي بُرْنُسٍ قُطْنِيٍّ سَمِيكٍ بَعْدَ الاِسْتِحْمَامِ بِمَاءٍ سَاخِنٍ.",
+        en: "He wrapped himself in a thick cotton bathrobe after taking a hot shower.",
+        ar: "لف جسمه برداء استحمام قطني سميك بعد الاستحمام بالماء الساخن.",
       },
       {
         context: "Morning Relaxation",
@@ -144,9 +144,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "وَفَّرَ الفُنْدُقُ الفَاخِرُ أَرْوِبَةً بَيْضَاءَ قُطْنِيَّةً مَجَّانِيَّةً لِلنُّزَلاءِ.",
       },
     ],
-    exampleSentence: "She wrapped herself in a thick cotton bathrobe after taking a hot shower.",
-    exampleArabic:
-      "الْتَفَّتْ فِي بُرْنُسٍ قُطْنِيٍّ سَمِيكٍ بَعْدَ الاِسْتِحْمَامِ بِمَاءٍ سَاخِنٍ.",
+    exampleSentence: "He wrapped himself in a thick cotton bathrobe after taking a hot shower.",
+    exampleArabic: "لف جسمه برداء استحمام قطني سميك بعد الاستحمام بالماء الساخن.",
   },
   dragonfly: {
     id: "dragonfly",
@@ -329,7 +328,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "trigger off",
         meaning: "cause sudden allergic immune reaction",
         arabic: "يُثِيرُ الحَسَاسِيَّة",
-        example: "Pollen triggered off her seasonal allergy symptoms.",
+        example: "Pollen triggered off his seasonal allergy symptoms.",
       },
     ],
     sentences: [

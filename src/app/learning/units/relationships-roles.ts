@@ -144,7 +144,7 @@ export const RELATIONSHIPS_ROLES_LEARNING: UnitLearningMaterials = {
       phrase: "shoulder to cry on",
       kind: "idiom",
       meaning: "A supportive, sympathetic friend.",
-      example: "She's always been a shoulder to cry on — a true companion through difficult times.",
+      example: "He's always been a shoulder to cry on — a true companion through difficult times.",
     },
     {
       id: "relationships-roles-hit-it-off",

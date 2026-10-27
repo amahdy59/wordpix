@@ -151,7 +151,7 @@ export const ROBOTICS_LAB_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "doing something automatically, without thinking",
       example:
-        "After building ten robots, she was on autopilot — connecting the sensor and the battery pack without even looking.",
+        "After building ten robots, he was on autopilot — connecting the sensor and the battery pack without even looking.",
     },
     {
       id: "robotics-lab-a-well-oiled-machine",
@@ -178,7 +178,7 @@ export const ROBOTICS_LAB_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "connect electrical components",
       example:
-        "She wired up the LED, the resistor, and the capacitor on the breadboard before testing the circuit.",
+        "He wired up the LED, the resistor, and the capacitor on the breadboard before testing the circuit.",
     },
     {
       id: "robotics-lab-a-lightbulb-moment",

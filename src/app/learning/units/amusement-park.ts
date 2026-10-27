@@ -191,7 +191,7 @@ export const AMUSEMENT_PARK_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "enter a competition or challenge",
       example:
-        "She threw her hat in the ring at the ring toss, the balloon dart, and the basketball throw — winning prizes at each.",
+        "He threw his hat in the ring at the ring toss, the balloon dart, and the basketball throw — winning prizes at each.",
     },
     {
       id: "amusement-park-a-wild-ride",

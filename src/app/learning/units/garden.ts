@@ -167,7 +167,7 @@ export const GARDEN_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "introduce an idea that may develop later",
       example:
-        "She planted the seed when she suggested growing lavender and orchid near the fern patch.",
+        "He planted the seed when he suggested growing lavender and orchid near the fern patch.",
     },
     {
       id: "garden-pushing-up-daisies",

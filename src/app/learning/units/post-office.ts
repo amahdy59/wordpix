@@ -38,7 +38,7 @@ export const POST_OFFICE_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "understand what someone is trying to say",
       example:
-        "After three postcards and a registered mail notice, she finally got the message — pay the bill!",
+        "After three postcards and a registered mail notice, he finally got the message — pay the bill!",
     },
     {
       id: "post-office-deliver-the-goods",
@@ -56,7 +56,7 @@ export const POST_OFFICE_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "completely finished and official",
       example:
-        "The contract was signed, sealed, and delivered — she put the stamp on the envelope and dropped it in the mailbox.",
+        "The contract was signed, sealed, and delivered — he put the stamp on the envelope and dropped it in the mailbox.",
     },
     {
       id: "post-office-a-stamp-of-approval",

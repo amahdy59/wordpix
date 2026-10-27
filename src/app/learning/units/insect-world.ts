@@ -133,7 +133,7 @@ export const INSECT_WORLD_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "very busy and hardworking",
-      example: "She's been busy as a bee all morning, preparing for the party.",
+      example: "He's been busy as a bee all morning, preparing for the party.",
     },
     {
       id: "insect-world-the-bee-s-knees",

@@ -178,7 +178,7 @@ export const GYM_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "make more effort than expected",
       example:
-        "She went the extra mile — after the elliptical, she did twenty minutes on the rowing machine.",
+        "He went the extra mile — after the elliptical, he did twenty minutes on the rowing machine.",
     },
     {
       id: "gym-work-out-something",
@@ -212,7 +212,7 @@ export const GYM_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "stay physically fit",
-      example: "She uses the stationary bike and the jump rope to keep in shape during winter.",
+      example: "He uses the stationary bike and the jump rope to keep in shape during winter.",
     },
   ],
   dialogue: {

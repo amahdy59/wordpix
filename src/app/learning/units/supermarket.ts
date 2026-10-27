@@ -516,7 +516,7 @@ export const SUPERMARKET_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "someone who is very anxious or unable to cope",
-      example: "She was a basket case trying to find gluten-free pasta in the centre aisles.",
+      example: "He was a basket case trying to find gluten-free pasta in the centre aisles.",
     },
     {
       id: "supermarket-the-cream-of-the-crop",

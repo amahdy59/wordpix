@@ -108,7 +108,7 @@ export const BANK_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To save money for future emergencies.",
       example:
-        "She always puts some aside to save for a rainy day — you never know what might happen.",
+        "He always puts some aside to save for a rainy day — you never know what might happen.",
     },
     {
       id: "bank-in-the-red",

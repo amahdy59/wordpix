@@ -140,7 +140,7 @@ export const NEWSPAPER_OFFICE_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "become big news",
       example:
-        "The corruption story hit the headlines after the correspondent published her front page article.",
+        "The corruption story hit the headlines after the correspondent published his front page article.",
     },
     {
       id: "newspaper-office-hot-off-the-press",
@@ -175,7 +175,7 @@ export const NEWSPAPER_OFFICE_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "be important enough to appear on the first page",
       example:
-        "The reporter hoped her investigation would make the front page, not just a small column inside.",
+        "The reporter hoped his investigation would make the front page, not just a small column inside.",
     },
     {
       id: "newspaper-office-off-the-record",

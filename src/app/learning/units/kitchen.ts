@@ -202,7 +202,7 @@ export const KITCHEN_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "reveal a secret accidentally",
       example:
-        "She spilled the beans about the surprise dinner — now everyone knows I bought the casserole dish and the wok.",
+        "He spilled the beans about the surprise dinner — now everyone knows I bought the casserole dish and the wok.",
     },
     {
       id: "kitchen-simmer-down",

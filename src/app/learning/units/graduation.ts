@@ -127,7 +127,7 @@ export const GRADUATION_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "with great success; achieving an excellent result",
       example:
-        "She graduated with flying colours — honors, a medal, and an honor cord draped over her gown.",
+        "He graduated with flying colours — honors, a medal, and an honor cord draped over his gown.",
     },
     {
       id: "graduation-cap-it-off",
@@ -171,8 +171,7 @@ export const GRADUATION_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "study hard and intensely",
-      example:
-        "She hit the books for four years straight and stood at the podium as valedictorian.",
+      example: "He hit the books for four years straight and stood at the podium as valedictorian.",
     },
     {
       id: "graduation-pass-with-distinction",

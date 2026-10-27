@@ -109,7 +109,7 @@ export const PERSONALITY_CHARACTER_LEARNING: UnitLearningMaterials = {
       phrase: "a people person",
       kind: "idiom",
       meaning: "Someone who is sociable and enjoys being around others.",
-      example: "She's a real people person — outgoing and friendly with everyone.",
+      example: "He's a real people person — outgoing and friendly with everyone.",
     },
     {
       id: "personality-character-set-in-one-s-ways",
@@ -131,7 +131,7 @@ export const PERSONALITY_CHARACTER_LEARNING: UnitLearningMaterials = {
       phrase: "a heart of gold",
       kind: "idiom",
       meaning: "A very kind, generous nature.",
-      example: "Despite looking tough, she has a heart of gold — always generous and caring.",
+      example: "Despite looking tough, he has a heart of gold — always generous and caring.",
     },
     {
       id: "personality-character-thick-skinned",
@@ -152,7 +152,7 @@ export const PERSONALITY_CHARACTER_LEARNING: UnitLearningMaterials = {
       phrase: "down to earth",
       kind: "idiom",
       meaning: "Practical, humble, and unpretentious.",
-      example: "Despite her success, she's very down to earth — modest and approachable.",
+      example: "Despite his success, he's very down to earth — modest and approachable.",
     },
     {
       id: "personality-character-the-life-and-soul-of-the-party",
@@ -166,7 +166,7 @@ export const PERSONALITY_CHARACTER_LEARNING: UnitLearningMaterials = {
       phrase: "a tough cookie",
       kind: "idiom",
       meaning: "A strong, determined person.",
-      example: "She's a tough cookie — resilient and persistent no matter what happens.",
+      example: "He's a tough cookie — resilient and persistent no matter what happens.",
     },
     {
       id: "personality-character-two-faced",

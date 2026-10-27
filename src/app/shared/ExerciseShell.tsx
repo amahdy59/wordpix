@@ -139,7 +139,7 @@ export const ExerciseShell = memo(function ExerciseShell({
             className={
               layout === "media"
                 ? "w-full flex flex-1 min-h-0 flex-col gap-4 justify-start pb-3"
-                : "w-full flex flex-1 flex-col gap-3.5 min-h-min justify-start"
+                : "w-full flex flex-1 flex-col gap-2.5 sm:gap-3.5 min-h-min justify-start"
             }
           >
             {children}

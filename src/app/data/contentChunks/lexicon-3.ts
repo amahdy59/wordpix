@@ -32,8 +32,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Cold Weather",
-        en: "She pulled the warm wool blanket up to her chin on the chilly night.",
-        ar: "سَحَبَتِ البَطَّانِيَّةَ الصُّوفِيَّةَ الدَّافِئَةَ حَتَّى ذَقْنِهَا فِي تِلْكَ اللَّيْلَةِ البَارِدَةِ.",
+        en: "He pulled the warm wool blanket up to his chin on the chilly night.",
+        ar: "سحب البطانية الصوفية الدافئة حتى ذقنه في تلك الليلة الباردة.",
       },
       {
         context: "Living Room",
@@ -46,9 +46,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "وَفَّرَ الفُنْدُقُ بَطَّانِيَّةً إِضَافِيَّةً فِي الخِزَانَةِ لِلنُّزَلاءِ.",
       },
     ],
-    exampleSentence: "She pulled the warm wool blanket up to her chin on the chilly night.",
-    exampleArabic:
-      "سَحَبَتِ البَطَّانِيَّةَ الصُّوفِيَّةَ الدَّافِئَةَ حَتَّى ذَقْنِهَا فِي تِلْكَ اللَّيْلَةِ البَارِدَةِ.",
+    exampleSentence: "He pulled the warm wool blanket up to his chin on the chilly night.",
+    exampleArabic: "سحب البطانية الصوفية الدافئة حتى ذقنه في تلك الليلة الباردة.",
   },
   coaster: {
     id: "coaster",
@@ -119,8 +118,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Baking Precision",
-        en: "She measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
-        ar: "قَاسَتْ كُوبَيْنِ تَمَاماً مِنَ الطَّحِينِ بِاسْتِخْدَامِ كُوبِ القِيَاسِ الزُّجَاجِيِّ الشَّفَّافِ.",
+        en: "He measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
+        ar: "قاس كوبين من الدقيق متعدد الاستخدامات بدقة باستخدام كوب قياس زجاجي شفاف.",
       },
       {
         context: "Liquid Ingredients",
@@ -134,9 +133,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
-    exampleArabic:
-      "قَاسَتْ كُوبَيْنِ تَمَاماً مِنَ الطَّحِينِ بِاسْتِخْدَامِ كُوبِ القِيَاسِ الزُّجَاجِيِّ الشَّفَّافِ.",
+      "He measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
+    exampleArabic: "قاس كوبين من الدقيق متعدد الاستخدامات بدقة باستخدام كوب قياس زجاجي شفاف.",
   },
   towel: {
     id: "towel",
@@ -169,8 +167,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Drying Off",
-        en: "She wrapped a large fluffy cotton towel around her shoulders after the bath.",
-        ar: "لَفَّتْ مَنْشَفَةً قُطْنِيَّةً كَبِيرَةً وَنَاعِمَةً حَوْلَ كَتِفَيْهَا بَعْدَ الاسْتِحْمَام.",
+        en: "He wrapped a large fluffy cotton towel around his shoulders after the bath.",
+        ar: "لف منشفة قطنية كبيرة وناعمة حول كتفيه بعد الاستحمام.",
       },
       {
         context: "Hygiene",
@@ -183,9 +181,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "اغْسِلْ مَنْشَفَةَ الحَمَّامِ بِالمَاءِ السَّاخِنِ أُسْبُوعِيًّا لِلْحِفَاظِ عَلَى نَظَافَتِهَا وَرَائِحَتِهَا.",
       },
     ],
-    exampleSentence: "She wrapped a large fluffy cotton towel around her shoulders after the bath.",
-    exampleArabic:
-      "لَفَّتْ مَنْشَفَةً قُطْنِيَّةً كَبِيرَةً وَنَاعِمَةً حَوْلَ كَتِفَيْهَا بَعْدَ الاسْتِحْمَام.",
+    exampleSentence: "He wrapped a large fluffy cotton towel around his shoulders after the bath.",
+    exampleArabic: "لف منشفة قطنية كبيرة وناعمة حول كتفيه بعد الاستحمام.",
   },
   bell: {
     id: "bell",
@@ -248,7 +245,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "stamp with",
         meaning: "imprint a date or logo with an inked block",
         arabic: "يَخْتِمُ بِـ",
-        example: "She stamped the inside slip with the return due date.",
+        example: "He stamped the inside slip with the return due date.",
       },
     ],
     sentences: [
@@ -291,14 +288,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "immerse in",
         meaning: "become deeply absorbed in literary text",
         arabic: "يَنْغَمِسُ فِي القِرَاءَة",
-        example: "The avid reader immersed herself in the fantasy trilogy for hours.",
+        example: "The avid reader immersed himself in the fantasy trilogy for hours.",
       },
     ],
     sentences: [
       {
         context: "Quiet Patron",
-        en: "An avid reader sat by the bay window with a cup of tea, deeply absorbed in her historical novel.",
-        ar: "جَلَسَتْ قَارِئَةٌ شَغُوفَةٌ بِجَانِبِ النَّافِذَةِ البَارِزَةِ مَعَ كُوبِ شَايٍ، مُنْغَمِسَةً تَمَامًا فِي رِوَايَتِهَا التَّارِيخِيَّةِ.",
+        en: "An avid reader sat by the bay window with a cup of tea, deeply absorbed in his historical novel.",
+        ar: "جلس قارئ شغوف قرب النافذة البارزة مع كوب شاي، منغمسا في روايته التاريخية.",
       },
       {
         context: "Public Space",
@@ -312,9 +309,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "An avid reader sat by the bay window with a cup of tea, deeply absorbed in her historical novel.",
-    exampleArabic:
-      "جَلَسَتْ قَارِئَةٌ شَغُوفَةٌ بِجَانِبِ النَّافِذَةِ البَارِزَةِ مَعَ كُوبِ شَايٍ، مُنْغَمِسَةً تَمَامًا فِي رِوَايَتِهَا التَّارِيخِيَّةِ.",
+      "An avid reader sat by the bay window with a cup of tea, deeply absorbed in his historical novel.",
+    exampleArabic: "جلس قارئ شغوف قرب النافذة البارزة مع كوب شاي، منغمسا في روايته التاريخية.",
   },
   carrot: {
     id: "carrot",
@@ -341,8 +337,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Vegetable Stall",
-        en: "She bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
-        ar: "اشْتَرَتْ حُزْمَةً طَازَجَةً مِنْ جَزَرٍ بُرْتُقَالِيٍّ مُقَرْمَشٍ مَعَ أَوْرَاقِهِ الخَضْرَاءِ مِنَ المُزَارِعِ.",
+        en: "He bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
+        ar: "اشترى من المزارع حزمة جزر برتقالي طازج بأوراقه الخضراء.",
       },
       {
         context: "Healthy Eating",
@@ -356,9 +352,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
-    exampleArabic:
-      "اشْتَرَتْ حُزْمَةً طَازَجَةً مِنْ جَزَرٍ بُرْتُقَالِيٍّ مُقَرْمَشٍ مَعَ أَوْرَاقِهِ الخَضْرَاءِ مِنَ المُزَارِعِ.",
+      "He bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
+    exampleArabic: "اشترى من المزارع حزمة جزر برتقالي طازج بأوراقه الخضراء.",
   },
   sunbathing: {
     id: "sunbathing",

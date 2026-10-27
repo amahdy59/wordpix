@@ -1,8 +1,6 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { ImageOff, Volume2 } from "lucide-react";
 import type { VocabularyItem } from "../data/courseCatalog";
-import type { LessonUsageData } from "../data/usageTypes";
-import { getAuthoredSentence } from "../exercises/content/authoredLessonContent";
 import type { PilotSentenceMedia } from "../exercises/content/pilotSentenceMedia";
 import { QuestionImage } from "./QuestionImage";
 import { PLACEHOLDER_DESCRIPTION } from "../data/placeholderDescription";
@@ -12,38 +10,7 @@ import { useAccessibility } from "./useAccessibilityPreferences";
 import { Button } from "./Button";
 import { useLessonSession } from "./LessonSessionContext";
 import { MediaFrame } from "./MediaFrame";
-import exactSentenceMedia from "../generated/reviewedExactSentenceMedia.json";
-
-/** A word ID alone cannot establish that an image supports a sentence. */
-export function resolveSentenceMedia(
-  wordId: string,
-  sentence: string,
-  usage?: LessonUsageData | null
-): PilotSentenceMedia | undefined {
-  const reviewed: Readonly<
-    Record<string, { wordId: string; sentence: string; imagePath: string; imageAlt: string }>
-  > = exactSentenceMedia;
-  const exact = Object.values(reviewed).find(
-    (entry) => entry.wordId === wordId && entry.sentence === sentence
-  );
-  if (exact) return { imagePath: exact.imagePath, imageAlt: exact.imageAlt };
-  const authored = getAuthoredSentence(wordId);
-  if (authored?.full === sentence && authored.media) return authored.media;
-  const scene = usage?.usage.scenes.find(
-    (candidate) =>
-      candidate.imagePath &&
-      candidate.imageAlt &&
-      candidate.imagePurpose !== "word-reference" &&
-      (candidate.scenario.includes(sentence) ||
-        Boolean(
-          candidate.learningContext?.scenario &&
-          candidate.learningContext.scenario.includes(sentence)
-        ))
-  );
-  return scene?.imagePath && scene.imageAlt
-    ? { imagePath: scene.imagePath, imageAlt: scene.imageAlt, imageFallbacks: scene.imageFallbacks }
-    : undefined;
-}
+export { resolveSentenceMedia } from "../content/sentenceMedia";
 
 export function ScenePlaceholder({ clue, className = "" }: { clue?: string; className?: string }) {
   const { t } = useI18n();
@@ -169,23 +136,23 @@ export function SentenceMeaningSupport({
       <details
         key={word.id}
         open={isOpen}
-        className="rounded-xl border border-border/80 bg-wp-card dark:bg-card/40 p-2.5 sm:p-3 transition-colors motion-reduce:transition-none"
+        className="rounded-xl border border-border/80 bg-wp-card dark:bg-card/40 px-2.5 py-1 sm:p-3 transition-colors motion-reduce:transition-none"
       >
-        <summary className="min-h-11 cursor-pointer rounded-lg py-1 px-2 text-sm font-semibold text-foreground hover:text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary flex items-center justify-between">
+        <summary className="min-h-11 cursor-pointer rounded-lg py-0.5 px-2 text-xs sm:text-sm font-semibold text-foreground hover:text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary flex items-center justify-between">
           <span>{t("reviewUpdate.meaningSupport")}</span>
         </summary>
-        <div className="mt-2.5 flex flex-wrap items-center justify-between gap-3 border-t border-border/60 pt-2.5">
+        <div className="mt-1.5 sm:mt-2.5 flex flex-wrap items-center justify-between gap-2 sm:gap-3 border-t border-border/60 pt-1.5 sm:pt-2.5">
           <p
             lang="en"
             dir="ltr"
-            className="min-w-0 flex-1 basis-36 text-start text-base sm:text-lg leading-relaxed text-foreground"
+            className="min-w-0 flex-1 basis-36 text-start text-sm sm:text-lg leading-relaxed text-foreground"
           >
             <span className="font-bold text-foreground">{clueLabel}: </span>
             <span className="font-semibold text-primary">{clue}</span>
           </p>
           <Button
             variant="outline"
-            size="md"
+            size="sm"
             disabled={!audio.isSupported}
             aria-pressed={audio.isPlaying}
             aria-busy={audio.isLoading}
@@ -199,7 +166,7 @@ export function SentenceMeaningSupport({
             aria-describedby={!answered ? audioHintId : undefined}
             iconLeft={<Volume2 className="size-4" aria-hidden />}
             onClick={() => (audio.isPlaying ? audio.stop() : audio.play())}
-            className="shrink-0 min-h-[44px] min-w-[44px] px-4 font-semibold"
+            className="shrink-0 min-h-[44px] min-w-[44px] px-3 font-semibold text-xs sm:text-sm"
           >
             {audio.isPlaying
               ? t("action.stop")

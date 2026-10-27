@@ -172,7 +172,7 @@ export const SUBWAY_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "do something mechanically without real effort or feeling",
       example:
-        "Every morning she goes through the motions — tap the metro card, push through the gate, grab the handrail, and stare out the window.",
+        "Every morning he goes through the motions — tap the metro card, push through the gate, grab the handrail, and stare out the window.",
     },
     {
       id: "subway-light-at-the-end-of-the-tunnel",

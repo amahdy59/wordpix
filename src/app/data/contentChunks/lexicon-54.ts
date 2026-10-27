@@ -142,8 +142,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Home Comfort",
-        en: "She slid into her warm fleece slippers as soon as she walked through the door.",
-        ar: "ارْتَدَتْ خُفَّهَا الصُّوفِيَّ الدَّافِئَ بِمُجَرَّدِ دُخُولِهَا مِنْ بَابِ المَنْزِلِ.",
+        en: "He slid into his warm fleece slippers as soon as he walked through the door.",
+        ar: "أدخل قدميه في نعليه الدافئين فور دخوله من الباب.",
       },
       {
         context: "Floor Protection",
@@ -156,10 +156,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "احْتَفِظْ بِخُفَّيْكَ بِجِوَارِ السَّرِيرِ حَتَّى لا تَلْمَسَ قَدَمَاكَ البَلاطَ البَارِدَ.",
       },
     ],
-    exampleSentence:
-      "She slid into her warm fleece slippers as soon as she walked through the door.",
-    exampleArabic:
-      "ارْتَدَتْ خُفَّهَا الصُّوفِيَّ الدَّافِئَ بِمُجَرَّدِ دُخُولِهَا مِنْ بَابِ المَنْزِلِ.",
+    exampleSentence: "He slid into his warm fleece slippers as soon as he walked through the door.",
+    exampleArabic: "أدخل قدميه في نعليه الدافئين فور دخوله من الباب.",
   },
   sugar: {
     id: "sugar",
@@ -273,7 +271,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "blow dry",
         meaning: "dry and style hair using hot air stream",
         arabic: "يُجَفِّفُ بِالسِّشْوَار",
-        example: "She blew dry her hair with a round brush for extra volume.",
+        example: "He blew dry his hair with a round brush for extra volume.",
       },
       {
         phrase: "unplug",
@@ -415,8 +413,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Geometry Class",
-        en: "She placed her clear plastic ruler on the page to draw a straight five-centimeter line.",
-        ar: "وَضَعَتْ مِسْطَرَتَهَا البَلَاسْتِيكِيَّةَ الشَّفَّافَةَ عَلَى الصَّفْحَةِ لِرَسْمِ خَطٍّ مُسْتَقِيمٍ بِطُولِ خَمْسَةِ سَنْتِيمِتْرَاتٍ.",
+        en: "He placed his clear plastic ruler on the page to draw a straight five-centimeter line.",
+        ar: "وضع مسطرته البلاستيكية الشفافة على الصفحة ليرسم خطا مستقيما طوله خمسة سنتيمترات.",
       },
       {
         context: "Measuring Length",
@@ -430,9 +428,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She placed her clear plastic ruler on the page to draw a straight five-centimeter line.",
+      "He placed his clear plastic ruler on the page to draw a straight five-centimeter line.",
     exampleArabic:
-      "وَضَعَتْ مِسْطَرَتَهَا البَلَاسْتِيكِيَّةَ الشَّفَّافَةَ عَلَى الصَّفْحَةِ لِرَسْمِ خَطٍّ مُسْتَقِيمٍ بِطُولِ خَمْسَةِ سَنْتِيمِتْرَاتٍ.",
+      "وضع مسطرته البلاستيكية الشفافة على الصفحة ليرسم خطا مستقيما طوله خمسة سنتيمترات.",
   },
   bookmark: {
     id: "bookmark",
@@ -459,8 +457,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Reading Progress",
-        en: "She slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
-        ar: "دَسَّتْ فَاصِلَ كِتَابٍ قُمَاشِيًّا مُطَرَّزًا بَيْنَ الصَّفْحَتَيْنِ السَّبْعِينَ وَالإِحْدَى وَالسَّبْعِينَ قَبْلَ إِغْلَاقِ الرِّوَايَةِ.",
+        en: "He slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
+        ar: "وضع علامة كتاب من القماش المطرز بين الصفحتين السبعين والحادية والسبعين قبل إغلاق الرواية.",
       },
       {
         context: "Book Care",
@@ -474,9 +472,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
+      "He slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
     exampleArabic:
-      "دَسَّتْ فَاصِلَ كِتَابٍ قُمَاشِيًّا مُطَرَّزًا بَيْنَ الصَّفْحَتَيْنِ السَّبْعِينَ وَالإِحْدَى وَالسَّبْعِينَ قَبْلَ إِغْلَاقِ الرِّوَايَةِ.",
+      "وضع علامة كتاب من القماش المطرز بين الصفحتين السبعين والحادية والسبعين قبل إغلاق الرواية.",
   },
   cleaner: {
     id: "cleaner",
@@ -785,7 +783,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "lean on",
         meaning: "support body balance on four-legged frame",
         arabic: "يَسْتَنِدُ عَلَى المَشَّايَة",
-        example: "The recovering patient leaned on her walker.",
+        example: "The recovering patient leaned on his walker.",
       },
     ],
     sentences: [

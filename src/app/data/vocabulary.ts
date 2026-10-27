@@ -1,4 +1,5 @@
 import type { VocabularyItem } from "./lessons";
+import { isGenericLearningExample } from "../content/learningExampleQuality";
 import { areUnitCatalogDetailsLoaded, loadUnitCatalogDetails } from "./courseCatalog";
 import { VOCABULARY as BEDROOM_VOCABULARY } from "./units/bedroom";
 import {
@@ -273,7 +274,10 @@ function applyBilingualContent(
       // Empty means the catalogue row was rejected; do not fall back to the
       // global lexicon, where repeated ids can select another unit's sense.
       arabicTranslation: reviewed.arabicTranslation ?? "",
-      exampleUsage: reviewed.exampleUsage,
+      exampleUsage:
+        reviewed.exampleUsage && !isGenericLearningExample(reviewed.exampleUsage)
+          ? reviewed.exampleUsage
+          : undefined,
     };
   });
 }

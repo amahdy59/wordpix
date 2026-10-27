@@ -52,37 +52,37 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Email", "Memo", "Report", "Proposal"],
-          "scenario": "Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule.",
+          "scenario": "Luay sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule.",
           "check": {
             "question": "Which document suggests a plan for consideration?",
             "options": ["Proposal", "Email", "Memo"],
             "expectedAnswer": "Proposal"
           },
-          "imageBrief": "Photorealistic vocabulary reference for Proposal in a business communication context. Use the written scenario as the source of meaning: Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageBrief": "Photorealistic vocabulary reference for Proposal in a business communication context. Use the written scenario as the source of meaning: Luay sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
           "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Invoice", "Contract", "Letter", "Newsletter"],
-          "scenario": "The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news.",
+          "scenario": "The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Luay keeps the supplier’s Letter separately from the company Newsletter containing staff news.",
           "check": {
             "question": "Which document records the parties’ agreed obligations?",
             "options": ["Contract", "Invoice", "Letter"],
             "expectedAnswer": "Contract"
           },
-          "imageBrief": "Photorealistic vocabulary reference for Contract in a business communication context. Use the written scenario as the source of meaning: The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageBrief": "Photorealistic vocabulary reference for Contract in a business communication context. Use the written scenario as the source of meaning: The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Luay keeps the supplier’s Letter separately from the company Newsletter containing staff news. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
           "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Press Release", "Minutes", "Deadline", "Milestone"],
-          "scenario": "After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial.",
+          "scenario": "After the project meeting, Luay writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial.",
           "check": {
             "question": "Which record contains the meeting’s decisions?",
             "options": ["Minutes", "Press Release", "Deadline"],
             "expectedAnswer": "Minutes"
           },
-          "imageBrief": "Photorealistic vocabulary reference for Minutes in a business communication context. Use the written scenario as the source of meaning: After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageBrief": "Photorealistic vocabulary reference for Minutes in a business communication context. Use the written scenario as the source of meaning: After the project meeting, Luay writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
           "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
@@ -102,26 +102,26 @@
     },
     "reading": {
       "title": "Business Communication: A visitor’s questions",
-      "text": "Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news. After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial. The team’s Deliverable is a tested schedule. A customer is a Stakeholder affected by it. The previous average delivery time provides a Benchmark for comparing the trial’s results.",
+      "text": "Luay sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Luay keeps the supplier’s Letter separately from the company Newsletter containing staff news. After the project meeting, Luay writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial. The team’s Deliverable is a tested schedule. A customer is a Stakeholder affected by it. The previous average delivery time provides a Benchmark for comparing the trial’s results.",
       "imageBrief": "One uncluttered business communication setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule.\nWhich document suggests a plan for consideration?",
+        "prompt": "Luay sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule.\nWhich document suggests a plan for consideration?",
         "answer": "Proposal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news.\nWhich document records the parties’ agreed obligations?",
+        "prompt": "The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Luay keeps the supplier’s Letter separately from the company Newsletter containing staff news.\nWhich document records the parties’ agreed obligations?",
         "answer": "Contract",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial.\nWhich record contains the meeting’s decisions?",
+        "prompt": "After the project meeting, Luay writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial.\nWhich record contains the meeting’s decisions?",
         "answer": "Minutes",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -135,7 +135,7 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news. After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial. The team’s Deliverable is a tested schedule. A customer is a Stakeholder affected by it. The previous average delivery time provides a Benchmark for comparing the trial’s results.\nExplain the difference between Email and Memo using the account above.",
+        "prompt": "Luay sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Luay keeps the supplier’s Letter separately from the company Newsletter containing staff news. After the project meeting, Luay writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial. The team’s Deliverable is a tested schedule. A customer is a Stakeholder affected by it. The previous average delivery time provides a Benchmark for comparing the trial’s results.\nExplain the difference between Email and Memo using the account above.",
         "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
         "questionType": "production",
         "responseMode": "extended-response",

@@ -221,13 +221,13 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Garden Shed", "Fireplace", "Walk-In Closet", "Built-In Shelves"],
-          "scenario": "A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room.",
+          "scenario": "A Garden Shed stores tools outside. Indoors, Lutfi sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room.",
           "check": {
             "question": "Which storage area is large enough for a person to enter?",
             "options": ["Walk-In Closet", "Garden Shed", "Fireplace"],
             "expectedAnswer": "Walk-In Closet"
           },
-          "imageBrief": "Photorealistic vocabulary reference for Walk-In Closet in a home features context. Use the written scenario as the source of meaning: A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageBrief": "Photorealistic vocabulary reference for Walk-In Closet in a home features context. Use the written scenario as the source of meaning: A Garden Shed stores tools outside. Indoors, Lutfi sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
           "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         },
         {
@@ -259,7 +259,7 @@
     },
     "reading": {
       "title": "Home Features: Understanding the different roles",
-      "text": "The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas. A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room. The agent identifies Crown Molding along the wall-ceiling edge. A Hardwood Floor has a hardwood surface, a Tile Floor is covered with tiles, and a Vaulted Ceiling slopes or arches upward. A Skylight admits daylight through the roof. A Bay Window projects beyond the main wall, while French Doors are glazed doors connecting adjoining spaces in this home.",
+      "text": "The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas. A Garden Shed stores tools outside. Indoors, Lutfi sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room. The agent identifies Crown Molding along the wall-ceiling edge. A Hardwood Floor has a hardwood surface, a Tile Floor is covered with tiles, and a Vaulted Ceiling slopes or arches upward. A Skylight admits daylight through the roof. A Bay Window projects beyond the main wall, while French Doors are glazed doors connecting adjoining spaces in this home.",
       "imageBrief": "One uncluttered home features setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
@@ -271,7 +271,7 @@
         "contextTag": "scene-1"
       },
       {
-        "prompt": "A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room.\nWhich storage area is large enough for a person to enter?",
+        "prompt": "A Garden Shed stores tools outside. Indoors, Lutfi sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room.\nWhich storage area is large enough for a person to enter?",
         "answer": "Walk-In Closet",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -292,7 +292,7 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas. A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room. The agent identifies Crown Molding along the wall-ceiling edge. A Hardwood Floor has a hardwood surface, a Tile Floor is covered with tiles, and a Vaulted Ceiling slopes or arches upward. A Skylight admits daylight through the roof. A Bay Window projects beyond the main wall, while French Doors are glazed doors connecting adjoining spaces in this home.\nExplain the difference between Terrace and Porch using the account above.",
+        "prompt": "The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas. A Garden Shed stores tools outside. Indoors, Lutfi sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room. The agent identifies Crown Molding along the wall-ceiling edge. A Hardwood Floor has a hardwood surface, a Tile Floor is covered with tiles, and a Vaulted Ceiling slopes or arches upward. A Skylight admits daylight through the roof. A Bay Window projects beyond the main wall, while French Doors are glazed doors connecting adjoining spaces in this home.\nExplain the difference between Terrace and Porch using the account above.",
         "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
         "questionType": "production",
         "responseMode": "extended-response",

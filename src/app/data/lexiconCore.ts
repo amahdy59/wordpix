@@ -247,9 +247,8 @@ export const EXTENDED_VOCABULARY_GLOSSES: Record<
     phonetic: "/drɪl/",
     pos: "noun",
     collocations: ["electric drill", "drill a hole", "cordless drill"],
-    exampleEn: "She used a cordless drill to bore holes in the concrete wall.",
-    exampleAr:
-      "اسْتَخْدَمَتْ مِثْقَابًا لاسِلْكِيًّا لِعَمَلِ ثُقُوبٍ فِي الجِدَارِ الخَرَسَانِيِّ.",
+    exampleEn: "He used a cordless drill to bore holes in the concrete wall.",
+    exampleAr: "استخدم مثقابا لاسلكيا ليثقب الجدار الخرساني.",
   },
   hammer: {
     ar: "مِطْرَقَة (شَاكُوش)",
@@ -413,8 +412,8 @@ export const EXTENDED_VOCABULARY_GLOSSES: Record<
     pos: "noun",
     collocations: ["soft pillow", "feather pillow", "rest on a pillow"],
     register: "general",
-    exampleEn: "She rested her head on a soft, comfortable pillow and fell asleep.",
-    exampleAr: "أَسْنَدَتْ رَأْسَهَا إِلَى وِسَادَةٍ نَاعِمَةٍ وَمُرِيحَةٍ ثُمَّ نَامَتْ.",
+    exampleEn: "He rested his head on a soft, comfortable pillow and fell asleep.",
+    exampleAr: "أراح رأسه على وسادة ناعمة ومريحة وغلبه النوم.",
     canDoScenario: "Describing bedroom furniture and sleeping comfort.",
   },
   blanket: {

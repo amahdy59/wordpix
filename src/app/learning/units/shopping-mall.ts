@@ -127,7 +127,7 @@ export const SHOPPING_MALL_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "shop for a very long time until exhausted",
       example:
-        "She shopped till she dropped — four hours, ten shopping bags, and a stop at every store from the shoe store to the jewelry store.",
+        "He shopped till he dropped — four hours, ten shopping bags, and a stop at every store from the shoe store to the jewelry store.",
     },
     {
       id: "shopping-mall-window-shopping",

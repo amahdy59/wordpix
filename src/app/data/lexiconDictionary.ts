@@ -92,12 +92,12 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Daily Routine",
-        en: "She stood at the bathroom sink to wash her face with warm water.",
-        ar: "وَقَفَتْ أَمَامَ حَوْضِ الحَمَّامِ لِتَغْسِلَ وَجْهَهَا بِمَاءٍ دَافِئٍ.",
+        en: "He stood at the bathroom sink to wash his face with warm water.",
+        ar: "وقف أمام حوض الحمام ليغسل وجهه بالماء الدافئ.",
       },
     ],
-    exampleSentence: "She stood at the bathroom sink to wash her face with warm water.",
-    exampleArabic: "وَقَفَتْ أَمَامَ حَوْضِ الحَمَّامِ لِتَغْسِلَ وَجْهَهَا بِمَاءٍ دَافِئٍ.",
+    exampleSentence: "He stood at the bathroom sink to wash his face with warm water.",
+    exampleArabic: "وقف أمام حوض الحمام ليغسل وجهه بالماء الدافئ.",
     audio: "/audio/en-US/sink.mp3",
     meanings: [
       {
@@ -173,8 +173,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Everyday Usage",
-        en: "She looked in the mirror to check her hair.",
-        ar: "نَظَرَتْ فِي المِرْآةِ لِتَتَفَقَّدَ شَعْرَهَا.",
+        en: "He looked in the mirror to check his hair.",
+        ar: "نظر في المرآة ليتفقد شعره.",
       },
       {
         context: "General",
@@ -182,8 +182,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "كَانَتْ مِرْآةُ الحَمَّامِ ضَبَابِيَّةً بَعْدَ الِاسْتِحْمَامِ بِالمَاءِ السَّاخِنِ.",
       },
     ],
-    exampleSentence: "She looked in the mirror to check her hair.",
-    exampleArabic: "نَظَرَتْ فِي المِرْآةِ لِتَتَفَقَّدَ شَعْرَهَا.",
+    exampleSentence: "He looked in the mirror to check his hair.",
+    exampleArabic: "نظر في المرآة ليتفقد شعره.",
   },
   faucet: {
     id: "faucet",
@@ -754,8 +754,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Modern Living",
-        en: "She prefers a sunrise alarm clock that gradually fills the room with light.",
-        ar: "تُفَضِّلُ مُنَبِّهاً يُحَاكِي الشُّرُوقَ حَيْثُ يَمْلَأُ الغُرْفَةَ بِالضَّوْءِ تَدْرِيجِيّاً.",
+        en: "He prefers a sunrise alarm clock that gradually fills the room with light.",
+        ar: "يفضل منبها يحاكي شروق الشمس ويملأ الغرفة بالضوء تدريجيا.",
       },
     ],
     exampleSentence: "He set his alarm clock for six o'clock to catch the early train.",
@@ -793,8 +793,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Roasting Meat",
-        en: "She covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
-        ar: "غَطَّتْ صِينِيَّةَ الشَّيِّ بِوَرَقِ الأَلُومِنْيُوم لِلْحِفَاظِ عَلَى طَرَاوَةِ اللَّحْمِ.",
+        en: "He covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
+        ar: "غطى صينية الشواء بورق الألومنيوم ليحافظ على طراوة اللحم وعصارته.",
       },
       {
         context: "Easy Cleanup",
@@ -808,9 +808,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
-    exampleArabic:
-      "غَطَّتْ صِينِيَّةَ الشَّيِّ بِوَرَقِ الأَلُومِنْيُوم لِلْحِفَاظِ عَلَى طَرَاوَةِ اللَّحْمِ.",
+      "He covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
+    exampleArabic: "غطى صينية الشواء بورق الألومنيوم ليحافظ على طراوة اللحم وعصارته.",
   },
   apron: {
     id: "apron",
@@ -837,14 +836,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "tie up",
         meaning: "fasten apron strings behind back",
         arabic: "يَرْبِطُ حِبَالَ المِرْيَلَة",
-        example: "She tied up the apron straps neatly around her waist.",
+        example: "He tied up the apron straps neatly around his waist.",
       },
     ],
     sentences: [
       {
         context: "Cooking Preparation",
-        en: "She tied on a heavy cotton apron to protect her clothes from flour and sauce.",
-        ar: "رَبَطَتْ مِرْيَلَةَ مَطْبَخٍ قُطْنِيَّةً سَمِيكَةً لِحِمَايَةِ مَلابِسِهَا مِنَ الطَّحِينِ وَالصَّلْصَةِ.",
+        en: "He tied on a heavy cotton apron to protect his clothes from flour and sauce.",
+        ar: "ارتدى مئزرا قطنيا سميكا ليحمي ملابسه من الدقيق والصلصات.",
       },
       {
         context: "Professional Kitchen",
@@ -857,10 +856,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "ارْتَدَى الأَطْفَالُ مَرَايِلَ صَغِيرَةً أَثْنَاءَ تَزْيِينِ الكَبْ كِيك بَعْدَ ظُهْرِ السَّبْتِ.",
       },
     ],
-    exampleSentence:
-      "She tied on a heavy cotton apron to protect her clothes from flour and sauce.",
-    exampleArabic:
-      "رَبَطَتْ مِرْيَلَةَ مَطْبَخٍ قُطْنِيَّةً سَمِيكَةً لِحِمَايَةِ مَلابِسِهَا مِنَ الطَّحِينِ وَالصَّلْصَةِ.",
+    exampleSentence: "He tied on a heavy cotton apron to protect his clothes from flour and sauce.",
+    exampleArabic: "ارتدى مئزرا قطنيا سميكا ليحمي ملابسه من الدقيق والصلصات.",
   },
   armchair: {
     id: "armchair",
@@ -887,8 +884,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Reading Corner",
-        en: "She curled up in the velvet armchair beside the window with an absorbing novel.",
-        ar: "جَلَسَتْ مُسْتَرْخِيَةً فِي الكُرْسِيِّ المَخْمَلِيِّ بِجِوَارِ النَّافِذَةِ مَعَ رِوَايَةٍ شَيِّقَةٍ.",
+        en: "He curled up in the velvet armchair beside the window with an absorbing novel.",
+        ar: "جلس متكورا في الكرسي المخملي بجانب النافذة يقرأ رواية مشوقة.",
       },
       {
         context: "Home Styling",
@@ -902,9 +899,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She curled up in the velvet armchair beside the window with an absorbing novel.",
-    exampleArabic:
-      "جَلَسَتْ مُسْتَرْخِيَةً فِي الكُرْسِيِّ المَخْمَلِيِّ بِجِوَارِ النَّافِذَةِ مَعَ رِوَايَةٍ شَيِّقَةٍ.",
+      "He curled up in the velvet armchair beside the window with an absorbing novel.",
+    exampleArabic: "جلس متكورا في الكرسي المخملي بجانب النافذة يقرأ رواية مشوقة.",
   },
   backpack: {
     id: "backpack",
@@ -1023,8 +1019,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Baking Cookies",
-        en: "She arranged twelve scoops of chocolate chip dough across the baking tray.",
-        ar: "رَتَّبَتِ اثْنَتَيْ عَشْرَةَ قِطْعَةً مِنْ عَجِينَةِ الكُوكِيز بِالشُّوكُولاتَةِ عَلَى صِينِيَّةِ الخَبْزِ.",
+        en: "He arranged twelve scoops of chocolate chip dough across the baking tray.",
+        ar: "وزع اثنتي عشرة كرة من عجين بسكويت الشوكولاتة على صينية الخبز.",
       },
       {
         context: "Roasting Vegetables",
@@ -1037,9 +1033,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "ارْتَدِ دَائِماً قُفَّازَاتِ الفُرْنِ العَازِلَةَ عِنْدَ حَمْلِ صِينِيَّةِ الخَبْزِ المَعْدَنِيَّةِ السَّاخِنَةِ.",
       },
     ],
-    exampleSentence: "She arranged twelve scoops of chocolate chip dough across the baking tray.",
-    exampleArabic:
-      "رَتَّبَتِ اثْنَتَيْ عَشْرَةَ قِطْعَةً مِنْ عَجِينَةِ الكُوكِيز بِالشُّوكُولاتَةِ عَلَى صِينِيَّةِ الخَبْزِ.",
+    exampleSentence: "He arranged twelve scoops of chocolate chip dough across the baking tray.",
+    exampleArabic: "وزع اثنتي عشرة كرة من عجين بسكويت الشوكولاتة على صينية الخبز.",
   },
   barn: {
     id: "barn",
@@ -1122,8 +1117,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Daily Routine",
-        en: "She makes her bed neatly every morning after waking up.",
-        ar: "تُرَتِّبُ سَرِيرَهَا بِعِنَايَةٍ كُلَّ صَبَاحٍ بَعْدَ الاِسْتِيقَاظِ.",
+        en: "He makes his bed neatly every morning after waking up.",
+        ar: "يرتب سريره بعناية كل صباح بعد الاستيقاظ.",
       },
       {
         context: "Evening Habit",
@@ -1136,8 +1131,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "اشْتَرَوْا سَرِيراً مُزْدَوَجاً مُرِيحاً لِغُرْفَةِ النَّوْمِ الرَّئِيسِيَّةِ.",
       },
     ],
-    exampleSentence: "She makes her bed neatly every morning after waking up.",
-    exampleArabic: "تُرَتِّبُ سَرِيرَهَا بِعِنَايَةٍ كُلَّ صَبَاحٍ بَعْدَ الاِسْتِيقَاظِ.",
+    exampleSentence: "He makes his bed neatly every morning after waking up.",
+    exampleArabic: "يرتب سريره بعناية كل صباح بعد الاستيقاظ.",
   },
   "bed-frame": {
     id: "bed-frame",
@@ -1263,8 +1258,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Cold Weather",
-        en: "She pulled the warm wool blanket up to her chin on the chilly night.",
-        ar: "سَحَبَتِ البَطَّانِيَّةَ الصُّوفِيَّةَ الدَّافِئَةَ حَتَّى ذَقْنِهَا فِي تِلْكَ اللَّيْلَةِ البَارِدَةِ.",
+        en: "He pulled the warm wool blanket up to his chin on the chilly night.",
+        ar: "سحب البطانية الصوفية الدافئة حتى ذقنه في تلك الليلة الباردة.",
       },
       {
         context: "Living Room",
@@ -1277,9 +1272,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "وَفَّرَ الفُنْدُقُ بَطَّانِيَّةً إِضَافِيَّةً فِي الخِزَانَةِ لِلنُّزَلاءِ.",
       },
     ],
-    exampleSentence: "She pulled the warm wool blanket up to her chin on the chilly night.",
-    exampleArabic:
-      "سَحَبَتِ البَطَّانِيَّةَ الصُّوفِيَّةَ الدَّافِئَةَ حَتَّى ذَقْنِهَا فِي تِلْكَ اللَّيْلَةِ البَارِدَةِ.",
+    exampleSentence: "He pulled the warm wool blanket up to his chin on the chilly night.",
+    exampleArabic: "سحب البطانية الصوفية الدافئة حتى ذقنه في تلك الليلة الباردة.",
   },
   blender: {
     id: "blender",
@@ -1306,14 +1300,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "whip up",
         meaning: "prepare a drink quickly",
         arabic: "يُحَضِّرُ سَرِيعاً",
-        example: "She whipped up a protein shake in the blender.",
+        example: "He whipped up a protein shake in the blender.",
       },
     ],
     sentences: [
       {
         context: "Healthy Drinks",
-        en: "She blended fresh spinach, frozen mango, and almond milk for breakfast.",
-        ar: "خَلَطَتِ السَّبَانِخَ الطَّازَجَةَ وَالمَانْجُو المُجَمَّدَ وَحَلِيبَ اللَّوْزِ لِفُطُورٍ صِحِّيٍّ.",
+        en: "He blended fresh spinach, frozen mango, and almond milk for breakfast.",
+        ar: "خلط السبانخ الطازجة والمانجو المجمدة وحليب اللوز لوجبة الإفطار.",
       },
       {
         context: "Soup Preparation",
@@ -1326,9 +1320,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "أَضِفْ مَاءً دَافِئاً وَقَطْرَةَ صَابُونٍ ثُمَّ شَغِّلِ الخَلَّاطَ لِتَنْظِيفِهِ بِسُهُولَةٍ.",
       },
     ],
-    exampleSentence: "She blended fresh spinach, frozen mango, and almond milk for breakfast.",
-    exampleArabic:
-      "خَلَطَتِ السَّبَانِخَ الطَّازَجَةَ وَالمَانْجُو المُجَمَّدَ وَحَلِيبَ اللَّوْزِ لِفُطُورٍ صِحِّيٍّ.",
+    exampleSentence: "He blended fresh spinach, frozen mango, and almond milk for breakfast.",
+    exampleArabic: "خلط السبانخ الطازجة والمانجو المجمدة وحليب اللوز لوجبة الإفطار.",
   },
   blinds: {
     id: "blinds",
@@ -1356,7 +1349,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "roll up",
         meaning: "raise roller blinds",
         arabic: "يَرْفَعُ السَّتَائِرَ المَلْفُوفَة",
-        example: "She rolled up the blinds to let in the morning breeze.",
+        example: "He rolled up the blinds to let in the morning breeze.",
       },
       {
         phrase: "let in",
@@ -1368,8 +1361,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Privacy & Light",
-        en: "She closed the window blinds to block the harsh afternoon sun.",
-        ar: "أَغْلَقَتْ سَتَائِرَ النَّافِذَةِ لِحَجْبِ ضَوْءِ شَمْسِ الظَّهِيرَةِ الحَارِقِ.",
+        en: "He closed the window blinds to block the harsh afternoon sun.",
+        ar: "أغلق ستائر النافذة ليحجب شمس الظهيرة القوية.",
       },
       {
         context: "Morning Routine",
@@ -1382,9 +1375,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تُوَفِّرُ السَّتَائِرُ المَعْدَنِيَّةُ المَلْفُوفَةُ مَظْهَراً أَنِيقاً وَتَحَكُّماً مُمْتَازاً فِي الإِضَاءَةِ.",
       },
     ],
-    exampleSentence: "She closed the window blinds to block the harsh afternoon sun.",
-    exampleArabic:
-      "أَغْلَقَتْ سَتَائِرَ النَّافِذَةِ لِحَجْبِ ضَوْءِ شَمْسِ الظَّهِيرَةِ الحَارِقِ.",
+    exampleSentence: "He closed the window blinds to block the harsh afternoon sun.",
+    exampleArabic: "أغلق ستائر النافذة ليحجب شمس الظهيرة القوية.",
   },
   "board-game": {
     id: "board-game",
@@ -1455,7 +1447,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "look through",
         meaning: "browse pages of a book",
         arabic: "يَتَصَفَّحُ الكِتَاب",
-        example: "She looked through the art book while waiting.",
+        example: "He looked through the art book while waiting.",
       },
       {
         phrase: "read through",
@@ -1472,8 +1464,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Library & Study",
-        en: "She borrowed three fascinating science books from the city public library.",
-        ar: "اسْتَعَارَتْ ثَلاثَةَ كُتُبٍ عِلْمِيَّةٍ شَيِّقَةٍ مِنْ مَكْتَبَةِ المَدِينَةِ العَامَّةِ.",
+        en: "He borrowed three fascinating science books from the city public library.",
+        ar: "استعار ثلاثة كتب علمية شيقة من المكتبة العامة في المدينة.",
       },
       {
         context: "Coffee Table Decor",
@@ -1511,14 +1503,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "read up on",
         meaning: "learn about a topic by reading books",
         arabic: "يَقْرَأُ لِيَسْتَفِيدَ عَنْ مَوْضُوع",
-        example: "She read up on astronomy before visiting the planetarium.",
+        example: "He read up on astronomy before visiting the planetarium.",
       },
     ],
     sentences: [
       {
         context: "Reading Habit",
-        en: "She enjoys reading historical and science books for an hour before bedtime.",
-        ar: "تَسْتَمْتِعُ بِقِرَاءَةِ الكُتُبِ التَّارِيخِيَّةِ وَالعِلْمِيَّةِ لِمُدَّةِ سَاعَةٍ قَبْلَ النَّوْمِ.",
+        en: "He enjoys reading historical and science books for an hour before bedtime.",
+        ar: "يستمتع بقراءة كتب التاريخ والعلوم لمدة ساعة قبل النوم.",
       },
       {
         context: "Organization",
@@ -1531,9 +1523,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَفْتَحُ الكُتُبُ الجَيِّدَةُ آفَاقاً جَدِيدَةً وَتُثْرِي حَصِيلَتَكَ اللُّغَوِيَّةَ.",
       },
     ],
-    exampleSentence: "She enjoys reading historical and science books for an hour before bedtime.",
-    exampleArabic:
-      "تَسْتَمْتِعُ بِقِرَاءَةِ الكُتُبِ التَّارِيخِيَّةِ وَالعِلْمِيَّةِ لِمُدَّةِ سَاعَةٍ قَبْلَ النَّوْمِ.",
+    exampleSentence: "He enjoys reading historical and science books for an hour before bedtime.",
+    exampleArabic: "يستمتع بقراءة كتب التاريخ والعلوم لمدة ساعة قبل النوم.",
   },
   bookshelf: {
     id: "bookshelf",
@@ -1554,7 +1545,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "look through",
         meaning: "browse books on a shelf",
         arabic: "يَتَصَفَّحُ",
-        example: "She looked through the bookshelf to find a dictionary.",
+        example: "He looked through the bookshelf to find a dictionary.",
       },
       {
         phrase: "take down",
@@ -1571,8 +1562,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Maintenance",
-        en: "She spent Sunday afternoon dusting and organizing her bookshelf.",
-        ar: "قَضَتْ بَعْدَ ظُهْرِ يَوْمِ الأَحَدِ فِي تَنْظِيفِ وَتَرْتِيبِ رَفِّ الكُتُبِ.",
+        en: "He spent Sunday afternoon dusting and organizing his bookshelf.",
+        ar: "أمضى عصر الأحد في تنظيف رف كتبه من الغبار وترتيبه.",
       },
       {
         context: "Decor",
@@ -1657,8 +1648,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Breakfast",
-        en: "She toasted two slices of whole grain bread and spread strawberry jam on top.",
-        ar: "حَمَّصَتْ شَرِيحَتَيْنِ مِنْ خُبْزِ الحُبُوبِ الكَامِلَةِ وَدَهَنَتْ فَوْقَهُمَا مُرَبَّى الفَرَاوِلَةِ.",
+        en: "He toasted two slices of whole grain bread and spread strawberry jam on top.",
+        ar: "حمص شريحتين من خبز الحبوب الكاملة ودهنهما بمربى الفراولة.",
       },
       {
         context: "Dinner Accompaniment",
@@ -1701,8 +1692,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Feeding Animals",
-        en: "She carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
-        ar: "حَمَلَتْ دَلْوَيْنِ بَلاسْتِيكِيَّيْنِ ثَقِيلَيْنِ مَلِيئَيْنِ بِالحُبُوبِ المُغَذِّيَةِ لِلْخُيُولِ.",
+        en: "He carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
+        ar: "حمل دلوين بلاستيكيين ثقيلين مملوءين بالحبوب المغذية إلى حظائر الخيول.",
       },
       {
         context: "Milking",
@@ -1716,9 +1707,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
-    exampleArabic:
-      "حَمَلَتْ دَلْوَيْنِ بَلاسْتِيكِيَّيْنِ ثَقِيلَيْنِ مَلِيئَيْنِ بِالحُبُوبِ المُغَذِّيَةِ لِلْخُيُولِ.",
+      "He carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
+    exampleArabic: "حمل دلوين بلاستيكيين ثقيلين مملوءين بالحبوب المغذية إلى حظائر الخيول.",
   },
   butter: {
     id: "butter",
@@ -1794,8 +1784,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Kitchen Storage",
-        en: "She organized all spices and canned beans inside the upper kitchen cabinet.",
-        ar: "رَتَّبَتِ البَهَارَاتِ وَالبُقُولِيَّاتِ المُعَلَّبَةَ دَاخِلَ خِزَانَةِ المَطْبَخِ العُلْوِيَّةِ.",
+        en: "He organized all spices and canned beans inside the upper kitchen cabinet.",
+        ar: "رتب جميع التوابل والفاصوليا المعلبة داخل خزانة المطبخ العلوية.",
       },
       {
         context: "Living Room Accent",
@@ -1808,9 +1798,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "احْفَظِ الأَدْوِيَةَ مُقْفَلَةً بِأَمَانٍ دَاخِلَ خِزَانَةِ الحَمَّامِ الجِدَارِيَّةِ.",
       },
     ],
-    exampleSentence: "She organized all spices and canned beans inside the upper kitchen cabinet.",
-    exampleArabic:
-      "رَتَّبَتِ البَهَارَاتِ وَالبُقُولِيَّاتِ المُعَلَّبَةَ دَاخِلَ خِزَانَةِ المَطْبَخِ العُلْوِيَّةِ.",
+    exampleSentence: "He organized all spices and canned beans inside the upper kitchen cabinet.",
+    exampleArabic: "رتب جميع التوابل والفاصوليا المعلبة داخل خزانة المطبخ العلوية.",
   },
   cable: {
     id: "cable",
@@ -1893,8 +1882,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Scheduling",
-        en: "She marked her upcoming vacation dates in red on the wall calendar.",
-        ar: "حَدَّدَتْ مَوَاعِيدَ إِجَازَتِهَا القَادِمَةِ بِاللَّوْنِ الأَحْمَرِ عَلَى تَقْوِيمِ الحَائِطِ.",
+        en: "He marked his upcoming vacation dates in red on the wall calendar.",
+        ar: "حدد تواريخ إجازته القادمة باللون الأحمر على تقويم الحائط.",
       },
       {
         context: "Daily Check",
@@ -1907,9 +1896,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "عَلَّقُوا تَقْوِيماً يَحْمِلُ صُوَراً طَبِيعِيَّةً خَلابَةً عَلَى جِدَارِ غُرْفَةِ الدِّرَاسَةِ.",
       },
     ],
-    exampleSentence: "She marked her upcoming vacation dates in red on the wall calendar.",
-    exampleArabic:
-      "حَدَّدَتْ مَوَاعِيدَ إِجَازَتِهَا القَادِمَةِ بِاللَّوْنِ الأَحْمَرِ عَلَى تَقْوِيمِ الحَائِطِ.",
+    exampleSentence: "He marked his upcoming vacation dates in red on the wall calendar.",
+    exampleArabic: "حدد تواريخ إجازته القادمة باللون الأحمر على تقويم الحائط.",
   },
   "can-opener": {
     id: "can-opener",
@@ -1979,14 +1967,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "light up",
         meaning: "ignite a candle to illuminate a room",
         arabic: "يُشْعِلُ",
-        example: "She lit up three scented candles for a cozy evening.",
+        example: "He lit up three scented candles for a cozy evening.",
       },
     ],
     sentences: [
       {
         context: "Cozy Ambiance",
-        en: "She lit a vanilla scented candle to create a relaxing evening atmosphere.",
-        ar: "أَشْعَلَتْ شَمْعَةً مُعَطَّرَةً بِالفَانِيلْيَا لِخَلْقِ أَجْوَاءِ اسْتِرْخَاءٍ مَسَائِيَّةٍ.",
+        en: "He lit a vanilla scented candle to create a relaxing evening atmosphere.",
+        ar: "أشعل شمعة برائحة الفانيليا ليضفي جوا مريحا على الأمسية.",
       },
       {
         context: "Safety",
@@ -1999,9 +1987,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "عِنْدَمَا انْقَطَعَتِ الكَهْرَبَاءُ خِلالَ العَاصِفَةِ، اسْتَخْدَمُوا الشُّمُوعَ لِلإِضَاءَةِ.",
       },
     ],
-    exampleSentence: "She lit a vanilla scented candle to create a relaxing evening atmosphere.",
-    exampleArabic:
-      "أَشْعَلَتْ شَمْعَةً مُعَطَّرَةً بِالفَانِيلْيَا لِخَلْقِ أَجْوَاءِ اسْتِرْخَاءٍ مَسَائِيَّةٍ.",
+    exampleSentence: "He lit a vanilla scented candle to create a relaxing evening atmosphere.",
+    exampleArabic: "أشعل شمعة برائحة الفانيليا ليضفي جوا مريحا على الأمسية.",
   },
   "candle-holder": {
     id: "candle-holder",
@@ -2038,8 +2025,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Mantel Styling",
-        en: "She arranged three pillar candle holders of varying heights along the fireplace mantel.",
-        ar: "رَتَّبَتْ ثَلاثَةَ حَوَامِلِ شُمُوعٍ بِارْتِفَاعَاتٍ مُتَفَاوِتَةٍ عَلَى رَفِّ المِدْفَأَةِ.",
+        en: "He arranged three pillar candle holders of varying heights along the fireplace mantel.",
+        ar: "رتب ثلاث حاملات شموع متفاوتة الارتفاع على رف المدفأة.",
       },
     ],
     exampleSentence:
@@ -2121,8 +2108,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Baking Lasagna",
-        en: "She layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
-        ar: "رَتَّبَتْ صَلْصَةَ اللَّحْمِ وَجُبْنَ الرِّيكُوتَا فِي طَاجِنِ فُرْنٍ خَزَفِيٍّ عَمِيقٍ.",
+        en: "He layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
+        ar: "وضع طبقات من صلصة اللحم وجبن الريكوتا في طبق خزفي عميق للخبز.",
       },
       {
         context: "Comfort Food",
@@ -2135,9 +2122,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يُمْكِنُ تَقْدِيمُ طَاجِنِ الفُرْنِ الأَنِيقِ مُبَاشَرَةً مِنَ الفُرْنِ إِلَى طَاوِلَةِ الطَّعَامِ.",
       },
     ],
-    exampleSentence: "She layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
-    exampleArabic:
-      "رَتَّبَتْ صَلْصَةَ اللَّحْمِ وَجُبْنَ الرِّيكُوتَا فِي طَاجِنِ فُرْنٍ خَزَفِيٍّ عَمِيقٍ.",
+    exampleSentence: "He layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
+    exampleArabic: "وضع طبقات من صلصة اللحم وجبن الريكوتا في طبق خزفي عميق للخبز.",
   },
   cat: {
     id: "cat",
@@ -2169,8 +2155,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Sunny Spot",
-        en: "She smiled as the ginger cat purred softly while basking in the warm morning sun.",
-        ar: "ابْتَسَمَتْ بَيْنَمَا كَانَتِ القِطَّةُ تَخْرْخِرُ بِهُدُوءٍ تَحْتَ أَشِعَّةِ شَمْسِ الصَّبَاحِ.",
+        en: "He smiled as the ginger cat purred softly while basking in the warm morning sun.",
+        ar: "ابتسم وهو يسمع خرخرة القط البرتقالي الذي يستلقي في شمس الصباح الدافئة.",
       },
       {
         context: "Agility",
@@ -2256,7 +2242,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "get up",
         meaning: "rise from a seated position",
         arabic: "يَقُومُ / يَنْهَضُ",
-        example: "She got up from the desk chair to stretch her legs.",
+        example: "He got up from the desk chair to stretch his legs.",
       },
     ],
     sentences: [
@@ -2398,8 +2384,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Snack & Sandwiches",
-        en: "She prepared a grilled cheese sandwich using thick slices of mature cheddar.",
-        ar: "أَعَدَّتْ شَطِيرَةَ جُبْنٍ مَشْوِيَّةً بِاسْتِخْدَامِ شَرَائِحَ سَمِيكَةٍ مِنْ جُبْنِ التِّشِيدَرْ المُعَتَّقِ.",
+        en: "He prepared a grilled cheese sandwich using thick slices of mature cheddar.",
+        ar: "أعد شطيرة جبن مشوية باستخدام شرائح سميكة من جبن الشيدر المعتق.",
       },
       {
         context: "Pasta Topping",
@@ -2412,9 +2398,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "أَبْهَرَتْ صِينِيَّةُ الأَجْبَانِ الفَاخِرَةُ المُحْتَوِيَةُ عَلَى البْرِي وَالجَوْدَا الضُّيُوفَ.",
       },
     ],
-    exampleSentence: "She prepared a grilled cheese sandwich using thick slices of mature cheddar.",
-    exampleArabic:
-      "أَعَدَّتْ شَطِيرَةَ جُبْنٍ مَشْوِيَّةً بِاسْتِخْدَامِ شَرَائِحَ سَمِيكَةٍ مِنْ جُبْنِ التِّشِيدَرْ المُعَتَّقِ.",
+    exampleSentence: "He prepared a grilled cheese sandwich using thick slices of mature cheddar.",
+    exampleArabic: "أعد شطيرة جبن مشوية باستخدام شرائح سميكة من جبن الشيدر المعتق.",
   },
   "chest-of-drawers": {
     id: "chest-of-drawers",
@@ -2441,7 +2426,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "sort through",
         meaning: "examine items in a drawer",
         arabic: "يَفْرِزُ وَيُفَتِّشُ",
-        example: "She sorted through the chest of drawers for warm socks.",
+        example: "He sorted through the chest of drawers for warm socks.",
       },
     ],
     sentences: [
@@ -2576,8 +2561,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Timekeeping",
-        en: "She glanced at the wall clock to check how much time remained.",
-        ar: "أَلْقَتْ نَظْرَةً عَلَى سَاعَةِ الحَائِطِ لِمَعْرِفَةِ الوَقْتِ المُتَبَقِّي.",
+        en: "He glanced at the wall clock to check how much time remained.",
+        ar: "ألقى نظرة على ساعة الحائط ليرى كم بقي من الوقت.",
       },
       {
         context: "Quiet Night",
@@ -2590,8 +2575,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تُعَلَّقُ سَاعَةٌ خَشَبِيَّةٌ أَنِيقَةٌ بِشَكْلٍ بَارِزٍ فِي مِسَاحَةِ المَطْبَخِ.",
       },
     ],
-    exampleSentence: "She glanced at the wall clock to check how much time remained.",
-    exampleArabic: "أَلْقَتْ نَظْرَةً عَلَى سَاعَةِ الحَائِطِ لِمَعْرِفَةِ الوَقْتِ المُتَبَقِّي.",
+    exampleSentence: "He glanced at the wall clock to check how much time remained.",
+    exampleArabic: "ألقى نظرة على ساعة الحائط ليرى كم بقي من الوقت.",
   },
   coaster: {
     id: "coaster",
@@ -2706,7 +2691,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "pour out",
         meaning: "dispense coffee into a cup",
         arabic: "يَسْكُبُ القَهْوَة",
-        example: "She poured out a steaming mug of coffee.",
+        example: "He poured out a steaming mug of coffee.",
       },
     ],
     sentences: [
@@ -2761,8 +2746,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Tabletop Styling",
-        en: "She arranged a decorative candle, a vase of tulips, and an art book on the coffee table.",
-        ar: "رَتَّبَتْ شَمْعَةً أَنِيقَةً وَزَهْرِيَّةَ تِيُولِيب وَكِتَابَ فَنٍّ عَلَى طَاوِلَةِ القَهْوَةِ.",
+        en: "He arranged a decorative candle, a vase of tulips, and an art book on the coffee table.",
+        ar: "رتب شمعة للزينة ومزهرية توليب وكتاب فن على طاولة القهوة.",
       },
       {
         context: "Coaster Use",
@@ -2952,8 +2937,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Kitchen Drawer",
-        en: "She retrieved the corkscrew from the drawer to open a bottle of sparkling juice.",
-        ar: "أَخْرَجَتْ مِفْتَاحَ الفِلِّينِ مِنَ الدُّرْجِ لِفَتْحِ زُجَاجَةِ عَصِيرٍ فَوَّارٍ.",
+        en: "He retrieved the corkscrew from the drawer to open a bottle of sparkling juice.",
+        ar: "أخرج فتاحة الفلين من الدرج ليفتح زجاجة عصير فوار.",
       },
     ],
     exampleSentence: "He twisted the corkscrew into the wine bottle and pulled the cork smoothly.",
@@ -3022,14 +3007,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "pour out",
         meaning: "pour tea or coffee into a cup",
         arabic: "يَسْكُبُ فِي الفِنْجَان",
-        example: "She poured out a delicate cup of English breakfast tea.",
+        example: "He poured out a delicate cup of English breakfast tea.",
       },
     ],
     sentences: [
       {
         context: "Afternoon Tea",
-        en: "She offered her guest a delicate porcelain cup of aromatic Earl Grey tea.",
-        ar: "قَدَّمَتْ لِضَيْفِهَا فِنْجَانَ خَزَفٍ أَنِيقاً مِنْ شَايِ إِيرْل جْرِي العَطِرِ.",
+        en: "He offered his guest a delicate porcelain cup of aromatic Earl Grey tea.",
+        ar: "قدم لضيفه شاي إيرل غراي المعطر في فنجان خزفي رقيق.",
       },
       {
         context: "Recipe Measurement",
@@ -3042,9 +3027,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يَمْنَحُهُ فِنْجَانُ قَهْوَةٍ سَوْدَاءَ سَاخِنٌ الطَّاقَةَ لِبَدْءِ يَوْمِ عَمَلِهِ.",
       },
     ],
-    exampleSentence: "She offered her guest a delicate porcelain cup of aromatic Earl Grey tea.",
-    exampleArabic:
-      "قَدَّمَتْ لِضَيْفِهَا فِنْجَانَ خَزَفٍ أَنِيقاً مِنْ شَايِ إِيرْل جْرِي العَطِرِ.",
+    exampleSentence: "He offered his guest a delicate porcelain cup of aromatic Earl Grey tea.",
+    exampleArabic: "قدم لضيفه شاي إيرل غراي المعطر في فنجان خزفي رقيق.",
   },
   curtain: {
     id: "curtain",
@@ -3083,8 +3067,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Morning Routine",
-        en: "She opened the bedroom curtains to enjoy the beautiful sunny view.",
-        ar: "فَتَحَتْ سَتَائِرَ غُرْفَةِ النَّوْمِ لِتَسْتَمْتِعَ بِالمَنْظَرِ المُشْمِسِ الجَمِيلِ.",
+        en: "He opened the bedroom curtains to enjoy the beautiful sunny view.",
+        ar: "فتح ستائر غرفة النوم ليستمتع بالمنظر المشمس الجميل.",
       },
       {
         context: "Privacy & Sleep",
@@ -3097,9 +3081,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تُضِيفُ السَّتَائِرُ المَخْمَلِيَّةُ الطَّوِيلَةُ أَنَاقَةً وَدِفْئاً عَلَى مِسَاحَةِ المَعِيشَةِ.",
       },
     ],
-    exampleSentence: "She opened the bedroom curtains to enjoy the beautiful sunny view.",
-    exampleArabic:
-      "فَتَحَتْ سَتَائِرَ غُرْفَةِ النَّوْمِ لِتَسْتَمْتِعَ بِالمَنْظَرِ المُشْمِسِ الجَمِيلِ.",
+    exampleSentence: "He opened the bedroom curtains to enjoy the beautiful sunny view.",
+    exampleArabic: "فتح ستائر غرفة النوم ليستمتع بالمنظر المشمس الجميل.",
   },
   cushion: {
     id: "cushion",
@@ -3120,7 +3103,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "lean against",
         meaning: "rest your back against a cushion",
         arabic: "يَسْتَنِدُ عَلَى",
-        example: "She leaned against the soft velvet cushion while watching TV.",
+        example: "He leaned against the soft velvet cushion while watching TV.",
       },
       {
         phrase: "plump up",
@@ -3231,8 +3214,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Studying",
-        en: "The student spends three hours every evening working at her desk.",
-        ar: "تَقْضِي الطَّالِبَةُ ثَلاثَ سَاعَاتٍ كُلَّ مَسَاءٍ فِي الدِّرَاسَةِ عِنْدَ مَكْتَبِهَا.",
+        en: "The student spends three hours every evening working at his desk.",
+        ar: "يقضي الطالب ثلاث ساعات كل مساء في العمل على مكتبه.",
       },
       {
         context: "Workspace Setup",
@@ -3245,9 +3228,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يَسْتَقِرُّ مِصْبَاحُ مَكْتَبٍ سَاطِعٌ وَحَاسُوبٌ مَحْمُولٌ عَلَى المَكْتَبِ الخَشَبِيِّ.",
       },
     ],
-    exampleSentence: "The student spends three hours every evening working at her desk.",
-    exampleArabic:
-      "تَقْضِي الطَّالِبَةُ ثَلاثَ سَاعَاتٍ كُلَّ مَسَاءٍ فِي الدِّرَاسَةِ عِنْدَ مَكْتَبِهَا.",
+    exampleSentence: "The student spends three hours every evening working at his desk.",
+    exampleArabic: "يقضي الطالب ثلاث ساعات كل مساء في العمل على مكتبه.",
   },
   "dining-chair": {
     id: "dining-chair",
@@ -3339,8 +3321,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Table Setting",
-        en: "She laid a white linen runner and fresh flowers across the center of the dining table.",
-        ar: "فَرَشَتْ مَفْرَشاً كَتَّانِيّاً أَبْيَضَ وَأَزْهَاراً طَازَجَةً عَلَى طَاوِلَةِ الطَّعَامِ.",
+        en: "He laid a white linen runner and fresh flowers across the center of the dining table.",
+        ar: "وضع مفرشا طوليا من الكتان الأبيض وزهورا نضرة في وسط طاولة الطعام.",
       },
     ],
     exampleSentence: "They sat together at the large solid oak dining table to share Sunday lunch.",
@@ -3372,8 +3354,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Air Drying",
-        en: "She stacked the clean plates and bowls neatly in the dish rack to air dry.",
-        ar: "رَصَّتِ الأَطْبَاقَ وَالأَوْعِيَةَ النَّظِيفَةَ فِي مَطْبَقِيَّةِ التَّجْفِيفِ لِتَجِفَّ فِي الهَوَاءِ.",
+        en: "He stacked the clean plates and bowls neatly in the dish rack to air dry.",
+        ar: "رص الأطباق والأوعية النظيفة بعناية في رف التجفيف لتجف في الهواء.",
       },
       {
         context: "Sink Space",
@@ -3386,9 +3368,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "ضَعِ الشُّوَكَ وَالمَلاعِقَ وَاقِفَةً فِي سَلَّةِ أَدَوَاتِ المَائِدَةِ المُلْحَقَةِ بِمُجَفِّفِ الصُّحُونِ.",
       },
     ],
-    exampleSentence: "She stacked the clean plates and bowls neatly in the dish rack to air dry.",
-    exampleArabic:
-      "رَصَّتِ الأَطْبَاقَ وَالأَوْعِيَةَ النَّظِيفَةَ فِي مَطْبَقِيَّةِ التَّجْفِيفِ لِتَجِفَّ فِي الهَوَاءِ.",
+    exampleSentence: "He stacked the clean plates and bowls neatly in the dish rack to air dry.",
+    exampleArabic: "رص الأطباق والأوعية النظيفة بعناية في رف التجفيف لتجف في الهواء.",
   },
   "dish-soap": {
     id: "dish-soap",
@@ -3431,8 +3412,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Refill Routine",
-        en: "She refilled the ceramic sink soap dispenser from a large economy bottle of dish soap.",
-        ar: "أَعَادَتْ مَلْءَ مِضَخَّةِ الصَّابُونِ عَلَى الحَوْضِ مِنْ عَبْوَةِ سَائِلِ الجَلِي الكَبِيرَةِ.",
+        en: "He refilled the ceramic sink soap dispenser from a large economy bottle of dish soap.",
+        ar: "ملأ موزع الصابون الخزفي عند الحوض من عبوة كبيرة اقتصادية لسائل غسل الأطباق.",
       },
     ],
     exampleSentence:
@@ -3459,7 +3440,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "wipe dry",
         meaning: "dry clean dishes with a towel",
         arabic: "يُجَفِّفُ بِالفُوطَة",
-        example: "She wiped dry all the wine glasses with a soft dish towel.",
+        example: "He wiped dry all the wine glasses with a soft dish towel.",
       },
       {
         phrase: "hang up",
@@ -3521,8 +3502,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Chore Routine",
-        en: "She loaded the dirty plates and cutlery into the dishwasher after dinner.",
-        ar: "وَضَعَتِ الأَطْبَاقَ وَأَدَوَاتِ المَائِدَةِ المُتَّسِخَةَ فِي غَسَّالَةِ الصُّحُونِ بَعْدَ العَشَاءِ.",
+        en: "He loaded the dirty plates and cutlery into the dishwasher after dinner.",
+        ar: "وضع الأطباق وأدوات المائدة المتسخة في غسالة الأطباق بعد العشاء.",
       },
       {
         context: "Eco Living",
@@ -3535,9 +3516,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَأَكَّدْ مِنْ أَنَّ الكُؤُوسَ الكِرِيسْتَالِيَّةَ آمِنَةٌ لِلْغَسِيلِ فِي الغَسَّالَةِ قَبْلَ وَضْعِهَا.",
       },
     ],
-    exampleSentence: "She loaded the dirty plates and cutlery into the dishwasher after dinner.",
-    exampleArabic:
-      "وَضَعَتِ الأَطْبَاقَ وَأَدَوَاتِ المَائِدَةِ المُتَّسِخَةَ فِي غَسَّالَةِ الصُّحُونِ بَعْدَ العَشَاءِ.",
+    exampleSentence: "He loaded the dirty plates and cutlery into the dishwasher after dinner.",
+    exampleArabic: "وضع الأطباق وأدوات المائدة المتسخة في غسالة الأطباق بعد العشاء.",
   },
   "display-case": {
     id: "display-case",
@@ -3696,7 +3676,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "walk in",
         meaning: "enter through a door",
         arabic: "يَدْخُلُ",
-        example: "She knocked gently before walking in through the door.",
+        example: "He knocked gently before walking in through the door.",
       },
       {
         phrase: "lock up",
@@ -3839,7 +3819,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "put away",
         meaning: "store items in their proper place",
         arabic: "يَضَعُ الشَّيْءَ فِي مَكَانِهِ",
-        example: "She put away all the clean laundry into the dresser.",
+        example: "He put away all the clean laundry into the dresser.",
       },
       {
         phrase: "fold up",
@@ -3856,8 +3836,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Decor",
-        en: "She placed a jewelry box and a family photo on top of the dresser.",
-        ar: "وَضَعَتْ صُنْدُوقَ مَجَوْهَرَاتٍ وَصُورَةً عَائِلِيَّةً فَوْقَ التَّسْرِيحَةِ.",
+        en: "He placed a jewelry box and a family photo on top of the dresser.",
+        ar: "وضع علبة مجوهرات وصورة عائلية فوق خزانة الأدراج.",
       },
       {
         context: "Purchasing",
@@ -3936,7 +3916,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "crawl under",
         meaning: "get underneath a warm duvet",
         arabic: "يَخْلُدُ تَحْتَ اللِّحَاف",
-        example: "She crawled under the duvet and fell asleep instantly.",
+        example: "He crawled under the duvet and fell asleep instantly.",
       },
     ],
     sentences: [
@@ -3947,8 +3927,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Linen Care",
-        en: "She selected a blue floral duvet cover to brighten the bedroom.",
-        ar: "اخْتَارَتْ غِطَاءَ لِحَافٍ مُزَيَّناً بِزُهُورٍ زَرْقَاءَ لِإِضْفَاءِ بَهْجَةٍ عَلَى الغُرْفَةِ.",
+        en: "He selected a blue floral duvet cover to brighten the bedroom.",
+        ar: "اختار غطاء لحاف أزرق مزينا بالزهور ليضفي البهجة على غرفة النوم.",
       },
       {
         context: "Everyday Use",
@@ -4371,8 +4351,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Eating",
-        en: "She twirled the spaghetti around her fork before taking a bite.",
-        ar: "لَفَّتِ المَعْكَرُونَةَ الإِسْبَاغِيتِي حَوْلَ شَوْكَتِهَا قَبْلَ تَنَاوُلِ اللُّقْمَةِ.",
+        en: "He twirled the spaghetti around his fork before taking a bite.",
+        ar: "لف السباغيتي حول شوكته قبل أن يأخذ لقمة.",
       },
       {
         context: "Baking Prep",
@@ -4609,7 +4589,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "take off",
         meaning: "remove glasses",
         arabic: "يَخْلَعُ النَّظَّارَة",
-        example: "She took off her glasses and rubbed her tired eyes.",
+        example: "He took off his glasses and rubbed his tired eyes.",
       },
     ],
     sentences: [
@@ -4625,8 +4605,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Bedside Habit",
-        en: "She always places her glasses safely inside a hard case on the nightstand.",
-        ar: "تَضَعُ نَظَّارَتَهَا دَائِماً دَاخِلَ عُلْبَةٍ صَلْبَةٍ عَلَى طَاوِلَةِ السَّرِيرِ قَبْلَ النَّوْمِ.",
+        en: "He always places his glasses safely inside a hard case on the nightstand.",
+        ar: "يضع نظارته دائما في علبة صلبة على الطاولة بجوار السرير لحمايتها.",
       },
     ],
     exampleSentence: "He cannot read small text clearly without his prescription reading glasses.",
@@ -4969,14 +4949,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "lean on",
         meaning: "rest against the headboard while reading",
         arabic: "يَسْتَنِدُ عَلَى ظَهْرِ السَّرِير",
-        example: "She propped a pillow to lean on the headboard while studying.",
+        example: "He propped a pillow to lean on the headboard while studying.",
       },
     ],
     sentences: [
       {
         context: "Bedtime Reading",
-        en: "She leaned against the padded headboard to read her book comfortably.",
-        ar: "اسْتَنَدَتْ إِلَى ظَهْرِ السَّرِيرِ المَحْشُوِّ لِتَقْرَأَ كِتَابَهَا بِكُلِّ رَاحَةٍ.",
+        en: "He leaned against the padded headboard to read his book comfortably.",
+        ar: "اتكأ على لوح السرير المبطن ليقرأ كتابه براحة.",
       },
       {
         context: "Bedroom Decor",
@@ -4989,9 +4969,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَمَّ تَثْبِيتُ ظَهْرِ السَّرِيرِ الخَشَبِيِّ بِإِحْكَامٍ فِي هَيْكَلِ السَّرِيرِ.",
       },
     ],
-    exampleSentence: "She leaned against the padded headboard to read her book comfortably.",
-    exampleArabic:
-      "اسْتَنَدَتْ إِلَى ظَهْرِ السَّرِيرِ المَحْشُوِّ لِتَقْرَأَ كِتَابَهَا بِكُلِّ رَاحَةٍ.",
+    exampleSentence: "He leaned against the padded headboard to read his book comfortably.",
+    exampleArabic: "اتكأ على لوح السرير المبطن ليقرأ كتابه براحة.",
   },
   headphones: {
     id: "headphones",
@@ -5018,7 +4997,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "take off",
         meaning: "remove headphones from head",
         arabic: "يَنْزِعُ السَّمَّاعَات",
-        example: "She took off her headphones when her colleague spoke to her.",
+        example: "He took off his headphones when his colleague spoke to him.",
       },
     ],
     sentences: [
@@ -5111,8 +5090,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Weeding Crops",
-        en: "She used a sharp garden hoe to clear unwanted weeds between the vegetable rows.",
-        ar: "اسْتَخْدَمَتْ مِعْزَقَةَ حَدِيقَةٍ حَادَّةً لِإِزَالَةِ الحَشَائِشِ الضَّارَّةِ بَيْنَ صُفُوفِ الخُضَارِ.",
+        en: "He used a sharp garden hoe to clear unwanted weeds between the vegetable rows.",
+        ar: "استخدم معولا يدويا حادا لإزالة الأعشاب بين صفوف الخضراوات.",
       },
       {
         context: "Soil Loosening",
@@ -5126,9 +5105,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used a sharp garden hoe to clear unwanted weeds between the vegetable rows.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ مِعْزَقَةَ حَدِيقَةٍ حَادَّةً لِإِزَالَةِ الحَشَائِشِ الضَّارَّةِ بَيْنَ صُفُوفِ الخُضَارِ.",
+      "He used a sharp garden hoe to clear unwanted weeds between the vegetable rows.",
+    exampleArabic: "استخدم معولا يدويا حادا لإزالة الأعشاب بين صفوف الخضراوات.",
   },
   honey: {
     id: "honey",
@@ -5155,8 +5133,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Sweetening Drinks",
-        en: "She stirred a golden spoonful of raw wildflower honey into her chamomile tea.",
-        ar: "قَلَّبَتْ مِلْعَقَةً ذَهَبِيَّةً مِنْ عَسَلِ الزُّهُورِ البَرِّيَّةِ النَّقِيِّ فِي شَايِ البَابُونِجِ.",
+        en: "He stirred a golden spoonful of raw wildflower honey into his chamomile tea.",
+        ar: "قلب ملعقة من عسل الزهور البري الخام في شاي البابونج.",
       },
       {
         context: "Breakfast Topping",
@@ -5169,10 +5147,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يَمْنَحُ تَغْلِيفُ العَسَلِ وَالخَرْدَلِ أَجْنِحَةَ الدَّجَاجِ المَشْوِيَّةِ قِشْرَةً مُكَرْمَلَةً شَهِيَّةً.",
       },
     ],
-    exampleSentence:
-      "She stirred a golden spoonful of raw wildflower honey into her chamomile tea.",
-    exampleArabic:
-      "قَلَّبَتْ مِلْعَقَةً ذَهَبِيَّةً مِنْ عَسَلِ الزُّهُورِ البَرِّيَّةِ النَّقِيِّ فِي شَايِ البَابُونِجِ.",
+    exampleSentence: "He stirred a golden spoonful of raw wildflower honey into his chamomile tea.",
+    exampleArabic: "قلب ملعقة من عسل الزهور البري الخام في شاي البابونج.",
   },
   horse: {
     id: "horse",
@@ -5205,8 +5181,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Horseback Riding",
-        en: "She rode her chestnut horse along the scenic forest trail at dawn.",
-        ar: "رَكِبَتْ حِصَانَهَا الكَسْتَنَائِيَّ عَلَى طُولِ مَسَارِ الغَابَةِ الخَلابِ عِنْدَ الفَجْرِ.",
+        en: "He rode his chestnut horse along the scenic forest trail at dawn.",
+        ar: "امتطى حصانه الكستنائي على المسار الجميل في الغابة عند الفجر.",
       },
       {
         context: "Stable Care",
@@ -5219,9 +5195,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "رَكَضَ الفَحْلُ الأَسْوَدُ البَدِيعُ بِسُرْعَةٍ وَرَشَاقَةٍ عَبْرَ المَرْعَى المَفْتُوحِ.",
       },
     ],
-    exampleSentence: "She rode her chestnut horse along the scenic forest trail at dawn.",
-    exampleArabic:
-      "رَكِبَتْ حِصَانَهَا الكَسْتَنَائِيَّ عَلَى طُولِ مَسَارِ الغَابَةِ الخَلابِ عِنْدَ الفَجْرِ.",
+    exampleSentence: "He rode his chestnut horse along the scenic forest trail at dawn.",
+    exampleArabic: "امتطى حصانه الكستنائي على المسار الجميل في الغابة عند الفجر.",
   },
   jam: {
     id: "jam",
@@ -5254,8 +5229,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Breakfast Treat",
-        en: "She spread a generous spoonful of homemade strawberry jam onto her buttered toast.",
-        ar: "دَهَنَتْ مِلْعَقَةً وَفِيرَةً مِنْ مُرَبَّى الفَرَاوِلَةِ المَنْزِلِيِّ عَلَى خُبْزِهَا المَحْمُوصِ بِالزُّبْدَةِ.",
+        en: "He spread a generous spoonful of homemade strawberry jam onto his buttered toast.",
+        ar: "دهن شريحة الخبز المحمص بالزبدة بكمية سخية من مربى الفراولة المنزلي.",
       },
       {
         context: "Canning & Preserves",
@@ -5269,9 +5244,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She spread a generous spoonful of homemade strawberry jam onto her buttered toast.",
-    exampleArabic:
-      "دَهَنَتْ مِلْعَقَةً وَفِيرَةً مِنْ مُرَبَّى الفَرَاوِلَةِ المَنْزِلِيِّ عَلَى خُبْزِهَا المَحْمُوصِ بِالزُّبْدَةِ.",
+      "He spread a generous spoonful of homemade strawberry jam onto his buttered toast.",
+    exampleArabic: "دهن شريحة الخبز المحمص بالزبدة بكمية سخية من مربى الفراولة المنزلي.",
   },
   "jewelry-box": {
     id: "jewelry-box",
@@ -5292,7 +5266,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "put away",
         meaning: "store jewelry in its box",
         arabic: "يَحْفَظُ فِي الصُّنْدُوق",
-        example: "She put away her gold necklace inside the velvet jewelry box.",
+        example: "He put away his gold necklace inside the velvet jewelry box.",
       },
       {
         phrase: "take out",
@@ -5304,13 +5278,13 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Storage & Care",
-        en: "She organized her silver earrings and bracelets inside the velvet jewelry box.",
-        ar: "رَتَّبَتْ أَقْرَاطَهَا وَأَسَاوِرَهَا الفِضِّيَّةَ دَاخِلَ صُنْدُوقِ المَجَوْهَرَاتِ المَخْمَلِيِّ.",
+        en: "He organized his silver earrings and bracelets inside the velvet jewelry box.",
+        ar: "رتب أقراطه وأساوره الفضية في علبة المجوهرات المخملية.",
       },
       {
         context: "Heirloom",
-        en: "The antique wooden jewelry box was passed down from her great-grandmother.",
-        ar: "تَوَارَثَتْ صُنْدُوقَ المَجَوْهَرَاتِ الخَشَبِيَّ الأَثَرِيَّ عَنْ جَدَّتِهَا الكُبْرَى.",
+        en: "The antique wooden jewelry box was passed down from his great-grandmother.",
+        ar: "انتقلت علبة المجوهرات الخشبية الأثرية إليه من جدته الكبرى.",
       },
       {
         context: "Security",
@@ -5319,9 +5293,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She organized her silver earrings and bracelets inside the velvet jewelry box.",
-    exampleArabic:
-      "رَتَّبَتْ أَقْرَاطَهَا وَأَسَاوِرَهَا الفِضِّيَّةَ دَاخِلَ صُنْدُوقِ المَجَوْهَرَاتِ المَخْمَلِيِّ.",
+      "He organized his silver earrings and bracelets inside the velvet jewelry box.",
+    exampleArabic: "رتب أقراطه وأساوره الفضية في علبة المجوهرات المخملية.",
   },
   kettle: {
     id: "kettle",
@@ -5348,7 +5321,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "switch on",
         meaning: "activate the electric kettle",
         arabic: "يُشَغِّلُ الغَلَّايَة",
-        example: "She filled the kettle and switched it on.",
+        example: "He filled the kettle and switched it on.",
       },
     ],
     sentences: [
@@ -5364,8 +5337,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Hospitality",
-        en: "She boiled the kettle to serve hot herbal tea to her visiting neighbors.",
-        ar: "غَلَتِ المَاءَ فِي الغَلَّايَةِ لِتُقَدِّمَ شَايَ الأَعْشَابِ السَّاخِنَ لِجِيرَانِهَا الزَّائِرِينَ.",
+        en: "He boiled the kettle to serve hot herbal tea to his visiting neighbors.",
+        ar: "غلى الماء في الغلاية ليقدم شاي الأعشاب الساخن لجيرانه الزائرين.",
       },
     ],
     exampleSentence: "He filled the electric kettle with filtered water to brew morning green tea.",
@@ -5440,7 +5413,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "ladle out",
         meaning: "serve soup or liquid with a ladle",
         arabic: "يَغْرِفُ بِالمِغْرَفَة",
-        example: "She ladled out hot vegetable soup into ceramic bowls.",
+        example: "He ladled out hot vegetable soup into ceramic bowls.",
       },
     ],
     sentences: [
@@ -5495,7 +5468,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "switch on",
         meaning: "press the switch to activate",
         arabic: "يَضْغَطُ زِرَّ التَّشْغِيل",
-        example: "She switched on the desk lamp to start working.",
+        example: "He switched on the desk lamp to start working.",
       },
     ],
     sentences: [
@@ -5550,14 +5523,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "log into",
         meaning: "enter credentials to access computer",
         arabic: "يُسَجِّلُ الدُّخُول",
-        example: "She logged into her laptop to join the morning video meeting.",
+        example: "He logged into his laptop to join the morning video meeting.",
       },
     ],
     sentences: [
       {
         context: "Remote Work",
-        en: "She opened her laptop at the desk to review the project report.",
-        ar: "فَتَحَتْ حَاسُوبَهَا المَحْمُولَ عَلَى المَكْتَبِ لِمُرَاجَعَةِ تَقْرِيرِ المَشْرُوعِ.",
+        en: "He opened his laptop at the desk to review the project report.",
+        ar: "فتح حاسوبه المحمول على المكتب ليراجع تقرير المشروع.",
       },
       {
         context: "Mobility",
@@ -5570,9 +5543,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "أَغْلِقْ غِطَاءَ حَاسُوبِكَ المَحْمُولِ بِرِفْقٍ وَأَبْعِدِ السَّوَائِلَ عَنْ لَوْحَةِ المَفَاتِيحِ.",
       },
     ],
-    exampleSentence: "She opened her laptop at the desk to review the project report.",
-    exampleArabic:
-      "فَتَحَتْ حَاسُوبَهَا المَحْمُولَ عَلَى المَكْتَبِ لِمُرَاجَعَةِ تَقْرِيرِ المَشْرُوعِ.",
+    exampleSentence: "He opened his laptop at the desk to review the project report.",
+    exampleArabic: "فتح حاسوبه المحمول على المكتب ليراجع تقرير المشروع.",
   },
   "light-bulb": {
     id: "light-bulb",
@@ -5662,8 +5634,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Entering a Room",
-        en: "She reached out in the dark and flipped the light switch beside the door.",
-        ar: "مَدَّتْ يَدَهَا فِي الظَّلامِ وَضَغَطَتْ مِفْتَاحَ الإِضَاءَةِ بِجِوَارِ البَابِ.",
+        en: "He reached out in the dark and flipped the light switch beside the door.",
+        ar: "مد يده في الظلام وقلب مفتاح الإضاءة بجوار الباب.",
       },
       {
         context: "Energy Conservation",
@@ -5676,9 +5648,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يَتَّصِلُ مِفْتَاحُ الإِضَاءَةِ الذَّكِيُّ بِالشَّبَكَةِ لِلتَّحَكُّمِ فِيهِ عَبْرَ هَاتِفِكَ.",
       },
     ],
-    exampleSentence: "She reached out in the dark and flipped the light switch beside the door.",
-    exampleArabic:
-      "مَدَّتْ يَدَهَا فِي الظَّلامِ وَضَغَطَتْ مِفْتَاحَ الإِضَاءَةِ بِجِوَارِ البَابِ.",
+    exampleSentence: "He reached out in the dark and flipped the light switch beside the door.",
+    exampleArabic: "مد يده في الظلام وقلب مفتاح الإضاءة بجوار الباب.",
   },
   magazine: {
     id: "magazine",
@@ -5699,14 +5670,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "flip through",
         meaning: "turn pages quickly",
         arabic: "يُقَلِّبُ صَفَحَاتِ المَجَلَّة",
-        example: "She flipped through the interior design magazine for decoration ideas.",
+        example: "He flipped through the interior design magazine for decoration ideas.",
       },
     ],
     sentences: [
       {
         context: "Leisure Reading",
-        en: "She flipped through a glossy architecture magazine while sipping her morning cappuccino.",
-        ar: "تَصَفَّحَتْ مَجَلَّةَ عِمَارَةٍ أَنِيقَةً وَهِيَ تَرْشُفُ الكَابُوتْشِينُو الصَّبَاحِيَّ.",
+        en: "He flipped through a glossy architecture magazine while sipping his morning cappuccino.",
+        ar: "تصفح مجلة معمارية مصورة وهو يرتشف الكابتشينو في الصباح.",
       },
       {
         context: "Subscription",
@@ -5720,9 +5691,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She flipped through a glossy architecture magazine while sipping her morning cappuccino.",
-    exampleArabic:
-      "تَصَفَّحَتْ مَجَلَّةَ عِمَارَةٍ أَنِيقَةً وَهِيَ تَرْشُفُ الكَابُوتْشِينُو الصَّبَاحِيَّ.",
+      "He flipped through a glossy architecture magazine while sipping his morning cappuccino.",
+    exampleArabic: "تصفح مجلة معمارية مصورة وهو يرتشف الكابتشينو في الصباح.",
   },
   "magazine-rack": {
     id: "magazine-rack",
@@ -5836,8 +5806,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Baking Precision",
-        en: "She measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
-        ar: "قَاسَتْ كُوبَيْنِ تَمَاماً مِنَ الطَّحِينِ بِاسْتِخْدَامِ كُوبِ القِيَاسِ الزُّجَاجِيِّ الشَّفَّافِ.",
+        en: "He measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
+        ar: "قاس كوبين من الدقيق متعدد الاستخدامات بدقة باستخدام كوب قياس زجاجي شفاف.",
       },
       {
         context: "Liquid Ingredients",
@@ -5851,9 +5821,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
-    exampleArabic:
-      "قَاسَتْ كُوبَيْنِ تَمَاماً مِنَ الطَّحِينِ بِاسْتِخْدَامِ كُوبِ القِيَاسِ الزُّجَاجِيِّ الشَّفَّافِ.",
+      "He measured out exactly two cups of all-purpose flour using a clear glass measuring cup.",
+    exampleArabic: "قاس كوبين من الدقيق متعدد الاستخدامات بدقة باستخدام كوب قياس زجاجي شفاف.",
   },
   "measuring-spoon": {
     id: "measuring-spoon",
@@ -5924,7 +5893,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "warm over",
         meaning: "reheat food",
         arabic: "يُعِيدُ التَّسْخِين",
-        example: "She warmed over the coffee in the microwave.",
+        example: "He warmed over the coffee in the microwave.",
       },
     ],
     sentences: [
@@ -6017,8 +5986,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Cake Batter",
-        en: "She combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
-        ar: "خَلَطَتِ الطَّحِينَ وَالسُّكَّرَ وَالكَاكَاوَ دَاخِلَ وِعَاءِ الخَلْطِ السْتَانْلِس الكَبِيرِ.",
+        en: "He combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
+        ar: "جمع الدقيق والسكر والكاكاو في وعاء خلط كبير من الفولاذ المقاوم للصدأ.",
       },
       {
         context: "Salad Tossing",
@@ -6032,9 +6001,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
-    exampleArabic:
-      "خَلَطَتِ الطَّحِينَ وَالسُّكَّرَ وَالكَاكَاوَ دَاخِلَ وِعَاءِ الخَلْطِ السْتَانْلِس الكَبِيرِ.",
+      "He combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
+    exampleArabic: "جمع الدقيق والسكر والكاكاو في وعاء خلط كبير من الفولاذ المقاوم للصدأ.",
   },
   mud: {
     id: "mud",
@@ -6099,7 +6067,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "sip from",
         meaning: "drink slowly from a mug",
         arabic: "يَرْشُفُ مِنَ الكُوب",
-        example: "She sat by the window and sipped from her hot coffee mug.",
+        example: "He sat by the window and sipped from his hot coffee mug.",
       },
     ],
     sentences: [
@@ -6149,7 +6117,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "glance over",
         meaning: "skim headlines quickly",
         arabic: "يُلْقِي نَظْرَةً عَلَى العَنَاوِين",
-        example: "She glanced over the morning newspaper headlines before commuting.",
+        example: "He glanced over the morning newspaper headlines before commuting.",
       },
     ],
     sentences: [
@@ -6198,7 +6166,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "reach for",
         meaning: "extend your hand to take something",
         arabic: "يَمُدُّ يَدَهُ لِيَتَنَاوَلَ شَيْئاً",
-        example: "She reached for her glasses on the nightstand.",
+        example: "He reached for his glasses on the nightstand.",
       },
     ],
     sentences: [
@@ -6214,8 +6182,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Morning Routine",
-        en: "Her alarm clock buzzed loudly from the top of the nightstand.",
-        ar: "رَنَّ مُنَبِّهُهَا بِصَوْتٍ عَالٍ مِنْ أَعْلَى طَاوِلَةِ السَّرِيرِ.",
+        en: "His alarm clock buzzed loudly from the top of the nightstand.",
+        ar: "صدر صوت منبهه المرتفع من فوق الطاولة بجوار السرير.",
       },
     ],
     exampleSentence: "I always keep a bottle of fresh water on my nightstand.",
@@ -6392,8 +6360,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Handling Hot Pots",
-        en: "She gripped the hot casserole handles securely with padded quilted oven mitts.",
-        ar: "أَمْسَكَتْ بِمَقَابِضِ الطَّاجِنِ السَّاخِنِ بِإِحْكَامٍ بِاسْتِخْدَامِ قُفَّازَاتِ الفُرْنِ المُبَطَّنَةِ.",
+        en: "He gripped the hot casserole handles securely with padded quilted oven mitts.",
+        ar: "أمسك مقابض طبق الفرن الساخن بإحكام مستخدما قفازين مبطنين للفرن.",
       },
       {
         context: "Storage",
@@ -6475,7 +6443,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "change into",
         meaning: "switch into pajamas",
         arabic: "يُبَدِّلُ إِلَى مَلابِسِ النَّوْم",
-        example: "After a hot shower, she changed into clean cotton pajamas.",
+        example: "After a hot shower, he changed into clean cotton pajamas.",
       },
     ],
     sentences: [
@@ -6535,8 +6503,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Breakfast",
-        en: "She cooked two fluffy fried eggs in the non-stick pan.",
-        ar: "طَبَخَتْ بَيْضَتَيْنِ مَقْلِيَّتَيْنِ فِي المِقْلاةِ غَيْرِ اللّاصِقَةِ.",
+        en: "He cooked two fluffy fried eggs in the non-stick pan.",
+        ar: "قلى بيضتين في المقلاة غير اللاصقة.",
       },
       {
         context: "Pan Care",
@@ -6579,8 +6547,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Spill Cleanup",
-        en: "She tore off two sheets of absorbent paper towels to clean up the spilled juice.",
-        ar: "فَصَلَتْ مَنْدِيلَيْنِ وَرَقِيَّيْنِ مَاصَّيْنِ لِمَسْحِ العَصِيرِ المَسْكُوبِ عَنِ الطَّاوِلَةِ.",
+        en: "He tore off two sheets of absorbent paper towels to clean up the spilled juice.",
+        ar: "مزق ورقتين من مناشف المطبخ الورقية ليمسح العصير المسكوب.",
       },
       {
         context: "Draining Oil",
@@ -6594,9 +6562,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She tore off two sheets of absorbent paper towels to clean up the spilled juice.",
-    exampleArabic:
-      "فَصَلَتْ مَنْدِيلَيْنِ وَرَقِيَّيْنِ مَاصَّيْنِ لِمَسْحِ العَصِيرِ المَسْكُوبِ عَنِ الطَّاوِلَةِ.",
+      "He tore off two sheets of absorbent paper towels to clean up the spilled juice.",
+    exampleArabic: "مزق ورقتين من مناشف المطبخ الورقية ليمسح العصير المسكوب.",
   },
   pasta: {
     id: "pasta",
@@ -6635,8 +6602,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Dinner Service",
-        en: "She tossed the penne pasta with homemade basil pesto and toasted pine nuts.",
-        ar: "قَلَّبَتْ مَعْكَرُونَةَ البِنِّي مَعَ صَلْصَةِ الرَّيْحَانِ المَنْزِلِيَّةِ وَالصَّنَوْبَرِ المُحَمَّصِ.",
+        en: "He tossed the penne pasta with homemade basil pesto and toasted pine nuts.",
+        ar: "قلب معكرونة البيني مع صلصة البيستو المنزلية وحبوب الصنوبر المحمصة.",
       },
       {
         context: "Comfort Food",
@@ -6674,8 +6641,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Prepping Potatoes",
-        en: "She peeled five large russet potatoes quickly using a sharp swivel peeler.",
-        ar: "قَشَّرَتْ خَمْسَ حَبَّاتِ بَطَاطِسَ كَبِيرَةٍ سَرِيعاً بِاسْتِخْدَامِ قَشَّارَةٍ حَادَّةٍ.",
+        en: "He peeled five large russet potatoes quickly using a sharp swivel peeler.",
+        ar: "قشر خمس حبات بطاطس كبيرة بسرعة باستخدام مقشرة حادة ذات شفرة متحركة.",
       },
       {
         context: "Carrot Ribbons",
@@ -6688,9 +6655,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "انْزِعْ شَرَائِطَ عَرِيضَةً مِنْ قِشْرِ اللَّيْمُونِ بِالقَشَّارَةِ لِتَنْكِيهِ القَطْرِ.",
       },
     ],
-    exampleSentence: "She peeled five large russet potatoes quickly using a sharp swivel peeler.",
-    exampleArabic:
-      "قَشَّرَتْ خَمْسَ حَبَّاتِ بَطَاطِسَ كَبِيرَةٍ سَرِيعاً بِاسْتِخْدَامِ قَشَّارَةٍ حَادَّةٍ.",
+    exampleSentence: "He peeled five large russet potatoes quickly using a sharp swivel peeler.",
+    exampleArabic: "قشر خمس حبات بطاطس كبيرة بسرعة باستخدام مقشرة حادة ذات شفرة متحركة.",
   },
   pepper: {
     id: "pepper",
@@ -6773,8 +6739,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Communication",
-        en: "She checked her phone for new messages as soon as she woke up.",
-        ar: "تَفَقَّدَتْ هَاتِفَهَا لِمَعْرِفَةِ الرَّسَائِلِ الجَدِيدَةِ بِمُجَرَّدِ اسْتِيقَاظِهَا.",
+        en: "He checked his phone for new messages as soon as he woke up.",
+        ar: "تفقد هاتفه بحثا عن رسائل جديدة فور استيقاظه.",
       },
       {
         context: "Battery Care",
@@ -6787,9 +6753,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يُرْجَى كَتْمُ صَوْتِ هَاتِفِكَ أَثْنَاءَ عَرْضِ المُؤْتَمَرِ.",
       },
     ],
-    exampleSentence: "She checked her phone for new messages as soon as she woke up.",
-    exampleArabic:
-      "تَفَقَّدَتْ هَاتِفَهَا لِمَعْرِفَةِ الرَّسَائِلِ الجَدِيدَةِ بِمُجَرَّدِ اسْتِيقَاظِهَا.",
+    exampleSentence: "He checked his phone for new messages as soon as he woke up.",
+    exampleArabic: "تفقد هاتفه بحثا عن رسائل جديدة فور استيقاظه.",
   },
   "photo-album": {
     id: "photo-album",
@@ -6816,7 +6781,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "flip through",
         meaning: "turn pages quickly",
         arabic: "يُقَلِّبُ الصَّفَحَات",
-        example: "She flipped through the photo album to show her childhood pictures.",
+        example: "He flipped through the photo album to show his childhood pictures.",
       },
     ],
     sentences: [
@@ -6859,7 +6824,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "put in",
         meaning: "insert a photograph into a frame",
         arabic: "يَضَعُ الصُّورَةَ فِي البِرْوَاز",
-        example: "She put her favorite holiday portrait in a silver photo frame.",
+        example: "He put his favorite holiday portrait in a silver photo frame.",
       },
     ],
     sentences: [
@@ -6909,7 +6874,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "put in",
         meaning: "insert a photograph into a frame",
         arabic: "يَضَعُ الصُّورَةَ فِي البِرْوَاز",
-        example: "She put her graduation photo in a silver picture frame.",
+        example: "He put his graduation photo in a silver picture frame.",
       },
     ],
     sentences: [
@@ -6920,8 +6885,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Wall Decoration",
-        en: "She hung three matching black picture frames along the hallway wall.",
-        ar: "عَلَّقَتْ ثَلاثَةَ إِطَارَاتِ صُوَرٍ سَوْدَاءَ مُتَطَابِقَةٍ عَلَى جِدَارِ المَمَرِّ.",
+        en: "He hung three matching black picture frames along the hallway wall.",
+        ar: "علق ثلاثة إطارات صور سوداء متناسقة على جدار الممر.",
       },
       {
         context: "Gifting",
@@ -6995,7 +6960,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "prop up",
         meaning: "support with pillows",
         arabic: "يَسْنِدُ بِالوِسَادَة",
-        example: "She propped herself up with two cushions to read in bed.",
+        example: "He propped himself up with two cushions to read in bed.",
       },
     ],
     sentences: [
@@ -7038,7 +7003,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "slip on",
         meaning: "put a pillowcase onto a pillow",
         arabic: "يُلْبِسُ الغِطَاءَ لِلْوِسَادَة",
-        example: "She slipped a clean silk pillowcase onto her pillow.",
+        example: "He slipped a clean silk pillowcase onto his pillow.",
       },
       {
         phrase: "pull off",
@@ -7055,8 +7020,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Cleaning Routine",
-        en: "She washes her pillowcases every week in warm soapy water.",
-        ar: "تَغْسِلُ أَكْيَاسَ الوِسَادَاتِ أُسْبُوعِيّاً فِي مَاءٍ دَافِئٍ وَصَابُونٍ.",
+        en: "He washes his pillowcases every week in warm soapy water.",
+        ar: "يغسل أغطية وساداته كل أسبوع بالماء الدافئ والصابون.",
       },
       {
         context: "Bedding Set",
@@ -7093,8 +7058,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Summer Refreshment",
-        en: "She placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
-        ar: "وَضَعَتْ دَوْرَقاً زُجَاجِيّاً مَمْلُوءاً بِاللَّيْمُونَادَةِ المُثَلَّجَةِ وَأَوْرَاقِ النَّعْنَاعِ عَلَى الطَّاوِلَةِ.",
+        en: "He placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
+        ar: "وضع على الطاولة إبريقا زجاجيا مملوءا بعصير الليمون المثلج وأوراق النعناع.",
       },
       {
         context: "Dining Service",
@@ -7108,9 +7073,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
-    exampleArabic:
-      "وَضَعَتْ دَوْرَقاً زُجَاجِيّاً مَمْلُوءاً بِاللَّيْمُونَادَةِ المُثَلَّجَةِ وَأَوْرَاقِ النَّعْنَاعِ عَلَى الطَّاوِلَةِ.",
+      "He placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
+    exampleArabic: "وضع على الطاولة إبريقا زجاجيا مملوءا بعصير الليمون المثلج وأوراق النعناع.",
   },
   pitchfork: {
     id: "pitchfork",
@@ -7181,8 +7145,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Table Setting",
-        en: "She set a round woven jute placemat under each dinner plate to protect the wood.",
-        ar: "وَضَعَتْ مَفْرَشاً فَرْدِيّاً دَائِرِيّاً مَصْنُوعاً مِنَ الخَيْشِ تَحْتَ كُلِّ طَبَقٍ لِحِمَايَةِ الخَشَبِ.",
+        en: "He set a round woven jute placemat under each dinner plate to protect the wood.",
+        ar: "وضع حصيرة مائدة مستديرة من الجوت المنسوج تحت كل طبق لحماية الخشب.",
       },
       {
         context: "Easy Cleanup",
@@ -7196,9 +7160,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She set a round woven jute placemat under each dinner plate to protect the wood.",
-    exampleArabic:
-      "وَضَعَتْ مَفْرَشاً فَرْدِيّاً دَائِرِيّاً مَصْنُوعاً مِنَ الخَيْشِ تَحْتَ كُلِّ طَبَقٍ لِحِمَايَةِ الخَشَبِ.",
+      "He set a round woven jute placemat under each dinner plate to protect the wood.",
+    exampleArabic: "وضع حصيرة مائدة مستديرة من الجوت المنسوج تحت كل طبق لحماية الخشب.",
   },
   plant: {
     id: "plant",
@@ -7330,8 +7293,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Serving Dinner",
-        en: "She served the steaming roast chicken on a large white ceramic plate.",
-        ar: "قَدَّمَتِ الدَّجَاجَ المَشْوِيَّ السَّاخِنَ عَلَى طَبَقٍ خَزَفِيٍّ أَبْيَضَ كَبِيرٍ.",
+        en: "He served the steaming roast chicken on a large white ceramic plate.",
+        ar: "قدم الدجاج المشوي الساخن على طبق خزفي أبيض كبير.",
       },
       {
         context: "Table Setting",
@@ -7344,9 +7307,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "سَاعَدَ الأَطْفَالُ فِي رَفْعِ الأَطْبَاقِ المُتَّسِخَةِ وَحَمْلِهَا إِلَى حَوْضِ الجَلِي.",
       },
     ],
-    exampleSentence: "She served the steaming roast chicken on a large white ceramic plate.",
-    exampleArabic:
-      "قَدَّمَتِ الدَّجَاجَ المَشْوِيَّ السَّاخِنَ عَلَى طَبَقٍ خَزَفِيٍّ أَبْيَضَ كَبِيرٍ.",
+    exampleSentence: "He served the steaming roast chicken on a large white ceramic plate.",
+    exampleArabic: "قدم الدجاج المشوي الساخن على طبق خزفي أبيض كبير.",
   },
   plow: {
     id: "plow",
@@ -7424,8 +7386,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Electrical Connection",
-        en: "She inserted the three-prong electric plug firmly into the grounded wall outlet.",
-        ar: "أَدْخَلَتْ قَابِسَ الكَهْرَبَاءِ الثُّلاثِيَّ بِإِحْكَامٍ فِي مِقْبَسِ الجِدَارِ المُؤَرَّضِ.",
+        en: "He inserted the three-prong electric plug firmly into the grounded wall outlet.",
+        ar: "أدخل القابس الكهربائي الثلاثي بإحكام في مقبس الحائط المؤرض.",
       },
       {
         context: "Safety",
@@ -7439,9 +7401,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She inserted the three-prong electric plug firmly into the grounded wall outlet.",
-    exampleArabic:
-      "أَدْخَلَتْ قَابِسَ الكَهْرَبَاءِ الثُّلاثِيَّ بِإِحْكَامٍ فِي مِقْبَسِ الجِدَارِ المُؤَرَّضِ.",
+      "He inserted the three-prong electric plug firmly into the grounded wall outlet.",
+    exampleArabic: "أدخل القابس الكهربائي الثلاثي بإحكام في مقبس الحائط المؤرض.",
   },
   pond: {
     id: "pond",
@@ -7523,8 +7484,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Wall Art",
-        en: "She framed a scenic travel poster to hang above her study desk.",
-        ar: "وَضَعَتْ مُلْصَقَ سَفَرٍ طَبِيعِيّاً فِي إِطَارٍ لِتُعَلِّقَهُ فَوْقَ مَكْتَبِ الدِّرَاسَةِ.",
+        en: "He framed a scenic travel poster to hang above his study desk.",
+        ar: "وضع ملصق سفر يصور منظرا جميلا في إطار ليعلقه فوق مكتب دراسته.",
       },
       {
         context: "Education",
@@ -7567,8 +7528,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Family Dinner",
-        en: "She simmered a large pot of aromatic lentil soup for the whole family.",
-        ar: "طَبَخَتْ قِدْراً كَبِيراً مِنْ شُورْبَةِ العَدَسِ الشَّهِيَّةِ لِجَمِيعِ أَفْرَادِ العَائِلَةِ.",
+        en: "He simmered a large pot of aromatic lentil soup for the whole family.",
+        ar: "طهى قدرا كبيرا من حساء العدس العطري على نار هادئة للعائلة كلها.",
       },
       {
         context: "Pasta Cooking",
@@ -7581,9 +7542,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يُوَزِّعُ قِدْرُ الزَّهْرِ الثَّقِيلُ الحَرَارَةَ بِالتَّسَاوِي لِلطَّهْيِ البَطِيءِ.",
       },
     ],
-    exampleSentence: "She simmered a large pot of aromatic lentil soup for the whole family.",
-    exampleArabic:
-      "طَبَخَتْ قِدْراً كَبِيراً مِنْ شُورْبَةِ العَدَسِ الشَّهِيَّةِ لِجَمِيعِ أَفْرَادِ العَائِلَةِ.",
+    exampleSentence: "He simmered a large pot of aromatic lentil soup for the whole family.",
+    exampleArabic: "طهى قدرا كبيرا من حساء العدس العطري على نار هادئة للعائلة كلها.",
   },
   "power-strip": {
     id: "power-strip",
@@ -7898,7 +7858,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "clip onto",
         meaning: "attach a clip-on light to a book or headboard",
         arabic: "يُثَبِّتُ بِالمِشْبَك",
-        example: "She clipped the reading light onto her novel.",
+        example: "He clipped the reading light onto his novel.",
       },
       {
         phrase: "switch on",
@@ -7910,8 +7870,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Night Reading",
-        en: "She attached a small clip-on reading light to her book so she wouldn't wake her roommate.",
-        ar: "ثَبَّتَتْ مِصْبَاحَ قِرَاءَةٍ صَغِيرَاً بِمِشْبَكٍ عَلَى كِتَابِهَا حَتَّى لا تُوقِظَ زَمِيلَتَهَا.",
+        en: "He attached a small clip-on reading light to his book so he wouldn't wake his roommate.",
+        ar: "ثبت مصباح قراءة صغيرا على كتابه حتى لا يوقظ زميله في الغرفة.",
       },
       {
         context: "Bedside Fixture",
@@ -7925,9 +7885,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She attached a small clip-on reading light to her book so she wouldn't wake her roommate.",
-    exampleArabic:
-      "ثَبَّتَتْ مِصْبَاحَ قِرَاءَةٍ صَغِيرَاً بِمِشْبَكٍ عَلَى كِتَابِهَا حَتَّى لا تُوقِظَ زَمِيلَتَهَا.",
+      "He attached a small clip-on reading light to his book so he wouldn't wake his roommate.",
+    exampleArabic: "ثبت مصباح قراءة صغيرا على كتابه حتى لا يوقظ زميله في الغرفة.",
   },
   refrigerator: {
     id: "refrigerator",
@@ -7948,7 +7907,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "put away",
         meaning: "place groceries inside the fridge",
         arabic: "يَحْفَظُ فِي الثَّلَّاجَة",
-        example: "She put away the fresh vegetables into the refrigerator crisper.",
+        example: "He put away the fresh vegetables into the refrigerator crisper.",
       },
       {
         phrase: "take out",
@@ -7965,8 +7924,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Cooking Prep",
-        en: "She took out fresh butter and eggs from the refrigerator to bake a cake.",
-        ar: "أَخْرَجَتِ الزُّبْدَةَ الطَّازَجَةَ وَالبَيْضَ مِنَ الثَّلَّاجَةِ لِخَبْزِ الكَعْكَةِ.",
+        en: "He took out fresh butter and eggs from the refrigerator to bake a cake.",
+        ar: "أخرج الزبدة والبيض الطازجين من الثلاجة ليخبز كعكة.",
       },
       {
         context: "Cleaning",
@@ -8095,7 +8054,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "wrap up in",
         meaning: "wrap oneself snugly in a robe",
         arabic: "يَلْتَفُّ فِي الرُّوب",
-        example: "She wrapped up in a plush bathrobe after her shower.",
+        example: "He wrapped up in a plush bathrobe after his shower.",
       },
       {
         phrase: "tie up",
@@ -8107,8 +8066,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Post-Shower",
-        en: "She wrapped herself in a thick cotton bathrobe after taking a hot shower.",
-        ar: "الْتَفَّتْ فِي بُرْنُسٍ قُطْنِيٍّ سَمِيكٍ بَعْدَ الاِسْتِحْمَامِ بِمَاءٍ سَاخِنٍ.",
+        en: "He wrapped himself in a thick cotton bathrobe after taking a hot shower.",
+        ar: "لف جسمه برداء استحمام قطني سميك بعد الاستحمام بالماء الساخن.",
       },
       {
         context: "Morning Relaxation",
@@ -8121,9 +8080,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "وَفَّرَ الفُنْدُقُ الفَاخِرُ أَرْوِبَةً بَيْضَاءَ قُطْنِيَّةً مَجَّانِيَّةً لِلنُّزَلاءِ.",
       },
     ],
-    exampleSentence: "She wrapped herself in a thick cotton bathrobe after taking a hot shower.",
-    exampleArabic:
-      "الْتَفَّتْ فِي بُرْنُسٍ قُطْنِيٍّ سَمِيكٍ بَعْدَ الاِسْتِحْمَامِ بِمَاءٍ سَاخِنٍ.",
+    exampleSentence: "He wrapped himself in a thick cotton bathrobe after taking a hot shower.",
+    exampleArabic: "لف جسمه برداء استحمام قطني سميك بعد الاستحمام بالماء الساخن.",
   },
   "rocking-chair": {
     id: "rocking-chair",
@@ -8194,8 +8152,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Pie Crust",
-        en: "She dusted the wooden rolling pin with flour before rolling out the pastry dough.",
-        ar: "رَشَّتِ النَّشَّابَةَ الخَشَبِيَّةَ بِالطَّحِينِ قَبْلَ فَرْدِ عَجِينَةِ الفَطِيرَةِ.",
+        en: "He dusted the wooden rolling pin with flour before rolling out the pastry dough.",
+        ar: "رش الشوبك الخشبي بالدقيق قبل فرد عجينة المعجنات.",
       },
       {
         context: "Pizza Making",
@@ -8209,9 +8167,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She dusted the wooden rolling pin with flour before rolling out the pastry dough.",
-    exampleArabic:
-      "رَشَّتِ النَّشَّابَةَ الخَشَبِيَّةَ بِالطَّحِينِ قَبْلَ فَرْدِ عَجِينَةِ الفَطِيرَةِ.",
+      "He dusted the wooden rolling pin with flour before rolling out the pastry dough.",
+    exampleArabic: "رش الشوبك الخشبي بالدقيق قبل فرد عجينة المعجنات.",
   },
   rooster: {
     id: "rooster",
@@ -8298,8 +8255,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Cleaning",
-        en: "She shook the dust out of the bedside rug on the balcony.",
-        ar: "نَفَضَتِ الغُبَارَ عَنْ سَجَّادَةِ جَانِبِ السَّرِيرِ فِي الشُّرْفَةِ.",
+        en: "He shook the dust out of the bedside rug on the balcony.",
+        ar: "نفض الغبار من سجادة جانب السرير في الشرفة.",
       },
     ],
     exampleSentence: "A soft fluffy rug keeps your bare feet warm when stepping out of bed.",
@@ -8423,7 +8380,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "set down on",
         meaning: "place a cup safely on its saucer",
         arabic: "يَضَعُ الفِنْجَانَ عَلَى صَحْنِهِ",
-        example: "She set down her teacup gently on the matching saucer.",
+        example: "He set down his teacup gently on the matching saucer.",
       },
     ],
     sentences: [
@@ -8604,7 +8561,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "strip off",
         meaning: "remove sheets for washing",
         arabic: "يَنْزِعُ المِلايَاتِ لِلْغَسِيل",
-        example: "She stripped off the bed sheets to put them in the laundry.",
+        example: "He stripped off the bed sheets to put them in the laundry.",
       },
     ],
     sentences: [
@@ -8653,14 +8610,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "take down from",
         meaning: "remove an item from a shelf",
         arabic: "يُنْزِلُ عَنِ الرَّفّ",
-        example: "She took down the glass vase from the top shelf.",
+        example: "He took down the glass vase from the top shelf.",
       },
     ],
     sentences: [
       {
         context: "Display",
-        en: "She arranged family photographs and potted succulents on the floating wall shelf.",
-        ar: "رَتَّبَتِ الصُّوَرَ العَائِلِيَّةَ وَالنَّبَاتَاتِ عَلَى رَفِّ الحَائِطِ المُنْعَزِلِ.",
+        en: "He arranged family photographs and potted succulents on the floating wall shelf.",
+        ar: "رتب الصور العائلية والنباتات العصارية في أصص على رف الحائط العائم.",
       },
       {
         context: "Storage",
@@ -8674,9 +8631,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She arranged family photographs and potted succulents on the floating wall shelf.",
-    exampleArabic:
-      "رَتَّبَتِ الصُّوَرَ العَائِلِيَّةَ وَالنَّبَاتَاتِ عَلَى رَفِّ الحَائِطِ المُنْعَزِلِ.",
+      "He arranged family photographs and potted succulents on the floating wall shelf.",
+    exampleArabic: "رتب الصور العائلية والنباتات العصارية في أصص على رف الحائط العائم.",
   },
   "shoe-rack": {
     id: "shoe-rack",
@@ -8763,8 +8719,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Compost Handling",
-        en: "She scooped dark aged compost with a square shovel to top-dress the garden beds.",
-        ar: "غَرَفَتِ السَّمَادَ النَّاضِجَ بِمِجْرَفَةٍ مُرَبَّعَةٍ لِتَغْذِيَةِ تُرْبَةِ الحَدِيقَةِ.",
+        en: "He scooped dark aged compost with a square shovel to top-dress the garden beds.",
+        ar: "غرف السماد العضوي الداكن بالمجرفة المربعة ليغطي أحواض الزرع بطبقة منه.",
       },
     ],
     exampleSentence:
@@ -8841,8 +8797,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Fine Dining Storage",
-        en: "She stores her best crystal glasses and holiday tablecloths inside the oak sideboard.",
-        ar: "تَحْفَظُ أَفْضَلَ كُؤُوسِ الكِرِيسْتَالِ وَمَفَارِشِ المَائِدَةِ دَاخِلَ البُوفَيْهِ الخَشَبِيِّ.",
+        en: "He stores his best crystal glasses and holiday tablecloths inside the oak sideboard.",
+        ar: "يحتفظ بأفضل كؤوسه البلورية ومفارش المناسبات داخل خزانة الطعام المصنوعة من البلوط.",
       },
       {
         context: "Holiday Buffet",
@@ -8856,9 +8812,9 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She stores her best crystal glasses and holiday tablecloths inside the oak sideboard.",
+      "He stores his best crystal glasses and holiday tablecloths inside the oak sideboard.",
     exampleArabic:
-      "تَحْفَظُ أَفْضَلَ كُؤُوسِ الكِرِيسْتَالِ وَمَفَارِشِ المَائِدَةِ دَاخِلَ البُوفَيْهِ الخَشَبِيِّ.",
+      "يحتفظ بأفضل كؤوسه البلورية ومفارش المناسبات داخل خزانة الطعام المصنوعة من البلوط.",
   },
   silo: {
     id: "silo",
@@ -8935,8 +8891,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Home Comfort",
-        en: "She slid into her warm fleece slippers as soon as she walked through the door.",
-        ar: "ارْتَدَتْ خُفَّهَا الصُّوفِيَّ الدَّافِئَ بِمُجَرَّدِ دُخُولِهَا مِنْ بَابِ المَنْزِلِ.",
+        en: "He slid into his warm fleece slippers as soon as he walked through the door.",
+        ar: "أدخل قدميه في نعليه الدافئين فور دخوله من الباب.",
       },
       {
         context: "Floor Protection",
@@ -8949,10 +8905,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "احْتَفِظْ بِخُفَّيْكَ بِجِوَارِ السَّرِيرِ حَتَّى لا تَلْمَسَ قَدَمَاكَ البَلاطَ البَارِدَ.",
       },
     ],
-    exampleSentence:
-      "She slid into her warm fleece slippers as soon as she walked through the door.",
-    exampleArabic:
-      "ارْتَدَتْ خُفَّهَا الصُّوفِيَّ الدَّافِئَ بِمُجَرَّدِ دُخُولِهَا مِنْ بَابِ المَنْزِلِ.",
+    exampleSentence: "He slid into his warm fleece slippers as soon as he walked through the door.",
+    exampleArabic: "أدخل قدميه في نعليه الدافئين فور دخوله من الباب.",
   },
   sofa: {
     id: "sofa",
@@ -8979,7 +8933,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "lie down on",
         meaning: "recline on a sofa",
         arabic: "يَسْتَلْقِي عَلَى الأَرِيكَة",
-        example: "She lay down on the sofa to take an afternoon nap.",
+        example: "He lay down on the sofa to take an afternoon nap.",
       },
     ],
     sentences: [
@@ -9169,7 +9123,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "spoon out",
         meaning: "serve food using a large spoon",
         arabic: "يَغْرِفُ بِالمِلْعَقَة",
-        example: "She spooned out generous portions of rice for the guests.",
+        example: "He spooned out generous portions of rice for the guests.",
       },
       {
         phrase: "stir in",
@@ -9186,8 +9140,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Cooking Soup",
-        en: "She tasted the broth with a wooden spoon to check the seasoning.",
-        ar: "تَذَوَّقَتِ المَرَقَ بِمِلْعَقَةٍ خَشَبِيَّةٍ لِلتَّأَكُّدِ مِنْ ضَبْطِ البَهَارَاتِ.",
+        en: "He tasted the broth with a wooden spoon to check the seasoning.",
+        ar: "تذوق المرق بملعقة خشبية ليتحقق من التتبيل.",
       },
       {
         context: "Table Manners",
@@ -9307,7 +9261,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "step up",
         meaning: "step onto a stool to reach something high",
         arabic: "يَصْعَدُ عَلَى",
-        example: "She stepped up on the step stool to reach the top shelf.",
+        example: "He stepped up on the step stool to reach the top shelf.",
       },
       {
         phrase: "sit on",
@@ -9319,8 +9273,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Reaching High",
-        en: "She used a sturdy step stool to change the ceiling light bulb.",
-        ar: "اسْتَخْدَمَتْ مَقْعَداً خَشَبِيّاً مَتِيناً لِتَغْيِيرِ مِصْبَاحِ السَّقْفِ.",
+        en: "He used a sturdy step stool to change the ceiling light bulb.",
+        ar: "استخدم مقعدا مدرجا متينا لتغيير مصباح السقف.",
       },
       {
         context: "Breakfast Area",
@@ -9333,8 +9287,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يَسْتَقِرُّ مَقْعَدٌ صَغِيرٌ بِجِوَارِ طَاوِلَةِ التَّسْرِيحِ فِي غُرْفَةِ النَّوْمِ.",
       },
     ],
-    exampleSentence: "She used a sturdy step stool to change the ceiling light bulb.",
-    exampleArabic: "اسْتَخْدَمَتْ مَقْعَداً خَشَبِيّاً مَتِيناً لِتَغْيِيرِ مِصْبَاحِ السَّقْفِ.",
+    exampleSentence: "He used a sturdy step stool to change the ceiling light bulb.",
+    exampleArabic: "استخدم مقعدا مدرجا متينا لتغيير مصباح السقف.",
   },
   stove: {
     id: "stove",
@@ -9651,8 +9605,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Bedside Reading",
-        en: "She switched off the table lamp on her nightstand before going to sleep.",
-        ar: "أَطْفَأَتْ مِصْبَاحَ الطَّاوِلَةِ المَوْجُودَ عَلَى كُمودِينَتِهَا قَبْلَ أَنْ تَخْلُدَ لِلنَّوْمِ.",
+        en: "He switched off the table lamp on his nightstand before going to sleep.",
+        ar: "أطفأ مصباح الطاولة بجوار سريره قبل النوم.",
       },
     ],
     exampleSentence:
@@ -9685,8 +9639,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Holiday Dinner",
-        en: "She spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
-        ar: "فَرَشَتْ مَفْرَشَ طَاوِلَةٍ كَتَّانِيّاً أَبْيَضَ أَنِيقاً عَلَى سُفْرَةِ الطَّعَامِ لِلاِحْتِفَالِ.",
+        en: "He spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
+        ar: "فرش مفرش طاولة من الكتان الأبيض على طاولة الطعام لوجبة الاحتفال.",
       },
       {
         context: "Casual Picnic",
@@ -9700,9 +9654,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
-    exampleArabic:
-      "فَرَشَتْ مَفْرَشَ طَاوِلَةٍ كَتَّانِيّاً أَبْيَضَ أَنِيقاً عَلَى سُفْرَةِ الطَّعَامِ لِلاِحْتِفَالِ.",
+      "He spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
+    exampleArabic: "فرش مفرش طاولة من الكتان الأبيض على طاولة الطعام لوجبة الاحتفال.",
   },
   tablet: {
     id: "tablet",
@@ -9735,8 +9688,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Digital Reading",
-        en: "She prefers reading digital magazines on her lightweight touch-screen tablet.",
-        ar: "تُفَضِّلُ قِرَاءَةَ المَجَلاَّتِ الرَّقْمِيَّةِ عَلَى جِهَازِهَا اللَّوْحِيِّ الخَفِيفِ.",
+        en: "He prefers reading digital magazines on his lightweight touch-screen tablet.",
+        ar: "يفضل قراءة المجلات الرقمية على جهازه اللوحي الخفيف ذي الشاشة اللمسية.",
       },
       {
         context: "Entertainment",
@@ -9749,10 +9702,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يَسْتَخْدِمُ قَلَماً ذَكِيّاً لِرَسْمِ المُخَطَّطَاتِ الهَنْدَسِيَّةِ مُبَاشَرَةً عَلَى التَّابْلِت.",
       },
     ],
-    exampleSentence:
-      "She prefers reading digital magazines on her lightweight touch-screen tablet.",
-    exampleArabic:
-      "تُفَضِّلُ قِرَاءَةَ المَجَلاَّتِ الرَّقْمِيَّةِ عَلَى جِهَازِهَا اللَّوْحِيِّ الخَفِيفِ.",
+    exampleSentence: "He prefers reading digital magazines on his lightweight touch-screen tablet.",
+    exampleArabic: "يفضل قراءة المجلات الرقمية على جهازه اللوحي الخفيف ذي الشاشة اللمسية.",
   },
   tapestry: {
     id: "tapestry",
@@ -9817,7 +9768,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "cuddle up with",
         meaning: "hold closely in bed",
         arabic: "يَحْتَضِنُ بِحَنَان",
-        example: "The toddler cuddled up with her favorite teddy bear at bedtime.",
+        example: "The toddler cuddled up with his favorite teddy bear at bedtime.",
       },
       {
         phrase: "hold onto",
@@ -9933,8 +9884,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Cozy Evening",
-        en: "She wrapped the chunky knit throw blanket around her shoulders on the breezy autumn evening.",
-        ar: "الْتَفَّتْ فِي شَالِ الصُّوفِ السَّمِيكِ حَوْلَ كَتِفَيْهَا فِي أَمْسِيَةِ الخَرِيفِ البَارِدَةِ.",
+        en: "He wrapped the chunky knit throw blanket around his shoulders on the breezy autumn evening.",
+        ar: "لف البطانية المحبوكة السميكة حول كتفيه في أمسية الخريف العاصفة.",
       },
       {
         context: "Living Room Storage",
@@ -9966,7 +9917,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "pull out",
         meaning: "extract a tissue from the box",
         arabic: "يَسْحَبُ مَنْدِيلاً مِنَ العُلْبَة",
-        example: "She pulled out a soft tissue to dry her tears.",
+        example: "He pulled out a soft tissue to dry his tears.",
       },
       {
         phrase: "throw away",
@@ -10268,8 +10219,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Decor",
-        en: "She placed a potted succulent and a decorative vase on the corner of the TV stand.",
-        ar: "وَضَعَتْ نَبْتَةَ صَبَّارٍ صَغِيرَةً وَزَهْرِيَّةً أَنِيقَةً عَلَى زَاوِيَةِ طَاوِلَةِ التِّلْفَازِ.",
+        en: "He placed a potted succulent and a decorative vase on the corner of the TV stand.",
+        ar: "وضع أصيص نبات عصاري ومزهرية للزينة على زاوية طاولة التلفاز.",
       },
     ],
     exampleSentence:
@@ -10303,14 +10254,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "set down",
         meaning: "place a vase on a table",
         arabic: "يَضَعُ الزَّهْرِيَّةَ عَلَى طَاوِلَة",
-        example: "She set down the delicate ceramic vase on the dining table.",
+        example: "He set down the delicate ceramic vase on the dining table.",
       },
     ],
     sentences: [
       {
         context: "Floral Arrangement",
-        en: "She arranged a bouquet of fresh yellow roses inside the tall glass vase.",
-        ar: "رَتَّبَتْ بَاقَةً مِنْ زُهُورِ الجُورِيِّ الصَّفْرَاءِ دَاخِلَ زَهْرِيَّةٍ زُجَاجِيَّةٍ طَوِيلَةٍ.",
+        en: "He arranged a bouquet of fresh yellow roses inside the tall glass vase.",
+        ar: "رتب باقة من الورود الصفراء النضرة داخل المزهرية الزجاجية الطويلة.",
       },
       {
         context: "Home Centerpiece",
@@ -10323,9 +10274,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "احْذَرْ مِنْ إِسْقَاطِ زَهْرِيَّةِ الكِرِيسْتَالِ الرَّقِيقَةِ القَرِيبَةِ مِنَ الحَافَّةِ.",
       },
     ],
-    exampleSentence: "She arranged a bouquet of fresh yellow roses inside the tall glass vase.",
-    exampleArabic:
-      "رَتَّبَتْ بَاقَةً مِنْ زُهُورِ الجُورِيِّ الصَّفْرَاءِ دَاخِلَ زَهْرِيَّةٍ زُجَاجِيَّةٍ طَوِيلَةٍ.",
+    exampleSentence: "He arranged a bouquet of fresh yellow roses inside the tall glass vase.",
+    exampleArabic: "رتب باقة من الورود الصفراء النضرة داخل المزهرية الزجاجية الطويلة.",
   },
   vinegar: {
     id: "vinegar",
@@ -10400,8 +10350,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Quiet Operation",
-        en: "She chose a silent quartz wall clock so the continuous ticking wouldn't distract her studying.",
-        ar: "اخْتَارَتْ سَاعَةَ حَائِطٍ صَامِتَةً حَتَّى لا تُشَتِّتَ دَقَّاتُهَا تَرْكِيزَهَا فِي الدِّرَاسَةِ.",
+        en: "He chose a silent quartz wall clock so the ticking wouldn't distract him while he was studying.",
+        ar: "اختار ساعة حائط كوارتز صامتة حتى لا يشتته التكتكة المستمرة أثناء الدراسة.",
       },
       {
         context: "Time Check",
@@ -10537,8 +10487,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Plant Care",
-        en: "She used a vintage copper watering can to gently hydrate her potted geraniums.",
-        ar: "اسْتَخْدَمَتْ مِرَشَّةَ مَاءٍ نُحَاسِيَّةً أَنِيقَةً لِرَيِّ زُهُورِ الجِيرَانْيُوم فِي الأَصَائِصِ.",
+        en: "He used a vintage copper watering can to gently hydrate his potted geraniums.",
+        ar: "استخدم إبريق سقي نحاسيا قديما ليسقي نباتات إبرة الراعي في أصصه برفق.",
       },
       {
         context: "Gentle Watering",
@@ -10552,9 +10502,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used a vintage copper watering can to gently hydrate her potted geraniums.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ مِرَشَّةَ مَاءٍ نُحَاسِيَّةً أَنِيقَةً لِرَيِّ زُهُورِ الجِيرَانْيُوم فِي الأَصَائِصِ.",
+      "He used a vintage copper watering can to gently hydrate his potted geraniums.",
+    exampleArabic: "استخدم إبريق سقي نحاسيا قديما ليسقي نباتات إبرة الراعي في أصصه برفق.",
   },
   well: {
     id: "well",
@@ -10641,8 +10590,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Hauling Produce",
-        en: "She loaded freshly picked orange pumpkins into the wheelbarrow for market transport.",
-        ar: "حَمَّلَتْ ثِمَارَ اليَقْطِينِ البُرْتُقَالِيَّةِ المَقْطُوفَةِ فِي عَرَبَةِ اليَدِ لِنَقْلِهَا لِلسُّوقِ.",
+        en: "He loaded freshly picked orange pumpkins into the wheelbarrow for market transport.",
+        ar: "حمل القرع البرتقالي الطازج في عربة اليد لنقله إلى السوق.",
       },
     ],
     exampleSentence:
@@ -10812,7 +10761,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "look out",
         meaning: "gaze through a window",
         arabic: "يَنْظُرُ مِنَ النَّافِذَة",
-        example: "She loved to look out the window and watch the falling rain.",
+        example: "He loved to look out the window and watch the falling rain.",
       },
       {
         phrase: "open up",
@@ -10922,8 +10871,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Crafts & Textiles",
-        en: "She washed and carded the raw fleece wool before spinning it on an old wooden wheel.",
-        ar: "غَسَلَتْ وَمَشَّطَتْ صُوفَ الفَرْوِ الخَامَ قَبْلَ غَزْلِهِ عَلَى مِغْزَلٍ خَشَبِيٍّ.",
+        en: "He washed and carded the raw fleece wool before spinning it on an old wooden wheel.",
+        ar: "غسل الصوف الخام ومشطه قبل غزله على عجلة خشبية قديمة.",
       },
       {
         context: "Clothing",
@@ -10966,8 +10915,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Gift Giving",
-        en: "He gave her a single red rose for her graduation anniversary.",
-        ar: "أَهْدَاهَا وَرْدَةً حَمْرَاءَ وَاحِدَةً بِمُنَاسَبَةِ ذِكْرَى تَخَرُّجِهَا.",
+        en: "A friend gave him a single red rose to celebrate his graduation.",
+        ar: "أهداه صديق وردة حمراء واحدة احتفالا بتخرجه.",
       },
       {
         context: "Aromatics",
@@ -10975,8 +10924,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "مَلَأَتِ الرَّائِحَةُ الزَّكِيَّةُ لِلْوَرْدَةِ المُتَفَتِّحَةِ الفِنَاءَ كُلَّهُ.",
       },
     ],
-    exampleSentence: "She clipped a fresh rose to place inside the ceramic vase.",
-    exampleArabic: "قَطَفَتْ وَرْدَةً نَضِرَةً لِتَضَعَهَا دَاخِلَ المَزْهَرِيَّةِ الخَزَفِيَّةِ.",
+    exampleSentence: "He clipped a fresh rose to place inside the ceramic vase.",
+    exampleArabic: "قص وردة نضرة ليضعها في المزهرية الخزفية.",
   },
   tulip: {
     id: "tulip",
@@ -11103,9 +11052,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَفَتَّحَتْ عَشَرَاتُ زُهُورِ الأُقْحُوَانِ النَّضِرَةِ بِمُجَرَّدِ تَبَخُّرِ نَدَى الصَّبَاحِ.",
       },
     ],
-    exampleSentence: "She picked a delicate daisy to press inside her botanical notebook.",
-    exampleArabic:
-      "قَطَفَتْ زَهْرَةَ أُقْحُوَانٍ رَقِيقَةً لِتَجْفِيفِهَا دَاخِلَ دَفْتَرِهَا النَّبَاتِيِّ.",
+    exampleSentence: "He picked a delicate daisy to press inside his botanical notebook.",
+    exampleArabic: "قطف زهرة أقحوان رقيقة ليجففها بالضغط داخل دفتر النباتات الخاص به.",
   },
   lily: {
     id: "lily",
@@ -11137,8 +11085,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Indoor Plant",
-        en: "She placed a potted peace lily in the corner of the shaded living room.",
-        ar: "وَضَعَتْ نَبْتَةَ زَنْبَقِ السَّلامِ فِي زَاوِيَةِ غُرْفَةِ المَعِيشَةِ الظَّلِيلَةِ.",
+        en: "He placed a potted peace lily in the corner of the shaded living room.",
+        ar: "وضع زنبق سلام في أصيص في زاوية غرفة المعيشة المظللة.",
       },
       {
         context: "Perfume",
@@ -11228,13 +11176,12 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Houseplant",
-        en: "Her African violet bloomed with velvety purple flowers all winter long.",
-        ar: "أَزْهَرَتْ نَبْتَةُ البَنَفْسَجِ الإِفْرِيقِيِّ لَدَيْهَا بِزُهُورٍ أُرْجُوَانِيَّةٍ طَوَالَ الشِّتَاءِ.",
+        en: "His African violet bloomed with velvety purple flowers all winter long.",
+        ar: "أزهر بنفسجه الإفريقي بأزهار أرجوانية مخملية طوال الشتاء.",
       },
     ],
-    exampleSentence: "She noticed a tiny purple violet hiding among the grass.",
-    exampleArabic:
-      "لاحَظَتْ زَهْرَةَ بَنَفْسَجٍ أُرْجُوَانِيَّةً صَغِيرَةً مُخْتَبِئَةً بَيْنَ العُشْبِ.",
+    exampleSentence: "He noticed a tiny purple violet hiding among the grass.",
+    exampleArabic: "لاحظ زهرة بنفسج أرجوانية صغيرة بين العشب.",
   },
   orchid: {
     id: "orchid",
@@ -11361,9 +11308,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "زَرَعْنَا صَفّاً عَطِراً مِنَ الخُزَامَى عَلَى طُولِ حَافَّةِ الحَدِيقَةِ المُشْمِسَةِ.",
       },
     ],
-    exampleSentence: "She tied a bundle of dried lavender with purple ribbon.",
-    exampleArabic:
-      "رَبَطَتْ حُزْمَةً مِنَ الخُزَامَى المُجَفَّفَةِ بِشَرِيطٍ أُرْجُوَانِيٍّ أَنِيقٍ.",
+    exampleSentence: "He tied a bundle of dried lavender with purple ribbon.",
+    exampleArabic: "ربط حزمة من الخزامى المجففة بشريط أرجواني.",
   },
   "oak-tree": {
     id: "oak-tree",
@@ -11658,8 +11604,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Pruning",
-        en: "She carefully pruned dead branches from the hydrangea bush before spring arrived.",
-        ar: "قَلَّمَتْ بِعِنَايَةٍ الأَغْصَانَ المَيِّتَةَ مِنْ شُجَيْرَةِ الهَيْدِرَانْجِيَا قَبْلَ حُلُولِ الرَّبِيعِ.",
+        en: "He carefully pruned dead branches from the hydrangea bush before spring arrived.",
+        ar: "قلم الأغصان الميتة من شجيرة الكوبية بعناية قبل حلول الربيع.",
       },
     ],
     exampleSentence: "Bright red berries decorated the wild bush along the path.",
@@ -11701,8 +11647,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Garden Accent",
-        en: "She trained trailing ivy vines to drape elegantly over the wooden balcony railing.",
-        ar: "دَرَّبَتْ عُرُوشَ اللَّبْلاَبِ لِتَتَدَلَّى بِأَنَاقَةٍ فَوْقَ حَاجِزِ الشُّرْفَةِ الخَشَبِيِّ.",
+        en: "He trained trailing ivy vines to drape elegantly over the wooden balcony railing.",
+        ar: "وجه أغصان اللبلاب المتسلقة لتتدلى فوق درابزين الشرفة الخشبي.",
       },
     ],
     exampleSentence: "The ancient cottage was entirely cloaked in a thick layer of ivy.",
@@ -11820,8 +11766,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Watering Routine",
-        en: "She connected the long green garden hose to the outdoor tap to water the flowers.",
-        ar: "وَصَلَتْ خُرْطُومَ الحَدِيقَةِ الأَخْضَرَ الطَّوِيلَ بِالصَّنْبُورِ الخَارِجِيِّ لِرَيِّ الزُّهُورِ.",
+        en: "He connected the long green garden hose to the outdoor tap to water the flowers.",
+        ar: "وصل خرطوم الحديقة الأخضر الطويل بالصنبور الخارجي ليسقي الزهور.",
       },
       {
         context: "Car Washing",
@@ -11867,8 +11813,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Weeding",
-        en: "She pulled tough weeds from the damp soil with rubber-coated garden gloves.",
-        ar: "اقْتَلَعَتِ الأَعْشَابَ الضَّارَّةَ مِنَ التُّرْبَةِ الرَّطْبَةِ بِقُفَّازَاتِ حَدِيقَةٍ مَطَّاطِيَّةٍ.",
+        en: "He pulled tough weeds from the damp soil with rubber-coated garden gloves.",
+        ar: "اقتلع الأعشاب القوية من التربة الرطبة بقفازي حديقة مطليين بالمطاط.",
       },
       {
         context: "Grip",
@@ -11915,8 +11861,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Shrub Shaping",
-        en: "With a quick squeeze of the spring-loaded pruner, she shaped the shrub cleanly.",
-        ar: "بِضَغْطَةٍ سَرِيعَةٍ عَلَى مِقَصِّ التَّقْلِيمِ المُرِنِّ، شَكَّلَتِ الشُّجَيْرَةَ بِإِتْقَانٍ.",
+        en: "With a quick squeeze of the spring-loaded pruner, he shaped the shrub cleanly.",
+        ar: "بضغطة سريعة على مقص التقليم الزنبركي، هذب الشجيرة بعناية.",
       },
     ],
     exampleSentence: "The spring in the pruner allowed smooth cutting through thick stems.",
@@ -11942,7 +11888,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "dig up",
         meaning: "excavate plants or bulbs carefully",
         arabic: "يَحْفِرُ لاسْتِخْرَاج",
-        example: "She used a hand trowel to dig up the overwintered bulbs.",
+        example: "He used a hand trowel to dig up the overwintered bulbs.",
       },
     ],
     sentences: [
@@ -11962,8 +11908,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "جَعَلَتِ المِجْرَفَةُ اليَدَوِيَّةُ ذَاتُ التَّصْمِيمِ المُرِيحِ غَرْسَ خَمْسِينَ بَصَلَةً أَمْراً سَهْلاً.",
       },
     ],
-    exampleSentence: "She scooped up rich soil with her garden trowel.",
-    exampleArabic: "غَرَفَتْ تُرْبَةً خِصْبَةً بِمِجْرَفَتِهَا اليَدَوِيَّةِ لِلْحَدِيقَةِ.",
+    exampleSentence: "He scooped up rich soil with his garden trowel.",
+    exampleArabic: "غرف التربة الغنية بمجرفته اليدوية للحديقة.",
   },
   "lawn-mower": {
     id: "lawn-mower",
@@ -12033,8 +11979,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Bed Edging",
-        en: "She used the flat rectangular blade of the spade to slice crisp borders along the turf.",
-        ar: "اسْتَخْدَمَتِ الشَّفْرَةَ المُسْتَطِيلَةَ لِلْمِجْرَفَةِ لِقَصِّ حَوَافَّ أَنِيقَةٍ لِلْعُشْبِ.",
+        en: "He used the flat rectangular blade of the spade to slice crisp borders along the turf.",
+        ar: "استخدم شفرة المجرفة المستطيلة المسطحة ليحدد حواف المسطح العشبي بدقة.",
       },
       {
         context: "Soil Turning",
@@ -12157,7 +12103,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         meaning: "(figurative) originate or arise from",
         arabic: "يَنْبُعُ مِنْ",
         example:
-          "Her passion for botanicals stems from childhood visits to her grandmother's garden.",
+          "His passion for botanicals stems from childhood visits to his grandmother's garden.",
       },
     ],
     sentences: [
@@ -12200,7 +12146,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "leaf through",
         meaning: "flip through pages quickly",
         arabic: "يَتَصَفَّحُ",
-        example: "She leafed through the colorful gardening catalog looking for bulb ideas.",
+        example: "He leafed through the colorful gardening catalog looking for bulb ideas.",
       },
     ],
     sentences: [
@@ -12249,8 +12195,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Floral Aesthetics",
-        en: "The velvety rose petal felt exceptionally soft between her fingertips.",
-        ar: "كَانَتْ بَتَلَةُ الوَرْدِ المَخْمَلِيَّةُ نَاعِمَةً لِلْغَايَةِ بَيْنَ أَطْرَافِ أَصَابِعِهَا.",
+        en: "The velvety rose petal felt exceptionally soft between his fingertips.",
+        ar: "شعر بنعومة بتلة الورد المخملية بين أطراف أصابعه.",
       },
       {
         context: "Wedding Decoration",
@@ -12407,7 +12353,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "grow from seed",
         meaning: "cultivate plants starting from seeds",
         arabic: "يَزْرَعُ مِنَ البُذُور",
-        example: "She successfully grew prize-winning heirloom tomatoes from seed.",
+        example: "He successfully grew prize-winning heirloom tomatoes from seed.",
       },
     ],
     sentences: [
@@ -12450,7 +12396,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "prick with",
         meaning: "pierce lightly with a sharp point",
         arabic: "يَخِزُ بِـ",
-        example: "She pricked her thumb on a sharp rose thorn while cutting flowers.",
+        example: "He pricked his thumb on a sharp rose thorn while cutting flowers.",
       },
     ],
     sentences: [
@@ -12470,9 +12416,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَتَمَيَّزُ نَبَاتَاتُ الصَّبَّارِ بِأَوْرَاقٍ مُتَحَوِّرَةٍ تَطَوَّرَتْ إِلَى أَشْوَاكٍ حَادَّةٍ لِلْحِمَايَةِ.",
       },
     ],
-    exampleSentence: "A sharp thorn caught on her sleeve as she brushed past the bush.",
-    exampleArabic:
-      "عَلِقَتْ شَوْكَةٌ حَادَّةٌ فِي كُمِّهَا عِنْدَمَا مَرَّتْ مُحَاذِيَةً الشُّجَيْرَةَ.",
+    exampleSentence: "A sharp thorn caught on his sleeve as he brushed past the bush.",
+    exampleArabic: "علق شوك حاد بكمه أثناء مروره بجانب الشجيرة.",
   },
   berry: {
     id: "berry",
@@ -12509,8 +12454,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Kitchen Preserves",
-        en: "She boiled freshly harvested berries with sugar to make delicious homemade jam.",
-        ar: "غَلَتْ حَبَّاتِ التُّوتِ المَقْطُوفَةِ طَازَجَةً مَعَ السُّكَّرِ لِصُنْعِ المُرَبَّى المَنْزِلِيِّ.",
+        en: "He boiled freshly harvested berries with sugar to make delicious homemade jam.",
+        ar: "غلى التوت الطازج مع السكر ليصنع مربى منزلية لذيذة.",
       },
     ],
     exampleSentence: "He popped a plump ripe blackberry into his mouth.",
@@ -12589,8 +12534,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Observation",
-        en: "The child smiled as a tiny red ladybug with seven black spots rested on her palm.",
-        ar: "ابْتَسَمَتِ الطِّفْلَةُ عِنْدَمَا حَطَّتْ دُعْسُوقَةٌ حَمْرَاءُ صَغِيرَةٌ عَلَى رَاحَةِ يَدِهَا.",
+        en: "The child smiled as a tiny red ladybug with seven black spots rested on his palm.",
+        ar: "ابتسم الطفل بينما استقرت دعسوقة حمراء صغيرة ذات سبع نقاط سوداء على كفه.",
       },
       {
         context: "Ecosystem Health",
@@ -13005,8 +12950,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Spring Preparation",
-        en: "She cleared dry weeds and spread fresh organic mulch across the raised flower bed.",
-        ar: "أَزَالَتِ الأَعْشَابَ الضَّارَّةَ وَفَرَشَتِ السَّمَادَ العُضْوِيَّ فِي حَوْضِ الزُّهُورِ.",
+        en: "He cleared dry weeds and spread fresh organic mulch across the raised flower bed.",
+        ar: "أزال الأعشاب الجافة ووزع غطاء عضويا جديدا للتربة على حوض الزهور المرتفع.",
       },
       {
         context: "Color Arrangement",
@@ -13057,9 +13002,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "أَضَاءَتِ الفَوَانِيسُ الشَّمْسِيَّةُ المَمَرَّ المُلْتَوِيَ مُرْشِدَةً الضُّيُوفَ فِي المَسَاءِ.",
       },
     ],
-    exampleSentence: "She strolled slowly along the paved garden path admiring the blossoms.",
-    exampleArabic:
-      "تَمَشَّتْ بِبُطْءٍ عَلَى طُولِ مَمَرِّ الحَدِيقَةِ المَرْصُوفِ مُعْجَبَةً بِالأَزْهَارِ.",
+    exampleSentence: "He strolled slowly along the paved garden path admiring the blossoms.",
+    exampleArabic: "تمشى ببطء على ممر الحديقة المرصوف معجبا بالأزهار.",
   },
   gate: {
     id: "gate",
@@ -13086,8 +13030,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Garden Entrance",
-        en: "She pushed open the arched wooden gate and stepped into the fragrant flower garden.",
-        ar: "دَفَعَتِ البَوَّابَةَ الخَشَبِيَّةَ المُنْحَنِيَةَ وَدَخَلَتْ إِلَى حَدِيقَةِ الزُّهُورِ العَطِرَةِ.",
+        en: "He pushed open the arched wooden gate and stepped into the fragrant flower garden.",
+        ar: "فتح البوابة الخشبية المقوسة ودخل حديقة الزهور العطرة.",
       },
       {
         context: "Security & Latch",
@@ -13186,9 +13130,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "احْفَظْ جَزَّازَاتِ العُشْبِ الكَهْرَبَائِيَّةَ فِي كُوخِ الحَدِيقَةِ القَابِلِ لِلْقَفْلِ.",
       },
     ],
-    exampleSentence: "She hung her pruning shears on the wall rack inside the garden shed.",
-    exampleArabic:
-      "عَلَّقَتْ مِقَصَّاتِ التَّقْلِيمِ عَلَى حَامِلِ الجِدَارِ دَاخِلَ كُوخِ الحَدِيقَةِ.",
+    exampleSentence: "He hung his pruning shears on the wall rack inside the garden shed.",
+    exampleArabic: "علق مقص التقليم على حامل الحائط داخل سقيفة الحديقة.",
   },
   birdbath: {
     id: "birdbath",
@@ -13257,8 +13200,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Eco-Friendly Gardening",
-        en: "She emptied kitchen vegetable scraps and dry leaves into the outdoor compost bin.",
-        ar: "أَفْرَغَتْ بَقَايَا الخُضَارِ المَنْزِلِيَّةِ وَالأَوْرَاقَ الجَافَّةَ فِي صُنْدُوقِ السَّمَادِ العُضْوِيِّ.",
+        en: "He emptied kitchen vegetable scraps and dry leaves into the outdoor compost bin.",
+        ar: "أفرغ بقايا الخضراوات والأوراق الجافة في صندوق السماد العضوي الخارجي.",
       },
       {
         context: "Aeration & Heat",
@@ -13300,7 +13243,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "take down",
         meaning: "remove a towel from the holder",
         arabic: "يُنْزِلُ الفُوطَة",
-        example: "She took down a clean towel from the rack.",
+        example: "He took down a clean towel from the rack.",
       },
     ],
     sentences: [
@@ -13405,8 +13348,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Drying Off",
-        en: "She wrapped a large fluffy cotton towel around her shoulders after the bath.",
-        ar: "لَفَّتْ مَنْشَفَةً قُطْنِيَّةً كَبِيرَةً وَنَاعِمَةً حَوْلَ كَتِفَيْهَا بَعْدَ الاسْتِحْمَام.",
+        en: "He wrapped a large fluffy cotton towel around his shoulders after the bath.",
+        ar: "لف منشفة قطنية كبيرة وناعمة حول كتفيه بعد الاستحمام.",
       },
       {
         context: "Hygiene",
@@ -13419,9 +13362,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "اغْسِلْ مَنْشَفَةَ الحَمَّامِ بِالمَاءِ السَّاخِنِ أُسْبُوعِيًّا لِلْحِفَاظِ عَلَى نَظَافَتِهَا وَرَائِحَتِهَا.",
       },
     ],
-    exampleSentence: "She wrapped a large fluffy cotton towel around her shoulders after the bath.",
-    exampleArabic:
-      "لَفَّتْ مَنْشَفَةً قُطْنِيَّةً كَبِيرَةً وَنَاعِمَةً حَوْلَ كَتِفَيْهَا بَعْدَ الاسْتِحْمَام.",
+    exampleSentence: "He wrapped a large fluffy cotton towel around his shoulders after the bath.",
+    exampleArabic: "لف منشفة قطنية كبيرة وناعمة حول كتفيه بعد الاستحمام.",
   },
   "cotton-balls": {
     id: "cotton-balls",
@@ -13544,7 +13486,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "blow dry",
         meaning: "dry and style hair using hot air stream",
         arabic: "يُجَفِّفُ بِالسِّشْوَار",
-        example: "She blew dry her hair with a round brush for extra volume.",
+        example: "He blew dry his hair with a round brush for extra volume.",
       },
       {
         phrase: "unplug",
@@ -13600,7 +13542,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "reach for",
         meaning: "grab the medical box quickly",
         arabic: "يَتَنَاوَلُ الحَقِيبَة",
-        example: "She reached for the first-aid kit after accidentally cutting her finger.",
+        example: "He reached for the first-aid kit after accidentally cutting his finger.",
       },
     ],
     sentences: [
@@ -13661,8 +13603,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Illness",
-        en: "She placed the medical thermometer under her child's tongue to check for fever.",
-        ar: "وَضَعَتْ مِقْيَاسَ الحَرَارَةِ الطِّبِّيَّ تَحْتَ لِسَانِ طِفْلِهَا لِلتَّحَقُّقِ مِنْ وُجُودِ حُمَّى.",
+        en: "He placed the medical thermometer under his child's tongue to check for fever.",
+        ar: "وضع ميزان الحرارة الطبي تحت لسان طفله ليتحقق من إصابته بالحمى.",
       },
       {
         context: "Storage",
@@ -13761,8 +13703,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Design",
-        en: "She bought a bamboo soap dish that matches the natural wood theme of her bathroom.",
-        ar: "اشْتَرَتْ صَبَّانَةً مِنْ خَشَبِ الخَيْزُرَانِ تُنَاسِبُ الطَّابَعَ الخَشَبِيَّ الطَّبِيعِيَّ لِحَمَّامِهَا.",
+        en: "He bought a bamboo soap dish that matches the natural wood theme of his bathroom.",
+        ar: "اشترى صحن صابون من الخيزران يناسب ديكور حمامه الخشبي الطبيعي.",
       },
       {
         context: "Hygiene",
@@ -14061,8 +14003,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Chapped Skin",
-        en: "Her chapped lips felt immediate relief after swiping on hydrating lip balm.",
-        ar: "شَعَرَتْ شَفَتَاهَا المُتَشَقِّقَتَانِ بِرَاحَةٍ فَوْرِيَّةٍ بَعْدَ وَضْعِ مُرَطِّبِ الشِّفَاه.",
+        en: "His chapped lips felt immediate relief after swiping on hydrating lip balm.",
+        ar: "شعر براحة فورية في شفتيه المتشققتين بعد وضع مرطب الشفاه.",
       },
       {
         context: "Everyday Carry",
@@ -14155,8 +14097,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Shower Routine",
-        en: "She preferred using a creamy hydrating body wash over a traditional bar of soap.",
-        ar: "فَضَّلَتِ اسْتِخْدَامَ غَسُولِ جِسْمٍ كَرِيمِيٍّ مُرَطِّبٍ عَلَى قِطْعَةِ الصَّابُونِ التَّقْلِيدِيَّة.",
+        en: "He preferred using a creamy hydrating body wash over a traditional bar of soap.",
+        ar: "فضل استخدام غسول جسم كريمي مرطب بدلا من قالب الصابون التقليدي.",
       },
       {
         context: "Sensitive Skin",
@@ -14170,9 +14112,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She preferred using a creamy hydrating body wash over a traditional bar of soap.",
-    exampleArabic:
-      "فَضَّلَتِ اسْتِخْدَامَ غَسُولِ جِسْمٍ كَرِيمِيٍّ مُرَطِّبٍ عَلَى قِطْعَةِ الصَّابُونِ التَّقْلِيدِيَّة.",
+      "He preferred using a creamy hydrating body wash over a traditional bar of soap.",
+    exampleArabic: "فضل استخدام غسول جسم كريمي مرطب بدلا من قالب الصابون التقليدي.",
   },
   "dental-floss": {
     id: "dental-floss",
@@ -14265,8 +14206,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Bathroom Routine",
-        en: "She keeps her favorite tea tree face wash right on the shelf inside the shower.",
-        ar: "تَحْتَفِظُ بِغَسُولِ الوَجْهِ المُفَضَّلِ لَدَيْهَا بِشَجَرَةِ الشَّايِ عَلَى الرَّفِّ دَاخِلَ الدُّش.",
+        en: "He keeps his favorite tea tree face wash right on the shelf inside the shower.",
+        ar: "يحتفظ بغسول وجهه المفضل بزيت شجرة الشاي على الرف داخل الدش.",
       },
     ],
     exampleSentence:
@@ -14355,8 +14296,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Quick Cleanups",
-        en: "She used refreshing antibacterial wet wipes to quickly clean her hands on the go.",
-        ar: "اسْتَخْدَمَتْ مَنَادِيلَ مُبَلَّلَةً مُضَادَّةً لِلْبَكْتِيرْيَا لِتَنْظِيفِ يَدَيْهَا بِسُرْعَةٍ أَثْنَاءَ التَّنَقُّل.",
+        en: "He used refreshing antibacterial wet wipes to quickly clean his hands on the go.",
+        ar: "استخدم مناديل مبللة مضادة للبكتيريا لينظف يديه بسرعة أثناء تنقله.",
       },
       {
         context: "Bathroom Storage",
@@ -14370,9 +14311,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used refreshing antibacterial wet wipes to quickly clean her hands on the go.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ مَنَادِيلَ مُبَلَّلَةً مُضَادَّةً لِلْبَكْتِيرْيَا لِتَنْظِيفِ يَدَيْهَا بِسُرْعَةٍ أَثْنَاءَ التَّنَقُّل.",
+      "He used refreshing antibacterial wet wipes to quickly clean his hands on the go.",
+    exampleArabic: "استخدم مناديل مبللة مضادة للبكتيريا لينظف يديه بسرعة أثناء تنقله.",
   },
   brush: {
     id: "brush",
@@ -14510,8 +14450,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Disinfection",
-        en: "She used the spray bottle to mist disinfectant evenly across the bathroom countertops.",
-        ar: "اسْتَخْدَمَتِ البَخَّاخَ لِرَشِّ المُطَهِّرِ بِالتَّسَاوِي عَلَى أَسْطُحِ الحَمَّام.",
+        en: "He used the spray bottle to mist disinfectant evenly across the bathroom countertops.",
+        ar: "استخدم زجاجة الرش ليوزع المطهر بالتساوي على أسطح الحمام.",
       },
       {
         context: "Nozzle Adjustment",
@@ -14660,13 +14600,13 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Park Recreation",
-        en: "Her father gave her a gentle push on the rubber tire swing.",
-        ar: "دَفَعَهَا وَالِدُهَا دَفْعَةً لَطِيفَةً عَلَى أُرْجُوحَةِ الإِطَارِ المَطَّاطِيِّ.",
+        en: "His father gave him a gentle push on the rubber tire swing.",
+        ar: "دفعه والده برفق على الأرجوحة المصنوعة من إطار مطاطي.",
       },
       {
         context: "Motion",
-        en: "Pumping her legs helped her soar higher into the fresh air.",
-        ar: "سَاعَدَهَا تَحْرِيكُ سَاقَيْهَا عَلَى التَّحْلِيقِ أَعْلَى فِي الهَوَاءِ المُنْعِشِ.",
+        en: "Pumping his legs helped him soar higher into the fresh air.",
+        ar: "ساعده تحريك ساقيه ذهابا وإيابا على التأرجح أعلى في الهواء الطلق.",
       },
     ],
     exampleSentence: "Children waited eagerly for their turn on the tall swing set.",
@@ -14704,8 +14644,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Playground Fun",
-        en: "She climbed the ladder and zipped down the colorful spiral slide.",
-        ar: "صَعِدَتِ السُّلَّمَ وَانْزَلَقَتْ بِسُرْعَةٍ عَلَى الزُّحْلَيْقَةِ اللَّوْلَبِيَّةِ المُلَوَّنَةِ.",
+        en: "He climbed the ladder and zipped down the colorful spiral slide.",
+        ar: "صعد السلم وانزلق بسرعة على الزحليقة الحلزونية الملونة.",
       },
       {
         context: "Safety",
@@ -14718,9 +14658,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يَحْتَوِي المَلْعَبُ عَلَى زُحْلَيْقَةٍ مُزْدَوَجَةٍ لِمُسَابَقَةِ الأَصْدِقَاءِ.",
       },
     ],
-    exampleSentence: "She climbed the ladder and zipped down the colorful spiral slide.",
-    exampleArabic:
-      "صَعِدَتِ السُّلَّمَ وَانْزَلَقَتْ بِسُرْعَةٍ عَلَى الزُّحْلَيْقَةِ اللَّوْلَبِيَّةِ المُلَوَّنَةِ.",
+    exampleSentence: "He climbed the ladder and zipped down the colorful spiral slide.",
+    exampleArabic: "صعد السلم وانزلق بسرعة على الزحليقة الحلزونية الملونة.",
   },
   seesaw: {
     id: "seesaw",
@@ -14880,8 +14819,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Achievement",
-        en: "She cheered proudly after conquering the entire length of monkey bars.",
-        ar: "هَتَفَتْ بِفَخْرٍ بَعْدَ أَنِ اجْتَازَتْ كَامِلَ طُولِ سُلَّمِ التَّعَلُّقِ الأُفُقِيِّ.",
+        en: "He cheered proudly after conquering the entire length of monkey bars.",
+        ar: "هتف بفخر بعدما اجتاز قضبان التسلق كلها.",
       },
       {
         context: "Safety Cushioning",
@@ -15041,14 +14980,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "walk along",
         meaning: "traverse from end to end",
         arabic: "يَمْشِي عَلَى طُولِ",
-        example: "She held her arms out wide to walk along the narrow beam.",
+        example: "He held his arms out wide to walk along the narrow beam.",
       },
     ],
     sentences: [
       {
         context: "Balance & Coordination",
-        en: "She stretched her arms out wide to steady herself along the balance beam.",
-        ar: "مَدَّتْ ذِرَاعَيْهَا عَلَى اتِّسَاعِهِمَا لِتَحْفَظَ تَرَازُنَهَا عَلَى عَارِضَةِ التَّوَازُنِ.",
+        en: "He stretched his arms out wide to steady himself along the balance beam.",
+        ar: "مد ذراعيه إلى الجانبين ليحافظ على توازنه فوق عارضة التوازن.",
       },
       {
         context: "Park Obstacle Course",
@@ -15061,9 +15000,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَرْتَفِعُ العَارِضَةُ الخَشَبِيَّةُ المُنْخَفِضَةُ بضع بُوصَاتٍ فَقَطْ فَوْقَ رُقَاقَاتِ الخَشَبِ الطَّرِيَّةِ.",
       },
     ],
-    exampleSentence: "She stretched her arms out wide to steady herself along the balance beam.",
-    exampleArabic:
-      "مَدَّتْ ذِرَاعَيْهَا عَلَى اتِّسَاعِهِمَا لِتَحْفَظَ تَرَازُنَهَا عَلَى عَارِضَةِ التَّوَازُنِ.",
+    exampleSentence: "He stretched his arms out wide to steady himself along the balance beam.",
+    exampleArabic: "مد ذراعيه إلى الجانبين ليحافظ على توازنه فوق عارضة التوازن.",
   },
   ball: {
     id: "ball",
@@ -15127,14 +15065,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "spin around",
         meaning: "whirl on the hips",
         arabic: "يَدُورُ حَوْلَ الوَسَط",
-        example: "She spun the bright plastic hoop around her waist.",
+        example: "He spun the bright plastic hoop around his waist.",
       },
     ],
     sentences: [
       {
         context: "Gymnastics & Play",
-        en: "She skillfully twirled the glittery hula hoop around her hips.",
-        ar: "دَوَّرَتْ طَوْقَ الهُولاهُوبِ اللَّامِعَ بِمَهَارَةٍ حَوْلَ خَصْرِهَا.",
+        en: "He skillfully twirled the glittery hula hoop around his hips.",
+        ar: "أدار طوق الهولا اللامع بمهارة حول وركيه.",
       },
       {
         context: "Obstacle Course",
@@ -15147,8 +15085,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يَتَطَلَّبُ الحِفَاظُ عَلَى دَوَرَانِ الطَّوْقِ الخَفِيفِ إِيقَاعًا وَتَوَازُنًا.",
       },
     ],
-    exampleSentence: "She skillfully twirled the glittery hula hoop around her hips.",
-    exampleArabic: "دَوَّرَتْ طَوْقَ الهُولاهُوبِ اللَّامِعَ بِمَهَارَةٍ حَوْلَ خَصْرِهَا.",
+    exampleSentence: "He skillfully twirled the glittery hula hoop around his hips.",
+    exampleArabic: "أدار طوق الهولا اللامع بمهارة حول وركيه.",
   },
   bat: {
     id: "bat",
@@ -15212,14 +15150,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "hit back",
         meaning: "return the ball across the court",
         arabic: "يَرُدُّ الكُرَةَ بِالمِضْرَب",
-        example: "She hit the yellow ball back over the white net with her racket.",
+        example: "He hit the yellow ball back over the white net with his racket.",
       },
     ],
     sentences: [
       {
         context: "Tennis Practice",
-        en: "She gripped the lightweight tennis racket and served an ace across the court.",
-        ar: "أَمْسَكَتْ مِضْرَبَ التِّنِسِ الخَفِيفَ وَأَرْسَلَتْ إِرْسَالًا سَاحِقًا عَبْرَ المَلْعَبِ.",
+        en: "He gripped the lightweight tennis racket and served an ace across the court.",
+        ar: "أمسك مضرب التنس الخفيف وأرسل إرسالا ساحقا عبر الملعب.",
       },
       {
         context: "Equipment",
@@ -15232,10 +15170,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "جَلَبُوا مِضْرَبَيْ رِيشَةٍ طَائِرَةٍ وَكُرَةَ رِيشَةٍ إِلَى الحَدِيقَةِ.",
       },
     ],
-    exampleSentence:
-      "She gripped the lightweight tennis racket and served an ace across the court.",
-    exampleArabic:
-      "أَمْسَكَتْ مِضْرَبَ التِّنِسِ الخَفِيفَ وَأَرْسَلَتْ إِرْسَالًا سَاحِقًا عَبْرَ المَلْعَبِ.",
+    exampleSentence: "He gripped the lightweight tennis racket and served an ace across the court.",
+    exampleArabic: "أمسك مضرب التنس الخفيف وأرسل إرسالا ساحقا عبر الملعب.",
   },
   net: {
     id: "net",
@@ -15262,8 +15198,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Court Sports",
-        en: "She served the yellow tennis ball perfectly over the center net.",
-        ar: "أَرْسَلَتْ كُرَةَ التِّنِسِ الصَّفْرَاءَ بِمِثَالِيَّةٍ فَوْقَ الشَّبَكَةِ المَرْكَزِيَّةِ.",
+        en: "He served the yellow tennis ball perfectly over the center net.",
+        ar: "أرسل كرة التنس الصفراء بدقة فوق الشبكة الوسطى.",
       },
       {
         context: "Soccer Goals",
@@ -15276,9 +15212,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَسَلَّقَ الأَطْفَالُ شَبَكَةَ التَّسَلُّقِ الحَبْلِيَّةَ الثَّقِيلَةَ عَلَى بُرْجِ المَلْعَبِ.",
       },
     ],
-    exampleSentence: "She served the yellow tennis ball perfectly over the center net.",
-    exampleArabic:
-      "أَرْسَلَتْ كُرَةَ التِّنِسِ الصَّفْرَاءَ بِمِثَالِيَّةٍ فَوْقَ الشَّبَكَةِ المَرْكَزِيَّةِ.",
+    exampleSentence: "He served the yellow tennis ball perfectly over the center net.",
+    exampleArabic: "أرسل كرة التنس الصفراء بدقة فوق الشبكة الوسطى.",
   },
   goal: {
     id: "goal",
@@ -15478,8 +15413,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Skating Gear",
-        en: "She fastened cushioned knee pads over her jeans before rollerblading.",
-        ar: "ثَبَّتَتْ وَاقِيَاتِ الرُّكَبِ المُبَطَّنَةَ فَوْقَ بِنْطَالِهَا الجِينْزِ قَبْلَ التَّزَلُّجِ.",
+        en: "He fastened cushioned knee pads over his jeans before rollerblading.",
+        ar: "ثبت واقيي الركبتين المبطنين فوق سرواله الجينز قبل التزلج بالعجلات.",
       },
       {
         context: "Safety",
@@ -15492,9 +15427,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يَنْبَغِي لِلْمُتَزَلِّجِينَ المُبْتَدِئِينَ ارْتِدَاءُ وَاقِيَاتِ الكُوعِ وَالرُّكْبَةِ دَائِمًا.",
       },
     ],
-    exampleSentence: "She fastened cushioned knee pads over her jeans before rollerblading.",
-    exampleArabic:
-      "ثَبَّتَتْ وَاقِيَاتِ الرُّكَبِ المُبَطَّنَةَ فَوْقَ بِنْطَالِهَا الجِينْزِ قَبْلَ التَّزَلُّجِ.",
+    exampleSentence: "He fastened cushioned knee pads over his jeans before rollerblading.",
+    exampleArabic: "ثبت واقيي الركبتين المبطنين فوق سرواله الجينز قبل التزلج بالعجلات.",
   },
   "rubber-mat": {
     id: "rubber-mat",
@@ -15731,7 +15665,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "draw out",
         meaning: "sketch designs onto pavement",
         arabic: "يَرْسُمُ بِالطَّبَاشِير",
-        example: "She drew out a bright smiling sun with yellow sidewalk chalk.",
+        example: "He drew out a bright smiling sun with yellow sidewalk chalk.",
       },
     ],
     sentences: [
@@ -15742,8 +15676,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Sidewalk Art",
-        en: "Her colorful chalk drawing of a hopscotch grid invited everyone to jump.",
-        ar: "دَعَا رَسْمُهَا الطَّبَاشِيرِيُّ المُلَوَّنُ لِمُخَطَّطِ الحَجْلَةِ الجَمِيعَ لِلْقَفْزِ.",
+        en: "His colorful chalk drawing of a hopscotch grid invited everyone to jump.",
+        ar: "شجع رسمه الملون لشبكة الحجلة بالطباشير الجميع على القفز.",
       },
       {
         context: "Temporary Art",
@@ -15775,14 +15709,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "hop through",
         meaning: "jump on one foot across numbered boxes",
         arabic: "يَحْجُلُ عَبْرَ المُرَبَّعَات",
-        example: "She hopped through squares one to ten without losing balance.",
+        example: "He hopped through squares one to ten without losing balance.",
       },
     ],
     sentences: [
       {
         context: "Traditional Games",
-        en: "She tossed a small pebble into square three and hopped through the hopscotch grid.",
-        ar: "أَلْقَتْ حَصَاةً صَغِيرَةً فِي المُرَبَّعِ الثَّالِثِ وَحَجَلَتْ عَبْرَ مُخَطَّطِ لُعْبَةِ الحَجْلَةِ.",
+        en: "He tossed a small pebble into square three and hopped through the hopscotch grid.",
+        ar: "رمى حصاة في المربع الثالث وقفز عبر شبكة الحجلة.",
       },
       {
         context: "Playground Court",
@@ -15796,9 +15730,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She tossed a small pebble into square three and hopped through the hopscotch grid.",
-    exampleArabic:
-      "أَلْقَتْ حَصَاةً صَغِيرَةً فِي المُرَبَّعِ الثَّالِثِ وَحَجَلَتْ عَبْرَ مُخَطَّطِ لُعْبَةِ الحَجْلَةِ.",
+      "He tossed a small pebble into square three and hopped through the hopscotch grid.",
+    exampleArabic: "رمى حصاة في المربع الثالث وقفز عبر شبكة الحجلة.",
   },
   "painted-lines": {
     id: "painted-lines",
@@ -15955,8 +15888,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Socializing",
-        en: "She ran across the grass to greet her best friend by the swing set.",
-        ar: "رَكَضَتْ عَبْرَ العُشْبِ لِتُحَيِّيَ صَدِيقَتَهَا المُفَضَّلَةَ عِنْدَ الأَرَاجِيحِ.",
+        en: "He ran across the grass to greet his best friend by the swing set.",
+        ar: "ركض عبر العشب ليحيي أفضل أصدقائه قرب الأرجوحة.",
       },
       {
         context: "Making Connections",
@@ -15969,9 +15902,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَعَاوَنَ صَدِيقَانِ لِبِنَاءِ أَكْبَرِ قَلْعَةٍ رَمْلِيَّةٍ فِي الحُفْرَةِ.",
       },
     ],
-    exampleSentence: "She ran across the grass to greet her best friend by the swing set.",
-    exampleArabic:
-      "رَكَضَتْ عَبْرَ العُشْبِ لِتُحَيِّيَ صَدِيقَتَهَا المُفَضَّلَةَ عِنْدَ الأَرَاجِيحِ.",
+    exampleSentence: "He ran across the grass to greet his best friend by the swing set.",
+    exampleArabic: "ركض عبر العشب ليحيي أفضل أصدقائه قرب الأرجوحة.",
   },
   parent: {
     id: "parent",
@@ -15998,8 +15930,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Supervision",
-        en: "A watchful parent kept an eye on her toddler from the park bench.",
-        ar: "رَاقَبَتْ وَالِدَةٌ يَقِظَةٌ طِفْلَهَا الصَّغِيرَ مِنْ عَلَى مَقْعَدِ الحَدِيقَةِ.",
+        en: "A watchful parent kept an eye on his toddler from the park bench.",
+        ar: "راقب أب حريص طفله الصغير من مقعد الحديقة.",
       },
       {
         context: "Encouragement",
@@ -16012,9 +15944,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَبَادَلَ الآبَاءُ الأَحَادِيثَ وَالنَّصَائِحَ بَيْنَمَا لَعِبَ أَطْفَالُهُمْ بِأَمَانٍ فِي الجِوَارِ.",
       },
     ],
-    exampleSentence: "A watchful parent kept an eye on her toddler from the park bench.",
-    exampleArabic:
-      "رَاقَبَتْ وَالِدَةٌ يَقِظَةٌ طِفْلَهَا الصَّغِيرَ مِنْ عَلَى مَقْعَدِ الحَدِيقَةِ.",
+    exampleSentence: "A watchful parent kept an eye on his toddler from the park bench.",
+    exampleArabic: "راقب أب حريص طفله الصغير من مقعد الحديقة.",
   },
   teacher: {
     id: "teacher",
@@ -16084,8 +16015,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Park Stroll",
-        en: "The baby smiled warmly from her shaded stroller under the oak trees.",
-        ar: "ابْتَسَمَتِ الرَّضِيعَةُ بِدِفْءٍ مِنْ عَرَبَتِهَا المُظَلَّلَةِ تَحْتَ أَشْجَارِ البَلُّوطِ.",
+        en: "The baby smiled warmly from his shaded stroller under the oak trees.",
+        ar: "ابتسم الرضيع من عربته المظللة تحت أشجار البلوط.",
       },
       {
         context: "Infant Care",
@@ -16098,9 +16029,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "ضَحِكَ الرَّضِيعُ المَفْتُونُ عَلَى البَالُونَاتِ المُلَوَّنَةِ العَابِرَةِ.",
       },
     ],
-    exampleSentence: "The baby smiled warmly from her shaded stroller under the oak trees.",
-    exampleArabic:
-      "ابْتَسَمَتِ الرَّضِيعَةُ بِدِفْءٍ مِنْ عَرَبَتِهَا المُظَلَّلَةِ تَحْتَ أَشْجَارِ البَلُّوطِ.",
+    exampleSentence: "The baby smiled warmly from his shaded stroller under the oak trees.",
+    exampleArabic: "ابتسم الرضيع من عربته المظللة تحت أشجار البلوط.",
   },
   toddler: {
     id: "toddler",
@@ -16338,7 +16268,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "swing out",
         meaning: "move outward at peak height",
         arabic: "يَتَرَجَّحُ لِلْخَارِج",
-        example: "Her long hair flew back while swinging out toward the blue sky.",
+        example: "His long hair flew back while swinging out toward the blue sky.",
       },
     ],
     sentences: [
@@ -16746,8 +16676,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Suspense",
-        en: "She held her breath while hiding quietly beneath the climbing platform.",
-        ar: "حَبَسَتْ أَنْفَاسَهَا وَهِيَ تَخْتَبِئُ بِهُدُوءٍ تَحْتَ مِنَصَّةِ التَّسَلُّقِ.",
+        en: "He held his breath while hiding quietly beneath the climbing platform.",
+        ar: "حبس أنفاسه وهو يختبئ بهدوء تحت منصة التسلق.",
       },
     ],
     exampleSentence: "Hiding behind the broad oak trunk kept him safe during hide-and-seek.",
@@ -16784,8 +16714,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Refill Station",
-        en: "She refilled her reusable sports bottle from the park water fountain.",
-        ar: "أَعَادَتْ مَلْءَ قَارُورَتِهَا الرِّيَاضِيَّةِ مِنْ مَشْرَبِيَّةِ الحَدِيقَةِ.",
+        en: "He refilled his reusable sports bottle from the park water fountain.",
+        ar: "أعاد ملء زجاجته الرياضية القابلة لإعادة الاستخدام من نافورة الشرب في الحديقة.",
       },
       {
         context: "Hygiene & Design",
@@ -16990,14 +16920,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "pull out",
         meaning: "dispense a single paper sheet",
         arabic: "يَسْحَبُ مَنْدِيلًا",
-        example: "She pulled out a soft facial tissue from the box on the vanity.",
+        example: "He pulled out a soft facial tissue from the box on the vanity.",
       },
     ],
     sentences: [
       {
         context: "Daily Hygiene",
-        en: "She pulled a soft tissue from the decorative box on the bathroom vanity.",
-        ar: "سَحَبَتْ مَنْدِيلًا وَرَقِيًّا نَاعِمًا مِنْ عُلْبَةِ المَحَارِمِ المُزَخْرَفَةِ عَلَى خِزَانَةِ الحَمَّامِ.",
+        en: "He pulled a soft tissue from the decorative box on the bathroom vanity.",
+        ar: "سحب منديلا ناعما من العلبة المزخرفة على خزانة حوض الحمام.",
       },
       {
         context: "Skincare",
@@ -17010,9 +16940,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَحْفَظُ عُلْبَةُ التَّوْزِيعِ الخَشَبِيَّةِ المَنَادِيلَ مُرَتَّبَةً بِجَانِبِ المِرْآةِ.",
       },
     ],
-    exampleSentence: "She pulled a soft tissue from the decorative box on the bathroom vanity.",
-    exampleArabic:
-      "سَحَبَتْ مَنْدِيلًا وَرَقِيًّا نَاعِمًا مِنْ عُلْبَةِ المَحَارِمِ المُزَخْرَفَةِ عَلَى خِزَانَةِ الحَمَّامِ.",
+    exampleSentence: "He pulled a soft tissue from the decorative box on the bathroom vanity.",
+    exampleArabic: "سحب منديلا ناعما من العلبة المزخرفة على خزانة حوض الحمام.",
   },
   "wash-hands": {
     id: "wash-hands",
@@ -17088,8 +17017,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Morning Routine",
-        en: "She squeezed mint paste onto the bristles before standing in front of the mirror.",
-        ar: "وَضَعَتْ مَعْجُونَ النَّعْنَاعِ عَلَى الشُّعَيْرَاتِ قَبْلَ الوُقُوفِ أَمَامَ المِرْآةِ.",
+        en: "He squeezed mint paste onto the bristles before standing in front of the mirror.",
+        ar: "ضغط المعجون بالنعناع على شعيرات الفرشاة قبل أن يقف أمام المرآة.",
       },
       {
         context: "Bedtime Habit",
@@ -17136,8 +17065,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Relaxation",
-        en: "She enjoys taking a relaxing evening shower with lavender-scented body wash.",
-        ar: "تَسْتَمْتِعُ بِأَخْذِ حَمَّامٍ مَسَائِيٍّ مُرِيحٍ بِسَائِلِ اسْتِحْمَامٍ بِرَائِحَةِ الخُزَامَى.",
+        en: "He enjoys taking a relaxing evening shower with lavender-scented body wash.",
+        ar: "يستمتع بالاستحمام الهادئ مساء بغسول جسم برائحة الخزامى.",
       },
     ],
     exampleSentence:
@@ -17170,8 +17099,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Post-Bath Routine",
-        en: "She stepped onto the soft mat to dry off with a large plush bath towel.",
-        ar: "خَطَتْ عَلَى البِسَاطِ النَّاعِمِ لِتُجَفِّفَ جِسْمَهَا بِمِنْشَفَةِ حَمَّامٍ كَبِيرَةٍ وَفَاخِرَةٍ.",
+        en: "He stepped onto the soft mat to dry off with a large plush bath towel.",
+        ar: "وقف على الحصيرة الناعمة ليجفف جسمه بمنشفة استحمام كبيرة وناعمة.",
       },
       {
         context: "Skincare Advice",
@@ -17184,9 +17113,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "الْتَفَّ الأَطْفَالُ فِي أَرْدِيَةِ حَمَّامٍ دَافِئَةٍ ذَاتِ قُبَّعَاتٍ لِلتَّجْفِيفِ بَعْدَ السِّبَاحَةِ.",
       },
     ],
-    exampleSentence: "She stepped onto the soft mat to dry off with a large plush bath towel.",
-    exampleArabic:
-      "خَطَتْ عَلَى البِسَاطِ النَّاعِمِ لِتُجَفِّفَ جِسْمَهَا بِمِنْشَفَةِ حَمَّامٍ كَبِيرَةٍ وَفَاخِرَةٍ.",
+    exampleSentence: "He stepped onto the soft mat to dry off with a large plush bath towel.",
+    exampleArabic: "وقف على الحصيرة الناعمة ليجفف جسمه بمنشفة استحمام كبيرة وناعمة.",
   },
   flush: {
     id: "flush",
@@ -17256,8 +17184,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Grooming Routine",
-        en: "She stood before the lighted mirror to gently comb hair and remove tangles.",
-        ar: "وَقَفَتْ أَمَامَ المِرْآةِ المُضَاءَةِ لِتُمَشِّطَ شَعْرَهَا بِلُطْفٍ وَتُزِيلَ التَّشَابُكَ.",
+        en: "He stood before the lighted mirror to gently comb hair and remove tangles.",
+        ar: "وقف أمام المرآة المضاءة ليمشط شعره برفق ويفك تشابكه.",
       },
       {
         context: "Hair Care Tip",
@@ -17270,9 +17198,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "فَرَقَ خُصَلَ شَعْرِهِ بِتَرْتِيبٍ عَلَى الجَانِبِ الأَيْسَرِ خِلَالَ تَهْيِئَتِهِ الصَّبَاحِيَّةِ.",
       },
     ],
-    exampleSentence: "She stood before the lighted mirror to gently comb hair and remove tangles.",
-    exampleArabic:
-      "وَقَفَتْ أَمَامَ المِرْآةِ المُضَاءَةِ لِتُمَشِّطَ شَعْرَهَا بِلُطْفٍ وَتُزِيلَ التَّشَابُكَ.",
+    exampleSentence: "He stood before the lighted mirror to gently comb hair and remove tangles.",
+    exampleArabic: "وقف أمام المرآة المضاءة ليمشط شعره برفق ويفك تشابكه.",
   },
   "apply-lotion": {
     id: "apply-lotion",
@@ -17304,8 +17231,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Hand Care",
-        en: "She pumped a coin-sized drop onto her palms and began to smooth it over dry hands.",
-        ar: "ضَغَطَتْ قَطْرَةً بِحَجْمِ عُمْلَةٍ مَعْدَنِيَّةٍ عَلَى كَفَّيْهَا وَبَدَأَتْ بِدَهْنِهَا عَلَى يَدَيْهَا الجَافَّتَيْنِ.",
+        en: "He pumped a coin-sized drop onto his palms and began to smooth it over dry hands.",
+        ar: "ضغط كمية بحجم قطعة نقدية على كفيه وبدأ يوزعها على يديه الجافتين.",
       },
       {
         context: "Winter Protection",
@@ -17430,8 +17357,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Note Taking",
-        en: "She used a smooth blue ballpoint pen to write down lecture notes.",
-        ar: "اسْتَخْدَمَتْ قَلَمَ حِبْرٍ جَافٍّ أَزْرَقَ نَاعِمًا لِتَدْوِينِ مُلَاحَظَاتِ المُحَاضَرَةِ.",
+        en: "He used a smooth blue ballpoint pen to write down lecture notes.",
+        ar: "استخدم قلما جافا أزرق ناعم الكتابة لتدوين ملاحظات المحاضرة.",
       },
       {
         context: "Signing Documents",
@@ -17444,9 +17371,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يُفَضِّلُ تَدْوِينَ مُذَكَّرَاتِهِ بِقَلَمِ حِبْرٍ سَائِلٍ كَلَاسِيكِيٍّ.",
       },
     ],
-    exampleSentence: "She used a smooth blue ballpoint pen to write down lecture notes.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ قَلَمَ حِبْرٍ جَافٍّ أَزْرَقَ نَاعِمًا لِتَدْوِينِ مُلَاحَظَاتِ المُحَاضَرَةِ.",
+    exampleSentence: "He used a smooth blue ballpoint pen to write down lecture notes.",
+    exampleArabic: "استخدم قلما جافا أزرق ناعم الكتابة لتدوين ملاحظات المحاضرة.",
   },
   eraser: {
     id: "eraser",
@@ -17483,8 +17409,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Classroom Supplies",
-        en: "She brushed away the eraser shavings before submitting her test.",
-        ar: "نَفَضَتْ فُتَاتَ المِمْحَاةِ قَبْلَ تَسْلِيمِ اخْتِبَارِهَا.",
+        en: "He brushed away the eraser shavings before submitting his test.",
+        ar: "أزال فتات الممحاة بالفرشاة قبل تسليم اختباره.",
       },
     ],
     exampleSentence: "He used a soft rubber eraser to remove the incorrect calculation.",
@@ -17516,8 +17442,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Geometry Class",
-        en: "She placed her clear plastic ruler on the page to draw a straight five-centimeter line.",
-        ar: "وَضَعَتْ مِسْطَرَتَهَا البَلَاسْتِيكِيَّةَ الشَّفَّافَةَ عَلَى الصَّفْحَةِ لِرَسْمِ خَطٍّ مُسْتَقِيمٍ بِطُولِ خَمْسَةِ سَنْتِيمِتْرَاتٍ.",
+        en: "He placed his clear plastic ruler on the page to draw a straight five-centimeter line.",
+        ar: "وضع مسطرته البلاستيكية الشفافة على الصفحة ليرسم خطا مستقيما طوله خمسة سنتيمترات.",
       },
       {
         context: "Measuring Length",
@@ -17531,9 +17457,9 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She placed her clear plastic ruler on the page to draw a straight five-centimeter line.",
+      "He placed his clear plastic ruler on the page to draw a straight five-centimeter line.",
     exampleArabic:
-      "وَضَعَتْ مِسْطَرَتَهَا البَلَاسْتِيكِيَّةَ الشَّفَّافَةَ عَلَى الصَّفْحَةِ لِرَسْمِ خَطٍّ مُسْتَقِيمٍ بِطُولِ خَمْسَةِ سَنْتِيمِتْرَاتٍ.",
+      "وضع مسطرته البلاستيكية الشفافة على الصفحة ليرسم خطا مستقيما طوله خمسة سنتيمترات.",
   },
   marker: {
     id: "marker",
@@ -17691,8 +17617,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Study Session",
-        en: "She used a neon yellow highlighter to emphasize key vocabulary in her textbook.",
-        ar: "اسْتَخْدَمَتْ قَلَمَ تَمْيِيزٍ نِيُونِيًّا أَصْفَرَ لِلتَّأْكِيدِ عَلَى المُفْرَدَاتِ الرَّئِيسِيَّةِ فِي كِتَابِهَا المَدْرَسِيِّ.",
+        en: "He used a neon yellow highlighter to emphasize key vocabulary in his textbook.",
+        ar: "استخدم قلم تمييز أصفر فاقعا لإبراز المفردات المهمة في كتابه الدراسي.",
       },
       {
         context: "Exam Preparation",
@@ -17706,9 +17632,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used a neon yellow highlighter to emphasize key vocabulary in her textbook.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ قَلَمَ تَمْيِيزٍ نِيُونِيًّا أَصْفَرَ لِلتَّأْكِيدِ عَلَى المُفْرَدَاتِ الرَّئِيسِيَّةِ فِي كِتَابِهَا المَدْرَسِيِّ.",
+      "He used a neon yellow highlighter to emphasize key vocabulary in his textbook.",
+    exampleArabic: "استخدم قلم تمييز أصفر فاقعا لإبراز المفردات المهمة في كتابه الدراسي.",
   },
   "pencil-sharpener": {
     id: "pencil-sharpener",
@@ -17777,8 +17702,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "School Morning",
-        en: "She unzipped her floral pencil case to retrieve a blue pen and a ruler.",
-        ar: "فَتَحَتْ سَحَّابَ مِقْلَمَتِهَا المُزَهَّرَةِ لِإِخْرَاجِ قَلَمِ حِبْرٍ أَزْرَقَ وَمِسْطَرَةٍ.",
+        en: "He unzipped his floral pencil case to retrieve a blue pen and a ruler.",
+        ar: "فتح سحاب مقلمته المزينة بالزهور ليخرج قلما أزرق ومسطرة.",
       },
       {
         context: "Desk Organization",
@@ -17791,9 +17716,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "دَسَّ مِقْلَمَتَهُ المُدْمَجَةَ ذَاتَ السَّحَّابِ فِي الجَيْبِ الأَمَامِيِّ لِحَقِيبَةِ ظَهْرِهِ.",
       },
     ],
-    exampleSentence: "She unzipped her floral pencil case to retrieve a blue pen and a ruler.",
-    exampleArabic:
-      "فَتَحَتْ سَحَّابَ مِقْلَمَتِهَا المُزَهَّرَةِ لِإِخْرَاجِ قَلَمِ حِبْرٍ أَزْرَقَ وَمِسْطَرَةٍ.",
+    exampleSentence: "He unzipped his floral pencil case to retrieve a blue pen and a ruler.",
+    exampleArabic: "فتح سحاب مقلمته المزينة بالزهور ليخرج قلما أزرق ومسطرة.",
   },
   notebook: {
     id: "notebook",
@@ -17825,8 +17749,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Subject Organization",
-        en: "She assigns a different colored notebook to each school subject.",
-        ar: "تُخَصِّصُ دَفْتَرًا بِلَوْنٍ مُخْتَلِفٍ لِكُلِّ مَادَّةٍ دِرَاسِيَّةٍ.",
+        en: "He assigns a different colored notebook to each school subject.",
+        ar: "يخصص دفترا بلون مختلف لكل مادة دراسية.",
       },
       {
         context: "Journaling",
@@ -17917,8 +17841,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Self-Study",
-        en: "She checks her answers in the back of the workbook after finishing each quiz.",
-        ar: "تُدَقِّقُ إِجَابَاتِهَا فِي نِهَايَةِ كُرَّاسَةِ التَّمَارِينِ بَعْدَ الاِنْتِهَاءِ مِنْ كُلِّ اخْتِبَارٍ قَصِيرٍ.",
+        en: "He checks his answers in the back of the workbook after finishing each quiz.",
+        ar: "يراجع إجاباته في آخر كتاب التدريبات بعد الانتهاء من كل اختبار قصير.",
       },
     ],
     exampleSentence: "For homework, complete exercises one through five in your grammar workbook.",
@@ -17950,8 +17874,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Document Organization",
-        en: "She slipped her graded math assignments into a labeled two-pocket folder.",
-        ar: "أَدْخَلَتْ فُرُوضَ الرِّيَاضِيَّاتِ المُصَحَّحَةَ دَاخِلَ مِلَفٍّ ذِي جَيْبَيْنِ يَحْمِلُ عُنْوَانًا.",
+        en: "He slipped his graded math assignments into a labeled two-pocket folder.",
+        ar: "وضع واجبات الرياضيات المصححة في ملف ذي جيبين وعليه بطاقة تعريف.",
       },
       {
         context: "Class Handouts",
@@ -17964,9 +17888,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "اشْتَرَى مِلَفَّاتٍ خَضْرَاءَ لِمَادَّةِ العُلُومِ وَمِلَفَّاتٍ صَفْرَاءَ لِلْجُغْرَافْيَا.",
       },
     ],
-    exampleSentence: "She slipped her graded math assignments into a labeled two-pocket folder.",
-    exampleArabic:
-      "أَدْخَلَتْ فُرُوضَ الرِّيَاضِيَّاتِ المُصَحَّحَةَ دَاخِلَ مِلَفٍّ ذِي جَيْبَيْنِ يَحْمِلُ عُنْوَانًا.",
+    exampleSentence: "He slipped his graded math assignments into a labeled two-pocket folder.",
+    exampleArabic: "وضع واجبات الرياضيات المصححة في ملف ذي جيبين وعليه بطاقة تعريف.",
   },
   binder: {
     id: "binder",
@@ -18002,8 +17925,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Class Preparation",
-        en: "She punched three holes in the worksheet before inserting it into her binder.",
-        ar: "ثَقَبَتْ ثَلَاثَ فَتَحَاتٍ فِي وَرَقَةِ العَمَلِ قَبْلَ إِدْخَالِهَا فِي مِلَفِّهَا الحَلَقِيِّ.",
+        en: "He punched three holes in the worksheet before inserting it into his binder.",
+        ar: "ثقب ورقة العمل ثلاث ثقوب قبل وضعها في ملف الحلقات الخاص به.",
       },
     ],
     exampleSentence:
@@ -18040,8 +17963,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Art Sketch",
-        en: "She sketched a quick flower diagram on a blank sheet of paper.",
-        ar: "رَسَمَتْ مُخَطَّطًا سَرِيعًا لِزَهْرَةٍ عَلَى وَرَقَةٍ بَيْضَاءَ فَارِغَةٍ.",
+        en: "He sketched a quick flower diagram on a blank sheet of paper.",
+        ar: "رسم مخططا سريعا لزهرة على ورقة بيضاء.",
       },
       {
         context: "Printing",
@@ -18078,8 +18001,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Reminder",
-        en: "She wrote a quick reminder on a yellow sticky note and pasted it on her desk.",
-        ar: "كَتَبَتْ تَذْكِيرًا سَرِيعًا عَلَى وَرَقَةِ مُلَاحَظَاتٍ لَاصِقَةٍ صَفْرَاءَ وَأَلْصَقَتْهَا عَلَى مَكْتَبِهَا.",
+        en: "He wrote a quick reminder on a yellow sticky note and pasted it on his desk.",
+        ar: "كتب تذكيرا سريعا على ملاحظة لاصقة صفراء وألصقها على مكتبه.",
       },
       {
         context: "Brainstorming",
@@ -18092,10 +18015,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "اسْتَخْدِمْ أَوْرَاقَ مُلَاحَظَاتٍ لَاصِقَةً صَغِيرَةً لِتَمْيِيزِ المُعَادَلَاتِ الهَامَّةِ فِي كِتَابِكَ.",
       },
     ],
-    exampleSentence:
-      "She wrote a quick reminder on a yellow sticky note and pasted it on her desk.",
-    exampleArabic:
-      "كَتَبَتْ تَذْكِيرًا سَرِيعًا عَلَى وَرَقَةِ مُلَاحَظَاتٍ لَاصِقَةٍ صَفْرَاءَ وَأَلْصَقَتْهَا عَلَى مَكْتَبِهَا.",
+    exampleSentence: "He wrote a quick reminder on a yellow sticky note and pasted it on his desk.",
+    exampleArabic: "كتب تذكيرا سريعا على ملاحظة لاصقة صفراء وألصقها على مكتبه.",
   },
   "index-card": {
     id: "index-card",
@@ -18165,8 +18086,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Vocabulary Lookup",
-        en: "She opened the comprehensive English dictionary to verify the exact spelling of the word.",
-        ar: "فَتَحَتِ القَامُوسَ الإِنْجِلِيزِيَّ الشَّامِلَ لِلتَّأَكُّدِ مِنَ التَّهْجِئَةِ الدَّقِيقَةِ لِلْكَلِمَةِ.",
+        en: "He opened the comprehensive English dictionary to verify the exact spelling of the word.",
+        ar: "فتح القاموس الإنجليزي الشامل ليتحقق من التهجئة الدقيقة للكلمة.",
       },
       {
         context: "Language Learning",
@@ -18180,9 +18101,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She opened the comprehensive English dictionary to verify the exact spelling of the word.",
-    exampleArabic:
-      "فَتَحَتِ القَامُوسَ الإِنْجِلِيزِيَّ الشَّامِلَ لِلتَّأَكُّدِ مِنَ التَّهْجِئَةِ الدَّقِيقَةِ لِلْكَلِمَةِ.",
+      "He opened the comprehensive English dictionary to verify the exact spelling of the word.",
+    exampleArabic: "فتح القاموس الإنجليزي الشامل ليتحقق من التهجئة الدقيقة للكلمة.",
   },
   encyclopedia: {
     id: "encyclopedia",
@@ -18299,8 +18219,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Document Display",
-        en: "She connected her laptop to the projector to share her group research project.",
-        ar: "رَبَطَتْ حَاسُوبَهَا المَحْمُولَ بِجِهَازِ العَرْضِ الضَّوْئِيِّ لِمُشَارَكَةِ مَشْرُوعِ بَحْثِ مَجْمُوعَتِهَا.",
+        en: "He connected his laptop to the projector to share his group research project.",
+        ar: "وصل حاسوبه المحمول بجهاز العرض ليشارك مشروع البحث الجماعي.",
       },
       {
         context: "Movie Day",
@@ -18435,8 +18355,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Personalizing",
-        en: "She decorated the inside door of her hallway locker with magnetic photos.",
-        ar: "زَيَّنَتِ البَابَ الدَّاخِلِيَّ لِخِزَانَتِهَا فِي الرِّدْهَةِ بِصُوَرٍ مَغْنَاطِيسِيَّةٍ.",
+        en: "He decorated the inside door of his hallway locker with magnetic photos.",
+        ar: "زين السطح الداخلي لباب خزانته في الممر بصور مغناطيسية.",
       },
     ],
     exampleSentence:
@@ -18512,8 +18432,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Craft Project",
-        en: "She used a pair of blunt safety scissors to cut out paper shapes for her collage.",
-        ar: "اسْتَخْدَمَتْ مِقَصًّا ذَا سِنٍّ غَيْرِ حَادَّةٍ لِلأَمَانِ لِقَصِّ أَشْكَالٍ وَرَقِيَّةٍ لِلَوْحَتِهَا التَّجْمِيعِيَّةِ.",
+        en: "He used a pair of blunt safety scissors to cut out paper shapes for his collage.",
+        ar: "استخدم مقص أمان ذا طرفين غير حادين ليقص أشكالا ورقية لعمله الفني.",
       },
       {
         context: "Classroom Safety",
@@ -18527,9 +18447,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used a pair of blunt safety scissors to cut out paper shapes for her collage.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ مِقَصًّا ذَا سِنٍّ غَيْرِ حَادَّةٍ لِلأَمَانِ لِقَصِّ أَشْكَالٍ وَرَقِيَّةٍ لِلَوْحَتِهَا التَّجْمِيعِيَّةِ.",
+      "He used a pair of blunt safety scissors to cut out paper shapes for his collage.",
+    exampleArabic: "استخدم مقص أمان ذا طرفين غير حادين ليقص أشكالا ورقية لعمله الفني.",
   },
   "glue-stick": {
     id: "glue-stick",
@@ -18598,8 +18517,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Classroom Decor",
-        en: "She used clear adhesive tape to secure her solar system poster to the classroom wall.",
-        ar: "اسْتَخْدَمَتْ شَرِيطًا لَاصِقًا شَفَّافًا لِتَثْبِيتِ مُلْصَقِ المَجْمُوعَةِ الشَّمْسِيَّةِ عَلَى جِدَارِ الفَصْلِ.",
+        en: "He used clear adhesive tape to secure his solar system poster to the classroom wall.",
+        ar: "استخدم شريطا لاصقا شفافا ليثبت ملصقه عن المجموعة الشمسية على جدار الفصل.",
       },
       {
         context: "Desk Accessory",
@@ -18613,9 +18532,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used clear adhesive tape to secure her solar system poster to the classroom wall.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ شَرِيطًا لَاصِقًا شَفَّافًا لِتَثْبِيتِ مُلْصَقِ المَجْمُوعَةِ الشَّمْسِيَّةِ عَلَى جِدَارِ الفَصْلِ.",
+      "He used clear adhesive tape to secure his solar system poster to the classroom wall.",
+    exampleArabic: "استخدم شريطا لاصقا شفافا ليثبت ملصقه عن المجموعة الشمسية على جدار الفصل.",
   },
   stapler: {
     id: "stapler",
@@ -18646,8 +18564,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Refilling Supplies",
-        en: "She opened the metal hinge to reload a fresh row of wire staples.",
-        ar: "فَتَحَتِ المِفْصَلَةَ المَعْدَنِيَّةَ لِإِعَادَةِ تَعْبِئَةِ صَفٍّ جَدِيدٍ مِنْ دَبَابِيسِ السِّلْكِ.",
+        en: "He opened the metal hinge to reload a fresh row of wire staples.",
+        ar: "فتح المفصلة المعدنية ليضع صفا جديدا من الدبابيس السلكية.",
       },
       {
         context: "Desk Setup",
@@ -18726,8 +18644,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Flashcard Bundle",
-        en: "She wrapped a stretchy rubber band around her stack of study flashcards.",
-        ar: "لَفَّتْ رِبَاطًا مَطَّاطِيًّا مَرِنًا حَوْلَ حُزْمَةِ بِطَاقَاتِ الاِسْتِذْكَارِ الخَاصَّةِ بِهَا.",
+        en: "He wrapped a stretchy rubber band around his stack of study flashcards.",
+        ar: "لف رباطا مطاطيا مرنا حول مجموعة بطاقات المراجعة الخاصة به.",
       },
       {
         context: "Desk Organization",
@@ -18740,9 +18658,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تُثَبِّتُ الأَرْبِطَةُ المَرِنَةُ المُلْصَقَاتِ المَلْفُوفَةَ بِإِحْكَامٍ لِنَقْلِهَا بِأَمَانٍ.",
       },
     ],
-    exampleSentence: "She wrapped a stretchy rubber band around her stack of study flashcards.",
-    exampleArabic:
-      "لَفَّتْ رِبَاطًا مَطَّاطِيًّا مَرِنًا حَوْلَ حُزْمَةِ بِطَاقَاتِ الاِسْتِذْكَارِ الخَاصَّةِ بِهَا.",
+    exampleSentence: "He wrapped a stretchy rubber band around his stack of study flashcards.",
+    exampleArabic: "لف رباطا مطاطيا مرنا حول مجموعة بطاقات المراجعة الخاصة به.",
   },
   thumbtack: {
     id: "thumbtack",
@@ -18811,8 +18728,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Math Class",
-        en: "She typed numbers into her scientific calculator to solve the trigonometry problem.",
-        ar: "كَتَبَتِ الأَرْقَامَ عَلَى آلَتِهَا الحَاسِبَةِ العِلْمِيَّةِ لِحَلِّ مَسْأَلَةِ حِسَابِ المُثَلَّثَاتِ.",
+        en: "He typed numbers into his scientific calculator to solve the trigonometry problem.",
+        ar: "أدخل الأرقام في آلته الحاسبة العلمية ليحل مسألة حساب المثلثات.",
       },
       {
         context: "Solar Powered",
@@ -18826,9 +18743,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She typed numbers into her scientific calculator to solve the trigonometry problem.",
-    exampleArabic:
-      "كَتَبَتِ الأَرْقَامَ عَلَى آلَتِهَا الحَاسِبَةِ العِلْمِيَّةِ لِحَلِّ مَسْأَلَةِ حِسَابِ المُثَلَّثَاتِ.",
+      "He typed numbers into his scientific calculator to solve the trigonometry problem.",
+    exampleArabic: "أدخل الأرقام في آلته الحاسبة العلمية ليحل مسألة حساب المثلثات.",
   },
   compass: {
     id: "compass",
@@ -18986,8 +18902,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Computer Navigation",
-        en: "She moved the optical mouse smoothly over the neoprene pad to click the submit button.",
-        ar: "حَرَّكَتْ فَأْرَةَ الحَاسُوبِ الضَّوْئِيَّةَ بِسَلَاسَةٍ عَلَى لَوْحَةِ الفَأْرَةِ لِلنَّقْرِ عَلَى زِرِّ الإِرْسَالِ.",
+        en: "He moved the optical mouse smoothly over the neoprene pad to click the submit button.",
+        ar: "حرك الفأرة البصرية بسلاسة فوق وسادة النيوبرين لينقر زر الإرسال.",
       },
       {
         context: "Wireless Device",
@@ -19001,9 +18917,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She moved the optical mouse smoothly over the neoprene pad to click the submit button.",
-    exampleArabic:
-      "حَرَّكَتْ فَأْرَةَ الحَاسُوبِ الضَّوْئِيَّةَ بِسَلَاسَةٍ عَلَى لَوْحَةِ الفَأْرَةِ لِلنَّقْرِ عَلَى زِرِّ الإِرْسَالِ.",
+      "He moved the optical mouse smoothly over the neoprene pad to click the submit button.",
+    exampleArabic: "حرك الفأرة البصرية بسلاسة فوق وسادة النيوبرين لينقر زر الإرسال.",
   },
   printer: {
     id: "printer",
@@ -19161,8 +19076,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Classroom Learning",
-        en: "The enthusiastic student raised her hand to answer the teacher's question.",
-        ar: "رَفَعَتِ الطَّالِبَةُ المُتَحَمِّسَةُ يَدَهَا لِلْإِجَابَةِ عَنْ سُؤَالِ المُعَلِّمِ.",
+        en: "The enthusiastic student raised his hand to answer the teacher's question.",
+        ar: "رفع الطالب المتحمس يده ليجيب عن سؤال المعلم.",
       },
       {
         context: "Group Work",
@@ -19175,9 +19090,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يُرَاجِعُ الطَّالِبُ المُجْتَهِدُ مُفْرَدَاتِ الدُّرُوسِ كُلَّ مَسَاءٍ.",
       },
     ],
-    exampleSentence: "The enthusiastic student raised her hand to answer the teacher's question.",
-    exampleArabic:
-      "رَفَعَتِ الطَّالِبَةُ المُتَحَمِّسَةُ يَدَهَا لِلْإِجَابَةِ عَنْ سُؤَالِ المُعَلِّمِ.",
+    exampleSentence: "The enthusiastic student raised his hand to answer the teacher's question.",
+    exampleArabic: "رفع الطالب المتحمس يده ليجيب عن سؤال المعلم.",
   },
   principal: {
     id: "principal",
@@ -19208,8 +19122,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Leadership",
-        en: "She met with teachers to plan innovative STEM programs for the upcoming academic year.",
-        ar: "اجْتَمَعَتْ مَعَ المُعَلِّمِينَ لِتَخْطِيطِ بَرَامِجَ تَعْلِيمِيَّةٍ مُبْتَكَرَةٍ لِلْعَامِ الدِّرَاسِيِّ القَادِمِ.",
+        en: "He met with teachers to plan innovative STEM programs for the upcoming academic year.",
+        ar: "اجتمع بالمعلمين للتخطيط لبرامج مبتكرة في العلوم والتكنولوجيا والهندسة والرياضيات للعام الدراسي القادم.",
       },
       {
         context: "School Tour",
@@ -19240,7 +19154,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "check out",
         meaning: "process book borrowing records",
         arabic: "يُعِيرُ كِتَابًا",
-        example: "The librarian helped her check out two mystery novels for the weekend.",
+        example: "The librarian helped him check out two mystery novels for the weekend.",
       },
     ],
     sentences: [
@@ -19256,8 +19170,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Book Catalog",
-        en: "She scans barcodes and keeps library shelves organized according to the Dewey system.",
-        ar: "تَمْسَحُ البَارْكُودَ ضَوْئِيًّا وَتُحَافِظُ عَلَى تَرْتِيبِ رُفُوفِ المَكْتَبَةِ وَفْقًا لِنِظَامِ دِيُوِي.",
+        en: "He scans barcodes and keeps library shelves organized according to the Dewey system.",
+        ar: "يمسح الرموز الشريطية ويرتب رفوف المكتبة وفق نظام ديوي.",
       },
     ],
     exampleSentence:
@@ -19337,8 +19251,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Health Check",
-        en: "She checked the child's temperature with a digital thermometer in the quiet clinic.",
-        ar: "قَاسَتْ دَرَجَةَ حَرَارَةِ الطِّفْلِ بِمِقْيَاسِ حَرَارَةٍ رَقْمِيٍّ فِي العِيَادَةِ الهَادِئَةِ.",
+        en: "He checked the child's temperature with a digital thermometer in the quiet clinic.",
+        ar: "قاس حرارة الطفل بميزان حرارة رقمي في العيادة الهادئة.",
       },
       {
         context: "Medical Records",
@@ -19421,8 +19335,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Group Activities",
-        en: "She prepared art supplies and guided small reading circles during morning centers.",
-        ar: "أَعَدَّتْ أَدَوَاتِ الفَنِّ وَأَرْشَدَتْ مَجْمُوعَاتِ القِرَاءَةِ الصَّغِيرَةِ خِلَالَ أَنْشِطَةِ الصَّبَاحِ.",
+        en: "He prepared art supplies and guided small reading circles during morning centers.",
+        ar: "جهز أدوات الفن وأشرف على مجموعات قراءة صغيرة خلال أنشطة الصباح.",
       },
       {
         context: "Classroom Teamwork",
@@ -19459,8 +19373,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Guidance Session",
-        en: "She met with the guidance counselor to choose elective courses for the next semester.",
-        ar: "اجْتَمَعَتْ مَعَ المُرْشِدِ الطُّلَّابِيِّ لِاخْتِيَارِ المَوَادِّ الاِخْتِيَارِيَّةِ لِلْفَصْلِ الدِّرَاسِيِّ القَادِمِ.",
+        en: "He met with the guidance counselor to choose elective courses for the next semester.",
+        ar: "التقى المرشد الدراسي ليختار المواد الاختيارية للفصل القادم.",
       },
       {
         context: "Emotional Support",
@@ -19474,9 +19388,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She met with the guidance counselor to choose elective courses for the next semester.",
-    exampleArabic:
-      "اجْتَمَعَتْ مَعَ المُرْشِدِ الطُّلَّابِيِّ لِاخْتِيَارِ المَوَادِّ الاِخْتِيَارِيَّةِ لِلْفَصْلِ الدِّرَاسِيِّ القَادِمِ.",
+      "He met with the guidance counselor to choose elective courses for the next semester.",
+    exampleArabic: "التقى المرشد الدراسي ليختار المواد الاختيارية للفصل القادم.",
   },
   "security-guard": {
     id: "security-guard",
@@ -19582,7 +19495,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "pass with",
         meaning: "achieve a successful score",
         arabic: "يَنْجَحُ فِي الاِخْتِبَارِ بِـ",
-        example: "She studied diligently and passed the midterm science test with an A.",
+        example: "He studied diligently and passed the midterm science test with an A.",
       },
     ],
     sentences: [
@@ -19670,14 +19583,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "bring up",
         meaning: "improve an academic score",
         arabic: "يَرْفَعُ دَرَجَتَهُ الدِّرَاسِيَّة",
-        example: "Extra tutoring helped her bring up her grade in algebra.",
+        example: "Extra tutoring helped him bring up his grade in algebra.",
       },
     ],
     sentences: [
       {
         context: "Academic Achievement",
-        en: "She was thrilled to see an 'A' grade marked in red ink at the top of her essay.",
-        ar: "كَانَتْ فِي غَايَةِ السَّعَادَةِ عِنْدَمَا رَأَتْ دَرَجَةَ 'A' مَكْتُوبَةً بِالحِبْرِ الأَحْمَرِ فِي أَعْلَى مَقَالِهَا.",
+        en: "He was thrilled to see an 'A' grade marked in red ink at the top of his essay.",
+        ar: "فرح كثيرا عندما رأى تقدير «ممتاز» مكتوبا بالحبر الأحمر في أعلى مقاله.",
       },
       {
         context: "Report Card",
@@ -19691,9 +19604,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She was thrilled to see an 'A' grade marked in red ink at the top of her essay.",
-    exampleArabic:
-      "كَانَتْ فِي غَايَةِ السَّعَادَةِ عِنْدَمَا رَأَتْ دَرَجَةَ 'A' مَكْتُوبَةً بِالحِبْرِ الأَحْمَرِ فِي أَعْلَى مَقَالِهَا.",
+      "He was thrilled to see an 'A' grade marked in red ink at the top of his essay.",
+    exampleArabic: "فرح كثيرا عندما رأى تقدير «ممتاز» مكتوبا بالحبر الأحمر في أعلى مقاله.",
   },
   uniform: {
     id: "uniform",
@@ -19725,8 +19637,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Neat Appearance",
-        en: "She pressed her uniform blazer neatly each Sunday evening for the week ahead.",
-        ar: "كَمَتْ سُتْرَةَ زِيِّهَا المَدْرَسِيِّ بِتَرْتِيبٍ كُلَّ مَسَاءِ أَحَدٍ لِلأُسْبُوعِ القَادِمِ.",
+        en: "He pressed his uniform blazer neatly each Sunday evening for the week ahead.",
+        ar: "يكوي سترة زيه بعناية مساء كل أحد استعدادا للأسبوع القادم.",
       },
       {
         context: "School Identity",
@@ -19801,7 +19713,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "curl up with",
         meaning: "settle comfortably to read a book",
         arabic: "يَنْزَوِي مُسْتَمْتِعًا بِقِرَاءَةِ رِوَايَة",
-        example: "She loves to curl up with an engaging mystery novel by the fireplace.",
+        example: "He loves to curl up with an engaging mystery novel by the fireplace.",
       },
     ],
     sentences: [
@@ -19980,8 +19892,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Geography Class",
-        en: "She spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
-        ar: "فَتَحَتْ أَطْلَسَ العَالَمِ الكَبِيرَ عَلَى طَاوِلَةِ الدِّرَاسَةِ لِتَتَبُّعِ سَلَاسِلِ الجِبَالِ فِي أُورُوبَّا.",
+        en: "He spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
+        ar: "فتح أطلس العالم الكبير على طاولة الدراسة ليتتبع سلاسل الجبال في أوروبا.",
       },
       {
         context: "Cartography",
@@ -19995,9 +19907,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
-    exampleArabic:
-      "فَتَحَتْ أَطْلَسَ العَالَمِ الكَبِيرَ عَلَى طَاوِلَةِ الدِّرَاسَةِ لِتَتَبُّعِ سَلَاسِلِ الجِبَالِ فِي أُورُوبَّا.",
+      "He spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
+    exampleArabic: "فتح أطلس العالم الكبير على طاولة الدراسة ليتتبع سلاسل الجبال في أوروبا.",
   },
   biography: {
     id: "biography",
@@ -20023,8 +19934,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Historical Reading",
-        en: "She selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
-        ar: "اخْتَارَتْ سِيرَةً مُلْهِمَةً تُفَصِّلُ حَيَاةَ مَارِي كُورِي وَاكْتِشَافَاتِهَا العِلْمِيَّةَ.",
+        en: "He selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
+        ar: "اختار سيرة ملهمة تتناول حياة ماري كوري واكتشافاتها العلمية.",
       },
       {
         context: "Non-Fiction Section",
@@ -20038,9 +19949,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
-    exampleArabic:
-      "اخْتَارَتْ سِيرَةً مُلْهِمَةً تُفَصِّلُ حَيَاةَ مَارِي كُورِي وَاكْتِشَافَاتِهَا العِلْمِيَّةَ.",
+      "He selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
+    exampleArabic: "اختار سيرة ملهمة تتناول حياة ماري كوري واكتشافاتها العلمية.",
   },
   "poetry-book": {
     id: "poetry-book",
@@ -20060,7 +19970,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "recite aloud",
         meaning: "speak verses with expression",
         arabic: "يُلْقِي الشِّعْرَ بِصَوْتٍ مَسْمُوع",
-        example: "She opened the poetry book and recited aloud a lyrical sonnet.",
+        example: "He opened the poetry book and recited aloud a lyrical sonnet.",
       },
     ],
     sentences: [
@@ -20146,7 +20056,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "settle into",
         meaning: "get comfortable at a study station",
         arabic: "يَسْتَقِرُّ لِلْمُذَاكَرَةِ عَلَى المَكْتَب",
-        example: "She settled into a quiet corner study desk with her laptop and coffee.",
+        example: "He settled into a quiet corner study desk with his laptop and coffee.",
       },
     ],
     sentences: [
@@ -20325,8 +20235,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Digital Research",
-        en: "She sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
-        ar: "جَلَسَتْ عَلَى مَكْتَبِ حَاسُوبِ المَكْتَبَةِ لِلْبَحْثِ فِي فِهْرِسِ الأَبْحَاثِ عَبْرَ الإِنْتِرْنِتِ عَنْ مَقَالَاتٍ مُحَكَّمَةٍ.",
+        en: "He sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
+        ar: "جلس إلى مكتب حاسوب المكتبة ليبحث في الفهرس الإلكتروني عن مقالات بحثية محكمة.",
       },
       {
         context: "Ergonomics",
@@ -20340,9 +20250,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
-    exampleArabic:
-      "جَلَسَتْ عَلَى مَكْتَبِ حَاسُوبِ المَكْتَبَةِ لِلْبَحْثِ فِي فِهْرِسِ الأَبْحَاثِ عَبْرَ الإِنْتِرْنِتِ عَنْ مَقَالَاتٍ مُحَكَّمَةٍ.",
+      "He sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
+    exampleArabic: "جلس إلى مكتب حاسوب المكتبة ليبحث في الفهرس الإلكتروني عن مقالات بحثية محكمة.",
   },
   fiction: {
     id: "fiction",
@@ -20379,8 +20288,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Reading Preference",
-        en: "She enjoys escaping into literary fiction during quiet weekend evenings.",
-        ar: "تَسْتَمْتِعُ بِالانْغِمَاسِ فِي الأَدَبِ القَصَصِيِّ الرَّاقِي خِلَالَ أَمْسِيَاتِ عُطْلَةِ نِهَايَةِ الأُسْبُوعِ.",
+        en: "He enjoys escaping into literary fiction during quiet weekend evenings.",
+        ar: "يستمتع بالانغماس في الروايات الأدبية خلال أمسيات عطلة نهاية الأسبوع الهادئة.",
       },
     ],
     exampleSentence:
@@ -20671,8 +20580,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Book Check-In",
-        en: "She dropped her borrowed novels into the padded slot at the library return desk.",
-        ar: "وَضَعَتْ رِوَايَاتِهَا المُسْتَعَارَةَ فِي الفَتْحَةِ المُبَطَّنَةِ عِنْدَ مَكْتَبِ إِعَادَةِ الكُتُبِ فِي المَكْتَبَةِ.",
+        en: "He dropped his borrowed novels into the padded slot at the library return desk.",
+        ar: "وضع رواياته المستعارة في فتحة الإرجاع المبطنة عند مكتب الإعارة بالمكتبة.",
       },
       {
         context: "Automated Check-in",
@@ -20686,9 +20595,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She dropped her borrowed novels into the padded slot at the library return desk.",
-    exampleArabic:
-      "وَضَعَتْ رِوَايَاتِهَا المُسْتَعَارَةَ فِي الفَتْحَةِ المُبَطَّنَةِ عِنْدَ مَكْتَبِ إِعَادَةِ الكُتُبِ فِي المَكْتَبَةِ.",
+      "He dropped his borrowed novels into the padded slot at the library return desk.",
+    exampleArabic: "وضع رواياته المستعارة في فتحة الإرجاع المبطنة عند مكتب الإعارة بالمكتبة.",
   },
   "help-desk": {
     id: "help-desk",
@@ -20795,7 +20703,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         meaning: "become fully absorbed in literary pages",
         arabic: "يَسْتَغْرِقُ فِي قِرَاءَةِ الكِتَاب",
         example:
-          "She got lost in an engrossing mystery novel while resting under her beach umbrella.",
+          "He got lost in an engrossing mystery novel while resting under his beach umbrella.",
       },
     ],
     sentences: [
@@ -20880,7 +20788,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "hand back",
         meaning: "return borrowed materials to staff",
         arabic: "يُعِيدُ الكِتَابَ لِلْمُوَظَّف",
-        example: "She handed back her borrowed volumes at the circulation desk.",
+        example: "He handed back his borrowed volumes at the circulation desk.",
       },
     ],
     sentences: [
@@ -20929,8 +20837,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Catalog Lookup",
-        en: "She began searching the online database using author keywords to locate rare manuscripts.",
-        ar: "بَدَأَتْ فِي البَحْثِ فِي قَاعِدَةِ البَيَانَاتِ عَبْرَ الإِنْتِرْنِتِ بِاسْتِخْدَامِ كَلِمَاتِ اسْمِ المُؤَلِّفِ.",
+        en: "He began searching the online database using author keywords to locate rare manuscripts.",
+        ar: "بدأ البحث في قاعدة البيانات الإلكترونية باستخدام اسم المؤلف للعثور على مخطوطات نادرة.",
       },
       {
         context: "Aisle Exploration",
@@ -20944,9 +20852,9 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She began searching the online database using author keywords to locate rare manuscripts.",
+      "He began searching the online database using author keywords to locate rare manuscripts.",
     exampleArabic:
-      "بَدَأَتْ فِي البَحْثِ فِي قَاعِدَةِ البَيَانَاتِ عَبْرَ الإِنْتِرْنِتِ بِاسْتِخْدَامِ كَلِمَاتِ اسْمِ المُؤَلِّفِ.",
+      "بدأ البحث في قاعدة البيانات الإلكترونية باستخدام اسم المؤلف للعثور على مخطوطات نادرة.",
   },
   studying: {
     id: "studying",
@@ -20966,7 +20874,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "focus on",
         meaning: "concentrate mental effort upon subjects",
         arabic: "يُرَكِّزُ فِي الدِّرَاسَة",
-        example: "She put on noise-cancelling headphones to focus on studying chemistry.",
+        example: "He put on noise-cancelling headphones to focus on studying chemistry.",
       },
     ],
     sentences: [
@@ -21015,8 +20923,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Leisurely Exploration",
-        en: "She enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
-        ar: "اسْتَمْتَعَتْ بِتَصَفُّحِ رَفِّ الإِصْدَارَاتِ الجَدِيدَةِ بِاسْتِرْخَاءٍ لِاكْتِشَافِ عَنَاوِينِ رِوَايَاتٍ مُشَوِّقَةٍ.",
+        en: "He enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
+        ar: "استمتع بتصفح رف الإصدارات الجديدة بحثا عن روايات شيقة.",
       },
       {
         context: "Library Wandering",
@@ -21030,9 +20938,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
-    exampleArabic:
-      "اسْتَمْتَعَتْ بِتَصَفُّحِ رَفِّ الإِصْدَارَاتِ الجَدِيدَةِ بِاسْتِرْخَاءٍ لِاكْتِشَافِ عَنَاوِينِ رِوَايَاتٍ مُشَوِّقَةٍ.",
+      "He enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
+    exampleArabic: "استمتع بتصفح رف الإصدارات الجديدة بحثا عن روايات شيقة.",
   },
   reserving: {
     id: "reserving",
@@ -21101,8 +21008,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Document Duplication",
-        en: "She was photocopying two important map pages from a reference atlas for her geography report.",
-        ar: "كَانَتْ تَقُومُ بِتَصْوِيرِ صَفْحَتَيْ خَرِيطَةٍ هَامَّتَيْنِ مِنْ أَطْلَسٍ مَرْجِعِيٍّ لِتَقْرِيرِهَا.",
+        en: "He was photocopying two important map pages from a reference atlas for his geography report.",
+        ar: "كان يصور صفحتين مهمتين من خرائط أطلس مرجعي لتقرير الجغرافيا الخاص به.",
       },
       {
         context: "Copyright Notice",
@@ -21116,9 +21023,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She was photocopying two important map pages from a reference atlas for her geography report.",
-    exampleArabic:
-      "كَانَتْ تَقُومُ بِتَصْوِيرِ صَفْحَتَيْ خَرِيطَةٍ هَامَّتَيْنِ مِنْ أَطْلَسٍ مَرْجِعِيٍّ لِتَقْرِيرِهَا.",
+      "He was photocopying two important map pages from a reference atlas for his geography report.",
+    exampleArabic: "كان يصور صفحتين مهمتين من خرائط أطلس مرجعي لتقرير الجغرافيا الخاص به.",
   },
   typing: {
     id: "typing",
@@ -21149,8 +21055,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Essay Drafting",
-        en: "She spent the morning typing her final thesis draft on the library desktop terminal.",
-        ar: "أَمْضَتِ الصَّبَاحَ فِي كِتَابَةِ مُسَوَّدَةِ أُطْرُوحَتِهَا النِّهَائِيَّةِ عَلَى حَاسُوبِ المَكْتَبَةِ.",
+        en: "He spent the morning typing his final thesis draft on the library desktop terminal.",
+        ar: "أمضى الصباح يكتب المسودة النهائية لأطروحته على حاسوب المكتبة المكتبي.",
       },
       {
         context: "Silent Keyboards",
@@ -21230,8 +21136,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Membership Card",
-        en: "She presented her plastic library card at the checkout counter to borrow five mystery novels.",
-        ar: "قَدَّمَتْ بِطَاقَةَ المَكْتَبَةِ البَلَاسْتِيكِيَّةَ عِنْدَ كَاوَنْتَر الاِسْتِعَارَةِ لِاسْتِعَارَةِ خَمْسِ رِوَايَاتٍ غَامِضَةٍ.",
+        en: "He presented his plastic library card at the checkout counter to borrow five mystery novels.",
+        ar: "قدم بطاقة مكتبته البلاستيكية عند مكتب الإعارة ليستعير خمس روايات بوليسية.",
       },
       {
         context: "Barcode ID",
@@ -21245,9 +21151,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She presented her plastic library card at the checkout counter to borrow five mystery novels.",
-    exampleArabic:
-      "قَدَّمَتْ بِطَاقَةَ المَكْتَبَةِ البَلَاسْتِيكِيَّةَ عِنْدَ كَاوَنْتَر الاِسْتِعَارَةِ لِاسْتِعَارَةِ خَمْسِ رِوَايَاتٍ غَامِضَةٍ.",
+      "He presented his plastic library card at the checkout counter to borrow five mystery novels.",
+    exampleArabic: "قدم بطاقة مكتبته البلاستيكية عند مكتب الإعارة ليستعير خمس روايات بوليسية.",
   },
   "barcode-scanner": {
     id: "barcode-scanner",
@@ -21310,7 +21215,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "stamp with",
         meaning: "imprint a date or logo with an inked block",
         arabic: "يَخْتِمُ بِـ",
-        example: "She stamped the inside slip with the return due date.",
+        example: "He stamped the inside slip with the return due date.",
       },
     ],
     sentences: [
@@ -21360,8 +21265,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Reading Progress",
-        en: "She slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
-        ar: "دَسَّتْ فَاصِلَ كِتَابٍ قُمَاشِيًّا مُطَرَّزًا بَيْنَ الصَّفْحَتَيْنِ السَّبْعِينَ وَالإِحْدَى وَالسَّبْعِينَ قَبْلَ إِغْلَاقِ الرِّوَايَةِ.",
+        en: "He slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
+        ar: "وضع علامة كتاب من القماش المطرز بين الصفحتين السبعين والحادية والسبعين قبل إغلاق الرواية.",
       },
       {
         context: "Book Care",
@@ -21375,9 +21280,9 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
+      "He slipped an embroidered fabric bookmark between pages seventy and seventy-one before closing the novel.",
     exampleArabic:
-      "دَسَّتْ فَاصِلَ كِتَابٍ قُمَاشِيًّا مُطَرَّزًا بَيْنَ الصَّفْحَتَيْنِ السَّبْعِينَ وَالإِحْدَى وَالسَّبْعِينَ قَبْلَ إِغْلَاقِ الرِّوَايَةِ.",
+      "وضع علامة كتاب من القماش المطرز بين الصفحتين السبعين والحادية والسبعين قبل إغلاق الرواية.",
   },
   "book-cover": {
     id: "book-cover",
@@ -21491,8 +21396,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Online Search",
-        en: "She typed the author's name into the online library catalog to find the exact call number and shelf location.",
-        ar: "كَتَبَتِ اسْمَ المُؤَلِّفِ فِي فِهْرِسِ المَكْتَبَةِ الإِلِكْتُرُونِيِّ لِمَعْرِفَةِ رَقْمِ التَّصْنِيفِ وَمَوْقِعِ الرَّفِّ بِدِقَّةٍ.",
+        en: "He typed the author's name into the online library catalog to find the exact call number and shelf location.",
+        ar: "كتب اسم المؤلف في فهرس المكتبة الإلكتروني ليجد رقم التصنيف ومكان الرف بدقة.",
       },
       {
         context: "Historical Card System",
@@ -21506,9 +21411,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She typed the author's name into the online library catalog to find the exact call number and shelf location.",
-    exampleArabic:
-      "كَتَبَتِ اسْمَ المُؤَلِّفِ فِي فِهْرِسِ المَكْتَبَةِ الإِلِكْتُرُونِيِّ لِمَعْرِفَةِ رَقْمِ التَّصْنِيفِ وَمَوْقِعِ الرَّفِّ بِدِقَّةٍ.",
+      "He typed the author's name into the online library catalog to find the exact call number and shelf location.",
+    exampleArabic: "كتب اسم المؤلف في فهرس المكتبة الإلكتروني ليجد رقم التصنيف ومكان الرف بدقة.",
   },
   scanner: {
     id: "scanner",
@@ -21588,8 +21492,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Event Setup",
-        en: "She arranged seating and distributed handouts for the evening guest author lecture.",
-        ar: "رَتَّبَتِ المَقَاعِدَ وَوَزَّعَتِ المَنْشُورَاتِ لِمُحَاضَرَةِ المُؤَلِّفِ الضَّيْفِ المَسَائِيَّةِ.",
+        en: "He arranged seating and distributed handouts for the evening guest author lecture.",
+        ar: "رتب المقاعد ووزع النشرات استعدادا لمحاضرة المؤلف الزائر مساء.",
       },
     ],
     exampleSentence:
@@ -21615,14 +21519,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "immerse in",
         meaning: "become deeply absorbed in literary text",
         arabic: "يَنْغَمِسُ فِي القِرَاءَة",
-        example: "The avid reader immersed herself in the fantasy trilogy for hours.",
+        example: "The avid reader immersed himself in the fantasy trilogy for hours.",
       },
     ],
     sentences: [
       {
         context: "Quiet Patron",
-        en: "An avid reader sat by the bay window with a cup of tea, deeply absorbed in her historical novel.",
-        ar: "جَلَسَتْ قَارِئَةٌ شَغُوفَةٌ بِجَانِبِ النَّافِذَةِ البَارِزَةِ مَعَ كُوبِ شَايٍ، مُنْغَمِسَةً تَمَامًا فِي رِوَايَتِهَا التَّارِيخِيَّةِ.",
+        en: "An avid reader sat by the bay window with a cup of tea, deeply absorbed in his historical novel.",
+        ar: "جلس قارئ شغوف قرب النافذة البارزة مع كوب شاي، منغمسا في روايته التاريخية.",
       },
       {
         context: "Public Space",
@@ -21636,9 +21540,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "An avid reader sat by the bay window with a cup of tea, deeply absorbed in her historical novel.",
-    exampleArabic:
-      "جَلَسَتْ قَارِئَةٌ شَغُوفَةٌ بِجَانِبِ النَّافِذَةِ البَارِزَةِ مَعَ كُوبِ شَايٍ، مُنْغَمِسَةً تَمَامًا فِي رِوَايَتِهَا التَّارِيخِيَّةِ.",
+      "An avid reader sat by the bay window with a cup of tea, deeply absorbed in his historical novel.",
+    exampleArabic: "جلس قارئ شغوف قرب النافذة البارزة مع كوب شاي، منغمسا في روايته التاريخية.",
   },
   researcher: {
     id: "researcher",
@@ -21708,8 +21611,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Book Signing Event",
-        en: "The bestselling author gave an inspiring talk in the library auditorium and signed copies of her new book.",
-        ar: "أَلْقَتِ المُؤَلِّفَةُ صَاحِبَةُ الكُتُبِ الأَكْثَرِ مَبِيعًا كَلِمَةً مُلْهِمَةً فِي قَاعَةِ المَكْتَبَةِ وَوَقَّعَتْ نُسَخَ كِتَابِهَا الجَدِيدِ.",
+        en: "The bestselling author gave an inspiring talk in the library auditorium and signed copies of his new book.",
+        ar: "ألقى المؤلف الأكثر مبيعا حديثا ملهما في قاعة المكتبة ووقع نسخا من كتابه الجديد.",
       },
       {
         context: "Creative Process",
@@ -21723,9 +21626,9 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "The bestselling author gave an inspiring talk in the library auditorium and signed copies of her new book.",
+      "The bestselling author gave an inspiring talk in the library auditorium and signed copies of his new book.",
     exampleArabic:
-      "أَلْقَتِ المُؤَلِّفَةُ صَاحِبَةُ الكُتُبِ الأَكْثَرِ مَبِيعًا كَلِمَةً مُلْهِمَةً فِي قَاعَةِ المَكْتَبَةِ وَوَقَّعَتْ نُسَخَ كِتَابِهَا الجَدِيدِ.",
+      "ألقى المؤلف الأكثر مبيعا حديثا ملهما في قاعة المكتبة ووقع نسخا من كتابه الجديد.",
   },
   storyteller: {
     id: "storyteller",
@@ -21839,8 +21742,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Market Stall",
-        en: "She selected a bag of crisp red apples from the organic farm stall.",
-        ar: "اخْتَارَتْ كِيسًا مِنَ التُّفَّاحِ الأَحْمَرِ المُقَرْمَشِ مِنْ كُشْكِ المَزْرَعَةِ العُضْوِيَّةِ.",
+        en: "He selected a bag of crisp red apples from the organic farm stall.",
+        ar: "اختار كيسا من التفاح الأحمر الطازج من بسطة المزرعة العضوية.",
       },
       {
         context: "Healthy Snack",
@@ -21853,9 +21756,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "قَطَّعَتِ الجَدَّةُ التُّفَّاحَ الأَخْضَرَ الحَامِضَ لِخَبْزِ فَطِيرَةِ قِرْفَةٍ عَطِرَةٍ.",
       },
     ],
-    exampleSentence: "She selected a bag of crisp red apples from the organic farm stall.",
-    exampleArabic:
-      "اخْتَارَتْ كِيسًا مِنَ التُّفَّاحِ الأَحْمَرِ المُقَرْمَشِ مِنْ كُشْكِ المَزْرَعَةِ العُضْوِيَّةِ.",
+    exampleSentence: "He selected a bag of crisp red apples from the organic farm stall.",
+    exampleArabic: "اختار كيسا من التفاح الأحمر الطازج من بسطة المزرعة العضوية.",
   },
   banana: {
     id: "banana",
@@ -21886,8 +21788,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Breakfast",
-        en: "She sliced a sweet banana over her bowl of oatmeal every morning.",
-        ar: "قَطَّعَتْ مَوْزَةً حُلْوَةً فَوْقَ وِعَاءِ الشُّوفَانِ الخَاصِّ بِهَا كُلَّ صَبَاحٍ.",
+        en: "He sliced a sweet banana over his bowl of oatmeal every morning.",
+        ar: "كان يقطع موزة حلوة فوق وعاء الشوفان كل صباح.",
       },
       {
         context: "Nutrition",
@@ -21929,8 +21831,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Morning Juice",
-        en: "She peeled a sweet orange and separated the segments for her children.",
-        ar: "قَشَّرَتْ بُرْتُقَالَةً حُلْوَةً وَفَصَلَتْ فُصُوصَهَا لِأَطْفَالِهَا.",
+        en: "He peeled a sweet orange and separated the segments for his children.",
+        ar: "قشر برتقالة حلوة وفصل فصوصها لأطفاله.",
       },
       {
         context: "Vitamin Source",
@@ -21968,8 +21870,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Produce Display",
-        en: "She washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
-        ar: "غَسَلَتْ عُنْقُودًا كَبِيرًا مِنْ عِنَبٍ أَحْمَرَ خَالٍ مِنَ البُذُورِ لِتَقْدِيمِهِ كَوَجْبَةٍ خَفِيفَةٍ مُنْعِشَةٍ.",
+        en: "He washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
+        ar: "غسل عنقودا كبيرا من العنب الأحمر الخالي من البذور ليقدمه وجبة منعشة بعد الظهر.",
       },
       {
         context: "Fruit Salad",
@@ -21983,9 +21885,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
-    exampleArabic:
-      "غَسَلَتْ عُنْقُودًا كَبِيرًا مِنْ عِنَبٍ أَحْمَرَ خَالٍ مِنَ البُذُورِ لِتَقْدِيمِهِ كَوَجْبَةٍ خَفِيفَةٍ مُنْعِشَةٍ.",
+      "He washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
+    exampleArabic: "غسل عنقودا كبيرا من العنب الأحمر الخالي من البذور ليقدمه وجبة منعشة بعد الظهر.",
   },
   strawberry: {
     id: "strawberry",
@@ -22105,8 +22006,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Smoothie Blend",
-        en: "She blended diced mango with coconut water to create a creamy tropical beverage.",
-        ar: "خَلَطَتْ مُكَعَّبَاتِ المَانْجُو مَعَ مَاءِ جَوْزِ الهِنْدِ لِإِعْدَادِ مَشْرُوبٍ اسْتِوَائِيٍّ كَرِيمِيٍّ.",
+        en: "He blended diced mango with coconut water to create a creamy tropical beverage.",
+        ar: "خلط مكعبات المانجو مع ماء جوز الهند ليعد مشروبا استوائيا كريميا.",
       },
       {
         context: "Culinary Use",
@@ -22144,8 +22045,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Autumn Produce",
-        en: "She picked several firm green pears to ripen gently in the fruit bowl at home.",
-        ar: "اخْتَارَتْ عِدَّةَ حَبَّاتِ كُمَّثْرَى خَضْرَاءَ مُتَمَاسِكَةً لِتَنْضَجَ بِهُدُوءٍ فِي وِعَاءِ الفَاكِهَةِ.",
+        en: "He picked several firm green pears to ripen gently in the fruit bowl at home.",
+        ar: "اختار عدة حبات كمثرى خضراء متماسكة لتنضج تدريجيا في وعاء الفاكهة في المنزل.",
       },
       {
         context: "Gourmet Dish",
@@ -22159,9 +22060,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She picked several firm green pears to ripen gently in the fruit bowl at home.",
-    exampleArabic:
-      "اخْتَارَتْ عِدَّةَ حَبَّاتِ كُمَّثْرَى خَضْرَاءَ مُتَمَاسِكَةً لِتَنْضَجَ بِهُدُوءٍ فِي وِعَاءِ الفَاكِهَةِ.",
+      "He picked several firm green pears to ripen gently in the fruit bowl at home.",
+    exampleArabic: "اختار عدة حبات كمثرى خضراء متماسكة لتنضج تدريجيا في وعاء الفاكهة في المنزل.",
   },
   peach: {
     id: "peach",
@@ -22193,8 +22093,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Baking Cobbler",
-        en: "She baked a warm golden peach cobbler topped with a scoop of vanilla ice cream.",
-        ar: "خَبَزَتْ حَلْوَى كُوبْلَر الخَوْخِ الذَّهَبِيَّةَ الدَّافِئَةَ مَعَ مِلْعَقَةِ آيْس كْرِيم.",
+        en: "He baked a warm golden peach cobbler topped with a scoop of vanilla ice cream.",
+        ar: "خبز حلوى خوخ ذهبية دافئة وقدمها مع كرة من مثلجات الفانيليا.",
       },
       {
         context: "Fresh Snack",
@@ -22276,8 +22176,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Citrus Counter",
-        en: "She squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
-        ar: "عَصَرَتْ عَصِيرًا طَازَجًا مِنْ لَيْمُونَةٍ صَفْرَاءَ زَاهِيَةٍ فَوْقَ شَرِيحَةِ السَّمَكِ المَشْوِيِّ.",
+        en: "He squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
+        ar: "عصر ليمونة صفراء طازجة فوق شريحة السمك المشوية.",
       },
       {
         context: "Beverages",
@@ -22291,9 +22191,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
-    exampleArabic:
-      "عَصَرَتْ عَصِيرًا طَازَجًا مِنْ لَيْمُونَةٍ صَفْرَاءَ زَاهِيَةٍ فَوْقَ شَرِيحَةِ السَّمَكِ المَشْوِيِّ.",
+      "He squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
+    exampleArabic: "عصر ليمونة صفراء طازجة فوق شريحة السمك المشوية.",
   },
   lime: {
     id: "lime",
@@ -22363,8 +22262,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Vegetable Stall",
-        en: "She bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
-        ar: "اشْتَرَتْ حُزْمَةً طَازَجَةً مِنْ جَزَرٍ بُرْتُقَالِيٍّ مُقَرْمَشٍ مَعَ أَوْرَاقِهِ الخَضْرَاءِ مِنَ المُزَارِعِ.",
+        en: "He bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
+        ar: "اشترى من المزارع حزمة جزر برتقالي طازج بأوراقه الخضراء.",
       },
       {
         context: "Healthy Eating",
@@ -22378,9 +22277,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
-    exampleArabic:
-      "اشْتَرَتْ حُزْمَةً طَازَجَةً مِنْ جَزَرٍ بُرْتُقَالِيٍّ مُقَرْمَشٍ مَعَ أَوْرَاقِهِ الخَضْرَاءِ مِنَ المُزَارِعِ.",
+      "He bought a fresh bunch of crunchy orange carrots with leafy green tops from the farmer.",
+    exampleArabic: "اشترى من المزارع حزمة جزر برتقالي طازج بأوراقه الخضراء.",
   },
   broccoli: {
     id: "broccoli",
@@ -22493,8 +22391,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Farmers Market",
-        en: "She picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
-        ar: "اخْتَارَتْ سَلَّةً مِنْ طَمَاطِمَ حَمْرَاءَ مُمْتَلِئَةٍ نَاضِجَةٍ عَلَى الكَرْمَةِ لِسَلَطَةِ اللَّيْلَةِ.",
+        en: "He picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
+        ar: "قطف سلة من الطماطم الحمراء الناضجة لسلطة المساء.",
       },
       {
         context: "Sauce Making",
@@ -22507,9 +22405,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تَتَكَامَلُ شَرَائِحُ الطَّمَاطِمِ الحَمْرَاءِ العَصِيرِيَّةِ السَّمِيكَةِ مَعَ الجُبْنِ الذَّائِبِ فِي الشَّطِيرَةِ.",
       },
     ],
-    exampleSentence: "She picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
-    exampleArabic:
-      "اخْتَارَتْ سَلَّةً مِنْ طَمَاطِمَ حَمْرَاءَ مُمْتَلِئَةٍ نَاضِجَةٍ عَلَى الكَرْمَةِ لِسَلَطَةِ اللَّيْلَةِ.",
+    exampleSentence: "He picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
+    exampleArabic: "قطف سلة من الطماطم الحمراء الناضجة لسلطة المساء.",
   },
   cucumber: {
     id: "cucumber",
@@ -22623,8 +22520,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Produce Bin",
-        en: "She loaded a heavy five-pound sack of russet potatoes into her market cart.",
-        ar: "حَمَّلَتْ كِيسًا ثَقِيلًا يَزِنُ خَمْسَةَ أَرْطَالٍ مِنْ بَطَاطِسِ الرُّوسِيت فِي عَرَبَتِهَا.",
+        en: "He loaded a heavy five-pound sack of russet potatoes into his market cart.",
+        ar: "وضع كيس بطاطس ثقيلا يزن خمسة أرطال في عربة التسوق.",
       },
       {
         context: "Comfort Food",
@@ -22637,9 +22534,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "تُشَكِّلُ البَطَاطِسُ المَخْبُوزَةُ السَّاخِنَةُ مَعَ الكْرِيمَةِ الحَامِضَةِ وَالجُبْنِ وَجْبَةً مُشْبِعَةً.",
       },
     ],
-    exampleSentence: "She loaded a heavy five-pound sack of russet potatoes into her market cart.",
-    exampleArabic:
-      "حَمَّلَتْ كِيسًا ثَقِيلًا يَزِنُ خَمْسَةَ أَرْطَالٍ مِنْ بَطَاطِسِ الرُّوسِيت فِي عَرَبَتِهَا.",
+    exampleSentence: "He loaded a heavy five-pound sack of russet potatoes into his market cart.",
+    exampleArabic: "وضع كيس بطاطس ثقيلا يزن خمسة أرطال في عربة التسوق.",
   },
   mushroom: {
     id: "mushroom",
@@ -22710,8 +22606,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Leafy Greens",
-        en: "She selected a bag of tender baby spinach leaves for her daily breakfast smoothie.",
-        ar: "اخْتَارَتْ كِيسًا مِنْ أَوْرَاقِ السَّبَانِخِ الصَّغِيرَةِ الطَّرِيَّةِ لِعَصِيرِ الإِفْطَارِ اليَوْمِيِّ.",
+        en: "He selected a bag of tender baby spinach leaves for his daily breakfast smoothie.",
+        ar: "اختار كيسا من أوراق السبانخ الصغيرة الطرية لمشروب الإفطار اليومي.",
       },
       {
         context: "Nutrient Rich",
@@ -22725,9 +22621,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She selected a bag of tender baby spinach leaves for her daily breakfast smoothie.",
-    exampleArabic:
-      "اخْتَارَتْ كِيسًا مِنْ أَوْرَاقِ السَّبَانِخِ الصَّغِيرَةِ الطَّرِيَّةِ لِعَصِيرِ الإِفْطَارِ اليَوْمِيِّ.",
+      "He selected a bag of tender baby spinach leaves for his daily breakfast smoothie.",
+    exampleArabic: "اختار كيسا من أوراق السبانخ الصغيرة الطرية لمشروب الإفطار اليومي.",
   },
   garlic: {
     id: "garlic",
@@ -22972,8 +22867,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Seafood Section",
-        en: "She ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
-        ar: "طَلَبَتْ رَطْلًا مِنْ جَمْبَرِي الحَجْمِ الكَبِيرِ النِّيءِ مِنْ مَعْرَضِ المَأْكُولَاتِ البَحْرِيَّةِ.",
+        en: "He ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
+        ar: "طلب رطلا من الروبيان النيئ الكبير من واجهة المأكولات البحرية المملوءة بالثلج.",
       },
       {
         context: "Garlic Sauté",
@@ -22986,10 +22881,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يُشَكِّلُ الجَمْبَرِي الطَّرِيُّ مَعَ مَعْكَرُونَةِ الفِيتُوتْشِينِي وَصَلْصَةِ الكْرِيمَةِ عَشَاءً فَاخِرًا.",
       },
     ],
-    exampleSentence:
-      "She ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
-    exampleArabic:
-      "طَلَبَتْ رَطْلًا مِنْ جَمْبَرِي الحَجْمِ الكَبِيرِ النِّيءِ مِنْ مَعْرَضِ المَأْكُولَاتِ البَحْرِيَّةِ.",
+    exampleSentence: "He ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
+    exampleArabic: "طلب رطلا من الروبيان النيئ الكبير من واجهة المأكولات البحرية المملوءة بالثلج.",
   },
   sausage: {
     id: "sausage",
@@ -23197,8 +23090,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Lunch Preparation",
-        en: "She mixed canned tuna with olive oil, diced celery, and Dijon mustard for lunch.",
-        ar: "خَلَطَتْ تُونَةً مُعَلَّبَةً مَعَ زَيْتِ الزَّيْتُونِ وَالكَرَفْسِ وَالخَرْدَلِ لِوَجْبَةِ الغَدَاءِ.",
+        en: "He mixed canned tuna with olive oil, diced celery, and Dijon mustard for lunch.",
+        ar: "خلط التونة المعلبة بزيت الزيتون والكرفس المقطع وخردل ديجون لوجبة الغداء.",
       },
       {
         context: "Japanese Cuisine",
@@ -23280,8 +23173,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Dairy Cooler",
-        en: "She picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
-        ar: "اشْتَرَتْ عِدَّةَ عُلَبٍ مِنْ زَبَادِي يُونَانِيٍّ كَرِيمِيٍّ غَيْرِ مُحَلًّى مِنْ مَمَرِّ الأَلْبَانِ.",
+        en: "He picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
+        ar: "أخذ عدة عبوات من الزبادي اليوناني الكريمي غير المحلى من ممر منتجات الألبان.",
       },
       {
         context: "Morning Breakfast",
@@ -23295,9 +23188,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
-    exampleArabic:
-      "اشْتَرَتْ عِدَّةَ عُلَبٍ مِنْ زَبَادِي يُونَانِيٍّ كَرِيمِيٍّ غَيْرِ مُحَلًّى مِنْ مَمَرِّ الأَلْبَانِ.",
+      "He picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
+    exampleArabic: "أخذ عدة عبوات من الزبادي اليوناني الكريمي غير المحلى من ممر منتجات الألبان.",
   },
   cream: {
     id: "cream",
@@ -23324,8 +23216,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Dairy Section",
-        en: "She bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
-        ar: "اشْتَرَتْ عُلْبَةَ كْرِيمَةِ خَفْقٍ ثَقِيلَةٍ لِإِعْدَادِ جَانَاش الشُّوكُولَاتَةِ لِلْكَعْكَةِ.",
+        en: "He bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
+        ar: "اشترى عبوة من كريمة الخفق الثقيلة ليعد غاناش الشوكولاتة للكعكة.",
       },
       {
         context: "Coffee Addition",
@@ -23339,9 +23231,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
-    exampleArabic:
-      "اشْتَرَتْ عُلْبَةَ كْرِيمَةِ خَفْقٍ ثَقِيلَةٍ لِإِعْدَادِ جَانَاش الشُّوكُولَاتَةِ لِلْكَعْكَةِ.",
+      "He bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
+    exampleArabic: "اشترى عبوة من كريمة الخفق الثقيلة ليعد غاناش الشوكولاتة للكعكة.",
   },
   roll: {
     id: "roll",
@@ -23373,8 +23264,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Dinner Table",
-        en: "She broke open a soft bread roll and spread melted butter across its warm center.",
-        ar: "فَتَحَتْ رَغِيفَ خُبْزٍ صَغِيرًا طَرِيًّا وَدَهَنَتِ الزُّبْدَةَ الذَّائِبَةَ فِي مُنْتَصَفِهِ.",
+        en: "He broke open a soft bread roll and spread melted butter across its warm center.",
+        ar: "فتح لفافة خبز طرية ودهن قلبها الدافئ بالزبدة المذابة.",
       },
       {
         context: "Sweet Variety",
@@ -23450,7 +23341,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "flake off",
         meaning: "break into delicate crisp layers",
         arabic: "تَتَسَاقَطُ طَبَقَاتُهُ الهَشَّة",
-        example: "Delicate golden buttery layers flaked off as she bit into the warm croissant.",
+        example: "Delicate golden buttery layers flaked off as he bit into the warm croissant.",
       },
     ],
     sentences: [
@@ -23598,8 +23489,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Afternoon Snack",
-        en: "Two crisp ginger cookies accompanied her afternoon cup of black tea.",
-        ar: "رَافَقَتْ كَعْكَتَانِ مُقَرْمَشَتَانِ مِنَ الزَّنْجَبِيلِ كُوبَ الشَّايِ الأَسْوَدِ فِي المَسَاءِ.",
+        en: "Two crisp ginger cookies accompanied his afternoon cup of black tea.",
+        ar: "رافق بسكويتان بالزنجبيل كوب الشاي الأسود الذي شربه بعد الظهر.",
       },
     ],
     exampleSentence:
@@ -23675,8 +23566,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Custom Slicing",
-        en: "She took a numbered ticket and waited by the refrigerated deli counter for sliced cheeses.",
-        ar: "سَحَبَتْ تِذْكِرَةً مَرْقُومَةً وَانْتَظَرَتْ بِجَانِبِ كَاوَنْتَر الأَجْبَانِ وَاللُّحُومِ البَارِدَةِ.",
+        en: "He took a numbered ticket and waited by the refrigerated deli counter for sliced cheeses.",
+        ar: "أخذ تذكرة برقم وانتظر عند منضدة الأطعمة المبردة ليشتري شرائح الجبن.",
       },
       {
         context: "Prepared Foods",
@@ -23690,9 +23581,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She took a numbered ticket and waited by the refrigerated deli counter for sliced cheeses.",
-    exampleArabic:
-      "سَحَبَتْ تِذْكِرَةً مَرْقُومَةً وَانْتَظَرَتْ بِجَانِبِ كَاوَنْتَر الأَجْبَانِ وَاللُّحُومِ البَارِدَةِ.",
+      "He took a numbered ticket and waited by the refrigerated deli counter for sliced cheeses.",
+    exampleArabic: "أخذ تذكرة برقم وانتظر عند منضدة الأطعمة المبردة ليشتري شرائح الجبن.",
   },
   bakery: {
     id: "bakery",
@@ -23854,8 +23744,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Shopping Flow",
-        en: "She steered her shopping cart smoothly down the breakfast cereal aisle.",
-        ar: "وَجَّهَتْ عَرَبَةَ التَّسَوُّقِ بِسَلَاسَةٍ عَبْرَ مَمَرِّ حُبُوبِ الإِفْطَارِ.",
+        en: "He steered his shopping cart smoothly down the breakfast cereal aisle.",
+        ar: "قاد عربة التسوق بسلاسة في ممر حبوب الإفطار.",
       },
       {
         context: "Store Maintenance",
@@ -23937,8 +23827,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Quick Errands",
-        en: "She grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
-        ar: "أَخَذَتْ سَلَّةَ تَسَوُّقٍ حَمْرَاءَ خَفِيفَةَ الوَزْنِ لِشِرَاءِ أَعْشَابٍ وَلَيْمُونٍ وَزَيْتِ زَيْتُونٍ.",
+        en: "He grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
+        ar: "أخذ سلة تسوق حمراء خفيفة ليشتري الأعشاب والليمون وزيت الزيتون.",
       },
       {
         context: "Handheld Convenience",
@@ -23952,9 +23842,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
-    exampleArabic:
-      "أَخَذَتْ سَلَّةَ تَسَوُّقٍ حَمْرَاءَ خَفِيفَةَ الوَزْنِ لِشِرَاءِ أَعْشَابٍ وَلَيْمُونٍ وَزَيْتِ زَيْتُونٍ.",
+      "He grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
+    exampleArabic: "أخذ سلة تسوق حمراء خفيفة ليشتري الأعشاب والليمون وزيت الزيتون.",
   },
   "cash-register": {
     id: "cash-register",
@@ -24023,8 +23912,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Shelf Labeling",
-        en: "She examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
-        ar: "فَحَصَتْ بِطَاقَةَ السِّعْرِ الصَّفْرَاءَ عَلَى الرَّفِّ لِمَعْرِفَةِ مَا إِذَا كَانَتِ القَهْوَةُ فِي عَرْضٍ.",
+        en: "He examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
+        ar: "تفحص بطاقة السعر الصفراء على الرف ليرى إن كانت القهوة العضوية ضمن التخفيضات.",
       },
       {
         context: "Digital Displays",
@@ -24038,9 +23927,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
-    exampleArabic:
-      "فَحَصَتْ بِطَاقَةَ السِّعْرِ الصَّفْرَاءَ عَلَى الرَّفِّ لِمَعْرِفَةِ مَا إِذَا كَانَتِ القَهْوَةُ فِي عَرْضٍ.",
+      "He examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
+    exampleArabic: "تفحص بطاقة السعر الصفراء على الرف ليرى إن كانت القهوة العضوية ضمن التخفيضات.",
   },
   receipt: {
     id: "receipt",
@@ -24067,8 +23955,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Proof of Purchase",
-        en: "The cashier handed her a detailed paper receipt showing each scanned grocery item and total tax.",
-        ar: "سَلَّمَهَا الصَّرَّافُ إِيصَالَ شِرَاءٍ وَرَقِيًّا مُفَصَّلًا يُوَضِّحُ كُلَّ غَرَضٍ وَمَجْمُوعَ الضَّرِيبَةِ.",
+        en: "The cashier handed him a detailed paper receipt showing each scanned grocery item and total tax.",
+        ar: "سلمه أمين الصندوق إيصالا ورقيا مفصلا يوضح كل سلعة ممسوحة وإجمالي الضريبة.",
       },
       {
         context: "Return Policy",
@@ -24082,9 +23970,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "The cashier handed her a detailed paper receipt showing each scanned grocery item and total tax.",
-    exampleArabic:
-      "سَلَّمَهَا الصَّرَّافُ إِيصَالَ شِرَاءٍ وَرَقِيًّا مُفَصَّلًا يُوَضِّحُ كُلَّ غَرَضٍ وَمَجْمُوعَ الضَّرِيبَةِ.",
+      "The cashier handed him a detailed paper receipt showing each scanned grocery item and total tax.",
+    exampleArabic: "سلمه أمين الصندوق إيصالا ورقيا مفصلا يوضح كل سلعة ممسوحة وإجمالي الضريبة.",
   },
   barcode: {
     id: "barcode",
@@ -24153,8 +24040,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Bagging Station",
-        en: "She packed her fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
-        ar: "عَبَّأَتْ خُضْرَاوَاتِهَا وَمُؤَنَهَا فِي أَكْيَاسِ تَسَوُّقٍ قُمَاشِيَّةٍ مَتِينَةٍ قَابِلَةٍ لِإِعَادَةِ الاسْتِخْدَامِ.",
+        en: "He packed his fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
+        ar: "وضع الخضراوات الطازجة ومستلزمات المطبخ في حقائب تسوق قماشية متينة قابلة لإعادة الاستخدام.",
       },
       {
         context: "Eco-Friendly Choice",
@@ -24168,9 +24055,9 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She packed her fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
+      "He packed his fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
     exampleArabic:
-      "عَبَّأَتْ خُضْرَاوَاتِهَا وَمُؤَنَهَا فِي أَكْيَاسِ تَسَوُّقٍ قُمَاشِيَّةٍ مَتِينَةٍ قَابِلَةٍ لِإِعَادَةِ الاسْتِخْدَامِ.",
+      "وضع الخضراوات الطازجة ومستلزمات المطبخ في حقائب تسوق قماشية متينة قابلة لإعادة الاستخدام.",
   },
   coupon: {
     id: "coupon",
@@ -24197,8 +24084,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Savings at Checkout",
-        en: "She presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
-        ar: "قَدَّمَتْ قَسِيمَةَ خَصْمٍ مِنْ صَحِيفَةٍ لِتَوْفِيرِ دُولَارَيْنِ عَلَى حُبُوبِ الإِفْطَارِ العُضْوِيَّةِ.",
+        en: "He presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
+        ar: "قدم قسيمة خصم من الصحيفة ليوفر دولارين عند شراء حبوب إفطار عضوية.",
       },
       {
         context: "Mobile App Savings",
@@ -24212,9 +24099,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
-    exampleArabic:
-      "قَدَّمَتْ قَسِيمَةَ خَصْمٍ مِنْ صَحِيفَةٍ لِتَوْفِيرِ دُولَارَيْنِ عَلَى حُبُوبِ الإِفْطَارِ العُضْوِيَّةِ.",
+      "He presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
+    exampleArabic: "قدم قسيمة خصم من الصحيفة ليوفر دولارين عند شراء حبوب إفطار عضوية.",
   },
   "shopping-list": {
     id: "shopping-list",
@@ -24398,8 +24284,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Checkout Payment",
-        en: "She pulled her leather wallet from her handbag to take out her supermarket loyalty card.",
-        ar: "أَخْرَجَتْ مَحْفَظَتَهَا الجِلْدِيَّةَ مِنْ حَقِيبَةِ يَدِهَا لِإِخْرَاجِ بِطَاقَةِ وَلَاءِ السُّوبَر مَارْكِت.",
+        en: "He pulled his leather wallet from his handbag to take out his supermarket loyalty card.",
+        ar: "أخرج محفظته الجلدية من حقيبته ليأخذ بطاقة ولائه للمتجر.",
       },
       {
         context: "Card Organization",
@@ -24413,9 +24299,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She pulled her leather wallet from her handbag to take out her supermarket loyalty card.",
-    exampleArabic:
-      "أَخْرَجَتْ مَحْفَظَتَهَا الجِلْدِيَّةَ مِنْ حَقِيبَةِ يَدِهَا لِإِخْرَاجِ بِطَاقَةِ وَلَاءِ السُّوبَر مَارْكِت.",
+      "He pulled his leather wallet from his handbag to take out his supermarket loyalty card.",
+    exampleArabic: "أخرج محفظته الجلدية من حقيبته ليأخذ بطاقة ولائه للمتجر.",
   },
   "white-bread": {
     id: "white-bread",
@@ -24441,8 +24326,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Bakery Counter",
-        en: "She bought a freshly baked loaf of soft white bread for making morning toast.",
-        ar: "اشْتَرَتْ رَغِيفًا مَخْبُوزًا حَدِيثًا مِنْ خُبْزٍ أَبْيَضَ طَرِيٍّ لِإِعْدَادِ التُّوسْتِ الصَّبَاحِيِّ.",
+        en: "He bought a freshly baked loaf of soft white bread for making morning toast.",
+        ar: "اشترى رغيف خبز أبيض طازجا وطريا ليعد الخبز المحمص صباحا.",
       },
       {
         context: "Breakfast Toast",
@@ -24455,10 +24340,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "يُوَفِّرُ الخُبْزُ الأَبْيَضُ الطَّرِيُّ قَوَامًا نَاعِمًا يُلَائِمُ شَطَائِرَ الدِّيكِ الرُّومِيِّ وَالجُبْنِ.",
       },
     ],
-    exampleSentence:
-      "She bought a freshly baked loaf of soft white bread for making morning toast.",
-    exampleArabic:
-      "اشْتَرَتْ رَغِيفًا مَخْبُوزًا حَدِيثًا مِنْ خُبْزٍ أَبْيَضَ طَرِيٍّ لِإِعْدَادِ التُّوسْتِ الصَّبَاحِيِّ.",
+    exampleSentence: "He bought a freshly baked loaf of soft white bread for making morning toast.",
+    exampleArabic: "اشترى رغيف خبز أبيض طازجا وطريا ليعد الخبز المحمص صباحا.",
   },
   "whole-wheat-bread": {
     id: "whole-wheat-bread",
@@ -24874,8 +24757,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Morning Pastry",
-        en: "She ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
-        ar: "طَلَبَتْ لَاتِيه سَاخِنًا وَكَعْكَةَ مَافِن بِالتُّوتِ البَرِّيِّ المُمْتَلِئِ بِالفَاكِهَةِ مِنَ المَخْبَزِ.",
+        en: "He ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
+        ar: "طلب لاتيه ساخنا وكعكة مافن بالتوت الأزرق من منضدة المخبز.",
       },
       {
         context: "Home Baking",
@@ -24889,9 +24772,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
-    exampleArabic:
-      "طَلَبَتْ لَاتِيه سَاخِنًا وَكَعْكَةَ مَافِن بِالتُّوتِ البَرِّيِّ المُمْتَلِئِ بِالفَاكِهَةِ مِنَ المَخْبَزِ.",
+      "He ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
+    exampleArabic: "طلب لاتيه ساخنا وكعكة مافن بالتوت الأزرق من منضدة المخبز.",
   },
   donut: {
     id: "donut",
@@ -25188,8 +25070,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Gift Box",
-        en: "He gave her a luxury pastel gift box filled with salted caramel and lavender macarons.",
-        ar: "قَدَّمَ لَهَا صُنْدُوقَ هَدَايَا فَاخِرًا مَلِيئًا بِمَاكَارُون الكَرَامِيلِ وَالخُزَامَى.",
+        en: "A friend gave him a luxury pastel gift box filled with salted caramel and lavender macarons.",
+        ar: "أهداه صديق علبة فاخرة بألوان فاتحة تضم ماكرون بالكراميل المملح والخزامى.",
       },
     ],
     exampleSentence:
@@ -25867,8 +25749,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Home Baked",
-        en: "She baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
-        ar: "خَبَزَتْ دُفْعَةً دَافِئَةً مِنْ كُوكِيز الشُّوفَانِ وَالزَّبِيبِ المَطَّاطِيِّ المُتَبَّلِ بِالقِرْفَةِ.",
+        en: "He baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
+        ar: "خبز دفعة دافئة من بسكويت الشوفان والزبيب الطري المتبل بالقرفة وجوزة الطيب.",
       },
       {
         context: "Wholesome Snack",
@@ -25882,9 +25764,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
-    exampleArabic:
-      "خَبَزَتْ دُفْعَةً دَافِئَةً مِنْ كُوكِيز الشُّوفَانِ وَالزَّبِيبِ المَطَّاطِيِّ المُتَبَّلِ بِالقِرْفَةِ.",
+      "He baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
+    exampleArabic: "خبز دفعة دافئة من بسكويت الشوفان والزبيب الطري المتبل بالقرفة وجوزة الطيب.",
   },
   wafer: {
     id: "wafer",
@@ -26345,8 +26226,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Dessert Finish",
-        en: "She dusted a fine layer of dark cocoa powder over the creamy Italian tiramisu.",
-        ar: "رَشَّتْ طَبَقَةً رَقِيقَةً مِنْ بُودْرَةِ الكَاكَاوِ الدَّاكِنَةِ فَوْقَ حَلْوَى التِّيرَامِيسُو الإِيطَالِيَّةِ.",
+        en: "He dusted a fine layer of dark cocoa powder over the creamy Italian tiramisu.",
+        ar: "نثر طبقة رقيقة من مسحوق الكاكاو الداكن فوق حلوى التيراميسو الإيطالية الكريمية.",
       },
       {
         context: "Warm Drinks",
@@ -26432,8 +26313,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Whipping Cream",
-        en: "She switched the mixer to high speed to whip egg whites into stiff glossy meringue peaks.",
-        ar: "شَغَّلَتِ الخَفَّاقَةَ عَلَى سُرْعَةٍ عَالِيَةٍ لِخَفْقِ بَيَاضِ البَيْضِ إِلَى مِيرَانْغ بَرَّاقٍ.",
+        en: "He switched the mixer to high speed to whip egg whites into stiff glossy meringue peaks.",
+        ar: "شغل الخلاط على سرعة عالية ليخفق بياض البيض حتى تتشكل قمم ميرينغ متماسكة ولامعة.",
       },
       {
         context: "Bakery Workstation",
@@ -26514,8 +26395,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Baking Equipment",
-        en: "She lined each indentation of the metal muffin tin with colorful paper baking cups.",
-        ar: "بَطَّنَتْ كُلَّ فَجْوَةٍ فِي صِينِيَّةِ المَافِن المَعْدَنِيَّةِ بِأَكْوَابِ خَبْزٍ وَرَقِيَّةٍ مُلَوَّنَةٍ.",
+        en: "He lined each indentation of the metal muffin tin with colorful paper baking cups.",
+        ar: "بطن كل تجويف في قالب المافن المعدني بكوب خبز ورقي ملون.",
       },
       {
         context: "Even Baking",
@@ -26529,9 +26410,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She lined each indentation of the metal muffin tin with colorful paper baking cups.",
-    exampleArabic:
-      "بَطَّنَتْ كُلَّ فَجْوَةٍ فِي صِينِيَّةِ المَافِن المَعْدَنِيَّةِ بِأَكْوَابِ خَبْزٍ وَرَقِيَّةٍ مُلَوَّنَةٍ.",
+      "He lined each indentation of the metal muffin tin with colorful paper baking cups.",
+    exampleArabic: "بطن كل تجويف في قالب المافن المعدني بكوب خبز ورقي ملون.",
   },
   "cooling-rack": {
     id: "cooling-rack",
@@ -26642,8 +26522,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Kitchen Timing",
-        en: "She set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
-        ar: "ضَبَطَتْ مُؤَقِّتَ المَطْبَخِ الرَّقْمِيَّ لِمُدَّةِ خَمْسٍ وَعِشْرِينَ دَقِيقَةً كَيْ لَا يَحْتَرِقَ السُّوفْلِيه.",
+        en: "He set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
+        ar: "ضبط مؤقت المطبخ الرقمي على خمس وعشرين دقيقة حتى لا يفرط في طهي سوفليه الشوكولاتة.",
       },
       {
         context: "Baking Precision",
@@ -26657,9 +26537,9 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
+      "He set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
     exampleArabic:
-      "ضَبَطَتْ مُؤَقِّتَ المَطْبَخِ الرَّقْمِيَّ لِمُدَّةِ خَمْسٍ وَعِشْرِينَ دَقِيقَةً كَيْ لَا يَحْتَرِقَ السُّوفْلِيه.",
+      "ضبط مؤقت المطبخ الرقمي على خمس وعشرين دقيقة حتى لا يفرط في طهي سوفليه الشوكولاتة.",
   },
   ocean: {
     id: "ocean",
@@ -27190,7 +27070,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         meaning: "recline comfortably on fabric lounge seat",
         arabic: "يَتَّكِئُ إِلَى الخَلْفِ فِي المَقْعَد",
         example:
-          "She leaned back in her folding beach chair with an iced drink and a mystery novel.",
+          "He leaned back in his folding beach chair with an iced drink and a mystery novel.",
       },
     ],
     sentences: [
@@ -27287,8 +27167,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Boardwalk Stroll",
-        en: "She slipped into a bright pair of waterproof flip-flops to stroll from the changing room to the shore.",
-        ar: "ارْتَدَتْ صَنْدَلَ شَاطِئٍ مُقَاوِمًا لِلْمَاءِ لِتَسِيرَ مِنْ غُرْفَةِ تَبْدِيلِ المَلَابِسِ إِلَى الشَّاطِئِ.",
+        en: "He slipped into a bright pair of waterproof flip-flops to stroll from the changing room to the shore.",
+        ar: "ارتدى خفا بلاستيكيا مقاوما للماء ليمشي من غرفة تبديل الملابس إلى الشاطئ.",
       },
     ],
     exampleSentence:
@@ -27325,8 +27205,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Beach Style",
-        en: "She wore stylish tortoiseshell sunglasses with tinted UV400 protective lenses.",
-        ar: "ارْتَدَتْ نَظَّارَةً شَمْسِيَّةً أَنِيقَةً مَعَ عَدَسَاتٍ وَاقِيَةٍ مِنَ الأَشِعَّةِ فَوْقَ البَنَفْسَجِيَّةِ.",
+        en: "He wore stylish tortoiseshell sunglasses with tinted UV400 protective lenses.",
+        ar: "ارتدى نظارة شمسية أنيقة بنقشة صدفة السلحفاة وعدسات ملونة واقية من الأشعة فوق البنفسجية.",
       },
       {
         context: "Care and Storage",
@@ -27351,7 +27231,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "shade from",
         meaning: "protect face and neck from direct sun rays",
         arabic: "يُظَلِّلُ عَنْ أَشِعَّةِ الشَّمْس",
-        example: "A wide-brimmed straw hat shaded her face from the blazing summer sun.",
+        example: "A wide-brimmed straw hat shaded his face from the blazing summer sun.",
       },
     ],
     sentences: [
@@ -27362,8 +27242,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Beach Fashion",
-        en: "She tied a ribbon around her woven straw hat to keep it secure against coastal breezes.",
-        ar: "رَبَطَتْ شَرِيطًا حَوْلَ قُبَّعَتِهَا القَشِّيَّةِ لِتَثْبِيتِهَا ضِدَّ رِيَاحِ البَحْرِ.",
+        en: "He tied a ribbon around his woven straw hat to keep it secure against coastal breezes.",
+        ar: "ربط شريطا حول قبعة القش المنسوجة ليثبتها أمام نسيم الساحل.",
       },
       {
         context: "Outdoor Activities",
@@ -27528,8 +27408,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Clear Underwater Vision",
-        en: "Wearing anti-fog swim goggles allowed her to open her eyes comfortably and spot colorful sea shells.",
-        ar: "أَتَاحَ ارْتِدَاءُ نَظَّارَاتِ السِّبَاحَةِ لَهَا فَتْحَ عَيْنَيْهَا دَاخِلَ المَاءِ لِرُؤْيَةِ الأَصْدَافِ.",
+        en: "Wearing anti-fog swim goggles allowed him to open his eyes comfortably and spot colorful sea shells.",
+        ar: "أتاحت له نظارات السباحة المضادة للضباب فتح عينيه براحة ورؤية الأصداف الملونة.",
       },
       {
         context: "Eye Protection",
@@ -27543,9 +27423,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "Wearing anti-fog swim goggles allowed her to open her eyes comfortably and spot colorful sea shells.",
-    exampleArabic:
-      "أَتَاحَ ارْتِدَاءُ نَظَّارَاتِ السِّبَاحَةِ لَهَا فَتْحَ عَيْنَيْهَا دَاخِلَ المَاءِ لِرُؤْيَةِ الأَصْدَافِ.",
+      "Wearing anti-fog swim goggles allowed him to open his eyes comfortably and spot colorful sea shells.",
+    exampleArabic: "أتاحت له نظارات السباحة المضادة للضباب فتح عينيه براحة ورؤية الأصداف الملونة.",
   },
   snorkel: {
     id: "snorkel",
@@ -27609,7 +27488,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "glide along",
         meaning: "move smoothly through water using fin propulsion",
         arabic: "يَنْزَلِقُ فِي المَاءِ بِسُهُولَة",
-        example: "With long dive fins on her feet, she glided effortlessly along the coral wall.",
+        example: "With long dive fins on his feet, he glided effortlessly along the coral wall.",
       },
     ],
     sentences: [
@@ -27879,8 +27758,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Morning Routine",
-        en: "She starts her sunrise morning with a serene paddleboarding session across the quiet lagoon.",
-        ar: "تَبْدَأُ صَبَاحَهَا عِنْدَ الشُّرُوقِ بِجَلْسَةِ تَجْذِيفٍ وُقُوفًا هَادِئَةٍ عَبْرَ البُحَيْرَةِ الشَّاطِئِيَّةِ.",
+        en: "He starts his sunrise morning with a serene paddleboarding session across the quiet lagoon.",
+        ar: "يبدأ صباحه عند الشروق بجولة هادئة على لوح التجديف عبر البحيرة الشاطئية الساكنة.",
       },
       {
         context: "Board Stability",
@@ -28438,8 +28317,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Hobbyist Treasure",
-        en: "She preserved her prized beach finds in a decorative glass jar after an afternoon of shell collecting.",
-        ar: "حَفِظَتْ مَا جَمَعَتْهُ مِنَ الأَصْدَافِ فِي جَرَّةٍ زُجَاجِيَّةٍ زُخْرُفِيَّةٍ بَعْدَ الجَوْلَةِ.",
+        en: "He preserved his prized beach finds in a decorative glass jar after an afternoon of shell collecting.",
+        ar: "حفظ مقتنياته المميزة من الشاطئ في مرطبان زجاجي للزينة بعد عصر قضاه في جمع الأصداف.",
       },
       {
         context: "Educational Habit",
@@ -28600,7 +28479,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "keep up",
         meaning: "maintain steady running pace along firm coastline",
         arabic: "يُحَافِظُ عَلَى سُرْعَةِ الرَّكْض",
-        example: "She kept up a steady jogging pace along the hard-packed wet sand.",
+        example: "He kept up a steady jogging pace along the hard-packed wet sand.",
       },
     ],
     sentences: [
@@ -29571,8 +29450,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Skill",
-        en: "She is an exceptionally talented cook who creates delicious meals from scratch.",
-        ar: "إِنَّهَا طَبَّاخَةٌ مَوْهُوبَةٌ تُبْدِعُ وَجَبَاتٍ لَذِيذَةً.",
+        en: "He is an exceptionally talented cook who creates delicious meals from scratch.",
+        ar: "إنه طاه موهوب للغاية يعد وجبات لذيذة من المكونات الأساسية.",
       },
     ],
     exampleSentence: "The line cook flipped burgers and toasted buns rapidly on the hot griddle.",
@@ -29880,7 +29759,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "hand off",
         meaning: "pass baton to the next runner",
         arabic: "يُسَلِّمُ عَصَا التَّتَابُع",
-        example: "She handed off the baton smoothly to her teammate.",
+        example: "He handed off the baton smoothly to his teammate.",
       },
     ],
     sentences: [
@@ -29988,14 +29867,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "arch over",
         meaning: "bend back over horizontal bar",
         arabic: "يَنْحَنِي ظَهْرًا فَوْقَ العَارِضَة",
-        example: "She arched over the bar cleanly at two meters.",
+        example: "He arched over the bar cleanly at two meters.",
       },
     ],
     sentences: [
       {
         context: "Field Event",
-        en: "She used the Fosbury Flop technique to arch backward over the high jump crossbar.",
-        ar: "اسْتَخْدَمَتْ تِقْنِيَّةَ القَفْزِ لِلْخَلْفِ لِتَجَاوُزِ عَارِضَةِ الوَثْبِ العَالِي.",
+        en: "He used the Fosbury Flop technique to arch backward over the high jump crossbar.",
+        ar: "استخدم تقنية فوسبري فلوب ليتقوس إلى الخلف فوق عارضة الوثب العالي.",
       },
       {
         context: "Landing Mat",
@@ -30009,9 +29888,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used the Fosbury Flop technique to arch backward over the high jump crossbar.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ تِقْنِيَّةَ القَفْزِ لِلْخَلْفِ لِتَجَاوُزِ عَارِضَةِ الوَثْبِ العَالِي.",
+      "He used the Fosbury Flop technique to arch backward over the high jump crossbar.",
+    exampleArabic: "استخدم تقنية فوسبري فلوب ليتقوس إلى الخلف فوق عارضة الوثب العالي.",
   },
   javelin: {
     id: "javelin",
@@ -30136,7 +30014,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "power through",
         meaning: "endure long-distance race through stamina",
         arabic: "يُوَاصِلُ الجَرْيَ بِعَزِيمَة",
-        example: "She powered through the final miles of the race.",
+        example: "He powered through the final miles of the race.",
       },
     ],
     sentences: [
@@ -30392,7 +30270,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "pull on",
         meaning: "stretch rubber cover over hair",
         arabic: "يَرْتَدِي قُبَّعَةَ السِّبَاحَة",
-        example: "She pulled on her silicone swim cap.",
+        example: "He pulled on his silicone swim cap.",
       },
     ],
     sentences: [
@@ -30466,7 +30344,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "power through",
         meaning: "stroke rapidly using front crawl motion",
         arabic: "يَسْبَحُ بِالسِّبَاحَةِ الحُرَّة",
-        example: "She powered through the fifty-meter freestyle.",
+        example: "He powered through the fifty-meter freestyle.",
       },
     ],
     sentences: [
@@ -30519,8 +30397,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Competition",
-        en: "She won gold in the hundred-meter butterfly race with a stunning finishing surge.",
-        ar: "فَازَتْ بِالمِيدَالِيَّةِ الذَّهَبِيَّةِ فِي سِبَاقِ ١٠٠ مِتْرٍ سِبَاحَةَ فَرَاشَةٍ.",
+        en: "He won gold in the hundred-meter butterfly race with a stunning finishing surge.",
+        ar: "فاز بالميدالية الذهبية في سباق مئة متر فراشة باندفاعة أخيرة مذهلة.",
       },
     ],
     exampleSentence:
@@ -30876,14 +30754,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "stretch out on",
         meaning: "perform body floor exercises upon cushioned pad",
         arabic: "يَسْتَلْقِي عَلَى بِسَاطِ التَّمَارِين",
-        example: "She stretched out on her non-slip yoga mat.",
+        example: "He stretched out on his non-slip yoga mat.",
       },
     ],
     sentences: [
       {
         context: "Yoga & Pilates",
-        en: "She unrolled her non-slip purple yoga mat on the studio floor for morning stretches.",
-        ar: "فَرَدَتْ بِسَاطَ اليُوغَا البَنَفْسَجِيَّ عَلَى الأَرْضِ لِتَمَارِينِ الإِطَالَةِ الصَّبَاحِيَّةِ.",
+        en: "He unrolled his non-slip purple yoga mat on the studio floor for morning stretches.",
+        ar: "فرد بساط اليوغا الأرجواني غير القابل للانزلاق على أرضية الاستوديو لتمارين الصباح.",
       },
       {
         context: "Gymnastics Safety",
@@ -30897,9 +30775,9 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She unrolled her non-slip purple yoga mat on the studio floor for morning stretches.",
+      "He unrolled his non-slip purple yoga mat on the studio floor for morning stretches.",
     exampleArabic:
-      "فَرَدَتْ بِسَاطَ اليُوغَا البَنَفْسَجِيَّ عَلَى الأَرْضِ لِتَمَارِينِ الإِطَالَةِ الصَّبَاحِيَّةِ.",
+      "فرد بساط اليوغا الأرجواني غير القابل للانزلاق على أرضية الاستوديو لتمارين الصباح.",
   },
   treadmill: {
     id: "treadmill",
@@ -30924,8 +30802,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Cardio Exercise",
-        en: "She ran three miles on the motorized treadmill while monitoring her heart rate.",
-        ar: "رَكَضَتْ ٣ أَمْيَالٍ عَلَى جِهَازِ الجَرْيِ الكَهْرَبَائِيِّ مَعَ مُرَاقَبَةِ نَبْضِ القَلْبِ.",
+        en: "He ran three miles on the motorized treadmill while monitoring his heart rate.",
+        ar: "ركض ثلاثة أميال على جهاز المشي الكهربائي وهو يراقب معدل نبضه.",
       },
       {
         context: "Adjustable Settings",
@@ -30939,9 +30817,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She ran three miles on the motorized treadmill while monitoring her heart rate.",
-    exampleArabic:
-      "رَكَضَتْ ٣ أَمْيَالٍ عَلَى جِهَازِ الجَرْيِ الكَهْرَبَائِيِّ مَعَ مُرَاقَبَةِ نَبْضِ القَلْبِ.",
+      "He ran three miles on the motorized treadmill while monitoring his heart rate.",
+    exampleArabic: "ركض ثلاثة أميال على جهاز المشي الكهربائي وهو يراقب معدل نبضه.",
   },
   "weight-room": {
     id: "weight-room",
@@ -31150,7 +31027,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "stretch out",
         meaning: "extend limbs to full length to release tension",
         arabic: "يُمَدِّدُ أَطْرَافَهُ لِلِاسْتِرْخَاء",
-        example: "She stretched out her hamstrings on the grass.",
+        example: "He stretched out his hamstrings on the grass.",
       },
     ],
     sentences: [
@@ -31198,8 +31075,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Basketball Points",
-        en: "She scored twenty-four points and grabbed ten rebounds in the semifinal victory.",
-        ar: "سَجَّلَتْ ٢٤ نُقْطَةً وَاسْتَحْوَذَتْ عَلَى ١٠ كُرَاتٍ فِي فَوْزِ نِصْفِ النِّهَائِيِّ.",
+        en: "He scored twenty-four points and grabbed ten rebounds in the semifinal victory.",
+        ar: "سجل أربعًا وعشرين نقطة واستحوذ على الكرة المرتدة عشر مرات في الفوز بنصف النهائي.",
       },
       {
         context: "Match Result",
@@ -31407,7 +31284,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "look after",
         meaning: "provide medical care to patients",
         arabic: "يَعْتَنِي بِالمَرِيض",
-        example: "The doctor looked after her recovering patients.",
+        example: "The doctor looked after his recovering patients.",
       },
     ],
     sentences: [
@@ -31985,7 +31862,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "stay in",
         meaning: "reside as an admitted inpatient",
         arabic: "يَمْكُثُ فِي غُرْفَةِ المَرِيض",
-        example: "She stayed in a sunny patient room for three days.",
+        example: "He stayed in a sunny patient room for three days.",
       },
     ],
     sentences: [
@@ -32185,8 +32062,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Patient Scan",
-        en: "The patient went down to radiology to get an ultrasound of her abdomen.",
-        ar: "ذَهَبَتِ المَرِيضَةُ إِلَى قِسْمِ الأَشِعَّةِ لِإِجْرَاءِ فَحْصِ السُّونَارِ عَلَى البَطْنِ.",
+        en: "The patient went down to radiology to get an ultrasound of his abdomen.",
+        ar: "نزل المريض إلى قسم الأشعة لإجراء فحص بالموجات فوق الصوتية لبطنه.",
       },
       {
         context: "Safety Protocols",
@@ -32284,7 +32161,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "listen to",
         meaning: "hear heartbeat and lung sounds acoustically",
         arabic: "يَسْتَمِعُ بِالسَّمَّاعَة",
-        example: "The doctor listened to her heart with a stethoscope.",
+        example: "The doctor listened to the patient's heart with a stethoscope.",
       },
     ],
     sentences: [
@@ -32672,7 +32549,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "put in a cast",
         meaning: "immobilize broken bone with hardening mold",
         arabic: "يَضَعُ فِي الجَبِيرَةِ الجِبْسِيَّة",
-        example: "The doctor put her broken arm in a cast.",
+        example: "The doctor put the patient's broken arm in a cast.",
       },
     ],
     sentences: [
@@ -32746,7 +32623,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "expand with",
         meaning: "fill with fresh inhaled air",
         arabic: "تَتَمَدَّدُ بِالهَوَاءِ النَّقِيّ",
-        example: "Her lungs expanded with fresh mountain air.",
+        example: "His lungs expanded with fresh mountain air.",
       },
     ],
     sentences: [
@@ -32929,7 +32806,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "come down",
         meaning: "decrease temperature back to normal",
         arabic: "تَنْخَفِضُ الحَرَارَة",
-        example: "Her fever came down after taking medicine.",
+        example: "His fever came down after he took the medicine.",
       },
     ],
     sentences: [
@@ -33081,7 +32958,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "trigger off",
         meaning: "cause sudden allergic immune reaction",
         arabic: "يُثِيرُ الحَسَاسِيَّة",
-        example: "Pollen triggered off her seasonal allergy symptoms.",
+        example: "Pollen triggered off his seasonal allergy symptoms.",
       },
     ],
     sentences: [
@@ -33118,7 +32995,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "break out in",
         meaning: "develop sudden widespread skin eruptions",
         arabic: "يَظْهَرُ عَلَيْهِ طَفْحٌ جِلْدِيّ",
-        example: "She broke out in a rash after touching poison ivy.",
+        example: "He broke out in a rash after touching poison ivy.",
       },
     ],
     sentences: [
@@ -33596,7 +33473,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "rehabilitate through",
         meaning: "restore joint mobility via targeted exercises",
         arabic: "يَتَعَافَى بِالعِلَاجِ الطَّبِيعِيّ",
-        example: "She rehabilitated her shoulder through physical therapy.",
+        example: "He rehabilitated his shoulder through physical therapy.",
       },
     ],
     sentences: [
@@ -33860,7 +33737,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "rub onto",
         meaning: "spread therapeutic cream gently across skin",
         arabic: "يَدْهَنُ المَرْهَمَ عَلَى الجِلْد",
-        example: "She rubbed soothing ointment onto the rash.",
+        example: "He rubbed soothing ointment onto the rash.",
       },
     ],
     sentences: [
@@ -33939,7 +33816,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "lean on",
         meaning: "support body balance on four-legged frame",
         arabic: "يَسْتَنِدُ عَلَى المَشَّايَة",
-        example: "The recovering patient leaned on her walker.",
+        example: "The recovering patient leaned on his walker.",
       },
     ],
     sentences: [
@@ -34263,14 +34140,14 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "shake over",
         meaning: "disperse ground spice across food",
         arabic: "يَرُشُّ الفُلْفُلَ فَوْقَ الطَّعَام",
-        example: "She shook fresh black pepper over her pasta.",
+        example: "He shook fresh black pepper over his pasta.",
       },
     ],
     sentences: [
       {
         context: "Flavoring",
-        en: "She used the stainless steel pepper shaker to season her fresh salad.",
-        ar: "اسْتَخْدَمَتْ مِرَشَّةَ الفُلْفُلِ لِتَتْبِيلِ سَلَطَتِهَا الخَضْرَاءِ.",
+        en: "He used the stainless steel pepper shaker to season his fresh salad.",
+        ar: "استخدم مرشة الفلفل المصنوعة من الفولاذ المقاوم للصدأ لتتبيل سلطته الطازجة.",
       },
       {
         context: "Tableware Set",
@@ -34283,8 +34160,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         ar: "عَرَضَ النَّادِلُ فُلْفُلًا أَسْوَدَ مَطْحُونًا طَازَجًا مِنْ مِطْحَنَةٍ خَشَبِيَّةٍ.",
       },
     ],
-    exampleSentence: "She used the stainless steel pepper shaker to season her fresh salad.",
-    exampleArabic: "اسْتَخْدَمَتْ مِرَشَّةَ الفُلْفُلِ لِتَتْبِيلِ سَلَطَتِهَا الخَضْرَاءِ.",
+    exampleSentence: "He used the stainless steel pepper shaker to season his fresh salad.",
+    exampleArabic: "استخدم مرشة الفلفل المصنوعة من الفولاذ المقاوم للصدأ لتتبيل سلطته الطازجة.",
   },
   "high-chair": {
     id: "high-chair",
@@ -34818,8 +34695,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Generosity",
-        en: "We left a generous cash tip on the table to thank our server for her kindness.",
-        ar: "تَرَكْنَا إِكْرَامِيَّةً نَقْدِيَّةً سَخِيَّةً عَلَى المَائِدَةِ شُكْرًا لِنَادِلَتِنَا.",
+        en: "We left a generous cash tip on the table to thank our server for his kindness.",
+        ar: "تركنا بقشيشا نقديا سخيا على الطاولة لنشكر النادل على لطفه.",
       },
       {
         context: "Digital Payment",
@@ -34988,7 +34865,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "warm up",
         meaning: "reheat seasoned broth for serving",
         arabic: "يُسَخِّنُ الحَسَاء",
-        example: "She warmed up a pot of vegetable soup.",
+        example: "He warmed up a pot of vegetable soup.",
       },
     ],
     sentences: [
@@ -35135,7 +35012,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "fill with",
         meaning: "place ingredients between sliced bread",
         arabic: "يَحْشُو الشَّطِيرَة",
-        example: "She filled the baguette sandwich with roast turkey and lettuce.",
+        example: "He filled the baguette sandwich with roast turkey and lettuce.",
       },
     ],
     sentences: [
@@ -35282,7 +35159,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "drizzle with",
         meaning: "pour seasoned emulsion across greens",
         arabic: "يَرُشُّ صَلْصَةَ السَّلَطَة",
-        example: "She drizzled her salad with creamy lemon dressing.",
+        example: "He drizzled his salad with creamy lemon dressing.",
       },
     ],
     sentences: [
@@ -35477,8 +35354,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Practice",
-        en: "She practiced her backhand strokes against the practice wall on the tennis court.",
-        ar: "تَدَرَّبَتْ عَلَى ضَرَبَاتِهَا الخَلْفِيَّةِ فِي مَلْعَبِ التِّنِسِ.",
+        en: "He practiced his backhand strokes against the practice wall on the tennis court.",
+        ar: "تدرب على ضرباته الخلفية على جدار التدريب في ملعب التنس.",
       },
       {
         context: "Equipment",
@@ -35650,7 +35527,7 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
         phrase: "smash over",
         meaning: "hit lightweight shuttlecock with high downward velocity",
         arabic: "يَسْحَقُ كُرَةَ الرِّيشَة",
-        example: "She smashed the shuttlecock over the badminton net.",
+        example: "He smashed the shuttlecock over the badminton net.",
       },
     ],
     sentences: [
@@ -35740,8 +35617,8 @@ export const LEXICON_DICTIONARY: Record<string, LexiconEntry> = {
       },
       {
         context: "Putting",
-        en: "She sank a difficult ten-foot putt on the final green to win the golf trophy.",
-        ar: "أَسْقَطَتِ الكُرَةَ بِضَرْبَةٍ دَقِيقَةٍ فِي الحُفْرَةِ لِتَفُوزَ بِكَأْسِ الجُولْفِ.",
+        en: "He sank a difficult ten-foot putt on the final green to win the golf trophy.",
+        ar: "أدخل الكرة في الحفرة بضربة صعبة من مسافة عشرة أقدام في المسطح الأخضر الأخير ليفوز بكأس الغولف.",
       },
     ],
     exampleSentence:
@@ -37907,9 +37784,8 @@ export const EXTENDED_VOCABULARY_GLOSSES: Record<
     phonetic: "/drɪl/",
     pos: "noun",
     collocations: ["electric drill", "drill a hole", "cordless drill"],
-    exampleEn: "She used a cordless drill to bore holes in the concrete wall.",
-    exampleAr:
-      "اسْتَخْدَمَتْ مِثْقَابًا لاسِلْكِيًّا لِعَمَلِ ثُقُوبٍ فِي الجِدَارِ الخَرَسَانِيِّ.",
+    exampleEn: "He used a cordless drill to bore holes in the concrete wall.",
+    exampleAr: "استخدم مثقابا لاسلكيا ليثقب الجدار الخرساني.",
   },
   hammer: {
     ar: "مِطْرَقَة (شَاكُوش)",
@@ -38073,8 +37949,8 @@ export const EXTENDED_VOCABULARY_GLOSSES: Record<
     pos: "noun",
     collocations: ["soft pillow", "feather pillow", "rest on a pillow"],
     register: "general",
-    exampleEn: "She rested her head on a soft, comfortable pillow and fell asleep.",
-    exampleAr: "أَسْنَدَتْ رَأْسَهَا إِلَى وِسَادَةٍ نَاعِمَةٍ وَمُرِيحَةٍ ثُمَّ نَامَتْ.",
+    exampleEn: "He rested his head on a soft, comfortable pillow and fell asleep.",
+    exampleAr: "أراح رأسه على وسادة ناعمة ومريحة وغلبه النوم.",
     canDoScenario: "Describing bedroom furniture and sleeping comfort.",
   },
   blanket: {

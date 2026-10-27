@@ -146,7 +146,7 @@ export const FIVE_SENSES_LEARNING: UnitLearningMaterials = {
       phrase: "leave a bad taste in your mouth",
       kind: "idiom",
       meaning: "Create an unpleasant feeling.",
-      example: "The argument left a bad taste in her mouth — bitter, not sweet.",
+      example: "The argument left a bad taste in his mouth — bitter, not sweet.",
     },
     {
       id: "five-senses-a-soft-touch",
@@ -181,7 +181,7 @@ export const FIVE_SENSES_LEARNING: UnitLearningMaterials = {
       phrase: "come to your senses",
       kind: "idiom",
       meaning: "Start thinking clearly again.",
-      example: "She finally came to her senses and accepted the offer.",
+      example: "He finally came to his senses and accepted the offer.",
     },
     {
       id: "five-senses-in-touch-with",

@@ -202,7 +202,7 @@ export const FIRST_AID_ROOM_LEARNING: UnitLearningMaterials = {
       phrase: "on the mend",
       kind: "idiom",
       meaning: "Getting better after illness or injury.",
-      example: "She broke her arm, but she's on the mend now.",
+      example: "He broke his arm, but he's on the mend now.",
     },
     {
       id: "first-aid-room-come-around-come-to",
@@ -216,7 +216,7 @@ export const FIRST_AID_ROOM_LEARNING: UnitLearningMaterials = {
       phrase: "break out in",
       kind: "phrasal-verb",
       meaning: "To suddenly develop a rash or skin condition.",
-      example: "She broke out in a rash after touching the plant.",
+      example: "He broke out in a rash after touching the plant.",
     },
     {
       id: "first-aid-room-dress-a-wound",
@@ -230,7 +230,7 @@ export const FIRST_AID_ROOM_LEARNING: UnitLearningMaterials = {
       phrase: "a clean bill of health",
       kind: "idiom",
       meaning: "Confirmation that someone is healthy.",
-      example: "The doctor gave her a clean bill of health.",
+      example: "The doctor gave him a clean bill of health.",
     },
     {
       id: "first-aid-room-nip-it-in-the-bud",

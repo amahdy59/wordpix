@@ -119,8 +119,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Sweetening Drinks",
-        en: "She stirred a golden spoonful of raw wildflower honey into her chamomile tea.",
-        ar: "قَلَّبَتْ مِلْعَقَةً ذَهَبِيَّةً مِنْ عَسَلِ الزُّهُورِ البَرِّيَّةِ النَّقِيِّ فِي شَايِ البَابُونِجِ.",
+        en: "He stirred a golden spoonful of raw wildflower honey into his chamomile tea.",
+        ar: "قلب ملعقة من عسل الزهور البري الخام في شاي البابونج.",
       },
       {
         context: "Breakfast Topping",
@@ -133,10 +133,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يَمْنَحُ تَغْلِيفُ العَسَلِ وَالخَرْدَلِ أَجْنِحَةَ الدَّجَاجِ المَشْوِيَّةِ قِشْرَةً مُكَرْمَلَةً شَهِيَّةً.",
       },
     ],
-    exampleSentence:
-      "She stirred a golden spoonful of raw wildflower honey into her chamomile tea.",
-    exampleArabic:
-      "قَلَّبَتْ مِلْعَقَةً ذَهَبِيَّةً مِنْ عَسَلِ الزُّهُورِ البَرِّيَّةِ النَّقِيِّ فِي شَايِ البَابُونِجِ.",
+    exampleSentence: "He stirred a golden spoonful of raw wildflower honey into his chamomile tea.",
+    exampleArabic: "قلب ملعقة من عسل الزهور البري الخام في شاي البابونج.",
   },
   "photo-frame": {
     id: "photo-frame",
@@ -157,7 +155,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "put in",
         meaning: "insert a photograph into a frame",
         arabic: "يَضَعُ الصُّورَةَ فِي البِرْوَاز",
-        example: "She put her favorite holiday portrait in a silver photo frame.",
+        example: "He put his favorite holiday portrait in a silver photo frame.",
       },
     ],
     sentences: [
@@ -337,8 +335,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Classroom Learning",
-        en: "The enthusiastic student raised her hand to answer the teacher's question.",
-        ar: "رَفَعَتِ الطَّالِبَةُ المُتَحَمِّسَةُ يَدَهَا لِلْإِجَابَةِ عَنْ سُؤَالِ المُعَلِّمِ.",
+        en: "The enthusiastic student raised his hand to answer the teacher's question.",
+        ar: "رفع الطالب المتحمس يده ليجيب عن سؤال المعلم.",
       },
       {
         context: "Group Work",
@@ -351,9 +349,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يُرَاجِعُ الطَّالِبُ المُجْتَهِدُ مُفْرَدَاتِ الدُّرُوسِ كُلَّ مَسَاءٍ.",
       },
     ],
-    exampleSentence: "The enthusiastic student raised her hand to answer the teacher's question.",
-    exampleArabic:
-      "رَفَعَتِ الطَّالِبَةُ المُتَحَمِّسَةُ يَدَهَا لِلْإِجَابَةِ عَنْ سُؤَالِ المُعَلِّمِ.",
+    exampleSentence: "The enthusiastic student raised his hand to answer the teacher's question.",
+    exampleArabic: "رفع الطالب المتحمس يده ليجيب عن سؤال المعلم.",
   },
   "carrot-cake": {
     id: "carrot-cake",
@@ -604,7 +601,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "fill with",
         meaning: "place ingredients between sliced bread",
         arabic: "يَحْشُو الشَّطِيرَة",
-        example: "She filled the baguette sandwich with roast turkey and lettuce.",
+        example: "He filled the baguette sandwich with roast turkey and lettuce.",
       },
     ],
     sentences: [

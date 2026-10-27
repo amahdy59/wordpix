@@ -187,7 +187,7 @@ export const EYE_DOCTOR_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "agree with someone completely",
       example:
-        "The optometrist and I didn't see eye to eye — she recommended progressive lenses, but I wanted bifocals.",
+        "The optometrist and I didn't see eye to eye — he recommended progressive lenses, but I wanted bifocals.",
     },
     {
       id: "eye-doctor-keep-an-eye-on",
@@ -214,7 +214,7 @@ export const EYE_DOCTOR_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "having very sharp vision or attention to detail",
       example:
-        "She's eagle-eyed — she spotted the tiny crack in the frame before I even put the glasses on.",
+        "He's eagle-eyed — he spotted the tiny crack in the frame before I even put the glasses on.",
     },
     {
       id: "eye-doctor-the-apple-of-one-s-eye",

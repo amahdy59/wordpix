@@ -1,14 +1,190 @@
 {
-  "version": "0.1.85",
+  "version": "0.1.91",
   "notes": [
-    "Added 2,036 reviewed, high-quality illustrations supporting exact practice sentences across curriculum units.",
-    "Expanded exact visual scenario and sentence coverage to 2,983 practice exercises."
+    "Expanded instructional media vertical headroom on mobile viewports so images fully fit horizontally and vertically.",
+    "Trimmed vertical padding in sentence assembly and question boxes on mobile, eliminating wasted space.",
+    "Pushed meaning support clues and skip actions down to the bottom with compact padding while preserving 44px touch targets."
   ],
   "notesAr": [
-    "أُضيفت 2,036 صورة توضيحية مُراجَعة وعالية الجودة لدعم جمل التدريب بدقة عبر وحدات المنهج.",
-    "توسيع التغطية البصرية للمشاهد والجمل التعليمية لتشمل 2,983 تمريناً تدريبياً."
+    "زيادة المساحة الرأسية للوسائط التعليمية على الهواتف لاستيعاب الصور رأسياً وأفقياً بالكامل.",
+    "تقليل الحشو الرأسي في مربعات تجميع وترتيب الجمل على الهاتف المحمول لإزالة الفراغات المهدرة.",
+    "دفع تلميحات المعنى وأزرار التخطي إلى أسفل الشاشة بهوامش مدمجة مع الحفاظ على أهداف اللمس 44 بكسل."
   ],
   "releases": [
+    {
+      "id": "0.1.91",
+      "version": "0.1.91",
+      "date": "2026-10-27",
+      "title": {
+        "en": "Mobile space efficiency and question layout refinements",
+        "ar": "كفاءة المساحة على الهاتف المحمول وتحسين تخطيط الأسئلة"
+      },
+      "changes": [
+        {
+          "id": "mobile-media-accommodation",
+          "category": "improved",
+          "en": "Expanded instructional media vertical headroom on mobile viewports so square and wide images fully fit horizontally and vertically without large letterbox bands.",
+          "ar": "زيادة المساحة الرأسية للوسائط التعليمية على الهواتف لاستيعاب الصور المربعة والعريضة رأسياً وأفقياً دون فراغات جانبية كبيرة."
+        },
+        {
+          "id": "mobile-prompt-padding-trim",
+          "category": "improved",
+          "en": "Trimmed vertical padding and gap in sentence assembly and ordering question boxes on mobile, eliminating wasted whitespace.",
+          "ar": "تقليل الحشو الرأسي والمسافات في مربعات تجميع وترتيب الجمل على الهاتف المحمول، مما أزال المساحات المهدرة."
+        },
+        {
+          "id": "mobile-support-push-down",
+          "category": "improved",
+          "en": "Positioned meaning support clues and skip actions at the bottom of the scroller with compact padding while preserving 44px touch targets.",
+          "ar": "دفع تلميحات المعنى وإجراءات التخطي إلى أسفل الشاشة بهوامش مدمجة مع الحفاظ على أهداف اللمس بمقاس 44 بكسل."
+        }
+      ]
+    },
+    {
+      "id": "0.1.90",
+      "version": "0.1.90",
+      "date": "2026-10-27",
+      "title": {
+        "en": "Designed visuals curriculum integration and Cloudflare R2 sync",
+        "ar": "دمج المرئيات التعليمية المصممة في المنهج ومزامنتها مع Cloudflare R2"
+      },
+      "changes": [
+        {
+          "id": "designed-visuals-import",
+          "category": "added",
+          "en": "Imported and linked 1,526 bespoke designed learning visuals across advanced vocabulary, anatomy, biology, and specialized exercises.",
+          "ar": "استيراد وربط 1526 من المرئيات التعليمية المصممة خصيصاً للمفردات المتقدمة والتشريح والأحياء والتدريبات المتخصصة."
+        },
+        {
+          "id": "designed-visuals-r2-delivery",
+          "category": "improved",
+          "en": "Optimized and deployed all visual media in WebP format to Cloudflare R2 and structured local browsing galleries.",
+          "ar": "تحسين ونشر جميع الوسائط المرئية بتنسيق WebP إلى Cloudflare R2 ومعارض التصفح المحلية المنظمة."
+        },
+        {
+          "id": "designed-visuals-practice-linking",
+          "category": "improved",
+          "en": "Connected exact sentence builders, clinical anatomy, and exercise definitions to verified educational illustrations.",
+          "ar": "ربط تدريبات بناء الجمل والتشريح السريري وتعاريف التدريبات بالرسوم التوضيحية التعليمية المتحقق منها."
+        }
+      ]
+    },
+    {
+      "id": "0.1.89",
+      "version": "0.1.89",
+      "date": "2026-10-27",
+      "title": {
+        "en": "Curriculum visual expansion and sentence illustration sync",
+        "ar": "توسيع مرئيات المنهج ومزامنة الصور التوضيحية للجمل"
+      },
+      "changes": [
+        {
+          "id": "curriculum-sentence-illustrations",
+          "category": "added",
+          "en": "Integrated 2,300+ high-resolution educational illustrations covering curriculum practice sentences and learning visuals.",
+          "ar": "دمج أكثر من 2300 صورة توضيحية تعليمية عالية الدقة تغطي جمل تدريب المناهج الدراسية والمرئيات التعليمية."
+        },
+        {
+          "id": "webp-r2-media-delivery",
+          "category": "improved",
+          "en": "Optimized and delivered all images in WebP format with Cloudflare R2 cloud storage and verified local persistence.",
+          "ar": "تحسين وتوفير جميع الصور بتنسيق WebP مع تخزين سحابي Cloudflare R2 وتحقق من الحفظ المحلي."
+        },
+        {
+          "id": "practice-sentence-linking",
+          "category": "improved",
+          "en": "Connected exact sentence builder, gap-fill, and vocabulary comprehension practice to the new verified visual media.",
+          "ar": "ربط تدريبات بناء الجمل وملء الفراغات واستيعاب المفردات بالوسائط المرئية الجديدة المتحقق منها."
+        }
+      ]
+    },
+    {
+      "id": "0.1.88",
+      "version": "0.1.88",
+      "date": "2026-10-26",
+      "title": {
+        "en": "Illustrations for repaired practice sentences",
+        "ar": "صور توضيحية لجمل التدريب المحسنة"
+      },
+      "changes": [
+        {
+          "id": "repaired-sentence-images",
+          "category": "added",
+          "en": "Added 13 illustrations matching the improved practice sentences for outdoor activities, camping and exercise.",
+          "ar": "إضافة 13 صورة توضيحية تطابق جمل التدريب المحسنة عن الأنشطة الخارجية والتخييم والتمارين الرياضية."
+        },
+        {
+          "id": "verified-sentence-image-delivery",
+          "category": "improved",
+          "en": "Optimized the new illustrations for faster delivery and verified their links across gap-fill and sentence-building practice.",
+          "ar": "تحسين الصور التوضيحية الجديدة لتحميل أسرع والتحقق من روابطها في تمارين ملء الفراغات وتركيب الجمل."
+        },
+        {
+          "id": "restored-existing-sentence-images",
+          "category": "fixed",
+          "en": "Restored two missing sentence illustrations using their original verified files and existing links.",
+          "ar": "استعادة صورتين توضيحيتين مفقودتين للجمل باستخدام ملفيهما الأصليين المتحقق منهما وروابطهما الحالية."
+        }
+      ]
+    },
+    {
+      "id": "0.1.87",
+      "version": "0.1.87",
+      "date": "2026-10-26",
+      "title": {
+        "en": "Priority sentence illustrations expansion and visual alignment",
+        "ar": "توسيع الصور التوضيحية للجمل ذات الأولوية والمواءمة البصرية"
+      },
+      "changes": [
+        {
+          "id": "priority-sentence-images-sync",
+          "category": "added",
+          "en": "Added 342 priority sentence illustrations in lightweight WebP format to Cloudflare R2 and linked them to the exact sentence registry.",
+          "ar": "إضافة 342 صورة توضيحية للجمل ذات الأولوية بصيغة WebP خفيفة الوزن على Cloudflare R2 وربطها بسجل الجمل الدقيقة."
+        },
+        {
+          "id": "sentence-subject-visual-alignment",
+          "category": "improved",
+          "en": "Aligned character pronouns with visual scene depictions so learners see matching subjects and actions without conflicting gender cues.",
+          "ar": "مواءمة ضمائر الشخصيات مع المشاهد المصورة ليرى المتعلمون عناصر متطابقة تماماً دون تعارض بصري."
+        },
+        {
+          "id": "comprehensive-exercise-media-linking",
+          "category": "improved",
+          "en": "Enhanced sentence media resolution to dynamically support target vocabulary across multi-target sentences and varied question formats.",
+          "ar": "تحسين التعرف على وسائط الجمل لدعم المفردات المستهدفة عبر الجمل متعددة الأهداف ومختلف أنماط الأسئلة."
+        }
+      ]
+    },
+    {
+      "id": "0.1.86",
+      "version": "0.1.86",
+      "date": "2026-10-26",
+      "title": {
+        "en": "Clearer examples and more natural practice sentences",
+        "ar": "أمثلة أوضح وجمل تدريبية أكثر طبيعية"
+      },
+      "changes": [
+        {
+          "id": "concrete-vocabulary-examples",
+          "category": "improved",
+          "en": "Replaced generic vocabulary examples with clear sentences showing how words and phrases are used in everyday and subject-specific contexts.",
+          "ar": "استبدال أمثلة المفردات العامة بجمل واضحة تُبيّن استخدام الكلمات والعبارات في الحياة اليومية والسياقات المتخصصة."
+        },
+        {
+          "id": "natural-sentence-targets",
+          "category": "fixed",
+          "en": "Sentence practice now recognizes natural possessives, articles and completed question phrases instead of falling back to generic wording.",
+          "ar": "أصبحت تمارين الجمل تتعرّف على صيغ الملكية وأدوات التعريف والعبارات الاستفهامية المكتملة بدلاً من عرض صياغات عامة."
+        },
+        {
+          "id": "consistent-example-references",
+          "category": "improved",
+          "en": "Standardized incidental character references in editable examples while retaining female-specific meanings and existing media-bound wording.",
+          "ar": "توحيد الإشارات العارضة إلى الشخصيات في الأمثلة القابلة للتعديل، مع الحفاظ على المعاني الخاصة بالإناث والصياغات المرتبطة بالوسائط الحالية."
+        }
+      ]
+    },
     {
       "id": "0.1.85",
       "version": "0.1.85",

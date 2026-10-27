@@ -136,7 +136,7 @@ export const LIFE_EVENTS_LEARNING: UnitLearningMaterials = {
       phrase: "come of age",
       kind: "idiom",
       meaning: "To reach maturity or an important turning point.",
-      example: "She came of age when she landed her first job and moved out on her own.",
+      example: "He came of age when he landed his first job and moved out on his own.",
     },
     {
       id: "life-events-rest-in-peace",

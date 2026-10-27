@@ -153,7 +153,7 @@ export const SKELETON_LEARNING: UnitLearningMaterials = {
       phrase: "work your fingers to the bone",
       kind: "idiom",
       meaning: "Work extremely hard.",
-      example: "She worked her fingers to the bone to finish the project on time.",
+      example: "He worked his fingers to the bone to finish the project on time.",
     },
     {
       id: "skeleton-no-backbone",
@@ -175,7 +175,7 @@ export const SKELETON_LEARNING: UnitLearningMaterials = {
       phrase: "make no bones about it",
       kind: "idiom",
       meaning: "Be direct and honest without hesitation.",
-      example: "She made no bones about it — the fracture was serious.",
+      example: "He made no bones about it — the fracture was serious.",
     },
     {
       id: "skeleton-throw-someone-a-bone",

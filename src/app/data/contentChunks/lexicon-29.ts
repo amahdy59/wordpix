@@ -42,8 +42,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Modern Living",
-        en: "She prefers a sunrise alarm clock that gradually fills the room with light.",
-        ar: "تُفَضِّلُ مُنَبِّهاً يُحَاكِي الشُّرُوقَ حَيْثُ يَمْلَأُ الغُرْفَةَ بِالضَّوْءِ تَدْرِيجِيّاً.",
+        en: "He prefers a sunrise alarm clock that gradually fills the room with light.",
+        ar: "يفضل منبها يحاكي شروق الشمس ويملأ الغرفة بالضوء تدريجيا.",
       },
     ],
     exampleSentence: "He set his alarm clock for six o'clock to catch the early train.",
@@ -124,8 +124,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Horseback Riding",
-        en: "She rode her chestnut horse along the scenic forest trail at dawn.",
-        ar: "رَكِبَتْ حِصَانَهَا الكَسْتَنَائِيَّ عَلَى طُولِ مَسَارِ الغَابَةِ الخَلابِ عِنْدَ الفَجْرِ.",
+        en: "He rode his chestnut horse along the scenic forest trail at dawn.",
+        ar: "امتطى حصانه الكستنائي على المسار الجميل في الغابة عند الفجر.",
       },
       {
         context: "Stable Care",
@@ -138,9 +138,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "رَكَضَ الفَحْلُ الأَسْوَدُ البَدِيعُ بِسُرْعَةٍ وَرَشَاقَةٍ عَبْرَ المَرْعَى المَفْتُوحِ.",
       },
     ],
-    exampleSentence: "She rode her chestnut horse along the scenic forest trail at dawn.",
-    exampleArabic:
-      "رَكِبَتْ حِصَانَهَا الكَسْتَنَائِيَّ عَلَى طُولِ مَسَارِ الغَابَةِ الخَلابِ عِنْدَ الفَجْرِ.",
+    exampleSentence: "He rode his chestnut horse along the scenic forest trail at dawn.",
+    exampleArabic: "امتطى حصانه الكستنائي على المسار الجميل في الغابة عند الفجر.",
   },
   pan: {
     id: "pan",
@@ -178,8 +177,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Breakfast",
-        en: "She cooked two fluffy fried eggs in the non-stick pan.",
-        ar: "طَبَخَتْ بَيْضَتَيْنِ مَقْلِيَّتَيْنِ فِي المِقْلاةِ غَيْرِ اللّاصِقَةِ.",
+        en: "He cooked two fluffy fried eggs in the non-stick pan.",
+        ar: "قلى بيضتين في المقلاة غير اللاصقة.",
       },
       {
         context: "Pan Care",
@@ -275,8 +274,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Cozy Evening",
-        en: "She wrapped the chunky knit throw blanket around her shoulders on the breezy autumn evening.",
-        ar: "الْتَفَّتْ فِي شَالِ الصُّوفِ السَّمِيكِ حَوْلَ كَتِفَيْهَا فِي أَمْسِيَةِ الخَرِيفِ البَارِدَةِ.",
+        en: "He wrapped the chunky knit throw blanket around his shoulders on the breezy autumn evening.",
+        ar: "لف البطانية المحبوكة السميكة حول كتفيه في أمسية الخريف العاصفة.",
       },
       {
         context: "Living Room Storage",
@@ -314,8 +313,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Court Sports",
-        en: "She served the yellow tennis ball perfectly over the center net.",
-        ar: "أَرْسَلَتْ كُرَةَ التِّنِسِ الصَّفْرَاءَ بِمِثَالِيَّةٍ فَوْقَ الشَّبَكَةِ المَرْكَزِيَّةِ.",
+        en: "He served the yellow tennis ball perfectly over the center net.",
+        ar: "أرسل كرة التنس الصفراء بدقة فوق الشبكة الوسطى.",
       },
       {
         context: "Soccer Goals",
@@ -328,9 +327,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَسَلَّقَ الأَطْفَالُ شَبَكَةَ التَّسَلُّقِ الحَبْلِيَّةَ الثَّقِيلَةَ عَلَى بُرْجِ المَلْعَبِ.",
       },
     ],
-    exampleSentence: "She served the yellow tennis ball perfectly over the center net.",
-    exampleArabic:
-      "أَرْسَلَتْ كُرَةَ التِّنِسِ الصَّفْرَاءَ بِمِثَالِيَّةٍ فَوْقَ الشَّبَكَةِ المَرْكَزِيَّةِ.",
+    exampleSentence: "He served the yellow tennis ball perfectly over the center net.",
+    exampleArabic: "أرسل كرة التنس الصفراء بدقة فوق الشبكة الوسطى.",
   },
   whiteboard: {
     id: "whiteboard",
@@ -478,7 +476,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "keep up",
         meaning: "maintain steady running pace along firm coastline",
         arabic: "يُحَافِظُ عَلَى سُرْعَةِ الرَّكْض",
-        example: "She kept up a steady jogging pace along the hard-packed wet sand.",
+        example: "He kept up a steady jogging pace along the hard-packed wet sand.",
       },
     ],
     sentences: [
@@ -587,7 +585,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "listen to",
         meaning: "hear heartbeat and lung sounds acoustically",
         arabic: "يَسْتَمِعُ بِالسَّمَّاعَة",
-        example: "The doctor listened to her heart with a stethoscope.",
+        example: "The doctor listened to the patient's heart with a stethoscope.",
       },
     ],
     sentences: [

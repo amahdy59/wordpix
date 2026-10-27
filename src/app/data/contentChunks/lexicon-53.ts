@@ -85,8 +85,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Table Setting",
-        en: "She laid a white linen runner and fresh flowers across the center of the dining table.",
-        ar: "فَرَشَتْ مَفْرَشاً كَتَّانِيّاً أَبْيَضَ وَأَزْهَاراً طَازَجَةً عَلَى طَاوِلَةِ الطَّعَامِ.",
+        en: "He laid a white linen runner and fresh flowers across the center of the dining table.",
+        ar: "وضع مفرشا طوليا من الكتان الأبيض وزهورا نضرة في وسط طاولة الطعام.",
       },
     ],
     exampleSentence: "They sat together at the large solid oak dining table to share Sunday lunch.",
@@ -167,8 +167,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Crafts & Textiles",
-        en: "She washed and carded the raw fleece wool before spinning it on an old wooden wheel.",
-        ar: "غَسَلَتْ وَمَشَّطَتْ صُوفَ الفَرْوِ الخَامَ قَبْلَ غَزْلِهِ عَلَى مِغْزَلٍ خَشَبِيٍّ.",
+        en: "He washed and carded the raw fleece wool before spinning it on an old wooden wheel.",
+        ar: "غسل الصوف الخام ومشطه قبل غزله على عجلة خشبية قديمة.",
       },
       {
         context: "Clothing",

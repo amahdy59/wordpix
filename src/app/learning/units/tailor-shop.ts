@@ -184,7 +184,7 @@ export const TAILOR_SHOP_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "make someone give a definite answer or commitment",
       example:
-        "I tried to pin the tailor down on a delivery date, but she said the chiffon hadn't arrived yet.",
+        "I tried to pin the tailor down on a delivery date, but he said the chiffon hadn't arrived yet.",
     },
     {
       id: "tailor-shop-measure-twice-cut-once",
@@ -202,7 +202,7 @@ export const TAILOR_SHOP_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "everything; the full amount",
       example:
-        "She wanted the whole nine yards — linen trousers, a cotton shirt, a silk tie, and a velvet waistcoat.",
+        "He wanted the whole nine yards — linen trousers, a cotton shirt, a silk tie, and a velvet waistcoat.",
     },
   ],
   dialogue: {

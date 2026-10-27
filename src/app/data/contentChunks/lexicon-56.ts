@@ -63,8 +63,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Breakfast",
-        en: "She toasted two slices of whole grain bread and spread strawberry jam on top.",
-        ar: "حَمَّصَتْ شَرِيحَتَيْنِ مِنْ خُبْزِ الحُبُوبِ الكَامِلَةِ وَدَهَنَتْ فَوْقَهُمَا مُرَبَّى الفَرَاوِلَةِ.",
+        en: "He toasted two slices of whole grain bread and spread strawberry jam on top.",
+        ar: "حمص شريحتين من خبز الحبوب الكاملة ودهنهما بمربى الفراولة.",
       },
       {
         context: "Dinner Accompaniment",
@@ -101,7 +101,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "pour out",
         meaning: "dispense coffee into a cup",
         arabic: "يَسْكُبُ القَهْوَة",
-        example: "She poured out a steaming mug of coffee.",
+        example: "He poured out a steaming mug of coffee.",
       },
     ],
     sentences: [
@@ -419,8 +419,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Proof of Purchase",
-        en: "The cashier handed her a detailed paper receipt showing each scanned grocery item and total tax.",
-        ar: "سَلَّمَهَا الصَّرَّافُ إِيصَالَ شِرَاءٍ وَرَقِيًّا مُفَصَّلًا يُوَضِّحُ كُلَّ غَرَضٍ وَمَجْمُوعَ الضَّرِيبَةِ.",
+        en: "The cashier handed him a detailed paper receipt showing each scanned grocery item and total tax.",
+        ar: "سلمه أمين الصندوق إيصالا ورقيا مفصلا يوضح كل سلعة ممسوحة وإجمالي الضريبة.",
       },
       {
         context: "Return Policy",
@@ -434,8 +434,7 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "The cashier handed her a detailed paper receipt showing each scanned grocery item and total tax.",
-    exampleArabic:
-      "سَلَّمَهَا الصَّرَّافُ إِيصَالَ شِرَاءٍ وَرَقِيًّا مُفَصَّلًا يُوَضِّحُ كُلَّ غَرَضٍ وَمَجْمُوعَ الضَّرِيبَةِ.",
+      "The cashier handed him a detailed paper receipt showing each scanned grocery item and total tax.",
+    exampleArabic: "سلمه أمين الصندوق إيصالا ورقيا مفصلا يوضح كل سلعة ممسوحة وإجمالي الضريبة.",
   },
 };

@@ -203,8 +203,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Competition",
-        en: "She won gold in the hundred-meter butterfly race with a stunning finishing surge.",
-        ar: "فَازَتْ بِالمِيدَالِيَّةِ الذَّهَبِيَّةِ فِي سِبَاقِ ١٠٠ مِتْرٍ سِبَاحَةَ فَرَاشَةٍ.",
+        en: "He won gold in the hundred-meter butterfly race with a stunning finishing surge.",
+        ar: "فاز بالميدالية الذهبية في سباق مئة متر فراشة باندفاعة أخيرة مذهلة.",
       },
     ],
     exampleSentence:

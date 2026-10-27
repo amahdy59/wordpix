@@ -74,7 +74,7 @@ export function ExerciseFamilyTemplate({
           data-exercise-zone="activity"
           role="group"
           aria-label={activityLabel}
-          className="min-w-0 flex flex-col w-full"
+          className="min-w-0 flex flex-1 flex-col w-full"
         >
           {activity}
         </div>
@@ -86,7 +86,7 @@ export function ExerciseFamilyTemplate({
         </div>
         <div
           data-exercise-zone="action"
-          className={`shrink-0 w-full min-w-0 ${action ? "flex min-h-11 items-center justify-end" : "hidden"}`}
+          className={`shrink-0 w-full min-w-0 mt-auto ${action ? "flex min-h-11 items-center justify-end" : "hidden"}`}
         >
           {action}
         </div>

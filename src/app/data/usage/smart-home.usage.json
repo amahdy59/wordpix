@@ -64,13 +64,13 @@
         {
           "chunkNumber": 2,
           "targetWords": ["Reminder", "Timer", "Playlist", "News Briefing"],
-          "scenario": "Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news.",
+          "scenario": "Munir sets a Reminder for an appointment and a Timer for a measured interval. He also chooses a Playlist of audio selections and a News Briefing summarizing recent news.",
           "check": {
             "question": "Which feature signals the end of a measured interval?",
             "options": ["Timer", "Reminder", "Playlist"],
             "expectedAnswer": "Timer"
           },
-          "imageBrief": "Photorealistic vocabulary reference for Timer in a smart home context. Use the written scenario as the source of meaning: Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageBrief": "Photorealistic vocabulary reference for Timer in a smart home context. Use the written scenario as the source of meaning: Munir sets a Reminder for an appointment and a Timer for a measured interval. He also chooses a Playlist of audio selections and a News Briefing summarizing recent news. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
           "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
@@ -102,7 +102,7 @@
     },
     "reading": {
       "title": "The Smart Home: A visitor’s questions",
-      "text": "A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings. Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news. The display includes an Intercom for room-to-room communication and Multi Room audio. A Smart Bulb can receive electronic controls, while a Dimmer adjusts light output. Actual compatibility must be checked for the devices involved. A Color Changing lamp offers different light colors, and a Light Strip contains a row of small lights. A Motion Sensor detects movement and can trigger a supported action under its settings.",
+      "text": "A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings. Munir sets a Reminder for an appointment and a Timer for a measured interval. He also chooses a Playlist of audio selections and a News Briefing summarizing recent news. The display includes an Intercom for room-to-room communication and Multi Room audio. A Smart Bulb can receive electronic controls, while a Dimmer adjusts light output. Actual compatibility must be checked for the devices involved. A Color Changing lamp offers different light colors, and a Light Strip contains a row of small lights. A Motion Sensor detects movement and can trigger a supported action under its settings.",
       "imageBrief": "One uncluttered smart home setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
@@ -114,7 +114,7 @@
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news.\nWhich feature signals the end of a measured interval?",
+        "prompt": "Munir sets a Reminder for an appointment and a Timer for a measured interval. He also chooses a Playlist of audio selections and a News Briefing summarizing recent news.\nWhich feature signals the end of a measured interval?",
         "answer": "Timer",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -135,7 +135,7 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings. Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news. The display includes an Intercom for room-to-room communication and Multi Room audio. A Smart Bulb can receive electronic controls, while a Dimmer adjusts light output. Actual compatibility must be checked for the devices involved. A Color Changing lamp offers different light colors, and a Light Strip contains a row of small lights. A Motion Sensor detects movement and can trigger a supported action under its settings.\nExplain the difference between Smart Speaker and Voice Command using the account above.",
+        "prompt": "A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings. Munir sets a Reminder for an appointment and a Timer for a measured interval. He also chooses a Playlist of audio selections and a News Briefing summarizing recent news. The display includes an Intercom for room-to-room communication and Multi Room audio. A Smart Bulb can receive electronic controls, while a Dimmer adjusts light output. Actual compatibility must be checked for the devices involved. A Color Changing lamp offers different light colors, and a Light Strip contains a row of small lights. A Motion Sensor detects movement and can trigger a supported action under its settings.\nExplain the difference between Smart Speaker and Voice Command using the account above.",
         "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
         "questionType": "production",
         "responseMode": "extended-response",

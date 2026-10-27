@@ -129,7 +129,7 @@ export const STUDENT_LIFE_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Working and socialising too much.",
       example:
-        "She was burning the candle at both ends — studying all day and going out every night.",
+        "He was burning the candle at both ends — studying all day and going out every night.",
     },
     {
       id: "student-life-find-your-feet",

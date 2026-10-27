@@ -110,7 +110,7 @@ export const OFFICE_SUPPLIES_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To begin writing.",
       example:
-        "She finally put pen to paper and started the letter she'd been putting off for weeks.",
+        "He finally put pen to paper and started the letter he'd been putting off for weeks.",
     },
     {
       id: "office-supplies-cut-through-the-red-tape",

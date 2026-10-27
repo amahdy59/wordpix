@@ -117,7 +117,7 @@ export const MEAT_SEAFOOD_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "An important person in a small group.",
       example:
-        "She was a big fish in a small pond at the local company, but struggled in the corporation.",
+        "He was a big fish in a small pond at the local company, but struggled in the corporation.",
     },
     {
       id: "meat-seafood-the-world-is-your-oyster",

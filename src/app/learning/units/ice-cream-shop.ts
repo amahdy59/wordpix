@@ -181,7 +181,7 @@ export const ICE_CREAM_SHOP_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "exclusive information (from the ice cream tool)",
       example:
-        "She got the scoop on the new flavours before anyone else — coffee, mint, and a seasonal strawberry.",
+        "He got the scoop on the new flavours before anyone else — coffee, mint, and a seasonal strawberry.",
     },
   ],
   dialogue: {

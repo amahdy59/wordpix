@@ -153,7 +153,7 @@ export const FABRICS_TEXTILES_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Unchangeable, deeply committed to a belief.",
       example:
-        "She's a dyed-in-the-wool advocate for sustainable fashion — she hasn't bought fast fashion in a decade.",
+        "He's a dyed-in-the-wool advocate for sustainable fashion — he hasn't bought fast fashion in a decade.",
     },
     {
       id: "fabrics-textiles-a-swatch",

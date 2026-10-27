@@ -131,7 +131,7 @@ export const REPTILE_HOUSE_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "a person who pretends to be a friend but is secretly harmful",
-      example: "Watch out for her — she's a real snake in the grass.",
+      example: "Watch out for him — he's a real snake in the grass.",
     },
     {
       id: "reptile-house-be-thick-skinned",
@@ -147,7 +147,7 @@ export const REPTILE_HOUSE_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "change, renew yourself, or move past an old identity",
-      example: "After the divorce, she shed her skin and started fresh.",
+      example: "After the divorce, he shed his skin and started fresh.",
     },
     {
       id: "reptile-house-snap-at-someone",

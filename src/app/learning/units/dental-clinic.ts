@@ -200,7 +200,7 @@ export const DENTAL_CLINIC_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "a strong liking for sugary foods",
       example:
-        "Her sweet tooth caught up with her — three cavities, a cleaning, and a fluoride treatment in one visit.",
+        "His sweet tooth caught up with him — three cavities, a cleaning, and a fluoride treatment in one visit.",
     },
     {
       id: "dental-clinic-tooth-and-nail",
@@ -227,7 +227,7 @@ export const DENTAL_CLINIC_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "gain your first experience in a particular area",
       example:
-        "The new dental assistant cut her teeth on cleanings and polisher work before assisting with extractions.",
+        "The new dental assistant cut his teeth on cleanings and polisher work before assisting with extractions.",
     },
   ],
   dialogue: {

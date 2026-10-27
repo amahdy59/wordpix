@@ -187,9 +187,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَفَتَّحَتْ عَشَرَاتُ زُهُورِ الأُقْحُوَانِ النَّضِرَةِ بِمُجَرَّدِ تَبَخُّرِ نَدَى الصَّبَاحِ.",
       },
     ],
-    exampleSentence: "She picked a delicate daisy to press inside her botanical notebook.",
-    exampleArabic:
-      "قَطَفَتْ زَهْرَةَ أُقْحُوَانٍ رَقِيقَةً لِتَجْفِيفِهَا دَاخِلَ دَفْتَرِهَا النَّبَاتِيِّ.",
+    exampleSentence: "He picked a delicate daisy to press inside his botanical notebook.",
+    exampleArabic: "قطف زهرة أقحوان رقيقة ليجففها بالضغط داخل دفتر النباتات الخاص به.",
   },
   returning: {
     id: "returning",
@@ -208,7 +207,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "hand back",
         meaning: "return borrowed materials to staff",
         arabic: "يُعِيدُ الكِتَابَ لِلْمُوَظَّف",
-        example: "She handed back her borrowed volumes at the circulation desk.",
+        example: "He handed back his borrowed volumes at the circulation desk.",
       },
     ],
     sentences: [
@@ -412,7 +411,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "rehabilitate through",
         meaning: "restore joint mobility via targeted exercises",
         arabic: "يَتَعَافَى بِالعِلَاجِ الطَّبِيعِيّ",
-        example: "She rehabilitated her shoulder through physical therapy.",
+        example: "He rehabilitated his shoulder through physical therapy.",
       },
     ],
     sentences: [

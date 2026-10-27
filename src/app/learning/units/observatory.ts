@@ -176,7 +176,7 @@ export const OBSERVATORY_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "someone who is becoming successful and attracting attention",
       example:
-        "The intern is a rising star — her data analysis of the CCD camera images impressed every professor in the computer lab.",
+        "The intern is a rising star — his data analysis of the CCD camera images impressed every professor in the computer lab.",
     },
     {
       id: "observatory-light-years-ahead",

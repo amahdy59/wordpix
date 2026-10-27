@@ -20,7 +20,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "put away",
         meaning: "store items in their proper place",
         arabic: "يَضَعُ الشَّيْءَ فِي مَكَانِهِ",
-        example: "She put away all the clean laundry into the dresser.",
+        example: "He put away all the clean laundry into the dresser.",
       },
       {
         phrase: "fold up",
@@ -37,8 +37,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Decor",
-        en: "She placed a jewelry box and a family photo on top of the dresser.",
-        ar: "وَضَعَتْ صُنْدُوقَ مَجَوْهَرَاتٍ وَصُورَةً عَائِلِيَّةً فَوْقَ التَّسْرِيحَةِ.",
+        en: "He placed a jewelry box and a family photo on top of the dresser.",
+        ar: "وضع علبة مجوهرات وصورة عائلية فوق خزانة الأدراج.",
       },
       {
         context: "Purchasing",
@@ -301,7 +301,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "swing out",
         meaning: "move outward at peak height",
         arabic: "يَتَرَجَّحُ لِلْخَارِج",
-        example: "Her long hair flew back while swinging out toward the blue sky.",
+        example: "His long hair flew back while swinging out toward the blue sky.",
       },
     ],
     sentences: [
@@ -351,8 +351,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Post-Bath Routine",
-        en: "She stepped onto the soft mat to dry off with a large plush bath towel.",
-        ar: "خَطَتْ عَلَى البِسَاطِ النَّاعِمِ لِتُجَفِّفَ جِسْمَهَا بِمِنْشَفَةِ حَمَّامٍ كَبِيرَةٍ وَفَاخِرَةٍ.",
+        en: "He stepped onto the soft mat to dry off with a large plush bath towel.",
+        ar: "وقف على الحصيرة الناعمة ليجفف جسمه بمنشفة استحمام كبيرة وناعمة.",
       },
       {
         context: "Skincare Advice",
@@ -365,9 +365,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "الْتَفَّ الأَطْفَالُ فِي أَرْدِيَةِ حَمَّامٍ دَافِئَةٍ ذَاتِ قُبَّعَاتٍ لِلتَّجْفِيفِ بَعْدَ السِّبَاحَةِ.",
       },
     ],
-    exampleSentence: "She stepped onto the soft mat to dry off with a large plush bath towel.",
-    exampleArabic:
-      "خَطَتْ عَلَى البِسَاطِ النَّاعِمِ لِتُجَفِّفَ جِسْمَهَا بِمِنْشَفَةِ حَمَّامٍ كَبِيرَةٍ وَفَاخِرَةٍ.",
+    exampleSentence: "He stepped onto the soft mat to dry off with a large plush bath towel.",
+    exampleArabic: "وقف على الحصيرة الناعمة ليجفف جسمه بمنشفة استحمام كبيرة وناعمة.",
   },
   "study-room": {
     id: "study-room",
@@ -492,8 +491,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Afternoon Snack",
-        en: "Two crisp ginger cookies accompanied her afternoon cup of black tea.",
-        ar: "رَافَقَتْ كَعْكَتَانِ مُقَرْمَشَتَانِ مِنَ الزَّنْجَبِيلِ كُوبَ الشَّايِ الأَسْوَدِ فِي المَسَاءِ.",
+        en: "Two crisp ginger cookies accompanied his afternoon cup of black tea.",
+        ar: "رافق بسكويتان بالزنجبيل كوب الشاي الأسود الذي شربه بعد الظهر.",
       },
     ],
     exampleSentence:

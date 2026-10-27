@@ -512,11 +512,11 @@ function TaskBody({
     return (
       <div className="flex flex-col gap-3">
         <div
-          className="bg-wp-card border-2 border-primary/30 rounded-2xl p-4 min-h-[72px] flex items-center gap-2 flex-wrap"
+          className="bg-wp-card border-2 border-primary/30 rounded-xl sm:rounded-2xl px-2.5 py-1.5 sm:p-4 min-h-11 sm:min-h-[72px] flex items-center gap-1.5 sm:gap-2 flex-wrap"
           aria-live="polite"
         >
           {arrangement.length === 0 ? (
-            <span className="font-sans text-muted-foreground text-sm">
+            <span className="font-sans text-muted-foreground text-xs sm:text-sm">
               {t("skillRunner.buildSentencePrompt")}
             </span>
           ) : (
@@ -527,7 +527,7 @@ function TaskBody({
                 disabled={disabled}
                 onClick={() => setArrangement(arrangement.filter((_, j) => j !== i))}
                 aria-label={t("skillRunner.removeWordAria", { token, pos: i + 1 })}
-                className="bg-primary text-primary-foreground px-3 min-h-[44px] min-w-[44px] rounded-xl font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="bg-primary text-primary-foreground px-2.5 py-1 sm:px-3 sm:py-1.5 min-h-[44px] min-w-[44px] rounded-lg sm:rounded-xl font-sans font-bold text-xs sm:text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 {token}
               </button>

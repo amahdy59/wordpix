@@ -171,7 +171,7 @@ export const MARKET_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "reveal a secret",
       example:
-        "She spilled the beans about the surprise dinner — now everyone knows we're cooking chicken with garlic and mushroom.",
+        "He spilled the beans about the surprise dinner — now everyone knows we're cooking chicken with garlic and mushroom.",
     },
     {
       id: "market-in-a-pickle",

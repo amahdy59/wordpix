@@ -48,8 +48,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Roasting Meat",
-        en: "She covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
-        ar: "غَطَّتْ صِينِيَّةَ الشَّيِّ بِوَرَقِ الأَلُومِنْيُوم لِلْحِفَاظِ عَلَى طَرَاوَةِ اللَّحْمِ.",
+        en: "He covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
+        ar: "غطى صينية الشواء بورق الألومنيوم ليحافظ على طراوة اللحم وعصارته.",
       },
       {
         context: "Easy Cleanup",
@@ -63,9 +63,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
-    exampleArabic:
-      "غَطَّتْ صِينِيَّةَ الشَّيِّ بِوَرَقِ الأَلُومِنْيُوم لِلْحِفَاظِ عَلَى طَرَاوَةِ اللَّحْمِ.",
+      "He covered the roasting pan with aluminum foil to keep the roast juicy and tender.",
+    exampleArabic: "غطى صينية الشواء بورق الألومنيوم ليحافظ على طراوة اللحم وعصارته.",
   },
   "dining-chair": {
     id: "dining-chair",
@@ -146,8 +145,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Handling Hot Pots",
-        en: "She gripped the hot casserole handles securely with padded quilted oven mitts.",
-        ar: "أَمْسَكَتْ بِمَقَابِضِ الطَّاجِنِ السَّاخِنِ بِإِحْكَامٍ بِاسْتِخْدَامِ قُفَّازَاتِ الفُرْنِ المُبَطَّنَةِ.",
+        en: "He gripped the hot casserole handles securely with padded quilted oven mitts.",
+        ar: "أمسك مقابض طبق الفرن الساخن بإحكام مستخدما قفازين مبطنين للفرن.",
       },
       {
         context: "Storage",
@@ -195,8 +194,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Garden Accent",
-        en: "She trained trailing ivy vines to drape elegantly over the wooden balcony railing.",
-        ar: "دَرَّبَتْ عُرُوشَ اللَّبْلاَبِ لِتَتَدَلَّى بِأَنَاقَةٍ فَوْقَ حَاجِزِ الشُّرْفَةِ الخَشَبِيِّ.",
+        en: "He trained trailing ivy vines to drape elegantly over the wooden balcony railing.",
+        ar: "وجه أغصان اللبلاب المتسلقة لتتدلى فوق درابزين الشرفة الخشبي.",
       },
     ],
     exampleSentence: "The ancient cottage was entirely cloaked in a thick layer of ivy.",
@@ -398,8 +397,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Baking Equipment",
-        en: "She lined each indentation of the metal muffin tin with colorful paper baking cups.",
-        ar: "بَطَّنَتْ كُلَّ فَجْوَةٍ فِي صِينِيَّةِ المَافِن المَعْدَنِيَّةِ بِأَكْوَابِ خَبْزٍ وَرَقِيَّةٍ مُلَوَّنَةٍ.",
+        en: "He lined each indentation of the metal muffin tin with colorful paper baking cups.",
+        ar: "بطن كل تجويف في قالب المافن المعدني بكوب خبز ورقي ملون.",
       },
       {
         context: "Even Baking",
@@ -413,9 +412,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She lined each indentation of the metal muffin tin with colorful paper baking cups.",
-    exampleArabic:
-      "بَطَّنَتْ كُلَّ فَجْوَةٍ فِي صِينِيَّةِ المَافِن المَعْدَنِيَّةِ بِأَكْوَابِ خَبْزٍ وَرَقِيَّةٍ مُلَوَّنَةٍ.",
+      "He lined each indentation of the metal muffin tin with colorful paper baking cups.",
+    exampleArabic: "بطن كل تجويف في قالب المافن المعدني بكوب خبز ورقي ملون.",
   },
   volleyball: {
     id: "volleyball",

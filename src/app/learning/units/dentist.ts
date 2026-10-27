@@ -209,7 +209,7 @@ export const DENTIST_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "become fully involved in something interesting",
       example:
-        "The dental student sank her teeth into the practical exam — filling, scaling, and polishing in one session.",
+        "The dental student sank his teeth into the practical exam — filling, scaling, and polishing in one session.",
     },
     {
       id: "dentist-a-sweet-tooth",
@@ -227,7 +227,7 @@ export const DENTIST_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "with great effort and determination",
       example:
-        "She fought tooth and nail to overcome her fear of the dental drill and the suction tube.",
+        "He fought tooth and nail to overcome his fear of the dental drill and the suction tube.",
     },
     {
       id: "dentist-long-in-the-tooth",

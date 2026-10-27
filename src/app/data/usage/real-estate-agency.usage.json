@@ -88,13 +88,13 @@
         {
           "chunkNumber": 4,
           "targetWords": ["Showing", "Offer", "Counter Offer"],
-          "scenario": "After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.",
+          "scenario": "After a Showing, Lutfi makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.",
           "check": {
             "question": "Which term names the seller’s changed proposal?",
             "options": ["Counter Offer", "Showing", "Offer"],
             "expectedAnswer": "Counter Offer"
           },
-          "imageBrief": "Photorealistic vocabulary reference for Counter Offer in a real estate agency context. Use the written scenario as the source of meaning: After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageBrief": "Photorealistic vocabulary reference for Counter Offer in a real estate agency context. Use the written scenario as the source of meaning: After a Showing, Lutfi makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
           "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         }
       ],
@@ -102,7 +102,7 @@
     },
     "reading": {
       "title": "The Real Estate Agency: A visitor’s questions",
-      "text": "A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition. The Mortgage Lender provides financing under its terms. In this US example, a Title Agent assists with ownership records and closing documents. A Property Manager handles daily property operations, while a Developer creates or redevelops property projects. A Contractor performs contracted construction work, and an Architect designs buildings. The Listing advertises a property, while an Open House is a scheduled event when visitors can view it. After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.",
+      "text": "A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition. The Mortgage Lender provides financing under its terms. In this US example, a Title Agent assists with ownership records and closing documents. A Property Manager handles daily property operations, while a Developer creates or redevelops property projects. A Contractor performs contracted construction work, and an Architect designs buildings. The Listing advertises a property, while an Open House is a scheduled event when visitors can view it. After a Showing, Lutfi makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.",
       "imageBrief": "One uncluttered real estate agency setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
@@ -128,14 +128,14 @@
         "contextTag": "scene-3"
       },
       {
-        "prompt": "After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.\nWhich term names the seller’s changed proposal?",
+        "prompt": "After a Showing, Lutfi makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.\nWhich term names the seller’s changed proposal?",
         "answer": "Counter Offer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition. The Mortgage Lender provides financing under its terms. In this US example, a Title Agent assists with ownership records and closing documents. A Property Manager handles daily property operations, while a Developer creates or redevelops property projects. A Contractor performs contracted construction work, and an Architect designs buildings. The Listing advertises a property, while an Open House is a scheduled event when visitors can view it. After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.\nExplain the difference between Real Estate Agent and Broker using the account above.",
+        "prompt": "A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition. The Mortgage Lender provides financing under its terms. In this US example, a Title Agent assists with ownership records and closing documents. A Property Manager handles daily property operations, while a Developer creates or redevelops property projects. A Contractor performs contracted construction work, and an Architect designs buildings. The Listing advertises a property, while an Open House is a scheduled event when visitors can view it. After a Showing, Lutfi makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.\nExplain the difference between Real Estate Agent and Broker using the account above.",
         "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
         "questionType": "production",
         "responseMode": "extended-response",

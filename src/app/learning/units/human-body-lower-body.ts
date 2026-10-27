@@ -116,7 +116,7 @@ export const HUMAN_BODY_LOWER_BODY_LEARNING: UnitLearningMaterials = {
       phrase: "stand on your own two feet",
       kind: "idiom",
       meaning: "to be independent and capable of managing your own life",
-      example: "After graduating from university, she wanted to stand on her own two feet.",
+      example: "After graduating from university, he wanted to stand on his own two feet.",
     },
     {
       id: "lower-body-shake-in-shoes",

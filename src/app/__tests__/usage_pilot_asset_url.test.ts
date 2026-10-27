@@ -33,12 +33,15 @@ describe("uploaded usage pilot images", () => {
     for (const key of [
       `question-images/v2/classroom-1-scene-1/${"c".repeat(64)}.webp`,
       `question-images/v3/shared/airport-empty-check-in-counter/${"d".repeat(64)}.webp`,
+      `question-images/v3/sentence-repair-20261026-river-canoeing/${"e".repeat(64)}.webp`,
     ]) {
       expect(resolve(key)).toBe(`https://media.example.com/${key}`);
       expect(resolve(`/${key}`)).toBe(`https://media.example.com/${key}`);
     }
     for (const key of [
       `question-images/v3/airport/${"d".repeat(64)}.webp`,
+      `question-images/v3/sentence-repair-other-river-canoeing/${"e".repeat(64)}.webp`,
+      "question-images/v3/sentence-repair-20261026-river-canoeing/unverified.webp",
       "question-images/v3/shared/airport/unverified.webp",
       `question-images/v4/shared/airport/${"d".repeat(64)}.webp`,
     ]) {

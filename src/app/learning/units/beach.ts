@@ -38,7 +38,7 @@ export const BEACH_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "cause trouble or create a strong impression",
       example:
-        "She made waves at the beach — surfing past the reef while everyone else stayed near the cove.",
+        "He made waves at the beach — surfing past the reef while everyone else stayed near the cove.",
     },
     {
       id: "beach-in-deep-water",

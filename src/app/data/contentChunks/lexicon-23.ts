@@ -42,8 +42,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Snack & Sandwiches",
-        en: "She prepared a grilled cheese sandwich using thick slices of mature cheddar.",
-        ar: "أَعَدَّتْ شَطِيرَةَ جُبْنٍ مَشْوِيَّةً بِاسْتِخْدَامِ شَرَائِحَ سَمِيكَةٍ مِنْ جُبْنِ التِّشِيدَرْ المُعَتَّقِ.",
+        en: "He prepared a grilled cheese sandwich using thick slices of mature cheddar.",
+        ar: "أعد شطيرة جبن مشوية باستخدام شرائح سميكة من جبن الشيدر المعتق.",
       },
       {
         context: "Pasta Topping",
@@ -56,9 +56,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "أَبْهَرَتْ صِينِيَّةُ الأَجْبَانِ الفَاخِرَةُ المُحْتَوِيَةُ عَلَى البْرِي وَالجَوْدَا الضُّيُوفَ.",
       },
     ],
-    exampleSentence: "She prepared a grilled cheese sandwich using thick slices of mature cheddar.",
-    exampleArabic:
-      "أَعَدَّتْ شَطِيرَةَ جُبْنٍ مَشْوِيَّةً بِاسْتِخْدَامِ شَرَائِحَ سَمِيكَةٍ مِنْ جُبْنِ التِّشِيدَرْ المُعَتَّقِ.",
+    exampleSentence: "He prepared a grilled cheese sandwich using thick slices of mature cheddar.",
+    exampleArabic: "أعد شطيرة جبن مشوية باستخدام شرائح سميكة من جبن الشيدر المعتق.",
   },
   "remote-control": {
     id: "remote-control",
@@ -178,7 +177,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "lie down on",
         meaning: "recline on a sofa",
         arabic: "يَسْتَلْقِي عَلَى الأَرِيكَة",
-        example: "She lay down on the sofa to take an afternoon nap.",
+        example: "He lay down on the sofa to take an afternoon nap.",
       },
     ],
     sentences: [
@@ -277,8 +276,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Craft Project",
-        en: "She used a pair of blunt safety scissors to cut out paper shapes for her collage.",
-        ar: "اسْتَخْدَمَتْ مِقَصًّا ذَا سِنٍّ غَيْرِ حَادَّةٍ لِلأَمَانِ لِقَصِّ أَشْكَالٍ وَرَقِيَّةٍ لِلَوْحَتِهَا التَّجْمِيعِيَّةِ.",
+        en: "He used a pair of blunt safety scissors to cut out paper shapes for his collage.",
+        ar: "استخدم مقص أمان ذا طرفين غير حادين ليقص أشكالا ورقية لعمله الفني.",
       },
       {
         context: "Classroom Safety",
@@ -292,9 +291,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used a pair of blunt safety scissors to cut out paper shapes for her collage.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ مِقَصًّا ذَا سِنٍّ غَيْرِ حَادَّةٍ لِلأَمَانِ لِقَصِّ أَشْكَالٍ وَرَقِيَّةٍ لِلَوْحَتِهَا التَّجْمِيعِيَّةِ.",
+      "He used a pair of blunt safety scissors to cut out paper shapes for his collage.",
+    exampleArabic: "استخدم مقص أمان ذا طرفين غير حادين ليقص أشكالا ورقية لعمله الفني.",
   },
   grade: {
     id: "grade",
@@ -315,14 +313,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "bring up",
         meaning: "improve an academic score",
         arabic: "يَرْفَعُ دَرَجَتَهُ الدِّرَاسِيَّة",
-        example: "Extra tutoring helped her bring up her grade in algebra.",
+        example: "Extra tutoring helped him bring up his grade in algebra.",
       },
     ],
     sentences: [
       {
         context: "Academic Achievement",
-        en: "She was thrilled to see an 'A' grade marked in red ink at the top of her essay.",
-        ar: "كَانَتْ فِي غَايَةِ السَّعَادَةِ عِنْدَمَا رَأَتْ دَرَجَةَ 'A' مَكْتُوبَةً بِالحِبْرِ الأَحْمَرِ فِي أَعْلَى مَقَالِهَا.",
+        en: "He was thrilled to see an 'A' grade marked in red ink at the top of his essay.",
+        ar: "فرح كثيرا عندما رأى تقدير «ممتاز» مكتوبا بالحبر الأحمر في أعلى مقاله.",
       },
       {
         context: "Report Card",
@@ -336,9 +334,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She was thrilled to see an 'A' grade marked in red ink at the top of her essay.",
-    exampleArabic:
-      "كَانَتْ فِي غَايَةِ السَّعَادَةِ عِنْدَمَا رَأَتْ دَرَجَةَ 'A' مَكْتُوبَةً بِالحِبْرِ الأَحْمَرِ فِي أَعْلَى مَقَالِهَا.",
+      "He was thrilled to see an 'A' grade marked in red ink at the top of his essay.",
+    exampleArabic: "فرح كثيرا عندما رأى تقدير «ممتاز» مكتوبا بالحبر الأحمر في أعلى مقاله.",
   },
   profiterole: {
     id: "profiterole",

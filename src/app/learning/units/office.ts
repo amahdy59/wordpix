@@ -162,7 +162,7 @@ export const OFFICE_LEARNING: UnitLearningMaterials = {
       phrase: "go the extra mile",
       kind: "idiom",
       meaning: "To do more than expected.",
-      example: "She always goes the extra mile — staying late to help new colleagues settle in.",
+      example: "He always goes the extra mile — staying late to help new colleagues settle in.",
     },
     {
       id: "office-crunch-time",

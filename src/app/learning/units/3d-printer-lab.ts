@@ -171,7 +171,7 @@ export const _3D_PRINTER_LAB_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "the full process from an idea to a finished product",
       example:
-        "She took the design from concept to creation — sketching in the sketchbook, modelling on the computer, and printing overnight.",
+        "He took the design from concept to creation — sketching in the sketchbook, modelling on the computer, and printing overnight.",
     },
     {
       id: "3d-printer-lab-iron-out-the-kinks",

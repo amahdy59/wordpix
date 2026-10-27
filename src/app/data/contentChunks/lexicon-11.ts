@@ -187,7 +187,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "step up",
         meaning: "step onto a stool to reach something high",
         arabic: "يَصْعَدُ عَلَى",
-        example: "She stepped up on the step stool to reach the top shelf.",
+        example: "He stepped up on the step stool to reach the top shelf.",
       },
       {
         phrase: "sit on",
@@ -199,8 +199,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Reaching High",
-        en: "She used a sturdy step stool to change the ceiling light bulb.",
-        ar: "اسْتَخْدَمَتْ مَقْعَداً خَشَبِيّاً مَتِيناً لِتَغْيِيرِ مِصْبَاحِ السَّقْفِ.",
+        en: "He used a sturdy step stool to change the ceiling light bulb.",
+        ar: "استخدم مقعدا مدرجا متينا لتغيير مصباح السقف.",
       },
       {
         context: "Breakfast Area",
@@ -213,8 +213,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يَسْتَقِرُّ مَقْعَدٌ صَغِيرٌ بِجِوَارِ طَاوِلَةِ التَّسْرِيحِ فِي غُرْفَةِ النَّوْمِ.",
       },
     ],
-    exampleSentence: "She used a sturdy step stool to change the ceiling light bulb.",
-    exampleArabic: "اسْتَخْدَمَتْ مَقْعَداً خَشَبِيّاً مَتِيناً لِتَغْيِيرِ مِصْبَاحِ السَّقْفِ.",
+    exampleSentence: "He used a sturdy step stool to change the ceiling light bulb.",
+    exampleArabic: "استخدم مقعدا مدرجا متينا لتغيير مصباح السقف.",
   },
   gate: {
     id: "gate",
@@ -241,8 +241,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Garden Entrance",
-        en: "She pushed open the arched wooden gate and stepped into the fragrant flower garden.",
-        ar: "دَفَعَتِ البَوَّابَةَ الخَشَبِيَّةَ المُنْحَنِيَةَ وَدَخَلَتْ إِلَى حَدِيقَةِ الزُّهُورِ العَطِرَةِ.",
+        en: "He pushed open the arched wooden gate and stepped into the fragrant flower garden.",
+        ar: "فتح البوابة الخشبية المقوسة ودخل حديقة الزهور العطرة.",
       },
       {
         context: "Security & Latch",
@@ -278,14 +278,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "walk along",
         meaning: "traverse from end to end",
         arabic: "يَمْشِي عَلَى طُولِ",
-        example: "She held her arms out wide to walk along the narrow beam.",
+        example: "He held his arms out wide to walk along the narrow beam.",
       },
     ],
     sentences: [
       {
         context: "Balance & Coordination",
-        en: "She stretched her arms out wide to steady herself along the balance beam.",
-        ar: "مَدَّتْ ذِرَاعَيْهَا عَلَى اتِّسَاعِهِمَا لِتَحْفَظَ تَرَازُنَهَا عَلَى عَارِضَةِ التَّوَازُنِ.",
+        en: "He stretched his arms out wide to steady himself along the balance beam.",
+        ar: "مد ذراعيه إلى الجانبين ليحافظ على توازنه فوق عارضة التوازن.",
       },
       {
         context: "Park Obstacle Course",
@@ -298,9 +298,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَرْتَفِعُ العَارِضَةُ الخَشَبِيَّةُ المُنْخَفِضَةُ بضع بُوصَاتٍ فَقَطْ فَوْقَ رُقَاقَاتِ الخَشَبِ الطَّرِيَّةِ.",
       },
     ],
-    exampleSentence: "She stretched her arms out wide to steady herself along the balance beam.",
-    exampleArabic:
-      "مَدَّتْ ذِرَاعَيْهَا عَلَى اتِّسَاعِهِمَا لِتَحْفَظَ تَرَازُنَهَا عَلَى عَارِضَةِ التَّوَازُنِ.",
+    exampleSentence: "He stretched his arms out wide to steady himself along the balance beam.",
+    exampleArabic: "مد ذراعيه إلى الجانبين ليحافظ على توازنه فوق عارضة التوازن.",
   },
   "water-fountain": {
     id: "water-fountain",
@@ -332,8 +331,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Refill Station",
-        en: "She refilled her reusable sports bottle from the park water fountain.",
-        ar: "أَعَادَتْ مَلْءَ قَارُورَتِهَا الرِّيَاضِيَّةِ مِنْ مَشْرَبِيَّةِ الحَدِيقَةِ.",
+        en: "He refilled his reusable sports bottle from the park water fountain.",
+        ar: "أعاد ملء زجاجته الرياضية القابلة لإعادة الاستخدام من نافورة الشرب في الحديقة.",
       },
       {
         context: "Hygiene & Design",
@@ -370,8 +369,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Geography Class",
-        en: "She spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
-        ar: "فَتَحَتْ أَطْلَسَ العَالَمِ الكَبِيرَ عَلَى طَاوِلَةِ الدِّرَاسَةِ لِتَتَبُّعِ سَلَاسِلِ الجِبَالِ فِي أُورُوبَّا.",
+        en: "He spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
+        ar: "فتح أطلس العالم الكبير على طاولة الدراسة ليتتبع سلاسل الجبال في أوروبا.",
       },
       {
         context: "Cartography",
@@ -385,9 +384,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
-    exampleArabic:
-      "فَتَحَتْ أَطْلَسَ العَالَمِ الكَبِيرَ عَلَى طَاوِلَةِ الدِّرَاسَةِ لِتَتَبُّعِ سَلَاسِلِ الجِبَالِ فِي أُورُوبَّا.",
+      "He spread open the large world atlas on the study table to trace the mountain ranges of Europe.",
+    exampleArabic: "فتح أطلس العالم الكبير على طاولة الدراسة ليتتبع سلاسل الجبال في أوروبا.",
   },
   "library-card": {
     id: "library-card",
@@ -413,8 +411,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Membership Card",
-        en: "She presented her plastic library card at the checkout counter to borrow five mystery novels.",
-        ar: "قَدَّمَتْ بِطَاقَةَ المَكْتَبَةِ البَلَاسْتِيكِيَّةَ عِنْدَ كَاوَنْتَر الاِسْتِعَارَةِ لِاسْتِعَارَةِ خَمْسِ رِوَايَاتٍ غَامِضَةٍ.",
+        en: "He presented his plastic library card at the checkout counter to borrow five mystery novels.",
+        ar: "قدم بطاقة مكتبته البلاستيكية عند مكتب الإعارة ليستعير خمس روايات بوليسية.",
       },
       {
         context: "Barcode ID",
@@ -428,9 +426,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She presented her plastic library card at the checkout counter to borrow five mystery novels.",
-    exampleArabic:
-      "قَدَّمَتْ بِطَاقَةَ المَكْتَبَةِ البَلَاسْتِيكِيَّةَ عِنْدَ كَاوَنْتَر الاِسْتِعَارَةِ لِاسْتِعَارَةِ خَمْسِ رِوَايَاتٍ غَامِضَةٍ.",
+      "He presented his plastic library card at the checkout counter to borrow five mystery novels.",
+    exampleArabic: "قدم بطاقة مكتبته البلاستيكية عند مكتب الإعارة ليستعير خمس روايات بوليسية.",
   },
   author: {
     id: "author",
@@ -456,8 +453,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Book Signing Event",
-        en: "The bestselling author gave an inspiring talk in the library auditorium and signed copies of her new book.",
-        ar: "أَلْقَتِ المُؤَلِّفَةُ صَاحِبَةُ الكُتُبِ الأَكْثَرِ مَبِيعًا كَلِمَةً مُلْهِمَةً فِي قَاعَةِ المَكْتَبَةِ وَوَقَّعَتْ نُسَخَ كِتَابِهَا الجَدِيدِ.",
+        en: "The bestselling author gave an inspiring talk in the library auditorium and signed copies of his new book.",
+        ar: "ألقى المؤلف الأكثر مبيعا حديثا ملهما في قاعة المكتبة ووقع نسخا من كتابه الجديد.",
       },
       {
         context: "Creative Process",
@@ -471,9 +468,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "The bestselling author gave an inspiring talk in the library auditorium and signed copies of her new book.",
+      "The bestselling author gave an inspiring talk in the library auditorium and signed copies of his new book.",
     exampleArabic:
-      "أَلْقَتِ المُؤَلِّفَةُ صَاحِبَةُ الكُتُبِ الأَكْثَرِ مَبِيعًا كَلِمَةً مُلْهِمَةً فِي قَاعَةِ المَكْتَبَةِ وَوَقَّعَتْ نُسَخَ كِتَابِهَا الجَدِيدِ.",
+      "ألقى المؤلف الأكثر مبيعا حديثا ملهما في قاعة المكتبة ووقع نسخا من كتابه الجديد.",
   },
   grape: {
     id: "grape",
@@ -500,8 +497,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Produce Display",
-        en: "She washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
-        ar: "غَسَلَتْ عُنْقُودًا كَبِيرًا مِنْ عِنَبٍ أَحْمَرَ خَالٍ مِنَ البُذُورِ لِتَقْدِيمِهِ كَوَجْبَةٍ خَفِيفَةٍ مُنْعِشَةٍ.",
+        en: "He washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
+        ar: "غسل عنقودا كبيرا من العنب الأحمر الخالي من البذور ليقدمه وجبة منعشة بعد الظهر.",
       },
       {
         context: "Fruit Salad",
@@ -515,9 +512,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
-    exampleArabic:
-      "غَسَلَتْ عُنْقُودًا كَبِيرًا مِنْ عِنَبٍ أَحْمَرَ خَالٍ مِنَ البُذُورِ لِتَقْدِيمِهِ كَوَجْبَةٍ خَفِيفَةٍ مُنْعِشَةٍ.",
+      "He washed a large cluster of seedless red grapes to serve as a refreshing afternoon treat.",
+    exampleArabic: "غسل عنقودا كبيرا من العنب الأحمر الخالي من البذور ليقدمه وجبة منعشة بعد الظهر.",
   },
   "sea-turtle": {
     id: "sea-turtle",
@@ -648,7 +644,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "drizzle with",
         meaning: "pour seasoned emulsion across greens",
         arabic: "يَرُشُّ صَلْصَةَ السَّلَطَة",
-        example: "She drizzled her salad with creamy lemon dressing.",
+        example: "He drizzled his salad with creamy lemon dressing.",
       },
     ],
     sentences: [

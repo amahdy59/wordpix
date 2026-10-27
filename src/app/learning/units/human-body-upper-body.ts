@@ -95,7 +95,7 @@ export const HUMAN_BODY_UPPER_BODY_LEARNING: UnitLearningMaterials = {
       phrase: "get something off your chest",
       kind: "idiom",
       meaning: "to confess something that has been worrying you",
-      example: "I felt so much better after I talked to her and got the problem off my chest.",
+      example: "I felt so much better after I talked to him and got the problem off my chest.",
     },
     {
       id: "upper-body-cold-shoulder",
@@ -109,7 +109,7 @@ export const HUMAN_BODY_UPPER_BODY_LEARNING: UnitLearningMaterials = {
       phrase: "shoulder the responsibility",
       kind: "idiom",
       meaning: "to accept and manage a difficult duty or obligation",
-      example: "As the project lead, she shouldered the responsibility for the team's success.",
+      example: "As the project lead, he shouldered the responsibility for the team's success.",
     },
     {
       id: "upper-body-strong-backbone",

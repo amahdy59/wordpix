@@ -356,37 +356,37 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Square Footage", "Lot Size", "Bedrooms", "Bathrooms"],
-          "scenario": "Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature.",
+          "scenario": "Lutfi checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature.",
           "check": {
             "question": "Which measure describes the land parcel’s area?",
             "options": ["Lot Size", "Square Footage", "Bedrooms"],
             "expectedAnswer": "Lot Size"
           },
-          "imageBrief": "Photorealistic vocabulary reference for Lot Size in a property types context. Use the written scenario as the source of meaning: Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageBrief": "Photorealistic vocabulary reference for Lot Size in a property types context. Use the written scenario as the source of meaning: Lutfi checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
           "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Garage", "Pool", "Garden", "View"],
-          "scenario": "The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included.",
+          "scenario": "The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lutfi asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included.",
           "check": {
             "question": "Which term names the scenery visible from the property?",
             "options": ["View", "Garage", "Pool"],
             "expectedAnswer": "View"
           },
-          "imageBrief": "Photorealistic vocabulary reference for View in a property types context. Use the written scenario as the source of meaning: The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageBrief": "Photorealistic vocabulary reference for View in a property types context. Use the written scenario as the source of meaning: The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lutfi asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
           "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Parking", "Storage"],
-          "scenario": "Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.",
+          "scenario": "Lutfi asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.",
           "check": {
             "question": "Which space is intended for keeping belongings?",
             "options": ["Storage", "Parking"],
             "expectedAnswer": "Storage"
           },
-          "imageBrief": "Photorealistic vocabulary reference for Storage in a property types context. Use the written scenario as the source of meaning: Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageBrief": "Photorealistic vocabulary reference for Storage in a property types context. Use the written scenario as the source of meaning: Lutfi asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
           "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         }
       ],
@@ -394,33 +394,33 @@
     },
     "reading": {
       "title": "Property Types: Comparing the equipment",
-      "text": "Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included. Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.",
+      "text": "Lutfi checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lutfi asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included. Lutfi asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.",
       "imageBrief": "One uncluttered property types setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature.\nWhich measure describes the land parcel’s area?",
+        "prompt": "Lutfi checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature.\nWhich measure describes the land parcel’s area?",
         "answer": "Lot Size",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included.\nWhich term names the scenery visible from the property?",
+        "prompt": "The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lutfi asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included.\nWhich term names the scenery visible from the property?",
         "answer": "View",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.\nWhich space is intended for keeping belongings?",
+        "prompt": "Lutfi asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.\nWhich space is intended for keeping belongings?",
         "answer": "Storage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included. Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.\nExplain the difference between Square Footage and Lot Size using the account above.",
+        "prompt": "Lutfi checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lutfi asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included. Lutfi asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.\nExplain the difference between Square Footage and Lot Size using the account above.",
         "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
         "questionType": "production",
         "responseMode": "extended-response",

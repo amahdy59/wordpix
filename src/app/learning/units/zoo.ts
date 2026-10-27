@@ -44,7 +44,7 @@ export const ZOO_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "reveal a secret accidentally",
-      example: "She let the cat out of the bag about the surprise party.",
+      example: "He let the cat out of the bag about the surprise party.",
     },
     {
       id: "zoo-the-elephant-in-the-room",

@@ -265,8 +265,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Subject Organization",
-        en: "She assigns a different colored notebook to each school subject.",
-        ar: "تُخَصِّصُ دَفْتَرًا بِلَوْنٍ مُخْتَلِفٍ لِكُلِّ مَادَّةٍ دِرَاسِيَّةٍ.",
+        en: "He assigns a different colored notebook to each school subject.",
+        ar: "يخصص دفترا بلون مختلف لكل مادة دراسية.",
       },
       {
         context: "Journaling",
@@ -303,8 +303,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Reminder",
-        en: "She wrote a quick reminder on a yellow sticky note and pasted it on her desk.",
-        ar: "كَتَبَتْ تَذْكِيرًا سَرِيعًا عَلَى وَرَقَةِ مُلَاحَظَاتٍ لَاصِقَةٍ صَفْرَاءَ وَأَلْصَقَتْهَا عَلَى مَكْتَبِهَا.",
+        en: "He wrote a quick reminder on a yellow sticky note and pasted it on his desk.",
+        ar: "كتب تذكيرا سريعا على ملاحظة لاصقة صفراء وألصقها على مكتبه.",
       },
       {
         context: "Brainstorming",
@@ -317,10 +317,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "اسْتَخْدِمْ أَوْرَاقَ مُلَاحَظَاتٍ لَاصِقَةً صَغِيرَةً لِتَمْيِيزِ المُعَادَلَاتِ الهَامَّةِ فِي كِتَابِكَ.",
       },
     ],
-    exampleSentence:
-      "She wrote a quick reminder on a yellow sticky note and pasted it on her desk.",
-    exampleArabic:
-      "كَتَبَتْ تَذْكِيرًا سَرِيعًا عَلَى وَرَقَةِ مُلَاحَظَاتٍ لَاصِقَةٍ صَفْرَاءَ وَأَلْصَقَتْهَا عَلَى مَكْتَبِهَا.",
+    exampleSentence: "He wrote a quick reminder on a yellow sticky note and pasted it on his desk.",
+    exampleArabic: "كتب تذكيرا سريعا على ملاحظة لاصقة صفراء وألصقها على مكتبه.",
   },
   computer: {
     id: "computer",
@@ -390,8 +388,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Document Duplication",
-        en: "She was photocopying two important map pages from a reference atlas for her geography report.",
-        ar: "كَانَتْ تَقُومُ بِتَصْوِيرِ صَفْحَتَيْ خَرِيطَةٍ هَامَّتَيْنِ مِنْ أَطْلَسٍ مَرْجِعِيٍّ لِتَقْرِيرِهَا.",
+        en: "He was photocopying two important map pages from a reference atlas for his geography report.",
+        ar: "كان يصور صفحتين مهمتين من خرائط أطلس مرجعي لتقرير الجغرافيا الخاص به.",
       },
       {
         context: "Copyright Notice",
@@ -405,9 +403,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She was photocopying two important map pages from a reference atlas for her geography report.",
-    exampleArabic:
-      "كَانَتْ تَقُومُ بِتَصْوِيرِ صَفْحَتَيْ خَرِيطَةٍ هَامَّتَيْنِ مِنْ أَطْلَسٍ مَرْجِعِيٍّ لِتَقْرِيرِهَا.",
+      "He was photocopying two important map pages from a reference atlas for his geography report.",
+    exampleArabic: "كان يصور صفحتين مهمتين من خرائط أطلس مرجعي لتقرير الجغرافيا الخاص به.",
   },
   horizon: {
     id: "horizon",
@@ -507,7 +504,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "shade from",
         meaning: "protect face and neck from direct sun rays",
         arabic: "يُظَلِّلُ عَنْ أَشِعَّةِ الشَّمْس",
-        example: "A wide-brimmed straw hat shaded her face from the blazing summer sun.",
+        example: "A wide-brimmed straw hat shaded his face from the blazing summer sun.",
       },
     ],
     sentences: [
@@ -518,8 +515,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Beach Fashion",
-        en: "She tied a ribbon around her woven straw hat to keep it secure against coastal breezes.",
-        ar: "رَبَطَتْ شَرِيطًا حَوْلَ قُبَّعَتِهَا القَشِّيَّةِ لِتَثْبِيتِهَا ضِدَّ رِيَاحِ البَحْرِ.",
+        en: "He tied a ribbon around his woven straw hat to keep it secure against coastal breezes.",
+        ar: "ربط شريطا حول قبعة القش المنسوجة ليثبتها أمام نسيم الساحل.",
       },
       {
         context: "Outdoor Activities",
@@ -629,8 +626,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Generosity",
-        en: "We left a generous cash tip on the table to thank our server for her kindness.",
-        ar: "تَرَكْنَا إِكْرَامِيَّةً نَقْدِيَّةً سَخِيَّةً عَلَى المَائِدَةِ شُكْرًا لِنَادِلَتِنَا.",
+        en: "We left a generous cash tip on the table to thank our server for his kindness.",
+        ar: "تركنا بقشيشا نقديا سخيا على الطاولة لنشكر النادل على لطفه.",
       },
       {
         context: "Digital Payment",
@@ -665,8 +662,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Practice",
-        en: "She practiced her backhand strokes against the practice wall on the tennis court.",
-        ar: "تَدَرَّبَتْ عَلَى ضَرَبَاتِهَا الخَلْفِيَّةِ فِي مَلْعَبِ التِّنِسِ.",
+        en: "He practiced his backhand strokes against the practice wall on the tennis court.",
+        ar: "تدرب على ضرباته الخلفية على جدار التدريب في ملعب التنس.",
       },
       {
         context: "Equipment",

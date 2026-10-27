@@ -36,7 +36,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "ladle out",
         meaning: "serve soup or liquid with a ladle",
         arabic: "يَغْرِفُ بِالمِغْرَفَة",
-        example: "She ladled out hot vegetable soup into ceramic bowls.",
+        example: "He ladled out hot vegetable soup into ceramic bowls.",
       },
     ],
     sentences: [
@@ -139,8 +139,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Shrub Shaping",
-        en: "With a quick squeeze of the spring-loaded pruner, she shaped the shrub cleanly.",
-        ar: "بِضَغْطَةٍ سَرِيعَةٍ عَلَى مِقَصِّ التَّقْلِيمِ المُرِنِّ، شَكَّلَتِ الشُّجَيْرَةَ بِإِتْقَانٍ.",
+        en: "With a quick squeeze of the spring-loaded pruner, he shaped the shrub cleanly.",
+        ar: "بضغطة سريعة على مقص التقليم الزنبركي، هذب الشجيرة بعناية.",
       },
     ],
     exampleSentence: "The spring in the pruner allowed smooth cutting through thick stems.",
@@ -383,7 +383,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "glide along",
         meaning: "move smoothly through water using fin propulsion",
         arabic: "يَنْزَلِقُ فِي المَاءِ بِسُهُولَة",
-        example: "With long dive fins on her feet, she glided effortlessly along the coral wall.",
+        example: "With long dive fins on his feet, he glided effortlessly along the coral wall.",
       },
     ],
     sentences: [
@@ -599,8 +599,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Skill",
-        en: "She is an exceptionally talented cook who creates delicious meals from scratch.",
-        ar: "إِنَّهَا طَبَّاخَةٌ مَوْهُوبَةٌ تُبْدِعُ وَجَبَاتٍ لَذِيذَةً.",
+        en: "He is an exceptionally talented cook who creates delicious meals from scratch.",
+        ar: "إنه طاه موهوب للغاية يعد وجبات لذيذة من المكونات الأساسية.",
       },
     ],
     exampleSentence: "The line cook flipped burgers and toasted buns rapidly on the hot griddle.",

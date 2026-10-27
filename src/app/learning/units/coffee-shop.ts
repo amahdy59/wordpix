@@ -144,7 +144,7 @@ export const COFFEE_SHOP_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "reveal a secret",
       example:
-        "She spilled the beans about the new menu while the barista was grinding the beans behind the counter.",
+        "He spilled the beans about the new menu while the barista was grinding the beans behind the counter.",
     },
     {
       id: "coffee-shop-a-storm-in-a-teacup",

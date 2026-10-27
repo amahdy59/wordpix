@@ -123,14 +123,14 @@ export const INTERNAL_ORGANS_LEARNING: UnitLearningMaterials = {
       phrase: "have the guts",
       kind: "idiom",
       meaning: "Be brave enough to do something.",
-      example: "She had the guts to speak up — her stomach didn't even churn.",
+      example: "He had the guts to speak up — his stomach didn't even churn.",
     },
     {
       id: "internal-organs-learn-by-heart",
       phrase: "learn by heart",
       kind: "idiom",
       meaning: "Memorize completely.",
-      example: "She learned all the organ names by heart — from the brain to the bladder.",
+      example: "He learned all the organ names by heart — from the brain to the bladder.",
     },
     {
       id: "internal-organs-gut-feeling",
@@ -151,7 +151,7 @@ export const INTERNAL_ORGANS_LEARNING: UnitLearningMaterials = {
       phrase: "not have the stomach for",
       kind: "idiom",
       meaning: "Not be brave or tough enough.",
-      example: "She doesn't have the stomach for surgery — the sight of blood makes her dizzy.",
+      example: "He doesn't have the stomach for surgery — the sight of blood makes him dizzy.",
     },
     {
       id: "internal-organs-breathe-a-sigh-of-relief",
@@ -159,7 +159,7 @@ export const INTERNAL_ORGANS_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Feel relieved.",
       example:
-        "When the test results came back normal, she breathed a sigh of relief — her lungs relaxed.",
+        "When the test results came back normal, he breathed a sigh of relief — his lungs relaxed.",
     },
     {
       id: "internal-organs-a-change-of-heart",

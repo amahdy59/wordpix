@@ -70,8 +70,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Daily Routine",
-        en: "She makes her bed neatly every morning after waking up.",
-        ar: "تُرَتِّبُ سَرِيرَهَا بِعِنَايَةٍ كُلَّ صَبَاحٍ بَعْدَ الاِسْتِيقَاظِ.",
+        en: "He makes his bed neatly every morning after waking up.",
+        ar: "يرتب سريره بعناية كل صباح بعد الاستيقاظ.",
       },
       {
         context: "Evening Habit",
@@ -84,8 +84,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "اشْتَرَوْا سَرِيراً مُزْدَوَجاً مُرِيحاً لِغُرْفَةِ النَّوْمِ الرَّئِيسِيَّةِ.",
       },
     ],
-    exampleSentence: "She makes her bed neatly every morning after waking up.",
-    exampleArabic: "تُرَتِّبُ سَرِيرَهَا بِعِنَايَةٍ كُلَّ صَبَاحٍ بَعْدَ الاِسْتِيقَاظِ.",
+    exampleSentence: "He makes his bed neatly every morning after waking up.",
+    exampleArabic: "يرتب سريره بعناية كل صباح بعد الاستيقاظ.",
   },
   "jewelry-box": {
     id: "jewelry-box",
@@ -106,7 +106,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "put away",
         meaning: "store jewelry in its box",
         arabic: "يَحْفَظُ فِي الصُّنْدُوق",
-        example: "She put away her gold necklace inside the velvet jewelry box.",
+        example: "He put away his gold necklace inside the velvet jewelry box.",
       },
       {
         phrase: "take out",
@@ -118,13 +118,13 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Storage & Care",
-        en: "She organized her silver earrings and bracelets inside the velvet jewelry box.",
-        ar: "رَتَّبَتْ أَقْرَاطَهَا وَأَسَاوِرَهَا الفِضِّيَّةَ دَاخِلَ صُنْدُوقِ المَجَوْهَرَاتِ المَخْمَلِيِّ.",
+        en: "He organized his silver earrings and bracelets inside the velvet jewelry box.",
+        ar: "رتب أقراطه وأساوره الفضية في علبة المجوهرات المخملية.",
       },
       {
         context: "Heirloom",
-        en: "The antique wooden jewelry box was passed down from her great-grandmother.",
-        ar: "تَوَارَثَتْ صُنْدُوقَ المَجَوْهَرَاتِ الخَشَبِيَّ الأَثَرِيَّ عَنْ جَدَّتِهَا الكُبْرَى.",
+        en: "The antique wooden jewelry box was passed down from his great-grandmother.",
+        ar: "انتقلت علبة المجوهرات الخشبية الأثرية إليه من جدته الكبرى.",
       },
       {
         context: "Security",
@@ -133,9 +133,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She organized her silver earrings and bracelets inside the velvet jewelry box.",
-    exampleArabic:
-      "رَتَّبَتْ أَقْرَاطَهَا وَأَسَاوِرَهَا الفِضِّيَّةَ دَاخِلَ صُنْدُوقِ المَجَوْهَرَاتِ المَخْمَلِيِّ.",
+      "He organized his silver earrings and bracelets inside the velvet jewelry box.",
+    exampleArabic: "رتب أقراطه وأساوره الفضية في علبة المجوهرات المخملية.",
   },
   "body-wash": {
     id: "body-wash",
@@ -168,8 +167,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Shower Routine",
-        en: "She preferred using a creamy hydrating body wash over a traditional bar of soap.",
-        ar: "فَضَّلَتِ اسْتِخْدَامَ غَسُولِ جِسْمٍ كَرِيمِيٍّ مُرَطِّبٍ عَلَى قِطْعَةِ الصَّابُونِ التَّقْلِيدِيَّة.",
+        en: "He preferred using a creamy hydrating body wash over a traditional bar of soap.",
+        ar: "فضل استخدام غسول جسم كريمي مرطب بدلا من قالب الصابون التقليدي.",
       },
       {
         context: "Sensitive Skin",
@@ -183,9 +182,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She preferred using a creamy hydrating body wash over a traditional bar of soap.",
-    exampleArabic:
-      "فَضَّلَتِ اسْتِخْدَامَ غَسُولِ جِسْمٍ كَرِيمِيٍّ مُرَطِّبٍ عَلَى قِطْعَةِ الصَّابُونِ التَّقْلِيدِيَّة.",
+      "He preferred using a creamy hydrating body wash over a traditional bar of soap.",
+    exampleArabic: "فضل استخدام غسول جسم كريمي مرطب بدلا من قالب الصابون التقليدي.",
   },
   radiologist: {
     id: "radiologist",

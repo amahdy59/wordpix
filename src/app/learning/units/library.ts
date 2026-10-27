@@ -127,7 +127,7 @@ export const LIBRARY_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "easy to understand; hiding nothing",
       example:
-        "She's an open book — ask her anything at the help desk and she'll find the answer in the reference section.",
+        "He's an open book — ask him anything at the help desk and he'll find the answer in the reference section.",
     },
     {
       id: "library-turn-over-a-new-leaf",
@@ -190,7 +190,7 @@ export const LIBRARY_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "copy someone's successful behavior",
       example:
-        "Take a page from her book — she sits in the bean bag, reads fiction for fun, and checks out a magazine every week.",
+        "Take a page from his book — he sits in the bean bag, reads fiction for fun, and checks out a magazine every week.",
     },
     {
       id: "library-bring-back-return",

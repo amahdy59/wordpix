@@ -326,8 +326,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Classroom Decor",
-        en: "She used clear adhesive tape to secure her solar system poster to the classroom wall.",
-        ar: "اسْتَخْدَمَتْ شَرِيطًا لَاصِقًا شَفَّافًا لِتَثْبِيتِ مُلْصَقِ المَجْمُوعَةِ الشَّمْسِيَّةِ عَلَى جِدَارِ الفَصْلِ.",
+        en: "He used clear adhesive tape to secure his solar system poster to the classroom wall.",
+        ar: "استخدم شريطا لاصقا شفافا ليثبت ملصقه عن المجموعة الشمسية على جدار الفصل.",
       },
       {
         context: "Desk Accessory",
@@ -341,9 +341,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used clear adhesive tape to secure her solar system poster to the classroom wall.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ شَرِيطًا لَاصِقًا شَفَّافًا لِتَثْبِيتِ مُلْصَقِ المَجْمُوعَةِ الشَّمْسِيَّةِ عَلَى جِدَارِ الفَصْلِ.",
+      "He used clear adhesive tape to secure his solar system poster to the classroom wall.",
+    exampleArabic: "استخدم شريطا لاصقا شفافا ليثبت ملصقه عن المجموعة الشمسية على جدار الفصل.",
   },
   "study-desk": {
     id: "study-desk",
@@ -363,7 +362,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "settle into",
         meaning: "get comfortable at a study station",
         arabic: "يَسْتَقِرُّ لِلْمُذَاكَرَةِ عَلَى المَكْتَب",
-        example: "She settled into a quiet corner study desk with her laptop and coffee.",
+        example: "He settled into a quiet corner study desk with his laptop and coffee.",
       },
     ],
     sentences: [
@@ -523,7 +522,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "hand off",
         meaning: "pass baton to the next runner",
         arabic: "يُسَلِّمُ عَصَا التَّتَابُع",
-        example: "She handed off the baton smoothly to her teammate.",
+        example: "He handed off the baton smoothly to his teammate.",
       },
     ],
     sentences: [
@@ -685,8 +684,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Putting",
-        en: "She sank a difficult ten-foot putt on the final green to win the golf trophy.",
-        ar: "أَسْقَطَتِ الكُرَةَ بِضَرْبَةٍ دَقِيقَةٍ فِي الحُفْرَةِ لِتَفُوزَ بِكَأْسِ الجُولْفِ.",
+        en: "He sank a difficult ten-foot putt on the final green to win the golf trophy.",
+        ar: "أدخل الكرة في الحفرة بضربة صعبة من مسافة عشرة أقدام في المسطح الأخضر الأخير ليفوز بكأس الغولف.",
       },
     ],
     exampleSentence:

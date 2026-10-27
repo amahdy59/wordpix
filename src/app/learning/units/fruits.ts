@@ -145,7 +145,7 @@ export const FRUITS_LEARNING: UnitLearningMaterials = {
       phrase: "a plum job",
       kind: "idiom",
       meaning: "A highly desirable, well-paid position.",
-      example: "She landed a plum job at the embassy — great salary and travel benefits.",
+      example: "He landed a plum job at the embassy — great salary and travel benefits.",
     },
     {
       id: "fruits-bear-fruit",

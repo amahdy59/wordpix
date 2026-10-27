@@ -158,7 +158,7 @@ export const TV_STUDIO_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "attract the most attention or praise",
       example:
-        "The guest expert stole the show — the camera operator couldn't stop zooming in on her reactions.",
+        "The guest expert stole the show — the camera operator couldn't stop zooming in on his reactions.",
     },
     {
       id: "tv-studio-set-the-stage-for-something",

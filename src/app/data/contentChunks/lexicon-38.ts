@@ -48,8 +48,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Chore Routine",
-        en: "She loaded the dirty plates and cutlery into the dishwasher after dinner.",
-        ar: "وَضَعَتِ الأَطْبَاقَ وَأَدَوَاتِ المَائِدَةِ المُتَّسِخَةَ فِي غَسَّالَةِ الصُّحُونِ بَعْدَ العَشَاءِ.",
+        en: "He loaded the dirty plates and cutlery into the dishwasher after dinner.",
+        ar: "وضع الأطباق وأدوات المائدة المتسخة في غسالة الأطباق بعد العشاء.",
       },
       {
         context: "Eco Living",
@@ -62,9 +62,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَأَكَّدْ مِنْ أَنَّ الكُؤُوسَ الكِرِيسْتَالِيَّةَ آمِنَةٌ لِلْغَسِيلِ فِي الغَسَّالَةِ قَبْلَ وَضْعِهَا.",
       },
     ],
-    exampleSentence: "She loaded the dirty plates and cutlery into the dishwasher after dinner.",
-    exampleArabic:
-      "وَضَعَتِ الأَطْبَاقَ وَأَدَوَاتِ المَائِدَةِ المُتَّسِخَةَ فِي غَسَّالَةِ الصُّحُونِ بَعْدَ العَشَاءِ.",
+    exampleSentence: "He loaded the dirty plates and cutlery into the dishwasher after dinner.",
+    exampleArabic: "وضع الأطباق وأدوات المائدة المتسخة في غسالة الأطباق بعد العشاء.",
   },
   "table-lamp": {
     id: "table-lamp",
@@ -101,8 +100,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Bedside Reading",
-        en: "She switched off the table lamp on her nightstand before going to sleep.",
-        ar: "أَطْفَأَتْ مِصْبَاحَ الطَّاوِلَةِ المَوْجُودَ عَلَى كُمودِينَتِهَا قَبْلَ أَنْ تَخْلُدَ لِلنَّوْمِ.",
+        en: "He switched off the table lamp on his nightstand before going to sleep.",
+        ar: "أطفأ مصباح الطاولة بجوار سريره قبل النوم.",
       },
     ],
     exampleSentence:
@@ -141,8 +140,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Digital Reading",
-        en: "She prefers reading digital magazines on her lightweight touch-screen tablet.",
-        ar: "تُفَضِّلُ قِرَاءَةَ المَجَلاَّتِ الرَّقْمِيَّةِ عَلَى جِهَازِهَا اللَّوْحِيِّ الخَفِيفِ.",
+        en: "He prefers reading digital magazines on his lightweight touch-screen tablet.",
+        ar: "يفضل قراءة المجلات الرقمية على جهازه اللوحي الخفيف ذي الشاشة اللمسية.",
       },
       {
         context: "Entertainment",
@@ -155,10 +154,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يَسْتَخْدِمُ قَلَماً ذَكِيّاً لِرَسْمِ المُخَطَّطَاتِ الهَنْدَسِيَّةِ مُبَاشَرَةً عَلَى التَّابْلِت.",
       },
     ],
-    exampleSentence:
-      "She prefers reading digital magazines on her lightweight touch-screen tablet.",
-    exampleArabic:
-      "تُفَضِّلُ قِرَاءَةَ المَجَلاَّتِ الرَّقْمِيَّةِ عَلَى جِهَازِهَا اللَّوْحِيِّ الخَفِيفِ.",
+    exampleSentence: "He prefers reading digital magazines on his lightweight touch-screen tablet.",
+    exampleArabic: "يفضل قراءة المجلات الرقمية على جهازه اللوحي الخفيف ذي الشاشة اللمسية.",
   },
   thermometer: {
     id: "thermometer",
@@ -196,8 +193,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Illness",
-        en: "She placed the medical thermometer under her child's tongue to check for fever.",
-        ar: "وَضَعَتْ مِقْيَاسَ الحَرَارَةِ الطِّبِّيَّ تَحْتَ لِسَانِ طِفْلِهَا لِلتَّحَقُّقِ مِنْ وُجُودِ حُمَّى.",
+        en: "He placed the medical thermometer under his child's tongue to check for fever.",
+        ar: "وضع ميزان الحرارة الطبي تحت لسان طفله ليتحقق من إصابته بالحمى.",
       },
       {
         context: "Storage",
@@ -241,8 +238,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Quick Cleanups",
-        en: "She used refreshing antibacterial wet wipes to quickly clean her hands on the go.",
-        ar: "اسْتَخْدَمَتْ مَنَادِيلَ مُبَلَّلَةً مُضَادَّةً لِلْبَكْتِيرْيَا لِتَنْظِيفِ يَدَيْهَا بِسُرْعَةٍ أَثْنَاءَ التَّنَقُّل.",
+        en: "He used refreshing antibacterial wet wipes to quickly clean his hands on the go.",
+        ar: "استخدم مناديل مبللة مضادة للبكتيريا لينظف يديه بسرعة أثناء تنقله.",
       },
       {
         context: "Bathroom Storage",
@@ -256,9 +253,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She used refreshing antibacterial wet wipes to quickly clean her hands on the go.",
-    exampleArabic:
-      "اسْتَخْدَمَتْ مَنَادِيلَ مُبَلَّلَةً مُضَادَّةً لِلْبَكْتِيرْيَا لِتَنْظِيفِ يَدَيْهَا بِسُرْعَةٍ أَثْنَاءَ التَّنَقُّل.",
+      "He used refreshing antibacterial wet wipes to quickly clean his hands on the go.",
+    exampleArabic: "استخدم مناديل مبللة مضادة للبكتيريا لينظف يديه بسرعة أثناء تنقله.",
   },
   "shade-structure": {
     id: "shade-structure",
@@ -329,8 +325,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Autumn Produce",
-        en: "She picked several firm green pears to ripen gently in the fruit bowl at home.",
-        ar: "اخْتَارَتْ عِدَّةَ حَبَّاتِ كُمَّثْرَى خَضْرَاءَ مُتَمَاسِكَةً لِتَنْضَجَ بِهُدُوءٍ فِي وِعَاءِ الفَاكِهَةِ.",
+        en: "He picked several firm green pears to ripen gently in the fruit bowl at home.",
+        ar: "اختار عدة حبات كمثرى خضراء متماسكة لتنضج تدريجيا في وعاء الفاكهة في المنزل.",
       },
       {
         context: "Gourmet Dish",
@@ -344,9 +340,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She picked several firm green pears to ripen gently in the fruit bowl at home.",
-    exampleArabic:
-      "اخْتَارَتْ عِدَّةَ حَبَّاتِ كُمَّثْرَى خَضْرَاءَ مُتَمَاسِكَةً لِتَنْضَجَ بِهُدُوءٍ فِي وِعَاءِ الفَاكِهَةِ.",
+      "He picked several firm green pears to ripen gently in the fruit bowl at home.",
+    exampleArabic: "اختار عدة حبات كمثرى خضراء متماسكة لتنضج تدريجيا في وعاء الفاكهة في المنزل.",
   },
   cucumber: {
     id: "cucumber",
@@ -417,8 +412,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Savings at Checkout",
-        en: "She presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
-        ar: "قَدَّمَتْ قَسِيمَةَ خَصْمٍ مِنْ صَحِيفَةٍ لِتَوْفِيرِ دُولَارَيْنِ عَلَى حُبُوبِ الإِفْطَارِ العُضْوِيَّةِ.",
+        en: "He presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
+        ar: "قدم قسيمة خصم من الصحيفة ليوفر دولارين عند شراء حبوب إفطار عضوية.",
       },
       {
         context: "Mobile App Savings",
@@ -432,9 +427,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
-    exampleArabic:
-      "قَدَّمَتْ قَسِيمَةَ خَصْمٍ مِنْ صَحِيفَةٍ لِتَوْفِيرِ دُولَارَيْنِ عَلَى حُبُوبِ الإِفْطَارِ العُضْوِيَّةِ.",
+      "He presented a newspaper discount coupon to save two dollars on organic breakfast cereal.",
+    exampleArabic: "قدم قسيمة خصم من الصحيفة ليوفر دولارين عند شراء حبوب إفطار عضوية.",
   },
   pita: {
     id: "pita",
@@ -509,8 +503,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Morning Routine",
-        en: "She starts her sunrise morning with a serene paddleboarding session across the quiet lagoon.",
-        ar: "تَبْدَأُ صَبَاحَهَا عِنْدَ الشُّرُوقِ بِجَلْسَةِ تَجْذِيفٍ وُقُوفًا هَادِئَةٍ عَبْرَ البُحَيْرَةِ الشَّاطِئِيَّةِ.",
+        en: "He starts his sunrise morning with a serene paddleboarding session across the quiet lagoon.",
+        ar: "يبدأ صباحه عند الشروق بجولة هادئة على لوح التجديف عبر البحيرة الشاطئية الساكنة.",
       },
       {
         context: "Board Stability",
@@ -589,8 +583,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Cardio Exercise",
-        en: "She ran three miles on the motorized treadmill while monitoring her heart rate.",
-        ar: "رَكَضَتْ ٣ أَمْيَالٍ عَلَى جِهَازِ الجَرْيِ الكَهْرَبَائِيِّ مَعَ مُرَاقَبَةِ نَبْضِ القَلْبِ.",
+        en: "He ran three miles on the motorized treadmill while monitoring his heart rate.",
+        ar: "ركض ثلاثة أميال على جهاز المشي الكهربائي وهو يراقب معدل نبضه.",
       },
       {
         context: "Adjustable Settings",
@@ -604,9 +598,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She ran three miles on the motorized treadmill while monitoring her heart rate.",
-    exampleArabic:
-      "رَكَضَتْ ٣ أَمْيَالٍ عَلَى جِهَازِ الجَرْيِ الكَهْرَبَائِيِّ مَعَ مُرَاقَبَةِ نَبْضِ القَلْبِ.",
+      "He ran three miles on the motorized treadmill while monitoring his heart rate.",
+    exampleArabic: "ركض ثلاثة أميال على جهاز المشي الكهربائي وهو يراقب معدل نبضه.",
   },
   throw: {
     id: "throw",

@@ -148,7 +148,7 @@ export const COOKING_METHODS_LEARNING: UnitLearningMaterials = {
       phrase: "stir the pot",
       kind: "idiom",
       meaning: "To deliberately cause trouble.",
-      example: "She loves stirring the pot — always starting arguments at family dinners.",
+      example: "He loves stirring the pot — always starting arguments at family dinners.",
     },
     {
       id: "cooking-methods-what-s-cooking",
@@ -169,7 +169,7 @@ export const COOKING_METHODS_LEARNING: UnitLearningMaterials = {
       phrase: "grill someone",
       kind: "idiom",
       meaning: "To question someone intensely.",
-      example: "The interviewer grilled her for an hour — question after question without a break.",
+      example: "The interviewer grilled him for an hour — question after question without a break.",
     },
     {
       id: "cooking-methods-boil-down-to",

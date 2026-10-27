@@ -154,7 +154,7 @@ export const RIVER_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "help someone through a difficult time",
       example:
-        "The guide was our bridge over troubled water — she steered the raft safely through the rapids.",
+        "The guide was our bridge over troubled water — he steered the raft safely through the rapids.",
     },
     {
       id: "river-up-the-creek-without-a-paddle",

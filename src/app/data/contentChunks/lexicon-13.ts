@@ -84,14 +84,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "light up",
         meaning: "ignite a candle to illuminate a room",
         arabic: "يُشْعِلُ",
-        example: "She lit up three scented candles for a cozy evening.",
+        example: "He lit up three scented candles for a cozy evening.",
       },
     ],
     sentences: [
       {
         context: "Cozy Ambiance",
-        en: "She lit a vanilla scented candle to create a relaxing evening atmosphere.",
-        ar: "أَشْعَلَتْ شَمْعَةً مُعَطَّرَةً بِالفَانِيلْيَا لِخَلْقِ أَجْوَاءِ اسْتِرْخَاءٍ مَسَائِيَّةٍ.",
+        en: "He lit a vanilla scented candle to create a relaxing evening atmosphere.",
+        ar: "أشعل شمعة برائحة الفانيليا ليضفي جوا مريحا على الأمسية.",
       },
       {
         context: "Safety",
@@ -104,9 +104,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "عِنْدَمَا انْقَطَعَتِ الكَهْرَبَاءُ خِلالَ العَاصِفَةِ، اسْتَخْدَمُوا الشُّمُوعَ لِلإِضَاءَةِ.",
       },
     ],
-    exampleSentence: "She lit a vanilla scented candle to create a relaxing evening atmosphere.",
-    exampleArabic:
-      "أَشْعَلَتْ شَمْعَةً مُعَطَّرَةً بِالفَانِيلْيَا لِخَلْقِ أَجْوَاءِ اسْتِرْخَاءٍ مَسَائِيَّةٍ.",
+    exampleSentence: "He lit a vanilla scented candle to create a relaxing evening atmosphere.",
+    exampleArabic: "أشعل شمعة برائحة الفانيليا ليضفي جوا مريحا على الأمسية.",
   },
   outlet: {
     id: "outlet",
@@ -192,8 +191,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Wall Art",
-        en: "She framed a scenic travel poster to hang above her study desk.",
-        ar: "وَضَعَتْ مُلْصَقَ سَفَرٍ طَبِيعِيّاً فِي إِطَارٍ لِتُعَلِّقَهُ فَوْقَ مَكْتَبِ الدِّرَاسَةِ.",
+        en: "He framed a scenic travel poster to hang above his study desk.",
+        ar: "وضع ملصق سفر يصور منظرا جميلا في إطار ليعلقه فوق مكتب دراسته.",
       },
       {
         context: "Education",
@@ -224,7 +223,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "dig up",
         meaning: "excavate plants or bulbs carefully",
         arabic: "يَحْفِرُ لاسْتِخْرَاج",
-        example: "She used a hand trowel to dig up the overwintered bulbs.",
+        example: "He used a hand trowel to dig up the overwintered bulbs.",
       },
     ],
     sentences: [
@@ -244,8 +243,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "جَعَلَتِ المِجْرَفَةُ اليَدَوِيَّةُ ذَاتُ التَّصْمِيمِ المُرِيحِ غَرْسَ خَمْسِينَ بَصَلَةً أَمْراً سَهْلاً.",
       },
     ],
-    exampleSentence: "She scooped up rich soil with her garden trowel.",
-    exampleArabic: "غَرَفَتْ تُرْبَةً خِصْبَةً بِمِجْرَفَتِهَا اليَدَوِيَّةِ لِلْحَدِيقَةِ.",
+    exampleSentence: "He scooped up rich soil with his garden trowel.",
+    exampleArabic: "غرف التربة الغنية بمجرفته اليدوية للحديقة.",
   },
   "spring-rider": {
     id: "spring-rider",
@@ -573,8 +572,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Morning Pastry",
-        en: "She ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
-        ar: "طَلَبَتْ لَاتِيه سَاخِنًا وَكَعْكَةَ مَافِن بِالتُّوتِ البَرِّيِّ المُمْتَلِئِ بِالفَاكِهَةِ مِنَ المَخْبَزِ.",
+        en: "He ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
+        ar: "طلب لاتيه ساخنا وكعكة مافن بالتوت الأزرق من منضدة المخبز.",
       },
       {
         context: "Home Baking",
@@ -588,9 +587,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
-    exampleArabic:
-      "طَلَبَتْ لَاتِيه سَاخِنًا وَكَعْكَةَ مَافِن بِالتُّوتِ البَرِّيِّ المُمْتَلِئِ بِالفَاكِهَةِ مِنَ المَخْبَزِ.",
+      "He ordered a hot latte and a blueberry muffin bursting with juicy fruit from the bakery counter.",
+    exampleArabic: "طلب لاتيه ساخنا وكعكة مافن بالتوت الأزرق من منضدة المخبز.",
   },
   danish: {
     id: "danish",

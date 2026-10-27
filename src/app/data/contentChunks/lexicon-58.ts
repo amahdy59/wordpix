@@ -322,8 +322,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Self-Study",
-        en: "She checks her answers in the back of the workbook after finishing each quiz.",
-        ar: "تُدَقِّقُ إِجَابَاتِهَا فِي نِهَايَةِ كُرَّاسَةِ التَّمَارِينِ بَعْدَ الاِنْتِهَاءِ مِنْ كُلِّ اخْتِبَارٍ قَصِيرٍ.",
+        en: "He checks his answers in the back of the workbook after finishing each quiz.",
+        ar: "يراجع إجاباته في آخر كتاب التدريبات بعد الانتهاء من كل اختبار قصير.",
       },
     ],
     exampleSentence: "For homework, complete exercises one through five in your grammar workbook.",
@@ -396,8 +396,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Catalog Lookup",
-        en: "She began searching the online database using author keywords to locate rare manuscripts.",
-        ar: "بَدَأَتْ فِي البَحْثِ فِي قَاعِدَةِ البَيَانَاتِ عَبْرَ الإِنْتِرْنِتِ بِاسْتِخْدَامِ كَلِمَاتِ اسْمِ المُؤَلِّفِ.",
+        en: "He began searching the online database using author keywords to locate rare manuscripts.",
+        ar: "بدأ البحث في قاعدة البيانات الإلكترونية باستخدام اسم المؤلف للعثور على مخطوطات نادرة.",
       },
       {
         context: "Aisle Exploration",
@@ -411,9 +411,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She began searching the online database using author keywords to locate rare manuscripts.",
+      "He began searching the online database using author keywords to locate rare manuscripts.",
     exampleArabic:
-      "بَدَأَتْ فِي البَحْثِ فِي قَاعِدَةِ البَيَانَاتِ عَبْرَ الإِنْتِرْنِتِ بِاسْتِخْدَامِ كَلِمَاتِ اسْمِ المُؤَلِّفِ.",
+      "بدأ البحث في قاعدة البيانات الإلكترونية باستخدام اسم المؤلف للعثور على مخطوطات نادرة.",
   },
   "rye-bread": {
     id: "rye-bread",

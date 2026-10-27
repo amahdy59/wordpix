@@ -81,7 +81,7 @@ describe("Vocabulary descriptions", () => {
       "A plan that shows when activities or events will happen."
     );
     expect(unitWords.get("vegetables")?.find((word) => word.id === "ginger")?.exampleUsage).toBe(
-      "She grated fresh ginger into the soup."
+      "He grates fresh ginger into the soup."
     );
     expect(
       unitWords.get("numbers-counting")?.find((word) => word.id === "three")?.arabicTranslation

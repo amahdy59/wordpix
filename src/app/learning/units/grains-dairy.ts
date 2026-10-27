@@ -117,7 +117,7 @@ export const GRAINS_DAIRY_LEARNING: UnitLearningMaterials = {
       phrase: "bread and butter",
       kind: "idiom",
       meaning: "One's main source of income or livelihood.",
-      example: "Teaching is her bread and butter — it pays the bills reliably.",
+      example: "Teaching is his bread and butter — it pays the bills reliably.",
     },
     {
       id: "grains-dairy-cry-over-spilt-milk",
@@ -162,7 +162,7 @@ export const GRAINS_DAIRY_LEARNING: UnitLearningMaterials = {
       phrase: "butter someone up",
       kind: "idiom",
       meaning: "To flatter someone to get something.",
-      example: "She buttered up the cheese seller to get an extra sample.",
+      example: "He buttered up the cheese seller to get an extra sample.",
     },
     {
       id: "grains-dairy-go-against-the-grain",

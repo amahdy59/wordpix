@@ -84,7 +84,7 @@ export const MUSIC_ROOM_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "use influence to get something done",
-      example: "She pulled some strings to get tickets to the concert.",
+      example: "He pulled some strings to get tickets to the concert.",
     },
     {
       id: "music-room-change-your-tune",
@@ -100,7 +100,7 @@ export const MUSIC_ROOM_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "do things in your own way",
-      example: "She's always marched to the beat of her own drum.",
+      example: "He's always marched to the beat of his own drum.",
     },
   ],
   dialogue: {

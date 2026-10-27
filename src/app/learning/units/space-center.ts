@@ -28,7 +28,7 @@ export const SPACE_CENTER_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "extremely happy",
-      example: "She was over the moon when she passed her driving test.",
+      example: "He was over the moon when he passed his driving test.",
     },
     {
       id: "space-center-once-in-a-blue-moon",
@@ -60,7 +60,7 @@ export const SPACE_CENTER_LEARNING: UnitLearningMaterials = {
       kind: "phrasal-verb",
       kindInferred: true,
       meaning: "start something enthusiastically",
-      example: "She launched into a long explanation of the project.",
+      example: "He launched into a long explanation of the project.",
     },
     {
       id: "space-center-light-years-ahead",

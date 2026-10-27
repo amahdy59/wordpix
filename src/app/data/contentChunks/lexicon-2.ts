@@ -26,14 +26,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "tie up",
         meaning: "fasten apron strings behind back",
         arabic: "يَرْبِطُ حِبَالَ المِرْيَلَة",
-        example: "She tied up the apron straps neatly around her waist.",
+        example: "He tied up the apron straps neatly around his waist.",
       },
     ],
     sentences: [
       {
         context: "Cooking Preparation",
-        en: "She tied on a heavy cotton apron to protect her clothes from flour and sauce.",
-        ar: "رَبَطَتْ مِرْيَلَةَ مَطْبَخٍ قُطْنِيَّةً سَمِيكَةً لِحِمَايَةِ مَلابِسِهَا مِنَ الطَّحِينِ وَالصَّلْصَةِ.",
+        en: "He tied on a heavy cotton apron to protect his clothes from flour and sauce.",
+        ar: "ارتدى مئزرا قطنيا سميكا ليحمي ملابسه من الدقيق والصلصات.",
       },
       {
         context: "Professional Kitchen",
@@ -46,10 +46,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "ارْتَدَى الأَطْفَالُ مَرَايِلَ صَغِيرَةً أَثْنَاءَ تَزْيِينِ الكَبْ كِيك بَعْدَ ظُهْرِ السَّبْتِ.",
       },
     ],
-    exampleSentence:
-      "She tied on a heavy cotton apron to protect her clothes from flour and sauce.",
-    exampleArabic:
-      "رَبَطَتْ مِرْيَلَةَ مَطْبَخٍ قُطْنِيَّةً سَمِيكَةً لِحِمَايَةِ مَلابِسِهَا مِنَ الطَّحِينِ وَالصَّلْصَةِ.",
+    exampleSentence: "He tied on a heavy cotton apron to protect his clothes from flour and sauce.",
+    exampleArabic: "ارتدى مئزرا قطنيا سميكا ليحمي ملابسه من الدقيق والصلصات.",
   },
   "coffee-table": {
     id: "coffee-table",
@@ -81,8 +79,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Tabletop Styling",
-        en: "She arranged a decorative candle, a vase of tulips, and an art book on the coffee table.",
-        ar: "رَتَّبَتْ شَمْعَةً أَنِيقَةً وَزَهْرِيَّةَ تِيُولِيب وَكِتَابَ فَنٍّ عَلَى طَاوِلَةِ القَهْوَةِ.",
+        en: "He arranged a decorative candle, a vase of tulips, and an art book on the coffee table.",
+        ar: "رتب شمعة للزينة ومزهرية توليب وكتاب فن على طاولة القهوة.",
       },
       {
         context: "Coaster Use",
@@ -124,8 +122,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Eating",
-        en: "She twirled the spaghetti around her fork before taking a bite.",
-        ar: "لَفَّتِ المَعْكَرُونَةَ الإِسْبَاغِيتِي حَوْلَ شَوْكَتِهَا قَبْلَ تَنَاوُلِ اللُّقْمَةِ.",
+        en: "He twirled the spaghetti around his fork before taking a bite.",
+        ar: "لف السباغيتي حول شوكته قبل أن يأخذ لقمة.",
       },
       {
         context: "Baking Prep",
@@ -267,8 +265,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Hauling Produce",
-        en: "She loaded freshly picked orange pumpkins into the wheelbarrow for market transport.",
-        ar: "حَمَّلَتْ ثِمَارَ اليَقْطِينِ البُرْتُقَالِيَّةِ المَقْطُوفَةِ فِي عَرَبَةِ اليَدِ لِنَقْلِهَا لِلسُّوقِ.",
+        en: "He loaded freshly picked orange pumpkins into the wheelbarrow for market transport.",
+        ar: "حمل القرع البرتقالي الطازج في عربة اليد لنقله إلى السوق.",
       },
     ],
     exampleSentence:
@@ -336,8 +334,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Math Class",
-        en: "She typed numbers into her scientific calculator to solve the trigonometry problem.",
-        ar: "كَتَبَتِ الأَرْقَامَ عَلَى آلَتِهَا الحَاسِبَةِ العِلْمِيَّةِ لِحَلِّ مَسْأَلَةِ حِسَابِ المُثَلَّثَاتِ.",
+        en: "He typed numbers into his scientific calculator to solve the trigonometry problem.",
+        ar: "أدخل الأرقام في آلته الحاسبة العلمية ليحل مسألة حساب المثلثات.",
       },
       {
         context: "Solar Powered",
@@ -351,9 +349,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She typed numbers into her scientific calculator to solve the trigonometry problem.",
-    exampleArabic:
-      "كَتَبَتِ الأَرْقَامَ عَلَى آلَتِهَا الحَاسِبَةِ العِلْمِيَّةِ لِحَلِّ مَسْأَلَةِ حِسَابِ المُثَلَّثَاتِ.",
+      "He typed numbers into his scientific calculator to solve the trigonometry problem.",
+    exampleArabic: "أدخل الأرقام في آلته الحاسبة العلمية ليحل مسألة حساب المثلثات.",
   },
   "projector-remote": {
     id: "projector-remote",
@@ -513,8 +510,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Smoothie Blend",
-        en: "She blended diced mango with coconut water to create a creamy tropical beverage.",
-        ar: "خَلَطَتْ مُكَعَّبَاتِ المَانْجُو مَعَ مَاءِ جَوْزِ الهِنْدِ لِإِعْدَادِ مَشْرُوبٍ اسْتِوَائِيٍّ كَرِيمِيٍّ.",
+        en: "He blended diced mango with coconut water to create a creamy tropical beverage.",
+        ar: "خلط مكعبات المانجو مع ماء جوز الهند ليعد مشروبا استوائيا كريميا.",
       },
       {
         context: "Culinary Use",
@@ -552,8 +549,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Dairy Section",
-        en: "She bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
-        ar: "اشْتَرَتْ عُلْبَةَ كْرِيمَةِ خَفْقٍ ثَقِيلَةٍ لِإِعْدَادِ جَانَاش الشُّوكُولَاتَةِ لِلْكَعْكَةِ.",
+        en: "He bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
+        ar: "اشترى عبوة من كريمة الخفق الثقيلة ليعد غاناش الشوكولاتة للكعكة.",
       },
       {
         context: "Coffee Addition",
@@ -567,9 +564,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
-    exampleArabic:
-      "اشْتَرَتْ عُلْبَةَ كْرِيمَةِ خَفْقٍ ثَقِيلَةٍ لِإِعْدَادِ جَانَاش الشُّوكُولَاتَةِ لِلْكَعْكَةِ.",
+      "He bought a carton of heavy whipping cream to make chocolate ganache for the cake.",
+    exampleArabic: "اشترى عبوة من كريمة الخفق الثقيلة ليعد غاناش الشوكولاتة للكعكة.",
   },
   "cocoa-powder": {
     id: "cocoa-powder",
@@ -599,8 +595,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Dessert Finish",
-        en: "She dusted a fine layer of dark cocoa powder over the creamy Italian tiramisu.",
-        ar: "رَشَّتْ طَبَقَةً رَقِيقَةً مِنْ بُودْرَةِ الكَاكَاوِ الدَّاكِنَةِ فَوْقَ حَلْوَى التِّيرَامِيسُو الإِيطَالِيَّةِ.",
+        en: "He dusted a fine layer of dark cocoa powder over the creamy Italian tiramisu.",
+        ar: "نثر طبقة رقيقة من مسحوق الكاكاو الداكن فوق حلوى التيراميسو الإيطالية الكريمية.",
       },
       {
         context: "Warm Drinks",
@@ -631,7 +627,7 @@ export const entries: Record<string, LexiconEntry> = {
         meaning: "recline comfortably on fabric lounge seat",
         arabic: "يَتَّكِئُ إِلَى الخَلْفِ فِي المَقْعَد",
         example:
-          "She leaned back in her folding beach chair with an iced drink and a mystery novel.",
+          "He leaned back in his folding beach chair with an iced drink and a mystery novel.",
       },
     ],
     sentences: [

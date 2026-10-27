@@ -20,14 +20,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "flip through",
         meaning: "turn pages quickly",
         arabic: "يُقَلِّبُ صَفَحَاتِ المَجَلَّة",
-        example: "She flipped through the interior design magazine for decoration ideas.",
+        example: "He flipped through the interior design magazine for decoration ideas.",
       },
     ],
     sentences: [
       {
         context: "Leisure Reading",
-        en: "She flipped through a glossy architecture magazine while sipping her morning cappuccino.",
-        ar: "تَصَفَّحَتْ مَجَلَّةَ عِمَارَةٍ أَنِيقَةً وَهِيَ تَرْشُفُ الكَابُوتْشِينُو الصَّبَاحِيَّ.",
+        en: "He flipped through a glossy architecture magazine while sipping his morning cappuccino.",
+        ar: "تصفح مجلة معمارية مصورة وهو يرتشف الكابتشينو في الصباح.",
       },
       {
         context: "Subscription",
@@ -41,9 +41,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "She flipped through a glossy architecture magazine while sipping her morning cappuccino.",
-    exampleArabic:
-      "تَصَفَّحَتْ مَجَلَّةَ عِمَارَةٍ أَنِيقَةً وَهِيَ تَرْشُفُ الكَابُوتْشِينُو الصَّبَاحِيَّ.",
+      "He flipped through a glossy architecture magazine while sipping his morning cappuccino.",
+    exampleArabic: "تصفح مجلة معمارية مصورة وهو يرتشف الكابتشينو في الصباح.",
   },
   rain: {
     id: "rain",
@@ -179,8 +178,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Decor",
-        en: "She placed a potted succulent and a decorative vase on the corner of the TV stand.",
-        ar: "وَضَعَتْ نَبْتَةَ صَبَّارٍ صَغِيرَةً وَزَهْرِيَّةً أَنِيقَةً عَلَى زَاوِيَةِ طَاوِلَةِ التِّلْفَازِ.",
+        en: "He placed a potted succulent and a decorative vase on the corner of the TV stand.",
+        ar: "وضع أصيص نبات عصاري ومزهرية للزينة على زاوية طاولة التلفاز.",
       },
     ],
     exampleSentence:
@@ -223,8 +222,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Reading Preference",
-        en: "She enjoys escaping into literary fiction during quiet weekend evenings.",
-        ar: "تَسْتَمْتِعُ بِالانْغِمَاسِ فِي الأَدَبِ القَصَصِيِّ الرَّاقِي خِلَالَ أَمْسِيَاتِ عُطْلَةِ نِهَايَةِ الأُسْبُوعِ.",
+        en: "He enjoys escaping into literary fiction during quiet weekend evenings.",
+        ar: "يستمتع بالانغماس في الروايات الأدبية خلال أمسيات عطلة نهاية الأسبوع الهادئة.",
       },
     ],
     exampleSentence:

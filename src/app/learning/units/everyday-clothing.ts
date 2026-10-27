@@ -131,7 +131,7 @@ export const EVERYDAY_CLOTHING_LEARNING: UnitLearningMaterials = {
       phrase: "wear the trousers",
       kind: "idiom",
       meaning: "To be the dominant person in a relationship.",
-      example: "In their household, she clearly wears the trousers — she makes all the decisions.",
+      example: "In their household, he clearly wears the trousers — he makes all the decisions.",
     },
     {
       id: "everyday-clothing-hot-under-the-collar",
@@ -152,14 +152,14 @@ export const EVERYDAY_CLOTHING_LEARNING: UnitLearningMaterials = {
       phrase: "off the cuff",
       kind: "idiom",
       meaning: "Without preparation; spontaneously.",
-      example: "She gave an off-the-cuff speech — no notes, just words straight from the heart.",
+      example: "He gave an off-the-cuff speech — no notes, just words straight from the heart.",
     },
     {
       id: "everyday-clothing-at-the-drop-of-a-hat",
       phrase: "at the drop of a hat",
       kind: "idiom",
       meaning: "Without hesitation; immediately.",
-      example: "She'd change her outfit at the drop of a hat if she saw something better.",
+      example: "He'd change his outfit at the drop of a hat if he saw something better.",
     },
     {
       id: "everyday-clothing-pull-your-socks-up",

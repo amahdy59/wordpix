@@ -151,7 +151,7 @@ export const BEDROOM_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "in private; away from public view",
       example:
-        "Behind closed doors, her bedroom was messy — clothes on the chair, books off the bookshelf, shoes under the desk.",
+        "Behind closed doors, his bedroom was messy — clothes on the chair, books off the bookshelf, shoes under the desk.",
     },
     {
       id: "bedroom-skeletons-in-the-closet",
@@ -186,7 +186,7 @@ export const BEDROOM_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "a person who stays up late at night",
       example:
-        "She's a night owl — the lamp on her nightstand stays on until midnight while she reads in bed.",
+        "He's a night owl — the lamp on his nightstand stays on until midnight while he reads in bed.",
     },
     {
       id: "bedroom-put-away",

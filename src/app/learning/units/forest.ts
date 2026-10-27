@@ -127,7 +127,7 @@ export const FOREST_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "too focused on small details to see the bigger picture",
       example:
-        "She studied every oak and maple but couldn't see the forest for the trees — the whole ecosystem was changing.",
+        "He studied every oak and maple but couldn't see the forest for the trees — the whole ecosystem was changing.",
     },
     {
       id: "forest-out-of-the-woods",

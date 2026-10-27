@@ -109,7 +109,7 @@ export const DAYS_MONTHS_LEARNING: UnitLearningMaterials = {
       phrase: "a month of Sundays",
       kind: "idiom",
       meaning: "A very long time.",
-      example: "I haven't seen her in a month of Sundays — probably since last January.",
+      example: "I haven't seen him in a month of Sundays — probably since last January.",
     },
     {
       id: "days-months-monday-morning-feeling",
@@ -164,7 +164,7 @@ export const DAYS_MONTHS_LEARNING: UnitLearningMaterials = {
       phrase: "day in, day out",
       kind: "idiom",
       meaning: "Every single day without change.",
-      example: "She studies English day in, day out — Monday through Sunday.",
+      example: "He studies English day in, day out — Monday through Sunday.",
     },
     {
       id: "days-months-mark-the-date",

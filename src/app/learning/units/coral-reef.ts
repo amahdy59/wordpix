@@ -178,7 +178,7 @@ export const CORAL_REEF_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "start something enthusiastically without hesitation",
-      example: "She dived into her marine biology degree after one visit to the coral reef.",
+      example: "He dived into his marine biology degree after one visit to the coral reef.",
     },
     {
       id: "coral-reef-swim-against-the-tide",
@@ -187,7 +187,7 @@ export const CORAL_REEF_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "do the opposite of what most people do",
       example:
-        "By refusing to use plastic bags near the coast, she was swimming against the tide — but she didn't care.",
+        "By refusing to use plastic bags near the coast, he was swimming against the tide — but he didn't care.",
     },
     {
       id: "coral-reef-test-the-waters",

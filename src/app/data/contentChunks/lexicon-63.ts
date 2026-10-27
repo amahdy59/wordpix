@@ -10,8 +10,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Everyday Usage",
-        en: "She looked in the mirror to check her hair.",
-        ar: "نَظَرَتْ فِي المِرْآةِ لِتَتَفَقَّدَ شَعْرَهَا.",
+        en: "He looked in the mirror to check his hair.",
+        ar: "نظر في المرآة ليتفقد شعره.",
       },
       {
         context: "General",
@@ -19,8 +19,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "كَانَتْ مِرْآةُ الحَمَّامِ ضَبَابِيَّةً بَعْدَ الِاسْتِحْمَامِ بِالمَاءِ السَّاخِنِ.",
       },
     ],
-    exampleSentence: "She looked in the mirror to check her hair.",
-    exampleArabic: "نَظَرَتْ فِي المِرْآةِ لِتَتَفَقَّدَ شَعْرَهَا.",
+    exampleSentence: "He looked in the mirror to check his hair.",
+    exampleArabic: "نظر في المرآة ليتفقد شعره.",
   },
   mug: {
     id: "mug",
@@ -41,7 +41,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "sip from",
         meaning: "drink slowly from a mug",
         arabic: "يَرْشُفُ مِنَ الكُوب",
-        example: "She sat by the window and sipped from her hot coffee mug.",
+        example: "He sat by the window and sipped from his hot coffee mug.",
       },
     ],
     sentences: [
@@ -204,13 +204,12 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Houseplant",
-        en: "Her African violet bloomed with velvety purple flowers all winter long.",
-        ar: "أَزْهَرَتْ نَبْتَةُ البَنَفْسَجِ الإِفْرِيقِيِّ لَدَيْهَا بِزُهُورٍ أُرْجُوَانِيَّةٍ طَوَالَ الشِّتَاءِ.",
+        en: "His African violet bloomed with velvety purple flowers all winter long.",
+        ar: "أزهر بنفسجه الإفريقي بأزهار أرجوانية مخملية طوال الشتاء.",
       },
     ],
-    exampleSentence: "She noticed a tiny purple violet hiding among the grass.",
-    exampleArabic:
-      "لاحَظَتْ زَهْرَةَ بَنَفْسَجٍ أُرْجُوَانِيَّةً صَغِيرَةً مُخْتَبِئَةً بَيْنَ العُشْبِ.",
+    exampleSentence: "He noticed a tiny purple violet hiding among the grass.",
+    exampleArabic: "لاحظ زهرة بنفسج أرجوانية صغيرة بين العشب.",
   },
   ball: {
     id: "ball",
@@ -334,8 +333,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Suspense",
-        en: "She held her breath while hiding quietly beneath the climbing platform.",
-        ar: "حَبَسَتْ أَنْفَاسَهَا وَهِيَ تَخْتَبِئُ بِهُدُوءٍ تَحْتَ مِنَصَّةِ التَّسَلُّقِ.",
+        en: "He held his breath while hiding quietly beneath the climbing platform.",
+        ar: "حبس أنفاسه وهو يختبئ بهدوء تحت منصة التسلق.",
       },
     ],
     exampleSentence: "Hiding behind the broad oak trunk kept him safe during hide-and-seek.",
@@ -439,7 +438,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "put in a cast",
         meaning: "immobilize broken bone with hardening mold",
         arabic: "يَضَعُ فِي الجَبِيرَةِ الجِبْسِيَّة",
-        example: "The doctor put her broken arm in a cast.",
+        example: "The doctor put the patient's broken arm in a cast.",
       },
     ],
     sentences: [

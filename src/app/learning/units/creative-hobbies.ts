@@ -117,7 +117,7 @@ export const CREATIVE_HOBBIES_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Receiving public attention.",
       example:
-        "Her artwork has been in the spotlight since the exhibition opened — critics love it.",
+        "His artwork has been in the spotlight since the exhibition opened — critics love it.",
     },
     {
       id: "creative-hobbies-a-masterpiece",

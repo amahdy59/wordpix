@@ -136,7 +136,7 @@ export const BASIC_EMOTIONS_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To feel nervous excitement.",
       example:
-        "She had butterflies in her stomach before the presentation — a mix of fear and excitement.",
+        "He had butterflies in his stomach before the presentation — a mix of fear and excitement.",
     },
     {
       id: "basic-emotions-cry-your-eyes-out",

@@ -141,7 +141,7 @@ export const MAPS_NAVIGATION_LEARNING: UnitLearningMaterials = {
       phrase: "set your compass",
       kind: "idiom",
       meaning: "To decide your direction or priorities.",
-      example: "After university, she set her compass towards a career in medicine.",
+      example: "After university, he set his compass towards a career in medicine.",
     },
     {
       id: "maps-navigation-uncharted-waters",
