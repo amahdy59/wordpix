@@ -4,6 +4,7 @@ import process from "node:process";
 
 // Align local pre-push retries with CI (2 retries) to accommodate full-suite browser timing
 process.env.WORDPIX_E2E_RETRIES = process.env.WORDPIX_E2E_RETRIES || "2";
+process.env.WORDPIX_READ_ONLY_MEDIA = process.env.WORDPIX_READ_ONLY_MEDIA || "1";
 
 const colors = {
   reset: "\x1b[0m",
