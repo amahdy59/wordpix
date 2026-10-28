@@ -58,12 +58,17 @@ describe("UnitScenarioPlayer component", () => {
   };
 
   it("renders scenario title, Arabic translation, and dialogue lines", () => {
-    render(<UnitScenarioPlayer scenarios={[mockScenario]} />);
+    const { container } = render(<UnitScenarioPlayer scenarios={[mockScenario]} />);
 
     expect(screen.getByText("Meeting at the Majlis")).toBeDefined();
     expect(screen.getByText("لقاء في المجلس")).toBeDefined();
     expect(screen.getByText('"Welcome to our home, my friend."')).toBeDefined();
     expect(screen.getByText('"Thank you, Tariq! The coffee smells wonderful."')).toBeDefined();
+    expect(
+      screen.getByRole("button", { name: "Play scenario: Meeting at the Majlis" })
+    ).toBeDefined();
+    expect(container.querySelector("audio")).toHaveAttribute("crossorigin", "anonymous");
+    expect(container.querySelector("track")).toHaveAttribute("label", "English captions");
   });
 
   it("renders character badges with proper labels", () => {

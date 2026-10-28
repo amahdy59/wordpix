@@ -1,5 +1,6 @@
 import { useCourseNavigationHeight } from "./useCourseNavigationHeight";
 import { useI18n } from "../../i18n";
+import type { KeyboardEvent } from "react";
 
 export interface CourseNavigationStage {
   id: string;
@@ -21,11 +22,22 @@ export function CourseLessonNavigation({
 }) {
   const { t } = useI18n();
   const navigationRef = useCourseNavigationHeight();
+  const completedCount = stages.filter((stage) => stage.completed).length;
+  const dismissOnEscape = (event: KeyboardEvent<HTMLElement>) => {
+    const details = event.currentTarget.closest("details");
+    if (event.key !== "Escape" || !details?.open) return;
+    event.preventDefault();
+    details.open = false;
+    details.querySelector("summary")?.focus();
+  };
   return (
     <nav ref={navigationRef} className="wp-course-nav" aria-label={t("courseLesson.navigation")}>
       <details className="group">
-        <summary className="flex min-h-11 cursor-pointer flex-wrap items-center justify-between gap-2 rounded-xl px-2 text-base font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
-          <span aria-live="polite">
+        <summary
+          onKeyDown={dismissOnEscape}
+          className="flex min-h-11 cursor-pointer flex-wrap items-center justify-between gap-2 rounded-xl px-2 text-base font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          <span className="min-w-0 flex-1" aria-live="polite">
             {t("lessonShell.step", {
               number: currentIndex + 1,
               total: stages.length,
@@ -39,6 +51,7 @@ export function CourseLessonNavigation({
             <li key={stage.id}>
               <button
                 type="button"
+                onKeyDown={dismissOnEscape}
                 disabled={stage.locked}
                 aria-current={index === currentIndex ? "step" : undefined}
                 onClick={(event) => {
@@ -71,9 +84,9 @@ export function CourseLessonNavigation({
         aria-label={t("courseLesson.progress")}
         aria-valuemin={0}
         aria-valuemax={stages.length}
-        aria-valuenow={stages.filter((stage) => stage.completed).length}
+        aria-valuenow={completedCount}
         aria-valuetext={t("lessonShell.completedSteps", {
-          completed: stages.filter((stage) => stage.completed).length,
+          completed: completedCount,
           total: stages.length,
         })}
         className="h-1 overflow-hidden rounded-full bg-muted"
@@ -81,7 +94,7 @@ export function CourseLessonNavigation({
         <div
           className="h-full bg-primary motion-safe:transition-[width]"
           style={{
-            width: `${(100 * stages.filter((stage) => stage.completed).length) / Math.max(1, stages.length)}%`,
+            width: `${(100 * completedCount) / Math.max(1, stages.length)}%`,
           }}
         />
       </div>

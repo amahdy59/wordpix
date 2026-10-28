@@ -169,7 +169,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
             <span className="hidden sm:inline">{t("action.back")}</span>
           </button>
           <div className="min-w-0">
-            <h1 className="font-bold text-foreground text-xl">{world.name}</h1>
+            <h1 className="break-words font-bold text-foreground text-xl">{world.name}</h1>
             <p className="text-muted-foreground text-base">{t("lesson.chooseVocabGroup")}</p>
           </div>
         </div>

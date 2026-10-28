@@ -6,11 +6,8 @@ import type { Action } from "../types";
 import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { Button, ExerciseFamilyTemplate, FeedbackPanel } from "../shared";
-import {
-  SentenceQuestionSupport,
-  SentenceMeaningSupport,
-  resolveSentenceMedia,
-} from "../shared/SentenceQuestionSupport";
+import { SentenceQuestionSupport, SentenceMeaningSupport } from "../shared/SentenceQuestionSupport";
+import { resolveSentenceMedia } from "../content/sentenceMedia";
 import { buildSentenceCompletion, getRichSentence } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
 import { useSound } from "../shared/useSound";

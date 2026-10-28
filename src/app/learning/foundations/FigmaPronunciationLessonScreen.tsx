@@ -705,7 +705,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
         ) : (
           <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[20rem_minmax(0,1fr)] lg:grid-rows-[auto_1fr] lg:gap-x-8 flex-1 min-h-0">
             {/* Side-Rail Workspace on Desktop (lg+) / Context Header on Mobile */}
-            <aside className="w-full lg:w-80 lg:shrink-0 lg:self-start lg:sticky lg:top-6 flex flex-col gap-4">
+            <aside className="wp-course-sidebar w-full lg:w-80 lg:shrink-0 lg:self-start lg:sticky lg:top-6 flex flex-col gap-4">
               <div className="flex items-center justify-between gap-2">
                 <button
                   type="button"
@@ -843,7 +843,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
               </div>
 
               {/* Lesson Context Card */}
-              <div className="rounded-2xl border border-border bg-card p-3 sm:p-4 shadow-wp-xs">
+              <div className="wp-course-context rounded-2xl border border-border bg-card p-3 sm:p-4 shadow-wp-xs">
                 <header>
                   <p className="text-xs sm:text-sm font-semibold text-primary">
                     {t("pronunciation.badge", {
@@ -855,7 +855,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                     ref={headingRef}
                     tabIndex={-1}
                     id="pronunciation-title"
-                    className={`mt-0.5 text-base sm:text-2xl font-bold text-foreground truncate ${focusRing}`}
+                    className={`mt-0.5 text-base sm:text-2xl font-bold text-foreground break-words ${focusRing}`}
                     lang="en"
                     dir="ltr"
                   >
@@ -863,7 +863,7 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
                   </h1>
                 </header>
 
-                <div className="mt-3 pt-3 border-t border-border">
+                <div className="wp-course-sticky mt-3 pt-3 border-t border-border">
                   <CourseLessonNavigation
                     stages={STAGES.map((name, index) => ({
                       id: name,

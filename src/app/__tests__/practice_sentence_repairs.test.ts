@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { buildSentenceCompletion, getRichSentence } from "../exercises/exerciseContent";
 import { sentenceCloze } from "../exercises/sentenceCloze";
 import { loadUnitVocabulary } from "../data/vocabulary";
-import { resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
+import { resolveSentenceMedia } from "../content/sentenceMedia";
 import { isGenericLearningExample } from "../content/learningExampleQuality";
 import { loadLexicon } from "../data/lexiconLoader";
 

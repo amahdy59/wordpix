@@ -136,7 +136,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
       <div className="wp-container-shell wp-layout-gutter py-3 sm:py-5">
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
           {/* Side-Rail Workspace on Desktop (lg+) / Navigation Header on Mobile */}
-          <div className="w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
+          <div className="wp-course-sidebar w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
             {/* Top Bar with Back and Unit Metadata */}
             <div className="flex items-center justify-between gap-3">
               <button
@@ -154,7 +154,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
             </div>
 
             {/* Unit Context Card */}
-            <div className="rounded-2xl border border-border bg-card p-4 shadow-wp-xs space-y-3">
+            <div className="wp-course-context rounded-2xl border border-border bg-card p-4 shadow-wp-xs space-y-3">
               <header>
                 <p className="text-xs sm:text-sm font-semibold text-primary">
                   {t("conversation.unitOfTotal", { number: unit.unitNumber, total: 40 })}
@@ -162,7 +162,7 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
                 <h2 className="mt-1 text-lg sm:text-xl font-bold text-foreground">{unit.title}</h2>
               </header>
 
-              <div className="pt-2 border-t border-border">
+              <div className="wp-course-sticky pt-2 border-t border-border">
                 <CourseLessonNavigation
                   stages={STAGE_CONFIG.map((stage, idx) => ({
                     id: stage.id,

@@ -177,7 +177,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
       {/* Sticky CEFR Level Switcher */}
       <nav
         aria-label={t("learn.cefrLevels", { defaultValue: "CEFR Levels" })}
-        className="sticky top-0 z-20 -mx-[var(--wp-layout-gutter-inline)] px-[var(--wp-layout-gutter-inline)] py-2.5 bg-background/90 backdrop-blur-md border-b border-border transition-colors"
+        className="wp-sticky-controls sticky top-0 z-20 -mx-[var(--wp-layout-gutter-inline)] px-[var(--wp-layout-gutter-inline)] py-2.5 bg-background/90 backdrop-blur-md border-b border-border transition-colors"
       >
         <div className="flex flex-wrap items-center gap-2">
           {CEFR_STAGES.map((stage, idx) => {

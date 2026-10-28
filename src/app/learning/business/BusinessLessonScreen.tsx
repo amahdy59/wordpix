@@ -16,7 +16,6 @@ import { BusinessExerciseStage } from "./stages/BusinessExerciseStage";
 import { BusinessDiscussionStage } from "./stages/BusinessDiscussionStage";
 import { BusinessSpeakingStage } from "./stages/BusinessSpeakingStage";
 import { BusinessReviewStage } from "./stages/BusinessReviewStage";
-import { resolveAssetUrl } from "../../../utils/assetUrl";
 
 interface Props {
   unitId: string;
@@ -146,54 +145,6 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
       aria-labelledby="lesson-header-title"
     >
       {/* Top Banner Navigation */}
-      <header className="shrink-0 flex items-center justify-between border-b border-border bg-card px-4 sm:px-8 py-3.5 shadow-wp-xs">
-        <div className="flex items-center gap-3 min-w-0">
-          <button
-            type="button"
-            onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-            className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-xl px-2.5 font-bold text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-            aria-label={t("business.curriculumNavLabel")}
-          >
-            <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
-            <span className="text-base">{t("ux.backToCourse")}</span>
-          </button>
-
-          <div className="h-4 w-px bg-border hidden sm:block" aria-hidden />
-
-          <div className="flex items-center gap-2.5 min-w-0">
-            {unit.heroImageSrc && (
-              <div className="size-8 shrink-0 overflow-hidden rounded-lg border border-border/80 bg-muted/40 relative hidden sm:block">
-                <img
-                  src={resolveAssetUrl(unit.heroImageSrc)}
-                  alt=""
-                  aria-hidden="true"
-                  className="size-full object-cover"
-                  loading="lazy"
-                  onError={(e) => {
-                    (e.currentTarget as HTMLElement).style.display = "none";
-                  }}
-                />
-              </div>
-            )}
-            <span className="shrink-0 rounded-lg bg-secondary px-2 py-0.5 text-sm font-black text-primary uppercase">
-              {unit.level}
-            </span>
-            <h1
-              id="lesson-header-title"
-              className="min-w-0 break-words text-base sm:text-lg font-bold text-foreground"
-            >
-              {t("business.unitColonTitle", { number: unit.unitNumber, title: unit.title })}
-            </h1>
-          </div>
-        </div>
-
-        {isMastered && (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-feedback-success-surface px-3 py-1 text-sm font-black text-feedback-success-foreground">
-            <CheckCircle2 className="size-4" aria-hidden />
-            <span className="hidden sm:inline">{t("business.masteredBadge")}</span>
-          </span>
-        )}
-      </header>
 
       {/* Screen Reader Announcement */}
       <div className="sr-only" aria-live="polite">
@@ -208,7 +159,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
       <div className="wp-container-shell wp-layout-gutter py-3 sm:py-5">
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
           {/* Side-Rail Workspace on Desktop (lg+) / Navigation Header on Mobile */}
-          <aside className="w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
+          <aside className="wp-course-sidebar w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
             {/* Top Bar with Back and Mastery Badge */}
             <div className="flex items-center justify-between gap-3">
               <button
@@ -230,7 +181,7 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
             </div>
 
             {/* Unit Context Card */}
-            <div className="rounded-2xl border border-border bg-card p-4 shadow-wp-xs space-y-3">
+            <div className="wp-course-context rounded-2xl border border-border bg-card p-4 shadow-wp-xs space-y-3">
               <header>
                 <div className="flex items-center gap-2">
                   <span className="rounded-lg bg-secondary px-2 py-0.5 text-xs font-black text-primary uppercase">
@@ -245,11 +196,11 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
                   id="lesson-header-title"
                   className="mt-1 break-words text-lg sm:text-xl font-bold text-foreground"
                 >
-                  {unit.title}
+                  {t("business.unitColonTitle", { number: unit.unitNumber, title: unit.title })}
                 </h1>
               </header>
 
-              <div className="pt-2 border-t border-border">
+              <div className="wp-course-sticky pt-2 border-t border-border">
                 <BusinessStageStepper
                   activeStageIdx={activeStageIdx}
                   completedStages={completedStages}

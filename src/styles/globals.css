@@ -48,6 +48,10 @@
 }
 
 @layer utilities {
+  /* Only page/card surfaces carry grain; images and controls stay crisp. */
+  :is(body, .bg-background, .bg-card, .bg-wp-card) {
+    background-image: var(--wp-paper-grain);
+  }
   /* Interpolating an inverted foreground/background pair passes through a
      low-contrast midpoint. Switch colors together; animate geometry/shadows. */
   :is(button, a, [role="button"])[class*="transition"],
@@ -263,6 +267,14 @@
 
   .wp-lesson-header {
     container-type: inline-size;
+  }
+
+  .wp-study-header {
+    padding-block-start: max(0.5rem, env(safe-area-inset-top));
+  }
+
+  #study-content {
+    padding-block-end: env(safe-area-inset-bottom);
   }
 
   /* Query the header's readable width at its current font size, so zoomed
@@ -612,6 +624,52 @@
   .wp-course-sticky {
     isolation: isolate;
   }
+
+  .wp-course-nav {
+    container-type: inline-size;
+  }
+
+  @container (max-width: 22em) {
+    .wp-course-nav summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.125rem;
+    }
+  }
+
+  /* On phones the context and rail join the lesson's scroll container.
+     Only the compact jump control sticks, leaving the title free to scroll. */
+  @media (max-width: 63.999rem) {
+    /* Keep an open filter panel bounded without moving the sticky search rail
+       back to its original off-screen position when the disclosure opens. */
+    .wp-sticky-controls details[open] > div {
+      max-block-size: min(40dvh, 24rem);
+      overflow-y: auto;
+      scroll-padding-block: 0.5rem;
+    }
+
+    .wp-course-sidebar,
+    .wp-course-context {
+      display: contents;
+    }
+
+    .wp-course-context > header {
+      margin-block: 0.75rem;
+    }
+
+    .wp-course-sticky {
+      position: sticky;
+      inset-block-start: 0;
+      z-index: 30;
+      margin-block: 0 0.75rem;
+      padding: 0.375rem;
+      border: 1px solid var(--border);
+      border-radius: var(--wp-radius-xl);
+      background-color: var(--card);
+      background-image: var(--wp-paper-grain);
+      box-shadow: var(--wp-shadow-xs);
+    }
+  }
   .wp-lesson-session :is([data-quiz-question], h2, h3) {
     scroll-margin-block-start: calc(var(--wp-course-nav-height, 4.5rem) + 5rem);
   }
@@ -871,6 +929,12 @@
   }
   .shadow-wp-xl {
     box-shadow: var(--wp-shadow-xl);
+  }
+}
+
+@media (prefers-contrast: more), (forced-colors: active), print {
+  :root {
+    --wp-paper-grain: none;
   }
 }
 

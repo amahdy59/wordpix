@@ -6,6 +6,14 @@ import { __clearTestStateCache } from "../app/context/LearnerContext";
 
 configure({ asyncUtilTimeout: 5000 });
 
+// Happy DOM 21 creates Animation.finished rejections even when Motion uses
+// onfinish instead of consuming that promise. Use Motion's JavaScript driver
+// for component tests; real native animations remain covered in browser E2E.
+// This changes capability detection rather than swallowing unhandled errors.
+if (typeof Element !== "undefined") {
+  Reflect.deleteProperty(Element.prototype, "animate");
+}
+
 afterEach(() => {
   cleanup();
   __clearTestStateCache();

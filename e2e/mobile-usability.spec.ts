@@ -6,6 +6,85 @@ test.beforeEach(async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
 });
 
+for (const language of ["en", "ar"] as const) {
+  test(`study header and activity drawer fit a narrow phone with enlarged ${language} text`, async ({
+    page,
+  }, info) => {
+    await page.setViewportSize({ width: 320, height: 844 });
+    await page.addInitScript((lang) => {
+      localStorage.setItem("wordpix:interface-lang", lang);
+      localStorage.setItem(
+        "wordpix:learner:v2",
+        JSON.stringify({
+          version: 3,
+          accessibility: { textSize: "xlarge", reduceMotion: true },
+        })
+      );
+    }, language);
+    const errors: string[] = [];
+    page.on("pageerror", (error) => errors.push(error.message));
+    await page.goto("/#/learn/numbers-counting/study/learn");
+    await waitForStyles(page);
+    const header = page.locator(".wp-study-header");
+    await expect(header).toBeVisible();
+    const title = header.getByText("Numbers & Counting", { exact: true });
+    await expect(title).toBeVisible();
+    expect((await title.boundingBox())!.width).toBeGreaterThan(180);
+    expect((await header.boundingBox())!.height).toBeLessThan(360);
+    for (const control of await header.getByRole("button").all()) {
+      const box = (await control.boundingBox())!;
+      expect(box.width).toBeGreaterThanOrEqual(44);
+      expect(box.height).toBeGreaterThanOrEqual(44);
+      expect(box.x).toBeGreaterThanOrEqual(0);
+      expect(box.x + box.width).toBeLessThanOrEqual(320);
+    }
+    const activities = language === "en" ? "Unit activities" : "أنشطة الوحدة";
+    const trigger = header.getByRole("button", { name: activities, exact: true });
+    await trigger.click();
+    const drawer = page.getByRole("dialog", { name: activities });
+    await expect(drawer).toBeVisible();
+    await page.keyboard.press("Escape");
+    await expect(drawer).toHaveCount(0);
+    await expect(trigger).toBeFocused();
+    await trigger.click();
+    await drawer
+      .getByRole("button", {
+        name: language === "en" ? "Unit overview" : "نظرة عامة على الوحدة",
+        exact: true,
+      })
+      .click();
+    await expect(drawer).toHaveCount(0);
+    await expect(page).toHaveURL(/\/study$/);
+    await info.attach(`study-header-${language}.png`, {
+      body: await page.screenshot(),
+      contentType: "image/png",
+    });
+    expect(errors).toEqual([]);
+  });
+}
+
+test("compact specialist navigation stays available while reading and dismisses with Escape", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/#/business/unit-01/input");
+  await waitForStyles(page);
+  await expect(page.locator("h1")).toHaveCount(1);
+  const navigation = page.getByRole("navigation", { name: "Lesson sections", exact: true });
+  await expect(navigation).toBeVisible();
+  const summary = navigation.locator("summary");
+  await page.getByRole("main").evaluate((element) => {
+    element.scrollTop = 500;
+  });
+  await expect.poll(async () => (await summary.boundingBox())!.y).toBeLessThan(80);
+  await expect(summary).toBeInViewport();
+  await summary.click();
+  await expect(navigation.getByRole("button").first()).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(summary).toBeFocused();
+  await expect(navigation.locator("details")).not.toHaveAttribute("open");
+});
+
 test("phone tabs and skill choices remain visible with enlarged text", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 720 });
   await page.goto("/#/practice", { waitUntil: "domcontentloaded" });
@@ -65,7 +144,12 @@ test("library lookup announces results and exposes optional filters", async ({ p
   await expect(page.getByRole("status").filter({ hasText: "Found 0 units" })).toBeVisible();
   await page.getByRole("button", { name: "Clear search", exact: true }).click();
   await expect(search).toHaveValue("");
-  await page.locator("summary").filter({ hasText: "Filter by level or progress" }).click();
+  await page.getByRole("main").evaluate((element) => {
+    element.scrollTop = 400;
+  });
+  const filters = page.locator("summary").filter({ hasText: "Filter by level or progress" });
+  await filters.click();
+  await expect(filters).toBeInViewport();
   await expect(levels).toBeVisible();
   await levels.getByRole("radio", { name: "A1 Foundations", exact: true }).click();
   await expect(page.getByRole("status").filter({ hasText: "Found 36 units" })).toBeVisible();

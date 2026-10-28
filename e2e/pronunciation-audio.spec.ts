@@ -130,18 +130,13 @@ test("pausing automatic continuation preserves question state before manual prog
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
   await expect(page.getByText(progressText(1, 1), { exact: true })).toBeVisible();
   await page.getByLabel("Lesson options", { exact: true }).click();
-  await expect(page.getByRole("button", { name: "Automatic next question: on" })).toHaveAttribute(
-    "aria-pressed",
-    "true"
-  );
+  const autoOption = page.getByRole("button", { name: "Automatic next question: on" });
+  await expect(autoOption).toHaveAttribute("aria-pressed", "true");
+  await autoOption.click();
   await page.keyboard.press("Escape");
 
   await page.getByRole("button", { name: new RegExp(`^Option \\d+: ${firstTarget(1)}$`) }).click();
   await expect(page.getByRole("status").filter({ hasText: "Correct" })).toBeAttached();
-  const pause = page.getByRole("button", { name: "Pause automatic continuation" });
-  if (await pause.isVisible()) {
-    await pause.click();
-  }
   await expect(page.getByText(progressText(1, 1), { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Next question", exact: true }).click();
 

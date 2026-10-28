@@ -191,7 +191,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
       <div className="wp-container-shell wp-layout-gutter py-3 sm:py-5">
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
           {/* Side-Rail Workspace on Desktop (lg+) / Compact Header on Mobile */}
-          <aside className="w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
+          <aside className="wp-course-sidebar w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
             {/* Top Action Bar */}
             <div className="flex items-center justify-between gap-2">
               <button
@@ -233,7 +233,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             </div>
 
             {/* Lesson Context Card */}
-            <div className="rounded-2xl border border-border bg-card p-4 shadow-wp-xs space-y-3">
+            <div className="wp-course-context rounded-2xl border border-border bg-card p-4 shadow-wp-xs space-y-3">
               <header>
                 <div className="flex items-center justify-between gap-2">
                   <p className="text-xs sm:text-sm font-semibold text-primary">
@@ -265,7 +265,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
                 </h1>
               </header>
 
-              <div className="pt-2 border-t border-border">
+              <div className="wp-course-sticky pt-2 border-t border-border">
                 {/* Accessible responsive lesson stepper */}
                 <HadithStageStepper
                   currentStageIndex={stageIndex}

@@ -1,7 +1,8 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import { I18nProvider } from "../context/I18nContext";
-import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
+import { SentenceQuestionSupport } from "../shared/SentenceQuestionSupport";
+import { resolveSentenceMedia } from "../content/sentenceMedia";
 import { AUTHORED_LESSON_CONTENT } from "../exercises/content/authoredLessonContent";
 import { loadLessonUsageForEditorial } from "../data/usageRegistry";
 import type { VocabularyItem } from "../data/courseCatalog";

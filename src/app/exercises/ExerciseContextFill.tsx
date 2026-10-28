@@ -6,11 +6,8 @@ import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { Button, ExerciseFamilyTemplate, FeedbackPanel } from "../shared";
 import { getAuthoredSentence } from "./content/authoredLessonContent";
-import {
-  SentenceQuestionSupport,
-  SentenceMeaningSupport,
-  resolveSentenceMedia,
-} from "../shared/SentenceQuestionSupport";
+import { SentenceQuestionSupport, SentenceMeaningSupport } from "../shared/SentenceQuestionSupport";
+import { resolveSentenceMedia } from "../content/sentenceMedia";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { getRichSentence } from "./exerciseContent";
 import { sentenceCloze } from "./sentenceCloze";

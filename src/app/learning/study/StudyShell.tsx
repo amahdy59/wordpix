@@ -123,10 +123,11 @@ export function StudyShell({
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
   const contentsBtnRef = React.useRef<HTMLButtonElement>(null);
   const drawerRef = React.useRef<HTMLElement>(null);
+  const restoreDrawerFocus = React.useRef(false);
 
   const closeDrawer = () => {
+    restoreDrawerFocus.current = true;
     setIsMobileDrawerOpen(false);
-    contentsBtnRef.current?.focus();
   };
 
   useEffect(() => {
@@ -145,7 +146,13 @@ export function StudyShell({
 
   // Focus trap and Escape key listener for mobile drawer modal
   useEffect(() => {
-    if (!isMobileDrawerOpen) return;
+    if (!isMobileDrawerOpen) {
+      if (restoreDrawerFocus.current) {
+        contentsBtnRef.current?.focus();
+        restoreDrawerFocus.current = false;
+      }
+      return;
+    }
     drawerRef.current?.querySelector<HTMLElement>("button")?.focus();
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -243,6 +250,7 @@ export function StudyShell({
   };
 
   const handleBackToHome = () => {
+    setIsMobileDrawerOpen(false);
     dispatch({ type: "GO", to: "learning-materials", unitId: unit.id });
   };
 
@@ -294,7 +302,10 @@ export function StudyShell({
   return (
     <div className="flex flex-col h-full bg-background text-foreground overflow-hidden">
       {/* 1. Global Sticky Header across Home & Activities */}
-      <header className="shrink-0 flex flex-wrap items-center justify-between gap-3 border-b border-border bg-card px-4 py-3">
+      <header
+        className="wp-study-header shrink-0 grid grid-cols-[minmax(0,1fr)] items-center gap-2 border-b border-border bg-card px-4 py-2 lg:grid-cols-[minmax(0,1fr)_auto]"
+        {...(isMobileDrawerOpen ? { inert: "" } : {})}
+      >
         <div className="flex min-w-0 flex-1 items-center gap-2">
           <button
             type="button"
@@ -321,13 +332,13 @@ export function StudyShell({
             )}
           </div>
         </div>
-        <div className="flex max-w-full flex-wrap items-center gap-2">
+        <div className="grid min-w-0 grid-cols-2 gap-2 lg:flex lg:flex-wrap lg:items-center">
           <button
             type="button"
             onClick={toggleImmersionMode}
             aria-pressed={immersionMode}
             aria-label={`${t("ux.languageSupport")}: ${t(immersionMode ? "listenRepeat.immersion" : "listenRepeat.bilingual")}`}
-            className="min-h-11 min-w-11 rounded-xl border border-border px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="min-h-11 min-w-11 rounded-xl border border-border px-2 py-2 text-sm font-semibold text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Languages className="inline size-4 me-2" aria-hidden />
             {t(immersionMode ? "listenRepeat.immersion" : "listenRepeat.bilingual")}
@@ -338,7 +349,8 @@ export function StudyShell({
             onClick={() => setIsMobileDrawerOpen(true)}
             aria-haspopup="dialog"
             aria-expanded={isMobileDrawerOpen}
-            className="lg:hidden min-h-11 min-w-11 rounded-xl border border-border px-3 py-2 text-sm font-semibold text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            aria-controls="study-activities"
+            className="lg:hidden min-h-11 min-w-11 rounded-xl border border-primary/30 bg-secondary px-2 py-2 text-sm font-semibold text-primary hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Menu className="inline size-4 me-2" aria-hidden />
             {t("study.unitActivities")}
@@ -359,12 +371,13 @@ export function StudyShell({
 
         {/* Sticky Desktop Left Sidebar & Mobile Drawer Modal */}
         <aside
+          id="study-activities"
           ref={drawerRef}
           role={isMobileDrawerOpen ? "dialog" : undefined}
           aria-modal={isMobileDrawerOpen ? "true" : undefined}
           aria-label={t("study.unitActivities")}
           className={`
-            fixed inset-0 z-40 bg-card/95 backdrop-blur
+            fixed inset-0 z-40 bg-card pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]
             lg:static lg:flex lg:w-80 lg:shrink-0 lg:flex-col lg:h-full lg:overflow-y-auto lg:border-e lg:border-border lg:bg-card/70 lg:backdrop-blur
             ${isMobileDrawerOpen ? "flex flex-col overflow-y-auto" : "hidden"}
           `}
@@ -411,7 +424,7 @@ export function StudyShell({
             </button>
           </div>
 
-          <nav className="space-y-3 p-4 flex-1">
+          <nav aria-label={t("study.unitActivities")} className="space-y-3 p-4 flex-1">
             {STUDY_AREAS.map((area) => {
               const areaNodes = nodes.filter((n) => n.area === area);
               if (areaNodes.length === 0) return null;
@@ -523,7 +536,7 @@ export function StudyShell({
                             {matchingScenario && (
                               <span
                                 className={`flex items-center gap-1.5 text-xs font-semibold mt-0.5 truncate ${
-                                  isActive ? "text-primary-foreground/90" : "text-primary"
+                                  isActive ? "text-primary-foreground" : "text-primary"
                                 }`}
                                 title={`${t("study.videoContext") || "Video Context"}: ${matchingScenario.titleEn}`}
                               >
@@ -537,7 +550,7 @@ export function StudyShell({
                             {node.estimatedMinutes && (
                               <span
                                 className={`block text-sm ${
-                                  isActive ? "text-primary-foreground/80" : "text-muted-foreground"
+                                  isActive ? "text-primary-foreground" : "text-muted-foreground"
                                 }`}
                               >
                                 {t("study.minutesShort", { minutes: node.estimatedMinutes })}

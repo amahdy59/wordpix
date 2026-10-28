@@ -10,7 +10,6 @@ import { useAccessibility } from "./useAccessibilityPreferences";
 import { Button } from "./Button";
 import { useLessonSession } from "./LessonSessionContext";
 import { MediaFrame } from "./MediaFrame";
-export { resolveSentenceMedia } from "../content/sentenceMedia";
 
 export function ScenePlaceholder({ clue, className = "" }: { clue?: string; className?: string }) {
   const { t } = useI18n();

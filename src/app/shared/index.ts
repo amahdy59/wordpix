@@ -36,11 +36,7 @@ export type { QuizQuestion, QuizResult } from "./CurriculumQuizEngine";
 export { CurriculumTopicCard } from "./CurriculumTopicCard";
 export type { CurriculumTopicCardProps } from "./CurriculumTopicCard";
 
-export {
-  SentenceQuestionSupport,
-  SentenceMeaningSupport,
-  resolveSentenceMedia,
-} from "./SentenceQuestionSupport";
+export { SentenceQuestionSupport, SentenceMeaningSupport } from "./SentenceQuestionSupport";
 export type { SentenceMeaningSupportProps } from "./SentenceQuestionSupport";
 export { HelpDisclosure } from "./HelpDisclosure";
 export {

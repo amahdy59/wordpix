@@ -476,6 +476,7 @@ export function UnitScenarioPlayer({
       {/* Hidden native audio element */}
       <audio
         ref={audioRef}
+        crossOrigin="anonymous"
         src={masterAudioUrl}
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
@@ -483,7 +484,13 @@ export function UnitScenarioPlayer({
         onError={handleAudioError}
         preload="metadata"
       >
-        <track kind="captions" src={vttUrl} srcLang="en" label="English Captions" default />
+        <track
+          kind="captions"
+          src={vttUrl}
+          srcLang="en"
+          label={t("study.englishCaptions")}
+          default
+        />
       </audio>
 
       {/* Header & Scenario Switcher */}
@@ -583,11 +590,9 @@ export function UnitScenarioPlayer({
             <button
               type="button"
               onClick={toggleMasterPlay}
-              aria-label={
-                isPlaying
-                  ? `${t("common.pause") || "Pause scenario"}: ${activeScenario.titleEn}`
-                  : `${t("common.play") || "Play scenario"}: ${activeScenario.titleEn}`
-              }
+              aria-label={t(isPlaying ? "study.pauseScenario" : "study.playScenario", {
+                title: activeScenario.titleEn,
+              })}
               className="inline-flex size-11 items-center justify-center rounded-xl bg-primary text-primary-foreground font-bold shadow-xs hover:brightness-105 active:scale-95 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               {isPlaying ? (

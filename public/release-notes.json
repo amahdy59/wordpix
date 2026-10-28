@@ -1,16 +1,69 @@
 {
-  "version": "0.1.95",
+  "version": "0.1.96",
   "notes": [
-    "Uploaded 8,326 WebP-optimized visual illustrations from Figma Slides deck '10-015--Images' to Cloudflare R2.",
-    "Established slide sequence metadata linkage, expanding active sentence question illustrations from 18,300 to 23,570 bindings.",
-    "Saved local disk copies and full audit manifests ensuring complete data resilience and WCAG 2.2 AAA accessibility."
+    "Light mode now uses warm paper and ivory surfaces with a subtle grain for a calmer reading experience.",
+    "Unit titles and controls now have separate space on phones, preventing narrow, letter-by-letter headings. The activities menu supports keyboard focus return.",
+    "A compact lesson navigation control stays available while scrolling on phones. Open it to jump between available sections, or press Escape to close it.",
+    "Business lessons show one clear unit heading instead of repeating the same header.",
+    "Scenario playback controls have translated labels, and caption requests use the correct cross-origin setting.",
+    "General interface controls load independently of the large sentence-image lookup registry."
   ],
   "notesAr": [
-    "رفع 8,326 رسماً توضيحياً محسناً بصيغة WebP من شرائح فيجما إلى Cloudflare R2.",
-    "ربط البيانات الوصفية لتسلسل الشرائح، مما وسع رسوم أسئلة الجمل النشطة من 18,300 إلى 23,570 ارتباطاً بصرياً.",
-    "حفظ نسخ احتياطية محلية على القرص مع ملفات الحصر الشاملة لضمان أمان البيانات ومعايير إمكانية الوصول WCAG 2.2 AAA."
+    "يستخدم الوضع الفاتح الآن خلفيات ورقية دافئة وعاجية بملمس خفيف لتجربة قراءة أكثر هدوءاً.",
+    "أصبحت عناوين الوحدات وأزرارها في مساحات منفصلة على الهواتف لمنع التفاف العنوان حرفاً بحرف، مع إعادة تركيز لوحة المفاتيح بعد إغلاق قائمة الأنشطة.",
+    "يبقى عنصر تنقل مدمج متاحاً أثناء التمرير في الدروس على الهواتف. افتحه للانتقال بين الأقسام المتاحة أو اضغط Escape لإغلاقه.",
+    "تعرض دروس الأعمال عنواناً واحداً واضحاً للوحدة بدلاً من تكرار الترويسة.",
+    "أصبحت أزرار تشغيل المشاهد تحمل تسميات مترجمة، وتستخدم طلبات الترجمة النصية إعداد الوصول الصحيح عبر المصادر.",
+    "أصبحت عناصر الواجهة العامة تُحمّل بصورة مستقلة عن سجل البحث الكبير لصور الجمل."
   ],
   "releases": [
+    {
+      "id": "0.1.96",
+      "version": "0.1.96",
+      "date": "2026-10-28",
+      "title": {
+        "en": "Calmer light mode and clearer mobile lesson navigation",
+        "ar": "وضع فاتح أكثر هدوءاً وتنقل أوضح في الدروس على الهواتف"
+      },
+      "changes": [
+        {
+          "id": "calm-paper-theme",
+          "category": "improved",
+          "en": "Light mode now uses warm paper and ivory surfaces with a subtle grain for a calmer reading experience.",
+          "ar": "يستخدم الوضع الفاتح الآن خلفيات ورقية دافئة وعاجية بملمس خفيف لتجربة قراءة أكثر هدوءاً."
+        },
+        {
+          "id": "mobile-study-header",
+          "category": "fixed",
+          "en": "Unit titles and controls now have separate space on phones, preventing narrow, letter-by-letter headings. The activities menu supports keyboard focus return.",
+          "ar": "أصبحت عناوين الوحدات وأزرارها في مساحات منفصلة على الهواتف لمنع التفاف العنوان حرفاً بحرف، مع إعادة تركيز لوحة المفاتيح بعد إغلاق قائمة الأنشطة."
+        },
+        {
+          "id": "compact-lesson-jump",
+          "category": "improved",
+          "en": "A compact lesson navigation control stays available while scrolling on phones. Open it to jump between available sections, or press Escape to close it.",
+          "ar": "يبقى عنصر تنقل مدمج متاحاً أثناء التمرير في الدروس على الهواتف. افتحه للانتقال بين الأقسام المتاحة أو اضغط Escape لإغلاقه."
+        },
+        {
+          "id": "business-header-clarity",
+          "category": "fixed",
+          "en": "Business lessons show one clear unit heading instead of repeating the same header.",
+          "ar": "تعرض دروس الأعمال عنواناً واحداً واضحاً للوحدة بدلاً من تكرار الترويسة."
+        },
+        {
+          "id": "scenario-caption-controls",
+          "category": "fixed",
+          "en": "Scenario playback controls have translated labels, and caption requests use the correct cross-origin setting.",
+          "ar": "أصبحت أزرار تشغيل المشاهد تحمل تسميات مترجمة، وتستخدم طلبات الترجمة النصية إعداد الوصول الصحيح عبر المصادر."
+        },
+        {
+          "id": "lean-shared-interface",
+          "category": "improved",
+          "en": "General interface controls load independently of the large sentence-image lookup registry.",
+          "ar": "أصبحت عناصر الواجهة العامة تُحمّل بصورة مستقلة عن سجل البحث الكبير لصور الجمل."
+        }
+      ]
+    },
     {
       "id": "0.1.95",
       "version": "0.1.95",
