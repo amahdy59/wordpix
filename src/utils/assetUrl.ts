@@ -37,7 +37,7 @@ export function resolveAssetUrl(path: string): string {
   if (
     import.meta.env.MODE !== "test" &&
     PUBLIC_ASSET_BASE_URL &&
-    /^(?:(?:usage-illustrations|question-images)\/v1|question-images\/v2|question-images\/v3\/shared|question-images\/v3(?=\/sentence-repair-20261026-))\/[a-z0-9-]+\/[a-f0-9]{64}\.webp$/.test(
+    /^(?:(?:usage-illustrations|question-images)\/v1|question-images\/v2|question-images\/v3\/shared|question-images\/v3(?=\/sentence-repair-20261026-))\/[a-z0-9-]+\/[a-f0-9]{40,64}\.webp$/.test(
       relative
     )
   ) {

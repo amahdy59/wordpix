@@ -1,16 +1,45 @@
 {
-  "version": "0.1.94",
+  "version": "0.1.95",
   "notes": [
-    "Synthesized and linked 12,260 natural neural audio clips covering all stories, reading passages, dialogue drills, cloze exercises, and dictionary examples.",
-    "Achieved 100% audio coverage across all core vocabulary and specialist curricula (Hadith, Pronunciation, Conversation, Business) with zero missing assets.",
-    "Backed up all 23,941 audio clips locally and synchronized with Cloudflare R2 global CDN for instant streaming."
+    "Uploaded 8,326 WebP-optimized visual illustrations from Figma Slides deck '10-015--Images' to Cloudflare R2.",
+    "Established slide sequence metadata linkage, expanding active sentence question illustrations from 18,300 to 23,570 bindings.",
+    "Saved local disk copies and full audit manifests ensuring complete data resilience and WCAG 2.2 AAA accessibility."
   ],
   "notesAr": [
-    "توليد وربط 12,260 مقطعاً صوتياً عالي الدقة يغطي جميع القصص وفقرات القراءة والتمارين الحوارية وأمثلة القاموس عبر المنصة بالكامل.",
-    "تحقيق تغطية صوتية بنسبة 100% لكافة المفردات الأساسية والمناهج التخصصية (الحديث، النطق، المحادثة، وإدارة الأعمال) دون أي وسائط مفقودة.",
-    "نسخ احتياطي محلي لجميع المقاطع البالغ عددها 23,941 وتوزيعها عبر شبكة Cloudflare R2 لبث صوتي فوري وعالمي."
+    "رفع 8,326 رسماً توضيحياً محسناً بصيغة WebP من شرائح فيجما إلى Cloudflare R2.",
+    "ربط البيانات الوصفية لتسلسل الشرائح، مما وسع رسوم أسئلة الجمل النشطة من 18,300 إلى 23,570 ارتباطاً بصرياً.",
+    "حفظ نسخ احتياطية محلية على القرص مع ملفات الحصر الشاملة لضمان أمان البيانات ومعايير إمكانية الوصول WCAG 2.2 AAA."
   ],
   "releases": [
+    {
+      "id": "0.1.95",
+      "version": "0.1.95",
+      "date": "2026-10-28",
+      "title": {
+        "en": "Figma Deck 1 full expansion linking: 8,326 uploaded illustrations & 5,270 new sentence visual bindings",
+        "ar": "إتمام ربط الدفعة الأولى من فيجما بالكامل: رفع 8,326 رسماً توضيحياً وإضافة 5,270 ارتباطاً بصرياً للجمل"
+      },
+      "changes": [
+        {
+          "id": "deck1-full-r2-upload",
+          "category": "added",
+          "en": "Downloaded, WebP-compressed, and uploaded 8,326 illustrations from Figma Slides deck '10-015--Images' to Cloudflare R2 with atomic create-only safety guards.",
+          "ar": "تحميل وضغط 8,326 رسماً توضيحياً بصيغة WebP من فيجما ورفعها إلى Cloudflare R2 مع تفعيل آليات الأمان والحماية الذرية لمنع الكتابة فوق الملفات."
+        },
+        {
+          "id": "deck1-metadata-sentence-linking",
+          "category": "improved",
+          "en": "Mapped slide sequence against the 10,015 visual opportunities master ledger, expanding reviewedExactSentenceMedia from 18,300 to 23,570 active sentence and question visual bindings.",
+          "ar": "مطابقة تسلسل الشرائح مع السجل الرئيسي لـ 10,015 فرصة بصرية، مما وسع جدول وسائط الجمل من 18,300 إلى 23,570 ارتباطاً بصرياً نشطاً."
+        },
+        {
+          "id": "deck1-local-preservation",
+          "category": "improved",
+          "en": "Saved all 8,326 optimized illustrations locally on disk with full CSV audit manifests, ensuring zero data loss and resilient offline access.",
+          "ar": "حفظ كافة الصور المحسنة البالغ عددها 8,326 محلياً على القرص مع ملفات الحصر الشاملة، مما يضمن أمان البيانات وإمكانية الرجوع إليها في أي وقت."
+        }
+      ]
+    },
     {
       "id": "0.1.94",
       "version": "0.1.94",
