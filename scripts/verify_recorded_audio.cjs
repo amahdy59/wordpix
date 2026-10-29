@@ -49,6 +49,18 @@ async function verifyRecordedAudio({ requireComplete = false } = {}) {
     fs.readFileSync("src/app/generated/additionalAudioRecordings.json", "utf8")
   );
   const brokenAliases = Object.values(aliases).filter((key) => !keys.has(key));
+  // These corrected takes bypass general text lookup in the browser.
+  const { audioKey } = require("./lib/assetKey.cjs");
+  const pronunciationProfile = {
+    voiceId: "XfNU2rGpBa01ckF309OY",
+    modelId: "eleven_turbo_v2_5",
+    stability: 0.7,
+    similarityBoost: 0.75,
+  };
+  const pronunciationKeys = require("../src/app/shared/pronunciationOverrides.json").map((item) =>
+    audioKey(item.synthesisText, { ...pronunciationProfile, ...item.profile })
+  );
+  const brokenPronunciationReferences = pronunciationKeys.filter((key) => !keys.has(key));
   const baselinePath = "output/audio-backup-audit/r2-audio-keys.json";
   const removedOriginals = fs.existsSync(baselinePath)
     ? JSON.parse(fs.readFileSync(baselinePath, "utf8")).keys.filter((key) => !keys.has(key))
@@ -103,6 +115,8 @@ async function verifyRecordedAudio({ requireComplete = false } = {}) {
     unlinkedNewRecordings: unlinkedEdge.length,
     exactAliases: Object.keys(aliases).length,
     brokenAliases: brokenAliases.length,
+    specialPronunciationReferences: pronunciationKeys.length,
+    brokenPronunciationReferences: brokenPronunciationReferences.length,
     removedOriginals: removedOriginals.length,
     verifiedNewUploads: unique.length,
     samples,
@@ -112,6 +126,7 @@ async function verifyRecordedAudio({ requireComplete = false } = {}) {
   console.log(JSON.stringify(report, null, 2));
   if (
     brokenAliases.length ||
+    brokenPronunciationReferences.length ||
     removedOriginals.length ||
     (requireComplete && (missing.length || unlinkedEdge.length))
   )

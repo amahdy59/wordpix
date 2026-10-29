@@ -17,6 +17,9 @@ Run from the repository root:
 ```powershell
 python -m pip install -r scripts/requirements-recorded-audio.txt
 npx tsx scripts/plan_recorded_audio.ts
+if (-not (Test-Path output/recorded-audio/upload-receipts.jsonl)) {
+  Copy-Item assets/edge-recording-receipts.jsonl output/recorded-audio/upload-receipts.jsonl
+}
 node scripts/generate_recorded_audio.cjs
 node scripts/run_recorded_audio.cjs
 node scripts/link_recorded_audio.cjs
@@ -29,8 +32,10 @@ readings, dialogue, examples and actual question fragments against the bucket.
 It also accounts for transient lesson-loading contexts. Approval schemas and
 source transforms mirror the learner-facing usage loader.
 
-All generated media, batch inputs, verification evidence and upload receipts
-stay under ignored `output/recorded-audio/`. Never commit MP3s. The generation
+Generated media, batch inputs and verification evidence stay under ignored
+`output/recorded-audio/`. Verified receipt metadata may be saved in
+`assets/edge-recording-receipts.jsonl` to resume cloud jobs; it contains no
+credentials or local file paths. Never commit MP3s. The generation
 runner automatically retries transient network failures and stops on integrity
 failures. The process can also be resumed with the same command: verified receipts and existing
 immutable keys prevent repeat generation or replacement.
@@ -47,6 +52,31 @@ timing evidence, every source letter/number must be accounted for, and adjacent
 takes need an isolating pause. Ambiguous alignment falls back to individual
 synthesis. Existing local takes are never re-encoded. The alignment regression
 checks run with `python scripts/tests/recorded-audio-alignment.test.py`.
+
+## GitHub Actions generation
+
+The manual `Generate audio` workflow has a separate free Edge path. Set
+`recorded_edge` to `true`; this skips the paid ElevenLabs job. It uses dedicated
+`WORDPIX_AUDIO_R2_ACCOUNT_ID`, `WORDPIX_AUDIO_R2_ACCESS_KEY_ID`,
+`WORDPIX_AUDIO_R2_SECRET_ACCESS_KEY` and `WORDPIX_AUDIO_R2_BUCKET` secrets.
+Before writing, the job checks the bucket name and compares an existing object
+with the app's public audio endpoint.
+
+The reusable `recorded-audio.yml` workflow first records twelve missing takes.
+Only a successful pilot unlocks eight disjoint key partitions, with at most
+four jobs running together and two Edge requests per job. Each job publishes
+receipt metadata even on failure. Existing keys and verified seed receipts
+are reused. Artifacts contain metadata and lookup indexes, never MP3s.
+
+The reconciliation job combines receipts, builds indexes and requires complete
+coverage. Download its `complete-recorded-audio` artifact into a staging folder,
+check the source fingerprint, then apply its plan, receipts and generated
+indexes. Repeat the read-only verification against the original R2 snapshot
+before release. A failed job or incomplete artifact does not permit publishing.
+
+Pending coverage may be pushed to an explicitly targeted `codex/` draft branch.
+The pre-push hook still runs the other release checks. Main, tags, pull-request
+validation and production deployment require complete, current coverage.
 
 ## Linking and playback
 

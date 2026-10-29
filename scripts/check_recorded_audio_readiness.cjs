@@ -6,6 +6,7 @@ if (
   report.missingRecordings !== 0 ||
   report.unlinkedNewRecordings !== 0 ||
   report.brokenAliases !== 0 ||
+  report.brokenPronunciationReferences !== 0 ||
   report.removedOriginals !== 0 ||
   report.inputsDigest !== recordingInputsDigest()
 ) {
