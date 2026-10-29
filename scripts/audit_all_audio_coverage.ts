@@ -20,7 +20,7 @@ import { getPronunciationAudioClip } from "../src/app/learning/foundations/pronu
 import { hasReportedPronunciationAudioIssue } from "../src/app/learning/foundations/pronunciationAudioQuality";
 import { pronunciationTrialCount } from "../src/app/learning/foundations/pronunciationTargets";
 import { HADITH_LESSONS } from "../src/app/learning/hadith/hadithCurriculum";
-import { parseHadithVocabulary } from "../src/app/learning/hadith/HadithVocabularyStudy";
+import { parseHadithVocabulary } from "../src/app/learning/hadith/hadithVocabularyContent";
 import { CONVERSATION_UNITS } from "../src/app/learning/conversation/conversationCatalog";
 import { BUSINESS_UNITS } from "../src/app/learning/business/businessCatalog";
 import { getCurriculumAudioKey } from "../src/app/learning/shared/curriculumAudioManifest";
