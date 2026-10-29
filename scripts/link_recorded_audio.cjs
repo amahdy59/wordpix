@@ -91,13 +91,13 @@ async function main() {
   for (const [prefix, entries] of aliasShards)
     fs.writeFileSync(
       `src/app/generated/additionalRecordings/${prefix}.json`,
-      JSON.stringify(entries) + "\n"
+      JSON.stringify(entries, null, 2) + "\n"
     );
   fs.mkdirSync("src/app/generated/edgeRecordings", { recursive: true });
   for (const [prefix, entries] of shards)
     fs.writeFileSync(
       `src/app/generated/edgeRecordings/${prefix}.json`,
-      JSON.stringify([...entries].sort()) + "\n"
+      JSON.stringify([...entries].sort(), null, 2) + "\n"
     );
   fs.writeFileSync(
     path.join(output, "link-proof.json"),

@@ -2,11 +2,13 @@
   "version": "0.1.99",
   "notes": [
     "Optionally save a unit’s vocabulary and selected lesson images for offline use, with size estimates, retry, cancellation and removal that keeps your progress.",
-    "Flag an unclear, mismatched or cropped image. Reports stay on your device and can be exported or cleared from Settings; they are not sent automatically."
+    "Flag an unclear, mismatched or cropped image. Reports stay on your device and can be exported or cleared from Settings; they are not sent automatically.",
+    "The corrected firewood and sunscreen sentences now have recorded audio."
   ],
   "notesAr": [
     "يمكنك اختيارياً حفظ صور مفردات الوحدة وسياقات دروسها المختارة للاستخدام دون إنترنت، مع تقدير الحجم وإعادة المحاولة والإلغاء والإزالة دون المساس بتقدمك.",
-    "أبلغ عن صورة غير واضحة أو غير مطابقة أو مقصوصة. تبقى البلاغات على جهازك ويمكن تصديرها أو مسحها من الإعدادات؛ لا تُرسل تلقائياً."
+    "أبلغ عن صورة غير واضحة أو غير مطابقة أو مقصوصة. تبقى البلاغات على جهازك ويمكن تصديرها أو مسحها من الإعدادات؛ لا تُرسل تلقائياً.",
+    "أصبحت لجملتي الحطب وواقي الشمس المصححتين تسجيلات صوتية."
   ],
   "releases": [
     {
@@ -41,6 +43,12 @@
           "category": "improved",
           "en": "Word browsing shows the whole main image and preloads only the next picture, respecting data-saving and slow connections.",
           "ar": "يعرض تصفح الكلمات الصورة الرئيسية كاملة ويحمّل الصورة التالية فقط مسبقاً، مع مراعاة وضع توفير البيانات والاتصالات البطيئة."
+        },
+        {
+          "id": "corrected-sentence-recordings",
+          "category": "fixed",
+          "en": "The corrected firewood and sunscreen sentences now have recorded audio.",
+          "ar": "أصبحت لجملتي الحطب وواقي الشمس المصححتين تسجيلات صوتية."
         }
       ]
     },

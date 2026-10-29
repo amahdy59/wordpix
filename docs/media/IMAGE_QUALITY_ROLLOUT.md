@@ -64,6 +64,12 @@ approval of any candidate image. Abstract faith, intention, obligation and
 figurative meanings must not be inferred from a person's appearance or a
 literal scene. The six helpful cases remain in the artwork review queue.
 
+The 370 business and 400 conversation quiz prompts also have individual
+revision-pinned text-only purpose decisions. Their actual quiz stages pass
+written stems, answer options and explanations without image media. This is a
+task-modality policy review, not approval of specialist vocabulary artwork;
+see `SPECIALIST_QUIZ_VISUAL_PURPOSE.md` for the method and scope.
+
 ## Artwork review still open
 
 The source audit remains intentionally explicit about incomplete work:
@@ -75,14 +81,16 @@ The source audit remains intentionally explicit about incomplete work:
 - The 2,014 word-reference scene uses and 865 first-word story heroes have not
   all received scene-level semantic review. Do not claim full action, quantity,
   spatial or narrative coverage from a vocabulary picture.
-- Business/conversation quiz prompts still need task-level purpose decisions;
-  do not generate hundreds of images merely because their prompts are text-only.
+- Specialist vocabulary, course cards and any future image-choice assessments
+  still need separate visual-purpose and semantic reviews. The current quiz
+  classification must be rechecked when the prompts or their renderer change.
 - Responsive R2 variants need actual source-byte review, local encoding,
   immutable candidate names, verification and an explicit permitted deployment
   path. No invented `srcset` paths are shipped.
-- The project's current AGENTS.md media constraint keeps R2 references read-only.
-  This software change performs no upload, overwrite, deletion or source mapping
-  rewrite. Any future approved media batch must preserve existing objects and
+- The project's current AGENTS.md media constraint keeps image R2 references
+  read-only. The only media write in this release is the two new audio objects
+  expressly authorized by the user. No image object or source image mapping was
+  changed. Any future approved image batch must preserve existing objects and
   separately record exact content, served-byte and authorization evidence.
 
 ## Validation record
@@ -102,11 +110,15 @@ matrix for the final commit. Local verification receipts are saved under
 combined exercise bundle. Budget ceilings were not raised. Source mappings
 remain unchanged; the compact table is a checked derivative.
 
-The two corrected identification sentences require new recordings. The local
-validated clips total 14,728 bytes and are pinned in
-`PENDING_AUDIO_PUBLICATION.json`. They have not been uploaded or linked because
-of the current R2 guard. Production release readiness remains blocked; a draft
-branch must not be described as deployed. Existing recorded audio is unchanged.
+The two corrected identification sentences have new recordings totalling
+14,728 bytes. The user expressly allowed these two create-only uploads. Their
+exact keys and SHA-256 digests are recorded in `PENDING_AUDIO_PUBLICATION.json`
+(which retains its preparation filename for traceability). The public served
+bytes and CORS were verified. Each recording adds one entry to an existing
+index shard, without removing earlier entries. Full read-only reconciliation
+found 96,359 of 96,359 playback candidates available, zero unlinked new clips,
+zero broken aliases and zero removed original objects. Production deployment
+is a separate step from this media verification.
 
 The final branch verification receipt is `output/image-quality/prepush-final.log`.
 Artwork review left open above must not be represented as completed by tests.

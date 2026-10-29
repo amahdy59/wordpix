@@ -1,7 +1,16 @@
 {
-  "status": "prepared-local-only",
+  "status": "uploaded-and-linked",
   "preparedAt": "2026-10-29T14:41:31.657Z",
-  "authorizationRequired": "Current AGENTS.md forbids R2 uploads and content URL mapping changes. No write or relinking has occurred.",
+  "authorization": "User explicitly allowed these two new recordings. Create-only upload; no existing R2 object was modified or deleted.",
+  "uploadedAndPubliclyVerifiedAt": "2026-10-29T15:42:55.979Z",
+  "recordingIndexReconciledAt": "2026-10-29T16:59:33.600Z",
+  "verification": {
+    "playbackCandidates": 96359,
+    "missingRecordings": 0,
+    "unlinkedNewRecordings": 0,
+    "brokenAliases": 0,
+    "removedOriginals": 0
+  },
   "existingObjectsModified": false,
   "recordings": [
     {
