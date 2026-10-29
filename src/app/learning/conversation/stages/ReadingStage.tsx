@@ -33,7 +33,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
     lang: "en-US",
     rate: playbackRate,
     preferLocal: true,
-    preserveText: true,
+
     onEnded: () => setActiveTrack(null),
   });
   const vocabTerms = useMemo(() => unit.languageBank.map((item) => item.term), [unit.languageBank]);

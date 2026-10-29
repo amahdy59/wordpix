@@ -5,6 +5,7 @@ import { resolveGroup, getNextGroupChronological } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { playCorrectSound, playIncorrectSound } from "../shared/useSound";
 import { useAudio } from "../shared/useAudio";
+import { useSpokenFeedback } from "../shared/useSpokenFeedback";
 import {
   BookOpen,
   ArrowRight,
@@ -143,6 +144,7 @@ export const ExerciseStory = memo(function ExerciseStory({
   const [activeQuizIndex, setActiveQuizIndex] = useState(0);
 
   const { speak, stop, isPlaying } = useAudio();
+  const { speakFeedback } = useSpokenFeedback();
   const nextBtnRef = useRef<HTMLButtonElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -1018,14 +1020,15 @@ export const ExerciseStory = memo(function ExerciseStory({
                                       }));
                                       if (isCorrectOption) {
                                         playCorrectSound();
-                                        speak(opt + ". Correct!");
                                       } else {
                                         playIncorrectSound();
-                                        speak(
-                                          "Not quite. The answer is " +
-                                            currentChunk.check.expectedAnswer
-                                        );
                                       }
+                                      stop();
+                                      speakFeedback({
+                                        correct: isCorrectOption,
+                                        targetLabel: currentChunk.check.expectedAnswer,
+                                        chosenLabel: opt,
+                                      });
                                     }}
                                     disabled={answered}
                                     className={`flex min-h-[48px] items-center justify-between px-4 py-2.5 rounded-xl border text-sm font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary ${

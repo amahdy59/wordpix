@@ -43,6 +43,9 @@ jobs:
       - name: Lint
         run: pnpm run lint
 
+      - name: Require complete recorded audio before publishing
+        run: node scripts/check_recorded_audio_readiness.cjs
+
       - name: Coverage report (report-only, no thresholds yet)
         run: pnpm run test:coverage
 

@@ -1,11 +1,23 @@
 import { describe, it, expect, vi } from "vitest";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import { act, render, screen, fireEvent, waitFor } from "@testing-library/react";
 import {
   getScenariosForUnit,
   getScenarioForLesson,
   type ScenarioLesson,
 } from "../data/scenarios/scenarioService";
 import { UnitScenarioPlayer } from "../learning/study/UnitScenarioPlayer";
+
+const recorded = vi.hoisted(() => ({
+  speak: vi.fn(),
+  stop: vi.fn(),
+  options: {} as { onEnded?: () => void; onError?: () => void },
+}));
+vi.mock("../shared/useAudio", () => ({
+  useAudio: (options: typeof recorded.options) => {
+    recorded.options = options;
+    return { speak: recorded.speak, stop: recorded.stop, isSupported: true };
+  },
+}));
 
 describe("scenarioService", () => {
   it("retrieves scenarios for unit numbers-counting", () => {
@@ -126,50 +138,22 @@ describe("UnitScenarioPlayer component", () => {
     expect(screen.getByText("· Basic Vocabulary 1")).toBeDefined();
   });
 
-  it("falls back gracefully to speech synthesis on play when audio cannot load", async () => {
-    const mockSpeak = vi.fn();
-    const mockCancel = vi.fn();
-    const mockGetVoices = vi.fn().mockReturnValue([
-      { name: "George", lang: "en-GB" },
-      { name: "Samantha", lang: "en-US" },
-    ]);
-
-    class MockUtterance {
-      text: string;
-      voice: SpeechSynthesisVoice | null = null;
-      pitch = 1;
-      rate = 1;
-      lang = "en-US";
-      onstart: (() => void) | null = null;
-      onend: (() => void) | null = null;
-      onerror: (() => void) | null = null;
-      constructor(text: string) {
-        this.text = text;
-      }
-    }
-
-    vi.stubGlobal("speechSynthesis", {
-      speak: mockSpeak,
-      cancel: mockCancel,
-      getVoices: mockGetVoices,
-    });
-    vi.stubGlobal("SpeechSynthesisUtterance", MockUtterance);
-
+  it("reuses recorded lines when a master fails and exposes recovery when the line also fails", async () => {
     const playSpy = vi
       .spyOn(window.HTMLMediaElement.prototype, "play")
       .mockRejectedValue(new Error("MEDIA_ERR_SRC_NOT_SUPPORTED"));
-
-    render(<UnitScenarioPlayer scenarios={[mockScenario]} />);
-
-    const playBtn = screen.getByRole("button", { name: /Meeting at the Majlis/i });
-    fireEvent.click(playBtn);
-
-    await waitFor(() => {
-      expect(mockCancel).toHaveBeenCalled();
-      expect(mockSpeak).toHaveBeenCalled();
-    });
-
+    recorded.speak.mockClear();
+    const { unmount } = render(<UnitScenarioPlayer scenarios={[mockScenario]} />);
+    fireEvent.click(screen.getByRole("button", { name: /Play scenario: Meeting at the Majlis/i }));
+    await waitFor(() => expect(recorded.speak).toHaveBeenCalledWith(mockScenario.lines[0].text));
+    act(() => recorded.options.onEnded?.());
+    await waitFor(() => expect(recorded.speak).toHaveBeenCalledWith(mockScenario.lines[1].text));
+    act(() => recorded.options.onError?.());
+    expect(
+      screen.getByRole("button", { name: /Play scenario: Meeting at the Majlis/i })
+    ).toBeVisible();
+    expect(screen.getByRole("status")).not.toBeEmptyDOMElement();
+    unmount();
     playSpy.mockRestore();
-    vi.unstubAllGlobals();
   });
 });

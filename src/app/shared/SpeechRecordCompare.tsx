@@ -115,7 +115,6 @@ export function SpeechRecordCompare({
     lang: "en-US",
     rate: 1,
     preferLocal: true,
-    allowDeviceFallback: !modelAudioKey,
   });
   const recording = usePrivateRecording({ maxDurationMs: maxDurationSeconds * 1000 });
   const [reflection, setReflection] = useState<"again" | "almost" | "clear" | null>(null);

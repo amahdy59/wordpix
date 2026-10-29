@@ -148,7 +148,6 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
     lang: "en-US",
     rate: slowPlayback ? 0.75 : 1,
     preferLocal: false,
-    allowDeviceFallback: stage === 0,
   });
   const { speakFeedback, cancel: cancelSpokenFeedback } = useSpokenFeedback();
   const previewPairs = useMemo(() => {

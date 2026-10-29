@@ -130,7 +130,7 @@ describe("Study vocabulary grid", () => {
 
     await userEvent.click(screen.getByRole("combobox", { name: "Pillow learning status" }));
     await userEvent.click(screen.getByRole("option", { name: "Review again" }));
-    expect(screen.getByRole("status")).toHaveTextContent("Pillow marked review.");
+    expect(screen.getByText("Pillow marked review.")).toHaveAttribute("role", "status");
   });
 });
 

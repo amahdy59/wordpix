@@ -60,3 +60,7 @@ exports/
 # Local WebP conversion cache; canonical vocabulary assets are tracked as AVIF.
 public/word-images/**/*.webp
 !public/word-images/pronunciation/*.webp
+
+# Local audio generation tools
+__pycache__/
+*.pyc

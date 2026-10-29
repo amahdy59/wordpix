@@ -147,7 +147,7 @@ function sign({ config, method, key, query = "", payloadHash, extraHeaders = {},
   };
 }
 
-function createClient(env = process.env) {
+function createClient(env = process.env, { requestTimeoutMs } = {}) {
   const config = readConfig(env);
 
   async function request(method, key, { body, extraHeaders, expect, query } = {}) {
@@ -170,6 +170,7 @@ function createClient(env = process.env) {
           method,
           headers,
           body: method === "GET" || method === "HEAD" ? undefined : payload,
+          ...(requestTimeoutMs ? { signal: AbortSignal.timeout(requestTimeoutMs) } : {}),
         });
 
         if (expect && !expect.includes(res.status)) {
@@ -230,7 +231,7 @@ function createClient(env = process.env) {
     },
 
     /** Create-only upload: the signed condition protects existing objects. */
-    async putIfAbsent(key, body, { contentType } = {}) {
+    async putIfAbsent(key, body, { contentType, verifyChecksum = false } = {}) {
       const buffer = Buffer.isBuffer(body) ? body : Buffer.from(body);
       const response = await request("PUT", key, {
         body: buffer,
@@ -239,10 +240,19 @@ function createClient(env = process.env) {
           "content-type": contentType || "application/octet-stream",
           "content-length": String(buffer.length),
           "cache-control": "public, max-age=31536000, immutable",
+          ...(verifyChecksum
+            ? { "content-md5": crypto.createHash("md5").update(buffer).digest("base64") }
+            : {}),
         },
         expect: [200, 201, 412],
       });
-      return response.status !== 412;
+      const created = response.status !== 412;
+      if (created && verifyChecksum) {
+        const expected = crypto.createHash("md5").update(buffer).digest("hex");
+        if (response.headers.get("etag")?.replaceAll('"', "") !== expected)
+          throw new Error("R2 create-only upload checksum mismatch: " + key);
+      }
+      return created;
     },
 
     async get(key) {

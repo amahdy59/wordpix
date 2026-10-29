@@ -22,6 +22,7 @@ import { useTheme } from "../shared/ThemeToggle";
 import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { useAudio } from "../shared/useAudio";
+import { AudioRecoveryStatus } from "../shared/AudioRecoveryStatus";
 import { Button } from "../shared/Button";
 import { PageContainer } from "../shared/PageContainer";
 import { PageHeader } from "../shared/PageHeader";
@@ -211,7 +212,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
   const { state, setPreferences, resetToZero } = useLearner();
   const { theme, resolvedTheme, toggleTheme } = useTheme();
   const { accessibility, setAccessibility } = useAccessibility();
-  const { speak } = useAudio();
+  const { speak, isError: previewAudioFailed, isSupported: previewAudioSupported } = useAudio();
 
   const {
     textSize,
@@ -891,6 +892,10 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                       <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-0.5">
                         {t("settings.audioEngineDesc")}
                       </p>
+                      <AudioRecoveryStatus
+                        failed={previewAudioFailed}
+                        supported={previewAudioSupported}
+                      />
                     </div>
                   </>
                 )}

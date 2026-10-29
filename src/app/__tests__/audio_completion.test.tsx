@@ -1,135 +1,163 @@
-import { afterEach, expect, it, vi } from "vitest";
-import { act, renderHook } from "@testing-library/react";
-import { useAudio } from "../shared/useAudio";
+import { afterEach, beforeEach, expect, it, vi } from "vitest";
+import { act, renderHook, waitFor } from "@testing-library/react";
+import { useAudio, isRecordingObjectKey } from "../shared/useAudio";
+
+const fixture = vi.hoisted(() => ({
+  host: true,
+  urls: vi.fn(async (text: string) => [`https://assets.example/${encodeURIComponent(text)}.mp3`]),
+}));
 vi.mock("../shared/assetUrls", () => ({
-  hasAssetHost: () => false,
-  audioUrl: async () => null,
-  audioKey: async () => null,
-  normaliseText: (text: string) => text.trim(),
-  AUDIO_PROFILE: {
-    voiceId: "test",
-    modelId: "test",
-    stability: 0.7,
-    similarityBoost: 0.75,
-  },
+  hasAssetHost: () => fixture.host,
+  assetUrl: (key: string) => `https://assets.example/${key}`,
+  audioUrls: fixture.urls,
+  audioKey: async () => "audio/test.mp3",
+  AUDIO_PROFILE_V4: {},
+}));
+vi.mock("../shared/pronunciationOverrides", () => ({
+  getPronunciationAssetSpec: (text: string) => ({ text, profile: {} }),
+  hasPronunciationOverride: () => false,
+}));
+vi.mock("../shared/additionalRecording", () => ({ additionalRecordingKey: async () => null }));
+vi.mock("../shared/edgeRecording", () => ({ edgeRecordingKey: async () => null }));
+vi.mock("../../lib/persistence/db", () => ({
+  getCachedAudio: async () => new Blob(["valid cached recording"], { type: "audio/mpeg" }),
+  saveCachedAudio: vi.fn(),
 }));
 vi.mock("../context/LearnerContext", () => ({
   useLearner: () => ({ state: { accessibility: { speechRate: 1 } } }),
 }));
-afterEach(() => vi.unstubAllGlobals());
-it("does not replace an unavailable assessment reference with device speech", () => {
+
+class RecordedAudio {
+  static instances: RecordedAudio[] = [];
+  currentTime = 0;
+  duration = 12;
+  volume = 1;
+  playbackRate = 1;
+  onplaying: (() => void) | null = null;
+  onended: (() => void) | null = null;
+  onerror: (() => void) | null = null;
+  pause = vi.fn();
+  constructor() {
+    RecordedAudio.instances.push(this);
+  }
+  async play() {
+    this.onplaying?.();
+  }
+}
+beforeEach(() => {
+  fixture.host = true;
+  RecordedAudio.instances = [];
+  vi.stubGlobal("Audio", RecordedAudio);
+  vi.spyOn(URL, "createObjectURL").mockReturnValue("blob:recording-completion");
+});
+afterEach(() => {
+  vi.useRealTimers();
+  vi.restoreAllMocks();
+  vi.unstubAllGlobals();
+});
+
+it("reports unavailable audio without invoking device speech, including an unlocked device", () => {
+  fixture.host = false;
   const speak = vi.fn();
-  vi.stubGlobal("speechSynthesis", {
-    speak,
-    cancel: vi.fn(),
-    getVoices: () => [],
-    addEventListener: vi.fn(),
-    removeEventListener: vi.fn(),
-  });
+  vi.stubGlobal("speechSynthesis", { speak });
   const onError = vi.fn();
-  const { result } = renderHook(() => useAudio({ allowDeviceFallback: false, onError }));
+  const { result } = renderHook(() => useAudio({ onError }));
   act(() => result.current.speak("bed"));
   expect(result.current.status).toBe("error");
   expect(speak).not.toHaveBeenCalled();
   expect(onError).toHaveBeenCalledOnce();
 });
-it("notifies natural completion but ignores an ending after stop or replacement", () => {
-  const speak = vi.fn();
-  vi.stubGlobal("speechSynthesis", {
-    speak,
-    cancel: vi.fn(),
-    getVoices: () => [],
-    addEventListener: vi.fn(),
-    removeEventListener: vi.fn(),
-    resume: vi.fn(),
-  });
-  vi.stubGlobal(
-    "SpeechSynthesisUtterance",
-    class {
-      text: string;
-      constructor(text: string) {
-        this.text = text;
-      }
-    }
-  );
+
+it("notifies natural recorded completion and ignores completion after stop or replacement", async () => {
   const ended = vi.fn();
   const { result, unmount } = renderHook(() => useAudio({ onEnded: ended }));
   act(() => result.current.speak("bed"));
-  const first = speak.mock.calls.at(-1)![0];
-  act(() => first.onend());
+  await waitFor(() => expect(result.current.status).toBe("playing"));
+  const first = RecordedAudio.instances.at(-1)!;
+  act(() => first.onended?.());
   expect(ended).toHaveBeenCalledTimes(1);
   act(() => result.current.speak("chair"));
-  const canceled = speak.mock.calls.at(-1)![0];
+  await waitFor(() => expect(RecordedAudio.instances).toHaveLength(2));
+  const canceled = RecordedAudio.instances.at(-1)!;
   act(() => result.current.stop());
-  act(() => canceled.onend());
+  act(() => canceled.onended?.());
   expect(ended).toHaveBeenCalledTimes(1);
   act(() => result.current.speak("mirror"));
-  const replaced = speak.mock.calls.at(-1)![0];
+  await waitFor(() => expect(RecordedAudio.instances).toHaveLength(3));
+  const replaced = RecordedAudio.instances.at(-1)!;
   act(() => result.current.speak("lamp"));
-  act(() => replaced.onend());
+  await waitFor(() => expect(RecordedAudio.instances).toHaveLength(4));
+  act(() => replaced.onended?.());
   expect(ended).toHaveBeenCalledTimes(1);
   unmount();
 });
 
-it("reads corrected source text completely without requesting an outdated clip", () => {
-  const speak = vi.fn();
-  vi.stubGlobal("speechSynthesis", {
-    speak,
-    cancel: vi.fn(),
-    getVoices: () => [],
-    addEventListener: vi.fn(),
-    removeEventListener: vi.fn(),
-    resume: vi.fn(),
-  });
-  vi.stubGlobal(
-    "SpeechSynthesisUtterance",
-    class {
-      constructor(public text: string) {}
-    }
-  );
-  const { result, unmount } = renderHook(() => useAudio({ preferLocal: true }));
+it("looks up the complete corrected source transcript without an outdated explicit reference", async () => {
+  const { result, unmount } = renderHook(() => useAudio());
   const text = "The questioner (Gabriel) asked about faith. The reply explained its meaning.";
-  act(() =>
-    result.current.speak(text, "en-US", "audio/aa/" + "a".repeat(64) + ".mp3", {
-      synthesisOnly: true,
-    })
-  );
-  expect(speak.mock.calls.at(-1)![0].text).toBe(text);
+  fixture.urls.mockClear();
+  act(() => result.current.speak(text, "en-US"));
+  await waitFor(() => expect(result.current.status).toBe("playing"));
+  expect(fixture.urls).toHaveBeenCalledWith(text, expect.any(Array));
+  expect(result.current.source).toBe("recording");
   unmount();
 });
 
-it("preserves a complete fallback passage and restarts canceled device speech after a word takes over", () => {
-  const speak = vi.fn();
-  vi.stubGlobal("speechSynthesis", {
-    speak,
-    cancel: vi.fn(),
-    pause: vi.fn(),
-    resume: vi.fn(),
-    getVoices: () => [],
-    addEventListener: vi.fn(),
-    removeEventListener: vi.fn(),
-  });
-  vi.stubGlobal(
-    "SpeechSynthesisUtterance",
-    class {
-      constructor(public text: string) {}
-    }
-  );
-  const { result, unmount } = renderHook(() => ({
-    reading: useAudio({ preserveText: true }),
-    word: useAudio(),
-  }));
+it("pauses a reading when a word takes ownership and resumes recorded media at its position", async () => {
+  const { result, unmount } = renderHook(() => ({ reading: useAudio(), word: useAudio() }));
   const text = "The supplier (in another region) closed. Production / demand remained important.";
   act(() => result.current.reading.speak(text));
-  expect(speak.mock.calls.at(-1)![0].text).toBe(text);
-  act(() => speak.mock.calls.at(-1)![0].onstart());
-  act(() => result.current.reading.pause());
-  expect(result.current.reading.status).toBe("paused");
-  act(() => result.current.reading.resume());
-  expect(result.current.reading.status).toBe("playing");
+  await waitFor(() => expect(result.current.reading.status).toBe("playing"));
+  const reading = RecordedAudio.instances.at(-1)!;
+  reading.currentTime = 4;
   act(() => result.current.word.speak("supplier"));
-  expect(result.current.reading.status).toBe("idle");
-  act(() => result.current.reading.speak(text));
-  expect(speak.mock.calls.at(-1)![0].text).toBe(text);
+  await waitFor(() => expect(result.current.word.status).toBe("playing"));
+  expect(result.current.reading.status).toBe("paused");
+  expect(reading.pause).toHaveBeenCalled();
+  act(() => result.current.reading.resume());
+  await waitFor(() => expect(result.current.reading.status).toBe("playing"));
+  expect(reading.currentTime).toBe(4);
+  expect(result.current.word.status).toBe("paused");
+  unmount();
+});
+
+it("only accepts app-managed recording keys and rejects URLs and traversal", () => {
+  expect(isRecordingObjectKey(`audio/aa/${"a".repeat(64)}.mp3`)).toBe(true);
+  expect(isRecordingObjectKey(`audio/edge-v1/en-US-JennyNeural/${"a".repeat(64)}.mp3`)).toBe(true);
+  expect(
+    isRecordingObjectKey("assets/audio/scenarios/numbers-counting/numbers-counting-1/01_tariq.mp3")
+  ).toBe(true);
+  for (const key of [
+    "https://example.com/audio.mp3",
+    "assets/audio/scenarios/../private.mp3",
+    "audio/edge-v1/other/" + "a".repeat(64) + ".mp3",
+  ])
+    expect(isRecordingObjectKey(key)).toBe(false);
+});
+
+it("bounds stalled cached playback and ignores late events from the failed request", async () => {
+  vi.useFakeTimers();
+  vi.spyOn(RecordedAudio.prototype, "play").mockImplementation(() => new Promise<void>(() => {}));
+  const onError = vi.fn();
+  const onEnded = vi.fn();
+  const { result, unmount } = renderHook(() => useAudio({ onError, onEnded }));
+  await act(async () => {
+    result.current.speak("A stalled cached recording.");
+    for (let turn = 0; turn < 20; turn++) await Promise.resolve();
+  });
+  const media = RecordedAudio.instances.at(-1)!;
+  expect(result.current.status).toBe("loading");
+  await act(async () => {
+    await vi.advanceTimersByTimeAsync(15000);
+  });
+  expect(result.current.status).toBe("error");
+  expect(media.pause).toHaveBeenCalled();
+  expect(onError).toHaveBeenCalledOnce();
+  act(() => {
+    media.onplaying?.();
+    media.onended?.();
+  });
+  expect(result.current.status).toBe("error");
+  expect(onEnded).not.toHaveBeenCalled();
   unmount();
 });

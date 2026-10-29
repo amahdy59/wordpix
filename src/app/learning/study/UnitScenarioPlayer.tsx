@@ -4,6 +4,8 @@ import type { ScenarioLesson, ScenarioLine } from "../../data/scenarios/scenario
 import { getScenarioDisplayInfo } from "../../data/scenarios/scenarioService";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
 import { useI18n } from "../../../i18n";
+import { useAudio } from "../../shared/useAudio";
+import { AudioRecoveryStatus } from "../../shared/AudioRecoveryStatus";
 
 interface Props {
   scenarios: ScenarioLesson[];
@@ -37,43 +39,11 @@ const SPEAKER_THEMES: Record<string, { badge: string; border: string }> = {
   },
 };
 
-const SPEAKER_SPEECH_PARAMS: Record<string, { pitch: number; rateMultiplier: number }> = {
-  Tariq: { pitch: 1.0, rateMultiplier: 0.95 },
-  Adam: { pitch: 1.15, rateMultiplier: 1.05 },
-  Omar: { pitch: 0.85, rateMultiplier: 0.9 },
-  Layla: { pitch: 1.1, rateMultiplier: 1.0 },
-  Hana: { pitch: 1.2, rateMultiplier: 1.0 },
-};
-
 function formatSeconds(sec: number): string {
   if (!Number.isFinite(sec) || sec < 0) return "0:00";
   const m = Math.floor(sec / 60);
   const s = Math.floor(sec % 60);
   return `${m}:${s < 10 ? "0" : ""}${s}`;
-}
-
-function getSpeakerVoice(speaker: string): SpeechSynthesisVoice | null {
-  if (typeof window === "undefined" || !("speechSynthesis" in window) || !window.speechSynthesis) {
-    return null;
-  }
-  const voices = window.speechSynthesis.getVoices();
-  if (!voices.length) return null;
-
-  const targetLang =
-    speaker === "Tariq"
-      ? "en-gb"
-      : speaker === "Omar"
-        ? "en-au"
-        : speaker === "Adam"
-          ? "en-us"
-          : "en-us";
-
-  const targetVoice = voices.find(
-    (v) => v.lang.toLowerCase() === targetLang || v.lang.toLowerCase().startsWith(targetLang)
-  );
-  if (targetVoice) return targetVoice;
-
-  return voices.find((v) => v.lang.toLowerCase().startsWith("en")) ?? voices[0] ?? null;
 }
 
 export function UnitScenarioPlayer({
@@ -101,26 +71,37 @@ export function UnitScenarioPlayer({
   const [duration, setDuration] = useState(0);
   const [playbackRate, setPlaybackRate] = useState(1.0);
   const [activeClipIndex, setActiveClipIndex] = useState<number | null>(null);
-  const [audioMode, setAudioMode] = useState<"native" | "synthesized">("native");
+  const [audioMode, setAudioMode] = useState<"native" | "clips">("native");
 
-  const synthPlayingRef = useRef(false);
-  const synthTimerRef = useRef<number | null>(null);
+  const sequencePlayingRef = useRef(false);
+  const sequenceTimerRef = useRef<number | null>(null);
+  const finishLineRef = useRef<() => void>(() => {});
+  const [recordingFailed, setRecordingFailed] = useState(false);
+  const lineAudio = useAudio({
+    rate: playbackRate,
+    onEnded: () => finishLineRef.current(),
+    onError: () => {
+      sequencePlayingRef.current = false;
+      setIsPlaying(false);
+      setActiveClipIndex(null);
+      setRecordingFailed(true);
+    },
+  });
+  const { speak: playRecording, stop: stopLineRecording } = lineAudio;
 
   const displayInfo = useMemo(
     () => (activeScenario ? getScenarioDisplayInfo(activeScenario, scenarios) : null),
     [activeScenario, scenarios]
   );
 
-  const stopSynthesizedPlayback = useCallback(() => {
-    synthPlayingRef.current = false;
-    if (synthTimerRef.current) {
-      clearTimeout(synthTimerRef.current);
-      synthTimerRef.current = null;
+  const stopRecordedPlayback = useCallback(() => {
+    sequencePlayingRef.current = false;
+    if (sequenceTimerRef.current) {
+      clearTimeout(sequenceTimerRef.current);
+      sequenceTimerRef.current = null;
     }
-    if (typeof window !== "undefined" && "speechSynthesis" in window && window.speechSynthesis) {
-      window.speechSynthesis.cancel();
-    }
-  }, []);
+    stopLineRecording();
+  }, [stopLineRecording]);
 
   const handleSelectScenario = useCallback(
     (idx: number) => {
@@ -128,14 +109,15 @@ export function UnitScenarioPlayer({
         audioRef.current.pause();
         audioRef.current.currentTime = 0;
       }
-      stopSynthesizedPlayback();
+      stopRecordedPlayback();
+      setRecordingFailed(false);
       setSelectedIdx(idx);
       setIsPlaying(false);
       setCurrentTime(0);
       setActiveClipIndex(null);
       setAudioMode("native");
     },
-    [stopSynthesizedPlayback]
+    [stopRecordedPlayback]
   );
 
   // Sync selected scenario if initialLessonId prop changes dynamically
@@ -185,91 +167,54 @@ export function UnitScenarioPlayer({
 
   const speakLineAtRef = useRef<(lineIdx: number, isSequential: boolean) => void>(() => {});
 
-  // Synthesized sequential speech engine
+  // A failed master can reuse individual recordings without invoking device speech.
   const speakLineAt = useCallback(
     (lineIdx: number, isSequential: boolean) => {
-      if (!activeScenario || !activeScenario.lines[lineIdx]) {
+      const line = activeScenario?.lines[lineIdx];
+      if (!line) {
         setIsPlaying(false);
         setActiveClipIndex(null);
-        synthPlayingRef.current = false;
+        sequencePlayingRef.current = false;
         return;
       }
-
-      const line = activeScenario.lines[lineIdx];
-      const synth =
-        typeof window !== "undefined" && "speechSynthesis" in window
-          ? window.speechSynthesis
-          : null;
-      const UtteranceClass =
-        typeof window !== "undefined" && "SpeechSynthesisUtterance" in window
-          ? window.SpeechSynthesisUtterance
-          : typeof SpeechSynthesisUtterance !== "undefined"
-            ? SpeechSynthesisUtterance
-            : null;
-
-      if (!synth || !UtteranceClass) {
-        setIsPlaying(false);
-        return;
-      }
-
-      synth.cancel();
-      const utterance = new UtteranceClass(line.text);
-      const voice = getSpeakerVoice(line.speaker);
-      if (voice) utterance.voice = voice;
-
-      const params = SPEAKER_SPEECH_PARAMS[line.speaker] || { pitch: 1.0, rateMultiplier: 1.0 };
-      utterance.pitch = params.pitch;
-      utterance.rate = playbackRate * params.rateMultiplier;
-      utterance.lang = voice?.lang || "en-US";
-
-      utterance.onstart = () => {
-        setIsPlaying(true);
-        setActiveClipIndex(lineIdx);
-        setCurrentTime(line.startSeconds);
-      };
-
-      utterance.onend = () => {
-        if (!synthPlayingRef.current || !isSequential) {
-          setIsPlaying(false);
-          setActiveClipIndex(null);
-          return;
-        }
-
-        const nextIdx = lineIdx + 1;
-        if (nextIdx < activeScenario.lines.length) {
+      audioRef.current?.pause();
+      setRecordingFailed(false);
+      setIsPlaying(true);
+      setActiveClipIndex(lineIdx);
+      setCurrentTime(line.startSeconds);
+      finishLineRef.current = () => {
+        if (
+          isSequential &&
+          sequencePlayingRef.current &&
+          lineIdx + 1 < activeScenario.lines.length
+        ) {
           setCurrentTime(line.endSeconds);
-          synthTimerRef.current = window.setTimeout(() => {
-            if (synthPlayingRef.current) {
-              speakLineAtRef.current(nextIdx, true);
-            }
+          sequenceTimerRef.current = window.setTimeout(() => {
+            sequenceTimerRef.current = null;
+            if (sequencePlayingRef.current) speakLineAtRef.current(lineIdx + 1, true);
           }, 350);
         } else {
-          synthPlayingRef.current = false;
+          sequencePlayingRef.current = false;
           setIsPlaying(false);
           setActiveClipIndex(null);
-          setCurrentTime(activeScenario.totalDurationSeconds || line.endSeconds);
+          setCurrentTime(
+            isSequential ? activeScenario.totalDurationSeconds || line.endSeconds : line.endSeconds
+          );
         }
       };
-
-      utterance.onerror = () => {
-        setIsPlaying(false);
-        setActiveClipIndex(null);
-        synthPlayingRef.current = false;
-      };
-
-      synth.speak(utterance);
+      playRecording(line.text);
     },
-    [activeScenario, playbackRate]
+    [activeScenario, playRecording]
   );
 
   useEffect(() => {
     speakLineAtRef.current = speakLineAt;
   }, [speakLineAt]);
 
-  const startSynthesizedPlayback = useCallback(
+  const startRecordedPlayback = useCallback(
     (fromLineIdx: number) => {
-      setAudioMode("synthesized");
-      synthPlayingRef.current = true;
+      setAudioMode("clips");
+      sequencePlayingRef.current = true;
       setIsPlaying(true);
       speakLineAt(fromLineIdx, true);
     },
@@ -277,23 +222,24 @@ export function UnitScenarioPlayer({
   );
 
   const toggleMasterPlay = useCallback(() => {
-    if (audioMode === "synthesized") {
+    setRecordingFailed(false);
+    if (audioMode === "clips") {
       if (isPlaying) {
-        stopSynthesizedPlayback();
+        stopRecordedPlayback();
         setIsPlaying(false);
       } else {
         const startIdx =
           activeScenario?.lines.findIndex(
             (l) => currentTime >= l.startSeconds && currentTime < l.endSeconds
           ) ?? 0;
-        startSynthesizedPlayback(startIdx >= 0 ? startIdx : 0);
+        startRecordedPlayback(startIdx >= 0 ? startIdx : 0);
       }
       return;
     }
 
     const audio = audioRef.current;
     if (!audio) {
-      startSynthesizedPlayback(0);
+      startRecordedPlayback(0);
       return;
     }
 
@@ -306,7 +252,7 @@ export function UnitScenarioPlayer({
         .play()
         .then(() => setIsPlaying(true))
         .catch(() => {
-          startSynthesizedPlayback(0);
+          startRecordedPlayback(0);
         });
       return;
     }
@@ -320,7 +266,7 @@ export function UnitScenarioPlayer({
         .then(() => setIsPlaying(true))
         .catch(() => {
           // Native media cannot play or failed to fetch (e.g. 404 in prod)
-          startSynthesizedPlayback(0);
+          startRecordedPlayback(0);
         });
     }
   }, [
@@ -329,25 +275,26 @@ export function UnitScenarioPlayer({
     activeClipIndex,
     masterAudioUrl,
     playbackRate,
-    stopSynthesizedPlayback,
-    startSynthesizedPlayback,
+    stopRecordedPlayback,
+    startRecordedPlayback,
     activeScenario,
     currentTime,
   ]);
 
   const restartMaster = useCallback(() => {
-    stopSynthesizedPlayback();
+    setRecordingFailed(false);
+    stopRecordedPlayback();
     setCurrentTime(0);
     setActiveClipIndex(null);
 
-    if (audioMode === "synthesized") {
-      startSynthesizedPlayback(0);
+    if (audioMode === "clips") {
+      startRecordedPlayback(0);
       return;
     }
 
     const audio = audioRef.current;
     if (!audio) {
-      startSynthesizedPlayback(0);
+      startRecordedPlayback(0);
       return;
     }
 
@@ -358,15 +305,15 @@ export function UnitScenarioPlayer({
       .play()
       .then(() => setIsPlaying(true))
       .catch(() => {
-        startSynthesizedPlayback(0);
+        startRecordedPlayback(0);
       });
-  }, [audioMode, masterAudioUrl, playbackRate, startSynthesizedPlayback, stopSynthesizedPlayback]);
+  }, [audioMode, masterAudioUrl, playbackRate, startRecordedPlayback, stopRecordedPlayback]);
 
   const playSingleClip = useCallback(
     (line: ScenarioLine, idx: number) => {
       if (activeClipIndex === idx && isPlaying) {
-        if (audioMode === "synthesized") {
-          stopSynthesizedPlayback();
+        if (audioMode === "clips") {
+          stopRecordedPlayback();
         } else {
           audioRef.current?.pause();
         }
@@ -375,15 +322,15 @@ export function UnitScenarioPlayer({
         return;
       }
 
-      if (audioMode === "synthesized") {
-        synthPlayingRef.current = false;
+      if (audioMode === "clips") {
+        sequencePlayingRef.current = false;
         speakLineAt(idx, false);
         return;
       }
 
       const audio = audioRef.current;
       if (!audio) {
-        setAudioMode("synthesized");
+        setAudioMode("clips");
         speakLineAt(idx, false);
         return;
       }
@@ -397,15 +344,15 @@ export function UnitScenarioPlayer({
         .play()
         .then(() => setIsPlaying(true))
         .catch(() => {
-          setAudioMode("synthesized");
+          setAudioMode("clips");
           speakLineAt(idx, false);
         });
     },
-    [activeClipIndex, isPlaying, audioMode, playbackRate, speakLineAt, stopSynthesizedPlayback]
+    [activeClipIndex, isPlaying, audioMode, playbackRate, speakLineAt, stopRecordedPlayback]
   );
 
   const handleTimeUpdate = () => {
-    if (!audioRef.current || audioMode === "synthesized") return;
+    if (!audioRef.current || audioMode === "clips") return;
     setCurrentTime(audioRef.current.currentTime);
   };
 
@@ -426,9 +373,17 @@ export function UnitScenarioPlayer({
   };
 
   const handleAudioError = () => {
-    // When playback of active network audio fails, fall back to synthesized voice mode
-    if (isPlaying) {
-      setAudioMode("synthesized");
+    if (isPlaying && audioMode === "native") {
+      if (activeClipIndex !== null) {
+        setAudioMode("clips");
+        speakLineAt(activeClipIndex, false);
+      } else {
+        const index =
+          activeScenario?.lines.findIndex(
+            (line) => currentTime >= line.startSeconds && currentTime < line.endSeconds
+          ) ?? 0;
+        startRecordedPlayback(Math.max(0, index));
+      }
     }
   };
 
@@ -436,14 +391,14 @@ export function UnitScenarioPlayer({
     const newTime = parseFloat(e.target.value);
     setCurrentTime(newTime);
 
-    if (audioMode === "synthesized") {
+    if (audioMode === "clips") {
       if (isPlaying) {
-        stopSynthesizedPlayback();
+        stopRecordedPlayback();
         const nextIdx =
           activeScenario?.lines.findIndex(
             (l) => newTime >= l.startSeconds && newTime <= l.endSeconds
           ) ?? 0;
-        startSynthesizedPlayback(nextIdx >= 0 ? nextIdx : 0);
+        startRecordedPlayback(nextIdx >= 0 ? nextIdx : 0);
       }
       return;
     }
@@ -457,12 +412,12 @@ export function UnitScenarioPlayer({
   useEffect(() => {
     const audioElement = audioRef.current;
     return () => {
-      stopSynthesizedPlayback();
+      stopRecordedPlayback();
       if (audioElement) {
         audioElement.pause();
       }
     };
-  }, [stopSynthesizedPlayback]);
+  }, [stopRecordedPlayback, activeScenario?.lessonId]);
 
   if (!activeScenario || !displayInfo) return null;
 
@@ -511,16 +466,6 @@ export function UnitScenarioPlayer({
             {sectionTitle && (
               <span className="text-xs font-semibold text-muted-foreground truncate max-w-[260px]">
                 · {sectionTitle}
-              </span>
-            )}
-
-            {audioMode === "synthesized" && (
-              <span
-                className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-semibold bg-secondary/80 text-muted-foreground border border-border"
-                title={t("study.speechAudio")}
-              >
-                <Volume2 className="size-3 text-primary" aria-hidden="true" />
-                <span>{t("study.speechAudio") || "Speech Audio"}</span>
               </span>
             )}
           </div>
@@ -664,6 +609,8 @@ export function UnitScenarioPlayer({
           />
         </div>
       </div>
+
+      <AudioRecoveryStatus failed={recordingFailed} supported={lineAudio.isSupported} />
 
       {/* Target Vocabulary Badges */}
       {activeScenario.targetWords.length > 0 && (

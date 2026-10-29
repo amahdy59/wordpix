@@ -19,6 +19,7 @@ import { useTheme } from "../shared/ThemeToggle";
 import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useAudio } from "../shared/useAudio";
+import { AudioRecoveryStatus } from "../shared/AudioRecoveryStatus";
 import { useModalA11y } from "../shared/useModalA11y";
 import { Button } from "../shared/Button";
 import { IconButton } from "../shared/IconButton";
@@ -39,7 +40,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
   const { state, setPreferences, resetToZero } = useLearner();
   const { theme, resolvedTheme, toggleTheme } = useTheme();
   const { t, interfaceLang, setInterfaceLang } = useI18n();
-  const { speak } = useAudio();
+  const { speak, isError: previewAudioFailed, isSupported: previewAudioSupported } = useAudio();
 
   // These six were local useState that nothing read: the controls moved when
   // clicked and changed nothing, then discarded the value on close. They are
@@ -449,6 +450,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <p className="font-sans text-xs text-muted-foreground mt-0.5">
                   {t("settings.audioEngineDesc")}
                 </p>
+                <AudioRecoveryStatus
+                  failed={previewAudioFailed}
+                  supported={previewAudioSupported}
+                />
               </div>
 
               <hr className="border-border/60" />

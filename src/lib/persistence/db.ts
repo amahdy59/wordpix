@@ -82,6 +82,17 @@ export interface SyncMetadata {
   migration?: { id: string; state: LearnerStateSchema; queueIds: string[] };
 }
 
+type AudioCacheRecord = {
+  key: string;
+  mimeType: string;
+  createdAt: number;
+  lastAccessedAt?: number;
+} & ({ blob: Blob; bytes?: never } | { bytes: ArrayBuffer; blob?: never });
+
+function audioCacheBytes(entry: AudioCacheRecord): number {
+  return entry.blob?.size ?? entry.bytes?.byteLength ?? 0;
+}
+
 interface WordPixDB extends DBSchema {
   sync_metadata: { key: string; value: SyncMetadata };
   learner_state: {
@@ -95,17 +106,7 @@ interface WordPixDB extends DBSchema {
   };
   audio_cache: {
     key: string;
-    value: {
-      key: string;
-      blob: Blob;
-      mimeType: string;
-      createdAt: number;
-      /**
-       * Last playback hit. Absent on entries written before this field
-       * existed — callers fall back to `createdAt`. Powers LRU eviction.
-       */
-      lastAccessedAt?: number;
-    };
+    value: AudioCacheRecord;
   };
 }
 
@@ -263,7 +264,7 @@ export async function getCachedAudio(key: string): Promise<Blob | null> {
     const db = await getDB();
     if (!db) return null;
     const entry = await db.get("audio_cache", key);
-    if (!entry) return null;
+    if (!entry || audioCacheBytes(entry) === 0) return null;
     // Record the hit for LRU eviction. Best-effort: a failed touch must
     // never break playback of an entry we already hold.
     try {
@@ -271,7 +272,9 @@ export async function getCachedAudio(key: string): Promise<Blob | null> {
     } catch (touchError) {
       console.warn("Failed to record audio cache hit", touchError);
     }
-    return entry.blob;
+    // Blob records from earlier releases remain readable. Bytes avoid WebKit's
+    // "Error preparing Blob/File data" and reconstruct the same recorded media.
+    return entry.blob ?? new Blob([entry.bytes], { type: entry.mimeType });
   } catch (e) {
     console.warn("Failed to retrieve audio from IndexedDB cache", e);
     return null;
@@ -307,20 +310,20 @@ async function enforceAudioCacheCaps(
 ): Promise<number> {
   const entries = await db.getAll("audio_cache");
   if (entries.length <= AUDIO_CACHE_MAX_ENTRIES) {
-    const bytes = entries.reduce((total, entry) => total + entry.blob.size, 0);
+    const bytes = entries.reduce((total, entry) => total + audioCacheBytes(entry), 0);
     if (bytes <= AUDIO_CACHE_MAX_BYTES) return 0;
   }
   const byRecency = [...entries].sort(
     (a, b) => (a.lastAccessedAt ?? a.createdAt) - (b.lastAccessedAt ?? b.createdAt)
   );
   let count = entries.length;
-  let bytes = entries.reduce((total, entry) => total + entry.blob.size, 0);
+  let bytes = entries.reduce((total, entry) => total + audioCacheBytes(entry), 0);
   let removed = 0;
   for (const victim of byRecency) {
     if (count <= AUDIO_CACHE_MAX_ENTRIES && bytes <= AUDIO_CACHE_MAX_BYTES) break;
     await db.delete("audio_cache", victim.key);
     count -= 1;
-    bytes -= victim.blob.size;
+    bytes -= audioCacheBytes(victim);
     removed += 1;
   }
   return removed;
@@ -332,15 +335,16 @@ async function enforceAudioCacheCaps(
  * The store is capped (entry count + total bytes, LRU eviction) and a
  * QuotaExceededError triggers one evict-and-retry before giving up. A dropped
  * write only means the clip streams again next time — playback falls back to
- * the network/TTS path, never to broken state.
+ * the recorded network path, never to broken state.
  */
 export async function saveCachedAudio(key: string, blob: Blob): Promise<void> {
+  if (blob.size === 0) return;
   try {
     const db = await getDB();
     if (!db) return;
-    const record = {
+    const record: AudioCacheRecord = {
       key,
-      blob,
+      bytes: await blob.arrayBuffer(),
       mimeType: blob.type || "audio/mpeg",
       createdAt: Date.now(),
       lastAccessedAt: Date.now(),

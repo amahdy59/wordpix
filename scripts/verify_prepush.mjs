@@ -1,6 +1,12 @@
 #!/usr/bin/env node
 import { execSync } from "node:child_process";
 import process from "node:process";
+import { readFileSync } from "node:fs";
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
+const draftPush =
+  process.argv.includes("--hook") &&
+  require("./lib/push_scope.cjs").isDraftPush(readFileSync(0, "utf8"));
 
 // Align local pre-push retries with CI (2 retries) to accommodate full-suite browser timing
 process.env.WORDPIX_E2E_RETRIES = process.env.WORDPIX_E2E_RETRIES || "2";
@@ -34,6 +40,11 @@ const steps = [
     name: "ESLint Validation",
     command: "pnpm run lint",
     description: "Checking React hooks and accessibility lints",
+  },
+  {
+    name: "Recorded Audio Release Readiness",
+    command: `node scripts/check_recorded_audio_readiness.cjs${draftPush ? " --draft" : ""}`,
+    description: "Preventing a recorded-only release with incomplete or stale audio coverage",
   },
   {
     name: "Full Audio Coverage & Manifest Integrity",

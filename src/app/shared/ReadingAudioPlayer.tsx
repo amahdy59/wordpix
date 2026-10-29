@@ -45,11 +45,9 @@ export function ReadingAudioPlayer({
       ? recoveryMessage
       : busy
         ? t(audio.status === "buffering" ? "readingPlayer.buffering" : "readingPlayer.loading")
-        : active && audio.source === "device"
-          ? t("readingPlayer.deviceVoice")
-          : paused
-            ? t("readingPlayer.paused")
-            : "";
+        : paused
+          ? t("readingPlayer.paused")
+          : "";
   const buttonLabel = busy
     ? t("readingPlayer.cancel")
     : playing
@@ -103,11 +101,7 @@ export function ReadingAudioPlayer({
           value={rate}
           onChange={onRateChange}
           label={t("conversation.playbackSpeed")}
-          disabled={
-            !enabled ||
-            !audio.isSupported ||
-            (active && audio.source === "device" && (playing || paused))
-          }
+          disabled={!enabled || !audio.isSupported}
           options={[
             { value: 0.85, label: t("conversation.slowSpeed") },
             { value: 1, label: t("conversation.normalSpeed") },

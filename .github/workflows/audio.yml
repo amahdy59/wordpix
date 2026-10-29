@@ -16,6 +16,10 @@ name: Generate audio
 on:
   workflow_dispatch:
     inputs:
+      recorded_edge:
+        description: "Fill recorded-only playback gaps with free Edge recordings (create-only R2 uploads)"
+        type: boolean
+        default: false
       tier:
         description: "Which corpus tier to generate"
         type: choice
@@ -47,7 +51,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  recorded:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.recorded_edge == true }}
+    uses: ./.github/workflows/recorded-audio.yml
+    permissions:
+      contents: read
+    secrets:
+      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      R2_BUCKET: ${{ secrets.R2_BUCKET }}
   generate:
+    if: ${{ inputs.recorded_edge != true }}
     timeout-minutes: 90
     runs-on: ubuntu-latest
     permissions:

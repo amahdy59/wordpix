@@ -73,7 +73,7 @@ export function BusinessInputStage({ unit, onNext }: Props) {
   const audio = useAudio({
     lang: "en-US",
     rate: playbackRate,
-    preserveText: true,
+
     onEnded: () => {
       if (fullStepRef.current !== null) {
         const nextStep = fullStepRef.current + 1;

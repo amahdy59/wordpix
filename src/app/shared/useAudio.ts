@@ -5,10 +5,13 @@ import { getCachedAudio, saveCachedAudio } from "../../lib/persistence/db";
 import { assetUrl, audioKey, audioUrls, AUDIO_PROFILE_V4, hasAssetHost } from "./assetUrls";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { getPronunciationAssetSpec, hasPronunciationOverride } from "./pronunciationOverrides";
+import { additionalRecordingKey } from "./additionalRecording";
+import { edgeRecordingKey } from "./edgeRecording";
+import { isEdgeRecordingAvailable } from "./edgeRecordingAvailability";
 
 export type AudioStatus =
   "idle" | "loading" | "buffering" | "playing" | "paused" | "error" | "unsupported";
-export type AudioSource = "recording" | "device" | null;
+export type AudioSource = "recording" | null;
 // One owner across narration, vocabulary inspectors and other audio hooks.
 let activeAudioOwner: symbol | null = null;
 let pauseActiveAudio: (() => void) | null = null;
@@ -18,78 +21,15 @@ interface Options {
   onError?: () => void;
   lang?: string;
   rate?: number;
-  pitch?: number;
   volume?: number;
   /** Prefer a matching content-addressed clip bundled in public/audio. */
   preferLocal?: boolean;
-  /** Scored listening must never silently replace its reference with device speech. */
-  allowDeviceFallback?: boolean;
-  /** Keep complete passages intact when browser speech is the fallback. */
-  preserveText?: boolean;
   /** Reports native media progress for synchronized transcript highlighting. */
   onTimeUpdate?: (currentTime: number, duration: number) => void;
 }
 
-/** How long to wait for onstart before treating the utterance as failed. */
-const SPEECH_START_TIMEOUT_MS = 4000;
-
-/** How long to wait for network media buffering/streaming before treating the stream as stalled. */
+/** Stop waiting for media that cannot start; callers can offer Retry. */
 const MEDIA_STREAM_TIMEOUT_MS = 15000;
-
-function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisVoice | null {
-  const voices = synth.getVoices();
-  if (voices.length === 0) return null;
-
-  const prefix = targetLang.split("-")[0].toLowerCase();
-  const langLower = targetLang.toLowerCase();
-
-  // 1. Natural / Neural online voices (Edge/Chrome/Azure highest-fidelity TTS)
-  const naturalVoice = voices.find(
-    (v) =>
-      (v.name.includes("Natural") || v.name.includes("Online") || v.name.includes("Neural")) &&
-      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
-  );
-  if (naturalVoice) return naturalVoice;
-
-  // 2. Google neural voices (Chrome/Android)
-  const googleVoice = voices.find(
-    (v) =>
-      v.name.includes("Google") &&
-      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
-  );
-  if (googleVoice) return googleVoice;
-
-  // 3. Apple Enhanced / Premium voices (macOS / iOS)
-  const premiumVoice = voices.find(
-    (v) =>
-      (v.name.includes("Premium") || v.name.includes("Enhanced")) &&
-      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
-  );
-  if (premiumVoice) return premiumVoice;
-
-  // 4. Non-local network-backed synthesis voices
-  const remoteVoice = voices.find(
-    (v) =>
-      !v.localService &&
-      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
-  );
-  if (remoteVoice) return remoteVoice;
-
-  // 5. Higher clarity female voices (Zira / Samantha / Jenny) over robotic David
-  const clearFemaleVoice = voices.find(
-    (v) =>
-      (v.name.includes("Zira") || v.name.includes("Samantha") || v.name.includes("Jenny")) &&
-      v.lang.toLowerCase().startsWith(prefix)
-  );
-  if (clearFemaleVoice) return clearFemaleVoice;
-
-  // 6. Exact language match or prefix fallback
-  return (
-    voices.find((v) => v.lang.toLowerCase() === langLower) ??
-    voices.find((v) => v.lang.toLowerCase().startsWith(prefix)) ??
-    (prefix === "ar" ? null : (voices[0] ?? null))
-  );
-}
 
 const MAX_AUDIO_CACHE_SIZE = 64;
 const audioCache = new Map<string, string>();
@@ -101,35 +41,6 @@ function applyPlaybackRate(audio: HTMLAudioElement, rate: number): void {
   audioAny.preservesPitch = true;
   audioAny.mozPreservesPitch = true;
   audioAny.webkitPreservesPitch = true;
-}
-
-/**
- * Whether `speechSynthesis` has been unlocked by a real user gesture yet.
- *
- * Mobile Safari and Chrome only honour `speak()` inside the short window that
- * follows a tap. Every path in `speak` below is asynchronous before it reaches
- * synthesis — a SHA-256 digest and a CDN fetch — and by the time either one
- * resolves the window has closed, so the
- * fallback ran and produced silence. That is the whole of the "audio does not
- * work on my phone" report: not an error, just nothing.
- *
- * The fix is to spend the gesture immediately on a silent utterance, which
- * unlocks the engine for the rest of the session. Module scope, not a ref:
- * the unlock is per document, and every `useAudio` instance shares it.
- */
-let synthesisUnlocked = false;
-
-function unlockSynthesis(synth: SpeechSynthesis): void {
-  if (synthesisUnlocked) return;
-  synthesisUnlocked = true;
-  try {
-    const primer = new SpeechSynthesisUtterance(" ");
-    primer.volume = 0;
-    synth.speak(primer);
-  } catch {
-    // An engine that refuses the primer will refuse the real utterance too;
-    // there is nothing to recover here and nothing to report.
-  }
 }
 
 let audioUnlocked = false;
@@ -156,7 +67,6 @@ export function unlockAudio(): void {
 if (typeof window !== "undefined") {
   const onFirstInteraction = () => {
     unlockAudio();
-    if (window.speechSynthesis) unlockSynthesis(window.speechSynthesis);
     window.removeEventListener("pointerdown", onFirstInteraction, true);
     window.removeEventListener("keydown", onFirstInteraction, true);
   };
@@ -164,9 +74,17 @@ if (typeof window !== "undefined") {
   window.addEventListener("keydown", onFirstInteraction, { capture: true, once: true });
 }
 
+export function isRecordingObjectKey(key: string): boolean {
+  return (
+    /^audio\/[a-f0-9]{2}\/[a-f0-9]{64}\.mp3$/.test(key) ||
+    /^audio\/edge-v1\/(?:en-US-JennyNeural|ar-SA-ZariyahNeural)\/[a-f0-9]{64}\.mp3$/.test(key) ||
+    /^assets\/audio\/scenarios\/[a-z0-9_-]+(?:\/[a-z0-9_-]+)*\.mp3$/.test(key)
+  );
+}
+
 export function preloadAudioClip(urlOrKey: string): void {
   if (typeof window === "undefined" || !urlOrKey) return;
-  const isKey = /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(urlOrKey);
+  const isKey = isRecordingObjectKey(urlOrKey);
   const primaryUrl = isKey ? (assetUrl(urlOrKey) ?? resolveAssetUrl(`/${urlOrKey}`)) : urlOrKey;
   if (!primaryUrl) return;
   const cacheKey = `cdn:${primaryUrl}`;
@@ -199,11 +117,8 @@ function cacheAudioUrl(key: string, url: string) {
 export function useAudio({
   lang = "en-US",
   rate,
-  pitch = 1,
   volume = 1,
   preferLocal = false,
-  allowDeviceFallback = true,
-  preserveText = false,
   onEnded,
   onError,
   onTimeUpdate,
@@ -223,24 +138,8 @@ export function useAudio({
   // Support is knowable at first render, so it is the initial state rather than
   // a setState fired from inside an effect (which causes a cascading render).
   const [status, setStatus] = useState<AudioStatus>(() =>
-    typeof window === "undefined" || (!window.speechSynthesis && typeof window.Audio !== "function")
-      ? "unsupported"
-      : "idle"
+    typeof window === "undefined" || typeof window.Audio !== "function" ? "unsupported" : "idle"
   );
-  const synthRef = useRef<SpeechSynthesis | null>(
-    typeof window !== "undefined" && window.speechSynthesis ? window.speechSynthesis : null
-  );
-  useEffect(() => {
-    const synth = synthRef.current;
-    if (!synth) return undefined;
-
-    // Chrome populates voices asynchronously; the first call primes that load.
-    synth.getVoices();
-    const onVoicesChanged = () => synth.getVoices();
-    synth.addEventListener("voiceschanged", onVoicesChanged);
-    return () => synth.removeEventListener("voiceschanged", onVoicesChanged);
-  }, []);
-
   const stallTimerRef = useRef<number | null>(null);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const isMountedRef = useRef(true);
@@ -270,9 +169,8 @@ export function useAudio({
     }
     currentAudioRef.current?.pause();
     currentAudioRef.current = null;
-    // An inactive inspector must not cancel another hook's speech on unmount.
+    // An inactive inspector must not stop another player on unmount.
     if (activeAudioOwner === ownerIdRef.current) {
-      synthRef.current?.cancel();
       activeAudioOwner = null;
       pauseActiveAudio = null;
     }
@@ -297,12 +195,7 @@ export function useAudio({
   }, []);
 
   const speak = useCallback(
-    (
-      text: string,
-      overrideLang?: string,
-      objectKey?: string,
-      playback?: { synthesisOnly?: boolean }
-    ) => {
+    (text: string, overrideLang?: string, objectKey?: string) => {
       if (activeAudioOwner === ownerIdRef.current) stop();
       else pauseActiveAudio?.();
       activeAudioOwner = ownerIdRef.current;
@@ -329,7 +222,7 @@ export function useAudio({
         requestRef.current === generation &&
         activeAudioOwner === ownerIdRef.current;
       const reportProgress = (audio: HTMLAudioElement) => {
-        if (!isCurrent()) return;
+        if (!isCurrent() || currentAudioRef.current !== audio) return;
         const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
         setProgress({ currentTime: audio.currentTime, duration });
         timeUpdateRef.current?.(audio.currentTime, duration);
@@ -354,9 +247,6 @@ export function useAudio({
         }
       };
 
-      // Spend the gesture now, before the first `await`. See `unlockSynthesis`.
-      if (synthRef.current && allowDeviceFallback) unlockSynthesis(synthRef.current);
-
       const clearStall = () => {
         if (stallTimerRef.current !== null) {
           window.clearTimeout(stallTimerRef.current);
@@ -364,72 +254,16 @@ export function useAudio({
         }
       };
 
-      const fallbackToSynthesis = (fallbackText: string, fallbackLang: string) => {
+      const reportUnavailable = () => {
         if (!isCurrent()) return;
-        if (!allowDeviceFallback) {
-          publish("error");
-          return;
-        }
-        timeUpdateRef.current?.(0, 0);
+        clearStall();
         currentAudioRef.current?.pause();
         currentAudioRef.current = null;
-        setSource("device");
+        setSource(null);
         setProgress({ currentTime: 0, duration: 0 });
-        const synth = synthRef.current;
-        if (!synth) {
-          publish(typeof window.Audio === "function" ? "error" : "unsupported");
-          return;
-        }
-
-        synth.cancel();
-        if (synth.paused) {
-          synth.resume();
-        }
-        publish("loading");
-
-        const spokenFallbackText =
-          playback?.synthesisOnly || preserveText
-            ? fallbackText
-            : fallbackText
-                .replace(/^\d+[.)]\s*/, "")
-                .replace(/\s*[/(].*$/, "")
-                .replace(/[\u0600-\u06FF]/g, "")
-                .trim() || fallbackText;
-
-        const utterance = new SpeechSynthesisUtterance(spokenFallbackText);
-        utterance.lang = fallbackLang;
-        utterance.rate = rateRef.current;
-        utterance.pitch = pitch;
-        utterance.volume = volume;
-
-        const voice = pickVoice(synth, fallbackLang);
-        if (voice) utterance.voice = voice;
-
-        utterance.onstart = () => {
-          if (!isCurrent()) return;
-          clearStall();
-          publish("playing");
-        };
-        utterance.onend = () => {
-          if (!isCurrent()) return;
-          clearStall();
-          publish("idle");
-          endedRef.current?.();
-        };
-        utterance.onerror = (e) => {
-          if (!isCurrent()) return;
-          clearStall();
-          publish(e.error !== "interrupted" && e.error !== "canceled" ? "error" : "idle");
-        };
-
-        clearStall();
-        stallTimerRef.current = window.setTimeout(() => {
-          if (!isCurrent()) return;
-          setStatus((current) => (current === "loading" ? "error" : current));
-          errorRef.current?.();
-        }, SPEECH_START_TIMEOUT_MS);
-
-        synth.speak(utterance);
+        timeUpdateRef.current?.(0, 0);
+        publish(typeof window.Audio === "function" ? "error" : "unsupported");
+        if (requestRef.current === generation) requestRef.current += 1;
       };
 
       if (currentAudioRef.current) {
@@ -466,10 +300,14 @@ export function useAudio({
         audio.onerror = () => {
           if (!isCurrent()) return;
           clearStall();
-          fallbackToSynthesis(cleanText, targetLang);
+          reportUnavailable();
         };
 
         currentAudioRef.current = audio;
+        clearStall();
+        stallTimerRef.current = window.setTimeout(() => {
+          if (isCurrent()) reportUnavailable();
+        }, MEDIA_STREAM_TIMEOUT_MS);
         audio.play().catch((err: unknown) => {
           if (!isCurrent()) return;
           clearStall();
@@ -480,117 +318,84 @@ export function useAudio({
             publish("idle");
             return;
           }
-          fallbackToSynthesis(cleanText, targetLang);
+          reportUnavailable();
         });
       };
 
-      /**
-       * A clip the build already generated and uploaded.
-       *
-       * This is the normal path. The vocabulary and the learning materials are
-       * synthesised once by scripts/generate_audio.cjs and served as immutable
-       * static files, so playback costs nothing and needs no credentials. The
-       * object key is a hash of the text, derived identically here and in the
-       * generator, so no manifest of what exists has to ship with the app — a
-       * miss simply 404s and falls through to the paths below.
-       */
+      /** Exact references win. Otherwise resolve verified takes before speculative hashes. */
       const playPregenerated = async (): Promise<boolean> => {
-        const explicitUrl =
-          objectKey && /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(objectKey)
-            ? assetUrl(objectKey)
-            : null;
-        const localExplicitUrl =
-          objectKey && /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(objectKey)
-            ? resolveAssetUrl(`/${objectKey}`)
-            : null;
-        const urls = explicitUrl
-          ? preferLocal && localExplicitUrl
-            ? [localExplicitUrl, explicitUrl]
-            : [explicitUrl, ...(localExplicitUrl ? [localExplicitUrl] : [])]
-          : hasAssetHost()
-            ? [
-                ...(await audioUrls(text.includes(" ") ? text : pronunciationAsset.text, [
+        const explicitKey = objectKey && isRecordingObjectKey(objectKey) ? objectKey : null;
+        const explicitUrl = explicitKey ? assetUrl(explicitKey) : null;
+        const localExplicitUrl = explicitKey ? resolveAssetUrl(`/${explicitKey}`) : null;
+        const urls: string[] = [];
+        if (explicitKey) {
+          if (preferLocal && localExplicitUrl) urls.push(localExplicitUrl);
+          if (explicitUrl) urls.push(explicitUrl);
+          if (localExplicitUrl) urls.push(localExplicitUrl);
+        } else {
+          if (hasAssetHost() && !usesPronunciationOverride) {
+            const additional = await additionalRecordingKey(text, targetLang).catch(() => null);
+            if (additional) {
+              const url = assetUrl(additional);
+              if (url) urls.push(url);
+            }
+            const edge = await edgeRecordingKey(text, targetLang).catch(() => null);
+            if (edge && (await isEdgeRecordingAvailable(edge).catch(() => false))) {
+              const url = assetUrl(edge);
+              if (url) urls.push(url);
+            }
+          }
+          if (hasAssetHost()) {
+            urls.push(
+              ...(await audioUrls(text.includes(" ") ? text : pronunciationAsset.text, [
+                pronunciationAsset.profile,
+                AUDIO_PROFILE_V4,
+              ]))
+            );
+            if (cleanText !== text)
+              urls.push(
+                ...(await audioUrls(text.includes(" ") ? pronunciationAsset.text : text, [
                   pronunciationAsset.profile,
                   AUDIO_PROFILE_V4,
-                ])),
-                ...(cleanText !== text
-                  ? await audioUrls(text.includes(" ") ? pronunciationAsset.text : text, [
-                      pronunciationAsset.profile,
-                      AUDIO_PROFILE_V4,
-                    ])
-                  : []),
-              ]
-            : preferLocal || usesPronunciationOverride
-              ? [
-                  resolveAssetUrl(
-                    `/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`
-                  ),
-                ]
-              : [];
-        const url = urls[0] ?? null;
-        if (!url) return false;
-        const cacheKey = `cdn:${url}`;
-
-        if (audioCache.has(cacheKey)) {
-          publish("loading");
-          playBlobUrl(audioCache.get(cacheKey)!);
-          return true;
+                ]))
+              );
+            const capitalized =
+              pronunciationAsset.text.charAt(0).toUpperCase() + pronunciationAsset.text.slice(1);
+            if (capitalized !== pronunciationAsset.text)
+              urls.push(
+                ...(await audioUrls(capitalized, [pronunciationAsset.profile, AUDIO_PROFILE_V4]))
+              );
+          } else if (preferLocal || usesPronunciationOverride) {
+            urls.push(
+              resolveAssetUrl(
+                `/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`
+              )
+            );
+          }
         }
-
-        const stored = await getCachedAudio(cacheKey).catch(() => null);
-        if (stored) {
-          const objectUrl = URL.createObjectURL(stored);
-          cacheAudioUrl(cacheKey, objectUrl);
-          publish("loading");
-          playBlobUrl(objectUrl);
-          return true;
-        }
-
-        // Stream the clip straight from the CDN rather than fetching its bytes.
-        //
-        // `fetch` is subject to CORS and the asset bucket sends no
-        // `Access-Control-Allow-Origin`, so every one of these requests failed
-        // and every word in the app quietly fell through to the robot voice —
-        // the pre-generated audio was never heard at all. A media element has
-        // no such restriction: `<audio>` may play a cross-origin file, it just
-        // may not let script read the samples. Playing is all this needs.
-        //
-        // A missing clip still 404s, `onerror` fires, and the caller falls
-        // through to synthesis exactly as before.
-        const played = await playStreamed(url);
-        if (played) {
-          cacheInBackground(url, cacheKey);
-          return true;
-        }
-
-        for (const fallbackUrl of urls.slice(1)) {
-          if (await playStreamed(fallbackUrl)) {
-            cacheInBackground(fallbackUrl, `cdn:${fallbackUrl}`);
+        for (const url of new Set(urls)) {
+          if (!isCurrent()) return true;
+          const cacheKey = `cdn:${url}`;
+          const memory = audioCache.get(cacheKey);
+          if (memory) {
+            publish("loading");
+            playBlobUrl(memory);
+            return true;
+          }
+          const stored = await getCachedAudio(cacheKey).catch(() => null);
+          if (!isCurrent()) return true;
+          if (stored && stored.size > 0) {
+            const objectUrl = URL.createObjectURL(stored);
+            cacheAudioUrl(cacheKey, objectUrl);
+            publish("loading");
+            playBlobUrl(objectUrl);
+            return true;
+          }
+          if (await playStreamed(url)) {
+            cacheInBackground(url, cacheKey);
             return true;
           }
         }
-
-        // If the primary lookup was a miss, try capitalized variant for vocabulary words
-        // (curriculum vocabulary labels are stored capitalized in R2 e.g. "Bed", "Blanket")
-        if (!objectKey && hasAssetHost()) {
-          const capitalized =
-            pronunciationAsset.text.charAt(0).toUpperCase() + pronunciationAsset.text.slice(1);
-          if (capitalized !== pronunciationAsset.text) {
-            const capUrls = await audioUrls(capitalized, [
-              pronunciationAsset.profile,
-              AUDIO_PROFILE_V4,
-            ]);
-            for (const capUrl of capUrls) {
-              if (capUrl === url) continue;
-              const capPlayed = await playStreamed(capUrl);
-              if (capPlayed) {
-                cacheInBackground(capUrl, `cdn:${capUrl}`);
-                return true;
-              }
-            }
-          }
-        }
-
         return false;
       };
 
@@ -608,6 +413,7 @@ export function useAudio({
             return;
           }
           const audio = new Audio(url);
+          const ownsMedia = () => isCurrent() && currentAudioRef.current === audio;
           audio.preload = "auto";
           applyPlaybackRate(audio, rateRef.current);
           audio.volume = volume;
@@ -628,7 +434,7 @@ export function useAudio({
           // because a clip that never began also never ends. `playing` fires
           // only once frames are actually being rendered.
           audio.onplaying = () => {
-            if (!isCurrent()) {
+            if (!ownsMedia() || (settled && !started)) {
               audio.pause();
               settle(true);
               return;
@@ -645,16 +451,16 @@ export function useAudio({
           };
           audio.onloadedmetadata = () => reportProgress(audio);
           audio.onwaiting = () => {
-            if (started) publish("buffering");
+            if (ownsMedia() && started) publish("buffering");
           };
           audio.onended = () => {
-            if (!isCurrent()) return;
+            if (!ownsMedia()) return;
             clearStall();
             publish("idle");
             endedRef.current?.();
           };
           audio.onerror = () => {
-            if (!isCurrent()) {
+            if (!ownsMedia()) {
               settle(true);
               return;
             }
@@ -679,7 +485,7 @@ export function useAudio({
           }, MEDIA_STREAM_TIMEOUT_MS);
 
           audio.play().catch((err: unknown) => {
-            if (!isCurrent()) {
+            if (!ownsMedia()) {
               settle(true);
               return;
             }
@@ -725,34 +531,24 @@ export function useAudio({
           });
       };
 
-      const playRemainingFallbacks = () => {
-        fallbackToSynthesis(cleanText, targetLang);
-      };
-
-      // With no bucket configured there is no clip to look for, and going
-      // through the async chain anyway would only delay the voice — on a phone,
-      // past the point where it can still play at all.
-      if (
-        playback?.synthesisOnly ||
-        (!hasAssetHost() && !preferLocal && !usesPronunciationOverride)
-      ) {
-        fallbackToSynthesis(cleanText, targetLang);
+      if (!text.trim() || (!hasAssetHost() && !preferLocal && !usesPronunciationOverride)) {
+        reportUnavailable();
         return;
       }
+      publish("loading");
 
       playPregenerated()
         .catch(() => false)
         .then((played) => {
-          if (!played) playRemainingFallbacks();
+          if (!played) reportUnavailable();
         });
     },
-    [lang, pitch, volume, preferLocal, preserveText, allowDeviceFallback, stop]
+    [lang, volume, preferLocal, stop]
   );
 
   const pause = useCallback(() => {
     if (status !== "playing" && status !== "buffering") return;
     if (currentAudioRef.current) currentAudioRef.current.pause();
-    else synthRef.current?.pause();
     setStatus("paused");
   }, [status]);
 
@@ -780,8 +576,8 @@ export function useAudio({
         }
       });
     } else {
-      synthRef.current?.resume();
-      setStatus("playing");
+      setStatus("error");
+      errorRef.current?.();
     }
   }, [status, stop]);
 
@@ -800,7 +596,6 @@ export function useAudio({
       requestRef.current += 1;
       currentAudioRef.current?.pause();
       if (activeAudioOwner === ownerIdRef.current) {
-        synthRef.current?.cancel();
         activeAudioOwner = null;
         pauseActiveAudio = null;
       }

@@ -70,7 +70,6 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
     lang: "en-US",
     rate: playbackRate,
     preferLocal: true,
-    preserveText: true,
   });
   const [activeTrack, setActiveTrack] = useState<"ar" | "en" | null>(null);
 
@@ -170,8 +169,11 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
     normalAudio.speak(
       text,
       track === "ar" ? "ar-SA" : "en-US",
-      track === "ar" ? audioAssets?.arabic.objectKey : audioAssets?.translation.objectKey,
-      { synthesisOnly: !matches }
+      matches
+        ? track === "ar"
+          ? audioAssets?.arabic.objectKey
+          : audioAssets?.translation.objectKey
+        : undefined
     );
   };
 

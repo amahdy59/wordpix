@@ -14,6 +14,12 @@ const { createClient } = require("./lib/r2.cjs");
 loadEnv();
 
 async function main() {
+  if (process.argv.includes("--read-only")) {
+    await require("./verify_recorded_audio.cjs").verifyRecordedAudio({
+      requireComplete: process.argv.includes("--require-complete"),
+    });
+    return;
+  }
   const r2 = createClient();
   console.log(`endpoint : ${r2.config.endpoint}`);
   console.log(`bucket   : ${r2.config.bucket}`);

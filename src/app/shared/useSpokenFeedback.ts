@@ -5,7 +5,7 @@ import { useAudio } from "./useAudio";
 import { audioUrl } from "./assetUrls";
 
 const CHIME_CLEARANCE_MS = 180;
-// Short feedback must not leave continuation waiting forever on stalled media/TTS.
+// Short feedback must not leave continuation waiting forever on stalled media.
 export const FEEDBACK_STALL_TIMEOUT_MS = 12000;
 
 export const SPOKEN_ADVANCE_DELAY_MS = {
@@ -140,7 +140,7 @@ export function useSpokenFeedback(): SpokenFeedback {
             const url = urls[currentIndex];
 
             if (!url) {
-              // CDN hash miss: fallback to useAudio TTS for the remainder of the sentence
+              // CDN hash miss: try the shared recorded-audio lookup
               speak(sequence.slice(currentIndex).join(" "));
               return;
             }
@@ -179,7 +179,7 @@ export function useSpokenFeedback(): SpokenFeedback {
 
             audio.onerror = () => {
               if (!isCurrent()) return;
-              // File missing on CDN, fallback to useAudio TTS
+              // File missing on CDN, try the shared recorded-audio lookup
               speak(sequence.slice(currentIndex).join(" "));
             };
 

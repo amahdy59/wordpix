@@ -1,22 +1,64 @@
 {
-  "version": "0.1.96",
+  "version": "0.1.98",
   "notes": [
-    "Light mode now uses warm paper and ivory surfaces with a subtle grain for a calmer reading experience.",
-    "Unit titles and controls now have separate space on phones, preventing narrow, letter-by-letter headings. The activities menu supports keyboard focus return.",
-    "A compact lesson navigation control stays available while scrolling on phones. Open it to jump between available sections, or press Escape to close it.",
-    "Business lessons show one clear unit heading instead of repeating the same header.",
-    "Scenario playback controls have translated labels, and caption requests use the correct cross-origin setting.",
-    "General interface controls load independently of the large sentence-image lookup registry."
+    "Twenty garden and outdoor vocabulary sentences now show individually reviewed images with descriptive alternatives."
   ],
   "notesAr": [
-    "يستخدم الوضع الفاتح الآن خلفيات ورقية دافئة وعاجية بملمس خفيف لتجربة قراءة أكثر هدوءاً.",
-    "أصبحت عناوين الوحدات وأزرارها في مساحات منفصلة على الهواتف لمنع التفاف العنوان حرفاً بحرف، مع إعادة تركيز لوحة المفاتيح بعد إغلاق قائمة الأنشطة.",
-    "يبقى عنصر تنقل مدمج متاحاً أثناء التمرير في الدروس على الهواتف. افتحه للانتقال بين الأقسام المتاحة أو اضغط Escape لإغلاقه.",
-    "تعرض دروس الأعمال عنواناً واحداً واضحاً للوحدة بدلاً من تكرار الترويسة.",
-    "أصبحت أزرار تشغيل المشاهد تحمل تسميات مترجمة، وتستخدم طلبات الترجمة النصية إعداد الوصول الصحيح عبر المصادر.",
-    "أصبحت عناصر الواجهة العامة تُحمّل بصورة مستقلة عن سجل البحث الكبير لصور الجمل."
+    "تعرض عشرون جملة من مفردات الحديقة والأنشطة الخارجية الآن صوراً روجعت كلٌّ منها على حدة، مع نصوص بديلة وصفية."
   ],
   "releases": [
+    {
+      "id": "0.1.98",
+      "version": "0.1.98",
+      "date": "2026-10-29",
+      "title": {
+        "en": "Reviewed images for garden and outdoor sentences",
+        "ar": "صور مراجَعة لجمل الحديقة والأنشطة الخارجية"
+      },
+      "changes": [
+        {
+          "id": "reviewed-outdoor-sentence-images",
+          "category": "improved",
+          "en": "Twenty garden and outdoor vocabulary sentences now show individually reviewed images with descriptive alternatives.",
+          "ar": "تعرض عشرون جملة من مفردات الحديقة والأنشطة الخارجية الآن صوراً روجعت كلٌّ منها على حدة، مع نصوص بديلة وصفية."
+        }
+      ]
+    },
+    {
+      "id": "0.1.97",
+      "version": "0.1.97",
+      "date": "2026-10-29",
+      "title": {
+        "en": "Recorded lesson audio and playback recovery",
+        "ar": "صوت الدروس المسجل واستعادة التشغيل"
+      },
+      "changes": [
+        {
+          "id": "stored-lesson-audio",
+          "category": "improved",
+          "en": "Lesson audio uses stored recordings instead of live browser or device voices, while keeping existing recordings in use.",
+          "ar": "يستخدم صوت الدروس تسجيلات محفوظة بدلاً من أصوات المتصفح أو الجهاز المباشرة، مع الاستمرار في استخدام التسجيلات الحالية."
+        },
+        {
+          "id": "recorded-question-context",
+          "category": "improved",
+          "en": "Question audio plays recorded context around missing words, keeping the answer silent.",
+          "ar": "يشغّل صوت الأسئلة السياق المسجل حول الكلمات الناقصة، مع إبقاء الإجابة صامتة."
+        },
+        {
+          "id": "recording-recovery",
+          "category": "fixed",
+          "en": "Scenario playback can reuse recorded dialogue lines when a full track fails. Audio that cannot play offers recovery instead of switching to a device voice.",
+          "ar": "يمكن لتشغيل المشاهد استخدام جمل الحوار المسجلة إذا تعذّر تشغيل المسار الكامل. ويوفّر الصوت المتعذر تشغيله إمكانية إعادة المحاولة بدلاً من الانتقال إلى صوت الجهاز."
+        },
+        {
+          "id": "portable-offline-audio",
+          "category": "fixed",
+          "en": "Audio caching now supports browsers that cannot store audio Blobs, while keeping older cached recordings readable.",
+          "ar": "يدعم تخزين الصوت الآن المتصفحات التي لا تستطيع حفظ ملفات الصوت بصيغة Blob، مع الحفاظ على إمكانية قراءة التسجيلات المخزنة سابقاً."
+        }
+      ]
+    },
     {
       "id": "0.1.96",
       "version": "0.1.96",

@@ -28,7 +28,7 @@ export const PlacementQuizModal = memo(function PlacementQuizModal({
   const [answers, setAnswers] = useState<boolean[]>([]);
   const [usedTranscript, setUsedTranscript] = useState(false);
   const containerRef = useModalA11y({ isOpen, onDismiss: onClose });
-  const audio = useAudio({ allowDeviceFallback: true });
+  const audio = useAudio();
   useEffect(() => {
     if (isOpen) {
       setAnswers([]);

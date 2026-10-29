@@ -110,9 +110,7 @@ describe("sentence question evidence", () => {
     expect(screen.getByRole("img")).toBeVisible();
     expect(screen.getByText("5")).toBeVisible();
     fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
-    expect(speak).toHaveBeenLastCalledWith("There are", undefined, undefined, {
-      synthesisOnly: true,
-    });
+    expect(speak).toHaveBeenLastCalledWith("There are");
     unmount();
 
     render(
@@ -148,7 +146,7 @@ describe("sentence question evidence", () => {
     expect(speak).toHaveBeenCalledTimes(1);
     expect(screen.getByRole("button", { name: /Stop sentence audio/i })).toBeVisible();
     act(() => vi.advanceTimersByTime(1));
-    expect(speak).toHaveBeenLastCalledWith("cups.", undefined, undefined, { synthesisOnly: true });
+    expect(speak).toHaveBeenLastCalledWith("cups.");
     act(() => audioOptions.onEnded?.());
     expect(screen.getByRole("button", { name: /Listen to the sentence/i })).toBeVisible();
   });
