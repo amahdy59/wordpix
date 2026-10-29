@@ -53,6 +53,39 @@ const reuse = () => ({
 });
 const run = (decisions, demands = [demand], assets = [asset]) =>
   validateVisualDecisions({ schemaVersion: 1, decisions }, demands, assets);
+test("resolved content repair preserves the old review and pins the real replacement", () => {
+  const previous = { ...demand, demandId: "demand-old", text: "This is a firewood." };
+  const current = { ...demand, demandId: "demand-new", text: "This is firewood." };
+  const decision = {
+    decision: "content-repair",
+    content: contentSnapshot(previous),
+    issues: ["Mass noun"],
+    review,
+    resolution: { replacement: contentSnapshot(current), review },
+  };
+  assert.equal(run([decision], [current]).length, 1);
+  assert.throws(() => run([decision], [previous, current]), /Stale content repair/);
+  assert.throws(
+    () => run([decision], [{ ...current, text: "Different text." }]),
+    /Stale content repair/
+  );
+  assert.throws(
+    () =>
+      run(
+        [
+          {
+            ...decision,
+            resolution: {
+              ...decision.resolution,
+              replacement: { ...decision.resolution.replacement, wordId: "different" },
+            },
+          },
+        ],
+        [current]
+      ),
+    /Stale content repair/
+  );
+});
 test("reuse decision binds exact content and asset bytes without mutating sources", () => {
   const before = structuredClone(demand);
   assert.equal(run([reuse()]).length, 1);

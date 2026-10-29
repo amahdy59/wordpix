@@ -7,6 +7,7 @@ import { BEDROOM_VOCABULARY } from "../data/lessons";
 function stubCacheStorage(cachedUrls: string[]) {
   const cached = new Set(cachedUrls);
   vi.stubGlobal("caches", {
+    keys: async () => ["wordpix-cache-v2", "wordpix-runtime-v1"],
     open: async () => ({
       match: async (url: string) => (cached.has(url) ? new Response("") : undefined),
     }),

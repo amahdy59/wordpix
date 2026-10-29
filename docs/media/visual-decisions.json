@@ -620,6 +620,23 @@
         "reviewer": "Codex content audit",
         "reviewedAt": "2026-10-29T04:18:40.552Z",
         "evidence": "Current runtime sentence: This is a firewood. No image generation is approved for defective source wording."
+      },
+      "resolution": {
+        "replacement": {
+          "demandId": "demand-9f05812688eae77fea9005c2",
+          "kind": "sentence",
+          "unitId": "camping-site",
+          "lessonId": "camping-site-1",
+          "wordId": "firewood",
+          "text": "This is firewood.",
+          "expectedResolvedUrl": null,
+          "contentSha256": "9f05812688eae77fea9005c2808ea5cf3edc576d564b2bd7fa59e161cc75c89e"
+        },
+        "review": {
+          "reviewer": "Codex content review",
+          "reviewedAt": "2026-10-29T14:20:08.450Z",
+          "evidence": "Corrected mass-noun classification in wordGrammar. Runtime content extraction confirms the article-free identification sentence; countable container compounds retain their article. The original wording and review are preserved here."
+        }
       }
     },
     {
@@ -641,6 +658,23 @@
         "reviewer": "Codex content audit",
         "reviewedAt": "2026-10-29T04:18:40.552Z",
         "evidence": "Current runtime sentence: This is a sunscreen. No image generation is approved for defective source wording."
+      },
+      "resolution": {
+        "replacement": {
+          "demandId": "demand-ec9d68ca10e8058a48b17728",
+          "kind": "sentence",
+          "unitId": "camping-site",
+          "lessonId": "camping-site-3",
+          "wordId": "sunscreen",
+          "text": "This is sunscreen.",
+          "expectedResolvedUrl": null,
+          "contentSha256": "ec9d68ca10e8058a48b17728f6d6b0f59ccc35a77ca6b7fb429907545ded44d7"
+        },
+        "review": {
+          "reviewer": "Codex content review",
+          "reviewedAt": "2026-10-29T14:20:08.453Z",
+          "evidence": "Corrected mass-noun classification in wordGrammar. Runtime content extraction confirms the article-free identification sentence; countable container compounds retain their article. The original wording and review are preserved here."
+        }
       }
     }
   ]

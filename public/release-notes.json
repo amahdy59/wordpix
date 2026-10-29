@@ -1,12 +1,49 @@
 {
-  "version": "0.1.98",
+  "version": "0.1.99",
   "notes": [
-    "Twenty garden and outdoor vocabulary sentences now show individually reviewed images with descriptive alternatives."
+    "Optionally save a unit’s vocabulary and selected lesson images for offline use, with size estimates, retry, cancellation and removal that keeps your progress.",
+    "Flag an unclear, mismatched or cropped image. Reports stay on your device and can be exported or cleared from Settings; they are not sent automatically."
   ],
   "notesAr": [
-    "تعرض عشرون جملة من مفردات الحديقة والأنشطة الخارجية الآن صوراً روجعت كلٌّ منها على حدة، مع نصوص بديلة وصفية."
+    "يمكنك اختيارياً حفظ صور مفردات الوحدة وسياقات دروسها المختارة للاستخدام دون إنترنت، مع تقدير الحجم وإعادة المحاولة والإلغاء والإزالة دون المساس بتقدمك.",
+    "أبلغ عن صورة غير واضحة أو غير مطابقة أو مقصوصة. تبقى البلاغات على جهازك ويمكن تصديرها أو مسحها من الإعدادات؛ لا تُرسل تلقائياً."
   ],
   "releases": [
+    {
+      "id": "0.1.99",
+      "version": "0.1.99",
+      "date": "2026-10-29",
+      "title": {
+        "en": "Offline unit images and local image reports",
+        "ar": "صور الوحدات دون إنترنت وبلاغات الصور المحلية"
+      },
+      "changes": [
+        {
+          "id": "optional-unit-images",
+          "category": "added",
+          "en": "Optionally save a unit’s vocabulary and selected lesson images for offline use, with size estimates, retry, cancellation and removal that keeps your progress.",
+          "ar": "يمكنك اختيارياً حفظ صور مفردات الوحدة وسياقات دروسها المختارة للاستخدام دون إنترنت، مع تقدير الحجم وإعادة المحاولة والإلغاء والإزالة دون المساس بتقدمك."
+        },
+        {
+          "id": "local-image-reports",
+          "category": "added",
+          "en": "Flag an unclear, mismatched or cropped image. Reports stay on your device and can be exported or cleared from Settings; they are not sent automatically.",
+          "ar": "أبلغ عن صورة غير واضحة أو غير مطابقة أو مقصوصة. تبقى البلاغات على جهازك ويمكن تصديرها أو مسحها من الإعدادات؛ لا تُرسل تلقائياً."
+        },
+        {
+          "id": "image-selection-and-reference",
+          "category": "fixed",
+          "en": "Known incorrect sentence images are skipped, and vocabulary reference pictures are labelled clearly. Firewood and sunscreen identification sentences now use the correct mass-noun grammar.",
+          "ar": "يُتخطى عرض صور الجمل المعروفة بعدم مطابقتها، وتُميَّز صور المفردات المرجعية بوضوح. وتستخدم جملتا التعريف بالحطب وواقي الشمس الآن القاعدة الصحيحة للأسماء غير المعدودة."
+        },
+        {
+          "id": "image-browsing-delivery",
+          "category": "improved",
+          "en": "Word browsing shows the whole main image and preloads only the next picture, respecting data-saving and slow connections.",
+          "ar": "يعرض تصفح الكلمات الصورة الرئيسية كاملة ويحمّل الصورة التالية فقط مسبقاً، مع مراعاة وضع توفير البيانات والاتصالات البطيئة."
+        }
+      ]
+    },
     {
       "id": "0.1.98",
       "version": "0.1.98",

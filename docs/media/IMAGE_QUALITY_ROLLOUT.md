@@ -1,0 +1,112 @@
+# Image quality implementation and review ledger
+
+The user accepted the image-quality recommendations on 29 October 2026.
+This ledger distinguishes software delivery from individually reviewed artwork.
+It is not a declaration of complete visual coverage or WCAG conformance.
+
+## Implemented software
+
+- The sentence resolver excludes 27 associations already visually confirmed as
+  incorrect. The source registry, content IDs, image URLs and R2 objects are
+  preserved. Exclusions pin word, exact sentence and original image path; they
+  cannot accidentally exclude a future replacement with different bytes/URL.
+- Exact sentence image fallbacks retain their own descriptions. A word-reference
+  fallback is explicitly labelled as such instead of claiming to depict the
+  complete situation.
+- Vocabulary browsing displays the complete main image with `object-contain`.
+  It prefetches only the next image, at low priority, and respects offline,
+  Save-Data and slow-2g/2g connections. Existing current-image eager/priority hints
+  and lazy thumbnails remain in place.
+- Learners can report vocabulary, sentence, story and Hadith practice images.
+  Reports stay on the device, deduplicate stable content/URL/reason identities,
+  collect no account identity or free-form personal data, and can be exported or
+  cleared in Settings. They are **not automatically submitted** to the team.
+  The URL identity is not a claim to have hashed the remote image bytes.
+- Optional per-unit image packs use the app's actual vocabulary, two sentence
+  selections, scene/phrase assets and authored reading media. A saved primary
+  image satisfies its use; optional alternatives do not inflate the download.
+  Estimates are explicitly approximate; completed downloads show real bytes.
+  Cancellation preserves resumable images. Retries validate existing readable
+  responses; incomplete/empty/non-image files never establish readiness.
+  Storage failures have recovery actions. Removing a unit pack affects only its
+  owned image cache, not another pack, lesson text, audio or learner progress.
+  The service worker serves pinned images before its bounded runtime cache.
+- The optional image list is prepared only when its disclosure is opened; a
+  normal Settings visit does not load the full sentence-content selector.
+- `firewood` and `sunscreen` use mass-noun identification grammar. The original
+  defective wording and its review are preserved with exact replacement evidence.
+
+## Maintainer review workspace
+
+Run the read-only runtime/catalog/review audits, then `pnpm media:dashboard`.
+Open `output/image-quality/index.html`. It supports per-unit and specialist
+filters, exact content search, missing/mismatch/reference/hold/purpose queues,
+content revisions, inventory capture dates, byte evidence, semantic status,
+mobile/crop previews and purpose proposals. Imported learner reports remain
+local, including unmatched reports outside the present coverage scope:
+
+```powershell
+node scripts/build_image_quality_dashboard.mjs --reports C:/path/to/wordpix-image-reports.json
+```
+
+This tool does not write R2 or runtime assignments. Its imported report schema
+is shared with the learner app, validates identity hashes and rejects unexpected
+fields and unmanaged origins. Purpose proposals require a named reviewer,
+individual rationale and content revision; the permanent ledger rejects stale
+or duplicate decisions. Previewing an image or changing a crop is not approval.
+
+## Reviewed purpose decisions
+
+All 29 currently unassigned specialist Hadith vocabulary uses have individual
+purpose rationales in `visual-purpose-decisions.json`: 23 are text-only and six
+would benefit from contextual visual support. This is a purpose review, not an
+approval of any candidate image. Abstract faith, intention, obligation and
+figurative meanings must not be inferred from a person's appearance or a
+literal scene. The six helpful cases remain in the artwork review queue.
+
+## Artwork review still open
+
+The source audit remains intentionally explicit about incomplete work:
+
+- Selected sentence uses without exact-sentence art still require individual
+  purpose/candidate review. Exact text and lexical retrieval are search evidence,
+  not semantic approval. The current count increased when known wrong images
+  were excluded; this is a more honest count, not lost R2 data.
+- The 2,014 word-reference scene uses and 865 first-word story heroes have not
+  all received scene-level semantic review. Do not claim full action, quantity,
+  spatial or narrative coverage from a vocabulary picture.
+- Business/conversation quiz prompts still need task-level purpose decisions;
+  do not generate hundreds of images merely because their prompts are text-only.
+- Responsive R2 variants need actual source-byte review, local encoding,
+  immutable candidate names, verification and an explicit permitted deployment
+  path. No invented `srcset` paths are shipped.
+- The project's current AGENTS.md media constraint keeps R2 references read-only.
+  This software change performs no upload, overwrite, deletion or source mapping
+  rewrite. Any future approved media batch must preserve existing objects and
+  separately record exact content, served-byte and authorization evidence.
+
+## Validation record
+
+The new tests cover report persistence/privacy/deduplication, dialog focus,
+offline pack cancellation/retry/storage/removal, malformed/empty image responses,
+exact rejection scopes, grammar, purpose-review revisions, report imports and
+safe generated HTML. Browser tests exercise English/Arabic report export and
+real CacheStorage/service-worker image delivery across an offline reload.
+
+The 31 media-tool invariants and production bundle/route budgets passed during
+development. The pre-push hook repeats TypeScript, all unit tests, ESLint,
+media/audio/shard checks, a production build, bundle budgets and the full browser
+matrix for the final commit. Local verification receipts are saved under
+`output/image-quality/`. The independently cached sentence table is about
+11.5 MB (2.36 MB gzip), compared with about 22.4 MB (2.91 MB gzip) in the previous
+combined exercise bundle. Budget ceilings were not raised. Source mappings
+remain unchanged; the compact table is a checked derivative.
+
+The two corrected identification sentences require new recordings. The local
+validated clips total 14,728 bytes and are pinned in
+`PENDING_AUDIO_PUBLICATION.json`. They have not been uploaded or linked because
+of the current R2 guard. Production release readiness remains blocked; a draft
+branch must not be described as deployed. Existing recorded audio is unchanged.
+
+The final branch verification receipt is `output/image-quality/prepush-final.log`.
+Artwork review left open above must not be represented as completed by tests.

@@ -150,6 +150,12 @@ export const ExerciseReadingContext = memo(function ExerciseReadingContext({
               >
                 <QuestionImage
                   media={cluster.microReading.media}
+                  reportContext={{
+                    kind: "scene",
+                    unitId: words[0]?.topic,
+                    wordId: cluster.id,
+                    text: cluster.microReading.text,
+                  }}
                   className="size-full object-contain object-center"
                   decoding="async"
                   onExhausted={() => setFailedImage(cluster.microReading.media!.imagePath)}

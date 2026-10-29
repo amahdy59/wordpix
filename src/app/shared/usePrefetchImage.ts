@@ -2,6 +2,17 @@ import { useEffect } from "react";
 import type { VocabularyItem } from "../data/lessons";
 import { getWordImageSrc } from "./WordImage";
 
+export function canPrefetchImages() {
+  const connection = (
+    navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }
+  ).connection;
+  return (
+    navigator.onLine !== false &&
+    !connection?.saveData &&
+    !["slow-2g", "2g"].includes(connection?.effectiveType ?? "")
+  );
+}
+
 /**
  * Warms the browser's image cache for the word coming up next in a drill.
  *
@@ -10,10 +21,14 @@ import { getWordImageSrc } from "./WordImage";
  * catches up. The current question already has its own `<img>` loading
  * eagerly, so only the *next* word needs a background nudge here.
  */
-export function usePrefetchImage(word: VocabularyItem | null | undefined, sizePreset: "thumb" | "card" | "hero" = "card") {
+export function usePrefetchImage(
+  word: VocabularyItem | null | undefined,
+  sizePreset: "thumb" | "card" | "hero" = "card"
+) {
   useEffect(() => {
-    if (!word) return;
+    if (!word || !canPrefetchImages()) return;
     const img = new Image();
+    img.fetchPriority = "low";
     img.src = getWordImageSrc(word, sizePreset);
   }, [word, sizePreset]);
 }

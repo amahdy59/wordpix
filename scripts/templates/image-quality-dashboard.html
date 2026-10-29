@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WordPix image quality</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #f3eee3;
+        --ink: #25231f;
+        --panel: #fffaf1;
+        --line: #776c5f;
+        --accent: #42309b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font:
+          1rem/1.6 system-ui,
+          sans-serif;
+      }
+      header,
+      main {
+        max-width: 100rem;
+        margin: auto;
+        padding: 1rem;
+      }
+      header {
+        border-bottom: 1px solid var(--line);
+      }
+      h1,
+      h2,
+      p {
+        margin: 0.5rem 0;
+      }
+      a {
+        color: var(--accent);
+      }
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+        min-height: 44px;
+        padding: 0.5rem;
+        border: 1px solid var(--line);
+        border-radius: 0.6rem;
+        background: var(--panel);
+        color: var(--ink);
+        max-width: 100%;
+      }
+      button {
+        cursor: pointer;
+      }
+      button:disabled {
+        cursor: default;
+        opacity: 0.6;
+      }
+      :focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 3px;
+      }
+      .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: end;
+      }
+      .filters label {
+        display: grid;
+        gap: 0.25rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+      article {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 1rem;
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+      article > label {
+        display: grid;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+      }
+      article img {
+        width: 100%;
+        height: 230px;
+        object-fit: contain;
+        background: var(--paper);
+        display: block;
+      }
+      body.crop article img {
+        object-fit: cover;
+      }
+      body.mobile .grid {
+        grid-template-columns: minmax(0, 320px);
+        justify-content: center;
+      }
+      details {
+        margin: 0.6rem 0;
+      }
+      summary {
+        cursor: pointer;
+        min-height: 44px;
+        padding: 0.5rem;
+      }
+      dt {
+        font-weight: bold;
+      }
+      dd {
+        margin: 0 0 0.5rem;
+      }
+      .badge {
+        display: inline-block;
+        border: 1px solid var(--line);
+        padding: 0.1rem 0.5rem;
+        border-radius: 2rem;
+        margin-inline-end: 0.5rem;
+      }
+      small {
+        display: block;
+      }
+      textarea {
+        width: 100%;
+        min-height: 5rem;
+      }
+      nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      .sr {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip-path: inset(50%);
+        overflow: hidden;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #171b24;
+          --ink: #f4eee3;
+          --panel: #242b39;
+          --line: #b9b09f;
+          --accent: #d5c8ff;
+        }
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        button {
+          transition: background 0.15s;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>WordPix image quality</h1>
+      <p>
+        Maintainer review workspace. Inventory, assignment, byte checks and meaning are separate
+        evidence. A filename or candidate score never approves an image.
+      </p>
+      <p id="capture"></p>
+      <p id="totals"></p>
+    </header>
+    <main>
+      <div class="filters">
+        <label
+          >Unit<select id="unit">
+            <option value="">All units and specialist courses</option>
+          </select></label
+        ><label
+          >Find content<input
+            id="search"
+            type="search"
+            placeholder="Word, exact sentence, stable ID…" /></label
+        ><label
+          >Review queue<select id="queue">
+            <option value="">All uses</option>
+            <option value="missing">Unassigned</option>
+            <option value="mismatch">Confirmed mismatch</option>
+            <option value="reference">Reference only</option>
+            <option value="hold">Content held</option>
+            <option value="purpose">Purpose undecided</option>
+            <option value="reports">Learner reports</option>
+          </select></label
+        ><label
+          >Kind<select id="kind">
+            <option value="">All kinds</option>
+          </select></label
+        ><label
+          ><span>Preview</span
+          ><button id="mobile" aria-pressed="false">320 px mobile frame</button></label
+        ><label
+          ><span>Crop check</span><button id="crop" aria-pressed="false">Cover crop</button></label
+        >
+      </div>
+      <p>
+        Previewing a crop does not record approval. Check subjects, actions, quantities, context,
+        answer safety and descriptions against the original image. Empty purpose decisions remain
+        undecided.
+      </p>
+      <div class="filters">
+        <label>Reviewer name<input id="reviewer" autocomplete="name" /></label
+        ><button id="export">Export purpose proposals</button>
+      </div>
+      <p id="notice" role="status"></p>
+      <p id="results" role="status"></p>
+      <div id="cards" class="grid"></div>
+      <nav aria-label="Review pages">
+        <button id="previous">Previous</button><span id="page"></span
+        ><button id="next">Next</button>
+      </nav>
+      <script>
+        /* DASHBOARD_DATA */
+        const $ = (id) => document.getElementById(id),
+          drafts = new Map();
+        let page = 0;
+        const pageSize = 12;
+        function element(tag, text, parent) {
+          const node = document.createElement(tag);
+          if (text !== undefined) node.textContent = text;
+          if (parent) parent.append(node);
+          return node;
+        }
+        const counts = new Map();
+        for (const row of data.rows) counts.set(row.unitId, (counts.get(row.unitId) || 0) + 1);
+        for (const [unit, count] of [...counts].sort()) {
+          const opt = element("option", `${unit} (${count})`, $("unit"));
+          opt.value = unit;
+        }
+        for (const kind of [...new Set(data.rows.map((row) => row.kind))].sort()) {
+          const opt = element("option", kind, $("kind"));
+          opt.value = kind;
+        }
+        $("capture").textContent =
+          `Generated ${data.generatedAt}. R2 inventory captured ${data.inventoryAt}. Image previews fetch the existing public URLs. No R2 writes or assignment changes.`;
+        $("totals").textContent =
+          `${data.rows.length.toLocaleString()} image uses · ${data.rows.filter((row) => !row.url).length.toLocaleString()} unassigned · ${data.reports.length} imported local reports. Unassigned does not mean a new image is required.`;
+        function matchesReports(row) {
+          return data.reports.filter(
+            (report) =>
+              report.context.text === row.text &&
+              (!report.context.wordId ||
+                report.context.wordId === row.wordId ||
+                report.context.wordId === `${row.lessonId}-${row.wordId}`) &&
+              report.assetUrl === row.url
+          );
+        }
+        function render() {
+          const search = $("search").value.toLocaleLowerCase(),
+            queue = $("queue").value;
+          const filtered = data.rows.filter(
+            (row) =>
+              (!$("unit").value || row.unitId === $("unit").value) &&
+              (!$("kind").value || row.kind === $("kind").value) &&
+              (!search ||
+                `${row.wordId} ${row.text} ${row.id}`.toLocaleLowerCase().includes(search)) &&
+              (!queue ||
+                {
+                  missing: !row.url,
+                  mismatch: row.semantic === "confirmed mismatch",
+                  reference: row.referenceOnly,
+                  hold: !!row.hold,
+                  purpose: row.purpose === "needs review",
+                  reports: matchesReports(row).length > 0,
+                }[queue])
+          );
+          const pages = Math.max(1, Math.ceil(filtered.length / pageSize));
+          page = Math.min(page, pages - 1);
+          $("cards").replaceChildren();
+          $("results").textContent = `${filtered.length.toLocaleString()} matching uses`;
+          $("page").textContent = `Page ${page + 1} of ${pages}`;
+          $("previous").disabled = page === 0;
+          $("next").disabled = page === pages - 1;
+          for (const row of filtered.slice(page * pageSize, (page + 1) * pageSize)) {
+            const article = element("article", undefined, $("cards"));
+            element("h2", `${row.unitId} · ${row.kind}`, article);
+            element("p", row.text, article).lang = "en";
+            if (row.url) {
+              const img = element("img", undefined, article);
+              img.loading = "lazy";
+              img.decoding = "async";
+              img.width = 640;
+              img.height = 480;
+              img.alt = `Review preview: ${row.displayName || "image meaning not yet reviewed"}`;
+              img.src = row.url;
+              img.onerror = () =>
+                element(
+                  "p",
+                  "Preview unavailable. This is not proof the image was deleted.",
+                  article
+                );
+              const link = element("a", "Open original image", article);
+              link.href = row.url;
+              link.target = "_blank";
+              link.rel = "noopener noreferrer";
+            } else
+              element(
+                "p",
+                "No assigned image. Review the learning purpose before requesting art.",
+                article
+              );
+            for (const label of [
+              row.semantic,
+              row.referenceOnly ? "word reference only" : null,
+              row.hold ? "content hold" : null,
+              row.purpose,
+            ])
+              if (label) element("span", label, article).className = "badge";
+            const details = element("details", undefined, article);
+            element("summary", "Evidence and stable identities", details);
+            const dl = element("dl", undefined, details);
+            for (const [key, value] of Object.entries({
+              contentId: row.id,
+              wordId: row.wordId,
+              contentSha256: row.revision,
+              imageKey: row.key,
+              reviewedAssetSha256: row.reviewedAssetSha256,
+              inventory: row.inventory,
+              bytes: row.byteEvidence,
+              hold: row.hold,
+              candidates: row.candidateCount,
+              purposeRationale: row.rationale,
+            })) {
+              element("dt", key, dl);
+              element("dd", String(value ?? "Not recorded"), dl);
+            }
+            const reports = matchesReports(row);
+            if (reports.length)
+              element(
+                "p",
+                reports
+                  .map(
+                    (report) =>
+                      `${report.reason}: ${report.occurrences} reports, last ${report.updatedAt}`
+                  )
+                  .join(" · "),
+                article
+              );
+            const label = element("label", "Visual purpose proposal", article),
+              select = element("select", undefined, label);
+            select.id = `purpose-${row.id}`;
+            label.htmlFor = select.id;
+            for (const value of ["needs review", "required", "helpful", "text-only"]) {
+              const opt = element("option", value, select);
+              opt.value = value;
+            }
+            const draft = drafts.get(row.id);
+            select.value = draft?.purpose || row.purpose;
+            const rationaleLabel = element("label", "Why this purpose suits the task", article),
+              rationale = element("textarea", undefined, rationaleLabel);
+            rationale.id = `rationale-${row.id}`;
+            rationaleLabel.htmlFor = rationale.id;
+            rationale.value = draft?.rationale || row.rationale;
+            rationale.maxLength = 3000;
+            const update = () =>
+              drafts.set(row.id, {
+                contentId: row.id,
+                contentSha256: row.revision,
+                purpose: select.value,
+                rationale: rationale.value.trim(),
+              });
+            select.onchange = update;
+            rationale.oninput = update;
+          }
+        }
+        for (const id of ["unit", "search", "queue", "kind"])
+          $(id).addEventListener("input", () => {
+            page = 0;
+            render();
+          });
+        $("previous").onclick = () => {
+          page--;
+          render();
+        };
+        $("next").onclick = () => {
+          page++;
+          render();
+        };
+        for (const id of ["mobile", "crop"])
+          $(id).onclick = () => {
+            const value = $(id).getAttribute("aria-pressed") !== "true";
+            $(id).setAttribute("aria-pressed", String(value));
+            document.body.classList.toggle(id, value);
+          };
+        $("export").onclick = () => {
+          const reviewer = $("reviewer").value.trim(),
+            reviews = [...drafts.values()].filter((row) => row.purpose !== "needs review");
+          if (!reviewer || !reviews.length || reviews.some((row) => row.rationale.length < 20)) {
+            $("notice").textContent =
+              "Enter a reviewer, select at least one purpose and explain each decision in at least 20 characters.";
+            return;
+          }
+          const output = {
+            schemaVersion: 1,
+            reviews: reviews.map((row) => ({
+              ...row,
+              reviewer,
+              reviewedAt: new Date().toISOString(),
+            })),
+          };
+          const blob = new Blob([JSON.stringify(output, null, 2)], { type: "application/json" }),
+            url = URL.createObjectURL(blob),
+            a = document.createElement("a");
+          a.href = url;
+          a.download = "visual-purpose-proposals.json";
+          a.click();
+          setTimeout(() => URL.revokeObjectURL(url), 1000);
+          $("notice").textContent =
+            "Proposals exported. Review and validate them before updating the permanent purpose ledger. No live assignments changed.";
+        };
+        render();
+      </script>
+    </main>
+  </body>
+</html>

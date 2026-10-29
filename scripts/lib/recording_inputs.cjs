@@ -8,6 +8,7 @@ function recordingInputsDigest() {
     "scripts/plan_recorded_audio.ts",
     "src/app/core/SettingsPage.tsx",
     "src/app/core/SettingsModal.tsx",
+    "src/app/generated/sentenceMediaRuntime.json",
   ];
   function visit(directory) {
     for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
@@ -19,6 +20,7 @@ function recordingInputsDigest() {
   }
   for (const directory of [
     "src/app/data",
+    "src/app/content",
     "src/app/exercises",
     "src/app/learning",
     "src/app/shared",

@@ -55,6 +55,7 @@ export const visualDecisionsSchema = z
             content: context,
             issues: z.array(text).min(1),
             review,
+            resolution: z.object({ replacement: context, review }).strict().optional(),
           })
           .strict(),
         z
@@ -130,6 +131,22 @@ export function validateVisualDecisions(data, demands, assets) {
     const id = decision.content.demandId;
     if (seen.has(id)) throw new Error(`Conflicting decisions for ${id}`);
     seen.add(id);
+    if (decision.decision === "content-repair" && decision.resolution) {
+      const replacement = decision.resolution.replacement;
+      const current = byDemand.get(replacement.demandId);
+      if (
+        byDemand.has(id) ||
+        decision.content.contentSha256 !== contentDigest(decision.content) ||
+        !current ||
+        JSON.stringify(contentSnapshot(current)) !== JSON.stringify(replacement) ||
+        ["kind", "unitId", "lessonId", "wordId"].some(
+          (key) => replacement[key] !== decision.content[key]
+        ) ||
+        replacement.text === decision.content.text
+      )
+        throw new Error(`Stale content repair resolution: ${id}`);
+      continue;
+    }
     const demand = byDemand.get(id);
     const snapshot = demand ? contentSnapshot(demand) : null;
     const appliedReuse =

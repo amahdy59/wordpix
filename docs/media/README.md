@@ -107,9 +107,19 @@ Literal JSON references from specialist catalogs are indexed as provenance, not
 claimed as a complete runtime coverage audit. All remote object kinds are listed;
 local duplicate hashing currently covers images.
 
-The current exact-sentence resolver drops stored fallback arrays. This is recorded
-as a limitation, not silently repaired, because live media mappings are protected.
-No new-art count should be reported as final until visual matching is complete.
+The exact-sentence resolver now uses a compact, checked runtime derivative and
+retains fallback arrays with their own descriptions. The source registry remains
+unchanged. It excludes the 27 associations already visually confirmed as wrong;
+this does not approve replacement artwork. No new-art count should be reported
+as final until visual matching is complete.
+
+Run `pnpm media:dashboard` to build the local per-unit review workspace at
+`output/image-quality/index.html`. Learner exports can be included with
+`node scripts/build_image_quality_dashboard.mjs --reports C:/path/to/wordpix-image-reports.json`.
+Imports validate the shared report schema and stable identity hashes. The dashboard
+does not submit reports, write R2 or apply mapping/purpose proposals. See
+`IMAGE_QUALITY_ROLLOUT.md` for implemented software, reviewed purpose decisions,
+open artwork work and release blockers.
 
 Run `pnpm run media:catalog:test` for catalog invariants, then the project's
 TypeScript, Vitest and ESLint gates for changes to these tools. These are internal

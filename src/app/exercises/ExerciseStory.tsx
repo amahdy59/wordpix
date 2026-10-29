@@ -38,6 +38,7 @@ import { loadLessonStory } from "../data/lessonStoryLoader";
 import { rotateOptions } from "../data/lessonContext";
 import { LessonTransferPractice } from "./LessonTransferPractice";
 import { QuestionImage } from "../shared/QuestionImage";
+import { ImageReportButton } from "../shared/ImageReportButton";
 import { getScenarioForLesson } from "../data/scenarios/scenarioService";
 import { UnitScenarioPlayer } from "../learning/study/UnitScenarioPlayer";
 import { z } from "zod";
@@ -580,8 +581,10 @@ export const ExerciseStory = memo(function ExerciseStory({
               <div className="relative h-44 sm:h-56 w-full overflow-hidden bg-muted">
                 <img
                   src={heroImage}
-                  alt={group.name + " scene context"}
-                  className="size-full object-cover"
+                  alt={words[0]?.description || words[0]?.label || t("story.vocabularyReference")}
+                  className="size-full object-contain"
+                  loading="eager"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent" />
 
@@ -629,6 +632,24 @@ export const ExerciseStory = memo(function ExerciseStory({
               </div>
 
               <div className="p-5 sm:p-6 flex flex-col gap-3">
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-xs leading-relaxed text-foreground">
+                    {t("story.vocabularyReference")}:{" "}
+                    <span lang="en" dir="ltr">
+                      {words[0]?.label}
+                    </span>
+                  </p>
+                  <ImageReportButton
+                    overlay={false}
+                    imagePath={heroImage}
+                    context={{
+                      kind: "scene",
+                      unitId: words[0]?.topic,
+                      wordId: `${lessonId}-hero`,
+                      text: storyText || group.name,
+                    }}
+                  />
+                </div>
                 {currentPassage?.status === "ready" ? (
                   <p className="font-sans text-foreground text-base sm:text-lg leading-relaxed">
                     {renderHighlightedText(storyText)}
@@ -938,9 +959,15 @@ export const ExerciseStory = memo(function ExerciseStory({
                               : (currentChunk.imageAlt ?? currentChunk.imageBrief);
 
                             return (
-                              <figure className="overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
+                              <figure className="relative overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
                                 {effectiveImagePath && !failedSceneImages[effectiveImagePath] ? (
                                   <QuestionImage
+                                    reportContext={{
+                                      kind: "scene",
+                                      unitId: words[0]?.topic,
+                                      wordId: `${lessonId}-scene-${currentChunk.chunkNumber}`,
+                                      text: currentChunk.scenario,
+                                    }}
                                     media={{
                                       imagePath: effectiveImagePath,
                                       imageAlt: effectiveAlt,

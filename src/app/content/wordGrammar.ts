@@ -655,6 +655,8 @@ const MASS_HEADS = new Set([
 
 /** Uncountables whose head word is shared with countable compounds. */
 const MASS_LABELS = new Set([
+  "firewood",
+  "sunscreen",
   "glass",
   "stone",
   "iron",

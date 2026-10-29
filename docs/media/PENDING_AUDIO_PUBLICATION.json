@@ -1,0 +1,34 @@
+{
+  "status": "prepared-local-only",
+  "preparedAt": "2026-10-29T14:41:31.657Z",
+  "authorizationRequired": "Current AGENTS.md forbids R2 uploads and content URL mapping changes. No write or relinking has occurred.",
+  "existingObjectsModified": false,
+  "recordings": [
+    {
+      "text": "This is firewood.",
+      "language": "en",
+      "key": "audio/edge-v1/en-US-JennyNeural/add1b00ee8fa683b60e89ba661442e6439741f4648b3cb36de9ff05d198331b1.mp3",
+      "voice": "en-US-JennyNeural",
+      "file": "output/image-quality/new-recordings/add1b00ee8fa683b60e89ba661442e6439741f4648b3cb36de9ff05d198331b1.mp3",
+      "bytes": 7292,
+      "sha256": "d60c5eb4b9585217804e036c41c2698b8243eb7695b3f4aaf12a41f968423bcb",
+      "md5": "62f15420d0d1d786ff55305f3da8c584",
+      "duration": 1.176,
+      "timingValidated": true,
+      "method": "exact-word-boundary"
+    },
+    {
+      "text": "This is sunscreen.",
+      "language": "en",
+      "key": "audio/edge-v1/en-US-JennyNeural/baf2d94c8c1034c53f116266cc2f966c0343e506275cdc1622fc71b3cb0ea0c1.mp3",
+      "voice": "en-US-JennyNeural",
+      "file": "output/image-quality/new-recordings/baf2d94c8c1034c53f116266cc2f966c0343e506275cdc1622fc71b3cb0ea0c1.mp3",
+      "bytes": 7436,
+      "sha256": "9a9a00c0407c6d139e880af1ed90ad03a895302f785b2eee11705257e68a707f",
+      "md5": "1b45f0f9db531f4fac33337a4cb7a3a3",
+      "duration": 1.2,
+      "timingValidated": true,
+      "method": "exact-word-boundary"
+    }
+  ]
+}

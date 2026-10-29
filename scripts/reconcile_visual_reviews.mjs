@@ -173,7 +173,7 @@ await write("generation-requests.json", {
 });
 await write("content-repair-queue.json", {
   schemaVersion: 1,
-  items: decisions.filter((d) => d.decision === "content-repair"),
+  items: decisions.filter((d) => d.decision === "content-repair" && !d.resolution),
 });
 await write(
   "naming-audit.csv",
@@ -203,7 +203,10 @@ const result = {
   imagesWithReviewedNames: assets.filter((a) => a.kind === "image" && a.nameStatus === "reviewed")
     .length,
   reviewedGenerationRequests: generationGroups.size,
-  contentRepairsRequired: decisions.filter((d) => d.decision === "content-repair").length,
+  contentRepairsRequired: decisions.filter((d) => d.decision === "content-repair" && !d.resolution)
+    .length,
+  contentRepairsResolved: decisions.filter((d) => d.decision === "content-repair" && d.resolution)
+    .length,
   unresolvedUses: unresolved.length,
   finalGenerationCountEstablished: unresolved.length === 0,
   completeAppCoverage: false,

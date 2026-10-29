@@ -5,6 +5,7 @@ import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { AudioButton } from "../shared/AudioButton";
 import { WordImage } from "../shared/WordImage";
+import { ImageReportButton } from "../shared/ImageReportButton";
 import type { VocabularyItem } from "../data/lessons";
 import { getAuthoredWord } from "../exercises/content/authoredLessonContent";
 
@@ -121,7 +122,16 @@ export const SceneCanvas = memo(function SceneCanvas({
             loading="eager"
             sizePreset="hero"
             fetchPriority="high"
-            className="size-full object-cover object-center rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
+            className="size-full object-contain object-center rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
+          />
+          <ImageReportButton
+            imagePath={activeWord.img}
+            context={{
+              kind: "vocabulary",
+              unitId: activeWord.topic,
+              wordId: activeWord.id,
+              text: activeWord.label,
+            }}
           />
         </div>
 

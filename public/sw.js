@@ -2,6 +2,7 @@
 const CACHE_NAME = "wordpix-cache-v2";
 const RUNTIME_CACHE = "wordpix-runtime-v1";
 const DOWNLOAD_CACHE = "wordpix-downloads-v1";
+const IMAGE_PACK_PREFIX = "wordpix-images-v1-";
 const RUNTIME_LIMIT = 200;
 
 // App shell. Precached individually rather than via cache.addAll(), which is
@@ -120,7 +121,11 @@ self.addEventListener("fetch", (event) => {
     url.origin === self.location.origin &&
     url.pathname.startsWith(new URL("./", self.location).pathname) &&
     /\.(?:js|css|woff2?|json|svg|html)$/.test(url.pathname);
-  const isMedia = ["image", "audio", "video"].includes(request.destination);
+  // WebKit can omit destination on media requests. Known image paths still
+  // need the pinned-pack lookup rather than the first runtime-cache match.
+  const isImage =
+    request.destination === "image" || /\.(?:avif|webp|png|jpe?g|gif|svg)$/i.test(url.pathname);
+  const isMedia = isImage || ["audio", "video"].includes(request.destination);
   if (!isApplicationAsset && !isMedia) return;
 
   event.respondWith(
@@ -128,6 +133,20 @@ self.addEventListener("fetch", (event) => {
       const downloaded = await (
         await caches.open(DOWNLOAD_CACHE)
       ).match(request, { ignoreVary: true });
+      // Explicit unit image downloads outlive the runtime LRU. Serve their
+      // unchanged URLs without a background fetch, including on metered links.
+      let pinnedImage;
+      if (isImage) {
+        for (const name of (await caches.keys()).filter((name) =>
+          name.startsWith(IMAGE_PACK_PREFIX)
+        )) {
+          pinnedImage = await (await caches.open(name)).match(request, { ignoreVary: true });
+          if (pinnedImage) break;
+        }
+      }
+      // Reloads also mark image subrequests as reload. Explicit, readable
+      // immutable unit downloads stay pinned; a changed asset has a new URL.
+      if (pinnedImage) return pinnedImage;
       const cached = downloaded || (await caches.match(request));
       // An opaque <audio>/<img> response cannot satisfy a CORS fetch used to
       // persist audio bytes. Respect explicit reloads and fetch a readable copy.

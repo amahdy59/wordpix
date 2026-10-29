@@ -10,6 +10,7 @@ import { useAccessibility } from "./useAccessibilityPreferences";
 import { Button } from "./Button";
 import { useLessonSession } from "./LessonSessionContext";
 import { MediaFrame } from "./MediaFrame";
+import { ImageReportButton } from "./ImageReportButton";
 
 export function ScenePlaceholder({ clue, className = "" }: { clue?: string; className?: string }) {
   const { t } = useI18n();
@@ -210,6 +211,7 @@ export function SentenceQuestionSupport({
   onImageExhausted?: () => void;
   className?: string;
 }) {
+  const { t } = useI18n();
   const [activeQuestionKey, setActiveQuestionKey] = useState(`${word.id}:${sentence}`);
   const [failedImages, setFailedImages] = useState<ReadonlySet<string>>(() => new Set());
   if (activeQuestionKey !== `${word.id}:${sentence}`) {
@@ -252,6 +254,12 @@ export function SentenceQuestionSupport({
           <QuestionImage
             key={activeMedia.imagePath}
             media={activeMedia}
+            reportContext={{
+              kind: "sentence",
+              unitId: word.topic,
+              wordId: word.id,
+              text: sentence,
+            }}
             className="w-auto h-auto max-w-full max-h-full object-contain object-center"
             loading="eager"
             {...{ fetchpriority: "high" }}
@@ -262,7 +270,20 @@ export function SentenceQuestionSupport({
           />
         </MediaFrame>
       ) : (
-        <ScenePlaceholder />
+        <div className="relative">
+          <ScenePlaceholder />
+          {word.img && (
+            <ImageReportButton
+              imagePath={media?.imagePath ?? word.img}
+              context={{ kind: "sentence", unitId: word.topic, wordId: word.id, text: sentence }}
+            />
+          )}
+        </div>
+      )}
+      {activeMedia === fallbackMedia && hasImage && (
+        <p className="text-xs leading-relaxed text-foreground">
+          {t("imageQuality.wordReferenceHint")}
+        </p>
       )}
       {showClue && (
         <SentenceMeaningSupport

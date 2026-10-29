@@ -5,6 +5,8 @@ import { loadLexicon } from "../data/lexiconLoader";
 import { loadLessonStory } from "../data/lessonStoryLoader";
 import { useI18n } from "../context/I18nContext";
 import { getOfflineReadiness } from "../../pwa";
+import { OfflineImagePack } from "./OfflineImagePack";
+import { IMAGE_PACKS_CHANGED } from "../media/offlineImagePacks";
 
 import estimates from "../generated/offlineTextEstimates.json";
 
@@ -29,18 +31,27 @@ export function OfflineUnitDownload() {
   );
   useEffect(() => {
     let active = true;
-    void getOfflineReadiness(unitId).then((result) => {
-      if (active) setImages({ unitId, ...result });
-    });
-    void navigator.storage
-      ?.estimate?.()
-      .then((result) => {
-        if (active && result.quota !== undefined && result.usage !== undefined)
-          setStorage(Math.max(0, result.quota - result.usage));
-      })
-      .catch(() => undefined);
+    const refresh = () => {
+      void getOfflineReadiness(unitId)
+        .then((result) => {
+          if (active) setImages({ unitId, ...result });
+        })
+        .catch(() => {
+          if (active) setImages(null);
+        });
+      void navigator.storage
+        ?.estimate?.()
+        .then((result) => {
+          if (active && result.quota !== undefined && result.usage !== undefined)
+            setStorage(Math.max(0, result.quota - result.usage));
+        })
+        .catch(() => undefined);
+    };
+    refresh();
+    window.addEventListener(IMAGE_PACKS_CHANGED, refresh);
     return () => {
       active = false;
+      window.removeEventListener(IMAGE_PACKS_CHANGED, refresh);
     };
   }, [unitId, state.status]);
   const download = async () => {
@@ -182,6 +193,7 @@ export function OfflineUnitDownload() {
         </li>
         <li>{t("reviewUpdate.offlineAudio")}</li>
       </ul>
+      <OfflineImagePack key={unitId} unitId={unitId} />
     </div>
   );
 }

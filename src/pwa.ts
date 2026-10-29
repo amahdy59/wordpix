@@ -1,6 +1,7 @@
 import { COURSE_UNITS, DEFAULT_UNIT_ID } from "./app/data/courseCatalog";
 import { loadUnitVocabulary } from "./app/data/vocabulary";
 import { resolveAssetUrl } from "./utils/assetUrl";
+import { imagePackCacheName } from "./app/media/offlineImagePacks";
 
 const CACHE_NAME = "wordpix-cache-v2";
 
@@ -93,9 +94,13 @@ export async function getOfflineReadiness(worldId = DEFAULT_UNIT_ID): Promise<Of
   try {
     const cache = await caches.open(CACHE_NAME);
     const runtime = await caches.open("wordpix-runtime-v1");
+    const pack = (await caches.keys()).includes(imagePackCacheName(worldId))
+      ? await caches.open(imagePackCacheName(worldId))
+      : null;
     const matches = await Promise.all(
       urls.map(
         async (url) =>
+          (await pack?.match(url, { ignoreVary: true })) ??
           (await cache.match(url, { ignoreVary: true })) ??
           (await runtime.match(url, { ignoreVary: true }))
       )

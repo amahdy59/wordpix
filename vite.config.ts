@@ -11,6 +11,19 @@ function readOnlyPublicShell(): PluginOption {
   return {
     name: "read-only-public-shell",
     apply: "build",
+    buildStart() {
+      if (process.env.WORDPIX_READ_ONLY_MEDIA !== "1") return;
+      const assets = path.resolve(__dirname, "dist/assets");
+      if (!fs.existsSync(assets)) return;
+      // A read-only-media build retains copied public media, but stale app
+      // bundles must not pollute budget checks or offline text downloads.
+      for (const entry of fs.readdirSync(assets, { withFileTypes: true })) {
+        if (!entry.isFile() || !/\.(?:js|css|map)$/.test(entry.name)) continue;
+        const target = path.resolve(assets, entry.name);
+        if (!target.startsWith(assets + path.sep)) throw Error("Invalid build output path");
+        fs.unlinkSync(target);
+      }
+    },
     generateBundle() {
       if (process.env.WORDPIX_READ_ONLY_MEDIA !== "1") return;
       for (const fileName of [
@@ -207,6 +220,8 @@ export default defineConfig(async () => {
         output: {
           manualChunks(rawId) {
             const id = rawId.replace(/\\/g, "/");
+            // Cache immutable sentence media independently of exercise code.
+            if (id.endsWith("/generated/sentenceMediaRuntime.json")) return "sentenceMedia";
             if (id.includes("node_modules")) {
               if (id.includes("/web-vitals/")) return "vendor-vitals";
               if (

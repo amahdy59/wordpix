@@ -12,12 +12,15 @@ function HadithImageClue({ imageRef, clue, alt }: { imageRef: string; clue: stri
   return failed || !imageRef ? (
     <ScenePlaceholder clue={clue} />
   ) : (
-    <QuestionImage
-      media={{ imagePath: `hadith/v1/images/${imageRef}.png`, imageAlt: alt }}
-      onExhausted={() => setFailed(true)}
-      className="block h-auto w-full"
-      loading="eager"
-    />
+    <div className="relative">
+      <QuestionImage
+        media={{ imagePath: `hadith/v1/images/${imageRef}.png`, imageAlt: alt }}
+        reportContext={{ kind: "illustration", wordId: imageRef, text: clue }}
+        onExhausted={() => setFailed(true)}
+        className="block h-auto w-full"
+        loading="eager"
+      />
+    </div>
   );
 }
 

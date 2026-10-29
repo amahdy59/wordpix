@@ -34,6 +34,7 @@ import { loadLexicon } from "../data/lexiconLoader";
 
 import { OfflineUnitDownload } from "./OfflineUnitDownload";
 import { DevicePreferenceControls } from "./DevicePreferenceControls";
+import { ImageReportHistory } from "./ImageReportHistory";
 
 const SPEECH_RATES = [0.5, 0.75, 1] as const;
 
@@ -49,6 +50,13 @@ interface SettingItem {
 }
 
 const SETTING_ITEMS: SettingItem[] = [
+  {
+    id: "imageReports",
+    category: "data",
+    titleKey: "imageQuality.savedReports",
+    descriptionKey: "imageQuality.localReportHint",
+    keywords: ["image", "picture", "report", "export", "صور", "بلاغ"],
+  },
   {
     id: "characterShortcuts",
     category: "learning",
@@ -1138,6 +1146,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
           )}
 
           {isVisible("offlinePreload") && <OfflineUnitDownload />}
+          {isVisible("imageReports") && <ImageReportHistory />}
           {/* SECTION 5: OFFLINE PRELOAD */}
           {isVisible("offlinePreload") && (
             <section className="flex flex-col gap-3" aria-labelledby="heading-offline">
