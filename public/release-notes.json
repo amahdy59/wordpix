@@ -1,18 +1,29 @@
 {
-  "version": "0.1.97",
+  "version": "0.1.98",
   "notes": [
-    "Lesson audio uses stored recordings instead of live browser or device voices, while keeping existing recordings in use.",
-    "Question audio plays recorded context around missing words, keeping the answer silent.",
-    "Scenario playback can reuse recorded dialogue lines when a full track fails. Audio that cannot play offers recovery instead of switching to a device voice.",
-    "Audio caching now supports browsers that cannot store audio Blobs, while keeping older cached recordings readable."
+    "Twenty garden and outdoor vocabulary sentences now show individually reviewed images with descriptive alternatives."
   ],
   "notesAr": [
-    "يستخدم صوت الدروس تسجيلات محفوظة بدلاً من أصوات المتصفح أو الجهاز المباشرة، مع الاستمرار في استخدام التسجيلات الحالية.",
-    "يشغّل صوت الأسئلة السياق المسجل حول الكلمات الناقصة، مع إبقاء الإجابة صامتة.",
-    "يمكن لتشغيل المشاهد استخدام جمل الحوار المسجلة إذا تعذّر تشغيل المسار الكامل. ويوفّر الصوت المتعذر تشغيله إمكانية إعادة المحاولة بدلاً من الانتقال إلى صوت الجهاز.",
-    "يدعم تخزين الصوت الآن المتصفحات التي لا تستطيع حفظ ملفات الصوت بصيغة Blob، مع الحفاظ على إمكانية قراءة التسجيلات المخزنة سابقاً."
+    "تعرض عشرون جملة من مفردات الحديقة والأنشطة الخارجية الآن صوراً روجعت كلٌّ منها على حدة، مع نصوص بديلة وصفية."
   ],
   "releases": [
+    {
+      "id": "0.1.98",
+      "version": "0.1.98",
+      "date": "2026-10-29",
+      "title": {
+        "en": "Reviewed images for garden and outdoor sentences",
+        "ar": "صور مراجَعة لجمل الحديقة والأنشطة الخارجية"
+      },
+      "changes": [
+        {
+          "id": "reviewed-outdoor-sentence-images",
+          "category": "improved",
+          "en": "Twenty garden and outdoor vocabulary sentences now show individually reviewed images with descriptive alternatives.",
+          "ar": "تعرض عشرون جملة من مفردات الحديقة والأنشطة الخارجية الآن صوراً روجعت كلٌّ منها على حدة، مع نصوص بديلة وصفية."
+        }
+      ]
+    },
     {
       "id": "0.1.97",
       "version": "0.1.97",

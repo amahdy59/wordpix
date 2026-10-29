@@ -43,6 +43,9 @@ jobs:
       - name: Lint
         run: pnpm run lint
 
+      - name: Media review integrity
+        run: pnpm run media:catalog:test
+
       - name: Require complete recorded audio before publishing
         run: node scripts/check_recorded_audio_readiness.cjs
 

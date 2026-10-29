@@ -1,0 +1,647 @@
+{
+  "schemaVersion": 1,
+  "decisions": [
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-d0bd7ddf6368790ef8877cdb",
+        "kind": "sentence",
+        "unitId": "garden",
+        "lessonId": "garden-2",
+        "wordId": "garden-gloves",
+        "text": "This is a pair of garden gloves.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "d0bd7ddf6368790ef8877cdb2dfc662fc0236cc20dbdd9124de6166fe2ebb01b"
+      },
+      "assetId": "asset-a3ac1c87b228a432d27db7d6",
+      "key": "images/v1/word-images/garden/garden-gloves.avif",
+      "assetSha256": "3196e3018cbe9e531997768985bf8de33e43cadd5b0fdb62f9d01bc165dc1ac8",
+      "imageAlt": "Two matching protective hand coverings rest on soil beside young plants.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 1. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 1; digest 3196e3018cbe9e531997768985bf8de33e43cadd5b0fdb62f9d01bc165dc1ac8."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-88bd19b956ee5c6958303154",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-1",
+        "wordId": "sleeping-bag",
+        "text": "This is a sleeping bag.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "88bd19b956ee5c695830315400d9ff089eacfcf312652c3779820f2a0b419ae1"
+      },
+      "assetId": "asset-0b95a596a5f43c7fde92a672",
+      "key": "images/v1/word-images/camping-site/sleeping-bag.avif",
+      "assetSha256": "aa57c557d6a8ff80b4ca0a0b9e43fdb40bb312d9276b7532eade45155a4d7c46",
+      "imageAlt": "A blue insulated bedding bundle is rolled and strapped beside a tent.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 3. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 2; digest aa57c557d6a8ff80b4ca0a0b9e43fdb40bb312d9276b7532eade45155a4d7c46."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-47761ed1e40983001468af84",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-1",
+        "wordId": "air-mattress",
+        "text": "This is an air mattress.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "47761ed1e40983001468af84a4a34a3f0ab0742318c98bc297637b57763cfb58"
+      },
+      "assetId": "asset-abb4be3ca2e11e6e1f566440",
+      "key": "images/v1/word-images/camping-site/air-mattress.avif",
+      "assetSha256": "b98e416e4ea7b270fc711a0967e965a0638619c44aad19459e5a5bb814caa17b",
+      "imageAlt": "A long inflated sleeping pad with raised channels lies outside a tent.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 4. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 3; digest b98e416e4ea7b270fc711a0967e965a0638619c44aad19459e5a5bb814caa17b."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-61e1b59ed2b9d0d783d7128a",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-1",
+        "wordId": "tarp",
+        "text": "This is a tarp.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "61e1b59ed2b9d0d783d7128a69ca54f59da2816940ad3b497065318c2fd3d38d"
+      },
+      "assetId": "asset-43a33cd1a0c3d082aec0512b",
+      "key": "images/v1/word-images/camping-site/tarp.avif",
+      "assetSha256": "6776d9ee15b829e0f35633e846431c60336972793d51b7a1644caa87f7ad76ff",
+      "imageAlt": "A blue waterproof sheet is stretched between trees to form an overhead shelter.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 5. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 4; digest 6776d9ee15b829e0f35633e846431c60336972793d51b7a1644caa87f7ad76ff."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-ffe94e6cef16d178ec8dc684",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-1",
+        "wordId": "rain-fly",
+        "text": "This is a rain fly.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "ffe94e6cef16d178ec8dc684887a9d461163c7df85ac84938fec4e5fd98e2b6c"
+      },
+      "assetId": "asset-96efab35f965cf699fee1ea8",
+      "key": "images/v1/word-images/camping-site/rain-fly.avif",
+      "assetSha256": "d178c8c89eb51e0fba614d2a2dda3c55b7475ce8fa63872ee5c1bd28ba5f16a9",
+      "imageAlt": "A green outer waterproof cover shelters a pitched tent in the rain.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 8. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 5; digest d178c8c89eb51e0fba614d2a2dda3c55b7475ce8fa63872ee5c1bd28ba5f16a9."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-b9d5bdf6d0546c8c7a93358d",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-1",
+        "wordId": "campfire",
+        "text": "This is a campfire.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "b9d5bdf6d0546c8c7a93358d3e808413106a4b16ef2cb207407c8f2b5cda4470"
+      },
+      "assetId": "asset-8c141d4a8798428ef641f50d",
+      "key": "images/v1/word-images/arctic/campfire.avif",
+      "assetSha256": "64d0b6df4f52e4879a4f23d85aedad02b746939f8d67b21a2e210e41bf6949c4",
+      "imageAlt": "Burning logs form a small controlled outdoor fire in a snowy clearing.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 9. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 6; digest 64d0b6df4f52e4879a4f23d85aedad02b746939f8d67b21a2e210e41bf6949c4."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-8d563326b14519dc912f4f9f",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-2",
+        "wordId": "cooler",
+        "text": "This is a cooler.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "8d563326b14519dc912f4f9f4ae2bcdb2b23b0bc852387140ede5e614a170769"
+      },
+      "assetId": "asset-9d9579487422ae842302f567",
+      "key": "images/v1/word-images/beach/cooler.avif",
+      "assetSha256": "359d0a7e62c01b7ec9e19c37e9d12d8ed2cef64f72d0a35b9098ffe1cfd0fafc",
+      "imageAlt": "A blue insulated storage box with a white hinged lid holds chilled drinks.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 12. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 7; digest 359d0a7e62c01b7ec9e19c37e9d12d8ed2cef64f72d0a35b9098ffe1cfd0fafc."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-37b6ecc2581380073f9c9eb7",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-2",
+        "wordId": "water-jug",
+        "text": "This is a water jug.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "37b6ecc2581380073f9c9eb7e75c2fa8237d6a0f7d7e2ed0b85655893bd3b23c"
+      },
+      "assetId": "asset-9886c49573afd7ea34b42fe7",
+      "key": "images/v1/word-images/camping-site/water-jug.avif",
+      "assetSha256": "0d29ad17ded5bcce9fa277e25e5da5591c614298a9bb39bd604c365ea6890fb6",
+      "imageAlt": "A large clear drinking-water container with a blue cap sits beside a campsite.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 13. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 8; digest 0d29ad17ded5bcce9fa277e25e5da5591c614298a9bb39bd604c365ea6890fb6."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-24effa08dfee09fb7e4aceb8",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-2",
+        "wordId": "thermos",
+        "text": "This is a thermos.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "24effa08dfee09fb7e4aceb88db901e6e482b14984b894dd5421563656177d7b"
+      },
+      "assetId": "asset-96a1029760df3abb3e7711f3",
+      "key": "images/v1/word-images/camping-site/thermos.avif",
+      "assetSha256": "4b24c41e54c4dbc238db8e14fc14a9ee32e6212684963a55400e58018f261b76",
+      "imageAlt": "A tall insulated metal drinks flask with a cup-shaped lid stands on a log.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 14. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 9; digest 4b24c41e54c4dbc238db8e14fc14a9ee32e6212684963a55400e58018f261b76."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-0ec38295c73a2edb4f890577",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-2",
+        "wordId": "gps-device",
+        "text": "This is a GPS device.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "0ec38295c73a2edb4f8905776d1553d58f506f6937e1d47940ba7b8c122ea317"
+      },
+      "assetId": "asset-41c4255ac6d51cd59d5fbda4",
+      "key": "images/v1/word-images/camping-site/gps-device.avif",
+      "assetSha256": "070f894c0d8addeed8dd8803df908049bd4de3840f0554288c839ebb2da716fd",
+      "imageAlt": "A hand holds an orange-edged electronic navigation device displaying a map.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 17. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 10; digest 070f894c0d8addeed8dd8803df908049bd4de3840f0554288c839ebb2da716fd."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-ee4e8a1f2ca5e2bcc5ca72ba",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-2",
+        "wordId": "headlamp",
+        "text": "This is a headlamp.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "ee4e8a1f2ca5e2bcc5ca72ba339ed8300fcde3d89d984ccc517bd68ed0e18243"
+      },
+      "assetId": "asset-d090b3b7e1fddbb368d8e89a",
+      "key": "images/v1/word-images/camping-site/headlamp.avif",
+      "assetSha256": "5f7aac5ee7ee03b0932b42c3f1d680e06b2a827d5ddff7cb3e5306319df47c13",
+      "imageAlt": "A compact lamp attached to an elastic head strap lies among outdoor equipment.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 18. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 11; digest 5f7aac5ee7ee03b0932b42c3f1d680e06b2a827d5ddff7cb3e5306319df47c13."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-119397c22fea2aa69ba0c11c",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-2",
+        "wordId": "binoculars",
+        "text": "This is a pair of binoculars.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "119397c22fea2aa69ba0c11c49008a14b1ed04db505bbcdee2bf408d4cdd5e60"
+      },
+      "assetId": "asset-45e364e1c09fa868d4b7732c",
+      "key": "images/v1/word-images/camping-site/binoculars.avif",
+      "assetSha256": "7ffd4b0737450ecb0cc8b0cb90b86e5885616378e8443329422260c865d1ca5e",
+      "imageAlt": "Two joined optical tubes with eyepieces rest on a log overlooking a lake.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 19. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 12; digest 7ffd4b0737450ecb0cc8b0cb90b86e5885616378e8443329422260c865d1ca5e."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-2c604ab45229bdb617137bbd",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-3",
+        "wordId": "trail-marker",
+        "text": "This is a trail marker.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "2c604ab45229bdb617137bbd3023d3086fad1124e5415b8bb488366ab550ee5b"
+      },
+      "assetId": "asset-4391d48211f9af6d6a06eac3",
+      "key": "images/v1/word-images/camping-site/trail-marker.avif",
+      "assetSha256": "6fd2173a1c5ef3197aaa8232c0d1cc3b643c9c292ab4a0d8fd0c85d4980ea952",
+      "imageAlt": "A blue sign bearing a white directional symbol is fixed to a tree beside a woodland path.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 20. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 13; digest 6fd2173a1c5ef3197aaa8232c0d1cc3b643c9c292ab4a0d8fd0c85d4980ea952."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-b060fa8d3a5497ab5d9c7206",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-3",
+        "wordId": "hiking-boots",
+        "text": "This is a pair of hiking boots.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "b060fa8d3a5497ab5d9c72066e7afd220e4c7eae1236baf2f468031006451810"
+      },
+      "assetId": "asset-8a657df6408253b11af8499e",
+      "key": "images/v1/word-images/camping-site/hiking-boots.avif",
+      "assetSha256": "1754ffe0ab03a4638873ea2da3dd7bae16fd0eab39d4a05940644e875c8ef063",
+      "imageAlt": "Two sturdy brown lace-up outdoor footwear items stand together beside a mountain trail.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 21. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 14; digest 1754ffe0ab03a4638873ea2da3dd7bae16fd0eab39d4a05940644e875c8ef063."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-0d874df77af839684af06363",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-3",
+        "wordId": "pocket-knife",
+        "text": "This is a pocket knife.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "0d874df77af839684af0636399e68f2e1f124e729230be55728418f7f410abe8"
+      },
+      "assetId": "asset-cafdae38e3383b538d58f77b",
+      "key": "images/v1/word-images/camping-site/pocket-knife.avif",
+      "assetSha256": "ed0fd23cc62528d7b8dfc90d42863df9016b1c7b0324f311d9a0a82ec1cb1da2",
+      "imageAlt": "A compact folding tool with its blade extended rests on an outdoor table.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 22. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 15; digest ed0fd23cc62528d7b8dfc90d42863df9016b1c7b0324f311d9a0a82ec1cb1da2."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-5151333c76754bbf55ea3125",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-3",
+        "wordId": "rope",
+        "text": "This is a rope.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "5151333c76754bbf55ea3125934a49704f0b6eb16f1e9ef178b0af80ef9e19cf"
+      },
+      "assetId": "asset-016d617772762b5cc9768ccf",
+      "key": "images/v1/word-images/camping-site/rope.avif",
+      "assetSha256": "8c8869662008f3dd31a5265c43b0d5bee45b983d1f1bcb3ded16d671d77139f2",
+      "imageAlt": "A thick green cord is wound into a neat coil beside a woodland path.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 23. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 16; digest 8c8869662008f3dd31a5265c43b0d5bee45b983d1f1bcb3ded16d671d77139f2."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-3f2d1a4daf0b68a440c6a617",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-3",
+        "wordId": "dry-bag",
+        "text": "This is a dry bag.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "3f2d1a4daf0b68a440c6a617369480290ee8e046649f4768833dd4008380f96a"
+      },
+      "assetId": "asset-b6b93d93d4ceffa465613104",
+      "key": "images/v1/word-images/camping-site/dry-bag.avif",
+      "assetSha256": "a39d8a8674a75319a1b0e910f2e2e8fe5078e6b6af9cd155aad128f3b50c2129",
+      "imageAlt": "A green roll-top waterproof storage sack sits on rocks beside running water.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 24. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 17; digest a39d8a8674a75319a1b0e910f2e2e8fe5078e6b6af9cd155aad128f3b50c2129."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-c0d6ad4951ddeb5e0a3535a3",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-3",
+        "wordId": "first-aid-kit",
+        "text": "This is a first aid kit.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "c0d6ad4951ddeb5e0a3535a3021f21df355ae0a149900c4243102b484d29bf64"
+      },
+      "assetId": "asset-ffd82c8a2345475f8f261478",
+      "key": "images/v1/word-images/bathroom/first-aid-kit.avif",
+      "assetSha256": "44d63a88d85ae4cefa43be5a1787b8f840630c1792699201465dc1e916581074",
+      "imageAlt": "A red portable medical-supply case marked with a white cross rests on a counter.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 25. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 18; digest 44d63a88d85ae4cefa43be5a1787b8f840630c1792699201465dc1e916581074."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-d0456d129fa29497ed7b6d70",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-3",
+        "wordId": "waterfall",
+        "text": "This is a waterfall.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "d0456d129fa29497ed7b6d701b8e5f74397c27dad6bf3e0f3af6e77acd482010"
+      },
+      "assetId": "asset-df03c9afaaa419220c5f7df4",
+      "key": "images/v1/word-images/camping-site/waterfall.avif",
+      "assetSha256": "5edac2949ac2fbfcc9bdb29621a369113b60614c7d3c0d3a384d1d9678121512",
+      "imageAlt": "Water drops vertically over a rocky ledge into a pool and continues through a forest.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 28. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 19; digest 5edac2949ac2fbfcc9bdb29621a369113b60614c7d3c0d3a384d1d9678121512."
+      }
+    },
+    {
+      "decision": "reuse",
+      "content": {
+        "demandId": "demand-ef745508c2923cc63a9af102",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-4",
+        "wordId": "valley",
+        "text": "This is a valley.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "ef745508c2923cc63a9af10283f07ac2c242edbff5dc878a976a0bc33847125c"
+      },
+      "assetId": "asset-b056c9e7102c0d27faacb921",
+      "key": "images/v1/word-images/arctic/valley.avif",
+      "assetSha256": "44367894c20fd1059cca4b1b1fc1708787c64b997af086264703805e6340952f",
+      "imageAlt": "A broad low passage runs between steep snow-covered mountain slopes.",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": true,
+        "context": true,
+        "assessmentSafe": true,
+        "altText": true
+      },
+      "review": {
+        "reviewer": "Codex visual audit",
+        "reviewedAt": "2026-10-29T04:13:40.093Z",
+        "evidence": "Visually inspected review-sheet-02.png tile 29. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually inspected in remote-reuse-sheet.png tile 20; digest 44367894c20fd1059cca4b1b1fc1708787c64b997af086264703805e6340952f."
+      }
+    },
+    {
+      "decision": "content-repair",
+      "content": {
+        "demandId": "demand-e8850f7294cc1d0de6fba62f",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-1",
+        "wordId": "firewood",
+        "text": "This is a firewood.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "e8850f7294cc1d0de6fba62f3b09b5d193f2351dd579998393511f331259a27c"
+      },
+      "issues": [
+        "Firewood is a mass noun here. Replace the incorrect indefinite article with a natural authored sentence before visual matching."
+      ],
+      "review": {
+        "reviewer": "Codex content audit",
+        "reviewedAt": "2026-10-29T04:18:40.552Z",
+        "evidence": "Current runtime sentence: This is a firewood. No image generation is approved for defective source wording."
+      }
+    },
+    {
+      "decision": "content-repair",
+      "content": {
+        "demandId": "demand-767e8be39b90004158592e80",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-3",
+        "wordId": "sunscreen",
+        "text": "This is a sunscreen.",
+        "expectedResolvedUrl": null,
+        "contentSha256": "767e8be39b90004158592e8095b6aa61fe214cf50f47d33afdba184adf5f46f8"
+      },
+      "issues": [
+        "Sunscreen is a mass noun in this context. Author a natural sentence or specify a bottle of sunscreen before visual matching."
+      ],
+      "review": {
+        "reviewer": "Codex content audit",
+        "reviewedAt": "2026-10-29T04:18:40.552Z",
+        "evidence": "Current runtime sentence: This is a sunscreen. No image generation is approved for defective source wording."
+      }
+    }
+  ]
+}

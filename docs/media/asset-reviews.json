@@ -1,0 +1,630 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "key": "question-images/v2/library-images/87b1291f5a4133244f99a9bc8a155b676940a7d5.webp",
+      "displayName": "Gourd on a wooden surface",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Local WebP visually inspected. Public R2 GET returned identical 90,070-byte image. This name describes the image, not its current assigned sentence."
+    },
+    {
+      "key": "question-images/v2/library-images/5521c6d596e3ae06113164cef43b35d98b8f5098.webp",
+      "displayName": "Grape clusters on vines with a worker in the background",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 1. Visible subject: Grape clusters on vines with a worker in the background. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["grape", "clusters", "vines", "with", "worker", "background"]
+    },
+    {
+      "key": "question-images/v2/library-images/a658d7e0cd5f77b04d7f5044f0bcf731d8a5d4cf.webp",
+      "displayName": "Worker tending vineyard rows on a hillside",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 2. Visible subject: Worker tending vineyard rows on a hillside. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["worker", "tending", "vineyard", "rows", "hillside"]
+    },
+    {
+      "key": "question-images/v2/library-images/7b1034590c3c26cad2c9348fb959a6dccf998b04.webp",
+      "displayName": "Firefighter uniforms and boots in an equipment room",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 3. Visible subject: Firefighter uniforms and boots in an equipment room. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["firefighter", "uniforms", "boots", "equipment", "room"]
+    },
+    {
+      "key": "question-images/v2/library-images/140d5d57d11fdb895efb443192e6a3578daa84b8.webp",
+      "displayName": "Rescue team raising a stretcher in an urban alley",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 4. Visible subject: Rescue team raising a stretcher in an urban alley. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["rescue", "team", "raising", "stretcher", "urban", "alley"]
+    },
+    {
+      "key": "question-images/v2/library-images/88251884a6a8a0bb07d0943761da0b2275392a48.webp",
+      "displayName": "Shared kitchen in a staff room",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 5. Visible subject: Shared kitchen in a staff room. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["shared", "kitchen", "staff", "room"]
+    },
+    {
+      "key": "question-images/v2/library-images/67d6f299274911ebff4eae6aedd45a15ce53f4e9.webp",
+      "displayName": "Paramedic attending to a seated woman beside an ambulance",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 6. Visible subject: Paramedic attending to a seated woman beside an ambulance. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["paramedic", "attending", "seated", "woman", "beside", "ambulance"]
+    },
+    {
+      "key": "question-images/v2/library-images/a39cd29871d377019b38c68d3809fda8b3b48260.webp",
+      "displayName": "Athlete tying a shoe on an indoor basketball court",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 7. Visible subject: Athlete tying a shoe on an indoor basketball court. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["athlete", "tying", "shoe", "indoor", "basketball", "court"]
+    },
+    {
+      "key": "question-images/v2/library-images/3245e985fffcd05ce391a9bdf66dbba9222d848c.webp",
+      "displayName": "Firefighters inspecting a damaged interior",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 8. Visible subject: Firefighters inspecting a damaged interior. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["firefighters", "inspecting", "damaged", "interior"]
+    },
+    {
+      "key": "question-images/v2/library-images/9a8a7aa2f2baa4a5c0f53d46f03ba65ba2119bca.webp",
+      "displayName": "Fire helmet and protective clothing in an equipment locker",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 9. Visible subject: Fire helmet and protective clothing in an equipment locker. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["fire", "helmet", "protective", "clothing", "equipment", "locker"]
+    },
+    {
+      "key": "question-images/v2/library-images/b221639dc6555dafea472151ec7680375ba20ff5.webp",
+      "displayName": "Rooftop ventilation fan above a city street",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 10. Visible subject: Rooftop ventilation fan above a city street. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["rooftop", "ventilation", "above", "city", "street"]
+    },
+    {
+      "key": "question-images/v2/library-images/91c1e727320c5203f20302eb73aa700d34a821c2.webp",
+      "displayName": "Wood fire burning in an indoor fireplace",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 11. Visible subject: Wood fire burning in an indoor fireplace. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["wood", "fire", "burning", "indoor", "fireplace"]
+    },
+    {
+      "key": "question-images/v2/library-images/3e89808ae7019b5f86a831dc9ac88b945249b2d3.webp",
+      "displayName": "Oxygen cylinders and medical equipment inside an ambulance",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 12. Visible subject: Oxygen cylinders and medical equipment inside an ambulance. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["oxygen", "cylinders", "medical", "equipment", "inside", "ambulance"]
+    },
+    {
+      "key": "question-images/v2/library-images/a4fb22cdb47f89598d412f949840f5c81d260a4b.webp",
+      "displayName": "Volunteer sorting food donations in a community pantry",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 13. Visible subject: Volunteer sorting food donations in a community pantry. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["volunteer", "sorting", "food", "donations", "community", "pantry"]
+    },
+    {
+      "key": "question-images/v2/library-images/ab29d52cd83dc1a11fe18ada13c73c368f7ebaf6.webp",
+      "displayName": "Shoes and folded clothing on wooden shelves",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 14. Visible subject: Shoes and folded clothing on wooden shelves. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["shoes", "folded", "clothing", "wooden", "shelves"]
+    },
+    {
+      "key": "question-images/v2/library-images/5b710414d1d7bf68602be82d80b2dcb25db230be.webp",
+      "displayName": "Man packing hiking equipment into a backpack",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 15. Visible subject: Man packing hiking equipment into a backpack. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["packing", "hiking", "equipment", "into", "backpack"]
+    },
+    {
+      "key": "question-images/v2/library-images/f884bed2178f48deb20bfeaa2298ef41463a03b2.webp",
+      "displayName": "Shoes on the floor beside a woven storage basket",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 16. Visible subject: Shoes on the floor beside a woven storage basket. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["shoes", "floor", "beside", "woven", "storage", "basket"]
+    },
+    {
+      "key": "question-images/v2/library-images/cc9cdb8010f4c5ddad40f39f2ad5861ee8fa3e03.webp",
+      "displayName": "Long ladder stored on a fire-station wall",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 17. Visible subject: Long ladder stored on a fire-station wall. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["long", "ladder", "stored", "firestation", "wall"]
+    },
+    {
+      "key": "question-images/v2/library-images/3a5909921f4410a502d0628dca1b7c5b0871c067.webp",
+      "displayName": "Single bed in a staff sleeping room",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 18. Visible subject: Single bed in a staff sleeping room. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["single", "staff", "sleeping", "room"]
+    },
+    {
+      "key": "question-images/v2/library-images/e1a5465ad637fad7662bd945f504c13f11b09d3c.webp",
+      "displayName": "Emergency workers discussing a clipboard in a fire station",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 19. Visible subject: Emergency workers discussing a clipboard in a fire station. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["emergency", "workers", "discussing", "clipboard", "fire", "station"]
+    },
+    {
+      "key": "question-images/v2/sentence-park-5-roller-skate-74838b747e/692ffb338f909cfa09f979770eb629e51f766fe6122a47eacdafbc44f43b11ff.webp",
+      "displayName": "Chalk arithmetic symbols on a classroom board",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 20. Visible subject: Chalk arithmetic symbols on a classroom board. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["chalk", "arithmetic", "symbols", "classroom", "board"]
+    },
+    {
+      "key": "question-images/v2/sentence-camping-site-4-fishing-e07eae38ce/fc3913c90b6aadb86946cb727eae7cfeeea9bee2d69f578dc42f2aa31a939561.webp",
+      "displayName": "Fishing rod beside a lake at sunset",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 21. Visible subject: Fishing rod beside a lake at sunset. The image supports fishing but does not show the swimming component of this scene.",
+      "tags": ["fishing", "beside", "lake", "sunset"]
+    },
+    {
+      "key": "question-images/v2/library-images/7ce1fde26fde973d2ad9e798beb7f8c7636a0df6.webp",
+      "displayName": "Man working at a laptop at home",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 22. Visible subject: Man working at a laptop at home. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["working", "laptop", "home"]
+    },
+    {
+      "key": "question-images/v2/library-images/fdf21eddca4c7eef541dce09395b717039a594b7.webp",
+      "displayName": "Man reading a newspaper at a table",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 23. Visible subject: Man reading a newspaper at a table. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["reading", "newspaper", "table"]
+    },
+    {
+      "key": "question-images/v2/library-images/1944b5c5b84320ff9727a09b7fa4eefa01eaf6e7.webp",
+      "displayName": "Two men reviewing paperwork across an office desk",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-01.png tile 24. Visible subject: Two men reviewing paperwork across an office desk. This does not depict the subject/action required by the proposed learning text.",
+      "tags": ["reviewing", "paperwork", "across", "office", "desk"]
+    },
+    {
+      "key": "images/v1/word-images/garden/garden-gloves.avif",
+      "displayName": "Floral gardening gloves on soil",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 1. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 1; SHA-256 3196e3018cbe9e531997768985bf8de33e43cadd5b0fdb62f9d01bc165dc1ac8.",
+      "inspectedSha256": "3196e3018cbe9e531997768985bf8de33e43cadd5b0fdb62f9d01bc165dc1ac8"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/sleeping-bag.avif",
+      "displayName": "Rolled sleeping bag beside a campsite",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 3. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 2; SHA-256 aa57c557d6a8ff80b4ca0a0b9e43fdb40bb312d9276b7532eade45155a4d7c46.",
+      "inspectedSha256": "aa57c557d6a8ff80b4ca0a0b9e43fdb40bb312d9276b7532eade45155a4d7c46"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/air-mattress.avif",
+      "displayName": "Inflatable camping mattress outside a tent",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 4. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 3; SHA-256 b98e416e4ea7b270fc711a0967e965a0638619c44aad19459e5a5bb814caa17b.",
+      "inspectedSha256": "b98e416e4ea7b270fc711a0967e965a0638619c44aad19459e5a5bb814caa17b"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/tarp.avif",
+      "displayName": "Blue camping tarp stretched between trees",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 5. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 4; SHA-256 6776d9ee15b829e0f35633e846431c60336972793d51b7a1644caa87f7ad76ff.",
+      "inspectedSha256": "6776d9ee15b829e0f35633e846431c60336972793d51b7a1644caa87f7ad76ff"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/rain-fly.avif",
+      "displayName": "Rain fly covering a tent in wet weather",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 8. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 5; SHA-256 d178c8c89eb51e0fba614d2a2dda3c55b7475ce8fa63872ee5c1bd28ba5f16a9.",
+      "inspectedSha256": "d178c8c89eb51e0fba614d2a2dda3c55b7475ce8fa63872ee5c1bd28ba5f16a9"
+    },
+    {
+      "key": "images/v1/word-images/arctic/campfire.avif",
+      "displayName": "Campfire burning in a snowy campsite",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 9. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 6; SHA-256 64d0b6df4f52e4879a4f23d85aedad02b746939f8d67b21a2e210e41bf6949c4.",
+      "inspectedSha256": "64d0b6df4f52e4879a4f23d85aedad02b746939f8d67b21a2e210e41bf6949c4"
+    },
+    {
+      "key": "images/v1/word-images/beach/cooler.avif",
+      "displayName": "Open blue insulated cooler on a beach",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 12. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 7; SHA-256 359d0a7e62c01b7ec9e19c37e9d12d8ed2cef64f72d0a35b9098ffe1cfd0fafc.",
+      "inspectedSha256": "359d0a7e62c01b7ec9e19c37e9d12d8ed2cef64f72d0a35b9098ffe1cfd0fafc"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/water-jug.avif",
+      "displayName": "Large clear camping water jug",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 13. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 8; SHA-256 0d29ad17ded5bcce9fa277e25e5da5591c614298a9bb39bd604c365ea6890fb6.",
+      "inspectedSha256": "0d29ad17ded5bcce9fa277e25e5da5591c614298a9bb39bd604c365ea6890fb6"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/thermos.avif",
+      "displayName": "Insulated thermos flask near a campsite",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 14. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 9; SHA-256 4b24c41e54c4dbc238db8e14fc14a9ee32e6212684963a55400e58018f261b76.",
+      "inspectedSha256": "4b24c41e54c4dbc238db8e14fc14a9ee32e6212684963a55400e58018f261b76"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/gps-device.avif",
+      "displayName": "Handheld GPS navigation device",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 17. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 10; SHA-256 070f894c0d8addeed8dd8803df908049bd4de3840f0554288c839ebb2da716fd.",
+      "inspectedSha256": "070f894c0d8addeed8dd8803df908049bd4de3840f0554288c839ebb2da716fd"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/headlamp.avif",
+      "displayName": "Strapped headlamp at a nighttime campsite",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 18. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 11; SHA-256 5f7aac5ee7ee03b0932b42c3f1d680e06b2a827d5ddff7cb3e5306319df47c13.",
+      "inspectedSha256": "5f7aac5ee7ee03b0932b42c3f1d680e06b2a827d5ddff7cb3e5306319df47c13"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/binoculars.avif",
+      "displayName": "Binoculars overlooking a lake",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 19. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 12; SHA-256 7ffd4b0737450ecb0cc8b0cb90b86e5885616378e8443329422260c865d1ca5e.",
+      "inspectedSha256": "7ffd4b0737450ecb0cc8b0cb90b86e5885616378e8443329422260c865d1ca5e"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/trail-marker.avif",
+      "displayName": "Blue trail marker on a tree",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 20. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 13; SHA-256 6fd2173a1c5ef3197aaa8232c0d1cc3b643c9c292ab4a0d8fd0c85d4980ea952.",
+      "inspectedSha256": "6fd2173a1c5ef3197aaa8232c0d1cc3b643c9c292ab4a0d8fd0c85d4980ea952"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/hiking-boots.avif",
+      "displayName": "Pair of brown hiking boots",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 21. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 14; SHA-256 1754ffe0ab03a4638873ea2da3dd7bae16fd0eab39d4a05940644e875c8ef063.",
+      "inspectedSha256": "1754ffe0ab03a4638873ea2da3dd7bae16fd0eab39d4a05940644e875c8ef063"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/pocket-knife.avif",
+      "displayName": "Folding pocket knife at a campsite",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 22. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 15; SHA-256 ed0fd23cc62528d7b8dfc90d42863df9016b1c7b0324f311d9a0a82ec1cb1da2.",
+      "inspectedSha256": "ed0fd23cc62528d7b8dfc90d42863df9016b1c7b0324f311d9a0a82ec1cb1da2"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/rope.avif",
+      "displayName": "Coiled green rope beside a woodland path",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 23. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 16; SHA-256 8c8869662008f3dd31a5265c43b0d5bee45b983d1f1bcb3ded16d671d77139f2.",
+      "inspectedSha256": "8c8869662008f3dd31a5265c43b0d5bee45b983d1f1bcb3ded16d671d77139f2"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/dry-bag.avif",
+      "displayName": "Green waterproof dry bag beside a stream",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 24. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 17; SHA-256 a39d8a8674a75319a1b0e910f2e2e8fe5078e6b6af9cd155aad128f3b50c2129.",
+      "inspectedSha256": "a39d8a8674a75319a1b0e910f2e2e8fe5078e6b6af9cd155aad128f3b50c2129"
+    },
+    {
+      "key": "images/v1/word-images/bathroom/first-aid-kit.avif",
+      "displayName": "Red first aid kit with white cross",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 25. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 18; SHA-256 44d63a88d85ae4cefa43be5a1787b8f840630c1792699201465dc1e916581074.",
+      "inspectedSha256": "44d63a88d85ae4cefa43be5a1787b8f840630c1792699201465dc1e916581074"
+    },
+    {
+      "key": "images/v1/word-images/camping-site/waterfall.avif",
+      "displayName": "Waterfall feeding a forest stream",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 28. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 19; SHA-256 5edac2949ac2fbfcc9bdb29621a369113b60614c7d3c0d3a384d1d9678121512.",
+      "inspectedSha256": "5edac2949ac2fbfcc9bdb29621a369113b60614c7d3c0d3a384d1d9678121512"
+    },
+    {
+      "key": "images/v1/word-images/arctic/valley.avif",
+      "displayName": "Snow-covered mountain valley",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Visually inspected review-sheet-02.png tile 29. The pictured object or landscape supports the exact simple identification sentence. No explicit numerical contrast or written assessed answer is present. This approves reuse only for this content snapshot, not other historic associations. Remote served bytes visually confirmed in remote-reuse-sheet.png tile 20; SHA-256 44367894c20fd1059cca4b1b1fc1708787c64b997af086264703805e6340952f.",
+      "inspectedSha256": "44367894c20fd1059cca4b1b1fc1708787c64b997af086264703805e6340952f"
+    },
+    {
+      "key": "question-images/v2/dental-clinic-7-usage-scene-2/43e841c57fcaa7057dc8e57c00eb146c4c2420d51a9a771f0815c67185208e84.webp",
+      "displayName": "Tissue box on a bathroom counter",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "The candidate shows a tissue box rather than gloves."
+    },
+    {
+      "key": "images/v1/learning-scenes/colors/colors-3-lighter-tint.webp",
+      "displayName": "White paint being mixed into blue paint",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "The candidate illustrates a lighter colour tint, not an ignition device."
+    },
+    {
+      "key": "images/v1/word-images/architect-s-studio/compass.avif",
+      "displayName": "Drawing compass and pencils on a drafting table",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "The candidate shows a drawing compass rather than the navigation instrument intended in this camping context."
+    }
+  ],
+  "bindings": [
+    {
+      "entryId": "sentence-real-estate-agency-2-tax-assessment-aa5a9a554d",
+      "expectedImagePath": "question-images/v2/library-images/87b1291f5a4133244f99a9bc8a155b676940a7d5.webp",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Image depicts a gourd; sentence concerns property tax, HOA fees and lending pre-approval.",
+      "expectedSentence": "A Tax Assessment relates to the authority’s property-tax calculation, and an HOA Fee funds homeowners-association services under its rules. Pre-Approval indicates tentative lending eligibility subject to further checks, rather than a final loan guarantee."
+    },
+    {
+      "entryId": "sentence-real-estate-agency-2-hoa-fee-aa5a9a554d",
+      "expectedImagePath": "question-images/v2/library-images/87b1291f5a4133244f99a9bc8a155b676940a7d5.webp",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Same inspected gourd image is assigned to the HOA fee sentence.",
+      "expectedSentence": "A Tax Assessment relates to the authority’s property-tax calculation, and an HOA Fee funds homeowners-association services under its rules. Pre-Approval indicates tentative lending eligibility subject to further checks, rather than a final loan guarantee."
+    },
+    {
+      "entryId": "sentence-real-estate-agency-2-pre-approval-aa5a9a554d",
+      "expectedImagePath": "question-images/v2/library-images/87b1291f5a4133244f99a9bc8a155b676940a7d5.webp",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Same inspected gourd image is assigned to the lending pre-approval sentence.",
+      "expectedSentence": "A Tax Assessment relates to the authority’s property-tax calculation, and an HOA Fee funds homeowners-association services under its rules. Pre-Approval indicates tentative lending eligibility subject to further checks, rather than a final loan guarantee."
+    },
+    {
+      "entryId": "sentence-hadith-niyyah-1-motive-niyyah-5d2571cfd7",
+      "expectedImagePath": "question-images/v2/library-images/5521c6d596e3ae06113164cef43b35d98b8f5098.webp",
+      "expectedSentence": "His motive for volunteering is to help his neighbors.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 1. Visible image: Grape clusters on vines with a worker in the background. This does not support the assigned subject/action: His motive for volunteering is to help his neighbors."
+    },
+    {
+      "entryId": "sentence-hadith-niyyah-1-migration-hijrah-8aecb97a7f",
+      "expectedImagePath": "question-images/v2/library-images/a658d7e0cd5f77b04d7f5044f0bcf731d8a5d4cf.webp",
+      "expectedSentence": "The family's migration to a new country took several weeks.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 2. Visible image: Worker tending vineyard rows on a hillside. This does not support the assigned subject/action: The family's migration to a new country took several weeks."
+    },
+    {
+      "entryId": "sentence-farm-1-pig-0f800a58a7",
+      "expectedImagePath": "question-images/v2/library-images/7b1034590c3c26cad2c9348fb959a6dccf998b04.webp",
+      "expectedSentence": "The farmer discusses Cow, Pig, and Chicken while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 3. Visible image: Firefighter uniforms and boots in an equipment room. This does not support the assigned subject/action: The farmer discusses Cow, Pig, and Chicken while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-1-donkey-ef828e972e",
+      "expectedImagePath": "question-images/v2/library-images/140d5d57d11fdb895efb443192e6a3578daa84b8.webp",
+      "expectedSentence": "The farmer discusses Duck, Donkey, and Turkey while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 4. Visible image: Rescue team raising a stretcher in an urban alley. This does not support the assigned subject/action: The farmer discusses Duck, Donkey, and Turkey while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-1-hen-ca43a10050",
+      "expectedImagePath": "question-images/v2/library-images/88251884a6a8a0bb07d0943761da0b2275392a48.webp",
+      "expectedSentence": "The farmer discusses Rooster, Hen, and Lamb while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 5. Visible image: Shared kitchen in a staff room. This does not support the assigned subject/action: The farmer discusses Rooster, Hen, and Lamb while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-1-corn-1627dd302f",
+      "expectedImagePath": "question-images/v2/library-images/67d6f299274911ebff4eae6aedd45a15ce53f4e9.webp",
+      "expectedSentence": "The farmer discusses Wheat, Corn, and Carrot while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 6. Visible image: Paramedic attending to a seated woman beside an ambulance. This does not support the assigned subject/action: The farmer discusses Wheat, Corn, and Carrot while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-2-tomato-22be17f1dd",
+      "expectedImagePath": "question-images/v2/library-images/a39cd29871d377019b38c68d3809fda8b3b48260.webp",
+      "expectedSentence": "The farmer discusses Potato, Tomato, and Lettuce while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 7. Visible image: Athlete tying a shoe on an indoor basketball court. This does not support the assigned subject/action: The farmer discusses Potato, Tomato, and Lettuce while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-2-pumpkin-570dba0ca6",
+      "expectedImagePath": "question-images/v2/library-images/3245e985fffcd05ce391a9bdf66dbba9222d848c.webp",
+      "expectedSentence": "The farmer discusses Onion, Pumpkin, and Bean while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 8. Visible image: Firefighters inspecting a damaged interior. This does not support the assigned subject/action: The farmer discusses Onion, Pumpkin, and Bean while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-2-cabbage-b3fb60a5dd",
+      "expectedImagePath": "question-images/v2/library-images/9a8a7aa2f2baa4a5c0f53d46f03ba65ba2119bca.webp",
+      "expectedSentence": "The farmer discusses Pea, Cabbage, and Beetroot while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 9. Visible image: Fire helmet and protective clothing in an equipment locker. This does not support the assigned subject/action: The farmer discusses Pea, Cabbage, and Beetroot while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-3-grape-vine-aa71f8709a",
+      "expectedImagePath": "question-images/v2/library-images/b221639dc6555dafea472151ec7680375ba20ff5.webp",
+      "expectedSentence": "The farmer discusses Raspberry, Grape Vine, and Peach Tree while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 10. Visible image: Rooftop ventilation fan above a city street. This does not support the assigned subject/action: The farmer discusses Raspberry, Grape Vine, and Peach Tree while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-3-barn-cbe0fe1795",
+      "expectedImagePath": "question-images/v2/library-images/91c1e727320c5203f20302eb73aa700d34a821c2.webp",
+      "expectedSentence": "The farmer discusses Plum Tree, Barn, and Farmhouse while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 11. Visible image: Wood fire burning in an indoor fireplace. This does not support the assigned subject/action: The farmer discusses Plum Tree, Barn, and Farmhouse while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-3-chicken-coop-d263ebc9a8",
+      "expectedImagePath": "question-images/v2/library-images/3e89808ae7019b5f86a831dc9ac88b945249b2d3.webp",
+      "expectedSentence": "The farmer discusses Silo, Chicken Coop, and Stable while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 12. Visible image: Oxygen cylinders and medical equipment inside an ambulance. This does not support the assigned subject/action: The farmer discusses Silo, Chicken Coop, and Stable while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-3-storage-shed-2dcda5e073",
+      "expectedImagePath": "question-images/v2/library-images/a4fb22cdb47f89598d412f949840f5c81d260a4b.webp",
+      "expectedSentence": "The farmer discusses Greenhouse, Storage Shed, and Windmill while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 13. Visible image: Volunteer sorting food donations in a community pantry. This does not support the assigned subject/action: The farmer discusses Greenhouse, Storage Shed, and Windmill while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-3-well-b381919f26",
+      "expectedImagePath": "question-images/v2/library-images/ab29d52cd83dc1a11fe18ada13c73c368f7ebaf6.webp",
+      "expectedSentence": "The farmer discusses Dairy, Well, and Tractor while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 14. Visible image: Shoes and folded clothing on wooden shelves. This does not support the assigned subject/action: The farmer discusses Dairy, Well, and Tractor while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-4-trailer-1f6ed2a2a1",
+      "expectedImagePath": "question-images/v2/library-images/5b710414d1d7bf68602be82d80b2dcb25db230be.webp",
+      "expectedSentence": "The farmer discusses Plow, Trailer, and Hay Bale while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 15. Visible image: Man packing hiking equipment into a backpack. This does not support the assigned subject/action: The farmer discusses Plow, Trailer, and Hay Bale while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-4-water-tank-3766b53574",
+      "expectedImagePath": "question-images/v2/library-images/f884bed2178f48deb20bfeaa2298ef41463a03b2.webp",
+      "expectedSentence": "The farmer discusses Feed Trough, Water Tank, and Scarecrow while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 16. Visible image: Shoes on the floor beside a woven storage basket. This does not support the assigned subject/action: The farmer discusses Feed Trough, Water Tank, and Scarecrow while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-4-cheese-04f2076405",
+      "expectedImagePath": "question-images/v2/library-images/cc9cdb8010f4c5ddad40f39f2ad5861ee8fa3e03.webp",
+      "expectedSentence": "The farmer discusses Honey, Cheese, and Butter while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 17. Visible image: Long ladder stored on a fire-station wall. This does not support the assigned subject/action: The farmer discusses Honey, Cheese, and Butter while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-5-hoe-b4fb6f93dd",
+      "expectedImagePath": "question-images/v2/library-images/3a5909921f4410a502d0628dca1b7c5b0871c067.webp",
+      "expectedSentence": "The farmer discusses Shovel, Hoe, and Rake while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 18. Visible image: Single bed in a staff sleeping room. This does not support the assigned subject/action: The farmer discusses Shovel, Hoe, and Rake while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-farm-6-farmer-5993815523",
+      "expectedImagePath": "question-images/v2/library-images/e1a5465ad637fad7662bd945f504c13f11b09d3c.webp",
+      "expectedSentence": "The farmer discusses Harvest and Saddle while the team plans its menu.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 19. Visible image: Emergency workers discussing a clipboard in a fire station. This does not support the assigned subject/action: The farmer discusses Harvest and Saddle while the team plans its menu."
+    },
+    {
+      "entryId": "sentence-park-5-roller-skate-74838b747e",
+      "expectedImagePath": "question-images/v2/sentence-park-5-roller-skate-74838b747e/692ffb338f909cfa09f979770eb629e51f766fe6122a47eacdafbc44f43b11ff.webp",
+      "expectedSentence": "Recreational athletes roller-skate smoothly along the lakeside boulevard in quad wheeled boots. Joggers and strollers move past. Skaters roller-skate with rhythm and grace.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 20. Visible image: Chalk arithmetic symbols on a classroom board. This does not support the assigned subject/action: Recreational athletes roller-skate smoothly along the lakeside boulevard in quad wheeled boots. Joggers and strollers move past. Skaters roller-skate with rhythm and grace."
+    },
+    {
+      "entryId": "sentence-park-5-sit-down-74838b747e",
+      "expectedImagePath": "question-images/v2/sentence-park-5-roller-skate-74838b747e/692ffb338f909cfa09f979770eb629e51f766fe6122a47eacdafbc44f43b11ff.webp",
+      "expectedSentence": "Recreational athletes roller-skate smoothly along the lakeside boulevard in quad wheeled boots. Joggers and strollers move past. Skaters roller-skate with rhythm and grace.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 20. Visible image: Chalk arithmetic symbols on a classroom board. This does not support the assigned subject/action: Recreational athletes roller-skate smoothly along the lakeside boulevard in quad wheeled boots. Joggers and strollers move past. Skaters roller-skate with rhythm and grace."
+    },
+    {
+      "entryId": "sentence-construction-site-1-cement-mixer-fb3331969d",
+      "expectedImagePath": "question-images/v2/library-images/7ce1fde26fde973d2ad9e798beb7f8c7636a0df6.webp",
+      "expectedSentence": "The supervisor distinguishes a Cement Mixer for concrete ingredients, a Forklift for lifting loads, a Steamroller for compacting surfaces, and a Backhoe for digging.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 22. Visible image: Man working at a laptop at home. This does not support the assigned subject/action: The supervisor distinguishes a Cement Mixer for concrete ingredients, a Forklift for lifting loads, a Steamroller for compacting surfaces, and a Backhoe for digging."
+    },
+    {
+      "entryId": "sentence-construction-site-1-pile-driver-25ad31bb2f",
+      "expectedImagePath": "question-images/v2/library-images/fdf21eddca4c7eef541dce09395b717039a594b7.webp",
+      "expectedSentence": "A Pile Driver works on deep supports, and a Boom Lift carries an authorized worker on a raised platform.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 23. Visible image: Man reading a newspaper at a table. This does not support the assigned subject/action: A Pile Driver works on deep supports, and a Boom Lift carries an authorized worker on a raised platform."
+    },
+    {
+      "entryId": "sentence-construction-site-1-brick-53f3c0d898",
+      "expectedImagePath": "question-images/v2/library-images/1944b5c5b84320ff9727a09b7fa4eefa01eaf6e7.webp",
+      "expectedSentence": "Nearby stores contain Brick and Cement; cement is a concrete ingredient, not the complete mixture.",
+      "status": "mismatch",
+      "reviewer": "Codex visual audit",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Inspected review-sheet-01.png tile 24. Visible image: Two men reviewing paperwork across an office desk. This does not support the assigned subject/action: Nearby stores contain Brick and Cement; cement is a concrete ingredient, not the complete mixture."
+    }
+  ]
+}

@@ -58,6 +58,12 @@ const steps = [
     description: "Checking review digests, explicit holds, prompt integrity and no-text policy",
   },
   {
+    name: "Media Review Integrity",
+    command: "pnpm run media:catalog:test",
+    description:
+      "Validating immutable media identities, exact review evidence and generation holds",
+  },
+  {
     name: "Curriculum & Scenario Shard Consistency",
     command:
       "pnpm run check:content-shards && pnpm run check:scenario-shards && pnpm run check:search-index",
