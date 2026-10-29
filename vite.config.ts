@@ -6,6 +6,31 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 
+/** Keep fresh verification builds usable offline without copying any media directories. */
+function readOnlyPublicShell(): PluginOption {
+  return {
+    name: "read-only-public-shell",
+    apply: "build",
+    generateBundle() {
+      if (process.env.WORDPIX_READ_ONLY_MEDIA !== "1") return;
+      for (const fileName of [
+        "sw.js",
+        "manifest.json",
+        "release-notes.json",
+        "icon.svg",
+        "icon-maskable.svg",
+        "listening-scenarios-player.html",
+      ]) {
+        this.emitFile({
+          type: "asset",
+          fileName,
+          source: fs.readFileSync(path.resolve(__dirname, "public", fileName)),
+        });
+      }
+    },
+  };
+}
+
 function scenarioAudioServer(): PluginOption {
   const handler = (req: IncomingMessage, res: ServerResponse, next: (err?: unknown) => void) => {
     const rawUrl = req.url || "";
@@ -149,6 +174,7 @@ export default defineConfig(async () => {
         : "/wordpix/"),
     plugins: [
       buildProvenance(),
+      readOnlyPublicShell(),
       figmaAssetResolver(),
       scenarioAudioServer(),
       react(),
