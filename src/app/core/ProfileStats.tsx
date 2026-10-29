@@ -1,5 +1,5 @@
-import { memo, useMemo, useState } from "react";
 import { HelpDisclosure } from "../shared/HelpDisclosure";
+import { lazy, memo, Suspense, useMemo, useState } from "react";
 import {
   Flame,
   Sparkles,
@@ -15,24 +15,21 @@ import {
   PenLine,
   Mic,
   Route,
-  Sliders,
-  Download,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
 import { useAuth } from "../context/AuthContext";
-import { usePwaInstall } from "../shared/usePwaInstall";
 import { AuthModal } from "../../features/auth/AuthModal";
 import { staggerContainer, staggerItem } from "../shared/animations";
 import { LearnerAvatar } from "../shared/LearnerAvatar";
 import { useI18n } from "../context/I18nContext";
-import { Button, EmptyState, PageContainer, PageHeader, Surface, ProgressBar } from "../shared";
+import { Button, EmptyState, PageContainer, PageHeader, Surface } from "../shared";
 import { summarizeSkillMastery, type MasteryDimension } from "../../features/gamification/sm2";
 
-import { getReviewSchedule } from "../review/reviewSchedule";
-import { useReviewDate } from "../shared/useReviewDate";
-import { LegacyProgressNotice } from "../shared/LegacyProgressNotice";
+const SettingsModal = lazy(() =>
+  import("./SettingsModal").then((m) => ({ default: m.SettingsModal }))
+);
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -40,9 +37,8 @@ interface Props {
 
 export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
   const { t } = useI18n();
-  const { progress, setPreferences } = useProgress();
+  const { progress } = useProgress();
   const { user, signOut } = useAuth();
-  const { canInstall, install } = usePwaInstall();
 
   const [showAuthModal, setShowAuthModal] = useState(false);
 
@@ -71,8 +67,11 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
     return totalRecalls === 0 ? null : Math.round((totalCorrect / totalRecalls) * 100);
   }, [memoryValues]);
 
-  const reviewDate = useReviewDate();
-  const dueCount = getReviewSchedule(progress.wordMemory, reviewDate).due.length;
+  const dueCount = useMemo(() => {
+    const now = Date.now();
+    return memoryValues.filter((w) => !w.nextReviewAt || new Date(w.nextReviewAt).getTime() <= now)
+      .length;
+  }, [memoryValues]);
 
   const skillSummaries = useMemo(() => summarizeSkillMastery(memoryValues), [memoryValues]);
   const skillMeta: Record<
@@ -159,15 +158,22 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
     },
   ];
 
+  const [showSettings, setShowSettings] = useState(false);
+
   return (
     <PageContainer size="wide">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="flex w-full flex-col gap-4 sm:gap-5"
+        className="flex w-full flex-col gap-4 pb-4"
       >
         {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+        {showSettings && (
+          <Suspense fallback={null}>
+            <SettingsModal isOpen onClose={() => setShowSettings(false)} />
+          </Suspense>
+        )}
 
         <PageHeader
           variant="plain"
@@ -192,20 +198,14 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                 <LearnerAvatar />
               </div>
 
-              <div className="flex flex-col items-start gap-1">
-                <div className="flex flex-wrap items-center gap-2 mt-1">
+              <div className="flex flex-col items-center md:items-start gap-1">
+                <div className="flex items-center gap-2 mt-1">
                   <span className="bg-secondary text-primary font-sans font-semibold text-sm px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
                     <Flame className="size-3.5 text-wp-amber-foreground" />
                     {progress.streak > 0
                       ? t("profile.streakActive", { streak: progress.streak })
                       : t("profile.streakReady")}
                   </span>
-                  {progress.streak > 0 && progress.streakFreezeAvailable > 0 && (
-                    <span className="bg-secondary text-foreground font-sans font-medium text-xs px-2.5 py-1 rounded-full border border-border flex items-center gap-1.5">
-                      <ShieldCheck className="size-3.5 text-wp-green" />
-                      {t("profile.streakShieldActive")}
-                    </span>
-                  )}
                 </div>
                 <p className="text-sm text-muted-foreground font-medium mt-1">
                   {user
@@ -219,27 +219,6 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
 
             {/* Account actions; global appearance and accessibility live in the sidebar. */}
             <motion.div variants={staggerItem} className="flex flex-wrap items-center gap-2.5">
-              {canInstall && (
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={install}
-                  aria-label={t("pwa.installApp", { defaultValue: "Install WordPix App" })}
-                  iconLeft={<Download className="size-4 text-primary" aria-hidden />}
-                  className="rounded-xl font-bold"
-                >
-                  <span>{t("pwa.installApp", { defaultValue: "Install App" })}</span>
-                </Button>
-              )}
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => dispatch({ type: "GO", to: "settings" })}
-                aria-label={t("settings.title")}
-                iconLeft={<Sliders className="size-4" aria-hidden />}
-              >
-                <span>{t("settings.title")}</span>
-              </Button>
               {user ? (
                 <Button
                   variant="secondary"
@@ -260,47 +239,8 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                 </Button>
               )}
             </motion.div>
-
-            <p className="text-sm text-muted-foreground">
-              {t("ux.levelCoverage", { level: progress.englishLevel })}
-            </p>
-            {/* Target CEFR Level Quick-Switcher */}
-            <motion.div
-              variants={staggerItem}
-              className="flex flex-col gap-1.5 border-t border-border pt-3 md:border-t-0 md:pt-0 xl:border-t xl:pt-3"
-            >
-              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                {t("settings.targetLevel")}
-              </span>
-              <div
-                role="radiogroup"
-                aria-label={t("settings.targetLevel")}
-                className="flex flex-wrap items-center gap-1 rounded-xl border border-border bg-muted/40 p-1"
-              >
-                {(["A1", "A2", "B1", "B2", "C1", "C2"] as const).map((lvl) => {
-                  const selected = progress.englishLevel === lvl;
-                  return (
-                    <button
-                      key={lvl}
-                      type="button"
-                      role="radio"
-                      aria-checked={selected}
-                      onClick={() => setPreferences({ englishLevel: lvl })}
-                      className={`min-h-[44px] min-w-[44px] flex-1 rounded-lg px-2.5 py-1.5 text-xs font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
-                        selected
-                          ? "bg-primary text-primary-foreground shadow-wp-xs"
-                          : "text-muted-foreground hover:bg-secondary hover:text-foreground"
-                      }`}
-                    >
-                      {lvl}
-                    </button>
-                  );
-                })}
-              </div>
-            </motion.div>
           </Surface>
 
-          <LegacyProgressNotice />
           {/* Stats grid */}
           <motion.section
             variants={staggerItem}
@@ -318,79 +258,27 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                 icon={<Brain className="size-6" aria-hidden />}
                 className="min-h-48 flex-1"
                 action={
-                  <Button onClick={() => dispatch({ type: "GO", to: "learn" })}>
-                    {t("nav.learn")}
+                  <Button onClick={() => dispatch({ type: "GO", to: "practice" })}>
+                    {t("dashboard.practiseSkill")}
                   </Button>
                 }
               />
             ) : (
-              <>
-                <dl className="grid grid-cols-2 gap-4 border-y border-border py-4 sm:grid-cols-3">
-                  {STATS.map(({ value, label, icon: Icon, color }) => (
-                    <div key={label} className="flex flex-col gap-2 px-2">
-                      <dt className="flex items-center gap-2 font-sans text-sm font-bold leading-tight text-foreground">
-                        <Icon className={`size-4 shrink-0 ${color}`} aria-hidden />
-                        {label}
-                      </dt>
-                      <dd className="font-sans text-2xl font-black leading-none text-foreground">
-                        {value}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-                <div className="mt-4 flex flex-col gap-2 rounded-2xl border border-border bg-wp-card p-4 shadow-wp-xs">
-                  <div className="flex items-center justify-between text-xs font-bold">
-                    <span className="text-foreground">{t("lesson.retentionBalance")}</span>
-                    <span className="text-primary font-black">
-                      {t("lesson.wordsTracked", { count: memoryValues.length })}
-                    </span>
+              <dl className="grid grid-cols-2 gap-4 border-y border-border py-4 sm:grid-cols-3">
+                {STATS.map(({ value, label, icon: Icon, color }) => (
+                  <div key={label} className="flex flex-col gap-2 px-2">
+                    <dt className="flex items-center gap-2 font-sans text-sm font-bold leading-tight text-foreground">
+                      <Icon className={`size-4 shrink-0 ${color}`} aria-hidden />
+                      {label}
+                    </dt>
+                    <dd className="font-sans text-2xl font-black leading-none text-foreground">
+                      {value}
+                    </dd>
                   </div>
-                  <div
-                    className="relative flex h-3 w-full overflow-hidden rounded-full border border-border bg-muted"
-                    role="img"
-                    aria-label={`${t("lesson.retentionBalance")}: ${strongCount} ${t("lesson.strongRetention")}, ${familiarCount} ${t("lesson.familiarRetention")}, ${learningCount} ${t("lesson.learningRetention")}`}
-                  >
-                    <div
-                      style={{ width: `${Math.round((strongCount / memoryValues.length) * 100)}%` }}
-                      className="h-full bg-wp-green transition-all"
-                    />
-                    <div
-                      style={{
-                        width: `${Math.round((familiarCount / memoryValues.length) * 100)}%`,
-                      }}
-                      className="h-full bg-wp-blue transition-all"
-                    />
-                    <div
-                      style={{
-                        width: `${Math.round((learningCount / memoryValues.length) * 100)}%`,
-                      }}
-                      className="h-full bg-wp-amber transition-all"
-                    />
-                  </div>
-                  <div className="mt-1 flex flex-wrap items-center justify-between text-[11px] font-bold text-muted-foreground">
-                    <span className="flex items-center gap-1.5">
-                      <span className="size-2 rounded-full bg-wp-green" aria-hidden="true" />
-                      <span>
-                        {t("lesson.strongRetention")} ({strongCount})
-                      </span>
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <span className="size-2 rounded-full bg-wp-blue" aria-hidden="true" />
-                      <span>
-                        {t("lesson.familiarRetention")} ({familiarCount})
-                      </span>
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <span className="size-2 rounded-full bg-wp-amber" aria-hidden="true" />
-                      <span>
-                        {t("lesson.learningRetention")} ({learningCount})
-                      </span>
-                    </span>
-                  </div>
-                </div>
-              </>
+                ))}
+              </dl>
             )}
-            <HelpDisclosure label={t("reviewUpdate.progressTerms")}>
+            <HelpDisclosure label={t("help.aboutProgress")}>
               <dl className="space-y-3">
                 {STATS.map(({ label, description }) => (
                   <div key={label}>
@@ -411,85 +299,78 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
           </motion.section>
         </div>
 
-        <details
-          open={skillSummaries.some((summary) => summary.attempts > 0)}
-          className="rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-wp-xs"
-        >
-          <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-base font-semibold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
-            {t("ux.skillDetails")}
-          </summary>
-          <motion.section
-            variants={staggerItem}
-            aria-labelledby="skill-mastery-heading"
-            className="pt-2"
-          >
-            <div className="mb-3">
-              <h2
-                id="skill-mastery-heading"
-                className="font-sans text-lg font-bold text-foreground"
-              >
-                {t("profile.skillMasteryTitle")}
-              </h2>
-              <p className="mt-1 max-w-3xl font-sans text-base leading-relaxed text-muted-foreground">
-                {t("profile.skillMasteryDescription")}
-              </p>
-            </div>
-            <div className="flex flex-col divide-y divide-border border-y border-border">
-              {skillSummaries.map((summary) => {
-                const meta = skillMeta[summary.dimension];
-                const Icon = meta.icon;
-                return (
-                  <Surface
-                    key={summary.dimension}
-                    variant="flat"
-                    radius="none"
-                    padding="none"
-                    className="grid min-w-0 gap-3 py-4 sm:grid-cols-[minmax(10rem,0.7fr)_minmax(0,1.3fr)] sm:items-center"
-                  >
-                    <div className="flex items-start gap-3">
-                      <span className="flex size-11 shrink-0 items-center justify-center text-primary">
-                        <Icon className="size-5" aria-hidden />
-                      </span>
-                      <div className="min-w-0">
-                        <h3 className="font-sans text-base font-bold text-foreground">
-                          {meta.label}
-                        </h3>
-                      </div>
+        <motion.section variants={staggerItem} aria-labelledby="skill-mastery-heading">
+          <div className="mb-3">
+            <h2 id="skill-mastery-heading" className="font-sans text-lg font-bold text-foreground">
+              {t("profile.skillMasteryTitle")}
+            </h2>
+            <p className="mt-1 max-w-3xl font-sans text-base leading-relaxed text-muted-foreground">
+              {t("profile.skillMasteryDescription")}
+            </p>
+          </div>
+          <div className="flex flex-col divide-y divide-border border-y border-border">
+            {skillSummaries.map((summary) => {
+              const meta = skillMeta[summary.dimension];
+              const Icon = meta.icon;
+              return (
+                <Surface
+                  key={summary.dimension}
+                  variant="flat"
+                  radius="none"
+                  padding="none"
+                  className="grid min-w-0 gap-3 py-4 sm:grid-cols-[minmax(10rem,0.7fr)_minmax(0,1.3fr)] sm:items-center"
+                >
+                  <div className="flex items-start gap-3">
+                    <span className="flex size-11 shrink-0 items-center justify-center text-primary">
+                      <Icon className="size-5" aria-hidden />
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="font-sans text-base font-bold text-foreground">
+                        {meta.label}
+                      </h3>
                     </div>
-                    {summary.attempts > 0 ? (
-                      <div className="space-y-2">
-                        <div className="flex items-baseline justify-between gap-3 text-base">
-                          <span className="font-semibold text-foreground">
-                            {t("profile.skillEvidence", {
-                              established: summary.establishedWords,
-                              practiced: summary.practicedWords,
-                            })}
-                          </span>
-                          <span className="font-black text-primary">
-                            {t("profile.skillAccuracy", { percent: summary.accuracy })}
-                          </span>
-                        </div>
-                        <ProgressBar
-                          progressPercent={summary.accuracy}
-                          size="sm"
-                          showMilestones
-                          ariaLabel={t("profile.skillProgressAria", {
-                            skill: meta.label,
-                            percent: summary.accuracy,
+                  </div>
+                  {summary.attempts > 0 ? (
+                    <div className="space-y-2">
+                      <div className="flex items-baseline justify-between gap-3 text-base">
+                        <span className="font-semibold text-foreground">
+                          {t("profile.skillEvidence", {
+                            established: summary.establishedWords,
+                            practiced: summary.practicedWords,
                           })}
-                        />
+                        </span>
+                        <span className="font-black text-primary">
+                          {t("profile.skillAccuracy", { percent: summary.accuracy })}
+                        </span>
                       </div>
-                    ) : (
-                      <p className="font-sans text-sm font-semibold text-muted-foreground">
-                        {t("profile.skillNotPracticed")}
-                      </p>
-                    )}
-                  </Surface>
-                );
-              })}
-            </div>
-          </motion.section>
-        </details>
+                      <progress
+                        value={summary.accuracy}
+                        max={100}
+                        aria-label={t("profile.skillProgressAria", {
+                          skill: meta.label,
+                          percent: summary.accuracy,
+                        })}
+                        className="h-2 w-full overflow-hidden rounded-full accent-primary"
+                      />
+                    </div>
+                  ) : (
+                    <p className="font-sans text-sm font-semibold text-muted-foreground">
+                      {t("profile.skillNotPracticed")}
+                    </p>
+                  )}
+                </Surface>
+              );
+            })}
+          </div>
+        </motion.section>
+        <section className="border-t border-border py-3" aria-labelledby="profile-settings-heading">
+          <h2 id="profile-settings-heading" className="text-lg font-bold text-foreground">
+            {t("settings.title")}
+          </h2>
+          <Button variant="outline" className="mt-2" onClick={() => setShowSettings(true)}>
+            {t("settings.openSettings")}
+          </Button>
+        </section>
         <section className="border-t border-border py-3" aria-labelledby="release-notes-heading">
           <h2 id="release-notes-heading" className="text-lg font-bold text-foreground">
             {t("releaseNotes.pageTitle")}
@@ -500,7 +381,7 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
           <button
             type="button"
             onClick={() => dispatch({ type: "GO", to: "release-notes" })}
-            className="mt-3 inline-flex min-h-11 items-center rounded-xl border border-primary/30 bg-secondary px-4 py-2 text-base font-semibold text-primary hover:bg-secondary/80 hover:border-primary/50 shadow-wp-xs transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+            className="mt-3 inline-flex min-h-11 items-center rounded-xl border border-primary bg-secondary px-4 py-2 text-base font-semibold text-primary hover:bg-card focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             {t("releaseNotes.viewAll")}
           </button>

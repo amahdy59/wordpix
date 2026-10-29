@@ -12,8 +12,6 @@ export interface ProgressBarProps {
   variant?: ProgressBarVariant;
   size?: ProgressBarSize;
   className?: string;
-  showMilestones?: boolean;
-  milestones?: number[];
 }
 
 const variantFillStyles: Record<ProgressBarVariant, string> = {
@@ -33,7 +31,6 @@ const sizeTrackStyles: Record<ProgressBarSize, string> = {
 /**
  * Standardized progress bar component adhering to WAI-ARIA progressbar pattern.
  * Fully backward-compatible while offering semantic variants and size tokens.
- * Supports dual-encoding milestone notches for cognitive parsing.
  */
 export const ProgressBar = memo(function ProgressBar({
   progressPercent,
@@ -44,12 +41,9 @@ export const ProgressBar = memo(function ProgressBar({
   variant = "default",
   size = "md",
   className = "",
-  showMilestones = false,
-  milestones,
 }: ProgressBarProps) {
   const showLabels = label !== undefined || labelRight !== undefined;
   const clampedPercent = Math.max(0, Math.min(100, progressPercent));
-  const activeMilestones = milestones ?? (showMilestones ? [25, 50, 75] : []);
 
   return (
     <div className={`flex flex-col gap-1.5 ${className}`}>
@@ -60,7 +54,7 @@ export const ProgressBar = memo(function ProgressBar({
         </div>
       )}
       <div
-        className={`bg-muted rounded-full ${sizeTrackStyles[size]} w-full overflow-hidden border border-border relative`}
+        className={`bg-muted rounded-full ${sizeTrackStyles[size]} w-full overflow-hidden border border-border`}
         role="progressbar"
         aria-valuenow={clampedPercent}
         aria-valuemin={0}
@@ -72,14 +66,6 @@ export const ProgressBar = memo(function ProgressBar({
           className={`${variantFillStyles[variant]} h-full rounded-full transition-all duration-500 motion-reduce:transition-none`}
           style={{ width: `${clampedPercent}%` }}
         />
-        {activeMilestones.map((m) => (
-          <div
-            key={m}
-            className="absolute top-0 bottom-0 w-0.5 bg-background/50 pointer-events-none z-10"
-            style={{ insetInlineStart: `${m}%` }}
-            aria-hidden="true"
-          />
-        ))}
       </div>
     </div>
   );

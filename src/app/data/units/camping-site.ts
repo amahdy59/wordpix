@@ -500,7 +500,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/camping-site/hiking.avif",
     description: "Walking for a long distance in the countryside.",
     topic: "camping-site",
-    exampleUsage: "He enjoys hiking on the marked mountain trail.",
   },
   {
     id: "fishing",
@@ -537,7 +536,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/camping-site/bird-watching.avif",
     description: "Watching birds to identify and enjoy them.",
     topic: "camping-site",
-    exampleUsage: "He takes binoculars when he goes bird-watching.",
   },
   {
     id: "star-gazing",
@@ -547,7 +545,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/camping-site/star-gazing.avif",
     description: "Looking at stars in the night sky.",
     topic: "camping-site",
-    exampleUsage: "We go stargazing when the sky is clear.",
   },
   {
     id: "photography",
@@ -575,7 +572,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/camping-site/mountain-biking.avif",
     description: "Riding a bicycle over rough outdoor paths.",
     topic: "camping-site",
-    exampleUsage: "He wears a helmet for mountain biking on the trail.",
   },
   {
     id: "cooking",
@@ -657,6 +653,5 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/camping-site/explore.avif",
     description: "To travel around a place to discover it.",
     topic: "camping-site",
-    exampleUsage: "We explore the campsite before choosing a place for the tent.",
   },
 ];

@@ -142,7 +142,7 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
                 }))}
                 media={
                   exercise.type === "image-choice" ? (
-                    <figure className="mx-auto w-full max-w-sm sm:max-w-md overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
+                    <figure className="mx-auto w-full max-w-64 overflow-hidden rounded-2xl border border-border bg-muted shadow-wp-sm">
                       <HadithImageClue
                         key={exercise.id}
                         imageRef={exercise.imageRef}
@@ -162,8 +162,12 @@ export function HadithPractice({ exerciseSet, onScoreChange }: Props) {
           const selectedOrder = sequences[exercise.id] ?? [];
           const available = exercise.items.filter((item) => !selectedOrder.includes(item.id));
           return (
-            <fieldset key={exercise.id} data-quiz-question className="min-w-0">
-              <legend data-question-prompt className="wp-question-prompt">
+            <fieldset
+              key={exercise.id}
+              data-quiz-question
+              className="rounded-2xl border border-border p-4 sm:p-5"
+            >
+              <legend className="px-2 text-base font-black">
                 {exerciseIndex + 1}. {exercise.prompt}
               </legend>
               <ol className="mt-4 space-y-2" aria-label={t("hadith.selectedSequence")}>

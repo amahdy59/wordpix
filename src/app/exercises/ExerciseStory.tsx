@@ -5,7 +5,6 @@ import { resolveGroup, getNextGroupChronological } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { playCorrectSound, playIncorrectSound } from "../shared/useSound";
 import { useAudio } from "../shared/useAudio";
-import { useSpokenFeedback } from "../shared/useSpokenFeedback";
 import {
   BookOpen,
   ArrowRight,
@@ -31,17 +30,12 @@ import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { getOrGenerateStoryBundle } from "../data/storyTalesDictionary";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { useI18n } from "../context/I18nContext";
-import { ClozeText } from "../shared/SentenceBlank";
 import { loadLessonUsage } from "../data/usageRegistry";
 import type { LessonUsageData } from "../data/usageTypes";
 import { loadLessonStory } from "../data/lessonStoryLoader";
 import { rotateOptions } from "../data/lessonContext";
 import { LessonTransferPractice } from "./LessonTransferPractice";
 import { QuestionImage } from "../shared/QuestionImage";
-import { getScenarioForLesson } from "../data/scenarios/scenarioService";
-import { UnitScenarioPlayer } from "../learning/study/UnitScenarioPlayer";
-import { z } from "zod";
-import { useStageCheckpoint } from "../shared/useStageCheckpoint";
 
 interface Props {
   step: number;
@@ -62,16 +56,8 @@ export const ExerciseStory = memo(function ExerciseStory({
   const group = resolveGroup(lessonId);
   const [usageData, setUsageData] = useState<LessonUsageData | null>(null);
   const [showOptionalPhrases, setShowOptionalPhrases] = useState(false);
-  const [activeChunkIndex, setActiveChunkIndex] = useStageCheckpoint(
-    "story-chunk",
-    0,
-    z.number().int().min(0).max(1000)
-  );
-  const [chunkAnswers, setChunkAnswers] = useStageCheckpoint<Record<number, string>>(
-    "story-answers",
-    {},
-    z.record(z.coerce.number(), z.string())
-  );
+  const [activeChunkIndex, setActiveChunkIndex] = useState(0);
+  const [chunkAnswers, setChunkAnswers] = useState<Record<number, string>>({});
   const [failedSceneImages, setFailedSceneImages] = useState<Record<string, boolean>>({});
   const [storyAttempt, setStoryAttempt] = useState(0);
   const [passage, setPassage] = useState<
@@ -79,8 +65,6 @@ export const ExerciseStory = memo(function ExerciseStory({
     | { lessonId: string; attempt: number; status: "error" }
     | null
   >(null);
-
-  const lessonScenario = useMemo(() => getScenarioForLesson(lessonId), [lessonId]);
 
   const phraseGroups = useMemo(() => {
     const phrases = usageData?.usage.phrases ?? [];
@@ -144,7 +128,6 @@ export const ExerciseStory = memo(function ExerciseStory({
   const [activeQuizIndex, setActiveQuizIndex] = useState(0);
 
   const { speak, stop, isPlaying } = useAudio();
-  const { speakFeedback } = useSpokenFeedback();
   const nextBtnRef = useRef<HTMLButtonElement>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -672,87 +655,51 @@ export const ExerciseStory = memo(function ExerciseStory({
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
               {words.map((item) => {
                 const isActive = activeWordId === item.id;
-                const isWordPlaying = isPlaying && activeWordId === item.id;
-
                 return (
-                  // Static card container: the word-details action and the audio action
-                  // are independent sibling buttons (never nested), ensuring exact HTML validity
-                  // and one interactive role per control for keyboard and screen-reader users.
+                  // Static card: the word-details action and the audio action
+                  // are sibling buttons, never nested, so there is exactly
+                  // one interactive role per control for keyboard and SR users.
                   <article
                     key={item.id}
                     className={
-                      "group relative w-full aspect-[4/3] rounded-3xl overflow-hidden border shadow-wp-xs transition-all hover:shadow-wp-md " +
+                      "bg-wp-card border rounded-2xl p-3 flex flex-col items-center gap-2.5 shadow-wp-xs transition-all text-center " +
                       (isActive
-                        ? "border-primary ring-2 ring-primary/40 bg-secondary"
-                        : "border-border hover:border-primary/60 bg-wp-card")
+                        ? "border-primary ring-2 ring-primary/20 bg-secondary"
+                        : "border-border")
                     }
                   >
-                    {/* Immersive background media occupying the entire card */}
-                    <div className="absolute inset-0 size-full overflow-hidden bg-muted">
+                    <div className="size-20 sm:size-24 rounded-xl overflow-hidden bg-muted shrink-0 border border-border relative">
                       <img
                         src={resolveAssetUrl(item.img)}
-                        alt=""
-                        aria-hidden="true"
-                        className="size-full object-cover object-center transition-transform duration-500 motion-safe:group-hover:scale-105"
-                        loading="lazy"
+                        alt={item.label}
+                        className="size-full object-cover"
                       />
-                      {/* Top vignette to preserve floating speaker contrast on bright photos */}
-                      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent via-25% to-transparent pointer-events-none" />
-                      {/* Bottom gradient scrim providing AAA 7:1+ contrast for word typography */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/55 via-45% to-transparent pointer-events-none" />
+                      <button
+                        type="button"
+                        onClick={() => handlePlayWord(item.label, item.id)}
+                        aria-label={t("story.listenToWord", { word: item.label })}
+                        className="absolute bottom-1.5 end-1.5 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/70 hover:bg-black/90 text-white flex items-center justify-center shadow-md cursor-pointer transition-transform motion-safe:active:scale-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white"
+                      >
+                        <Volume2 className="size-3.5" aria-hidden />
+                      </button>
                     </div>
 
-                    {/* Primary card action: tapping anywhere on the card opens Oxford/Cambridge dictionary insights */}
                     <button
                       type="button"
                       onClick={() => setInspectedWord(item)}
-                      aria-label={`${item.label}${item.phonetic ? `, /${item.phonetic}/` : ""}. ${t("story.inspectWordHint")}`}
-                      className="absolute inset-0 size-full z-0 flex flex-col justify-end p-4 sm:p-5 text-start cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary rounded-3xl"
+                      className="flex flex-col items-center justify-center gap-0.5 rounded-xl border border-transparent hover:border-primary/50 px-3 py-1 min-h-[44px] min-w-[44px] cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
                     >
-                      <div className="flex flex-col gap-1.5 w-full">
-                        <div className="flex items-baseline justify-between gap-2">
-                          <h4 className="font-sans font-black text-white text-base sm:text-lg lg:text-xl leading-tight drop-shadow-sm group-hover:text-primary-foreground transition-colors">
-                            {item.label}
-                          </h4>
-                          {item.phonetic && (
-                            <span className="font-mono text-xs sm:text-sm text-white/95 bg-black/40 border border-white/20 px-2.5 py-0.5 rounded-lg backdrop-blur-md shrink-0">
-                              /{item.phonetic}/
-                            </span>
-                          )}
-                        </div>
-
-                        <div className="flex items-center justify-between gap-2 pt-1 border-t border-white/15 text-xs text-white/80">
-                          <span className="inline-flex items-center gap-1.5 font-medium text-wp-amber-foreground">
-                            <BookOpen className="size-3.5 shrink-0" aria-hidden="true" />
-                            <span>{t("story.inspectDetails")}</span>
-                          </span>
-                          <ArrowRight
-                            className="size-4 text-white/70 rtl:rotate-180 transition-transform motion-safe:group-hover:translate-x-1 rtl:motion-safe:group-hover:-translate-x-1"
-                            aria-hidden="true"
-                          />
-                        </div>
-                      </div>
-                    </button>
-
-                    {/* Audio playback button: independent sibling with min 44x44px target (never nested in button) */}
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handlePlayWord(item.label, item.id);
-                      }}
-                      aria-label={t("story.listenToWord", { word: item.label })}
-                      className={
-                        "absolute top-3 end-3 z-10 size-11 min-h-[44px] min-w-[44px] rounded-full flex items-center justify-center cursor-pointer backdrop-blur-md border shadow-md transition-all motion-safe:active:scale-90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white " +
-                        (isWordPlaying
-                          ? "bg-primary text-primary-foreground border-primary motion-safe:animate-pulse ring-2 ring-primary/40"
-                          : "bg-black/60 hover:bg-black/85 text-white border-white/20")
-                      }
-                    >
-                      <Volume2 className="size-4" aria-hidden="true" />
+                      <span className="font-sans font-bold text-foreground text-sm leading-tight">
+                        {item.label}
+                      </span>
+                      {item.phonetic && (
+                        <span className="font-mono text-[11px] text-muted-foreground">
+                          /{item.phonetic}/
+                        </span>
+                      )}
                     </button>
                   </article>
                 );
@@ -764,15 +711,6 @@ export const ExerciseStory = memo(function ExerciseStory({
         {/* ── SECTION 3: USAGE SCENES (OR FALLBACK DIALOGUE) ─────────────── */}
         {activeSection === "dialogue" && (
           <div className="flex flex-col gap-4">
-            {lessonScenario && (
-              <UnitScenarioPlayer
-                scenarios={[lessonScenario]}
-                onInspectWord={(term: string) => {
-                  const match = words.find((w) => w.label.toLowerCase() === term.toLowerCase());
-                  if (match) setInspectedWord(match);
-                }}
-              />
-            )}
             {usageData?.usage?.scenes && usageData.usage.scenes.length > 0 ? (
               <div className="flex flex-col gap-4">
                 {/* Header with Goal */}
@@ -902,90 +840,48 @@ export const ExerciseStory = memo(function ExerciseStory({
 
                         {/* Show a scene-specific visual when authored; retain the brief as
                             accessible context and a useful fallback when no image exists. */}
-                        {currentChunk.imageBrief &&
-                          (() => {
-                            const normalize = (s: string) =>
-                              s
-                                .toLowerCase()
-                                .replace(/['’]/g, "")
-                                .replace(/[^a-z0-9]+/g, "-")
-                                .replace(/^-+|-+$/g, "");
-                            const targetNorm = normalize(currentChunk.check.expectedAnswer);
-                            const matchingWord = !currentChunk.imagePath
-                              ? words.find((w) => {
-                                  const labelNorm = normalize(w.label);
-                                  const idNorm = normalize(w.id);
-                                  return (
-                                    labelNorm === targetNorm ||
-                                    idNorm === targetNorm ||
-                                    w.label.toLowerCase() ===
-                                      currentChunk.check.expectedAnswer.toLowerCase() ||
-                                    w.id.toLowerCase() ===
-                                      currentChunk.check.expectedAnswer.toLowerCase()
-                                  );
-                                })
-                              : undefined;
-                            const effectiveImagePath = currentChunk.imagePath ?? matchingWord?.img;
-                            const isWordRef =
-                              currentChunk.imagePurpose === "word-reference" ||
-                              Boolean(!currentChunk.imagePath && matchingWord);
-                            const effectiveAlt = isWordRef
-                              ? !currentChunk.imagePath && matchingWord?.description
-                                ? matchingWord.description
-                                : (currentChunk.imageAlt ??
-                                  matchingWord?.description ??
-                                  currentChunk.imageBrief)
-                              : (currentChunk.imageAlt ?? currentChunk.imageBrief);
-
-                            return (
-                              <figure className="overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
-                                {effectiveImagePath && !failedSceneImages[effectiveImagePath] ? (
-                                  <QuestionImage
-                                    media={{
-                                      imagePath: effectiveImagePath,
-                                      imageAlt: effectiveAlt,
-                                      imageFallbacks: currentChunk.imageFallbacks,
-                                    }}
-                                    loading="eager"
-                                    className="w-full max-h-[28dvh] object-contain"
-                                    onExhausted={() =>
-                                      setFailedSceneImages((current) => ({
-                                        ...current,
-                                        [effectiveImagePath]: true,
-                                      }))
-                                    }
-                                  />
-                                ) : (
-                                  <div
-                                    role="img"
-                                    aria-label={t("story.imagePendingAria")}
-                                    className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 bg-secondary px-6 text-center text-muted-foreground"
-                                  >
-                                    <ImageOff className="size-8 text-primary" aria-hidden="true" />
-                                    <span className="font-bold text-foreground">
-                                      {t("story.imagePending")}
-                                    </span>
-                                    <span className="text-xs">
-                                      {t("story.imagePendingDescription")}
-                                    </span>
-                                  </div>
-                                )}
-                                <figcaption className="p-3 text-xs text-muted-foreground">
-                                  <span className="font-bold text-foreground">
-                                    {t(
-                                      isWordRef
-                                        ? "story.vocabularyReference"
-                                        : "story.chunkVisualBrief"
-                                    )}
-                                    :{" "}
-                                  </span>
-                                  <span lang="en" dir="ltr">
-                                    {effectiveAlt}
-                                  </span>
-                                </figcaption>
-                              </figure>
-                            );
-                          })()}
+                        {currentChunk.imageBrief && (
+                          <figure className="overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
+                            {currentChunk.imagePath &&
+                            !failedSceneImages[currentChunk.imagePath] ? (
+                              <QuestionImage
+                                media={{
+                                  imagePath: currentChunk.imagePath,
+                                  imageAlt: currentChunk.imageAlt ?? currentChunk.imageBrief,
+                                  imageFallbacks: currentChunk.imageFallbacks,
+                                }}
+                                loading="eager"
+                                className="aspect-video w-full object-contain"
+                                onExhausted={() =>
+                                  setFailedSceneImages((current) => ({
+                                    ...current,
+                                    [currentChunk.imagePath!]: true,
+                                  }))
+                                }
+                              />
+                            ) : (
+                              <div
+                                role="img"
+                                aria-label={t("story.imagePendingAria")}
+                                className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 bg-secondary px-6 text-center text-muted-foreground"
+                              >
+                                <ImageOff className="size-8 text-primary" aria-hidden="true" />
+                                <span className="font-bold text-foreground">
+                                  {t("story.imagePending")}
+                                </span>
+                                <span className="text-xs">
+                                  {t("story.imagePendingDescription")}
+                                </span>
+                              </div>
+                            )}
+                            <figcaption className="p-3 text-xs text-muted-foreground">
+                              <span className="font-bold text-foreground">
+                                {t("story.chunkVisualBrief")}:{" "}
+                              </span>
+                              {currentChunk.imageBrief}
+                            </figcaption>
+                          </figure>
+                        )}
 
                         {/* Interactive Context Check Question */}
                         {currentChunk.check?.question && (
@@ -994,8 +890,8 @@ export const ExerciseStory = memo(function ExerciseStory({
                               <span className="rounded-full bg-feedback-warning-surface px-2.5 py-0.5 text-xs font-bold text-feedback-warning-foreground">
                                 {t("story.checkContext")}
                               </span>
-                              <h4 data-question-prompt className="wp-question-prompt">
-                                <ClozeText text={currentChunk.check.question} />
+                              <h4 className="font-bold text-sm text-foreground">
+                                {currentChunk.check.question}
                               </h4>
                             </div>
 
@@ -1020,15 +916,14 @@ export const ExerciseStory = memo(function ExerciseStory({
                                       }));
                                       if (isCorrectOption) {
                                         playCorrectSound();
+                                        speak(opt + ". Correct!");
                                       } else {
                                         playIncorrectSound();
+                                        speak(
+                                          "Not quite. The answer is " +
+                                            currentChunk.check.expectedAnswer
+                                        );
                                       }
-                                      stop();
-                                      speakFeedback({
-                                        correct: isCorrectOption,
-                                        targetLabel: currentChunk.check.expectedAnswer,
-                                        chosenLabel: opt,
-                                      });
                                     }}
                                     disabled={answered}
                                     className={`flex min-h-[48px] items-center justify-between px-4 py-2.5 rounded-xl border text-sm font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary ${
@@ -1128,16 +1023,6 @@ export const ExerciseStory = memo(function ExerciseStory({
                           key={phrase.id}
                           className="flex flex-col gap-2 rounded-2xl border border-border bg-secondary/40 p-4"
                         >
-                          {phrase.imagePath && (
-                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-border/60 bg-wp-card">
-                              <img
-                                src={resolveAssetUrl(phrase.imagePath)}
-                                alt={phrase.imageAlt || phrase.phrase}
-                                className="size-full object-cover"
-                                loading="lazy"
-                              />
-                            </div>
-                          )}
                           <div className="flex items-start justify-between gap-2">
                             <h4 className="font-bold text-foreground">{phrase.phrase}</h4>
                             <button
@@ -1172,24 +1057,10 @@ export const ExerciseStory = memo(function ExerciseStory({
                           >
                             <strong>{t("story.usagePhraseArabic")}:</strong> {phrase.arabicMeaning}
                           </p>
-                          <div className="flex items-center justify-between gap-2">
-                            <p className="text-xs italic leading-relaxed text-muted-foreground flex-1 min-w-0">
-                              <strong className="not-italic">
-                                {t("story.usagePhraseExample")}:
-                              </strong>{" "}
-                              {phrase.example}
-                            </p>
-                            {phrase.example && (
-                              <button
-                                type="button"
-                                onClick={() => speak(phrase.example)}
-                                aria-label={`Listen to example: ${phrase.example}`}
-                                className="inline-flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center rounded-xl border border-primary/20 bg-wp-card text-primary hover:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
-                              >
-                                <Volume2 className="size-4" aria-hidden />
-                              </button>
-                            )}
-                          </div>
+                          <p className="text-xs italic leading-relaxed text-muted-foreground">
+                            <strong className="not-italic">{t("story.usagePhraseExample")}:</strong>{" "}
+                            {phrase.example}
+                          </p>
                           <p className="text-xs leading-relaxed text-muted-foreground">
                             <strong className="text-foreground">
                               {t("story.usagePhrasePattern")}:
@@ -1535,7 +1406,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                   </div>
 
                   <h4 className="font-sans font-bold text-foreground text-base sm:text-lg leading-snug">
-                    <ClozeText text={currentQ.question} />
+                    {currentQ.question}
                   </h4>
 
                   {/* 4 Multiple Choice Option Buttons */}

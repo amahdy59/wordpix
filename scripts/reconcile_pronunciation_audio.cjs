@@ -40,47 +40,26 @@ const uniqueBy = (values, key) => [
 ];
 
 function corpusCandidates() {
-  const general = fs.existsSync(GENERAL_CORPUS_PATH)
-    ? readJson(GENERAL_CORPUS_PATH).map((entry) => ({
-        displayText: entry.text,
-        synthesisText: entry.text,
-        objectKey: keyFromHash(entry.hash),
-        profile: AUDIO_PROFILE,
-        source: "general-corpus",
-      }))
-    : [];
-  const foundations = fs.existsSync(FOUNDATION_CORPUS_PATH)
-    ? readJson(FOUNDATION_CORPUS_PATH).map((entry) => ({
-        displayText: entry.displayText ?? entry.text,
-        synthesisText: entry.text,
-        objectKey: keyFromHash(entry.hash),
-        profile: entry.profile ?? AUDIO_PROFILE,
-        source: "foundation-corpus",
-      }))
-    : [];
+  const general = readJson(GENERAL_CORPUS_PATH).map((entry) => ({
+    displayText: entry.text,
+    synthesisText: entry.text,
+    objectKey: keyFromHash(entry.hash),
+    profile: AUDIO_PROFILE,
+    source: "general-corpus",
+  }));
+  const foundations = readJson(FOUNDATION_CORPUS_PATH).map((entry) => ({
+    displayText: entry.displayText ?? entry.text,
+    synthesisText: entry.text,
+    objectKey: keyFromHash(entry.hash),
+    profile: entry.profile ?? AUDIO_PROFILE,
+    source: "foundation-corpus",
+  }));
   return [...general, ...foundations];
-}
-
-async function withRetry(task, attempts = 5) {
-  for (let attempt = 1; ; attempt += 1) {
-    try {
-      return await task();
-    } catch (error) {
-      const retriable =
-        error.name === "TypeError" ||
-        error.message?.includes("fetch failed") ||
-        error.code === "ECONNRESET" ||
-        error.status === 429 ||
-        error.status >= 500;
-      if (!retriable || attempt >= attempts) throw error;
-      await new Promise((resolve) => setTimeout(resolve, Math.min(30_000, 1000 * 2 ** attempt)));
-    }
-  }
 }
 
 function derivedCandidates(displayText) {
   const profiles = Object.entries(VOICES).flatMap(([speaker, voiceId]) =>
-    ["eleven_v4", "eleven_turbo_v2_5", "eleven_flash_v2"].map((modelId) => ({
+    ["eleven_turbo_v2_5", "eleven_flash_v2"].map((modelId) => ({
       speaker,
       profile: { ...AUDIO_PROFILE, voiceId, modelId },
     })),
@@ -114,7 +93,7 @@ function publicClip(candidate) {
 async function main() {
   const source = readJson(SOURCE_PATH);
   const r2 = createClient();
-  const r2Keys = new Set(await withRetry(() => r2.list("audio/")));
+  const r2Keys = new Set(await r2.list("audio/"));
   const corpus = corpusCandidates();
   const corpusKeySet = new Set(corpus.map((entry) => entry.objectKey));
   const corpusByText = new Map();

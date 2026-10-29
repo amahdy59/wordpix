@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { X, Sparkles } from "lucide-react";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { useI18n } from "../context/I18nContext";
@@ -46,32 +46,34 @@ export function ReleaseNotesCard() {
           <X className="size-5" />
         </button>
       </div>
-      <div className="flex items-start gap-3">
-        <div className="text-primary shrink-0 mt-0.5">
-          <Sparkles className="size-4" />
-        </div>
-        <div className="min-w-0 flex-1">
-          <span className="block font-sans text-sm font-bold text-foreground">
-            {t("releaseNotes.whatsNewInVersion", { version: releaseData.version })}
+      <details className="group">
+        <summary className="flex min-h-[44px] cursor-pointer list-none items-center gap-3 rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary">
+          <div className="text-primary shrink-0">
+            <Sparkles className="size-4" />
+          </div>
+          <span className="min-w-0 flex-1">
+            <span className="block font-sans text-sm font-bold text-foreground">
+              {t("releaseNotes.whatsNewInVersion", { version: releaseData.version })}
+            </span>
+            <span className="block text-xs font-medium text-muted-foreground group-open:hidden">
+              {t("releaseNotes.showDetails")}
+            </span>
           </span>
-          <ul className="mt-2 flex flex-col gap-2">
-            {(interfaceLang === "ar"
-              ? (releaseData.notesAr ?? releaseData.notes)
-              : releaseData.notes
-            )
-              .slice(0, 3)
-              .map((note, index) => (
-                <li
-                  key={index}
-                  className="flex items-start gap-2 text-sm text-foreground font-medium"
-                >
-                  <div className="size-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
-                  <p className="leading-relaxed">{note}</p>
-                </li>
-              ))}
-          </ul>
-        </div>
-      </div>
+        </summary>
+        <ul className="mt-2 flex flex-col gap-2 ps-11">
+          {(interfaceLang === "ar" ? (releaseData.notesAr ?? releaseData.notes) : releaseData.notes)
+            .slice(0, 3)
+            .map((note, index) => (
+              <li
+                key={index}
+                className="flex items-start gap-2 text-sm text-foreground font-medium"
+              >
+                <div className="size-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+                <p className="leading-relaxed">{note}</p>
+              </li>
+            ))}
+        </ul>
+      </details>
       <a
         href="#/release-notes"
         className="mt-2 inline-flex min-h-11 items-center rounded-xl px-3 text-base font-semibold text-primary underline underline-offset-4 hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"

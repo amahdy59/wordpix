@@ -58,8 +58,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Timekeeping",
-        en: "He glanced at the wall clock to check how much time remained.",
-        ar: "ألقى نظرة على ساعة الحائط ليرى كم بقي من الوقت.",
+        en: "She glanced at the wall clock to check how much time remained.",
+        ar: "أَلْقَتْ نَظْرَةً عَلَى سَاعَةِ الحَائِطِ لِمَعْرِفَةِ الوَقْتِ المُتَبَقِّي.",
       },
       {
         context: "Quiet Night",
@@ -72,8 +72,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تُعَلَّقُ سَاعَةٌ خَشَبِيَّةٌ أَنِيقَةٌ بِشَكْلٍ بَارِزٍ فِي مِسَاحَةِ المَطْبَخِ.",
       },
     ],
-    exampleSentence: "He glanced at the wall clock to check how much time remained.",
-    exampleArabic: "ألقى نظرة على ساعة الحائط ليرى كم بقي من الوقت.",
+    exampleSentence: "She glanced at the wall clock to check how much time remained.",
+    exampleArabic: "أَلْقَتْ نَظْرَةً عَلَى سَاعَةِ الحَائِطِ لِمَعْرِفَةِ الوَقْتِ المُتَبَقِّي.",
   },
   pig: {
     id: "pig",
@@ -143,8 +143,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Electrical Connection",
-        en: "He inserted the three-prong electric plug firmly into the grounded wall outlet.",
-        ar: "أدخل القابس الكهربائي الثلاثي بإحكام في مقبس الحائط المؤرض.",
+        en: "She inserted the three-prong electric plug firmly into the grounded wall outlet.",
+        ar: "أَدْخَلَتْ قَابِسَ الكَهْرَبَاءِ الثُّلاثِيَّ بِإِحْكَامٍ فِي مِقْبَسِ الجِدَارِ المُؤَرَّضِ.",
       },
       {
         context: "Safety",
@@ -158,8 +158,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He inserted the three-prong electric plug firmly into the grounded wall outlet.",
-    exampleArabic: "أدخل القابس الكهربائي الثلاثي بإحكام في مقبس الحائط المؤرض.",
+      "She inserted the three-prong electric plug firmly into the grounded wall outlet.",
+    exampleArabic:
+      "أَدْخَلَتْ قَابِسَ الكَهْرَبَاءِ الثُّلاثِيَّ بِإِحْكَامٍ فِي مِقْبَسِ الجِدَارِ المُؤَرَّضِ.",
   },
   well: {
     id: "well",
@@ -278,8 +279,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Morning Routine",
-        en: "He squeezed mint paste onto the bristles before standing in front of the mirror.",
-        ar: "ضغط المعجون بالنعناع على شعيرات الفرشاة قبل أن يقف أمام المرآة.",
+        en: "She squeezed mint paste onto the bristles before standing in front of the mirror.",
+        ar: "وَضَعَتْ مَعْجُونَ النَّعْنَاعِ عَلَى الشُّعَيْرَاتِ قَبْلَ الوُقُوفِ أَمَامَ المِرْآةِ.",
       },
       {
         context: "Bedtime Habit",
@@ -426,14 +427,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "shake over",
         meaning: "disperse ground spice across food",
         arabic: "يَرُشُّ الفُلْفُلَ فَوْقَ الطَّعَام",
-        example: "He shook fresh black pepper over his pasta.",
+        example: "She shook fresh black pepper over her pasta.",
       },
     ],
     sentences: [
       {
         context: "Flavoring",
-        en: "He used the stainless steel pepper shaker to season his fresh salad.",
-        ar: "استخدم مرشة الفلفل المصنوعة من الفولاذ المقاوم للصدأ لتتبيل سلطته الطازجة.",
+        en: "She used the stainless steel pepper shaker to season her fresh salad.",
+        ar: "اسْتَخْدَمَتْ مِرَشَّةَ الفُلْفُلِ لِتَتْبِيلِ سَلَطَتِهَا الخَضْرَاءِ.",
       },
       {
         context: "Tableware Set",
@@ -446,8 +447,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "عَرَضَ النَّادِلُ فُلْفُلًا أَسْوَدَ مَطْحُونًا طَازَجًا مِنْ مِطْحَنَةٍ خَشَبِيَّةٍ.",
       },
     ],
-    exampleSentence: "He used the stainless steel pepper shaker to season his fresh salad.",
-    exampleArabic: "استخدم مرشة الفلفل المصنوعة من الفولاذ المقاوم للصدأ لتتبيل سلطته الطازجة.",
+    exampleSentence: "She used the stainless steel pepper shaker to season her fresh salad.",
+    exampleArabic: "اسْتَخْدَمَتْ مِرَشَّةَ الفُلْفُلِ لِتَتْبِيلِ سَلَطَتِهَا الخَضْرَاءِ.",
   },
   steak: {
     id: "steak",

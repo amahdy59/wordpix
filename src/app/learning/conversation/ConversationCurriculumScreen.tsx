@@ -97,11 +97,11 @@ export function ConversationCurriculumScreen({ dispatch }: Props) {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => dispatch({ type: "GO", to: "learn" })}
+          onClick={() => dispatch({ type: "GO", to: "explore" })}
           className="w-fit"
           iconLeft={<ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />}
         >
-          {t("lessonShell.backToLearn")}
+          {t("conversation.backToExplore")}
         </Button>
 
         <CurriculumHeroHeader

@@ -121,7 +121,7 @@ export const SceneCanvas = memo(function SceneCanvas({
             loading="eager"
             sizePreset="hero"
             fetchPriority="high"
-            className="size-full object-cover object-center rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
+            className="size-full object-contain rounded-2xl shadow-lg motion-safe:transition-all motion-safe:duration-300"
           />
         </div>
 

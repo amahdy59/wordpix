@@ -174,7 +174,7 @@ export const PET_SHOP_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "reveal a secret accidentally",
       example:
-        "He let the cat out of the bag — everyone found out we were getting a Persian kitten from the pet shop.",
+        "She let the cat out of the bag — everyone found out we were getting a Persian kitten from the pet shop.",
     },
     {
       id: "pet-shop-it-s-raining-cats-and-dogs",
@@ -228,7 +228,7 @@ export const PET_SHOP_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "someone who imitates another person",
       example:
-        "He's such a copycat — I bought a beagle, and now he wants a labrador that looks just like it.",
+        "She's such a copycat — I bought a beagle, and now she wants a labrador that looks just like it.",
     },
     {
       id: "pet-shop-guinea-pig",

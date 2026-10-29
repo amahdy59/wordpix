@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo, useState } from "react";
 import type { Action, SkillCategory } from "../types";
 import {
@@ -21,19 +22,15 @@ import { useAccessibility, formatNumber } from "../shared/useAccessibilityPrefer
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
 import { useProgress } from "../data/progress";
+import { REVIEW_GROUP_ID } from "../data/courseCatalog";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
 import { Button, FilterChip, PageContainer, PageHeader } from "../shared";
-import { getDuePronunciationReviews } from "../learning/foundations/pronunciationProgress";
-import { useReviewDate } from "../shared/useReviewDate";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-import { getReviewSchedule } from "../review/reviewSchedule";
-import { reviewSessionAction } from "../review/startReview";
-
-const DEFAULT_REVIEW_SESSION_SIZE = 10;
+const REVIEW_SESSION_SIZE = 5;
 
 /**
  * Practice Tab: Consolidates Spaced-Repetition Daily Review and Multimodal Skill Drills.
@@ -47,40 +44,33 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
   const learnerLevel = learnerState?.preferences?.englishLevel ?? "A1";
   const includeSpeaking = accessibility?.includeSpeaking ?? true;
   const includeListening = accessibility?.includeListening ?? true;
-  const includePronunciation = accessibility?.includePronunciation ?? true;
   const numeralSystem = accessibility?.numeralSystem ?? "western";
 
   // 1. Spaced-Repetition Review Queue Calculations
-  const reviewDate = useReviewDate();
-  const todayStr = getLocalDateString(reviewDate);
-  const pronunciationReviews = getDuePronunciationReviews(
-    learnerState.pronunciationProgress ?? {},
-    reviewDate
-  );
+  const todayStr = getLocalDateString(new Date());
 
   const memoryItems = useMemo(() => {
     const entries = Object.entries(progress.wordMemory ?? {});
     if (entries.length === 0) return [];
     return entries.flatMap(([wordId, entry]) => {
-      const nextDate = entry.nextReviewAt
-        ? getLocalDateString(new Date(entry.nextReviewAt))
-        : todayStr;
+      const nextDate = entry.nextReviewAt ? entry.nextReviewAt.split("T")[0] : todayStr;
       const daysDiff = calculateDaysBetween(todayStr, nextDate);
       return [{ wordId, entry, daysDiff }];
     });
   }, [progress.wordMemory, todayStr]);
 
-  const schedule = useMemo(
-    () => getReviewSchedule(progress.wordMemory ?? {}, reviewDate),
-    [progress.wordMemory, reviewDate]
+  const overdueList = useMemo(
+    () => memoryItems.filter((item) => item.daysDiff < 0).sort((a, b) => a.daysDiff - b.daysDiff),
+    [memoryItems]
   );
-  const overdueList = schedule.overdue.map((entry) => ({ wordId: entry.wordId, entry }));
-  const dueTodayList = schedule.today.map((entry) => ({ wordId: entry.wordId, entry }));
 
-  const [selectedBatchSize, setSelectedBatchSize] = useState<number>(DEFAULT_REVIEW_SESSION_SIZE);
+  const dueTodayList = useMemo(
+    () => memoryItems.filter((item) => item.daysDiff === 0),
+    [memoryItems]
+  );
+
   const totalDue = overdueList.length + dueTodayList.length;
-  const sessionSize = Math.min(selectedBatchSize, totalDue);
-  const estimatedMinutes = Math.max(1, Math.ceil(sessionSize * 0.3));
+  const sessionSize = Math.min(REVIEW_SESSION_SIZE, totalDue);
 
   const hasLearningHistory =
     (learnerState.learnerProgress?.sessionsCompleted ?? 0) > 0 ||
@@ -99,8 +89,17 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
   }, [memoryItems, t]);
 
   const startReviewSession = () => {
-    const action = reviewSessionAction(schedule.due, sessionSize);
-    if (action) dispatch(action);
+    const queue = [...overdueList, ...dueTodayList]
+      .slice(0, REVIEW_SESSION_SIZE)
+      .map((item) => item.wordId);
+    if (queue.length === 0) return;
+
+    dispatch({
+      type: "START_LESSON",
+      lessonId: REVIEW_GROUP_ID,
+      mode: "SMART_REVIEW",
+      wordQueue: queue,
+    });
   };
 
   // 2. Multimodal Skill Categories & Drills
@@ -127,52 +126,32 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
       {/* ── Section 1: Reviews Due Today (Spaced-Repetition Hero) ──────────────── */}
       <section aria-label={t("masteryReview.todayReview")} className="flex flex-col gap-3">
         {totalDue > 0 ? (
-          <div className="rounded-2xl border border-primary/30 bg-secondary p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 sm:gap-6">
-            <div className="flex items-start gap-3 sm:gap-4">
-              <div className="size-12 sm:size-16 rounded-xl sm:rounded-2xl bg-primary text-primary-foreground flex flex-col items-center justify-center shrink-0 shadow-wp-xs">
-                <span className="text-2xl sm:text-4xl font-bold leading-none">{totalDue}</span>
-                <span className="text-xs sm:text-sm font-bold mt-0.5 sm:mt-1">
-                  {t("masteryReview.wordsDue")}
-                </span>
+          <div className="rounded-2xl border border-primary/30 bg-secondary p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div className="flex items-start gap-4">
+              <div className="size-14 sm:size-16 rounded-2xl bg-primary text-primary-foreground flex flex-col items-center justify-center shrink-0 shadow-wp-xs">
+                <span className="text-3xl sm:text-4xl font-black leading-none">{totalDue}</span>
+                <span className="text-sm font-bold mt-1">{t("masteryReview.wordsDue")}</span>
               </div>
 
-              <div className="min-w-0 flex flex-col gap-1 sm:gap-1.5">
-                <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
-                  <span className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-primary">
+              <div className="min-w-0 flex flex-col gap-1.5">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-bold text-primary">
                     <Clock className="size-3.5" aria-hidden="true" />
                     <span>{t("masteryReview.todayReview")}</span>
                   </span>
-                  <span className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-muted-foreground bg-card px-2 sm:px-2.5 py-0.5 rounded-full border border-border">
-                    <Clock className="size-3 text-muted-foreground" aria-hidden="true" />
-                    <span>
-                      {t("masteryReview.estimatedDuration", {
-                        minutes: formatNumber(estimatedMinutes, numeralSystem),
-                        defaultValue: `~${estimatedMinutes} min`,
-                      })}
-                    </span>
-                  </span>
                   {progress.streak > 0 && (
-                    <span className="inline-flex items-center gap-1 text-xs sm:text-sm font-bold text-wp-amber-foreground bg-wp-amber/10 px-2 py-0.5 rounded-full">
+                    <span className="inline-flex items-center gap-1 text-sm font-bold text-wp-amber-foreground bg-wp-amber/10 px-2 py-0.5 rounded-full">
                       <Flame className="size-3.5" aria-hidden="true" />
                       <span>{t("masteryReview.dayStreak", { count: progress.streak })}</span>
                     </span>
                   )}
-                  {overdueList.length > 0 && (
-                    <span className="inline-flex items-center gap-1 text-xs sm:text-sm font-bold text-feedback-error-foreground bg-feedback-error-surface px-2 sm:px-2.5 py-0.5 rounded-full border border-feedback-error-border">
-                      <span>
-                        {t("dashboard.overdueBadge", {
-                          count: formatNumber(overdueList.length, numeralSystem),
-                        })}
-                      </span>
-                    </span>
-                  )}
                 </div>
 
-                <h2 className="font-sans text-lg sm:text-2xl font-bold text-foreground leading-tight">
+                <h2 className="font-sans text-xl sm:text-2xl font-black text-foreground leading-tight">
                   {t("masteryReview.title")}
                 </h2>
 
-                <p className="text-sm sm:text-base text-muted-foreground font-medium leading-relaxed max-w-xl">
+                <p className="text-base text-muted-foreground font-medium leading-relaxed max-w-xl">
                   {t("masteryReview.countsSummary", {
                     overdue: overdueList.length,
                     due: dueTodayList.length,
@@ -181,49 +160,15 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 shrink-0">
-              {totalDue > 10 && (
-                <div
-                  className="flex items-center gap-1.5 self-start sm:self-center"
-                  role="group"
-                  aria-label={t("masteryReview.wordsDue")}
-                >
-                  {[10, totalDue]
-                    .filter((size, i, arr) => arr.indexOf(size) === i)
-                    .map((size) => (
-                      <button
-                        key={size}
-                        type="button"
-                        onClick={() => setSelectedBatchSize(size)}
-                        className={`min-h-[44px] px-3.5 py-1.5 rounded-xl text-sm font-bold font-sans transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
-                          selectedBatchSize === size
-                            ? "bg-primary text-primary-foreground"
-                            : "bg-card text-foreground hover:bg-secondary border border-border"
-                        }`}
-                        aria-pressed={selectedBatchSize === size}
-                      >
-                        {size === totalDue
-                          ? `${formatNumber(size, numeralSystem)} (${t("action.all", { defaultValue: "All" })})`
-                          : `${formatNumber(size, numeralSystem)} (${t("practice.smartBatch", { defaultValue: "Smart" })})`}
-                      </button>
-                    ))}
-                </div>
-              )}
-
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
               <Button
                 variant="primary"
                 size="lg"
                 iconLeft={<Play className="size-4 fill-current" aria-hidden="true" />}
                 onClick={startReviewSession}
-                className="min-h-[48px] px-6 shadow-wp-xs font-bold rounded-2xl"
+                className="min-h-[48px] px-6 shadow-wp-md"
               >
-                {t("masteryReview.smartReviewAction", {
-                  count: formatNumber(sessionSize, numeralSystem),
-                  defaultValue: t("masteryReview.reviewNow", {
-                    count: formatNumber(sessionSize, numeralSystem),
-                    defaultValue: `Smart Review (${formatNumber(sessionSize, numeralSystem)} words)`,
-                  }),
-                })}
+                {t("masteryReview.reviewNow", { count: sessionSize })}
               </Button>
 
               <Button
@@ -231,7 +176,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 size="lg"
                 iconLeft={<BookOpen className="size-4" aria-hidden="true" />}
                 onClick={() => dispatch({ type: "GO", to: "review" })}
-                className="min-h-[48px] rounded-2xl"
+                className="min-h-[48px]"
               >
                 {t("masteryReview.badge")}
               </Button>
@@ -245,7 +190,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               </div>
               <div className="flex flex-col gap-0.5">
                 <div className="flex items-center gap-2">
-                  <h2 className="font-sans font-bold text-base sm:text-lg text-foreground">
+                  <h2 className="font-sans font-black text-base sm:text-lg text-foreground">
                     {t("masteryReview.allCaughtUp")}
                   </h2>
                   {progress.streak > 0 && (
@@ -261,10 +206,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                         time: nextScheduledDateStr,
                         defaultValue: `Next reviews scheduled for ${nextScheduledDateStr}. Great job keeping your memory strong!`,
                       })
-                    : t("masteryReview.allCaughtUpDesc", {
-                        defaultValue:
-                          "You're all caught up! Practice any skill below to strengthen memory.",
-                      })}
+                    : t("masteryReview.subtitle")}
                 </p>
               </div>
             </div>
@@ -286,7 +228,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                 <BookOpen className="size-6" aria-hidden="true" />
               </div>
               <div className="flex flex-col gap-0.5">
-                <h2 className="font-sans font-bold text-base sm:text-lg text-foreground">
+                <h2 className="font-sans font-black text-base sm:text-lg text-foreground">
                   {t("practice.noReviewsTitle", { defaultValue: "No reviews due yet" })}
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground font-medium">
@@ -306,34 +248,6 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               className="min-h-[44px] shrink-0"
             >
               {t("practice.startLearning", { defaultValue: "Start First Lesson" })}
-            </Button>
-          </div>
-        )}
-        {includePronunciation && pronunciationReviews.length > 0 && (
-          <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-card p-4">
-            <div>
-              <h2 className="text-lg font-bold text-foreground">
-                {t("pronunciationEnhancements.dueTitle")}
-              </h2>
-              <p className="text-sm text-foreground">
-                {t("pronunciationEnhancements.dueDescription", {
-                  count: pronunciationReviews.reduce(
-                    (count, review) => count + review.targets.length,
-                    0
-                  ),
-                })}
-              </p>
-            </div>
-            <Button
-              variant="primary"
-              onClick={() =>
-                dispatch({
-                  type: "OPEN_FIGMA_PRONUNCIATION",
-                  lessonNumber: pronunciationReviews[0].lessonNumber,
-                })
-              }
-            >
-              {t("pronunciationEnhancements.reviewAction")}
             </Button>
           </div>
         )}
@@ -363,7 +277,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
         <div
           role="radiogroup"
           aria-label={t("skillHub.categoriesAria")}
-          className="grid grid-cols-2 gap-2 p-1 sm:flex sm:flex-wrap"
+          className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,9rem),1fr))] gap-2 p-1 sm:flex sm:flex-wrap"
         >
           {categories.map(({ id, labelBase, icon: Icon }) => {
             const count = availableExercises.filter((e) => e.category === id).length;
@@ -393,7 +307,6 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
           })}
         </div>
 
-        <p className="text-sm text-muted-foreground">{t("ux.practicePace")}</p>
         {/* Exercises Grid */}
         <div className="flex flex-col divide-y divide-border">
           {categoryExercises.map((ex) => (
@@ -401,21 +314,24 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
               <button
                 type="button"
                 onClick={() => dispatch({ type: "OPEN_SKILL_EXERCISE", exerciseId: ex.id })}
-                className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors cursor-pointer group"
+                className="w-full min-h-[44px] hover:bg-secondary rounded-xl py-4 px-3 pe-16 text-start flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors group"
               >
-                <div className="min-w-0 flex-1">
+                <div>
                   <div className="flex items-center justify-between gap-2">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <h3 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors leading-tight">
-                        {t(`skillHub.exercises.${ex.id}.title`)}
-                      </h3>
-                    </div>
+                    <h3 className="font-sans font-bold text-foreground text-base group-hover:text-primary transition-colors leading-tight">
+                      {t(`skillHub.exercises.${ex.id}.title`)}
+                    </h3>
+                    <span className="shrink-0 font-sans text-sm font-bold text-primary">
+                      {`${ex.minimumLevel ?? "A1"}+`}
+                    </span>
                   </div>
-                  <p className="font-sans text-sm text-muted-foreground mt-1 line-clamp-1">
-                    {t(`skillHub.exercises.${ex.id}.description`)}
-                  </p>
 
                   <div className="flex items-center gap-1.5 flex-wrap mt-2">
+                    {!ex.isTimed && (
+                      <span className="text-sm font-semibold text-muted-foreground">
+                        {t("skillHub.estimatedTime")}
+                      </span>
+                    )}
                     {ex.requiresMic && (
                       <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
                         <Mic className="size-3" aria-hidden="true" />
@@ -430,6 +346,11 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                         <span>{t("skillHub.timedDrill", { defaultValue: "Timed drill" })}</span>
                       </span>
                     )}
+                    {!ex.isTimed && (
+                      <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
+                        <span>{t("skillHub.selfPaced", { defaultValue: "Self-paced" })}</span>
+                      </span>
+                    )}
                   </div>
                 </div>
 
@@ -441,6 +362,13 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
                   />
                 </div>
               </button>
+              <HelpDisclosure
+                variant="icon"
+                label={t("help.aboutTopic", { title: t(`skillHub.exercises.${ex.id}.title`) })}
+                className="absolute end-2 top-2 z-10"
+              >
+                {t(`skillHub.exercises.${ex.id}.description`)}
+              </HelpDisclosure>
             </article>
           ))}
         </div>

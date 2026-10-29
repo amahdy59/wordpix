@@ -145,7 +145,7 @@ export const SEASONINGS_CONDIMENTS_LEARNING: UnitLearningMaterials = {
       phrase: "rub salt in the wound",
       kind: "idiom",
       meaning: "To make a bad situation worse.",
-      example: "Don't rub salt in the wound — he already knows he over-seasoned the dish.",
+      example: "Don't rub salt in the wound — she already knows she over-seasoned the dish.",
     },
     {
       id: "seasonings-condiments-worth-one-s-salt",
@@ -160,7 +160,7 @@ export const SEASONINGS_CONDIMENTS_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To worsen an argument.",
       example:
-        "Criticising his cooking was like adding fuel to the fire — he was already upset about the burnt sauce.",
+        "Criticising her cooking was like adding fuel to the fire — she was already upset about the burnt sauce.",
     },
     {
       id: "seasonings-condiments-a-bitter-pill-to-swallow",
@@ -168,7 +168,7 @@ export const SEASONINGS_CONDIMENTS_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Something unpleasant to accept.",
       example:
-        "Losing the cooking competition was a bitter pill to swallow — his chutney was excellent.",
+        "Losing the cooking competition was a bitter pill to swallow — her chutney was excellent.",
     },
     {
       id: "seasonings-condiments-the-salt-of-the-earth",

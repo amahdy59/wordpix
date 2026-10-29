@@ -1,4 +1,3 @@
-import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 
 test("conversation curriculum is discoverable and allows browsing without answering", async ({
@@ -15,8 +14,7 @@ test("conversation curriculum is discoverable and allows browsing without answer
     if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`);
   });
 
-  await page.goto("/#/conversation", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/#/conversation");
 
   // Wait for the lazy curriculum route, as we do for its lesson route below.
   await expect(page.getByRole("heading", { name: "Conversation & Debate" })).toBeVisible({
@@ -34,20 +32,21 @@ test("conversation curriculum is discoverable and allows browsing without answer
   // The URL updates before the large lesson chunk finishes loading. Wait for
   // that route boundary explicitly so full-suite CPU contention cannot turn a
   // correct loading state into a false failure.
-  await expect(page.getByText("All steps", { exact: true })).toBeVisible({ timeout: 20_000 });
-  await page.getByText("All steps", { exact: true }).click();
-  await expect(page.getByRole("button", { name: /Step 6 of 7.*Discussion/ })).toBeEnabled();
-  await page.getByText("All steps", { exact: true }).click();
+  await expect(page.getByRole("button", { name: "Review & apply", exact: true })).toBeEnabled({
+    timeout: 20_000,
+  });
   const continueButton = page.getByRole("button", { name: "Continue to Reading" });
   await expect(continueButton).toBeEnabled();
   await continueButton.click();
-  await expect(page.locator("summary").filter({ hasText: "Step 2 of 7" })).toContainText("Reading");
+  await expect(page.getByRole("button", { name: "Reading", exact: true })).toHaveAttribute(
+    "aria-current",
+    "step"
+  );
 
   await expect(
     page.getByRole("navigation", { name: "Lesson sections" }).getByRole("progressbar")
   ).toHaveAttribute("aria-valuenow", "0");
-  await page.getByText("All steps", { exact: true }).click();
-  await page.getByRole("button", { name: /Step 1 of 7.*Warm-up/ }).click();
+  await page.getByRole("button", { name: "Warm-up", exact: true }).click();
   await page.getByRole("radio").first().click();
   await page.getByRole("button", { name: "Continue to Reading" }).click();
   await expect(

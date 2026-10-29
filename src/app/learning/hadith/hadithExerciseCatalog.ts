@@ -285,24 +285,10 @@ function pictureChoice(lesson: FigmaHadithLesson): HadithExercise {
     return vocabularyLines.has(normalize(item.label)) || vocabularyLines.has(normalize(baseLabel));
   });
   const answer = lessonVisual?.label.split("·")[0].trim() ?? words[0].term;
-  const distractors = words
-    .map((word) => word.term)
-    .filter((term, index, terms) => term !== answer && terms.indexOf(term) === index);
-  const seed = lesson.number * 41 + 17;
-  const shuffledDistractors = [...distractors];
-  let s = seed;
-  for (let i = shuffledDistractors.length - 1; i > 0; i--) {
-    s = (s * 9301 + 49297) % 233280;
-    const j = Math.floor((s / 233280) * (i + 1));
-    [shuffledDistractors[i], shuffledDistractors[j]] = [
-      shuffledDistractors[j],
-      shuffledDistractors[i],
-    ];
-  }
-  const options = [answer, ...shuffledDistractors.slice(0, 2)].map((term) => ({
-    id: term,
-    label: term,
-  }));
+  const options = [answer, ...words.map((word) => word.term)]
+    .filter((term, index, terms) => terms.indexOf(term) === index)
+    .slice(0, 3)
+    .map((term) => ({ id: term, label: term }));
   return {
     id: "picture-vocabulary",
     type: "image-choice",

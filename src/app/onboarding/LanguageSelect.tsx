@@ -2,19 +2,10 @@ import { useState } from "react";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
 import { HomeIndicator } from "../shared/HomeIndicator";
-import {
-  ArrowRight,
-  ArrowLeft,
-  Check,
-  BookOpen,
-  Target,
-  Sparkles,
-  Layers,
-  HelpCircle,
-} from "lucide-react";
+import { ArrowRight, Check, BookOpen, Target, Sparkles, Layers, HelpCircle } from "lucide-react";
 import { useProgress } from "../data/progress";
 import { PlacementQuizModal } from "./PlacementQuizModal";
-import type { EnglishLevel, LearnerGoal } from "../context/LearnerContext";
+import type { LearnerGoal } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
 import { getStartingUnitForLevel, type PlacementRecommendation } from "./placementRecommendation";
 import { COURSE_UNITS } from "../data/courseCatalog";
@@ -43,18 +34,6 @@ const LEVELS = [
     subtitleKey: "onboarding.levelB1Subtitle",
     tag: "B1",
   },
-  {
-    id: "b2",
-    titleKey: "reviewUpdate.levelB2",
-    subtitleKey: "reviewUpdate.levelB2Hint",
-    tag: "B2",
-  },
-  {
-    id: "c1",
-    titleKey: "reviewUpdate.levelC1",
-    subtitleKey: "reviewUpdate.levelC1Hint",
-    tag: "C1",
-  },
 ] as const;
 
 const DAILY_GOAL_OPTIONS = [5, 10, 20] as const;
@@ -69,7 +48,7 @@ const GOAL_OPTIONS: Array<{ id: LearnerGoal; labelKey: string }> = [
 
 export function LanguageSelect({ dispatch }: Props) {
   const { t } = useI18n();
-  const [level, setLevel] = useState<EnglishLevel>("A1");
+  const [level, setLevel] = useState<"A1" | "A2" | "B1">("A1");
   const [goalMinutes, setGoalMinutes] = useState<number>(10);
   const [selectedGoal, setSelectedGoal] = useState<LearnerGoal>("everyday");
   const [isPlacementOpen, setIsPlacementOpen] = useState(false);
@@ -141,7 +120,7 @@ export function LanguageSelect({ dispatch }: Props) {
 
         <div className="relative z-10 flex items-center gap-2 text-wp-text-on-panel-muted text-xs font-sans font-semibold">
           <Layers className="size-4" />
-          <span>{t("onboarding.step3Config")}</span>
+          <span>{t("onboarding.step2Config")}</span>
         </div>
       </div>
 
@@ -152,7 +131,7 @@ export function LanguageSelect({ dispatch }: Props) {
             {t("onboarding.yourGoal")}
           </span>
           <span className="text-xs font-sans font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-full border border-border">
-            {t("onboarding.step3")}
+            {t("onboarding.step2")}
           </span>
         </header>
 
@@ -181,7 +160,7 @@ export function LanguageSelect({ dispatch }: Props) {
                   type="button"
                   role="radio"
                   aria-checked={isSelected}
-                  onClick={() => setLevel(item.tag)}
+                  onClick={() => setLevel(item.tag as "A1" | "A2" | "B1")}
                   className={`w-full text-start p-4 rounded-2xl border transition-all flex items-center justify-between min-h-[60px] ${
                     isSelected
                       ? "bg-secondary border-primary border-[2px] shadow-wp-xs"
@@ -220,7 +199,7 @@ export function LanguageSelect({ dispatch }: Props) {
             <button
               type="button"
               onClick={() => setIsPlacementOpen(true)}
-              className="w-full py-2.5 px-4 rounded-xl border border-primary/30 bg-secondary hover:bg-secondary/80 hover:border-primary/50 text-primary font-sans font-bold text-xs flex items-center justify-center gap-2 transition-colors min-h-[44px] cursor-pointer shadow-wp-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="w-full py-2.5 px-4 rounded-xl border border-primary/30 bg-secondary hover:bg-secondary text-primary font-sans font-bold text-xs flex items-center justify-center gap-2 transition-colors min-h-[44px]"
             >
               <HelpCircle className="size-4" />
               <span>{t("onboarding.testMyLevel")}</span>
@@ -237,9 +216,6 @@ export function LanguageSelect({ dispatch }: Props) {
                   })}
                 </p>
                 <p className="mt-1 font-sans text-xs leading-relaxed text-muted-foreground">
-                  {placement.listeningAssessed === false && (
-                    <span className="block">{t("reviewUpdate.readingBasis")}</span>
-                  )}
                   {t("onboarding.placementReason", {
                     correct: placement.correctCount,
                     total: placement.totalQuestions,
@@ -321,30 +297,16 @@ export function LanguageSelect({ dispatch }: Props) {
 
         {/* Footer CTA */}
         <footer className="w-full max-w-md mx-auto md:mx-0 pt-4 shrink-0 z-10">
-          <div className="flex flex-col sm:flex-row items-center gap-2.5">
-            <button
-              type="button"
-              onClick={() => dispatch({ type: "ONBOARD_BACK" })}
-              aria-label={t("onboarding.backStep")}
-              className="w-full sm:w-auto px-5 py-4 bg-card border border-border text-foreground rounded-xl font-sans font-bold text-sm min-h-[52px]
-                hover:border-primary/40 hover:bg-muted transition-colors flex items-center justify-center gap-2
-                focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-            >
-              <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden="true" />
-              <span>{t("onboarding.backStep")}</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={handleStart}
-              className="w-full flex-1 bg-primary rounded-xl py-4 font-sans font-bold text-primary-foreground text-base min-h-[52px]
-                focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
-                shadow-sm transition-all flex items-center justify-center gap-2"
-            >
-              <span>{t("onboarding.startLearning")}</span>
-              <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={handleStart}
+            className="w-full bg-wp-blue rounded-xl py-4 font-sans font-bold text-wp-text-on-blue text-base min-h-[52px]
+              focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-wp-blue
+              shadow-sm transition-all flex items-center justify-center gap-2"
+          >
+            <span>{t("onboarding.startLearning")}</span>
+            <ArrowRight className="size-5" />
+          </button>
         </footer>
 
         <div className="md:hidden shrink-0">

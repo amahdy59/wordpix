@@ -122,9 +122,9 @@ describe("Answer checking", () => {
   });
 
   it("treats practice tasks as ungraded", () => {
-    expect(
-      isGraded({ id: "p", kind: "practice", prompt: "p", explanation: "e", guidance: [] })
-    ).toBe(false);
+    expect(isGraded({ id: "p", kind: "practice", prompt: "p", explanation: "e", guidance: [] })).toBe(
+      false
+    );
     expect(isGraded(choice)).toBe(true);
   });
 });
@@ -194,10 +194,7 @@ describe("SkillExerciseRunner", () => {
     render(<SkillExerciseRunner definition={definition} dispatch={vi.fn()} />, { wrapper: wrap });
 
     await user.keyboard("1");
-    expect(screen.getByRole("button", { name: /Option A/ })).toHaveAttribute(
-      "aria-pressed",
-      "true"
-    );
+    expect(screen.getByRole("button", { name: /Option A/ })).toHaveAttribute("aria-pressed", "true");
   });
 
   it("advances through the exercise to a real score", async () => {
@@ -232,8 +229,7 @@ describe("SkillExerciseRunner", () => {
     render(<SkillExerciseRunner definition={practice} dispatch={vi.fn()} />, { wrapper: wrap });
 
     expect(screen.getByText(/cannot grade open answers/i)).toBeTruthy();
-    expect(screen.queryByRole("button", { name: "Check answer" })).not.toBeInTheDocument();
-    await user.click(screen.getByRole("button", { name: "I've practised" }));
+    await user.click(screen.getByRole("button", { name: "Check answer" }));
     await user.click(screen.getByRole("button", { name: "See results" }));
     expect(screen.getByText(/not scored/i)).toBeTruthy();
   });
@@ -258,10 +254,7 @@ describe("Exercise content", () => {
         if (task.kind === "choice") {
           const correct = task.options.filter((o) => o.correct);
           expect(correct.length, `${definition.id}/${task.id} needs one correct option`).toBe(1);
-          expect(
-            task.options.length,
-            `${definition.id}/${task.id} needs distractors`
-          ).toBeGreaterThan(1);
+          expect(task.options.length, `${definition.id}/${task.id} needs distractors`).toBeGreaterThan(1);
         }
         if (task.kind === "multi") {
           expect(
@@ -270,15 +263,10 @@ describe("Exercise content", () => {
           ).toBeGreaterThan(0);
         }
         if (task.kind === "entry") {
-          expect(task.accept.length, `${definition.id}/${task.id} accepts nothing`).toBeGreaterThan(
-            0
-          );
+          expect(task.accept.length, `${definition.id}/${task.id} accepts nothing`).toBeGreaterThan(0);
         }
         if (task.kind === "order") {
-          expect(
-            task.solution.length,
-            `${definition.id}/${task.id} has no solution`
-          ).toBeGreaterThan(1);
+          expect(task.solution.length, `${definition.id}/${task.id} has no solution`).toBeGreaterThan(1);
         }
         if (task.kind === "sort") {
           task.items.forEach((item) => {
@@ -295,10 +283,9 @@ describe("Exercise content", () => {
   it("explains every task, so a wrong answer teaches something", () => {
     definitions.forEach((definition) => {
       definition.tasks.forEach((task) => {
-        expect(
-          task.explanation.length,
-          `${definition.id}/${task.id} has no explanation`
-        ).toBeGreaterThan(15);
+        expect(task.explanation.length, `${definition.id}/${task.id} has no explanation`).toBeGreaterThan(
+          15
+        );
       });
     });
   });
@@ -308,9 +295,7 @@ describe("Exercise content", () => {
       definition.tasks.forEach((task) => {
         if (task.kind !== "choice" && task.kind !== "multi") return;
         const labels = task.options.map((o) => o.label);
-        expect(new Set(labels).size, `${definition.id}/${task.id} repeats an option`).toBe(
-          labels.length
-        );
+        expect(new Set(labels).size, `${definition.id}/${task.id} repeats an option`).toBe(labels.length);
       });
     });
   });

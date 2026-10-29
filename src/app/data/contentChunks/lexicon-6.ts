@@ -70,14 +70,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "lean on",
         meaning: "rest against the headboard while reading",
         arabic: "يَسْتَنِدُ عَلَى ظَهْرِ السَّرِير",
-        example: "He propped a pillow to lean on the headboard while studying.",
+        example: "She propped a pillow to lean on the headboard while studying.",
       },
     ],
     sentences: [
       {
         context: "Bedtime Reading",
-        en: "He leaned against the padded headboard to read his book comfortably.",
-        ar: "اتكأ على لوح السرير المبطن ليقرأ كتابه براحة.",
+        en: "She leaned against the padded headboard to read her book comfortably.",
+        ar: "اسْتَنَدَتْ إِلَى ظَهْرِ السَّرِيرِ المَحْشُوِّ لِتَقْرَأَ كِتَابَهَا بِكُلِّ رَاحَةٍ.",
       },
       {
         context: "Bedroom Decor",
@@ -90,8 +90,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَمَّ تَثْبِيتُ ظَهْرِ السَّرِيرِ الخَشَبِيِّ بِإِحْكَامٍ فِي هَيْكَلِ السَّرِيرِ.",
       },
     ],
-    exampleSentence: "He leaned against the padded headboard to read his book comfortably.",
-    exampleArabic: "اتكأ على لوح السرير المبطن ليقرأ كتابه براحة.",
+    exampleSentence: "She leaned against the padded headboard to read her book comfortably.",
+    exampleArabic:
+      "اسْتَنَدَتْ إِلَى ظَهْرِ السَّرِيرِ المَحْشُوِّ لِتَقْرَأَ كِتَابَهَا بِكُلِّ رَاحَةٍ.",
   },
   "tissue-box": {
     id: "tissue-box",
@@ -112,7 +113,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "pull out",
         meaning: "extract a tissue from the box",
         arabic: "يَسْحَبُ مَنْدِيلاً مِنَ العُلْبَة",
-        example: "He pulled out a soft tissue to dry his tears.",
+        example: "She pulled out a soft tissue to dry her tears.",
       },
       {
         phrase: "throw away",
@@ -172,8 +173,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Spring Preparation",
-        en: "He cleared dry weeds and spread fresh organic mulch across the raised flower bed.",
-        ar: "أزال الأعشاب الجافة ووزع غطاء عضويا جديدا للتربة على حوض الزهور المرتفع.",
+        en: "She cleared dry weeds and spread fresh organic mulch across the raised flower bed.",
+        ar: "أَزَالَتِ الأَعْشَابَ الضَّارَّةَ وَفَرَشَتِ السَّمَادَ العُضْوِيَّ فِي حَوْضِ الزُّهُورِ.",
       },
       {
         context: "Color Arrangement",
@@ -210,8 +211,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Eco-Friendly Gardening",
-        en: "He emptied kitchen vegetable scraps and dry leaves into the outdoor compost bin.",
-        ar: "أفرغ بقايا الخضراوات والأوراق الجافة في صندوق السماد العضوي الخارجي.",
+        en: "She emptied kitchen vegetable scraps and dry leaves into the outdoor compost bin.",
+        ar: "أَفْرَغَتْ بَقَايَا الخُضَارِ المَنْزِلِيَّةِ وَالأَوْرَاقَ الجَافَّةَ فِي صُنْدُوقِ السَّمَادِ العُضْوِيِّ.",
       },
       {
         context: "Aeration & Heat",
@@ -247,14 +248,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "hit back",
         meaning: "return the ball across the court",
         arabic: "يَرُدُّ الكُرَةَ بِالمِضْرَب",
-        example: "He hit the yellow ball back over the white net with his racket.",
+        example: "She hit the yellow ball back over the white net with her racket.",
       },
     ],
     sentences: [
       {
         context: "Tennis Practice",
-        en: "He gripped the lightweight tennis racket and served an ace across the court.",
-        ar: "أمسك مضرب التنس الخفيف وأرسل إرسالا ساحقا عبر الملعب.",
+        en: "She gripped the lightweight tennis racket and served an ace across the court.",
+        ar: "أَمْسَكَتْ مِضْرَبَ التِّنِسِ الخَفِيفَ وَأَرْسَلَتْ إِرْسَالًا سَاحِقًا عَبْرَ المَلْعَبِ.",
       },
       {
         context: "Equipment",
@@ -267,8 +268,10 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "جَلَبُوا مِضْرَبَيْ رِيشَةٍ طَائِرَةٍ وَكُرَةَ رِيشَةٍ إِلَى الحَدِيقَةِ.",
       },
     ],
-    exampleSentence: "He gripped the lightweight tennis racket and served an ace across the court.",
-    exampleArabic: "أمسك مضرب التنس الخفيف وأرسل إرسالا ساحقا عبر الملعب.",
+    exampleSentence:
+      "She gripped the lightweight tennis racket and served an ace across the court.",
+    exampleArabic:
+      "أَمْسَكَتْ مِضْرَبَ التِّنِسِ الخَفِيفَ وَأَرْسَلَتْ إِرْسَالًا سَاحِقًا عَبْرَ المَلْعَبِ.",
   },
   crayon: {
     id: "crayon",
@@ -382,8 +385,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Dairy Cooler",
-        en: "He picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
-        ar: "أخذ عدة عبوات من الزبادي اليوناني الكريمي غير المحلى من ممر منتجات الألبان.",
+        en: "She picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
+        ar: "اشْتَرَتْ عِدَّةَ عُلَبٍ مِنْ زَبَادِي يُونَانِيٍّ كَرِيمِيٍّ غَيْرِ مُحَلًّى مِنْ مَمَرِّ الأَلْبَانِ.",
       },
       {
         context: "Morning Breakfast",
@@ -397,8 +400,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
-    exampleArabic: "أخذ عدة عبوات من الزبادي اليوناني الكريمي غير المحلى من ممر منتجات الألبان.",
+      "She picked up several tubs of creamy unsweetened Greek yogurt from the dairy aisle.",
+    exampleArabic:
+      "اشْتَرَتْ عِدَّةَ عُلَبٍ مِنْ زَبَادِي يُونَانِيٍّ كَرِيمِيٍّ غَيْرِ مُحَلًّى مِنْ مَمَرِّ الأَلْبَانِ.",
   },
   checkout: {
     id: "checkout",
@@ -468,8 +472,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Quick Errands",
-        en: "He grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
-        ar: "أخذ سلة تسوق حمراء خفيفة ليشتري الأعشاب والليمون وزيت الزيتون.",
+        en: "She grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
+        ar: "أَخَذَتْ سَلَّةَ تَسَوُّقٍ حَمْرَاءَ خَفِيفَةَ الوَزْنِ لِشِرَاءِ أَعْشَابٍ وَلَيْمُونٍ وَزَيْتِ زَيْتُونٍ.",
       },
       {
         context: "Handheld Convenience",
@@ -483,8 +487,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
-    exampleArabic: "أخذ سلة تسوق حمراء خفيفة ليشتري الأعشاب والليمون وزيت الزيتون.",
+      "She grabbed a lightweight red shopping basket to pick up herbs, lemons, and olive oil.",
+    exampleArabic:
+      "أَخَذَتْ سَلَّةَ تَسَوُّقٍ حَمْرَاءَ خَفِيفَةَ الوَزْنِ لِشِرَاءِ أَعْشَابٍ وَلَيْمُونٍ وَزَيْتِ زَيْتُونٍ.",
   },
   "shopping-list": {
     id: "shopping-list",
@@ -687,7 +692,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "smash over",
         meaning: "hit lightweight shuttlecock with high downward velocity",
         arabic: "يَسْحَقُ كُرَةَ الرِّيشَة",
-        example: "He smashed the shuttlecock over the badminton net.",
+        example: "She smashed the shuttlecock over the badminton net.",
       },
     ],
     sentences: [

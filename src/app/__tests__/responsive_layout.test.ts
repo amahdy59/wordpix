@@ -79,8 +79,8 @@ describe("AppShell responsive components", () => {
 
   it("keeps five mobile destinations flexible at 320px", () => {
     const source = stripComments(read("shared/BottomTabBar.tsx"));
-    expect(source).toContain("wp-bottom-tabs");
-    expect(source).toContain("min-w-0 w-full");
+    expect(source).toMatch(/min-w-\[56px\]/);
+    expect(source).toMatch(/flex-1/);
     expect(source).not.toMatch(/w-\[72px\]/);
   });
 
@@ -98,7 +98,7 @@ describe("AppShell responsive components", () => {
 
   it("reserves keyboard scroll space above the fixed mobile navigation", () => {
     const source = stripComments(read("shared/AppShell.tsx"));
-    expect(source).toContain("scroll-pb-[var(--wp-bottom-nav-height,96px)]");
+    expect(source).toContain("scroll-pb-[calc(env(safe-area-inset-bottom)+96px)]");
     expect(source).toContain("lg:scroll-pb-6");
   });
 });
@@ -115,16 +115,15 @@ describe("Card Grid Responsive Sizing", () => {
     expect(imageChoiceGrid).toMatch(/flex-1/);
     expect(imageChoiceGrid).toMatch(/auto-rows-fr/);
     expect(imageChoiceGrid).toMatch(/grid-cols-2/);
-    expect(imageChoiceGrid).toMatch(/grid-rows-2/);
-    expect(imageChoiceGrid).not.toMatch(/lg:grid-cols-4/);
+    expect(imageChoiceGrid).toMatch(/lg:grid-cols-4/);
+    expect(imageChoiceGrid).toMatch(/lg:grid-rows-1/);
   });
 
   it("lets quick-quiz cards fill the available stage instead of capping their size", () => {
     const source = stripComments(read("exercises/ExerciseQuickQuiz.tsx"));
-    const choiceCard = stripComments(read("shared/ImageChoiceCard.tsx"));
 
     expect(source).toContain('layout="media"');
-    expect(choiceCard).toContain("object-cover");
+    expect(source).toContain("object-cover");
     expect(source).not.toMatch(/aspect-\[4\/3\]/);
     expect(source).not.toMatch(/max-h-\[min\(30dvh,220px\)\]/);
   });
@@ -180,7 +179,7 @@ describe("HomeDashboard 2-Column Responsive Desktop Grid", () => {
 
   it("stacks identity and connection status on narrow phones", () => {
     expect(source).toMatch(/flex flex-col items-stretch gap-3 sm:flex-row/);
-    expect(source).not.toContain("dashboard.offlineSaving");
+    expect(source).toMatch(/self-start sm:self-auto/);
   });
 });
 

@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import { useMemo, useState } from "react";
 import { ArrowLeft, BookOpen, Clock3, Search } from "lucide-react";
 import type { Action } from "../../types";
@@ -75,7 +76,7 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => dispatch({ type: "GO", to: "learn" })}
+          onClick={() => dispatch({ type: "GO", to: "explore" })}
           className="w-fit"
           iconLeft={<ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />}
         >
@@ -104,10 +105,10 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
             </Button>
           }
         >
-          <p className="text-sm text-muted-foreground mt-1">{t("hadith.canonicalScopeNote")}</p>
-        </CurriculumHeroHeader>
+          <HelpDisclosure label={t("help.sourceDetails")}>
+            <p>{t("hadith.canonicalScopeNote")}</p>
+          </HelpDisclosure>
 
-        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <CurriculumFilterTabs
             label={t("hadith.filtersLabel")}
             value={filter}
@@ -120,12 +121,15 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
               { value: "mastered", label: t("hadith.filterMastered"), count: completed },
             ]}
           />
-          <div className="relative w-full md:w-72 lg:w-80 shrink-0">
-            <label htmlFor="hadith-search" className="sr-only">
-              {t("hadith.searchLabel")}
-            </label>
+        </CurriculumHeroHeader>
+
+        <div>
+          <label htmlFor="hadith-search" className="text-base font-bold text-foreground">
+            {t("hadith.searchLabel")}
+          </label>
+          <div className="relative mt-2">
             <Search
-              className="pointer-events-none absolute start-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
+              className="pointer-events-none absolute start-4 top-1/2 size-5 -translate-y-1/2 text-muted-foreground"
               aria-hidden
             />
             <input
@@ -134,8 +138,7 @@ export function HadithCurriculumScreen({ dispatch }: Props) {
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               placeholder={t("hadith.searchPlaceholder")}
-              aria-label={t("hadith.searchLabel")}
-              className="min-h-11 w-full rounded-xl border border-border bg-card py-2.5 ps-10 pe-4 text-sm font-medium text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="min-h-12 w-full rounded-2xl border border-border bg-card py-3 ps-12 pe-4 text-foreground placeholder:text-muted-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
             />
           </div>
         </div>

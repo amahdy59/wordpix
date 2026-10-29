@@ -105,17 +105,6 @@ describe("useAutoAdvance", () => {
     expect(result.current.isPending).toBe(false);
   });
 
-  it("forces advance when force is true even if auto-advance is disabled", () => {
-    const onAdvance = vi.fn();
-    const { result } = renderHook(() => useAutoAdvance({ enabled: false, onAdvance }));
-
-    act(() => result.current.schedule(ADVANCE_DELAY_MS.correct, true));
-    expect(onAdvance).not.toHaveBeenCalled();
-
-    act(() => vi.advanceTimersByTime(ADVANCE_DELAY_MS.correct));
-    expect(onAdvance).toHaveBeenCalledTimes(1);
-  });
-
   it("cancels a pending advance", () => {
     const onAdvance = vi.fn();
     const { result } = renderHook(() => useAutoAdvance({ enabled: true, onAdvance }));
@@ -125,21 +114,6 @@ describe("useAutoAdvance", () => {
     act(() => vi.advanceTimersByTime(60_000));
 
     expect(onAdvance).not.toHaveBeenCalled();
-  });
-
-  it("cancels pending work and ignores an old schedule callback after opt-out", () => {
-    const onAdvance = vi.fn();
-    const { result, rerender } = renderHook(
-      ({ enabled }) => useAutoAdvance({ enabled, onAdvance }),
-      { initialProps: { enabled: true } }
-    );
-    const staleSchedule = result.current.schedule;
-    act(() => result.current.schedule(900));
-    rerender({ enabled: false });
-    act(() => staleSchedule(900));
-    act(() => vi.advanceTimersByTime(1000));
-    expect(onAdvance).not.toHaveBeenCalled();
-    expect(result.current.isPending).toBe(false);
   });
 
   it("does not fire into an unmounted exercise", () => {
@@ -173,8 +147,8 @@ describe("useAutoAdvance", () => {
 });
 
 describe("auto-advance is defeatable", () => {
-  it("requires an explicit opt-in for new learners", () => {
-    expect(DEFAULT_ACCESSIBILITY.autoAdvance).toBe(false);
+  it("is on by default", () => {
+    expect(DEFAULT_ACCESSIBILITY.autoAdvance).toBe(true);
   });
 
   it("exists as a preference, so the timing can be switched off (WCAG 2.2.1)", () => {

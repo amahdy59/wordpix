@@ -1,7 +1,5 @@
 import { useEffect, useRef } from "react";
 
-import { useDevicePreference } from "./devicePreferences";
-
 const TEXT_ENTRY_TAGS = new Set(["INPUT", "TEXTAREA", "SELECT"]);
 
 /** True when the user is typing, so number keys must stay literal characters. */
@@ -24,8 +22,6 @@ interface Options {
   onReplayAudio?: () => void;
   /** Optional action to toggle keyboard shortcuts cheatsheet modal (?) */
   onToggleHelp?: () => void;
-  /** Optional action to continue to next question on Enter key when answered/feedback shown */
-  onContinue?: () => void;
   /** Suspend all hotkeys, e.g. while a modal owns the keyboard. */
   disabled?: boolean;
 }
@@ -49,31 +45,25 @@ export function useExerciseHotkeys({
   onSelectIndex,
   onReplayAudio,
   onToggleHelp,
-  onContinue,
   disabled = false,
 }: Options) {
-  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   // Held in refs so re-created callbacks do not detach and re-attach the
   // listener on every render.
-  const handlers = useRef({ onSelectIndex, onReplayAudio, onToggleHelp, onContinue, optionCount });
+  const handlers = useRef({ onSelectIndex, onReplayAudio, onToggleHelp, optionCount });
   useEffect(() => {
-    handlers.current = { onSelectIndex, onReplayAudio, onToggleHelp, onContinue, optionCount };
-  }, [onSelectIndex, onReplayAudio, onToggleHelp, onContinue, optionCount]);
-
-  const hasContinue = Boolean(onContinue);
+    handlers.current = { onSelectIndex, onReplayAudio, onToggleHelp, optionCount };
+  }, [onSelectIndex, onReplayAudio, onToggleHelp, optionCount]);
 
   useEffect(() => {
-    if (disabled && !hasContinue) return undefined;
+    if (disabled) return undefined;
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.repeat || hasModifier(event) || isTextEntryTarget(event.target)) return;
-      if (!shortcutsEnabled && event.key.length === 1 && event.key !== " ") return;
 
       const {
         onSelectIndex: select,
         onReplayAudio: replay,
         onToggleHelp: toggleHelp,
-        onContinue: cont,
         optionCount: count,
       } = handlers.current;
 
@@ -92,14 +82,6 @@ export function useExerciseHotkeys({
           '[role="dialog"][aria-modal="true"], [role="alertdialog"], [role="menu"]'
         ) !== null;
       if (overlayOpen) return;
-
-      if (cont && event.key === "Enter") {
-        event.preventDefault();
-        cont();
-        return;
-      }
-
-      if (disabled) return;
 
       if (replay) {
         const focusIsOnAControl =
@@ -122,5 +104,5 @@ export function useExerciseHotkeys({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [disabled, hasContinue, shortcutsEnabled]);
+  }, [disabled]);
 }

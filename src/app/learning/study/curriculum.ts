@@ -6,7 +6,6 @@ import {
   type SkillStrand,
 } from "../curriculumModel";
 import type { StudyNode } from "./types";
-import { getScenariosForUnit } from "../../data/scenarios/scenarioService";
 
 /** Small enough for active retrieval, large enough to keep a session meaningful. */
 export const MAX_ACTIVE_WORDS_PER_LESSON = 8;
@@ -172,29 +171,6 @@ export function generateCurriculum(
     seen,
     curriculum
   );
-
-  const unitScenarios = getScenariosForUnit(materials.unitId);
-  if (unitScenarios.length > 0) {
-    nodes.push({
-      id: "learn-scenarios",
-      area: "learn",
-      title: "Video Context Scenarios",
-      description:
-        "Authentic dialogue scenarios featuring the unit's target vocabulary in real-world situations.",
-      type: "scenario",
-      estimatedMinutes: Math.max(3, unitScenarios.length * 2),
-      stage: "meaning",
-      outcome: curriculum.canDo[0],
-      successCriteria: [
-        "Follow natural dialogue between native English speakers.",
-        "Recognise target vocabulary in conversational contexts.",
-      ],
-      skillStrands: ["listening", "spoken-interaction"],
-      cefr: curriculum.cefr,
-      gseRange: curriculum.gseRange,
-      isCore: false,
-    });
-  }
 
   if (materials.phrases || materials.collocations) {
     nodes.push(

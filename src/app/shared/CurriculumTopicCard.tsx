@@ -95,7 +95,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
         onClick={onClick}
         aria-label={ariaLabel}
         aria-current={isCurrent ? "step" : undefined}
-        className={`flex min-h-11 min-w-11 flex-1 ${layout === "row" ? "flex-row items-center gap-3 rounded-xl" : "flex-col justify-between overflow-hidden rounded-2xl"} text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99] cursor-pointer`}
+        className={`flex min-h-11 min-w-11 flex-1 ${layout === "row" ? "flex-row items-center gap-3 rounded-xl" : "flex-col justify-between overflow-hidden rounded-2xl"} text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:active:scale-[0.99]`}
       >
         {/* Prominent Media Cover */}
         <div
@@ -126,7 +126,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
           <div className="absolute start-3 top-3 flex flex-wrap items-center gap-1.5 pe-12">
             {numberBadge !== undefined && numberBadge !== null && (
               <span
-                className={`inline-flex min-h-7 min-w-7 items-center justify-center rounded-xl px-2.5 py-1 text-xs font-bold shadow-wp-xs backdrop-blur-md ${
+                className={`inline-flex min-h-7 min-w-7 items-center justify-center rounded-xl px-2.5 py-1 text-xs font-black shadow-wp-xs backdrop-blur-md ${
                   isMastered
                     ? "bg-wp-green text-wp-text-on-green"
                     : isCurrent
@@ -146,7 +146,7 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
             )}
 
             {levelBadge && layout === "card" && (
-              <span className="inline-flex min-h-7 items-center justify-center rounded-xl bg-primary px-2.5 py-1 text-xs font-bold text-primary-foreground shadow-wp-xs">
+              <span className="inline-flex min-h-7 items-center justify-center rounded-xl bg-primary px-2.5 py-1 text-xs font-black text-primary-foreground shadow-wp-xs">
                 {levelBadge}
               </span>
             )}
@@ -159,11 +159,11 @@ export const CurriculumTopicCard = memo(function CurriculumTopicCard({
         >
           <div className="flex flex-col gap-1">
             {eyebrow && (
-              <span className="line-clamp-1 text-[11px] font-bold tracking-normal text-muted-foreground">
+              <span className="line-clamp-1 text-[11px] font-black uppercase tracking-wider text-muted-foreground">
                 {eyebrow}
               </span>
             )}
-            <h3 className="line-clamp-2 font-sans text-base font-bold leading-normal text-foreground transition-colors group-hover:text-primary sm:text-lg">
+            <h3 className="line-clamp-2 font-sans text-base font-black leading-snug text-foreground transition-colors group-hover:text-primary sm:text-lg">
               {title}
             </h3>
           </div>

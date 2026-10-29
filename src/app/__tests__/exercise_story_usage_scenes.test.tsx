@@ -1,12 +1,9 @@
-import { describe, it, expect, vi, afterEach } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { ExerciseStory } from "../exercises/ExerciseStory";
 import { COURSE_UNITS, type VocabularyItem } from "../data/lessons";
 import { loadUnitVocabulary } from "../data/vocabulary";
 import { loadLessonUsage } from "../data/usageRegistry";
-import { I18nProvider } from "../context/I18nContext";
-import en from "../../i18n/en.json";
-import ar from "../../i18n/ar.json";
 
 const mockFarmWords: VocabularyItem[] = [
   {
@@ -36,28 +33,6 @@ const mockFarmWords: VocabularyItem[] = [
 ];
 
 describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
-  afterEach(() => localStorage.removeItem("wordpix:interface-lang"));
-
-  it.each(["en", "ar"] as const)(
-    "identifies supporting vocabulary imagery in %s without claiming a whole scene",
-    async (lang) => {
-      localStorage.setItem("wordpix:interface-lang", lang);
-      const locale = lang === "ar" ? ar : en;
-      render(
-        <I18nProvider>
-          <ExerciseStory step={5} words={[]} lessonId="airport-1" dispatch={vi.fn()} />
-        </I18nProvider>
-      );
-      fireEvent.click(await screen.findByRole("button", { name: locale.story.tabUsageScenes }));
-      expect(await screen.findByText(`${locale.story.vocabularyReference}:`)).toBeVisible();
-      const description = screen.getByText(
-        "An empty airport check-in counter with a blank monitor, baggage conveyor and queue barriers beside large terminal windows."
-      );
-      expect(description).toHaveAttribute("lang", "en");
-      expect(description).toHaveAttribute("dir", "ltr");
-      expect(screen.queryByText(`${locale.story.chunkVisualBrief}:`)).not.toBeInTheDocument();
-    }
-  );
   it("shows released usage scenes in the learner experience", async () => {
     const dispatch = vi.fn();
 
@@ -123,67 +98,6 @@ describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
           editorial: expect.objectContaining({ status: "approved" }),
         }),
       ])
-    );
-  });
-
-  it("reconciles un-illustrated scene chunks with approved matching vocabulary word image", async () => {
-    const dispatch = vi.fn();
-    const mockAirportWords: VocabularyItem[] = [
-      {
-        id: "check-in-counter",
-        label: "check-in counter",
-        phonetic: "ˈtʃek.ɪn ˌkaʊn.tər",
-        img: "./word-images/airport/check-in-counter.webp",
-        topic: "airport",
-        description:
-          "An empty airport check-in counter with a blank monitor, baggage conveyor and queue barriers beside large terminal windows.",
-      },
-    ];
-    render(
-      <ExerciseStory step={5} words={mockAirportWords} lessonId="airport-1" dispatch={dispatch} />
-    );
-
-    const usageButton = await screen.findByRole("button", { name: /3\. Usage Scenes/i });
-    fireEvent.click(usageButton);
-
-    // Verify vocabulary reference label is shown for the matched word
-    expect(await screen.findByText(/Vocabulary reference:/i)).toBeInTheDocument();
-    // And that the word description is rendered as the visual brief
-    expect(
-      screen.getByText(
-        "An empty airport check-in counter with a blank monitor, baggage conveyor and queue barriers beside large terminal windows."
-      )
-    ).toBeInTheDocument();
-  });
-
-  it("renders bespoke scene illustration when scene has dedicated imagePath mapped", async () => {
-    const dispatch = vi.fn();
-    render(<ExerciseStory step={5} words={mockFarmWords} lessonId="farm-1" dispatch={dispatch} />);
-
-    const usageButton = await screen.findByRole("button", { name: /3\. Usage Scenes/i });
-    fireEvent.click(usageButton);
-
-    // Verify bespoke scene image is rendered instead of vocabulary reference
-    expect(screen.queryByText(/Vocabulary reference:/i)).not.toBeInTheDocument();
-    const sceneImg = await screen.findByRole("img", {
-      name: /A dairy cow standing peacefully in a lush green pasture beside a wooden fence/i,
-    });
-    expect(sceneImg).toBeInTheDocument();
-    expect(sceneImg).toHaveAttribute("src", expect.stringContaining("farm-1-usage-scene-1.webp"));
-  });
-
-  it("renders phrase illustration image when phrase has imagePath mapped", async () => {
-    const dispatch = vi.fn();
-    render(<ExerciseStory step={5} words={[]} lessonId="airport-1" dispatch={dispatch} />);
-
-    const usageButton = await screen.findByRole("button", { name: /3\. Usage Scenes/i });
-    fireEvent.click(usageButton);
-
-    const checkInImg = await screen.findByAltText(/check the gate number/i);
-    expect(checkInImg).toBeInTheDocument();
-    expect(checkInImg).toHaveAttribute(
-      "src",
-      expect.stringContaining("check-the-gate-number.webp")
     );
   });
 });

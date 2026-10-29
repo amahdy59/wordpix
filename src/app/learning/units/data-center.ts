@@ -172,7 +172,7 @@ export const DATA_CENTER_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "a strong determination to achieve goals (wordplay)",
       example:
-        "He has a hard drive to succeed — managing the SSD upgrades, the RAID configuration, and the tape drive archive all in one quarter.",
+        "She has a hard drive to succeed — managing the SSD upgrades, the RAID configuration, and the tape drive archive all in one quarter.",
     },
     {
       id: "data-center-plug-and-play",

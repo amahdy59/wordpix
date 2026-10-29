@@ -207,7 +207,7 @@ export const PHOTOGRAPHY_STUDIO_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "work on something and make it more complete (from film developing)",
       example:
-        "He developed the concept for the shoot over weeks — choosing the backdrop, the props, and the wardrobe rack.",
+        "She developed the concept for the shoot over weeks — choosing the backdrop, the props, and the wardrobe rack.",
     },
     {
       id: "photography-studio-develop-a-photo",

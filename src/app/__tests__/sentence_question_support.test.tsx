@@ -1,8 +1,7 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import { I18nProvider } from "../context/I18nContext";
-import { SentenceQuestionSupport } from "../shared/SentenceQuestionSupport";
-import { resolveSentenceMedia } from "../content/sentenceMedia";
+import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
 import { AUTHORED_LESSON_CONTENT } from "../exercises/content/authoredLessonContent";
 import { loadLessonUsageForEditorial } from "../data/usageRegistry";
 import type { VocabularyItem } from "../data/courseCatalog";
@@ -35,17 +34,6 @@ const word: VocabularyItem = {
 };
 
 describe("sentence question evidence", () => {
-  it("matches the approved folder image only to its exact word and sentence", () => {
-    const sentence = "Maya puts two folders beside the notebook.";
-    expect(resolveSentenceMedia("two", sentence)?.imageAlt).toMatch(/folders/i);
-    expect(resolveSentenceMedia("three", sentence)).toBeUndefined();
-    expect(
-      resolveSentenceMedia("two", "Maya puts three folders beside the notebook.")
-    ).toBeUndefined();
-    expect(resolveSentenceMedia("two", "We have two bags.")?.imagePath).toMatch(
-      /^question-images\/v1\/sentence-two\//
-    );
-  });
   it("blanks a complete multiword target without altering related words", () => {
     expect(sentenceCloze("Keep the bed sheet on the bed.", "Bed sheet")).toBe(
       "Keep the _____ on the bed."
@@ -84,20 +72,8 @@ describe("sentence question evidence", () => {
     }
   });
 
-  it("does not turn a vocabulary reference into evidence for the whole sentence", async () => {
-    const usage = structuredClone(await loadLessonUsageForEditorial("numbers-counting-1"));
-    const scene = usage!.usage.scenes[0];
-    expect(
-      resolveSentenceMedia("unregistered-reference-word", scene.scenario, usage)
-    ).toBeDefined();
-    scene.imagePurpose = "word-reference";
-    expect(
-      resolveSentenceMedia("unregistered-reference-word", scene.scenario, usage)
-    ).toBeUndefined();
-  });
-
-  it("falls back to vocabulary image when scene media is absent, or placeholder when no image exists", () => {
-    const { unmount } = render(
+  it("uses a labelled placeholder and a numeric clue instead of unrelated artwork", () => {
+    render(
       <I18nProvider>
         <SentenceQuestionSupport
           word={word}
@@ -107,24 +83,13 @@ describe("sentence question evidence", () => {
         />
       </I18nProvider>
     );
-    expect(screen.getByRole("img")).toBeVisible();
-    expect(screen.getByText("5")).toBeVisible();
-    fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
-    expect(speak).toHaveBeenLastCalledWith("There are");
-    unmount();
-
-    render(
-      <I18nProvider>
-        <SentenceQuestionSupport
-          word={{ ...word, img: "" }}
-          sentence="There are five cups."
-          prompt="There are _____ cups."
-          answered={false}
-        />
-      </I18nProvider>
-    );
     expect(screen.getByText(/We’re updating this image/i)).toBeVisible();
+    expect(screen.getByText("5")).toBeVisible();
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
+    expect(speak).toHaveBeenLastCalledWith("There are", undefined, undefined, {
+      synthesisOnly: true,
+    });
   });
 
   it("pauses once for a multiword gap, then reads the remaining context without the answer", () => {
@@ -146,7 +111,7 @@ describe("sentence question evidence", () => {
     expect(speak).toHaveBeenCalledTimes(1);
     expect(screen.getByRole("button", { name: /Stop sentence audio/i })).toBeVisible();
     act(() => vi.advanceTimersByTime(1));
-    expect(speak).toHaveBeenLastCalledWith("cups.");
+    expect(speak).toHaveBeenLastCalledWith("cups.", undefined, undefined, { synthesisOnly: true });
     act(() => audioOptions.onEnded?.());
     expect(screen.getByRole("button", { name: /Listen to the sentence/i })).toBeVisible();
   });
@@ -203,7 +168,7 @@ describe("sentence question evidence", () => {
     expect(screen.getByRole("button", { name: /Listen to the sentence/i })).toBeVisible();
   });
 
-  it("recovers from a missing scene file by falling back to vocabulary media, then to placeholder", () => {
+  it("recovers from a missing scene file without substituting vocabulary media", () => {
     const media = resolveSentenceMedia("five", "I can see five books.");
     render(
       <I18nProvider>
@@ -216,12 +181,8 @@ describe("sentence question evidence", () => {
         />
       </I18nProvider>
     );
-    const sceneImage = screen.getByRole("img");
-    expect(sceneImage).toHaveAttribute("src", expect.stringContaining("question-images"));
-    fireEvent.error(sceneImage);
-    const fallbackImage = screen.getByRole("img");
-    expect(fallbackImage).toHaveAttribute("src", expect.stringContaining("word-images/five"));
-    fireEvent.error(fallbackImage);
+    const image = screen.getByRole("img");
+    fireEvent.error(image);
     expect(screen.queryByRole("img")).not.toBeInTheDocument();
     expect(screen.getByText(/We’re updating this image/i)).toBeVisible();
     fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));

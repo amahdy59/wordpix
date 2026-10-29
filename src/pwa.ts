@@ -11,34 +11,26 @@ export function registerServiceWorker() {
     navigator.serviceWorker
       .register("./sw.js")
       .then((registration) => {
-        // A disabled worker API can resolve without a registration (including
-        // WebKit automation). The application remains usable without PWA hooks.
-        if (!registration) return;
         registration.addEventListener("updatefound", () => {
           const newWorker = registration.installing;
           if (!newWorker) return;
 
           newWorker.addEventListener("statechange", async () => {
             if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
-              let notes: string[] = [];
               try {
                 const res = await fetch("./release-notes.json?t=" + Date.now());
-                if (!res.ok) throw new Error("Update summary is unavailable");
                 const releaseNotes = await res.json();
-                if (Array.isArray(releaseNotes.notes)) {
-                  notes = releaseNotes.notes.filter(
-                    (note: unknown): note is string => typeof note === "string"
-                  );
-                }
-              } catch {
-                // Optional metadata can be unavailable during an offline
-                // reload. The installed update still has to be offered.
+
+                const event = new CustomEvent("wp-update-available", {
+                  detail: {
+                    worker: newWorker,
+                    notes: releaseNotes.notes,
+                  },
+                });
+                window.dispatchEvent(event);
+              } catch (err) {
+                console.error("Failed to fetch release notes:", err);
               }
-              window.dispatchEvent(
-                new CustomEvent("wp-update-available", {
-                  detail: { worker: newWorker, notes },
-                })
-              );
             }
           });
         });
@@ -92,14 +84,7 @@ export async function getOfflineReadiness(worldId = DEFAULT_UNIT_ID): Promise<Of
 
   try {
     const cache = await caches.open(CACHE_NAME);
-    const runtime = await caches.open("wordpix-runtime-v1");
-    const matches = await Promise.all(
-      urls.map(
-        async (url) =>
-          (await cache.match(url, { ignoreVary: true })) ??
-          (await runtime.match(url, { ignoreVary: true }))
-      )
-    );
+    const matches = await Promise.all(urls.map((url) => cache.match(url, { ignoreVary: true })));
     const cached = matches.filter(Boolean).length;
     return { cached, total, ready: cached === total };
   } catch {

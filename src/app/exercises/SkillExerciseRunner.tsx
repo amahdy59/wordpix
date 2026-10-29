@@ -6,7 +6,6 @@ import { LessonHeader } from "../shared/LessonHeader";
 import { PrimaryButton } from "../shared/PrimaryButton";
 import { SecondaryButton } from "../shared/SecondaryButton";
 import { WordImage } from "../shared/WordImage";
-import { ClozeText } from "../shared/SentenceBlank";
 import { ExerciseTimer } from "../shared/ExerciseTimer";
 import { useCountdown } from "../shared/useCountdown";
 import { useAudio } from "../shared/useAudio";
@@ -14,7 +13,6 @@ import { useSound } from "../shared/useSound";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { shuffleArray } from "../../utils/shuffle";
 import { useI18n } from "../context/I18nContext";
-import { useDevicePreference, isTextInput } from "../shared/devicePreferences";
 import {
   isChoiceCorrect,
   isEntryCorrect,
@@ -47,7 +45,6 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 }: Props) {
   const { t } = useI18n();
   const { accessibility } = useAccessibility();
-  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   const { speak } = useAudio();
   const { playCorrect, playIncorrect, playClick } = useSound();
 
@@ -91,13 +88,8 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
   // Speak the prompt audio when a listening task opens.
   useEffect(() => {
-    if (accessibility.autoPlayAudio === false) return undefined;
-    if (!task?.audioText) return undefined;
-    const t = setTimeout(() => {
-      speak(task.audioText as string);
-    }, 200);
-    return () => clearTimeout(t);
-  }, [task, speak, accessibility.autoPlayAudio]);
+    if (task?.audioText) speak(task.audioText);
+  }, [task, speak]);
 
   const resetAnswer = useCallback(() => {
     setChoice(null);
@@ -158,10 +150,17 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
   // Keyboard shortcut: number keys 1-9 pick choice options.
   useEffect(() => {
-    if (!shortcutsEnabled || verdict !== null || !task || task.kind !== "choice") return;
+    if (verdict !== null || !task || task.kind !== "choice") return;
 
     const onKey = (e: KeyboardEvent) => {
-      if (e.repeat || e.ctrlKey || e.metaKey || e.altKey || isTextInput(e.target)) return;
+      const target = e.target as HTMLElement | null;
+      if (
+        target?.tagName === "INPUT" ||
+        target?.tagName === "TEXTAREA" ||
+        target?.isContentEditable
+      ) {
+        return;
+      }
       const num = Number.parseInt(e.key, 10);
       if (Number.isNaN(num) || num < 1) return;
       const opt = task.options[num - 1];
@@ -173,7 +172,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
 
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [task, verdict, playClick, shortcutsEnabled]);
+  }, [task, verdict, playClick]);
 
   if (!task || finished) {
     const scoredTasks = definition.tasks.filter(isGraded);
@@ -239,7 +238,7 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
     task.kind === "practice";
 
   return (
-    <div className="wp-question-screen bg-background">
+    <div className="min-h-dvh bg-background flex flex-col">
       <LessonHeader
         title={definition.title}
         current={index + 1}
@@ -257,138 +256,118 @@ export const SkillExerciseRunner = memo(function SkillExerciseRunner({
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
 
-      <div className="wp-question-scroll wp-layout-gutter flex flex-col">
-        <div className="wp-skill-workspace wp-container-content flex flex-1 min-h-min flex-col gap-3">
-          <p aria-live="polite" aria-atomic="true" className="sr-only">
-            {announcement}
-          </p>
+      <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
+        <p aria-live="polite" aria-atomic="true" className="sr-only">
+          {announcement}
+        </p>
 
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <span className="font-sans font-bold text-sm text-foreground">
-              {t("exercise.questionOf", {
-                current: formatNumber(index + 1, accessibility.numeralSystem),
-                total: formatNumber(definition.tasks.length, accessibility.numeralSystem),
-              })}
-            </span>
-            {definition.timeLimitSeconds !== undefined && (
-              <ExerciseTimer countdown={countdown} enabled={timed} />
-            )}
-          </div>
-
-          <div className={`wp-question-layout ${imageWord ? "wp-question-with-media" : ""}`}>
-            {imageWord && (
-              <div
-                data-exercise-zone="media"
-                className="wp-question-media wp-question-media--fitted overflow-hidden rounded-2xl border border-border bg-muted relative"
-              >
-                <WordImage
-                  word={imageWord}
-                  altMode={
-                    task.kind === "choice" && !task.optionsAreImages ? "assessment" : "learning"
-                  }
-                  className="size-full object-cover object-center block"
-                  loading="eager"
-                  fetchPriority="high"
-                />
-              </div>
-            )}
-
-            <div data-exercise-zone="activity" className="flex min-w-0 flex-col gap-4">
-              <div className="flex items-start justify-between gap-3">
-                <h2
-                  data-question-prompt
-                  className="wp-question-prompt font-sans text-pretty"
-                  lang="en"
-                  dir="ltr"
-                >
-                  <ClozeText text={task.prompt} />
-                </h2>
-                {task.audioText && (
-                  <button
-                    type="button"
-                    onClick={() => speak(task.audioText as string)}
-                    aria-label={t("exercise.replayAudio")}
-                    className="shrink-0 flex items-center gap-1.5 min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-xs font-sans font-bold hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-                  >
-                    <Volume2 className="size-4" aria-hidden />
-                    <span>{t("exercise.replay")}</span>
-                  </button>
-                )}
-              </div>
-
-              <TaskBody
-                task={task}
-                disabled={verdict !== null}
-                choice={choice}
-                setChoice={setChoice}
-                entry={entry}
-                setEntry={setEntry}
-                multi={multi}
-                setMulti={setMulti}
-                arrangement={arrangement}
-                setArrangement={setArrangement}
-                tokenPool={tokenPool}
-                placements={placements}
-                setPlacements={setPlacements}
-              />
-
-              {verdict && (
-                <div
-                  role="status"
-                  className={`rounded-2xl border p-4 flex items-start gap-3 ${
-                    verdict === "correct"
-                      ? "border-wp-green bg-wp-green-light/40"
-                      : verdict === "incorrect"
-                        ? "border-wp-rose bg-wp-rose-light/40"
-                        : "border-border bg-wp-card"
-                  }`}
-                >
-                  {verdict === "correct" ? (
-                    <CheckCircle2 className="size-5 text-wp-green shrink-0 mt-0.5" aria-hidden />
-                  ) : verdict === "incorrect" ? (
-                    <XCircle className="size-5 text-wp-rose shrink-0 mt-0.5" aria-hidden />
-                  ) : null}
-                  <p className="font-sans text-sm text-foreground">{task.explanation}</p>
-                </div>
-              )}
-
-              <div className="flex flex-col gap-2">
-                {verdict ? (
-                  <PrimaryButton
-                    label={
-                      index + 1 >= definition.tasks.length
-                        ? t("skillRunner.seeResults")
-                        : t("skillRunner.nextQuestion")
-                    }
-                    onClick={next}
-                  />
-                ) : (
-                  <PrimaryButton
-                    label={t(
-                      task.kind === "practice"
-                        ? "skillRunner.completePractice"
-                        : "skillRunner.checkAnswer"
-                    )}
-                    onClick={check}
-                    disabled={!canCheck}
-                  />
-                )}
-                {task.kind === "order" && arrangement.length > 0 && !verdict && (
-                  <SecondaryButton
-                    label={t("skillRunner.clearMySentence")}
-                    onClick={() => setArrangement([])}
-                  />
-                )}
-              </div>
-
-              {task.kind === "choice" && shortcutsEnabled && (
-                <p className="font-sans text-xs text-muted-foreground text-center">
-                  {t("skillRunner.optionKeyHint")}
-                </p>
-              )}
-            </div>
-          </div>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <span className="font-sans font-bold text-sm text-foreground">
+            {t("exercise.questionOf", {
+              current: formatNumber(index + 1, accessibility.numeralSystem),
+              total: formatNumber(definition.tasks.length, accessibility.numeralSystem),
+            })}
+          </span>
+          {definition.timeLimitSeconds !== undefined && (
+            <ExerciseTimer countdown={countdown} enabled={timed} />
+          )}
         </div>
+
+        {imageWord && (
+          <div className="w-full rounded-3xl overflow-hidden border border-border shadow-wp-xs bg-muted aspect-[16/10] sm:aspect-[16/9] max-h-[38dvh] relative">
+            <WordImage
+              word={imageWord}
+              altMode={task.kind === "choice" && !task.optionsAreImages ? "assessment" : "learning"}
+              className="size-full object-cover block"
+              loading="eager"
+              fetchPriority="high"
+            />
+          </div>
+        )}
+
+        <div className="py-2 flex items-start justify-between gap-3">
+          <h2 className="font-sans font-bold text-foreground text-lg text-balance">
+            {task.prompt}
+          </h2>
+          {task.audioText && (
+            <button
+              type="button"
+              onClick={() => speak(task.audioText as string)}
+              aria-label={t("exercise.replayAudio")}
+              className="shrink-0 flex items-center gap-1.5 min-h-[44px] px-3 rounded-xl border border-border bg-wp-card text-xs font-sans font-bold hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <Volume2 className="size-4" aria-hidden />
+              <span>{t("exercise.replay")}</span>
+            </button>
+          )}
+        </div>
+
+        <TaskBody
+          task={task}
+          disabled={verdict !== null}
+          choice={choice}
+          setChoice={setChoice}
+          entry={entry}
+          setEntry={setEntry}
+          multi={multi}
+          setMulti={setMulti}
+          arrangement={arrangement}
+          setArrangement={setArrangement}
+          tokenPool={tokenPool}
+          placements={placements}
+          setPlacements={setPlacements}
+        />
+
+        {verdict && (
+          <div
+            role="status"
+            className={`rounded-2xl border p-4 flex items-start gap-3 ${
+              verdict === "correct"
+                ? "border-wp-green bg-wp-green-light/40"
+                : verdict === "incorrect"
+                  ? "border-wp-rose bg-wp-rose-light/40"
+                  : "border-border bg-wp-card"
+            }`}
+          >
+            {verdict === "correct" ? (
+              <CheckCircle2 className="size-5 text-wp-green shrink-0 mt-0.5" aria-hidden />
+            ) : verdict === "incorrect" ? (
+              <XCircle className="size-5 text-wp-rose shrink-0 mt-0.5" aria-hidden />
+            ) : null}
+            <p className="font-sans text-sm text-foreground">{task.explanation}</p>
+          </div>
+        )}
+
+        <div className="flex flex-col gap-2">
+          {verdict ? (
+            <PrimaryButton
+              label={
+                index + 1 >= definition.tasks.length
+                  ? t("skillRunner.seeResults")
+                  : t("skillRunner.nextQuestion")
+              }
+              onClick={next}
+            />
+          ) : (
+            <PrimaryButton
+              label={t("skillRunner.checkAnswer")}
+              onClick={check}
+              disabled={!canCheck}
+            />
+          )}
+          {task.kind === "order" && arrangement.length > 0 && !verdict && (
+            <SecondaryButton
+              label={t("skillRunner.clearMySentence")}
+              onClick={() => setArrangement([])}
+            />
+          )}
+        </div>
+
+        {task.kind === "choice" && (
+          <p className="font-sans text-xs text-muted-foreground text-center">
+            {t("skillRunner.optionKeyHint")}
+          </p>
+        )}
       </div>
     </div>
   );
@@ -411,7 +390,7 @@ interface BodyProps {
 }
 
 const optionClasses = (selected: boolean) =>
-  `w-full min-h-[44px] sm:min-h-[48px] px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl border-2 font-sans font-semibold text-sm text-start transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+  `w-full min-h-[52px] px-4 py-3 rounded-2xl border-2 font-sans font-semibold text-sm text-start transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
     selected
       ? "border-primary bg-secondary text-primary"
       : "border-border bg-wp-card text-foreground hover:border-primary/50"
@@ -512,11 +491,11 @@ function TaskBody({
     return (
       <div className="flex flex-col gap-3">
         <div
-          className="bg-wp-card border-2 border-primary/30 rounded-xl sm:rounded-2xl px-2.5 py-1.5 sm:p-4 min-h-11 sm:min-h-[72px] flex items-center gap-1.5 sm:gap-2 flex-wrap"
+          className="bg-wp-card border-2 border-primary/30 rounded-2xl p-4 min-h-[72px] flex items-center gap-2 flex-wrap"
           aria-live="polite"
         >
           {arrangement.length === 0 ? (
-            <span className="font-sans text-muted-foreground text-xs sm:text-sm">
+            <span className="font-sans text-muted-foreground text-sm">
               {t("skillRunner.buildSentencePrompt")}
             </span>
           ) : (
@@ -527,7 +506,7 @@ function TaskBody({
                 disabled={disabled}
                 onClick={() => setArrangement(arrangement.filter((_, j) => j !== i))}
                 aria-label={t("skillRunner.removeWordAria", { token, pos: i + 1 })}
-                className="bg-primary text-primary-foreground px-2.5 py-1 sm:px-3 sm:py-1.5 min-h-[44px] min-w-[44px] rounded-lg sm:rounded-xl font-sans font-bold text-xs sm:text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="bg-primary text-primary-foreground px-3 min-h-[44px] min-w-[44px] rounded-xl font-sans font-bold text-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
               >
                 {token}
               </button>
@@ -559,7 +538,7 @@ function TaskBody({
 
   if (task.kind === "sort") {
     return (
-      <div className="grid gap-3 sm:grid-cols-2">
+      <div className="flex flex-col gap-3">
         {task.items.map((item) => (
           <div
             key={item.id}
@@ -571,28 +550,22 @@ function TaskBody({
               aria-label={t("skillRunner.categoryForAria", { item: item.label })}
               className="flex gap-2 flex-wrap"
             >
-              {task.buckets.map((bucket) => {
-                const isSelected = placements[item.id] === bucket.id;
-                return (
-                  <button
-                    key={bucket.id}
-                    type="button"
-                    disabled={disabled}
-                    aria-pressed={isSelected}
-                    onClick={() => setPlacements({ ...placements, [item.id]: bucket.id })}
-                    className={`inline-flex items-center justify-center gap-1.5 px-3 min-h-[44px] min-w-[44px] rounded-xl border-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors ${
-                      isSelected
-                        ? "border-primary bg-secondary text-primary shadow-xs"
-                        : "border-border bg-background text-muted-foreground hover:border-primary/50"
-                    }`}
-                  >
-                    {isSelected && (
-                      <CheckCircle2 className="size-3.5 shrink-0 text-primary" aria-hidden="true" />
-                    )}
-                    <span>{bucket.label}</span>
-                  </button>
-                );
-              })}
+              {task.buckets.map((bucket) => (
+                <button
+                  key={bucket.id}
+                  type="button"
+                  disabled={disabled}
+                  aria-pressed={placements[item.id] === bucket.id}
+                  onClick={() => setPlacements({ ...placements, [item.id]: bucket.id })}
+                  className={`px-3 min-h-[44px] rounded-xl border-2 font-sans font-bold text-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                    placements[item.id] === bucket.id
+                      ? "border-primary bg-secondary text-primary"
+                      : "border-border bg-background text-muted-foreground hover:border-primary/50"
+                  }`}
+                >
+                  {bucket.label}
+                </button>
+              ))}
             </div>
           </div>
         ))}

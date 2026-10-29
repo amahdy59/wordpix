@@ -48,14 +48,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "log into",
         meaning: "enter credentials to access computer",
         arabic: "يُسَجِّلُ الدُّخُول",
-        example: "He logged into his laptop to join the morning video meeting.",
+        example: "She logged into her laptop to join the morning video meeting.",
       },
     ],
     sentences: [
       {
         context: "Remote Work",
-        en: "He opened his laptop at the desk to review the project report.",
-        ar: "فتح حاسوبه المحمول على المكتب ليراجع تقرير المشروع.",
+        en: "She opened her laptop at the desk to review the project report.",
+        ar: "فَتَحَتْ حَاسُوبَهَا المَحْمُولَ عَلَى المَكْتَبِ لِمُرَاجَعَةِ تَقْرِيرِ المَشْرُوعِ.",
       },
       {
         context: "Mobility",
@@ -68,8 +68,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "أَغْلِقْ غِطَاءَ حَاسُوبِكَ المَحْمُولِ بِرِفْقٍ وَأَبْعِدِ السَّوَائِلَ عَنْ لَوْحَةِ المَفَاتِيحِ.",
       },
     ],
-    exampleSentence: "He opened his laptop at the desk to review the project report.",
-    exampleArabic: "فتح حاسوبه المحمول على المكتب ليراجع تقرير المشروع.",
+    exampleSentence: "She opened her laptop at the desk to review the project report.",
+    exampleArabic:
+      "فَتَحَتْ حَاسُوبَهَا المَحْمُولَ عَلَى المَكْتَبِ لِمُرَاجَعَةِ تَقْرِيرِ المَشْرُوعِ.",
   },
   rabbit: {
     id: "rabbit",
@@ -189,7 +190,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "take down",
         meaning: "remove a towel from the holder",
         arabic: "يُنْزِلُ الفُوطَة",
-        example: "He took down a clean towel from the rack.",
+        example: "She took down a clean towel from the rack.",
       },
     ],
     sentences: [
@@ -470,8 +471,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Market Stall",
-        en: "He selected a bag of crisp red apples from the organic farm stall.",
-        ar: "اختار كيسا من التفاح الأحمر الطازج من بسطة المزرعة العضوية.",
+        en: "She selected a bag of crisp red apples from the organic farm stall.",
+        ar: "اخْتَارَتْ كِيسًا مِنَ التُّفَّاحِ الأَحْمَرِ المُقَرْمَشِ مِنْ كُشْكِ المَزْرَعَةِ العُضْوِيَّةِ.",
       },
       {
         context: "Healthy Snack",
@@ -484,8 +485,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "قَطَّعَتِ الجَدَّةُ التُّفَّاحَ الأَخْضَرَ الحَامِضَ لِخَبْزِ فَطِيرَةِ قِرْفَةٍ عَطِرَةٍ.",
       },
     ],
-    exampleSentence: "He selected a bag of crisp red apples from the organic farm stall.",
-    exampleArabic: "اختار كيسا من التفاح الأحمر الطازج من بسطة المزرعة العضوية.",
+    exampleSentence: "She selected a bag of crisp red apples from the organic farm stall.",
+    exampleArabic:
+      "اخْتَارَتْ كِيسًا مِنَ التُّفَّاحِ الأَحْمَرِ المُقَرْمَشِ مِنْ كُشْكِ المَزْرَعَةِ العُضْوِيَّةِ.",
   },
   "sugar-cookie": {
     id: "sugar-cookie",

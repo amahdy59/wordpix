@@ -38,13 +38,13 @@ describe("word group learning state", () => {
       );
       const action = screen.getByRole("button", {
         name: new RegExp(
-          `^${state}: group 1, ${group.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\.`
+          `^${state} lesson: ${group.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\.`
         ),
       });
       expect(action).toBeVisible();
       if (state !== "Start") {
         expect(
-          screen.getByRole("progressbar", { name: `Words learned in ${group.name}` })
+          screen.getByRole("progressbar", { name: `${group.name} words learned` })
         ).toHaveAttribute("value", String(state === "Continue" ? 1 : group.wordIds.length));
       }
       fireEvent.click(action);

@@ -110,7 +110,7 @@ export const UNIVERSITY_CAMPUS_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To stay up all night studying or working.",
       example:
-        "He pulled an all-nighter to finish his dissertation — survived on coffee and determination.",
+        "She pulled an all-nighter to finish her dissertation — survived on coffee and determination.",
     },
     {
       id: "university-campus-burn-out",
@@ -125,7 +125,7 @@ export const UNIVERSITY_CAMPUS_LEARNING: UnitLearningMaterials = {
       kind: "phrasal-verb",
       meaning: "To leave university before graduating.",
       example:
-        "He dropped out in his second year to start a business — and it was hugely successful.",
+        "She dropped out in her second year to start a business — and it was hugely successful.",
     },
     {
       id: "university-campus-the-ivory-tower",

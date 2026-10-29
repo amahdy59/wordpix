@@ -32,8 +32,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Studying",
-        en: "The student spends three hours every evening working at his desk.",
-        ar: "يقضي الطالب ثلاث ساعات كل مساء في العمل على مكتبه.",
+        en: "The student spends three hours every evening working at her desk.",
+        ar: "تَقْضِي الطَّالِبَةُ ثَلاثَ سَاعَاتٍ كُلَّ مَسَاءٍ فِي الدِّرَاسَةِ عِنْدَ مَكْتَبِهَا.",
       },
       {
         context: "Workspace Setup",
@@ -46,8 +46,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يَسْتَقِرُّ مِصْبَاحُ مَكْتَبٍ سَاطِعٌ وَحَاسُوبٌ مَحْمُولٌ عَلَى المَكْتَبِ الخَشَبِيِّ.",
       },
     ],
-    exampleSentence: "The student spends three hours every evening working at his desk.",
-    exampleArabic: "يقضي الطالب ثلاث ساعات كل مساء في العمل على مكتبه.",
+    exampleSentence: "The student spends three hours every evening working at her desk.",
+    exampleArabic:
+      "تَقْضِي الطَّالِبَةُ ثَلاثَ سَاعَاتٍ كُلَّ مَسَاءٍ فِي الدِّرَاسَةِ عِنْدَ مَكْتَبِهَا.",
   },
   goose: {
     id: "goose",
@@ -118,7 +119,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "glance over",
         meaning: "skim headlines quickly",
         arabic: "يُلْقِي نَظْرَةً عَلَى العَنَاوِين",
-        example: "He glanced over the morning newspaper headlines before commuting.",
+        example: "She glanced over the morning newspaper headlines before commuting.",
       },
     ],
     sentences: [
@@ -260,8 +261,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Watering Routine",
-        en: "He connected the long green garden hose to the outdoor tap to water the flowers.",
-        ar: "وصل خرطوم الحديقة الأخضر الطويل بالصنبور الخارجي ليسقي الزهور.",
+        en: "She connected the long green garden hose to the outdoor tap to water the flowers.",
+        ar: "وَصَلَتْ خُرْطُومَ الحَدِيقَةِ الأَخْضَرَ الطَّوِيلَ بِالصَّنْبُورِ الخَارِجِيِّ لِرَيِّ الزُّهُورِ.",
       },
       {
         context: "Car Washing",
@@ -302,8 +303,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Note Taking",
-        en: "He used a smooth blue ballpoint pen to write down lecture notes.",
-        ar: "استخدم قلما جافا أزرق ناعم الكتابة لتدوين ملاحظات المحاضرة.",
+        en: "She used a smooth blue ballpoint pen to write down lecture notes.",
+        ar: "اسْتَخْدَمَتْ قَلَمَ حِبْرٍ جَافٍّ أَزْرَقَ نَاعِمًا لِتَدْوِينِ مُلَاحَظَاتِ المُحَاضَرَةِ.",
       },
       {
         context: "Signing Documents",
@@ -316,8 +317,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يُفَضِّلُ تَدْوِينَ مُذَكَّرَاتِهِ بِقَلَمِ حِبْرٍ سَائِلٍ كَلَاسِيكِيٍّ.",
       },
     ],
-    exampleSentence: "He used a smooth blue ballpoint pen to write down lecture notes.",
-    exampleArabic: "استخدم قلما جافا أزرق ناعم الكتابة لتدوين ملاحظات المحاضرة.",
+    exampleSentence: "She used a smooth blue ballpoint pen to write down lecture notes.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ قَلَمَ حِبْرٍ جَافٍّ أَزْرَقَ نَاعِمًا لِتَدْوِينِ مُلَاحَظَاتِ المُحَاضَرَةِ.",
   },
   catalog: {
     id: "catalog",
@@ -344,8 +346,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Online Search",
-        en: "He typed the author's name into the online library catalog to find the exact call number and shelf location.",
-        ar: "كتب اسم المؤلف في فهرس المكتبة الإلكتروني ليجد رقم التصنيف ومكان الرف بدقة.",
+        en: "She typed the author's name into the online library catalog to find the exact call number and shelf location.",
+        ar: "كَتَبَتِ اسْمَ المُؤَلِّفِ فِي فِهْرِسِ المَكْتَبَةِ الإِلِكْتُرُونِيِّ لِمَعْرِفَةِ رَقْمِ التَّصْنِيفِ وَمَوْقِعِ الرَّفِّ بِدِقَّةٍ.",
       },
       {
         context: "Historical Card System",
@@ -359,8 +361,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He typed the author's name into the online library catalog to find the exact call number and shelf location.",
-    exampleArabic: "كتب اسم المؤلف في فهرس المكتبة الإلكتروني ليجد رقم التصنيف ومكان الرف بدقة.",
+      "She typed the author's name into the online library catalog to find the exact call number and shelf location.",
+    exampleArabic:
+      "كَتَبَتِ اسْمَ المُؤَلِّفِ فِي فِهْرِسِ المَكْتَبَةِ الإِلِكْتُرُونِيِّ لِمَعْرِفَةِ رَقْمِ التَّصْنِيفِ وَمَوْقِعِ الرَّفِّ بِدِقَّةٍ.",
   },
   "parking-lot": {
     id: "parking-lot",

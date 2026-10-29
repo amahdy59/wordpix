@@ -42,10 +42,10 @@ export function PronunciationLessonCard({
       <button
         type="button"
         onClick={() => onStartLesson(lesson.number)}
-        className="flex min-h-11 min-w-0 flex-1 items-center gap-3 text-start rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+        className="flex min-h-11 min-w-0 flex-1 flex-col items-start gap-3 text-start rounded-xl focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:flex-row sm:items-center sm:gap-3.5"
       >
         {/* Visual Media Anchor: Dual Image Split or Phonetic Typographic Tile */}
-        <MediaFrame aspect="square" className="w-12 max-w-full shrink-0 rounded-xl sm:w-16">
+        <MediaFrame aspect="square" className="w-16 max-w-full shrink-0 rounded-xl sm:w-20">
           {showImages && firstImage && secondImage ? (
             <div className="grid size-full grid-cols-2 divide-x divide-border/60">
               <div className="relative size-full overflow-hidden bg-muted/20">
@@ -152,7 +152,7 @@ export function PronunciationLessonCard({
               </span>
             ) : (
               <span className="font-medium text-muted-foreground">
-                {t("lessonShell.notStarted")}
+                {t("pronunciation.lessonFormat")}
               </span>
             )}
           </div>
@@ -164,9 +164,6 @@ export function PronunciationLessonCard({
         <IconButton
           onClick={(e) => {
             e.stopPropagation();
-            // Safari pointer activation does not focus buttons automatically.
-            // Establish the real opener before the modal records its return target.
-            e.currentTarget.focus();
             onOpenDetails(lesson.number);
           }}
           aria-label={t("pronunciation.viewLessonDetails", { lesson: lesson.number })}

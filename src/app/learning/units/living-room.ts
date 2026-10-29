@@ -148,7 +148,7 @@ export const LIVING_ROOM_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "stop something from continuing; disconnect",
-      example: "He pulled the plug on movie night and turned off the DVD player and the speaker.",
+      example: "She pulled the plug on movie night and turned off the DVD player and the speaker.",
     },
     {
       id: "living-room-the-elephant-in-the-room",
@@ -175,7 +175,7 @@ export const LIVING_ROOM_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "in secret; out of public view",
       example:
-        "Behind the scenes, he rearranged the bookshelf, moved the magazine rack, and hid the cable behind the TV stand.",
+        "Behind the scenes, she rearranged the bookshelf, moved the magazine rack, and hid the cable behind the TV stand.",
     },
     {
       id: "living-room-take-a-back-seat",

@@ -107,7 +107,7 @@ export const PREPOSITIONS_OF_PLACE_LEARNING: UnitLearningMaterials = {
       phrase: "under the weather",
       kind: "idiom",
       meaning: "Feeling unwell.",
-      example: "He's been under the weather all week — a bad cold that won't shift.",
+      example: "She's been under the weather all week — a bad cold that won't shift.",
     },
     {
       id: "prepositions-of-place-over-the-moon",
@@ -129,7 +129,7 @@ export const PREPOSITIONS_OF_PLACE_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "In a difficult situation with no good options.",
       example:
-        "He's between a rock and a hard place — leave and lose income, or stay and be miserable.",
+        "She's between a rock and a hard place — leave and lose income, or stay and be miserable.",
     },
     {
       id: "prepositions-of-place-above-board",

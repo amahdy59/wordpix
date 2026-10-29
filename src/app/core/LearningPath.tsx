@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useMemo, useState } from "react";
 import {
   ArrowRight,
@@ -15,7 +16,6 @@ import { COURSE_UNITS, LEARNING_PATH_UNIT_IDS, type CourseUnit } from "../data/c
 import { CEFR_STAGES } from "../data/curriculumSequence";
 import { getUnitCurriculumDesign } from "../learning/curriculumModel";
 import { recommendPathUnit } from "../learning/recommendPathUnit";
-import { getWordMemory } from "../learning/wordIdentity";
 import { useProgress } from "../data/progress";
 import { useLearner } from "../context/LearnerContext";
 import { useI18n } from "../context/I18nContext";
@@ -45,15 +45,13 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
       .filter((unit): unit is CourseUnit => Boolean(unit))
       .map((unit) => {
         const familiar = unit.wordIds.filter((wordId) =>
-          ["familiar", "strong"].includes(
-            getWordMemory(progress.wordMemory, wordId, unit.id)?.mastery ?? "new"
-          )
+          ["familiar", "strong"].includes(progress.wordMemory[wordId]?.mastery ?? "new")
         ).length;
         const mastered = unit.wordIds.filter(
-          (wordId) => getWordMemory(progress.wordMemory, wordId, unit.id)?.mastery === "strong"
+          (wordId) => (progress.wordMastery[wordId] ?? 0) >= 3
         ).length;
         const due = unit.wordIds.filter((wordId) => {
-          const nextReviewAt = getWordMemory(progress.wordMemory, wordId, unit.id)?.nextReviewAt;
+          const nextReviewAt = progress.wordMemory[wordId]?.nextReviewAt;
           return Boolean(nextReviewAt && nextReviewAt <= now);
         }).length;
         return {
@@ -64,7 +62,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           percent: unit.wordIds.length ? Math.round((mastered / unit.wordIds.length) * 100) : 0,
         };
       });
-  }, [progress.wordMemory]);
+  }, [progress.wordMastery, progress.wordMemory]);
 
   const recommendedUnit = recommendPathUnit(
     pathUnits.map((item) => item.unit),
@@ -83,7 +81,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
     )
   );
   const [expandedPhase, setExpandedPhase] = useState(currentPhaseIndex);
-  const [showPictureWorldPath, setShowPictureWorldPath] = useState(true);
+  const [showPictureWorldPath, setShowPictureWorldPath] = useState(false);
 
   const pronunciationMastered = useMemo(
     () =>
@@ -121,7 +119,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         >
           <h1
             id="learning-path-empty-heading"
-            className="font-sans text-xl font-bold text-foreground sm:text-2xl"
+            className="font-sans text-xl font-black text-foreground sm:text-2xl"
           >
             {t("learn.emptyRecommendedTitle")}
           </h1>
@@ -167,81 +165,32 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
             size="md"
             iconLeft={<Library className="size-4" aria-hidden />}
             onClick={() => dispatch({ type: "GO", to: "library" })}
-            className="hidden md:inline-flex"
           >
             {t("learn.pictureWorlds")}
           </Button>
         }
       />
 
-      {/* Sticky CEFR Level Switcher */}
-      <nav
-        aria-label={t("learn.cefrLevels", { defaultValue: "CEFR Levels" })}
-        className="wp-sticky-controls sticky top-0 z-20 -mx-[var(--wp-layout-gutter-inline)] px-[var(--wp-layout-gutter-inline)] py-2.5 bg-background/90 backdrop-blur-md border-b border-border transition-colors"
-      >
-        <div className="flex flex-wrap items-center gap-2">
-          {CEFR_STAGES.map((stage, idx) => {
-            const isActive = showPictureWorldPath && expandedPhase === idx;
-            return (
-              <button
-                key={stage.id}
-                type="button"
-                onClick={() => {
-                  setShowPictureWorldPath(true);
-                  setExpandedPhase(idx);
-                  setTimeout(() => {
-                    const el = document.getElementById(`path-phase-${idx}`);
-                    el?.scrollIntoView({
-                      behavior:
-                        learnerState.accessibility.reduceMotion ||
-                        window.matchMedia("(prefers-reduced-motion: reduce)").matches
-                          ? "instant"
-                          : "smooth",
-                      block: "nearest",
-                    });
-                  }, 50);
-                }}
-                className={`min-h-[44px] min-w-[44px] px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold whitespace-nowrap transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                  isActive
-                    ? "bg-primary text-primary-foreground shadow-wp-xs"
-                    : "bg-card text-muted-foreground hover:text-foreground hover:bg-secondary border border-border"
-                }`}
-                aria-current={isActive ? "true" : undefined}
-              >
-                {stage.cefr}
-              </button>
-            );
-          })}
-        </div>
-      </nav>
-
       <section
         aria-labelledby="recommended-heading"
-        className="grid gap-4 rounded-2xl border border-primary/35 bg-card p-4 sm:p-5 lg:grid-cols-[1fr_auto] lg:items-center"
+        className="grid gap-4 rounded-2xl border border-primary/35 bg-secondary p-4 sm:p-5 lg:grid-cols-[1fr_auto] lg:items-center"
       >
         <div>
           <div className="mb-2 flex items-center gap-2 text-sm font-bold text-primary">
             <Sparkles className="size-4" aria-hidden />
             <span>{t("learn.recommendedWorld")}</span>
           </div>
-          <h2 id="recommended-heading" className="text-xl font-bold text-foreground sm:text-2xl">
+          <h2 id="recommended-heading" className="text-xl font-black text-foreground sm:text-2xl">
             {recommendedUnit.name}
           </h2>
-          <p className="mt-1 text-sm sm:text-base text-muted-foreground font-medium">
-            {getUnitCurriculumDesign(recommendedUnit).outcome}
-          </p>
+          <HelpDisclosure label={t("help.aboutLesson")}>
+            <p>{getUnitCurriculumDesign(recommendedUnit).outcome}</p>
+          </HelpDisclosure>
         </div>
         <button
           type="button"
-          onClick={() =>
-            dispatch({
-              type: "GO",
-              to: "lesson-entry",
-              unitId: recommendedUnit.id,
-              returnTo: "learn",
-            })
-          }
-          className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary hover:bg-primary/90 px-6 py-3 font-bold text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transform-none lg:w-auto transition-all cursor-pointer"
+          onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: recommendedUnit.id })}
+          className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transform-none lg:w-auto"
         >
           <BookOpen className="size-5" aria-hidden />
           <span>{t("learn.continueUnit")}</span>
@@ -251,32 +200,18 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
 
       <button
         type="button"
-        onClick={() =>
-          document.getElementById("special-curricula-section")?.scrollIntoView({
-            block: "start",
-            behavior:
-              learnerState.accessibility.reduceMotion ||
-              window.matchMedia("(prefers-reduced-motion: reduce)").matches
-                ? "instant"
-                : "smooth",
-          })
-        }
-        className="min-h-11 self-start rounded-xl px-3 py-2 text-sm font-semibold text-primary underline underline-offset-4 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-      >
-        {t("ux.browseCourses")}
-      </button>
-
-      <button
-        type="button"
         onClick={() => setShowPictureWorldPath((value) => !value)}
         aria-expanded={showPictureWorldPath}
         aria-controls="picture-world-path"
-        className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-2xl border border-border bg-wp-card hover:bg-secondary/50 hover:border-primary/40 p-4 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 transition-colors cursor-pointer"
+        className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-2xl border border-border bg-wp-card p-4 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5"
       >
         <span>
           <span className="block text-sm font-bold text-primary">{t("learn.routeBadge")}</span>
           <span className="mt-1 block text-lg font-bold text-foreground">
             {t("learn.routeToggle")}
+          </span>
+          <span className="mt-1 block text-base font-medium text-muted-foreground">
+            {t("learn.routeHint")}
           </span>
         </span>
         <ChevronDown
@@ -288,21 +223,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
       {showPictureWorldPath && (
         <div id="picture-world-path" className="contents">
           <div className="space-y-4 py-2">
-            <p className="text-sm font-bold uppercase tracking-wide text-primary">
+            <p className="text-sm font-black uppercase tracking-wide text-primary">
               {t("learn.routeLabel")}
             </p>
-            <h2 className="mt-1 text-xl font-bold text-foreground">{t("learn.routeHeading")}</h2>
+            <h2 className="mt-1 text-xl font-black text-foreground">{t("learn.routeHeading")}</h2>
 
-            <p className="text-base font-semibold text-foreground">
-              {t("reviewUpdate.nextMilestone", { unit: recommendedUnit.name })}
-            </p>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              {t("reviewUpdate.phaseExplanation")}
-            </p>
-            <details className="mt-2 max-w-xl">
-              <summary className="min-h-11 cursor-pointer rounded-lg py-2 text-sm text-muted-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-                {t("reviewUpdate.catalogProgress")}
-              </summary>
+            <div className="mt-4 max-w-xl">
               <ProgressBar
                 progressPercent={pathPercent}
                 label={t("learn.routeMastery")}
@@ -312,7 +238,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                   total: totalWords,
                 })}
               />
-            </details>
+            </div>
           </div>
 
           <div className="flex flex-col gap-4">
@@ -331,12 +257,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                     onClick={() => setExpandedPhase(isExpanded ? -1 : phaseIndex)}
                     aria-expanded={isExpanded}
                     aria-controls={`path-phase-content-${phaseIndex}`}
-                    className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-xl px-2 text-start hover:bg-secondary/60 transition-colors cursor-pointer focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    className="flex min-h-[52px] w-full items-center justify-between gap-4 rounded-xl px-2 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
                     <span>
                       <span
                         id={`path-phase-${phaseIndex}`}
-                        className="block font-sans text-lg font-bold text-foreground sm:text-xl"
+                        className="block font-sans text-lg font-black text-foreground sm:text-xl"
                       >
                         {stage.label}
                       </span>
@@ -400,12 +326,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                                   : "text-muted-foreground font-semibold"
                               }
                               onClick={() =>
-                                dispatch({
-                                  type: "GO",
-                                  to: "lesson-entry",
-                                  unitId: unit.id,
-                                  returnTo: "learn",
-                                })
+                                dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
                               }
                             />
                           </li>
@@ -419,58 +340,52 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
           </div>
         </div>
       )}
-      <section
-        id="special-curricula-section"
-        className="flex flex-col gap-4 mt-2"
-        aria-label={t("learn.specialCurricula")}
-      >
+      <section className="flex flex-col gap-4 mt-2" aria-label={t("learn.specialCurricula")}>
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-2">
             <Sparkles className="size-4 text-primary" aria-hidden="true" />
-            <h2 className="font-sans text-xl font-bold text-foreground">
+            <h2 className="font-sans text-xl font-black text-foreground">
               {t("learn.specialCurricula")}
             </h2>
           </div>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          {learnerState.accessibility?.includePronunciation !== false && (
-            <button
-              type="button"
-              onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
-              className="group min-h-[132px] rounded-2xl border border-border bg-wp-card p-4 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex items-center justify-between gap-2">
-                  <Headphones className="size-7 text-primary" aria-hidden />
-                  <span className="rounded-full bg-secondary px-2 py-0.5 text-sm font-bold text-primary border border-primary/20">
-                    {t("learn.pronunciationScope")}
-                  </span>
-                </div>
-
-                <h3 className="mt-2 text-lg font-bold text-foreground">
-                  {t("pronunciation.curriculumTitle")}
-                </h3>
-                <p className="mt-1 text-sm leading-5 text-muted-foreground">
-                  {t("help.completed", {
-                    completed: pronunciationMastered,
-                    total: 68,
-                  })}
-                </p>
-                <div className="mt-2.5">
-                  <ProgressBar
-                    progressPercent={Math.round((pronunciationMastered / 68) * 100)}
-                    ariaLabel={t("pronunciation.curriculumTitle")}
-                    size="sm"
-                  />
-                </div>
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
+            className="group min-h-[132px] rounded-2xl border border-border bg-wp-card p-4 text-start shadow-wp-xs hover:border-primary/60 hover:bg-secondary motion-safe:active:scale-[0.995] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:p-5 flex flex-col justify-between"
+          >
+            <div>
+              <div className="flex items-center justify-between gap-2">
+                <Headphones className="size-7 text-primary" aria-hidden />
+                <span className="rounded-full bg-secondary px-2 py-0.5 text-sm font-bold text-primary border border-primary/20">
+                  {t("learn.pronunciationScope")}
+                </span>
               </div>
-              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-primary">
-                {t("pronunciation.viewCurriculum")}
-                <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-              </span>
-            </button>
-          )}
+
+              <h3 className="mt-2 text-lg font-black text-foreground">
+                {t("pronunciation.curriculumTitle")}
+              </h3>
+              <p className="mt-1 text-sm leading-5 text-muted-foreground">
+                {t("help.completed", {
+                  completed: pronunciationMastered,
+                  total: 68,
+                })}
+              </p>
+              <div className="mt-2.5">
+                <ProgressBar
+                  progressPercent={Math.round((pronunciationMastered / 68) * 100)}
+                  ariaLabel={t("pronunciation.curriculumTitle")}
+                  size="sm"
+                />
+              </div>
+            </div>
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
+              {t("pronunciation.viewCurriculum")}
+              <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+            </span>
+          </button>
 
           <button
             type="button"
@@ -485,7 +400,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 </span>
               </div>
 
-              <h3 className="mt-2 text-lg font-bold text-foreground">
+              <h3 className="mt-2 text-lg font-black text-foreground">
                 {t("hadith.curriculumTitle")}
               </h3>
               <p className="mt-1 text-sm leading-5 text-muted-foreground">
@@ -502,7 +417,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 />
               </div>
             </div>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-primary">
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
               {t("hadith.viewCurriculum")}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </span>
@@ -521,7 +436,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 </span>
               </div>
 
-              <h3 className="mt-2 text-lg font-bold text-foreground">{t("conversation.title")}</h3>
+              <h3 className="mt-2 text-lg font-black text-foreground">{t("conversation.title")}</h3>
               <p className="mt-1 text-sm leading-5 text-muted-foreground">
                 {t("conversation.completedUnits", {
                   completed: conversationMastered,
@@ -536,7 +451,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 />
               </div>
             </div>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-primary">
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
               {t("conversation.exploreUnits")}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </span>
@@ -555,7 +470,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 </span>
               </div>
 
-              <h3 className="mt-2 text-lg font-bold text-foreground">{t("business.title")}</h3>
+              <h3 className="mt-2 text-lg font-black text-foreground">{t("business.title")}</h3>
               <p className="mt-1 text-sm leading-5 text-muted-foreground">
                 {t("business.completedUnits", {
                   completed: businessMastered,
@@ -570,7 +485,7 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                 />
               </div>
             </div>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-primary">
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary">
               {t("business.exploreUnits")}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </span>

@@ -123,7 +123,7 @@ export const SPORTS_EQUIPMENT_LEARNING: UnitLearningMaterials = {
       phrase: "hit below the belt",
       kind: "idiom",
       meaning: "To act unfairly or cruelly (from boxing).",
-      example: "Bringing up his past mistakes was hitting below the belt — completely unfair.",
+      example: "Bringing up her past mistakes was hitting below the belt — completely unfair.",
     },
     {
       id: "sports-equipment-jump-the-hurdle",

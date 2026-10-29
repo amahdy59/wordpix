@@ -115,7 +115,7 @@ export const RESEARCH_STUDY_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To make an original discovery.",
       example:
-        "His research broke new ground in understanding how bilingual children process grammar.",
+        "Her research broke new ground in understanding how bilingual children process grammar.",
     },
     {
       id: "research-study-a-eureka-moment",

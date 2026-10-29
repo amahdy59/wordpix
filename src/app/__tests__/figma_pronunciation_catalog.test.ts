@@ -158,27 +158,4 @@ describe("Figma pronunciation source", () => {
     expect(getStressBeatPattern(1, "sheep")).toBeUndefined();
     expect(getStressBeatPattern(9, "pat")).toBeUndefined();
   });
-
-  it("varies distractors across questions and prioritizes contrast pairs (no repeated distractor bias like 'cat')", () => {
-    // Specifically test Lesson 1: pig vs big
-    const pigQuestion = getPronunciationQuestion(1, 1, 4);
-    expect(pigQuestion.target.label).toBe("pig");
-    const pigChoiceLabels = pigQuestion.choices.map((c) => c.label.toLowerCase());
-    expect(pigChoiceLabels).toContain("big");
-    expect(pigChoiceLabels).not.toContain("cat");
-
-    // Check that across multiple trials in stage 1, distractors vary rather than repeating 'cat'
-    const nonTargetChoices: string[] = [];
-    for (let trial = 0; trial < 6; trial++) {
-      const q = getPronunciationQuestion(1, 1, trial);
-      const distractor = q.choices.find((c) => c.label !== q.target.label);
-      expect(distractor).toBeDefined();
-      nonTargetChoices.push(distractor!.label);
-    }
-    // We should see multiple distinct distractors across 6 trials, not the same word
-    const uniqueDistractors = new Set(nonTargetChoices);
-    expect(uniqueDistractors.size).toBeGreaterThan(1);
-    // 'cat' must not be the distractor in every trial
-    expect(nonTargetChoices.filter((d) => d.toLowerCase() === "cat").length).toBeLessThan(2);
-  });
 });

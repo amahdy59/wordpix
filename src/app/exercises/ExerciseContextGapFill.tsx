@@ -14,13 +14,10 @@ import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
-import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
-import { SentenceQuestionSupport, SentenceMeaningSupport } from "../shared/SentenceQuestionSupport";
-import { resolveSentenceMedia } from "../content/sentenceMedia";
-import { ClozeText } from "../shared/SentenceBlank";
-import { useKeyboardShortcutsActive } from "../shared/devicePreferences";
+import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
+import { answerLayout } from "../shared/answerLayout";
 
 interface Props {
   step: number;
@@ -39,12 +36,10 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const queue = useDrillQueue(words);
-  usePrefetchImage(queue.next);
   const usageState = useLessonUsage(lessonId);
   const currentTargetWord = queue.current ?? words[0];
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
-  const shortcutsActive = useKeyboardShortcutsActive();
 
   const authoredSentence = getAuthoredSentence(currentTargetWord.id);
   const usage = usageState.status === "ready" ? usageState.data : null;
@@ -87,12 +82,20 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
         correct,
         dimension: "contextual-comprehension",
       });
-      autoAdvance.schedule(
-        correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect,
-        correct
-      );
+      if (accessibility.autoAdvance) {
+        autoAdvance.schedule(correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect);
+      }
     },
-    [autoAdvance, currentTargetWord.id, dispatch, feedback, playClick, playCorrect, playIncorrect]
+    [
+      accessibility.autoAdvance,
+      autoAdvance,
+      currentTargetWord.id,
+      dispatch,
+      feedback,
+      playClick,
+      playCorrect,
+      playIncorrect,
+    ]
   );
 
   const handleContinue = useCallback(() => {
@@ -109,7 +112,6 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
   useExerciseHotkeys({
     optionCount: options.length,
     onSelectIndex: selectByIndex,
-    onContinue: feedback !== null ? handleContinue : undefined,
     disabled: feedback !== null,
   });
 
@@ -122,13 +124,6 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
     [lessonId, words]
   );
 
-  const [imageUnavailable, setImageUnavailable] = useState(false);
-  const [lastTargetId, setLastTargetId] = useState(currentTargetWord.id);
-  if (lastTargetId !== currentTargetWord.id) {
-    setLastTargetId(currentTargetWord.id);
-    setImageUnavailable(false);
-  }
-
   return (
     <ExerciseShell
       step={step}
@@ -139,7 +134,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
       progress={{ current: queue.position, total: queue.total }}
       subtitle={
         <>
-          <span className="hidden sm:inline uppercase tracking-wider">{group.name}</span>
+          <span className="uppercase tracking-wider">{group.name}</span>
           <span className="rounded-full border border-primary/20 bg-secondary px-2.5 py-0.5 font-semibold text-primary">
             {t("exercise.sentenceOf", { current: queue.position, total: queue.total })}
           </span>
@@ -150,45 +145,11 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
         family="visual-choice"
         instruction={hasBlank ? t("exercise.gapFillInstruction") : t("exercise.chooseMeaningClue")}
         helper={
-          shortcutsActive ? (
-            <span>{t("exercise.pressNumberToChooseWord", { count: options.length })}</span>
-          ) : undefined
+          <span className="hidden sm:inline">
+            {t("exercise.pressNumberToChooseWord", { count: options.length })}
+          </span>
         }
         activityLabel={t("exercise.gapFillActivityAria")}
-        prompt={
-          <div className="flex flex-col gap-3 sm:gap-3.5 w-full">
-            {hasBlank && (
-              <div
-                lang="en"
-                dir="ltr"
-                aria-label={t("exercise.gapFillSentenceAria", {
-                  sentence: clozeSentence.replace(
-                    /_{2,}/gu,
-                    options.find((option) => option.id === selectedId)?.label ??
-                      t("exercise.missingWord")
-                  ),
-                })}
-                data-question-prompt
-                className="text-start font-sans"
-              >
-                <p className="wp-question-prompt">
-                  <ClozeText
-                    text={clozeSentence}
-                    answer={options.find((option) => option.id === selectedId)?.label}
-                  />
-                </p>
-              </div>
-            )}
-            <SentenceMeaningSupport
-              word={currentTargetWord}
-              sentence={fullSentence}
-              prompt={clozeSentence}
-              answered={feedback !== null}
-              hasImage={!imageUnavailable && Boolean(media || currentTargetWord.img)}
-              defaultOpen={imageUnavailable}
-            />
-          </div>
-        }
         media={
           <SentenceQuestionSupport
             key={currentTargetWord.id}
@@ -197,124 +158,67 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
             word={currentTargetWord}
             media={media}
             answered={feedback !== null}
-            showClue={false}
-            onImageExhausted={() => setImageUnavailable(true)}
           />
         }
         activity={
-          <div className="flex flex-col gap-2.5 sm:gap-4 w-full">
+          <div className="space-y-4">
+            {hasBlank && (
+              <p
+                lang="en"
+                dir="ltr"
+                aria-label={t("exercise.gapFillSentenceAria", { sentence: clozeSentence })}
+                className="rounded-2xl border border-border bg-wp-card p-3 text-start font-sans text-lg font-semibold leading-relaxed text-foreground shadow-wp-xs sm:p-5 sm:text-2xl"
+              >
+                {clozeSentence}
+              </p>
+            )}
             <div
-              className="flex flex-col gap-2 sm:gap-2.5 w-full"
+              className={answerLayout(options.map((option) => option.label))}
               role="group"
               aria-label={t("exercise.gapFillChoicesAria")}
               dir="ltr"
               lang="en"
             >
-              {options.map((option, index) => {
-                const isSelected = selectedId === option.id;
-                const isCorrect = option.id === currentTargetWord.id;
-                const showRevealed = feedback === "incorrect" && isCorrect;
-
-                let stateClasses =
-                  "border-border bg-wp-card text-foreground hover:border-primary/70 hover:bg-secondary/40 shadow-wp-xs hover:shadow-wp-sm";
-                if (isSelected) {
-                  if (feedback === "correct") {
-                    stateClasses =
-                      "border-wp-green bg-wp-green-light/40 dark:bg-wp-green/20 text-foreground shadow-wp-sm";
-                  } else if (feedback === "incorrect") {
-                    stateClasses =
-                      "border-wp-rose bg-wp-rose-light/40 dark:bg-wp-rose/20 text-foreground shadow-wp-sm";
-                  } else {
-                    stateClasses = "border-primary bg-secondary text-primary shadow-wp-sm";
-                  }
-                } else if (showRevealed) {
-                  stateClasses =
-                    "border-wp-green bg-wp-green-light/20 dark:bg-wp-green/10 text-foreground";
-                }
-
-                return (
-                  <button
-                    key={option.id}
-                    type="button"
-                    data-is-target={isCorrect}
-                    aria-pressed={isSelected}
-                    aria-disabled={feedback !== null || undefined}
-                    onClick={() => handleSelect(option.id)}
-                    className={`wp-question-option group flex w-full items-center justify-between gap-3 border font-sans font-semibold transition-all motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${stateClasses}`}
-                  >
-                    <span className="flex items-center gap-3">
-                      {isSelected && feedback === "correct" && (
-                        <CheckCircle2
-                          className="size-5 text-wp-green shrink-0"
-                          aria-hidden="true"
-                        />
-                      )}
-                      {isSelected && feedback === "incorrect" && (
-                        <XCircle className="size-5 text-destructive shrink-0" aria-hidden="true" />
-                      )}
-                      {showRevealed && (
-                        <CheckCircle2
-                          className="size-5 text-wp-green shrink-0"
-                          aria-hidden="true"
-                        />
-                      )}
-                      <span>{option.label}</span>
-                    </span>
-                    {shortcutsActive && (
-                      <span className="rounded-lg border border-border/80 bg-muted px-2.5 py-1 text-xs font-mono font-bold text-muted-foreground group-hover:border-primary/40 group-hover:text-primary inline-block">
-                        {index + 1}
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
+              {options.map((option, index) => (
+                <button
+                  key={option.id}
+                  type="button"
+                  aria-pressed={selectedId === option.id}
+                  aria-disabled={feedback !== null || undefined}
+                  onClick={() => handleSelect(option.id)}
+                  className="flex min-h-[48px] items-center justify-between rounded-xl border-2 border-border bg-wp-card p-2.5 font-sans text-base font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none sm:min-h-[52px] sm:p-3 sm:text-lg"
+                >
+                  <span>{option.label}</span>
+                  <span className="hidden rounded-md bg-muted px-2 py-0.5 text-xs text-muted-foreground sm:inline-block">
+                    {index + 1}
+                  </span>
+                </button>
+              ))}
             </div>
           </div>
         }
         feedback={
-          feedback === "incorrect" ? (
+          feedback ? (
             <FeedbackPanel
-              tone="error"
-              live="polite"
-              title={t("exercise.notQuiteTitle")}
-              description={
-                <span className="flex flex-col gap-1">
-                  <span
-                    className="text-sm font-medium leading-relaxed text-muted-foreground"
-                    lang="en"
-                    dir="ltr"
-                  >
-                    {fullSentence}
-                  </span>
-                  {currentTargetWord.description && (
-                    <span className="text-xs leading-snug text-foreground/75" lang="en" dir="ltr">
-                      {currentTargetWord.description}
-                    </span>
-                  )}
-                  {currentTargetWord.arabicTranslation && (
-                    <span
-                      className="font-arabic text-sm font-semibold text-foreground/80"
-                      dir="rtl"
-                      lang="ar"
-                    >
-                      {currentTargetWord.arabicTranslation}
-                    </span>
-                  )}
-                </span>
+              tone={feedback === "correct" ? "success" : "error"}
+              title={
+                feedback === "correct" ? t("exercise.correctTitle") : t("exercise.notQuiteTitle")
               }
-              icon={<XCircle className="size-6 text-destructive" aria-hidden />}
+              description={fullSentence}
+              icon={
+                feedback === "correct" ? (
+                  <CheckCircle2 className="size-6 text-wp-green" aria-hidden />
+                ) : (
+                  <XCircle className="size-6 text-destructive" aria-hidden />
+                )
+              }
             />
-          ) : feedback === "correct" ? (
-            <p className="sr-only" role="status" aria-live="polite">
-              {t("exercise.correctTitle")}
-            </p>
           ) : undefined
         }
         action={
-          feedback === "incorrect" && !accessibility.autoAdvance ? (
+          feedback !== null && !accessibility.autoAdvance ? (
             <Button
               size="lg"
-              hotkey="↵ Enter"
               iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
               onClick={handleContinue}
             >

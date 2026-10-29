@@ -95,10 +95,10 @@ export function ReviewArea({ materials, curriculumDesign, progress, onProgressUp
                 >
                   <div className="flex items-center gap-4 min-w-0">
                     {word!.img && (
-                      <div className="size-16 rounded-2xl bg-secondary/30 border border-border/50 shrink-0 flex items-center justify-center overflow-hidden">
+                      <div className="size-16 rounded-2xl bg-secondary/30 border border-border/50 p-1 shrink-0 flex items-center justify-center overflow-hidden">
                         <WordImage
                           word={word!}
-                          className="size-full object-cover object-center"
+                          className="size-full object-contain"
                           sizePreset="thumb"
                           altMode="decorative"
                         />

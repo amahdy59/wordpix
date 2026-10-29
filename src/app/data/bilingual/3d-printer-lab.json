@@ -6,12 +6,12 @@
   },
   "build-plate": {
     "definition": "The flat surface that supports an object while a 3D printer builds it layer by layer.",
-    "exampleUsage": "The trained operator checked the build plate according to the printer’s maintenance instructions.",
+    "exampleUsage": "Clean the build plate before starting a new print.",
     "arabicTranslation": "منصّة الطباعة"
   },
   "filament-spool": {
     "definition": "A reel that holds printing filament and allows it to feed into a 3D printer.",
-    "exampleUsage": "The filament spool sat on the printer’s compatible holder.",
+    "exampleUsage": "Place the filament spool on its holder before loading the printer.",
     "arabicTranslation": "بَكَرَة خيط الطباعة"
   },
   "extruder": {
@@ -44,7 +44,7 @@
   },
   "lcd-screen": {
     "definition": "A liquid-crystal display that shows printer information, menus, and settings.",
-    "exampleUsage": "The LCD screen displayed the selected printing settings.",
+    "exampleUsage": "Use the LCD screen to choose the printing settings.",
     "arabicTranslation": "شاشة بلّورية سائلة (LCD)"
   },
   "pla-filament": {
@@ -58,7 +58,7 @@
     "arabicTranslation": "خيط ABS من أكريلونيتريل بوتادين ستايرين"
   },
   "petg-filament": {
-    "definition": "A thermoplastic printing filament made from glycol-modified polyethylene terephthalate.",
+    "definition": "A durable thermoplastic printing material that is easy to print and resists many chemicals.",
     "exampleUsage": "PETG filament is useful for many practical printed parts.",
     "arabicTranslation": "خيط PETG للطباعة"
   },
@@ -109,7 +109,7 @@
   "mouse": {
     "definition": "A hand-operated electronic device that controls the coordinates of a cursor on your computer screen as you move it around on a pad.",
     "arabicTranslation": "فأرة حاسوب",
-    "exampleUsage": "Nader uses the mouse to rotate the model on the screen."
+    "exampleUsage": "Nadia uses the mouse to rotate the model on the screen."
   },
   "graphics-tablet": {
     "definition": "A flat computer input device that lets a person draw or write with an electronic pen.",
@@ -124,7 +124,7 @@
   "caliper": {
     "definition": "An instrument for measuring the distance between two points.",
     "arabicTranslation": "قَدَمة قياس",
-    "exampleUsage": "Nader checks the printed part's width with a caliper."
+    "exampleUsage": "Nadia checks the printed part's width with a caliper."
   },
   "protractor": {
     "definition": "Drafting instrument used to draw or measure angles.",
@@ -151,7 +151,7 @@
   "file": {
     "definition": "A hand tool with a rough surface used to shape or smooth material.",
     "arabicTranslation": "مِبْرَد",
-    "exampleUsage": "Nader uses a file to smooth the edge of the printed part."
+    "exampleUsage": "Nadia uses a file to smooth the edge of the printed part."
   },
   "craft-knife": {
     "definition": "A small sharp cutting tool used for precise craft and model-making work.",
@@ -166,7 +166,7 @@
   "tweezers": {
     "definition": "A small tool consisting of two pointed arms used for picking up small objects or plucking hairs.",
     "arabicTranslation": "ملقط",
-    "exampleUsage": "Nader picks up the tiny part with tweezers."
+    "exampleUsage": "Nadia picks up the tiny part with tweezers."
   },
   "paint": {
     "definition": "A colored substance applied to a surface to decorate or protect it.",
@@ -182,8 +182,8 @@
     "arabicTranslation": "طلاء تمهيدي"
   },
   "acetone": {
-    "definition": "A volatile, flammable solvent stored and handled under appropriate professional controls.",
-    "exampleUsage": "The technician checked the safety data and material compatibility before any authorized use of acetone.",
+    "definition": "A volatile solvent commonly used for cleaning and, with some plastics, smoothing printed surfaces.",
+    "exampleUsage": "Acetone is handled carefully in a well-ventilated work area.",
     "arabicTranslation": "أسيتون"
   },
   "uv-curing-lamp": {
@@ -214,7 +214,7 @@
   "cookie-cutter": {
     "definition": "A shaped tool used to cut dough or soft material into a particular outline.",
     "arabicTranslation": "قطّاعة بسكويت",
-    "exampleUsage": "Nader designs a star-shaped cookie cutter in the modeling software."
+    "exampleUsage": "Nadia designs a star-shaped cookie cutter in the modeling software."
   },
   "whistle": {
     "definition": "A small object blown to make a loud signal.",
@@ -257,7 +257,7 @@
   },
   "trash-bin": {
     "definition": "A container used for collecting waste before it is removed.",
-    "exampleUsage": "The workshop’s trash bin held the waste permitted under its disposal rules.",
+    "exampleUsage": "Put scraps and other waste in the trash bin.",
     "arabicTranslation": "سلة مهملات"
   },
   "label-maker": {
@@ -317,7 +317,7 @@
   "slice": {
     "definition": "To convert a 3D model into printable layers and machine instructions.",
     "arabicTranslation": "يُقسّم النموذج إلى طبقات للطباعة",
-    "exampleUsage": "Nader will slice the model before starting the print."
+    "exampleUsage": "Nadia will slice the model before starting the print."
   },
   "print": {
     "definition": "To create a three-dimensional object by depositing or curing material layer by layer.",
@@ -342,9 +342,5 @@
   "prototype": {
     "definition": "An early model made to test the form, fit, or function of a design.",
     "arabicTranslation": "نموذج أولي"
-  },
-  "vase": {
-    "definition": "A container used to hold flowers or as a decorative object.",
-    "arabicTranslation": "مزهرية"
   }
 }

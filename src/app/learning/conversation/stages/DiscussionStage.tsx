@@ -74,8 +74,6 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
         onSelect={setPracticePromptIndex}
       />
       <SpeechRecordCompare
-        defaultOpen={false}
-        compact
         key={unit.discussion[practicePromptIndex]?.id}
         target={unit.discussion[practicePromptIndex]?.prompt ?? unit.discussion[0]?.prompt ?? ""}
         modelText={unit.toolkit.phrases.map((phrase) => phrase.example).join(" ")}

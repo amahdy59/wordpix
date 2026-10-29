@@ -23,24 +23,22 @@
   --wp-amber-foreground: #78350f; /* amber-900: text/icons on pale surfaces */
   --wp-teal-foreground: #134e4a; /* teal-900: text on teal status surfaces */
   --wp-text-on-amber: #1c1917; /* 8.14:1 */
-  --wp-teal: #104b47; /* Deep teal preserves enhanced contrast on textured paper. */
+  --wp-teal: #115e59; /* teal-800: Immerse/Scene mode — 7.58:1 on white */
   --wp-teal-light: #ccfbf1; /* teal-100 */
-  --wp-green: #064e3b; /* Deep emerald preserves enhanced contrast on textured paper. */
+  --wp-green: #065f46; /* emerald-800: Correct / Mastered — 7.69:1 on white */
   --wp-text-on-green: #ffffff; /* 7.69:1 */
   --wp-green-light: #d1fae5; /* emerald-100 */
-  --wp-rose: #881337; /* rose-900: enhanced contrast on textured paper and with white. */
+  --wp-rose: #9f1239; /* rose-800: Wrong answer — 8.02:1 with white */
   --wp-text-on-rose: #ffffff; /* 8.02:1 */
   --wp-rose-light: #ffe4e6; /* rose-100 */
-  --wp-blue: #1e3a8a; /* blue-900: enhanced contrast on textured paper and with white. */
+  --wp-blue: #1e40af; /* blue-800: 8.72:1 with white */
   --wp-text-on-blue: #ffffff; /* 8.72:1 */
-  --wp-blue-foreground: #1e3a8a;
+  --wp-blue-foreground: #1e40af;
   --wp-slate: #64748b; /* slate-500: Muted details */
 
   /* Surface & Neutral Tokens */
-  --wp-surface: #f1ede4; /* Warm paper canvas reduces large bright-white areas. */
-  --wp-card: #faf7f0; /* Raised ivory paper, distinct from the canvas. */
-  /* A small, static, tiled texture: no overlay, animation or remote request. */
-  --wp-paper-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.035' filter='url(%23grain)'/%3E%3C/svg%3E");
+  --wp-surface: #f8fafc; /* slate-50 background */
+  --wp-card: #ffffff; /* card background */
 
   /* Immersive dark panel — the "cinema" surface behind scene canvases, audio
      bars, and hero cards. Components hardcoded bg-slate-950/900 for this, which
@@ -51,7 +49,7 @@
   --wp-panel-border: #334155; /* slate-700 */
   --wp-text-on-panel: #f8fafc; /* 17.06:1 */
   --wp-text-on-panel-muted: #cbd5e1; /* 12.03:1 */
-  --wp-border: #d8d2c6; /* Warm divider, aligned with the paper palette. */
+  --wp-border: #e2e8f0; /* slate-200 border */
   --wp-text: #0f172a; /* slate-900 foreground */
   --wp-text-secondary: #334155; /* slate-700 secondary text (solid AAA 9.5:1) */
   --wp-text-on-brand: #ffffff;
@@ -69,13 +67,10 @@
   --wp-shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.06);
   --wp-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --wp-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-  --wp-shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.12), 0 4px 6px -4px rgba(0, 0, 0, 0.08);
-  --wp-shadow-xl: 0 20px 35px -5px rgba(0, 0, 0, 0.16), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 
   /* Font families & Typographic Rhythm */
-  --wp-font-base:
-    "Inter Variable", "Inter", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --wp-font-arabic: "Noto Sans Arabic Variable", "Noto Sans Arabic", "Cairo", sans-serif;
+  --wp-font-base: "Inter", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --wp-font-arabic: "Noto Sans Arabic", "Cairo", sans-serif;
   --wp-line-height-arabic: 1.65;
   --wp-letter-spacing-arabic: 0px;
   --font-arabic-line-height: var(--wp-line-height-arabic);
@@ -104,13 +99,6 @@
   --wp-layout-shell: 96rem;
   --wp-layout-immersive: 112.5rem;
   --wp-layout-gutter-inline: clamp(1rem, 0.625rem + 1vw, 2.5rem);
-
-  /* Question layouts scale with readable text and available height, rather
-     than growing every panel when only the viewport width increases. */
-  --wp-question-gap: clamp(0.75rem, 1.5dvh, 1.25rem);
-  --wp-question-instruction-size: var(--wp-text-md);
-  --wp-question-prompt-size: clamp(1.125rem, 1rem + 0.35vw, 1.5rem);
-  --wp-question-media-height: clamp(8rem, 28dvh, 16rem);
 
   /* Semantic Bridge Tokens */
   --background: var(--wp-surface);
@@ -168,7 +156,6 @@
 }
 
 .dark {
-  --wp-paper-grain: none;
   /* Dark-mode accents are LIGHTER than their light-mode counterparts and pair
      with DARK foregrounds. The previous set kept white foregrounds on light
      accents, which measured as low as 1.92:1 (white on emerald-400). */
@@ -356,8 +343,6 @@
   --shadow-wp-xs: var(--wp-shadow-xs);
   --shadow-wp-sm: var(--wp-shadow-sm);
   --shadow-wp-md: var(--wp-shadow-md);
-  --shadow-wp-lg: var(--wp-shadow-lg);
-  --shadow-wp-xl: var(--wp-shadow-xl);
 
   --font-sans: var(--wp-font-base);
   --font-arabic: var(--wp-font-arabic);

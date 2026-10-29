@@ -37,13 +37,12 @@ export function buildValidatedOptions(
       if (!key || seen.has(key)) return false;
       seen.add(key);
       return true;
-    });
+    })
+    .slice(0, 3);
 
   if (unique.length < 2) return null;
 
-  const shuffledDistractors = stableShuffle(unique, seed);
-  const selected = shuffledDistractors.slice(0, 3);
-  const all = stableShuffle([correct, ...selected], seed + 1);
+  const all = stableShuffle([correct, ...unique], seed);
   const correctIndex = all.findIndex((o) => o === correct);
   return { options: all, correctIndex };
 }
@@ -59,7 +58,8 @@ export function buildPracticeItems(
   materials.blankExercises?.forEach((e: BlankExercise) => {
     const distractors = vocab
       .map((v) => v.label)
-      .filter((l) => l.toLowerCase() !== e.answer.toLowerCase());
+      .filter((l) => l.toLowerCase() !== e.answer.toLowerCase())
+      .slice(0, 5);
     const result = buildValidatedOptions(e.answer, distractors, idCounter * 31 + 7);
     idCounter++;
     if (!result) return;

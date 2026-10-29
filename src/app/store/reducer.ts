@@ -1,4 +1,3 @@
-import { readLessonResume } from "../lesson/lessonResume";
 import type { Screen, Action, OnboardStep } from "../types";
 import {
   COURSE_UNITS,
@@ -6,9 +5,9 @@ import {
   resolveGroup,
   resolveUnitForLesson,
 } from "../data/courseCatalog";
-import { CANONICAL_STAGE_COUNT, MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
+import { MAX_LESSON_STAGE_COUNT } from "../lesson/lessonSequence";
 
-export const ONBOARD_STEPS: OnboardStep[] = ["splash", "partners", "language", "ready"];
+export const ONBOARD_STEPS: OnboardStep[] = ["splash", "language", "ready"];
 export const TABBED_IDS: ReadonlySet<string> = new Set([
   "home",
   "learn",
@@ -16,15 +15,12 @@ export const TABBED_IDS: ReadonlySet<string> = new Set([
   "library",
   "practice",
   "review",
-  "skill-hub",
   "profile",
-  "settings",
 ]);
 
 export const STORAGE_KEY = "wordpix:learner-state:v4";
 
 export function reducer(state: Screen, action: Action): Screen {
-  if (action.type === "RESUME_LESSON") return readLessonResume(action.unitId) ?? state;
   if (action.type === "ONBOARD_NEXT") {
     if (state.id !== "onboarding") return state;
     const i = ONBOARD_STEPS.indexOf(state.step);
@@ -32,24 +28,14 @@ export function reducer(state: Screen, action: Action): Screen {
       ? { id: "onboarding", step: ONBOARD_STEPS[i + 1] }
       : { id: "home" };
   }
-  if (action.type === "ONBOARD_BACK") {
-    if (state.id !== "onboarding") return state;
-    const i = ONBOARD_STEPS.indexOf(state.step);
-    return i > 0 ? { id: "onboarding", step: ONBOARD_STEPS[i - 1] } : state;
-  }
-  if (action.type === "ONBOARD_GOTO") {
-    return { id: "onboarding", step: action.step };
-  }
   if (action.type === "GO") {
-    if (action.to === "lesson-entry")
-      return { id: "lesson-entry", unitId: action.unitId, returnTo: action.returnTo };
+    if (action.to === "lesson-entry") return { id: "lesson-entry", unitId: action.unitId };
     if (action.to === "learning-materials")
       return {
         id: "learning-materials",
         unitId: action.unitId,
         area: action.area,
         nodeId: action.nodeId,
-        returnTo: action.returnTo,
       };
     if (action.to === "skill-hub") return { id: "skill-hub" };
     if (action.to === "onboarding") return { id: "onboarding", step: "splash" };
@@ -63,7 +49,6 @@ export function reducer(state: Screen, action: Action): Screen {
           unitId: state.unitId,
           wordQueue: state.wordQueue,
           attempts: state.attempts,
-          reviewItems: state.reviewItems,
         };
       }
       return state;
@@ -122,20 +107,9 @@ export function reducer(state: Screen, action: Action): Screen {
       unitId: action.unitId,
       wordQueue: queue,
       step: initialStep,
-      totalSteps: action.totalSteps,
       attempts: [],
       startedAt: new Date().toISOString(),
-      reviewItems: action.reviewItems,
     };
-  }
-  if (action.type === "LESSON_SET_ITEM") {
-    if (
-      state.id !== "lesson" ||
-      !state.wordQueue.includes(action.wordId) ||
-      state.activeItemId === action.wordId
-    )
-      return state;
-    return { ...state, activeItemId: action.wordId };
   }
   if (action.type === "LESSON_ATTEMPT") {
     if (state.id !== "lesson") return state;
@@ -156,8 +130,7 @@ export function reducer(state: Screen, action: Action): Screen {
   }
   if (action.type === "LESSON_NEXT") {
     if (state.id !== "lesson") return state;
-    const maxSteps = state.totalSteps ?? CANONICAL_STAGE_COUNT;
-    if (state.step >= maxSteps - 1) {
+    if (state.step >= MAX_LESSON_STAGE_COUNT - 1) {
       return {
         id: "lesson-complete",
         mode: state.mode,
@@ -166,10 +139,9 @@ export function reducer(state: Screen, action: Action): Screen {
         unitId: state.unitId,
         wordQueue: state.wordQueue,
         attempts: state.attempts,
-        reviewItems: state.reviewItems,
       };
     }
-    return { ...state, step: state.step + 1, activeItemId: undefined };
+    return { ...state, step: state.step + 1 };
   }
   if (action.type === "LESSON_PREVIOUS") {
     if (state.id !== "lesson") return state;
@@ -177,50 +149,30 @@ export function reducer(state: Screen, action: Action): Screen {
       const unitId = state.unitId || resolveUnitForLesson(state.lessonId).id;
       return { id: "lesson-entry", unitId };
     }
-    return { ...state, step: state.step - 1, activeItemId: undefined };
+    return { ...state, step: state.step - 1 };
   }
   if (action.type === "LESSON_GOTO_STEP") {
     if (state.id !== "lesson") return state;
-    const maxSteps = state.totalSteps ?? CANONICAL_STAGE_COUNT;
-    if (action.step < 0 || action.step >= maxSteps) return state;
+    if (action.step < 0 || action.step >= MAX_LESSON_STAGE_COUNT) return state;
     if (action.step === state.step) return state;
-    return { ...state, step: action.step, activeItemId: undefined };
+    return { ...state, step: action.step };
   }
   return state;
 }
 
-let announceTimeout: ReturnType<typeof setTimeout> | null = null;
-
 export function ariaLiveAnnounce(msg: string) {
-  if (typeof document === "undefined") return;
   const el = document.getElementById("a11y-live-region");
-  if (!el) return;
-
-  if (announceTimeout !== null) {
-    clearTimeout(announceTimeout);
-  }
-
-  // Clear identical announcements first so assistive technology registers a DOM mutation
-  if (el.textContent === msg) {
-    el.textContent = "";
-  }
-
-  announceTimeout = setTimeout(() => {
-    el.textContent = msg;
-    announceTimeout = null;
-  }, 50);
+  if (el) el.textContent = msg;
 }
 
 export function describeScreen(
   screen: Screen,
   t: (key: string, options?: Record<string, string | number>) => string,
-  lessonStageCount = CANONICAL_STAGE_COUNT
+  lessonStageCount = MAX_LESSON_STAGE_COUNT
 ): string {
   switch (screen.id) {
     case "onboarding":
-      return screen.step === "partners"
-        ? `${t("app.title")}: ${t("onboarding.clientPortfolio")}`
-        : `${t("app.title")}: ${screen.step}`;
+      return `${t("app.title")}: ${screen.step}`;
     case "home":
       return t("nav.home");
     case "learn":
@@ -239,7 +191,7 @@ export function describeScreen(
     case "lesson":
       return t("lesson.stageProgress", {
         current: screen.step + 1,
-        total: screen.totalSteps ?? lessonStageCount,
+        total: lessonStageCount,
       });
     case "lesson-complete":
       return "Session complete";

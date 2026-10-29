@@ -1,4 +1,3 @@
-import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -8,8 +7,7 @@ test("Business recall supports answer-later navigation and retains checked answe
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.goto("/#/business/unit-02/recall", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/#/business/unit-02/recall");
   await expect(page.getByRole("heading", { name: /which word or phrase/i })).toBeVisible({
     timeout: 30_000,
   });
@@ -19,10 +17,10 @@ test("Business recall supports answer-later navigation and retains checked answe
   await expect(page.getByText("Question 2 of 7", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: /previous question/i }).click();
   await page.getByRole("radio", { name: "role", exact: true }).click();
+  await page.getByRole("button", { name: /check answer/i }).click();
   await expect(page.getByRole("status").filter({ hasText: /correct/i })).toContainText(/correct/i);
   await page.getByRole("button", { name: /begin lesson warm-up/i }).click();
-  await page.getByText("All steps", { exact: true }).click();
-  await page.getByRole("button", { name: /Step 1 of 9.*Recall/ }).click();
+  await page.getByRole("button", { name: "Recall", exact: true }).click();
   await expect(page.getByRole("radio", { name: "role", exact: true })).toHaveAttribute(
     "aria-checked",
     "true"
@@ -38,4 +36,8 @@ test("Business recall supports answer-later navigation and retains checked answe
     .analyze();
   expect(audit.violations).toEqual([]);
   expect(errors).toEqual([]);
+  await page.screenshot({
+    path: `output/playwright/guided-recall-${test.info().project.name}.png`,
+    fullPage: true,
+  });
 });

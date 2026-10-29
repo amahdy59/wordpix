@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../../shared/HelpDisclosure";
 import type { CourseUnit } from "../../data/lessons";
 import type { StudyNode, UnitStudyProgress, StudyArea } from "./types";
 import type { Action } from "../../types";
@@ -9,6 +10,7 @@ import {
   MessageCircleMore,
   Check,
   LibraryBig,
+  ArrowLeft,
   Clock,
   CheckCircle2,
   Sparkles,
@@ -19,9 +21,6 @@ import { useI18n } from "../../../i18n";
 import { getCurriculumStageLabel, type UnitCurriculumDesign } from "../curriculumModel";
 import { UnitVideoPlayer } from "../../shared";
 import { getUnitVideo } from "../../data/trialVideoData";
-import { getScenariosForUnit } from "../../data/scenarios/scenarioService";
-import { UnitScenarioPlayer } from "./UnitScenarioPlayer";
-import { useMemo } from "react";
 
 interface Props {
   unit: CourseUnit;
@@ -50,6 +49,7 @@ export function StudyHome({
   onContinue,
   onSelectArea,
   onSelectNode,
+  dispatch,
 }: Props) {
   const { t } = useI18n();
   const coreNodes = nodes.filter((n) => n.area !== "reference" && n.isCore !== false);
@@ -59,40 +59,33 @@ export function StudyHome({
   const percent = Math.round((completedCoreNodes.length / (coreNodes.length || 1)) * 100);
   const reviewDueCount = progress.reviewWordIds.length;
   const unitVideo = getUnitVideo(unit.id);
-  const unitScenarios = useMemo(() => getScenariosForUnit(unit.id), [unit.id]);
 
   // Prioritize the first incomplete core node, falling back to last active or first
   const continueNode =
-    (progress.lastNodeId
-      ? nodes.find((n) => n.id === progress.lastNodeId && !progress.completedNodeIds.includes(n.id))
-      : null) ??
     coreNodes.find((n) => !progress.completedNodeIds.includes(n.id)) ??
+    (progress.lastNodeId ? nodes.find((n) => n.id === progress.lastNodeId) : null) ??
     nodes[0];
 
   const getAreaNodes = (area: StudyArea) => nodes.filter((n) => n.area === area);
 
   return (
     <div className="wp-container-content wp-layout-gutter space-y-6 py-4 sm:space-y-8 sm:py-6 md:py-8">
-      {/* Continue Action */}
-      <div className="bg-gradient-to-br from-card via-card to-primary/5 border border-border/80 rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-5">
-        <div className="text-center sm:text-start flex-1 min-w-0">
-          <div className="inline-flex items-center gap-1.5 text-sm font-bold tracking-normal text-primary mb-1">
-            <Sparkles className="size-3.5" aria-hidden />
-            <span>{t("study.nextStep")}</span>
-          </div>
-          <h2 className="text-lg sm:text-xl font-bold text-foreground break-words">
-            {continueNode ? continueNode.title : t("study.startLearning")}
-          </h2>
-        </div>
-        <div className="w-full sm:w-auto shrink-0">
-          <PrimaryButton onClick={onContinue} label={t("action.continue")} />
-        </div>
-      </div>
+      {/* Breadcrumb Navigation */}
+      <nav aria-label="Breadcrumb" className="flex items-center justify-between">
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })}
+          className="inline-flex items-center gap-2 text-base font-bold text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl py-2 px-3 -ms-2 min-h-[44px] hover:bg-secondary/70 transition-colors"
+        >
+          <ArrowLeft className="size-4" aria-hidden />
+          <span>{t("study.backToUnit", { unit: unit.name })}</span>
+        </button>
+      </nav>
 
       {/* Unit Banner */}
       <div className="space-y-4">
         <div>
-          <span className="text-sm font-bold tracking-normal text-primary bg-secondary px-3 py-1 rounded-full inline-block">
+          <span className="text-sm font-bold uppercase tracking-wider text-primary bg-secondary px-3 py-1 rounded-full inline-block">
             {t("study.unitStudyMaterials")}
           </span>
           <h1 className="text-2xl sm:text-4xl font-extrabold text-foreground mt-2 tracking-tight">
@@ -100,117 +93,100 @@ export function StudyHome({
           </h1>
         </div>
 
-        <section
-          aria-labelledby="unit-outcome-heading"
-          className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-secondary p-4 sm:p-6"
-        >
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full bg-primary px-3 py-1 text-sm font-bold text-primary-foreground">
-              {curriculumDesign.reviewStatus === "authored"
-                ? `CEFR ${curriculumDesign.cefr}`
-                : t("study.suggestedLevel", { level: curriculumDesign.cefr })}
-            </span>
-            {curriculumDesign.reviewStatus === "authored" && (
-              <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-sm font-bold text-foreground">
-                GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
+        <HelpDisclosure label={t("help.aboutLesson")}>
+          <section
+            aria-labelledby="unit-outcome-heading"
+            className="rounded-2xl sm:rounded-3xl border border-primary/30 bg-secondary p-4 sm:p-6"
+          >
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="rounded-full bg-primary px-3 py-1 text-sm font-black text-primary-foreground">
+                {curriculumDesign.reviewStatus === "authored"
+                  ? `CEFR ${curriculumDesign.cefr}`
+                  : t("study.suggestedLevel", { level: curriculumDesign.cefr })}
               </span>
+              {curriculumDesign.reviewStatus === "authored" && (
+                <span className="rounded-full border border-primary/30 bg-card px-3 py-1 text-sm font-bold text-foreground">
+                  GSE {curriculumDesign.gseRange[0]}–{curriculumDesign.gseRange[1]}
+                </span>
+              )}
+              <span className="rounded-full border border-border bg-card px-3 py-1 text-sm font-bold capitalize text-muted-foreground">
+                {t("study.pathwayType", { type: curriculumDesign.archetype })}
+              </span>
+            </div>
+            {curriculumDesign.reviewStatus === "provisional" && (
+              <p className="mt-3 text-base text-muted-foreground">{t("study.provisionalUnit")}</p>
             )}
-            <span className="rounded-full border border-border bg-card px-3 py-1 text-sm font-bold capitalize text-muted-foreground">
-              {t("study.pathwayType", { type: curriculumDesign.archetype })}
-            </span>
-          </div>
-          {curriculumDesign.reviewStatus === "provisional" && (
-            <p className="mt-3 text-base text-muted-foreground">{t("study.provisionalUnit")}</p>
-          )}
-          <h2 id="unit-outcome-heading" className="mt-4 text-lg font-bold text-foreground">
-            {t("study.outcomeHeading")}
-          </h2>
-          <p className="mt-1 text-base leading-relaxed text-muted-foreground">
-            {curriculumDesign.outcome}
-          </p>
-          <ul className="mt-4 grid gap-2 sm:grid-cols-2" aria-label={t("ux.learningGoals")}>
-            {curriculumDesign.canDo.map((goal) => (
-              <li
-                key={goal}
-                className="flex items-start gap-2 text-base leading-relaxed text-foreground"
-              >
-                <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-wp-green" aria-hidden />
-                <span>{goal}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-4 border-t border-primary/20 pt-3 text-base font-semibold text-foreground">
-            <span className="text-primary">{t("study.finalMissionLabel")} </span>
-            {curriculumDesign.finalTask}
-          </p>
-        </section>
+            <h2 id="unit-outcome-heading" className="mt-4 text-lg font-black text-foreground">
+              {t("study.outcomeHeading")}
+            </h2>
+            <p className="mt-1 text-base leading-relaxed text-muted-foreground">
+              {curriculumDesign.outcome}
+            </p>
+            <ul className="mt-4 grid gap-2 sm:grid-cols-2" aria-label="Unit can-do goals">
+              {curriculumDesign.canDo.map((goal) => (
+                <li
+                  key={goal}
+                  className="flex items-start gap-2 text-base leading-relaxed text-foreground"
+                >
+                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-wp-green" aria-hidden />
+                  <span>{goal}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 border-t border-primary/20 pt-3 text-base font-semibold text-foreground">
+              <span className="text-primary">{t("study.finalMissionLabel")} </span>
+              {curriculumDesign.finalTask}
+            </p>
+          </section>
+        </HelpDisclosure>
 
-        {(unit.heroImage || unitScenarios.length > 0 || unitVideo) && (
-          <div className="space-y-4">
-            {unit.heroImage && (
-              <div className="rounded-2xl sm:rounded-3xl overflow-hidden bg-muted h-36 sm:h-52 relative border border-border/60 shadow-xs">
-                <img
-                  src={resolveAssetUrl(unit.heroImage)}
-                  alt={`${unit.name} environment scene`}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            )}
-
-            {unitScenarios.length > 0 && (
-              <UnitScenarioPlayer
-                scenarios={unitScenarios}
-                onInspectWord={(word) => {
-                  const normalized = word.trim().toLowerCase();
-                  const matchingNode = nodes.find(
-                    (n) =>
-                      n.area === "learn" && n.wordIds?.some((w) => w.toLowerCase() === normalized)
-                  );
-                  if (matchingNode) {
-                    onSelectNode(matchingNode.id);
-                  }
-                }}
-              />
-            )}
-
-            {unitVideo && (
-              <section
-                aria-labelledby="unit-video-trial-heading"
-                className="rounded-2xl sm:rounded-3xl border border-border bg-card p-4 sm:p-6 shadow-xs space-y-4"
-              >
-                <div className="flex items-center justify-between flex-wrap gap-2">
-                  <div className="flex items-center gap-2.5">
-                    <div className="size-9 rounded-xl bg-secondary text-primary flex items-center justify-center">
-                      <VideoIcon className="size-5" aria-hidden="true" />
-                    </div>
-                    <div>
-                      <h2
-                        id="unit-video-trial-heading"
-                        className="font-sans font-bold text-base sm:text-lg text-foreground"
-                      >
-                        {unitVideo.title}
-                      </h2>
-                      <p className="text-sm text-muted-foreground">{unitVideo.scenarioTitle}</p>
-                    </div>
-                  </div>
-                  <span className="text-sm font-bold tracking-normal text-primary bg-secondary px-2.5 py-1 rounded-full">
-                    {t("study.videoContext") || "Video Context"}
-                  </span>
-                </div>
-
-                <UnitVideoPlayer
-                  src={unitVideo.src}
-                  poster={unitVideo.poster}
-                  title={unitVideo.title}
-                  unitTitle={unit.name}
-                  cues={unitVideo.cues}
-                  visualDescription={unitVideo.visualDescription}
-                />
-              </section>
-            )}
+        {unit.heroImage && (
+          <div className="rounded-2xl sm:rounded-3xl overflow-hidden bg-muted h-36 sm:h-52 relative border border-border/60 shadow-xs">
+            <img
+              src={resolveAssetUrl(unit.heroImage)}
+              alt={`${unit.name} environment scene`}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
         )}
+
+        {unitVideo && (
+          <section
+            aria-labelledby="unit-video-trial-heading"
+            className="rounded-2xl sm:rounded-3xl border border-border bg-card p-4 sm:p-6 shadow-xs space-y-4"
+          >
+            <div className="flex items-center justify-between flex-wrap gap-2">
+              <div className="flex items-center gap-2.5">
+                <div className="size-9 rounded-xl bg-secondary text-primary flex items-center justify-center">
+                  <VideoIcon className="size-5" aria-hidden="true" />
+                </div>
+                <div>
+                  <h2
+                    id="unit-video-trial-heading"
+                    className="font-sans font-bold text-base sm:text-lg text-foreground"
+                  >
+                    {unitVideo.title}
+                  </h2>
+                  <p className="text-sm text-muted-foreground">{unitVideo.scenarioTitle}</p>
+                </div>
+              </div>
+              <span className="text-sm font-bold uppercase tracking-wider text-primary bg-secondary px-2.5 py-1 rounded-full">
+                {t("study.videoContext") || "Video Context"}
+              </span>
+            </div>
+
+            <UnitVideoPlayer
+              src={unitVideo.src}
+              poster={unitVideo.poster}
+              title={unitVideo.title}
+              unitTitle={unit.name}
+              cues={unitVideo.cues}
+              visualDescription={unitVideo.visualDescription}
+            />
+          </section>
+        )}
+
         {/* Progress Summary Card */}
         <div className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-border bg-card shadow-xs space-y-3 sm:space-y-4">
           <div className="flex justify-between items-center text-base font-bold">
@@ -227,10 +203,7 @@ export function StudyHome({
               aria-valuenow={percent}
               aria-valuemin={0}
               aria-valuemax={100}
-              aria-label={t("study.activitiesCompleted", {
-                completed: completedCoreNodes.length,
-                total: coreNodes.length,
-              })}
+              aria-label={`Activities completed: ${completedCoreNodes.length} of ${coreNodes.length}`}
             />
           </div>
 
@@ -252,6 +225,22 @@ export function StudyHome({
               </span>
             )}
           </div>
+        </div>
+      </div>
+
+      {/* Continue Action */}
+      <div className="bg-gradient-to-br from-card via-card to-primary/5 border border-border/80 rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-5">
+        <div className="text-center sm:text-start flex-1 min-w-0">
+          <div className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-primary mb-1">
+            <Sparkles className="size-3.5" aria-hidden />
+            <span>{t("study.nextStep")}</span>
+          </div>
+          <h2 className="text-lg sm:text-xl font-bold text-foreground truncate">
+            {continueNode ? continueNode.title : t("study.startLearning")}
+          </h2>
+        </div>
+        <div className="w-full sm:w-auto shrink-0">
+          <PrimaryButton onClick={onContinue} label={t("action.continue")} />
         </div>
       </div>
 
@@ -325,15 +314,13 @@ export function StudyHome({
                               )}
                             </span>
                             <div className="min-w-0">
-                              <span className="font-bold text-base text-foreground block break-words">
+                              <span className="font-bold text-base text-foreground block truncate">
                                 {node.title}
                               </span>
                               {node.stage && (
                                 <span className="text-sm font-bold uppercase tracking-wide text-primary block mt-0.5">
-                                  {t(`ux.curriculumStages.${node.stage}`, {
-                                    defaultValue: getCurriculumStageLabel(node.stage),
-                                  })}
-                                  {node.isCore === false ? ` · ${t("ux.optional")}` : ""}
+                                  {getCurriculumStageLabel(node.stage)}
+                                  {node.isCore === false ? " · Optional" : ""}
                                 </span>
                               )}
                             </div>
@@ -366,7 +353,7 @@ export function StudyHome({
               <LibraryBig className="size-6" aria-hidden />
             </span>
             <div className="min-w-0">
-              <span className="text-sm font-bold tracking-normal text-primary block">
+              <span className="text-sm font-bold uppercase tracking-wider text-primary block">
                 {t("study.languageToolkit")}
               </span>
               <h3 className="font-bold text-lg text-foreground mt-0.5 truncate">

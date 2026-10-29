@@ -126,7 +126,7 @@ export const ACADEMIC_LIFE_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "A difficult struggle.",
       example:
-        "Finishing the dissertation while working part-time was an uphill battle — but he managed it.",
+        "Finishing the dissertation while working part-time was an uphill battle — but she managed it.",
     },
     {
       id: "academic-life-go-back-to-basics",
@@ -134,7 +134,7 @@ export const ACADEMIC_LIFE_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To return to fundamental principles.",
       example:
-        "When the essay wasn't working, his tutor advised him to go back to basics — structure first, detail later.",
+        "When the essay wasn't working, her tutor advised her to go back to basics — structure first, detail later.",
     },
     {
       id: "academic-life-the-penny-dropped",

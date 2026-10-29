@@ -46,9 +46,9 @@ export function BilingualTextBlock({
 }: BilingualTextBlockProps) {
   return (
     <span className={className}>
-      <bdi className={`block ${englishClassName ?? ""}`} lang="en" dir="ltr">
+      <span className={`block ${englishClassName ?? ""}`} lang="en" dir="ltr">
         {english}
-      </bdi>
+      </span>
       {showArabic && arabic && (
         <bdi
           dir="rtl"

@@ -169,7 +169,7 @@ export const WEATHER_STATION_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "present something in a positive or negative way",
-      example: "The review painted his exhibition in a very positive light.",
+      example: "The review painted her exhibition in a very positive light.",
     },
     {
       id: "weather-station-sketch-out",

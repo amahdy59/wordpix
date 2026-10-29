@@ -127,7 +127,7 @@ export const MEETING_ROOM_LEARNING: UnitLearningMaterials = {
       phrase: "take the floor",
       kind: "idiom",
       meaning: "To speak in a meeting.",
-      example: "Samir, would you like to take the floor and present the Q3 figures?",
+      example: "Sarah, would you like to take the floor and present the Q3 figures?",
     },
     {
       id: "meeting-room-play-devil-s-advocate",

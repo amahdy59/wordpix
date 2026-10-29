@@ -83,8 +83,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "زَرَعْنَا صَفّاً عَطِراً مِنَ الخُزَامَى عَلَى طُولِ حَافَّةِ الحَدِيقَةِ المُشْمِسَةِ.",
       },
     ],
-    exampleSentence: "He tied a bundle of dried lavender with purple ribbon.",
-    exampleArabic: "ربط حزمة من الخزامى المجففة بشريط أرجواني.",
+    exampleSentence: "She tied a bundle of dried lavender with purple ribbon.",
+    exampleArabic:
+      "رَبَطَتْ حُزْمَةً مِنَ الخُزَامَى المُجَفَّفَةِ بِشَرِيطٍ أُرْجُوَانِيٍّ أَنِيقٍ.",
   },
   sandbox: {
     id: "sandbox",
@@ -282,8 +283,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Leisurely Exploration",
-        en: "He enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
-        ar: "استمتع بتصفح رف الإصدارات الجديدة بحثا عن روايات شيقة.",
+        en: "She enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
+        ar: "اسْتَمْتَعَتْ بِتَصَفُّحِ رَفِّ الإِصْدَارَاتِ الجَدِيدَةِ بِاسْتِرْخَاءٍ لِاكْتِشَافِ عَنَاوِينِ رِوَايَاتٍ مُشَوِّقَةٍ.",
       },
       {
         context: "Library Wandering",
@@ -297,8 +298,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
-    exampleArabic: "استمتع بتصفح رف الإصدارات الجديدة بحثا عن روايات شيقة.",
+      "She enjoyed casually browsing the new releases shelf to discover intriguing fiction titles.",
+    exampleArabic:
+      "اسْتَمْتَعَتْ بِتَصَفُّحِ رَفِّ الإِصْدَارَاتِ الجَدِيدَةِ بِاسْتِرْخَاءٍ لِاكْتِشَافِ عَنَاوِينِ رِوَايَاتٍ مُشَوِّقَةٍ.",
   },
   "granola-bar": {
     id: "granola-bar",

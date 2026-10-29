@@ -10,12 +10,9 @@ export default tseslint.config(
     ignores: [
       "dist",
       "node_modules",
-      "playwright-report/**",
-      "test-results/**",
       ".codex-integration-backup/**",
       ".playwright-cli/**",
       "output/**",
-      "outputs/**",
       "src/imports/**",
       "scripts/**",
       "scratch/**",

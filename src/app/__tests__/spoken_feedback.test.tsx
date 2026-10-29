@@ -31,25 +31,9 @@ vi.mock("../shared/useAudio", () => ({
   })),
 }));
 
-const { useSpokenFeedback, SPOKEN_ADVANCE_DELAY_MS, FEEDBACK_STALL_TIMEOUT_MS } =
-  await import("../shared/useSpokenFeedback");
+const { useSpokenFeedback, SPOKEN_ADVANCE_DELAY_MS } = await import("../shared/useSpokenFeedback");
 
 describe("useSpokenFeedback", () => {
-  it("completes stalled feedback once and cancels its obsolete completion", async () => {
-    const complete = vi.fn();
-    const { result } = renderHook(() => useSpokenFeedback());
-    act(() => result.current.speakFeedback({ correct: true, targetLabel: "cat" }, complete));
-    await act(async () => {
-      await vi.advanceTimersByTimeAsync(FEEDBACK_STALL_TIMEOUT_MS);
-    });
-    expect(complete).toHaveBeenCalledTimes(1);
-    act(() => result.current.speakFeedback({ correct: true, targetLabel: "cat" }, complete));
-    act(() => result.current.cancel());
-    await act(async () => {
-      await vi.advanceTimersByTimeAsync(FEEDBACK_STALL_TIMEOUT_MS);
-    });
-    expect(complete).toHaveBeenCalledTimes(1);
-  });
   beforeEach(() => {
     vi.useFakeTimers();
     spokenFeedbackPref = true;

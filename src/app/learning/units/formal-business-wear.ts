@@ -92,7 +92,7 @@ export const FORMAL_BUSINESS_WEAR_LEARNING: UnitLearningMaterials = {
       phrase: "dressed to the nines",
       kind: "idiom",
       meaning: "Wearing very elegant, formal clothes.",
-      example: "He arrived dressed to the nines — a stunning gown, pearls, and heels.",
+      example: "She arrived dressed to the nines — a stunning gown, pearls, and heels.",
     },
     {
       id: "formal-business-wear-suit-up",

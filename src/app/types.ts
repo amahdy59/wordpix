@@ -11,7 +11,7 @@ export interface WordFamily {
 
 export type WordRegister = "formal" | "casual" | "business" | "academic" | "general";
 
-export type OnboardStep = "splash" | "partners" | "language" | "ready";
+export type OnboardStep = "splash" | "language" | "ready";
 export type TabId = "home" | "learn" | "library" | "practice" | "profile";
 
 export type LearnerMode =
@@ -77,23 +77,12 @@ export type Screen =
   | { id: "practice" }
   | { id: "review" }
   | { id: "profile" }
-  | { id: "settings" }
   | { id: "release-notes" }
-  | {
-      id: "lesson-entry";
-      unitId?: string;
-      returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice";
-    }
+  | { id: "lesson-entry"; unitId?: string }
   /** Self-paced word browsing for one group — no session, no scoring. */
   | { id: "learn-words"; lessonId: string }
   /** Reference and self-paced practice for one unit, imported from Figma. */
-  | {
-      id: "learning-materials";
-      unitId?: string;
-      area?: string;
-      nodeId?: string;
-      returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice" | "lesson-entry";
-    }
+  | { id: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
   | { id: "pronunciation-curriculum" }
   | { id: "figma-pronunciation-lesson"; lessonNumber: number }
   | { id: "hadith-curriculum" }
@@ -120,11 +109,8 @@ export type Screen =
       unitId?: string;
       wordQueue: string[];
       step: number;
-      reviewItems?: import("./learning/wordIdentity").ReviewWord[];
-      totalSteps?: number;
       attempts: AnswerAttempt[];
       startedAt: string;
-      activeItemId?: string;
     }
   | {
       id: "lesson-complete";
@@ -134,7 +120,6 @@ export type Screen =
       unitId?: string;
       wordQueue: string[];
       attempts: AnswerAttempt[];
-      reviewItems?: import("./learning/wordIdentity").ReviewWord[];
     };
 
 /** Every destination GO can reach. Previously widened by an `as TabId` cast. */
@@ -152,28 +137,13 @@ export type GoTarget =
   | "hadith-curriculum"
   | "conversation-curriculum"
   | "business-curriculum"
-  | "settings"
   | "release-notes";
 
 export type Action =
   | { type: "ONBOARD_NEXT" }
-  | { type: "ONBOARD_BACK" }
-  | { type: "ONBOARD_GOTO"; step: OnboardStep }
   | { type: "GO"; to: Exclude<GoTarget, "lesson-entry" | "learning-materials"> }
-  | {
-      type: "GO";
-      to: "lesson-entry";
-      unitId?: string;
-      returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice";
-    }
-  | {
-      type: "GO";
-      to: "learning-materials";
-      unitId?: string;
-      area?: string;
-      nodeId?: string;
-      returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice" | "lesson-entry";
-    }
+  | { type: "GO"; to: "lesson-entry"; unitId?: string }
+  | { type: "GO"; to: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
   /** Enters self-paced word browsing for one group. */
   | { type: "GO_LEARN_WORDS"; lessonId: string }
@@ -202,8 +172,6 @@ export type Action =
       wordQueue?: string[];
       unitId?: string;
       initialStep?: number;
-      totalSteps?: number;
-      reviewItems?: import("./learning/wordIdentity").ReviewWord[];
     }
   | {
       type: "LESSON_ATTEMPT";
@@ -211,8 +179,6 @@ export type Action =
       correct: boolean;
       dimension?: MasteryDimension;
     }
-  | { type: "RESUME_LESSON"; unitId: string }
-  | { type: "LESSON_SET_ITEM"; wordId: string }
   | { type: "LESSON_NEXT" }
   | { type: "LESSON_PREVIOUS" }
   /** Jump to a specific 0-based step, used when the browser Back/Forward

@@ -26,8 +26,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Reading Corner",
-        en: "He curled up in the velvet armchair beside the window with an absorbing novel.",
-        ar: "جلس متكورا في الكرسي المخملي بجانب النافذة يقرأ رواية مشوقة.",
+        en: "She curled up in the velvet armchair beside the window with an absorbing novel.",
+        ar: "جَلَسَتْ مُسْتَرْخِيَةً فِي الكُرْسِيِّ المَخْمَلِيِّ بِجِوَارِ النَّافِذَةِ مَعَ رِوَايَةٍ شَيِّقَةٍ.",
       },
       {
         context: "Home Styling",
@@ -41,8 +41,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He curled up in the velvet armchair beside the window with an absorbing novel.",
-    exampleArabic: "جلس متكورا في الكرسي المخملي بجانب النافذة يقرأ رواية مشوقة.",
+      "She curled up in the velvet armchair beside the window with an absorbing novel.",
+    exampleArabic:
+      "جَلَسَتْ مُسْتَرْخِيَةً فِي الكُرْسِيِّ المَخْمَلِيِّ بِجِوَارِ النَّافِذَةِ مَعَ رِوَايَةٍ شَيِّقَةٍ.",
   },
   book: {
     id: "book",
@@ -63,7 +64,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "look through",
         meaning: "browse pages of a book",
         arabic: "يَتَصَفَّحُ الكِتَاب",
-        example: "He looked through the art book while waiting.",
+        example: "She looked through the art book while waiting.",
       },
       {
         phrase: "read through",
@@ -80,8 +81,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Library & Study",
-        en: "He borrowed three fascinating science books from the city public library.",
-        ar: "استعار ثلاثة كتب علمية شيقة من المكتبة العامة في المدينة.",
+        en: "She borrowed three fascinating science books from the city public library.",
+        ar: "اسْتَعَارَتْ ثَلاثَةَ كُتُبٍ عِلْمِيَّةٍ شَيِّقَةٍ مِنْ مَكْتَبَةِ المَدِينَةِ العَامَّةِ.",
       },
       {
         context: "Coffee Table Decor",
@@ -113,7 +114,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "wipe dry",
         meaning: "dry clean dishes with a towel",
         arabic: "يُجَفِّفُ بِالفُوطَة",
-        example: "He wiped dry all the wine glasses with a soft dish towel.",
+        example: "She wiped dry all the wine glasses with a soft dish towel.",
       },
       {
         phrase: "hang up",
@@ -227,8 +228,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "احْفَظْ جَزَّازَاتِ العُشْبِ الكَهْرَبَائِيَّةَ فِي كُوخِ الحَدِيقَةِ القَابِلِ لِلْقَفْلِ.",
       },
     ],
-    exampleSentence: "He hung his pruning shears on the wall rack inside the garden shed.",
-    exampleArabic: "علق مقص التقليم على حامل الحائط داخل سقيفة الحديقة.",
+    exampleSentence: "She hung her pruning shears on the wall rack inside the garden shed.",
+    exampleArabic:
+      "عَلَّقَتْ مِقَصَّاتِ التَّقْلِيمِ عَلَى حَامِلِ الجِدَارِ دَاخِلَ كُوخِ الحَدِيقَةِ.",
   },
   "cotton-balls": {
     id: "cotton-balls",
@@ -360,8 +362,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Health Check",
-        en: "He checked the child's temperature with a digital thermometer in the quiet clinic.",
-        ar: "قاس حرارة الطفل بميزان حرارة رقمي في العيادة الهادئة.",
+        en: "She checked the child's temperature with a digital thermometer in the quiet clinic.",
+        ar: "قَاسَتْ دَرَجَةَ حَرَارَةِ الطِّفْلِ بِمِقْيَاسِ حَرَارَةٍ رَقْمِيٍّ فِي العِيَادَةِ الهَادِئَةِ.",
       },
       {
         context: "Medical Records",

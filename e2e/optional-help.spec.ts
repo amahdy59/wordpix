@@ -1,4 +1,3 @@
-import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -10,8 +9,7 @@ for (const lang of ["en", "ar"] as const) {
       localStorage.setItem("wordpix:interface-lang", language);
     }, lang);
     await page.setViewportSize({ width: 320, height: 760 });
-    await page.goto("/#/conversation", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.goto("/#/conversation");
     const card = page.getByRole("article").first();
     const trigger = card.locator("summary");
     const details = card.locator("details");
@@ -52,13 +50,11 @@ for (const lang of ["en", "ar"] as const) {
 for (const course of ["conversation", "business", "hadith", "pronunciation"]) {
   test(`${course} orientation is optional while the next lesson stays available`, async ({
     page,
-  }) => {
+  }, testInfo) => {
     await page.goto(`/#/${course}`, { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
     const header = page.getByRole("main").locator("header").first();
     await expect(header.getByRole("heading", { level: 1 })).toBeVisible({ timeout: 20_000 });
-    const help = page
-      .getByRole("main")
+    const help = header
       .locator("details")
       .filter({ has: page.getByText("About this course", { exact: true }) });
     await expect(help).not.toHaveAttribute("open", "");
@@ -67,5 +63,9 @@ for (const course of ["conversation", "business", "hadith", "pronunciation"]) {
     await expect(header.getByRole("button").first()).toBeEnabled();
     await help.locator("summary").press("Escape");
     await expect(help).not.toHaveAttribute("open", "");
+    await page.screenshot({
+      path: `output/simplified-${course}-${testInfo.project.name}.png`,
+      animations: "disabled",
+    });
   });
 }

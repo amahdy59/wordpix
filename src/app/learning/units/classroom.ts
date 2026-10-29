@@ -160,7 +160,7 @@ export const CLASSROOM_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "meet the required standard; succeed",
       example:
-        "He studied with the dictionary and the workbook every night and finally made the grade.",
+        "She studied with the dictionary and the workbook every night and finally made the grade.",
     },
     {
       id: "classroom-teacher-s-pet",
@@ -196,7 +196,7 @@ export const CLASSROOM_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "succeed easily and impressively",
       example:
-        "He passed with flying colors — his index cards and sticky notes really helped him prepare.",
+        "She passed with flying colors — her index cards and sticky notes really helped her prepare.",
     },
     {
       id: "classroom-take-notes",
@@ -204,7 +204,7 @@ export const CLASSROOM_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "write down key points during a lesson",
-      example: "He always takes notes in class — it helps him remember.",
+      example: "She always takes notes in class — it helps her remember.",
     },
     {
       id: "classroom-write-down",

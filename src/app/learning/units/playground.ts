@@ -154,7 +154,7 @@ export const PLAYGROUND_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "alert and quick to respond",
       example:
-        "The teacher was on the ball — he blew the whistle the moment someone fell off the balance beam.",
+        "The teacher was on the ball — she blew the whistle the moment someone fell off the balance beam.",
     },
     {
       id: "playground-the-ball-is-in-your-court",
@@ -181,7 +181,7 @@ export const PLAYGROUND_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "take responsibility; accept a challenge",
       example:
-        "He stepped up to the plate and volunteered to climb the climbing frame even though it was his first time.",
+        "She stepped up to the plate and volunteered to climb the climbing frame even though it was her first time.",
     },
     {
       id: "playground-throw-in-the-towel",

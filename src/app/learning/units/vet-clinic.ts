@@ -127,7 +127,7 @@ export const VET_CLINIC_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "extremely ill or unwell",
       example:
-        "My cat was sick as a dog — we rushed to the vet clinic and the vet checked him with a stethoscope immediately.",
+        "My cat was sick as a dog — we rushed to the vet clinic and the vet checked her with a stethoscope immediately.",
     },
     {
       id: "vet-clinic-a-clean-bill-of-health",

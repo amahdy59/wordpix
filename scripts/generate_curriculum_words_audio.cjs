@@ -250,7 +250,7 @@ async function synthesise(clip, apiKey) {
     },
     body: JSON.stringify({
       text: clip.synthesisText,
-      model_id: "eleven_v4",
+      model_id: clip.profile.modelId,
       voice_settings: {
         stability: clip.profile.stability,
         similarity_boost: clip.profile.similarityBoost,
@@ -454,12 +454,6 @@ async function main() {
 
     // Upload to Cloudflare R2
     await r2.put(clip.objectKey, audioBuffer, { contentType: "audio/mpeg", immutable: true });
-
-    // Also upload under v4 content-addressed key for dual compatibility
-    const v4Key = audioKey(clip.synthesisText, { ...clip.profile, modelId: "eleven_v4" });
-    if (v4Key !== clip.objectKey) {
-      await r2.put(v4Key, audioBuffer, { contentType: "audio/mpeg", immutable: true });
-    }
     
     // Verify byte integrity in R2
     const uploaded = await r2.get(clip.objectKey);
@@ -468,22 +462,6 @@ async function main() {
     }
     uploadedCount++;
     newLedgerEntries.push(clip);
-
-    // Also update v4 ledger
-    try {
-      const v4LedgerPath = path.join(ROOT, "assets", "audio-ledger-v4-repaired.json");
-      if (fs.existsSync(v4LedgerPath)) {
-        const v4Ledger = JSON.parse(fs.readFileSync(v4LedgerPath, "utf8"));
-        const v4Hash = audioHash(clip.synthesisText, { ...clip.profile, modelId: "eleven_v4" });
-        v4Ledger.clips[v4Hash] = {
-          tier: "curriculum-words",
-          chars: clip.chars,
-          bytes: audioBuffer.length,
-          model: "eleven_v4"
-        };
-        fs.writeFileSync(v4LedgerPath, JSON.stringify(v4Ledger, null, 2) + "\n");
-      }
-    } catch {}
 
     // Save ledger periodically every 25 clips
     if (newLedgerEntries.length % 25 === 0) {

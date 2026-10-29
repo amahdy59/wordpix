@@ -74,7 +74,7 @@ export const RESTAURANT_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "everything possible; the full extent",
       example:
-        "He ordered the whole nine yards — appetizer on a plate, soup in a bowl, main with a fork, knife, and spoon, and dessert in a cup.",
+        "She ordered the whole nine yards — appetizer on a plate, soup in a bowl, main with a fork, knife, and spoon, and dessert in a cup.",
     },
     {
       id: "restaurant-a-tall-order",

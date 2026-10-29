@@ -8,7 +8,6 @@ export interface ExerciseFamilyTemplateProps {
   instruction: ReactNode;
   activityLabel: string;
   activity: ReactNode;
-  prompt?: ReactNode;
   media?: ReactNode;
   helper?: ReactNode;
   feedback?: ReactNode;
@@ -17,10 +16,10 @@ export interface ExerciseFamilyTemplateProps {
 }
 
 const measureByFamily: Record<ExerciseFamily, string> = {
-  "visual-choice": "wp-container-wide",
+  "visual-choice": "wp-container-content",
   "listening-speaking": "wp-container-reading",
-  "text-construction": "wp-container-wide",
-  "reading-context": "wp-container-wide",
+  "text-construction": "wp-container-content",
+  "reading-context": "wp-container-reading",
 };
 
 /**
@@ -32,7 +31,6 @@ export function ExerciseFamilyTemplate({
   instruction,
   activityLabel,
   activity,
-  prompt,
   media,
   helper,
   feedback,
@@ -45,12 +43,12 @@ export function ExerciseFamilyTemplate({
     <section
       data-exercise-family={family}
       aria-labelledby={instructionId}
-      className={`${measureByFamily[family]} wp-question-family flex w-full min-w-0 flex-col ${className}`}
+      className={`${measureByFamily[family]} flex w-full flex-col gap-4 sm:gap-5 ${className}`}
     >
-      <header className={`text-start shrink-0 ${prompt ? "sr-only sm:not-sr-only" : ""}`}>
+      <header className="text-start sm:text-center">
         <h2
           id={instructionId}
-          className="wp-question-instruction text-pretty font-sans text-foreground"
+          className="text-balance font-sans text-lg font-bold leading-snug text-foreground sm:text-xl"
         >
           {instruction}
         </h2>
@@ -59,14 +57,11 @@ export function ExerciseFamilyTemplate({
         )}
       </header>
 
-      <div className="wp-question-layout">
-        {prompt && (
-          <div data-exercise-zone="prompt" className="min-w-0">
-            {prompt}
-          </div>
-        )}
+      <div
+        className={media ? "grid min-w-0 gap-4 lg:grid-cols-2 lg:items-center lg:gap-6" : "min-w-0"}
+      >
         {media && (
-          <div data-exercise-zone="media" className="min-w-0 flex flex-col w-full">
+          <div data-exercise-zone="media" className="min-w-0">
             {media}
           </div>
         )}
@@ -74,22 +69,21 @@ export function ExerciseFamilyTemplate({
           data-exercise-zone="activity"
           role="group"
           aria-label={activityLabel}
-          className="min-w-0 flex flex-1 flex-col w-full"
+          className="min-w-0"
         >
           {activity}
         </div>
-        <div
-          data-exercise-zone="feedback"
-          className={`shrink-0 w-full min-w-0 ${feedback ? "" : "hidden"}`}
-        >
-          {feedback}
-        </div>
-        <div
-          data-exercise-zone="action"
-          className={`shrink-0 w-full min-w-0 mt-auto ${action ? "flex min-h-11 items-center justify-end" : "hidden"}`}
-        >
-          {action}
-        </div>
+      </div>
+
+      <div data-exercise-zone="feedback" className={feedback ? "" : "hidden"}>
+        {feedback}
+      </div>
+
+      <div
+        data-exercise-zone="action"
+        className={action ? "flex min-h-11 items-center justify-end" : "hidden"}
+      >
+        {action}
       </div>
     </section>
   );

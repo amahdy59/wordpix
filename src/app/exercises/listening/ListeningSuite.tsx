@@ -1,4 +1,4 @@
-import { memo, useCallback, useEffect, useMemo, useState } from "react";
+import { memo, useCallback, useMemo, useState } from "react";
 import type { Action } from "../../types";
 import { BEDROOM_VOCABULARY } from "../../data/courseCatalog";
 
@@ -12,7 +12,6 @@ import { useAccessibility } from "../../shared/useAccessibilityPreferences";
 import { useCountdown } from "../../shared/useCountdown";
 import { ExerciseTimer } from "../../shared/ExerciseTimer";
 import { useI18n } from "../../context/I18nContext";
-import { SentenceBlank } from "../../shared/SentenceBlank";
 
 interface Props {
   dispatch: React.Dispatch<Action>;
@@ -41,14 +40,6 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
     []
   );
   const sentence = `The cat is sleeping on the ${target.label.toLowerCase()}`;
-
-  useEffect(() => {
-    if (accessibility.autoPlayAudio === false) return undefined;
-    const t = setTimeout(() => {
-      speak(sentence);
-    }, 250);
-    return () => clearTimeout(t);
-  }, [sentence, speak, accessibility.autoPlayAudio]);
 
   const reveal = useCallback(() => {
     setResult((current) => current ?? "incorrect");
@@ -80,82 +71,79 @@ export const ExListeningDictationSprint = memo(function ExListeningDictationSpri
   const replaysLeft = MAX_REPLAYS - replaysUsed;
 
   return (
-    <div className="wp-question-screen bg-background">
+    <div className="min-h-dvh bg-background flex flex-col">
       <LessonHeader
-        title={t("suites.dictationSprint")}
+        title="Dictation Sprint (Cloze Input)"
         current={3}
         total={9}
         onBack={() => dispatch({ type: "GO", to: "explore" })}
         onClose={() => dispatch({ type: "GO", to: "home" })}
       />
-      <div className="wp-question-scroll wp-layout-gutter">
-        <div className="wp-container-reading flex flex-col gap-4">
-          <div className="flex flex-wrap items-center justify-between gap-3 bg-wp-card border border-border rounded-2xl p-4">
-            <ExerciseTimer
-              countdown={countdown}
-              enabled={timed}
-              label={t("suites.dictationTimeRemaining")}
-            />
-            <button
-              type="button"
-              onClick={handleReplay}
-              disabled={replaysLeft === 0}
-              className="px-3 min-h-[44px] rounded-xl bg-secondary text-primary font-sans font-bold text-xs border border-primary/20 disabled:opacity-50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-            >
-              {/* Was "Replays Left: {replays}/3" seeded from useState(2), so it
+      <div className="flex-1 max-w-2xl mx-auto w-full p-5 flex flex-col gap-5">
+        <div className="flex flex-wrap items-center justify-between gap-3 bg-wp-card border border-border rounded-2xl p-4">
+          <ExerciseTimer countdown={countdown} enabled={timed} label="Dictation time remaining" />
+          <button
+            type="button"
+            onClick={handleReplay}
+            disabled={replaysLeft === 0}
+            className="px-3 min-h-[44px] rounded-xl bg-secondary text-primary font-sans font-bold text-xs border border-primary/20 disabled:opacity-50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            {/* Was "Replays Left: {replays}/3" seeded from useState(2), so it
                 opened claiming 2 of 3 before anything had been used. */}
-              {t("suites.replaysLeft", { current: replaysLeft, total: MAX_REPLAYS })}
-            </button>
-          </div>
-
-          <form onSubmit={submit} className="flex flex-col gap-4">
-            <h2 data-question-prompt className="wp-question-prompt font-sans" lang="en" dir="ltr">
-              {`“The cat is sleeping on the `}
-              <SentenceBlank>{typed}</SentenceBlank>
-              {`.”`}
-            </h2>
-
-            <label htmlFor="dictation-entry" className="sr-only">
-              {t("suites.typeMissingWord")}
-            </label>
-            <input
-              id="dictation-entry"
-              type="text"
-              value={typed}
-              onChange={(e) => setTyped(e.target.value)}
-              disabled={result !== null}
-              autoComplete="off"
-              lang="en"
-              dir="ltr"
-              placeholder={t("listening.missingWordPlaceholder")}
-              className="w-full min-h-[52px] bg-background border border-border rounded-xl p-4 font-sans font-bold text-foreground text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-60"
-            />
-
-            {result && (
-              <div
-                role="status"
-                className={`rounded-2xl border p-4 font-sans text-sm ${
-                  result === "correct"
-                    ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground font-semibold"
-                    : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground font-semibold"
-                }`}
-              >
-                {result === "correct"
-                  ? t("suites.dictationCorrect", { word: target.label })
-                  : t("suites.dictationIncorrect", { word: target.label })}
-              </div>
-            )}
-
-            {result ? (
-              <PrimaryButton
-                label={t("suites.backToExercises")}
-                onClick={() => dispatch({ type: "GO", to: "explore" })}
-              />
-            ) : (
-              <PrimaryButton label={t("suites.submitDictation")} type="submit" />
-            )}
-          </form>
+            {t("suites.replaysLeft", { current: replaysLeft, total: MAX_REPLAYS })}
+          </button>
         </div>
+
+        <form
+          onSubmit={submit}
+          className="bg-wp-card border border-border rounded-3xl p-6 flex flex-col gap-4"
+        >
+          <h2 className="font-sans font-bold text-foreground text-xl">
+            {`“The cat is sleeping on the `}
+            <span className="underline text-primary decoration-primary decoration-2 underline-offset-4">
+              {typed || "_______"}
+            </span>
+            {`.”`}
+          </h2>
+
+          <label htmlFor="dictation-entry" className="sr-only">
+            {t("suites.typeMissingWord")}
+          </label>
+          <input
+            id="dictation-entry"
+            type="text"
+            value={typed}
+            onChange={(e) => setTyped(e.target.value)}
+            disabled={result !== null}
+            autoComplete="off"
+            placeholder={t("listening.missingWordPlaceholder")}
+            className="w-full min-h-[52px] bg-background border border-border rounded-xl p-4 font-sans font-bold text-foreground text-base focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-60"
+          />
+
+          {result && (
+            <div
+              role="status"
+              className={`rounded-2xl border p-4 font-sans text-sm ${
+                result === "correct"
+                  ? "border-wp-green bg-wp-green-light/40 text-foreground"
+                  : "border-wp-rose bg-wp-rose-light/40 text-foreground"
+              }`}
+            >
+              {result === "correct"
+                ? `Correct — the word is "${target.label}".`
+                : `The word was "${target.label}".`}
+            </div>
+          )}
+
+          {result ? (
+            <PrimaryButton
+              label="Back to Exercises"
+              onClick={() => dispatch({ type: "GO", to: "explore" })}
+            />
+          ) : (
+            <PrimaryButton label="Submit Dictation" type="submit" />
+          )}
+        </form>
       </div>
     </div>
   );

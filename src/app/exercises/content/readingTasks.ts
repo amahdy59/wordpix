@@ -16,14 +16,14 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
         id: "reveal-1",
         kind: "choice",
         prompt:
-          '"Adam stood in the sunlit bedroom, his hands smoothing the fresh blanket." What was he touching?',
+          '"Elena stood in the sunlit bedroom, her hands smoothing the fresh blanket." What was she touching?',
         options: [
           { id: "blanket", label: "A woven cover for warmth", correct: true },
           { id: "curtain", label: "Fabric hanging across a window" },
           { id: "rug", label: "A loose covering on the floor" },
           { id: "poster", label: "A printed sheet on the wall" },
         ],
-        explanation: "He was smoothing the blanket — a woven cover laid over the bed for warmth.",
+        explanation: "She was smoothing the blanket — a woven cover laid over the bed for warmth.",
       },
       {
         id: "reveal-2",
@@ -41,7 +41,7 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "reveal-3",
         kind: "entry",
-        prompt: '"He opened the tall ______ to hang his favourite winter coat." Which word fits?',
+        prompt: '"She opened the tall ______ to hang her favourite winter coat." Which word fits?',
         accept: [word("wardrobe").label],
         explanation: `A ${word("wardrobe").label.toLowerCase()} is where clothes hang. ${word("wardrobe").description}`,
       },
@@ -70,12 +70,12 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
       {
         id: "article",
         kind: "choice",
-        prompt: 'Which word is wrong? "He put a pillows on the bed."',
+        prompt: 'Which word is wrong? "She put a pillows on the bed."',
         options: [
           { id: "pillows", label: "pillows", correct: true },
           { id: "put", label: "put" },
           { id: "bed", label: "bed" },
-          { id: "she", label: "He" },
+          { id: "she", label: "She" },
         ],
         explanation: '"a" is singular, so it must be followed by "pillow", not "pillows".',
       },
@@ -94,10 +94,10 @@ export const READING_EXERCISES: Record<string, ExerciseDefinition> = {
         kind: "order",
         prompt: "Put the panels in the order the story happens.",
         solution: [
-          "He wakes up",
-          "He opens the curtains",
-          "He makes the bed",
-          "He leaves the room",
+          "She wakes up",
+          "She opens the curtains",
+          "She makes the bed",
+          "She leaves the room",
         ],
         explanation:
           "Waking comes first, then light, then tidying, then leaving — each step depends on the one before it.",

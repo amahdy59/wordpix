@@ -47,24 +47,10 @@ export function getPronunciationAudioClip(
   const clips = PRONUNCIATION_AUDIO_MANIFEST.clips[normalizePronunciationAudioLabel(displayText)];
   if (!clips?.length) return null;
   if (transfer) {
-    const distinctSpeakerV4 = [...clips]
-      .reverse()
-      .find((clip) => clip.profile.modelId === "eleven_v4" && clip.speaker !== clips[0].speaker);
-    if (distinctSpeakerV4) return distinctSpeakerV4;
     const distinctSpeaker = [...clips].reverse().find((clip) => clip.speaker !== clips[0].speaker);
     return distinctSpeaker ?? clips.at(-1) ?? null;
   }
   return (
-    clips.find(
-      (clip) =>
-        clip.profile.modelId === "eleven_v4" &&
-        clip.displayText === displayText &&
-        clip.source === "derived-profile"
-    ) ??
-    clips.find(
-      (clip) => clip.profile.modelId === "eleven_v4" && clip.displayText === displayText
-    ) ??
-    clips.find((clip) => clip.profile.modelId === "eleven_v4") ??
     clips.find((clip) => clip.displayText === displayText && clip.source === "derived-profile") ??
     clips.find((clip) => clip.displayText === displayText) ??
     clips[0]

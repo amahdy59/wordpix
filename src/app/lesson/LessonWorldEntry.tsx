@@ -1,4 +1,3 @@
-import { readLessonResume } from "./lessonResume";
 import { memo, useState, useEffect } from "react";
 import type { Action } from "../types";
 
@@ -20,36 +19,20 @@ import { hasLearningMaterials } from "../learning/registry";
 import { useProgress } from "../data/progress";
 import { useI18n } from "../../i18n";
 import { useLearner } from "../context/LearnerContext";
-import { unitWordMemory } from "../learning/wordIdentity";
 import { getUnitCurriculumDesign } from "../learning/curriculumModel";
-import {
-  getLessonStepLabels,
-  getStoryStepIndex,
-  selectPracticeWordQueue,
-  buildInterleavedLessonPlan,
-} from "./lessonSequence";
+import { getLessonStepLabels, getStoryStepIndex, selectPracticeWordQueue } from "./lessonSequence";
 import { buildUnitAssessmentSample } from "./assessmentBlueprint";
 
 interface Props {
   unitId?: string;
   dispatch: React.Dispatch<Action>;
-  /** Where the back button should navigate. Defaults to "explore". */
-  returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice";
 }
 
-export const LessonWorldEntry = memo(function LessonWorldEntry({
-  unitId,
-  dispatch,
-  returnTo = "explore",
-}: Props) {
+export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatch }: Props) {
   const { t } = useI18n();
   const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   const isHadithUnit = world.id === "hadith-niyyah";
-  const { progress: globalProgress } = useProgress();
-  const progress = {
-    ...globalProgress,
-    wordMemory: unitWordMemory(globalProgress.wordMemory, world.id),
-  };
+  const { progress } = useProgress();
   const { state: learnerState } = useLearner();
   const curriculum = getUnitCurriculumDesign(world);
   const stepLabels = getLessonStepLabels(
@@ -66,13 +49,6 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
     return mastery === "familiar" || mastery === "strong";
   };
 
-  const resume = readLessonResume(world.id);
-  const recommendedGroup =
-    world.groups.find(
-      (group) => !group.wordIds.every((id) => progress.wordMemory[id]?.mastery === "strong")
-    ) ?? world.groups[0];
-  const recommendedWords =
-    resume?.wordQueue ?? selectPracticeWordQueue(recommendedGroup.wordIds, progress.wordMemory);
   const startedGroups = world.groups.filter((g) => g.wordIds.some(isWordStarted)).length;
   const secondaryAction =
     "min-h-12 rounded-xl border border-border bg-wp-card px-4 py-2 text-foreground font-semibold inline-flex items-center justify-center gap-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-secondary";
@@ -116,19 +92,12 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
       dispatch({ type: "OPEN_HADITH_LESSON", lessonId: "hadith-01" });
       return;
     }
-    const words = selectPracticeWordQueue(group.wordIds, progress.wordMemory);
-    const plan = buildInterleavedLessonPlan(
-      words,
-      learnerState.preferences.englishLevel,
-      learnerState.accessibility.includeListening
-    );
     dispatch({
       type: "START_LESSON",
       lessonId: group.id,
       unitId: world.id,
       mode: "NEW_LESSON",
-      wordQueue: words,
-      totalSteps: plan.length,
+      wordQueue: selectPracticeWordQueue(group.wordIds, progress.wordMemory),
       initialStep,
     });
   };
@@ -151,7 +120,6 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
       unitId: world.id,
       mode: "UNIT_ASSESSMENT",
       wordQueue: selected,
-      totalSteps: 1,
     });
   };
 
@@ -161,15 +129,15 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
         <div className="flex items-center gap-3 min-w-0">
           <button
             type="button"
-            aria-label={t("action.back")}
-            onClick={() => dispatch({ type: "GO", to: returnTo })}
+            aria-label="Back to units"
+            onClick={() => dispatch({ type: "GO", to: "explore" })}
             className="min-h-11 min-w-11 px-3 inline-flex items-center justify-center gap-2 rounded-xl border border-border focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <ArrowRight className="size-5 rotate-180 rtl:rotate-0" aria-hidden />
             <span className="hidden sm:inline">{t("action.back")}</span>
           </button>
           <div className="min-w-0">
-            <h1 className="break-words font-bold text-foreground text-xl">{world.name}</h1>
+            <h1 className="font-bold text-foreground text-xl">{world.name}</h1>
             <p className="text-muted-foreground text-base">{t("lesson.chooseVocabGroup")}</p>
           </div>
         </div>
@@ -183,11 +151,14 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
           </span>
         </span>
       </header>
-      <section aria-label={t("lesson.selectWordGroup")} className="flex-1 overflow-y-auto min-h-0">
-        <div className="wp-container-content wp-layout-gutter py-4 lg:py-8 pb-[max(6rem,env(safe-area-inset-bottom))]">
+      <section aria-label="Word groups" className="flex-1 overflow-y-auto min-h-0">
+        <div className="w-full max-w-[1040px] mx-auto p-4 lg:p-8 pb-[max(6rem,env(safe-area-inset-bottom))]">
           <div className="mb-6 flex flex-col gap-4">
             <div className="rounded-3xl border border-primary/30 bg-secondary p-5 sm:p-6 shadow-wp-xs">
               <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-sm font-black uppercase tracking-wider text-primary">
+                  {t("lesson.unitOutcome")}
+                </span>
                 <span className="text-sm font-bold text-muted-foreground">
                   {t("lesson.groupsStarted", {
                     started: startedGroups,
@@ -195,26 +166,14 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                   })}
                 </span>
               </div>
-              <p className="mt-2 text-xl sm:text-2xl font-bold text-foreground leading-snug">
+              <p className="mt-2 text-xl sm:text-2xl font-black text-foreground leading-snug">
                 {curriculum.outcome}
+              </p>
+              <p className="mt-1 text-base text-muted-foreground leading-relaxed">
+                {world.description}
               </p>
 
               <div className="mt-4 flex flex-wrap items-center gap-3">
-                {recommendedGroup && (
-                  <button
-                    type="button"
-                    onClick={() =>
-                      resume
-                        ? dispatch({ type: "RESUME_LESSON", unitId: world.id })
-                        : handleStartGroup(recommendedGroup.id)
-                    }
-                    className="min-h-12 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-                  >
-                    {resume
-                      ? t("ux.resume")
-                      : t("ux.startGroup", { number: world.groups.indexOf(recommendedGroup) + 1 })}
-                  </button>
-                )}
                 {hasLearningMaterials(world.id) && (
                   <button
                     type="button"
@@ -226,10 +185,9 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                             to: "learning-materials",
                             unitId: world.id,
                             area: "learn",
-                            returnTo: "lesson-entry",
                           })
                     }
-                    className={secondaryAction}
+                    className="min-h-12 rounded-xl bg-primary px-5 py-3 font-bold text-primary-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary inline-flex items-center gap-2 shadow-wp-xs"
                   >
                     <BookOpen className="size-4 shrink-0" aria-hidden="true" />
                     <span>
@@ -243,37 +201,23 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                   type="button"
                   onClick={handleTakeAssessment}
                   className={secondaryAction}
-                  title={t("lesson.testOutHint")}
+                  title="Demonstrate mastery of this unit to skip ahead"
                 >
                   <GraduationCap className="size-5 shrink-0" aria-hidden="true" />
                   <span>{t("lesson.testOut")}</span>
                 </button>
               </div>
 
-              {recommendedGroup && (
-                <p className="mt-3 text-sm text-muted-foreground">
-                  {t("reviewUpdate.sessionGroup", {
-                    session: recommendedWords.length,
-                    group: recommendedGroup.wordIds.length,
-                  })}{" "}
-                  ·{" "}
-                  {t("ux.sessionEffort", {
-                    words: recommendedWords.length,
-                    steps:
-                      resume?.totalSteps ??
-                      buildInterleavedLessonPlan(
-                        recommendedWords,
-                        learnerState.preferences.englishLevel,
-                        learnerState.accessibility.includeListening
-                      ).length,
-                    minutes: Math.ceil(recommendedWords.length * 0.75),
-                  })}
-                </p>
-              )}
+              <p className="mt-2.5 text-sm text-muted-foreground">
+                {t("lesson.testOutHint", {
+                  defaultValue:
+                    "Test out: complete a quick assessment covering all unit words to mark them mastered.",
+                })}
+              </p>
             </div>
 
             <div className="flex items-center justify-between">
-              <h2 className="font-sans font-bold text-lg text-foreground">
+              <h2 className="font-sans font-black text-lg text-foreground">
                 {t("lesson.selectWordGroup")}
               </h2>
               <span className="text-sm font-medium text-muted-foreground">
@@ -289,12 +233,10 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
               const learnedCount = g.wordIds.filter(isWordSecure).length;
               const isCompleted = learnedCount === g.wordIds.length && g.wordIds.length > 0;
               const hasStarted = g.wordIds.some(isWordStarted) && !isCompleted;
-              const action = t(
-                isCompleted ? "ux.review" : hasStarted ? "action.continue" : "ux.start"
-              );
+              const action = isCompleted ? "Review" : hasStarted ? "Continue" : "Start";
               const count = learnedCount
-                ? t("ux.wordsLearned", { current: learnedCount, total: g.wordIds.length })
-                : t("explore.wordsBadge", { count: g.wordIds.length });
+                ? `${learnedCount} of ${g.wordIds.length} learned`
+                : `${g.wordIds.length} words`;
               const words = getWords(g.wordIds, world.id);
               const samples = words.slice(0, 4).map((word) => word.label);
               const remainder = g.wordIds.length - samples.length;
@@ -307,23 +249,8 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                 >
                   <button
                     type="button"
-                    onClick={() => {
-                      if (resume && resume.lessonId === g.id) {
-                        dispatch({ type: "RESUME_LESSON", unitId: world.id });
-                      } else {
-                        handleStartGroup(g.id);
-                      }
-                    }}
-                    aria-label={t("ux.groupAction", {
-                      action,
-                      number: index + 1,
-                      title: g.name,
-                      theme: t("ux.groupTitle", {
-                        number: index + 1,
-                        words: samples.slice(0, 2).join(" · ") || g.name,
-                      }),
-                      count,
-                    })}
+                    onClick={() => handleStartGroup(g.id)}
+                    aria-label={`${action} lesson: ${g.name}. Group ${index + 1}. ${isCompleted ? "Completed. " : hasStarted ? "In progress. " : ""}${count}.`}
                     className="min-w-0 flex-1 rounded-xl p-4 pb-14 sm:pb-4 flex items-center gap-3 sm:gap-6 text-start focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary hover:bg-secondary/50"
                   >
                     <span className="shrink-0 w-20 h-20 sm:w-28 sm:h-24 rounded-xl overflow-hidden bg-muted">
@@ -340,12 +267,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                       )}
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block font-bold text-lg text-foreground">
-                        {t("ux.groupTitle", {
-                          number: index + 1,
-                          words: samples.slice(0, 2).join(" · ") || g.name,
-                        })}
-                      </span>
+                      <span className="block font-bold text-lg text-foreground">{g.name}</span>
                       {samples.length > 0 && (
                         <span className="block text-base text-muted-foreground mt-1 break-words">
                           {samples.join(" · ")}
@@ -354,7 +276,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                       )}
                       {learnedCount > 0 && (
                         <span className="inline-block text-base font-semibold text-primary bg-secondary rounded-lg px-2 mt-2">
-                          {t(isCompleted ? "ux.completed" : "ux.inProgress")}
+                          {isCompleted ? "Completed" : "In progress"}
                         </span>
                       )}
                       <span className="block text-base text-foreground mt-2">{count}</span>
@@ -385,33 +307,20 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                   {learnedCount > 0 && (
                     <progress
                       className="sr-only"
-                      aria-label={t("ux.groupProgress", { title: g.name })}
+                      aria-label={`${g.name} words learned`}
                       value={learnedCount}
                       max={g.wordIds.length}
                     />
                   )}
-                  {/* Lesson Options Dropdown Trigger Button & Preview Shortcut */}
-                  <div className="absolute bottom-2 end-2 sm:relative sm:bottom-auto sm:end-auto flex items-center gap-1.5">
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        handleBrowseWords(g.id);
-                      }}
-                      title={t("lesson.browseWords")}
-                      aria-label={`${t("lesson.browseWords")} - ${g.name}`}
-                      className="hidden sm:flex min-w-[44px] min-h-[44px] px-3 items-center justify-center gap-1.5 rounded-xl border border-border bg-wp-card hover:bg-secondary text-foreground hover:text-primary transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 font-sans font-semibold text-sm cursor-pointer"
-                    >
-                      <BookOpen className="size-4 text-primary" aria-hidden />
-                      <span>{t("lesson.browseWords")}</span>
-                    </button>
+                  {/* Lesson Options Dropdown Trigger Button */}
+                  <div className="absolute bottom-2 end-2 sm:relative sm:bottom-auto sm:end-auto">
                     <button
                       type="button"
                       id={`menu-trigger-${g.id}`}
                       aria-haspopup="menu"
                       aria-expanded={isMenuOpen}
                       aria-controls={`menu-dropdown-${g.id}`}
-                      aria-label={t("ux.groupOptions", { title: g.name })}
+                      aria-label={`More options and quick navigation for ${g.name}`}
                       onClick={(e) => {
                         e.stopPropagation();
                         setOpenMenuId(isMenuOpen ? null : g.id);
@@ -477,7 +386,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                           }`}
                         >
                           <div className="px-3 py-2 border-b border-border/60 mb-1">
-                            <p className="font-sans font-bold text-sm text-foreground tracking-normal">
+                            <p className="font-sans font-bold text-sm text-foreground uppercase tracking-wider">
                               {t("lesson.lessonOptions")}
                             </p>
                             <p className="font-sans text-sm text-muted-foreground truncate">
@@ -498,7 +407,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                                 )
                               )
                             }
-                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                           >
                             <div className="size-8 rounded-lg bg-wp-amber/10 text-wp-amber-foreground flex items-center justify-center shrink-0">
                               <BookOpen className="size-4" />
@@ -518,7 +427,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                             type="button"
                             role="menuitem"
                             onClick={() => handleBrowseWords(g.id)}
-                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                           >
                             <div className="size-8 rounded-lg bg-secondary text-primary flex items-center justify-center shrink-0">
                               <Compass className="size-4" />
@@ -533,44 +442,12 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                             </div>
                           </button>
 
-                          {/* 3. Unit Study Materials */}
-                          {hasLearningMaterials(world.id) && (
-                            <button
-                              type="button"
-                              role="menuitem"
-                              onClick={() => {
-                                setOpenMenuId(null);
-                                setExpandedStepMenuId(null);
-                                dispatch({
-                                  type: "GO",
-                                  to: "learning-materials",
-                                  unitId: world.id,
-                                  area: "learn",
-                                  returnTo: "lesson-entry",
-                                });
-                              }}
-                              className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
-                            >
-                              <div className="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                                <BookOpen className="size-4" />
-                              </div>
-                              <div className="flex-1">
-                                <p className="font-sans font-semibold text-base leading-tight text-foreground">
-                                  {t("lesson.studyMaterialsBtn")}
-                                </p>
-                                <p className="font-sans text-sm text-muted-foreground">
-                                  {t("lesson.studyMaterialsDesc")}
-                                </p>
-                              </div>
-                            </button>
-                          )}
-
-                          {/* 4. Practice Drills */}
+                          {/* 3. Practice Drills */}
                           <button
                             type="button"
                             role="menuitem"
                             onClick={() => handleStartGroup(g.id, 0)}
-                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
+                            className="cursor-pointer w-full text-start flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                           >
                             <div className="size-8 rounded-lg bg-wp-green-light text-wp-green flex items-center justify-center shrink-0">
                               <Play className="size-4 fill-current" />
@@ -595,7 +472,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                                 e.stopPropagation();
                                 setExpandedStepMenuId(expandedStepMenuId === g.id ? null : g.id);
                               }}
-                              className="cursor-pointer w-full text-start flex items-center justify-between px-3 py-2 rounded-xl hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
+                              className="cursor-pointer w-full text-start flex items-center justify-between px-3 py-2 rounded-xl hover:bg-secondary transition-colors text-muted-foreground hover:text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
                               aria-expanded={expandedStepMenuId === g.id}
                               aria-controls={`step-menu-${g.id}`}
                               aria-haspopup="menu"
@@ -627,12 +504,12 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({
                                     type="button"
                                     role="menuitem"
                                     onClick={() => handleStartGroup(g.id, item.step)}
-                                    className="cursor-pointer w-full text-start flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary min-h-[44px]"
+                                    className="cursor-pointer w-full text-start flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-secondary transition-colors text-foreground focus-visible:bg-secondary focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary min-h-[44px]"
                                   >
                                     <span className="text-base">{item.icon}</span>
                                     <div className="flex-1 min-w-0">
                                       <p className="font-sans font-medium text-sm truncate">
-                                        {item.step + 1}. {t(`ux.exercises.${item.exercise}`)}
+                                        {item.step + 1}. {item.name}
                                       </p>
                                     </div>
                                   </button>

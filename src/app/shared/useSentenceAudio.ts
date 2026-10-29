@@ -45,7 +45,7 @@ export function useSentenceAudio(text: string) {
   useEffect(() => {
     next.current = () => {
       const fragment = pending.current.shift();
-      if (fragment) speak(fragment);
+      if (fragment) speak(fragment, undefined, undefined, { synthesisOnly: true });
     };
   }, [speak]);
 

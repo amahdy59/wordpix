@@ -60,8 +60,7 @@ try {
                 .transaction("audio_cache")
                 .objectStore("audio_cache")
                 .get(`cdn:${url}`);
-              request.onsuccess = () =>
-                resolve(request.result?.bytes?.byteLength || request.result?.blob?.size || 0);
+              request.onsuccess = () => resolve(request.result?.blob?.size || 0);
               request.onerror = () => reject(request.error);
             });
           } finally {
@@ -75,10 +74,7 @@ try {
   await page.reload();
   await page.getByRole("button", { name: "Listen to Toilet", exact: true }).waitFor();
   await context.setOffline(true);
-  const learningStatus = page.getByRole("combobox", {
-    name: "Toilet learning status",
-    exact: true,
-  });
+  const learningStatus = page.getByRole("combobox", { name: "Toilet learning status", exact: true });
   await learningStatus.click();
   await page.getByRole("option", { name: /review/i, exact: true }).click();
   await play();

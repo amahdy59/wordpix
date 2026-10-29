@@ -136,8 +136,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Cleaning",
-        en: "He shook the dust out of the bedside rug on the balcony.",
-        ar: "نفض الغبار من سجادة جانب السرير في الشرفة.",
+        en: "She shook the dust out of the bedside rug on the balcony.",
+        ar: "نَفَضَتِ الغُبَارَ عَنْ سَجَّادَةِ جَانِبِ السَّرِيرِ فِي الشُّرْفَةِ.",
       },
     ],
     exampleSentence: "A soft fluffy rug keeps your bare feet warm when stepping out of bed.",
@@ -174,8 +174,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Quiet Operation",
-        en: "He chose a silent quartz wall clock so the ticking wouldn't distract him while he was studying.",
-        ar: "اختار ساعة حائط كوارتز صامتة حتى لا يشتته التكتكة المستمرة أثناء الدراسة.",
+        en: "She chose a silent quartz wall clock so the continuous ticking wouldn't distract her studying.",
+        ar: "اخْتَارَتْ سَاعَةَ حَائِطٍ صَامِتَةً حَتَّى لا تُشَتِّتَ دَقَّاتُهَا تَرْكِيزَهَا فِي الدِّرَاسَةِ.",
       },
       {
         context: "Time Check",
@@ -385,8 +385,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Leafy Greens",
-        en: "He selected a bag of tender baby spinach leaves for his daily breakfast smoothie.",
-        ar: "اختار كيسا من أوراق السبانخ الصغيرة الطرية لمشروب الإفطار اليومي.",
+        en: "She selected a bag of tender baby spinach leaves for her daily breakfast smoothie.",
+        ar: "اخْتَارَتْ كِيسًا مِنْ أَوْرَاقِ السَّبَانِخِ الصَّغِيرَةِ الطَّرِيَّةِ لِعَصِيرِ الإِفْطَارِ اليَوْمِيِّ.",
       },
       {
         context: "Nutrient Rich",
@@ -400,8 +400,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He selected a bag of tender baby spinach leaves for his daily breakfast smoothie.",
-    exampleArabic: "اختار كيسا من أوراق السبانخ الصغيرة الطرية لمشروب الإفطار اليومي.",
+      "She selected a bag of tender baby spinach leaves for her daily breakfast smoothie.",
+    exampleArabic:
+      "اخْتَارَتْ كِيسًا مِنْ أَوْرَاقِ السَّبَانِخِ الصَّغِيرَةِ الطَّرِيَّةِ لِعَصِيرِ الإِفْطَارِ اليَوْمِيِّ.",
   },
   aisle: {
     id: "aisle",
@@ -433,8 +434,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Shopping Flow",
-        en: "He steered his shopping cart smoothly down the breakfast cereal aisle.",
-        ar: "قاد عربة التسوق بسلاسة في ممر حبوب الإفطار.",
+        en: "She steered her shopping cart smoothly down the breakfast cereal aisle.",
+        ar: "وَجَّهَتْ عَرَبَةَ التَّسَوُّقِ بِسَلَاسَةٍ عَبْرَ مَمَرِّ حُبُوبِ الإِفْطَارِ.",
       },
       {
         context: "Store Maintenance",
@@ -619,7 +620,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "come down",
         meaning: "decrease temperature back to normal",
         arabic: "تَنْخَفِضُ الحَرَارَة",
-        example: "His fever came down after he took the medicine.",
+        example: "Her fever came down after taking medicine.",
       },
     ],
     sentences: [
@@ -656,7 +657,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "break out in",
         meaning: "develop sudden widespread skin eruptions",
         arabic: "يَظْهَرُ عَلَيْهِ طَفْحٌ جِلْدِيّ",
-        example: "He broke out in a rash after touching poison ivy.",
+        example: "She broke out in a rash after touching poison ivy.",
       },
     ],
     sentences: [

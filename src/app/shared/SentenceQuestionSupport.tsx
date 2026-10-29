@@ -1,22 +1,37 @@
-import { useEffect, useId, useRef, useState } from "react";
+import { useId, useState } from "react";
 import { ImageOff, Volume2 } from "lucide-react";
 import type { VocabularyItem } from "../data/courseCatalog";
+import type { LessonUsageData } from "../data/usageTypes";
+import { getAuthoredSentence } from "../exercises/content/authoredLessonContent";
 import type { PilotSentenceMedia } from "../exercises/content/pilotSentenceMedia";
 import { QuestionImage } from "./QuestionImage";
 import { PLACEHOLDER_DESCRIPTION } from "../data/placeholderDescription";
 import { useI18n } from "../context/I18nContext";
 import { useSentenceAudio } from "./useSentenceAudio";
-import { useAccessibility } from "./useAccessibilityPreferences";
 import { Button } from "./Button";
-import { useLessonSession } from "./LessonSessionContext";
 import { MediaFrame } from "./MediaFrame";
 
-export function ScenePlaceholder({ clue, className = "" }: { clue?: string; className?: string }) {
+/** A word ID alone cannot establish that an image supports a sentence. */
+export function resolveSentenceMedia(
+  wordId: string,
+  sentence: string,
+  usage?: LessonUsageData | null
+): PilotSentenceMedia | undefined {
+  const authored = getAuthoredSentence(wordId);
+  if (authored?.full === sentence && authored.media) return authored.media;
+  const scene = usage?.usage.scenes.find(
+    (candidate) =>
+      candidate.imagePath && candidate.imageAlt && candidate.scenario.includes(sentence)
+  );
+  return scene?.imagePath && scene.imageAlt
+    ? { imagePath: scene.imagePath, imageAlt: scene.imageAlt, imageFallbacks: scene.imageFallbacks }
+    : undefined;
+}
+
+export function ScenePlaceholder({ clue }: { clue?: string }) {
   const { t } = useI18n();
   return (
-    <div
-      className={`flex min-h-32 w-full flex-1 flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-border bg-secondary p-4 text-center ${className}`}
-    >
+    <div className="flex min-h-32 w-full flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-border bg-secondary p-4 text-center">
       <ImageOff className="size-8 text-foreground" aria-hidden />
       <span className="font-semibold text-foreground">{t("story.imagePending")}</span>
       <span className="text-sm text-foreground">{t("exercise.scenePlaceholderDescription")}</span>
@@ -29,65 +44,27 @@ export function ScenePlaceholder({ clue, className = "" }: { clue?: string; clas
   );
 }
 
-export interface SentenceMeaningSupportProps {
-  word?: VocabularyItem;
-  targetWord?: VocabularyItem;
-  sentence: string;
-  prompt: string;
-  answered: boolean;
-  autoPlay?: boolean;
-  defaultOpen?: boolean;
-  hasImage?: boolean;
-  className?: string;
-}
-
-export function SentenceMeaningSupport({
-  word: wordProp,
-  targetWord: targetWordProp,
+export function SentenceQuestionSupport({
+  word,
   sentence,
   prompt,
+  media,
   answered,
-  autoPlay = false,
-  defaultOpen,
-  hasImage,
-  className = "",
-}: SentenceMeaningSupportProps) {
-  const word = (targetWordProp ?? wordProp)!;
+}: {
+  word: VocabularyItem;
+  sentence: string;
+  prompt: string;
+  media?: PilotSentenceMedia;
+  answered: boolean;
+}) {
   const { t } = useI18n();
-  const { accessibility } = useAccessibility();
-  const session = useLessonSession();
-  const audio = useSentenceAudio(answered ? sentence : prompt);
+  const [failedImage, setFailedImage] = useState<string | null>(null);
   const audioHintId = useId();
-
-  const hasSpokenRef = useRef<Record<string, boolean>>({});
-  const questionKey = `${word.id}:${prompt}`;
-
-  useEffect(() => {
-    if (
-      !autoPlay ||
-      accessibility.autoPlayAudio === false ||
-      !accessibility.includeListening ||
-      answered
-    )
-      return undefined;
-    if (hasSpokenRef.current[questionKey]) return undefined;
-    const timer = setTimeout(() => {
-      hasSpokenRef.current[questionKey] = true;
-      audio.play();
-    }, 250);
-    return () => {
-      clearTimeout(timer);
-      audio.stop();
-    };
-  }, [
-    autoPlay,
-    questionKey,
-    answered,
-    accessibility.includeListening,
-    accessibility.autoPlayAudio,
-    audio,
-  ]);
-
+  const audio = useSentenceAudio(answered ? sentence : prompt);
+  const hasImage = media && failedImage !== media.imagePath;
+  // A definition remains available to keyboard and screen-reader learners and
+  // provides evidence when an essential visual is unavailable. Do not show a
+  // second unfinished sentence or silently substitute vocabulary artwork.
   const quantity: Record<string, string> = {
     one: "1",
     two: "2",
@@ -127,152 +104,63 @@ export function SentenceMeaningSupport({
     : hasDefinition
       ? t("exercise.meaningClue")
       : t("exercise.wordToPractice");
-
-  const isOpen = defaultOpen ?? (hasImage === false || session?.scaffolding !== "independent");
-
   return (
-    <div className={`w-full ${className}`}>
-      <details
-        key={word.id}
-        open={isOpen}
-        className="rounded-xl border border-border/80 bg-wp-card dark:bg-card/40 px-2.5 py-1 sm:p-3 transition-colors motion-reduce:transition-none"
-      >
-        <summary className="min-h-11 cursor-pointer rounded-lg py-0.5 px-2 text-xs sm:text-sm font-semibold text-foreground hover:text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary flex items-center justify-between">
-          <span>{t("reviewUpdate.meaningSupport")}</span>
-        </summary>
-        <div className="mt-1.5 sm:mt-2.5 flex flex-wrap items-center justify-between gap-2 sm:gap-3 border-t border-border/60 pt-1.5 sm:pt-2.5">
-          <p
-            lang="en"
-            dir="ltr"
-            className="min-w-0 flex-1 basis-36 text-start text-sm sm:text-lg leading-relaxed text-foreground"
-          >
-            <span className="font-bold text-foreground">{clueLabel}: </span>
-            <span className="font-semibold text-primary">{clue}</span>
-          </p>
-          <Button
-            variant="outline"
-            size="sm"
-            disabled={!audio.isSupported}
-            aria-pressed={audio.isPlaying}
-            aria-busy={audio.isLoading}
-            aria-label={
-              audio.isPlaying
-                ? t("exercise.stopSentenceAudio")
-                : audio.isError
-                  ? t("exercise.retrySentenceAudio")
-                  : t("exercise.listenSentence")
-            }
-            aria-describedby={!answered ? audioHintId : undefined}
-            iconLeft={<Volume2 className="size-4" aria-hidden />}
-            onClick={() => (audio.isPlaying ? audio.stop() : audio.play())}
-            className="shrink-0 min-h-[44px] min-w-[44px] px-3 font-semibold text-xs sm:text-sm"
-          >
-            {audio.isPlaying
-              ? t("action.stop")
+    <div className="flex min-w-0 flex-col gap-2 sm:gap-3">
+      {hasImage ? (
+        <MediaFrame fit="contain" aspect="scene" className="w-full max-h-48 sm:max-h-none">
+          <QuestionImage
+            media={media}
+            className="size-full object-contain"
+            loading="eager"
+            {...{ fetchpriority: "high" }}
+            onExhausted={() => setFailedImage(media.imagePath)}
+          />
+        </MediaFrame>
+      ) : (
+        <ScenePlaceholder />
+      )}
+      <div className="flex flex-wrap items-center gap-2 rounded-xl border border-border bg-wp-card p-2 sm:p-3">
+        <p
+          lang="en"
+          dir="ltr"
+          className="min-w-0 flex-1 basis-36 text-start text-base leading-relaxed text-foreground"
+        >
+          <span className="font-semibold">{clueLabel}: </span>
+          {clue}
+        </p>
+        <Button
+          variant="outline"
+          size="md"
+          disabled={!audio.isSupported}
+          aria-pressed={audio.isPlaying}
+          aria-busy={audio.isLoading}
+          aria-label={
+            audio.isPlaying
+              ? t("exercise.stopSentenceAudio")
               : audio.isError
-                ? t("action.retry")
-                : t("action.listen")}
-          </Button>
-        </div>
-      </details>
+                ? t("exercise.retrySentenceAudio")
+                : t("exercise.listenSentence")
+          }
+          aria-describedby={!answered ? audioHintId : undefined}
+          iconLeft={<Volume2 className="size-4" aria-hidden />}
+          onClick={() => (audio.isPlaying ? audio.stop() : audio.play())}
+        >
+          {audio.isPlaying
+            ? t("action.stop")
+            : audio.isError
+              ? t("action.retry")
+              : t("action.listen")}
+        </Button>
+      </div>
       {!answered && (
         <span id={audioHintId} className="sr-only">
           {t("exercise.sentenceAudioGapHint")}
         </span>
       )}
       {audio.isError && (
-        <p role="status" className="mt-1 text-sm text-foreground">
+        <p role="status" className="text-sm text-foreground">
           {t("exercise.sentenceAudioError")}
         </p>
-      )}
-    </div>
-  );
-}
-
-export function SentenceQuestionSupport({
-  word,
-  sentence,
-  prompt,
-  media,
-  answered,
-  autoPlay = false,
-  showClue = true,
-  onImageExhausted,
-  className = "",
-}: {
-  word: VocabularyItem;
-  sentence: string;
-  prompt: string;
-  media?: PilotSentenceMedia;
-  answered: boolean;
-  autoPlay?: boolean;
-  showClue?: boolean;
-  onImageExhausted?: () => void;
-  className?: string;
-}) {
-  const [activeQuestionKey, setActiveQuestionKey] = useState(`${word.id}:${sentence}`);
-  const [failedImages, setFailedImages] = useState<ReadonlySet<string>>(() => new Set());
-  if (activeQuestionKey !== `${word.id}:${sentence}`) {
-    setActiveQuestionKey(`${word.id}:${sentence}`);
-    setFailedImages(new Set());
-  }
-
-  const fallbackMedia: PilotSentenceMedia | undefined =
-    word.img && !failedImages.has(word.img)
-      ? {
-          imagePath: word.img,
-          imageAlt:
-            word.description && word.description !== PLACEHOLDER_DESCRIPTION
-              ? word.description
-              : word.label,
-        }
-      : undefined;
-
-  const activeMedia =
-    (media && !failedImages.has(media.imagePath) ? media : undefined) ?? fallbackMedia;
-  const hasImage = Boolean(activeMedia);
-
-  useEffect(() => {
-    if (!hasImage) {
-      onImageExhausted?.();
-    }
-  }, [hasImage, onImageExhausted]);
-
-  return (
-    <div
-      data-target-word={word.label.toLowerCase()}
-      className={`flex min-w-0 flex-col gap-3 sm:gap-4 w-full h-full ${className}`}
-    >
-      {hasImage && activeMedia ? (
-        <MediaFrame
-          fit="contain"
-          aspect="auto"
-          className="wp-question-media wp-question-media--fitted h-full"
-        >
-          <QuestionImage
-            key={activeMedia.imagePath}
-            media={activeMedia}
-            className="w-auto h-auto max-w-full max-h-full object-contain object-center"
-            loading="eager"
-            {...{ fetchpriority: "high" }}
-            onExhausted={() => {
-              setFailedImages((prev) => new Set(prev).add(activeMedia.imagePath));
-              onImageExhausted?.();
-            }}
-          />
-        </MediaFrame>
-      ) : (
-        <ScenePlaceholder />
-      )}
-      {showClue && (
-        <SentenceMeaningSupport
-          word={word}
-          sentence={sentence}
-          prompt={prompt}
-          answered={answered}
-          autoPlay={autoPlay}
-          hasImage={hasImage}
-        />
       )}
     </div>
   );

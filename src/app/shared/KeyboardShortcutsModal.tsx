@@ -30,19 +30,15 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
   if (!isOpen) return null;
 
   return createPortal(
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
       <div
         ref={containerRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby="shortcuts-modal-title"
         tabIndex={-1}
-        className="bg-wp-card border-t sm:border border-border rounded-t-[28px] sm:rounded-3xl p-6 w-full max-w-md flex flex-col gap-5 shadow-2xl outline-none pb-[calc(env(safe-area-inset-bottom)+1.5rem)] sm:pb-6 motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-95 motion-safe:duration-200"
+        className="bg-wp-card border border-border rounded-3xl p-6 w-full max-w-md flex flex-col gap-5 shadow-2xl outline-none motion-safe:animate-in motion-safe:fade-in motion-safe:zoom-in-95 motion-safe:duration-200"
       >
-        <div
-          className="sm:hidden w-10 h-1 bg-muted-foreground/30 rounded-full mx-auto -mt-2 mb-1 shrink-0"
-          aria-hidden="true"
-        />
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div
@@ -59,7 +55,7 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
             type="button"
             onClick={onClose}
             aria-label={t("shortcuts.closeAria")}
-            className="wp-touch-target size-11 min-h-[44px] min-w-[44px] rounded-full hover:bg-muted text-muted-foreground hover:text-foreground flex items-center justify-center transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+            className="wp-touch-target size-11 min-h-[44px] min-w-[44px] rounded-full hover:bg-muted text-muted-foreground hover:text-foreground flex items-center justify-center transition-colors focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-primary"
           >
             <X className="size-5" />
           </button>
@@ -81,7 +77,7 @@ export const KeyboardShortcutsModal = memo(function KeyboardShortcutsModal({
         <button
           type="button"
           onClick={onClose}
-          className="w-full bg-primary hover:bg-primary/90 rounded-xl py-3 font-sans font-bold text-primary-foreground text-sm min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary transition-all shadow-sm cursor-pointer"
+          className="w-full bg-primary rounded-xl py-3 font-sans font-bold text-primary-foreground text-sm min-h-[44px] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary transition-all shadow-sm"
         >
           {t("action.gotIt")}
         </button>

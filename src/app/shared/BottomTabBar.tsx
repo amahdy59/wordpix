@@ -3,7 +3,6 @@ import { Home, Route, Library, Dumbbell, UserCircle } from "lucide-react";
 import type { TabId, Action } from "../types";
 
 import { useI18n } from "../context/I18nContext";
-import { triggerHaptic } from "../../utils/haptics";
 
 interface Props {
   activeTab: TabId;
@@ -19,48 +18,32 @@ export const TABS: { id: TabId; labelKey: string; icon: React.ElementType }[] = 
   { id: "profile", labelKey: "nav.profile", icon: UserCircle },
 ];
 
-export const BottomTabBar = memo(function BottomTabBar({ activeTab }: Props) {
+export const BottomTabBar = memo(function BottomTabBar({ activeTab, dispatch }: Props) {
   const { t } = useI18n();
 
   return (
     <nav
       aria-label={t("nav.label")}
-      className="bg-background/95 backdrop-blur-xl border-t border-border shadow-wp-xs pb-[env(safe-area-inset-bottom)] lg:hidden select-none"
+      className="bg-background/85 backdrop-blur-xl border-t border-border/50 pb-[env(safe-area-inset-bottom)] lg:hidden"
     >
-      <div className="wp-bottom-tabs items-stretch gap-0.5 px-1 py-1">
+      <div className="flex items-start justify-around gap-1 px-1 pt-2 pb-1">
         {TABS.map(({ id, labelKey, icon: Icon }) => {
           const isActive = id === activeTab;
           const label = t(labelKey);
           return (
-            <a
+            <button
               key={id}
-              href={`#/${id}`}
+              type="button"
               aria-label={label}
               aria-current={isActive ? "page" : undefined}
-              onClick={() => {
-                triggerHaptic("selection");
-              }}
-              className={`group flex min-w-0 w-full flex-col items-center justify-center gap-0.5 rounded-xl min-h-[56px] py-1 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer motion-safe:transition-colors ${
-                isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"
-              }`}
+              onClick={() => dispatch({ type: "GO", to: id })}
+              className={`flex min-w-[56px] flex-1 flex-col items-center justify-center gap-1 rounded-xl min-h-[56px] py-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary motion-safe:transition-colors ${isActive ? "text-primary bg-secondary" : "text-muted-foreground hover:bg-muted/50"}`}
             >
-              <div
-                className={`relative flex items-center justify-center w-12 max-w-full h-7 rounded-full motion-safe:transition-all ${
-                  isActive
-                    ? "bg-secondary text-primary shadow-wp-xs"
-                    : "text-muted-foreground group-hover:text-foreground group-hover:bg-muted/40"
-                }`}
-              >
-                <Icon className="size-5" aria-hidden />
-              </div>
-              <span
-                className={`font-sans text-xs leading-tight text-center break-words max-w-full px-0.5 ${
-                  isActive ? "font-bold text-primary" : "font-semibold text-muted-foreground"
-                }`}
-              >
+              <Icon className="size-[22px]" aria-hidden />
+              <span className="font-sans font-semibold text-sm leading-tight text-balance break-words text-center min-w-0 max-w-full">
                 {label}
               </span>
-            </a>
+            </button>
           );
         })}
       </div>

@@ -165,7 +165,7 @@ export const LAUNDROMAT_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "refuse to take responsibility for something",
       example:
-        "He washed his hands of the whole mess and left the fabric softener and the lint trap for someone else to deal with.",
+        "She washed her hands of the whole mess and left the fabric softener and the lint trap for someone else to deal with.",
     },
     {
       id: "laundromat-iron-out-the-details",

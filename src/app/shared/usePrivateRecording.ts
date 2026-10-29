@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { trimAudioSilence } from "./audioTrimmer";
 
 export type PrivateRecordingStatus =
   "unsupported" | "idle" | "requesting" | "recording" | "ready" | "denied" | "error";
@@ -27,7 +26,6 @@ export function usePrivateRecording({
   const [recordingBlob, setRecordingBlob] = useState<Blob | null>(null);
   const [durationMs, setDurationMs] = useState(0);
   const [elapsedMs, setElapsedMs] = useState(0);
-  const generationRef = useRef(0);
   const recorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const chunksRef = useRef<Blob[]>([]);
@@ -46,16 +44,6 @@ export function usePrivateRecording({
   }, []);
 
   const deleteRecording = useCallback(() => {
-    // A late permission response must not start a hidden or discarded recording.
-    generationRef.current += 1;
-    const recorder = recorderRef.current;
-    if (recorder) {
-      recorder.onstop = null;
-      recorder.ondataavailable = null;
-      if (recorder.state === "recording") recorder.stop();
-    }
-    recorderRef.current = null;
-    stopTracks();
     if (urlRef.current) URL.revokeObjectURL(urlRef.current);
     urlRef.current = null;
     setRecordingUrl(null);
@@ -63,7 +51,7 @@ export function usePrivateRecording({
     setDurationMs(0);
     setElapsedMs(0);
     setStatus(supported ? "idle" : "unsupported");
-  }, [supported, stopTracks]);
+  }, [supported]);
 
   const stop = useCallback(() => {
     const recorder = recorderRef.current;
@@ -74,14 +62,9 @@ export function usePrivateRecording({
   const start = useCallback(async () => {
     if (!supported || status === "recording" || status === "requesting") return;
     deleteRecording();
-    const generation = ++generationRef.current;
     setStatus("requesting");
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
-      if (generation !== generationRef.current) {
-        stream.getTracks().forEach((track) => track.stop());
-        return;
-      }
       streamRef.current = stream;
       const recorder = new MediaRecorder(stream);
       recorderRef.current = recorder;
@@ -90,23 +73,18 @@ export function usePrivateRecording({
         if (event.data.size > 0) chunksRef.current.push(event.data);
       };
       recorder.onerror = () => {
-        recorder.onstop = null;
-        if (recorder.state === "recording") recorder.stop();
         stopTracks();
         setStatus("error");
       };
-      recorder.onstop = async () => {
-        if (generation !== generationRef.current) return;
+      recorder.onstop = () => {
         stopTracks();
         if (chunksRef.current.length === 0) {
           setStatus("error");
           return;
         }
-        const rawBlob = new Blob(chunksRef.current, {
+        const blob = new Blob(chunksRef.current, {
           type: recorder.mimeType || "audio/webm",
         });
-        const blob = await trimAudioSilence(rawBlob);
-        if (generation !== generationRef.current) return;
         const url = URL.createObjectURL(blob);
         urlRef.current = url;
         setRecordingBlob(blob);
@@ -123,7 +101,6 @@ export function usePrivateRecording({
       }, 250);
       timeoutRef.current = window.setTimeout(stop, safeMaxDurationMs);
     } catch (error) {
-      if (generation !== generationRef.current) return;
       stopTracks();
       const permissionDenied =
         error instanceof DOMException &&
@@ -134,12 +111,7 @@ export function usePrivateRecording({
 
   useEffect(
     () => () => {
-      generationRef.current += 1;
       const recorder = recorderRef.current;
-      if (recorder) {
-        recorder.onstop = null;
-        recorder.ondataavailable = null;
-      }
       if (recorder?.state === "recording") recorder.stop();
       stopTracks();
       if (urlRef.current) URL.revokeObjectURL(urlRef.current);

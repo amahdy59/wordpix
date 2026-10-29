@@ -27,14 +27,14 @@
       "Bone Graft"
     ],
     "targetWordsArabic": [
-      "تنظيف الأسنان",
+      "تنظيف",
       "حشوة",
-      "خلع سن",
+      "خلع",
       "قناة جذر السن",
-      "تاج أسنان صناعي",
-      "جسر أسنان",
+      "تاج",
+      "قوس القدم",
       "زرعة أسنان",
-      "تبييض الأسنان",
+      "تبييض",
       "ترميم لاصق",
       "مادة مانعة للتسوس",
       "قشرة أسنان",
@@ -44,134 +44,135 @@
       "ترقيع عظمي"
     ],
     "usage": {
-      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
-      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
-      "textType": "educational-explanation",
-      "readingTarget": "180-210 words",
+      "goal": "Learn to use the dental clinic 1 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cleaning", "Filling", "Extraction"],
-          "scenario": "Professional dental cleaning removes calcified tartar, bacterial biofilms, and exterior surface stains from all tooth surfaces. A filling repairs cavities, and extraction removes roots. The hygienist completes ultrasonic cleaning along the lower gumline.",
+          "scenario": "During a routine care or examination situation, an adult reviews Cleaning, Filling, Extraction. The next step focuses on Cleaning.",
           "check": {
-            "question": "Which clinical procedure removes tartar, biofilms, and enamel stains?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Cleaning", "Filling", "Extraction"],
             "expectedAnswer": "Cleaning"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Cleaning as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Cleaning, Filling, Extraction. The next step focuses on Cleaning. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Cleaning, Filling, Extraction in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Root Canal", "Crown", "Bridge"],
-          "scenario": "A root canal procedure removes infected pulp tissue from the inner root canals before cleaning, shaping, and sealing the space. A crown caps a tooth, and a bridge spans gaps. The endodontist performs a root canal to preserve the infected molar.",
+          "scenario": "During a routine care or examination situation, an adult reviews Root Canal, Crown, Bridge. The next step focuses on Root Canal.",
           "check": {
-            "question": "Which procedure removes infected nerve pulp and seals the internal root canals?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Root Canal", "Crown", "Bridge"],
             "expectedAnswer": "Root Canal"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Root Canal as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Root Canal, Crown, Bridge. The next step focuses on Root Canal. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Root Canal, Crown, Bridge in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Implant", "Whitening", "Bonding"],
-          "scenario": "A titanium dental implant is a surgically placed screw anchored into the jawbone to support a prosthetic replacement crown. A veneer masks enamel, and an inlay fits cavities. The surgeon inserts an implant where the premolar was lost.",
+          "scenario": "During a routine care or examination situation, an adult reviews Implant, Whitening, Bonding. The next step focuses on Implant.",
           "check": {
-            "question": "Which surgically placed titanium post anchors a replacement tooth in the jaw?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Implant", "Whitening", "Bonding"],
             "expectedAnswer": "Implant"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Implant as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Implant, Whitening, Bonding. The next step focuses on Implant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Implant, Whitening, Bonding in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Sealant", "Veneer", "Inlay"],
-          "scenario": "A resin dental sealant is painted into deep grooves of molars to barrier against food debris and acid-producing bacteria. An extraction removes teeth, and bonding repairs chips. The hygienist applies a protective sealant over the chewing fissures.",
+          "scenario": "During a routine care or examination situation, an adult reviews Sealant, Veneer, Inlay. The next step focuses on Sealant.",
           "check": {
-            "question": "Which protective resin coating seals deep grooves against molar cavities?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Sealant", "Veneer", "Inlay"],
             "expectedAnswer": "Sealant"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Sealant as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Sealant, Veneer, Inlay. The next step focuses on Sealant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Sealant, Veneer, Inlay in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Onlay", "Gum Graft", "Bone Graft"],
-          "scenario": "A ceramic onlay is a custom laboratory-milled restoration covering one or more damaged tooth cusps without requiring a full crown. A veneer covers the front, and a bone graft rebuilds ridges. The lab fabricates a porcelain onlay for the fractured cusp.",
+          "scenario": "During a routine care or examination situation, an adult reviews Onlay, Gum Graft, Bone Graft. The next step focuses on Onlay.",
           "check": {
-            "question": "Which custom restoration covers one or more damaged tooth cusps?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Onlay", "Gum Graft", "Bone Graft"],
             "expectedAnswer": "Onlay"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Onlay as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Onlay, Gum Graft, Bone Graft. The next step focuses on Onlay. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Onlay, Gum Graft, Bone Graft in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Restorative procedures, root canals and dental implants",
-      "text": "Professional dental cleaning removes calcified tartar, bacterial biofilms, and exterior surface stains from all tooth surfaces. A filling repairs cavities, and extraction removes roots. The hygienist completes ultrasonic cleaning along the lower gumline. A root canal procedure removes infected pulp tissue from the inner root canals before cleaning, shaping, and sealing the space. A crown caps a tooth, and a bridge spans gaps. The endodontist performs a root canal to preserve the infected molar. A titanium dental implant is a surgically placed screw anchored into the jawbone to support a prosthetic replacement crown. A veneer masks enamel, and an inlay fits cavities. The surgeon inserts an implant where the premolar was lost. A resin dental sealant is painted into deep grooves of molars to barrier against food debris and acid-producing bacteria. An extraction removes teeth, and bonding repairs chips. The hygienist applies a protective sealant over the chewing fissures. A ceramic onlay is a custom laboratory-milled restoration covering one or more damaged tooth cusps without requiring a full crown. A veneer covers the front, and a bone graft rebuilds ridges. The lab fabricates a porcelain onlay for the fractured cusp.",
-      "imageBrief": "Use independently inspected word references to support Restorative procedures, root canals and dental implants; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
+      "title": "The Dental Clinic 1: A short reading",
+      "text": "Maya reads a clinic information sheet that lists cleaning, filling, and extraction. Another section describes a crown, bridge, and implant. She asks the dentist which term appears in her treatment plan. The dentist explains it with a diagram. Maya writes the name down so she can understand the appointment information later.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Professional dental cleaning removes calcified tartar, bacterial biofilms, and exterior surface stains from all tooth surfaces. A filling repairs cavities, and extraction removes roots. The hygienist completes ultrasonic cleaning along the lower gumline.\nWhich clinical procedure removes tartar, biofilms, and enamel stains?",
+        "prompt": "During a routine care or examination situation, an adult reviews Cleaning, Filling, Extraction. The next step focuses on Cleaning.\nWhich option is the focus of the next step?",
         "answer": "Cleaning",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "A root canal procedure removes infected pulp tissue from the inner root canals before cleaning, shaping, and sealing the space. A crown caps a tooth, and a bridge spans gaps. The endodontist performs a root canal to preserve the infected molar.\nWhich procedure removes infected nerve pulp and seals the internal root canals?",
+        "prompt": "During a routine care or examination situation, an adult reviews Root Canal, Crown, Bridge. The next step focuses on Root Canal.\nWhich option is the focus of the next step?",
         "answer": "Root Canal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "A titanium dental implant is a surgically placed screw anchored into the jawbone to support a prosthetic replacement crown. A veneer masks enamel, and an inlay fits cavities. The surgeon inserts an implant where the premolar was lost.\nWhich surgically placed titanium post anchors a replacement tooth in the jaw?",
+        "prompt": "During a routine care or examination situation, an adult reviews Implant, Whitening, Bonding. The next step focuses on Implant.\nWhich option is the focus of the next step?",
         "answer": "Implant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "A resin dental sealant is painted into deep grooves of molars to barrier against food debris and acid-producing bacteria. An extraction removes teeth, and bonding repairs chips. The hygienist applies a protective sealant over the chewing fissures.\nWhich protective resin coating seals deep grooves against molar cavities?",
+        "prompt": "During a routine care or examination situation, an adult reviews Sealant, Veneer, Inlay. The next step focuses on Sealant.\nWhich option is the focus of the next step?",
         "answer": "Sealant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A ceramic onlay is a custom laboratory-milled restoration covering one or more damaged tooth cusps without requiring a full crown. A veneer covers the front, and a bone graft rebuilds ridges. The lab fabricates a porcelain onlay for the fractured cusp.\nWhich custom restoration covers one or more damaged tooth cusps?",
+        "prompt": "During a routine care or examination situation, an adult reviews Onlay, Gum Graft, Bone Graft. The next step focuses on Onlay.\nWhich option is the focus of the next step?",
         "answer": "Onlay",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Professional dental cleaning removes calcified tartar, bacterial biofilms, and exterior surface stains from all tooth surfaces. A filling repairs cavities, and extraction removes roots. The hygienist completes ultrasonic cleaning along the lower gumline. A root canal procedure removes infected pulp tissue from the inner root canals before cleaning, shaping, and sealing the space. A crown caps a tooth, and a bridge spans gaps. The endodontist performs a root canal to preserve the infected molar. A titanium dental implant is a surgically placed screw anchored into the jawbone to support a prosthetic replacement crown. A veneer masks enamel, and an inlay fits cavities. The surgeon inserts an implant where the premolar was lost. A resin dental sealant is painted into deep grooves of molars to barrier against food debris and acid-producing bacteria. An extraction removes teeth, and bonding repairs chips. The hygienist applies a protective sealant over the chewing fissures. A ceramic onlay is a custom laboratory-milled restoration covering one or more damaged tooth cusps without requiring a full crown. A veneer covers the front, and a bone graft rebuilds ridges. The lab fabricates a porcelain onlay for the fractured cusp.\nCompare “Cleaning” and “Filling” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
-        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
-        "questionType": "comparison",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
       },
       {
-        "prompt": "Write an original short visitor or traveler account using Cleaning, Filling, Extraction, Root Canal, Crown, Bridge, Implant, Whitening, Bonding, Sealant, Veneer, Inlay, Onlay, Gum Graft, Bone Graft in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
-        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "prompt": "Spaced retrieval: Use the earlier word “Mouthguard” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Why does Maya write the treatment name down?",
+        "answer": "To understand her appointment information later",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "Restorative procedures, root canals and dental implants",
-      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
-      "scriptStarter": "Professional dental cleaning removes calcified tartar, bacterial biofilms, and exterior surface stains from all tooth surfaces. A filling repairs cavities, and extraction removes roots. The hygienist completes ultrasonic cleaning along the lower gumline. Which clinical procedure removes tartar, biofilms, and enamel stains?"
+      "title": "The Dental Clinic: In Context",
+      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Mouthguard, Floss from dentist-8\n3 lesson(s) back: Premolar, Wisdom Tooth from dentist-6\n7 lesson(s) back: Bite Block, Matrix Band from dentist-2"
   },
@@ -206,148 +207,149 @@
       "إعادة تشكيل السن",
       "تصريف خُراج",
       "علاج بالفلورايد",
-      "مثقاب أسنان",
-      "مرآة أسنان",
-      "مسبار أسنان",
+      "مثقاب",
+      "مرآة",
+      "مسبار",
       "أداة إزالة الجير",
       "شفط",
       "جهاز أشعة سينية",
       "ضوء تصليب حشوات الأسنان",
-      "ملقط خلع الأسنان",
+      "ملقط جراحي",
       "صينية طبعة أسنان",
-      "أداة تلميع الأسنان",
-      "رافعة أسنان",
+      "أداة تلميع",
+      "مصعد",
       "أداة لوكساتور"
     ],
     "usage": {
-      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
-      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
-      "textType": "educational-explanation",
-      "readingTarget": "173-203 words",
+      "goal": "Learn to use the dental clinic 2 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tooth Reshaping", "Abscess Drainage", "Fluoride Treatment"],
-          "scenario": "Enamel tooth reshaping gently contours uneven tooth edges and smooths minor chips using fine abrasive strips. Fluoride strengthens enamel, and drainage relieves swelling. The dentist performs conservative tooth reshaping on the chipped incisor.",
+          "scenario": "During a routine care or examination situation, an adult reviews Tooth Reshaping, Abscess Drainage, Fluoride Treatment. The next step focuses on Tooth Reshaping.",
           "check": {
-            "question": "Which cosmetic contouring procedure smooths minor enamel chips?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Tooth Reshaping", "Abscess Drainage", "Fluoride Treatment"],
             "expectedAnswer": "Tooth Reshaping"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Tooth Reshaping as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Tooth Reshaping, Abscess Drainage, Fluoride Treatment. The next step focuses on Tooth Reshaping. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Tooth Reshaping, Abscess Drainage, Fluoride Treatment in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Drill", "Mirror", "Probe"],
-          "scenario": "A dental drill spins miniature diamond burs at high speeds to sculpt tooth enamel and excise decayed dentin. A mirror reflects views, and a probe checks firmness. The dentist holds the precision dental drill to prepare the crown margin.",
+          "scenario": "During a routine care or examination situation, an adult reviews Drill, Mirror, Probe. The next step focuses on Drill.",
           "check": {
-            "question": "Which high-speed rotary handpiece excises decayed tooth structure?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Drill", "Mirror", "Probe"],
             "expectedAnswer": "Drill"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Drill as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Drill, Mirror, Probe. The next step focuses on Drill. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Drill, Mirror, Probe in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Scaler", "Suction", "X Ray Machine"],
-          "scenario": "A metal dental scaler features sharp sickle or curette edges used to scrape hardened subgingival calculus off root surfaces. A probe measures depth, and suction removes saliva. The hygienist maneuvers the scaler between crowded lower teeth.",
+          "scenario": "During a routine care or examination situation, an adult reviews Scaler, Suction, X Ray Machine. The next step focuses on Scaler.",
           "check": {
-            "question": "Which sharp handheld instrument scrapes hardened calculus off root surfaces?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Scaler", "Suction", "X Ray Machine"],
             "expectedAnswer": "Scaler"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Scaler as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Scaler, Suction, X Ray Machine. The next step focuses on Scaler. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Scaler, Suction, X Ray Machine in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Curing Light", "Forceps", "Impression Tray"],
-          "scenario": "A blue LED curing light emits specific wavelengths to rapidly polymerize and harden light-sensitive composite resins. Forceps extract teeth, and an impression tray takes molds. The assistant holds the curing light over the fresh composite restoration.",
+          "scenario": "During a routine care or examination situation, an adult reviews Curing Light, Forceps, Impression Tray. The next step focuses on Curing Light.",
           "check": {
-            "question": "Which blue LED device rapidly hardens light-sensitive composite resin?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Curing Light", "Forceps", "Impression Tray"],
             "expectedAnswer": "Curing Light"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Curing Light as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Curing Light, Forceps, Impression Tray. The next step focuses on Curing Light. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Curing Light, Forceps, Impression Tray in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Polisher", "Elevator", "Luxator"],
-          "scenario": "A rotary dental polisher uses a flexible rubber cup with fine prophylaxis paste to buff enamel surfaces smooth and glossy. An elevator levers roots, and a luxator expands sockets. The hygienist finishes the cleaning appointment using the rubber-cup polisher.",
+          "scenario": "During a routine care or examination situation, an adult reviews Polisher, Elevator, Luxator. The next step focuses on Polisher.",
           "check": {
-            "question": "Which rubber-cup rotary tool buffs tooth enamel with prophylaxis paste?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Polisher", "Elevator", "Luxator"],
             "expectedAnswer": "Polisher"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Polisher as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Polisher, Elevator, Luxator. The next step focuses on Polisher. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Polisher, Elevator, Luxator in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Enamel reshaping, rotary drills and curing lights",
-      "text": "Enamel tooth reshaping gently contours uneven tooth edges and smooths minor chips using fine abrasive strips. Fluoride strengthens enamel, and drainage relieves swelling. The dentist performs conservative tooth reshaping on the chipped incisor. A dental drill spins miniature diamond burs at high speeds to sculpt tooth enamel and excise decayed dentin. A mirror reflects views, and a probe checks firmness. The dentist holds the precision dental drill to prepare the crown margin. A metal dental scaler features sharp sickle or curette edges used to scrape hardened subgingival calculus off root surfaces. A probe measures depth, and suction removes saliva. The hygienist maneuvers the scaler between crowded lower teeth. A blue LED curing light emits specific wavelengths to rapidly polymerize and harden light-sensitive composite resins. Forceps extract teeth, and an impression tray takes molds. The assistant holds the curing light over the fresh composite restoration. A rotary dental polisher uses a flexible rubber cup with fine prophylaxis paste to buff enamel surfaces smooth and glossy. An elevator levers roots, and a luxator expands sockets. The hygienist finishes the cleaning appointment using the rubber-cup polisher.",
-      "imageBrief": "Use independently inspected word references to support Enamel reshaping, rotary drills and curing lights; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
+      "title": "The Dental Clinic 2: A short reading",
+      "text": "Omar looks at pictures of a dental mirror, probe, scaler, and drill. A photograph also shows suction equipment and an X-ray machine. In the vocabulary lesson, he matches each name to its purpose. Maya reads about tooth reshaping and fluoride treatment. The teacher checks that they can distinguish treatments from tools.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Enamel tooth reshaping gently contours uneven tooth edges and smooths minor chips using fine abrasive strips. Fluoride strengthens enamel, and drainage relieves swelling. The dentist performs conservative tooth reshaping on the chipped incisor.\nWhich cosmetic contouring procedure smooths minor enamel chips?",
+        "prompt": "During a routine care or examination situation, an adult reviews Tooth Reshaping, Abscess Drainage, Fluoride Treatment. The next step focuses on Tooth Reshaping.\nWhich option is the focus of the next step?",
         "answer": "Tooth Reshaping",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "A dental drill spins miniature diamond burs at high speeds to sculpt tooth enamel and excise decayed dentin. A mirror reflects views, and a probe checks firmness. The dentist holds the precision dental drill to prepare the crown margin.\nWhich high-speed rotary handpiece excises decayed tooth structure?",
+        "prompt": "During a routine care or examination situation, an adult reviews Drill, Mirror, Probe. The next step focuses on Drill.\nWhich option is the focus of the next step?",
         "answer": "Drill",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "A metal dental scaler features sharp sickle or curette edges used to scrape hardened subgingival calculus off root surfaces. A probe measures depth, and suction removes saliva. The hygienist maneuvers the scaler between crowded lower teeth.\nWhich sharp handheld instrument scrapes hardened calculus off root surfaces?",
+        "prompt": "During a routine care or examination situation, an adult reviews Scaler, Suction, X Ray Machine. The next step focuses on Scaler.\nWhich option is the focus of the next step?",
         "answer": "Scaler",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "A blue LED curing light emits specific wavelengths to rapidly polymerize and harden light-sensitive composite resins. Forceps extract teeth, and an impression tray takes molds. The assistant holds the curing light over the fresh composite restoration.\nWhich blue LED device rapidly hardens light-sensitive composite resin?",
+        "prompt": "During a routine care or examination situation, an adult reviews Curing Light, Forceps, Impression Tray. The next step focuses on Curing Light.\nWhich option is the focus of the next step?",
         "answer": "Curing Light",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A rotary dental polisher uses a flexible rubber cup with fine prophylaxis paste to buff enamel surfaces smooth and glossy. An elevator levers roots, and a luxator expands sockets. The hygienist finishes the cleaning appointment using the rubber-cup polisher.\nWhich rubber-cup rotary tool buffs tooth enamel with prophylaxis paste?",
+        "prompt": "During a routine care or examination situation, an adult reviews Polisher, Elevator, Luxator. The next step focuses on Polisher.\nWhich option is the focus of the next step?",
         "answer": "Polisher",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Enamel tooth reshaping gently contours uneven tooth edges and smooths minor chips using fine abrasive strips. Fluoride strengthens enamel, and drainage relieves swelling. The dentist performs conservative tooth reshaping on the chipped incisor. A dental drill spins miniature diamond burs at high speeds to sculpt tooth enamel and excise decayed dentin. A mirror reflects views, and a probe checks firmness. The dentist holds the precision dental drill to prepare the crown margin. A metal dental scaler features sharp sickle or curette edges used to scrape hardened subgingival calculus off root surfaces. A probe measures depth, and suction removes saliva. The hygienist maneuvers the scaler between crowded lower teeth. A blue LED curing light emits specific wavelengths to rapidly polymerize and harden light-sensitive composite resins. Forceps extract teeth, and an impression tray takes molds. The assistant holds the curing light over the fresh composite restoration. A rotary dental polisher uses a flexible rubber cup with fine prophylaxis paste to buff enamel surfaces smooth and glossy. An elevator levers roots, and a luxator expands sockets. The hygienist finishes the cleaning appointment using the rubber-cup polisher.\nCompare “Tooth Reshaping” and “Abscess Drainage” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
-        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
-        "questionType": "comparison",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
       },
       {
-        "prompt": "Write an original short visitor or traveler account using Tooth Reshaping, Abscess Drainage, Fluoride Treatment, Drill, Mirror, Probe, Scaler, Suction, X Ray Machine, Curing Light, Forceps, Impression Tray, Polisher, Elevator, Luxator in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
-        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "prompt": "Spaced retrieval: Use the earlier word “Cleaning” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "What distinction does the teacher check?",
+        "answer": "The difference between treatments and tools",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "Enamel reshaping, rotary drills and curing lights",
-      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
-      "scriptStarter": "Enamel tooth reshaping gently contours uneven tooth edges and smooths minor chips using fine abrasive strips. Fluoride strengthens enamel, and drainage relieves swelling. The dentist performs conservative tooth reshaping on the chipped incisor. Which cosmetic contouring procedure smooths minor enamel chips?"
+      "title": "The Dental Clinic: In Context",
+      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Cleaning, Filling from dental-clinic-1\n3 lesson(s) back: Insurance Form, Clipboard from dentist-7\n7 lesson(s) back: Dental Stool, Sterilizer from dentist-3"
   },
@@ -388,142 +390,143 @@
       "قاطع",
       "ناب",
       "ضرس العقل",
-      "لثة",
+      "علكة",
       "مينا الأسنان",
-      "جذر السن",
+      "جذر",
       "عصب",
       "فك",
       "حنك"
     ],
     "usage": {
-      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
-      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
-      "textType": "educational-explanation",
-      "readingTarget": "181-211 words",
+      "goal": "Learn to use the dental clinic 3 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Periosteal Elevator", "Bone File", "Dental Handpiece"],
-          "scenario": "A periosteal elevator is a surgical instrument used to gently detach and reflect gum tissue flaps from underlying bone. A bone file smooths margins, and a handpiece spins burs. The oral surgeon uses a periosteal elevator to expose the jaw ridge.",
+          "scenario": "During a routine care or examination situation, an adult reviews Periosteal Elevator, Bone File, Dental Handpiece. The next step focuses on Periosteal Elevator.",
           "check": {
-            "question": "Which surgical tool detaches gum flaps from underlying alveolar bone?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Periosteal Elevator", "Bone File", "Dental Handpiece"],
             "expectedAnswer": "Periosteal Elevator"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Periosteal Elevator as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Periosteal Elevator, Bone File, Dental Handpiece. The next step focuses on Periosteal Elevator. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Periosteal Elevator, Bone File, Dental Handpiece in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ultrasonic Scaler", "Apex Locator", "Molar"],
-          "scenario": "An ultrasonic scaler vibrates at high acoustic frequencies with cooling water spray to break down tough calculus deposits. An apex locator measures canals, and a probe checks tissue. The clinician guides the vibrating tip of the ultrasonic scaler.",
+          "scenario": "During a routine care or examination situation, an adult reviews Ultrasonic Scaler, Apex Locator, Molar. The next step focuses on Ultrasonic Scaler.",
           "check": {
-            "question": "Which high-frequency acoustic tool breaks down tough calculus deposits?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Ultrasonic Scaler", "Apex Locator", "Molar"],
             "expectedAnswer": "Ultrasonic Scaler"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Ultrasonic Scaler as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Ultrasonic Scaler, Apex Locator, Molar. The next step focuses on Ultrasonic Scaler. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Ultrasonic Scaler, Apex Locator, Molar in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Incisor", "Canine", "Wisdom Tooth"],
-          "scenario": "An incisor is a sharp, chisel-shaped front tooth specialized for biting and cutting into food items. A canine tears food, and a molar grinds. The dentist examines a small chip on the edge of the upper central incisor.",
+          "scenario": "During a routine care or examination situation, an adult reviews Incisor, Canine, Wisdom Tooth. The next step focuses on Incisor.",
           "check": {
-            "question": "Which chisel-shaped front tooth bites and cuts into food?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Incisor", "Canine", "Wisdom Tooth"],
             "expectedAnswer": "Incisor"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Incisor as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Incisor, Canine, Wisdom Tooth. The next step focuses on Incisor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Incisor, Canine, Wisdom Tooth in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Gum", "Enamel", "Root"],
-          "scenario": "The gum is the specialized mucosal oral tissue covering the alveolar ridge and forming a protective seal around tooth necks. Enamel coats crowns, and nerves transmit feeling. Healthy coral-pink gum tissue hugs each tooth tightly.",
+          "scenario": "During a routine care or examination situation, an adult reviews Gum, Enamel, Root. The next step focuses on Gum.",
           "check": {
-            "question": "Which mucosal oral tissue forms a protective seal around tooth necks?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Gum", "Enamel", "Root"],
             "expectedAnswer": "Gum"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Gum as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Gum, Enamel, Root. The next step focuses on Gum. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Gum, Enamel, Root in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Nerve", "Jaw", "Palate"],
-          "scenario": "The dental nerve is the sensitive sensory tissue bundle running within the root pulp that registers pain and temperature changes. The jaw provides bone support, and the palate forms the roof. Deep decay approaching the nerve causes sharp sensitivity.",
+          "scenario": "During a routine care or examination situation, an adult reviews Nerve, Jaw, Palate. The next step focuses on Nerve.",
           "check": {
-            "question": "Which sensory tissue bundle inside tooth pulp registers temperature and pain?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Nerve", "Jaw", "Palate"],
             "expectedAnswer": "Nerve"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Nerve as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Nerve, Jaw, Palate. The next step focuses on Nerve. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Nerve, Jaw, Palate in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Surgical elevators, ultrasonic scalers and tooth roots",
-      "text": "A periosteal elevator is a surgical instrument used to gently detach and reflect gum tissue flaps from underlying bone. A bone file smooths margins, and a handpiece spins burs. The oral surgeon uses a periosteal elevator to expose the jaw ridge. An ultrasonic scaler vibrates at high acoustic frequencies with cooling water spray to break down tough calculus deposits. An apex locator measures canals, and a probe checks tissue. The clinician guides the vibrating tip of the ultrasonic scaler. An incisor is a sharp, chisel-shaped front tooth specialized for biting and cutting into food items. A canine tears food, and a molar grinds. The dentist examines a small chip on the edge of the upper central incisor. The gum is the specialized mucosal oral tissue covering the alveolar ridge and forming a protective seal around tooth necks. Enamel coats crowns, and nerves transmit feeling. Healthy coral-pink gum tissue hugs each tooth tightly. The dental nerve is the sensitive sensory tissue bundle running within the root pulp that registers pain and temperature changes. The jaw provides bone support, and the palate forms the roof. Deep decay approaching the nerve causes sharp sensitivity.",
-      "imageBrief": "Use independently inspected word references to support Surgical elevators, ultrasonic scalers and tooth roots; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
+      "title": "The Dental Clinic 3: A short reading",
+      "text": "A diagram labels a molar, incisor, canine, and wisdom tooth. Maya checks the tooth names first. Omar then matches periosteal elevator and bone file to equipment photographs. The lesson also introduces a dental handpiece and an ultrasonic scaler. They place the tool cards beside their descriptions and compare the answers with the key.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "A periosteal elevator is a surgical instrument used to gently detach and reflect gum tissue flaps from underlying bone. A bone file smooths margins, and a handpiece spins burs. The oral surgeon uses a periosteal elevator to expose the jaw ridge.\nWhich surgical tool detaches gum flaps from underlying alveolar bone?",
+        "prompt": "During a routine care or examination situation, an adult reviews Periosteal Elevator, Bone File, Dental Handpiece. The next step focuses on Periosteal Elevator.\nWhich option is the focus of the next step?",
         "answer": "Periosteal Elevator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An ultrasonic scaler vibrates at high acoustic frequencies with cooling water spray to break down tough calculus deposits. An apex locator measures canals, and a probe checks tissue. The clinician guides the vibrating tip of the ultrasonic scaler.\nWhich high-frequency acoustic tool breaks down tough calculus deposits?",
+        "prompt": "During a routine care or examination situation, an adult reviews Ultrasonic Scaler, Apex Locator, Molar. The next step focuses on Ultrasonic Scaler.\nWhich option is the focus of the next step?",
         "answer": "Ultrasonic Scaler",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An incisor is a sharp, chisel-shaped front tooth specialized for biting and cutting into food items. A canine tears food, and a molar grinds. The dentist examines a small chip on the edge of the upper central incisor.\nWhich chisel-shaped front tooth bites and cuts into food?",
+        "prompt": "During a routine care or examination situation, an adult reviews Incisor, Canine, Wisdom Tooth. The next step focuses on Incisor.\nWhich option is the focus of the next step?",
         "answer": "Incisor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "The gum is the specialized mucosal oral tissue covering the alveolar ridge and forming a protective seal around tooth necks. Enamel coats crowns, and nerves transmit feeling. Healthy coral-pink gum tissue hugs each tooth tightly.\nWhich mucosal oral tissue forms a protective seal around tooth necks?",
+        "prompt": "During a routine care or examination situation, an adult reviews Gum, Enamel, Root. The next step focuses on Gum.\nWhich option is the focus of the next step?",
         "answer": "Gum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "The dental nerve is the sensitive sensory tissue bundle running within the root pulp that registers pain and temperature changes. The jaw provides bone support, and the palate forms the roof. Deep decay approaching the nerve causes sharp sensitivity.\nWhich sensory tissue bundle inside tooth pulp registers temperature and pain?",
+        "prompt": "During a routine care or examination situation, an adult reviews Nerve, Jaw, Palate. The next step focuses on Nerve.\nWhich option is the focus of the next step?",
         "answer": "Nerve",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "A periosteal elevator is a surgical instrument used to gently detach and reflect gum tissue flaps from underlying bone. A bone file smooths margins, and a handpiece spins burs. The oral surgeon uses a periosteal elevator to expose the jaw ridge. An ultrasonic scaler vibrates at high acoustic frequencies with cooling water spray to break down tough calculus deposits. An apex locator measures canals, and a probe checks tissue. The clinician guides the vibrating tip of the ultrasonic scaler. An incisor is a sharp, chisel-shaped front tooth specialized for biting and cutting into food items. A canine tears food, and a molar grinds. The dentist examines a small chip on the edge of the upper central incisor. The gum is the specialized mucosal oral tissue covering the alveolar ridge and forming a protective seal around tooth necks. Enamel coats crowns, and nerves transmit feeling. Healthy coral-pink gum tissue hugs each tooth tightly. The dental nerve is the sensitive sensory tissue bundle running within the root pulp that registers pain and temperature changes. The jaw provides bone support, and the palate forms the roof. Deep decay approaching the nerve causes sharp sensitivity.\nCompare “Periosteal Elevator” and “Bone File” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
-        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
-        "questionType": "comparison",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
       },
       {
-        "prompt": "Write an original short visitor or traveler account using Periosteal Elevator, Bone File, Dental Handpiece, Ultrasonic Scaler, Apex Locator, Molar, Incisor, Canine, Wisdom Tooth, Gum, Enamel, Root, Nerve, Jaw, Palate in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
-        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "prompt": "Spaced retrieval: Use the earlier word “Tooth Reshaping” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "What does Omar match to equipment photographs?",
+        "answer": "A periosteal elevator and a bone file",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "Surgical elevators, ultrasonic scalers and tooth roots",
-      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
-      "scriptStarter": "A periosteal elevator is a surgical instrument used to gently detach and reflect gum tissue flaps from underlying bone. A bone file smooths margins, and a handpiece spins burs. The oral surgeon uses a periosteal elevator to expose the jaw ridge. Which surgical tool detaches gum flaps from underlying alveolar bone?"
+      "title": "The Dental Clinic: In Context",
+      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Tooth Reshaping, Abscess Drainage from dental-clinic-2\n3 lesson(s) back: Mouthguard, Floss from dentist-8\n7 lesson(s) back: Desensitizing Paste, Dental Cement from dentist-4"
   },
@@ -568,138 +571,139 @@
       "مثبّت أسنان",
       "قالب تقويم شفاف",
       "دعامة",
-      "سلك تقويم",
+      "سلك",
       "حلقة مطاطية لتقويم الأسنان"
     ],
     "usage": {
-      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
-      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
-      "textType": "educational-explanation",
-      "readingTarget": "181-211 words",
+      "goal": "Learn to use the dental clinic 4 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Premolar", "Bicuspid", "Gingiva"],
-          "scenario": "A premolar is a dual-cusped permanent tooth located between the canine and molar teeth used to tear and crush food. Gingiva surrounds necks, and sockets hold roots. The orthodontist evaluates the alignment of the first premolar.",
+          "scenario": "During a routine care or examination situation, an adult reviews Premolar, Bicuspid, Gingiva. The next step focuses on Premolar.",
           "check": {
-            "question": "Which dual-cusped permanent tooth sits between canine and molar teeth?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Premolar", "Bicuspid", "Gingiva"],
             "expectedAnswer": "Premolar"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Premolar as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Premolar, Bicuspid, Gingiva. The next step focuses on Premolar. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Premolar, Bicuspid, Gingiva in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Alveolar Bone", "Dental Pulp", "Tooth Socket"],
-          "scenario": "Alveolar bone is the specialized thickened ridge of the jawbone containing tooth sockets that support and anchor tooth roots. Pulp houses nerves, and maxilla forms the upper jaw. Periodontal disease can cause gradual loss of alveolar bone height.",
+          "scenario": "During a routine care or examination situation, an adult reviews Alveolar Bone, Dental Pulp, Tooth Socket. The next step focuses on Alveolar Bone.",
           "check": {
-            "question": "Which specialized jawbone ridge contains tooth sockets supporting roots?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Alveolar Bone", "Dental Pulp", "Tooth Socket"],
             "expectedAnswer": "Alveolar Bone"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Alveolar Bone as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Alveolar Bone, Dental Pulp, Tooth Socket. The next step focuses on Alveolar Bone. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Alveolar Bone, Dental Pulp, Tooth Socket in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dental Arch", "Maxilla", "Mandible"],
-          "scenario": "The dental arch is the curved parabolic arrangement formed by the complete row of teeth in either the upper or lower jaw. Mandible forms the lower jaw, and brackets attach to enamel. The orthodontist assesses crowding across the upper dental arch.",
+          "scenario": "During a routine care or examination situation, an adult reviews Dental Arch, Maxilla, Mandible. The next step focuses on Dental Arch.",
           "check": {
-            "question": "Which parabolic curved row of teeth comprises an upper or lower jaw?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Dental Arch", "Maxilla", "Mandible"],
             "expectedAnswer": "Dental Arch"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Dental Arch as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Dental Arch, Maxilla, Mandible. The next step focuses on Dental Arch. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Dental Arch, Maxilla, Mandible in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Braces", "Retainer", "Aligner"],
-          "scenario": "Orthodontic braces use metal or ceramic attachments and flexible archwires to apply gentle pressure and move misaligned teeth. A retainer holds positions, and an aligner is removable. The teenager wears ceramic braces to straighten overlapping incisors.",
+          "scenario": "During a routine care or examination situation, an adult reviews Braces, Retainer, Aligner. The next step focuses on Braces.",
           "check": {
-            "question": "Which fixed orthodontic appliance shifts misaligned teeth using wires?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Braces", "Retainer", "Aligner"],
             "expectedAnswer": "Braces"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Braces as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Braces, Retainer, Aligner. The next step focuses on Braces. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Braces, Retainer, Aligner in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Bracket", "Wire", "Rubber Band"],
-          "scenario": "An orthodontic bracket is a small slotted metal or ceramic attachment bonded directly to each tooth surface to hold the archwire. A wire applies force, and rubber bands hook arches. The orthodontist bonds a tiny bracket to the central incisor.",
+          "scenario": "During a routine care or examination situation, an adult reviews Bracket, Wire, Rubber Band. The next step focuses on Bracket.",
           "check": {
-            "question": "Which small slotted attachment is bonded to a tooth to hold the archwire?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Bracket", "Wire", "Rubber Band"],
             "expectedAnswer": "Bracket"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Bracket as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Bracket, Wire, Rubber Band. The next step focuses on Bracket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Bracket, Wire, Rubber Band in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Premolars, supporting bone structure and orthodontic brackets",
-      "text": "A premolar is a dual-cusped permanent tooth located between the canine and molar teeth used to tear and crush food. Gingiva surrounds necks, and sockets hold roots. The orthodontist evaluates the alignment of the first premolar. Alveolar bone is the specialized thickened ridge of the jawbone containing tooth sockets that support and anchor tooth roots. Pulp houses nerves, and maxilla forms the upper jaw. Periodontal disease can cause gradual loss of alveolar bone height. The dental arch is the curved parabolic arrangement formed by the complete row of teeth in either the upper or lower jaw. Mandible forms the lower jaw, and brackets attach to enamel. The orthodontist assesses crowding across the upper dental arch. Orthodontic braces use metal or ceramic attachments and flexible archwires to apply gentle pressure and move misaligned teeth. A retainer holds positions, and an aligner is removable. The teenager wears ceramic braces to straighten overlapping incisors. An orthodontic bracket is a small slotted metal or ceramic attachment bonded directly to each tooth surface to hold the archwire. A wire applies force, and rubber bands hook arches. The orthodontist bonds a tiny bracket to the central incisor.",
-      "imageBrief": "Use independently inspected word references to support Premolars, supporting bone structure and orthodontic brackets; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
+      "title": "The Dental Clinic 4: A short reading",
+      "text": "Omar studies a drawing of a tooth in the jaw. He labels the dental pulp and tooth socket. Maya identifies the gingiva and alveolar bone around it. Another diagram shows the maxilla and mandible. The class uses separate labels for the tooth, the surrounding tissues, and the upper and lower jaws.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "A premolar is a dual-cusped permanent tooth located between the canine and molar teeth used to tear and crush food. Gingiva surrounds necks, and sockets hold roots. The orthodontist evaluates the alignment of the first premolar.\nWhich dual-cusped permanent tooth sits between canine and molar teeth?",
+        "prompt": "During a routine care or examination situation, an adult reviews Premolar, Bicuspid, Gingiva. The next step focuses on Premolar.\nWhich option is the focus of the next step?",
         "answer": "Premolar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Alveolar bone is the specialized thickened ridge of the jawbone containing tooth sockets that support and anchor tooth roots. Pulp houses nerves, and maxilla forms the upper jaw. Periodontal disease can cause gradual loss of alveolar bone height.\nWhich specialized jawbone ridge contains tooth sockets supporting roots?",
+        "prompt": "During a routine care or examination situation, an adult reviews Alveolar Bone, Dental Pulp, Tooth Socket. The next step focuses on Alveolar Bone.\nWhich option is the focus of the next step?",
         "answer": "Alveolar Bone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "The dental arch is the curved parabolic arrangement formed by the complete row of teeth in either the upper or lower jaw. Mandible forms the lower jaw, and brackets attach to enamel. The orthodontist assesses crowding across the upper dental arch.\nWhich parabolic curved row of teeth comprises an upper or lower jaw?",
+        "prompt": "During a routine care or examination situation, an adult reviews Dental Arch, Maxilla, Mandible. The next step focuses on Dental Arch.\nWhich option is the focus of the next step?",
         "answer": "Dental Arch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Orthodontic braces use metal or ceramic attachments and flexible archwires to apply gentle pressure and move misaligned teeth. A retainer holds positions, and an aligner is removable. The teenager wears ceramic braces to straighten overlapping incisors.\nWhich fixed orthodontic appliance shifts misaligned teeth using wires?",
+        "prompt": "During a routine care or examination situation, an adult reviews Braces, Retainer, Aligner. The next step focuses on Braces.\nWhich option is the focus of the next step?",
         "answer": "Braces",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An orthodontic bracket is a small slotted metal or ceramic attachment bonded directly to each tooth surface to hold the archwire. A wire applies force, and rubber bands hook arches. The orthodontist bonds a tiny bracket to the central incisor.\nWhich small slotted attachment is bonded to a tooth to hold the archwire?",
+        "prompt": "During a routine care or examination situation, an adult reviews Bracket, Wire, Rubber Band. The next step focuses on Bracket.\nWhich option is the focus of the next step?",
         "answer": "Bracket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "A premolar is a dual-cusped permanent tooth located between the canine and molar teeth used to tear and crush food. Gingiva surrounds necks, and sockets hold roots. The orthodontist evaluates the alignment of the first premolar. Alveolar bone is the specialized thickened ridge of the jawbone containing tooth sockets that support and anchor tooth roots. Pulp houses nerves, and maxilla forms the upper jaw. Periodontal disease can cause gradual loss of alveolar bone height. The dental arch is the curved parabolic arrangement formed by the complete row of teeth in either the upper or lower jaw. Mandible forms the lower jaw, and brackets attach to enamel. The orthodontist assesses crowding across the upper dental arch. Orthodontic braces use metal or ceramic attachments and flexible archwires to apply gentle pressure and move misaligned teeth. A retainer holds positions, and an aligner is removable. The teenager wears ceramic braces to straighten overlapping incisors. An orthodontic bracket is a small slotted metal or ceramic attachment bonded directly to each tooth surface to hold the archwire. A wire applies force, and rubber bands hook arches. The orthodontist bonds a tiny bracket to the central incisor.\nCompare “Premolar” and “Bicuspid” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
-        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
-        "questionType": "comparison",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
       },
       {
-        "prompt": "Write an original short visitor or traveler account using Premolar, Bicuspid, Gingiva, Alveolar Bone, Dental Pulp, Tooth Socket, Dental Arch, Maxilla, Mandible, Braces, Retainer, Aligner, Bracket, Wire, Rubber Band in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
-        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "prompt": "Spaced retrieval: Use the earlier word “Periosteal Elevator” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Which structures are the maxilla and mandible?",
+        "answer": "The upper and lower jaws",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "Premolars, supporting bone structure and orthodontic brackets",
-      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
-      "scriptStarter": "A premolar is a dual-cusped permanent tooth located between the canine and molar teeth used to tear and crush food. Gingiva surrounds necks, and sockets hold roots. The orthodontist evaluates the alignment of the first premolar. Which dual-cusped permanent tooth sits between canine and molar teeth?"
+      "title": "The Dental Clinic: In Context",
+      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Periosteal Elevator, Bone File from dental-clinic-3\n3 lesson(s) back: Cleaning, Filling from dental-clinic-1\n7 lesson(s) back: Prosthodontist, Endodontist from dentist-5"
   },
@@ -745,137 +749,138 @@
       "شمع تقويم الأسنان",
       "فرشاة أسنان",
       "معجون أسنان",
-      "خيط أسنان أو التنظيف به"
+      "ينظف بالخيط"
     ],
     "usage": {
-      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
-      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
-      "textType": "educational-explanation",
-      "readingTarget": "174-204 words",
+      "goal": "Learn to use the dental clinic 5 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Spacer", "Expander", "Headgear"],
-          "scenario": "An orthodontic spacer is a tiny rubber ring inserted between molars to create small gaps before fitting metal bands. An expander widens palates, and headgear anchors arches. The clinician places an elastic spacer between the back molars.",
+          "scenario": "During a routine care or examination situation, an adult reviews Spacer, Expander, Headgear. The next step focuses on Spacer.",
           "check": {
-            "question": "Which tiny rubber ring creates space between molars for metal bands?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Spacer", "Expander", "Headgear"],
             "expectedAnswer": "Spacer"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Spacer as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Spacer, Expander, Headgear. The next step focuses on Spacer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Spacer, Expander, Headgear in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Mold", "Ceramic Braces", "Lingual Braces"],
-          "scenario": "A dental mold or plaster cast is a three-dimensional stone replica of a patient’s teeth poured from an impression. Invisalign straightens teeth, and a bite plate adjusts deep bites. The lab technician studies the dental mold on the bench.",
+          "scenario": "During a routine care or examination situation, an adult reviews Mold, Ceramic Braces, Lingual Braces. The next step focuses on Mold.",
           "check": {
-            "question": "Which stone replica models a patient’s dental arch from an impression?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Mold", "Ceramic Braces", "Lingual Braces"],
             "expectedAnswer": "Mold"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Mold as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Mold, Ceramic Braces, Lingual Braces. The next step focuses on Mold. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Mold, Ceramic Braces, Lingual Braces in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Invisalign", "Bite Plate", "Power Chain"],
-          "scenario": "Invisalign is a brand of clear, removable polyurethane aligners customized to straighten teeth discretely without brackets or wires. Archwires connect brackets, and wax soothes lips. The adult patient wears clear Invisalign aligners during the day.",
+          "scenario": "During a routine care or examination situation, an adult reviews Invisalign, Bite Plate, Power Chain. The next step focuses on Invisalign.",
           "check": {
-            "question": "Which clear removable aligner system straightens teeth without brackets?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Invisalign", "Bite Plate", "Power Chain"],
             "expectedAnswer": "Invisalign"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Invisalign as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Invisalign, Bite Plate, Power Chain. The next step focuses on Invisalign. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Invisalign, Bite Plate, Power Chain in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Ligature", "Archwire", "Dental Wax"],
-          "scenario": "An elastic ligature is a tiny colored rubber ring that ties the flexible orthodontic archwire into each bracket slot. Wax prevents rubbing, and floss cleans teeth. The patient selects blue ligatures for their orthodontic brackets.",
+          "scenario": "During a routine care or examination situation, an adult reviews Ligature, Archwire, Dental Wax. The next step focuses on Ligature.",
           "check": {
-            "question": "Which tiny elastic ring ties the archwire securely into a bracket slot?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Ligature", "Archwire", "Dental Wax"],
             "expectedAnswer": "Ligature"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Ligature as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Ligature, Archwire, Dental Wax. The next step focuses on Ligature. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Ligature, Archwire, Dental Wax in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Toothbrush", "Toothpaste", "Floss"],
-          "scenario": "A manual toothbrush features nylon bristles anchored to a plastic handle used to clean plaque and food particles from teeth. Toothpaste provides abrasion, and floss cleans contacts. The orthodontist demonstrates how to brush around brackets with a toothbrush.",
+          "scenario": "During a routine care or examination situation, an adult reviews Toothbrush, Toothpaste, Floss. The next step focuses on Toothbrush.",
           "check": {
-            "question": "Which handheld nylon-bristle tool scrubs plaque off teeth and braces?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Toothbrush", "Toothpaste", "Floss"],
             "expectedAnswer": "Toothbrush"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Toothbrush as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Toothbrush, Toothpaste, Floss. The next step focuses on Toothbrush. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Toothbrush, Toothpaste, Floss in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Orthodontic aligners, impression molds and daily cleaning",
-      "text": "An orthodontic spacer is a tiny rubber ring inserted between molars to create small gaps before fitting metal bands. An expander widens palates, and headgear anchors arches. The clinician places an elastic spacer between the back molars. A dental mold or plaster cast is a three-dimensional stone replica of a patient’s teeth poured from an impression. Invisalign straightens teeth, and a bite plate adjusts deep bites. The lab technician studies the dental mold on the bench. Invisalign is a brand of clear, removable polyurethane aligners customized to straighten teeth discretely without brackets or wires. Archwires connect brackets, and wax soothes lips. The adult patient wears clear Invisalign aligners during the day. An elastic ligature is a tiny colored rubber ring that ties the flexible orthodontic archwire into each bracket slot. Wax prevents rubbing, and floss cleans teeth. The patient selects blue ligatures for their orthodontic brackets. A manual toothbrush features nylon bristles anchored to a plastic handle used to clean plaque and food particles from teeth. Toothpaste provides abrasion, and floss cleans contacts. The orthodontist demonstrates how to brush around brackets with a toothbrush.",
-      "imageBrief": "Use independently inspected word references to support Orthodontic aligners, impression molds and daily cleaning; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
+      "title": "The Dental Clinic 5: A short reading",
+      "text": "Maya reads a leaflet about orthodontic equipment. It shows ceramic braces and lingual braces in different pictures. Omar identifies a spacer and an expander in a vocabulary activity. They compare these with a bite plate and a mold. The lesson asks them to explain which picture matches each term before checking the key.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "An orthodontic spacer is a tiny rubber ring inserted between molars to create small gaps before fitting metal bands. An expander widens palates, and headgear anchors arches. The clinician places an elastic spacer between the back molars.\nWhich tiny rubber ring creates space between molars for metal bands?",
+        "prompt": "During a routine care or examination situation, an adult reviews Spacer, Expander, Headgear. The next step focuses on Spacer.\nWhich option is the focus of the next step?",
         "answer": "Spacer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "A dental mold or plaster cast is a three-dimensional stone replica of a patient’s teeth poured from an impression. Invisalign straightens teeth, and a bite plate adjusts deep bites. The lab technician studies the dental mold on the bench.\nWhich stone replica models a patient’s dental arch from an impression?",
+        "prompt": "During a routine care or examination situation, an adult reviews Mold, Ceramic Braces, Lingual Braces. The next step focuses on Mold.\nWhich option is the focus of the next step?",
         "answer": "Mold",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Invisalign is a brand of clear, removable polyurethane aligners customized to straighten teeth discretely without brackets or wires. Archwires connect brackets, and wax soothes lips. The adult patient wears clear Invisalign aligners during the day.\nWhich clear removable aligner system straightens teeth without brackets?",
+        "prompt": "During a routine care or examination situation, an adult reviews Invisalign, Bite Plate, Power Chain. The next step focuses on Invisalign.\nWhich option is the focus of the next step?",
         "answer": "Invisalign",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An elastic ligature is a tiny colored rubber ring that ties the flexible orthodontic archwire into each bracket slot. Wax prevents rubbing, and floss cleans teeth. The patient selects blue ligatures for their orthodontic brackets.\nWhich tiny elastic ring ties the archwire securely into a bracket slot?",
+        "prompt": "During a routine care or examination situation, an adult reviews Ligature, Archwire, Dental Wax. The next step focuses on Ligature.\nWhich option is the focus of the next step?",
         "answer": "Ligature",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A manual toothbrush features nylon bristles anchored to a plastic handle used to clean plaque and food particles from teeth. Toothpaste provides abrasion, and floss cleans contacts. The orthodontist demonstrates how to brush around brackets with a toothbrush.\nWhich handheld nylon-bristle tool scrubs plaque off teeth and braces?",
+        "prompt": "During a routine care or examination situation, an adult reviews Toothbrush, Toothpaste, Floss. The next step focuses on Toothbrush.\nWhich option is the focus of the next step?",
         "answer": "Toothbrush",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "An orthodontic spacer is a tiny rubber ring inserted between molars to create small gaps before fitting metal bands. An expander widens palates, and headgear anchors arches. The clinician places an elastic spacer between the back molars. A dental mold or plaster cast is a three-dimensional stone replica of a patient’s teeth poured from an impression. Invisalign straightens teeth, and a bite plate adjusts deep bites. The lab technician studies the dental mold on the bench. Invisalign is a brand of clear, removable polyurethane aligners customized to straighten teeth discretely without brackets or wires. Archwires connect brackets, and wax soothes lips. The adult patient wears clear Invisalign aligners during the day. An elastic ligature is a tiny colored rubber ring that ties the flexible orthodontic archwire into each bracket slot. Wax prevents rubbing, and floss cleans teeth. The patient selects blue ligatures for their orthodontic brackets. A manual toothbrush features nylon bristles anchored to a plastic handle used to clean plaque and food particles from teeth. Toothpaste provides abrasion, and floss cleans contacts. The orthodontist demonstrates how to brush around brackets with a toothbrush.\nCompare “Spacer” and “Expander” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
-        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
-        "questionType": "comparison",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
       },
       {
-        "prompt": "Write an original short visitor or traveler account using Spacer, Expander, Headgear, Mold, Ceramic Braces, Lingual Braces, Invisalign, Bite Plate, Power Chain, Ligature, Archwire, Dental Wax, Toothbrush, Toothpaste, Floss in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
-        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "prompt": "Spaced retrieval: Use the earlier word “Premolar” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Which two types of braces does the leaflet show?",
+        "answer": "Ceramic braces and lingual braces",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "Orthodontic aligners, impression molds and daily cleaning",
-      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
-      "scriptStarter": "An orthodontic spacer is a tiny rubber ring inserted between molars to create small gaps before fitting metal bands. An expander widens palates, and headgear anchors arches. The clinician places an elastic spacer between the back molars. Which tiny rubber ring creates space between molars for metal bands?"
+      "title": "The Dental Clinic: In Context",
+      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Premolar, Bicuspid from dental-clinic-4\n3 lesson(s) back: Tooth Reshaping, Abscess Drainage from dental-clinic-2\n7 lesson(s) back: Premolar, Wisdom Tooth from dentist-6"
   },
@@ -911,9 +916,9 @@
       "مكشطة اللسان",
       "جهاز تنظيف الأسنان بالماء",
       "فلورايد",
-      "لويحة بكتيرية على الأسنان",
+      "لوحة تذكارية",
       "جير الأسنان",
-      "تسوّس أو حفرة في السن",
+      "تجويف",
       "فرشاة أسنان كهربائية",
       "أداة أسنان مدببة",
       "جهاز ريّ فموي",
@@ -924,134 +929,135 @@
       "كرسي أسنان"
     ],
     "usage": {
-      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
-      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
-      "textType": "educational-explanation",
-      "readingTarget": "177-207 words",
+      "goal": "Learn to use the dental clinic 6 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mouthwash", "Tongue Scraper", "Water Flosser"],
-          "scenario": "An antibacterial mouthwash rinses the oral cavity to reduce gingival inflammation and neutralize oral odor compounds. A tongue scraper cleans coatings, and a water flosser rinses gaps. The patient uses therapeutic mouthwash after morning brushing.",
+          "scenario": "During a routine care or examination situation, an adult reviews Mouthwash, Tongue Scraper, Water Flosser. The next step focuses on Mouthwash.",
           "check": {
-            "question": "Which liquid oral rinse combats bacteria and freshens breath?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Mouthwash", "Tongue Scraper", "Water Flosser"],
             "expectedAnswer": "Mouthwash"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Mouthwash as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Mouthwash, Tongue Scraper, Water Flosser. The next step focuses on Mouthwash. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Mouthwash, Tongue Scraper, Water Flosser in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Fluoride", "Plaque", "Tartar"],
-          "scenario": "Topical fluoride is a remineralizing mineral gel or varnish applied by dental staff to strengthen weakened tooth enamel against decay. Plaque causes acid, and tartar hardens. The hygienist paints sticky fluoride varnish over vulnerable teeth.",
+          "scenario": "During a routine care or examination situation, an adult reviews Fluoride, Plaque, Tartar. The next step focuses on Fluoride.",
           "check": {
-            "question": "Which remineralizing mineral varnish strengthens enamel against acid decay?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Fluoride", "Plaque", "Tartar"],
             "expectedAnswer": "Fluoride"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Fluoride as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Fluoride, Plaque, Tartar. The next step focuses on Fluoride. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Fluoride, Plaque, Tartar in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cavity", "Electric Toothbrush", "Dental Pick"],
-          "scenario": "A dental cavity is a permanent hole or lesion formed in tooth enamel and dentin when bacterial acids demineralize hard tissue. An electric brush cleans plaque, and picks dislodge food. The dentist detects an early cavity between two premolars.",
+          "scenario": "During a routine care or examination situation, an adult reviews Cavity, Electric Toothbrush, Dental Pick. The next step focuses on Cavity.",
           "check": {
-            "question": "Which structural hole forms in enamel when bacterial acids demineralize tooth tissue?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Cavity", "Electric Toothbrush", "Dental Pick"],
             "expectedAnswer": "Cavity"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Cavity as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Cavity, Electric Toothbrush, Dental Pick. The next step focuses on Cavity. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Cavity, Electric Toothbrush, Dental Pick in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Oral Irrigator", "Antibacterial Rinse", "Dental Sealant"],
-          "scenario": "An oral irrigator or water flosser uses a pulsating stream of pressurized water to dislodge food particles and plaque from gum pockets. Antibacterial rinses freshen, and sealants protect fissures. The patient rinses around orthodontic bands using an oral irrigator.",
+          "scenario": "During a routine care or examination situation, an adult reviews Oral Irrigator, Antibacterial Rinse, Dental Sealant. The next step focuses on Oral Irrigator.",
           "check": {
-            "question": "Which pulsating pressurized water device flushes debris from gum pockets?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Oral Irrigator", "Antibacterial Rinse", "Dental Sealant"],
             "expectedAnswer": "Oral Irrigator"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Oral Irrigator as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Oral Irrigator, Antibacterial Rinse, Dental Sealant. The next step focuses on Oral Irrigator. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Oral Irrigator, Antibacterial Rinse, Dental Sealant in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Disclosing Tablet", "Gum Stimulator", "Dental Chair"],
-          "scenario": "A disclosing tablet contains vegetable dye chewed after brushing that stains leftover bacterial plaque bright pink or purple. A gum stimulator massages, and chairs seat patients. The child chews a disclosing tablet to reveal missed spots along the gumline.",
+          "scenario": "During a routine care or examination situation, an adult reviews Disclosing Tablet, Gum Stimulator, Dental Chair. The next step focuses on Disclosing Tablet.",
           "check": {
-            "question": "Which chewable dye tablet stains leftover plaque to highlight missed spots?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Disclosing Tablet", "Gum Stimulator", "Dental Chair"],
             "expectedAnswer": "Disclosing Tablet"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Disclosing Tablet as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Disclosing Tablet, Gum Stimulator, Dental Chair. The next step focuses on Disclosing Tablet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Disclosing Tablet, Gum Stimulator, Dental Chair in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Antiseptic mouth rinses, cavity detection and oral irrigators",
-      "text": "An antibacterial mouthwash rinses the oral cavity to reduce gingival inflammation and neutralize oral odor compounds. A tongue scraper cleans coatings, and a water flosser rinses gaps. The patient uses therapeutic mouthwash after morning brushing. Topical fluoride is a remineralizing mineral gel or varnish applied by dental staff to strengthen weakened tooth enamel against decay. Plaque causes acid, and tartar hardens. The hygienist paints sticky fluoride varnish over vulnerable teeth. A dental cavity is a permanent hole or lesion formed in tooth enamel and dentin when bacterial acids demineralize hard tissue. An electric brush cleans plaque, and picks dislodge food. The dentist detects an early cavity between two premolars. An oral irrigator or water flosser uses a pulsating stream of pressurized water to dislodge food particles and plaque from gum pockets. Antibacterial rinses freshen, and sealants protect fissures. The patient rinses around orthodontic bands using an oral irrigator. A disclosing tablet contains vegetable dye chewed after brushing that stains leftover bacterial plaque bright pink or purple. A gum stimulator massages, and chairs seat patients. The child chews a disclosing tablet to reveal missed spots along the gumline.",
-      "imageBrief": "Use independently inspected word references to support Antiseptic mouth rinses, cavity detection and oral irrigators; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
+      "title": "The Dental Clinic 6: A short reading",
+      "text": "Omar buys a toothbrush and asks about dental floss. Maya compares a tongue scraper with a water flosser in a product display. During class, they learn the difference between plaque, tartar, and a cavity from illustrated descriptions. They write a separate note for each term so the meanings remain clear.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "An antibacterial mouthwash rinses the oral cavity to reduce gingival inflammation and neutralize oral odor compounds. A tongue scraper cleans coatings, and a water flosser rinses gaps. The patient uses therapeutic mouthwash after morning brushing.\nWhich liquid oral rinse combats bacteria and freshens breath?",
+        "prompt": "During a routine care or examination situation, an adult reviews Mouthwash, Tongue Scraper, Water Flosser. The next step focuses on Mouthwash.\nWhich option is the focus of the next step?",
         "answer": "Mouthwash",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Topical fluoride is a remineralizing mineral gel or varnish applied by dental staff to strengthen weakened tooth enamel against decay. Plaque causes acid, and tartar hardens. The hygienist paints sticky fluoride varnish over vulnerable teeth.\nWhich remineralizing mineral varnish strengthens enamel against acid decay?",
+        "prompt": "During a routine care or examination situation, an adult reviews Fluoride, Plaque, Tartar. The next step focuses on Fluoride.\nWhich option is the focus of the next step?",
         "answer": "Fluoride",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "A dental cavity is a permanent hole or lesion formed in tooth enamel and dentin when bacterial acids demineralize hard tissue. An electric brush cleans plaque, and picks dislodge food. The dentist detects an early cavity between two premolars.\nWhich structural hole forms in enamel when bacterial acids demineralize tooth tissue?",
+        "prompt": "During a routine care or examination situation, an adult reviews Cavity, Electric Toothbrush, Dental Pick. The next step focuses on Cavity.\nWhich option is the focus of the next step?",
         "answer": "Cavity",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An oral irrigator or water flosser uses a pulsating stream of pressurized water to dislodge food particles and plaque from gum pockets. Antibacterial rinses freshen, and sealants protect fissures. The patient rinses around orthodontic bands using an oral irrigator.\nWhich pulsating pressurized water device flushes debris from gum pockets?",
+        "prompt": "During a routine care or examination situation, an adult reviews Oral Irrigator, Antibacterial Rinse, Dental Sealant. The next step focuses on Oral Irrigator.\nWhich option is the focus of the next step?",
         "answer": "Oral Irrigator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A disclosing tablet contains vegetable dye chewed after brushing that stains leftover bacterial plaque bright pink or purple. A gum stimulator massages, and chairs seat patients. The child chews a disclosing tablet to reveal missed spots along the gumline.\nWhich chewable dye tablet stains leftover plaque to highlight missed spots?",
+        "prompt": "During a routine care or examination situation, an adult reviews Disclosing Tablet, Gum Stimulator, Dental Chair. The next step focuses on Disclosing Tablet.\nWhich option is the focus of the next step?",
         "answer": "Disclosing Tablet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "An antibacterial mouthwash rinses the oral cavity to reduce gingival inflammation and neutralize oral odor compounds. A tongue scraper cleans coatings, and a water flosser rinses gaps. The patient uses therapeutic mouthwash after morning brushing. Topical fluoride is a remineralizing mineral gel or varnish applied by dental staff to strengthen weakened tooth enamel against decay. Plaque causes acid, and tartar hardens. The hygienist paints sticky fluoride varnish over vulnerable teeth. A dental cavity is a permanent hole or lesion formed in tooth enamel and dentin when bacterial acids demineralize hard tissue. An electric brush cleans plaque, and picks dislodge food. The dentist detects an early cavity between two premolars. An oral irrigator or water flosser uses a pulsating stream of pressurized water to dislodge food particles and plaque from gum pockets. Antibacterial rinses freshen, and sealants protect fissures. The patient rinses around orthodontic bands using an oral irrigator. A disclosing tablet contains vegetable dye chewed after brushing that stains leftover bacterial plaque bright pink or purple. A gum stimulator massages, and chairs seat patients. The child chews a disclosing tablet to reveal missed spots along the gumline.\nCompare “Mouthwash” and “Tongue Scraper” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
-        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
-        "questionType": "comparison",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
       },
       {
-        "prompt": "Write an original short visitor or traveler account using Mouthwash, Tongue Scraper, Water Flosser, Fluoride, Plaque, Tartar, Cavity, Electric Toothbrush, Dental Pick, Oral Irrigator, Antibacterial Rinse, Dental Sealant, Disclosing Tablet, Gum Stimulator, Dental Chair in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
-        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "prompt": "Spaced retrieval: Use the earlier word “Spacer” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Which two products does Maya compare?",
+        "answer": "A tongue scraper and a water flosser",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "Antiseptic mouth rinses, cavity detection and oral irrigators",
-      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
-      "scriptStarter": "An antibacterial mouthwash rinses the oral cavity to reduce gingival inflammation and neutralize oral odor compounds. A tongue scraper cleans coatings, and a water flosser rinses gaps. The patient uses therapeutic mouthwash after morning brushing. Which liquid oral rinse combats bacteria and freshens breath?"
+      "title": "The Dental Clinic: In Context",
+      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Spacer, Expander from dental-clinic-5\n3 lesson(s) back: Periosteal Elevator, Bone File from dental-clinic-3\n7 lesson(s) back: Insurance Form, Clipboard from dentist-7"
   },
@@ -1100,134 +1106,135 @@
       "وحدة شفط"
     ],
     "usage": {
-      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
-      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
-      "textType": "educational-explanation",
-      "readingTarget": "174-204 words",
+      "goal": "Learn to use the dental clinic 7 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Light", "Bib", "Tray"],
-          "scenario": "The operatory dental light provides adjustable illumination directed into the oral cavity without casting shadows on working fields. A bib shields clothing, and trays hold instruments. The dentist adjusts the light handle during the procedure.",
+          "scenario": "During a routine care or examination situation, an adult reviews Light, Bib, Tray. The next step focuses on Light.",
           "check": {
-            "question": "Which adjustable luminaire illuminates the oral cavity during clinic care?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Light", "Bib", "Tray"],
             "expectedAnswer": "Light"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Light as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Light, Bib, Tray. The next step focuses on Light. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Light, Bib, Tray in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Gloves", "Mask", "Goggles"],
-          "scenario": "Nitrile examination gloves protect dental personnel and patients against cross-contamination during clinical treatments. A mask covers the nose, and goggles shield eyes. The clinician pulls on a sterile pair of gloves before touching instruments.",
+          "scenario": "During a routine care or examination situation, an adult reviews Gloves, Mask, Goggles. The next step focuses on Gloves.",
           "check": {
-            "question": "Which disposable protective hand wear prevents cross-contamination in clinics?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Gloves", "Mask", "Goggles"],
             "expectedAnswer": "Gloves"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Gloves as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Gloves, Mask, Goggles. The next step focuses on Gloves. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Gloves, Mask, Goggles in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Waiting Room", "Insurance Form", "Appointment Card"],
-          "scenario": "The clinic waiting room provides comfortable armchairs, informational brochures, and reception windows for arriving patients. An insurance form verifies benefits, and cards list dates. The patient sits in the waiting room until called.",
+          "scenario": "During a routine care or examination situation, an adult reviews Waiting Room, Insurance Form, Appointment Card. The next step focuses on Waiting Room.",
           "check": {
-            "question": "Which reception lounge accommodates patients before clinical appointments?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Waiting Room", "Insurance Form", "Appointment Card"],
             "expectedAnswer": "Waiting Room"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Waiting Room as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Waiting Room, Insurance Form, Appointment Card. The next step focuses on Waiting Room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Waiting Room, Insurance Form, Appointment Card in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Panoramic X Ray", "Intraoral Camera", "Amalgam Separator"],
-          "scenario": "A panoramic x-ray machine rotates around the patient’s head to capture a single comprehensive flat image of all teeth, jaws, and joints. A camera views teeth, and compressors supply air. The technician positions the patient inside the panoramic x-ray unit.",
+          "scenario": "During a routine care or examination situation, an adult reviews Panoramic X Ray, Intraoral Camera, Amalgam Separator. The next step focuses on Panoramic X Ray.",
           "check": {
-            "question": "Which rotating radiographic machine captures a comprehensive view of both jaws?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Panoramic X Ray", "Intraoral Camera", "Amalgam Separator"],
             "expectedAnswer": "Panoramic X Ray"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Panoramic X Ray as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Panoramic X Ray, Intraoral Camera, Amalgam Separator. The next step focuses on Panoramic X Ray. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Panoramic X Ray, Intraoral Camera, Amalgam Separator in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Nitrous Oxide System", "Dental Compressor", "Suction Unit"],
-          "scenario": "A nitrous oxide system dispenses a controlled blend of nitrous oxide and oxygen gas through a nasal mask to provide conscious sedation. A compressor powers drills, and suction clears fluids. The dentist activates the nitrous oxide system to relax the anxious patient.",
+          "scenario": "During a routine care or examination situation, an adult reviews Nitrous Oxide System, Dental Compressor, Suction Unit. The next step focuses on Nitrous Oxide System.",
           "check": {
-            "question": "Which operatory sedation system dispenses blended relaxing gas through a mask?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Nitrous Oxide System", "Dental Compressor", "Suction Unit"],
             "expectedAnswer": "Nitrous Oxide System"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Nitrous Oxide System as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Nitrous Oxide System, Dental Compressor, Suction Unit. The next step focuses on Nitrous Oxide System. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Nitrous Oxide System, Dental Compressor, Suction Unit in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Operatory protective equipment, panoramic x-rays and gas systems",
-      "text": "The operatory dental light provides adjustable illumination directed into the oral cavity without casting shadows on working fields. A bib shields clothing, and trays hold instruments. The dentist adjusts the light handle during the procedure. Nitrile examination gloves protect dental personnel and patients against cross-contamination during clinical treatments. A mask covers the nose, and goggles shield eyes. The clinician pulls on a sterile pair of gloves before touching instruments. The clinic waiting room provides comfortable armchairs, informational brochures, and reception windows for arriving patients. An insurance form verifies benefits, and cards list dates. The patient sits in the waiting room until called. A panoramic x-ray machine rotates around the patient’s head to capture a single comprehensive flat image of all teeth, jaws, and joints. A camera views teeth, and compressors supply air. The technician positions the patient inside the panoramic x-ray unit. A nitrous oxide system dispenses a controlled blend of nitrous oxide and oxygen gas through a nasal mask to provide conscious sedation. A compressor powers drills, and suction clears fluids. The dentist activates the nitrous oxide system to relax the anxious patient.",
-      "imageBrief": "Use independently inspected word references to support Operatory protective equipment, panoramic x-rays and gas systems; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
+      "title": "The Dental Clinic 7: A short reading",
+      "text": "The dental assistant prepares a tray, gloves, and a bib. The dentist adjusts the light while Omar sits in the chair. Maya checks an appointment card in the waiting room. An insurance form is on the reception counter. The receptionist confirms the next visit and gives Maya the card to take home.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "The operatory dental light provides adjustable illumination directed into the oral cavity without casting shadows on working fields. A bib shields clothing, and trays hold instruments. The dentist adjusts the light handle during the procedure.\nWhich adjustable luminaire illuminates the oral cavity during clinic care?",
+        "prompt": "During a routine care or examination situation, an adult reviews Light, Bib, Tray. The next step focuses on Light.\nWhich option is the focus of the next step?",
         "answer": "Light",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Nitrile examination gloves protect dental personnel and patients against cross-contamination during clinical treatments. A mask covers the nose, and goggles shield eyes. The clinician pulls on a sterile pair of gloves before touching instruments.\nWhich disposable protective hand wear prevents cross-contamination in clinics?",
+        "prompt": "During a routine care or examination situation, an adult reviews Gloves, Mask, Goggles. The next step focuses on Gloves.\nWhich option is the focus of the next step?",
         "answer": "Gloves",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "The clinic waiting room provides comfortable armchairs, informational brochures, and reception windows for arriving patients. An insurance form verifies benefits, and cards list dates. The patient sits in the waiting room until called.\nWhich reception lounge accommodates patients before clinical appointments?",
+        "prompt": "During a routine care or examination situation, an adult reviews Waiting Room, Insurance Form, Appointment Card. The next step focuses on Waiting Room.\nWhich option is the focus of the next step?",
         "answer": "Waiting Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "A panoramic x-ray machine rotates around the patient’s head to capture a single comprehensive flat image of all teeth, jaws, and joints. A camera views teeth, and compressors supply air. The technician positions the patient inside the panoramic x-ray unit.\nWhich rotating radiographic machine captures a comprehensive view of both jaws?",
+        "prompt": "During a routine care or examination situation, an adult reviews Panoramic X Ray, Intraoral Camera, Amalgam Separator. The next step focuses on Panoramic X Ray.\nWhich option is the focus of the next step?",
         "answer": "Panoramic X Ray",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A nitrous oxide system dispenses a controlled blend of nitrous oxide and oxygen gas through a nasal mask to provide conscious sedation. A compressor powers drills, and suction clears fluids. The dentist activates the nitrous oxide system to relax the anxious patient.\nWhich operatory sedation system dispenses blended relaxing gas through a mask?",
+        "prompt": "During a routine care or examination situation, an adult reviews Nitrous Oxide System, Dental Compressor, Suction Unit. The next step focuses on Nitrous Oxide System.\nWhich option is the focus of the next step?",
         "answer": "Nitrous Oxide System",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "The operatory dental light provides adjustable illumination directed into the oral cavity without casting shadows on working fields. A bib shields clothing, and trays hold instruments. The dentist adjusts the light handle during the procedure. Nitrile examination gloves protect dental personnel and patients against cross-contamination during clinical treatments. A mask covers the nose, and goggles shield eyes. The clinician pulls on a sterile pair of gloves before touching instruments. The clinic waiting room provides comfortable armchairs, informational brochures, and reception windows for arriving patients. An insurance form verifies benefits, and cards list dates. The patient sits in the waiting room until called. A panoramic x-ray machine rotates around the patient’s head to capture a single comprehensive flat image of all teeth, jaws, and joints. A camera views teeth, and compressors supply air. The technician positions the patient inside the panoramic x-ray unit. A nitrous oxide system dispenses a controlled blend of nitrous oxide and oxygen gas through a nasal mask to provide conscious sedation. A compressor powers drills, and suction clears fluids. The dentist activates the nitrous oxide system to relax the anxious patient.\nCompare “Light” and “Bib” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
-        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
-        "questionType": "comparison",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
       },
       {
-        "prompt": "Write an original short visitor or traveler account using Light, Bib, Tray, Gloves, Mask, Goggles, Waiting Room, Insurance Form, Appointment Card, Panoramic X Ray, Intraoral Camera, Amalgam Separator, Nitrous Oxide System, Dental Compressor, Suction Unit in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
-        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "prompt": "Spaced retrieval: Use the earlier word “Mouthwash” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "What does the receptionist give Maya to take home?",
+        "answer": "An appointment card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "Operatory protective equipment, panoramic x-rays and gas systems",
-      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
-      "scriptStarter": "The operatory dental light provides adjustable illumination directed into the oral cavity without casting shadows on working fields. A bib shields clothing, and trays hold instruments. The dentist adjusts the light handle during the procedure. Which adjustable luminaire illuminates the oral cavity during clinic care?"
+      "title": "The Dental Clinic: In Context",
+      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Mouthwash, Tongue Scraper from dental-clinic-6\n3 lesson(s) back: Premolar, Bicuspid from dental-clinic-4\n7 lesson(s) back: Mouthguard, Floss from dentist-8"
   },
@@ -1244,58 +1251,59 @@
     "targetWordsEnglish": ["Emergency Kit"],
     "targetWordsArabic": ["طقم طوارئ"],
     "usage": {
-      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
-      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
-      "textType": "educational-explanation",
-      "readingTarget": "50-52 words",
+      "goal": "Learn to use the dental clinic 8 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to the dental clinic.",
+      "textType": "short-narrative",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Emergency Kit"],
-          "scenario": "A clinic emergency kit contains life-saving emergency medications, an epinephrine autoinjector, glucose gel, and an oxygen delivery mask. The clinic team verifies expiration dates on medicines inside the emergency kit every month.",
+          "scenario": "During a routine care or examination situation, an adult reviews Emergency Kit, Cleaning, Filling. The next step focuses on Emergency Kit.",
           "check": {
-            "question": "Which specialized medical kit stores emergency drugs and oxygen supplies?",
+            "question": "Which option is the focus of the next step?",
             "options": ["Emergency Kit", "Cleaning", "Filling"],
             "expectedAnswer": "Emergency Kit"
           },
-          "imageBrief": "Accurate word-reference image supporting the dental clinic account, showing Emergency Kit as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
-          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
+          "imageBrief": "Photorealistic adult real-world scene in a the dental clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Emergency Kit, Cleaning, Filling. The next step focuses on Emergency Kit. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the dental clinic scene showing lesson-related items or actions including Emergency Kit in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clinic safety emergency kits and response supplies",
-      "text": "A clinic emergency kit contains life-saving emergency medications, an epinephrine autoinjector, glucose gel, and an oxygen delivery mask. The clinic team verifies expiration dates on medicines inside the emergency kit every month.",
-      "imageBrief": "Use independently inspected word references to support Clinic safety emergency kits and response supplies; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
+      "title": "The Dental Clinic 8: A short reading",
+      "text": "During orientation, the dental team checks the location of the emergency kit. Maya learns the equipment name from a photograph in her language lesson. Omar writes a sentence about where the kit is stored. They compare their descriptions with the picture, then ask the instructor which staff members are responsible for checking its contents.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about The Dental Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "A clinic emergency kit contains life-saving emergency medications, an epinephrine autoinjector, glucose gel, and an oxygen delivery mask. The clinic team verifies expiration dates on medicines inside the emergency kit every month.\nWhich specialized medical kit stores emergency drugs and oxygen supplies?",
+        "prompt": "During a routine care or examination situation, an adult reviews Emergency Kit, Cleaning, Filling. The next step focuses on Emergency Kit.\nWhich option is the focus of the next step?",
         "answer": "Emergency Kit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "A clinic emergency kit contains life-saving emergency medications, an epinephrine autoinjector, glucose gel, and an oxygen delivery mask. The clinic team verifies expiration dates on medicines inside the emergency kit every month.\nExplain the role or meaning of “Emergency Kit” using the stated account.",
-        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
-        "questionType": "comparison",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
       },
       {
-        "prompt": "Write an original short visitor or traveler account using Emergency Kit in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
-        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "prompt": "Spaced retrieval: Use the earlier word “Light” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "What does the dental team locate during orientation?",
+        "answer": "The emergency kit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "Clinic safety emergency kits and response supplies",
-      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
-      "scriptStarter": "A clinic emergency kit contains life-saving emergency medications, an epinephrine autoinjector, glucose gel, and an oxygen delivery mask. The clinic team verifies expiration dates on medicines inside the emergency kit every month. Which specialized medical kit stores emergency drugs and oxygen supplies?"
+      "title": "The Dental Clinic: In Context",
+      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Light, Bib from dental-clinic-7\n3 lesson(s) back: Spacer, Expander from dental-clinic-5\n7 lesson(s) back: Cleaning, Filling from dental-clinic-1"
   }

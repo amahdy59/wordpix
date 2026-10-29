@@ -56,7 +56,7 @@ export const SPORTS_CENTER_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "in the final stage of a task or competition",
       example:
-        "He's on the home stretch — past the hurdles, over the long jump, and just meters from the finish line.",
+        "She's on the home stretch — past the hurdles, over the long jump, and just meters from the finish line.",
     },
     {
       id: "sports-center-a-whole-new-ball-game",
@@ -83,7 +83,7 @@ export const SPORTS_CENTER_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "do more than expected; put in extra effort",
       example:
-        "He went the extra mile — after sprinting and high jump practice, he stayed to throw the javelin and the discus.",
+        "She went the extra mile — after sprinting and high jump practice, she stayed to throw the javelin and the discus.",
     },
     {
       id: "sports-center-neck-and-neck",
@@ -100,7 +100,7 @@ export const SPORTS_CENTER_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "alert, responsive, performing well",
-      example: "The new trainer is really on the ball — he corrects my form instantly.",
+      example: "The new trainer is really on the ball — she corrects my form instantly.",
     },
     {
       id: "sports-center-throw-in-the-towel",

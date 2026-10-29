@@ -26,7 +26,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "get up",
         meaning: "rise from a seated position",
         arabic: "يَقُومُ / يَنْهَضُ",
-        example: "He got up from the desk chair to stretch his legs.",
+        example: "She got up from the desk chair to stretch her legs.",
       },
     ],
     sentences: [
@@ -125,8 +125,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Plant Care",
-        en: "He used a vintage copper watering can to gently hydrate his potted geraniums.",
-        ar: "استخدم إبريق سقي نحاسيا قديما ليسقي نباتات إبرة الراعي في أصصه برفق.",
+        en: "She used a vintage copper watering can to gently hydrate her potted geraniums.",
+        ar: "اسْتَخْدَمَتْ مِرَشَّةَ مَاءٍ نُحَاسِيَّةً أَنِيقَةً لِرَيِّ زُهُورِ الجِيرَانْيُوم فِي الأَصَائِصِ.",
       },
       {
         context: "Gentle Watering",
@@ -140,8 +140,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He used a vintage copper watering can to gently hydrate his potted geraniums.",
-    exampleArabic: "استخدم إبريق سقي نحاسيا قديما ليسقي نباتات إبرة الراعي في أصصه برفق.",
+      "She used a vintage copper watering can to gently hydrate her potted geraniums.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ مِرَشَّةَ مَاءٍ نُحَاسِيَّةً أَنِيقَةً لِرَيِّ زُهُورِ الجِيرَانْيُوم فِي الأَصَائِصِ.",
   },
   tiles: {
     id: "tiles",
@@ -317,8 +318,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Hand Care",
-        en: "He pumped a coin-sized drop onto his palms and began to smooth it over dry hands.",
-        ar: "ضغط كمية بحجم قطعة نقدية على كفيه وبدأ يوزعها على يديه الجافتين.",
+        en: "She pumped a coin-sized drop onto her palms and began to smooth it over dry hands.",
+        ar: "ضَغَطَتْ قَطْرَةً بِحَجْمِ عُمْلَةٍ مَعْدَنِيَّةٍ عَلَى كَفَّيْهَا وَبَدَأَتْ بِدَهْنِهَا عَلَى يَدَيْهَا الجَافَّتَيْنِ.",
       },
       {
         context: "Winter Protection",
@@ -398,8 +399,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Kitchen Timing",
-        en: "He set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
-        ar: "ضبط مؤقت المطبخ الرقمي على خمس وعشرين دقيقة حتى لا يفرط في طهي سوفليه الشوكولاتة.",
+        en: "She set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
+        ar: "ضَبَطَتْ مُؤَقِّتَ المَطْبَخِ الرَّقْمِيَّ لِمُدَّةِ خَمْسٍ وَعِشْرِينَ دَقِيقَةً كَيْ لَا يَحْتَرِقَ السُّوفْلِيه.",
       },
       {
         context: "Baking Precision",
@@ -413,9 +414,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
+      "She set the digital kitchen timer for twenty-five minutes so the chocolate soufflé would not overcook.",
     exampleArabic:
-      "ضبط مؤقت المطبخ الرقمي على خمس وعشرين دقيقة حتى لا يفرط في طهي سوفليه الشوكولاتة.",
+      "ضَبَطَتْ مُؤَقِّتَ المَطْبَخِ الرَّقْمِيَّ لِمُدَّةِ خَمْسٍ وَعِشْرِينَ دَقِيقَةً كَيْ لَا يَحْتَرِقَ السُّوفْلِيه.",
   },
   freestyle: {
     id: "freestyle",
@@ -429,7 +430,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "power through",
         meaning: "stroke rapidly using front crawl motion",
         arabic: "يَسْبَحُ بِالسِّبَاحَةِ الحُرَّة",
-        example: "He powered through the fifty-meter freestyle.",
+        example: "She powered through the fifty-meter freestyle.",
       },
     ],
     sentences: [
@@ -466,7 +467,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "stretch out",
         meaning: "extend limbs to full length to release tension",
         arabic: "يُمَدِّدُ أَطْرَافَهُ لِلِاسْتِرْخَاء",
-        example: "He stretched out his hamstrings on the grass.",
+        example: "She stretched out her hamstrings on the grass.",
       },
     ],
     sentences: [

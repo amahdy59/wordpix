@@ -29,7 +29,7 @@ export const HOSPITAL_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "something unpleasant that must be accepted",
       example:
-        "Hearing that he needed surgery was a bitter pill to swallow — the surgeon and the anesthesiologist explained everything carefully.",
+        "Hearing that she needed surgery was a bitter pill to swallow — the surgeon and the anesthesiologist explained everything carefully.",
     },
     {
       id: "hospital-go-under-the-knife",
@@ -56,7 +56,7 @@ export const HOSPITAL_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "exactly what was needed",
       example:
-        "A week of rest in the recovery room was just what the doctor ordered after his long treatment.",
+        "A week of rest in the recovery room was just what the doctor ordered after her long treatment.",
     },
     {
       id: "hospital-on-the-mend",
@@ -83,7 +83,7 @@ export const HOSPITAL_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "the same bad treatment you give others",
       example:
-        "The receptionist, who never smiled, got a dose of his own medicine when nobody greeted him at the pharmacy.",
+        "The receptionist, who never smiled, got a dose of her own medicine when nobody greeted her at the pharmacy.",
     },
     {
       id: "hospital-the-cure-is-worse-than-the-disease",

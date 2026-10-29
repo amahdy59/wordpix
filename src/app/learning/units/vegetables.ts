@@ -125,7 +125,7 @@ export const VEGETABLES_LEARNING: UnitLearningMaterials = {
       phrase: "cool as a cucumber",
       kind: "idiom",
       meaning: "Very calm and composed.",
-      example: "Despite the pressure, he was as cool as a cucumber during the presentation.",
+      example: "Despite the pressure, she was as cool as a cucumber during the presentation.",
     },
     {
       id: "vegetables-a-couch-potato",
@@ -161,7 +161,7 @@ export const VEGETABLES_LEARNING: UnitLearningMaterials = {
       phrase: "turn beetroot",
       kind: "idiom",
       meaning: "To blush deeply; turn very red.",
-      example: "He turned beetroot when the teacher asked him a question in front of the class.",
+      example: "She turned beetroot when the teacher asked her a question in front of the class.",
     },
     {
       id: "vegetables-a-hot-potato",

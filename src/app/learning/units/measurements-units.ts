@@ -109,7 +109,7 @@ export const MEASUREMENTS_UNITS_LEARNING: UnitLearningMaterials = {
       phrase: "go the extra mile",
       kind: "idiom",
       meaning: "To make more effort than expected.",
-      example: "He always goes the extra mile — staying late to help his team.",
+      example: "She always goes the extra mile — staying late to help her team.",
     },
     {
       id: "measurements-units-give-an-inch-and-they-ll-take-a-mile",
@@ -134,7 +134,7 @@ export const MEASUREMENTS_UNITS_LEARNING: UnitLearningMaterials = {
       phrase: "by a long shot",
       kind: "idiom",
       meaning: "By a large amount.",
-      example: "He didn't win by a close margin — he won by a long shot, metres ahead.",
+      example: "She didn't win by a close margin — she won by a long shot, metres ahead.",
     },
     {
       id: "measurements-units-within-an-inch-of",

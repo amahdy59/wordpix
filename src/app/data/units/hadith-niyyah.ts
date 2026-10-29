@@ -9,7 +9,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/islamic-studies/judged.avif",
     description: "Evaluated after careful thought. Example: Actions are judged by intentions.",
     topic: "hadith-niyyah",
-    exampleUsage: "The competition is judged by three experienced artists.",
   },
   {
     id: "motive",
@@ -19,7 +18,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/islamic-studies/motive.avif",
     description: "The reason behind an action; niyyah is the intention held in the heart.",
     topic: "hadith-niyyah",
-    exampleUsage: "His motive for volunteering is to help his neighbors.",
   },
   {
     id: "intend",
@@ -29,7 +27,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/islamic-studies/intend.avif",
     description: "To have something as a plan or purpose. Example: I intend to learn English.",
     topic: "hadith-niyyah",
-    exampleUsage: "I intend to visit my grandfather on Friday.",
   },
   {
     id: "migration",
@@ -39,7 +36,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/islamic-studies/migration.avif",
     description: "Moving to another place to live; hijrah can mean migration for faith.",
     topic: "hadith-niyyah",
-    exampleUsage: "The family's migration to a new country took several weeks.",
   },
   {
     id: "worldly",
@@ -49,7 +45,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/islamic-studies/worldly.avif",
     description: "Related to material life rather than spiritual matters. Example: worldly gain.",
     topic: "hadith-niyyah",
-    exampleUsage: "He values friendship more than worldly possessions.",
   },
   {
     id: "gain",
@@ -68,6 +63,5 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/islamic-studies/marry.avif",
     description: "To become someone's spouse through a legal or religious union.",
     topic: "hadith-niyyah",
-    exampleUsage: "They plan to marry in June.",
-  },
+  }
 ];

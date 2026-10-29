@@ -96,11 +96,7 @@ export function ToolkitStage({ unit, onNext, onPrev }: Props) {
               </button>
             </div>
 
-            <div
-              className="border-t border-border pt-3 text-base text-foreground"
-              lang="en"
-              dir="ltr"
-            >
+            <div className="rounded-xl border-s-4 border-primary bg-muted/40 p-4 text-base sm:text-base font-medium text-foreground">
               <span className="font-bold text-sm uppercase tracking-wide text-primary block mb-1">
                 {t("conversation.modelDialogue")}:
               </span>

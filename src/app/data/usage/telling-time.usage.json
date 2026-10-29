@@ -27,17 +27,17 @@
       "Quarter Hour"
     ],
     "targetWordsArabic": [
+      "ساعة حائط / ساعة",
       "ساعة",
-      "ساعة يد",
       "عقرب الساعات",
       "عقرب الدقائق",
       "عقرب الثواني",
       "وجه الساعة",
-      "ساعة منبه",
+      "ساعة المنبه (منبه)",
       "ساعة رقمية",
       "ساعة شمسية",
       "ساعة رملية",
-      "ثانية",
+      "الثاني",
       "دقيقة",
       "ساعة",
       "نصف ساعة",
@@ -45,145 +45,116 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key telling time 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a time term, stated time or schedule relation.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to telling time in very simple everyday situations.",
+      "textType": "logistics-schedule",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Clock", "Watch", "Hour Hand"],
-          "scenario": "Hana checks the clock on the wall. Her watch is on her wrist; both devices show time with an hour hand.",
+          "scenario": "On a desk are a clock and a watch. A nearby wall clock clearly shows its hour hand. The highlighted object is the clock.",
           "check": {
-            "question": "Which device does Hana check on the wall?",
+            "question": "Which time expression fits this appointment or clock?",
             "options": ["Hour Hand", "Clock", "Watch"],
             "expectedAnswer": "Clock"
           },
-          "imageBrief": "Plain wall clock with blank tick marks beside an unworn wristwatch on table. No written digits, labels or highlighting; source text supplies wall position.",
-          "imageAlt": "A plain round wall clock with tick marks hangs on a light wall beside an unworn wristwatch resting on a wooden table.",
-          "imagePath": "scene-images/telling-time-1-usage-scene-1.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a desk are a clock and a watch. A nearby wall clock clearly shows its hour hand. The highlighted object is the clock. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Clock, Watch, Hour Hand in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Minute Hand", "Second Hand", "Clock Face"],
-          "scenario": "On this analogue clock, the minute hand is longer than the hour hand. It shows minutes, while the thin second hand shows seconds across the clock face.",
+          "scenario": "A large clock face shows both hands clearly. The longer minute hand is highlighted, while the second hand remains visible.",
           "check": {
-            "question": "Which hand shows minutes?",
+            "question": "What time detail is being shown?",
             "options": ["Minute Hand", "Second Hand", "Clock Face"],
             "expectedAnswer": "Minute Hand"
           },
-          "imageBrief": "One analogue clock with distinct shorter hour hand, longer minute hand and thin second hand. Tick marks only; no highlighted hand, numbers or labels.",
-          "imageAlt": "An analogue clock face with tick marks shows a shorter hour hand and a longer minute hand pointing upward, with a thin second hand.",
-          "imagePath": "scene-images/telling-time-1-usage-scene-2.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: A large clock face shows both hands clearly. The longer minute hand is highlighted, while the second hand remains visible. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Minute Hand, Second Hand, Clock Face in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Alarm Clock", "Digital Clock", "Sundial"],
-          "scenario": "An alarm clock gives a signal at a chosen time. A digital clock shows numbers; a sundial uses the sun’s shadow.",
+          "scenario": "In a meeting reminder, an adult compares examples of alarm clock, digital clock, and sundial. The highlighted time detail represents alarm clock.",
           "check": {
-            "question": "Which device gives a signal at a chosen time?",
+            "question": "What time detail is being shown in the example with alarm clock, digital clock?",
             "options": ["Digital Clock", "Sundial", "Alarm Clock"],
             "expectedAnswer": "Alarm Clock"
           },
-          "imageBrief": "Unbranded alarm clock with alarm bells beside blank digital-clock display and small sundial model. No readable digits, sound rays, labels or false exact-time claim.",
-          "imageAlt": "A classic twin-bell analogue alarm clock rests on a surface beside an unlit digital clock display and a small sundial model.",
-          "imagePath": "scene-images/telling-time-1-usage-scene-3.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In a meeting reminder, an adult compares examples of alarm clock, digital clock, and sundial. The highlighted time detail represents alarm clock. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Alarm Clock, Digital Clock, Sundial in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Hourglass", "Second", "Minute"],
-          "scenario": "Sand flows between two chambers of an hourglass. A second and a minute are units of time, not the name of this device.",
+          "scenario": "In an appointment planner, an adult compares examples of hourglass, second, and minute. The highlighted time detail represents hourglass.",
           "check": {
-            "question": "Which device measures time using flowing sand?",
+            "question": "What part of the clock or day should the learner identify?",
             "options": ["Minute", "Hourglass", "Second"],
             "expectedAnswer": "Hourglass"
           },
-          "imageBrief": "Simple hourglass with sand visibly in two chambers and narrow neck. No false specific duration, labels or digits.",
-          "imageAlt": "A glass hourglass with fine sand flowing from the upper chamber through a narrow neck into the lower chamber.",
-          "imagePath": "scene-images/telling-time-1-usage-scene-4.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an appointment planner, an adult compares examples of hourglass, second, and minute. The highlighted time detail represents hourglass. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Hourglass, Second, Minute in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Hour", "Half Hour", "Quarter Hour"],
-          "scenario": "The meeting lasts sixty minutes: one hour. A half hour is thirty minutes and a quarter hour is fifteen.",
+          "scenario": "On a station clock, an adult compares examples of hour, half hour, and quarter hour. The highlighted time detail represents hour.",
           "check": {
-            "question": "Which time unit is sixty minutes?",
+            "question": "Which time term matches the clock or schedule?",
             "options": ["Hour", "Half Hour", "Quarter Hour"],
             "expectedAnswer": "Hour"
           },
-          "imageBrief": "Meeting table with closed folder and unlabelled clock with tick marks. Passage supplies durations; no readable duration chart or labels.",
-          "imageAlt": "An unlabelled analogue wall clock with tick marks hangs in an office meeting room above a conference table with a folder.",
-          "imagePath": "scene-images/telling-time-1-usage-scene-5.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a station clock, an adult compares examples of hour, half hour, and quarter hour. The highlighted time detail represents hour. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Hour, Half Hour, Quarter Hour in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Telling Time 1: Managing a Busy Schedule",
-      "text": "Hana looks at her watch before a meeting. The hour hand is on nine, and the minute hand is on twelve. The clock face shows nine o’clock. Her alarm clock rang an hour earlier. She checks the digital clock on her desk, then waits a quarter hour for her colleague.",
-      "imageBrief": "One analogue clock showing exactly nine o’clock: hour hand at the nine-position and minute hand at the top twelve-position. Tick marks only, no digits, second clock, wristwatch showing another time or text."
+      "text": "An adult checks a schedule before a day of meetings and appointments. The first part of the schedule uses clock, watch, hour hand, minute hand, and second hand. To read and describe time, the person checks clock face, alarm clock, digital clock, sundial, and hourglass. Later entries refer to second, minute, hour, half hour, and quarter hour. The person confirms each time before leaving for the next appointment.",
+      "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Hana checks the clock on the wall. Her watch is on her wrist; both devices show time with an hour hand.\nWhich device does Hana check on the wall?",
-        "answer": "Clock",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Clock"
       },
       {
-        "prompt": "On this analogue clock, the minute hand is longer than the hour hand. It shows minutes, while the thin second hand shows seconds across the clock face.\nWhich hand shows minutes?",
-        "answer": "Minute Hand",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Minute Hand"
       },
       {
-        "prompt": "An alarm clock gives a signal at a chosen time. A digital clock shows numbers; a sundial uses the sun’s shadow.\nWhich device gives a signal at a chosen time?",
-        "answer": "Alarm Clock",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Alarm Clock"
       },
       {
-        "prompt": "Sand flows between two chambers of an hourglass. A second and a minute are units of time, not the name of this device.\nWhich device measures time using flowing sand?",
-        "answer": "Hourglass",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Hourglass"
       },
       {
-        "prompt": "The meeting lasts sixty minutes: one hour. A half hour is thirty minutes and a quarter hour is fifteen.\nWhich time unit is sixty minutes?",
-        "answer": "Hour",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Hour"
       },
       {
-        "prompt": "Read the passage: Hana looks at her watch before a meeting. The hour hand is on nine, and the minute hand is on twelve. The clock face shows nine o’clock. Her alarm clock rang an hour earlier. She checks the digital clock on her desk, then waits a quarter hour for her colleague.\nWhat time does the clock show?",
-        "answer": "nine o’clock",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Clock"
       },
       {
-        "prompt": "Ask a colleague what time the wall clock shows.",
-        "answer": "What time does the clock show?",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Watch"
       },
       {
-        "prompt": "Explain that one quarter hour is fifteen minutes.",
-        "answer": "A quarter hour is fifteen minutes.",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Clock Face"
       }
     ],
     "video": {
-      "title": "Time and Appointments in Daily Life",
-      "idea": "Adult appointments and work routines. Narration states times and schedule relations. Analogue diagrams have accurate hands without labels; written text supplies morning/evening and punctuality instead of inferred faces or lighting.",
-      "scriptStarter": "Hana checks the clock on the wall. Her watch is on her wrist; both devices show time with an hour hand."
+      "title": "Telling Time: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily schedule. Show clock, watch, hour hand, minute hand, and second hand naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: On a desk are a clock and a watch. A nearby wall clock clearly shows its hour hand. The highlighted object is the clock."
     },
     "spacedReview": "1 lesson(s) back: Habanero, Serrano from vegetables-4\n3 lesson(s) back: Chard, Collard Greens from vegetables-2\n7 lesson(s) back: Mulberry, Boysenberry from fruits-2"
   },
@@ -233,145 +204,116 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key telling time 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a time term, stated time or schedule relation.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to telling time in very simple everyday situations.",
+      "textType": "logistics-schedule",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Noon", "Midnight", "Dawn"],
-          "scenario": "Hana eats at noon, twelve in the middle of the day. Midnight is twelve at night; dawn is when morning daylight first appears.",
+          "scenario": "At a phone calendar, an adult compares examples of noon, midnight, and dawn. The highlighted time detail represents noon.",
           "check": {
-            "question": "Which word names twelve in the middle of the day?",
+            "question": "Which time term matches the clock or schedule in the example with noon, midnight?",
             "options": ["Noon", "Midnight", "Dawn"],
             "expectedAnswer": "Noon"
           },
-          "imageBrief": "Daylight office lunch table with no clock or readable schedule. Written passage supplies noon rather than shadow-based exact time.",
-          "imageAlt": "Bright midday sunlight illuminates a park path with very short shadows cast directly beneath trees.",
-          "imagePath": "scene-images/telling-time-2-usage-scene-1.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: At a phone calendar, an adult compares examples of noon, midnight, and dawn. The highlighted time detail represents noon. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Noon, Midnight, Dawn in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Dusk", "Twilight", "O'Clock"],
-          "scenario": "At dusk, evening daylight fades towards darkness. Twilight is light before sunrise or after sunset; o’clock names an exact hour.",
+          "scenario": "In a meeting reminder, an adult compares examples of dusk, twilight, and o'clock. The highlighted time detail represents dusk.",
           "check": {
-            "question": "Which word names the evening time when daylight fades?",
+            "question": "Which time term matches the clock or schedule in the example with dusk, twilight?",
             "options": ["Twilight", "O'Clock", "Dusk"],
             "expectedAnswer": "Dusk"
           },
-          "imageBrief": "Natural evening sky after sunset with fading light and no visible sun above horizon. No clock, text or exact-location sunset timing claim.",
-          "imageAlt": "Warm twilight colors streak the evening sky as the sun dips below the horizon over a quiet urban skyline.",
-          "imagePath": "scene-images/telling-time-2-usage-scene-2.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In a meeting reminder, an adult compares examples of dusk, twilight, and o'clock. The highlighted time detail represents dusk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Dusk, Twilight, O'Clock in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Half Past", "Quarter Past", "Quarter To"],
-          "scenario": "The clock shows nine thirty, or half past nine. Quarter past nine is nine fifteen, and quarter to ten is nine forty-five.",
+          "scenario": "In an appointment planner, an adult compares examples of half past, quarter past, and quarter to. The highlighted time detail represents half past.",
           "check": {
-            "question": "Which phrase means thirty minutes after nine?",
+            "question": "Which expression best describes the selected time?",
             "options": ["Quarter To", "Half Past", "Quarter Past"],
             "expectedAnswer": "Half Past"
           },
-          "imageBrief": "One analogue clock showing nine thirty: minute hand at bottom six-position, hour hand exactly halfway between nine and ten positions. Tick marks only, no digits or highlighted hand.",
-          "imageAlt": "An analogue clock face with tick marks shows the minute hand pointing directly down to the six and the hour hand halfway between numerals.",
-          "imagePath": "scene-images/telling-time-2-usage-scene-3.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an appointment planner, an adult compares examples of half past, quarter past, and quarter to. The highlighted time detail represents half past. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Half Past, Quarter Past, Quarter To in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Five Past", "Ten Past", "Twenty Past"],
-          "scenario": "Hana arrives at two oh five: five past two. Ten past two is two ten, and twenty past two is two twenty.",
+          "scenario": "On a station clock, an adult compares examples of five past, ten past, and twenty past. The highlighted time detail represents five past.",
           "check": {
-            "question": "Which phrase means five minutes after two?",
+            "question": "Which time expression fits this appointment or clock in the example with five past, ten past?",
             "options": ["Five Past", "Ten Past", "Twenty Past"],
             "expectedAnswer": "Five Past"
           },
-          "imageBrief": "One analogue clock showing two oh five: minute hand at one-position, hour hand slightly past two. Tick marks only, no digits, labels or competing clock.",
-          "imageAlt": "An analogue clock face with tick marks shows the minute hand pointing slightly past the top at the one position.",
-          "imagePath": "scene-images/telling-time-2-usage-scene-4.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a station clock, an adult compares examples of five past, ten past, and twenty past. The highlighted time detail represents five past. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Five Past, Ten Past, Twenty Past in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Five To", "Ten To", "Sharp"],
-          "scenario": "The bus leaves at eight sharp, exactly eight. Hana arrives at seven fifty-five, five to eight. Ten to eight means seven fifty.",
+          "scenario": "In an office schedule, an adult compares examples of five to, ten to, and sharp. The highlighted time detail represents five to.",
           "check": {
-            "question": "Which phrase means five minutes before eight?",
+            "question": "What time detail is being shown in the example with five to, ten to?",
             "options": ["Ten To", "Sharp", "Five To"],
             "expectedAnswer": "Five To"
           },
-          "imageBrief": "One analogue clock showing seven fifty-five: minute hand at eleven-position and hour hand just before eight. Tick marks only, no labels or numbers.",
-          "imageAlt": "An analogue clock face with tick marks shows the minute hand pointing at the eleven position, five minutes before the hour.",
-          "imagePath": "scene-images/telling-time-2-usage-scene-5.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an office schedule, an adult compares examples of five to, ten to, and sharp. The highlighted time detail represents five to. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Five To, Ten To, Sharp in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Telling Time 2: Managing a Busy Schedule",
-      "text": "The class starts at nine o’clock sharp. Hana arrives at five to nine. At quarter past nine, the teacher starts the first task. They take a break at half past nine and finish at ten. Hana has lunch at noon. She does not work at midnight.",
-      "imageBrief": "Adult classroom with one analogue clock showing half past nine: minute hand at the bottom six-position and hour hand exactly midway between nine and ten. Tick marks only without digits; no competing clocks, labels or text."
+      "text": "An adult checks a schedule before a day of meetings and appointments. The first part of the schedule uses noon, midnight, dawn, dusk, and twilight. To read and describe time, the person checks o'clock, half past, quarter past, quarter to, and five past. Later entries refer to ten past, twenty past, five to, ten to, and sharp. The person confirms each time before leaving for the next appointment.",
+      "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Hana eats at noon, twelve in the middle of the day. Midnight is twelve at night; dawn is when morning daylight first appears.\nWhich word names twelve in the middle of the day?",
-        "answer": "Noon",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Noon"
       },
       {
-        "prompt": "At dusk, evening daylight fades towards darkness. Twilight is light before sunrise or after sunset; o’clock names an exact hour.\nWhich word names the evening time when daylight fades?",
-        "answer": "Dusk",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dusk"
       },
       {
-        "prompt": "The clock shows nine thirty, or half past nine. Quarter past nine is nine fifteen, and quarter to ten is nine forty-five.\nWhich phrase means thirty minutes after nine?",
-        "answer": "Half Past",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Half Past"
       },
       {
-        "prompt": "Hana arrives at two oh five: five past two. Ten past two is two ten, and twenty past two is two twenty.\nWhich phrase means five minutes after two?",
-        "answer": "Five Past",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Five Past"
       },
       {
-        "prompt": "The bus leaves at eight sharp, exactly eight. Hana arrives at seven fifty-five, five to eight. Ten to eight means seven fifty.\nWhich phrase means five minutes before eight?",
-        "answer": "Five To",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Five To"
       },
       {
-        "prompt": "Read the passage: The class starts at nine o’clock sharp. Hana arrives at five to nine. At quarter past nine, the teacher starts the first task. They take a break at half past nine and finish at ten. Hana has lunch at noon. She does not work at midnight.\nWhen do they take a break?",
-        "answer": "at half past nine",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Noon"
       },
       {
-        "prompt": "Say that the meeting starts at half past nine.",
-        "answer": "The meeting starts at half past nine.",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Midnight"
       },
       {
-        "prompt": "Your appointment is at eight and you arrive at seven fifty-five. State your arrival time using five to.",
-        "answer": "I arrived at five to eight.",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "O'Clock"
       }
     ],
     "video": {
-      "title": "Time and Appointments in Daily Life",
-      "idea": "Adult appointments and work routines. Narration states times and schedule relations. Analogue diagrams have accurate hands without labels; written text supplies morning/evening and punctuality instead of inferred faces or lighting.",
-      "scriptStarter": "Hana eats at noon, twelve in the middle of the day. Midnight is twelve at night; dawn is when morning daylight first appears."
+      "title": "Telling Time: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily schedule. Show noon, midnight, dawn, dusk, and twilight naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: At a phone calendar, an adult compares examples of noon, midnight, and dawn. The highlighted time detail represents noon."
     },
     "spacedReview": "1 lesson(s) back: Clock, Watch from telling-time-1\n3 lesson(s) back: Zucchini, Pumpkin from vegetables-3\n7 lesson(s) back: Lemon, Lime from fruits-3"
   },
@@ -421,145 +363,116 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key telling time 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a time term, stated time or schedule relation.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to telling time in very simple everyday situations.",
+      "textType": "logistics-schedule",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Morning", "Afternoon", "Evening"],
-          "scenario": "Hana begins work at nine in the morning. Her afternoon meeting is later, and she meets a friend in the evening.",
+          "scenario": "A daily planner separates the day into morning, afternoon, and evening. The highlighted appointment is in the morning.",
           "check": {
-            "question": "Which part of the day does Hana begin work in?",
+            "question": "What time detail is being shown in the example with morning, afternoon?",
             "options": ["Afternoon", "Evening", "Morning"],
             "expectedAnswer": "Morning"
           },
-          "imageBrief": "Adult office desk in daylight with blank planner and no readable schedule. Passage supplies morning; no inferred hour from window.",
-          "imageAlt": "Early morning sunlight streams through a window onto an office desk with a warm cup of coffee and a daily notebook.",
-          "imagePath": "scene-images/telling-time-3-usage-scene-1.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: A daily planner separates the day into morning, afternoon, and evening. The highlighted appointment is in the morning. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Morning, Afternoon, Evening in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Night", "Sunrise", "Sunset"],
-          "scenario": "Karim describes the dark hours as night. Sunrise begins the sun’s appearance and sunset marks its disappearance below the horizon.",
+          "scenario": "Three photographs show night, sunrise, and sunset. The highlighted photograph shows night.",
           "check": {
-            "question": "Which word names the dark part of the day?",
+            "question": "What time detail is being shown in the example with night, sunrise?",
             "options": ["Sunset", "Night", "Sunrise"],
             "expectedAnswer": "Night"
           },
-          "imageBrief": "Ordinary outdoor scene at night with dark sky and safely lit street, no sunrise/sunset collage or text.",
-          "imageAlt": "A calm nighttime city scene with stars and a dark sky visible through a wide window beside a dimly lit desk lamp.",
-          "imagePath": "scene-images/telling-time-3-usage-scene-2.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: Three photographs show night, sunrise, and sunset. The highlighted photograph shows night. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Night, Sunrise, Sunset in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Midday", "Late Night", "Early Morning"],
-          "scenario": "Karim eats lunch at midday, around twelve in the middle of the day. Early morning and late night are different periods.",
+          "scenario": "On a station clock, an adult compares examples of midday, late night, and early morning. The highlighted time detail represents midday.",
           "check": {
-            "question": "Which term names the middle of the day?",
+            "question": "What part of the clock or day should the learner identify in the example with midday, late night?",
             "options": ["Midday", "Late Night", "Early Morning"],
             "expectedAnswer": "Midday"
           },
-          "imageBrief": "Ordinary daylight lunch table; written text identifies midday. No exact-time shadow claims or readable clock.",
-          "imageAlt": "Direct overhead natural sunlight casts minimal shadows on an open courtyard with benches.",
-          "imagePath": "scene-images/telling-time-3-usage-scene-3.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a station clock, an adult compares examples of midday, late night, and early morning. The highlighted time detail represents midday. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Midday, Late Night, Early Morning in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Nightfall", "A.M.", "P.M."],
-          "scenario": "At nightfall, darkness begins in the evening. A.M. is used for times before noon and P.M. for times from noon until midnight.",
+          "scenario": "In an office schedule, an adult compares examples of nightfall, a.m., and p.m. The highlighted time detail represents nightfall.",
           "check": {
-            "question": "Which word names the arrival of evening darkness?",
+            "question": "Which time term matches the clock or schedule in the example with nightfall, a.m.?",
             "options": ["A.M.", "P.M.", "Nightfall"],
             "expectedAnswer": "Nightfall"
           },
-          "imageBrief": "Ordinary street at the onset of evening darkness, no readable shop signs, clock or time labels.",
-          "imageAlt": "Deep evening blue settles into night over a quiet town street as streetlights begin to illuminate the road.",
-          "imagePath": "scene-images/telling-time-3-usage-scene-4.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an office schedule, an adult compares examples of nightfall, a.m., and p.m. The highlighted time detail represents nightfall. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Nightfall, A.M., P.M. in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["On Time", "Early", "Late"],
-          "scenario": "The appointment is at nine. Hana arrives at nine, on time. Early means before the agreed time and late means after it.",
+          "scenario": "Three people arrive for appointments: one is early, one is on time, and one is late. The highlighted person is on time.",
           "check": {
-            "question": "Which phrase describes Hana’s arrival at the agreed time?",
+            "question": "Which time term matches the clock or schedule in the example with on time, early?",
             "options": ["Late", "On Time", "Early"],
             "expectedAnswer": "On Time"
           },
-          "imageBrief": "Adult reception with plain appointment folder and unlabelled tick-mark clock. Text supplies exact arrival and appointment agreement; no highlighted person or readable schedule.",
-          "imageAlt": "A commuter train rests precisely at the station platform beside a platform clock.",
-          "imagePath": "scene-images/telling-time-3-usage-scene-5.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: Three people arrive for appointments: one is early, one is on time, and one is late. The highlighted person is on time. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including On Time, Early, Late in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Telling Time 3: Managing a Busy Schedule",
-      "text": "Karim walks to work in the early morning after sunrise. His first meeting is at nine a.m. He eats at midday and works again in the afternoon. At six p.m., he leaves on time. In the evening, he meets a friend before sunset. He returns home before late night.",
-      "imageBrief": "Adult leaving an office in early evening daylight. The passage supplies a.m., p.m. and on-time information; no arbitrary clock time in image."
+      "text": "An adult checks a schedule before a day of meetings and appointments. The first part of the schedule uses morning, afternoon, evening, night, and sunrise. To read and describe time, the person checks sunset, midday, late night, early morning, and nightfall. Later entries refer to a.m., p.m., on time, early, and late. The person confirms each time before leaving for the next appointment.",
+      "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Hana begins work at nine in the morning. Her afternoon meeting is later, and she meets a friend in the evening.\nWhich part of the day does Hana begin work in?",
-        "answer": "Morning",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Morning"
       },
       {
-        "prompt": "Karim describes the dark hours as night. Sunrise begins the sun’s appearance and sunset marks its disappearance below the horizon.\nWhich word names the dark part of the day?",
-        "answer": "Night",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Night"
       },
       {
-        "prompt": "Karim eats lunch at midday, around twelve in the middle of the day. Early morning and late night are different periods.\nWhich term names the middle of the day?",
-        "answer": "Midday",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Midday"
       },
       {
-        "prompt": "At nightfall, darkness begins in the evening. A.M. is used for times before noon and P.M. for times from noon until midnight.\nWhich word names the arrival of evening darkness?",
-        "answer": "Nightfall",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Nightfall"
       },
       {
-        "prompt": "The appointment is at nine. Hana arrives at nine, on time. Early means before the agreed time and late means after it.\nWhich phrase describes Hana’s arrival at the agreed time?",
-        "answer": "On Time",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "On Time"
       },
       {
-        "prompt": "Read the passage: Karim walks to work in the early morning after sunrise. His first meeting is at nine a.m. He eats at midday and works again in the afternoon. At six p.m., he leaves on time. In the evening, he meets a friend before sunset. He returns home before late night.\nWhen does Karim leave work?",
-        "answer": "at six p.m.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Morning"
       },
       {
-        "prompt": "Tell a colleague that you arrived on time.",
-        "answer": "I arrived on time.",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Afternoon"
       },
       {
-        "prompt": "Ask whether a meeting at nine is in the morning or evening.",
-        "answer": "Is the meeting at nine a.m. or nine p.m.?",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Sunset"
       }
     ],
     "video": {
-      "title": "Time and Appointments in Daily Life",
-      "idea": "Adult appointments and work routines. Narration states times and schedule relations. Analogue diagrams have accurate hands without labels; written text supplies morning/evening and punctuality instead of inferred faces or lighting.",
-      "scriptStarter": "Hana begins work at nine in the morning. Her afternoon meeting is later, and she meets a friend in the evening."
+      "title": "Telling Time: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily schedule. Show morning, afternoon, evening, night, and sunrise naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: A daily planner separates the day into morning, afternoon, and evening. The highlighted appointment is in the morning."
     },
     "spacedReview": "1 lesson(s) back: Noon, Midnight from telling-time-2\n3 lesson(s) back: Habanero, Serrano from vegetables-4\n7 lesson(s) back: Fig, Olive from fruits-4"
   },
@@ -589,85 +502,68 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key telling time 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a time term, stated time or schedule relation.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to telling time in very simple everyday situations.",
+      "textType": "logistics-schedule",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ahead of Time", "Behind Schedule", "Overtime"],
-          "scenario": "The task is due on Friday, but the team finishes on Thursday, ahead of time. Behind schedule means later than planned; overtime is work beyond usual hours.",
+          "scenario": "In an appointment planner, an adult compares examples of ahead of time, behind schedule, and overtime. The highlighted time detail represents ahead of time.",
           "check": {
-            "question": "Which phrase describes finishing before Friday’s deadline?",
+            "question": "Which time term matches the clock or schedule in the example with ahead of time, behind schedule?",
             "options": ["Overtime", "Ahead of Time", "Behind Schedule"],
             "expectedAnswer": "Ahead of Time"
           },
-          "imageBrief": "Completed work folder on adult office table with blank calendar. Written context supplies deadline and completion dates; no labels or fake overtime indicator.",
-          "imageAlt": "An airport departure lounge with tidy seating and boarding gate displays before passengers arrive.",
-          "imagePath": "scene-images/telling-time-4-usage-scene-1.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: In an appointment planner, an adult compares examples of ahead of time, behind schedule, and overtime. The highlighted time detail represents ahead of time. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Ahead of Time, Behind Schedule, Overtime in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Countdown", "Stopwatch"],
-          "scenario": "The countdown goes from ten towards zero to show time remaining. A stopwatch measures elapsed time after an activity starts.",
+          "scenario": "On a station clock, an adult compares examples of countdown and stopwatch. The highlighted time detail represents countdown.",
           "check": {
-            "question": "Which term names the count towards zero?",
+            "question": "Which expression best describes the selected time in the example with countdown, stopwatch?",
             "options": ["Countdown", "Stopwatch", "Ahead of Time"],
             "expectedAnswer": "Countdown"
           },
-          "imageBrief": "Unbranded countdown timer beside stopwatch, both displays blank. Text states remaining versus elapsed time; no labels or invented timer digits.",
-          "imageAlt": "A digital countdown timer display on a table beside project blueprints, counting down remaining minutes.",
-          "imagePath": "scene-images/telling-time-4-usage-scene-2.webp"
+          "imageBrief": "Photorealistic adult real-world scene in a telling time context illustrating this situation: On a station clock, an adult compares examples of countdown and stopwatch. The highlighted time detail represents countdown. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult telling time scene showing lesson-related items or actions including Countdown, Stopwatch in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Telling Time 4: Managing a Busy Schedule",
-      "text": "The team is ahead of time because it finished the first task early. A delayed delivery puts the next task behind schedule. Samir works overtime to finish it. His colleague uses a stopwatch for a short test and a countdown to show how much time remains.",
-      "imageBrief": "Adult work table with packaged delivery and unbranded stopwatch; no visual claim of overtime or schedule status without the passage."
+      "text": "An adult checks a schedule before a day of meetings and appointments. The first part of the schedule uses ahead of time, behind schedule, overtime, countdown, and stopwatch. The person confirms each time before leaving for the next appointment. The vocabulary is used in a realistic telling time context that an adult could meet at home, at work, or in the community.",
+      "imageBrief": "One uncluttered telling time scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "The task is due on Friday, but the team finishes on Thursday, ahead of time. Behind schedule means later than planned; overtime is work beyond usual hours.\nWhich phrase describes finishing before Friday’s deadline?",
-        "answer": "Ahead of Time",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Ahead of Time"
       },
       {
-        "prompt": "The countdown goes from ten towards zero to show time remaining. A stopwatch measures elapsed time after an activity starts.\nWhich term names the count towards zero?",
-        "answer": "Countdown",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Countdown"
       },
       {
-        "prompt": "Read the passage: The team is ahead of time because it finished the first task early. A delayed delivery puts the next task behind schedule. Samir works overtime to finish it. His colleague uses a stopwatch for a short test and a countdown to show how much time remains.\nWhy is the next task behind schedule?",
-        "answer": "because of a delayed delivery",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Ahead of Time"
       },
       {
-        "prompt": "Say that your team finished before the deadline using ahead of time.",
-        "answer": "Our team finished ahead of time.",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Behind Schedule"
       },
       {
-        "prompt": "Ask which device measures elapsed time.",
-        "answer": "Which device measures elapsed time: the stopwatch or the countdown timer?",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Stopwatch"
       }
     ],
     "video": {
-      "title": "Time and Appointments in Daily Life",
-      "idea": "Adult appointments and work routines. Narration states times and schedule relations. Analogue diagrams have accurate hands without labels; written text supplies morning/evening and punctuality instead of inferred faces or lighting.",
-      "scriptStarter": "The task is due on Friday, but the team finishes on Thursday, ahead of time. Behind schedule means later than planned; overtime is work beyond usual hours."
+      "title": "Telling Time: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily schedule. Show ahead of time, behind schedule, overtime, countdown, and stopwatch naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: In an appointment planner, an adult compares examples of ahead of time, behind schedule, and overtime. The highlighted time detail represents ahead of time."
     },
     "spacedReview": "1 lesson(s) back: Morning, Afternoon from telling-time-3\n3 lesson(s) back: Clock, Watch from telling-time-1\n7 lesson(s) back: Carrot, Potato from vegetables-1"
   }

@@ -26,8 +26,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Baking Lasagna",
-        en: "He layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
-        ar: "وضع طبقات من صلصة اللحم وجبن الريكوتا في طبق خزفي عميق للخبز.",
+        en: "She layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
+        ar: "رَتَّبَتْ صَلْصَةَ اللَّحْمِ وَجُبْنَ الرِّيكُوتَا فِي طَاجِنِ فُرْنٍ خَزَفِيٍّ عَمِيقٍ.",
       },
       {
         context: "Comfort Food",
@@ -40,8 +40,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يُمْكِنُ تَقْدِيمُ طَاجِنِ الفُرْنِ الأَنِيقِ مُبَاشَرَةً مِنَ الفُرْنِ إِلَى طَاوِلَةِ الطَّعَامِ.",
       },
     ],
-    exampleSentence: "He layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
-    exampleArabic: "وضع طبقات من صلصة اللحم وجبن الريكوتا في طبق خزفي عميق للخبز.",
+    exampleSentence: "She layered meat sauce and ricotta cheese in a deep ceramic casserole dish.",
+    exampleArabic:
+      "رَتَّبَتْ صَلْصَةَ اللَّحْمِ وَجُبْنَ الرِّيكُوتَا فِي طَاجِنِ فُرْنٍ خَزَفِيٍّ عَمِيقٍ.",
   },
   pajamas: {
     id: "pajamas",
@@ -68,7 +69,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "change into",
         meaning: "switch into pajamas",
         arabic: "يُبَدِّلُ إِلَى مَلابِسِ النَّوْم",
-        example: "After a hot shower, he changed into clean cotton pajamas.",
+        example: "After a hot shower, she changed into clean cotton pajamas.",
       },
     ],
     sentences: [
@@ -123,8 +124,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Spill Cleanup",
-        en: "He tore off two sheets of absorbent paper towels to clean up the spilled juice.",
-        ar: "مزق ورقتين من مناشف المطبخ الورقية ليمسح العصير المسكوب.",
+        en: "She tore off two sheets of absorbent paper towels to clean up the spilled juice.",
+        ar: "فَصَلَتْ مَنْدِيلَيْنِ وَرَقِيَّيْنِ مَاصَّيْنِ لِمَسْحِ العَصِيرِ المَسْكُوبِ عَنِ الطَّاوِلَةِ.",
       },
       {
         context: "Draining Oil",
@@ -138,8 +139,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He tore off two sheets of absorbent paper towels to clean up the spilled juice.",
-    exampleArabic: "مزق ورقتين من مناشف المطبخ الورقية ليمسح العصير المسكوب.",
+      "She tore off two sheets of absorbent paper towels to clean up the spilled juice.",
+    exampleArabic:
+      "فَصَلَتْ مَنْدِيلَيْنِ وَرَقِيَّيْنِ مَاصَّيْنِ لِمَسْحِ العَصِيرِ المَسْكُوبِ عَنِ الطَّاوِلَةِ.",
   },
   tractor: {
     id: "tractor",
@@ -290,7 +292,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "prick with",
         meaning: "pierce lightly with a sharp point",
         arabic: "يَخِزُ بِـ",
-        example: "He pricked his thumb on a sharp rose thorn while cutting flowers.",
+        example: "She pricked her thumb on a sharp rose thorn while cutting flowers.",
       },
     ],
     sentences: [
@@ -310,8 +312,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَتَمَيَّزُ نَبَاتَاتُ الصَّبَّارِ بِأَوْرَاقٍ مُتَحَوِّرَةٍ تَطَوَّرَتْ إِلَى أَشْوَاكٍ حَادَّةٍ لِلْحِمَايَةِ.",
       },
     ],
-    exampleSentence: "A sharp thorn caught on his sleeve as he brushed past the bush.",
-    exampleArabic: "علق شوك حاد بكمه أثناء مروره بجانب الشجيرة.",
+    exampleSentence: "A sharp thorn caught on her sleeve as she brushed past the bush.",
+    exampleArabic:
+      "عَلِقَتْ شَوْكَةٌ حَادَّةٌ فِي كُمِّهَا عِنْدَمَا مَرَّتْ مُحَاذِيَةً الشُّجَيْرَةَ.",
   },
   "nail-clipper": {
     id: "nail-clipper",
@@ -393,8 +396,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Essay Drafting",
-        en: "He spent the morning typing his final thesis draft on the library desktop terminal.",
-        ar: "أمضى الصباح يكتب المسودة النهائية لأطروحته على حاسوب المكتبة المكتبي.",
+        en: "She spent the morning typing her final thesis draft on the library desktop terminal.",
+        ar: "أَمْضَتِ الصَّبَاحَ فِي كِتَابَةِ مُسَوَّدَةِ أُطْرُوحَتِهَا النِّهَائِيَّةِ عَلَى حَاسُوبِ المَكْتَبَةِ.",
       },
       {
         context: "Silent Keyboards",
@@ -537,7 +540,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "warm up",
         meaning: "reheat seasoned broth for serving",
         arabic: "يُسَخِّنُ الحَسَاء",
-        example: "He warmed up a pot of vegetable soup.",
+        example: "She warmed up a pot of vegetable soup.",
       },
     ],
     sentences: [

@@ -47,6 +47,12 @@
     "reason": "Prevent an unrelated number from being appended to the isolated word."
   },
   {
+    "matches": ["Bat", "bat"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"B AE1 T\">bat</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Pin the isolated word to the short-a pronunciation without trailing speech."
+  },
+  {
     "matches": ["Fins", "fins"],
     "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"F IH1 N Z\">fins</phoneme>",
     "profile": { "modelId": "eleven_flash_v2" },
@@ -57,6 +63,18 @@
     "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"F OW1 M\">foam</phoneme>",
     "profile": { "modelId": "eleven_flash_v2" },
     "reason": "Preserve the final m rather than producing phone."
+  },
+  {
+    "matches": ["Van", "van"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"V AE1 N\">van</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Pin the initial v and short-a sounds."
+  },
+  {
+    "matches": ["Pet", "pet"],
+    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"P EH1 T\">pet</phoneme>",
+    "profile": { "modelId": "eleven_flash_v2" },
+    "reason": "Pin the isolated word to the short-e pronunciation."
   },
   {
     "matches": ["Chew", "chew"],
@@ -99,11 +117,5 @@
     "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"S T AE1 N D\">stand</phoneme>",
     "profile": { "modelId": "eleven_flash_v2" },
     "reason": "Make every consonant in the isolated word explicit."
-  },
-  {
-    "matches": ["Pin", "pin"],
-    "synthesisText": "<phoneme alphabet=\"cmu-arpabet\" ph=\"P IH1 N\">pin</phoneme>",
-    "profile": { "modelId": "eleven_v4" },
-    "reason": "Keep the isolated word on the clean short-i sound /pɪn/ without trailing speech or confusion with pinned."
   }
 ]

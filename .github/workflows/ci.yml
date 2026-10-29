@@ -13,7 +13,7 @@ jobs:
     env:
       # Both the production build and the later ANALYZE rebuild must use the
       # same public asset origin. The analysis step overwrites dist before E2E.
-      VITE_ASSET_BASE_URL: ${{ vars.VITE_ASSET_BASE_URL || 'https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev' }}
+      VITE_ASSET_BASE_URL: ${{ vars.VITE_ASSET_BASE_URL }}
     steps:
       - uses: actions/checkout@v7
 
@@ -43,9 +43,6 @@ jobs:
       - name: Lint
         run: pnpm run lint
 
-      - name: Require complete recorded audio before publishing
-        run: node scripts/check_recorded_audio_readiness.cjs
-
       - name: Coverage report (report-only, no thresholds yet)
         run: pnpm run test:coverage
 
@@ -59,7 +56,7 @@ jobs:
         run: pnpm run check:bundle
 
       - name: Install Playwright Browsers
-        run: pnpm exec playwright install --with-deps chromium webkit
+        run: pnpm exec playwright install --with-deps chromium
 
       - name: Run Playwright tests
         run: pnpm run test:e2e

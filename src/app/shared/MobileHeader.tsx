@@ -1,24 +1,34 @@
-import { memo } from "react";
+import { lazy, memo, Suspense, useState } from "react";
 import { BookOpen, Sliders } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 import type { Action } from "../types";
 import { useI18n } from "../context/I18nContext";
 
+const SettingsModal = lazy(() =>
+  import("../core/SettingsModal").then((m) => ({ default: m.SettingsModal }))
+);
+
 interface Props {
   dispatch: React.Dispatch<Action>;
-  isScrolled?: boolean;
 }
 
 /**
  * A native-feeling mobile sticky header.
- * Provides access to the brand logo, Theme toggle, and Settings page
+ * Provides access to the brand logo, Theme toggle, and Settings modal
  * (which are otherwise trapped in the desktop-only SidebarNav).
  */
-export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = false }: Props) {
+export const MobileHeader = memo(function MobileHeader({ dispatch }: Props) {
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
   const { t } = useI18n();
 
   return (
     <>
+      {showSettingsModal && (
+        <Suspense fallback={null}>
+          <SettingsModal isOpen={showSettingsModal} onClose={() => setShowSettingsModal(false)} />
+        </Suspense>
+      )}
+
       {/*
         The safe-area inset is folded into the height rather than bought with
         `box-content`.
@@ -31,11 +41,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = 
         Nothing scrolled sideways to reveal it, which is why it went unnoticed.
       */}
       <header
-        className={`lg:hidden sticky top-0 z-40 shrink-0 w-full flex items-center justify-between flex-wrap gap-2 px-4 py-1 min-h-[calc(3.5rem+env(safe-area-inset-top))] pt-[env(safe-area-inset-top)] backdrop-blur-xl border-b motion-safe:transition-all motion-safe:duration-200 ${
-          isScrolled
-            ? "bg-background/95 border-border shadow-wp-xs"
-            : "bg-background/80 border-border/40"
-        }`}
+        className="lg:hidden sticky top-0 z-40 shrink-0 w-full flex items-center justify-between px-4 h-[calc(3.5rem+env(safe-area-inset-top))] pt-[env(safe-area-inset-top)] bg-background/85 backdrop-blur-xl border-b border-border"
         aria-label={t("nav.mobileHeader")}
       >
         {/* Brand / Home Shortcut */}
@@ -48,7 +54,7 @@ export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = 
           // the 32px logo row was below the minimum touch target everywhere.
           className="flex items-center gap-2 min-h-[44px] pe-2 group focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg"
         >
-          <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs motion-safe:transition-transform motion-safe:group-hover:scale-105 duration-200">
+          <div className="size-8 rounded-xl bg-primary flex items-center justify-center shadow-wp-xs group-transition-all">
             <BookOpen className="size-4 text-primary-foreground" aria-hidden />
           </div>
           <span className="font-sans font-bold text-foreground tracking-tight text-lg">
@@ -57,15 +63,15 @@ export const MobileHeader = memo(function MobileHeader({ dispatch, isScrolled = 
         </button>
 
         {/* Utilities */}
-        <div className="flex flex-wrap items-center gap-1">
+        <div className="flex items-center gap-1">
           <ThemeToggle compact />
 
           <button
             type="button"
-            onClick={() => dispatch({ type: "GO", to: "settings" })}
+            onClick={() => setShowSettingsModal(true)}
             title={t("settings.title")}
             aria-label={t("settings.title")}
-            className="size-11 min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer"
+            className="size-10 min-h-[44px] min-w-[44px] rounded-full flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Sliders className="size-5" aria-hidden />
           </button>

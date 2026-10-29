@@ -1,7 +1,6 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { useRef, type ReactNode } from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { answerLayout } from "./answerLayout";
-import { useKeyboardShortcutsActive, isTextInput } from "./devicePreferences";
 
 export interface ChoiceOption<T extends string> {
   value: T;
@@ -20,8 +19,6 @@ interface Props<T extends string> {
   correctValue?: T;
   revealFeedback?: boolean;
   className?: string;
-  /** Show 1-N keyboard shortcut badges on pointer-fine devices. Defaults to true. */
-  showHotkeys?: boolean;
 }
 
 export function ChoiceOptionGroup<T extends string>({
@@ -33,12 +30,8 @@ export function ChoiceOptionGroup<T extends string>({
   correctValue,
   revealFeedback = false,
   className,
-  showHotkeys = true,
 }: Props<T>) {
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
-  const rootRef = useRef<HTMLDivElement>(null);
-  const shortcutsActive = useKeyboardShortcutsActive();
-  const hotkeysVisible = showHotkeys && shortcutsActive;
 
   const move = (currentIndex: number, direction: -1 | 1) => {
     if (disabled) return;
@@ -49,41 +42,8 @@ export function ChoiceOptionGroup<T extends string>({
     refs.current[nextIndex]?.focus();
   };
 
-  // Global 1–4 keyboard shortcuts (pointer-fine devices only)
-  useEffect(() => {
-    if (disabled || !hotkeysVisible) return;
-    const handler = (e: KeyboardEvent) => {
-      if (e.repeat || e.metaKey || e.ctrlKey || e.altKey || isTextInput(e.target)) return;
-      const overlay = document.querySelector(
-        '[role="dialog"][aria-modal="true"], [role="alertdialog"], [role="menu"]'
-      );
-      if (overlay && !overlay.contains(rootRef.current)) return;
-      // Multi-question pages must never submit the same shortcut to every
-      // question. In that case only the focused answer group handles it.
-      if (
-        document.querySelectorAll('[data-choice-active="true"]').length > 1 &&
-        !rootRef.current?.contains(document.activeElement)
-      )
-        return;
-      const numericKey = parseInt(e.key, 10);
-      if (numericKey >= 1 && numericKey <= options.length) {
-        const target = options[numericKey - 1];
-        if (target) {
-          e.preventDefault();
-          onChange(target.value);
-          refs.current[numericKey - 1]?.focus();
-        }
-      }
-    };
-    const fine = window.matchMedia("(pointer: fine)").matches;
-    if (fine) window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
-  }, [disabled, hotkeysVisible, options, onChange]);
-
   return (
     <div
-      ref={rootRef}
-      data-choice-active={!disabled}
       className={className ?? answerLayout(options.map((option) => option.accessibleLabel))}
       role="radiogroup"
       aria-label={label}
@@ -93,8 +53,6 @@ export function ChoiceOptionGroup<T extends string>({
         const correct = revealFeedback && option.value === correctValue;
         const incorrect = revealFeedback && selected && option.value !== correctValue;
         const muted = revealFeedback && !correct && !incorrect;
-        const hotkeyBadge =
-          hotkeysVisible && !option.prefix && index < 4 ? String(index + 1) : null;
         return (
           <button
             key={option.value}
@@ -147,7 +105,7 @@ export function ChoiceOptionGroup<T extends string>({
                       : "border-border bg-card text-foreground hover:border-primary hover:bg-secondary"
             }`}
           >
-            {(option.prefix || hotkeyBadge) && (
+            {option.prefix && (
               <span
                 className={`hidden sm:flex size-8 shrink-0 items-center justify-center rounded-xl text-sm font-bold transition-colors ${
                   correct
@@ -159,7 +117,7 @@ export function ChoiceOptionGroup<T extends string>({
                         : "bg-muted/80 text-muted-foreground group-hover:bg-secondary group-hover:text-primary"
                 }`}
               >
-                {option.prefix ?? hotkeyBadge}
+                {option.prefix}
               </span>
             )}
             <span className="min-w-0 flex-1 break-words leading-normal">

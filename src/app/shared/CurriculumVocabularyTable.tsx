@@ -4,7 +4,6 @@ import { createPortal } from "react-dom";
 import { BookOpen, Image as ImageIcon, LayoutGrid, Maximize2, Table, X } from "lucide-react";
 import { useI18n } from "../../i18n";
 import { AudioButton } from "./AudioButton";
-import { AudioRecoveryStatus } from "./AudioRecoveryStatus";
 import { useModalA11y } from "./useModalA11y";
 
 import type { WordFamily, WordRegister } from "../data/lexiconDictionary";
@@ -38,7 +37,6 @@ interface Props {
   activeAudioText?: string | null;
   isPlaying?: boolean;
   isAudioError?: boolean;
-  isAudioLoading?: boolean;
   showArabic?: boolean;
   showType?: boolean;
   allowViewToggle?: boolean;
@@ -66,7 +64,6 @@ export function CurriculumVocabularyTable({
   activeAudioText,
   isPlaying = false,
   isAudioError = false,
-  isAudioLoading = false,
   showArabic = false,
   showType = false,
   allowViewToggle = true,
@@ -109,7 +106,6 @@ export function CurriculumVocabularyTable({
 
   return (
     <div className={`wp-vocabulary space-y-3 sm:space-y-4 ${className}`}>
-      <AudioRecoveryStatus failed={isAudioError} />
       {/* Top View Toggle Toolbar */}
       {allowViewToggle && (
         <div className="flex flex-wrap items-center justify-between gap-2">
@@ -270,7 +266,6 @@ export function CurriculumVocabularyTable({
                             <AudioButton
                               onPlay={() => onPlayAudio(item.term)}
                               isPlaying={isItemPlaying}
-                              isLoading={isAudioLoading && isItemPlaying}
                               isError={isItemError}
                               label={t("vocabulary.playPronunciation", { term: item.term })}
                               size="sm"
@@ -390,7 +385,6 @@ export function CurriculumVocabularyTable({
                       <AudioButton
                         onPlay={() => onPlayAudio(item.term)}
                         isPlaying={isItemPlaying}
-                        isLoading={isAudioLoading && isItemPlaying}
                         isError={isItemError}
                         label={t("vocabulary.playPronunciation", { term: item.term })}
                         size="sm"
@@ -521,7 +515,6 @@ export function CurriculumVocabularyTable({
                         <AudioButton
                           onPlay={() => onPlayAudio(item.term)}
                           isPlaying={isItemPlaying}
-                          isLoading={isAudioLoading && isItemPlaying}
                           isError={isItemError}
                           label={t("vocabulary.playPronunciation", { term: item.term })}
                           size="sm"
@@ -656,7 +649,6 @@ export function CurriculumVocabularyTable({
                     <AudioButton
                       onPlay={() => onPlayAudio(activeModalItem.term)}
                       isPlaying={isTermPlaying(activeModalItem.term)}
-                      isLoading={isAudioLoading && isTermPlaying(activeModalItem.term)}
                       isError={isTermError(activeModalItem.term)}
                       label={t("vocabulary.playPronunciation", { term: activeModalItem.term })}
                       size="md"
@@ -668,7 +660,6 @@ export function CurriculumVocabularyTable({
 
               {/* Meaning & Context Panel */}
               <div className="p-6 space-y-4 overflow-y-auto">
-                <AudioRecoveryStatus failed={isTermError(activeModalItem.term)} />
                 <div>
                   <span className="text-sm font-black text-primary block mb-1">
                     {t("vocabulary.definitionHeader") || "Definition"}

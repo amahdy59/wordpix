@@ -149,7 +149,7 @@ export const POTTERY_STUDIO_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "from the very beginning, without using anything already made",
       example:
-        "He made the vase from scratch — starting with raw clay, then throwing, trimming, and glazing it himself.",
+        "She made the vase from scratch — starting with raw clay, then throwing, trimming, and glazing it herself.",
     },
     {
       id: "pottery-studio-put-the-finishing-touches-on",
@@ -158,7 +158,7 @@ export const POTTERY_STUDIO_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "add the final details to complete something",
       example:
-        "He put the finishing touches on the bowl with an underglaze pattern and a stamp decoration.",
+        "She put the finishing touches on the bowl with an underglaze pattern and a stamp decoration.",
     },
     {
       id: "pottery-studio-shape-up",
@@ -176,7 +176,7 @@ export const POTTERY_STUDIO_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "do something in a completely new and different way",
       example:
-        "The artist broke the mould — instead of traditional stoneware, he worked entirely in porcelain with oxide stains.",
+        "The artist broke the mould — instead of traditional stoneware, she worked entirely in porcelain with oxide stains.",
     },
     {
       id: "pottery-studio-have-something-in-the-pipeline",

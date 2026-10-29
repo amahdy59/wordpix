@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { I18nProvider } from "../../i18n";
 import { SpeechRecordCompare } from "../shared/SpeechRecordCompare";
@@ -91,32 +91,5 @@ describe("SpeechRecordCompare", () => {
 
     await user.click(screen.getByRole("button", { name: "Delete private recording" }));
     expect(recording.deleteRecording).toHaveBeenCalledTimes(1);
-  });
-  it.each(["recording", "requesting"] as const)(
-    "stops hidden media when a studio is collapsed during %s",
-    (status) => {
-      recording.status = status;
-      renderStudio();
-      const details = screen.getByText("Listen, record, and compare").closest("details")!;
-      details.open = false;
-      fireEvent(details, new Event("toggle"));
-      expect(audio.stop).toHaveBeenCalled();
-      if (status === "requesting") expect(recording.deleteRecording).toHaveBeenCalled();
-      else expect(recording.stop).toHaveBeenCalled();
-    }
-  );
-
-  it("renders as an open section without details/summary when noDetails is true", () => {
-    const { container } = render(
-      <I18nProvider>
-        <SpeechRecordCompare target="ship" modelText="ship" noDetails />
-      </I18nProvider>
-    );
-    const region = screen.getByRole("region", { name: "Listen, record, and compare" });
-    expect(region).toBeVisible();
-    expect(region.tagName.toLowerCase()).toBe("section");
-    expect(screen.getByRole("heading", { name: "Listen, record, and compare" })).toBeVisible();
-    // Verify outer element is not details
-    expect(container.firstElementChild?.tagName.toLowerCase()).toBe("section");
   });
 });

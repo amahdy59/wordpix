@@ -1,5 +1,3 @@
-import { specialistSnapshotSchema, mergeSpecialistMap } from "./specialistProgress";
-import { flushLearnerWrites, getLearnerSaveStatus } from "./learnerWrites";
 import {
   getDB,
   getSyncQueueSummary,
@@ -37,25 +35,6 @@ async function flushQueue() {
   const metadata = await db.get("sync_metadata", "account");
   // Guest operations belong to a migration; never send them to an arbitrary account.
   if (metadata?.ownerId !== session.user.id || metadata.migration) return;
-  // Reconsider only the previously rejected accessibility shape repaired by this release.
-  for (const operation of await db.getAll("mutation_queue")) {
-    if (
-      operation.ownerId !== session.user.id ||
-      operation.type !== "update_accessibility" ||
-      operation.lastErrorCategory !== "validation"
-    )
-      continue;
-    try {
-      const repaired = validateSyncOperation(operation);
-      await db.put("mutation_queue", {
-        ...repaired,
-        status: "pending",
-        lastErrorCategory: undefined,
-      });
-    } catch {
-      /* Truly invalid settings remain quarantined. */
-    }
-  }
   const pendingOps = (await db.getAll("mutation_queue"))
     .filter((op) => op.ownerId === session.user.id && op.status !== "failed")
     .sort((a, b) => a.createdAt.localeCompare(b.createdAt));
@@ -93,24 +72,14 @@ async function flushQueue() {
       const category = classifySyncError(error);
       await db.put("mutation_queue", {
         ...op,
-        status:
-          category === "validation" ||
-          category === "authorization" ||
-          category === "backend_required"
-            ? "failed"
-            : "pending",
+        status: category === "validation" || category === "authorization" ? "failed" : "pending",
         retryCount: op.retryCount + 1,
         lastSyncAttemptAt,
         lastErrorCategory: category,
       });
       notifySyncQueueChanged();
       if (category === "validation") continue;
-      if (
-        category === "auth_required" ||
-        category === "authorization" ||
-        category === "backend_required"
-      )
-        return;
+      if (category === "auth_required" || category === "authorization") return;
       throw error; // Preserve ordering: a failed older snapshot must not overwrite a newer one later.
     }
   }
@@ -134,8 +103,7 @@ export async function retryFailedSyncOperations() {
     if (
       operation.ownerId === session.user.id &&
       operation.status === "failed" &&
-      (operation.lastErrorCategory === "authorization" ||
-        operation.lastErrorCategory === "backend_required")
+      operation.lastErrorCategory === "authorization"
     ) {
       await db.put("mutation_queue", {
         ...operation,
@@ -155,7 +123,6 @@ export function classifySyncError(error: unknown): SyncErrorCategory {
   const candidate = error as { code?: unknown; status?: unknown };
   const code = typeof candidate.code === "string" ? candidate.code : "";
   const status = typeof candidate.status === "number" ? candidate.status : undefined;
-  if (code === "PGRST202" || code === "42883" || code === "42P01") return "backend_required";
   if (status === 401 || code === "PGRST301") return "auth_required";
   if (status === 403 || code === "42501") return "authorization";
   if (status === 400 || status === 422 || code === "22P02" || code === "23514") {
@@ -169,21 +136,6 @@ export function classifySyncError(error: unknown): SyncErrorCategory {
  */
 async function processOperation(op: SyncOperation, userId: string) {
   switch (op.type) {
-    case "specialist_progress": {
-      const { error } = await supabase.rpc("save_specialist_progress", {
-        operation_id: op.id,
-        expected_user: userId,
-        track_name: op.payload.track,
-        lesson_id: op.payload.lessonId,
-        progress_state: op.payload.state,
-        ...((op.payload.track === "pronunciation" || op.payload.track === "hadith") &&
-        op.payload.previousSessions !== undefined
-          ? { previous_sessions: op.payload.previousSessions }
-          : {}),
-      });
-      if (error) throw error;
-      break;
-    }
     case "update_preferences": {
       const { error } = await supabase
         .from("profiles")
@@ -306,10 +258,6 @@ async function processOperation(op: SyncOperation, userId: string) {
         .eq("user_id", userId);
       if (historyError) throw historyError;
 
-      const { error: specialistError } = await supabase.rpc("reset_specialist_progress", {
-        expected_user: userId,
-      });
-      if (specialistError) throw specialistError;
       break;
     }
     default:
@@ -336,11 +284,6 @@ if (typeof window !== "undefined" && typeof process === "undefined") {
 
 /** A frozen payload and server receipt make retries safe after an uncertain response. */
 export async function migrateGuestToAccount(userId: string) {
-  await flushLearnerWrites();
-  if (getLearnerSaveStatus() !== "saved")
-    throw new Error(
-      "Your latest progress has not been saved. Keep this page open and retry saving before syncing. · لم يُحفظ آخر تقدمك. أبقِ الصفحة مفتوحة وأعد الحفظ قبل المزامنة."
-    );
   const db = await getDB();
   if (!db) throw new Error("Local storage is unavailable. Your progress has not been synced.");
   const {
@@ -374,30 +317,6 @@ export async function migrateGuestToAccount(userId: string) {
   await tx.done;
   if (!metadata.migration) {
     await syncQueue();
-    const { data, error: restoreError } = await supabase.rpc("get_specialist_progress", {
-      expected_user: userId,
-    });
-    if (restoreError) throw restoreError;
-    const remote = specialistSnapshotSchema.parse(data);
-    const current = await db.get("learner_state", LEARNER_STATE_KEY);
-    if (current)
-      await db.put(
-        "learner_state",
-        {
-          ...current,
-          pronunciationProgress: mergeSpecialistMap(
-            remote.pronunciationProgress,
-            current.pronunciationProgress
-          ),
-          hadithProgress: mergeSpecialistMap(remote.hadithProgress, current.hadithProgress),
-          conversationProgress: mergeSpecialistMap(
-            remote.conversationProgress,
-            current.conversationProgress
-          ),
-          businessProgress: mergeSpecialistMap(remote.businessProgress, current.businessProgress),
-        },
-        LEARNER_STATE_KEY
-      );
     return;
   }
   const snapshot = metadata.migration;
@@ -438,16 +357,6 @@ export async function migrateGuestToAccount(userId: string) {
     await finish.objectStore("learner_state").put(
       {
         ...current,
-        pronunciationProgress: mergeSpecialistMap(
-          remote.pronunciationProgress,
-          current.pronunciationProgress
-        ),
-        hadithProgress: mergeSpecialistMap(remote.hadithProgress, current.hadithProgress),
-        conversationProgress: mergeSpecialistMap(
-          remote.conversationProgress,
-          current.conversationProgress
-        ),
-        businessProgress: mergeSpecialistMap(remote.businessProgress, current.businessProgress),
         wordMemory,
         sessionHistory: [...history.values()].sort((a, b) =>
           b.completedAt.localeCompare(a.completedAt)

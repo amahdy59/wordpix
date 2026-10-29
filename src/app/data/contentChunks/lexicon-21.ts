@@ -32,8 +32,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Family Dinner",
-        en: "He simmered a large pot of aromatic lentil soup for the whole family.",
-        ar: "طهى قدرا كبيرا من حساء العدس العطري على نار هادئة للعائلة كلها.",
+        en: "She simmered a large pot of aromatic lentil soup for the whole family.",
+        ar: "طَبَخَتْ قِدْراً كَبِيراً مِنْ شُورْبَةِ العَدَسِ الشَّهِيَّةِ لِجَمِيعِ أَفْرَادِ العَائِلَةِ.",
       },
       {
         context: "Pasta Cooking",
@@ -46,8 +46,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يُوَزِّعُ قِدْرُ الزَّهْرِ الثَّقِيلُ الحَرَارَةَ بِالتَّسَاوِي لِلطَّهْيِ البَطِيءِ.",
       },
     ],
-    exampleSentence: "He simmered a large pot of aromatic lentil soup for the whole family.",
-    exampleArabic: "طهى قدرا كبيرا من حساء العدس العطري على نار هادئة للعائلة كلها.",
+    exampleSentence: "She simmered a large pot of aromatic lentil soup for the whole family.",
+    exampleArabic:
+      "طَبَخَتْ قِدْراً كَبِيراً مِنْ شُورْبَةِ العَدَسِ الشَّهِيَّةِ لِجَمِيعِ أَفْرَادِ العَائِلَةِ.",
   },
   sunrise: {
     id: "sunrise",

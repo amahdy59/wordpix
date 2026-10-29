@@ -6,24 +6,11 @@ describe("WordPix navigation and group lesson reducer", () => {
   it("advances through onboarding", () => {
     let state: Screen = { id: "onboarding", step: "splash" };
     state = reducer(state, { type: "ONBOARD_NEXT" });
-    expect(state).toEqual({ id: "onboarding", step: "partners" });
-    state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "onboarding", step: "language" });
     state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "onboarding", step: "ready" });
     state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "home" });
-  });
-
-  it("navigates backward through onboarding steps", () => {
-    let state: Screen = { id: "onboarding", step: "language" };
-    state = reducer(state, { type: "ONBOARD_BACK" });
-    expect(state).toEqual({ id: "onboarding", step: "partners" });
-    state = reducer(state, { type: "ONBOARD_BACK" });
-    expect(state).toEqual({ id: "onboarding", step: "splash" });
-    // Calling back on first step does not underflow
-    state = reducer(state, { type: "ONBOARD_BACK" });
-    expect(state).toEqual({ id: "onboarding", step: "splash" });
   });
 
   it("moves between tabs", () => {

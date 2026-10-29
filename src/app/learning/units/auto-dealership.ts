@@ -129,7 +129,7 @@ export const AUTO_DEALERSHIP_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To negotiate aggressively for the best price.",
       example:
-        "He drove a hard bargain — free floor mats, two years' servicing, and £1,000 off the list price.",
+        "She drove a hard bargain — free floor mats, two years' servicing, and £1,000 off the list price.",
     },
     {
       id: "auto-dealership-a-lemon",

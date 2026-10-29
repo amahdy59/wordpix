@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { ArrowRight, BookOpen, LoaderCircle, Search, Volume2, VolumeX } from "lucide-react";
-import { useAudioRecoveryMessage } from "../../shared/AudioRecoveryStatus";
+import { ArrowRight, BookOpen, Search, Volume2 } from "lucide-react";
 import type { StudyNode, UnitStudyProgress, StudyWordStatus } from "./types";
 import type { UnitLearningMaterials } from "../types";
 import { getWords } from "../../data/vocabulary";
@@ -13,8 +12,6 @@ import { Select } from "../../shared/Select";
 import type { VocabularyItem } from "../../data/lessons";
 import { useI18n } from "../../../i18n";
 import { useLexicon } from "../../shared/useLexicon";
-import { findScenarioForWords } from "../../data/scenarios/scenarioService";
-import { UnitScenarioPlayer } from "./UnitScenarioPlayer";
 
 interface Props {
   node: StudyNode;
@@ -44,12 +41,12 @@ export function LearnArea({
   const [filter, setFilter] = useState<"all" | StudyWordStatus>("all");
   const [announcement, setAnnouncement] = useState("");
   const { lexicon, lexiconFailed, retryLexicon } = useLexicon(words.map((word) => word.id));
-  const { speak, stop, isPlaying, isLoading, isError, isSupported } = useAudio({
+  const { speak, stop, isPlaying } = useAudio({
     lang: "en-US",
     rate: 0.95,
     onEnded: () => setPlayingWordId(null),
+    onError: () => setPlayingWordId(null),
   });
-  const recoveryMessage = useAudioRecoveryMessage(isError, isSupported);
   const studiedCount = words.filter(
     (word) =>
       progress?.wordStatus[word.id] === "learning" ||
@@ -89,11 +86,6 @@ export function LearnArea({
     }));
     onNextActivity();
   };
-  const lessonScenario = useMemo(
-    () => findScenarioForWords(materials.unitId, node.wordIds ?? []),
-    [materials.unitId, node.wordIds]
-  );
-
   if (!words.length)
     return <p className="p-8 text-center text-muted-foreground">{t("study.noVocabFound")}</p>;
 
@@ -112,23 +104,6 @@ export function LearnArea({
           {t("study.progressCount", { studied: studiedCount, total: words.length })}
         </p>
       </header>
-
-      {lessonScenario && (
-        <section aria-label="Lesson Video Context" className="space-y-2">
-          <UnitScenarioPlayer
-            scenarios={[lessonScenario]}
-            sectionTitle={node.title}
-            compact={false}
-            onInspectWord={(wordText) => {
-              const normalized = wordText.trim().toLowerCase();
-              const found = words.find(
-                (w) => w.label.toLowerCase() === normalized || w.id.toLowerCase() === normalized
-              );
-              if (found) setInspectedWord(found);
-            }}
-          />
-        </section>
-      )}
       <section
         aria-label={t("study.filterVocabulary")}
         className="grid gap-3 rounded-2xl border border-border bg-wp-card p-3 sm:grid-cols-[minmax(0,1fr)_12rem]"
@@ -164,13 +139,8 @@ export function LearnArea({
           />
         </div>
       </section>
-      <p
-        className={recoveryMessage ? "text-sm text-foreground" : "sr-only"}
-        role="status"
-        aria-live="polite"
-        aria-atomic="true"
-      >
-        {recoveryMessage || announcement}
+      <p className="sr-only" role="status" aria-live="polite">
+        {announcement}
       </p>
       {lexiconFailed && (
         <div
@@ -246,31 +216,17 @@ export function LearnArea({
                       speak(word.label);
                     }}
                     aria-label={
-                      isLoading && playingWordId === word.id
-                        ? t("readingPlayer.cancel")
-                        : isError && playingWordId === word.id
-                          ? t("audioRecovery.retryLabel", {
-                              label: t("study.listenTo", { label: word.label }),
-                            })
-                          : isPlaying && playingWordId === word.id
-                            ? t("study.stop")
-                            : t("study.listenTo", { label: word.label })
+                      isPlaying && playingWordId === word.id
+                        ? t("study.stop")
+                        : t("study.listenTo", { label: word.label })
                     }
-                    aria-busy={isLoading && playingWordId === word.id}
-                    disabled={!isSupported}
                     aria-pressed={isPlaying && playingWordId === word.id}
                     className="size-11 grid place-items-center rounded-xl bg-primary text-primary-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
-                    {isLoading && playingWordId === word.id ? (
-                      <LoaderCircle className="size-5 motion-safe:animate-spin" aria-hidden />
-                    ) : isError && playingWordId === word.id ? (
-                      <VolumeX className="size-5" aria-hidden />
-                    ) : (
-                      <Volume2
-                        className={`size-5 ${isPlaying && playingWordId === word.id ? "motion-safe:animate-pulse" : ""}`}
-                        aria-hidden
-                      />
-                    )}
+                    <Volume2
+                      className={`size-5 ${isPlaying && playingWordId === word.id ? "motion-safe:animate-pulse" : ""}`}
+                      aria-hidden
+                    />
                   </button>
                 </div>
                 {!immersionMode && showArabic && (

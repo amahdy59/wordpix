@@ -240,8 +240,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Disinfection",
-        en: "He used the spray bottle to mist disinfectant evenly across the bathroom countertops.",
-        ar: "استخدم زجاجة الرش ليوزع المطهر بالتساوي على أسطح الحمام.",
+        en: "She used the spray bottle to mist disinfectant evenly across the bathroom countertops.",
+        ar: "اسْتَخْدَمَتِ البَخَّاخَ لِرَشِّ المُطَهِّرِ بِالتَّسَاوِي عَلَى أَسْطُحِ الحَمَّام.",
       },
       {
         context: "Nozzle Adjustment",
@@ -278,8 +278,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Historical Reading",
-        en: "He selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
-        ar: "اختار سيرة ملهمة تتناول حياة ماري كوري واكتشافاتها العلمية.",
+        en: "She selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
+        ar: "اخْتَارَتْ سِيرَةً مُلْهِمَةً تُفَصِّلُ حَيَاةَ مَارِي كُورِي وَاكْتِشَافَاتِهَا العِلْمِيَّةَ.",
       },
       {
         context: "Non-Fiction Section",
@@ -293,8 +293,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
-    exampleArabic: "اختار سيرة ملهمة تتناول حياة ماري كوري واكتشافاتها العلمية.",
+      "She selected an inspiring biography detailing the life and scientific discoveries of Marie Curie.",
+    exampleArabic:
+      "اخْتَارَتْ سِيرَةً مُلْهِمَةً تُفَصِّلُ حَيَاةَ مَارِي كُورِي وَاكْتِشَافَاتِهَا العِلْمِيَّةَ.",
   },
   lemon: {
     id: "lemon",
@@ -321,8 +322,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Citrus Counter",
-        en: "He squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
-        ar: "عصر ليمونة صفراء طازجة فوق شريحة السمك المشوية.",
+        en: "She squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
+        ar: "عَصَرَتْ عَصِيرًا طَازَجًا مِنْ لَيْمُونَةٍ صَفْرَاءَ زَاهِيَةٍ فَوْقَ شَرِيحَةِ السَّمَكِ المَشْوِيِّ.",
       },
       {
         context: "Beverages",
@@ -336,8 +337,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
-    exampleArabic: "عصر ليمونة صفراء طازجة فوق شريحة السمك المشوية.",
+      "She squeezed fresh juice from a bright yellow lemon over the grilled fish fillet.",
+    exampleArabic:
+      "عَصَرَتْ عَصِيرًا طَازَجًا مِنْ لَيْمُونَةٍ صَفْرَاءَ زَاهِيَةٍ فَوْقَ شَرِيحَةِ السَّمَكِ المَشْوِيِّ.",
   },
   cash: {
     id: "cash",

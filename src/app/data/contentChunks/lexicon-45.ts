@@ -26,8 +26,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Summer Refreshment",
-        en: "He placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
-        ar: "وضع على الطاولة إبريقا زجاجيا مملوءا بعصير الليمون المثلج وأوراق النعناع.",
+        en: "She placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
+        ar: "وَضَعَتْ دَوْرَقاً زُجَاجِيّاً مَمْلُوءاً بِاللَّيْمُونَادَةِ المُثَلَّجَةِ وَأَوْرَاقِ النَّعْنَاعِ عَلَى الطَّاوِلَةِ.",
       },
       {
         context: "Dining Service",
@@ -41,8 +41,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
-    exampleArabic: "وضع على الطاولة إبريقا زجاجيا مملوءا بعصير الليمون المثلج وأوراق النعناع.",
+      "She placed a glass pitcher filled with iced lemonade and mint leaves on the table.",
+    exampleArabic:
+      "وَضَعَتْ دَوْرَقاً زُجَاجِيّاً مَمْلُوءاً بِاللَّيْمُونَادَةِ المُثَلَّجَةِ وَأَوْرَاقِ النَّعْنَاعِ عَلَى الطَّاوِلَةِ.",
   },
   caterpillar: {
     id: "caterpillar",

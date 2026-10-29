@@ -116,7 +116,7 @@ export const TELLING_TIME_LEARNING: UnitLearningMaterials = {
       phrase: "in the nick of time",
       kind: "idiom",
       meaning: "Just barely in time.",
-      example: "He arrived in the nick of time — the meeting started at exactly half past nine.",
+      example: "She arrived in the nick of time — the meeting started at exactly half past nine.",
     },
     {
       id: "telling-time-around-the-clock",
@@ -153,7 +153,7 @@ export const TELLING_TIME_LEARNING: UnitLearningMaterials = {
       phrase: "beat the clock",
       kind: "idiom",
       meaning: "To finish before the deadline.",
-      example: "He beat the clock and submitted his report just before five o'clock.",
+      example: "She beat the clock and submitted her report just before five o'clock.",
     },
     {
       id: "telling-time-at-the-eleventh-hour",

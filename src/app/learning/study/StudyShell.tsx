@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { unitWordMemory } from "../wordIdentity";
 import {
   BookOpen,
   Check,
@@ -11,7 +10,6 @@ import {
   X,
   Menu,
   Languages,
-  Headphones,
 } from "lucide-react";
 import type { UnitLearningMaterials } from "../types";
 import type { CourseUnit } from "../../data/lessons";
@@ -24,8 +22,6 @@ import { UseItArea } from "./UseItArea";
 import { PracticeArea } from "./PracticeArea";
 import { ReferenceArea } from "./ReferenceArea";
 import { ReviewArea } from "./ReviewArea";
-import { UnitScenarioPlayer } from "./UnitScenarioPlayer";
-import { getScenariosForUnit, findScenarioForWords } from "../../data/scenarios/scenarioService";
 import type { UnitStudyProgress, StudyArea } from "./types";
 import type { Action } from "../../types";
 import { WordInspectorModal } from "../../shared/WordInspectorModal";
@@ -58,13 +54,8 @@ export function StudyShell({
     loadStudyProgress(unitId)
   );
   const progress = React.useMemo(
-    () =>
-      syncStudyProgressWithWordMemory(
-        storedProgress,
-        unitWordMemory(learnerState.wordMemory, unitId),
-        unit.wordIds
-      ),
-    [learnerState.wordMemory, storedProgress, unit.wordIds, unitId]
+    () => syncStudyProgressWithWordMemory(storedProgress, learnerState.wordMemory, unit.wordIds),
+    [learnerState.wordMemory, storedProgress, unit.wordIds]
   );
 
   // The curriculum adapter
@@ -73,7 +64,6 @@ export function StudyShell({
     () => getUnitCurriculumDesign(unit, materials),
     [materials, unit]
   );
-  const unitScenarios = React.useMemo(() => getScenariosForUnit(unitId), [unitId]);
 
   // Navigation state is URL/state-driven. Area-only links open the first activity.
   const requestedArea = STUDY_AREAS.includes(initialArea as StudyArea)
@@ -123,11 +113,10 @@ export function StudyShell({
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
   const contentsBtnRef = React.useRef<HTMLButtonElement>(null);
   const drawerRef = React.useRef<HTMLElement>(null);
-  const restoreDrawerFocus = React.useRef(false);
 
   const closeDrawer = () => {
-    restoreDrawerFocus.current = true;
     setIsMobileDrawerOpen(false);
+    contentsBtnRef.current?.focus();
   };
 
   useEffect(() => {
@@ -146,14 +135,7 @@ export function StudyShell({
 
   // Focus trap and Escape key listener for mobile drawer modal
   useEffect(() => {
-    if (!isMobileDrawerOpen) {
-      if (restoreDrawerFocus.current) {
-        contentsBtnRef.current?.focus();
-        restoreDrawerFocus.current = false;
-      }
-      return;
-    }
-    drawerRef.current?.querySelector<HTMLElement>("button")?.focus();
+    if (!isMobileDrawerOpen) return;
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         closeDrawer();
@@ -183,7 +165,7 @@ export function StudyShell({
     // 1. Resume last unfinished
     if (progress.lastNodeId) {
       const node = nodes.find((n) => n.id === progress.lastNodeId);
-      if (node && !progress.completedNodeIds.includes(node.id)) {
+      if (node) {
         dispatch({
           type: "GO",
           to: "learning-materials",
@@ -196,13 +178,7 @@ export function StudyShell({
     }
 
     // 2. Start first
-    const firstNode =
-      nodes.find(
-        (node) =>
-          node.area !== "reference" &&
-          node.isCore !== false &&
-          !progress.completedNodeIds.includes(node.id)
-      ) ?? nodes[0];
+    const firstNode = nodes[0];
     if (firstNode) {
       dispatch({
         type: "GO",
@@ -250,7 +226,6 @@ export function StudyShell({
   };
 
   const handleBackToHome = () => {
-    setIsMobileDrawerOpen(false);
     dispatch({ type: "GO", to: "learning-materials", unitId: unit.id });
   };
 
@@ -284,6 +259,14 @@ export function StudyShell({
     return Math.round((started / node.wordIds.length) * 100);
   };
 
+  const areaProgress = (area: StudyArea) => {
+    const areaNodes = nodes.filter((node) => node.area === area);
+    if (!areaNodes.length) return 0;
+    return Math.round(
+      areaNodes.reduce((total, node) => total + nodeProgress(node.id), 0) / areaNodes.length
+    );
+  };
+
   const coreNodes = nodes.filter((n) => n.area !== "reference" && n.isCore !== false);
   const overallProgress = coreNodes.length
     ? Math.round(
@@ -302,58 +285,122 @@ export function StudyShell({
   return (
     <div className="flex flex-col h-full bg-background text-foreground overflow-hidden">
       {/* 1. Global Sticky Header across Home & Activities */}
-      <header
-        className="wp-study-header shrink-0 grid grid-cols-[minmax(0,1fr)] items-center gap-2 border-b border-border bg-card px-4 py-2 lg:grid-cols-[minmax(0,1fr)_auto]"
-        {...(isMobileDrawerOpen ? { inert: "" } : {})}
-      >
-        <div className="flex min-w-0 flex-1 items-center gap-2">
+      <header className="sticky top-0 z-30 flex shrink-0 items-center justify-between border-b border-border bg-background/95 px-4 py-2.5 backdrop-blur shadow-xs gap-3">
+        <div className="flex items-center gap-3 min-w-0">
           <button
-            type="button"
-            onClick={() =>
-              currentArea === "home"
-                ? dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
-                : handleBackToHome()
-            }
+            onClick={() => {
+              if (currentArea === "home") {
+                dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
+              } else {
+                handleBackToHome();
+              }
+            }}
+            className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-secondary/70 text-foreground hover:bg-secondary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
             aria-label={
               currentArea === "home"
-                ? t("study.backToUnit", { unit: unit.name })
-                : t("study.overview")
+                ? `Back to ${unit.name} unit entry`
+                : `Back to ${unit.name} overview`
             }
-            className="min-h-11 min-w-11 shrink-0 rounded-xl p-2 text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
-            <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
+            <ArrowLeft className="size-5" aria-hidden />
           </button>
-          <div className="min-w-0">
-            <p lang="en" dir="ltr" className="break-words text-base font-bold text-foreground">
-              {unit.name}
-            </p>
-            {currentArea !== "home" && (
-              <p className="text-sm text-muted-foreground">{areaMeta[currentArea].label}</p>
-            )}
+
+          <div className="min-w-0 flex-1">
+            <nav
+              aria-label="Breadcrumb"
+              className="flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-muted-foreground flex-wrap"
+            >
+              <span className="truncate max-w-[120px] sm:max-w-none">{unit.name}</span>
+              {currentArea !== "home" && (
+                <>
+                  <span className="opacity-40" aria-hidden>
+                    /
+                  </span>
+                  <span className="text-primary font-bold">{areaMeta[currentArea].label}</span>
+                </>
+              )}
+            </nav>
+            <div className="text-base sm:text-base font-extrabold text-foreground mt-0.5 tracking-tight line-clamp-2 break-words">
+              {currentArea === "home"
+                ? `${unit.name} Overview`
+                : (activeNode?.title ?? areaMeta[currentArea].label)}
+            </div>
           </div>
         </div>
-        <div className="grid min-w-0 grid-cols-2 gap-2 lg:flex lg:flex-wrap lg:items-center">
+
+        <div className="flex items-center gap-2.5 shrink-0">
+          {/* Immersion Mode Toggle */}
           <button
             type="button"
             onClick={toggleImmersionMode}
             aria-pressed={immersionMode}
-            aria-label={`${t("ux.languageSupport")}: ${t(immersionMode ? "listenRepeat.immersion" : "listenRepeat.bilingual")}`}
-            className="min-h-11 min-w-11 rounded-xl border border-border px-2 py-2 text-sm font-semibold text-foreground hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            aria-label={`Language scaffold mode: ${immersionMode ? "English Immersion (Arabic masked)" : "Bilingual (Arabic shown)"}. Click to toggle.`}
+            title={
+              immersionMode
+                ? "Immersion Mode active (Arabic hidden)"
+                : "Bilingual Mode active (Arabic visible)"
+            }
+            className={`flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl border text-sm font-bold transition-colors min-h-11 min-w-11 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+              immersionMode
+                ? "bg-wp-teal/10 text-wp-teal border-wp-teal/30"
+                : "bg-secondary text-muted-foreground hover:text-foreground border-border"
+            }`}
           >
-            <Languages className="inline size-4 me-2" aria-hidden />
-            {t(immersionMode ? "listenRepeat.immersion" : "listenRepeat.bilingual")}
+            <Languages className="size-4 shrink-0" aria-hidden />
+            <span className="hidden md:inline">{immersionMode ? "Immersion" : "Bilingual"}</span>
           </button>
+
+          {/* Progress Pill on Header */}
+          <div
+            className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/80 border border-border/80 text-sm font-bold"
+            role="status"
+            aria-label={`Unit mastery progress: ${overallProgress}%`}
+          >
+            <span className="size-2 rounded-full bg-primary" aria-hidden />
+            <span className="text-foreground">
+              {t("study.percentDone", { percent: overallProgress })}
+            </span>
+          </div>
+
+          {/* Quick Area Jump Tabs (Desktop) */}
+          <div className="hidden xl:flex items-center gap-1 bg-secondary/40 p-1 rounded-xl border border-border/60">
+            <button
+              onClick={handleBackToHome}
+              className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-colors min-h-[44px] ${
+                currentArea === "home"
+                  ? "bg-primary text-primary-foreground shadow-xs"
+                  : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
+              }`}
+            >
+              {t("study.overview")}
+            </button>
+            {STUDY_AREAS.map((area) => {
+              const isActive = currentArea === area;
+              return (
+                <button
+                  key={area}
+                  onClick={() => handleAreaSelect(area)}
+                  className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-colors min-h-[44px] ${
+                    isActive
+                      ? "bg-primary text-primary-foreground shadow-xs"
+                      : "text-muted-foreground hover:text-foreground hover:bg-secondary/60"
+                  }`}
+                >
+                  {t(`help.studyAreas.${area}`)}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Mobile Drawer Toggle */}
           <button
-            type="button"
             ref={contentsBtnRef}
             onClick={() => setIsMobileDrawerOpen(true)}
-            aria-haspopup="dialog"
-            aria-expanded={isMobileDrawerOpen}
-            aria-controls="study-activities"
-            className="lg:hidden min-h-11 min-w-11 rounded-xl border border-primary/30 bg-secondary px-2 py-2 text-sm font-semibold text-primary hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="lg:hidden flex items-center gap-1.5 px-3 py-2 rounded-xl bg-secondary text-foreground text-sm font-bold border border-border hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
+            aria-label="Open unit activities menu"
           >
-            <Menu className="inline size-4 me-2" aria-hidden />
-            {t("study.unitActivities")}
+            <Menu className="size-4" aria-hidden />
+            <span>{t("study.unitActivities", { defaultValue: "Unit Activities" })}</span>
           </button>
         </div>
       </header>
@@ -371,13 +418,12 @@ export function StudyShell({
 
         {/* Sticky Desktop Left Sidebar & Mobile Drawer Modal */}
         <aside
-          id="study-activities"
           ref={drawerRef}
           role={isMobileDrawerOpen ? "dialog" : undefined}
           aria-modal={isMobileDrawerOpen ? "true" : undefined}
-          aria-label={t("study.unitActivities")}
+          aria-label={`${unit.name} study navigation`}
           className={`
-            fixed inset-0 z-40 bg-card pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]
+            fixed inset-0 z-40 bg-card/95 backdrop-blur
             lg:static lg:flex lg:w-80 lg:shrink-0 lg:flex-col lg:h-full lg:overflow-y-auto lg:border-e lg:border-border lg:bg-card/70 lg:backdrop-blur
             ${isMobileDrawerOpen ? "flex flex-col overflow-y-auto" : "hidden"}
           `}
@@ -409,7 +455,7 @@ export function StudyShell({
                     aria-valuenow={overallProgress}
                     aria-valuemin={0}
                     aria-valuemax={100}
-                    aria-label={t("study.percentDone", { percent: overallProgress })}
+                    aria-label={`Overall progress for ${unit.name}: ${overallProgress}%`}
                   />
                 </div>
               </div>
@@ -418,17 +464,18 @@ export function StudyShell({
             <button
               onClick={closeDrawer}
               className="lg:hidden flex size-11 items-center justify-center rounded-xl bg-secondary text-foreground hover:bg-secondary/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary shrink-0 min-h-[44px] min-w-[44px]"
-              aria-label={t("action.close")}
+              aria-label="Close navigation menu"
             >
               <X className="size-5" aria-hidden />
             </button>
           </div>
 
-          <nav aria-label={t("study.unitActivities")} className="space-y-3 p-4 flex-1">
+          <nav className="space-y-3 p-4 flex-1">
             {STUDY_AREAS.map((area) => {
               const areaNodes = nodes.filter((n) => n.area === area);
               if (areaNodes.length === 0) return null;
               const expanded = expandedAreas.has(area);
+              const progressValue = areaProgress(area);
               const AreaIcon = areaMeta[area].icon;
               const isCurrentAreaActive = currentArea === area;
 
@@ -463,7 +510,24 @@ export function StudyShell({
                           <span className="font-bold text-base text-foreground">
                             {t(`help.studyAreas.${area}`)}
                           </span>
+                          {area !== "reference" && (
+                            <span className="text-sm font-bold text-muted-foreground">
+                              {progressValue}%
+                            </span>
+                          )}
                         </span>
+
+                        {area !== "reference" && (
+                          <span
+                            className="mt-1.5 block h-1.5 overflow-hidden rounded-full bg-secondary"
+                            aria-hidden="true"
+                          >
+                            <span
+                              className="block h-full rounded-full bg-primary transition-all duration-300"
+                              style={{ width: `${progressValue}%` }}
+                            />
+                          </span>
+                        )}
                       </span>
                       <ChevronDown
                         aria-hidden
@@ -483,12 +547,6 @@ export function StudyShell({
                     {areaNodes.map((node) => {
                       const isActive = currentNodeId === node.id;
                       const progressVal = nodeProgress(node.id);
-                      const matchingScenario =
-                        node.type === "vocabulary"
-                          ? findScenarioForWords(unitId, node.wordIds ?? [])
-                          : undefined;
-                      const isScenarioNode = node.type === "scenario";
-
                       return (
                         <button
                           key={node.id}
@@ -502,22 +560,16 @@ export function StudyShell({
                         >
                           <span
                             className={`flex size-5 shrink-0 items-center justify-center rounded-full border transition-colors ${
-                              isScenarioNode
+                              progressVal === 100
                                 ? isActive
                                   ? "border-primary-foreground bg-primary-foreground text-primary"
-                                  : "border-primary/50 bg-primary/15 text-primary"
-                                : progressVal === 100
-                                  ? isActive
-                                    ? "border-primary-foreground bg-primary-foreground text-primary"
-                                    : "border-wp-green bg-wp-green text-wp-text-on-green"
-                                  : isActive
-                                    ? "border-primary-foreground/60"
-                                    : "border-border"
+                                  : "border-wp-green bg-wp-green text-wp-text-on-green"
+                                : isActive
+                                  ? "border-primary-foreground/60"
+                                  : "border-border"
                             }`}
                           >
-                            {isScenarioNode ? (
-                              <Headphones aria-hidden size={12} strokeWidth={2.5} />
-                            ) : progressVal === 100 ? (
+                            {progressVal === 100 ? (
                               <Check aria-hidden size={13} strokeWidth={3} />
                             ) : (
                               <span
@@ -530,27 +582,13 @@ export function StudyShell({
                             )}
                           </span>
                           <span className="min-w-0 flex-1">
-                            <span title={node.title} className="block break-words">
+                            <span title={node.title} className="block truncate">
                               {node.title}
                             </span>
-                            {matchingScenario && (
-                              <span
-                                className={`flex items-center gap-1.5 text-xs font-semibold mt-0.5 truncate ${
-                                  isActive ? "text-primary-foreground" : "text-primary"
-                                }`}
-                                title={`${t("study.videoContext") || "Video Context"}: ${matchingScenario.titleEn}`}
-                              >
-                                <Headphones className="size-3 shrink-0" aria-hidden="true" />
-                                <span className="truncate">
-                                  {t("study.videoPrefix", { defaultValue: "Video:" })}{" "}
-                                  {matchingScenario.titleEn}
-                                </span>
-                              </span>
-                            )}
                             {node.estimatedMinutes && (
                               <span
                                 className={`block text-sm ${
-                                  isActive ? "text-primary-foreground" : "text-muted-foreground"
+                                  isActive ? "text-primary-foreground/80" : "text-muted-foreground"
                                 }`}
                               >
                                 {t("study.minutesShort", { minutes: node.estimatedMinutes })}
@@ -574,7 +612,6 @@ export function StudyShell({
           tabIndex={-1}
           ref={focusRef}
           aria-hidden={isMobileDrawerOpen ? "true" : undefined}
-          {...(isMobileDrawerOpen ? { inert: "" } : {})}
         >
           {currentArea === "home" ? (
             <StudyHome
@@ -589,53 +626,17 @@ export function StudyShell({
             />
           ) : (
             <>
-              {currentArea === "learn" &&
-                activeNode &&
-                (activeNode.type === "scenario" ? (
-                  <div className="wp-container-content wp-layout-gutter py-4 md:py-6 space-y-4">
-                    <header className="space-y-1">
-                      <p className="text-sm font-bold uppercase tracking-wider text-primary flex items-center gap-2">
-                        <Headphones className="size-4" aria-hidden />
-                        <span>{t("study.videoContext") || "Authentic Video Context"}</span>
-                      </p>
-                      <h1 className="text-2xl font-black text-foreground">
-                        {t("study.scenariosForUnit", {
-                          unit: unit.name,
-                          defaultValue: `${unit.name} · Authentic Scenarios`,
-                        })}
-                      </h1>
-                      <p className="text-base text-muted-foreground">
-                        {t("study.scenariosDesc", {
-                          defaultValue:
-                            "Authentic native dialogue scenarios featuring target vocabulary in real-world everyday contexts.",
-                        })}
-                      </p>
-                    </header>
-                    <UnitScenarioPlayer
-                      scenarios={unitScenarios}
-                      initialLessonId={
-                        activeNode?.id?.startsWith(unit.id) ? activeNode.id : undefined
-                      }
-                      onInspectWord={(wordText) => {
-                        const normalized = wordText.trim().toLowerCase();
-                        const found = unit.wordIds.find((id) => id.toLowerCase() === normalized);
-                        if (found) {
-                          setInspectedWord({ id: found, label: wordText } as VocabularyItem);
-                        }
-                      }}
-                    />
-                  </div>
-                ) : (
-                  <LearnArea
-                    key={activeNode.id}
-                    node={activeNode}
-                    materials={materials}
-                    progress={progress}
-                    onProgressUpdate={setStoredProgress}
-                    onNextActivity={handleNextActivity}
-                    immersionMode={immersionMode}
-                  />
-                ))}
+              {currentArea === "learn" && activeNode && (
+                <LearnArea
+                  key={activeNode.id}
+                  node={activeNode}
+                  materials={materials}
+                  progress={progress}
+                  onProgressUpdate={setStoredProgress}
+                  onNextActivity={handleNextActivity}
+                  immersionMode={immersionMode}
+                />
+              )}
               {currentArea === "use" && (
                 <UseItArea
                   node={activeNode}
@@ -670,6 +671,46 @@ export function StudyShell({
           )}
         </div>
       </div>
+
+      {/* 3. Mobile Bottom Horizontal Navigation Bar */}
+      <nav
+        aria-label="Study Areas Mobile Navigation"
+        className="lg:hidden shrink-0 border-t border-border bg-card/95 backdrop-blur px-2 py-1 flex items-center justify-around z-20 pb-[max(env(safe-area-inset-bottom),6px)]"
+      >
+        <button
+          type="button"
+          onClick={handleBackToHome}
+          className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-sm font-bold transition-all min-h-[44px] min-w-[44px] ${
+            currentArea === "home"
+              ? "text-primary bg-secondary shadow-2xs font-extrabold"
+              : "text-muted-foreground hover:text-foreground"
+          }`}
+          aria-current={currentArea === "home" ? "page" : undefined}
+        >
+          <BookOpen className="size-4 mb-0.5" aria-hidden />
+          <span>{t("study.home")}</span>
+        </button>
+        {STUDY_AREAS.map((area) => {
+          const isActive = currentArea === area;
+          const Icon = areaMeta[area].icon;
+          return (
+            <button
+              key={area}
+              type="button"
+              onClick={() => handleAreaSelect(area)}
+              className={`flex flex-col items-center justify-center py-1 px-2 rounded-xl text-sm font-bold transition-all min-h-[44px] min-w-[44px] ${
+                isActive
+                  ? "text-primary bg-secondary shadow-2xs font-extrabold"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              aria-current={isActive ? "page" : undefined}
+            >
+              <Icon className="size-4 mb-0.5" aria-hidden />
+              <span>{areaMeta[area].label.split(" ")[0]}</span>
+            </button>
+          );
+        })}
+      </nav>
 
       {/* Vocabulary Inspector Modal */}
       <WordInspectorModal

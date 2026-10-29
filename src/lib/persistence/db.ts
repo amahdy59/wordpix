@@ -5,10 +5,8 @@ import type {
   LearnerProgressStats,
 } from "../../app/context/LearnerContext";
 import type { WordLearningState } from "../../features/gamification/sm2";
-import type { SpecialistMutation } from "./specialistProgress";
 
-export type SyncErrorCategory =
-  "auth_required" | "validation" | "authorization" | "transient" | "backend_required";
+export type SyncErrorCategory = "auth_required" | "validation" | "authorization" | "transient";
 
 export type SyncOperation = {
   ownerId?: string;
@@ -16,14 +14,6 @@ export type SyncOperation = {
   lastSyncAttemptAt?: string;
   lastErrorCategory?: SyncErrorCategory;
 } & (
-  | {
-      id: string;
-      type: "specialist_progress";
-      payload: SpecialistMutation;
-      createdAt: string;
-      status: "pending" | "syncing" | "failed";
-      retryCount: number;
-    }
   | {
       id: string;
       type: "update_preferences";
@@ -82,17 +72,6 @@ export interface SyncMetadata {
   migration?: { id: string; state: LearnerStateSchema; queueIds: string[] };
 }
 
-type AudioCacheRecord = {
-  key: string;
-  mimeType: string;
-  createdAt: number;
-  lastAccessedAt?: number;
-} & ({ blob: Blob; bytes?: never } | { bytes: ArrayBuffer; blob?: never });
-
-function audioCacheBytes(entry: AudioCacheRecord): number {
-  return entry.blob?.size ?? entry.bytes?.byteLength ?? 0;
-}
-
 interface WordPixDB extends DBSchema {
   sync_metadata: { key: string; value: SyncMetadata };
   learner_state: {
@@ -106,7 +85,17 @@ interface WordPixDB extends DBSchema {
   };
   audio_cache: {
     key: string;
-    value: AudioCacheRecord;
+    value: {
+      key: string;
+      blob: Blob;
+      mimeType: string;
+      createdAt: number;
+      /**
+       * Last playback hit. Absent on entries written before this field
+       * existed — callers fall back to `createdAt`. Powers LRU eviction.
+       */
+      lastAccessedAt?: number;
+    };
   };
 }
 
@@ -153,43 +142,15 @@ export async function getDB() {
  * Falls back to null if not found (letting the context provide defaults).
  */
 export async function getLearnerState(): Promise<LearnerStateSchema | null> {
-  const db = await getDB();
-  if (!db) throw new Error("Local storage is unavailable");
-  const state = await db.get("learner_state", LEARNER_STATE_KEY);
-  return state ?? null;
-}
-
-export type LearnerMutation = {
-  [T in SyncOperation["type"]]: {
-    type: T;
-    payload: Extract<SyncOperation, { type: T }>["payload"];
-  };
-}[SyncOperation["type"]];
-
-/** Completion/checkpoint and its sync intent become durable in the same transaction. */
-export async function saveLearnerChange(
-  state: LearnerStateSchema,
-  mutations: readonly LearnerMutation[],
-  changeId: string
-): Promise<void> {
-  const db = await getDB();
-  if (!db) throw new Error("Local storage is unavailable");
-  const tx = db.transaction(["learner_state", "mutation_queue", "sync_metadata"], "readwrite");
-  const metadata = await tx.objectStore("sync_metadata").get("account");
-  await tx.objectStore("learner_state").put(state, LEARNER_STATE_KEY);
-  for (const [index, mutation] of mutations.entries()) {
-    await tx.objectStore("mutation_queue").put({
-      ...mutation,
-      id: `${changeId}:${index}`,
-      ownerId: metadata?.ownerId,
-      payloadVersion: 1,
-      createdAt: new Date().toISOString(),
-      status: "pending",
-      retryCount: 0,
-    } as SyncOperation);
+  try {
+    const db = await getDB();
+    if (!db) return null;
+    const state = await db.get("learner_state", LEARNER_STATE_KEY);
+    return state ?? null;
+  } catch (e) {
+    console.error("Failed to get learner state", e);
+    return null;
   }
-  await tx.done;
-  notifySyncQueueChanged();
 }
 
 /**
@@ -216,7 +177,7 @@ export async function queueMutation<T extends SyncOperation["type"]>(
 ): Promise<void> {
   try {
     const db = await getDB();
-    if (!db) throw new Error("Local storage is unavailable");
+    if (!db) return;
     const metadata = await db.get("sync_metadata", "account");
     const op = {
       ownerId: metadata?.ownerId,
@@ -232,7 +193,6 @@ export async function queueMutation<T extends SyncOperation["type"]>(
     notifySyncQueueChanged();
   } catch (e) {
     console.error("Failed to queue mutation", e);
-    throw e;
   }
 }
 
@@ -244,11 +204,7 @@ export async function getSyncQueueSummary(): Promise<SyncQueueSummary> {
     (summary, operation) => {
       if (operation.status === "failed") {
         summary.failed += 1;
-        if (
-          operation.lastErrorCategory === "authorization" ||
-          operation.lastErrorCategory === "backend_required"
-        )
-          summary.retryableFailed += 1;
+        if (operation.lastErrorCategory === "authorization") summary.retryableFailed += 1;
       } else summary.pending += 1;
       return summary;
     },
@@ -264,7 +220,7 @@ export async function getCachedAudio(key: string): Promise<Blob | null> {
     const db = await getDB();
     if (!db) return null;
     const entry = await db.get("audio_cache", key);
-    if (!entry || audioCacheBytes(entry) === 0) return null;
+    if (!entry) return null;
     // Record the hit for LRU eviction. Best-effort: a failed touch must
     // never break playback of an entry we already hold.
     try {
@@ -272,9 +228,7 @@ export async function getCachedAudio(key: string): Promise<Blob | null> {
     } catch (touchError) {
       console.warn("Failed to record audio cache hit", touchError);
     }
-    // Blob records from earlier releases remain readable. Bytes avoid WebKit's
-    // "Error preparing Blob/File data" and reconstruct the same recorded media.
-    return entry.blob ?? new Blob([entry.bytes], { type: entry.mimeType });
+    return entry.blob;
   } catch (e) {
     console.warn("Failed to retrieve audio from IndexedDB cache", e);
     return null;
@@ -310,20 +264,20 @@ async function enforceAudioCacheCaps(
 ): Promise<number> {
   const entries = await db.getAll("audio_cache");
   if (entries.length <= AUDIO_CACHE_MAX_ENTRIES) {
-    const bytes = entries.reduce((total, entry) => total + audioCacheBytes(entry), 0);
+    const bytes = entries.reduce((total, entry) => total + entry.blob.size, 0);
     if (bytes <= AUDIO_CACHE_MAX_BYTES) return 0;
   }
   const byRecency = [...entries].sort(
     (a, b) => (a.lastAccessedAt ?? a.createdAt) - (b.lastAccessedAt ?? b.createdAt)
   );
   let count = entries.length;
-  let bytes = entries.reduce((total, entry) => total + audioCacheBytes(entry), 0);
+  let bytes = entries.reduce((total, entry) => total + entry.blob.size, 0);
   let removed = 0;
   for (const victim of byRecency) {
     if (count <= AUDIO_CACHE_MAX_ENTRIES && bytes <= AUDIO_CACHE_MAX_BYTES) break;
     await db.delete("audio_cache", victim.key);
     count -= 1;
-    bytes -= audioCacheBytes(victim);
+    bytes -= victim.blob.size;
     removed += 1;
   }
   return removed;
@@ -335,16 +289,15 @@ async function enforceAudioCacheCaps(
  * The store is capped (entry count + total bytes, LRU eviction) and a
  * QuotaExceededError triggers one evict-and-retry before giving up. A dropped
  * write only means the clip streams again next time — playback falls back to
- * the recorded network path, never to broken state.
+ * the network/TTS path, never to broken state.
  */
 export async function saveCachedAudio(key: string, blob: Blob): Promise<void> {
-  if (blob.size === 0) return;
   try {
     const db = await getDB();
     if (!db) return;
-    const record: AudioCacheRecord = {
+    const record = {
       key,
-      bytes: await blob.arrayBuffer(),
+      blob,
       mimeType: blob.type || "audio/mpeg",
       createdAt: Date.now(),
       lastAccessedAt: Date.now(),

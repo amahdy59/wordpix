@@ -85,7 +85,7 @@ export const FilterChip = forwardRef<HTMLButtonElement, FilterChipProps>(functio
       onClick={handleClick}
       className={`min-h-[44px] min-w-[44px] max-w-full font-sans inline-flex items-center justify-center select-none cursor-pointer border
         focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary
-        transition-shadow duration-150 ease-out
+        transition-all duration-150 ease-out
         motion-safe:enabled:hover:scale-[1.02] motion-safe:enabled:active:scale-[0.97] motion-reduce:transition-none
         disabled:opacity-40 disabled:cursor-not-allowed disabled:transform-none
         ${sizeClasses}
@@ -102,15 +102,10 @@ export const FilterChip = forwardRef<HTMLButtonElement, FilterChipProps>(functio
           {icon}
         </span>
       )}
-      <span
-        style={{ color: selected ? "var(--primary-foreground)" : "var(--foreground)" }}
-        className={`min-w-0 break-words leading-tight ${selected ? "text-primary-foreground font-bold" : "text-foreground font-semibold"}`}
-      >
-        {label}
-      </span>
+      <span className="min-w-0 break-words leading-tight">{label}</span>
       {count !== undefined && (
         <span
-          className={`shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-extrabold leading-none ${
+          className={`shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-extrabold leading-none transition-colors ${
             selected
               ? "border border-primary-foreground/60 text-primary-foreground"
               : "bg-muted text-muted-foreground"

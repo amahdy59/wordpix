@@ -293,7 +293,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/park/jogging.avif",
     description: "Moving on foot faster than walking.",
     topic: "park",
-    exampleUsage: "He goes jogging along the park path.",
   },
   {
     id: "cycling",
@@ -303,7 +302,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/park/cycling.avif",
     description: "Riding a bicycle for travel, exercise, or enjoyment.",
     topic: "park",
-    exampleUsage: "He enjoys cycling on the marked route.",
   },
   {
     id: "picnic",
@@ -322,7 +320,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/park/reading.avif",
     description: "Looking at words in a book or other text.",
     topic: "park",
-    exampleUsage: "He is reading a book on the park bench.",
   },
   {
     id: "sitting",
@@ -332,7 +329,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/park/sitting.avif",
     description: "Resting on a seat with your body supported.",
     topic: "park",
-    exampleUsage: "He is sitting on the bench beside the pond.",
   },
   {
     id: "stretching",
@@ -351,7 +347,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/park/dog-walking.avif",
     description: "Taking a dog outside while it walks beside you.",
     topic: "park",
-    exampleUsage: "Dog walking is allowed on this path.",
   },
   {
     id: "photography",
@@ -496,7 +491,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/park/keep-off-grass.avif",
     description: "A sign asking people not to walk on the grass.",
     topic: "park",
-    exampleUsage: "Please keep off the grass beside the flower beds.",
   },
   {
     id: "dog-allowed",
@@ -623,7 +617,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/park/feed-ducks.avif",
     description: "To give food to ducks in a pond or park.",
     topic: "park",
-    exampleUsage: "Visitors may feed ducks only where the park permits it.",
   },
   {
     id: "fly-kite",

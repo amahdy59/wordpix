@@ -164,7 +164,7 @@ export const HAIR_SALON_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "relax and enjoy yourself without worrying",
       example:
-        "After months of stress, he finally let his hair down — literally untied his bun and asked for a fresh trim with layers.",
+        "After months of stress, she finally let her hair down — literally untied her bun and asked for a fresh trim with layers.",
     },
     {
       id: "hair-salon-a-close-shave",
@@ -173,7 +173,7 @@ export const HAIR_SALON_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "a narrow escape from danger or disaster",
       example:
-        "That was a close shave — the stylist almost cut the bangs too short, but caught himself just in time.",
+        "That was a close shave — the stylist almost cut the bangs too short, but caught herself just in time.",
     },
     {
       id: "hair-salon-split-hairs",
@@ -218,7 +218,7 @@ export const HAIR_SALON_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "by a very small margin",
       example:
-        "He won the style competition by a hair's breadth — his twist and pin technique edged out the waves category.",
+        "She won the style competition by a hair's breadth — her twist and pin technique edged out the waves category.",
     },
   ],
   dialogue: {

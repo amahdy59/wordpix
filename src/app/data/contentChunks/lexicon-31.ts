@@ -157,7 +157,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "strip off",
         meaning: "remove sheets for washing",
         arabic: "يَنْزِعُ المِلايَاتِ لِلْغَسِيل",
-        example: "He stripped off the bed sheets to put them in the laundry.",
+        example: "She stripped off the bed sheets to put them in the laundry.",
       },
     ],
     sentences: [
@@ -345,8 +345,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Gift Box",
-        en: "A friend gave him a luxury pastel gift box filled with salted caramel and lavender macarons.",
-        ar: "أهداه صديق علبة فاخرة بألوان فاتحة تضم ماكرون بالكراميل المملح والخزامى.",
+        en: "He gave her a luxury pastel gift box filled with salted caramel and lavender macarons.",
+        ar: "قَدَّمَ لَهَا صُنْدُوقَ هَدَايَا فَاخِرًا مَلِيئًا بِمَاكَارُون الكَرَامِيلِ وَالخُزَامَى.",
       },
     ],
     exampleSentence:
@@ -383,8 +383,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Boardwalk Stroll",
-        en: "He slipped into a bright pair of waterproof flip-flops to stroll from the changing room to the shore.",
-        ar: "ارتدى خفا بلاستيكيا مقاوما للماء ليمشي من غرفة تبديل الملابس إلى الشاطئ.",
+        en: "She slipped into a bright pair of waterproof flip-flops to stroll from the changing room to the shore.",
+        ar: "ارْتَدَتْ صَنْدَلَ شَاطِئٍ مُقَاوِمًا لِلْمَاءِ لِتَسِيرَ مِنْ غُرْفَةِ تَبْدِيلِ المَلَابِسِ إِلَى الشَّاطِئِ.",
       },
     ],
     exampleSentence:
@@ -441,7 +441,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "look after",
         meaning: "provide medical care to patients",
         arabic: "يَعْتَنِي بِالمَرِيض",
-        example: "The doctor looked after his recovering patients.",
+        example: "The doctor looked after her recovering patients.",
       },
     ],
     sentences: [

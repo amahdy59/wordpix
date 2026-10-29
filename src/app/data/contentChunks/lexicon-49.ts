@@ -26,8 +26,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Air Drying",
-        en: "He stacked the clean plates and bowls neatly in the dish rack to air dry.",
-        ar: "رص الأطباق والأوعية النظيفة بعناية في رف التجفيف لتجف في الهواء.",
+        en: "She stacked the clean plates and bowls neatly in the dish rack to air dry.",
+        ar: "رَصَّتِ الأَطْبَاقَ وَالأَوْعِيَةَ النَّظِيفَةَ فِي مَطْبَقِيَّةِ التَّجْفِيفِ لِتَجِفَّ فِي الهَوَاءِ.",
       },
       {
         context: "Sink Space",
@@ -40,8 +40,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "ضَعِ الشُّوَكَ وَالمَلاعِقَ وَاقِفَةً فِي سَلَّةِ أَدَوَاتِ المَائِدَةِ المُلْحَقَةِ بِمُجَفِّفِ الصُّحُونِ.",
       },
     ],
-    exampleSentence: "He stacked the clean plates and bowls neatly in the dish rack to air dry.",
-    exampleArabic: "رص الأطباق والأوعية النظيفة بعناية في رف التجفيف لتجف في الهواء.",
+    exampleSentence: "She stacked the clean plates and bowls neatly in the dish rack to air dry.",
+    exampleArabic:
+      "رَصَّتِ الأَطْبَاقَ وَالأَوْعِيَةَ النَّظِيفَةَ فِي مَطْبَقِيَّةِ التَّجْفِيفِ لِتَجِفَّ فِي الهَوَاءِ.",
   },
   drawer: {
     id: "drawer",
@@ -198,7 +199,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "grow from seed",
         meaning: "cultivate plants starting from seeds",
         arabic: "يَزْرَعُ مِنَ البُذُور",
-        example: "He successfully grew prize-winning heirloom tomatoes from seed.",
+        example: "She successfully grew prize-winning heirloom tomatoes from seed.",
       },
     ],
     sentences: [
@@ -253,8 +254,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Playground Fun",
-        en: "He climbed the ladder and zipped down the colorful spiral slide.",
-        ar: "صعد السلم وانزلق بسرعة على الزحليقة الحلزونية الملونة.",
+        en: "She climbed the ladder and zipped down the colorful spiral slide.",
+        ar: "صَعِدَتِ السُّلَّمَ وَانْزَلَقَتْ بِسُرْعَةٍ عَلَى الزُّحْلَيْقَةِ اللَّوْلَبِيَّةِ المُلَوَّنَةِ.",
       },
       {
         context: "Safety",
@@ -267,8 +268,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يَحْتَوِي المَلْعَبُ عَلَى زُحْلَيْقَةٍ مُزْدَوَجَةٍ لِمُسَابَقَةِ الأَصْدِقَاءِ.",
       },
     ],
-    exampleSentence: "He climbed the ladder and zipped down the colorful spiral slide.",
-    exampleArabic: "صعد السلم وانزلق بسرعة على الزحليقة الحلزونية الملونة.",
+    exampleSentence: "She climbed the ladder and zipped down the colorful spiral slide.",
+    exampleArabic:
+      "صَعِدَتِ السُّلَّمَ وَانْزَلَقَتْ بِسُرْعَةٍ عَلَى الزُّحْلَيْقَةِ اللَّوْلَبِيَّةِ المُلَوَّنَةِ.",
   },
   skipping: {
     id: "skipping",
@@ -349,8 +351,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Relaxation",
-        en: "He enjoys taking a relaxing evening shower with lavender-scented body wash.",
-        ar: "يستمتع بالاستحمام الهادئ مساء بغسول جسم برائحة الخزامى.",
+        en: "She enjoys taking a relaxing evening shower with lavender-scented body wash.",
+        ar: "تَسْتَمْتِعُ بِأَخْذِ حَمَّامٍ مَسَائِيٍّ مُرِيحٍ بِسَائِلِ اسْتِحْمَامٍ بِرَائِحَةِ الخُزَامَى.",
       },
     ],
     exampleSentence:
@@ -386,8 +388,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Group Activities",
-        en: "He prepared art supplies and guided small reading circles during morning centers.",
-        ar: "جهز أدوات الفن وأشرف على مجموعات قراءة صغيرة خلال أنشطة الصباح.",
+        en: "She prepared art supplies and guided small reading circles during morning centers.",
+        ar: "أَعَدَّتْ أَدَوَاتِ الفَنِّ وَأَرْشَدَتْ مَجْمُوعَاتِ القِرَاءَةِ الصَّغِيرَةِ خِلَالَ أَنْشِطَةِ الصَّبَاحِ.",
       },
       {
         context: "Classroom Teamwork",
@@ -430,8 +432,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Baking Cobbler",
-        en: "He baked a warm golden peach cobbler topped with a scoop of vanilla ice cream.",
-        ar: "خبز حلوى خوخ ذهبية دافئة وقدمها مع كرة من مثلجات الفانيليا.",
+        en: "She baked a warm golden peach cobbler topped with a scoop of vanilla ice cream.",
+        ar: "خَبَزَتْ حَلْوَى كُوبْلَر الخَوْخِ الذَّهَبِيَّةَ الدَّافِئَةَ مَعَ مِلْعَقَةِ آيْس كْرِيم.",
       },
       {
         context: "Fresh Snack",
@@ -468,8 +470,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Shelf Labeling",
-        en: "He examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
-        ar: "تفحص بطاقة السعر الصفراء على الرف ليرى إن كانت القهوة العضوية ضمن التخفيضات.",
+        en: "She examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
+        ar: "فَحَصَتْ بِطَاقَةَ السِّعْرِ الصَّفْرَاءَ عَلَى الرَّفِّ لِمَعْرِفَةِ مَا إِذَا كَانَتِ القَهْوَةُ فِي عَرْضٍ.",
       },
       {
         context: "Digital Displays",
@@ -483,8 +485,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
-    exampleArabic: "تفحص بطاقة السعر الصفراء على الرف ليرى إن كانت القهوة العضوية ضمن التخفيضات.",
+      "She examined the bright yellow price tag on the shelf to see if the organic coffee was on sale.",
+    exampleArabic:
+      "فَحَصَتْ بِطَاقَةَ السِّعْرِ الصَّفْرَاءَ عَلَى الرَّفِّ لِمَعْرِفَةِ مَا إِذَا كَانَتِ القَهْوَةُ فِي عَرْضٍ.",
   },
   cinnamon: {
     id: "cinnamon",
@@ -665,7 +668,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "expand with",
         meaning: "fill with fresh inhaled air",
         arabic: "تَتَمَدَّدُ بِالهَوَاءِ النَّقِيّ",
-        example: "His lungs expanded with fresh mountain air.",
+        example: "Her lungs expanded with fresh mountain air.",
       },
     ],
     sentences: [

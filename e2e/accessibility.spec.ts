@@ -1,4 +1,3 @@
-import { waitForStyles } from "./waitForStyles";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -7,10 +6,11 @@ test.describe.configure({ timeout: 75_000 });
 test("home page should not have any automatically detectable accessibility issues", async ({
   page,
 }) => {
-  await page.goto("/", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
-  await page.emulateMedia({ reducedMotion: "reduce" });
-  await expect(page.getByRole("main").getByRole("heading", { level: 1 })).toBeVisible();
+  await page.goto("/");
+  await page.waitForLoadState("networkidle");
+  await page.locator("#root").waitFor({ state: "visible", timeout: 15_000 });
+  // Wait for entrance fade-in transition to complete to 100% opacity
+  await page.waitForTimeout(400);
 
   const accessibilityScanResults = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
@@ -20,10 +20,7 @@ test("home page should not have any automatically detectable accessibility issue
 });
 
 test("study practice has no automatically detectable accessibility issues", async ({ page }) => {
-  await page.goto("/#/learn/bathroom/study/practice/practice-session", {
-    waitUntil: "domcontentloaded",
-  });
-  await waitForStyles(page);
+  await page.goto("/#/learn/bathroom/study/practice/practice-session");
   const answers = page.locator('#study-content [role="group"]');
   await expect(answers).toBeVisible({ timeout: 30_000 });
   await expect(answers.getByRole("button").first()).toBeVisible();
@@ -35,10 +32,7 @@ test("study practice has no automatically detectable accessibility issues", asyn
 
 test("study vocabulary grid is accessible and contained", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/#/learn/bathroom/study/learn/learn-essential", {
-    waitUntil: "domcontentloaded",
-  });
-  await waitForStyles(page);
+  await page.goto("/#/learn/bathroom/study/learn/learn-essential");
   await expect(page.getByRole("searchbox", { name: "Search words" })).toBeVisible({
     timeout: 15_000,
   });
@@ -57,12 +51,9 @@ test("study vocabulary grid is accessible and contained", async ({ page }) => {
 test("Hadith curriculum index has no automatically detectable accessibility issues", async ({
   page,
 }) => {
-  await page.goto("/#/hadith", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/#/hadith");
   await expect(page.getByRole("main")).toBeVisible();
-  await expect(page.getByRole("button", { name: /Actions and Intentions/i })).toBeVisible({
-    timeout: 15000,
-  });
+  await expect(page.getByRole("button", { name: /Actions and Intentions/i })).toBeVisible();
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
     .analyze();
@@ -72,10 +63,9 @@ test("Hadith curriculum index has no automatically detectable accessibility issu
 test("pronunciation curriculum index has no automatically detectable accessibility issues", async ({
   page,
 }) => {
-  await page.goto("/#/pronunciation", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/#/pronunciation");
   await expect(page.getByRole("main")).toBeVisible();
-  await expect(page.getByRole("searchbox")).toBeVisible({ timeout: 15000 });
+  await expect(page.getByRole("searchbox")).toBeVisible();
   const results = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
     .analyze();
@@ -84,8 +74,7 @@ test("pronunciation curriculum index has no automatically detectable accessibili
 
 test("high-contrast preference uses AAA text colours", async ({ page }) => {
   await page.emulateMedia({ contrast: "more" });
-  await page.goto("/", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/");
   await expect(page.locator("#main-content")).toBeVisible();
 
   const bodyColours = await page.evaluate(() => {
@@ -104,10 +93,8 @@ test("curriculum controls retain 44px targets on mobile", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 720 });
 
   for (const route of ["/#/pronunciation", "/#/business"]) {
-    await page.goto(route, { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
-    await expect(page.getByRole("main").getByRole("heading", { level: 1 })).toBeVisible();
-    await expect(page.getByRole("searchbox")).toBeVisible();
+    await page.goto(route);
+    await expect(page.getByRole("main")).toBeVisible();
 
     const undersized = await page.locator("main").evaluate((main) =>
       Array.from(
@@ -147,8 +134,7 @@ test("curriculum controls retain 44px targets on mobile", async ({ page }) => {
 test("conversation curriculum and warm-up have no detectable accessibility issues", async ({
   page,
 }) => {
-  await page.goto("/#/conversation", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/#/conversation");
   await expect(page.getByRole("main")).toBeVisible();
   await expect(
     page.getByRole("heading", { level: 1, name: "Conversation & Debate" })
@@ -160,14 +146,10 @@ test("conversation curriculum and warm-up have no detectable accessibility issue
     .analyze();
   expect(curriculumResults.violations).toEqual([]);
 
-  const unitButton = page.getByRole("button", {
-    name: /Unit 01: Could You Live Without Your Smartphone/,
-  });
-  await expect(unitButton).toBeVisible();
-  await unitButton.click();
-  await expect(page.getByRole("radiogroup", { name: "Quick vote options" })).toBeVisible({
-    timeout: 15_000,
-  });
+  await page
+    .getByRole("button", { name: /Unit 01: Could You Live Without Your Smartphone/ })
+    .click();
+  await expect(page.getByRole("radiogroup", { name: "Quick vote options" })).toBeVisible();
   await expect(page.getByRole("main")).toHaveCount(1);
   await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
 
@@ -178,17 +160,12 @@ test("conversation curriculum and warm-up have no detectable accessibility issue
 });
 
 test("practice keyboard keeps focus on the selected answer during feedback", async ({ page }) => {
-  await page.goto("/#/learn/bathroom/study/practice/practice-session", {
-    waitUntil: "domcontentloaded",
-  });
-  await waitForStyles(page);
+  await page.goto("/#/learn/bathroom/study/practice/practice-session");
   const answers = page.locator('#study-content [role="group"]');
   await expect(answers).toBeVisible({ timeout: 30_000 });
   const answer = answers.getByRole("button").first();
-  await expect(answer).toBeVisible({ timeout: 10_000 });
   await answer.focus();
-  await expect(answer).toBeFocused();
-  await answer.press("Enter");
+  await page.keyboard.press("Enter");
   await expect(answer).toHaveAttribute("aria-disabled", "true");
   await expect(answer).toBeFocused();
 });

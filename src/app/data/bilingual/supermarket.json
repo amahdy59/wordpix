@@ -1,14 +1,14 @@
 {
   "apple": {
-    "definition": "Fresh crisp fruit in the produce department.",
+    "definition": "A round fruit with firm flesh and red, green, or yellow skin.",
     "arabicTranslation": "تفاح"
   },
   "banana": {
-    "definition": "Fresh yellow fruit in the produce section.",
+    "definition": "Elongated crescent-shaped yellow fruit with soft sweet flesh.",
     "arabicTranslation": "موز"
   },
   "orange": {
-    "definition": "Fresh citrus fruit in the produce bins.",
+    "definition": "Round yellow to orange fruit of any of several citrus trees.",
     "arabicTranslation": "برتقال"
   },
   "grapes": {
@@ -20,7 +20,7 @@
     "arabicTranslation": "فراولة"
   },
   "tomato": {
-    "definition": "Red vine fruits sold in the produce section.",
+    "definition": "A soft red fruit used in salads, sauces, and cooking.",
     "arabicTranslation": "طماطم"
   },
   "lettuce": {
@@ -32,11 +32,11 @@
     "arabicTranslation": "جزر"
   },
   "potato": {
-    "definition": "Starchy root tubers sold in sacks.",
+    "definition": "A round underground vegetable often boiled, baked, or fried.",
     "arabicTranslation": "بطاطس"
   },
   "onion": {
-    "definition": "Pungent layered vegetable bulbs.",
+    "definition": "A strong-smelling vegetable with layers used in cooking.",
     "arabicTranslation": "بصل"
   },
   "watermelon": {
@@ -305,8 +305,8 @@
     "arabicTranslation": "كريمة"
   },
   "juice": {
-    "definition": "Chilled fruit juice bottles.",
-    "arabicTranslation": "عصير فواكه"
+    "definition": "A drink made from the liquid in fruit or vegetables.",
+    "arabicTranslation": "عصير"
   },
   "ice-cream": {
     "definition": "A cold, frozen dessert usually made with milk or cream, sugar, and added flavorings.",
@@ -463,7 +463,8 @@
     "arabicTranslation": "خبز القمح الكامل"
   },
   "chicken": {
-    "definition": "Packaged poultry meat cuts.",
+    "definition": "Meat from a chicken, sold as a whole bird or in cuts.",
+    "exampleUsage": "The chicken was identified during the lesson.",
     "arabicTranslation": "دجاج"
   },
   "beef": {
@@ -475,8 +476,9 @@
     "arabicTranslation": "لحم خنزير"
   },
   "fish": {
-    "definition": "Fresh seafood fillets displayed on ice.",
-    "arabicTranslation": "سمك طازج"
+    "definition": "Fish sold as food, whole or in portions.",
+    "exampleUsage": "The fish was identified during the lesson.",
+    "arabicTranslation": "سمك"
   },
   "shrimp": {
     "exampleUsage": "The shrimp was identified during the lesson.",
@@ -540,7 +542,7 @@
   },
   "drumstick": {
     "definition": "The lower part of a poultry leg, sold or served as a cut of meat.",
-    "exampleUsage": "The cook puts a chicken drumstick on the baking tray.",
+    "exampleUsage": "The glossary uses the term \"Drumstick\" in an educational description.",
     "arabicTranslation": "ساق دجاج"
   },
   "wing": {
@@ -572,12 +574,12 @@
     "arabicTranslation": "سلة"
   },
   "shelf": {
-    "definition": "A metal grocery display rack holding goods.",
-    "arabicTranslation": "رف عرض"
+    "definition": "A horizontal surface used to display or store products.",
+    "arabicTranslation": "رف"
   },
   "aisle": {
-    "definition": "A passageway between grocery shelving units.",
-    "arabicTranslation": "ممر تسوق"
+    "definition": "A passage between rows of shelves in a store.",
+    "arabicTranslation": "ممر"
   },
   "checkout": {
     "definition": "A counter in a supermarket where you pay for your purchases.",
@@ -588,8 +590,8 @@
     "arabicTranslation": "رمز شريطي"
   },
   "receipt": {
-    "definition": "A paper voucher listing purchases and totals.",
-    "arabicTranslation": "إيصال دفع"
+    "arabicTranslation": "إيصال",
+    "definition": "A written or digital record showing that a payment was made."
   },
   "coupon": {
     "definition": "A voucher or code that gives a discount or another stated offer.",
@@ -602,16 +604,16 @@
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
     "arabicTranslation": "ميزان",
-    "exampleUsage": "The shopper weighs the loose fruit on the scale."
+    "exampleUsage": "The scale was used during the activity."
   },
   "cashier": {
-    "definition": "A store clerk processing customer transactions.",
-    "arabicTranslation": "أمين صندوق (كاشير)"
+    "arabicTranslation": "أمين صندوق",
+    "definition": "A worker who takes payments and gives change or receipts."
   },
   "cash-register": {
     "definition": "A store machine that records purchases, adds their prices, and prints a receipt for the customer.",
     "arabicTranslation": "آلة تسجيل النقد",
-    "exampleUsage": "The cashier counts the notes in the cash register."
+    "exampleUsage": "The cash register was used during the activity."
   },
   "self-checkout": {
     "definition": "A checkout station where customers scan and pay for their own purchases using an automated system.",
@@ -625,7 +627,7 @@
   "scanner": {
     "definition": "A device that reads product barcodes at the checkout.",
     "arabicTranslation": "قارئ الرموز الشريطية",
-    "exampleUsage": "The cashier passes the package over the scanner."
+    "exampleUsage": "The scanner was used during the activity."
   },
   "deli-counter": {
     "definition": "A staffed counter selling prepared foods, sliced meats, cheeses, salads, or similar items.",
@@ -684,7 +686,7 @@
   "battery": {
     "definition": "A device that produces electricity.",
     "arabicTranslation": "بطارية",
-    "exampleUsage": "The shopper buys a battery for his remote control."
+    "exampleUsage": "The battery was used during the activity."
   },
   "toilet-paper": {
     "definition": "Soft paper on a roll, used for cleaning yourself after using the toilet.",
@@ -717,19 +719,19 @@
     "definition": "An open container with a handle for carrying water or other things."
   },
   "water": {
-    "definition": "Bottled drinking spring water.",
-    "arabicTranslation": "ماء شرب"
+    "definition": "A clear liquid sold for drinking.",
+    "arabicTranslation": "ماء"
   },
   "soda": {
     "definition": "A sweet drink containing carbonated water and flavoring.",
     "arabicTranslation": "مشروب غازي"
   },
   "coffee": {
-    "definition": "Roasted coffee beans or grounds.",
+    "definition": "A beverage consisting of an infusion of ground coffee beans.",
     "arabicTranslation": "قهوة"
   },
   "tea": {
-    "definition": "Packaged tea bags or loose tea leaves.",
+    "definition": "A beverage made by steeping tea leaves in water.",
     "arabicTranslation": "شاي"
   },
   "lemonade": {
@@ -742,12 +744,12 @@
   },
   "beer": {
     "definition": "A general name for alcoholic beverages made by fermenting a cereal (or mixture of cereals) flavored with hops.",
-    "exampleUsage": "The unopened beer bottles stand on the drinks shelf.",
+    "exampleUsage": "The glossary uses the term \"Beer\" in an educational description.",
     "arabicTranslation": "جعة"
   },
   "wine": {
     "definition": "Fermented juice (of grapes especially).",
-    "exampleUsage": "The wine bottles are on a separate shelf.",
+    "exampleUsage": "The glossary uses the term \"Wine\" in an educational description.",
     "arabicTranslation": "نبيذ"
   },
   "sparkling-water": {
@@ -789,7 +791,7 @@
   },
   "ginger-ale": {
     "definition": "A carbonated soft drink flavored with ginger.",
-    "exampleUsage": "The shopper places ginger ale in his basket.",
+    "exampleUsage": "The glossary uses the term \"Ginger Ale\" in an educational description.",
     "arabicTranslation": "مشروب غازي بنكهة الزنجبيل"
   },
   "mineral-water": {
@@ -798,7 +800,7 @@
   },
   "champagne": {
     "definition": "A white sparkling wine either produced in Champagne or resembling that produced there.",
-    "exampleUsage": "The champagne bottle is displayed beside the other sparkling wines.",
+    "exampleUsage": "The glossary uses the term \"Champagne\" in an educational description.",
     "arabicTranslation": "شمبانيا"
   },
   "chips": {
@@ -1073,7 +1075,7 @@
   },
   "razor": {
     "definition": "A tool with a sharp blade used to remove hair from the skin.",
-    "exampleUsage": "The unopened razor is beside the shaving cream.",
+    "exampleUsage": "The glossary uses the term \"Razor\" in an educational description.",
     "arabicTranslation": "شفرة حلاقة"
   },
   "tissue": {
@@ -1120,7 +1122,7 @@
   "comb": {
     "definition": "A flat tool with a row of teeth, used to arrange or untangle hair.",
     "arabicTranslation": "مشط",
-    "exampleUsage": "He keeps a comb beside his hairbrush."
+    "exampleUsage": "The comb was used during the activity."
   },
   "lip-balm": {
     "definition": "A soft product put on the lips to stop them becoming dry or sore.",
@@ -1155,8 +1157,8 @@
     "arabicTranslation": "مرطبان"
   },
   "bag": {
-    "definition": "A reusable or paper shopping bag.",
-    "arabicTranslation": "كيس تسوق"
+    "definition": "A flexible container used to carry shopping or other items.",
+    "arabicTranslation": "كيس"
   },
   "carton": {
     "definition": "A cardboard container used to hold food, drinks, or other products.",
@@ -1425,7 +1427,7 @@
   },
   "where-can-i-find-": {
     "definition": "A question used to ask where a particular item or section is located.",
-    "exampleUsage": "Where can I find the rice?",
+    "exampleUsage": "She asked, 'Where can I find rice?'",
     "arabicTranslation": "أين يمكنني أن أجد...؟"
   },
   "paper-or-plastic-": {
@@ -1445,12 +1447,12 @@
   },
   "do-you-have-": {
     "definition": "A question used to ask whether a store has a particular item available.",
-    "exampleUsage": "Do you have any fresh bread?",
+    "exampleUsage": "The customer asked, 'Do you have oat milk?'",
     "arabicTranslation": "هل لديكم...؟"
   },
   "can-i-get-a-bag-": {
     "definition": "A polite question used to request a shopping bag.",
-    "exampleUsage": "He asked, 'Can I get a bag?'",
+    "exampleUsage": "She asked, 'Can I get a bag?'",
     "arabicTranslation": "هل يمكنني الحصول على كيس؟"
   },
   "i-need-a-refund": {
@@ -1460,7 +1462,7 @@
   },
   "where-is-aisle-": {
     "definition": "A question used to ask the location of a numbered or named store aisle.",
-    "exampleUsage": "Where is aisle five?",
+    "exampleUsage": "He asked, 'Where is aisle five?'",
     "arabicTranslation": "أين الممر...؟"
   },
   "is-this-fresh-": {
@@ -1479,13 +1481,13 @@
     "arabicTranslation": "لديّ قسيمة خصم"
   },
   "ginger": {
-    "exampleUsage": "He grates fresh ginger into the soup.",
+    "exampleUsage": "The glossary uses the term \"Ginger\" in an educational description.",
     "arabicTranslation": "زنجبيل",
     "definition": "A spicy root used to flavor food and drinks."
   },
   "cart": {
-    "definition": "A wheeled metal grocery trolley.",
-    "arabicTranslation": "عربة تسوق"
+    "definition": "Wheeled vehicle that can be pushed by a person.",
+    "arabicTranslation": "عربة"
   },
   "salami": {
     "definition": "A cured sausage, often sliced and eaten cold.",
@@ -1494,133 +1496,5 @@
   "hummus": {
     "definition": "A thick spread made from mashed chickpeas, tahini, lemon juice and garlic.",
     "arabicTranslation": "حمص بالطحينة"
-  },
-  "rice": {
-    "definition": "Packaged grains of cereal rice sold in bags.",
-    "arabicTranslation": "أرز"
-  },
-  "bread": {
-    "definition": "Freshly baked loaves displayed in the bakery aisle.",
-    "arabicTranslation": "خبز"
-  },
-  "milk": {
-    "definition": "Pasteurized dairy milk cartons in refrigerated cases.",
-    "arabicTranslation": "حليب"
-  },
-  "cheese": {
-    "definition": "Packaged dairy cheeses in the dairy case.",
-    "arabicTranslation": "جبن"
-  },
-  "butter": {
-    "definition": "Wrapped blocks of churned dairy butter.",
-    "arabicTranslation": "زبدة"
-  },
-  "egg": {
-    "definition": "Cartons of farm eggs in the chilled section.",
-    "arabicTranslation": "بيض"
-  },
-  "price": {
-    "definition": "The financial cost displayed on an item tag.",
-    "arabicTranslation": "سعر"
-  },
-  "meat": {
-    "definition": "Butchered beef and poultry cuts in the meat department.",
-    "arabicTranslation": "لحم"
-  },
-  "sugar": {
-    "definition": "Bags of refined granulated sugar.",
-    "arabicTranslation": "سكر"
-  },
-  "salt": {
-    "definition": "Packaged iodized table salt containers.",
-    "arabicTranslation": "ملح"
-  },
-  "jalape-o": {
-    "definition": "A medium-sized hot chili pepper.",
-    "arabicTranslation": "فلفل هالابينو"
-  },
-  "jalapeno": {
-    "definition": "A medium-sized hot chili pepper.",
-    "arabicTranslation": "فلفل هالابينو"
-  },
-  "pasta": {
-    "definition": "Dry dough made from durum wheat molded into shapes.",
-    "arabicTranslation": "مكرونة"
-  },
-  "flour": {
-    "definition": "Powdered wheat grain used for baking.",
-    "arabicTranslation": "دقيق"
-  },
-  "sponge": {
-    "definition": "A porous cellulose pad for wiping counters.",
-    "arabicTranslation": "إسفنجة تنظيف"
-  },
-  "paper-towel": {
-    "definition": "Absorbent disposable paper rolls for kitchen use.",
-    "arabicTranslation": "مناديل ورقية للمطبخ"
-  },
-  "dish-soap": {
-    "definition": "Liquid detergent formulated to clean dishes.",
-    "arabicTranslation": "صابون غسيل الأطباق"
-  },
-  "aluminum-foil": {
-    "definition": "Thin pliable metallic sheets for food wrapping.",
-    "arabicTranslation": "رقائق ألومنيوم (قصدير)"
-  },
-  "plastic-wrap": {
-    "definition": "Cling film used to cover and seal food containers.",
-    "arabicTranslation": "غلاف بلاستيكي غذائي"
-  },
-  "honey": {
-    "definition": "Sweet viscous fluid made by bees.",
-    "arabicTranslation": "عسل"
-  },
-  "pepper": {
-    "definition": "Crushed dried black peppercorns.",
-    "arabicTranslation": "فلفل أسود"
-  },
-  "vinegar": {
-    "definition": "A sour acidic liquid made from fermented liquids.",
-    "arabicTranslation": "خل"
-  },
-  "how-much-is-this": {
-    "definition": "A polite price inquiry question asked by a shopper.",
-    "arabicTranslation": "كم سعر هذا؟"
-  },
-  "where-can-i-find": {
-    "definition": "A polite location inquiry question for an item in a store.",
-    "arabicTranslation": "أين يمكنني أن أجد...؟"
-  },
-  "paper-or-plastic": {
-    "definition": "A checkout inquiry offering bag material choice.",
-    "arabicTranslation": "ورقي أم بلاستيكي؟"
-  },
-  "is-this-on-sale": {
-    "definition": "A question checking promotional discount status.",
-    "arabicTranslation": "هل هذا عليه تخفيض؟"
-  },
-  "cash-or-card": {
-    "definition": "A payment tender inquiry at the register.",
-    "arabicTranslation": "نقدًا أم بالبطاقة؟"
-  },
-  "do-you-have": {
-    "definition": "A query verifying product availability in stock.",
-    "arabicTranslation": "هل لديكم...؟"
-  },
-  "can-i-get-a-bag": {
-    "definition": "A request for a shopping carrier bag.",
-    "arabicTranslation": "هل يمكنني الحصول على كيس؟"
-  },
-  "where-is-aisle": {
-    "definition": "A directional inquiry locating a supermarket aisle.",
-    "arabicTranslation": "أين هو الممر رقم...؟"
-  },
-  "is-this-fresh": {
-    "definition": "A quality inquiry regarding produce or seafood.",
-    "arabicTranslation": "هل هذا طازج؟"
-  },
-  "can-i-taste-this": {
-    "definition": "A sampling request at a supermarket counter.",
-    "arabicTranslation": "هل يمكنني تذوق هذا؟"
   }
 }

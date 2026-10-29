@@ -45,140 +45,116 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key daily action verbs 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a daily action and describe a short routine.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to daily action verbs in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wake Up", "Get Up", "Yawn"],
-          "scenario": "The alarm rings. Yusuf stops sleeping: he wakes up. He will get up and yawn before leaving his bed.",
+          "scenario": "Before work, an adult is shown waking up, getting up, and yawning in a short routine. The highlighted moment shows waking up.",
           "check": {
-            "question": "Which phrase means to stop sleeping?",
+            "question": "Which action is happening at this moment?",
             "options": ["Get Up", "Yawn", "Wake Up"],
             "expectedAnswer": "Wake Up"
           },
-          "imageBrief": "Adult sitting awake on bed beside an unlabelled alarm clock. No text, exposed body or multiple action panels.",
-          "imageAlt": "Adult sitting awake on bed beside an unlabelled alarm clock."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: Before work, an adult is shown waking up, getting up, and yawning in a short routine. The highlighted moment shows waking up. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Wake Up, Get Up, Yawn in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Stretch", "Shower", "Brush Teeth"],
-          "scenario": "Yusuf extends his arms to stretch. Next he will shower and brush his teeth.",
+          "scenario": "During lunch, an adult is shown stretching, showering, and brushing teeth in a short routine. The highlighted moment shows stretching.",
           "check": {
-            "question": "Which verb describes extending his arms?",
+            "question": "Which action is happening at this moment in the example with stretch, shower?",
             "options": ["Brush Teeth", "Stretch", "Shower"],
             "expectedAnswer": "Stretch"
           },
-          "imageBrief": "Clothed adult extending both arms beside a bed, ordinary gentle movement without medical or fitness instructions. No text.",
-          "imageAlt": "Clothed adult extending both arms beside a bed, ordinary gentle movement without medical or fitness instructions."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: During lunch, an adult is shown stretching, showering, and brushing teeth in a short routine. The highlighted moment shows stretching. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Stretch, Shower, Brush Teeth in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Get Dressed", "Eat Breakfast", "Pack Lunch"],
-          "scenario": "Yusuf puts on a shirt to get dressed. Later he will eat breakfast and pack lunch.",
+          "scenario": "After work, an adult is shown getting dressed, eating breakfast, and packing lunch in a short routine. The highlighted moment shows getting dressed.",
           "check": {
-            "question": "Which phrase describes putting on clothes?",
+            "question": "Which verb matches the person's action?",
             "options": ["Get Dressed", "Eat Breakfast", "Pack Lunch"],
             "expectedAnswer": "Get Dressed"
           },
-          "imageBrief": "Adult fastening a shirt, torso already covered, trousers on. No food actions at the same time or text.",
-          "imageAlt": "Adult fastening a shirt, torso already covered, trousers on."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: After work, an adult is shown getting dressed, eating breakfast, and packing lunch in a short routine. The highlighted moment shows getting dressed. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Get Dressed, Eat Breakfast, Pack Lunch in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Leave Home", "Eat", "Drink"],
-          "scenario": "Yusuf goes through his front door to leave home. Before this he has time to eat and drink.",
+          "scenario": "While doing chores, an adult is shown leaving home, eating, and drinking in a short routine. The highlighted moment shows leaving home.",
           "check": {
-            "question": "Which phrase describes going out of his house?",
+            "question": "What is the person doing in the example with leave home, eat?",
             "options": ["Eat", "Drink", "Leave Home"],
             "expectedAnswer": "Leave Home"
           },
-          "imageBrief": "Clothed adult stepping out through a home door with a work bag. No unrelated eating action or text.",
-          "imageAlt": "Clothed adult stepping out through a home door with a work bag."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: While doing chores, an adult is shown leaving home, eating, and drinking in a short routine. The highlighted moment shows leaving home. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Leave Home, Eat, Drink in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Chew", "Swallow", "Sip"],
-          "scenario": "At breakfast Yusuf uses his teeth to chew bread before he can swallow it. He takes a sip of tea afterwards.",
+          "scenario": "Before bed, an adult is shown chewing, swallowing, and sipping in a short routine. The highlighted moment shows chewing.",
           "check": {
-            "question": "Which verb describes breaking food down with the teeth?",
+            "question": "What is the person doing in the example with chew, swallow?",
             "options": ["Sip", "Chew", "Swallow"],
             "expectedAnswer": "Chew"
           },
-          "imageBrief": "Adult breakfast table with bread and cup. Written context distinguishes chew, swallow and sip; no exaggerated mouth anatomy, choking or text.",
-          "imageAlt": "Adult breakfast table with bread and cup."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: Before bed, an adult is shown chewing, swallowing, and sipping in a short routine. The highlighted moment shows chewing. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Chew, Swallow, Sip in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "From Waking Up to Leaving Home",
-      "text": "When the alarm rings, Yusuf wakes up and gets up. He yawns, stretches and showers. He brushes his teeth and gets dressed. Then he eats breakfast and packs lunch before leaving home. At breakfast, he eats bread and drinks water. He chews before swallowing, then sips his coffee.",
-      "imageBrief": "Clothed adult morning preparation with closed work bag, bread and cup on table. No bathroom actions at the breakfast table, readable text or precise clock requirement."
+      "text": "When the alarm rings, Yusuf wakes up and gets up. He tries not to yawn, then stretches and takes a shower. After he brushes his teeth and gets dressed, he has time to eat breakfast and pack lunch before he leaves home. At the table, he takes time to eat and drink. He chews each bite before he can swallow, then takes a final sip of coffee before work.",
+      "imageBrief": "One uncluttered daily action verbs scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "The alarm rings. Yusuf stops sleeping: he wakes up. He will get up and yawn before leaving his bed.\nWhich phrase means to stop sleeping?",
-        "answer": "Wake Up",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Wake Up"
       },
       {
-        "prompt": "Yusuf extends his arms to stretch. Next he will shower and brush his teeth.\nWhich verb describes extending his arms?",
-        "answer": "Stretch",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Stretch"
       },
       {
-        "prompt": "Yusuf puts on a shirt to get dressed. Later he will eat breakfast and pack lunch.\nWhich phrase describes putting on clothes?",
-        "answer": "Get Dressed",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Get Dressed"
       },
       {
-        "prompt": "Yusuf goes through his front door to leave home. Before this he has time to eat and drink.\nWhich phrase describes going out of his house?",
-        "answer": "Leave Home",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Leave Home"
       },
       {
-        "prompt": "At breakfast Yusuf uses his teeth to chew bread before he can swallow it. He takes a sip of tea afterwards.\nWhich verb describes breaking food down with the teeth?",
-        "answer": "Chew",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Chew"
       },
       {
-        "prompt": "Read the passage: When the alarm rings, Yusuf wakes up and gets up. He yawns, stretches and showers. He brushes his teeth and gets dressed. Then he eats breakfast and packs lunch before leaving home. At breakfast, he eats bread and drinks water. He chews before swallowing, then sips his coffee.\nWhat does Yusuf pack before leaving home?",
-        "answer": "Lunch",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Wake Up"
       },
       {
-        "prompt": "Say you wake up before you get up.",
-        "answer": "I wake up before I get up.",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Get Up"
       },
       {
-        "prompt": "Ask a colleague whether they pack lunch for work.",
-        "answer": "Do you pack lunch for work?",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Brush Teeth"
       }
     ],
     "video": {
-      "title": "Adult Daily Routines",
-      "idea": "One adult action at a time with ordinary work and home settings. Narration supplies order, duration, sound, dreams and relaxation; a still frame does not prove those. Keep personal care clothed or show objects only. No treatment, dental technique or fitness prescriptions.",
-      "scriptStarter": "The alarm rings. Yusuf stops sleeping: he wakes up. He will get up and yawn before leaving his bed."
+      "title": "Daily Action Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily routine. Show wake up, get up, yawn, stretch, and shower naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: Before work, an adult is shown waking up, getting up, and yawning in a short routine. The highlighted moment shows waking up."
     },
     "spacedReview": "1 lesson(s) back: Diary, Agenda from days-months-4\n3 lesson(s) back: June, July from days-months-2\n7 lesson(s) back: Noon, Midnight from telling-time-2"
   },
@@ -228,140 +204,116 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key daily action verbs 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a daily action and describe a short routine.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to daily action verbs in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Gulp", "Bite", "Taste"],
-          "scenario": "Sam drinks water quickly in large mouthfuls: he gulps it. Later he takes a bite of bread and tastes the soup.",
+          "scenario": "During lunch, an adult is shown gulping, biting, and tasting in a short routine. The highlighted moment shows gulping.",
           "check": {
-            "question": "Which verb describes drinking quickly in large mouthfuls?",
+            "question": "What is the person doing in the example with gulp, bite?",
             "options": ["Taste", "Gulp", "Bite"],
             "expectedAnswer": "Gulp"
           },
-          "imageBrief": "Adult seated with water glass and lunch. Speed and volume are supplied by context; no choking, forced drinking or text.",
-          "imageAlt": "Adult seated with water glass and lunch."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: During lunch, an adult is shown gulping, biting, and tasting in a short routine. The highlighted moment shows gulping. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Gulp, Bite, Taste in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Lick", "Slurp", "Cook"],
-          "scenario": "Sam moves his tongue over his own spoon to lick it. A slurp makes a sucking sound; he will cook the soup later.",
+          "scenario": "After work, an adult is shown licking, slurping, and cooking in a short routine. The highlighted moment shows licking.",
           "check": {
-            "question": "Which verb describes moving the tongue over the spoon?",
+            "question": "What activity comes into focus in the routine?",
             "options": ["Lick", "Slurp", "Cook"],
             "expectedAnswer": "Lick"
           },
-          "imageBrief": "Adult with own small dessert spoon at a table. No shared cooking spoon, loudness graphics or text.",
-          "imageAlt": "Adult with own small dessert spoon at a table."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: After work, an adult is shown licking, slurping, and cooking in a short routine. The highlighted moment shows licking. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Lick, Slurp, Cook in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Clean", "Wash", "Sweep"],
-          "scenario": "Maya removes crumbs from the counter to clean it. She will wash the bowls with water and sweep the floor with a broom.",
+          "scenario": "While doing chores, an adult is shown cleaning, washing, and sweeping in a short routine. The highlighted moment shows cleaning.",
           "check": {
-            "question": "Which verb describes removing dirt or mess in general?",
+            "question": "What action should the learner identify?",
             "options": ["Wash", "Sweep", "Clean"],
             "expectedAnswer": "Clean"
           },
-          "imageBrief": "Adult wiping kitchen counter with cloth. Bowls and broom stored separately; no chemical mixing, food beside chemicals or text.",
-          "imageAlt": "Adult wiping kitchen counter with cloth."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: While doing chores, an adult is shown cleaning, washing, and sweeping in a short routine. The highlighted moment shows cleaning. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Clean, Wash, Sweep in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Vacuum", "Iron", "Fold"],
-          "scenario": "Maya uses a vacuum cleaner to vacuum the rug. She will iron a shirt and fold it afterwards.",
+          "scenario": "Before bed, an adult is shown vacuuming, ironing, and folding in a short routine. The highlighted moment shows vacuuming.",
           "check": {
-            "question": "Which verb describes cleaning the rug with the machine?",
+            "question": "Which action is happening at this moment in the example with vacuum, iron?",
             "options": ["Fold", "Vacuum", "Iron"],
             "expectedAnswer": "Vacuum"
           },
-          "imageBrief": "Adult using ordinary vacuum cleaner on a rug. No iron switched on nearby or readable text.",
-          "imageAlt": "Adult using ordinary vacuum cleaner on a rug."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: Before bed, an adult is shown vacuuming, ironing, and folding in a short routine. The highlighted moment shows vacuuming. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Vacuum, Iron, Fold in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Organize", "Repair", "Decorate"],
-          "scenario": "Maya sorts books by subject to organize them. A carpenter will repair a chair; she will decorate the room with flowers.",
+          "scenario": "Before work, an adult is shown organizing, repairing, and decorating in a short routine. The highlighted moment shows organizing.",
           "check": {
-            "question": "Which verb describes putting the books into useful order?",
+            "question": "Which action is happening at this moment in the example with organize, repair?",
             "options": ["Organize", "Repair", "Decorate"],
             "expectedAnswer": "Organize"
           },
-          "imageBrief": "Adult arranging books on a stable shelf. Closed books without readable titles; no repair procedure or text.",
-          "imageAlt": "Adult arranging books on a stable shelf."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: Before work, an adult is shown organizing, repairing, and decorating in a short routine. The highlighted moment shows organizing. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Organize, Repair, Decorate in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Daily Action Verbs 2: A Practical Daily Routine",
-      "text": "At lunch Sam gulps water, takes a bite of bread and tastes soup. He licks his own spoon. A slurp makes a sound. Later Maya cooks dinner. She cleans the counter, washes bowls, sweeps the floor and vacuums the rug. She irons and folds a shirt, organizes books, asks a carpenter to repair a chair and decorates the room.",
-      "imageBrief": "Adult home work table with closed folders and ordinary household objects appropriate to the passage. No simultaneous impossible routine, chemicals or readable text."
+      "text": "A working adult moves through a normal day one task at a time. In the morning, the person may gulp, bite, taste, lick, and slurp. Around meals and home tasks, they may cook, clean, wash, sweep, and vacuum. For personal care and rest, they may iron, fold, organize, repair, and decorate. The order changes depending on work, travel, and other plans.",
+      "imageBrief": "One uncluttered daily action verbs scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Sam drinks water quickly in large mouthfuls: he gulps it. Later he takes a bite of bread and tastes the soup.\nWhich verb describes drinking quickly in large mouthfuls?",
-        "answer": "Gulp",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Gulp"
       },
       {
-        "prompt": "Sam moves his tongue over his own spoon to lick it. A slurp makes a sucking sound; he will cook the soup later.\nWhich verb describes moving the tongue over the spoon?",
-        "answer": "Lick",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Lick"
       },
       {
-        "prompt": "Maya removes crumbs from the counter to clean it. She will wash the bowls with water and sweep the floor with a broom.\nWhich verb describes removing dirt or mess in general?",
-        "answer": "Clean",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Clean"
       },
       {
-        "prompt": "Maya uses a vacuum cleaner to vacuum the rug. She will iron a shirt and fold it afterwards.\nWhich verb describes cleaning the rug with the machine?",
-        "answer": "Vacuum",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Vacuum"
       },
       {
-        "prompt": "Maya sorts books by subject to organize them. A carpenter will repair a chair; she will decorate the room with flowers.\nWhich verb describes putting the books into useful order?",
-        "answer": "Organize",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Organize"
       },
       {
-        "prompt": "Read the passage: At lunch Sam gulps water, takes a bite of bread and tastes soup. He licks his own spoon. A slurp makes a sound. Later Maya cooks dinner. She cleans the counter, washes bowls, sweeps the floor and vacuums the rug. She irons and folds a shirt, organizes books, asks a carpenter to repair a chair and decorates the room.\nWho repairs the chair?",
-        "answer": "A carpenter",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Gulp"
       },
       {
-        "prompt": "Ask someone to fold the clean towels.",
-        "answer": "Please fold the clean towels.",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Bite"
       },
       {
-        "prompt": "A rug is dusty. Ask someone to clean it with a vacuum cleaner.",
-        "answer": "Please vacuum the rug.",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Cook"
       }
     ],
     "video": {
-      "title": "Adult Daily Routines",
-      "idea": "One adult action at a time with ordinary work and home settings. Narration supplies order, duration, sound, dreams and relaxation; a still frame does not prove those. Keep personal care clothed or show objects only. No treatment, dental technique or fitness prescriptions.",
-      "scriptStarter": "Sam drinks water quickly in large mouthfuls: he gulps it. Later he takes a bite of bread and tastes the soup."
+      "title": "Daily Action Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily routine. Show gulp, bite, taste, lick, and slurp naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: During lunch, an adult is shown gulping, biting, and tasting in a short routine. The highlighted moment shows gulping."
     },
     "spacedReview": "1 lesson(s) back: Wake Up, Get Up from daily-action-verbs-1\n3 lesson(s) back: Today, Tomorrow from days-months-3\n7 lesson(s) back: Morning, Afternoon from telling-time-3"
   },
@@ -397,7 +349,7 @@
       "يحلق",
       "يمشط",
       "يصفف",
-      "يضع على سطح",
+      "يضع أو يطبّق",
       "يرطب",
       "يشذب أو يقص أطراف",
       "ينظف بالخيط",
@@ -411,140 +363,116 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key daily action verbs 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a daily action and describe a short routine.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to daily action verbs in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bathe", "Shave", "Comb"],
-          "scenario": "Omar washes his body with water to bathe. Afterwards he will shave his face and comb his hair.",
+          "scenario": "After work, an adult is shown bathing, shaving, and combing in a short routine. The highlighted moment shows bathing.",
           "check": {
-            "question": "Which verb means to wash the body?",
+            "question": "Which action is happening at this moment in the example with bathe, shave?",
             "options": ["Bathe", "Shave", "Comb"],
             "expectedAnswer": "Bathe"
           },
-          "imageBrief": "Empty clean bathroom with bathtub, towel and closed shower curtain. No nudity or shaving procedure; written context supplies the activity. No text.",
-          "imageAlt": "Empty clean bathroom with bathtub, towel and closed shower curtain."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: After work, an adult is shown bathing, shaving, and combing in a short routine. The highlighted moment shows bathing. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Bathe, Shave, Comb in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Style", "Apply", "Moisturize"],
-          "scenario": "Omar arranges his hair into a particular shape to style it. Later he will apply lotion to moisturize his hands.",
+          "scenario": "While doing chores, an adult is shown styling, applying, and moisturizing in a short routine. The highlighted moment shows styling.",
           "check": {
-            "question": "Which verb describes arranging the hair?",
+            "question": "Which verb matches the person's action in the example with style, apply?",
             "options": ["Apply", "Moisturize", "Style"],
             "expectedAnswer": "Style"
           },
-          "imageBrief": "Clothed adult arranging hair in front of a mirror. Closed lotion bottle without label; no treatment claim or text.",
-          "imageAlt": "Clothed adult arranging hair in front of a mirror."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: While doing chores, an adult is shown styling, applying, and moisturizing in a short routine. The highlighted moment shows styling. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Style, Apply, Moisturize in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Trim", "Floss", "Gargle"],
-          "scenario": "A barber cuts a small amount from Omar’s hair to trim it. At home Omar has dental floss and a separate product used to gargle.",
+          "scenario": "Before bed, an adult is shown trimming, flossing, and gargling in a short routine. The highlighted moment shows trimming.",
           "check": {
-            "question": "Which verb describes cutting a small amount from the hair?",
+            "question": "What is the person doing in the example with trim, floss?",
             "options": ["Gargle", "Trim", "Floss"],
             "expectedAnswer": "Trim"
           },
-          "imageBrief": "Adult customer at barber shop with barber arranging hair before trimming. No razor injury, dental procedure, product label or text.",
-          "imageAlt": "Adult customer at barber shop with barber arranging hair before trimming."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: Before bed, an adult is shown trimming, flossing, and gargling in a short routine. The highlighted moment shows trimming. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Trim, Floss, Gargle in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dry Off", "Rest", "Relax"],
-          "scenario": "After washing, Omar uses a towel to dry off. Afterwards he will rest in a chair and relax.",
+          "scenario": "Before work, an adult is shown drying off, resting, and relaxing in a short routine. The highlighted moment shows drying off.",
           "check": {
-            "question": "Which phrase describes removing water from the body?",
+            "question": "What is the person doing in the example with dry off, rest?",
             "options": ["Dry Off", "Rest", "Relax"],
             "expectedAnswer": "Dry Off"
           },
-          "imageBrief": "Clothed adult drying wet forearms with a towel. No nudity or readable text.",
-          "imageAlt": "Clothed adult drying wet forearms with a towel."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: Before work, an adult is shown drying off, resting, and relaxing in a short routine. The highlighted moment shows drying off. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Dry Off, Rest, Relax in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Nap", "Sleep", "Dream"],
-          "scenario": "Omar sleeps for twenty minutes in the afternoon to nap. At night he will sleep longer; a dream is something he experiences while asleep.",
+          "scenario": "During lunch, an adult is shown napping, sleeping, and dreaming in a short routine. The highlighted moment shows napping.",
           "check": {
-            "question": "Which verb means to sleep for a short time?",
+            "question": "What activity comes into focus in the routine in the example with nap, sleep?",
             "options": ["Sleep", "Dream", "Nap"],
             "expectedAnswer": "Nap"
           },
-          "imageBrief": "Clothed adult resting on sofa with cushion. Written context supplies duration; no thought bubbles claiming a visible dream, clock labels or text.",
-          "imageAlt": "Clothed adult resting on sofa with cushion."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: During lunch, an adult is shown napping, sleeping, and dreaming in a short routine. The highlighted moment shows napping. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Nap, Sleep, Dream in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Daily Action Verbs 3: A Practical Daily Routine",
-      "text": "Omar bathes, shaves, combs his hair and styles it. He applies lotion to moisturize his hands. A barber trims his hair. Dental thread is used to floss; a product’s instructions say whether to gargle. After washing, Omar dries off. Later he rests and relaxes. He may nap briefly, sleep at night and dream.",
-      "imageBrief": "Adult evening bedroom with book, folded pajamas and towel. No nudity, visible dreams, medical procedures or text."
+      "text": "A working adult moves through a normal day one task at a time. In the morning, the person may bathe, shave, comb, style, and apply. Around meals and home tasks, they may moisturize, trim, floss, gargle, and dry off. For personal care and rest, they may rest, relax, nap, sleep, and dream. The order changes depending on work, travel, and other plans.",
+      "imageBrief": "One uncluttered daily action verbs scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Omar washes his body with water to bathe. Afterwards he will shave his face and comb his hair.\nWhich verb means to wash the body?",
-        "answer": "Bathe",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bathe"
       },
       {
-        "prompt": "Omar arranges his hair into a particular shape to style it. Later he will apply lotion to moisturize his hands.\nWhich verb describes arranging the hair?",
-        "answer": "Style",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Style"
       },
       {
-        "prompt": "A barber cuts a small amount from Omar’s hair to trim it. At home Omar has dental floss and a separate product used to gargle.\nWhich verb describes cutting a small amount from the hair?",
-        "answer": "Trim",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Trim"
       },
       {
-        "prompt": "After washing, Omar uses a towel to dry off. Afterwards he will rest in a chair and relax.\nWhich phrase describes removing water from the body?",
-        "answer": "Dry Off",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dry Off"
       },
       {
-        "prompt": "Omar sleeps for twenty minutes in the afternoon to nap. At night he will sleep longer; a dream is something he experiences while asleep.\nWhich verb means to sleep for a short time?",
-        "answer": "Nap",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Nap"
       },
       {
-        "prompt": "Read the passage: Omar bathes, shaves, combs his hair and styles it. He applies lotion to moisturize his hands. A barber trims his hair. Dental thread is used to floss; a product’s instructions say whether to gargle. After washing, Omar dries off. Later he rests and relaxes. He may nap briefly, sleep at night and dream.\nWho trims Omar’s hair?",
-        "answer": "A barber",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Bathe"
       },
       {
-        "prompt": "Say that you comb your hair before work.",
-        "answer": "I comb my hair before work.",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Shave"
       },
       {
-        "prompt": "You have wet hands after washing. Say that you need to dry off.",
-        "answer": "I need to dry off.",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Moisturize"
       }
     ],
     "video": {
-      "title": "Adult Daily Routines",
-      "idea": "One adult action at a time with ordinary work and home settings. Narration supplies order, duration, sound, dreams and relaxation; a still frame does not prove those. Keep personal care clothed or show objects only. No treatment, dental technique or fitness prescriptions.",
-      "scriptStarter": "Omar washes his body with water to bathe. Afterwards he will shave his face and comb his hair."
+      "title": "Daily Action Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily routine. Show bathe, shave, comb, style, and apply naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: After work, an adult is shown bathing, shaving, and combing in a short routine. The highlighted moment shows bathing."
     },
     "spacedReview": "1 lesson(s) back: Gulp, Bite from daily-action-verbs-2\n3 lesson(s) back: Diary, Agenda from days-months-4\n7 lesson(s) back: Ahead of Time, Behind Schedule from telling-time-4"
   },
@@ -568,83 +496,68 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key daily action verbs 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a daily action and describe a short routine.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to daily action verbs in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Snore", "Doze", "Meditate"],
-          "scenario": "Omar’s brother makes a rough breathing sound while asleep: he snores. Omar may doze on the sofa or meditate quietly while awake.",
+          "scenario": "While doing chores, an adult is shown snoring, dozing, and meditating in a short routine. The highlighted moment shows snoring.",
           "check": {
-            "question": "Which verb describes the noisy breathing during sleep?",
+            "question": "What activity comes into focus in the routine in the example with snore, doze?",
             "options": ["Doze", "Meditate", "Snore"],
             "expectedAnswer": "Snore"
           },
-          "imageBrief": "Clothed adult asleep in bed, covered by blanket. Sound and wakefulness are supplied by text or narration; no diagnostic inference, sound symbols or text.",
-          "imageAlt": "Clothed adult asleep in bed, covered by blanket."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: While doing chores, an adult is shown snoring, dozing, and meditating in a short routine. The highlighted moment shows snoring. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Snore, Doze, Meditate in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Unwind", "Recharge"],
-          "scenario": "After a busy workday Lina relaxes to unwind. A restful weekend helps her recharge, meaning regain energy.",
+          "scenario": "Before bed, an adult is shown unwinding and recharging in a short routine. The highlighted moment shows unwinding.",
           "check": {
-            "question": "Which verb describes relaxing after a busy day?",
+            "question": "What action should the learner identify in the example with unwind, recharge?",
             "options": ["Snore", "Unwind", "Recharge"],
             "expectedAnswer": "Unwind"
           },
-          "imageBrief": "Adult relaxing in comfortable chair with a book. Context supplies stress and regained energy; no battery icon or readable text.",
-          "imageAlt": "Adult relaxing in comfortable chair with a book."
+          "imageBrief": "Photorealistic adult real-world scene in a daily action verbs context illustrating this situation: Before bed, an adult is shown unwinding and recharging in a short routine. The highlighted moment shows unwinding. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult daily action verbs scene showing lesson-related items or actions including Unwind, Recharge in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Daily Action Verbs 4: A Practical Daily Routine",
-      "text": "On Sunday Lina wants to unwind after a busy week. She sits quietly to meditate, then reads on the sofa. Later she begins to doze. Her brother sometimes snores when he sleeps, but the house is quiet today. The restful afternoon helps Lina recharge before Monday.",
-      "imageBrief": "Adult relaxing indoors beside a window with a book and laundry basket. Context supplies time, weather decisions or energy; no visible thought symbols or text."
+      "text": "A working adult moves through a normal day one task at a time. In the morning, the person may snore, doze, meditate, unwind, and recharge. The order changes depending on work, travel, and other plans. The vocabulary is used in a realistic daily action verbs context that an adult could meet at home, at work, or in the community.",
+      "imageBrief": "One uncluttered daily action verbs scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Omar’s brother makes a rough breathing sound while asleep: he snores. Omar may doze on the sofa or meditate quietly while awake.\nWhich verb describes the noisy breathing during sleep?",
-        "answer": "Snore",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Snore"
       },
       {
-        "prompt": "After a busy workday Lina relaxes to unwind. A restful weekend helps her recharge, meaning regain energy.\nWhich verb describes relaxing after a busy day?",
-        "answer": "Unwind",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Unwind"
       },
       {
-        "prompt": "Read the passage: On Sunday Lina wants to unwind after a busy week. She sits quietly to meditate, then reads on the sofa. Later she begins to doze. Her brother sometimes snores when he sleeps, but the house is quiet today. The restful afternoon helps Lina recharge before Monday.\nWhat helps Lina recharge?",
-        "answer": "The restful afternoon",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Snore"
       },
       {
-        "prompt": "Describe relaxing after work using unwind.",
-        "answer": "I unwind after work.",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Doze"
       },
       {
-        "prompt": "Say that a restful weekend helps you regain energy, using recharge.",
-        "answer": "A restful weekend helps me recharge.",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Recharge"
       }
     ],
     "video": {
-      "title": "Adult Daily Routines",
-      "idea": "One adult action at a time with ordinary work and home settings. Narration supplies order, duration, sound, dreams and relaxation; a still frame does not prove those. Keep personal care clothed or show objects only. No treatment, dental technique or fitness prescriptions.",
-      "scriptStarter": "Omar’s brother makes a rough breathing sound while asleep: he snores. Omar may doze on the sofa or meditate quietly while awake."
+      "title": "Daily Action Verbs: See It, Say It",
+      "idea": "30–50 second contextual video set in a daily routine. Show snore, doze, meditate, unwind, and recharge naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: While doing chores, an adult is shown snoring, dozing, and meditating in a short routine. The highlighted moment shows snoring."
     },
     "spacedReview": "1 lesson(s) back: Bathe, Shave from daily-action-verbs-3\n3 lesson(s) back: Wake Up, Get Up from daily-action-verbs-1\n7 lesson(s) back: Monday, Tuesday from days-months-1"
   }

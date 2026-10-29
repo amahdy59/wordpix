@@ -1,4 +1,5 @@
-import { useEffect, useId, useRef, useState } from "react";
+import { HelpDisclosure } from "./HelpDisclosure";
+import { useEffect, useId, useState } from "react";
 import {
   CheckCircle2,
   Headphones,
@@ -13,9 +14,6 @@ import {
 import { useI18n } from "../../i18n";
 import { useAudio } from "./useAudio";
 import { usePrivateRecording } from "./usePrivateRecording";
-import { OnlinePronunciationFeedback } from "./OnlinePronunciationFeedback";
-import { onlineAssessmentEnabled } from "./pronunciationAssessment";
-import { AudioRecoveryStatus } from "./AudioRecoveryStatus";
 
 interface SpeechRecordCompareProps {
   target: string;
@@ -24,13 +22,6 @@ interface SpeechRecordCompareProps {
   description?: string;
   maxDurationSeconds?: number;
   defaultOpen?: boolean;
-  compact?: boolean;
-  modelAudioKey?: string;
-  modelUnavailable?: boolean;
-  modelLabel?: string;
-  pronunciationFeedback?: boolean;
-  onEvidence?: (value: "reflected" | "assessed") => void;
-  noDetails?: boolean;
 }
 
 const focusRing =
@@ -100,22 +91,10 @@ export function SpeechRecordCompare({
   description,
   maxDurationSeconds = 60,
   defaultOpen = true,
-  compact = false,
-  modelAudioKey,
-  modelUnavailable = false,
-  modelLabel,
-  pronunciationFeedback = false,
-  onEvidence,
-  noDetails = false,
 }: SpeechRecordCompareProps) {
   const { t } = useI18n();
   const id = useId();
-  const learnerAudioRef = useRef<HTMLAudioElement>(null);
-  const audio = useAudio({
-    lang: "en-US",
-    rate: 1,
-    preferLocal: true,
-  });
+  const audio = useAudio({ lang: "en-US", rate: 0.88, preferLocal: true });
   const recording = usePrivateRecording({ maxDurationMs: maxDurationSeconds * 1000 });
   const [reflection, setReflection] = useState<"again" | "almost" | "clear" | null>(null);
   const isAudioPending = audio.status === "loading" || audio.status === "playing";
@@ -124,181 +103,151 @@ export function SpeechRecordCompare({
     recording.status === "requesting"
       ? t("speechPractice.requestingMic")
       : recording.status === "recording"
-        ? t("pronunciationEnhancements.recordingStarted")
+        ? t("speechPractice.recordingStatus", {
+            elapsed: formatDuration(recording.elapsedMs),
+            limit: formatDuration(recording.maxDurationMs),
+          })
         : recording.status === "ready"
           ? t("speechPractice.recordingReady")
           : "";
 
-  const bodyContent = (
-    <div className={`space-y-5 ${noDetails ? "" : "border-t border-border p-5 sm:p-6"}`}>
-      {!compact && (
-        <p className="text-base text-muted-foreground leading-relaxed">
-          {description ?? t("speechPractice.subtitle")}
-        </p>
-      )}
-      {!compact && (
+  return (
+    <details
+      open={defaultOpen || undefined}
+      className="group overflow-hidden rounded-3xl border border-border bg-card shadow-wp-sm"
+    >
+      <summary
+        className={`flex min-h-14 cursor-pointer list-none items-center gap-3 px-5 py-4 text-start ${focusRing}`}
+      >
+        <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
+          <Mic className="size-5" aria-hidden />
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block text-base font-black text-foreground">
+            {title ?? t("speechPractice.title")}
+          </span>
+        </span>
+      </summary>
+
+      <div className="space-y-5 border-t border-border p-5 sm:p-6">
+        <HelpDisclosure label={t("help.howItWorks")}>
+          <p>{description ?? t("speechPractice.subtitle")}</p>
+        </HelpDisclosure>
         <div className="flex items-start gap-3 rounded-2xl border border-primary/25 bg-secondary p-4">
           <ShieldCheck className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden />
           <p id={`${id}-privacy`} className="text-sm font-semibold leading-relaxed text-foreground">
-            {t(
-              pronunciationFeedback && onlineAssessmentEnabled()
-                ? "pronunciationEnhancements.recordingPrivacy"
-                : "speechPractice.privacy"
-            )}
+            {t("speechPractice.privacy")}
           </p>
         </div>
-      )}
 
-      <ol className="grid min-w-0 gap-4 xl:grid-cols-3">
-        <li
-          className={compact ? "space-y-2" : "rounded-2xl border border-border bg-background p-4"}
-        >
-          <div className="flex items-center gap-2 text-primary">
-            <span
-              className={`${compact ? "sr-only" : "flex size-7 items-center justify-center rounded-full bg-primary text-xs font-black text-primary-foreground"}`}
-            >
-              1
-            </span>
-            <h3 className="font-black text-foreground">
-              {modelLabel ?? t("speechPractice.listenTitle")}
-            </h3>
-          </div>
-          {!compact && (
-            <p
-              className="mt-3 text-sm font-semibold leading-relaxed text-muted-foreground"
-              lang="en"
-              dir="ltr"
-            >
+        <ol className="grid gap-4 lg:grid-cols-3">
+          <li className="rounded-2xl border border-border bg-background p-4">
+            <div className="flex items-center gap-2 text-primary">
+              <span className="flex size-7 items-center justify-center rounded-full bg-primary text-xs font-black text-primary-foreground">
+                1
+              </span>
+              <h3 className="font-black text-foreground">{t("speechPractice.listenTitle")}</h3>
+            </div>
+            <p className="mt-3 text-sm font-semibold leading-relaxed text-muted-foreground">
               {modelText}
             </p>
-          )}
-          <button
-            type="button"
-            onClick={() => {
-              learnerAudioRef.current?.pause();
-              if (isAudioPending) audio.stop();
-              else if (modelAudioKey) audio.speak(modelText, undefined, modelAudioKey);
-              else audio.speak(modelText);
-            }}
-            disabled={
-              modelUnavailable ||
-              !audio.isSupported ||
-              recording.status === "recording" ||
-              recording.status === "requesting"
-            }
-            aria-busy={audio.status === "loading"}
-            className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-primary bg-card px-4 text-sm font-black text-primary transition-colors hover:bg-secondary motion-safe:active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 ${focusRing}`}
-          >
-            {audio.status === "loading" ? (
-              <LoaderCircle
-                className="size-4 animate-spin motion-reduce:animate-none"
-                aria-hidden
-              />
-            ) : isAudioPending ? (
-              <Square className="size-4" aria-hidden />
-            ) : (
-              <Volume2 className="size-4" aria-hidden />
-            )}
-            {isAudioPending
-              ? t("speechPractice.stopModel")
-              : (modelLabel ?? t("speechPractice.playModel"))}
-          </button>
-          {modelUnavailable && (
-            <p className="mt-3 text-sm text-foreground" role="status">
-              {t("pronunciationEnhancements.audioPending")}
-            </p>
-          )}
-          {!audio.isSupported && (
-            <p className="mt-3 text-sm font-bold text-foreground" role="status">
-              {t("speechPractice.modelUnavailable")}
-            </p>
-          )}
-          <AudioRecoveryStatus failed={audio.isError} />
-        </li>
-
-        <li
-          className={compact ? "space-y-2" : "rounded-2xl border border-border bg-background p-4"}
-        >
-          <div className="flex items-center gap-2 text-primary">
-            <span
-              className={`${compact ? "sr-only" : "flex size-7 items-center justify-center rounded-full bg-primary text-xs font-black text-primary-foreground"}`}
-            >
-              2
-            </span>
-            <h3 className="font-black text-foreground">{t("speechPractice.recordTitle")}</h3>
-          </div>
-          {!compact && (
-            <p className="mt-3 text-sm font-semibold leading-relaxed text-muted-foreground">
-              {t("speechPractice.target", { target })}
-            </p>
-          )}
-
-          {recording.status === "unsupported" ? (
-            <p className="mt-4 text-sm font-bold text-foreground" role="status">
-              {t("speechPractice.unavailable")}
-            </p>
-          ) : (
             <button
               type="button"
-              onClick={() => {
-                audio.stop();
-                learnerAudioRef.current?.pause();
-                if (recording.status === "recording") recording.stop();
-                else {
-                  setReflection(null);
-                  void recording.start();
-                }
-              }}
-              disabled={recording.status === "requesting"}
-              aria-describedby={`${id}-privacy`}
-              className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl px-4 text-sm font-black transition-colors motion-safe:active:scale-[0.98] disabled:cursor-wait disabled:opacity-60 ${focusRing} ${
-                recording.status === "recording"
-                  ? "bg-destructive text-destructive-foreground"
-                  : "bg-primary text-primary-foreground "
-              }`}
+              onClick={() => (isAudioPending ? audio.stop() : audio.speak(modelText))}
+              disabled={!audio.isSupported}
+              aria-busy={audio.status === "loading"}
+              className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-primary bg-card px-4 text-sm font-black text-primary transition-colors hover:bg-secondary motion-safe:active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 ${focusRing}`}
             >
-              {recording.status === "requesting" ? (
+              {audio.status === "loading" ? (
                 <LoaderCircle
                   className="size-4 animate-spin motion-reduce:animate-none"
                   aria-hidden
                 />
-              ) : recording.status === "recording" ? (
+              ) : isAudioPending ? (
                 <Square className="size-4" aria-hidden />
-              ) : recording.recordingUrl ? (
-                <RotateCcw className="size-4" aria-hidden />
               ) : (
-                <Mic className="size-4" aria-hidden />
+                <Volume2 className="size-4" aria-hidden />
               )}
-              {recording.status === "requesting"
-                ? t("speechPractice.requestingMic")
-                : recording.status === "recording"
-                  ? t("speechPractice.stopRecording")
-                  : recording.recordingUrl
-                    ? t("speechPractice.recordAgain")
-                    : t("speechPractice.startRecording")}
+              {isAudioPending ? t("speechPractice.stopModel") : t("speechPractice.playModel")}
             </button>
-          )}
-          {recording.status === "recording" && (
-            <p className="mt-3 text-sm font-black text-destructive" aria-live="off">
-              {t("speechPractice.recordingStatus", {
-                elapsed: formatDuration(recording.elapsedMs),
-                limit: formatDuration(recording.maxDurationMs),
-              })}
-            </p>
-          )}
-          {(recording.status === "denied" || recording.status === "error") && (
-            <p className="mt-3 text-sm font-bold text-destructive" role="alert">
-              {recording.status === "denied"
-                ? t("speechPractice.micDenied")
-                : t("speechPractice.recordError")}
-            </p>
-          )}
-        </li>
+            {!audio.isSupported && (
+              <p className="mt-3 text-sm font-bold text-foreground" role="status">
+                {t("speechPractice.modelUnavailable")}
+              </p>
+            )}
+            {audio.isError && (
+              <p className="mt-3 text-sm font-bold text-destructive" role="alert">
+                {t("speechPractice.modelError")}
+              </p>
+            )}
+          </li>
 
-        {(!compact || recording.recordingUrl) && (
-          <li
-            className={compact ? "space-y-2" : "rounded-2xl border border-border bg-background p-4"}
-          >
+          <li className="rounded-2xl border border-border bg-background p-4">
+            <div className="flex items-center gap-2 text-primary">
+              <span className="flex size-7 items-center justify-center rounded-full bg-primary text-xs font-black text-primary-foreground">
+                2
+              </span>
+              <h3 className="font-black text-foreground">{t("speechPractice.recordTitle")}</h3>
+            </div>
+            <p className="mt-3 text-sm font-semibold leading-relaxed text-muted-foreground">
+              {t("speechPractice.target", { target })}
+            </p>
+
+            {recording.status === "unsupported" ? (
+              <p className="mt-4 text-sm font-bold text-foreground" role="status">
+                {t("speechPractice.unavailable")}
+              </p>
+            ) : (
+              <button
+                type="button"
+                onClick={recording.status === "recording" ? recording.stop : recording.start}
+                disabled={recording.status === "requesting"}
+                aria-describedby={`${id}-privacy`}
+                className={`mt-4 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl px-4 text-sm font-black transition-colors motion-safe:active:scale-[0.98] disabled:cursor-wait disabled:opacity-60 ${focusRing} ${
+                  recording.status === "recording"
+                    ? "bg-destructive text-destructive-foreground"
+                    : "bg-primary text-primary-foreground "
+                }`}
+              >
+                {recording.status === "requesting" ? (
+                  <LoaderCircle
+                    className="size-4 animate-spin motion-reduce:animate-none"
+                    aria-hidden
+                  />
+                ) : recording.status === "recording" ? (
+                  <Square className="size-4" aria-hidden />
+                ) : recording.recordingUrl ? (
+                  <RotateCcw className="size-4" aria-hidden />
+                ) : (
+                  <Mic className="size-4" aria-hidden />
+                )}
+                {recording.status === "requesting"
+                  ? t("speechPractice.requestingMic")
+                  : recording.status === "recording"
+                    ? t("speechPractice.stopRecording")
+                    : recording.recordingUrl
+                      ? t("speechPractice.recordAgain")
+                      : t("speechPractice.startRecording")}
+              </button>
+            )}
+            {recording.status === "recording" && (
+              <p className="mt-3 text-sm font-black text-destructive" role="status">
+                {t("speechPractice.recordingStatus", {
+                  elapsed: formatDuration(recording.elapsedMs),
+                  limit: formatDuration(recording.maxDurationMs),
+                })}
+              </p>
+            )}
+            {(recording.status === "denied" || recording.status === "error") && (
+              <p className="mt-3 text-sm font-bold text-destructive" role="alert">
+                {recording.status === "denied"
+                  ? t("speechPractice.micDenied")
+                  : t("speechPractice.recordError")}
+              </p>
+            )}
+          </li>
+
+          <li className="rounded-2xl border border-border bg-background p-4">
             <div className="flex items-center gap-2 text-primary">
               <span className="flex size-7 items-center justify-center rounded-full bg-primary text-xs font-black text-primary-foreground">
                 3
@@ -309,19 +258,11 @@ export function SpeechRecordCompare({
               <div className="mt-3 space-y-3">
                 <RecordingWaveform blob={recording.recordingBlob} />
                 <p className="text-xs font-bold text-muted-foreground">
-                  {t("speechPractice.duration", {
-                    duration: formatDuration(recording.durationMs),
-                  })}
+                  {t("speechPractice.duration", { duration: formatDuration(recording.durationMs) })}
                 </p>
                 {/* The learner's private recording has no authored caption track. */}
                 {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-                <audio
-                  ref={learnerAudioRef}
-                  className="w-full"
-                  controls
-                  src={recording.recordingUrl}
-                  onPlay={audio.stop}
-                >
+                <audio className="w-full" controls src={recording.recordingUrl}>
                   {t("speechPractice.audioUnsupported")}
                 </audio>
                 <button
@@ -345,115 +286,43 @@ export function SpeechRecordCompare({
               </div>
             )}
           </li>
+        </ol>
+
+        {recording.recordingUrl && (
+          <fieldset className="rounded-2xl border border-border bg-muted/20 p-4">
+            <legend className="px-1 text-sm font-black text-foreground">
+              {t("speechPractice.reflectionTitle")}
+            </legend>
+            <div className="mt-2 grid gap-2 sm:grid-cols-3">
+              {(["again", "almost", "clear"] as const).map((value) => (
+                <label
+                  key={value}
+                  className={`flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-xl border px-3 text-center text-sm font-bold transition-colors focus-within:outline focus-within:outline-[3px] focus-within:outline-offset-2 focus-within:outline-primary ${
+                    reflection === value
+                      ? "border-primary bg-primary text-primary-foreground"
+                      : "border-border bg-card text-foreground hover:bg-muted"
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    name={`${id}-reflection`}
+                    value={value}
+                    checked={reflection === value}
+                    onChange={() => setReflection(value)}
+                    className="sr-only"
+                  />
+                  {value === "clear" && <CheckCircle2 className="size-4" aria-hidden />}
+                  {t(`speechPractice.reflection.${value}`)}
+                </label>
+              ))}
+            </div>
+          </fieldset>
         )}
-      </ol>
-      {compact && (
-        <div className="space-y-1">
-          <p className="text-sm text-muted-foreground">
-            {description ?? t("speechPractice.subtitle")}
-          </p>
-          <p id={`${id}-privacy`} className="text-xs text-muted-foreground">
-            {t(
-              pronunciationFeedback && onlineAssessmentEnabled()
-                ? "pronunciationEnhancements.recordingPrivacy"
-                : "speechPractice.privacy"
-            )}
-          </p>
-        </div>
-      )}
 
-      {recording.recordingUrl && (
-        <fieldset className="rounded-2xl border border-border bg-muted/20 p-4">
-          <legend className="px-1 text-sm font-black text-foreground">
-            {t("speechPractice.reflectionTitle")}
-          </legend>
-          <div className="mt-2 grid gap-2 sm:grid-cols-3">
-            {(["again", "almost", "clear"] as const).map((value) => (
-              <label
-                key={value}
-                className={`flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-xl border px-3 text-center text-sm font-bold transition-colors focus-within:outline focus-within:outline-[3px] focus-within:outline-offset-2 focus-within:outline-primary ${
-                  reflection === value
-                    ? "border-primary bg-primary text-primary-foreground"
-                    : "border-border bg-card text-foreground hover:bg-muted"
-                }`}
-              >
-                <input
-                  type="radio"
-                  name={`${id}-reflection`}
-                  value={value}
-                  checked={reflection === value}
-                  onChange={() => {
-                    setReflection(value);
-                    onEvidence?.("reflected");
-                  }}
-                  className="sr-only"
-                />
-                {value === "clear" && <CheckCircle2 className="size-4" aria-hidden />}
-                {t(`speechPractice.reflection.${value}`)}
-              </label>
-            ))}
-          </div>
-        </fieldset>
-      )}
-
-      {pronunciationFeedback && (
-        <OnlinePronunciationFeedback
-          blob={recording.recordingBlob}
-          target={target}
-          onAssessed={() => onEvidence?.("assessed")}
-        />
-      )}
-
-      <p className="sr-only" aria-live="polite" aria-atomic="true">
-        {statusMessage}
-      </p>
-    </div>
-  );
-
-  if (noDetails) {
-    return (
-      <section
-        className="group overflow-hidden rounded-3xl border border-border bg-card p-5 sm:p-6 shadow-wp-sm space-y-5"
-        aria-label={title ?? t("speechPractice.title")}
-      >
-        <div className="flex items-center gap-3">
-          <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
-            <Mic className="size-5" aria-hidden />
-          </span>
-          <span className="min-w-0 flex-1">
-            <h3 className="block text-base font-black text-foreground">
-              {title ?? t("speechPractice.title")}
-            </h3>
-          </span>
-        </div>
-        {bodyContent}
-      </section>
-    );
-  }
-
-  return (
-    <details
-      open={defaultOpen || undefined}
-      onToggle={(event) => {
-        if (event.currentTarget.open) return;
-        audio.stop();
-        learnerAudioRef.current?.pause();
-        if (recording.status === "requesting") recording.deleteRecording();
-        else if (recording.status === "recording") recording.stop();
-      }}
-      className="group overflow-hidden rounded-3xl border border-border bg-card shadow-wp-sm"
-    >
-      <summary className="flex min-h-14 cursor-pointer list-none items-center gap-3 px-5 py-4 text-start focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-[-3px] focus-visible:outline-primary">
-        <span className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
-          <Mic className="size-5" aria-hidden />
-        </span>
-        <span className="min-w-0 flex-1">
-          <span className="block text-base font-black text-foreground">
-            {title ?? t("speechPractice.title")}
-          </span>
-        </span>
-      </summary>
-      {bodyContent}
+        <p className="sr-only" aria-live="polite" aria-atomic="true">
+          {statusMessage}
+        </p>
+      </div>
     </details>
   );
 }

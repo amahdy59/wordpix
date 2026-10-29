@@ -22,7 +22,6 @@ export function TimedPassageText({
   offset = 0,
   vocabTerms,
   onTermClick,
-  interactiveVocabulary,
 }: {
   text: string;
   spans?: readonly TranscriptSpan[];
@@ -30,7 +29,6 @@ export function TimedPassageText({
   offset?: number;
   vocabTerms?: string[];
   onTermClick?: (term: string) => void;
-  interactiveVocabulary?: boolean;
 }) {
   const active = time === null ? undefined : getActiveTranscriptRange(spans, time);
   const from = active ? Math.max(0, active.start - offset) : 0;
@@ -40,7 +38,6 @@ export function TimedPassageText({
       text={text}
       vocabTerms={vocabTerms}
       onTermClick={onTermClick}
-      interactiveVocabulary={interactiveVocabulary}
       highlightRange={to > from ? { start: from, end: to } : undefined}
     />
   );

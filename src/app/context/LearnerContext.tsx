@@ -11,22 +11,12 @@ import {
   type WordLearningState,
 } from "../../features/gamification/sm2";
 import { calculateXPBreakdown, type XPBreakdown } from "../../features/gamification/xp";
-import { getLearnerState, saveLearnerState, type LearnerMutation } from "../../lib/persistence/db";
-import {
-  enqueueLearnerWrite,
-  flushLearnerWrites,
-  resetLearnerWritesForTests,
-} from "../../lib/persistence/learnerWrites";
-import { specialistMutationSchema } from "../../lib/persistence/specialistProgress";
-import { accessibilitySchema } from "../shared/accessibilitySchema";
-import { recoveryCopy } from "../../i18n/recovery";
-import { migrateWordMemory, wordMemoryKey, type ReviewWord } from "../learning/wordIdentity";
+import { getLearnerState, saveLearnerState, queueMutation } from "../../lib/persistence/db";
 import {
   checkpointPronunciationLesson,
   completePronunciationLesson,
   migrateLegacyPronunciationProgress,
   type PronunciationProgress,
-  type PronunciationSession,
 } from "../learning/foundations/pronunciationProgress";
 import {
   checkpointHadithLesson,
@@ -85,7 +75,43 @@ export type NumeralSystem = "western" | "arabic";
  * absolutely nothing — and were discarded the moment the modal closed. They now
  * live in persisted state and are applied by real consumers.
  */
-export type AccessibilityPreferences = import("zod").infer<typeof accessibilitySchema>;
+export interface AccessibilityPreferences {
+  textSize: TextSize;
+  highContrast: boolean;
+  /** SpeechSynthesis rate for vocabulary playback. */
+  speechRate: number;
+  numeralSystem: NumeralSystem;
+  includeSpeaking: boolean;
+  includeListening: boolean;
+  /**
+   * When false, no exercise imposes a time limit at all.
+   *
+   * This is the control that satisfies WCAG 2.2.3 (No Timing, AAA): the limit
+   * can be turned off before it is ever encountered. WCAG 2.2.1 (Level A) is
+   * met separately by the pause and extend controls on the timer itself.
+   */
+  timedExercises: boolean;
+  /**
+   * When true, a drill moves to the next question by itself a moment after
+   * each answer, instead of waiting to be told to.
+   *
+   * The delay before it moves on is a time limit on reading the feedback, so
+   * WCAG 2.2.1 (Timing Adjustable) requires it be possible to switch off before
+   * it is ever encountered — which is what this does. Turning it off puts a
+   * Next button on the feedback instead.
+   */
+  autoAdvance: boolean;
+  /**
+   * When true, each answer receives a brief spoken encouragement on top of the
+   * existing chime. Vocabulary pronunciation remains available through Replay.
+   *
+   * Switchable because sound that plays automatically after every question has
+   * to be (WCAG 1.4.2, Audio Control), and because a learner on a train wants
+   * the chime without the narration.
+   */
+  spokenFeedback: boolean;
+  reduceMotion: boolean;
+}
 
 export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   textSize: "standard",
@@ -94,12 +120,10 @@ export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   numeralSystem: "western",
   includeSpeaking: true,
   includeListening: true,
-  includePronunciation: true,
   timedExercises: true,
-  autoAdvance: false,
+  autoAdvance: true,
   spokenFeedback: true,
   reduceMotion: false,
-  autoPlayAudio: true,
 };
 
 /** Root font-size multiplier per text-size step. */
@@ -116,7 +140,6 @@ export interface LearnerProgressStats {
   daysActive: number;
   sessionsCompleted: number;
   completedSessionIds: string[];
-  streakFreezeAvailable?: number;
 }
 
 export interface SessionRecord {
@@ -134,7 +157,6 @@ export interface LearnerStateSchema {
   accessibility: AccessibilityPreferences;
   learnerProgress: LearnerProgressStats;
   wordMemory: Record<string, WordLearningState>;
-  legacyWordMemory?: Record<string, WordLearningState>;
   sessionHistory: SessionRecord[];
   pronunciationProgress: PronunciationProgress;
   hadithProgress: HadithProgress;
@@ -145,7 +167,7 @@ export interface LearnerStateSchema {
 const STORAGE_KEY = "wordpix:learner:v2";
 
 export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
-  version: 4,
+  version: 3,
   preferences: {
     englishLevel: "A1",
     startingUnitId: "numbers-counting",
@@ -162,7 +184,6 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
     daysActive: 0,
     sessionsCompleted: 0,
     completedSessionIds: [],
-    streakFreezeAvailable: 1,
   },
   wordMemory: {},
   sessionHistory: [],
@@ -175,7 +196,7 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
 /** Shape of whatever came out of localStorage: unknown until validated. */
 type PersistedShape = Partial<Record<keyof LearnerStateSchema | "foundationProgress", unknown>>;
 
-export function migrateState(savedData: unknown): LearnerStateSchema {
+function migrateState(savedData: unknown): LearnerStateSchema {
   if (!savedData || typeof savedData !== "object") return INITIAL_LEARNER_STATE;
 
   const saved = savedData as PersistedShape;
@@ -189,7 +210,7 @@ export function migrateState(savedData: unknown): LearnerStateSchema {
     const val = rawMemory[wordId];
     if (val && typeof val === "object" && "wordId" in val) {
       normalizedMemory[wordId] = normalizeWordLearningState(
-        typeof val.wordId === "string" ? val.wordId : wordId,
+        wordId,
         val as Partial<WordLearningState>
       );
     } else if (typeof val === "number") {
@@ -201,13 +222,8 @@ export function migrateState(savedData: unknown): LearnerStateSchema {
     }
   });
 
-  const migratedMemory = migrateWordMemory(normalizedMemory);
-  const savedAccessibility = accessibilitySchema.safeParse({
-    ...DEFAULT_ACCESSIBILITY,
-    ...((saved.accessibility as object) ?? {}),
-  });
   return {
-    version: 4,
+    version: 3,
     preferences: {
       englishLevel: (saved.preferences as Partial<LearnerPreferences>)?.englishLevel ?? "A1",
       startingUnitId:
@@ -217,16 +233,15 @@ export function migrateState(savedData: unknown): LearnerStateSchema {
       theme: (saved.preferences as Partial<LearnerPreferences>)?.theme ?? "system",
       expression: (saved.preferences as Partial<LearnerPreferences>)?.expression ?? "adult",
     },
-    accessibility: savedAccessibility.success ? savedAccessibility.data : DEFAULT_ACCESSIBILITY,
+    accessibility: {
+      ...DEFAULT_ACCESSIBILITY,
+      ...(saved.accessibility as Partial<AccessibilityPreferences> | undefined),
+    },
     learnerProgress: {
       ...INITIAL_LEARNER_STATE.learnerProgress,
       ...(saved.learnerProgress as Partial<LearnerProgressStats> | undefined),
     },
-    wordMemory: migratedMemory.current,
-    legacyWordMemory: {
-      ...((saved.legacyWordMemory as Record<string, WordLearningState>) ?? {}),
-      ...migratedMemory.legacy,
-    },
+    wordMemory: normalizedMemory,
     sessionHistory: Array.isArray(saved.sessionHistory)
       ? (saved.sessionHistory as SessionRecord[])
       : [],
@@ -249,21 +264,15 @@ interface LearnerContextType {
   recordSessionCompletion: (
     sessionId: string,
     attempts: AnswerAttempt[],
-    wordQueue: string[],
-    unitId?: string,
-    reviewItems?: ReviewWord[]
+    wordQueue: string[]
   ) => void;
-  recordUnitAssessmentCompletion: (passed: boolean, unitWordIds: string[], unitId?: string) => void;
+  recordUnitAssessmentCompletion: (passed: boolean, unitWordIds: string[]) => void;
   recordPronunciationCompletion: (
     lessonId: string,
     scorePercent: number,
     currentStage: number
   ) => void;
-  recordPronunciationCheckpoint: (
-    lessonId: string,
-    currentStage: number,
-    session?: PronunciationSession
-  ) => void;
+  recordPronunciationCheckpoint: (lessonId: string, currentStage: number) => void;
   recordHadithCheckpoint: (
     lessonId: string,
     currentStage: number,
@@ -314,7 +323,11 @@ let testStateCache: LearnerStateSchema | null = null;
 
 export function __clearTestStateCache() {
   testStateCache = null;
-  resetLearnerWritesForTests();
+  if (pendingSaveTimer) {
+    clearTimeout(pendingSaveTimer);
+    pendingSaveTimer = null;
+  }
+  pendingSaveState = null;
 }
 
 export async function persistLearnerStateBeforeCleanup(
@@ -325,6 +338,37 @@ export async function persistLearnerStateBeforeCleanup(
   const saved = await persist(state);
   if (saved) cleanupLegacyState();
   return saved;
+}
+
+/**
+ * Trailing debounce for learner-state persistence (~500 ms).
+ *
+ * Per-step checkpoint writes and rapid successive updates coalesce into a
+ * single IndexedDB write of the latest state — the timing changes, the data
+ * does not. The mutation queue stays immediate: every update still calls
+ * queueMutation synchronously inside updateStateAndPersist.
+ */
+const SAVE_DEBOUNCE_MS = 500;
+
+let pendingSaveTimer: ReturnType<typeof setTimeout> | null = null;
+let pendingSaveState: LearnerStateSchema | null = null;
+
+function flushPendingLearnerSave(): void {
+  if (pendingSaveTimer) {
+    clearTimeout(pendingSaveTimer);
+    pendingSaveTimer = null;
+  }
+  const toSave = pendingSaveState;
+  pendingSaveState = null;
+  if (toSave) {
+    saveLearnerState(toSave).catch((e) => console.error("Failed to persist state", e));
+  }
+}
+
+function scheduleLearnerSave(state: LearnerStateSchema): void {
+  pendingSaveState = state;
+  if (pendingSaveTimer) clearTimeout(pendingSaveTimer);
+  pendingSaveTimer = setTimeout(flushPendingLearnerSave, SAVE_DEBOUNCE_MS);
 }
 
 export function LearnerProvider({ children }: { children: React.ReactNode }) {
@@ -338,8 +382,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     return null;
   });
 
-  const [loadAttempt, setLoadAttempt] = useState(0);
-  const [loadFailed, setLoadFailed] = useState(false);
   useEffect(() => {
     let mounted = true;
     async function load() {
@@ -365,37 +407,27 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         }
 
         dbState = migrateState(dbState);
-        const persisted = await persistLearnerStateBeforeCleanup(dbState, () => {
+        await persistLearnerStateBeforeCleanup(dbState, () => {
           if (loadedLegacyState) localStorage.removeItem(STORAGE_KEY);
           localStorage.removeItem(LEGACY_FOUNDATION_COMPLETION_KEY);
           localStorage.removeItem(LEGACY_FOUNDATION_LAST_OPENED_KEY);
         });
-        if (!persisted) enqueueLearnerWrite(dbState, [], crypto.randomUUID());
 
         if (mounted) setState(dbState);
       } catch (err) {
         console.error("Failed to load state", err);
-        if (mounted) setLoadFailed(true);
+        if (mounted) setState(INITIAL_LEARNER_STATE);
       }
     }
     load();
     return () => {
       mounted = false;
     };
-  }, [loadAttempt]);
-
-  useEffect(() => {
-    const flush = () => {
-      void flushLearnerWrites();
-    };
-    window.addEventListener("pagehide", flush);
-    document.addEventListener("visibilitychange", flush);
-    return () => {
-      window.removeEventListener("pagehide", flush);
-      document.removeEventListener("visibilitychange", flush);
-      flush();
-    };
   }, []);
+
+  // Flush a trailing debounced write on unmount so the latest state is not
+  // lost together with the provider.
+  useEffect(() => () => flushPendingLearnerSave(), []);
 
   const updateStateAndPersist = useCallback(
     (
@@ -405,7 +437,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         mutationPayload?: unknown;
       }
     ) => {
-      const changeId = crypto.randomUUID();
       setState((prev) => {
         if (!prev) return prev;
         const { nextState, mutationType, mutationPayload } = updater(prev);
@@ -417,27 +448,17 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           testStateCache = nextState;
         }
 
-        if (nextState === prev) return prev;
-        const mutations: LearnerMutation[] = [];
-        if (mutationType && mutationPayload)
-          mutations.push({ type: mutationType, payload: mutationPayload } as LearnerMutation);
-        const tracks = ["pronunciation", "hadith", "conversation", "business"] as const;
-        for (const track of tracks) {
-          const field = `${track}Progress` as const;
-          if (nextState[field] === prev[field]) continue;
-          for (const [lessonId, record] of Object.entries(nextState[field])) {
-            if (record === prev[field][lessonId]) continue;
-            const previous = prev[field][lessonId];
-            const payload = specialistMutationSchema.parse({
-              track,
-              lessonId,
-              state: record,
-              previousSessions: previous && "sessions" in previous ? previous.sessions : 0,
-            });
-            mutations.push({ type: "specialist_progress", payload });
-          }
+        // Debounced: rapid updates (e.g. per-step checkpoints) coalesce into
+        // one write of the latest state. The mutation queue below stays
+        // immediate — sync intent is never delayed.
+        scheduleLearnerSave(nextState);
+
+        if (mutationType && mutationPayload) {
+          // @ts-expect-error TS2345: TypeScript cannot infer that mutationPayload matches mutationType here
+          queueMutation(mutationType, mutationPayload).catch((e) =>
+            console.error("Failed to queue mutation", e)
+          );
         }
-        enqueueLearnerWrite(nextState, mutations, changeId);
 
         return nextState;
       });
@@ -467,19 +488,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
   );
 
   const recordSessionCompletion = useCallback(
-    (
-      sessionId: string,
-      attempts: AnswerAttempt[],
-      wordQueue: string[],
-      unitId?: string,
-      reviewItems?: ReviewWord[]
-    ) => {
-      if (
-        wordQueue.length === 0 ||
-        attempts.length === 0 ||
-        wordQueue.some((id) => !attempts.some((attempt) => attempt.wordId === id))
-      )
-        return;
+    (sessionId: string, attempts: AnswerAttempt[], wordQueue: string[]) => {
       updateStateAndPersist((prev) => {
         if (prev.learnerProgress.completedSessionIds.includes(sessionId)) {
           return { nextState: prev };
@@ -491,7 +500,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           {
             currentStreak: prev.learnerProgress.streak,
             lastActiveDate: prev.learnerProgress.lastStudiedDate,
-            freezeAvailable: prev.learnerProgress.streakFreezeAvailable ?? 1,
           },
           new Date()
         );
@@ -535,15 +543,10 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
 
         wordQueue.forEach((wordId) => {
           const perf = wordAttempts[wordId];
-          const owner = reviewItems?.find((item) => item.wordId === wordId)?.unitId ?? unitId;
-          const key = owner ? wordMemoryKey(owner, wordId) : wordId;
-          const existingState = updatedMemory[key] || {
-            ...createInitialWordState(wordId),
-            ...(owner ? { unitId: owner } : {}),
-          };
+          const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
 
           if (!perf || perf.total === 0) {
-            updatedMemory[key] = {
+            updatedMemory[wordId] = {
               ...existingState,
               exposures: existingState.exposures + 1,
               lastSeenAt: new Date().toISOString(),
@@ -561,7 +564,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
                 evidence.total
               );
             });
-            updatedMemory[key] = {
+            updatedMemory[wordId] = {
               ...nextState,
               mastery: getBalancedMasteryCategory(nextState),
             };
@@ -581,8 +584,6 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           xp: prev.learnerProgress.xp + xpEarned,
           sessionsCompleted: prev.learnerProgress.sessionsCompleted + 1,
           streak: streakRes.currentStreak,
-          streakFreezeAvailable:
-            streakRes.freezeAvailable ?? prev.learnerProgress.streakFreezeAvailable ?? 1,
           daysActive: isFirstSessionToday
             ? prev.learnerProgress.daysActive + 1
             : prev.learnerProgress.daysActive,
@@ -616,7 +617,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
   );
 
   const recordUnitAssessmentCompletion = useCallback(
-    (passed: boolean, assessedWordIds: string[], unitId?: string) => {
+    (passed: boolean, assessedWordIds: string[]) => {
       if (!passed) return;
       updateStateAndPersist((prev) => {
         const updatedMemory = { ...prev.wordMemory };
@@ -627,13 +628,9 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
         // Passing makes those items provisionally familiar; spaced retrieval,
         // not a one-off test, is what can promote them to strong.
         assessedWordIds.forEach((wordId) => {
-          const key = unitId ? wordMemoryKey(unitId, wordId) : wordId;
-          const existingState = updatedMemory[key] || {
-            ...createInitialWordState(wordId),
-            ...(unitId ? { unitId } : {}),
-          };
+          const existingState = updatedMemory[wordId] || createInitialWordState(wordId);
           if (existingState.mastery === "strong") return;
-          updatedMemory[key] = {
+          updatedMemory[wordId] = {
             ...existingState,
             exposures: existingState.exposures + 1,
             correctRecalls: existingState.correctRecalls + 1,
@@ -691,16 +688,14 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
   );
 
   const recordPronunciationCheckpoint = useCallback(
-    (lessonId: string, currentStage: number, session?: PronunciationSession) => {
+    (lessonId: string, currentStage: number) => {
       updateStateAndPersist((prev) => ({
         nextState: {
           ...prev,
           pronunciationProgress: checkpointPronunciationLesson(
             prev.pronunciationProgress,
             lessonId,
-            currentStage,
-            new Date(),
-            session
+            currentStage
           ),
         },
       }));
@@ -1030,32 +1025,10 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
     resetToZero,
   ]);
 
-  if (!state && loadFailed)
-    return (
-      <div
-        role="alert"
-        className="min-h-dvh flex flex-col items-center justify-center gap-4 bg-background p-6 text-foreground"
-      >
-        <p>{recoveryCopy.loadFailedEn}</p>
-        <p lang="ar" dir="rtl">
-          {recoveryCopy.loadFailedAr}
-        </p>
-        <button
-          type="button"
-          onClick={() => {
-            setLoadFailed(false);
-            setLoadAttempt((attempt) => attempt + 1);
-          }}
-          className="min-h-11 rounded-xl border border-primary px-4 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-        >
-          {recoveryCopy.retry}
-        </button>
-      </div>
-    );
   if (!state) {
     return (
       <div className="min-h-dvh flex items-center justify-center bg-background text-muted-foreground">
-        {recoveryCopy.loading}
+        {`Loading profile...`}
       </div>
     );
   }

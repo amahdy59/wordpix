@@ -143,7 +143,7 @@ export const BIRTHDAY_PARTY_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "make a wish and extinguish birthday candles",
       example:
-        "He blew out the candles on the cake while everyone wore their party hats and threw confetti.",
+        "She blew out the candles on the cake while everyone wore their party hats and threw confetti.",
     },
     {
       id: "birthday-party-steal-the-show",
@@ -179,7 +179,7 @@ export const BIRTHDAY_PARTY_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "silently express a hope or desire, especially before blowing out candles",
       example:
-        "He closed his eyes, made a wish, and blew — the streamer and the bunting swayed in the breeze.",
+        "She closed her eyes, made a wish, and blew — the streamer and the bunting swayed in the breeze.",
     },
   ],
   dialogue: {

@@ -31,147 +31,153 @@
       "كتاب قصص مصورة",
       "مجلة",
       "صحيفة",
-      "دفتر تدوين شخصي",
+      "دفتر تدوين",
       "مذكرات يومية",
       "شعر",
       "مدونة",
       "قارئ كتب إلكترونية",
       "كتاب صوتي",
       "رسم",
-      "رسم بالألوان أو لوحة",
+      "لوحة فنية",
       "النحت",
       "فن طي الورق",
       "صناعة ألبومات القصاصات"
     ],
     "usage": {
-      "goal": "Distinguish reading formats, indoor crafts, instruments or collections in a supported adult club account.",
-      "canDoStatement": "Can identify a stated activity or object and explain a simple distinction. Specialist craft and instrument names extend the supported task level and are not individually certified at the unit CEFR label.",
-      "textType": "adult-club-account",
-      "readingTarget": "Supported linked adult club account",
+      "goal": "Learn to use indoor hobbies 1 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to indoor hobbies.",
+      "textType": "workplace-email",
+      "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Novel", "Comic Book", "Magazine"],
-          "scenario": "At an adult reading club, Mona brings a novel, a long fictional story. Ali brings a comic book that tells a story through pictures and words. Salma brings a magazine containing several articles rather than one long story.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Novel, Comic Book, Magazine. The person selects Novel for the next step.",
           "check": {
-            "question": "Which item contains several articles?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Novel", "Comic Book", "Magazine"],
-            "expectedAnswer": "Magazine"
+            "expectedAnswer": "Novel"
           },
-          "imageBrief": "Photorealistic scene: Adults at a reading-club table with an ordinary novel, comic book and magazine, all covers without readable text. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adults at a reading-club table with an ordinary novel, comic book and magazine, all covers without readable text."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Novel, Comic Book, Magazine. The person selects Novel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Novel, Comic Book, Magazine in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Newspaper", "Journal", "Diary"],
-          "scenario": "Nadia reads news in a newspaper. She writes reflections in a personal journal and dated accounts of her days in a diary. Journal and diary can overlap; neither must be shared publicly.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Newspaper, Journal, Diary. The person selects Newspaper for the next step.",
           "check": {
-            "question": "Which item provides the news Nadia reads?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Newspaper", "Journal", "Diary"],
             "expectedAnswer": "Newspaper"
           },
-          "imageBrief": "Photorealistic scene: Adult reader with a folded newspaper and two notebooks on a desk. No readable private entries. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult reader with a folded newspaper and two notebooks on a desk. No readable private entries."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Newspaper, Journal, Diary. The person selects Newspaper for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Newspaper, Journal, Diary in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Poetry", "Blog", "E-Reader"],
-          "scenario": "Omar reads poetry, writing that uses carefully chosen language and often rhythm. He publishes a blog online about books. His e-reader is the electronic device on which he reads digital books; it is not the name of a writing genre.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Poetry, Blog, E-Reader. The person selects Poetry for the next step.",
           "check": {
-            "question": "Which item is the electronic reading device?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Poetry", "Blog", "E-Reader"],
-            "expectedAnswer": "E-Reader"
+            "expectedAnswer": "Poetry"
           },
-          "imageBrief": "Photorealistic scene: Adult using an e-reader beside a notebook in a quiet reading room. No readable screen. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult using an e-reader beside a notebook in a quiet reading room. No readable screen."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Poetry, Blog, E-Reader. The person selects Poetry for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Poetry, Blog, E-Reader in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Audiobook", "Drawing", "Painting"],
-          "scenario": "At home, Leila listens to an audiobook, a recording of a book read aloud. Later, she tries drawing with pencils and painting with brushes and color. These are different formats and activities; the picture cannot prove what she hears.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Audiobook, Drawing, Painting. The person selects Audiobook for the next step.",
           "check": {
-            "question": "Which format is a recording of a book read aloud?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Audiobook", "Drawing", "Painting"],
             "expectedAnswer": "Audiobook"
           },
-          "imageBrief": "Photorealistic scene: Adult with headphones at a desk containing pencils, drawing paper and paintbrushes. No readable book passage or inferred sound. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult with headphones at a desk containing pencils, drawing paper and paintbrushes. No readable book passage or inferred sound."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Audiobook, Drawing, Painting. The person selects Audiobook for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Audiobook, Drawing, Painting in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Sculpting", "Origami", "Scrapbooking"],
-          "scenario": "At a craft club, adults try sculpting with soft clay. Origami uses paper folding to form shapes. Scrapbooking arranges photographs and notes in an album. Each activity can be adapted to the participant’s interests.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Sculpting, Origami, Scrapbooking. The person selects Sculpting for the next step.",
           "check": {
-            "question": "Which activity uses paper folding?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Sculpting", "Origami", "Scrapbooking"],
-            "expectedAnswer": "Origami"
+            "expectedAnswer": "Sculpting"
           },
-          "imageBrief": "Photorealistic scene: Adult craft table with a simple clay form, folded paper shape and an open scrapbook with indistinct photos. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult craft table with a simple clay form, folded paper shape and an open scrapbook with indistinct photos."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Sculpting, Origami, Scrapbooking. The person selects Sculpting for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Sculpting, Origami, Scrapbooking in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A quiet afternoon club",
-      "text": "At an adult club, Mona reads a novel while Ali discusses a comic book. Salma finds articles in a magazine. Nadia compares a newspaper with her private journal and diary. Nobody must show personal writing. Omar discusses poetry and a blog, then shows an e-reader for digital books. Leila prefers an audiobook while sketching: drawing uses pencils here, and painting uses brushes. At the craft table, adults try sculpting, origami and scrapbooking. The group offers different ways to enjoy stories and creative work. Listening, reading and making are choices, not measures of someone’s ability or worth.",
-      "imageBrief": "Photorealistic scene: Adults at a reading-club table with an ordinary novel, comic book and magazine, all covers without readable text. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review."
+      "title": "Indoor Hobbies: Email",
+      "text": "Omar has an everyday task connected to indoor hobbies. The new vocabulary helps him follow the situation and respond clearly. During the creative session, the group works with novel, comic book, and magazine. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with newspaper, journal, and diary. Each term has a clear role in making, performing, or presenting the work.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Indoor Hobbies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "At an adult reading club, Mona brings a novel, a long fictional story. Ali brings a comic book that tells a story through pictures and words. Salma brings a magazine containing several articles rather than one long story.\nWhich item contains several articles?",
-        "answer": "Magazine",
+        "prompt": "During a routine indoor hobbies task, an adult compares Novel, Comic Book, Magazine. The person selects Novel for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Novel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Nadia reads news in a newspaper. She writes reflections in a personal journal and dated accounts of her days in a diary. Journal and diary can overlap; neither must be shared publicly.\nWhich item provides the news Nadia reads?",
+        "prompt": "During a routine indoor hobbies task, an adult compares Newspaper, Journal, Diary. The person selects Newspaper for the next step.\nWhich option does the person select for the next step?",
         "answer": "Newspaper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Omar reads poetry, writing that uses carefully chosen language and often rhythm. He publishes a blog online about books. His e-reader is the electronic device on which he reads digital books; it is not the name of a writing genre.\nWhich item is the electronic reading device?",
-        "answer": "E-Reader",
+        "prompt": "During a routine indoor hobbies task, an adult compares Poetry, Blog, E-Reader. The person selects Poetry for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Poetry",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "At home, Leila listens to an audiobook, a recording of a book read aloud. Later, she tries drawing with pencils and painting with brushes and color. These are different formats and activities; the picture cannot prove what she hears.\nWhich format is a recording of a book read aloud?",
+        "prompt": "During a routine indoor hobbies task, an adult compares Audiobook, Drawing, Painting. The person selects Audiobook for the next step.\nWhich option does the person select for the next step?",
         "answer": "Audiobook",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "At a craft club, adults try sculpting with soft clay. Origami uses paper folding to form shapes. Scrapbooking arranges photographs and notes in an album. Each activity can be adapted to the participant’s interests.\nWhich activity uses paper folding?",
-        "answer": "Origami",
+        "prompt": "During a routine indoor hobbies task, an adult compares Sculpting, Origami, Scrapbooking. The person selects Sculpting for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Sculpting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "At an adult club, Mona reads a novel while Ali discusses a comic book. Salma finds articles in a magazine. Nadia compares a newspaper with her private journal and diary. Nobody must show personal writing. Omar discusses poetry and a blog, then shows an e-reader for digital books. Leila prefers an audiobook while sketching: drawing uses pencils here, and painting uses brushes. At the craft table, adults try sculpting, origami and scrapbooking. The group offers different ways to enjoy stories and creative work. Listening, reading and making are choices, not measures of someone’s ability or worth.\nMust Nadia show her personal writing?",
-        "answer": "No; personal writing may remain private",
-        "questionType": "comparison",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Novel"
       },
       {
-        "prompt": "At an adult reading club, Mona brings a novel, a long fictional story. Ali brings a comic book that tells a story through pictures and words. Salma brings a magazine containing several articles rather than one long story.\nExplain how one object or format fits the situation in a complete sentence.",
-        "answer": "The magazine contains several articles rather than one long fictional story.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "production"
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Newspaper"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Confident” in a sentence connected to this lesson.",
+        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "A quiet afternoon club",
-      "idea": "Narrate the adult club account and pause for one practical distinction. Respect private writing and acknowledge that sound and provenance need separate evidence.",
-      "scriptStarter": "At an adult reading club, Mona brings a novel, a long fictional story. Ali brings a comic book that tells a story through pictures and words. Salma brings a magazine containing several articles rather than one long story."
+      "title": "Indoor Hobbies: In Context",
+      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Confident, Insecure from personality-character-4\n3 lesson(s) back: Lazy, Reckless from personality-character-2\n7 lesson(s) back: Hello, Goodbye from social-situations-1"
   },
@@ -215,139 +221,145 @@
       "ناي فلوت",
       "يوكليلي",
       "هارمونيكا",
-      "آلة موسيقية ذات مفاتيح",
+      "لوحة مفاتيح",
       "ساكسفون",
       "تشيلو"
     ],
     "usage": {
-      "goal": "Distinguish reading formats, indoor crafts, instruments or collections in a supported adult club account.",
-      "canDoStatement": "Can identify a stated activity or object and explain a simple distinction. Specialist craft and instrument names extend the supported task level and are not individually certified at the unit CEFR label.",
-      "textType": "adult-club-account",
-      "readingTarget": "Supported linked adult club account",
+      "goal": "Learn to use indoor hobbies 2 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to indoor hobbies.",
+      "textType": "workplace-email",
+      "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Calligraphy", "Pottery", "Mosaic"],
-          "scenario": "At an adult craft exhibition, calligraphy shows carefully formed decorative handwriting. Pottery shows objects shaped from clay and fired. A mosaic forms a design from small pieces of material.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Calligraphy, Pottery, Mosaic. The person selects Calligraphy for the next step.",
           "check": {
-            "question": "Which art forms a design from small pieces?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Calligraphy", "Pottery", "Mosaic"],
-            "expectedAnswer": "Mosaic"
+            "expectedAnswer": "Calligraphy"
           },
-          "imageBrief": "Photorealistic scene: Adult visitors examining a ceramic pot and a small mosaic panel, with decorative writing indistinct. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult visitors examining a ceramic pot and a small mosaic panel, with decorative writing indistinct."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Calligraphy, Pottery, Mosaic. The person selects Calligraphy for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Calligraphy, Pottery, Mosaic in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Collage", "Decoupage", "Guitar"],
-          "scenario": "The tutor distinguishes collage, an artwork assembled from pieces such as paper, from decoupage, decorating an object’s surface with paper cutouts and a protective coating. A guitar belongs to the music corner, not either paper craft.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Collage, Decoupage, Guitar. The person selects Collage for the next step.",
           "check": {
-            "question": "Which object belongs to the music corner?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Collage", "Decoupage", "Guitar"],
-            "expectedAnswer": "Guitar"
+            "expectedAnswer": "Collage"
           },
-          "imageBrief": "Photorealistic scene: Adult tutor at a table with a collage and decorated box; a guitar rests on a stand nearby. No coating procedure. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult tutor at a table with a collage and decorated box; a guitar rests on a stand nearby. No coating procedure."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Collage, Decoupage, Guitar. The person selects Collage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Collage, Decoupage, Guitar in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Piano", "Drums", "Violin"],
-          "scenario": "The music club compares instruments. A piano produces notes when keys operate hammers that strike strings. Drums sound when their surfaces are struck. A violin has four strings and is commonly played with a bow.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Piano, Drums, Violin. The person selects Piano for the next step.",
           "check": {
-            "question": "Which instrument uses keys to operate hammers and strings?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Piano", "Drums", "Violin"],
             "expectedAnswer": "Piano"
           },
-          "imageBrief": "Photorealistic scene: Adult musicians beside an upright piano, drums and a violin on a safe stand. Realistic instrument construction. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult musicians beside an upright piano, drums and a violin on a safe stand. Realistic instrument construction."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Piano, Drums, Violin. The person selects Piano for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Piano, Drums, Violin in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Flute", "Ukulele", "Harmonica"],
-          "scenario": "The tutor shows a flute, an instrument played by directing air across an opening. A ukulele is a small stringed instrument, commonly with four strings. A harmonica uses reeds sounded by breath through its holes.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Flute, Ukulele, Harmonica. The person selects Flute for the next step.",
           "check": {
-            "question": "Which instrument is the small four-stringed instrument described?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Flute", "Ukulele", "Harmonica"],
-            "expectedAnswer": "Ukulele"
+            "expectedAnswer": "Flute"
           },
-          "imageBrief": "Photorealistic scene: Adult tutor showing a flute, ukulele and harmonica on a music-room table. Accurate scale and construction. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult tutor showing a flute, ukulele and harmonica on a music-room table. Accurate scale and construction."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Flute, Ukulele, Harmonica. The person selects Flute for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Flute, Ukulele, Harmonica in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Keyboard", "Saxophone", "Cello"],
-          "scenario": "An electronic keyboard produces sounds when its keys are pressed. A saxophone is a reed instrument despite its metal body. A cello is a bowed stringed instrument, usually played seated with the instrument supported between the knees.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Keyboard, Saxophone, Cello. The person selects Keyboard for the next step.",
           "check": {
-            "question": "Which instrument uses a reed despite its metal body?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Keyboard", "Saxophone", "Cello"],
-            "expectedAnswer": "Saxophone"
+            "expectedAnswer": "Keyboard"
           },
-          "imageBrief": "Photorealistic scene: Electronic musical keyboard, saxophone and cello beside adult musicians in a practice room. Do not depict a computer keyboard. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Electronic musical keyboard, saxophone and cello beside adult musicians in a practice room. Do not depict a computer keyboard."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Keyboard, Saxophone, Cello. The person selects Keyboard for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Keyboard, Saxophone, Cello in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Arts and music corners",
-      "text": "The adult club has two activity corners. One displays calligraphy, pottery and a mosaic. The tutor compares collage with decoupage and shows their different uses of paper pieces. A guitar stands in the music corner. A piano, drums and violin are ready for an introduction to instruments. The tutor also shows a flute, ukulele and harmonica. An electronic keyboard provides different sounds; a saxophone uses a reed, and a cello belongs to the string family. Adults choose whether to listen, ask questions or play with guidance. A still picture can show an instrument’s form, but it cannot establish the sound being produced.",
-      "imageBrief": "Photorealistic scene: Adult visitors examining a ceramic pot and a small mosaic panel, with decorative writing indistinct. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review."
+      "title": "Indoor Hobbies: Personal Message",
+      "text": "Omar has an everyday task connected to indoor hobbies. The new vocabulary helps him follow the situation and respond clearly. During the creative session, the group works with calligraphy, pottery, and mosaic. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with collage, decoupage, and guitar. Each term has a clear role in making, performing, or presenting the work.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Indoor Hobbies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "At an adult craft exhibition, calligraphy shows carefully formed decorative handwriting. Pottery shows objects shaped from clay and fired. A mosaic forms a design from small pieces of material.\nWhich art forms a design from small pieces?",
-        "answer": "Mosaic",
+        "prompt": "During a routine indoor hobbies task, an adult compares Calligraphy, Pottery, Mosaic. The person selects Calligraphy for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Calligraphy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The tutor distinguishes collage, an artwork assembled from pieces such as paper, from decoupage, decorating an object’s surface with paper cutouts and a protective coating. A guitar belongs to the music corner, not either paper craft.\nWhich object belongs to the music corner?",
-        "answer": "Guitar",
+        "prompt": "During a routine indoor hobbies task, an adult compares Collage, Decoupage, Guitar. The person selects Collage for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Collage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "The music club compares instruments. A piano produces notes when keys operate hammers that strike strings. Drums sound when their surfaces are struck. A violin has four strings and is commonly played with a bow.\nWhich instrument uses keys to operate hammers and strings?",
+        "prompt": "During a routine indoor hobbies task, an adult compares Piano, Drums, Violin. The person selects Piano for the next step.\nWhich option does the person select for the next step?",
         "answer": "Piano",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "The tutor shows a flute, an instrument played by directing air across an opening. A ukulele is a small stringed instrument, commonly with four strings. A harmonica uses reeds sounded by breath through its holes.\nWhich instrument is the small four-stringed instrument described?",
-        "answer": "Ukulele",
+        "prompt": "During a routine indoor hobbies task, an adult compares Flute, Ukulele, Harmonica. The person selects Flute for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Flute",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An electronic keyboard produces sounds when its keys are pressed. A saxophone is a reed instrument despite its metal body. A cello is a bowed stringed instrument, usually played seated with the instrument supported between the knees.\nWhich instrument uses a reed despite its metal body?",
-        "answer": "Saxophone",
+        "prompt": "During a routine indoor hobbies task, an adult compares Keyboard, Saxophone, Cello. The person selects Keyboard for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Keyboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "The adult club has two activity corners. One displays calligraphy, pottery and a mosaic. The tutor compares collage with decoupage and shows their different uses of paper pieces. A guitar stands in the music corner. A piano, drums and violin are ready for an introduction to instruments. The tutor also shows a flute, ukulele and harmonica. An electronic keyboard provides different sounds; a saxophone uses a reed, and a cello belongs to the string family. Adults choose whether to listen, ask questions or play with guidance. A still picture can show an instrument’s form, but it cannot establish the sound being produced.\nCan a still picture establish the sound of an instrument?",
-        "answer": "No; it can show the form, but not the sound",
-        "questionType": "comparison",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Calligraphy"
       },
       {
-        "prompt": "At an adult craft exhibition, calligraphy shows carefully formed decorative handwriting. Pottery shows objects shaped from clay and fired. A mosaic forms a design from small pieces of material.\nExplain how one object or format fits the situation in a complete sentence.",
-        "answer": "The mosaic forms a design from small pieces of material.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "production"
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Collage"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Novel” in a sentence connected to this lesson.",
+        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Arts and music corners",
-      "idea": "Narrate the adult club account and pause for one practical distinction. Respect private writing and acknowledge that sound and provenance need separate evidence.",
-      "scriptStarter": "At an adult craft exhibition, calligraphy shows carefully formed decorative handwriting. Pottery shows objects shaped from clay and fired. A mosaic forms a design from small pieces of material."
+      "title": "Indoor Hobbies: In Context",
+      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Novel, Comic Book from indoor-hobbies-1\n3 lesson(s) back: Hardworking, Creative from personality-character-3\n7 lesson(s) back: Pardon, After You from social-situations-2"
   },
@@ -376,7 +388,7 @@
     "targetWordsArabic": [
       "طوابع بريدية",
       "عملات معدنية",
-      "بطاقات قابلة للجمع",
+      "أوراق لعب",
       "مجسمات صغيرة",
       "أسطوانات فينيل",
       "تحف قديمة",
@@ -386,119 +398,121 @@
       "نماذج مصغرة"
     ],
     "usage": {
-      "goal": "Distinguish reading formats, indoor crafts, instruments or collections in a supported adult club account.",
-      "canDoStatement": "Can identify a stated activity or object and explain a simple distinction. Specialist craft and instrument names extend the supported task level and are not individually certified at the unit CEFR label.",
-      "textType": "adult-club-account",
-      "readingTarget": "Supported linked adult club account",
+      "goal": "Learn to use indoor hobbies 3 vocabulary to exchange practical information and complete a routine adult-life task.",
+      "canDoStatement": "Can exchange simple information and complete routine tasks related to indoor hobbies.",
+      "textType": "dialogue",
+      "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Stamps", "Coins", "Cards"],
-          "scenario": "At a collectors’ meeting, Ali organizes postage stamps in an album. Nadia collects coins, metal pieces used as money. Omar collects illustrated cards, rather than discussing a game of cards.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Stamps, Coins, Cards. The person selects Stamps for the next step.",
           "check": {
-            "question": "Which collection uses an album of postage items?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Stamps", "Coins", "Cards"],
             "expectedAnswer": "Stamps"
           },
-          "imageBrief": "Photorealistic scene: Adults at a collectors’ table with a stamp album, coins and illustrated collectible cards. No readable monetary values. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adults at a collectors’ table with a stamp album, coins and illustrated collectible cards. No readable monetary values."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Stamps, Coins, Cards. The person selects Stamps for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Stamps, Coins, Cards in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Figurines", "Vinyl Records", "Antiques"],
-          "scenario": "Mona displays figurines, small figures of people or animals. Salma brings vinyl records, grooved discs played on a turntable. Karim discusses antiques, older objects valued for their age, design or history. Value is not established by the photograph.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Figurines, Vinyl Records, Antiques. The person selects Figurines for the next step.",
           "check": {
-            "question": "Which objects are played on a turntable?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Figurines", "Vinyl Records", "Antiques"],
-            "expectedAnswer": "Vinyl Records"
+            "expectedAnswer": "Figurines"
           },
-          "imageBrief": "Photorealistic scene: Adult collector showing figurines and vinyl records beside an old decorative object. No claim of authenticated age or value. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult collector showing figurines and vinyl records beside an old decorative object. No claim of authenticated age or value."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Figurines, Vinyl Records, Antiques. The person selects Figurines for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Figurines, Vinyl Records, Antiques in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Shells", "Rocks", "Comics"],
-          "scenario": "The club looks at shells and rocks already in a member’s collection. Another member collects comics, stories told through pictures and text. The club describes existing collections; it does not ask visitors to remove objects from protected places.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Shells, Rocks, Comics. The person selects Shells for the next step.",
           "check": {
-            "question": "Which collection consists of illustrated stories?",
+            "question": "Which option does the person select for the next step?",
             "options": ["Shells", "Rocks", "Comics"],
-            "expectedAnswer": "Comics"
+            "expectedAnswer": "Shells"
           },
-          "imageBrief": "Photorealistic scene: Adults examining an existing shell and rock display beside comic books with unreadable covers. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adults examining an existing shell and rock display beside comic books with unreadable covers."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Shells, Rocks, Comics. The person selects Shells for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Shells, Rocks, Comics in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Miniatures"],
-          "scenario": "An adult collector builds miniatures, very small models of objects or buildings. Her miniature room has a tiny chair and table. Their small scale is the topic, rather than a real room people can enter.",
+          "scenario": "During a routine indoor hobbies task, an adult compares Miniatures, Stamps, Coins. The person selects Miniatures for the next step.",
           "check": {
-            "question": "What makes these models miniatures?",
-            "options": [
-              "They are very small models",
-              "They are rooms people enter",
-              "They are pages from a newspaper"
-            ],
-            "expectedAnswer": "They are very small models"
+            "question": "Which option does the person select for the next step?",
+            "options": ["Miniatures", "Stamps", "Coins"],
+            "expectedAnswer": "Miniatures"
           },
-          "imageBrief": "Photorealistic scene: Adult building a small model room with tiny furniture at a craft desk. Clear relative scale and no readable labels. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review.",
-          "imageAlt": "Adult building a small model room with tiny furniture at a craft desk. Clear relative scale and no readable labels."
+          "imageBrief": "Photorealistic adult real-world scene in a indoor hobbies context illustrating this situation: During a routine indoor hobbies task, an adult compares Miniatures, Stamps, Coins. The person selects Miniatures for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult indoor hobbies scene showing lesson-related items or actions including Miniatures in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Talking about collections",
-      "text": "At a collectors’ club, Ali displays stamps and Nadia brings coins. Omar organizes illustrated cards. Mona shows figurines, while Salma discusses vinyl records. Karim talks about antiques without assigning a price from a photograph. Members examine shells and rocks already in a collection. Another visitor brings comics. A final table displays miniatures, including a tiny room with a chair and table. Adults ask about the history and meaning of a collection rather than assuming it must be expensive. The meeting describes existing objects and does not encourage removal from protected sites.",
-      "imageBrief": "Photorealistic scene: Adults at a collectors’ table with a stamp album, coins and illustrated collectible cards. No readable monetary values. Natural adult community-club composition. Stories, privacy, sounds, value and provenance are established by written context. No readable text, branded covers, logos, arrows, overlays or highlighted answers. Instrument and craft details require individual visual accuracy review."
+      "title": "Indoor Hobbies: Short Dialogue",
+      "text": "Omar has an everyday task connected to indoor hobbies. The new vocabulary helps him follow the situation and respond clearly. During the creative session, the group works with stamps, coins, and cards. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with figurines, vinyl records, and antiques. Each term has a clear role in making, performing, or presenting the work.",
+      "imageBrief": "Create one coherent A2-level visual for the reading about Indoor Hobbies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "At a collectors’ meeting, Ali organizes postage stamps in an album. Nadia collects coins, metal pieces used as money. Omar collects illustrated cards, rather than discussing a game of cards.\nWhich collection uses an album of postage items?",
+        "prompt": "During a routine indoor hobbies task, an adult compares Stamps, Coins, Cards. The person selects Stamps for the next step.\nWhich option does the person select for the next step?",
         "answer": "Stamps",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Mona displays figurines, small figures of people or animals. Salma brings vinyl records, grooved discs played on a turntable. Karim discusses antiques, older objects valued for their age, design or history. Value is not established by the photograph.\nWhich objects are played on a turntable?",
-        "answer": "Vinyl Records",
+        "prompt": "During a routine indoor hobbies task, an adult compares Figurines, Vinyl Records, Antiques. The person selects Figurines for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Figurines",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "The club looks at shells and rocks already in a member’s collection. Another member collects comics, stories told through pictures and text. The club describes existing collections; it does not ask visitors to remove objects from protected places.\nWhich collection consists of illustrated stories?",
-        "answer": "Comics",
+        "prompt": "During a routine indoor hobbies task, an adult compares Shells, Rocks, Comics. The person selects Shells for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Shells",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult collector builds miniatures, very small models of objects or buildings. Her miniature room has a tiny chair and table. Their small scale is the topic, rather than a real room people can enter.\nWhat makes these models miniatures?",
-        "answer": "They are very small models",
+        "prompt": "During a routine indoor hobbies task, an adult compares Miniatures, Stamps, Coins. The person selects Miniatures for the next step.\nWhich option does the person select for the next step?",
+        "answer": "Miniatures",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "At a collectors’ club, Ali displays stamps and Nadia brings coins. Omar organizes illustrated cards. Mona shows figurines, while Salma discusses vinyl records. Karim talks about antiques without assigning a price from a photograph. Members examine shells and rocks already in a collection. Another visitor brings comics. A final table displays miniatures, including a tiny room with a chair and table. Adults ask about the history and meaning of a collection rather than assuming it must be expensive. The meeting describes existing objects and does not encourage removal from protected sites.\nDoes the club assign prices to antiques from photographs?",
-        "answer": "No; price or authenticity is not established by a photograph",
-        "questionType": "comparison",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Specific information: Which target word is linked to the main task?",
+        "answer": "Stamps"
       },
       {
-        "prompt": "At a collectors’ meeting, Ali organizes postage stamps in an album. Nadia collects coins, metal pieces used as money. Omar collects illustrated cards, rather than discussing a game of cards.\nExplain how one object or format fits the situation in a complete sentence.",
-        "answer": "Ali organizes postage stamps in an album.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "production"
+        "prompt": "Specific information: Which word appears later in the situation?",
+        "answer": "Figurines"
+      },
+      {
+        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
+        "answer": "It helps complete or understand the task"
+      },
+      {
+        "prompt": "Use it: Use two target words in one connected sentence.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Calligraphy” in a sentence connected to this lesson.",
+        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Talking about collections",
-      "idea": "Narrate the adult club account and pause for one practical distinction. Respect private writing and acknowledge that sound and provenance need separate evidence.",
-      "scriptStarter": "At a collectors’ meeting, Ali organizes postage stamps in an album. Nadia collects coins, metal pieces used as money. Omar collects illustrated cards, rather than discussing a game of cards."
+      "title": "Indoor Hobbies: In Context",
+      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Calligraphy, Pottery from indoor-hobbies-2\n3 lesson(s) back: Confident, Insecure from personality-character-4\n7 lesson(s) back: Listening, Sharing from social-situations-3"
   }

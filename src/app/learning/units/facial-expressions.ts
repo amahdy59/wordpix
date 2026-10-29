@@ -116,7 +116,7 @@ export const FACIAL_EXPRESSIONS_LEARNING: UnitLearningMaterials = {
       phrase: "a poker face",
       kind: "idiom",
       meaning: "An expressionless face that hides feelings.",
-      example: "He has an amazing poker face — you can never tell if he's bluffing.",
+      example: "She has an amazing poker face — you can never tell if she's bluffing.",
     },
     {
       id: "facial-expressions-grin-from-ear-to-ear",
@@ -144,7 +144,7 @@ export const FACIAL_EXPRESSIONS_LEARNING: UnitLearningMaterials = {
       phrase: "pull a face",
       kind: "idiom",
       meaning: "To make a silly or disapproving expression.",
-      example: "The child pulled a face when he tasted the broccoli.",
+      example: "The child pulled a face when she tasted the broccoli.",
     },
     {
       id: "facial-expressions-turn-a-blind-eye",
@@ -158,7 +158,7 @@ export const FACIAL_EXPRESSIONS_LEARNING: UnitLearningMaterials = {
       phrase: "raise an eyebrow",
       kind: "idiom",
       meaning: "To show surprise or disapproval.",
-      example: "He raised an eyebrow when he arrived two hours late without explanation.",
+      example: "She raised an eyebrow when he arrived two hours late without explanation.",
     },
     {
       id: "facial-expressions-bat-an-eyelid",
@@ -172,7 +172,7 @@ export const FACIAL_EXPRESSIONS_LEARNING: UnitLearningMaterials = {
       phrase: "look daggers at",
       kind: "idiom",
       meaning: "To stare angrily at someone.",
-      example: "He looked daggers at his brother after he revealed his secret.",
+      example: "She looked daggers at her brother after he revealed her secret.",
     },
   ],
   dialogue: {

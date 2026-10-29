@@ -100,33 +100,3 @@ and survives the bucket being recreated. It requires an R2 token with
 **Admin Read & Write**; the object-scoped token the upload scripts use returns
 a bare `AccessDenied`, so the script says so explicitly rather than leaving
 that to be guessed.
-
-## ADR-016: Unit-scoped learning evidence and durable specialist checkpoints
-
-**Status:** Accepted for implementation, 2026-10-23. Production rollout requires
-the staging validation in `APP_REVIEW_IMPLEMENTATION_2026-10-23.md`.
-
-**Context.** Repeated content IDs can name different senses. Global word memory
-transferred bus-coach mastery to the sports-trainer sense. Specialist checkpoints
-were local only, and a delayed save could outlive the page.
-
-**Decision.** Store learning evidence under `unitId::wordId`, retaining the original
-content ID and all media mappings. Migrate unambiguous prior records, and preserve
-ambiguous history in an exportable archive without inventing its owning sense.
-Persist each local change and its mutation intents in one IndexedDB transaction.
-Keep failed writes in memory for explicit retry/export and stop describing them
-as saved. The memory archive does not reset XP, streaks or session history.
-
-Specialist records use `(user, track, lesson)` identity and idempotent operation
-receipts. Merge earned stages/checklists by union and best scores by maximum.
-Use the latest timestamp for mutable checkpoints, reflections and review results;
-a later review may correctly lower status. Preserve all accepted specialist
-versions under owner-only RLS so concurrent reflection edits remain recoverable.
-Guest migration stays transactional and returns all four specialist tracks.
-Missing backend functions are visible retryable setup failures, not discarded work.
-
-**Consequences.** Client and backend changes roll out together after staging tests.
-Old ambiguous evidence is available in Profile's backup while new per-sense
-practice establishes reliable progress. Unit metadata remains synchronous;
-authored group descriptions load per unit at the content boundary, with a parity
-test proving every field and media reference matches the canonical source.

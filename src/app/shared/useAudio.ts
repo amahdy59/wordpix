@@ -1,26 +1,18 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { emitLearningEvent } from "../analytics/learningAnalytics";
 import { useLearner } from "../context/LearnerContext";
 import { getCachedAudio, saveCachedAudio } from "../../lib/persistence/db";
 import { assetUrl, audioKey, audioUrls, AUDIO_PROFILE_V4, hasAssetHost } from "./assetUrls";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { getPronunciationAssetSpec, hasPronunciationOverride } from "./pronunciationOverrides";
-import { additionalRecordingKey } from "./additionalRecording";
-import { edgeRecordingKey } from "./edgeRecording";
-import { isEdgeRecordingAvailable } from "./edgeRecordingAvailability";
 
-export type AudioStatus =
-  "idle" | "loading" | "buffering" | "playing" | "paused" | "error" | "unsupported";
-export type AudioSource = "recording" | null;
-// One owner across narration, vocabulary inspectors and other audio hooks.
-let activeAudioOwner: symbol | null = null;
-let pauseActiveAudio: (() => void) | null = null;
+export type AudioStatus = "idle" | "loading" | "playing" | "error" | "unsupported";
 
 interface Options {
   onEnded?: () => void;
   onError?: () => void;
   lang?: string;
   rate?: number;
+  pitch?: number;
   volume?: number;
   /** Prefer a matching content-addressed clip bundled in public/audio. */
   preferLocal?: boolean;
@@ -28,71 +20,95 @@ interface Options {
   onTimeUpdate?: (currentTime: number, duration: number) => void;
 }
 
-/** Stop waiting for media that cannot start; callers can offer Retry. */
-const MEDIA_STREAM_TIMEOUT_MS = 15000;
+/** How long to wait for onstart before treating the utterance as failed. */
+const SPEECH_START_TIMEOUT_MS = 4000;
+
+function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisVoice | null {
+  const voices = synth.getVoices();
+  if (voices.length === 0) return null;
+
+  const prefix = targetLang.split("-")[0].toLowerCase();
+  const langLower = targetLang.toLowerCase();
+
+  // 1. Natural / Neural online voices (Edge/Chrome/Azure highest-fidelity TTS)
+  const naturalVoice = voices.find(
+    (v) =>
+      (v.name.includes("Natural") || v.name.includes("Online") || v.name.includes("Neural")) &&
+      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
+  );
+  if (naturalVoice) return naturalVoice;
+
+  // 2. Google neural voices (Chrome/Android)
+  const googleVoice = voices.find(
+    (v) =>
+      v.name.includes("Google") &&
+      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
+  );
+  if (googleVoice) return googleVoice;
+
+  // 3. Apple Enhanced / Premium voices (macOS / iOS)
+  const premiumVoice = voices.find(
+    (v) =>
+      (v.name.includes("Premium") || v.name.includes("Enhanced")) &&
+      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
+  );
+  if (premiumVoice) return premiumVoice;
+
+  // 4. Non-local network-backed synthesis voices
+  const remoteVoice = voices.find(
+    (v) =>
+      !v.localService &&
+      (v.lang.toLowerCase() === langLower || v.lang.toLowerCase().startsWith(prefix))
+  );
+  if (remoteVoice) return remoteVoice;
+
+  // 5. Higher clarity female voices (Zira / Samantha / Jenny) over robotic David
+  const clearFemaleVoice = voices.find(
+    (v) =>
+      (v.name.includes("Zira") || v.name.includes("Samantha") || v.name.includes("Jenny")) &&
+      v.lang.toLowerCase().startsWith(prefix)
+  );
+  if (clearFemaleVoice) return clearFemaleVoice;
+
+  // 6. Exact language match or prefix fallback
+  return (
+    voices.find((v) => v.lang.toLowerCase() === langLower) ??
+    voices.find((v) => v.lang.toLowerCase().startsWith(prefix)) ??
+    voices[0] ??
+    null
+  );
+}
 
 const MAX_AUDIO_CACHE_SIZE = 64;
 const audioCache = new Map<string, string>();
 
-/** Ensures natural vocal frequencies without robotic pitch drops at slower playback rates. */
-function applyPlaybackRate(audio: HTMLAudioElement, rate: number): void {
-  audio.playbackRate = rate;
-  const audioAny = audio as unknown as Record<string, boolean>;
-  audioAny.preservesPitch = true;
-  audioAny.mozPreservesPitch = true;
-  audioAny.webkitPreservesPitch = true;
-}
+/**
+ * Whether `speechSynthesis` has been unlocked by a real user gesture yet.
+ *
+ * Mobile Safari and Chrome only honour `speak()` inside the short window that
+ * follows a tap. Every path in `speak` below is asynchronous before it reaches
+ * synthesis — a SHA-256 digest and a CDN fetch — and by the time either one
+ * resolves the window has closed, so the
+ * fallback ran and produced silence. That is the whole of the "audio does not
+ * work on my phone" report: not an error, just nothing.
+ *
+ * The fix is to spend the gesture immediately on a silent utterance, which
+ * unlocks the engine for the rest of the session. Module scope, not a ref:
+ * the unlock is per document, and every `useAudio` instance shares it.
+ */
+let synthesisUnlocked = false;
 
-let audioUnlocked = false;
-
-export function unlockAudio(): void {
-  if (audioUnlocked || typeof window === "undefined") return;
-  audioUnlocked = true;
+function unlockSynthesis(synth: SpeechSynthesis): void {
+  if (synthesisUnlocked) return;
+  synthesisUnlocked = true;
   try {
-    const silentAudio = new Audio(
-      "data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA="
-    );
-    silentAudio.volume = 0;
-    const playPromise = silentAudio.play();
-    if (playPromise) {
-      playPromise.catch(() => {
-        audioUnlocked = false;
-      });
-    }
+    const primer = new SpeechSynthesisUtterance(" ");
+    primer.volume = 0;
+    synth.speak(primer);
   } catch {
-    audioUnlocked = false;
+    // An engine that refuses the primer will refuse the real utterance too;
+    // there is nothing to recover here and nothing to report.
   }
-}
-
-if (typeof window !== "undefined") {
-  const onFirstInteraction = () => {
-    unlockAudio();
-    window.removeEventListener("pointerdown", onFirstInteraction, true);
-    window.removeEventListener("keydown", onFirstInteraction, true);
-  };
-  window.addEventListener("pointerdown", onFirstInteraction, { capture: true, once: true });
-  window.addEventListener("keydown", onFirstInteraction, { capture: true, once: true });
-}
-
-export function isRecordingObjectKey(key: string): boolean {
-  return (
-    /^audio\/[a-f0-9]{2}\/[a-f0-9]{64}\.mp3$/.test(key) ||
-    /^audio\/edge-v1\/(?:en-US-JennyNeural|ar-SA-ZariyahNeural)\/[a-f0-9]{64}\.mp3$/.test(key) ||
-    /^assets\/audio\/scenarios\/[a-z0-9_-]+(?:\/[a-z0-9_-]+)*\.mp3$/.test(key)
-  );
-}
-
-export function preloadAudioClip(urlOrKey: string): void {
-  if (typeof window === "undefined" || !urlOrKey) return;
-  const isKey = isRecordingObjectKey(urlOrKey);
-  const primaryUrl = isKey ? (assetUrl(urlOrKey) ?? resolveAssetUrl(`/${urlOrKey}`)) : urlOrKey;
-  if (!primaryUrl) return;
-  const cacheKey = `cdn:${primaryUrl}`;
-  if (audioCache.has(cacheKey)) return;
-
-  const audio = new Audio();
-  audio.preload = "auto";
-  audio.src = primaryUrl;
 }
 
 function cacheAudioUrl(key: string, url: string) {
@@ -117,6 +133,7 @@ function cacheAudioUrl(key: string, url: string) {
 export function useAudio({
   lang = "en-US",
   rate,
+  pitch = 1,
   volume = 1,
   preferLocal = false,
   onEnded,
@@ -138,8 +155,24 @@ export function useAudio({
   // Support is knowable at first render, so it is the initial state rather than
   // a setState fired from inside an effect (which causes a cascading render).
   const [status, setStatus] = useState<AudioStatus>(() =>
-    typeof window === "undefined" || typeof window.Audio !== "function" ? "unsupported" : "idle"
+    typeof window === "undefined" || (!window.speechSynthesis && typeof window.Audio !== "function")
+      ? "unsupported"
+      : "idle"
   );
+  const synthRef = useRef<SpeechSynthesis | null>(
+    typeof window !== "undefined" && window.speechSynthesis ? window.speechSynthesis : null
+  );
+  useEffect(() => {
+    const synth = synthRef.current;
+    if (!synth) return undefined;
+
+    // Chrome populates voices asynchronously; the first call primes that load.
+    synth.getVoices();
+    const onVoicesChanged = () => synth.getVoices();
+    synth.addEventListener("voiceschanged", onVoicesChanged);
+    return () => synth.removeEventListener("voiceschanged", onVoicesChanged);
+  }, []);
+
   const stallTimerRef = useRef<number | null>(null);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const isMountedRef = useRef(true);
@@ -152,32 +185,6 @@ export function useAudio({
    * own generation against this before touching audio or state.
    */
   const requestRef = useRef(0);
-  const ownerIdRef = useRef(Symbol("audio-owner"));
-  const [source, setSource] = useState<AudioSource>(null);
-  const [progress, setProgress] = useState({ currentTime: 0, duration: 0 });
-  const rateRef = useRef(effectiveRate);
-  useEffect(() => {
-    rateRef.current = effectiveRate;
-    if (currentAudioRef.current) applyPlaybackRate(currentAudioRef.current, effectiveRate);
-  }, [effectiveRate]);
-
-  const stop = useCallback(() => {
-    requestRef.current += 1;
-    if (stallTimerRef.current !== null) {
-      clearTimeout(stallTimerRef.current);
-      stallTimerRef.current = null;
-    }
-    currentAudioRef.current?.pause();
-    currentAudioRef.current = null;
-    // An inactive inspector must not stop another player on unmount.
-    if (activeAudioOwner === ownerIdRef.current) {
-      activeAudioOwner = null;
-      pauseActiveAudio = null;
-    }
-    setStatus("idle");
-    setSource(null);
-    setProgress({ currentTime: 0, duration: 0 });
-  }, []);
 
   useEffect(() => {
     // Set on mount, not only cleared on unmount.
@@ -195,21 +202,12 @@ export function useAudio({
   }, []);
 
   const speak = useCallback(
-    (text: string, overrideLang?: string, objectKey?: string) => {
-      if (activeAudioOwner === ownerIdRef.current) stop();
-      else pauseActiveAudio?.();
-      activeAudioOwner = ownerIdRef.current;
-      pauseActiveAudio = () => {
-        const media = currentAudioRef.current;
-        if (media && Number.isFinite(media.duration) && media.duration > 0) {
-          media.pause();
-          setStatus("paused");
-          activeAudioOwner = null;
-          pauseActiveAudio = null;
-        } else stop();
-      };
-      setSource(null);
-      setProgress({ currentTime: 0, duration: 0 });
+    (
+      text: string,
+      overrideLang?: string,
+      objectKey?: string,
+      playback?: { synthesisOnly?: boolean }
+    ) => {
       const targetLang = overrideLang ?? lang;
       const cleanText = text.replace(/[-_]/g, " ").trim();
       const pronunciationAsset = getPronunciationAssetSpec(cleanText);
@@ -217,16 +215,7 @@ export function useAudio({
 
       const generation = ++requestRef.current;
       /** True while this call is still the one the learner is waiting on. */
-      const isCurrent = () =>
-        isMountedRef.current &&
-        requestRef.current === generation &&
-        activeAudioOwner === ownerIdRef.current;
-      const reportProgress = (audio: HTMLAudioElement) => {
-        if (!isCurrent() || currentAudioRef.current !== audio) return;
-        const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
-        setProgress({ currentTime: audio.currentTime, duration });
-        timeUpdateRef.current?.(audio.currentTime, duration);
-      };
+      const isCurrent = () => isMountedRef.current && requestRef.current === generation;
       /**
        * Publishes status only while this call still owns the player.
        *
@@ -240,12 +229,12 @@ export function useAudio({
       const publish = (next: AudioStatus) => {
         if (isCurrent()) {
           setStatus(next);
-          if (next === "error" || next === "unsupported") {
-            emitLearningEvent({ name: "media_failed", properties: { category: "audio" } });
-            errorRef.current?.();
-          }
+          if (next === "error" || next === "unsupported") errorRef.current?.();
         }
       };
+
+      // Spend the gesture now, before the first `await`. See `unlockSynthesis`.
+      if (synthRef.current) unlockSynthesis(synthRef.current);
 
       const clearStall = () => {
         if (stallTimerRef.current !== null) {
@@ -254,16 +243,63 @@ export function useAudio({
         }
       };
 
-      const reportUnavailable = () => {
+      const fallbackToSynthesis = (fallbackText: string, fallbackLang: string) => {
         if (!isCurrent()) return;
-        clearStall();
-        currentAudioRef.current?.pause();
-        currentAudioRef.current = null;
-        setSource(null);
-        setProgress({ currentTime: 0, duration: 0 });
         timeUpdateRef.current?.(0, 0);
-        publish(typeof window.Audio === "function" ? "error" : "unsupported");
-        if (requestRef.current === generation) requestRef.current += 1;
+        const synth = synthRef.current;
+        if (!synth) {
+          publish("unsupported");
+          return;
+        }
+
+        synth.cancel();
+        if (synth.paused) {
+          synth.resume();
+        }
+        publish("loading");
+
+        const spokenFallbackText = playback?.synthesisOnly
+          ? fallbackText
+          : fallbackText
+              .replace(/^\d+[.)]\s*/, "")
+              .replace(/\s*[/(].*$/, "")
+              .replace(/[\u0600-\u06FF]/g, "")
+              .trim() || fallbackText;
+
+        const utterance = new SpeechSynthesisUtterance(spokenFallbackText);
+        utterance.lang = fallbackLang;
+        utterance.rate = effectiveRate;
+        utterance.pitch = pitch;
+        utterance.volume = volume;
+
+        const voice = pickVoice(synth, fallbackLang);
+        if (voice) utterance.voice = voice;
+
+        utterance.onstart = () => {
+          if (!isMountedRef.current) return;
+          clearStall();
+          publish("playing");
+        };
+        utterance.onend = () => {
+          if (!isCurrent()) return;
+          if (!isMountedRef.current) return;
+          clearStall();
+          publish("idle");
+          endedRef.current?.();
+        };
+        utterance.onerror = (e) => {
+          if (!isMountedRef.current) return;
+          clearStall();
+          publish(e.error !== "interrupted" && e.error !== "canceled" ? "error" : "idle");
+        };
+
+        clearStall();
+        stallTimerRef.current = window.setTimeout(() => {
+          if (!isCurrent()) return;
+          setStatus((current) => (current === "loading" ? "error" : current));
+        }, SPEECH_START_TIMEOUT_MS);
+
+        synth.speak(utterance);
       };
 
       if (currentAudioRef.current) {
@@ -274,20 +310,12 @@ export function useAudio({
       const playBlobUrl = (blobUrl: string) => {
         if (!isCurrent()) return;
         const audio = new Audio(blobUrl);
-        applyPlaybackRate(audio, rateRef.current);
+        audio.playbackRate = effectiveRate;
         audio.volume = volume;
         audio.ontimeupdate = () => {
-          reportProgress(audio);
+          if (isCurrent()) timeUpdateRef.current?.(audio.currentTime, audio.duration || 0);
         };
-        audio.onloadedmetadata = () => reportProgress(audio);
-        audio.onwaiting = () => publish("buffering");
         audio.onplaying = () => {
-          if (!isCurrent()) {
-            audio.pause();
-            return;
-          }
-          setSource("recording");
-          reportProgress(audio);
           clearStall();
           publish("playing");
         };
@@ -298,104 +326,110 @@ export function useAudio({
           endedRef.current?.();
         };
         audio.onerror = () => {
-          if (!isCurrent()) return;
           clearStall();
-          reportUnavailable();
+          fallbackToSynthesis(cleanText, targetLang);
         };
 
         currentAudioRef.current = audio;
-        clearStall();
-        stallTimerRef.current = window.setTimeout(() => {
-          if (isCurrent()) reportUnavailable();
-        }, MEDIA_STREAM_TIMEOUT_MS);
-        audio.play().catch((err: unknown) => {
-          if (!isCurrent()) return;
+        audio.play().catch(() => {
           clearStall();
-          const isAbort = err instanceof Error && err.name === "AbortError";
-          const isNotAllowed = err instanceof Error && err.name === "NotAllowedError";
-          if (isAbort) return;
-          if (isNotAllowed) {
-            publish("idle");
-            return;
-          }
-          reportUnavailable();
+          fallbackToSynthesis(cleanText, targetLang);
         });
       };
 
-      /** Exact references win. Otherwise resolve verified takes before speculative hashes. */
+      /**
+       * A clip the build already generated and uploaded.
+       *
+       * This is the normal path. The vocabulary and the learning materials are
+       * synthesised once by scripts/generate_audio.cjs and served as immutable
+       * static files, so playback costs nothing and needs no credentials. The
+       * object key is a hash of the text, derived identically here and in the
+       * generator, so no manifest of what exists has to ship with the app — a
+       * miss simply 404s and falls through to the paths below.
+       */
       const playPregenerated = async (): Promise<boolean> => {
-        const explicitKey = objectKey && isRecordingObjectKey(objectKey) ? objectKey : null;
-        const explicitUrl = explicitKey ? assetUrl(explicitKey) : null;
-        const localExplicitUrl = explicitKey ? resolveAssetUrl(`/${explicitKey}`) : null;
-        const urls: string[] = [];
-        if (explicitKey) {
-          if (preferLocal && localExplicitUrl) urls.push(localExplicitUrl);
-          if (explicitUrl) urls.push(explicitUrl);
-          if (localExplicitUrl) urls.push(localExplicitUrl);
-        } else {
-          if (hasAssetHost() && !usesPronunciationOverride) {
-            const additional = await additionalRecordingKey(text, targetLang).catch(() => null);
-            if (additional) {
-              const url = assetUrl(additional);
-              if (url) urls.push(url);
-            }
-            const edge = await edgeRecordingKey(text, targetLang).catch(() => null);
-            if (edge && (await isEdgeRecordingAvailable(edge).catch(() => false))) {
-              const url = assetUrl(edge);
-              if (url) urls.push(url);
-            }
-          }
-          if (hasAssetHost()) {
-            urls.push(
-              ...(await audioUrls(text.includes(" ") ? text : pronunciationAsset.text, [
+        const explicitUrl =
+          objectKey && /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/.test(objectKey)
+            ? assetUrl(objectKey)
+            : null;
+        const urls = explicitUrl
+          ? [explicitUrl]
+          : hasAssetHost()
+            ? await audioUrls(pronunciationAsset.text, [
                 pronunciationAsset.profile,
                 AUDIO_PROFILE_V4,
-              ]))
-            );
-            if (cleanText !== text)
-              urls.push(
-                ...(await audioUrls(text.includes(" ") ? pronunciationAsset.text : text, [
-                  pronunciationAsset.profile,
-                  AUDIO_PROFILE_V4,
-                ]))
-              );
-            const capitalized =
-              pronunciationAsset.text.charAt(0).toUpperCase() + pronunciationAsset.text.slice(1);
-            if (capitalized !== pronunciationAsset.text)
-              urls.push(
-                ...(await audioUrls(capitalized, [pronunciationAsset.profile, AUDIO_PROFILE_V4]))
-              );
-          } else if (preferLocal || usesPronunciationOverride) {
-            urls.push(
-              resolveAssetUrl(
-                `/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`
-              )
-            );
+              ])
+            : preferLocal || usesPronunciationOverride
+              ? [
+                  resolveAssetUrl(
+                    `/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`
+                  ),
+                ]
+              : [];
+        const url = urls[0] ?? null;
+        if (!url) return false;
+        const cacheKey = `cdn:${url}`;
+
+        if (audioCache.has(cacheKey)) {
+          publish("loading");
+          playBlobUrl(audioCache.get(cacheKey)!);
+          return true;
+        }
+
+        const stored = await getCachedAudio(cacheKey).catch(() => null);
+        if (stored) {
+          const objectUrl = URL.createObjectURL(stored);
+          cacheAudioUrl(cacheKey, objectUrl);
+          publish("loading");
+          playBlobUrl(objectUrl);
+          return true;
+        }
+
+        // Stream the clip straight from the CDN rather than fetching its bytes.
+        //
+        // `fetch` is subject to CORS and the asset bucket sends no
+        // `Access-Control-Allow-Origin`, so every one of these requests failed
+        // and every word in the app quietly fell through to the robot voice —
+        // the pre-generated audio was never heard at all. A media element has
+        // no such restriction: `<audio>` may play a cross-origin file, it just
+        // may not let script read the samples. Playing is all this needs.
+        //
+        // A missing clip still 404s, `onerror` fires, and the caller falls
+        // through to synthesis exactly as before.
+        const played = await playStreamed(url);
+        if (played) {
+          cacheInBackground(url, cacheKey);
+          return true;
+        }
+
+        for (const fallbackUrl of urls.slice(1)) {
+          if (await playStreamed(fallbackUrl)) {
+            cacheInBackground(fallbackUrl, `cdn:${fallbackUrl}`);
+            return true;
           }
         }
-        for (const url of new Set(urls)) {
-          if (!isCurrent()) return true;
-          const cacheKey = `cdn:${url}`;
-          const memory = audioCache.get(cacheKey);
-          if (memory) {
-            publish("loading");
-            playBlobUrl(memory);
-            return true;
-          }
-          const stored = await getCachedAudio(cacheKey).catch(() => null);
-          if (!isCurrent()) return true;
-          if (stored && stored.size > 0) {
-            const objectUrl = URL.createObjectURL(stored);
-            cacheAudioUrl(cacheKey, objectUrl);
-            publish("loading");
-            playBlobUrl(objectUrl);
-            return true;
-          }
-          if (await playStreamed(url)) {
-            cacheInBackground(url, cacheKey);
-            return true;
+
+        // If the primary lookup was a miss, try capitalized variant for vocabulary words
+        // (curriculum vocabulary labels are stored capitalized in R2 e.g. "Bed", "Blanket")
+        if (!objectKey && hasAssetHost()) {
+          const capitalized =
+            pronunciationAsset.text.charAt(0).toUpperCase() + pronunciationAsset.text.slice(1);
+          if (capitalized !== pronunciationAsset.text) {
+            const capUrls = await audioUrls(capitalized, [
+              pronunciationAsset.profile,
+              AUDIO_PROFILE_V4,
+            ]);
+            for (const capUrl of capUrls) {
+              if (capUrl === url) continue;
+              const capPlayed = await playStreamed(capUrl);
+              if (capPlayed) {
+                cacheInBackground(capUrl, `cdn:${capUrl}`);
+                return true;
+              }
+            }
           }
         }
+
         return false;
       };
 
@@ -413,9 +447,7 @@ export function useAudio({
             return;
           }
           const audio = new Audio(url);
-          const ownsMedia = () => isCurrent() && currentAudioRef.current === audio;
-          audio.preload = "auto";
-          applyPlaybackRate(audio, rateRef.current);
+          audio.playbackRate = effectiveRate;
           audio.volume = volume;
           let started = false;
           let settled = false;
@@ -434,36 +466,21 @@ export function useAudio({
           // because a clip that never began also never ends. `playing` fires
           // only once frames are actually being rendered.
           audio.onplaying = () => {
-            if (!ownsMedia() || (settled && !started)) {
-              audio.pause();
-              settle(true);
-              return;
-            }
             started = true;
-            setSource("recording");
-            reportProgress(audio);
             clearStall();
             publish("playing");
             settle(true);
           };
           audio.ontimeupdate = () => {
-            reportProgress(audio);
-          };
-          audio.onloadedmetadata = () => reportProgress(audio);
-          audio.onwaiting = () => {
-            if (ownsMedia() && started) publish("buffering");
+            if (isCurrent()) timeUpdateRef.current?.(audio.currentTime, audio.duration || 0);
           };
           audio.onended = () => {
-            if (!ownsMedia()) return;
+            if (!isCurrent()) return;
             clearStall();
             publish("idle");
             endedRef.current?.();
           };
           audio.onerror = () => {
-            if (!ownsMedia()) {
-              settle(true);
-              return;
-            }
             clearStall();
             // An error after playback began is the end of the clip as far as
             // the UI is concerned; before it, it is a miss to fall through on.
@@ -477,30 +494,11 @@ export function useAudio({
           // dead connection. Without this the drill would wait for it forever.
           clearStall();
           stallTimerRef.current = window.setTimeout(() => {
-            if (!started) {
-              audio.pause();
-              audio.onplaying = () => audio.pause();
-              settle(false);
-            }
-          }, MEDIA_STREAM_TIMEOUT_MS);
+            if (!started) settle(false);
+          }, SPEECH_START_TIMEOUT_MS);
 
-          audio.play().catch((err: unknown) => {
-            if (!ownsMedia()) {
-              settle(true);
-              return;
-            }
+          audio.play().catch(() => {
             clearStall();
-            const isAbort = err instanceof Error && err.name === "AbortError";
-            const isNotAllowed = err instanceof Error && err.name === "NotAllowedError";
-            if (isAbort) {
-              settle(true);
-              return;
-            }
-            if (isNotAllowed) {
-              publish("idle");
-              settle(true);
-              return;
-            }
             settle(false);
           });
         });
@@ -531,63 +529,44 @@ export function useAudio({
           });
       };
 
-      if (!text.trim() || (!hasAssetHost() && !preferLocal && !usesPronunciationOverride)) {
-        reportUnavailable();
+      const playRemainingFallbacks = () => {
+        fallbackToSynthesis(cleanText, targetLang);
+      };
+
+      // With no bucket configured there is no clip to look for, and going
+      // through the async chain anyway would only delay the voice — on a phone,
+      // past the point where it can still play at all.
+      if (
+        playback?.synthesisOnly ||
+        (!hasAssetHost() && !preferLocal && !usesPronunciationOverride)
+      ) {
+        fallbackToSynthesis(cleanText, targetLang);
         return;
       }
-      publish("loading");
 
       playPregenerated()
         .catch(() => false)
         .then((played) => {
-          if (!played) reportUnavailable();
+          if (!played) playRemainingFallbacks();
         });
     },
-    [lang, volume, preferLocal, stop]
+    [lang, effectiveRate, pitch, volume, preferLocal]
   );
 
-  const pause = useCallback(() => {
-    if (status !== "playing" && status !== "buffering") return;
-    if (currentAudioRef.current) currentAudioRef.current.pause();
-    setStatus("paused");
-  }, [status]);
-
-  const resume = useCallback(() => {
-    if (status !== "paused") return;
-    if (activeAudioOwner !== ownerIdRef.current) pauseActiveAudio?.();
-    activeAudioOwner = ownerIdRef.current;
-    pauseActiveAudio = () => {
-      const media = currentAudioRef.current;
-      if (media && Number.isFinite(media.duration) && media.duration > 0) {
-        media.pause();
-        setStatus("paused");
-        activeAudioOwner = null;
-        pauseActiveAudio = null;
-      } else stop();
-    };
-    const audio = currentAudioRef.current;
-    if (audio) {
-      setStatus("loading");
-      void audio.play().catch(() => {
-        if (isMountedRef.current && activeAudioOwner === ownerIdRef.current) {
-          setStatus("error");
-          emitLearningEvent({ name: "media_failed", properties: { category: "audio" } });
-          errorRef.current?.();
-        }
-      });
-    } else {
-      setStatus("error");
-      errorRef.current?.();
+  const stop = useCallback(() => {
+    // Retiring the generation stops any fetch still in flight from playing
+    // after the learner has asked for silence.
+    requestRef.current += 1;
+    if (stallTimerRef.current !== null) {
+      clearTimeout(stallTimerRef.current);
+      stallTimerRef.current = null;
     }
-  }, [status, stop]);
-
-  const seek = useCallback((time: number) => {
-    const audio = currentAudioRef.current;
-    if (!audio || !Number.isFinite(audio.duration) || !Number.isFinite(time)) return;
-    const currentTime = Math.max(0, Math.min(time, audio.duration));
-    audio.currentTime = currentTime;
-    setProgress({ currentTime, duration: audio.duration });
-    timeUpdateRef.current?.(currentTime, audio.duration);
+    if (currentAudioRef.current) {
+      currentAudioRef.current.pause();
+      currentAudioRef.current = null;
+    }
+    synthRef.current?.cancel();
+    setStatus("idle");
   }, []);
 
   useEffect(
@@ -595,29 +574,18 @@ export function useAudio({
       if (stallTimerRef.current !== null) clearTimeout(stallTimerRef.current);
       requestRef.current += 1;
       currentAudioRef.current?.pause();
-      if (activeAudioOwner === ownerIdRef.current) {
-        activeAudioOwner = null;
-        pauseActiveAudio = null;
-      }
+      synthRef.current?.cancel();
     },
-    [stop]
+    []
   );
 
   return {
     speak,
     stop,
-    pause,
-    resume,
-    seek,
-    source,
-    ...progress,
     status,
-    isPlaying: status === "playing" || status === "loading" || status === "buffering",
-    isPaused: status === "paused",
+    isPlaying: status === "playing" || status === "loading",
     isLoading: status === "loading",
     isSupported: status !== "unsupported",
     isError: status === "error",
   };
 }
-
-export type AudioController = ReturnType<typeof useAudio>;

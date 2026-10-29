@@ -26,8 +26,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Baking Cookies",
-        en: "He arranged twelve scoops of chocolate chip dough across the baking tray.",
-        ar: "وزع اثنتي عشرة كرة من عجين بسكويت الشوكولاتة على صينية الخبز.",
+        en: "She arranged twelve scoops of chocolate chip dough across the baking tray.",
+        ar: "رَتَّبَتِ اثْنَتَيْ عَشْرَةَ قِطْعَةً مِنْ عَجِينَةِ الكُوكِيز بِالشُّوكُولاتَةِ عَلَى صِينِيَّةِ الخَبْزِ.",
       },
       {
         context: "Roasting Vegetables",
@@ -40,8 +40,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "ارْتَدِ دَائِماً قُفَّازَاتِ الفُرْنِ العَازِلَةَ عِنْدَ حَمْلِ صِينِيَّةِ الخَبْزِ المَعْدَنِيَّةِ السَّاخِنَةِ.",
       },
     ],
-    exampleSentence: "He arranged twelve scoops of chocolate chip dough across the baking tray.",
-    exampleArabic: "وزع اثنتي عشرة كرة من عجين بسكويت الشوكولاتة على صينية الخبز.",
+    exampleSentence: "She arranged twelve scoops of chocolate chip dough across the baking tray.",
+    exampleArabic:
+      "رَتَّبَتِ اثْنَتَيْ عَشْرَةَ قِطْعَةً مِنْ عَجِينَةِ الكُوكِيز بِالشُّوكُولاتَةِ عَلَى صِينِيَّةِ الخَبْزِ.",
   },
   "bed-frame": {
     id: "bed-frame",
@@ -117,8 +118,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Holiday Dinner",
-        en: "He spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
-        ar: "فرش مفرش طاولة من الكتان الأبيض على طاولة الطعام لوجبة الاحتفال.",
+        en: "She spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
+        ar: "فَرَشَتْ مَفْرَشَ طَاوِلَةٍ كَتَّانِيّاً أَبْيَضَ أَنِيقاً عَلَى سُفْرَةِ الطَّعَامِ لِلاِحْتِفَالِ.",
       },
       {
         context: "Casual Picnic",
@@ -132,8 +133,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
-    exampleArabic: "فرش مفرش طاولة من الكتان الأبيض على طاولة الطعام لوجبة الاحتفال.",
+      "She spread a crisp white linen tablecloth across the dining table for the celebratory meal.",
+    exampleArabic:
+      "فَرَشَتْ مَفْرَشَ طَاوِلَةٍ كَتَّانِيّاً أَبْيَضَ أَنِيقاً عَلَى سُفْرَةِ الطَّعَامِ لِلاِحْتِفَالِ.",
   },
   lawn: {
     id: "lawn",
@@ -212,8 +214,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Classroom Supplies",
-        en: "He brushed away the eraser shavings before submitting his test.",
-        ar: "أزال فتات الممحاة بالفرشاة قبل تسليم اختباره.",
+        en: "She brushed away the eraser shavings before submitting her test.",
+        ar: "نَفَضَتْ فُتَاتَ المِمْحَاةِ قَبْلَ تَسْلِيمِ اخْتِبَارِهَا.",
       },
     ],
     exampleSentence: "He used a soft rubber eraser to remove the incorrect calculation.",
@@ -239,7 +241,7 @@ export const entries: Record<string, LexiconEntry> = {
         meaning: "become fully absorbed in literary pages",
         arabic: "يَسْتَغْرِقُ فِي قِرَاءَةِ الكِتَاب",
         example:
-          "He got lost in an engrossing mystery novel while resting under his beach umbrella.",
+          "She got lost in an engrossing mystery novel while resting under her beach umbrella.",
       },
     ],
     sentences: [

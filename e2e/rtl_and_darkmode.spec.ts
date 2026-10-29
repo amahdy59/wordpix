@@ -1,4 +1,3 @@
-import { waitForStyles } from "./waitForStyles";
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -22,12 +21,8 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
   test("full learning path remains usable when expanded on a narrow screen", async ({ page }) => {
     await seedStorage("en")(page);
     await page.setViewportSize({ width: 320, height: 720 });
-    await page.goto("/", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
-    await expect(page.getByRole("button", { name: /Vocabulary path/i })).toHaveAttribute(
-      "aria-expanded",
-      "true"
-    );
+    await page.goto("/");
+    await page.getByRole("button", { name: /View full learning path/i }).click();
     await expect(page.getByRole("button", { name: /A1 Foundations/i })).toBeVisible();
     await page.getByRole("button", { name: /A1 Foundations/i }).click();
     await expect(page.getByRole("button", { name: /The Farm/i }).first()).toBeVisible();
@@ -41,10 +36,9 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
     await seedStorage("en")(page);
 
     await page.setViewportSize({ width: 320, height: 720 });
-    await page.goto("/", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.goto("/");
     await expect(page.getByRole("navigation", { name: "Main navigation" })).toBeVisible();
-    await expect(page.getByRole("link", { name: "Library", exact: true })).toBeVisible();
+    await expect(page.getByRole("button", { name: "Library", exact: true })).toBeVisible();
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2)
     ).toBe(false);
@@ -66,8 +60,7 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
   }) => {
     // Start in English (LTR), confirm no overflow
     await seedStorage("en")(page);
-    await page.goto("/", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.goto("/");
     await page.waitForLoadState("networkidle");
 
     const isOverflowing = await page.evaluate(
@@ -83,8 +76,7 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
       },
       { navState: JSON.stringify({ id: "explore" }), ifaceLang: "ar" }
     );
-    await page.reload({ waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.reload();
     await page.waitForLoadState("networkidle");
 
     // dir="rtl" is set by a useEffect; wait up to 10s for it to appear
@@ -99,13 +91,13 @@ test.describe("Multi-Viewport RTL & Dark Mode Matrix", () => {
   test("dark mode toggles theme class and passes accessibility contrast", async ({ page }) => {
     await seedStorage("en")(page);
     await page.emulateMedia({ colorScheme: "dark" });
-    await page.goto("/", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.goto("/");
     await page.waitForLoadState("networkidle");
 
-    await expect
-      .poll(async () => page.evaluate(() => document.documentElement.classList.contains("dark")))
-      .toBe(true);
+    const hasDarkClass = await page.evaluate(() =>
+      document.documentElement.classList.contains("dark")
+    );
+    expect(hasDarkClass).toBe(true);
 
     const accessibilityScanResults = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])

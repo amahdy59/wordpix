@@ -21,7 +21,6 @@ export interface LearnerProgress {
   wordMastery: Record<string, number>; // Legacy numeric mapping: 0, 1, 2, 3 for UI components
   sessionsCompleted: number;
   sessionHistory: SessionRecord[];
-  streakFreezeAvailable: number;
 }
 
 const MASTERY_TO_LEGACY_LEVEL: Record<MasteryCategory, number> = {
@@ -65,7 +64,6 @@ export function useProgress() {
       wordMastery,
       sessionsCompleted: state.learnerProgress.sessionsCompleted,
       sessionHistory: state.sessionHistory,
-      streakFreezeAvailable: state.learnerProgress.streakFreezeAvailable ?? 1,
     }),
     [state, wordMastery]
   );

@@ -1,12 +1,7 @@
-import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
-import { disableNarrationForContentTest } from "./audioFixture";
 
 test.describe("Authored lesson flow (Phase 4 & 5)", () => {
-  test.beforeEach(async ({ page }) => {
-    await disableNarrationForContentTest(page);
-  });
   test("loads authored Colors unit with reviewed glosses, sentences, and accessible controls", async ({
     page,
   }) => {
@@ -18,12 +13,11 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
 
-    await page.goto("/#/learn/colors", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.goto("/#/learn/colors");
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
 
     // Verify first lesson card is visible and accessible
-    const startButton = page.getByRole("button", { name: /^Start: group/ }).first();
+    const startButton = page.getByRole("button", { name: /^Start lesson:/ }).first();
     await expect(startButton).toBeVisible();
 
     const buttonHeight = await startButton.evaluate((el) => el.getBoundingClientRect().height);
@@ -57,11 +51,10 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
 
-    await page.goto("/#/learn/numbers-counting", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.goto("/#/learn/numbers-counting");
     await page.getByRole("heading", { name: /Numbers & Counting/i }).waitFor({ timeout: 15_000 });
 
-    const startButton = page.getByRole("button", { name: /^Start: group/ }).first();
+    const startButton = page.getByRole("button", { name: /^Start lesson:/ }).first();
     await expect(startButton).toBeVisible();
 
     // Ensure no horizontal scrollbar on mobile
@@ -87,25 +80,17 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     test.setTimeout(60_000);
     const errors: string[] = [];
     page.on("console", (message) => {
-      const text = message.text();
-      if (
-        message.type() === "error" &&
-        !text.includes("Failed to load resource") &&
-        !text.includes("blocked by CORS policy")
-      ) {
-        errors.push(text);
-      }
+      if (message.type() === "error") errors.push(message.text());
     });
     page.on("pageerror", (error) => errors.push(error.message));
 
     await page.addInitScript(() => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
-    await page.goto("/#/learn/colors", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.goto("/#/learn/colors");
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
     await page
-      .getByRole("button", { name: /^Start: group/ })
+      .getByRole("button", { name: /^Start lesson:/ })
       .first()
       .click();
     await page.evaluate(() => {
@@ -120,11 +105,10 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     expect(choiceCount).toBeLessThanOrEqual(3);
 
     for (let index = 0; index < choiceCount; index += 1) {
-      await expect
-        .poll(() =>
-          choices.nth(index).evaluate((element) => element.getBoundingClientRect().height)
-        )
-        .toBeGreaterThanOrEqual(44);
+      const choiceHeight = await choices
+        .nth(index)
+        .evaluate((element) => element.getBoundingClientRect().height);
+      expect(choiceHeight).toBeGreaterThanOrEqual(44);
     }
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth)
@@ -143,11 +127,10 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.addInitScript(() => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
-    await page.goto("/#/learn/colors", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.goto("/#/learn/colors");
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
     await page
-      .getByRole("button", { name: /^Start: group/ })
+      .getByRole("button", { name: /^Start lesson:/ })
       .first()
       .click();
     await page.evaluate(() => {
@@ -177,25 +160,17 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.setViewportSize({ width: 1280, height: 900 });
     const errors: string[] = [];
     page.on("console", (message) => {
-      const text = message.text();
-      if (
-        message.type() === "error" &&
-        !text.includes("Failed to load resource") &&
-        !text.includes("blocked by CORS policy")
-      ) {
-        errors.push(text);
-      }
+      if (message.type() === "error") errors.push(message.text());
     });
     page.on("pageerror", (error) => errors.push(error.message));
 
     await page.addInitScript(() => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
-    await page.goto("/#/learn/colors", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
+    await page.goto("/#/learn/colors");
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
     await page
-      .getByRole("button", { name: /^Start: group/ })
+      .getByRole("button", { name: /^Start lesson:/ })
       .first()
       .click();
     await page.evaluate(() => {
@@ -203,10 +178,8 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     });
 
     await page.getByRole("button", { name: "Red", exact: true }).click();
-    await page.getByRole("button", { name: "Continue", exact: true }).click();
     await expect(page.getByRole("button", { name: "Purple", exact: true })).toBeVisible();
     await page.getByRole("button", { name: "Purple", exact: true }).click();
-    await page.getByRole("button", { name: "Continue", exact: true }).click();
     await expect(page.getByRole("button", { name: "Indigo", exact: true })).toBeVisible();
     await page.getByRole("button", { name: "Indigo", exact: true }).click();
 
@@ -227,12 +200,9 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.addInitScript(() => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "home" }));
     });
-    await page.goto("/#/home", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
-    await page.getByRole("link", { name: "Profile", exact: true }).click();
+    await page.goto("/#/home");
+    await page.getByRole("button", { name: "Profile", exact: true }).click();
 
-    await expect(page.getByRole("heading", { name: "How you can use your words" })).toBeHidden();
-    await page.locator("summary").filter({ hasText: "About your learning progress" }).click();
     await expect(page.getByRole("heading", { name: "How you can use your words" })).toBeVisible();
     for (const skill of [
       "Visual recognition",

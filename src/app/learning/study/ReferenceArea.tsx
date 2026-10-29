@@ -5,7 +5,7 @@ import {
   PronunciationSection,
   SynonymsAntonymsSection,
 } from "../ExtraSections";
-import { LibraryBig } from "lucide-react";
+import { ChevronDown, LibraryBig } from "lucide-react";
 import { useI18n } from "../../../i18n";
 
 interface Props {
@@ -74,18 +74,29 @@ export function ReferenceArea({ materials }: Props) {
         </div>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-4">
         {sections.map((section) => (
-          <section
+          <details
             key={section.id}
-            aria-labelledby={`ref-section-${section.id}`}
-            className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm p-4 sm:p-6"
+            className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
+            open={section.open}
           >
-            <h3 id={`ref-section-${section.id}`} className="font-bold text-lg text-foreground mb-4">
-              {section.title}
-            </h3>
-            <div>{section.content}</div>
-          </section>
+            <summary className="min-h-[64px] cursor-pointer list-none px-4 py-3 hover:bg-secondary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring md:px-5 [&::-webkit-details-marker]:hidden">
+              <h3 className="flex items-center gap-4">
+                <span className="min-w-0 flex-1">
+                  <span className="block font-bold">{section.title}</span>
+                </span>
+                <ChevronDown
+                  aria-hidden
+                  className="shrink-0 text-muted-foreground motion-safe:transition-transform group-open:rotate-180"
+                  size={20}
+                />
+              </h3>
+            </summary>
+            <div className="border-t border-border bg-background/40 p-3 md:p-5 [&>section]:rounded-none [&>section]:border-0 [&>section]:bg-transparent [&>section]:p-0 [&>section]:shadow-none">
+              {section.content}
+            </div>
+          </details>
         ))}
       </div>
     </div>

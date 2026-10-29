@@ -38,8 +38,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Morning Routine",
-        en: "He opened the bedroom curtains to enjoy the beautiful sunny view.",
-        ar: "فتح ستائر غرفة النوم ليستمتع بالمنظر المشمس الجميل.",
+        en: "She opened the bedroom curtains to enjoy the beautiful sunny view.",
+        ar: "فَتَحَتْ سَتَائِرَ غُرْفَةِ النَّوْمِ لِتَسْتَمْتِعَ بِالمَنْظَرِ المُشْمِسِ الجَمِيلِ.",
       },
       {
         context: "Privacy & Sleep",
@@ -52,8 +52,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تُضِيفُ السَّتَائِرُ المَخْمَلِيَّةُ الطَّوِيلَةُ أَنَاقَةً وَدِفْئاً عَلَى مِسَاحَةِ المَعِيشَةِ.",
       },
     ],
-    exampleSentence: "He opened the bedroom curtains to enjoy the beautiful sunny view.",
-    exampleArabic: "فتح ستائر غرفة النوم ليستمتع بالمنظر المشمس الجميل.",
+    exampleSentence: "She opened the bedroom curtains to enjoy the beautiful sunny view.",
+    exampleArabic:
+      "فَتَحَتْ سَتَائِرَ غُرْفَةِ النَّوْمِ لِتَسْتَمْتِعَ بِالمَنْظَرِ المُشْمِسِ الجَمِيلِ.",
   },
   television: {
     id: "television",
@@ -216,7 +217,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "pass with",
         meaning: "achieve a successful score",
         arabic: "يَنْجَحُ فِي الاِخْتِبَارِ بِـ",
-        example: "He studied diligently and passed the midterm science test with an A.",
+        example: "She studied diligently and passed the midterm science test with an A.",
       },
     ],
     sentences: [
@@ -394,8 +395,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Clear Underwater Vision",
-        en: "Wearing anti-fog swim goggles allowed him to open his eyes comfortably and spot colorful sea shells.",
-        ar: "أتاحت له نظارات السباحة المضادة للضباب فتح عينيه براحة ورؤية الأصداف الملونة.",
+        en: "Wearing anti-fog swim goggles allowed her to open her eyes comfortably and spot colorful sea shells.",
+        ar: "أَتَاحَ ارْتِدَاءُ نَظَّارَاتِ السِّبَاحَةِ لَهَا فَتْحَ عَيْنَيْهَا دَاخِلَ المَاءِ لِرُؤْيَةِ الأَصْدَافِ.",
       },
       {
         context: "Eye Protection",
@@ -409,8 +410,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "Wearing anti-fog swim goggles allowed him to open his eyes comfortably and spot colorful sea shells.",
-    exampleArabic: "أتاحت له نظارات السباحة المضادة للضباب فتح عينيه براحة ورؤية الأصداف الملونة.",
+      "Wearing anti-fog swim goggles allowed her to open her eyes comfortably and spot colorful sea shells.",
+    exampleArabic:
+      "أَتَاحَ ارْتِدَاءُ نَظَّارَاتِ السِّبَاحَةِ لَهَا فَتْحَ عَيْنَيْهَا دَاخِلَ المَاءِ لِرُؤْيَةِ الأَصْدَافِ.",
   },
   score: {
     id: "score",
@@ -435,8 +437,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Basketball Points",
-        en: "He scored twenty-four points and grabbed ten rebounds in the semifinal victory.",
-        ar: "سجل أربعًا وعشرين نقطة واستحوذ على الكرة المرتدة عشر مرات في الفوز بنصف النهائي.",
+        en: "She scored twenty-four points and grabbed ten rebounds in the semifinal victory.",
+        ar: "سَجَّلَتْ ٢٤ نُقْطَةً وَاسْتَحْوَذَتْ عَلَى ١٠ كُرَاتٍ فِي فَوْزِ نِصْفِ النِّهَائِيِّ.",
       },
       {
         context: "Match Result",

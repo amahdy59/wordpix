@@ -77,7 +77,7 @@ export const WordInspectorModal = memo(function WordInspectorModal({
               ref={closeBtnRef}
               type="button"
               onClick={onClose}
-              aria-label={t("action.close")}
+              aria-label="Close word details"
               className="absolute top-3 end-3 size-11 min-h-[44px] min-w-[44px] rounded-full bg-black/60 hover:bg-black/90 text-white flex items-center justify-center backdrop-blur-md transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-white cursor-pointer"
             >
               <X className="size-5" />
@@ -88,8 +88,6 @@ export const WordInspectorModal = memo(function WordInspectorModal({
               <div className="min-w-0 flex-1">
                 <h2
                   id="word-inspector-title"
-                  lang="en"
-                  dir="ltr"
                   className="font-sans font-black text-white text-2xl sm:text-3xl leading-tight drop-shadow break-words"
                 >
                   {word.label}

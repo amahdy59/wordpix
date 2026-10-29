@@ -177,7 +177,7 @@ export const BEVERAGES_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "To absorb and enjoy an experience fully.",
       example:
-        "Standing on the mountaintop, he drank it all in — the view, the silence, the fresh air.",
+        "Standing on the mountaintop, she drank it all in — the view, the silence, the fresh air.",
     },
   ],
   dialogue: {

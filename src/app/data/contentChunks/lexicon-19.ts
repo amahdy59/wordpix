@@ -12,12 +12,12 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Daily Routine",
-        en: "He stood at the bathroom sink to wash his face with warm water.",
-        ar: "وقف أمام حوض الحمام ليغسل وجهه بالماء الدافئ.",
+        en: "She stood at the bathroom sink to wash her face with warm water.",
+        ar: "وَقَفَتْ أَمَامَ حَوْضِ الحَمَّامِ لِتَغْسِلَ وَجْهَهَا بِمَاءٍ دَافِئٍ.",
       },
     ],
-    exampleSentence: "He stood at the bathroom sink to wash his face with warm water.",
-    exampleArabic: "وقف أمام حوض الحمام ليغسل وجهه بالماء الدافئ.",
+    exampleSentence: "She stood at the bathroom sink to wash her face with warm water.",
+    exampleArabic: "وَقَفَتْ أَمَامَ حَوْضِ الحَمَّامِ لِتَغْسِلَ وَجْهَهَا بِمَاءٍ دَافِئٍ.",
     audio: "/audio/en-US/sink.mp3",
     meanings: [
       {
@@ -52,7 +52,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "switch on",
         meaning: "activate the electric kettle",
         arabic: "يُشَغِّلُ الغَلَّايَة",
-        example: "He filled the kettle and switched it on.",
+        example: "She filled the kettle and switched it on.",
       },
     ],
     sentences: [
@@ -68,8 +68,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Hospitality",
-        en: "He boiled the kettle to serve hot herbal tea to his visiting neighbors.",
-        ar: "غلى الماء في الغلاية ليقدم شاي الأعشاب الساخن لجيرانه الزائرين.",
+        en: "She boiled the kettle to serve hot herbal tea to her visiting neighbors.",
+        ar: "غَلَتِ المَاءَ فِي الغَلَّايَةِ لِتُقَدِّمَ شَايَ الأَعْشَابِ السَّاخِنَ لِجِيرَانِهَا الزَّائِرِينَ.",
       },
     ],
     exampleSentence: "He filled the electric kettle with filtered water to brew morning green tea.",
@@ -205,8 +205,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Chapped Skin",
-        en: "His chapped lips felt immediate relief after swiping on hydrating lip balm.",
-        ar: "شعر براحة فورية في شفتيه المتشققتين بعد وضع مرطب الشفاه.",
+        en: "Her chapped lips felt immediate relief after swiping on hydrating lip balm.",
+        ar: "شَعَرَتْ شَفَتَاهَا المُتَشَقِّقَتَانِ بِرَاحَةٍ فَوْرِيَّةٍ بَعْدَ وَضْعِ مُرَطِّبِ الشِّفَاه.",
       },
       {
         context: "Everyday Carry",
@@ -248,8 +248,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Achievement",
-        en: "He cheered proudly after conquering the entire length of monkey bars.",
-        ar: "هتف بفخر بعدما اجتاز قضبان التسلق كلها.",
+        en: "She cheered proudly after conquering the entire length of monkey bars.",
+        ar: "هَتَفَتْ بِفَخْرٍ بَعْدَ أَنِ اجْتَازَتْ كَامِلَ طُولِ سُلَّمِ التَّعَلُّقِ الأُفُقِيِّ.",
       },
       {
         context: "Safety Cushioning",

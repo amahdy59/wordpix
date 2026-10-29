@@ -183,7 +183,7 @@ export const PHARMACY_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "something difficult to accept",
       example:
-        "Being told he needed daily medication for the rest of his life was a hard pill to swallow.",
+        "Being told she needed daily medication for the rest of her life was a hard pill to swallow.",
     },
     {
       id: "pharmacy-a-dose-of-your-own-medicine",

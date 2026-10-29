@@ -115,7 +115,7 @@ export const SKIN_HAIR_LEARNING: UnitLearningMaterials = {
       phrase: "by the skin of your teeth",
       kind: "idiom",
       meaning: "Just barely; by a very narrow margin.",
-      example: "He passed the exam by the skin of his teeth — just one mark above the pass line.",
+      example: "She passed the exam by the skin of her teeth — just one mark above the pass line.",
     },
     {
       id: "skin-hair-let-your-hair-down",
@@ -172,7 +172,7 @@ export const SKIN_HAIR_LEARNING: UnitLearningMaterials = {
       phrase: "not a hair out of place",
       kind: "idiom",
       meaning: "Perfectly groomed and tidy.",
-      example: "He arrived with not a hair out of place — his braid was immaculate.",
+      example: "She arrived with not a hair out of place — her braid was immaculate.",
     },
   ],
   dialogue: {

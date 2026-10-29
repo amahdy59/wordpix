@@ -374,7 +374,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/playground/swinging.avif",
     description: "Moving back and forward on a swing.",
     topic: "playground",
-    exampleUsage: "He is swinging gently on the large outdoor swing.",
   },
   {
     id: "sliding",
@@ -402,7 +401,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/playground/running.avif",
     description: "Moving quickly on foot during play or exercise.",
     topic: "playground",
-    exampleUsage: "He is running along the marked exercise path.",
   },
   {
     id: "jumping",
@@ -412,7 +410,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/playground/jumping.avif",
     description: "Pushing off the ground and becoming airborne.",
     topic: "playground",
-    exampleUsage: "He is jumping over the low training marker.",
   },
   {
     id: "throwing",
@@ -431,7 +428,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/playground/catching.avif",
     description: "Stopping and holding an object thrown toward you.",
     topic: "playground",
-    exampleUsage: "He is catching the ball with both hands.",
   },
   {
     id: "kicking",
@@ -441,7 +437,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/playground/kicking.avif",
     description: "Hitting a ball with your foot.",
     topic: "playground",
-    exampleUsage: "He is kicking a ball toward the goal.",
   },
   {
     id: "skipping",
@@ -460,7 +455,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/playground/hiding.avif",
     description: "Staying out of sight so others cannot see you.",
     topic: "playground",
-    exampleUsage: "The cat is hiding behind the bench.",
   },
   {
     id: "fence",

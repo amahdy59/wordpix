@@ -57,37 +57,15 @@ describe("Graded exercises opt into assessment alt text", () => {
   const gradedExercises = ["ExerciseQuickQuiz.tsx", "ExerciseRecallMatch.tsx"];
 
   gradedExercises.forEach((file) => {
-    it(`${file} uses ImageChoiceCard or passes altMode="assessment" to every option image`, () => {
+    it(`${file} passes altMode="assessment" to every option image`, () => {
       const source = readFileSync(resolve(__dirname, "../exercises", file), "utf8");
-      if (source.includes("<ImageChoiceCard")) {
-        const choiceCardSource = readFileSync(
-          resolve(__dirname, "../shared/ImageChoiceCard.tsx"),
-          "utf8"
-        );
-        const wordImageTags = choiceCardSource.match(/<WordImage[\s\S]*?\/>/g) ?? [];
-        expect(wordImageTags.length).toBeGreaterThan(0);
-        wordImageTags.forEach((tag) => {
-          expect(tag).toContain('altMode="assessment"');
-          expect(tag).toContain("optionIndex=");
-        });
-      } else {
-        const wordImageTags = source.match(/<WordImage[\s\S]*?\/>/g) ?? [];
-        expect(wordImageTags.length).toBeGreaterThan(0);
-        wordImageTags.forEach((tag) => {
-          expect(tag).toContain('altMode="assessment"');
-          expect(tag).toContain("optionIndex=");
-        });
-      }
-    });
-  });
+      const wordImageTags = source.match(/<WordImage[\s\S]*?\/>/g) ?? [];
 
-  it("ImageChoiceCard passes altMode='assessment' to every option image", () => {
-    const source = readFileSync(resolve(__dirname, "../shared/ImageChoiceCard.tsx"), "utf8");
-    const wordImageTags = source.match(/<WordImage[\s\S]*?\/>/g) ?? [];
-    expect(wordImageTags.length).toBeGreaterThan(0);
-    wordImageTags.forEach((tag) => {
-      expect(tag).toContain('altMode="assessment"');
-      expect(tag).toContain("optionIndex=");
+      expect(wordImageTags.length).toBeGreaterThan(0);
+      wordImageTags.forEach((tag) => {
+        expect(tag).toContain('altMode="assessment"');
+        expect(tag).toContain("optionIndex=");
+      });
     });
   });
 });

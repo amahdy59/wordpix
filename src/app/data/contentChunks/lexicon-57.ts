@@ -36,8 +36,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Mantel Styling",
-        en: "He arranged three pillar candle holders of varying heights along the fireplace mantel.",
-        ar: "رتب ثلاث حاملات شموع متفاوتة الارتفاع على رف المدفأة.",
+        en: "She arranged three pillar candle holders of varying heights along the fireplace mantel.",
+        ar: "رَتَّبَتْ ثَلاثَةَ حَوَامِلِ شُمُوعٍ بِارْتِفَاعَاتٍ مُتَفَاوِتَةٍ عَلَى رَفِّ المِدْفَأَةِ.",
       },
     ],
     exampleSentence:
@@ -211,8 +211,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Table Setting",
-        en: "He set a round woven jute placemat under each dinner plate to protect the wood.",
-        ar: "وضع حصيرة مائدة مستديرة من الجوت المنسوج تحت كل طبق لحماية الخشب.",
+        en: "She set a round woven jute placemat under each dinner plate to protect the wood.",
+        ar: "وَضَعَتْ مَفْرَشاً فَرْدِيّاً دَائِرِيّاً مَصْنُوعاً مِنَ الخَيْشِ تَحْتَ كُلِّ طَبَقٍ لِحِمَايَةِ الخَشَبِ.",
       },
       {
         context: "Easy Cleanup",
@@ -226,8 +226,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He set a round woven jute placemat under each dinner plate to protect the wood.",
-    exampleArabic: "وضع حصيرة مائدة مستديرة من الجوت المنسوج تحت كل طبق لحماية الخشب.",
+      "She set a round woven jute placemat under each dinner plate to protect the wood.",
+    exampleArabic:
+      "وَضَعَتْ مَفْرَشاً فَرْدِيّاً دَائِرِيّاً مَصْنُوعاً مِنَ الخَيْشِ تَحْتَ كُلِّ طَبَقٍ لِحِمَايَةِ الخَشَبِ.",
   },
   "media-center": {
     id: "media-center",
@@ -290,7 +291,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "focus on",
         meaning: "concentrate mental effort upon subjects",
         arabic: "يُرَكِّزُ فِي الدِّرَاسَة",
-        example: "He put on noise-cancelling headphones to focus on studying chemistry.",
+        example: "She put on noise-cancelling headphones to focus on studying chemistry.",
       },
     ],
     sentences: [
@@ -383,8 +384,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Checkout Payment",
-        en: "He pulled his leather wallet from his handbag to take out his supermarket loyalty card.",
-        ar: "أخرج محفظته الجلدية من حقيبته ليأخذ بطاقة ولائه للمتجر.",
+        en: "She pulled her leather wallet from her handbag to take out her supermarket loyalty card.",
+        ar: "أَخْرَجَتْ مَحْفَظَتَهَا الجِلْدِيَّةَ مِنْ حَقِيبَةِ يَدِهَا لِإِخْرَاجِ بِطَاقَةِ وَلَاءِ السُّوبَر مَارْكِت.",
       },
       {
         context: "Card Organization",
@@ -398,8 +399,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He pulled his leather wallet from his handbag to take out his supermarket loyalty card.",
-    exampleArabic: "أخرج محفظته الجلدية من حقيبته ليأخذ بطاقة ولائه للمتجر.",
+      "She pulled her leather wallet from her handbag to take out her supermarket loyalty card.",
+    exampleArabic:
+      "أَخْرَجَتْ مَحْفَظَتَهَا الجِلْدِيَّةَ مِنْ حَقِيبَةِ يَدِهَا لِإِخْرَاجِ بِطَاقَةِ وَلَاءِ السُّوبَر مَارْكِت.",
   },
   wave: {
     id: "wave",

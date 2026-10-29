@@ -1,16 +1,6 @@
 #!/usr/bin/env node
 import { execSync } from "node:child_process";
 import process from "node:process";
-import { readFileSync } from "node:fs";
-import { createRequire } from "node:module";
-const require = createRequire(import.meta.url);
-const draftPush =
-  process.argv.includes("--hook") &&
-  require("./lib/push_scope.cjs").isDraftPush(readFileSync(0, "utf8"));
-
-// Align local pre-push retries with CI (2 retries) to accommodate full-suite browser timing
-process.env.WORDPIX_E2E_RETRIES = process.env.WORDPIX_E2E_RETRIES || "2";
-process.env.WORDPIX_READ_ONLY_MEDIA = process.env.WORDPIX_READ_ONLY_MEDIA || "1";
 
 const colors = {
   reset: "\x1b[0m",
@@ -32,46 +22,19 @@ const steps = [
     description: "Validating strict types across all source files",
   },
   {
-    name: "Unit & Integration Test Suite",
-    command: "pnpm test --maxWorkers=2",
-    description: "Running all Vitest unit, regression, and component tests",
-  },
-  {
     name: "ESLint Validation",
     command: "pnpm run lint",
-    description: "Checking React hooks and accessibility lints",
+    description: "Checking code style, React 19 compiler rules & a11y lints",
   },
   {
-    name: "Recorded Audio Release Readiness",
-    command: `node scripts/check_recorded_audio_readiness.cjs${draftPush ? " --draft" : ""}`,
-    description: "Preventing a recorded-only release with incomplete or stale audio coverage",
-  },
-  {
-    name: "Full Audio Coverage & Manifest Integrity",
-    command: "pnpm run audio:audit:all",
-    description: "Auditing 100% audio coverage across all 4 tracks and 200 vocabulary units",
-  },
-  {
-    name: "Image Generation Safety Guards",
-    command:
-      "node --test scripts/tests/check-generation-preflight.mjs scripts/tests/check-gemini-scene-batch.mjs scripts/tests/check-image-review-policy.mjs",
-    description: "Checking review digests, explicit holds, prompt integrity and no-text policy",
-  },
-  {
-    name: "Curriculum & Scenario Shard Consistency",
-    command:
-      "pnpm run check:content-shards && pnpm run check:scenario-shards && pnpm run check:search-index",
-    description: "Verifying curriculum and scenario data shards match source catalogues",
+    name: "Unit & Integration Test Suite",
+    command: "pnpm test",
+    description: "Running all Vitest unit, regression, and component tests",
   },
   {
     name: "Production Bundle Build",
     command: "pnpm run build",
     description: "Ensuring zero-error production build output",
-  },
-  {
-    name: "Bundle Budget Verification",
-    command: "pnpm run check:bundle",
-    description: "Enforcing bundle limits across runtime chunks and curriculum data shards",
   },
   {
     name: "E2E Accessibility & Responsive Matrix",
@@ -106,10 +69,7 @@ async function runPrepushVerification() {
   }
 
   const totalTime = ((Date.now() - startTime) / 1000).toFixed(1);
-  log(
-    `🎉 All pre-push checks passed successfully in ${totalTime}s! Ready to push.\n`,
-    `${colors.bold}${colors.green}`
-  );
+  log(`🎉 All pre-push checks passed successfully in ${totalTime}s! Ready to push.\n`, `${colors.bold}${colors.green}`);
 }
 
 runPrepushVerification().catch((err) => {

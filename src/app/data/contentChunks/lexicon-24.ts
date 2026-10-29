@@ -108,8 +108,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Kitchen Storage",
-        en: "He organized all spices and canned beans inside the upper kitchen cabinet.",
-        ar: "رتب جميع التوابل والفاصوليا المعلبة داخل خزانة المطبخ العلوية.",
+        en: "She organized all spices and canned beans inside the upper kitchen cabinet.",
+        ar: "رَتَّبَتِ البَهَارَاتِ وَالبُقُولِيَّاتِ المُعَلَّبَةَ دَاخِلَ خِزَانَةِ المَطْبَخِ العُلْوِيَّةِ.",
       },
       {
         context: "Living Room Accent",
@@ -122,8 +122,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "احْفَظِ الأَدْوِيَةَ مُقْفَلَةً بِأَمَانٍ دَاخِلَ خِزَانَةِ الحَمَّامِ الجِدَارِيَّةِ.",
       },
     ],
-    exampleSentence: "He organized all spices and canned beans inside the upper kitchen cabinet.",
-    exampleArabic: "رتب جميع التوابل والفاصوليا المعلبة داخل خزانة المطبخ العلوية.",
+    exampleSentence: "She organized all spices and canned beans inside the upper kitchen cabinet.",
+    exampleArabic:
+      "رَتَّبَتِ البَهَارَاتِ وَالبُقُولِيَّاتِ المُعَلَّبَةَ دَاخِلَ خِزَانَةِ المَطْبَخِ العُلْوِيَّةِ.",
   },
   lamp: {
     id: "lamp",
@@ -156,7 +157,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "switch on",
         meaning: "press the switch to activate",
         arabic: "يَضْغَطُ زِرَّ التَّشْغِيل",
-        example: "He switched on the desk lamp to start working.",
+        example: "She switched on the desk lamp to start working.",
       },
     ],
     sentences: [
@@ -215,8 +216,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Personalizing",
-        en: "He decorated the inside door of his hallway locker with magnetic photos.",
-        ar: "زين السطح الداخلي لباب خزانته في الممر بصور مغناطيسية.",
+        en: "She decorated the inside door of her hallway locker with magnetic photos.",
+        ar: "زَيَّنَتِ البَابَ الدَّاخِلِيَّ لِخِزَانَتِهَا فِي الرِّدْهَةِ بِصُوَرٍ مَغْنَاطِيسِيَّةٍ.",
       },
     ],
     exampleSentence:
@@ -242,7 +243,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "check out",
         meaning: "process book borrowing records",
         arabic: "يُعِيرُ كِتَابًا",
-        example: "The librarian helped him check out two mystery novels for the weekend.",
+        example: "The librarian helped her check out two mystery novels for the weekend.",
       },
     ],
     sentences: [
@@ -258,8 +259,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Book Catalog",
-        en: "He scans barcodes and keeps library shelves organized according to the Dewey system.",
-        ar: "يمسح الرموز الشريطية ويرتب رفوف المكتبة وفق نظام ديوي.",
+        en: "She scans barcodes and keeps library shelves organized according to the Dewey system.",
+        ar: "تَمْسَحُ البَارْكُودَ ضَوْئِيًّا وَتُحَافِظُ عَلَى تَرْتِيبِ رُفُوفِ المَكْتَبَةِ وَفْقًا لِنِظَامِ دِيُوِي.",
       },
     ],
     exampleSentence:
@@ -291,8 +292,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Guidance Session",
-        en: "He met with the guidance counselor to choose elective courses for the next semester.",
-        ar: "التقى المرشد الدراسي ليختار المواد الاختيارية للفصل القادم.",
+        en: "She met with the guidance counselor to choose elective courses for the next semester.",
+        ar: "اجْتَمَعَتْ مَعَ المُرْشِدِ الطُّلَّابِيِّ لِاخْتِيَارِ المَوَادِّ الاِخْتِيَارِيَّةِ لِلْفَصْلِ الدِّرَاسِيِّ القَادِمِ.",
       },
       {
         context: "Emotional Support",
@@ -306,8 +307,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He met with the guidance counselor to choose elective courses for the next semester.",
-    exampleArabic: "التقى المرشد الدراسي ليختار المواد الاختيارية للفصل القادم.",
+      "She met with the guidance counselor to choose elective courses for the next semester.",
+    exampleArabic:
+      "اجْتَمَعَتْ مَعَ المُرْشِدِ الطُّلَّابِيِّ لِاخْتِيَارِ المَوَادِّ الاِخْتِيَارِيَّةِ لِلْفَصْلِ الدِّرَاسِيِّ القَادِمِ.",
   },
   "bean-bag": {
     id: "bean-bag",

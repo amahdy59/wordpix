@@ -3,9 +3,6 @@ import ReactDOM from "react-dom";
 import { createRoot } from "react-dom/client";
 import App from "./app/App.tsx";
 import "./styles/index.css";
-void import("./app/analytics/localDiagnostics")
-  .then(({ installDiagnostics }) => installDiagnostics())
-  .catch(() => undefined);
 
 if (process.env.NODE_ENV !== "production") {
   import("@axe-core/react").then(({ default: axe }) => {

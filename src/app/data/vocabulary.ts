@@ -1,6 +1,4 @@
 import type { VocabularyItem } from "./lessons";
-import { isGenericLearningExample } from "../content/learningExampleQuality";
-import { areUnitCatalogDetailsLoaded, loadUnitCatalogDetails } from "./courseCatalog";
 import { VOCABULARY as BEDROOM_VOCABULARY } from "./units/bedroom";
 import {
   BEDROOM_BILINGUAL_CONTENT,
@@ -274,10 +272,7 @@ function applyBilingualContent(
       // Empty means the catalogue row was rejected; do not fall back to the
       // global lexicon, where repeated ids can select another unit's sense.
       arabicTranslation: reviewed.arabicTranslation ?? "",
-      exampleUsage:
-        reviewed.exampleUsage && !isGenericLearningExample(reviewed.exampleUsage)
-          ? reviewed.exampleUsage
-          : undefined,
+      exampleUsage: reviewed.exampleUsage,
     };
   });
 }
@@ -288,22 +283,15 @@ function applyBilingualContent(
 register("bedroom", applyBilingualContent(BEDROOM_VOCABULARY, BEDROOM_BILINGUAL_CONTENT));
 
 export function isUnitLoaded(unitId: string): boolean {
-  return byUnit.has(unitId) && areUnitCatalogDetailsLoaded(unitId);
+  return byUnit.has(unitId);
 }
 
 export async function loadUnitVocabulary(unitId: string): Promise<VocabularyItem[]> {
   const loaded = byUnit.get(unitId);
-  if (loaded) {
-    await loadUnitCatalogDetails(unitId);
-    return loaded;
-  }
+  if (loaded) return loaded;
   const loader = LOADERS[unitId];
   if (!loader) return [];
-  const [words, bilingualContent] = await Promise.all([
-    loader(),
-    loadBilingualUnit(unitId),
-    loadUnitCatalogDetails(unitId),
-  ]);
+  const [words, bilingualContent] = await Promise.all([loader(), loadBilingualUnit(unitId)]);
   return register(unitId, applyBilingualContent(words, bilingualContent));
 }
 
@@ -328,7 +316,7 @@ export function findLoadedWord(wordId: string): VocabularyItem | undefined {
 export function getWords(wordIds: string[], unitId?: string): VocabularyItem[] {
   const preferred = unitId ? unitIndex.get(unitId) : undefined;
   return wordIds
-    .map((id) => (unitId ? preferred?.get(id) : byId.get(id)))
+    .map((id) => preferred?.get(id) ?? byId.get(id))
     .filter((item): item is VocabularyItem => Boolean(item));
 }
 

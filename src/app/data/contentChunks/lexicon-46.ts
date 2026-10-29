@@ -52,7 +52,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "walk in",
         meaning: "enter through a door",
         arabic: "يَدْخُلُ",
-        example: "He knocked gently before walking in through the door.",
+        example: "She knocked gently before walking in through the door.",
       },
       {
         phrase: "lock up",
@@ -119,8 +119,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Communication",
-        en: "He checked his phone for new messages as soon as he woke up.",
-        ar: "تفقد هاتفه بحثا عن رسائل جديدة فور استيقاظه.",
+        en: "She checked her phone for new messages as soon as she woke up.",
+        ar: "تَفَقَّدَتْ هَاتِفَهَا لِمَعْرِفَةِ الرَّسَائِلِ الجَدِيدَةِ بِمُجَرَّدِ اسْتِيقَاظِهَا.",
       },
       {
         context: "Battery Care",
@@ -133,8 +133,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يُرْجَى كَتْمُ صَوْتِ هَاتِفِكَ أَثْنَاءَ عَرْضِ المُؤْتَمَرِ.",
       },
     ],
-    exampleSentence: "He checked his phone for new messages as soon as he woke up.",
-    exampleArabic: "تفقد هاتفه بحثا عن رسائل جديدة فور استيقاظه.",
+    exampleSentence: "She checked her phone for new messages as soon as she woke up.",
+    exampleArabic:
+      "تَفَقَّدَتْ هَاتِفَهَا لِمَعْرِفَةِ الرَّسَائِلِ الجَدِيدَةِ بِمُجَرَّدِ اسْتِيقَاظِهَا.",
   },
   "string-lights": {
     id: "string-lights",
@@ -336,8 +337,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Document Organization",
-        en: "He slipped his graded math assignments into a labeled two-pocket folder.",
-        ar: "وضع واجبات الرياضيات المصححة في ملف ذي جيبين وعليه بطاقة تعريف.",
+        en: "She slipped her graded math assignments into a labeled two-pocket folder.",
+        ar: "أَدْخَلَتْ فُرُوضَ الرِّيَاضِيَّاتِ المُصَحَّحَةَ دَاخِلَ مِلَفٍّ ذِي جَيْبَيْنِ يَحْمِلُ عُنْوَانًا.",
       },
       {
         context: "Class Handouts",
@@ -350,8 +351,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "اشْتَرَى مِلَفَّاتٍ خَضْرَاءَ لِمَادَّةِ العُلُومِ وَمِلَفَّاتٍ صَفْرَاءَ لِلْجُغْرَافْيَا.",
       },
     ],
-    exampleSentence: "He slipped his graded math assignments into a labeled two-pocket folder.",
-    exampleArabic: "وضع واجبات الرياضيات المصححة في ملف ذي جيبين وعليه بطاقة تعريف.",
+    exampleSentence: "She slipped her graded math assignments into a labeled two-pocket folder.",
+    exampleArabic:
+      "أَدْخَلَتْ فُرُوضَ الرِّيَاضِيَّاتِ المُصَحَّحَةَ دَاخِلَ مِلَفٍّ ذِي جَيْبَيْنِ يَحْمِلُ عُنْوَانًا.",
   },
   principal: {
     id: "principal",
@@ -382,8 +384,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Leadership",
-        en: "He met with teachers to plan innovative STEM programs for the upcoming academic year.",
-        ar: "اجتمع بالمعلمين للتخطيط لبرامج مبتكرة في العلوم والتكنولوجيا والهندسة والرياضيات للعام الدراسي القادم.",
+        en: "She met with teachers to plan innovative STEM programs for the upcoming academic year.",
+        ar: "اجْتَمَعَتْ مَعَ المُعَلِّمِينَ لِتَخْطِيطِ بَرَامِجَ تَعْلِيمِيَّةٍ مُبْتَكَرَةٍ لِلْعَامِ الدِّرَاسِيِّ القَادِمِ.",
       },
       {
         context: "School Tour",
@@ -469,8 +471,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Morning Juice",
-        en: "He peeled a sweet orange and separated the segments for his children.",
-        ar: "قشر برتقالة حلوة وفصل فصوصها لأطفاله.",
+        en: "She peeled a sweet orange and separated the segments for her children.",
+        ar: "قَشَّرَتْ بُرْتُقَالَةً حُلْوَةً وَفَصَلَتْ فُصُوصَهَا لِأَطْفَالِهَا.",
       },
       {
         context: "Vitamin Source",

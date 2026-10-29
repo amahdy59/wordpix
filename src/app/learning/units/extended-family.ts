@@ -135,7 +135,7 @@ export const EXTENDED_FAMILY_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Friends and relatives.",
       example:
-        "He invited all his kith and kin to the celebration — cousins, aunts, uncles, and close friends.",
+        "She invited all her kith and kin to the celebration — cousins, aunts, uncles, and close friends.",
     },
     {
       id: "extended-family-a-family-resemblance",
@@ -152,7 +152,7 @@ export const EXTENDED_FAMILY_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Born into a wealthy family.",
       example:
-        "His grandfather was a successful merchant — he was born with a silver spoon in his mouth.",
+        "Her grandfather was a successful merchant — she was born with a silver spoon in her mouth.",
     },
     {
       id: "extended-family-the-apple-of-someone-s-eye",

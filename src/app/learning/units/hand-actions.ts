@@ -87,7 +87,7 @@ export const HAND_ACTIONS_LEARNING: UnitLearningMaterials = {
       phrase: "have a hand in something",
       kind: "idiom",
       meaning: "To be involved in something.",
-      example: "He had a hand in designing the new office — it was partly his vision.",
+      example: "She had a hand in designing the new office — it was partly her vision.",
     },
     {
       id: "hand-actions-lend-a-hand",
@@ -115,7 +115,7 @@ export const HAND_ACTIONS_LEARNING: UnitLearningMaterials = {
       phrase: "twist someone's arm",
       kind: "idiom",
       meaning: "To persuade someone reluctantly.",
-      example: "I didn't want to go, but he twisted my arm — and I'm glad he did.",
+      example: "I didn't want to go, but she twisted my arm — and I'm glad she did.",
     },
     {
       id: "hand-actions-wash-your-hands-of",

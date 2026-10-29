@@ -42,8 +42,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Refill Routine",
-        en: "He refilled the ceramic sink soap dispenser from a large economy bottle of dish soap.",
-        ar: "ملأ موزع الصابون الخزفي عند الحوض من عبوة كبيرة اقتصادية لسائل غسل الأطباق.",
+        en: "She refilled the ceramic sink soap dispenser from a large economy bottle of dish soap.",
+        ar: "أَعَادَتْ مَلْءَ مِضَخَّةِ الصَّابُونِ عَلَى الحَوْضِ مِنْ عَبْوَةِ سَائِلِ الجَلِي الكَبِيرَةِ.",
       },
     ],
     exampleSentence:
@@ -126,7 +126,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "take off",
         meaning: "remove headphones from head",
         arabic: "يَنْزِعُ السَّمَّاعَات",
-        example: "He took off his headphones when his colleague spoke to him.",
+        example: "She took off her headphones when her colleague spoke to her.",
       },
     ],
     sentences: [
@@ -267,8 +267,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Bed Edging",
-        en: "He used the flat rectangular blade of the spade to slice crisp borders along the turf.",
-        ar: "استخدم شفرة المجرفة المستطيلة المسطحة ليحدد حواف المسطح العشبي بدقة.",
+        en: "She used the flat rectangular blade of the spade to slice crisp borders along the turf.",
+        ar: "اسْتَخْدَمَتِ الشَّفْرَةَ المُسْتَطِيلَةَ لِلْمِجْرَفَةِ لِقَصِّ حَوَافَّ أَنِيقَةٍ لِلْعُشْبِ.",
       },
       {
         context: "Soil Turning",
@@ -366,8 +366,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "أَضَاءَتِ الفَوَانِيسُ الشَّمْسِيَّةُ المَمَرَّ المُلْتَوِيَ مُرْشِدَةً الضُّيُوفَ فِي المَسَاءِ.",
       },
     ],
-    exampleSentence: "He strolled slowly along the paved garden path admiring the blossoms.",
-    exampleArabic: "تمشى ببطء على ممر الحديقة المرصوف معجبا بالأزهار.",
+    exampleSentence: "She strolled slowly along the paved garden path admiring the blossoms.",
+    exampleArabic:
+      "تَمَشَّتْ بِبُطْءٍ عَلَى طُولِ مَمَرِّ الحَدِيقَةِ المَرْصُوفِ مُعْجَبَةً بِالأَزْهَارِ.",
   },
   "soap-dish": {
     id: "soap-dish",
@@ -405,8 +406,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Design",
-        en: "He bought a bamboo soap dish that matches the natural wood theme of his bathroom.",
-        ar: "اشترى صحن صابون من الخيزران يناسب ديكور حمامه الخشبي الطبيعي.",
+        en: "She bought a bamboo soap dish that matches the natural wood theme of her bathroom.",
+        ar: "اشْتَرَتْ صَبَّانَةً مِنْ خَشَبِ الخَيْزُرَانِ تُنَاسِبُ الطَّابَعَ الخَشَبِيَّ الطَّبِيعِيَّ لِحَمَّامِهَا.",
       },
       {
         context: "Hygiene",
@@ -524,14 +525,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "pull out",
         meaning: "dispense a single paper sheet",
         arabic: "يَسْحَبُ مَنْدِيلًا",
-        example: "He pulled out a soft facial tissue from the box on the vanity.",
+        example: "She pulled out a soft facial tissue from the box on the vanity.",
       },
     ],
     sentences: [
       {
         context: "Daily Hygiene",
-        en: "He pulled a soft tissue from the decorative box on the bathroom vanity.",
-        ar: "سحب منديلا ناعما من العلبة المزخرفة على خزانة حوض الحمام.",
+        en: "She pulled a soft tissue from the decorative box on the bathroom vanity.",
+        ar: "سَحَبَتْ مَنْدِيلًا وَرَقِيًّا نَاعِمًا مِنْ عُلْبَةِ المَحَارِمِ المُزَخْرَفَةِ عَلَى خِزَانَةِ الحَمَّامِ.",
       },
       {
         context: "Skincare",
@@ -544,8 +545,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَحْفَظُ عُلْبَةُ التَّوْزِيعِ الخَشَبِيَّةِ المَنَادِيلَ مُرَتَّبَةً بِجَانِبِ المِرْآةِ.",
       },
     ],
-    exampleSentence: "He pulled a soft tissue from the decorative box on the bathroom vanity.",
-    exampleArabic: "سحب منديلا ناعما من العلبة المزخرفة على خزانة حوض الحمام.",
+    exampleSentence: "She pulled a soft tissue from the decorative box on the bathroom vanity.",
+    exampleArabic:
+      "سَحَبَتْ مَنْدِيلًا وَرَقِيًّا نَاعِمًا مِنْ عُلْبَةِ المَحَارِمِ المُزَخْرَفَةِ عَلَى خِزَانَةِ الحَمَّامِ.",
   },
   "wash-hands": {
     id: "wash-hands",
@@ -615,8 +617,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Flashcard Bundle",
-        en: "He wrapped a stretchy rubber band around his stack of study flashcards.",
-        ar: "لف رباطا مطاطيا مرنا حول مجموعة بطاقات المراجعة الخاصة به.",
+        en: "She wrapped a stretchy rubber band around her stack of study flashcards.",
+        ar: "لَفَّتْ رِبَاطًا مَطَّاطِيًّا مَرِنًا حَوْلَ حُزْمَةِ بِطَاقَاتِ الاِسْتِذْكَارِ الخَاصَّةِ بِهَا.",
       },
       {
         context: "Desk Organization",
@@ -629,8 +631,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تُثَبِّتُ الأَرْبِطَةُ المَرِنَةُ المُلْصَقَاتِ المَلْفُوفَةَ بِإِحْكَامٍ لِنَقْلِهَا بِأَمَانٍ.",
       },
     ],
-    exampleSentence: "He wrapped a stretchy rubber band around his stack of study flashcards.",
-    exampleArabic: "لف رباطا مطاطيا مرنا حول مجموعة بطاقات المراجعة الخاصة به.",
+    exampleSentence: "She wrapped a stretchy rubber band around her stack of study flashcards.",
+    exampleArabic:
+      "لَفَّتْ رِبَاطًا مَطَّاطِيًّا مَرِنًا حَوْلَ حُزْمَةِ بِطَاقَاتِ الاِسْتِذْكَارِ الخَاصَّةِ بِهَا.",
   },
   mouse: {
     id: "mouse",
@@ -657,8 +660,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Computer Navigation",
-        en: "He moved the optical mouse smoothly over the neoprene pad to click the submit button.",
-        ar: "حرك الفأرة البصرية بسلاسة فوق وسادة النيوبرين لينقر زر الإرسال.",
+        en: "She moved the optical mouse smoothly over the neoprene pad to click the submit button.",
+        ar: "حَرَّكَتْ فَأْرَةَ الحَاسُوبِ الضَّوْئِيَّةَ بِسَلَاسَةٍ عَلَى لَوْحَةِ الفَأْرَةِ لِلنَّقْرِ عَلَى زِرِّ الإِرْسَالِ.",
       },
       {
         context: "Wireless Device",
@@ -672,8 +675,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He moved the optical mouse smoothly over the neoprene pad to click the submit button.",
-    exampleArabic: "حرك الفأرة البصرية بسلاسة فوق وسادة النيوبرين لينقر زر الإرسال.",
+      "She moved the optical mouse smoothly over the neoprene pad to click the submit button.",
+    exampleArabic:
+      "حَرَّكَتْ فَأْرَةَ الحَاسُوبِ الضَّوْئِيَّةَ بِسَلَاسَةٍ عَلَى لَوْحَةِ الفَأْرَةِ لِلنَّقْرِ عَلَى زِرِّ الإِرْسَالِ.",
   },
   janitor: {
     id: "janitor",
@@ -789,8 +793,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Breakfast",
-        en: "He sliced a sweet banana over his bowl of oatmeal every morning.",
-        ar: "كان يقطع موزة حلوة فوق وعاء الشوفان كل صباح.",
+        en: "She sliced a sweet banana over her bowl of oatmeal every morning.",
+        ar: "قَطَّعَتْ مَوْزَةً حُلْوَةً فَوْقَ وِعَاءِ الشُّوفَانِ الخَاصِّ بِهَا كُلَّ صَبَاحٍ.",
       },
       {
         context: "Nutrition",

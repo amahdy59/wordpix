@@ -137,7 +137,7 @@ export const ART_STUDIO_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "to go out and enjoy oneself in a lively, enthusiastic way",
       example:
-        "After finishing his final exams, Sami wanted to paint the town red with his classmates.",
+        "After finishing her final exams, Sara wanted to paint the town red with her classmates.",
     },
     {
       id: "art-studio-a-blank-canvas",

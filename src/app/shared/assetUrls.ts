@@ -8,8 +8,8 @@
  * manifest of ~8,500 entries would be a payload of its own, and it would go
  * stale the moment a new clip is generated.
  *
- * A missing key falls through to another verified recording. If none can play,
- * `useAudio` reports a recoverable media error; it never invokes device speech.
+ * If the key is absent from the bucket the request 404s and `useAudio` falls
+ * through to speech synthesis, so a missing clip degrades rather than breaks.
  *
  * The two implementations must agree exactly. audio_assets.test.ts asserts
  * that by comparing this output against the generator's for the same inputs.
@@ -55,13 +55,14 @@ export interface AudioProfile {
  * Public base URL of the asset bucket, e.g. https://assets.example.com.
  *
  * Not a secret — it is a public CDN origin, so inlining it in the client is
- * correct. When unset, local reference clips can still play; other requests
- * report that audio is unavailable.
+ * correct. When unset the app simply has no CDN and every caller falls back to
+ * speech synthesis, which is the right behaviour for a local dev checkout with
+ * no bucket configured.
  */
-const DEFAULT_CDN_BASE = "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev";
-export const ASSET_BASE_URL: string = (
-  import.meta.env?.VITE_ASSET_BASE_URL ?? (import.meta.env?.MODE === "test" ? "" : DEFAULT_CDN_BASE)
-).replace(/\/+$/, "");
+export const ASSET_BASE_URL: string = (import.meta.env?.VITE_ASSET_BASE_URL ?? "").replace(
+  /\/+$/,
+  ""
+);
 
 export function hasAssetHost(): boolean {
   return ASSET_BASE_URL.length > 0;

@@ -68,34 +68,4 @@ describe("ExerciseContextGapFill sentence media", () => {
     );
     expect(nextImage).not.toHaveAttribute("alt", expect.stringMatching(/\borange\b/i));
   });
-
-  it("records attempt on answer and provides stable continue action", () => {
-    const dispatch = vi.fn();
-    render(
-      <ExerciseContextGapFill step={3} lessonId="colors-1" words={words} dispatch={dispatch} />,
-      { wrapper }
-    );
-
-    // Option for Red is clickable
-    const redButton = screen.getByRole("button", { name: /Red/i });
-    expect(redButton).toBeInTheDocument();
-  });
-
-  it("positions the meaning support clue directly below the question prompt in the prompt zone", () => {
-    render(
-      <ExerciseContextGapFill step={3} lessonId="colors-1" words={words} dispatch={vi.fn()} />,
-      { wrapper }
-    );
-
-    const promptZone = document.querySelector('[data-exercise-zone="prompt"]');
-    expect(promptZone).toBeInTheDocument();
-
-    // The sentence prompt is inside the prompt zone
-    const promptText = promptZone?.querySelector("[data-question-prompt]");
-    expect(promptText).toBeInTheDocument();
-
-    // The meaning support disclosure is positioned below the prompt within the prompt zone
-    const meaningSupport = screen.getByText(/Meaning support — open for a clue/i);
-    expect(promptZone).toContainElement(meaningSupport);
-  });
 });

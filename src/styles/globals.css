@@ -48,10 +48,6 @@
 }
 
 @layer utilities {
-  /* Only page/card surfaces carry grain; images and controls stay crisp. */
-  :is(body, .bg-background, .bg-card, .bg-wp-card) {
-    background-image: var(--wp-paper-grain);
-  }
   /* Interpolating an inverted foreground/background pair passes through a
      low-contrast midpoint. Switch colors together; animate geometry/shadows. */
   :is(button, a, [role="button"])[class*="transition"],
@@ -117,389 +113,6 @@
     min-width: 0;
     overflow-wrap: anywhere;
     text-align: start;
-  }
-
-  /* One question workspace. Content may grow at zoom, with long passages or
-     an open help disclosure; it is never clipped to manufacture a screen fit. */
-  .wp-question-screen {
-    display: flex;
-    flex-direction: column;
-    height: 100dvh;
-    min-height: 0;
-    overflow: hidden;
-  }
-
-  .wp-question-scroll {
-    flex: 1;
-    min-height: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    scroll-padding-block: 1rem;
-    padding-block: var(--wp-question-gap);
-    padding-block-end: max(1rem, env(safe-area-inset-bottom));
-  }
-
-  .wp-question-scroll :is(button, input, textarea, select, summary, [tabindex]) {
-    scroll-margin-block: 1rem;
-  }
-
-  .wp-question-family {
-    gap: var(--wp-question-gap);
-    flex: 1;
-  }
-
-  .wp-question-instruction {
-    font-size: var(--wp-question-instruction-size);
-    font-weight: 600;
-    line-height: 1.5;
-  }
-
-  .wp-question-prompt {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-    color: var(--foreground);
-    font-size: var(--wp-question-prompt-size);
-    font-weight: 700;
-    line-height: 1.5;
-    overflow-wrap: anywhere;
-    max-inline-size: 65ch;
-  }
-
-  .wp-question-layout {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 0;
-    gap: var(--wp-question-gap);
-    align-items: stretch;
-    flex: 1;
-  }
-
-  .wp-question-layout > [data-exercise-zone="activity"] {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
-
-  .wp-question-layout > [data-exercise-zone="action"] {
-    margin-top: auto;
-  }
-
-  .wp-question-media {
-    width: 100%;
-    min-height: 0;
-    flex: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .wp-question-media > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-
-  /* Responsive bounded frame for instructional and scene media:
-     Media occupies almost 30-35% of the screen on mobile and expands vertically to fill
-     its container on desktop, centered so numbers and diagrams stay within the card viewport. */
-  .wp-question-media.wp-question-media--fitted {
-    width: 100%;
-    max-width: 100%;
-    min-height: 8rem;
-    height: clamp(8.5rem, 36dvh, 20rem);
-    max-height: 38dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .wp-question-media.wp-question-media--fitted > img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    object-position: center;
-  }
-
-  .wp-question-option {
-    min-height: 44px;
-    padding: 0.375rem 0.75rem;
-    border-width: 1px;
-    border-radius: var(--wp-radius-xl);
-    font-size: var(--wp-text-md);
-    line-height: 1.4;
-    overflow-wrap: anywhere;
-  }
-
-  .wp-question-blank {
-    display: inline-block;
-    min-inline-size: 3.5ch;
-    max-inline-size: 100%;
-    min-block-size: 1.5em;
-    margin-inline: 0.2em;
-    padding: 0.05em 0.4em;
-    border-radius: var(--wp-radius-md) var(--wp-radius-md) 0 0;
-    border-block-end: 2px solid var(--primary);
-    background: var(--secondary);
-    color: var(--primary);
-    text-align: center;
-    vertical-align: baseline;
-    overflow-wrap: anywhere;
-  }
-
-  .wp-question-blank:not([data-filled="true"])::after {
-    content: "\00a0";
-  }
-
-  .wp-question-feedback {
-    border-radius: var(--wp-radius-lg);
-    padding: 0.75rem 1rem;
-  }
-
-  .wp-lesson-header {
-    container-type: inline-size;
-  }
-
-  .wp-study-header {
-    padding-block-start: max(0.5rem, env(safe-area-inset-top));
-  }
-
-  #study-content {
-    padding-block-end: env(safe-area-inset-bottom);
-  }
-
-  /* Query the header's readable width at its current font size, so zoomed
-     titles never collapse into a letter-by-letter column between controls. */
-  @container (max-width: 20em) {
-    .wp-lesson-title-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
-    }
-
-    .wp-lesson-title-row > h1 {
-      grid-column: 1 / -1;
-      grid-row: 2;
-      text-align: start;
-    }
-
-    .wp-lesson-title-row > div:first-child {
-      grid-column: 1;
-      grid-row: 1;
-    }
-
-    .wp-lesson-title-row > div:last-child {
-      grid-column: 2;
-      grid-row: 1;
-      justify-self: end;
-    }
-
-    .wp-lesson-meta {
-      align-items: stretch;
-      flex-direction: column;
-    }
-
-    .wp-lesson-subtitle {
-      flex: none;
-      width: 100%;
-    }
-
-    .wp-lesson-subtitle > span:first-child {
-      flex-basis: 100%;
-    }
-  }
-
-  .wp-pronunciation-choice-media {
-    flex: 1 1 auto;
-    width: 100%;
-    min-height: clamp(12rem, 38dvh, 42dvh);
-    height: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .wp-pronunciation-choice-media > img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  @media (min-width: 64rem) {
-    .wp-pronunciation-choice-media {
-      min-height: 14rem;
-      height: 100%;
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .wp-question-layout:has(> [data-exercise-zone="media"]),
-    .wp-question-layout.wp-question-with-media {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      column-gap: clamp(1.25rem, 3vw, 2.5rem);
-      row-gap: var(--wp-question-gap);
-      align-items: stretch;
-      flex: 1;
-    }
-
-    .wp-question-layout > [data-exercise-zone="prompt"] {
-      grid-area: prompt;
-    }
-
-    .wp-question-layout > [data-exercise-zone="media"] {
-      grid-area: media;
-    }
-
-    .wp-question-layout > [data-exercise-zone="activity"] {
-      grid-area: activity;
-    }
-
-    .wp-question-layout > [data-exercise-zone="feedback"] {
-      grid-area: feedback;
-    }
-
-    .wp-question-layout > [data-exercise-zone="action"] {
-      grid-area: action;
-      margin-top: 0;
-    }
-
-    .wp-question-family,
-    .wp-skill-workspace {
-      --wp-question-media-height: clamp(14rem, 55dvh, 36rem);
-    }
-
-    .wp-question-layout > [data-exercise-zone="media"] {
-      grid-area: media;
-      align-self: stretch;
-      height: 100%;
-      min-height: 0;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .wp-question-media.wp-question-media--fitted {
-      flex: 1 1 auto;
-      width: 100%;
-      height: 100%;
-      min-height: 14rem;
-      max-height: none;
-    }
-
-    @media (min-height: 52rem) {
-      .wp-question-media.wp-question-media--fitted {
-        max-height: none;
-      }
-    }
-
-    .wp-question-option {
-      min-height: 3.5rem;
-      padding: 0.875rem 1.25rem;
-      font-size: var(--wp-text-lg);
-    }
-
-    /* In two-column mode, media occupies the start column spanning all rows.
-       Prompt, activity, feedback, and action stack neatly in the end column.
-       Feedback and action sit directly under the question choices, using the
-       available whitespace rather than pushing content past the screen fold.
-       The fifth row absorbs any leftover height between columns. */
-    .wp-question-layout:has(> [data-exercise-zone="prompt"]):has(> [data-exercise-zone="media"]) {
-      grid-template-areas:
-        "media prompt"
-        "media activity"
-        "media feedback"
-        "media action"
-        "media .";
-      grid-template-rows: auto auto auto auto 1fr;
-      column-gap: clamp(1.25rem, 3vw, 2.5rem);
-      row-gap: var(--wp-question-gap);
-      align-items: stretch;
-    }
-
-    .wp-question-layout:not(:has(> [data-exercise-zone="prompt"])):has(
-        > [data-exercise-zone="media"]
-      ) {
-      grid-template-areas:
-        "media activity"
-        "media feedback"
-        "media action"
-        "media .";
-      grid-template-rows: auto auto auto 1fr;
-      column-gap: clamp(1.25rem, 3vw, 2.5rem);
-      row-gap: var(--wp-question-gap);
-      align-items: start;
-    }
-  }
-
-  @media (max-height: 48rem) {
-    .wp-question-screen {
-      --wp-question-gap: clamp(0.5rem, 1dvh, 0.75rem);
-    }
-
-    .wp-question-screen .wp-question-scroll {
-      padding-block: var(--wp-question-gap);
-      padding-block-end: max(0.5rem, env(safe-area-inset-bottom));
-    }
-
-    .wp-question-media.wp-question-media--fitted {
-      min-height: 6rem;
-      height: clamp(6.5rem, 28dvh, 13rem);
-      max-height: 13rem;
-    }
-
-    .wp-question-option {
-      min-height: 2.75rem;
-      padding: 0.5rem 1rem;
-      font-size: var(--wp-text-md);
-    }
-  }
-
-  @media (max-height: 35rem) {
-    .wp-question-family,
-    .wp-skill-workspace {
-      --wp-question-media-height: clamp(5rem, 20dvh, 8.5rem);
-    }
-
-    .wp-question-media.wp-question-media--fitted {
-      min-height: 5rem;
-      height: clamp(5rem, 20dvh, 8.5rem);
-      max-height: 8.5rem;
-    }
-  }
-
-  /* Large text can make navigation taller than a short window. Let the
-     whole question scroll in that case; a fixed header must never squeeze
-     the answer viewport to zero or leave focused controls behind a clip. */
-  @media (max-height: 40rem) {
-    .wp-question-screen {
-      overflow-y: auto;
-    }
-
-    .wp-question-screen .wp-question-frame {
-      height: auto;
-      min-height: 100dvh;
-      flex-shrink: 0;
-      overflow: visible;
-    }
-
-    .wp-question-screen .wp-question-scroll {
-      flex: none;
-      overflow: visible;
-    }
   }
 
   /* ─── Responsive layout system ───────────────────────────────────────────
@@ -624,52 +237,6 @@
   .wp-course-sticky {
     isolation: isolate;
   }
-
-  .wp-course-nav {
-    container-type: inline-size;
-  }
-
-  @container (max-width: 22em) {
-    .wp-course-nav summary {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr);
-      gap: 0.125rem;
-    }
-  }
-
-  /* On phones the context and rail join the lesson's scroll container.
-     Only the compact jump control sticks, leaving the title free to scroll. */
-  @media (max-width: 63.999rem) {
-    /* Keep an open filter panel bounded without moving the sticky search rail
-       back to its original off-screen position when the disclosure opens. */
-    .wp-sticky-controls details[open] > div {
-      max-block-size: min(40dvh, 24rem);
-      overflow-y: auto;
-      scroll-padding-block: 0.5rem;
-    }
-
-    .wp-course-sidebar,
-    .wp-course-context {
-      display: contents;
-    }
-
-    .wp-course-context > header {
-      margin-block: 0.75rem;
-    }
-
-    .wp-course-sticky {
-      position: sticky;
-      inset-block-start: 0;
-      z-index: 30;
-      margin-block: 0 0.75rem;
-      padding: 0.375rem;
-      border: 1px solid var(--border);
-      border-radius: var(--wp-radius-xl);
-      background-color: var(--card);
-      background-image: var(--wp-paper-grain);
-      box-shadow: var(--wp-shadow-xs);
-    }
-  }
   .wp-lesson-session :is([data-quiz-question], h2, h3) {
     scroll-margin-block-start: calc(var(--wp-course-nav-height, 4.5rem) + 5rem);
   }
@@ -759,43 +326,7 @@
 
   /* Named type styles from the design system token sheet */
 
-  /* Display — 40px bold for splash/celebration */
-  .wp-type-display {
-    font-family: var(--wp-font-base);
-    font-size: var(--wp-text-5xl);
-    font-weight: 700;
-    line-height: 1.15;
-    color: var(--wp-brand);
-    letter-spacing: -0.02em;
-  }
-
-  /* H1 — 32px bold (26px mobile via clamp or fluid) — Page titles */
-  .wp-type-h1 {
-    font-family: var(--wp-font-base);
-    font-size: var(--wp-text-4xl);
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -0.015em;
-  }
-
-  /* H2 — 24px bold — Primary unit cards, instruction prompts */
-  .wp-type-h2 {
-    font-family: var(--wp-font-base);
-    font-size: var(--wp-text-2xl);
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: -0.01em;
-  }
-
-  /* H3 — 18px semibold — Choice card titles, section headers */
-  .wp-type-h3 {
-    font-family: var(--wp-font-base);
-    font-size: var(--wp-text-lg);
-    font-weight: 600;
-    line-height: 1.3;
-  }
-
-  /* text-xl/bold (20px) — Legacy alias */
+  /* text-xl/bold (20px) — Page titles, section headers */
   .wp-type-page-title {
     font-family: var(--wp-font-base);
     font-size: var(--wp-text-xl);
@@ -803,7 +334,7 @@
     line-height: 1.4;
   }
 
-  /* text-lg/semibold (18px) — Legacy alias */
+  /* text-lg/semibold (18px) — Card titles, subheaders */
   .wp-type-card-title {
     font-family: var(--wp-font-base);
     font-size: var(--wp-text-lg);
@@ -819,7 +350,7 @@
     line-height: 1.5;
   }
 
-  /* Readable body text (16px) — Word definitions, sentences */
+  /* Readable body text; captions have their own smaller style. */
   .wp-type-body {
     font-family: var(--wp-font-base);
     font-size: var(--wp-text-md);
@@ -827,30 +358,21 @@
     line-height: 1.5;
   }
 
-  /* Small body text (14px) — Subtitles, meta badges, hints */
-  .wp-type-body-sm {
+  /* 14px — Captions and metadata; instructions use body text. */
+  .wp-type-caption {
     font-family: var(--wp-font-base);
     font-size: var(--wp-text-sm);
     font-weight: 500;
-    line-height: 1.45;
+    line-height: 1.5;
   }
 
-  /* Caption (12px) — Tab bar labels, timestamps, shortcuts */
-  .wp-type-caption {
-    font-family: var(--wp-font-base);
-    font-size: var(--wp-text-xs);
-    font-weight: 600;
-    line-height: 1.4;
-  }
-
-  /* Arabic body — Noto Sans Arabic with adequate headroom for diacritics */
+  /* Arabic body — Noto Sans Arabic, rose color with adequate typographic headroom */
   .wp-type-arabic,
   .font-arabic,
-  :lang(ar),
-  [dir="rtl"] {
+  :lang(ar) {
     font-family: var(--wp-font-arabic);
     line-height: var(--wp-line-height-arabic);
-    letter-spacing: var(--wp-letter-spacing-arabic) !important;
+    letter-spacing: var(--wp-letter-spacing-arabic);
   }
 
   .wp-type-arabic {
@@ -860,9 +382,13 @@
     direction: rtl;
   }
 
-  /* Tabular numbers for counters, timers, and progress meters */
-  .wp-tabular-nums {
-    font-variant-numeric: tabular-nums;
+  /* Display — large bold inter for splash/celebration */
+  .wp-type-display {
+    font-family: var(--wp-font-base);
+    font-size: var(--wp-text-5xl);
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--wp-brand);
   }
 
   /* ─── Surface utilities ─────────────────────────────────────────────────── */
@@ -924,18 +450,6 @@
   .shadow-wp-md {
     box-shadow: var(--wp-shadow-md);
   }
-  .shadow-wp-lg {
-    box-shadow: var(--wp-shadow-lg);
-  }
-  .shadow-wp-xl {
-    box-shadow: var(--wp-shadow-xl);
-  }
-}
-
-@media (prefers-contrast: more), (forced-colors: active), print {
-  :root {
-    --wp-paper-grain: none;
-  }
 }
 
 @layer base {
@@ -954,12 +468,6 @@
 html,
 body {
   overscroll-behavior-y: none;
-}
-
-/* Reflow the five destinations into rows when text enlargement needs more space. */
-.wp-bottom-tabs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 3rem), 1fr));
 }
 
 /* ─── Forced colors (Windows High Contrast) ────────────────────────────────

@@ -28,138 +28,152 @@
     ],
     "targetWordsArabic": [
       "لون",
-      "صفاء النبيذ",
+      "صفاء",
       "لزوجة",
       "آثار السائل على الكأس",
-      "حافة لون السائل",
+      "جنط",
       "عتامة",
       "درجة اللون",
-      "كثافة اللون",
-      "لمعان النبيذ",
+      "عمق",
+      "لمعان",
       "رواسب",
       "رائحة عطرية",
-      "باقة روائح النبيذ",
-      "رائحة النبيذ",
-      "ذو طابع زهري",
+      "باقة عطرية",
+      "أنف",
+      "زهري",
       "فاكهي"
     ],
     "usage": {
-      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
-      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
-      "textType": "educational-explanation",
-      "readingTarget": "100-190 words",
+      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
+      "textType": "service-notice",
+      "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Color", "Clarity", "Viscosity", "Legs"],
-          "scenario": "Color names the sample's visual appearance. Clarity concerns cloudiness, viscosity concerns flow, and legs are trails left on the glass.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color, Clarity, Viscosity, and Legs and choose the option that fits the situation.",
           "check": {
-            "question": "Which term names the visual appearance rather than flow or cloudiness?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Color", "Clarity", "Viscosity"],
             "expectedAnswer": "Color"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A clear closed vessel containing colored liquid on a neutral background, no quality claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Color as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rim", "Opacity", "Hue", "Depth"],
-          "scenario": "Rim here names the edge of the liquid's visible color. Opacity concerns light passage, hue the color family, and depth the color intensity.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rim, Opacity, Hue, and Depth and choose the option that fits the situation.",
           "check": {
-            "question": "Which term names the edge of the liquid's visible color in this report?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Rim", "Opacity", "Hue"],
             "expectedAnswer": "Rim"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A small tilted liquid sample showing its color edge against white; no drinking person or labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Rim as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Brilliance", "Sediment", "Aroma", "Bouquet"],
-          "scenario": "Brilliance describes visual brightness. Sediment is settled material; aroma and bouquet concern smell rather than this brightness.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brilliance, Sediment, Aroma, and Bouquet and choose the option that fits the situation.",
           "check": {
-            "question": "Which descriptor concerns visual brightness?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Brilliance", "Sediment", "Aroma"],
             "expectedAnswer": "Brilliance"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A clear liquid sample under soft light; sensory evaluation is supplied in the written report. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Brilliance as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Nose", "Floral", "Fruity"],
-          "scenario": "Nose refers to the sample's smell-related character. Floral and fruity name impressions resembling flowers and fruit, not proof of added ingredients.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nose, Floral, and Fruity and choose the option that fits the situation.",
           "check": {
-            "question": "Which term names the smell-related character?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Nose", "Floral", "Fruity"],
             "expectedAnswer": "Nose"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A closed neutral sample vessel; no photograph can establish the stated smell. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Nose as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Reading appearance and aroma notes",
-      "text": "The student interprets a fictional sensory report without tasting a sample. Color describes its appearance; clarity concerns cloudiness, and viscosity concerns resistance to flow. Legs are trails of liquid on a glass, not proof of quality or sweetness. Rim here means the edge of the liquid's visible color, not the glass's physical rim. Opacity concerns how much light passes through. Hue describes the color family; depth its intensity, and brilliance its visual brightness. Sediment means settled particles. Aroma, bouquet and nose are smell-related descriptors whose usage can vary. Floral and fruity describe impressions resembling flowers or fruit rather than prove an ingredient was added. The report gives the intended sense of each word. A photograph cannot establish an aroma or independently verify the written assessment.",
-      "imageBrief": "Support for Reading appearance and aroma notes. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
+      "title": "Wine Tasting: Practical Information",
+      "text": "At the wine tasting, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Color, Clarity, Viscosity, and Legs. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rim, Opacity, Hue, and Depth. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Brilliance, Sediment, Aroma, and Bouquet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Nose, Floral, and Fruity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Wine Tasting. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Color names the sample's visual appearance. Clarity concerns cloudiness, viscosity concerns flow, and legs are trails left on the glass.\nWhich term names the visual appearance rather than flow or cloudiness?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color, Clarity, Viscosity, and Legs and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Color",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Rim here names the edge of the liquid's visible color. Opacity concerns light passage, hue the color family, and depth the color intensity.\nWhich term names the edge of the liquid's visible color in this report?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rim, Opacity, Hue, and Depth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Rim",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Brilliance describes visual brightness. Sediment is settled material; aroma and bouquet concern smell rather than this brightness.\nWhich descriptor concerns visual brightness?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brilliance, Sediment, Aroma, and Bouquet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Brilliance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Nose refers to the sample's smell-related character. Floral and fruity name impressions resembling flowers and fruit, not proof of added ingredients.\nWhich term names the smell-related character?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nose, Floral, and Fruity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Nose",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "The student interprets a fictional sensory report without tasting a sample. Color describes its appearance; clarity concerns cloudiness, and viscosity concerns resistance to flow. Legs are trails of liquid on a glass, not proof of quality or sweetness. Rim here means the edge of the liquid's visible color, not the glass's physical rim. Opacity concerns how much light passes through. Hue describes the color family; depth its intensity, and brilliance its visual brightness. Sediment means settled particles. Aroma, bouquet and nose are smell-related descriptors whose usage can vary. Floral and fruity describe impressions resembling flowers or fruit rather than prove an ingredient was added. The report gives the intended sense of each word. A photograph cannot establish an aroma or independently verify the written assessment.\nDo legs establish quality or sweetness?",
-        "answer": "No; the visible trails do not establish those properties.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading-specific-information"
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
       },
       {
-        "prompt": "Explain the difference between “Color” and “Clarity” using the supplied examples.",
-        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
-        "questionType": "comparison",
-        "responseMode": "sentence",
-        "contextTag": "guided-comparison"
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Color"
       },
       {
-        "prompt": "Write an original sentence using “Color” in its supplied agriculture and hospitality terminology sense.",
-        "answer": "Accept an accurate original sentence in the supplied sense. Example: Color names the sample's visual appearance. Clarity concerns cloudiness, viscosity concerns flow, and legs are trails left on the glass.",
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Viscosity"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Red Wine” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the wine tasting task. Use Color, Clarity, Viscosity, Legs, Rim, Opacity, Hue, Depth, Brilliance, Sediment, Aroma, Bouquet, Nose, Floral, and Fruity in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "guided-production"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Reading appearance and aroma notes",
-      "idea": "Narrated comparison with a pause to explain the stated difference.",
-      "scriptStarter": "The student interprets a fictional sensory report without tasting a sample. Color describes its appearance; clarity concerns cloudiness, and viscosity concerns resistance to flow. Legs are trails of liquid on a glass, not proof of quality or sweetness. Rim here means the edge of the liquid's visible color, not the glass's physical rim. Opacity concerns how much light passes through. Hue describes the color family; depth its intensity, and brilliance its visual brightness. Sediment means settled particles. Aroma, bouquet and nose are smell-related descriptors whose usage can vary. Floral and fruity describe impressions resembling flowers or fruit rather than prove an ingredient was added. The report gives the intended sense of each word. A photograph cannot establish an aroma or independently verify the written assessment. Ask: Do legs establish quality or sweetness?"
+      "title": "Wine Tasting: In Context",
+      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
+      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from wine tasting in cultural or industry texts."
     },
     "spacedReview": "1 lesson(s) back: Red Wine, White Wine from winemaking-3\n3 lesson(s) back: Crushing, Pressing from winemaking-1\n7 lesson(s) back: Fashion Editor, Photographer from runway-show-3"
   },
@@ -191,139 +205,153 @@
       "Length"
     ],
     "targetWordsArabic": [
-      "ذو طابع ترابي",
-      "ذو نكهة أو رائحة تشبه التوابل",
-      "ذو طابع عشبي",
+      "ترابي",
+      "متبّل",
+      "عشبي",
       "معدني",
       "ذو طابع خشبي من البلوط",
-      "قوام النبيذ",
+      "جسم",
       "تانين",
       "حموضة",
       "حلاوة",
-      "الأثر المتبقي للنكهة",
-      "توازن مكونات النبيذ",
-      "تعدد الخصائص العطرية والنكهية",
-      "بنية النبيذ",
-      "الإحساس بالقوام في الفم",
-      "مدة استمرار النكهة"
+      "مذاق نهائي",
+      "توازن",
+      "تعقيد",
+      "بنية",
+      "إحساس في الفم",
+      "استمرار النكهة"
     ],
     "usage": {
-      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
-      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
-      "textType": "educational-explanation",
-      "readingTarget": "100-190 words",
+      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
+      "textType": "workplace-email",
+      "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Earthy", "Spicy", "Herbaceous", "Mineral"],
-          "scenario": "Earthy describes a soil-like sensory impression in the report. Spicy, herbaceous and mineral refer to other comparisons, not added ingredients.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthy, Spicy, Herbaceous, and Mineral and choose the option that fits the situation.",
           "check": {
-            "question": "Which descriptor names the soil-like impression?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Earthy", "Spicy", "Herbaceous"],
             "expectedAnswer": "Earthy"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A closed plain sample container; the smell comparison is supplied by text, not a pile of soil. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Earthy as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Oaky", "Body", "Tannin", "Acidity"],
-          "scenario": "Oaky concerns an impression associated with oak contact. Body concerns fullness, tannin can contribute astringency, and acidity concerns acid-related character.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oaky, Body, Tannin, and Acidity and choose the option that fits the situation.",
           "check": {
-            "question": "Which descriptor concerns the oak-associated impression?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Oaky", "Body", "Tannin"],
             "expectedAnswer": "Oaky"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. An oak barrel beside a closed sample; contact history and sensory impression require records. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Oaky as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sweetness", "Finish", "Balance", "Complexity"],
-          "scenario": "Sweetness concerns sweet character. Finish describes the remaining impression, balance its components' relation, and complexity their multiple interacting characteristics.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sweetness, Finish, Balance, and Complexity and choose the option that fits the situation.",
           "check": {
-            "question": "Which term concerns sweet character?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Sweetness", "Finish", "Balance"],
             "expectedAnswer": "Sweetness"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A closed plain sample vessel; sweetness is not inferred from its color. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Sweetness as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Structure", "Mouthfeel", "Length"],
-          "scenario": "Structure concerns the overall relation of components. Mouthfeel concerns tactile sensation, while length describes persistence of the impression.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Structure, Mouthfeel, and Length and choose the option that fits the situation.",
           "check": {
-            "question": "Which term concerns the overall relation of the components?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Structure", "Mouthfeel", "Length"],
             "expectedAnswer": "Structure"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A neutral sensory-report desk with blank pages; the relationship is explained in text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Structure as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Interpreting sensory comparisons",
-      "text": "The report describes earthy, spicy, herbaceous, mineral and oaky impressions. These are comparisons with familiar smells or flavors, not statements that soil, spices or stones were added. Body concerns perceived weight or fullness. Tannin can contribute astringency; acidity and sweetness concern different properties. Finish describes the impression remaining after tasting, while balance concerns the relation among components. Complexity concerns multiple interacting characteristics. Structure concerns their overall relationship, and mouthfeel concerns tactile sensations in the mouth. Length describes how long the impression persists rather than a physical distance. The student asks which part of the written report supports a claim. These subjective descriptors can differ among assessors. The exercise practices understanding a report and does not require consumption or rank a product's quality.",
-      "imageBrief": "Support for Interpreting sensory comparisons. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
+      "title": "Preparing for the Next Task: Wine Tasting",
+      "text": "At the wine tasting, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Earthy, Spicy, Herbaceous, and Mineral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Oaky, Body, Tannin, and Acidity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sweetness, Finish, Balance, and Complexity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Structure, Mouthfeel, and Length. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Wine Tasting. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Earthy describes a soil-like sensory impression in the report. Spicy, herbaceous and mineral refer to other comparisons, not added ingredients.\nWhich descriptor names the soil-like impression?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthy, Spicy, Herbaceous, and Mineral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Earthy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Oaky concerns an impression associated with oak contact. Body concerns fullness, tannin can contribute astringency, and acidity concerns acid-related character.\nWhich descriptor concerns the oak-associated impression?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oaky, Body, Tannin, and Acidity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Oaky",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Sweetness concerns sweet character. Finish describes the remaining impression, balance its components' relation, and complexity their multiple interacting characteristics.\nWhich term concerns sweet character?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sweetness, Finish, Balance, and Complexity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Sweetness",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Structure concerns the overall relation of components. Mouthfeel concerns tactile sensation, while length describes persistence of the impression.\nWhich term concerns the overall relation of the components?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Structure, Mouthfeel, and Length and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Structure",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "The report describes earthy, spicy, herbaceous, mineral and oaky impressions. These are comparisons with familiar smells or flavors, not statements that soil, spices or stones were added. Body concerns perceived weight or fullness. Tannin can contribute astringency; acidity and sweetness concern different properties. Finish describes the impression remaining after tasting, while balance concerns the relation among components. Complexity concerns multiple interacting characteristics. Structure concerns their overall relationship, and mouthfeel concerns tactile sensations in the mouth. Length describes how long the impression persists rather than a physical distance. The student asks which part of the written report supports a claim. These subjective descriptors can differ among assessors. The exercise practices understanding a report and does not require consumption or rank a product's quality.\nDo mineral notes prove that stones were added?",
-        "answer": "No; the word expresses a sensory comparison rather than an ingredient claim.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading-specific-information"
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
       },
       {
-        "prompt": "Explain the difference between “Earthy” and “Spicy” using the supplied examples.",
-        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
-        "questionType": "comparison",
-        "responseMode": "sentence",
-        "contextTag": "guided-comparison"
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Earthy"
       },
       {
-        "prompt": "Write an original sentence using “Earthy” in its supplied agriculture and hospitality terminology sense.",
-        "answer": "Accept an accurate original sentence in the supplied sense. Example: Earthy describes a soil-like sensory impression in the report. Spicy, herbaceous and mineral refer to other comparisons, not added ingredients.",
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Herbaceous"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Color” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the wine tasting task. Use Earthy, Spicy, Herbaceous, Mineral, Oaky, Body, Tannin, Acidity, Sweetness, Finish, Balance, Complexity, Structure, Mouthfeel, and Length in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "guided-production"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Interpreting sensory comparisons",
-      "idea": "Narrated comparison with a pause to explain the stated difference.",
-      "scriptStarter": "The report describes earthy, spicy, herbaceous, mineral and oaky impressions. These are comparisons with familiar smells or flavors, not statements that soil, spices or stones were added. Body concerns perceived weight or fullness. Tannin can contribute astringency; acidity and sweetness concern different properties. Finish describes the impression remaining after tasting, while balance concerns the relation among components. Complexity concerns multiple interacting characteristics. Structure concerns their overall relationship, and mouthfeel concerns tactile sensations in the mouth. Length describes how long the impression persists rather than a physical distance. The student asks which part of the written report supports a claim. These subjective descriptors can differ among assessors. The exercise practices understanding a report and does not require consumption or rank a product's quality. Ask: Do mineral notes prove that stones were added?"
+      "title": "Wine Tasting: In Context",
+      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
+      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from wine tasting in cultural or industry texts."
     },
     "spacedReview": "1 lesson(s) back: Color, Clarity from wine-tasting-1\n3 lesson(s) back: Destemmer, Pump from winemaking-2\n7 lesson(s) back: Cabernet Sauvignon, Merlot from vineyard-1"
   },
@@ -355,13 +383,13 @@
       "Appetizer"
     ],
     "targetWordsArabic": [
-      "جاف قليل السكر المتبقي",
+      "جاف",
       "حلو",
-      "منعش ذو حموضة واضحة",
-      "ناعم المذاق",
+      "منعش وحاد",
+      "ناعم",
       "مخملي",
       "قوي",
-      "رقيق المذاق",
+      "رقيق",
       "غني",
       "خفيف القوام",
       "ممتلئ القوام",
@@ -372,122 +400,136 @@
       "مقبّلات"
     ],
     "usage": {
-      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
-      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
-      "textType": "educational-explanation",
-      "readingTarget": "100-190 words",
+      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
+      "textType": "dialogue",
+      "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dry", "Sweet", "Crisp", "Smooth"],
-          "scenario": "Dry concerns low residual sugar under the relevant classification. Sweet concerns sweetness, crisp suggests fresh acidity, and smooth suggests gentle texture.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry, Sweet, Crisp, and Smooth and choose the option that fits the situation.",
           "check": {
-            "question": "Which descriptor concerns low residual sugar?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Dry", "Sweet", "Crisp"],
             "expectedAnswer": "Dry"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A plain closed sample bottle; residual sugar must be documented, not inferred visually. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Dry as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Velvety", "Bold", "Delicate", "Rich"],
-          "scenario": "Velvety is the texture comparison with velvet. Bold concerns intensity, delicate subtle character, and rich concentration.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Velvety, Bold, Delicate, and Rich and choose the option that fits the situation.",
           "check": {
-            "question": "Which descriptor compares texture with velvet?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Velvety", "Bold", "Delicate"],
             "expectedAnswer": "Velvety"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A closed sample vessel; no velvet cloth used as invented proof of the descriptor. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Velvety as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Light", "Full-Bodied", "Cheese Pairing", "Meat Pairing"],
-          "scenario": "Light describes relatively delicate body, while full-bodied describes fuller perceived weight. Cheese pairing and meat pairing name meal combinations.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Light, Full-Bodied, Cheese Pairing, and Meat Pairing and choose the option that fits the situation.",
           "check": {
-            "question": "Which descriptor concerns relatively delicate body?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Light", "Full-Bodied", "Cheese Pairing"],
             "expectedAnswer": "Light"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A closed neutral sample vessel; perceived body is written information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Light as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Seafood Pairing", "Dessert Pairing", "Appetizer"],
-          "scenario": "Seafood pairing names matching a beverage with seafood. Dessert pairing concerns dessert, while appetizer names an opening food course.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seafood Pairing, Dessert Pairing, and Appetizer and choose the option that fits the situation.",
           "check": {
-            "question": "Which expression names the seafood combination?",
+            "question": "Which option best identifies the process or concept illustrated by the main action?",
             "options": ["Seafood Pairing", "Dessert Pairing", "Appetizer"],
             "expectedAnswer": "Seafood Pairing"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A plain seafood dish beside a closed neutral beverage vessel, no consumption or health claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff illustrating Seafood Pairing through a realistic adult task, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Separating descriptors from menu pairings",
-      "text": "The student compares words in a fictional menu discussion. Dry concerns low residual sugar under the relevant classification; sweet concerns greater sweetness. Crisp suggests fresh acidity, smooth suggests a gentle texture, and velvety compares texture with velvet. Bold and delicate describe different intensities, while rich concerns concentration. Light and full-bodied concern perceived body rather than the bottle's weight. Cheese pairing, meat pairing, seafood pairing and dessert pairing name proposed flavor combinations, not universal rules. An appetizer is a small opening food course. The student asks whether the description concerns sweetness, texture, body or the meal. Preference and dietary needs can affect a pairing. The class interprets terminology without recommending a product, requiring alcohol consumption or claiming that every assessor will experience the same qualities.",
-      "imageBrief": "Support for Separating descriptors from menu pairings. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
+      "title": "Getting the Information You Need: Wine Tasting",
+      "text": "At the wine tasting, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Dry, Sweet, Crisp, and Smooth. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Velvety, Bold, Delicate, and Rich. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Light, Full-Bodied, Cheese Pairing, and Meat Pairing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Seafood Pairing, Dessert Pairing, and Appetizer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Wine Tasting. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Dry concerns low residual sugar under the relevant classification. Sweet concerns sweetness, crisp suggests fresh acidity, and smooth suggests gentle texture.\nWhich descriptor concerns low residual sugar?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry, Sweet, Crisp, and Smooth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Dry",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Velvety is the texture comparison with velvet. Bold concerns intensity, delicate subtle character, and rich concentration.\nWhich descriptor compares texture with velvet?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Velvety, Bold, Delicate, and Rich and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Velvety",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Light describes relatively delicate body, while full-bodied describes fuller perceived weight. Cheese pairing and meat pairing name meal combinations.\nWhich descriptor concerns relatively delicate body?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Light, Full-Bodied, Cheese Pairing, and Meat Pairing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Light",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Seafood pairing names matching a beverage with seafood. Dessert pairing concerns dessert, while appetizer names an opening food course.\nWhich expression names the seafood combination?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seafood Pairing, Dessert Pairing, and Appetizer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
         "answer": "Seafood Pairing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "The student compares words in a fictional menu discussion. Dry concerns low residual sugar under the relevant classification; sweet concerns greater sweetness. Crisp suggests fresh acidity, smooth suggests a gentle texture, and velvety compares texture with velvet. Bold and delicate describe different intensities, while rich concerns concentration. Light and full-bodied concern perceived body rather than the bottle's weight. Cheese pairing, meat pairing, seafood pairing and dessert pairing name proposed flavor combinations, not universal rules. An appetizer is a small opening food course. The student asks whether the description concerns sweetness, texture, body or the meal. Preference and dietary needs can affect a pairing. The class interprets terminology without recommending a product, requiring alcohol consumption or claiming that every assessor will experience the same qualities.\nDo light and full-bodied describe bottle weight?",
-        "answer": "No; they describe perceived body.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading-specific-information"
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
       },
       {
-        "prompt": "Explain the difference between “Dry” and “Sweet” using the supplied examples.",
-        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
-        "questionType": "comparison",
-        "responseMode": "sentence",
-        "contextTag": "guided-comparison"
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Dry"
       },
       {
-        "prompt": "Write an original sentence using “Dry” in its supplied agriculture and hospitality terminology sense.",
-        "answer": "Accept an accurate original sentence in the supplied sense. Example: Dry concerns low residual sugar under the relevant classification. Sweet concerns sweetness, crisp suggests fresh acidity, and smooth suggests gentle texture.",
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Crisp"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Earthy” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the wine tasting task. Use Dry, Sweet, Crisp, Smooth, Velvety, Bold, Delicate, Rich, Light, Full-Bodied, Cheese Pairing, Meat Pairing, Seafood Pairing, Dessert Pairing, and Appetizer in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "guided-production"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Separating descriptors from menu pairings",
-      "idea": "Narrated comparison with a pause to explain the stated difference.",
-      "scriptStarter": "The student compares words in a fictional menu discussion. Dry concerns low residual sugar under the relevant classification; sweet concerns greater sweetness. Crisp suggests fresh acidity, smooth suggests a gentle texture, and velvety compares texture with velvet. Bold and delicate describe different intensities, while rich concerns concentration. Light and full-bodied concern perceived body rather than the bottle's weight. Cheese pairing, meat pairing, seafood pairing and dessert pairing name proposed flavor combinations, not universal rules. An appetizer is a small opening food course. The student asks whether the description concerns sweetness, texture, body or the meal. Preference and dietary needs can affect a pairing. The class interprets terminology without recommending a product, requiring alcohol consumption or claiming that every assessor will experience the same qualities. Ask: Do light and full-bodied describe bottle weight?"
+      "title": "Wine Tasting: In Context",
+      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
+      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from wine tasting in cultural or industry texts."
     },
     "spacedReview": "1 lesson(s) back: Earthy, Spicy from wine-tasting-2\n3 lesson(s) back: Red Wine, White Wine from winemaking-3\n7 lesson(s) back: Irrigation, Canopy from vineyard-2"
   },
@@ -516,84 +558,98 @@
       "لوح تقديم الجبن"
     ],
     "usage": {
-      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
-      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
-      "textType": "educational-explanation",
-      "readingTarget": "100-190 words",
+      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
+      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
+      "textType": "service-notice",
+      "readingTarget": "150-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Main Course", "Palate Cleanser", "Tasting Menu", "Wine Flight"],
-          "scenario": "The main course is the principal dish. A palate cleanser separates impressions, a tasting menu sequences small courses, and a wine flight groups small beverage samples.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Main Course, Palate Cleanser, Tasting Menu, and Wine Flight and choose the option that fits the situation.",
           "check": {
-            "question": "Which term names the principal dish?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Main Course", "Palate Cleanser", "Tasting Menu"],
             "expectedAnswer": "Main Course"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One plain plated meal on an empty table; menu role comes from written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Main Course as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cheese Board"],
-          "scenario": "The cheese board holds an assortment of cheeses. The board's appearance does not establish ingredients, allergens or storage conditions.",
+          "scenario": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cheese Board and choose the option that fits the situation.",
           "check": {
-            "question": "Which serving item holds the cheeses?",
+            "question": "Which option best identifies the item or feature central to the adult's task?",
             "options": ["Cheese Board", "Main Course", "Palate Cleanser"],
             "expectedAnswer": "Cheese Board"
           },
-          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A simple cheese-serving board with a few distinct cheese pieces, no labels or people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cheese Board as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Understanding a menu's organization",
-      "text": "A hospitality worksheet presents a fictional menu. The main course is the meal's principal dish. A palate cleanser is a neutral food or drink intended to reduce lingering flavors between different items. A tasting menu presents several small courses. A wine flight is a group of small samples arranged for comparison, whereas a cheese board is a serving board holding cheeses. The learner can describe the arrangement without ordering or tasting anything. The class asks how the menu could accommodate a request for an alcohol-free alternative and clear dietary information. Availability and suitable substitutions depend on the venue. The worksheet teaches vocabulary and polite questions; it does not establish the contents, allergens, age suitability or safety of an actual menu item.",
-      "imageBrief": "Support for Understanding a menu's organization. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
+      "title": "Wine Tasting: Practical Information",
+      "text": "At the wine tasting, a adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Main Course, Palate Cleanser, Tasting Menu, and Wine Flight. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cheese Board. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
+      "imageBrief": "Create one coherent C1-level visual for the reading about Wine Tasting. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "The main course is the principal dish. A palate cleanser separates impressions, a tasting menu sequences small courses, and a wine flight groups small beverage samples.\nWhich term names the principal dish?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Main Course, Palate Cleanser, Tasting Menu, and Wine Flight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Main Course",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The cheese board holds an assortment of cheeses. The board's appearance does not establish ingredients, allergens or storage conditions.\nWhich serving item holds the cheeses?",
+        "prompt": "In the wine tasting setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cheese Board and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "Cheese Board",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "A hospitality worksheet presents a fictional menu. The main course is the meal's principal dish. A palate cleanser is a neutral food or drink intended to reduce lingering flavors between different items. A tasting menu presents several small courses. A wine flight is a group of small samples arranged for comparison, whereas a cheese board is a serving board holding cheeses. The learner can describe the arrangement without ordering or tasting anything. The class asks how the menu could accommodate a request for an alcohol-free alternative and clear dietary information. Availability and suitable substitutions depend on the venue. The worksheet teaches vocabulary and polite questions; it does not establish the contents, allergens, age suitability or safety of an actual menu item.\nHow does a wine flight differ from a tasting menu?",
-        "answer": "A flight groups beverage samples; a tasting menu sequences small food courses.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading-specific-information"
+        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
+        "answer": "The central issue described"
       },
       {
-        "prompt": "Explain the difference between “Main Course” and “Palate Cleanser” using the supplied examples.",
-        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
-        "questionType": "comparison",
-        "responseMode": "sentence",
-        "contextTag": "guided-comparison"
+        "prompt": "Precision: Which target term is most useful for a precise explanation?",
+        "answer": "Main Course"
       },
       {
-        "prompt": "Write an original sentence using “Main Course” in its supplied agriculture and hospitality terminology sense.",
-        "answer": "Accept an accurate original sentence in the supplied sense. Example: The main course is the principal dish. A palate cleanser separates impressions, a tasting menu sequences small courses, and a wine flight groups small beverage samples.",
+        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
+        "answer": "Tasting Menu"
+      },
+      {
+        "prompt": "Implication: What implication follows from the way the concepts are connected?",
+        "answer": "A text-supported implication"
+      },
+      {
+        "prompt": "Synthesis: How do two target terms work together in the text?",
+        "answer": "A synthesized explanation"
+      },
+      {
+        "prompt": "Production: Give a concise professional summary using at least three target terms.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Dry” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the wine tasting task. Use Main Course, Palate Cleanser, Tasting Menu, Wine Flight, and Cheese Board in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "guided-production"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Understanding a menu's organization",
-      "idea": "Narrated comparison with a pause to explain the stated difference.",
-      "scriptStarter": "A hospitality worksheet presents a fictional menu. The main course is the meal's principal dish. A palate cleanser is a neutral food or drink intended to reduce lingering flavors between different items. A tasting menu presents several small courses. A wine flight is a group of small samples arranged for comparison, whereas a cheese board is a serving board holding cheeses. The learner can describe the arrangement without ordering or tasting anything. The class asks how the menu could accommodate a request for an alcohol-free alternative and clear dietary information. Availability and suitable substitutions depend on the venue. The worksheet teaches vocabulary and polite questions; it does not establish the contents, allergens, age suitability or safety of an actual menu item. Ask: How does a wine flight differ from a tasting menu?"
+      "title": "Wine Tasting: In Context",
+      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
+      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from wine tasting in cultural or industry texts."
     },
     "spacedReview": "1 lesson(s) back: Dry, Sweet from wine-tasting-3\n3 lesson(s) back: Color, Clarity from wine-tasting-1\n7 lesson(s) back: Vintner, Viticulturist from vineyard-3"
   }

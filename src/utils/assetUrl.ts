@@ -1,6 +1,4 @@
 import { FIGMA_IMAGE_REPLACEMENTS } from "../generated/figmaImageReplacements";
-import vocabularySelections from "../app/generated/reviewedVocabularyImageSelections.json";
-import localAssetOverrides from "../app/generated/localAssetOverrides.json";
 
 /**
  * Resolves an app-relative asset path against Vite's configured base.
@@ -14,10 +12,7 @@ import localAssetOverrides from "../app/generated/localAssetOverrides.json";
  * Left alone: absolute URLs (a CDN, a data: URI) and paths that already carry
  * the base, so calling this twice is safe.
  */
-const DEFAULT_CDN_BASE = "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev";
-const PUBLIC_ASSET_BASE_URL = (
-  import.meta.env?.VITE_ASSET_BASE_URL ?? (import.meta.env?.MODE === "test" ? "" : DEFAULT_CDN_BASE)
-).replace(/\/+$/, "");
+const PUBLIC_ASSET_BASE_URL = (import.meta.env?.VITE_ASSET_BASE_URL ?? "").replace(/\/+$/, "");
 
 export function resolveAssetUrl(path: string): string {
   if (!path) return path;
@@ -25,21 +20,14 @@ export function resolveAssetUrl(path: string): string {
     return path;
   }
 
-  const originalRelative = path.replace(/^\.?\//, "");
-  // A human-approved display choice preserves the original vocabulary mapping
-  // and its R2 object while selecting the preferred immutable reference.
-  const selections: Readonly<Record<string, string>> = vocabularySelections;
-  const relative = selections[originalRelative] ?? originalRelative;
-  if (relative !== originalRelative) path = relative;
+  const relative = path.replace(/^\.?\//, "");
 
   // Reviewed usage illustrations use immutable, content-hashed object keys.
-  // Shared references have their own namespace; unverified paths stay local.
+  // Keep this separate from vocabulary and earlier pilot media mappings.
   if (
     import.meta.env.MODE !== "test" &&
     PUBLIC_ASSET_BASE_URL &&
-    /^(?:(?:usage-illustrations|question-images)\/v1|question-images\/v2|question-images\/v3\/shared|question-images\/v3(?=\/sentence-repair-20261026-))\/[a-z0-9-]+\/[a-f0-9]{40,64}\.webp$/.test(
-      relative
-    )
+    /^(?:usage-illustrations|question-images)\/v1\/[a-z0-9-]+\/[a-f0-9]{64}\.webp$/.test(relative)
   ) {
     return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
   }
@@ -66,27 +54,12 @@ export function resolveAssetUrl(path: string): string {
     return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
   }
 
-  // Authentic conversational scenario audio and WebVTT subtitle files are hosted
-  // on Cloudflare R2 under assets/audio/scenarios/...
-  if (
-    import.meta.env.MODE !== "test" &&
-    PUBLIC_ASSET_BASE_URL &&
-    /^assets\/audio\/scenarios\//.test(relative)
-  ) {
-    return `${PUBLIC_ASSET_BASE_URL}/${relative}`;
-  }
-
-  // Unuploaded local asset replacements stay on the local origin until published to R2.
-  const LOCAL_ASSET_OVERRIDES = new Set(localAssetOverrides);
-
   // Media is uploaded to R2 under a stable prefix. Keep application assets
   // (for example /release-notes.json) on the Vite origin.
-  // Unuploaded local replacements remain on the local origin until published.
   if (
     (import.meta.env.MODE !== "test" &&
       PUBLIC_ASSET_BASE_URL &&
-      !LOCAL_ASSET_OVERRIDES.has(relative) &&
-      /^(?:word-images|scene-images|phrase-images)\//.test(relative)) ||
+      /^(?:word-images|scene-images)\//.test(relative)) ||
     /^pronunciation\//.test(relative)
   ) {
     if (/^pronunciation\//.test(relative)) return `${PUBLIC_ASSET_BASE_URL}/${relative}`;

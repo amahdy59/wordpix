@@ -1,6 +1,6 @@
 import { useCourseNavigationHeight } from "./useCourseNavigationHeight";
+import { BookOpen, BookA, CheckCircle2, MessagesSquare } from "lucide-react";
 import { useI18n } from "../../i18n";
-import type { KeyboardEvent } from "react";
 
 export interface CourseNavigationStage {
   id: string;
@@ -10,7 +10,7 @@ export interface CourseNavigationStage {
   completed?: boolean;
 }
 
-/** One visible progression; course-owned identities and unlocking stay unchanged. */
+/** Groups presentation only; persisted stage IDs and unlocking remain course-owned. */
 export function CourseLessonNavigation({
   stages,
   currentIndex,
@@ -22,79 +22,73 @@ export function CourseLessonNavigation({
 }) {
   const { t } = useI18n();
   const navigationRef = useCourseNavigationHeight();
-  const completedCount = stages.filter((stage) => stage.completed).length;
-  const dismissOnEscape = (event: KeyboardEvent<HTMLElement>) => {
-    const details = event.currentTarget.closest("details");
-    if (event.key !== "Escape" || !details?.open) return;
-    event.preventDefault();
-    details.open = false;
-    details.querySelector("summary")?.focus();
-  };
+  const activeGroup = stages[currentIndex]?.group ?? 0;
+  const icons = [BookOpen, BookA, CheckCircle2, MessagesSquare];
+  const keys = ["input", "language", "practice", "apply"];
+  const currentStages = stages
+    .map((stage, index) => ({ ...stage, index }))
+    .filter((stage) => stage.group === activeGroup);
   return (
-    <nav ref={navigationRef} className="wp-course-nav" aria-label={t("courseLesson.navigation")}>
-      <details className="group">
-        <summary
-          onKeyDown={dismissOnEscape}
-          className="flex min-h-11 cursor-pointer flex-wrap items-center justify-between gap-2 rounded-xl px-2 text-base font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-        >
-          <span className="min-w-0 flex-1" aria-live="polite">
-            {t("lessonShell.step", {
-              number: currentIndex + 1,
-              total: stages.length,
-              name: stages[currentIndex]?.label ?? "",
-            })}
-          </span>
-          <span className="text-sm text-primary">{t("lessonShell.allSteps")}</span>
-        </summary>
-        <ol className="grid max-h-[50dvh] gap-1 overflow-y-auto p-2 sm:grid-cols-2">
-          {stages.map((stage, index) => (
-            <li key={stage.id}>
-              <button
-                type="button"
-                onKeyDown={dismissOnEscape}
-                disabled={stage.locked}
-                aria-current={index === currentIndex ? "step" : undefined}
-                onClick={(event) => {
-                  onSelect(index);
-                  const details = event.currentTarget.closest("details");
-                  if (details) {
-                    details.open = false;
-                    details.querySelector("summary")?.focus();
-                  }
-                }}
-                className={`min-h-11 w-full rounded-xl px-3 py-2 text-start text-base font-semibold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-60 ${index === currentIndex ? "bg-secondary text-primary" : "text-foreground hover:bg-muted"}`}
-              >
-                {t("lessonShell.step", {
-                  number: index + 1,
-                  total: stages.length,
-                  name: stage.label,
-                })}
-                {stage.completed
-                  ? ` · ${t("lessonShell.completed")}`
-                  : stage.locked
-                    ? ` · ${t("lessonShell.locked")}`
-                    : ""}
-              </button>
-            </li>
+    <nav
+      ref={navigationRef}
+      className="wp-course-nav space-y-1"
+      aria-label={t("courseLesson.navigation")}
+    >
+      <div className="grid grid-cols-4 gap-1">
+        {keys.map((key, group) => {
+          const Icon = icons[group];
+          const firstAvailable = stages.findIndex(
+            (stage) => stage.group === group && !stage.locked
+          );
+          return (
+            <button
+              key={key}
+              type="button"
+              disabled={firstAvailable < 0}
+              aria-label={t(`courseLesson.${key}`)}
+              aria-current={activeGroup === group ? "step" : undefined}
+              onClick={() => {
+                if (firstAvailable >= 0 && activeGroup !== group) onSelect(firstAvailable);
+              }}
+              className={`flex min-h-11 min-w-0 items-center justify-center gap-2 rounded-lg px-1 py-1 text-sm font-bold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 ${activeGroup === group ? "bg-primary text-primary-foreground" : "bg-card text-foreground hover:bg-muted"}`}
+            >
+              <Icon className="hidden size-4 shrink-0 sm:block" aria-hidden />
+              <span className="hidden sm:inline">{t(`courseLesson.${key}`)}</span>
+              <span className="sm:hidden">
+                {t(`courseLesson.${key === "practice" ? key : `${key}Short`}`)}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+      {currentStages.length > 1 && (
+        <div className="flex flex-wrap gap-1 px-1 py-1">
+          {currentStages.map((stage) => (
+            <button
+              key={stage.id}
+              type="button"
+              disabled={stage.locked}
+              aria-current={stage.index === currentIndex ? "step" : undefined}
+              onClick={() => onSelect(stage.index)}
+              className={`min-h-11 shrink-0 rounded-lg border px-3 text-sm font-semibold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed disabled:opacity-50 ${stage.index === currentIndex ? "border-primary bg-secondary text-primary" : "border-border text-foreground hover:bg-muted"}`}
+            >
+              {stage.label}
+            </button>
           ))}
-        </ol>
-      </details>
+        </div>
+      )}
       <div
         role="progressbar"
         aria-label={t("courseLesson.progress")}
         aria-valuemin={0}
         aria-valuemax={stages.length}
-        aria-valuenow={completedCount}
-        aria-valuetext={t("lessonShell.completedSteps", {
-          completed: completedCount,
-          total: stages.length,
-        })}
+        aria-valuenow={stages.filter((stage) => stage.completed).length}
         className="h-1 overflow-hidden rounded-full bg-muted"
       >
         <div
           className="h-full bg-primary motion-safe:transition-[width]"
           style={{
-            width: `${(100 * completedCount) / Math.max(1, stages.length)}%`,
+            width: `${(100 * stages.filter((stage) => stage.completed).length) / Math.max(1, stages.length)}%`,
           }}
         />
       </div>

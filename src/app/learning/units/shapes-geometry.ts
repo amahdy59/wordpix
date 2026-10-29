@@ -131,7 +131,7 @@ export const SHAPES_GEOMETRY_LEARNING: UnitLearningMaterials = {
       phrase: "a well-rounded person",
       kind: "idiom",
       meaning: "Someone with diverse skills and interests.",
-      example: "He's a well-rounded person — like a sphere of knowledge and talent.",
+      example: "She's a well-rounded person — like a sphere of knowledge and talent.",
     },
     {
       id: "shapes-geometry-the-whole-nine-yards",

@@ -36,27 +36,7 @@ export type { QuizQuestion, QuizResult } from "./CurriculumQuizEngine";
 export { CurriculumTopicCard } from "./CurriculumTopicCard";
 export type { CurriculumTopicCardProps } from "./CurriculumTopicCard";
 
-export { SentenceQuestionSupport, SentenceMeaningSupport } from "./SentenceQuestionSupport";
-export type { SentenceMeaningSupportProps } from "./SentenceQuestionSupport";
 export { HelpDisclosure } from "./HelpDisclosure";
-export {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuToggleItem,
-  DropdownMenuSeparator,
-  DropdownMenuLabel,
-} from "./DropdownMenu";
-export type {
-  DropdownMenuProps,
-  DropdownMenuTriggerProps,
-  DropdownMenuContentProps,
-  DropdownMenuItemProps,
-  DropdownMenuToggleItemProps,
-} from "./DropdownMenu";
-export { LessonActionDock } from "./LessonActionDock";
-export type { LessonActionDockProps } from "./LessonActionDock";
 
 export { CurriculumHeroHeader } from "./CurriculumHeroHeader";
 export { UnitVideoPlayer } from "./UnitVideoPlayer";

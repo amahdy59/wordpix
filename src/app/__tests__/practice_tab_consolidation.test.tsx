@@ -34,7 +34,6 @@ vi.mock("../shared/useAccessibilityPreferences", () => ({
     accessibility: {
       includeSpeaking: true,
       includeListening: true,
-      includePronunciation: true,
       numeralSystem: "western",
     },
   }),
@@ -58,9 +57,9 @@ describe("Practice Tab & Review Consolidation", () => {
 
   it("leads with 'Reviews Due Today' hero when words need review", () => {
     fixture.memory = {
-      one: createMemoryItem("one", -2),
-      two: createMemoryItem("two", 0),
-      three: createMemoryItem("three", 4),
+      overdueWord: createMemoryItem("overdueWord", -2),
+      todayWord: createMemoryItem("todayWord", 0),
+      futureWord: createMemoryItem("futureWord", 4),
     };
 
     const dispatch = vi.fn();
@@ -72,19 +71,15 @@ describe("Practice Tab & Review Consolidation", () => {
     expect(screen.getByText(/words due/i)).toBeInTheDocument();
     expect(screen.getByText(/5 day streak/i)).toBeInTheDocument();
 
-    // Clicking "Smart Review" starts the review session
-    const reviewBtn = screen.getByRole("button", { name: /Smart Review|Review 2 now/i });
+    // Clicking "Review Now" starts the review session
+    const reviewBtn = screen.getByRole("button", { name: /Review 2 now/i });
     fireEvent.click(reviewBtn);
 
     expect(dispatch).toHaveBeenCalledWith({
       type: "START_LESSON",
       lessonId: "daily-review",
       mode: "SMART_REVIEW",
-      wordQueue: ["one", "two"],
-      reviewItems: [
-        { wordId: "one", unitId: "numbers-counting" },
-        { wordId: "two", unitId: "numbers-counting" },
-      ],
+      wordQueue: ["overdueWord", "todayWord"],
     });
   });
 

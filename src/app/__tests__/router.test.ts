@@ -78,7 +78,7 @@ describe("Hash round-tripping", () => {
 
   it("rejects an out-of-range step rather than jumping somewhere wrong", () => {
     expect(hashToRoute("#/learn/bedroom/step-0")).toBeNull();
-    expect(hashToRoute("#/learn/bedroom/step-31")).toBeNull();
+    expect(hashToRoute("#/learn/bedroom/step-7")).toBeNull();
     expect(hashToRoute("#/learn/bedroom/step-abc")).toBeNull();
   });
 
@@ -197,8 +197,6 @@ describe("Reducer purity", () => {
 
   it("advances onboarding through every step to home", () => {
     let state: Screen = { id: "onboarding", step: "splash" };
-    state = reducer(state, { type: "ONBOARD_NEXT" });
-    expect(state).toEqual({ id: "onboarding", step: "partners" });
     state = reducer(state, { type: "ONBOARD_NEXT" });
     expect(state).toEqual({ id: "onboarding", step: "language" });
     state = reducer(state, { type: "ONBOARD_NEXT" });

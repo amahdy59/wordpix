@@ -1,7 +1,7 @@
 {
   "reviewedCandidates": 228,
   "withheld": 90,
-  "replacementsNeeded": 0,
+  "replacementsNeeded": 82,
   "items": [
     {
       "questionId": "human-body-head-and-face-1-usage-scene-1",
@@ -9,8 +9,8 @@
       "sourceRef": "b6f0510e69cf98004dd9f36ec214f9951f28697a",
       "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
       "currentText": "After bumping her head on an open cupboard, Lina feels a tender spot on her scalp. The doctor checks her skull and asks whether she felt dizzy.",
-      "existingReplacement": "scene-images/head-scalp-examination-medical.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: After bumping her head on an open cupboard, Lina feels a tender spot on her scalp. The doctor checks her skull and asks whether she felt dizzy.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -19,8 +19,8 @@
       "sourceRef": "ed6555655dae652d7214f8c2bebf412e6b4066cf",
       "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
       "currentText": "At the salon, Maya points to her temple. \"Please cut this hair shorter, but leave more on the crown of my head. Keep my forehead clear, too.\"",
-      "existingReplacement": "scene-images/head-haircut-temple-forehead.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: At the salon, Maya points to her temple. \"Please cut this hair shorter, but leave more on the crown of my head. Keep my forehead clear, too.\". Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -29,8 +29,8 @@
       "sourceRef": "dfbdb664a72ddeb2a2988644175988b6fda71e20",
       "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
       "currentText": "Sam is having a passport photo taken. \"Relax your jaw and lift your chin a little,\" says the photographer. \"Is that comfortable for your neck?\"",
-      "existingReplacement": "scene-images/head-passport-photo-jaw-chin.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Sam is having a passport photo taken. \"Relax your jaw and lift your chin a little,\" says the photographer. \"Is that comfortable for your neck?\". Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -39,8 +39,8 @@
       "sourceRef": "834bd0952c45ec82caa55942f760eaf5b97db3e5",
       "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
       "currentText": "Noor tells the pharmacist that her throat is sore and one eye feels itchy. She raises an eyebrow when he asks whether she has changed her face cream.",
-      "existingReplacement": "scene-images/head-pharmacy-consultation-throat-eye.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Noor tells the pharmacist that her throat is sore and one eye feels itchy. She raises an eyebrow when he asks whether she has changed her face cream.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -49,8 +49,8 @@
       "sourceRef": "ca23aa8487b32074401e809fd2133b9fa447942a",
       "reason": "The clinical source needs a separate review of the depicted person and all anatomical relationships.",
       "currentText": "Amir notices an eyelash on his cheek before his eye test. \"Keep your eyelid open, please,\" says the optometrist as she checks his pupil with a small light.",
-      "existingReplacement": "scene-images/head-optometrist-eye-pupil-test.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Amir notices an eyelash on his cheek before his eye test. \"Keep your eyelid open, please,\" says the optometrist as she checks his pupil with a small light.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -59,8 +59,8 @@
       "sourceRef": "93287b601202150a0fba86dc27e9762350b59cb6",
       "reason": "Empty desks do not depict eight students.",
       "currentText": "Eight students are here.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-1-eight-students.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Eight students are here.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -69,8 +69,8 @@
       "sourceRef": "96a0d07ca80449a172a6fff1b772613f914bca73",
       "reason": "Fourteen figures do not depict thirteen people.",
       "currentText": "Thirteen people are waiting.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-1-thirteen-people.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Thirteen people are waiting.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -79,8 +79,8 @@
       "sourceRef": "7757ad6ddfd2adf96dda1a4c404ac1055431d4a0",
       "reason": "Twelve plates do not depict eighteen plates.",
       "currentText": "We need eighteen plates.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-eighteen-plates.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: We need eighteen plates.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -89,8 +89,8 @@
       "sourceRef": "ceef011fdd2aa016623331b60ee0ccbcbd3e33fb",
       "reason": "Twenty-one figures do not depict nineteen people.",
       "currentText": "Nineteen people are here.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-nineteen-people.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Nineteen people are here.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -99,8 +99,8 @@
       "sourceRef": "c44861d949518c489024256e4fb3989db9aea796",
       "reason": "The full seat count cannot be established from this view.",
       "currentText": "The bus has twenty seats.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-twenty-seats.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The bus has twenty seats.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -109,8 +109,8 @@
       "sourceRef": "b940a44acabc7ae55f14486a55182f387b724ac3",
       "reason": "The student count cannot be established unambiguously.",
       "currentText": "The class has thirty students.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-thirty-students.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The class has thirty students.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -119,8 +119,8 @@
       "sourceRef": "f56c107ac0ed7529240172fe9a1242fd57e556b9",
       "reason": "An open book does not establish forty pages.",
       "currentText": "This book has forty pages.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-forty-pages.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: This book has forty pages.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -129,8 +129,8 @@
       "sourceRef": "37910a79f20c198228a36b6693c9a940c3bf08e3",
       "reason": "Unlabelled coin stacks do not establish fifty pounds.",
       "currentText": "I have fifty pounds.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-fifty-pounds.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: I have fifty pounds.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -139,8 +139,8 @@
       "sourceRef": "55bec45f5fb71f86dca686500a29c72160861ab7",
       "reason": "An age numeral reveals the assessed answer; no grandfather is shown.",
       "currentText": "My grandfather is seventy.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-seventy-grandfather.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: My grandfather is seventy.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -149,8 +149,8 @@
       "sourceRef": "df2eaeff5303a4124cdb27636289db459c995317",
       "reason": "Overlapping cards do not establish eighty cards.",
       "currentText": "The box holds eighty cards.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-eighty-cards.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The box holds eighty cards.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -159,8 +159,8 @@
       "sourceRef": "92392d06d600101036280998e7e0ff85cdf3c310",
       "reason": "Unlabelled coin stacks do not establish ninety pounds.",
       "currentText": "The trip costs ninety pounds.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-ninety-pounds.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The trip costs ninety pounds.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -169,8 +169,8 @@
       "sourceRef": "b901f1f05f83789880ab7773f2bcc17c14a9c82b",
       "reason": "The figure count cannot be established unambiguously at phone size.",
       "currentText": "One hundred people came.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-one-hundred-people.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: One hundred people came.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -179,8 +179,8 @@
       "sourceRef": "d31dec0a6de70e40dd5857473dca5755e29e4d55",
       "reason": "The model does not establish one thousand homes.",
       "currentText": "The town has one thousand homes.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-one-thousand-homes.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The town has one thousand homes.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -189,8 +189,8 @@
       "sourceRef": "210788150234287139a1ef0da7868000807f7aa3",
       "reason": "A model crowd does not establish one million people.",
       "currentText": "The city has one million people.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-2-one-million-people.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The city has one million people.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -199,8 +199,8 @@
       "sourceRef": "05c3f2b6a407a24e4dbe41665ee5b09ac2e1e7fd",
       "reason": "Cars do not represent the people in the queue.",
       "currentText": "I am first in line.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-first-in-line.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: I am first in line.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -209,8 +209,8 @@
       "sourceRef": "ad65e84e7c0c392bd68ba6b1bec5ba975c296adf",
       "reason": "Cars do not represent the people in the queue.",
       "currentText": "Mona is second in line.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-second-in-line.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Mona is second in line.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -219,8 +219,8 @@
       "sourceRef": "c59186ef6babaea9864b0ba25a6ec11afeef9904",
       "reason": "Cars do not represent the people in the queue.",
       "currentText": "Ali is third in line.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-third-in-line.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Ali is third in line.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -229,8 +229,8 @@
       "sourceRef": "eca2810d7efc65aa99e94da418ee8de7ca38d1a7",
       "reason": "Printed page number reveals the assessed answer.",
       "currentText": "This is the fourth page.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-fourth-page.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: This is the fourth page.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -239,8 +239,8 @@
       "sourceRef": "dc6ca7a858edc4176ae78855eb6069813a885764",
       "reason": "Award rosettes do not represent a woman finishing a race.",
       "currentText": "She finished in sixth place.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-sixth-place.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: She finished in sixth place.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -249,8 +249,8 @@
       "sourceRef": "954eea21578e1b60406724509774d9e2ced3a7b8",
       "reason": "The floor count and person position are ambiguous.",
       "currentText": "He lives on the seventh floor.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-seventh-floor.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: He lives on the seventh floor.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -259,8 +259,8 @@
       "sourceRef": "a369a714114ebecbaf317c737ab3c3d693ebdab3",
       "reason": "Printed lesson number reveals the assessed answer.",
       "currentText": "This is my eighth lesson.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-eighth-lesson.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: This is my eighth lesson.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -269,8 +269,8 @@
       "sourceRef": "51a1765a35ce9f464ba9782b4407a556d302dbf0",
       "reason": "Labelled cards reveal the assessed ordinal.",
       "currentText": "She chose the ninth card.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-ninth-card.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: She chose the ninth card.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -279,8 +279,8 @@
       "sourceRef": "66079410b64ea6d28e39c467f5c5eebe61d7f00c",
       "reason": "Overlapping cards do not establish the final lesson position.",
       "currentText": "Today is the tenth lesson.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-tenth-lesson.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Today is the tenth lesson.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -289,8 +289,8 @@
       "sourceRef": "28764d34e5e639b277fb25d4e71022426a53b208",
       "reason": "The combined apple count is visually ambiguous.",
       "currentText": "Two plus three equals five.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-3-two-plus-three-equals-five.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Two plus three equals five.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -299,8 +299,8 @@
       "sourceRef": "4c3e923508affdd4b546f0ab94a58c7480b6ffeb",
       "reason": "Two groups of oranges do not demonstrate removal.",
       "currentText": "Five minus two equals three.",
-      "existingReplacement": "learning-scenes/numbers-counting/numbers-counting-4-minus-five-and-two.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Five minus two equals three.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -309,8 +309,8 @@
       "sourceRef": "b4867507d565900500703ef64d93eeb1d298ce8d",
       "reason": "Fabric samples do not show the rainbow specified in the sentence.",
       "currentText": "Indigo appears in the rainbow.",
-      "existingReplacement": "learning-scenes/colors/colors-1-indigo-rainbow.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Indigo appears in the rainbow.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -319,8 +319,8 @@
       "sourceRef": "9a7781221b5bb5da919c6a325ff885032fa4eb81",
       "reason": "A mug does not support a sentence about light walls.",
       "currentText": "This room has light walls.",
-      "existingReplacement": "learning-scenes/colors/colors-2-light-walls.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: This room has light walls.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -329,8 +329,8 @@
       "sourceRef": "d8f86cf5d8fee9d6c41b4afb16eb4c4c94c3074e",
       "reason": "A sky does not represent the poster specified in the sentence.",
       "currentText": "The poster has a smooth gradient.",
-      "existingReplacement": "learning-scenes/colors/colors-3-smooth-gradient.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The poster has a smooth gradient.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -419,8 +419,8 @@
       "sourceRef": "4df82002969138f6df2a0fd6a1b6eeaeb2bf142b",
       "reason": "The canvas omits the painted apple specified by the reading; the real apple is outside the painting.",
       "currentText": "I paint a red apple under a yellow sun. Blue water flows through green grass near an orange bench.",
-      "existingReplacement": "scene-images/colors-painting-primary-canvas.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: I paint a red apple under a yellow sun. Blue water flows through green grass near an orange bench.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -429,8 +429,8 @@
       "sourceRef": "3b3f6aa9471abdc59bb8ef1825e3cbf1f6f2aa77",
       "reason": "The image demonstrates a prism rather than the rain-to-rainbow relationship in the reading.",
       "currentText": "White light passes through rain to form a rainbow spectrum. Artists use fine pigment to print a smooth gradient with rich color saturation.",
-      "existingReplacement": "scene-images/colors-rain-rainbow-spectrum.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: White light passes through rain to form a rainbow spectrum. Artists use fine pigment to print a smooth gradient with rich color saturation.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -439,8 +439,8 @@
       "sourceRef": "320a90acc0c976032987e0c4c40e41a140d87c63",
       "reason": "The single large purple fruit does not clearly identify a grape at phone size.",
       "currentText": "At the morning produce stall, a shopper sees grape, strawberry, and watermelon and chooses watermelon for breakfast.",
-      "existingReplacement": "scene-images/fruits-grapes-strawberry-watermelon.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: At the morning produce stall, a shopper sees grape, strawberry, and watermelon and chooses watermelon for breakfast.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -449,8 +449,8 @@
       "sourceRef": "c2e4c055c54818b0bccc8d69691224c8292d85d5",
       "reason": "The dark berry groups do not clearly distinguish mulberry, boysenberry and acai at phone size.",
       "currentText": "At the morning produce stall, a shopper sees mulberry, boysenberry, and acai berry and chooses boysenberry for breakfast.",
-      "existingReplacement": "scene-images/fruits-berries-mulberry-boysenberry-acai.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: At the morning produce stall, a shopper sees mulberry, boysenberry, and acai berry and chooses boysenberry for breakfast.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -459,8 +459,8 @@
       "sourceRef": "48e8ed329d4a0e6e55c77f581a8202d60d0e27a6",
       "reason": "The three orange citrus groups do not clearly distinguish tangerine, mandarin and clementine.",
       "currentText": "In the grocery aisle, a shopper sees tangerine, mandarin, and clementine and puts clementine into a reusable bag.",
-      "existingReplacement": "scene-images/fruits-citrus-tangerine-clementine.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: In the grocery aisle, a shopper sees tangerine, mandarin, and clementine and puts clementine into a reusable bag.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -469,8 +469,8 @@
       "sourceRef": "6e313ff47085ce0fa4e775822833fc8ef33ffe34",
       "reason": "The dark round root does not clearly represent a yam; learners could confuse it with a beet.",
       "currentText": "At the neighbourhood produce stall, a shopper sees parsnip, ginger, and yam and chooses parsnip for tonight's meal.",
-      "existingReplacement": "scene-images/vegetables-parsnip-ginger-yam.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: At the neighbourhood produce stall, a shopper sees parsnip, ginger, and yam and chooses parsnip for tonight's meal.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -479,8 +479,8 @@
       "sourceRef": "6a28d4069b674ac3c7000052246072e2d5322f37",
       "reason": "The leafy bunch lacks clear features distinguishing rapini from the comparison vegetables.",
       "currentText": "In the grocery aisle, a shopper sees rapini, napa cabbage, and red cabbage and puts rapini into the basket.",
-      "existingReplacement": "scene-images/vegetables-rapini-cabbage-comparison.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: In the grocery aisle, a shopper sees rapini, napa cabbage, and red cabbage and puts rapini into the basket.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -489,8 +489,8 @@
       "sourceRef": "a02137b236cf8dbbe8323f6c79ae00bd53757029",
       "reason": "The pale and striped produce does not clearly distinguish gourd, chayote and bitter melon.",
       "currentText": "In the grocery aisle, a shopper sees gourd, chayote, and bitter melon and puts gourd into the basket.",
-      "existingReplacement": "scene-images/vegetables-gourd-chayote-bitter-melon.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: In the grocery aisle, a shopper sees gourd, chayote, and bitter melon and puts gourd into the basket.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -499,8 +499,8 @@
       "sourceRef": "149f03a8f5a93332fbfa97a63b76fa5c641dc37a",
       "reason": "The framed beach portrait contains people whose representation is unclear; use an object-only scene without this portrait.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews bed, nightstand, and dresser. They need the item that is a small table kept beside a bed.",
-      "existingReplacement": "scene-images/bedroom-bed-nightstand-dresser.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews bed, nightstand, and dresser. They need the item that is a small table kept beside a bed.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -509,8 +509,8 @@
       "sourceRef": "858b4148a1cb695eecf1fb0fe85b0a6051d2b818",
       "reason": "The opaque drink with a spoon does not clearly establish juice rather than another drink.",
       "currentText": "During a cooking class, an adult checks or uses honey, apple, and juice. The highlighted item is the honey.",
-      "existingReplacement": "scene-images/kitchen-honey-apple-juice.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During a cooking class, an adult checks or uses honey, apple, and juice. The highlighted item is the honey.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -519,8 +519,8 @@
       "sourceRef": "5515325638d94709fa003a18876a1c0a88b884b7",
       "reason": "The loose floor coverings do not clearly distinguish carpet from a rug.",
       "currentText": "During a home visit, an adult checks or uses rug, carpet, and curtain. The highlighted item is the rug.",
-      "existingReplacement": "scene-images/living-room-area-rug-carpet.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During a home visit, an adult checks or uses rug, carpet, and curtain. The highlighted item is the rug.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -529,8 +529,8 @@
       "sourceRef": "e52be490fc415c43c076012692cecd20637866ac",
       "reason": "Child-oriented room presentation is unsuitable for the adult bedroom scene.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews wardrobe, desk, and chair. They need the item that is a tall cupboard for hanging and storing clothes.",
-      "existingReplacement": "scene-images/bedroom-wardrobe-closet.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews wardrobe, desk, and chair. They need the item that is a tall cupboard for hanging and storing clothes.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -539,8 +539,8 @@
       "sourceRef": "d92d5340afc305e86ee1031e69eca3cf90e64d2c",
       "reason": "The covering is not clearly identifiable as the thick padded comforter being taught.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews pillowcase, comforter, and cushion. They need the item that is a thick padded bed covering.",
-      "existingReplacement": "scene-images/bedroom-thick-padded-comforter.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews pillowcase, comforter, and cushion. They need the item that is a thick padded bed covering.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -549,8 +549,8 @@
       "sourceRef": "fd9308b2fbd8214fd58badce660d757c0bb4850d",
       "reason": "The supporting bed frame is mostly concealed.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews bed frame, headboard, and lamp. They need the item that supports the mattress.",
-      "existingReplacement": "scene-images/bedroom-sturdy-bed-frame.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews bed frame, headboard, and lamp. They need the item that supports the mattress.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -559,8 +559,8 @@
       "sourceRef": "64d4979aa67b70903b2202c5049fe7a4f89d03bf",
       "reason": "Two area rugs do not clearly demonstrate a carpet covering the floor.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews rug, carpet, and ceiling light. They need the item that covers a large part or all of the floor.",
-      "existingReplacement": "scene-images/bedroom-wall-to-wall-carpet.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews rug, carpet, and ceiling light. They need the item that covers a large part or all of the floor.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -569,8 +569,8 @@
       "sourceRef": "399b8cf55a8833cabe07c1647e932f32a8b40908",
       "reason": "Overlay labels contain the assessed word.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews alarm clock, picture frame, and clock. They need the item that makes a sound at a set time.",
-      "existingReplacement": "scene-images/bedroom-alarm-clock-nightstand.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews alarm clock, picture frame, and clock. They need the item that makes a sound at a set time.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -579,8 +579,8 @@
       "sourceRef": "35240147806b5d4af5edddb368a9c83518391982",
       "reason": "Folded denim-like clothing does not clearly represent pajamas.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews hanger, pajamas, and slippers. They need the item that holds clothes in a wardrobe.",
-      "existingReplacement": "scene-images/bedroom-hangers-pajamas-slippers.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews hanger, pajamas, and slippers. They need the item that holds clothes in a wardrobe.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -589,8 +589,8 @@
       "sourceRef": "13ffd3f3b7511c5af777ee865e0e5e5fa92fba55",
       "reason": "Child-oriented room presentation needs an adult setting.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews robe, teddy bear, and poster. They need the item that is a loose garment worn at home.",
-      "existingReplacement": "scene-images/bedroom-adult-robe-chair.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews robe, teddy bear, and poster. They need the item that is a loose garment worn at home.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -599,8 +599,8 @@
       "sourceRef": "2ba84411df758a8e3541a77ceab7367df3445ce2",
       "reason": "The jewelry box is not sufficiently visible or distinctive.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews backpack, jewelry box, and phone. They need the item that is carried on the back with shoulder straps.",
-      "existingReplacement": "scene-images/bedroom-backpack-jewelry-box.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews backpack, jewelry box, and phone. They need the item that is carried on the back with shoulder straps.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -609,8 +609,8 @@
       "sourceRef": "39041c28686e6b7c1446f58650ae700e03b99afc",
       "reason": "A coiled cable alone does not clearly represent a charger.",
       "currentText": "During an adult bedroom setup or home check, the tenant reviews charger, laptop, and headphones. They need the item that puts electrical energy into a battery.",
-      "existingReplacement": "scene-images/bedroom-wall-charger-laptop.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an adult bedroom setup or home check, the tenant reviews charger, laptop, and headphones. They need the item that puts electrical energy into a battery.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -619,8 +619,8 @@
       "sourceRef": "dd108957ff6949f00c8096fcf2b9cba0effa3974",
       "reason": "The separate shower enclosure does not show a shower above the bathtub.",
       "currentText": "The shower is above the bathtub, and the toilet is beside it.",
-      "existingReplacement": "scene-images/bathroom-shower-above-bathtub.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The shower is above the bathtub, and the toilet is beside it.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -629,8 +629,8 @@
       "sourceRef": "c0df1c33a3fd311e86e99ecbb05fc6443d714cd3",
       "reason": "The drain is covered or unclear.",
       "currentText": "During a cleaning check, an adult checks or uses sink, faucet, and drain. The highlighted item is the drain.",
-      "existingReplacement": "scene-images/bathroom-sink-faucet-drain.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During a cleaning check, an adult checks or uses sink, faucet, and drain. The highlighted item is the drain.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -639,8 +639,8 @@
       "sourceRef": "e2f68cd98e7af4584c5128ba1ac664c70828c1ca",
       "reason": "White wall tiles and blue towels do not depict the specified blue tiles.",
       "currentText": "The blue tiles make the bathroom wall easy to clean.",
-      "existingReplacement": "scene-images/bathroom-blue-wall-tiles.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The blue tiles make the bathroom wall easy to clean.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -649,8 +649,8 @@
       "sourceRef": "91e35463fb96bc237530ba9eee58a46f668555a1",
       "reason": "Unlabelled cosmetic bottles do not distinguish shampoo from conditioner.",
       "currentText": "Nour washes her hair with shampoo, then uses conditioner; the soap stays by the sink.",
-      "existingReplacement": "scene-images/bathroom-haircare-bottles.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Nour washes her hair with shampoo, then uses conditioner; the soap stays by the sink.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -659,8 +659,8 @@
       "sourceRef": "6120c4f8dbb981a820d99bf2f7622bd13600c471",
       "reason": "The cosmetic product is insufficiently distinguishable as lotion.",
       "currentText": "Leila uses a comb for the ends of her hair, a hairbrush for the rest, and lotion for her hands.",
-      "existingReplacement": "scene-images/bathroom-comb-brush-lotion.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Leila uses a comb for the ends of her hair, a hairbrush for the rest, and lotion for her hands.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -669,8 +669,8 @@
       "sourceRef": "a61217ecee9199c0f569743bef23fafcf542a468",
       "reason": "A room thermometer does not clearly represent measuring body temperature.",
       "currentText": "Mona checks her temperature with a thermometer because she feels unwell.",
-      "existingReplacement": "scene-images/bathroom-medical-thermometer.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Mona checks her temperature with a thermometer because she feels unwell.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -679,8 +679,8 @@
       "sourceRef": "60fbf2ce50e9c3de49fcc252414d8befc8a37e0d",
       "reason": "The product depiction relies on labels and does not independently establish shower gel.",
       "currentText": "During a cleaning check, an adult checks or uses shower gel. The highlighted item is the shower gel.",
-      "existingReplacement": "scene-images/bathroom-shower-gel-dispenser.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During a cleaning check, an adult checks or uses shower gel. The highlighted item is the shower gel.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -689,8 +689,8 @@
       "sourceRef": "54f05eb56efd967ec823e31bdc2d01aa061ffb4a",
       "reason": "The sunscreen label reveals the assessed answer.",
       "currentText": "In a guest bathroom, an adult checks or uses face cream, sunscreen, and lip balm. The highlighted item is the sunscreen.",
-      "existingReplacement": "scene-images/bathroom-sunscreen-face-cream.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: In a guest bathroom, an adult checks or uses face cream, sunscreen, and lip balm. The highlighted item is the sunscreen.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -699,8 +699,8 @@
       "sourceRef": "40010b379cb02f95f2e6ed62911babff903543fa",
       "reason": "The hand soap label reveals the assessed answer.",
       "currentText": "During a morning routine, an adult checks or uses hand soap, body wash, and mouthwash. The highlighted item is the hand soap.",
-      "existingReplacement": "scene-images/bathroom-hand-soap-counter.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During a morning routine, an adult checks or uses hand soap, body wash, and mouthwash. The highlighted item is the hand soap.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -709,8 +709,8 @@
       "sourceRef": "9aa0665822dfb4205f6063767aea8220070eee2f",
       "reason": "The transparent cosmetic products are not sufficiently distinguishable.",
       "currentText": "During a cleaning check, an adult checks or uses dental floss, face wash, and hand sanitizer. The highlighted item is the dental floss.",
-      "existingReplacement": "scene-images/bathroom-dental-floss-care.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During a cleaning check, an adult checks or uses dental floss, face wash, and hand sanitizer. The highlighted item is the dental floss.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -719,8 +719,8 @@
       "sourceRef": "45eab6a2f32032bc3273767286a951012e4e12ea",
       "reason": "The white dispensers do not clearly distinguish wet wipes from tissues.",
       "currentText": "In a home bathroom, an adult checks or uses wet wipes. The highlighted item is the wet wipes.",
-      "existingReplacement": "scene-images/bathroom-wet-wipes-dispenser.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: In a home bathroom, an adult checks or uses wet wipes. The highlighted item is the wet wipes.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -729,8 +729,8 @@
       "sourceRef": "4b3526276b9c13094aeb08a12cebd9a38a89e919",
       "reason": "The squeegee is not sufficiently identifiable.",
       "currentText": "In a home bathroom, an adult checks or uses plunger, squeegee, and tissue. The highlighted item is the plunger.",
-      "existingReplacement": "scene-images/bathroom-plunger-squeegee-tools.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: In a home bathroom, an adult checks or uses plunger, squeegee, and tissue. The highlighted item is the plunger.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -739,8 +739,8 @@
       "sourceRef": "4f680a1f9118c9a39b08ee5b9a5ceabe0adfd4c2",
       "reason": "Overlay captions reveal actions; the actual actions are not shown.",
       "currentText": "In a hotel room, an adult may wash hands, brush teeth, and take a shower. The highlighted action is wash hands.",
-      "existingReplacement": "scene-images/bathroom-action-washing-hands.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: In a hotel room, an adult may wash hands, brush teeth, and take a shower. The highlighted action is wash hands.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -749,8 +749,8 @@
       "sourceRef": "08993d06e0e3d84758f4e0d8d9cb2561706b06bb",
       "reason": "Objects do not demonstrate the assessed combing action.",
       "currentText": "In a guest bathroom, an adult may dry off, flush, and comb hair. The highlighted action is comb hair.",
-      "existingReplacement": "scene-images/bathroom-action-combing-hair.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: In a guest bathroom, an adult may dry off, flush, and comb hair. The highlighted action is comb hair.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -759,8 +759,8 @@
       "sourceRef": "f201951b8742036f2501c5bcc624f44b601bcb28",
       "reason": "Overlay captions reveal actions; no lotion application is shown.",
       "currentText": "During a morning routine, an adult may apply lotion and gargle. The highlighted action is apply lotion.",
-      "existingReplacement": "scene-images/bathroom-action-applying-lotion.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During a morning routine, an adult may apply lotion and gargle. The highlighted action is apply lotion.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -769,8 +769,8 @@
       "sourceRef": "724ec2595bf9e5455215d4b9e08b5fa4d147b080",
       "reason": "The oven contains a different food, rather than the bread specified.",
       "currentText": "Mona takes vegetables from the refrigerator, cooks them on the stove, and warms bread in the oven.",
-      "existingReplacement": "scene-images/kitchen-warming-bread-oven.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Mona takes vegetables from the refrigerator, cooks them on the stove, and warms bread in the oven.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -779,8 +779,8 @@
       "sourceRef": "fe33cbd60b7582901531b6c0e900c93c503db100",
       "reason": "The microwave contents do not clearly represent reheating soup.",
       "currentText": "After lunch, Karim puts the plates in the dishwasher and reheats soup in the microwave; the toaster is ready for breakfast.",
-      "existingReplacement": "scene-images/kitchen-microwave-reheating-soup.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: After lunch, Karim puts the plates in the dishwasher and reheats soup in the microwave; the toaster is ready for breakfast.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -789,8 +789,8 @@
       "sourceRef": "d556bfb31da5d4fcd11e67a64fa94a5a0e9c2084",
       "reason": "Leafy vegetables in the blender do not clearly represent the specified fruit.",
       "currentText": "For breakfast, Dalia uses the blender for fruit, the kettle for tea, and the coffee maker for coffee.",
-      "existingReplacement": "scene-images/kitchen-blender-fruit-breakfast.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: For breakfast, Dalia uses the blender for fruit, the kettle for tea, and the coffee maker for coffee.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -799,8 +799,8 @@
       "sourceRef": "e61eacb5ab2a68990e692cd4cf8e9cc2df94779d",
       "reason": "Salad and colored drink contents contradict the specified soup and water.",
       "currentText": "Hassan pours soup into a bowl, coffee into a mug, and water into a glass.",
-      "existingReplacement": "scene-images/kitchen-soup-coffee-water.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Hassan pours soup into a bowl, coffee into a mug, and water into a glass.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -809,8 +809,8 @@
       "sourceRef": "4594eb775a1d6c836bcbf8c9064d1b1046da5473",
       "reason": "Unlabelled white granules do not distinguish salt from sugar.",
       "currentText": "During a kitchen cleanup, an adult checks or uses cooking oil, salt, and sugar. The highlighted item is the cooking oil.",
-      "existingReplacement": "scene-images/kitchen-cooking-oil-salt-sugar.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During a kitchen cleanup, an adult checks or uses cooking oil, salt, and sugar. The highlighted item is the cooking oil.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -819,8 +819,8 @@
       "sourceRef": "3d26753eb70c1af510f638bc84168792e1a3b137",
       "reason": "The unlabelled liquid and seasonings do not clearly distinguish the specified ingredients.",
       "currentText": "In a home kitchen, an adult checks or uses pepper, flour, and vinegar. The highlighted item is the pepper.",
-      "existingReplacement": "scene-images/kitchen-black-pepper-flour-vinegar.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: In a home kitchen, an adult checks or uses pepper, flour, and vinegar. The highlighted item is the pepper.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -829,8 +829,8 @@
       "sourceRef": "448b9a2dc8f32eec19b02a17164beed81d4ea7a6",
       "reason": "The specified seated people and counts are absent.",
       "currentText": "The family eats at the dining table; two people use dining chairs and one sits on the bench.",
-      "existingReplacement": "scene-images/living-room-dining-seating-scene.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The family eats at the dining table; two people use dining chairs and one sits on the bench.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -839,8 +839,8 @@
       "sourceRef": "1f9c24b6e8235928b36d63fff019de38b3e7a9ae",
       "reason": "The game console is not sufficiently identifiable.",
       "currentText": "During an evening at home, an adult checks or uses remote control, speaker, and game console. The highlighted item is the remote control.",
-      "existingReplacement": "scene-images/living-room-remote-speaker-console.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an evening at home, an adult checks or uses remote control, speaker, and game console. The highlighted item is the remote control.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -849,8 +849,8 @@
       "sourceRef": "de3a4a10309dc05bb8337efd86ff1bedd778e685",
       "reason": "The floor lamp is beside an armchair rather than the specified sofa.",
       "currentText": "The floor lamp stands by the sofa, the table lamp sits beside it, and the ceiling light lights the whole room.",
-      "existingReplacement": "scene-images/living-room-floor-lamp-sofa.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: The floor lamp stands by the sofa, the table lamp sits beside it, and the ceiling light lights the whole room.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -859,8 +859,8 @@
       "sourceRef": "0c58d996d71b6adb62ceb23822c36a9c560abb94",
       "reason": "The painting leans on the display rather than hanging above it.",
       "currentText": "Fresh flowers fill the vase beside a photo frame, with a painting hanging above them.",
-      "existingReplacement": "scene-images/living-room-framed-painting-vase.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Fresh flowers fill the vase beside a photo frame, with a painting hanging above them.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -869,8 +869,8 @@
       "sourceRef": "a69b0bb0029f09fb7286456c76a2857f4efc4ba6",
       "reason": "The charger connection and television activity are unclear.",
       "currentText": "Kareem connects the charger to his phone, puts on his headphones, and watches TV.",
-      "existingReplacement": "scene-images/living-room-entertainment-charging.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: Kareem connects the charger to his phone, puts on his headphones, and watches TV.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -879,8 +879,8 @@
       "sourceRef": "cadc1f6f638eef1586f0ddf4148de4fa34abfc4c",
       "reason": "The narrated actions are represented by props rather than people performing them.",
       "currentText": "After dinner, the family reads a book, plays games, and listens to music together.",
-      "existingReplacement": "scene-images/living-room-family-evening-activities.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: After dinner, the family reads a book, plays games, and listens to music together.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -889,8 +889,8 @@
       "sourceRef": "78796b861fe8490eec162fde52d9627d9a160181",
       "reason": "Overlay captions reveal the assessed actions.",
       "currentText": "During a moving day, an adult may relax, sit down, and chat. The highlighted action is chat.",
-      "existingReplacement": "scene-images/living-room-moving-day-chat.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During a moving day, an adult may relax, sit down, and chat. The highlighted action is chat.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     },
     {
@@ -899,8 +899,8 @@
       "sourceRef": "89d063287f4a532dbe50ebe77830b71af5fc6071",
       "reason": "Objects on an empty table do not depict taking a nap.",
       "currentText": "During an evening at home, an adult may take a nap. The highlighted action is take a nap.",
-      "existingReplacement": "scene-images/living-room-action-taking-nap.webp",
-      "nextAction": "Covered by approved dual WebP/AVIF scene artwork.",
+      "existingReplacement": "",
+      "nextAction": "Replacement artwork needed; use labelled placeholder and textual evidence.",
       "generationPrompt": "Illustrate exactly: During an evening at home, an adult may take a nap. The highlighted action is take a nap.. Show the specified objects, quantities, colors, people, positions, and actions clearly at phone size. Adult learning context. Keep all critical clues within the frame. No assessed word, answer labels, decorative numerals, captions, or watermarks. Verify every count and geometric or anatomical relationship."
     }
   ]

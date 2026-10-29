@@ -151,7 +151,7 @@ export const COURTROOM_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "testify as a witness in court",
-      example: "The witness took the stand and placed his hand on the oath card before speaking.",
+      example: "The witness took the stand and placed her hand on the oath card before speaking.",
     },
     {
       id: "courtroom-plead-your-case",
@@ -159,7 +159,7 @@ export const COURTROOM_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "argue in support of something you want",
-      example: "The defense attorney stood at the lectern to plead his case to the jury box.",
+      example: "The defense attorney stood at the lectern to plead her case to the jury box.",
     },
     {
       id: "courtroom-throw-the-book-at-someone",

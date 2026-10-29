@@ -12,17 +12,13 @@ import {
 } from "lucide-react";
 import type { Action } from "../types";
 import { useProgress } from "../data/progress";
-import { resolveUnitIdForWord, type VocabularyItem } from "../data/courseCatalog";
+import { REVIEW_GROUP_ID, resolveUnitIdForWord, type VocabularyItem } from "../data/courseCatalog";
 import { getWords, loadUnitVocabulary } from "../data/vocabulary";
 import { useI18n } from "../context/I18nContext";
 
 import { WordInspectorModal } from "../shared/WordInspectorModal";
 import { WordImage } from "../shared/WordImage";
 import { calculateDaysBetween, getLocalDateString } from "../../features/gamification/streak";
-import { getReviewSchedule } from "./reviewSchedule";
-import { useReviewDate } from "../shared/useReviewDate";
-import { reviewSessionAction } from "./startReview";
-import { wordMemoryKey } from "../learning/wordIdentity";
 
 /** Words per review session. */
 const REVIEW_SESSION_SIZE = 5;
@@ -39,27 +35,13 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [selectedWord, setSelectedWord] = useState<VocabularyItem | null>(null);
 
-  const reviewDate = useReviewDate();
-  const todayStr = getLocalDateString(reviewDate);
-  const schedule = useMemo(
-    () => getReviewSchedule(progress.wordMemory, reviewDate),
-    [progress.wordMemory, reviewDate]
-  );
-  const eligibleIds = useMemo(
-    () =>
-      new Set(
-        schedule.due.map((word) =>
-          word.unitId ? wordMemoryKey(word.unitId, word.wordId) : word.wordId
-        )
-      ),
-    [schedule]
-  );
+  const todayStr = getLocalDateString(new Date());
 
   useEffect(() => {
     const memoryWordIds = Object.keys(progress.wordMemory);
     const unitIds = new Set<string>();
     for (const wId of memoryWordIds) {
-      const uId = progress.wordMemory[wId].unitId ?? resolveUnitIdForWord(wId);
+      const uId = resolveUnitIdForWord(wId);
       if (uId) unitIds.add(uId);
     }
     if (unitIds.size === 0) return;
@@ -84,12 +66,10 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     void loadedCount;
     const entries = Object.entries(progress.wordMemory);
     if (entries.length === 0) return [];
-    return entries.flatMap(([, entry]) => {
-      const word = getWords([entry.wordId], entry.unitId)[0];
+    return entries.flatMap(([wordId, entry]) => {
+      const word = getWords([wordId])[0];
       if (!word) return [];
-      const nextDate = entry.nextReviewAt
-        ? getLocalDateString(new Date(entry.nextReviewAt))
-        : todayStr;
+      const nextDate = entry.nextReviewAt ? entry.nextReviewAt.split("T")[0] : todayStr;
       const daysDiff = calculateDaysBetween(todayStr, nextDate);
       return [{ word, entry, daysDiff }];
     });
@@ -98,48 +78,36 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
   const overdueList = useMemo(
     () =>
       memoryItems
-        .filter(
-          (item) =>
-            item.daysDiff < 0 &&
-            eligibleIds.has(
-              item.entry.unitId ? wordMemoryKey(item.entry.unitId, item.word.id) : item.word.id
-            )
-        )
+        .filter((item) => item.daysDiff < 0)
         .sort((a, b) => a.daysDiff - b.daysDiff)
         .map((item) => ({ ...item, daysDiff: Math.abs(item.daysDiff) })),
-    [memoryItems, eligibleIds]
+    [memoryItems]
   );
 
   const dueTodayList = useMemo(
-    () =>
-      memoryItems.filter(
-        (item) =>
-          item.daysDiff === 0 &&
-          eligibleIds.has(
-            item.entry.unitId ? wordMemoryKey(item.entry.unitId, item.word.id) : item.word.id
-          )
-      ),
-    [memoryItems, eligibleIds]
+    () => memoryItems.filter((item) => item.daysDiff === 0),
+    [memoryItems]
   );
 
   const upcomingList = useMemo(
-    () =>
-      memoryItems
-        .filter(
-          (item) =>
-            !eligibleIds.has(
-              item.entry.unitId ? wordMemoryKey(item.entry.unitId, item.word.id) : item.word.id
-            )
-        )
-        .sort((a, b) => a.daysDiff - b.daysDiff),
-    [memoryItems, eligibleIds]
+    () => memoryItems.filter((item) => item.daysDiff > 0).sort((a, b) => a.daysDiff - b.daysDiff),
+    [memoryItems]
   );
 
   const totalDue = overdueList.length + dueTodayList.length;
 
   const startReviewSession = () => {
-    const action = reviewSessionAction(schedule.due, REVIEW_SESSION_SIZE);
-    if (action) dispatch(action);
+    const queue = [...overdueList, ...dueTodayList]
+      .slice(0, REVIEW_SESSION_SIZE)
+      .map((item) => item.word.id);
+    if (queue.length === 0) return;
+
+    dispatch({
+      type: "START_LESSON",
+      lessonId: REVIEW_GROUP_ID,
+      mode: "SMART_REVIEW",
+      wordQueue: queue,
+    });
   };
 
   const startReviewOrPractice = () => {
@@ -181,7 +149,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
     "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
 
   return (
-    <div className="wp-container-content flex flex-col gap-4 py-2 sm:gap-5">
+    <div className="wp-container-content flex flex-col gap-4 p-4 md:gap-6 md:p-8">
       <header className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <p className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider mb-2">
@@ -225,7 +193,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
             type="button"
             onClick={startReviewOrPractice}
             disabled={loadError}
-            className={`mt-3 min-h-12 rounded-xl px-4 md:px-6 bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-60 shadow-wp-xs transition-all cursor-pointer ${focus}`}
+            className={`mt-3 min-h-12 rounded-xl px-4 md:px-6 bg-primary text-primary-foreground font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-60 ${focus}`}
           >
             {totalDue
               ? t("masteryReview.reviewNow", { count: sessionSize })
@@ -261,12 +229,12 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
               <span className="hidden md:block ms-auto text-xs">{note}</span>
             </div>
             <div id={`review-${key}`} className="grid grid-cols-1 md:grid-cols-3 gap-3">
-              {items.map(({ word, daysDiff, entry }, index) => (
+              {items.map(({ word, daysDiff }, index) => (
                 <button
-                  key={wordMemoryKey(entry.unitId ?? word.topic, word.id)}
+                  key={word.id}
                   type="button"
                   onClick={() => setSelectedWord(word)}
-                  className={`${!expanded[key] && index > 0 ? (index < 3 ? "hidden md:flex" : "hidden") : "flex"} min-w-0 text-start items-center gap-3 bg-wp-card border border-border hover:border-primary/40 rounded-xl p-2 shadow-wp-xs transition-all cursor-pointer ${focus}`}
+                  className={`${!expanded[key] && index > 0 ? (index < 3 ? "hidden md:flex" : "hidden") : "flex"} min-w-0 text-start items-center gap-3 bg-wp-card border border-border rounded-xl p-2 shadow-wp-xs ${focus}`}
                 >
                   <WordImage
                     word={word}
@@ -300,7 +268,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
                 aria-expanded={!!expanded[key]}
                 aria-controls={`review-${key}`}
                 onClick={() => setExpanded((value) => ({ ...value, [key]: !value[key] }))}
-                className={`${items.length <= 3 ? "md:hidden" : ""} min-h-11 mt-2 px-2 text-primary hover:underline text-sm font-semibold rounded-lg cursor-pointer ${focus}`}
+                className={`${items.length <= 3 ? "md:hidden" : ""} min-h-11 mt-2 px-2 text-primary text-sm font-semibold rounded-lg ${focus}`}
               >
                 {expanded[key]
                   ? t("masteryReview.showFewer")
@@ -323,7 +291,7 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
         <button
           type="button"
           onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
-          className={`min-h-12 px-5 rounded-xl border border-primary/20 bg-secondary text-primary hover:bg-secondary/80 hover:border-primary/40 shadow-wp-xs font-bold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer ${focus}`}
+          className={`min-h-12 px-5 rounded-xl border border-primary/20 bg-secondary text-primary font-bold text-sm flex items-center justify-center gap-2 ${focus}`}
         >
           {t("masteryReview.browseDrills")}
           <ArrowRight className="size-4" aria-hidden />
@@ -331,7 +299,6 @@ export const ReviewMasteryReview = memo(function ReviewMasteryReview({ dispatch 
       </section>
       <WordInspectorModal
         word={selectedWord}
-        unitId={selectedWord?.topic}
         isOpen={selectedWord !== null}
         onClose={() => setSelectedWord(null)}
       />

@@ -128,7 +128,7 @@ export const NUMBERS_COUNTING_LEARNING: UnitLearningMaterials = {
       phrase: "on cloud nine",
       kind: "idiom",
       meaning: "Extremely happy.",
-      example: "He was on cloud nine after getting the highest score on his exam.",
+      example: "She was on cloud nine after getting the highest score on her exam.",
     },
     {
       id: "numbers-counting-a-hundred-percent",

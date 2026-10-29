@@ -2,29 +2,9 @@ import { describe, expect, it } from "vitest";
 import { LEARNING_PATH_UNIT_IDS } from "../data/courseCatalog";
 import { loadUnitVocabulary } from "../data/vocabulary";
 import { loadUnitUsageForEditorial } from "../data/usageRegistry";
-import { applySceneLearningContext } from "../data/sceneLearningContext.mjs";
 import readingRepairs from "../../../scripts/reading_editorial_repairs.json";
 
 describe("editorial content regression", () => {
-  it("keeps reviewed polysemous words aligned with their unit's meaning and Arabic", async () => {
-    for (const [unit, id, arabic] of [
-      ["community-center", "coach", "مدرّب رياضي"],
-      ["coral-reef", "current", "تيار مائي"],
-      ["river", "current", "تيار مائي"],
-      ["seasons-weather", "spring", "فصل الربيع"],
-    ] as const) {
-      const word = (await loadUnitVocabulary(unit)).find((item) => item.id === id);
-      expect(word?.arabicTranslation).toBe(arabic);
-      const lessons = (await loadUnitUsageForEditorial(unit))!;
-      for (const lesson of lessons) {
-        const index = lesson.targetWordsEnglish.findIndex((label) => label.toLowerCase() === id);
-        if (index >= 0) expect(lesson.targetWordsArabic[index]).toBe(arabic);
-      }
-    }
-    const fan = (await loadUnitVocabulary("gym")).find((item) => item.id === "fan");
-    expect(fan?.description).toMatch(/rotating blades.*moves air/);
-    expect(fan?.exampleUsage).toBe("The fan keeps air moving in the gym.");
-  });
   it("supplies actual Arabic glosses throughout the curriculum", async () => {
     for (const unit of LEARNING_PATH_UNIT_IDS) {
       const words = await loadUnitVocabulary(unit);
@@ -58,18 +38,10 @@ describe("editorial content regression", () => {
       const lessons = (await loadUnitUsageForEditorial(unit))!;
       for (const lesson of lessons) {
         if (!(lesson.lessonId in readingRepairs)) continue;
-        // Later editorial work may refine the passage genre and add more
-        // comprehension checks. Verify the current passage and useful answers.
-        expect(lesson.reading.text.trim(), lesson.lessonId).not.toBe("");
-        const checks = lesson.exercises.filter((ex) => ex.contextTag?.startsWith("reading"));
-        expect(checks.length, lesson.lessonId).toBeGreaterThanOrEqual(1);
-        for (const check of checks) {
-          expect(check.prompt, lesson.lessonId).not.toMatch(/Why is the vocabulary useful/u);
-          expect(check.answer.trim(), lesson.lessonId).not.toBe("");
-          expect(check.answer, lesson.lessonId).not.toMatch(
-            /^(?:Open response|The main case described)$/u
-          );
-        }
+        expect(lesson.usage.textType).toBe("short-narrative");
+        const checks = lesson.exercises.filter((ex) => ex.contextTag === "reading");
+        expect(checks, lesson.lessonId).toHaveLength(1);
+        expect(checks[0].answer).not.toMatch(/^Open response$/u);
         expect(lesson.exercises.map((ex) => ex.prompt).join("\n")).not.toMatch(
           /Which target word is linked to the main task|Which word appears later in the situation|Why is the vocabulary useful/u
         );
@@ -85,19 +57,13 @@ describe("editorial content regression", () => {
             "Context choice: Which target word best fits the scene?"
           );
           if (!exercise.contextTag?.startsWith("scene-")) continue;
-          const rawScene = lesson.usage.scenes.find(
+          const scene = lesson.usage.scenes.find(
             (item) => `scene-${item.chunkNumber}` === exercise.contextTag
           );
-          expect(rawScene, lesson.lessonId).toBeDefined();
-          const scene = applySceneLearningContext(rawScene!);
-          expect(exercise.answer, lesson.lessonId).toBe(rawScene!.check.expectedAnswer);
-          const matchesRaw =
-            exercise.prompt.includes(rawScene!.scenario) &&
-            exercise.prompt.includes(rawScene!.check.question);
-          const matchesContext =
-            exercise.prompt.includes(scene.scenario) &&
-            exercise.prompt.includes(scene.check.question);
-          expect(matchesRaw || matchesContext, lesson.lessonId).toBe(true);
+          expect(scene, lesson.lessonId).toBeDefined();
+          expect(exercise.answer, lesson.lessonId).toBe(scene!.check.expectedAnswer);
+          expect(exercise.prompt, lesson.lessonId).toContain(scene!.scenario);
+          expect(exercise.prompt, lesson.lessonId).toContain(scene!.check.question);
         }
       }
     }

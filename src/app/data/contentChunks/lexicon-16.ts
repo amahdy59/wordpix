@@ -298,14 +298,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "arch over",
         meaning: "bend back over horizontal bar",
         arabic: "يَنْحَنِي ظَهْرًا فَوْقَ العَارِضَة",
-        example: "He arched over the bar cleanly at two meters.",
+        example: "She arched over the bar cleanly at two meters.",
       },
     ],
     sentences: [
       {
         context: "Field Event",
-        en: "He used the Fosbury Flop technique to arch backward over the high jump crossbar.",
-        ar: "استخدم تقنية فوسبري فلوب ليتقوس إلى الخلف فوق عارضة الوثب العالي.",
+        en: "She used the Fosbury Flop technique to arch backward over the high jump crossbar.",
+        ar: "اسْتَخْدَمَتْ تِقْنِيَّةَ القَفْزِ لِلْخَلْفِ لِتَجَاوُزِ عَارِضَةِ الوَثْبِ العَالِي.",
       },
       {
         context: "Landing Mat",
@@ -319,8 +319,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He used the Fosbury Flop technique to arch backward over the high jump crossbar.",
-    exampleArabic: "استخدم تقنية فوسبري فلوب ليتقوس إلى الخلف فوق عارضة الوثب العالي.",
+      "She used the Fosbury Flop technique to arch backward over the high jump crossbar.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ تِقْنِيَّةَ القَفْزِ لِلْخَلْفِ لِتَجَاوُزِ عَارِضَةِ الوَثْبِ العَالِي.",
   },
   baseball: {
     id: "baseball",

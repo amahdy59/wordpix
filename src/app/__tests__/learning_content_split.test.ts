@@ -3,14 +3,13 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join, resolve } from "node:path";
 import ts from "typescript";
 import { COURSE_UNITS as sourceUnits } from "../data/lessons";
-import { COURSE_UNITS as summaries, loadUnitCatalogDetails } from "../data/courseCatalog";
+import { COURSE_UNITS as summaries } from "../data/courseCatalog";
 import { LEXICON_DICTIONARY, getLexiconEntry } from "../data/lexiconDictionary";
 import { loadLexicon, lexiconShardFor } from "../data/lexiconLoader";
 import { loadLessonStory } from "../data/lessonStoryLoader";
 
 describe("split learning content", () => {
-  it("preserves every catalogue field and media mapping after loading deferred details", async () => {
-    await Promise.all(Object.keys(summaries).map(loadUnitCatalogDetails));
+  it("preserves every catalogue field and media mapping except deferred passages", () => {
     const expected = Object.fromEntries(
       Object.entries(sourceUnits).map(([id, unit]) => [
         id,

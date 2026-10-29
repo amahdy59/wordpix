@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { act, fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { I18nProvider } from "../../i18n";
 import { BUSINESS_UNITS, getBusinessUnit } from "../learning/business/businessCatalog";
 import { recallChoices } from "../learning/business/businessRecallChoices";
@@ -45,8 +45,7 @@ describe("guided Business recall", () => {
     }
   });
 
-  it("can skip, revisit, answer, autoprogress, and continue without recording completion", () => {
-    vi.useFakeTimers();
+  it("can skip, revisit, check an answer and continue without recording completion", () => {
     const unit = getBusinessUnit("unit-02")!;
     const onComplete = vi.fn();
     const onNext = vi.fn();
@@ -67,24 +66,15 @@ describe("guided Business recall", () => {
     expect(screen.getByText("Question 2 of 7")).toBeInTheDocument();
     expect(onSaveAnswer).not.toHaveBeenCalled();
     fireEvent.click(screen.getByRole("button", { name: /previous question/i }));
-    expect(screen.getByText("Question 1 of 7")).toBeInTheDocument();
     fireEvent.click(screen.getByRole("radio", { name: "role" }));
+    fireEvent.click(screen.getByRole("button", { name: /check answer/i }));
     expect(screen.getByRole("status")).toHaveTextContent(/correct/i);
     expect(onSaveAnswer).toHaveBeenCalledWith("u02-recall-1", "role");
-    // Verify it stays on question 1 before 500ms
-    expect(screen.getByText("Question 1 of 7")).toBeInTheDocument();
-    // Advance timers by 500ms -> should autoprogress to Question 2
-    act(() => {
-      vi.advanceTimersByTime(500);
-    });
-    expect(screen.getByText("Question 2 of 7")).toBeInTheDocument();
-    // User can get back to previous question
+    fireEvent.click(screen.getByRole("button", { name: /next question/i }));
     fireEvent.click(screen.getByRole("button", { name: /previous question/i }));
-    expect(screen.getByText("Question 1 of 7")).toBeInTheDocument();
     expect(screen.getByRole("radio", { name: "role" })).toHaveAttribute("aria-checked", "true");
     fireEvent.click(screen.getByRole("button", { name: /begin lesson warm-up/i }));
     expect(onNext).toHaveBeenCalledOnce();
     expect(onComplete).not.toHaveBeenCalled();
-    vi.useRealTimers();
   });
 });

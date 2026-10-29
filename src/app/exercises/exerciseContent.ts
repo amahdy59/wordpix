@@ -5,9 +5,7 @@ import { articleFor, classifyLabel, spokenLabel } from "../content/wordGrammar";
 import { getAuthoredSentence } from "./content/authoredLessonContent";
 import type { LessonUsageData } from "../data/usageTypes";
 import { findLessonContextSentences } from "../data/lessonContext";
-import { findSentenceTarget, sentenceCloze } from "./sentenceCloze";
-import { isGenericLearningExample } from "../content/learningExampleQuality";
-import { resolveSentenceMedia } from "../content/sentenceMedia";
+import { sentenceCloze } from "./sentenceCloze";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -67,10 +65,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["The", "student", "organized", "her", "study", "desk"],
   },
   pillow: {
-    clozeBefore: "He fluffed the soft feather",
+    clozeBefore: "She fluffed the soft feather",
     clozeAfter: "before going to sleep.",
-    full: "He fluffed the soft feather pillow before going to sleep.",
-    words: ["He", "fluffed", "the", "soft", "feather", "pillow"],
+    full: "She fluffed the soft feather pillow before going to sleep.",
+    words: ["She", "fluffed", "the", "soft", "feather", "pillow"],
   },
   blanket: {
     clozeBefore: "He pulled the warm wool",
@@ -79,10 +77,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "pulled", "the", "warm", "wool", "blanket"],
   },
   sheet: {
-    clozeBefore: "Samir places a clean",
-    clozeAfter: "directly over the mattress.",
-    full: "Samir places a clean sheet directly over the mattress.",
-    words: ["Samir", "places", "a", "clean", "sheet"],
+    clozeBefore: "She smoothed the crisp white",
+    clozeAfter: "over the mattress.",
+    full: "She smoothed the crisp white sheet over the mattress.",
+    words: ["She", "smoothed", "the", "crisp", "white", "sheet"],
   },
   mattress: {
     clozeBefore: "The thick memory foam",
@@ -128,21 +126,21 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
   },
   duvet: {
     clozeBefore: "The thick down",
-    clozeAfter: "kept him warm during the blizzard.",
-    full: "The thick down duvet kept him warm during the blizzard.",
-    words: ["The", "thick", "duvet", "kept", "him", "warm"],
+    clozeAfter: "kept her warm during the blizzard.",
+    full: "The thick down duvet kept her warm during the blizzard.",
+    words: ["The", "thick", "duvet", "kept", "her", "warm"],
   },
   "bed-sheet": {
-    clozeBefore: "He washed the fitted",
+    clozeBefore: "She washed the fitted",
     clozeAfter: "and put it back on the bed.",
-    full: "He washed the fitted bed sheet and put it back on the bed.",
-    words: ["He", "washed", "the", "fitted", "bed sheet"],
+    full: "She washed the fitted bed sheet and put it back on the bed.",
+    words: ["She", "washed", "the", "fitted", "bed sheet"],
   },
   clock: {
-    clozeBefore: "He checked the round wall",
+    clozeBefore: "She checked the round wall",
     clozeAfter: "to see if it was time for bed.",
-    full: "He checked the round wall clock to see if it was time for bed.",
-    words: ["He", "checked", "the", "round", "wall", "clock"],
+    full: "She checked the round wall clock to see if it was time for bed.",
+    words: ["She", "checked", "the", "round", "wall", "clock"],
   },
   "toy-box": {
     clozeBefore: "The child tossed all the colorful blocks back into the large wooden",
@@ -181,10 +179,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "turned", "on", "the", "ceiling light", "to", "brighten", "it"],
   },
   "light-switch": {
-    clozeBefore: "He flipped the",
+    clozeBefore: "She flipped the",
     clozeAfter: "before leaving the room.",
-    full: "He flipped the light switch before leaving the room.",
-    words: ["He", "flipped", "the", "light switch", "before", "leaving", "the", "room"],
+    full: "She flipped the light switch before leaving the room.",
+    words: ["She", "flipped", "the", "light switch", "before", "leaving", "the", "room"],
   },
   "reading-light": {
     clozeBefore: "He clicked on his",
@@ -194,8 +192,8 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
   },
   "picture-frame": {
     clozeBefore: "There is a silver",
-    clozeAfter: "sitting on his nightstand.",
-    full: "There is a silver picture frame sitting on his nightstand.",
+    clozeAfter: "sitting on her nightstand.",
+    full: "There is a silver picture frame sitting on her nightstand.",
     words: ["There", "is", "a", "silver", "picture frame", "on", "the", "nightstand"],
   },
   plant: {
@@ -211,10 +209,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "arranged", "the", "flowers", "in", "a", "glass", "vase"],
   },
   candle: {
-    clozeBefore: "He lit a scented",
+    clozeBefore: "She lit a scented",
     clozeAfter: "to relax before sleeping.",
-    full: "He lit a scented candle to relax before sleeping.",
-    words: ["He", "lit", "a", "scented", "candle", "to", "relax"],
+    full: "She lit a scented candle to relax before sleeping.",
+    words: ["She", "lit", "a", "scented", "candle", "to", "relax"],
   },
   poster: {
     clozeBefore: "He hung a large movie",
@@ -229,10 +227,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["The", "loud", "alarm clock", "woke", "him", "up", "early"],
   },
   calendar: {
-    clozeBefore: "He marked the date on his wall",
+    clozeBefore: "She marked the date on her wall",
     clozeAfter: "with a red pen.",
-    full: "He marked the date on his wall calendar with a red pen.",
-    words: ["He", "marked", "the", "date", "on", "his", "wall", "calendar"],
+    full: "She marked the date on her wall calendar with a red pen.",
+    words: ["She", "marked", "the", "date", "on", "her", "wall", "calendar"],
   },
   hanger: {
     clozeBefore: "He placed his clean shirt on a wooden",
@@ -253,10 +251,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "tossed", "his", "clothes", "into", "the", "laundry basket"],
   },
   wastebasket: {
-    clozeBefore: "Tariq puts the used tissue in the",
-    clozeAfter: "below the calendar.",
-    full: "Tariq puts the used tissue in the wastebasket below the calendar.",
-    words: ["Tariq", "puts", "the", "tissue", "in", "the", "wastebasket"],
+    clozeBefore: "She threw the crumpled paper into the small",
+    clozeAfter: ".",
+    full: "She threw the crumpled paper into the small wastebasket.",
+    words: ["She", "threw", "the", "paper", "into", "the", "small", "wastebasket"],
   },
   "jewelry-box": {
     clozeBefore: "She carefully placed her rings into the velvet",
@@ -271,10 +269,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "put", "on", "his", "flannel", "pajamas", "before", "bed"],
   },
   slippers: {
-    clozeBefore: "He slid his feet into soft",
+    clozeBefore: "She slid her feet into soft",
     clozeAfter: "on the cold floor.",
-    full: "He slid his feet into soft slippers on the cold floor.",
-    words: ["He", "slid", "his", "feet", "into", "soft", "slippers"],
+    full: "She slid her feet into soft slippers on the cold floor.",
+    words: ["She", "slid", "her", "feet", "into", "soft", "slippers"],
   },
   robe: {
     clozeBefore: "He wrapped a thick bath",
@@ -295,10 +293,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["They", "bought", "a", "wooden", "bed frame", "for", "the", "mattress"],
   },
   books: {
-    clozeBefore: "He keeps a stack of interesting",
-    clozeAfter: "on his nightstand to read.",
-    full: "He keeps a stack of interesting books on his nightstand to read.",
-    words: ["He", "keeps", "some", "interesting", "books", "on", "his", "nightstand"],
+    clozeBefore: "She keeps a stack of interesting",
+    clozeAfter: "on her nightstand to read.",
+    full: "She keeps a stack of interesting books on her nightstand to read.",
+    words: ["She", "keeps", "some", "interesting", "books", "on", "her", "nightstand"],
   },
   "photo-album": {
     clozeBefore: "They looked through an old",
@@ -325,10 +323,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "took", "off", "his", "reading", "glasses", "and", "rested"],
   },
   phone: {
-    clozeBefore: "He plugged his mobile",
+    clozeBefore: "She plugged her mobile",
     clozeAfter: "in to charge overnight.",
-    full: "He plugged his mobile phone in to charge overnight.",
-    words: ["He", "plugged", "his", "mobile", "phone", "in", "to", "charge"],
+    full: "She plugged her mobile phone in to charge overnight.",
+    words: ["She", "plugged", "her", "mobile", "phone", "in", "to", "charge"],
   },
   charger: {
     clozeBefore: "He needs a new phone",
@@ -337,10 +335,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "needs", "a", "new", "phone", "charger", "for", "his", "phone"],
   },
   laptop: {
-    clozeBefore: "He closed his",
-    clozeAfter: "after finishing his homework at the desk.",
-    full: "He closed his laptop after finishing his homework at the desk.",
-    words: ["He", "closed", "his", "laptop", "after", "finishing", "his", "homework"],
+    clozeBefore: "She closed her",
+    clozeAfter: "after finishing her homework at the desk.",
+    full: "She closed her laptop after finishing her homework at the desk.",
+    words: ["She", "closed", "her", "laptop", "after", "finishing", "her", "homework"],
   },
   headphones: {
     clozeBefore: "He put on his noise-canceling",
@@ -361,10 +359,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "played", "loud", "music", "from", "the", "wireless", "speaker"],
   },
   "remote-control": {
-    clozeBefore: "He used the",
-    clozeAfter: "to turn off the television from his bed.",
-    full: "He used the remote control to turn off the television from his bed.",
-    words: ["He", "used", "the", "remote control", "to", "turn", "off", "the", "TV"],
+    clozeBefore: "She used the",
+    clozeAfter: "to turn off the television from her bed.",
+    full: "She used the remote control to turn off the television from her bed.",
+    words: ["She", "used", "the", "remote control", "to", "turn", "off", "the", "TV"],
   },
   "tissue-box": {
     clozeBefore: "He grabbed a tissue from the",
@@ -379,10 +377,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "turned", "on", "the", "bedside", "lamp"],
   },
   mirror: {
-    clozeBefore: "He checked his outfit in the full-length",
+    clozeBefore: "She checked her outfit in the full-length",
     clozeAfter: "before leaving.",
-    full: "He checked his outfit in the full-length mirror before leaving.",
-    words: ["He", "checked", "his", "outfit", "in", "the", "mirror"],
+    full: "She checked her outfit in the full-length mirror before leaving.",
+    words: ["She", "checked", "her", "outfit", "in", "the", "mirror"],
   },
   comforter: {
     clozeBefore: "He pulled the thick",
@@ -403,10 +401,10 @@ export const RICH_CONTEXT_SENTENCES: Record<string, RichSentence> = {
     words: ["He", "smoothed", "the", "patterned", "bedspread"],
   },
   window: {
-    clozeBefore: "He opened the",
+    clozeBefore: "She opened the",
     clozeAfter: "to let some fresh air into the room.",
-    full: "He opened the window to let some fresh air into the room.",
-    words: ["He", "opened", "the", "window", "for", "fresh air"],
+    full: "She opened the window to let some fresh air into the room.",
+    words: ["She", "opened", "the", "window", "for", "fresh air"],
   },
   curtain: {
     clozeBefore: "He pulled the heavy",
@@ -487,19 +485,14 @@ export function buildSentenceCompletion(sentence: string, targetLabel: string): 
       (targetToken, offset) => normalisedTokens[candidateStart + offset] === targetToken
     )
   );
-  const naturalTarget = findSentenceTarget(sentence, targetLabel);
-  const targetStart = naturalTarget
-    ? sentenceToTiles(sentence.slice(0, naturalTarget.start)).length
-    : completeTargetStart >= 0
+  const targetStart =
+    completeTargetStart >= 0
       ? completeTargetStart
       : Math.max(
           0,
           normalisedTokens.findIndex((token) => token === targetTokens[0])
         );
-  const targetSpan = Math.max(
-    1,
-    Math.min(3, naturalTarget ? sentenceToTiles(naturalTarget.text).length : targetTokens.length)
-  );
+  const targetSpan = Math.max(1, Math.min(3, targetTokens.length));
   const blankCount = Math.min(tokens.length <= 3 ? 2 : 3, tokens.length);
   const earliestStartContainingTarget = Math.max(0, targetStart + targetSpan - blankCount);
   const latestStartContainingTarget = Math.min(targetStart, tokens.length - blankCount);
@@ -518,7 +511,9 @@ export function buildSentenceCompletion(sentence: string, targetLabel: string): 
 
 function isUsefulExample(value: string | undefined): value is string {
   if (!value?.trim()) return false;
-  return !isGenericLearningExample(value);
+  return !/was used during the activity|glossary uses the term|lesson used .+ to describe|in an educational description|can see, use, or|uses or discusses|each word connected to|places .+ in one coherent situation|belongs to a different part|(?:worker and customer|patient and medical team) deal with/iu.test(
+    value
+  );
 }
 
 /** Group counting drills are reading contexts, not individual usage examples. */
@@ -538,16 +533,16 @@ export function getRichSentence(
 ): RichSentence {
   const authoredSentence = getAuthoredSentence(word.id);
   const curatedSentence = RICH_CONTEXT_SENTENCES[word.id];
-  const lessonContextSentences = findLessonContextSentences(word, usage);
-  const filterCandidate = (
-    sentence: string | undefined,
-    enforceOwnership = true
-  ): sentence is string => {
+  const candidates = [
+    authoredSentence?.full,
+    curatedSentence?.full,
+    isUsefulExample(word.exampleUsage) ? word.exampleUsage.trim() : undefined,
+    ...findLessonContextSentences(word, usage),
+  ].filter((sentence): sentence is string => {
     if (!isUsefulExample(sentence) || !isStandaloneExample(sentence)) return false;
     // Construction and gap fill must actually assess the selected target.
     // Inflected examples remain available as reading, not an unrelated blank.
     if (sentenceCloze(sentence, word.label) === sentence) return false;
-    if (!enforceOwnership) return true;
     const mentionedTargets =
       usage?.targetWordsEnglish.filter((label) => sentenceCloze(sentence, label) !== sentence) ??
       [];
@@ -563,45 +558,8 @@ export function getRichSentence(
       owner.toLowerCase() === word.label.toLowerCase() &&
       !(mentionedTargets.length >= 3 && /[,;:]/u.test(sentence))
     );
-  };
-
-  const primaryCandidates = [
-    authoredSentence?.full,
-    curatedSentence?.full,
-    ...lessonContextSentences,
-    isUsefulExample(word.exampleUsage) ? word.exampleUsage.trim() : undefined,
-  ].filter((s): s is string => filterCandidate(s, true));
-
-  const candidates =
-    primaryCandidates.length > 0
-      ? primaryCandidates
-      : [
-          authoredSentence?.full,
-          curatedSentence?.full,
-          ...lessonContextSentences,
-          isUsefulExample(word.exampleUsage) ? word.exampleUsage.trim() : undefined,
-        ].filter((s): s is string => filterCandidate(s, false));
-  const { lead, spoken } = fallbackFrame(word);
-  const fallback = `${lead.join(" ")} ${spoken}.`;
-  // Keep valid illustrated examples available when a richer dictionary example
-  // is added. An image is eligible only for the exact wording it supports.
-  const illustratedCandidates = [
-    authoredSentence?.full,
-    curatedSentence?.full,
-    ...lessonContextSentences,
-    word.exampleUsage,
-    fallback,
-  ].filter(
-    (sentence): sentence is string =>
-      filterCandidate(sentence, false) && Boolean(resolveSentenceMedia(word.id, sentence, usage))
-  );
-  const uniqueCandidates = [
-    ...new Set(
-      illustratedCandidates.length > 0 && (usage || contextIndex === 0)
-        ? illustratedCandidates
-        : candidates
-    ),
-  ];
+  });
+  const uniqueCandidates = [...new Set(candidates)];
   const selected =
     uniqueCandidates[Math.min(Math.max(0, contextIndex), uniqueCandidates.length - 1)];
   if (selected) {
@@ -621,6 +579,7 @@ export function getRichSentence(
       words: sentenceToTiles(selected),
     };
   }
+  const { lead, spoken } = fallbackFrame(word);
   const clozeBefore = lead.join(" ");
   return {
     clozeBefore,

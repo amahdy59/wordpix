@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "رمل",
       "محيط",
-      "موجة",
+      "يلوّح",
       "شاطئ",
       "جرف",
       "كثيب",
@@ -37,148 +37,143 @@
       "أفق",
       "شعاب",
       "خليج صغير",
-      "خليج",
+      "حجرة خدمة",
       "بحيرة ساحلية",
       "منشفة",
       "واقي شمس",
       "مظلة"
     ],
     "usage": {
-      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
-      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
-      "textType": "guided-description",
-      "readingTarget": "45-90 words",
+      "goal": "Learn to use common l4 beach 1 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 beach.",
+      "textType": "dialogue",
+      "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["sand", "ocean", "wave"],
-          "scenario": "Sand is loose small grains. The ocean is a large body of salt water, and a wave moves across its surface.",
+          "scenario": "During a routine l4 beach task, an adult compares sand, ocean, wave. The person selects sand for the next step.",
           "check": {
-            "question": "Which term names the loose small grains?",
+            "question": "Which option does the person select for the next step?",
             "options": ["sand", "ocean", "wave"],
             "expectedAnswer": "sand"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Unoccupied beach sand close-up, no people or access/safety claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares sand, ocean, wave. The person selects sand for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including sand, ocean, wave in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["shore", "cliff", "dune"],
-          "scenario": "The shore is land beside the water. A cliff is steep rock or earth, while a dune is wind-shaped sand.",
+          "scenario": "During a routine l4 beach task, an adult compares shore, cliff, dune. The person selects shore for the next step.",
           "check": {
-            "question": "Which term names the land beside the water?",
+            "question": "Which option does the person select for the next step?",
             "options": ["shore", "cliff", "dune"],
             "expectedAnswer": "shore"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty shoreline, no dramatic cliff activity or unsafe access route. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares shore, cliff, dune. The person selects shore for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including shore, cliff, dune in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["tide pool", "horizon", "reef"],
-          "scenario": "A tide pool remains among rocks as the tide recedes. Horizon is the apparent meeting line of sky and earth or sea; reef is a rock or coral structure.",
+          "scenario": "During a routine l4 beach task, an adult compares tide pool, horizon, reef. The person selects tide pool for the next step.",
           "check": {
-            "question": "Which term names the small pool left among rocks?",
+            "question": "Which option does the person select for the next step?",
             "options": ["tide pool", "horizon", "reef"],
             "expectedAnswer": "tide pool"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Natural tide pool among rocks, no collecting, touching or human activity. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares tide pool, horizon, reef. The person selects tide pool for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including tide pool, horizon, reef in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["cove", "bay", "lagoon"],
-          "scenario": "The guide calls the small sheltered inlet a cove. Bay is a coastal inlet; lagoon is water separated from a larger body by a barrier.",
+          "scenario": "During a routine l4 beach task, an adult compares cove, bay, lagoon. The person selects cove for the next step.",
           "check": {
-            "question": "What exact word does the guide use for the small inlet?",
+            "question": "Which option does the person select for the next step?",
             "options": ["cove", "bay", "lagoon"],
             "expectedAnswer": "cove"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty small coastal cove; size and naming supplied by text, no universal bay/cove cutoff. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares cove, bay, lagoon. The person selects cove for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including cove, bay, lagoon in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["towel", "sunscreen", "umbrella"],
-          "scenario": "A towel dries the body or surfaces. Sunscreen helps protect skin against UV radiation when used as directed; a beach umbrella provides shade.",
+          "scenario": "During a routine l4 beach task, an adult compares towel, sunscreen, umbrella. The person selects towel for the next step.",
           "check": {
-            "question": "Which item is used for drying?",
+            "question": "Which option does the person select for the next step?",
             "options": ["towel", "sunscreen", "umbrella"],
             "expectedAnswer": "towel"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Plain folded towel on dry surface, no sunscreen effectiveness or person inferred. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares towel, sunscreen, umbrella. The person selects towel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including towel, sunscreen, umbrella in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Describing the coast",
-      "text": "Dina reads a coast guide. Sand lies beside the ocean, and a wave moves toward the shore. A cliff and a dune rise nearby. The guide describes a tide pool, a reef and a small cove. Dina can see the horizon from the bay. She brings a towel and an umbrella. She reads the current local advice before choosing where to walk or rest.",
-      "imageBrief": "Support for Describing the coast. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
+      "title": "L4 Beach: Short Description",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice sand, ocean, and wave. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice shore, cliff, and dune. The scene gives each word a clear place in the outdoor setting.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Sand is loose small grains. The ocean is a large body of salt water, and a wave moves across its surface.\nWhich term names the loose small grains?",
+        "prompt": "During a routine l4 beach task, an adult compares sand, ocean, wave. The person selects sand for the next step.\nWhich option does the person select for the next step?",
         "answer": "sand",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The shore is land beside the water. A cliff is steep rock or earth, while a dune is wind-shaped sand.\nWhich term names the land beside the water?",
+        "prompt": "During a routine l4 beach task, an adult compares shore, cliff, dune. The person selects shore for the next step.\nWhich option does the person select for the next step?",
         "answer": "shore",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "A tide pool remains among rocks as the tide recedes. Horizon is the apparent meeting line of sky and earth or sea; reef is a rock or coral structure.\nWhich term names the small pool left among rocks?",
+        "prompt": "During a routine l4 beach task, an adult compares tide pool, horizon, reef. The person selects tide pool for the next step.\nWhich option does the person select for the next step?",
         "answer": "tide pool",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "The guide calls the small sheltered inlet a cove. Bay is a coastal inlet; lagoon is water separated from a larger body by a barrier.\nWhat exact word does the guide use for the small inlet?",
+        "prompt": "During a routine l4 beach task, an adult compares cove, bay, lagoon. The person selects cove for the next step.\nWhich option does the person select for the next step?",
         "answer": "cove",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A towel dries the body or surfaces. Sunscreen helps protect skin against UV radiation when used as directed; a beach umbrella provides shade.\nWhich item is used for drying?",
+        "prompt": "During a routine l4 beach task, an adult compares towel, sunscreen, umbrella. The person selects towel for the next step.\nWhich option does the person select for the next step?",
         "answer": "towel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Dina reads a coast guide. Sand lies beside the ocean, and a wave moves toward the shore. A cliff and a dune rise nearby. The guide describes a tide pool, a reef and a small cove. Dina can see the horizon from the bay. She brings a towel and an umbrella. She reads the current local advice before choosing where to walk or rest.\nWhat does Dina read before choosing where to walk?",
-        "answer": "The current local advice.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading-specific-information"
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "sand"
       },
       {
-        "prompt": "Explain the difference between “sand” and “ocean” using the supplied examples.",
-        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
-        "questionType": "comparison",
-        "responseMode": "sentence",
-        "contextTag": "guided-comparison"
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "wave"
       },
       {
-        "prompt": "Write an original sentence using “sand” in its supplied supported sports and coastal vocabulary sense.",
-        "answer": "Accept an accurate original sentence in the supplied sense. Example: Sand is loose small grains. The ocean is a large body of salt water, and a wave moves across its surface.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "guided-production"
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “athlete” in a sentence connected to this lesson.",
+        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Describing the coast",
-      "idea": "Narrated comparison with a pause to explain the stated difference.",
-      "scriptStarter": "Dina reads a coast guide. Sand lies beside the ocean, and a wave moves toward the shore. A cliff and a dune rise nearby. The guide describes a tide pool, a reef and a small cove. Dina can see the horizon from the bay. She brings a towel and an umbrella. She reads the current local advice before choosing where to walk or rest. Ask: What does Dina read before choosing where to walk?"
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: athlete, coach from sports-center-5\n3 lesson(s) back: long jump, high jump from sports-center-3\n7 lesson(s) back: Dumbbell, Barbell from sports-equipment-3"
   },
@@ -227,141 +222,136 @@
       "غوص"
     ],
     "usage": {
-      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
-      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
-      "textType": "guided-description",
-      "readingTarget": "45-90 words",
+      "goal": "Learn to use common l4 beach 2 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 beach.",
+      "textType": "dialogue",
+      "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["beach chair", "cooler", "flip-flops"],
-          "scenario": "The beach chair is a portable seat. A cooler keeps items cold, and flip-flops are open sandals.",
+          "scenario": "During a routine l4 beach task, an adult compares beach chair, cooler, flip-flops. The person selects beach chair for the next step.",
           "check": {
-            "question": "Which item is the portable seat?",
+            "question": "Which option does the person select for the next step?",
             "options": ["beach chair", "cooler", "flip-flops"],
             "expectedAnswer": "beach chair"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty plain folding beach chair, no model or branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares beach chair, cooler, flip-flops. The person selects beach chair for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including beach chair, cooler, flip-flops in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["sunglasses", "hat", "swimsuit"],
-          "scenario": "Sunglasses are darkened glasses for reducing glare. A hat is headwear; a swimsuit is clothing designed for swimming.",
+          "scenario": "During a routine l4 beach task, an adult compares sunglasses, hat, swimsuit. The person selects sunglasses for the next step.",
           "check": {
-            "question": "Which item is the darkened eyewear?",
+            "question": "Which option does the person select for the next step?",
             "options": ["sunglasses", "hat", "swimsuit"],
             "expectedAnswer": "sunglasses"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Plain sunglasses on a table, no sun-protection rating or eye-safety claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares sunglasses, hat, swimsuit. The person selects sunglasses for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including sunglasses, hat, swimsuit in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["bikini", "swim trunks", "goggles"],
-          "scenario": "The display names bikini, a two-piece swimsuit. Swim trunks are swimming shorts; goggles are close-fitting eyewear for water activities.",
+          "scenario": "During a routine l4 beach task, an adult compares bikini, swim trunks, goggles. The person selects bikini for the next step.",
           "check": {
-            "question": "Which listed term names the two-piece swimsuit?",
+            "question": "Which option does the person select for the next step?",
             "options": ["bikini", "swim trunks", "goggles"],
             "expectedAnswer": "bikini"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Standalone two-piece swimsuit neatly flat-laid; no person, nudity or sexualized display. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares bikini, swim trunks, goggles. The person selects bikini for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including bikini, swim trunks, goggles in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["snorkel", "fins", "swimming"],
-          "scenario": "A snorkel is a breathing tube used at the water surface. Fins are foot-worn swimming aids; swimming is movement through water.",
+          "scenario": "During a routine l4 beach task, an adult compares snorkel, fins, swimming. The person selects snorkel for the next step.",
           "check": {
-            "question": "Which item is the surface breathing tube?",
+            "question": "Which option does the person select for the next step?",
             "options": ["snorkel", "fins", "swimming"],
             "expectedAnswer": "snorkel"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Standalone snorkel with coherent mouthpiece, no underwater use, person or instruction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares snorkel, fins, swimming. The person selects snorkel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including snorkel, fins, swimming in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["surfing", "snorkeling", "diving"],
-          "scenario": "Surfing means riding waves on a surfboard. Snorkeling uses a snorkel near the surface; diving here means an underwater activity.",
+          "scenario": "During a routine l4 beach task, an adult compares surfing, snorkeling, diving. The person selects surfing for the next step.",
           "check": {
-            "question": "Which activity uses a surfboard to ride waves?",
+            "question": "Which option does the person select for the next step?",
             "options": ["surfing", "snorkeling", "diving"],
             "expectedAnswer": "surfing"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Plain surfboard on dry beach supports the written activity; no risky action or incidental swimmers. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares surfing, snorkeling, diving. The person selects surfing for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including surfing, snorkeling, diving in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clothing and water equipment",
-      "text": "Dina packs a beach chair, a cooler, flip-flops, sunglasses and a hat. She checks the activity information before choosing swimwear. The display names a swimsuit, a bikini and swim trunks. Another display holds goggles, a snorkel and fins. Dina reads about swimming, surfing, snorkeling and diving. She asks trained staff about conditions and equipment. This word lesson does not require any water activity.",
-      "imageBrief": "Support for Clothing and water equipment. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
+      "title": "L4 Beach: Mini Dialogue",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice beach chair, cooler, and flip-flops. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice sunglasses, hat, and swimsuit. The scene gives each word a clear place in the outdoor setting.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "The beach chair is a portable seat. A cooler keeps items cold, and flip-flops are open sandals.\nWhich item is the portable seat?",
+        "prompt": "During a routine l4 beach task, an adult compares beach chair, cooler, flip-flops. The person selects beach chair for the next step.\nWhich option does the person select for the next step?",
         "answer": "beach chair",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Sunglasses are darkened glasses for reducing glare. A hat is headwear; a swimsuit is clothing designed for swimming.\nWhich item is the darkened eyewear?",
+        "prompt": "During a routine l4 beach task, an adult compares sunglasses, hat, swimsuit. The person selects sunglasses for the next step.\nWhich option does the person select for the next step?",
         "answer": "sunglasses",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "The display names bikini, a two-piece swimsuit. Swim trunks are swimming shorts; goggles are close-fitting eyewear for water activities.\nWhich listed term names the two-piece swimsuit?",
+        "prompt": "During a routine l4 beach task, an adult compares bikini, swim trunks, goggles. The person selects bikini for the next step.\nWhich option does the person select for the next step?",
         "answer": "bikini",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "A snorkel is a breathing tube used at the water surface. Fins are foot-worn swimming aids; swimming is movement through water.\nWhich item is the surface breathing tube?",
+        "prompt": "During a routine l4 beach task, an adult compares snorkel, fins, swimming. The person selects snorkel for the next step.\nWhich option does the person select for the next step?",
         "answer": "snorkel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Surfing means riding waves on a surfboard. Snorkeling uses a snorkel near the surface; diving here means an underwater activity.\nWhich activity uses a surfboard to ride waves?",
+        "prompt": "During a routine l4 beach task, an adult compares surfing, snorkeling, diving. The person selects surfing for the next step.\nWhich option does the person select for the next step?",
         "answer": "surfing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Dina packs a beach chair, a cooler, flip-flops, sunglasses and a hat. She checks the activity information before choosing swimwear. The display names a swimsuit, a bikini and swim trunks. Another display holds goggles, a snorkel and fins. Dina reads about swimming, surfing, snorkeling and diving. She asks trained staff about conditions and equipment. This word lesson does not require any water activity.\nWho does Dina ask about conditions and equipment?",
-        "answer": "Trained staff.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading-specific-information"
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "beach chair"
       },
       {
-        "prompt": "Explain the difference between “beach chair” and “cooler” using the supplied examples.",
-        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
-        "questionType": "comparison",
-        "responseMode": "sentence",
-        "contextTag": "guided-comparison"
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "flip-flops"
       },
       {
-        "prompt": "Write an original sentence using “beach chair” in its supplied supported sports and coastal vocabulary sense.",
-        "answer": "Accept an accurate original sentence in the supplied sense. Example: The beach chair is a portable seat. A cooler keeps items cold, and flip-flops are open sandals.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "guided-production"
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “sand” in a sentence connected to this lesson.",
+        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Clothing and water equipment",
-      "idea": "Narrated comparison with a pause to explain the stated difference.",
-      "scriptStarter": "Dina packs a beach chair, a cooler, flip-flops, sunglasses and a hat. She checks the activity information before choosing swimwear. The display names a swimsuit, a bikini and swim trunks. Another display holds goggles, a snorkel and fins. Dina reads about swimming, surfing, snorkeling and diving. She asks trained staff about conditions and equipment. This word lesson does not require any water activity. Ask: Who does Dina ask about conditions and equipment?"
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: sand, ocean from beach-1\n3 lesson(s) back: butterfly stroke, water polo from sports-center-4\n7 lesson(s) back: Scoreboard, Cones from sports-equipment-4"
   },
@@ -410,141 +400,136 @@
       "جمع الأصداف"
     ],
     "usage": {
-      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
-      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
-      "textType": "guided-description",
-      "readingTarget": "45-90 words",
+      "goal": "Learn to use common l4 beach 3 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 beach.",
+      "textType": "workplace-email",
+      "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["kayaking", "paddleboarding", "boogie boarding"],
-          "scenario": "Kayaking uses a kayak. Paddleboarding uses a board and paddle; boogie boarding means riding a wave on a bodyboard.",
+          "scenario": "During a routine l4 beach task, an adult compares kayaking, paddleboarding, boogie boarding. The person selects kayaking for the next step.",
           "check": {
-            "question": "Which activity uses a kayak?",
+            "question": "Which option does the person select for the next step?",
             "options": ["kayaking", "paddleboarding", "boogie boarding"],
             "expectedAnswer": "kayaking"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty kayak on dry storage rack; no unsafe participation or flotation instruction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares kayaking, paddleboarding, boogie boarding. The person selects kayaking for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including kayaking, paddleboarding, boogie boarding in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["jet skiing", "sailing", "windsurfing"],
-          "scenario": "Jet skiing means using a powered personal watercraft. Sailing uses wind-driven sails, while windsurfing uses a board with a sail.",
+          "scenario": "During a routine l4 beach task, an adult compares jet skiing, sailing, windsurfing. The person selects jet skiing for the next step.",
           "check": {
-            "question": "Which activity uses a powered personal watercraft?",
+            "question": "Which option does the person select for the next step?",
             "options": ["jet skiing", "sailing", "windsurfing"],
             "expectedAnswer": "jet skiing"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Parked generic personal watercraft, no operator, brand, speed or local-license claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares jet skiing, sailing, windsurfing. The person selects jet skiing for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including jet skiing, sailing, windsurfing in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["water skiing", "fishing", "sandcastle"],
-          "scenario": "Water skiing uses skis while a boat tows the participant. Fishing means catching fish; a sandcastle is a sand-built model.",
+          "scenario": "During a routine l4 beach task, an adult compares water skiing, fishing, sandcastle. The person selects water skiing for the next step.",
           "check": {
-            "question": "Which activity uses skis while being towed?",
+            "question": "Which option does the person select for the next step?",
             "options": ["water skiing", "fishing", "sandcastle"],
             "expectedAnswer": "water skiing"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Standalone water skis in dry storage supports text; no active towing, person or operational advice. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares water skiing, fishing, sandcastle. The person selects water skiing for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including water skiing, fishing, sandcastle in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["frisbee", "volleyball", "sunbathing"],
-          "scenario": "Dina brings a frisbee, meaning a flying disc here. Volleyball names the beach game in this description; sunbathing means sitting or lying in sunshine.",
+          "scenario": "During a routine l4 beach task, an adult compares frisbee, volleyball, sunbathing. The person selects frisbee for the next step.",
           "check": {
-            "question": "Which item does Dina bring for throwing through the air?",
+            "question": "Which option does the person select for the next step?",
             "options": ["frisbee", "volleyball", "sunbathing"],
             "expectedAnswer": "frisbee"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Plain flying disc, no brand or people; no promotion of UV exposure. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares frisbee, volleyball, sunbathing. The person selects frisbee for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including frisbee, volleyball, sunbathing in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["picnic", "kite flying", "shell collecting"],
-          "scenario": "Dina chooses a picnic, an outdoor meal. Kite flying uses a kite on a line; shell collecting is subject to local wildlife and collecting rules.",
+          "scenario": "During a routine l4 beach task, an adult compares picnic, kite flying, shell collecting. The person selects picnic for the next step.",
           "check": {
-            "question": "Which activity is an outdoor meal?",
+            "question": "Which option does the person select for the next step?",
             "options": ["picnic", "kite flying", "shell collecting"],
             "expectedAnswer": "picnic"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Closed picnic bag and simple food containers on a dry table; no wildlife collecting. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares picnic, kite flying, shell collecting. The person selects picnic for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including picnic, kite flying, shell collecting in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Reading activity descriptions",
-      "text": "Dina reads the beach-center program. Kayaking uses a kayak, while paddleboarding uses a board and paddle. Boogie boarding uses a small bodyboard. Jet skiing and water skiing involve powered craft. Dina also sees sailing and windsurfing descriptions. On land, a frisbee and volleyball are in the display, beside a picnic bag. She asks about local rules and supervised sessions before booking any activity.",
-      "imageBrief": "Support for Reading activity descriptions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
+      "title": "L4 Beach: Simple Message",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice kayaking, paddleboarding, and boogie boarding. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice jet skiing, sailing, and windsurfing. The scene gives each word a clear place in the outdoor setting.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Kayaking uses a kayak. Paddleboarding uses a board and paddle; boogie boarding means riding a wave on a bodyboard.\nWhich activity uses a kayak?",
+        "prompt": "During a routine l4 beach task, an adult compares kayaking, paddleboarding, boogie boarding. The person selects kayaking for the next step.\nWhich option does the person select for the next step?",
         "answer": "kayaking",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Jet skiing means using a powered personal watercraft. Sailing uses wind-driven sails, while windsurfing uses a board with a sail.\nWhich activity uses a powered personal watercraft?",
+        "prompt": "During a routine l4 beach task, an adult compares jet skiing, sailing, windsurfing. The person selects jet skiing for the next step.\nWhich option does the person select for the next step?",
         "answer": "jet skiing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Water skiing uses skis while a boat tows the participant. Fishing means catching fish; a sandcastle is a sand-built model.\nWhich activity uses skis while being towed?",
+        "prompt": "During a routine l4 beach task, an adult compares water skiing, fishing, sandcastle. The person selects water skiing for the next step.\nWhich option does the person select for the next step?",
         "answer": "water skiing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Dina brings a frisbee, meaning a flying disc here. Volleyball names the beach game in this description; sunbathing means sitting or lying in sunshine.\nWhich item does Dina bring for throwing through the air?",
+        "prompt": "During a routine l4 beach task, an adult compares frisbee, volleyball, sunbathing. The person selects frisbee for the next step.\nWhich option does the person select for the next step?",
         "answer": "frisbee",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Dina chooses a picnic, an outdoor meal. Kite flying uses a kite on a line; shell collecting is subject to local wildlife and collecting rules.\nWhich activity is an outdoor meal?",
+        "prompt": "During a routine l4 beach task, an adult compares picnic, kite flying, shell collecting. The person selects picnic for the next step.\nWhich option does the person select for the next step?",
         "answer": "picnic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Dina reads the beach-center program. Kayaking uses a kayak, while paddleboarding uses a board and paddle. Boogie boarding uses a small bodyboard. Jet skiing and water skiing involve powered craft. Dina also sees sailing and windsurfing descriptions. On land, a frisbee and volleyball are in the display, beside a picnic bag. She asks about local rules and supervised sessions before booking any activity.\nWhat does Dina ask about before booking?",
-        "answer": "Local rules and supervised sessions.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading-specific-information"
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "kayaking"
       },
       {
-        "prompt": "Explain the difference between “kayaking” and “paddleboarding” using the supplied examples.",
-        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
-        "questionType": "comparison",
-        "responseMode": "sentence",
-        "contextTag": "guided-comparison"
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "boogie boarding"
       },
       {
-        "prompt": "Write an original sentence using “kayaking” in its supplied supported sports and coastal vocabulary sense.",
-        "answer": "Accept an accurate original sentence in the supplied sense. Example: Kayaking uses a kayak. Paddleboarding uses a board and paddle; boogie boarding means riding a wave on a bodyboard.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "guided-production"
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “beach chair” in a sentence connected to this lesson.",
+        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Reading activity descriptions",
-      "idea": "Narrated comparison with a pause to explain the stated difference.",
-      "scriptStarter": "Dina reads the beach-center program. Kayaking uses a kayak, while paddleboarding uses a board and paddle. Boogie boarding uses a small bodyboard. Jet skiing and water skiing involve powered craft. Dina also sees sailing and windsurfing descriptions. On land, a frisbee and volleyball are in the display, beside a picnic bag. She asks about local rules and supervised sessions before booking any activity. Ask: What does Dina ask about before booking?"
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: beach chair, cooler from beach-2\n3 lesson(s) back: athlete, coach from sports-center-5\n7 lesson(s) back: soccer, basketball from sports-center-1"
   },
@@ -576,7 +561,7 @@
       "coral"
     ],
     "targetWordsArabic": [
-      "وجبة شواء أو تجمع للشواء",
+      "يشوي على الشواية",
       "نار مخيم",
       "قراءة",
       "مشي",
@@ -593,141 +578,136 @@
       "مرجان"
     ],
     "usage": {
-      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
-      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
-      "textType": "guided-description",
-      "readingTarget": "45-90 words",
+      "goal": "Learn to use common l4 beach 4 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 beach.",
+      "textType": "service-notice",
+      "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["barbecue", "bonfire", "reading"],
-          "scenario": "Barbecue here means an outdoor grilled meal or gathering. Bonfire is a large controlled outdoor fire, while reading means understanding written words.",
+          "scenario": "During a routine l4 beach task, an adult compares barbecue, bonfire, reading. The person selects barbecue for the next step.",
           "check": {
-            "question": "Which term names the grilled meal or gathering?",
+            "question": "Which option does the person select for the next step?",
             "options": ["barbecue", "bonfire", "reading"],
             "expectedAnswer": "barbecue"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Closed plain grill and empty picnic table, no flame, fuel, cooking operation or fire-setting instruction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares barbecue, bonfire, reading. The person selects barbecue for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including barbecue, bonfire, reading in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["walking", "jogging", "seagull"],
-          "scenario": "Walking is moving on foot at a walking pace. Jogging is gentle running, and a seagull is a coastal gull bird.",
+          "scenario": "During a routine l4 beach task, an adult compares walking, jogging, seagull. The person selects walking for the next step.",
           "check": {
-            "question": "Which term names movement at a walking pace?",
+            "question": "Which option does the person select for the next step?",
             "options": ["walking", "jogging", "seagull"],
             "expectedAnswer": "walking"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty coastal path supports written movement term; no walker or inferred gait. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares walking, jogging, seagull. The person selects walking for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including walking, jogging, seagull in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["crab", "starfish", "jellyfish"],
-          "scenario": "A crab is a crustacean with a broad body and claws. Starfish are marine animals with arms; jellyfish have soft bodies and tentacles.",
+          "scenario": "During a routine l4 beach task, an adult compares crab, starfish, jellyfish. The person selects crab for the next step.",
           "check": {
-            "question": "Which listed animal has the broad body and claws?",
+            "question": "Which option does the person select for the next step?",
             "options": ["crab", "starfish", "jellyfish"],
             "expectedAnswer": "crab"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. One anatomically coherent crab in natural habitat, no human handling. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares crab, starfish, jellyfish. The person selects crab for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including crab, starfish, jellyfish in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["dolphin", "sea turtle", "pelican"],
-          "scenario": "A dolphin is a marine mammal. Sea turtle is a marine reptile, while pelican is a bird with a large bill and pouch.",
+          "scenario": "During a routine l4 beach task, an adult compares dolphin, sea turtle, pelican. The person selects dolphin for the next step.",
           "check": {
-            "question": "Which animal is the marine mammal?",
+            "question": "Which option does the person select for the next step?",
             "options": ["dolphin", "sea turtle", "pelican"],
             "expectedAnswer": "dolphin"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. One coherent dolphin near water surface, no fish mislabeled dolphin, performance or people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares dolphin, sea turtle, pelican. The person selects dolphin for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including dolphin, sea turtle, pelican in a natural setting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["seahorse", "clam", "coral"],
-          "scenario": "A seahorse is a small fish with a curled tail. A clam is a two-shelled mollusc, and coral is formed by animals called polyps.",
+          "scenario": "During a routine l4 beach task, an adult compares seahorse, clam, coral. The person selects seahorse for the next step.",
           "check": {
-            "question": "Which listed fish has the curled tail?",
+            "question": "Which option does the person select for the next step?",
             "options": ["seahorse", "clam", "coral"],
             "expectedAnswer": "seahorse"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. One anatomically coherent seahorse in underwater habitat; no harvesting or fabricated shell features. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares seahorse, clam, coral. The person selects seahorse for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including seahorse, clam, coral in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Coastal activities and animals",
-      "text": "Dina reads a coast information sheet. It describes a barbecue meal and a permitted bonfire event. Dina prefers reading or walking along the marked path. The wildlife section names a seagull, a crab, a starfish and a jellyfish. A dolphin is a marine mammal, while a seahorse is a fish. Dina watches wildlife from a distance and follows local rules without collecting or touching it.",
-      "imageBrief": "Support for Coastal activities and animals. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
+      "title": "L4 Beach: Notice-Style Text",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice barbecue, bonfire, and reading. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice walking, jogging, and seagull. The scene gives each word a clear place in the outdoor setting.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Barbecue here means an outdoor grilled meal or gathering. Bonfire is a large controlled outdoor fire, while reading means understanding written words.\nWhich term names the grilled meal or gathering?",
+        "prompt": "During a routine l4 beach task, an adult compares barbecue, bonfire, reading. The person selects barbecue for the next step.\nWhich option does the person select for the next step?",
         "answer": "barbecue",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Walking is moving on foot at a walking pace. Jogging is gentle running, and a seagull is a coastal gull bird.\nWhich term names movement at a walking pace?",
+        "prompt": "During a routine l4 beach task, an adult compares walking, jogging, seagull. The person selects walking for the next step.\nWhich option does the person select for the next step?",
         "answer": "walking",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "A crab is a crustacean with a broad body and claws. Starfish are marine animals with arms; jellyfish have soft bodies and tentacles.\nWhich listed animal has the broad body and claws?",
+        "prompt": "During a routine l4 beach task, an adult compares crab, starfish, jellyfish. The person selects crab for the next step.\nWhich option does the person select for the next step?",
         "answer": "crab",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "A dolphin is a marine mammal. Sea turtle is a marine reptile, while pelican is a bird with a large bill and pouch.\nWhich animal is the marine mammal?",
+        "prompt": "During a routine l4 beach task, an adult compares dolphin, sea turtle, pelican. The person selects dolphin for the next step.\nWhich option does the person select for the next step?",
         "answer": "dolphin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A seahorse is a small fish with a curled tail. A clam is a two-shelled mollusc, and coral is formed by animals called polyps.\nWhich listed fish has the curled tail?",
+        "prompt": "During a routine l4 beach task, an adult compares seahorse, clam, coral. The person selects seahorse for the next step.\nWhich option does the person select for the next step?",
         "answer": "seahorse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Dina reads a coast information sheet. It describes a barbecue meal and a permitted bonfire event. Dina prefers reading or walking along the marked path. The wildlife section names a seagull, a crab, a starfish and a jellyfish. A dolphin is a marine mammal, while a seahorse is a fish. Dina watches wildlife from a distance and follows local rules without collecting or touching it.\nIs a dolphin a fish in this lesson?",
-        "answer": "No. It is a marine mammal.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading-specific-information"
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "barbecue"
       },
       {
-        "prompt": "Explain the difference between “barbecue” and “bonfire” using the supplied examples.",
-        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
-        "questionType": "comparison",
-        "responseMode": "sentence",
-        "contextTag": "guided-comparison"
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "reading"
       },
       {
-        "prompt": "Write an original sentence using “barbecue” in its supplied supported sports and coastal vocabulary sense.",
-        "answer": "Accept an accurate original sentence in the supplied sense. Example: Barbecue here means an outdoor grilled meal or gathering. Bonfire is a large controlled outdoor fire, while reading means understanding written words.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "guided-production"
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “kayaking” in a sentence connected to this lesson.",
+        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Coastal activities and animals",
-      "idea": "Narrated comparison with a pause to explain the stated difference.",
-      "scriptStarter": "Dina reads a coast information sheet. It describes a barbecue meal and a permitted bonfire event. Dina prefers reading or walking along the marked path. The wildlife section names a seagull, a crab, a starfish and a jellyfish. A dolphin is a marine mammal, while a seahorse is a fish. Dina watches wildlife from a distance and follows local rules without collecting or touching it. Ask: Is a dolphin a fish in this lesson?"
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: kayaking, paddleboarding from beach-3\n3 lesson(s) back: sand, ocean from beach-1\n7 lesson(s) back: helmet, shin guard from sports-center-2"
   },
@@ -759,9 +739,9 @@
       "أعشاب بحرية",
       "قنفذ البحر",
       "منقذ سباحة",
-      "برج مراقبة المنقذ",
+      "برج منقذ",
       "علم تحذير",
-      "حقيبة إسعافات أولية",
+      "أول إسعاف طقم",
       "دُش",
       "غرفة تبديل الملابس",
       "ممشى خشبي",
@@ -770,122 +750,117 @@
       "سلة قمامة"
     ],
     "usage": {
-      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
-      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
-      "textType": "guided-description",
-      "readingTarget": "45-90 words",
+      "goal": "Learn to use common l4 beach 5 vocabulary to handle a familiar adult everyday task.",
+      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 beach.",
+      "textType": "dialogue",
+      "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["seaweed", "sea urchin", "lifeguard"],
-          "scenario": "Seaweed is marine algae. A sea urchin is a spiny marine animal; a lifeguard is trained to supervise and help water users.",
+          "scenario": "During a routine l4 beach task, an adult compares seaweed, sea urchin, lifeguard. The person selects seaweed for the next step.",
           "check": {
-            "question": "Which term names the marine algae?",
+            "question": "Which option does the person select for the next step?",
             "options": ["seaweed", "sea urchin", "lifeguard"],
             "expectedAnswer": "seaweed"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Seaweed in natural shoreline habitat, no collecting or human touch. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares seaweed, sea urchin, lifeguard. The person selects seaweed for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including seaweed, sea urchin, lifeguard in a natural setting."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["lifeguard tower", "warning flag", "first aid kit"],
-          "scenario": "The lifeguard tower is an elevated observation station. A warning flag communicates local conditions; a first aid kit holds emergency-care supplies.",
+          "scenario": "During a routine l4 beach task, an adult compares lifeguard tower, warning flag, first aid kit. The person selects lifeguard tower for the next step.",
           "check": {
-            "question": "Which structure is the observation station?",
+            "question": "Which option does the person select for the next step?",
             "options": ["lifeguard tower", "warning flag", "first aid kit"],
             "expectedAnswer": "lifeguard tower"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty beach observation tower; no flag meaning, staffing or current safety inferred. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares lifeguard tower, warning flag, first aid kit. The person selects lifeguard tower for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including lifeguard tower, warning flag, first aid kit in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["shower", "changing room", "boardwalk"],
-          "scenario": "A shower sprays washing water. A changing room is a private place for changing clothes; a boardwalk is a constructed walkway of boards.",
+          "scenario": "During a routine l4 beach task, an adult compares shower, changing room, boardwalk. The person selects shower for the next step.",
           "check": {
-            "question": "Which facility sprays washing water?",
+            "question": "Which option does the person select for the next step?",
             "options": ["shower", "changing room", "boardwalk"],
             "expectedAnswer": "shower"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Unoccupied outdoor shower fixture, no nude subject or implied live water operation. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares shower, changing room, boardwalk. The person selects shower for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including shower, changing room, boardwalk in a natural setting."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["pier", "parking lot", "trash can"],
-          "scenario": "A pier extends from the shore over water. A parking lot holds vehicles, and a trash can holds rubbish.",
+          "scenario": "During a routine l4 beach task, an adult compares pier, parking lot, trash can. The person selects pier for the next step.",
           "check": {
-            "question": "Which structure extends from shore over water?",
+            "question": "Which option does the person select for the next step?",
             "options": ["pier", "parking lot", "trash can"],
             "expectedAnswer": "pier"
           },
-          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty coherent pier viewed from shore, no person, access permission or structural-safety claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
-          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
+          "imageBrief": "Photorealistic adult real-world scene in a l4 beach context illustrating this situation: During a routine l4 beach task, an adult compares pier, parking lot, trash can. The person selects pier for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult l4 beach scene showing lesson-related items or actions including pier, parking lot, trash can in a natural setting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Finding beach facilities",
-      "text": "Dina sees seaweed near the shore and reads about the sea urchin. She asks where the lifeguard is based and finds the lifeguard tower. The facility has a first aid kit, a shower and a changing room. A boardwalk leads toward the pier. Dina checks the current warning flag and asks what it means locally. An old photograph cannot establish today's water conditions or lifeguard availability.",
-      "imageBrief": "Support for Finding beach facilities. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
+      "title": "L4 Beach: Short Description",
+      "text": "Maya is in a situation connected to l4 beach. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice seaweed, sea urchin, and lifeguard. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice lifeguard tower, warning flag, and first aid kit. The scene gives each word a clear place in the outdoor setting.",
+      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Beach. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "Seaweed is marine algae. A sea urchin is a spiny marine animal; a lifeguard is trained to supervise and help water users.\nWhich term names the marine algae?",
+        "prompt": "During a routine l4 beach task, an adult compares seaweed, sea urchin, lifeguard. The person selects seaweed for the next step.\nWhich option does the person select for the next step?",
         "answer": "seaweed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The lifeguard tower is an elevated observation station. A warning flag communicates local conditions; a first aid kit holds emergency-care supplies.\nWhich structure is the observation station?",
+        "prompt": "During a routine l4 beach task, an adult compares lifeguard tower, warning flag, first aid kit. The person selects lifeguard tower for the next step.\nWhich option does the person select for the next step?",
         "answer": "lifeguard tower",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "A shower sprays washing water. A changing room is a private place for changing clothes; a boardwalk is a constructed walkway of boards.\nWhich facility sprays washing water?",
+        "prompt": "During a routine l4 beach task, an adult compares shower, changing room, boardwalk. The person selects shower for the next step.\nWhich option does the person select for the next step?",
         "answer": "shower",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "A pier extends from the shore over water. A parking lot holds vehicles, and a trash can holds rubbish.\nWhich structure extends from shore over water?",
+        "prompt": "During a routine l4 beach task, an adult compares pier, parking lot, trash can. The person selects pier for the next step.\nWhich option does the person select for the next step?",
         "answer": "pier",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Dina sees seaweed near the shore and reads about the sea urchin. She asks where the lifeguard is based and finds the lifeguard tower. The facility has a first aid kit, a shower and a changing room. A boardwalk leads toward the pier. Dina checks the current warning flag and asks what it means locally. An old photograph cannot establish today's water conditions or lifeguard availability.\nCan an old photograph establish today’s water conditions?",
-        "answer": "No. Current local information is needed.",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading-specific-information"
+        "prompt": "Reading detail: Which target word is used first in the text?",
+        "answer": "seaweed"
       },
       {
-        "prompt": "Explain the difference between “seaweed” and “sea urchin” using the supplied examples.",
-        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
-        "questionType": "comparison",
-        "responseMode": "sentence",
-        "contextTag": "guided-comparison"
+        "prompt": "Reading detail: Which other target word appears in the scene?",
+        "answer": "lifeguard"
       },
       {
-        "prompt": "Write an original sentence using “seaweed” in its supplied supported sports and coastal vocabulary sense.",
-        "answer": "Accept an accurate original sentence in the supplied sense. Example: Seaweed is marine algae. A sea urchin is a spiny marine animal; a lifeguard is trained to supervise and help water users.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "guided-production"
+        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “barbecue” in a sentence connected to this lesson.",
+        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Finding beach facilities",
-      "idea": "Narrated comparison with a pause to explain the stated difference.",
-      "scriptStarter": "Dina sees seaweed near the shore and reads about the sea urchin. She asks where the lifeguard is based and finds the lifeguard tower. The facility has a first aid kit, a shower and a changing room. A boardwalk leads toward the pier. Dina checks the current warning flag and asks what it means locally. An old photograph cannot establish today's water conditions or lifeguard availability. Ask: Can an old photograph establish today’s water conditions?"
+      "title": "L4 Beach: In Context",
+      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: barbecue, bonfire from beach-4\n3 lesson(s) back: beach chair, cooler from beach-2\n7 lesson(s) back: long jump, high jump from sports-center-3"
   }

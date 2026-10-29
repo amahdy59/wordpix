@@ -140,7 +140,8 @@ export const DANCE_STUDIO_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "learn how to do a new job or activity",
-      example: "The beginner is still learning the ropes — he just started at the barre last week.",
+      example:
+        "The beginner is still learning the ropes — she just started at the barre last week.",
     },
     {
       id: "dance-studio-step-on-someone-s-toes",
@@ -148,7 +149,7 @@ export const DANCE_STUDIO_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "offend or upset someone, often unintentionally",
-      example: "In the pas de deux, he literally stepped on his toes during the lift rehearsal.",
+      example: "In the pas de deux, he literally stepped on her toes during the lift rehearsal.",
     },
     {
       id: "dance-studio-keep-in-step",
@@ -183,7 +184,7 @@ export const DANCE_STUDIO_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "gradually start to like or become comfortable with something",
       example:
-        "He didn't enjoy tap at first, but after a few weeks in his tap shoes, he warmed up to it.",
+        "She didn't enjoy tap at first, but after a few weeks in her tap shoes, she warmed up to it.",
     },
   ],
   dialogue: {

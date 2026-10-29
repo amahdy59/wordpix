@@ -51,14 +51,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "read up on",
         meaning: "learn about a topic by reading books",
         arabic: "يَقْرَأُ لِيَسْتَفِيدَ عَنْ مَوْضُوع",
-        example: "He read up on astronomy before visiting the planetarium.",
+        example: "She read up on astronomy before visiting the planetarium.",
       },
     ],
     sentences: [
       {
         context: "Reading Habit",
-        en: "He enjoys reading historical and science books for an hour before bedtime.",
-        ar: "يستمتع بقراءة كتب التاريخ والعلوم لمدة ساعة قبل النوم.",
+        en: "She enjoys reading historical and science books for an hour before bedtime.",
+        ar: "تَسْتَمْتِعُ بِقِرَاءَةِ الكُتُبِ التَّارِيخِيَّةِ وَالعِلْمِيَّةِ لِمُدَّةِ سَاعَةٍ قَبْلَ النَّوْمِ.",
       },
       {
         context: "Organization",
@@ -71,8 +71,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَفْتَحُ الكُتُبُ الجَيِّدَةُ آفَاقاً جَدِيدَةً وَتُثْرِي حَصِيلَتَكَ اللُّغَوِيَّةَ.",
       },
     ],
-    exampleSentence: "He enjoys reading historical and science books for an hour before bedtime.",
-    exampleArabic: "يستمتع بقراءة كتب التاريخ والعلوم لمدة ساعة قبل النوم.",
+    exampleSentence: "She enjoys reading historical and science books for an hour before bedtime.",
+    exampleArabic:
+      "تَسْتَمْتِعُ بِقِرَاءَةِ الكُتُبِ التَّارِيخِيَّةِ وَالعِلْمِيَّةِ لِمُدَّةِ سَاعَةٍ قَبْلَ النَّوْمِ.",
   },
   bucket: {
     id: "bucket",
@@ -105,8 +106,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Feeding Animals",
-        en: "He carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
-        ar: "حمل دلوين بلاستيكيين ثقيلين مملوءين بالحبوب المغذية إلى حظائر الخيول.",
+        en: "She carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
+        ar: "حَمَلَتْ دَلْوَيْنِ بَلاسْتِيكِيَّيْنِ ثَقِيلَيْنِ مَلِيئَيْنِ بِالحُبُوبِ المُغَذِّيَةِ لِلْخُيُولِ.",
       },
       {
         context: "Milking",
@@ -120,8 +121,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
-    exampleArabic: "حمل دلوين بلاستيكيين ثقيلين مملوءين بالحبوب المغذية إلى حظائر الخيول.",
+      "She carried two heavy plastic buckets filled with nutritious grain to the horse stalls.",
+    exampleArabic:
+      "حَمَلَتْ دَلْوَيْنِ بَلاسْتِيكِيَّيْنِ ثَقِيلَيْنِ مَلِيئَيْنِ بِالحُبُوبِ المُغَذِّيَةِ لِلْخُيُولِ.",
   },
   farmhouse: {
     id: "farmhouse",
@@ -192,7 +194,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "take off",
         meaning: "remove glasses",
         arabic: "يَخْلَعُ النَّظَّارَة",
-        example: "He took off his glasses and rubbed his tired eyes.",
+        example: "She took off her glasses and rubbed her tired eyes.",
       },
     ],
     sentences: [
@@ -208,8 +210,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Bedside Habit",
-        en: "He always places his glasses safely inside a hard case on the nightstand.",
-        ar: "يضع نظارته دائما في علبة صلبة على الطاولة بجوار السرير لحمايتها.",
+        en: "She always places her glasses safely inside a hard case on the nightstand.",
+        ar: "تَضَعُ نَظَّارَتَهَا دَائِماً دَاخِلَ عُلْبَةٍ صَلْبَةٍ عَلَى طَاوِلَةِ السَّرِيرِ قَبْلَ النَّوْمِ.",
       },
     ],
     exampleSentence: "He cannot read small text clearly without his prescription reading glasses.",
@@ -290,14 +292,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "take down from",
         meaning: "remove an item from a shelf",
         arabic: "يُنْزِلُ عَنِ الرَّفّ",
-        example: "He took down the glass vase from the top shelf.",
+        example: "She took down the glass vase from the top shelf.",
       },
     ],
     sentences: [
       {
         context: "Display",
-        en: "He arranged family photographs and potted succulents on the floating wall shelf.",
-        ar: "رتب الصور العائلية والنباتات العصارية في أصص على رف الحائط العائم.",
+        en: "She arranged family photographs and potted succulents on the floating wall shelf.",
+        ar: "رَتَّبَتِ الصُّوَرَ العَائِلِيَّةَ وَالنَّبَاتَاتِ عَلَى رَفِّ الحَائِطِ المُنْعَزِلِ.",
       },
       {
         context: "Storage",
@@ -311,8 +313,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He arranged family photographs and potted succulents on the floating wall shelf.",
-    exampleArabic: "رتب الصور العائلية والنباتات العصارية في أصص على رف الحائط العائم.",
+      "She arranged family photographs and potted succulents on the floating wall shelf.",
+    exampleArabic:
+      "رَتَّبَتِ الصُّوَرَ العَائِلِيَّةَ وَالنَّبَاتَاتِ عَلَى رَفِّ الحَائِطِ المُنْعَزِلِ.",
   },
   vine: {
     id: "vine",
@@ -387,8 +390,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Observation",
-        en: "The child smiled as a tiny red ladybug with seven black spots rested on his palm.",
-        ar: "ابتسم الطفل بينما استقرت دعسوقة حمراء صغيرة ذات سبع نقاط سوداء على كفه.",
+        en: "The child smiled as a tiny red ladybug with seven black spots rested on her palm.",
+        ar: "ابْتَسَمَتِ الطِّفْلَةُ عِنْدَمَا حَطَّتْ دُعْسُوقَةٌ حَمْرَاءُ صَغِيرَةٌ عَلَى رَاحَةِ يَدِهَا.",
       },
       {
         context: "Ecosystem Health",
@@ -466,8 +469,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Supervision",
-        en: "A watchful parent kept an eye on his toddler from the park bench.",
-        ar: "راقب أب حريص طفله الصغير من مقعد الحديقة.",
+        en: "A watchful parent kept an eye on her toddler from the park bench.",
+        ar: "رَاقَبَتْ وَالِدَةٌ يَقِظَةٌ طِفْلَهَا الصَّغِيرَ مِنْ عَلَى مَقْعَدِ الحَدِيقَةِ.",
       },
       {
         context: "Encouragement",
@@ -480,8 +483,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَبَادَلَ الآبَاءُ الأَحَادِيثَ وَالنَّصَائِحَ بَيْنَمَا لَعِبَ أَطْفَالُهُمْ بِأَمَانٍ فِي الجِوَارِ.",
       },
     ],
-    exampleSentence: "A watchful parent kept an eye on his toddler from the park bench.",
-    exampleArabic: "راقب أب حريص طفله الصغير من مقعد الحديقة.",
+    exampleSentence: "A watchful parent kept an eye on her toddler from the park bench.",
+    exampleArabic:
+      "رَاقَبَتْ وَالِدَةٌ يَقِظَةٌ طِفْلَهَا الصَّغِيرَ مِنْ عَلَى مَقْعَدِ الحَدِيقَةِ.",
   },
   binder: {
     id: "binder",
@@ -517,8 +521,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Class Preparation",
-        en: "He punched three holes in the worksheet before inserting it into his binder.",
-        ar: "ثقب ورقة العمل ثلاث ثقوب قبل وضعها في ملف الحلقات الخاص به.",
+        en: "She punched three holes in the worksheet before inserting it into her binder.",
+        ar: "ثَقَبَتْ ثَلَاثَ فَتَحَاتٍ فِي وَرَقَةِ العَمَلِ قَبْلَ إِدْخَالِهَا فِي مِلَفِّهَا الحَلَقِيِّ.",
       },
     ],
     exampleSentence:

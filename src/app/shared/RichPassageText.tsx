@@ -25,8 +25,6 @@ interface Props {
   className?: string;
   /** Raw-text offsets of the provider-timed sentence. Keeps controls mounted. */
   highlightRange?: { start: number; end: number };
-  /** Vocabulary highlights are interactive when onTermClick is provided, or rendered as decorated marks. */
-  interactiveVocabulary?: boolean;
 }
 
 type PlainToken = { kind: "plain"; text: string; start: number };
@@ -34,16 +32,6 @@ type BoldToken = { kind: "bold"; text: string; start: number };
 type VocabToken = { kind: "vocab"; text: string; term: string; bold: boolean; start: number };
 type Token = PlainToken | BoldToken | VocabToken;
 const EMPTY_TERMS: string[] = [];
-// Reviewed forms, rather than broad stemming that can highlight unrelated words.
-const REVIEWED_FORMS: Readonly<Record<string, readonly string[]>> = {
-  "stress test": ["stress testing", "stress tested", "stress tests"],
-  "stress-test a system": ["stress testing a system", "stress-tested a system"],
-  "critical dependency": ["critical dependencies"],
-  redundancy: ["redundancies"],
-  "build resilience": ["building resilience", "built resilience"],
-  "diversify suppliers": ["diversifying suppliers", "diversified suppliers"],
-  "hold safety stock": ["holding safety stock", "held safety stock"],
-};
 
 function escapeRegex(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -61,28 +49,17 @@ function buildTermMatchers(terms: string[]): TermMatcher[] {
   unique.sort((a, b) => b.length - a.length);
 
   return unique.map((term) => {
-    const forms = [term, ...(REVIEWED_FORMS[term.toLowerCase()] ?? [])];
+    const esc = escapeRegex(term);
     // Support either space or hyphen between words (e.g. false positive <-> false-positive)
-    const flex = escapeRegex(term).replace(/[ -]/g, "[ -]");
+    const flex = esc.replace(/[ -]/g, "[ -]");
     // Support optional plural s/es if term doesn't already end in s
     const plural = flex.endsWith("s") ? flex : `${flex}(?:s|es)?`;
-    const pattern = [
-      plural,
-      ...forms.slice(1).map((form) => escapeRegex(form).replace(/[ -]/g, "[ -]")),
-    ].join("|");
     return {
       canonical: term,
-      testRegex: new RegExp(`^(?:${pattern})$`, "i"),
-      patternPart: `(?:${pattern})`,
+      testRegex: new RegExp(`^${plural}$`, "i"),
+      patternPart: plural,
     };
   });
-}
-
-export function getPassageVocabularyTerms(text: string, terms: string[]): string[] {
-  const matches = tokenise(text, terms).filter(
-    (token): token is VocabToken => token.kind === "vocab"
-  );
-  return Array.from(new Set(matches.map((token) => token.term)));
 }
 
 function tokeniseForVocab(
@@ -150,7 +127,6 @@ export const RichPassageText = memo(function RichPassageText({
   onTermClick,
   className,
   highlightRange,
-  interactiveVocabulary = true,
 }: Props) {
   const { t } = useI18n();
   const tokens = useMemo(() => tokenise(text, vocabTerms), [text, vocabTerms]);
@@ -161,7 +137,7 @@ export const RichPassageText = memo(function RichPassageText({
     return (
       <>
         {token.text.slice(0, from)}
-        <mark className="rounded bg-feedback-info-surface text-feedback-info-foreground">
+        <mark className="rounded bg-muted text-foreground underline decoration-primary decoration-2 underline-offset-4">
           {token.text.slice(from, to)}
         </mark>
         {token.text.slice(to)}
@@ -183,33 +159,7 @@ export const RichPassageText = memo(function RichPassageText({
               </strong>
             );
 
-          case "vocab": {
-            const isAudioActive = Boolean(
-              highlightRange &&
-              highlightRange.end > token.start &&
-              highlightRange.start < token.start + token.text.length
-            );
-            const isInteractive = interactiveVocabulary;
-
-            if (!isInteractive) {
-              return (
-                <mark
-                  key={i}
-                  className={[
-                    "inline rounded px-1 py-0.5 -mx-0.5 align-baseline",
-                    isAudioActive ? "bg-transparent" : "bg-primary/8",
-                    "font-semibold text-foreground",
-                    "underline decoration-primary decoration-2 underline-offset-4",
-                    token.bold ? "font-black" : "font-semibold",
-                  ]
-                    .filter(Boolean)
-                    .join(" ")}
-                >
-                  {content(token)}
-                </mark>
-              );
-            }
-
+          case "vocab":
             return (
               <button
                 key={i}
@@ -220,14 +170,12 @@ export const RichPassageText = memo(function RichPassageText({
                   `Learn more about ${token.term}`
                 }
                 className={[
-                  "inline rounded px-1 py-0.5 -mx-0.5 align-baseline cursor-pointer touch-manipulation",
-                  isAudioActive ? "bg-transparent" : "bg-primary/8",
-                  "font-semibold text-foreground",
-                  "underline decoration-primary decoration-2 underline-offset-4",
-                  "hover:bg-primary/15 hover:decoration-primary hover:text-primary active:bg-primary/20 motion-safe:active:scale-[0.99]",
-                  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary focus-visible:bg-primary/15",
-                  "motion-safe:transition-colors",
-                  token.bold ? "font-black" : "font-semibold",
+                  "inline-flex min-h-11 min-w-11 items-baseline rounded-md px-1 py-0.5 mx-0.5 align-baseline cursor-pointer motion-safe:transition-colors",
+                  "bg-secondary text-primary border border-primary/25",
+                  "underline decoration-primary/60 decoration-2 underline-offset-2",
+                  "hover:bg-secondary hover:border-primary/50 motion-safe:active:scale-[0.98]",
+                  "focus-visible:outline focus-visible:outline-[2px] focus-visible:outline-offset-1 focus-visible:outline-primary",
+                  token.bold ? "font-black" : "font-bold",
                 ]
                   .filter(Boolean)
                   .join(" ")}
@@ -235,7 +183,6 @@ export const RichPassageText = memo(function RichPassageText({
                 {content(token)}
               </button>
             );
-          }
         }
       })}
     </span>

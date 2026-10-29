@@ -4,9 +4,9 @@ import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { getDistractors } from "./exerciseContent";
 import { shuffleArray } from "../../utils/shuffle";
-import { Button } from "../shared/Button";
+import { WordImage } from "../shared/WordImage";
 import { useAudio } from "../shared/useAudio";
-import { Volume2, Keyboard, ArrowRight } from "lucide-react";
+import { Volume2, CheckCircle2, XCircle, Keyboard, ArrowRight } from "lucide-react";
 import { useSound } from "../shared/useSound";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
@@ -14,11 +14,9 @@ import { useSpokenFeedback } from "../shared/useSpokenFeedback";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
-import { useReducedMotion } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useI18n } from "../context/I18nContext";
 import { ImmersiveImageChoiceGrid } from "../shared/ImmersiveImageChoiceGrid";
-import { ImageChoiceCard } from "../shared/ImageChoiceCard";
-import { useKeyboardShortcutsActive } from "../shared/devicePreferences";
 
 interface Props {
   step: number;
@@ -37,7 +35,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
   const reduceMotion = useReducedMotion();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
-  const shortcutsActive = useKeyboardShortcutsActive();
 
   const queue = useDrillQueue(words);
   const currentTargetWord = queue.current ?? words[0];
@@ -72,20 +69,21 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     if (queue.isComplete && feedback === null) dispatch({ type: "LESSON_NEXT" });
   }, [queue.isComplete, feedback, dispatch]);
 
-  const currentQuestionKey = `${queue.position}:${currentTargetWord.id}`;
   useEffect(() => {
     stop();
-    if (accessibility.autoPlayAudio === false) return undefined;
-    if (hasSpokenRef.current[currentQuestionKey]) return undefined;
+    const wordId = currentTargetWord.id;
+    if (hasSpokenRef.current[wordId]) return undefined;
     // The flag is set when the prompt actually plays, not when it is
-    // scheduled. Keyed by queue position and word id so retried questions and
-    // consecutive words each play their audio prompt automatically.
+    // scheduled. Setting it up front meant a cleanup that ran before the
+    // timer — StrictMode's double effect in development does exactly that —
+    // cancelled the only playback and then marked the word as already spoken,
+    // so the question was asked with no audio and no way to get it back.
     const t = setTimeout(() => {
-      hasSpokenRef.current[currentQuestionKey] = true;
+      hasSpokenRef.current[wordId] = true;
       speak(currentTargetWord.label);
-    }, 200);
+    }, 400);
     return () => clearTimeout(t);
-  }, [currentQuestionKey, currentTargetWord.label, speak, stop, accessibility.autoPlayAudio]);
+  }, [currentTargetWord.id, currentTargetWord.label, speak, stop]);
 
   const replayAudio = useCallback(() => {
     stop();
@@ -122,8 +120,7 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         },
         () => {
           autoAdvance.schedule(
-            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect,
-            correct
+            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect
           );
         }
       );
@@ -169,7 +166,6 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
     optionCount: displayCards.length,
     onSelectIndex: selectByIndex,
     onReplayAudio: replayAudio,
-    onContinue: feedback !== null ? handleContinue : undefined,
     disabled: feedback !== null,
   });
 
@@ -199,41 +195,29 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
         </>
       }
     >
-      <div className="wp-container-immersive relative flex min-h-0 flex-1 flex-col gap-3 sm:gap-4">
-        <div className="flex shrink-0 flex-row items-center justify-between gap-3 min-h-11">
-          <div className="text-start min-w-0">
+      <div className="wp-container-immersive relative flex min-h-[560px] flex-1 flex-col gap-4 sm:min-h-[640px] sm:gap-5 lg:min-h-[320px]">
+        <div className="flex shrink-0 flex-col items-center justify-between gap-3 sm:flex-row">
+          <div className="text-center sm:text-start">
             <p className="font-sans text-sm font-bold text-foreground sm:text-base">
               {t("exercise.choosePictureHeard")}
             </p>
-            <div className="mt-0.5 hidden items-center gap-1.5 text-xs font-medium text-muted-foreground pointer-fine:flex">
+            <div className="mt-1 hidden items-center gap-1.5 text-xs font-medium text-muted-foreground pointer-fine:flex">
               <Keyboard className="size-4" aria-hidden />
               <span>{t("exercise.pressNumberRecall", { count: displayCards.length })}</span>
             </div>
           </div>
-          <div className="flex items-center gap-2 shrink-0">
-            <button
-              type="button"
-              onClick={replayAudio}
-              aria-label={t("exercise.replayAudio")}
-              className="flex min-h-11 shrink-0 items-center gap-2 rounded-xl border border-border bg-wp-card px-4 py-2 text-sm font-bold text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary sm:px-6"
-            >
-              <Volume2
-                className={`size-4 sm:size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
-                aria-hidden
-              />
-              <span>{t("exercise.replay")}</span>
-            </button>
-            {feedback === "incorrect" && !accessibility.autoAdvance && (
-              <Button
-                onClick={handleContinue}
-                hotkey="↵ Enter"
-                size="sm"
-                iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
-              >
-                {t("action.continue")}
-              </Button>
-            )}
-          </div>
+          <button
+            type="button"
+            onClick={replayAudio}
+            aria-label={t("exercise.replayAudio")}
+            className="flex min-h-12 shrink-0 items-center gap-2 rounded-xl border border-border bg-wp-card px-6 font-bold text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <Volume2
+              className={`size-5 ${isPlaying ? "motion-safe:animate-pulse" : ""}`}
+              aria-hidden
+            />
+            {t("exercise.replay")}
+          </button>
           <p className="sr-only" role="status">
             {isPlaying
               ? "Playing audio"
@@ -243,31 +227,144 @@ export const ExerciseRecallMatch = memo(function ExerciseRecallMatch({
           </p>
         </div>
         <ImmersiveImageChoiceGrid aria-label="Choose matching picture for audio prompt">
-          {displayCards.map((card, idx) => (
-            <ImageChoiceCard
-              key={card.id}
-              option={card}
-              index={idx}
-              totalOptions={displayCards.length}
-              isSelected={selectedId === card.id}
-              feedback={feedback}
-              isRevealedAnswer={feedback === "incorrect" && card.id === currentTargetWord.id}
-              disabled={feedback !== null}
-              onClick={() => handleCardClick(card)}
-              reduceMotion={Boolean(reduceMotion)}
-              showShortcut={shortcutsActive}
-            />
-          ))}
+          {displayCards.map((card, idx) => {
+            const isSelected = selectedId === card.id;
+            const isRevealedAnswer = feedback === "incorrect" && card.id === currentTargetWord.id;
+
+            let cardStateStyle =
+              "border-2 border-border bg-wp-card hover:border-primary/50 hover:shadow-md";
+            if (isSelected) {
+              if (feedback === "correct")
+                cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
+              if (feedback === "incorrect")
+                cardStateStyle = "border-2 border-wp-rose bg-wp-rose-light/40 shadow-md";
+            } else if (isRevealedAnswer) {
+              cardStateStyle = "border-2 border-wp-green bg-wp-green-light/40 shadow-md";
+            }
+
+            // Overlay type for this cell
+            const showCorrectOverlay = isSelected && feedback === "correct";
+            const showIncorrectOverlay = isSelected && feedback === "incorrect";
+
+            return (
+              <motion.button
+                key={card.id}
+                type="button"
+                transition={
+                  reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 400, damping: 17 }
+                }
+                initial={reduceMotion ? false : { opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                aria-label={`Option ${idx + 1} of ${displayCards.length}. Shortcut: press ${idx + 1}. ${card.description}`}
+                aria-pressed={isSelected}
+                aria-disabled={feedback !== null}
+                onClick={() => handleCardClick(card)}
+                className={`group relative block min-h-[120px] w-full overflow-hidden rounded-2xl shadow-wp-sm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${cardStateStyle}`}
+              >
+                <span
+                  aria-hidden
+                  className="absolute top-2 start-2 z-10 size-9 md:size-11 flex items-center justify-center bg-wp-card text-foreground text-base font-bold rounded-lg border border-border shadow-sm pointer-events-none"
+                >
+                  {idx + 1}
+                </span>
+
+                <div className="size-full relative bg-muted after:absolute after:inset-0 after:border-[4px] after:border-transparent group-hover:after:border-primary/20 after:rounded-2xl sm:after:rounded-3xl after:transition-colors">
+                  <WordImage
+                    word={card}
+                    altMode="assessment"
+                    optionIndex={idx}
+                    checked={isSelected || isRevealedAnswer}
+                    className="size-full object-cover block"
+                    // Every option is on screen and has to be looked at to
+                    // answer, so lazy loading only delays the question.
+                    loading="eager"
+                  />
+                </div>
+
+                {/* -- Per-image feedback overlay -- */}
+                <AnimatePresence>
+                  {(showCorrectOverlay || showIncorrectOverlay) && (
+                    <motion.div
+                      key={`overlay-${card.id}`}
+                      initial={reduceMotion ? false : { opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={reduceMotion ? { duration: 0 } : { duration: 0.18 }}
+                      className={`absolute inset-0 flex flex-col items-center justify-center gap-2 pointer-events-none ${
+                        showIncorrectOverlay
+                          ? "bg-wp-rose/70 backdrop-blur-[2px]"
+                          : "bg-wp-green/70 backdrop-blur-[2px]"
+                      }`}
+                    >
+                      <motion.div
+                        initial={reduceMotion ? false : { scale: 0.3, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={
+                          reduceMotion
+                            ? { duration: 0 }
+                            : { type: "spring", stiffness: 450, damping: 20, delay: 0.05 }
+                        }
+                      >
+                        {showIncorrectOverlay ? (
+                          <XCircle
+                            className="size-10 sm:size-12 text-white drop-shadow-lg"
+                            aria-hidden
+                          />
+                        ) : (
+                          <CheckCircle2
+                            className="size-10 sm:size-12 text-white drop-shadow-lg"
+                            aria-hidden
+                          />
+                        )}
+                      </motion.div>
+
+                      <motion.span
+                        initial={reduceMotion ? false : { y: 6, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={reduceMotion ? { duration: 0 } : { delay: 0.15 }}
+                        className="font-sans font-black text-white text-sm sm:text-base drop-shadow text-center px-2"
+                      >
+                        {showIncorrectOverlay ? "Wrong" : "Correct!"}
+                      </motion.span>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.button>
+            );
+          })}
         </ImmersiveImageChoiceGrid>
 
-        {/* Feedback status announcement for screen readers */}
-        <p className="sr-only" role="status" aria-live="polite">
-          {feedback === "correct"
-            ? t("ux.correct")
-            : feedback === "incorrect"
-              ? t("ux.tryAgain")
-              : ""}
-        </p>
+        {/* Continue strip — replaces old AnswerFeedback bar */}
+        <AnimatePresence>
+          {feedback !== null && !accessibility.autoAdvance && (
+            <motion.div
+              key="continue-strip"
+              initial={reduceMotion ? false : { opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0 }}
+              transition={reduceMotion ? { duration: 0 } : { delay: 0.3 }}
+              className={`shrink-0 rounded-2xl px-5 py-3 flex items-center justify-between gap-3 border ${
+                feedback === "correct"
+                  ? "bg-wp-green/10 border-wp-green/30"
+                  : "bg-wp-rose/10 border-wp-rose/30"
+              }`}
+            >
+              <span className="font-sans font-semibold text-foreground text-sm">
+                {feedback === "correct"
+                  ? "✓ Excellent!"
+                  : `✕ The picture you heard was "${currentTargetWord.label}".`}
+              </span>
+              <button
+                type="button"
+                onClick={handleContinue}
+                className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
+              >
+                {t("action.continue")}
+                <ArrowRight className="size-4" aria-hidden />
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </ExerciseShell>
   );

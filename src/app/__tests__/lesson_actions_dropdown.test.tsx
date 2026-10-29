@@ -16,7 +16,7 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const triggerButtons = screen.getAllByLabelText(/Options for/i);
+    const triggerButtons = screen.getAllByLabelText(/More options and quick navigation for/i);
     expect(triggerButtons.length).toBeGreaterThan(0);
     expect(triggerButtons[0]).toHaveAttribute("aria-haspopup", "menu");
     expect(triggerButtons[0]).toHaveAttribute("aria-expanded", "false");
@@ -30,7 +30,9 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0];
+    const trigger = screen.getAllByLabelText(
+      new RegExp(`More options and quick navigation for ${firstGroupName}`, "i")
+    )[0];
     fireEvent.click(trigger);
 
     expect(trigger).toHaveAttribute("aria-expanded", "true");
@@ -57,7 +59,9 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0];
+    const trigger = screen.getAllByLabelText(
+      new RegExp(`More options and quick navigation for ${firstGroupName}`, "i")
+    )[0];
     fireEvent.click(trigger);
 
     const flashcardsButton = screen.getByRole("menuitem", { name: /Browse Words/i });
@@ -80,7 +84,9 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    const trigger = screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0];
+    const trigger = screen.getAllByLabelText(
+      new RegExp(`More options and quick navigation for ${firstGroupName}`, "i")
+    )[0];
     fireEvent.click(trigger);
     expect(trigger).toHaveAttribute("aria-expanded", "true");
 
@@ -96,7 +102,11 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    fireEvent.click(screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0]);
+    fireEvent.click(
+      screen.getAllByLabelText(
+        new RegExp(`More options and quick navigation for ${firstGroupName}`, "i")
+      )[0]
+    );
 
     const stepMenuTrigger = screen.getByRole("menuitem", { name: /Jump to Step/i });
     expect(stepMenuTrigger).toHaveAttribute("aria-haspopup", "menu");
@@ -119,41 +129,13 @@ describe("Lesson Actions Dropdown & Navigation", () => {
       </I18nProvider>
     );
 
-    fireEvent.click(screen.getByRole("button", { name: /study materials & reference/i }));
+    fireEvent.click(screen.getByRole("button", { name: /study materials/i }));
 
     expect(dispatch).toHaveBeenCalledWith({
       type: "GO",
       to: "learning-materials",
       unitId: "bedroom",
       area: "learn",
-      returnTo: "lesson-entry",
-    });
-  });
-
-  it("allows opening Unit Study Materials directly from the options menu", () => {
-    const dispatch = vi.fn();
-    render(
-      <I18nProvider>
-        <LessonWorldEntry unitId="bedroom" dispatch={dispatch} />
-      </I18nProvider>
-    );
-
-    const trigger = screen.getAllByLabelText(new RegExp(`Options for ${firstGroupName}`, "i"))[0];
-    fireEvent.click(trigger);
-
-    const studyMaterialsButton = screen.getByRole("menuitem", {
-      name: /Study materials & reference/i,
-    });
-    expect(studyMaterialsButton).toBeInTheDocument();
-
-    fireEvent.click(studyMaterialsButton);
-
-    expect(dispatch).toHaveBeenCalledWith({
-      type: "GO",
-      to: "learning-materials",
-      unitId: "bedroom",
-      area: "learn",
-      returnTo: "lesson-entry",
     });
   });
 });

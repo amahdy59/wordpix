@@ -163,7 +163,7 @@ export const BICYCLE_SHOP_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "act freely without worrying about rules or consequences",
       example:
-        "He loves to freewheel down the hill — no brake, no gear shift, just the handlebar and the wind.",
+        "She loves to freewheel down the hill — no brake, no gear shift, just the handlebar and the wind.",
     },
     {
       id: "bicycle-shop-pedal-to-the-metal",

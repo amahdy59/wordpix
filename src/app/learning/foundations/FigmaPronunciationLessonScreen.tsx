@@ -1,571 +1,336 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import { useDevicePreference } from "../../shared/devicePreferences";
+import { CourseLessonNavigation } from "../../shared/CourseLessonNavigation";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
   ArrowRight,
   Check,
-  FastForward,
-  Headphones,
-  Mic,
-  MicOff,
+  ChevronDown,
+  Image as ImageIcon,
+  Play,
   RotateCcw,
-  SlidersHorizontal,
+  Sparkles,
   Volume2,
-  X,
-  Zap,
+  Gauge,
+  Lightbulb,
 } from "lucide-react";
 import type { Action } from "../../types";
-import { Button } from "../../shared/Button";
-import { CourseLessonNavigation } from "../../shared/CourseLessonNavigation";
-import { HelpDisclosure } from "../../shared/HelpDisclosure";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuToggleItem,
-  DropdownMenuSeparator,
-  DropdownMenuLabel,
-} from "../../shared/DropdownMenu";
-import { useAudioRecoveryMessage } from "../../shared/AudioRecoveryStatus";
 import { useAudio } from "../../shared/useAudio";
-import { ADVANCE_DELAY_MS, useAutoAdvance } from "../../shared/useAutoAdvance";
-import { useSpokenFeedback } from "../../shared/useSpokenFeedback";
 import { useI18n } from "../../../i18n";
 import { useLearner } from "../../context/LearnerContext";
 import { PrivateRecordCompare } from "./PrivateRecordCompare";
 import {
-  FIGMA_PRONUNCIATION_LESSONS,
   getFigmaPronunciationActivityData,
+  pronunciationImagePath,
   getPronunciationQuestion,
   getStressBeatPattern,
-  pronunciationImagePath,
   type FigmaPronunciationImage,
 } from "./figmaPronunciationCatalog";
-import { hasReportedPronunciationAudioIssue } from "./pronunciationAudioQuality";
-import { getPronunciationAudioClip } from "./pronunciationAudioManifest";
 import { resolveAssetUrl } from "../../../utils/assetUrl";
-import {
-  pronunciationEvidenceKey,
-  pronunciationTargetId,
-  pronunciationTrialCount,
-  getPronunciationTargets,
-  pronunciationContentRevision,
-  resumablePronunciationSession,
-} from "./pronunciationTargets";
-import type { PronunciationSession, PronunciationTargetEvidence } from "./pronunciationProgress";
+import { getPronunciationAudioClip } from "./pronunciationAudioManifest";
+import { ADVANCE_DELAY_MS, useAutoAdvance } from "../../shared/useAutoAdvance";
+import { useSpokenFeedback } from "../../shared/useSpokenFeedback";
 
 interface Props {
   lessonNumber: number;
   dispatch: React.Dispatch<Action>;
 }
 type Stage = 0 | 1 | 2 | 3 | 4;
-const STAGES = ["preview", "listen", "meaning", "use", "transfer"] as const;
 
-const focusRing =
-  "focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary";
-const emptySession = (): PronunciationSession => ({
-  version: 2,
-  targetEvidence: {},
-  trial: 0,
-  attempts: 0,
-  answer: null,
-  unlockedStage: 0,
-  outcomes: {},
-});
+const STAGES = ["Preview", "Listen", "Meaning", "Use it", "Transfer"] as const;
+const TRIALS_PER_STAGE = 3;
+const EMPTY_CHOICES: readonly FigmaPronunciationImage[] = [];
 
-function populateUnassessedSpeaking(
-  current: Record<string, PronunciationTargetEvidence> | undefined,
-  targets: readonly FigmaPronunciationImage[]
-): Record<string, PronunciationTargetEvidence> {
-  const updated = { ...current };
-  const now = Date.now();
-  const nextReview = new Date(now + 86400000).toISOString();
-  const updatedIso = new Date(now).toISOString();
-  for (const item of targets) {
-    const tId = pronunciationTargetId(item.label);
-    if (!updated[tId]?.speaking) {
-      updated[tId] = {
-        ...updated[tId],
-        speaking: "unassessed",
-        updatedAt: updatedIso,
-        nextReviewAt: nextReview,
-      };
-    }
-  }
-  return updated;
+function imageFor(item: FigmaPronunciationImage) {
+  return resolveAssetUrl(pronunciationImagePath(item.imageRef));
 }
 
-function WordImage({ item, className }: { item: FigmaPronunciationImage; className: string }) {
-  const [failed, setFailed] = useState(false);
-  return failed ? (
-    <span
-      className={`${className} flex items-center justify-center bg-muted text-foreground`}
-      lang="en"
-      dir="ltr"
-    >
-      {item.label}
-    </span>
-  ) : (
-    <img
-      src={resolveAssetUrl(pronunciationImagePath(item.imageRef))}
-      alt=""
-      aria-hidden
-      loading="lazy"
-      onError={() => setFailed(true)}
-      className={className}
-    />
-  );
+function getCueBadge(cue: string): { labelKey: string; icon: string } | null {
+  const lower = cue.toLowerCase();
+  if (lower.includes("lip")) return { labelKey: "pronunciation.cueLips", icon: "👄" };
+  if (lower.includes("tongue") || lower.includes("palate") || lower.includes("alveolar"))
+    return { labelKey: "pronunciation.cueTongue", icon: "👅" };
+  if (lower.includes("voice") || lower.includes("vibrat") || lower.includes("throat"))
+    return { labelKey: "pronunciation.cueVocalCords", icon: "🎙️" };
+  if (
+    lower.includes("air") ||
+    lower.includes("breath") ||
+    lower.includes("puff") ||
+    lower.includes("pop")
+  )
+    return { labelKey: "pronunciation.cueAirflow", icon: "💨" };
+  if (
+    lower.includes("stress") ||
+    lower.includes("syllable") ||
+    lower.includes("beat") ||
+    lower.includes("pitch")
+  )
+    return { labelKey: "pronunciation.cueRhythmStress", icon: "🎵" };
+  if (lower.includes("jaw")) return { labelKey: "pronunciation.cueJaw", icon: "↕️" };
+  return null;
 }
 
 export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props) {
-  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   const { t } = useI18n();
-  const { state, setAccessibility, recordPronunciationCheckpoint, recordPronunciationCompletion } =
-    useLearner();
-  const lessonId = `lesson-${String(lessonNumber).padStart(2, "0")}`;
-  const progress = state.pronunciationProgress[lessonId];
+  const { state, recordPronunciationCheckpoint, recordPronunciationCompletion } = useLearner();
   const activity = getFigmaPronunciationActivityData(lessonNumber);
-  const savedSession = resumablePronunciationSession(
-    lessonNumber,
-    progress?.currentStage ?? 0,
-    progress?.session
-  );
-  // Legacy checkpoints lack scored evidence: retain historical progress and start a fair new attempt.
-  const [stage, setStage] = useState<Stage>(() =>
-    savedSession ? (progress!.currentStage as Stage) : 0
-  );
-  const [session, setSession] = useState<PronunciationSession>(() => {
-    return savedSession ?? emptySession();
-  });
-  const sessionRef = useRef(session);
-  const finishedRef = useRef(false);
-  const generationRef = useRef(0);
+  const progress = state.pronunciationProgress[`lesson-${String(lessonNumber).padStart(2, "0")}`];
+  const restoredStage =
+    progress?.status === "in-progress"
+      ? (Math.min(4, Math.max(0, progress.currentStage)) as Stage)
+      : 0;
+  const [stage, setStage] = useState<Stage>(restoredStage);
+  const [trial, setTrial] = useState(0);
+  const [answer, setAnswer] = useState<string | null>(null);
+  const [attempts, setAttempts] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
   const [completedScore, setCompletedScore] = useState<number | null>(null);
   const [slowPlayback, setSlowPlayback] = useState(false);
-  const headingRef = useRef<HTMLHeadingElement>(null);
-  const { speak, stop, isError, status } = useAudio({
+  const { speak, stop, isPlaying } = useAudio({
     lang: "en-US",
-    rate: slowPlayback ? 0.75 : 1,
-    preferLocal: false,
+    rate: slowPlayback ? 0.65 : 0.9,
+    preferLocal: true,
   });
   const { speakFeedback, cancel: cancelSpokenFeedback } = useSpokenFeedback();
-  const previewPairs = useMemo(() => {
-    const result: FigmaPronunciationImage[][] = [];
-    for (let i = 0; i < activity.items.length; i += 2) {
-      result.push(activity.items.slice(i, i + 2));
-    }
-    return result;
-  }, [activity.items]);
-  const [previewPairIndex, setPreviewPairIndex] = useState(0);
-  const [prevLessonNumber, setPrevLessonNumber] = useState(lessonNumber);
-  if (prevLessonNumber !== lessonNumber) {
-    setPrevLessonNumber(lessonNumber);
-    setPreviewPairIndex(0);
-  }
-  const currentPair = previewPairs[previewPairIndex] ?? previewPairs[0] ?? [];
-  const question =
-    stage === 0
-      ? null
-      : getPronunciationQuestion(
-          lessonNumber,
-          stage,
-          session.trial,
-          false,
-          session.currentTargetId
-        );
+  const question = stage === 0 ? null : getPronunciationQuestion(lessonNumber, stage, trial);
   const target =
-    question?.target ??
-    activity.items.find((item) => item.label.toLowerCase() === activity.model.toLowerCase()) ??
-    activity.items[0];
-  const clipUnavailable =
-    hasReportedPronunciationAudioIssue(target?.label ?? activity.model) ||
-    !getPronunciationAudioClip(target?.label ?? activity.model);
-  const audioUnavailable = clipUnavailable || isError || status === "unsupported";
-  const recoveryMessage = useAudioRecoveryMessage(isError, status !== "unsupported");
-  const targetId = pronunciationTargetId(target?.label ?? activity.model);
-  const trials = pronunciationTrialCount(lessonNumber, stage);
-  const speakingEvidence = session.targetEvidence?.[targetId]?.speaking;
-  const speakingDone = speakingEvidence !== undefined;
-  const passed = stage === 3 ? speakingDone : session.answer === target?.label;
-  const canAdvance =
-    stage === 0 ||
-    (stage === 3
-      ? speakingDone
-      : passed || session.attempts >= 2 || session.answer === "__unavailable__");
-  const questionId = pronunciationEvidenceKey(stage, target?.label ?? activity.model);
-  const clip = getPronunciationAudioClip(target?.label ?? activity.model, stage === 4);
-  const play = (text = target?.label ?? activity.model) => {
-    if (!hasReportedPronunciationAudioIssue(text))
-      speak(text, undefined, getPronunciationAudioClip(text, stage === 4)?.objectKey);
-  };
-  const save = (nextStage: Stage, nextSession: PronunciationSession) => {
-    const saved: PronunciationSession = {
-      ...nextSession,
-      contentRevision: pronunciationContentRevision(lessonNumber),
-      currentTargetId:
-        nextStage > 0
-          ? pronunciationTargetId(
-              getPronunciationQuestion(
-                lessonNumber,
-                nextStage as 1 | 2 | 3 | 4,
-                nextSession.trial,
-                false,
-                nextSession.currentTargetId
-              ).target.label
-            )
-          : undefined,
-    };
-    sessionRef.current = saved;
-    setSession(saved);
-    setStage(nextStage);
-    recordPronunciationCheckpoint(lessonId, nextStage, saved);
-  };
+    stage === 0
+      ? (activity.items.find(
+          (item) =>
+            item.label.toLocaleLowerCase("en-US") === activity.model.toLocaleLowerCase("en-US")
+        ) ?? activity.items[0])
+      : question!.target;
+  const audioClip = getPronunciationAudioClip(target?.label ?? activity.model, stage === 4);
+  const visibleChoices = question?.choices ?? EMPTY_CHOICES;
+  const contrastHero = activity.contrastPairs[0];
+  const contrastHeroItems = contrastHero
+    ?.map((label) =>
+      activity.items.find(
+        (item) => item.label.toLocaleLowerCase("en-US") === label.toLocaleLowerCase("en-US")
+      )
+    )
+    .filter(Boolean) as FigmaPronunciationImage[] | undefined;
+  const answerable = stage === 1 || stage === 2 || stage === 3 || stage === 4;
+  const passed = answer === target?.label;
+  // Each new prompt begins with a model. Learners can still replay it, and auto-advance
+  // remains their explicit control over whether correct answers move forward automatically.
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      speak(target?.label ?? activity.model, undefined, audioClip?.objectKey);
+    }, 250);
+    return () => window.clearTimeout(timer);
+  }, [activity.model, audioClip?.objectKey, lessonNumber, speak, stage, target?.label, trial]);
   const advance = () => {
-    if (finishedRef.current) return;
-    if (!canAdvance) return;
-    generationRef.current += 1;
-    autoAdvance.cancel();
     stop();
     cancelSpokenFeedback();
-    const current = sessionRef.current;
-    const outcomes =
-      stage > 0 &&
-      stage !== 3 &&
-      !audioUnavailable &&
-      current.answer !== "__unavailable__" &&
-      !(questionId in current.outcomes)
-        ? { ...current.outcomes, [questionId]: false }
-        : current.outcomes;
-    if (stage === 4 && current.trial === trials - 1) {
-      finishedRef.current = true;
-      const score = Object.keys(outcomes).length
-        ? Math.round(
-            (100 * Object.values(outcomes).filter(Boolean).length) / Object.keys(outcomes).length
-          )
-        : 0;
-      setCompletedScore(score);
-      recordPronunciationCompletion(lessonId, score, stage);
-      requestAnimationFrame(() => headingRef.current?.focus());
+    setAnswer(null);
+    setAttempts(0);
+    if (stage > 0 && trial < TRIALS_PER_STAGE - 1) {
+      setTrial((value) => value + 1);
       return;
     }
-    let nextStage = (stage === 0 || current.trial === trials - 1 ? stage + 1 : stage) as Stage;
-    let nextEvidence = current.targetEvidence;
-    if (nextStage === 3 && state.accessibility.includeSpeaking === false) {
-      const stage3Targets = getPronunciationTargets(lessonNumber, false);
-      nextEvidence = populateUnassessedSpeaking(current.targetEvidence, stage3Targets);
-      nextStage = 4;
+    setTrial(0);
+    if (stage === 4) {
+      const score = Math.round(
+        (correctCount / Math.max(1, (STAGES.length - 1) * TRIALS_PER_STAGE)) * 100
+      );
+      setCompletedScore(score);
+      recordPronunciationCompletion(
+        `lesson-${String(lessonNumber).padStart(2, "0")}`,
+        score,
+        stage
+      );
+      return;
     }
-    save(nextStage, {
-      trial: nextStage === stage ? current.trial + 1 : 0,
-      attempts: 0,
-      answer: null,
-      outcomes,
-      version: 2,
-      targetEvidence: nextEvidence,
-      unlockedStage: Math.max(current.unlockedStage, nextStage),
-    });
-    requestAnimationFrame(() => headingRef.current?.focus());
+    recordPronunciationCheckpoint(`lesson-${String(lessonNumber).padStart(2, "0")}`, stage + 1);
+    setStage((value) => (value + 1) as Stage);
   };
-  // Pronunciation drills default to automatic progression, defeatable via Lesson Options or pause control.
-  const [drillAutoAdvance, setDrillAutoAdvance] = useState(true);
-  const isAutoAdvance = state.accessibility.autoAdvance || drillAutoAdvance;
-
   const autoAdvance = useAutoAdvance({
-    enabled: isAutoAdvance,
+    enabled: state.accessibility.autoAdvance,
     onAdvance: advance,
   });
-  const clearPending = () => {
-    generationRef.current += 1;
-    autoAdvance.cancel();
-    stop();
-    cancelSpokenFeedback();
-  };
   const selectAnswer = (value: string) => {
-    const current = sessionRef.current;
-    if (audioUnavailable || stage === 3 || current.answer === target?.label || finishedRef.current)
-      return;
-    clearPending();
-    const correct = value === target?.label;
-    save(stage, {
-      ...current,
-      answer: value,
-      attempts: correct ? current.attempts : current.attempts + 1,
-      targetEvidence: {
-        ...current.targetEvidence,
-        [targetId]: {
-          ...current.targetEvidence?.[targetId],
-          listening: current.targetEvidence?.[targetId]?.listening === false ? false : correct,
-          updatedAt: new Date().toISOString(),
-          nextReviewAt: new Date(Date.now() + (correct ? 3 : 1) * 86400000).toISOString(),
-        },
-      },
-      outcomes:
-        questionId in current.outcomes
-          ? current.outcomes
-          : { ...current.outcomes, [questionId]: correct },
-    });
-    const generation = generationRef.current;
-    speakFeedback(
-      {
-        correct,
+    if (passed) return;
+    const isCorrect = value === target?.label;
+    stop();
+    setAnswer(value);
+    if (isCorrect) {
+      if (attempts === 0) setCorrectCount((count) => count + 1);
+      speakFeedback({ correct: true, targetLabel: target?.label ?? activity.model }, () =>
+        autoAdvance.schedule(ADVANCE_DELAY_MS.correct)
+      );
+    } else {
+      setAttempts((count) => count + 1);
+      speakFeedback({
+        correct: false,
         targetLabel: target?.label ?? activity.model,
-        chosenLabel: correct ? null : value,
-      },
-      () => {
-        if (correct && generation === generationRef.current)
-          autoAdvance.schedule(ADVANCE_DELAY_MS.correct);
-      }
-    );
+        chosenLabel: value,
+      });
+    }
   };
-  const recordSpeaking = (speaking: NonNullable<PronunciationTargetEvidence["speaking"]>) => {
-    clearPending();
-    const current = sessionRef.current;
-    save(stage, {
-      ...current,
-      targetEvidence: {
-        ...current.targetEvidence,
-        [targetId]: {
-          ...current.targetEvidence?.[targetId],
-          speaking:
-            current.targetEvidence?.[targetId]?.speaking === "assessed" ? "assessed" : speaking,
-          updatedAt: new Date().toISOString(),
-          nextReviewAt: new Date(Date.now() + 86400000).toISOString(),
-        },
-      },
-    });
-  };
-  const skipEntireSpeakingSection = () => {
-    clearPending();
-    const current = sessionRef.current;
-    const stage3Targets = getPronunciationTargets(lessonNumber, false);
-    const updatedTargetEvidence = populateUnassessedSpeaking(current.targetEvidence, stage3Targets);
-    const nextStage: Stage = 4;
-    save(nextStage, {
-      ...current,
-      trial: 0,
-      attempts: 0,
-      answer: null,
-      currentTargetId: undefined,
-      targetEvidence: updatedTargetEvidence,
-      unlockedStage: Math.max(current.unlockedStage, nextStage),
-    });
-    requestAnimationFrame(() => headingRef.current?.focus());
-  };
-  const reset = () => {
-    clearPending();
-    finishedRef.current = false;
-    setCompletedScore(null);
-    save(0, emptySession());
-    requestAnimationFrame(() => headingRef.current?.focus());
-  };
-  const go = (number: number) => {
-    clearPending();
-    dispatch({ type: "OPEN_FIGMA_PRONUNCIATION", lessonNumber: number });
-  };
-  const lessonIndex = FIGMA_PRONUNCIATION_LESSONS.findIndex(
-    (lesson) => lesson.number === lessonNumber
-  );
-  const nextLesson = FIGMA_PRONUNCIATION_LESSONS[lessonIndex + 1];
-  const previousLesson = FIGMA_PRONUNCIATION_LESSONS[lessonIndex - 1];
+  const selectAnswerRef = useRef(selectAnswer);
   useEffect(() => {
-    headingRef.current?.focus();
-  }, []);
-  useEffect(
-    () => () => {
-      generationRef.current += 1;
-    },
-    []
-  );
-  const shortcutRef = useRef({ selectAnswer, play, advance });
-  useEffect(() => {
-    shortcutRef.current = { selectAnswer, play, advance };
+    selectAnswerRef.current = selectAnswer;
   });
 
-  const lastAutoplayKeyRef = useRef<string>("");
-  const isListeningStage = stage === 1 || stage === 2 || stage === 4;
-  // Automatically play audio prompts on listening questions (Stage 1: Discrimination, Stage 2: Meaning, Stage 4: Transfer)
   useEffect(() => {
-    if (completedScore !== null || finishedRef.current) return;
-    if (!isListeningStage) return;
-    if (session.answer !== null) return;
-    if (audioUnavailable) return;
-    if (state.accessibility.includeListening === false) return;
-    if (state.accessibility.autoPlayAudio === false) return;
-
-    const trialKey = `${stage}:${session.trial}:${target?.label ?? activity.model}`;
-    if (lastAutoplayKeyRef.current === trialKey) return;
-    lastAutoplayKeyRef.current = trialKey;
-
-    const timer = setTimeout(() => {
-      if (sessionRef.current.answer === null && !finishedRef.current) {
-        shortcutRef.current.play();
-      }
-    }, 250);
-
-    return () => clearTimeout(timer);
-  }, [
-    stage,
-    isListeningStage,
-    session.trial,
-    session.answer,
-    target?.label,
-    activity.model,
-    completedScore,
-    audioUnavailable,
-    state.accessibility.includeListening,
-    state.accessibility.autoPlayAudio,
-  ]);
-  useEffect(() => {
-    const handleKey = (event: KeyboardEvent) => {
-      if (event.repeat || (!shortcutsEnabled && event.key.length === 1 && event.key !== " "))
-        return;
+    const onKeyDown = (event: KeyboardEvent) => {
       if (
-        event.altKey ||
-        event.ctrlKey ||
-        event.metaKey ||
-        completedScore !== null ||
-        (event.target instanceof HTMLElement &&
-          event.target.closest(
-            "button, a, input, textarea, select, summary, [contenteditable='true']"
-          ))
+        event.target instanceof HTMLElement &&
+        event.target.closest(
+          "button, a, input, textarea, select, summary, [contenteditable='true']"
+        )
       )
         return;
-      const choice = stage === 3 ? undefined : question?.choices[Number(event.key) - 1];
-      if (choice) {
-        event.preventDefault();
-        shortcutRef.current.selectAnswer(choice.label);
-      }
       if (event.key === " " || event.key.toLowerCase() === "r") {
         event.preventDefault();
-        shortcutRef.current.play();
+        speak(target?.label ?? activity.model, undefined, audioClip?.objectKey);
       }
-      if (event.key === "Enter") {
-        event.preventDefault();
-        shortcutRef.current.advance();
+      const index = Number(event.key) - 1;
+      if (answerable && Number.isInteger(index) && visibleChoices[index] && !passed) {
+        selectAnswerRef.current(visibleChoices[index].label);
       }
     };
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [question, completedScore, stage, shortcutsEnabled]);
-  const instruction =
-    stage === 0
-      ? t("lessonShell.previewInstruction")
-      : stage === 2
-        ? t("pronunciation.choosePicture")
-        : stage === 3
-          ? t("pronunciationEnhancements.sayInstruction")
-          : t("pronunciation.chooseHeard");
-  const buttonClass = `inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-border px-3 py-2 text-base font-bold text-foreground hover:bg-muted ${focusRing}`;
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [
+    activity.model,
+    answer,
+    answerable,
+    passed,
+    audioClip?.objectKey,
+    speak,
+    target?.label,
+    visibleChoices,
+  ]);
+  const replayFeedback = () => {
+    if (!answer) return;
+    autoAdvance.cancel();
+    speakFeedback(
+      {
+        correct: passed,
+        targetLabel: target?.label ?? activity.model,
+        chosenLabel: passed ? null : answer,
+      },
+      passed ? () => autoAdvance.schedule(ADVANCE_DELAY_MS.correct) : undefined
+    );
+  };
+  const reset = () => {
+    stop();
+    cancelSpokenFeedback();
+    autoAdvance.cancel();
+    setCompletedScore(null);
+    setStage(0);
+    setTrial(0);
+    setAnswer(null);
+    setAttempts(0);
+    setCorrectCount(0);
+  };
+  const go = (number: number) => {
+    window.location.hash = `#/pronunciation/lesson-${String(number).padStart(2, "0")}`;
+  };
 
-  const soundTipsContent = (
-    <div className="space-y-3">
-      {activity.focus && (
-        <p lang="en" dir="ltr" className="text-sm text-foreground">
-          {activity.focus}
-        </p>
-      )}
-      <ul className="space-y-2" lang="en" dir="ltr">
-        {activity.articulationCues.map((cue) => (
-          <li key={cue} className="space-y-1">
-            <p className="text-sm text-foreground">{cue}</p>
-            <button type="button" className={buttonClass} onClick={() => play(cue)}>
-              <Volume2 className="size-4" aria-hidden />
-              {t("pronunciation.listenToContrast")}
-            </button>
-          </li>
-        ))}
-      </ul>
-      <div className="flex flex-wrap gap-2">
-        {activity.contrastPairs.map(([a, b], pairIndex) => (
-          <div key={`${a}:${b}:${pairIndex}`} className="flex flex-wrap gap-1" lang="en" dir="ltr">
-            {[a, b].map((word, index) => (
-              <button
-                key={`${word}:${index}`}
-                type="button"
-                aria-label={t("pronunciation.playWord", { word })}
-                className={buttonClass}
-                onClick={() => play(word)}
-              >
-                {word}
-              </button>
-            ))}
-          </div>
-        ))}
-      </div>
-      {activity.arabicSpeakerTip && (
-        <div className="space-y-1 text-sm text-muted-foreground">
-          <p lang="en" dir="ltr">
-            {activity.arabicSpeakerTip.tipEn}
-          </p>
-          <p lang="ar" dir="rtl">
-            {activity.arabicSpeakerTip.tipAr}
-          </p>
-        </div>
-      )}
-    </div>
-  );
-
-  const aboutLessonContent = (
-    <div className="space-y-2">
-      <p lang="en" dir="ltr" className="text-sm text-foreground">
-        {activity.objective}
-      </p>
-      {progress && (
-        <p className="text-sm text-muted-foreground">
-          {t("pronunciation.previousBest", { score: progress.bestScorePercent })}
-        </p>
-      )}
-    </div>
-  );
-
-  if (state.accessibility.includePronunciation === false) {
+  if (completedScore !== null) {
     return (
       <div
-        className="wp-lesson-session min-h-dvh w-full overflow-y-auto bg-background"
-        aria-labelledby="pronunciation-disabled-title"
+        className="min-h-dvh w-full bg-background pb-24"
+        aria-labelledby="pronunciation-complete-title"
       >
-        <div className="wp-container-reading wp-layout-gutter flex flex-col gap-6 py-6 sm:py-12">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={() => dispatch({ type: "GO", to: "learn" })}
-            className="w-fit"
-            iconLeft={<ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />}
-          >
-            {t("lessonShell.backToLearn")}
-          </Button>
-
-          <div className="flex flex-col items-center justify-center rounded-3xl border border-border bg-card p-6 text-center shadow-wp-xs sm:p-12">
-            <div className="flex size-16 items-center justify-center rounded-2xl bg-muted text-muted-foreground">
-              <Headphones className="size-8" aria-hidden />
-            </div>
-            <h1
-              id="pronunciation-disabled-title"
-              className="mt-4 text-2xl font-black text-foreground sm:text-3xl"
-            >
-              {t("pronunciation.disabledTitle")}
-            </h1>
-            <p className="mt-2 max-w-md text-base text-muted-foreground">
-              {t("pronunciation.disabledNotice")}
+        <div className="wp-container-reading wp-layout-gutter flex flex-col gap-5 py-4 sm:py-8">
+          <section className="rounded-3xl border border-border bg-card p-6 text-center shadow-sm sm:p-10">
+            <Sparkles className="mx-auto size-10 text-primary" aria-hidden />
+            <p className="mt-4 text-base font-black uppercase tracking-[0.18em] text-primary">
+              {t("pronunciation.completeBadge")}
             </p>
-            <div className="mt-6 flex flex-wrap justify-center gap-3">
-              <Button
-                variant="primary"
-                size="md"
-                onClick={() => setAccessibility({ includePronunciation: true })}
-              >
-                {t("pronunciation.enableNow")}
-              </Button>
-              <Button
-                variant="secondary"
-                size="md"
-                onClick={() => dispatch({ type: "GO", to: "learn" })}
-              >
-                {t("pronunciation.backToLearn")}
-              </Button>
+            <h1
+              id="pronunciation-complete-title"
+              className="mt-2 text-xl sm:text-2xl font-bold"
+              lang="en"
+              dir="ltr"
+            >
+              {activity.title}
+            </h1>
+            <p
+              className="mt-4 text-5xl font-black text-primary"
+              aria-label={t("pronunciation.scoreLabel", { score: completedScore })}
+            >
+              {completedScore}%
+            </p>
+            <p className="mt-3 text-base font-bold text-muted-foreground">
+              {completedScore >= 80
+                ? t("pronunciation.masteredMessage")
+                : t("pronunciation.reviewMessage")}
+            </p>
+            <div className="mt-6 grid gap-3 text-start sm:grid-cols-3">
+              <div className="rounded-2xl bg-muted p-4">
+                <p className="text-sm font-black uppercase text-muted-foreground">
+                  {t("pronunciation.resultListening")}
+                </p>
+                <p className="mt-1 text-xl font-black">{t("pronunciation.resultReady")}</p>
+              </div>
+              <div className="rounded-2xl bg-muted p-4">
+                <p className="text-sm font-black uppercase text-muted-foreground">
+                  {t("pronunciation.resultMeaning")}
+                </p>
+                <p className="mt-1 text-xl font-black">{t("pronunciation.resultPractised")}</p>
+              </div>
+              <div className="rounded-2xl bg-muted p-4">
+                <p className="text-sm font-black uppercase text-muted-foreground">
+                  {t("pronunciation.resultReview")}
+                </p>
+                <p className="mt-1 text-xl font-black">
+                  {completedScore >= 80
+                    ? t("pronunciation.reviewInDays", { days: 3 })
+                    : t("pronunciation.reviewTomorrow")}
+                </p>
+              </div>
             </div>
-          </div>
+            <div className="mt-7 flex flex-wrap justify-center gap-3">
+              <button
+                type="button"
+                onClick={reset}
+                className="min-h-11 rounded-xl border border-border px-5 font-black focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                {t("pronunciation.reviewAgain")}
+              </button>
+              <button
+                type="button"
+                onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
+                className="min-h-11 rounded-xl bg-primary px-5 font-black text-primary-foreground focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                {t("pronunciation.back")}
+              </button>
+            </div>
+            {activity.reviewSentences.length > 0 && (
+              <section
+                className="mt-7 rounded-2xl border border-primary/25 bg-secondary p-5 text-start"
+                aria-labelledby="pronunciation-usage-review"
+              >
+                <h2 id="pronunciation-usage-review" className="text-lg font-black">
+                  {t("pronunciation.usageReviewTitle")}
+                </h2>
+                <p className="mt-1 text-base text-muted-foreground">
+                  {t("pronunciation.usageReviewDescription")}
+                </p>
+                <div className="mt-4 grid gap-3">
+                  {activity.reviewSentences.map((sentence) => (
+                    <div key={sentence} className="space-y-2">
+                      <button
+                        type="button"
+                        onClick={() => speak(sentence)}
+                        className="flex min-h-11 w-full items-center gap-3 rounded-xl border border-border bg-card p-3 text-start font-bold hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                        lang="en"
+                        dir="ltr"
+                      >
+                        <Volume2 className="size-5 shrink-0 text-primary" aria-hidden />
+                        {sentence}
+                      </button>
+                      <PrivateRecordCompare target={sentence} />
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+          </section>
         </div>
       </div>
     );
@@ -576,824 +341,592 @@ export function FigmaPronunciationLessonScreen({ lessonNumber, dispatch }: Props
       className="wp-lesson-session min-h-dvh w-full overflow-y-auto bg-background"
       aria-labelledby="pronunciation-title"
     >
-      <div className="wp-container-wide wp-layout-gutter py-4 sm:py-6 flex flex-col min-h-[calc(100dvh-1.5rem)]">
-        {completedScore !== null ? (
-          <div className="mx-auto max-w-2xl flex flex-col gap-6">
-            <div className="flex items-center justify-between">
-              <button
-                type="button"
-                className={buttonClass}
-                onClick={() => {
-                  clearPending();
-                  dispatch({ type: "GO", to: "pronunciation-curriculum" });
-                }}
-              >
-                <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-                {t("ux.backToCourse")}
-              </button>
-            </div>
-            <header>
+      <div className="wp-container-reading wp-layout-gutter flex flex-col gap-5 py-4 sm:py-8">
+        <button
+          type="button"
+          onClick={() => dispatch({ type: "GO", to: "pronunciation-curriculum" })}
+          className="inline-flex min-h-11 w-fit items-center gap-2 rounded-xl border border-border bg-card px-3.5 font-bold text-foreground shadow-wp-xs transition-colors hover:bg-muted motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+          <span>{t("pronunciation.back")}</span>
+        </button>
+        <header className="border-b border-border pb-4">
+          <div className="flex items-start justify-between gap-4">
+            <div>
               <p className="text-sm font-semibold text-primary">
-                {t("pronunciation.badge", {
-                  current: lessonIndex + 1,
-                  total: FIGMA_PRONUNCIATION_LESSONS.length,
-                })}
+                {t("pronunciation.badge", { current: lessonNumber, total: 68 })}
               </p>
               <h1
-                ref={headingRef}
-                tabIndex={-1}
                 id="pronunciation-title"
-                className={`mt-1 text-2xl font-bold text-foreground sm:text-3xl ${focusRing}`}
+                className="mt-2 text-3xl font-black tracking-tight"
                 lang="en"
                 dir="ltr"
               >
                 {activity.title}
               </h1>
-            </header>
-            <section className="space-y-4" aria-label={t("pronunciation.completeBadge")}>
-              <h2 className="text-xl font-bold">
-                {t("lessonShell.recognitionResult", { score: completedScore })}
-              </h2>
-              <p className="text-base text-foreground">{t("lessonShell.speakingDisclaimer")}</p>
-              <p>{t("pronunciationEnhancements.completionMessage")}</p>
-              <p>
-                {completedScore >= 80
-                  ? t("pronunciation.reviewInDays", { days: 3 })
-                  : t("pronunciation.reviewTomorrow")}
+              <p
+                className="mt-3 max-w-2xl text-base leading-6 text-muted-foreground"
+                lang="en"
+                dir="ltr"
+              >
+                {activity.objective}
               </p>
-              <p>
-                {t("pronunciationEnhancements.speakingCoverage", {
-                  count: Object.values(session.targetEvidence ?? {}).filter(
-                    (item) => item.speaking === "assessed"
-                  ).length,
-                  total:
-                    getPronunciationTargets(lessonNumber, false).length +
-                    getPronunciationTargets(lessonNumber, true).length,
-                })}
-              </p>
-              <div className="rounded-2xl border border-border bg-card p-4 space-y-2">
-                <p className="text-sm font-bold text-foreground">
-                  {t("pronunciationEnhancements.wordResults")}
+            </div>
+            <Sparkles className="size-8 text-primary" aria-hidden />
+          </div>
+          <p className="sr-only" aria-live="polite">
+            {t("pronunciation.stage", { number: stage + 1, name: STAGES[stage] })}
+          </p>
+          {progress && (
+            <p className="mt-3 text-base font-bold text-primary">
+              {t("pronunciation.previousBest", { score: progress.bestScorePercent })}
+            </p>
+          )}
+        </header>
+        <div className="wp-course-sticky sticky top-0 z-40 border-b border-border bg-background py-2">
+          <CourseLessonNavigation
+            stages={STAGES.map((name, index) => ({
+              id: name,
+              label: t("pronunciation.stage", { number: index + 1, name }),
+              group: ([0, 0, 1, 2, 3] as const)[index],
+              completed: index < stage,
+              locked: index > stage,
+            }))}
+            currentIndex={stage}
+            onSelect={(index) => {
+              if (index <= stage) {
+                stop();
+                cancelSpokenFeedback();
+                setStage(index as Stage);
+                setTrial(0);
+                setAnswer(null);
+              }
+            }}
+          />
+        </div>
+
+        {contrastHero && contrastHeroItems?.length === 2 && stage === 0 && (
+          <section
+            className="rounded-3xl border-2 border-primary/25 bg-card p-5 shadow-sm sm:p-7"
+            aria-labelledby="pronunciation-contrast-title"
+          >
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-primary">
+                  {t("pronunciation.contrastHeroBadge")}
                 </p>
-                <ul className="space-y-2">
-                  {activity.items.map((item) => {
-                    const evidence = session.targetEvidence?.[pronunciationTargetId(item.label)];
-                    return (
-                      <li
-                        key={pronunciationTargetId(item.label)}
-                        className="flex flex-wrap justify-between gap-2 text-sm"
-                      >
-                        <bdi lang="en" dir="ltr">
-                          {item.label}
-                        </bdi>
-                        <span className="text-muted-foreground">
-                          {t(
-                            evidence?.listening === true
-                              ? "pronunciationEnhancements.listenChecked"
-                              : "pronunciationEnhancements.listenPending"
-                          )}{" "}
-                          ·{" "}
-                          {t(
-                            `pronunciationEnhancements.evidence.${evidence?.speaking ?? "unassessed"}`
-                          )}
-                        </span>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <h2 id="pronunciation-contrast-title" className="mt-1 text-2xl font-black">
+                  {t("pronunciation.contrastHeroTitle")}
+                </h2>
+                <p className="mt-2 max-w-2xl text-base leading-6 text-muted-foreground">
+                  {t("pronunciation.contrastHeroDescription")}
+                </p>
               </div>
-              <div className="flex flex-wrap gap-3">
-                <button type="button" className={buttonClass} onClick={reset}>
-                  {t("pronunciation.reviewAgain")}
-                </button>
+              <span className="rounded-full bg-secondary px-3 py-1 text-sm font-black text-primary">
+                {activity.focus}
+              </span>
+            </div>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              {contrastHeroItems.map((item, pairIndex) => (
                 <button
+                  key={`${item.label}-${pairIndex}`}
                   type="button"
-                  className={`inline-flex min-h-11 items-center justify-center rounded-xl bg-primary px-4 py-3 text-base font-bold text-primary-foreground hover:bg-primary ${focusRing}`}
                   onClick={() =>
-                    nextLesson
-                      ? go(nextLesson.number)
-                      : dispatch({ type: "GO", to: "pronunciation-curriculum" })
+                    speak(item.label, undefined, getPronunciationAudioClip(item.label)?.objectKey)
                   }
+                  className="group flex min-h-24 items-center gap-4 rounded-2xl border border-border bg-muted/50 p-3 text-start hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  lang="en"
+                  dir="ltr"
                 >
-                  {nextLesson ? t("pronunciation.nextLesson") : t("pronunciation.back")}
+                  <img
+                    src={imageFor(item)}
+                    alt=""
+                    className="size-20 rounded-xl object-cover"
+                    aria-hidden
+                  />
+                  <span className="min-w-0">
+                    <span className="block text-xl font-black">{item.label}</span>
+                    <span className="mt-1 inline-flex items-center gap-2 text-base font-bold text-primary">
+                      <Volume2 className="size-4" aria-hidden />
+                      {t("pronunciation.listenToContrast")}
+                    </span>
+                  </span>
                 </button>
-              </div>
-              {activity.reviewSentences.length > 0 && (
-                <div className="rounded-2xl border border-border bg-card p-4 space-y-3">
-                  <p className="text-sm font-bold text-foreground">
-                    {t("pronunciation.usageReviewTitle")}
-                  </p>
-                  {activity.reviewSentences.map((sentence) => (
-                    <div key={sentence}>
-                      <button
-                        type="button"
-                        className={buttonClass}
+              ))}
+            </div>
+          </section>
+        )}
+        {contrastHero && contrastHeroItems?.length === 2 && stage > 0 && (
+          <details className="group rounded-2xl border border-border bg-card/80 p-3 text-start shadow-xs">
+            <summary className="flex min-h-11 cursor-pointer items-center justify-between text-base font-bold text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
+              <span className="flex items-center gap-2">
+                <Sparkles className="size-4 text-primary" aria-hidden />
+                {t("pronunciation.soundGuide")}: {contrastHero[0]} / {contrastHero[1]}
+              </span>
+              <ChevronDown
+                className="size-4 text-muted-foreground transition-transform group-open:rotate-180"
+                aria-hidden
+              />
+            </summary>
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              {contrastHeroItems.map((item, pairIndex) => (
+                <button
+                  key={`${item.label}-${pairIndex}`}
+                  type="button"
+                  onClick={() =>
+                    speak(item.label, undefined, getPronunciationAudioClip(item.label)?.objectKey)
+                  }
+                  className="flex min-h-12 items-center gap-3 rounded-xl border border-border bg-muted/50 p-2 text-start hover:border-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  lang="en"
+                  dir="ltr"
+                >
+                  <img
+                    src={imageFor(item)}
+                    alt=""
+                    className="size-10 rounded-lg object-cover"
+                    aria-hidden
+                  />
+                  <span className="min-w-0 font-bold">{item.label}</span>
+                  <Volume2 className="ms-auto size-4 text-primary" aria-hidden />
+                </button>
+              ))}
+            </div>
+          </details>
+        )}
+        {stage === 0 && (
+          <section
+            className="rounded-3xl border border-border bg-card p-5 shadow-sm sm:p-7"
+            aria-labelledby="picture-preview-title"
+          >
+            <div className="flex items-center gap-2">
+              <ImageIcon className="size-5 text-primary" aria-hidden />
+              <h2 id="picture-preview-title" className="text-lg font-black">
+                {t("pronunciation.picturePreview")}
+              </h2>
+            </div>
+            <p className="mt-2 text-base text-muted-foreground">
+              {t("pronunciation.picturePreviewDesc")}
+            </p>
+            <div className="mt-5 space-y-4">
+              <div>
+                <p className="text-sm font-black uppercase tracking-wider text-muted-foreground">
+                  {activity.focus}
+                </p>
+                <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {activity.items.slice(0, 8).map((item) => (
+                    <button
+                      key={`${item.label}-${item.imageRef}`}
+                      type="button"
+                      onClick={() =>
+                        speak(
+                          item.label,
+                          undefined,
+                          getPronunciationAudioClip(item.label)?.objectKey
+                        )
+                      }
+                      aria-label={t("pronunciation.playWord", { word: item.label })}
+                      className="group overflow-hidden rounded-2xl border border-border bg-muted text-start hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    >
+                      <img
+                        src={imageFor(item)}
+                        alt={item.label}
+                        className="aspect-square w-full object-cover transition-transform group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <span
+                        className="flex min-h-11 items-center justify-center gap-2 p-2 text-center text-base font-bold"
                         lang="en"
                         dir="ltr"
-                        onClick={() => play(sentence)}
                       >
-                        {sentence}
-                      </button>
-                      <PrivateRecordCompare target={sentence} />
-                    </div>
+                        <Volume2 className="size-4 text-primary" aria-hidden />
+                        {item.label}
+                      </span>
+                    </button>
                   ))}
                 </div>
-              )}
-            </section>
-          </div>
-        ) : (
-          <div className="flex flex-col gap-4 lg:grid lg:grid-cols-[20rem_minmax(0,1fr)] lg:grid-rows-[auto_1fr] lg:gap-x-8 flex-1 min-h-0">
-            {/* Side-Rail Workspace on Desktop (lg+) / Context Header on Mobile */}
-            <aside className="wp-course-sidebar w-full lg:w-80 lg:shrink-0 lg:self-start lg:sticky lg:top-6 flex flex-col gap-4">
-              <div className="flex items-center justify-between gap-2">
-                <button
-                  type="button"
-                  className={buttonClass}
-                  onClick={() => {
-                    clearPending();
-                    dispatch({ type: "GO", to: "pronunciation-curriculum" });
-                  }}
-                >
-                  <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-                  {t("ux.backToCourse")}
-                </button>
-                <DropdownMenu>
-                  <DropdownMenuTrigger
-                    ariaLabel={t("lessonShell.options")}
-                    title={t("lessonShell.options")}
-                    className={buttonClass}
-                    icon={<SlidersHorizontal className="size-5" aria-hidden="true" />}
-                  />
-                  <DropdownMenuContent
-                    align="end"
-                    className="w-[calc(100vw-2rem)] max-w-xs sm:w-80"
-                  >
-                    <div className="border-b border-border/60 px-3 py-2 mb-1">
-                      <p className="text-sm font-bold text-foreground">
-                        {t("lessonShell.options")}
-                      </p>
-                      <p className="truncate text-xs text-muted-foreground">{activity.title}</p>
-                    </div>
-
-                    <DropdownMenuLabel>{t("lessonShell.actions")}</DropdownMenuLabel>
-                    <DropdownMenuItem
-                      icon={<RotateCcw className="size-4" aria-hidden="true" />}
-                      onClick={reset}
-                    >
-                      {t("lessonShell.restart")}
-                    </DropdownMenuItem>
-                    {previousLesson && (
-                      <DropdownMenuItem
-                        icon={<ArrowLeft className="size-4 rtl:rotate-180" aria-hidden="true" />}
-                        onClick={() => go(previousLesson.number)}
-                      >
-                        {t("pronunciation.previousLesson")}
-                      </DropdownMenuItem>
-                    )}
-                    {nextLesson && (
-                      <DropdownMenuItem
-                        icon={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden="true" />}
-                        onClick={() => go(nextLesson.number)}
-                      >
-                        {t("pronunciation.nextLesson")}
-                      </DropdownMenuItem>
-                    )}
-                    {stage === 3 && (
-                      <DropdownMenuItem
-                        icon={
-                          <FastForward
-                            className="size-4 rtl:rotate-180 text-primary"
-                            aria-hidden="true"
-                          />
-                        }
-                        onClick={skipEntireSpeakingSection}
-                      >
-                        {t("pronunciationEnhancements.skipSpeakingSection")}
-                      </DropdownMenuItem>
-                    )}
-
-                    <DropdownMenuSeparator />
-
-                    <DropdownMenuLabel>{t("lessonShell.preferences")}</DropdownMenuLabel>
-                    <DropdownMenuToggleItem
-                      icon={<Zap className="size-4 text-primary" aria-hidden="true" />}
-                      label={t("lessonShell.autoAdvance")}
-                      description={t("lessonShell.autoAdvanceDesc")}
-                      stateText={t(isAutoAdvance ? "settings.enabled" : "settings.disabled")}
-                      ariaLabel={t(isAutoAdvance ? "lessonShell.autoOn" : "lessonShell.autoOff")}
-                      checked={isAutoAdvance}
-                      onCheckedChange={() => {
-                        clearPending();
-                        if (state.accessibility.autoAdvance) {
-                          setAccessibility({ autoAdvance: false });
-                        }
-                        setDrillAutoAdvance(!isAutoAdvance);
-                      }}
-                    />
-                    <DropdownMenuToggleItem
-                      icon={<Mic className="size-4 text-primary" aria-hidden="true" />}
-                      label={t("lessonShell.speakingExercises")}
-                      description={t("lessonShell.speakingExercisesDesc")}
-                      stateText={t(
-                        state.accessibility.includeSpeaking
-                          ? "settings.enabled"
-                          : "settings.disabled"
-                      )}
-                      ariaLabel={t("pronunciationEnhancements.speakingToggle", {
-                        state: state.accessibility.includeSpeaking
-                          ? t("settings.enabled")
-                          : t("settings.disabled"),
-                      })}
-                      checked={state.accessibility.includeSpeaking}
-                      onCheckedChange={() => {
-                        clearPending();
-                        const nextVal = !state.accessibility.includeSpeaking;
-                        setAccessibility({ includeSpeaking: nextVal });
-                        if (!nextVal && stage === 3) {
-                          skipEntireSpeakingSection();
-                        }
-                      }}
-                    />
-                    <DropdownMenuToggleItem
-                      icon={<Volume2 className="size-4 text-primary" aria-hidden="true" />}
-                      label={t("lessonShell.autoPlayAudio")}
-                      description={t("lessonShell.autoPlayAudioDesc")}
-                      stateText={t(
-                        state.accessibility.autoPlayAudio !== false
-                          ? "settings.enabled"
-                          : "settings.disabled"
-                      )}
-                      ariaLabel={t("pronunciationEnhancements.autoPlayAudioToggle", {
-                        state:
-                          state.accessibility.autoPlayAudio !== false
-                            ? t("settings.enabled")
-                            : t("settings.disabled"),
-                      })}
-                      checked={state.accessibility.autoPlayAudio !== false}
-                      onCheckedChange={() => {
-                        clearPending();
-                        setAccessibility({
-                          autoPlayAudio: !(state.accessibility.autoPlayAudio !== false),
-                        });
-                      }}
-                    />
-                  </DropdownMenuContent>
-                </DropdownMenu>
               </div>
-
-              {/* Lesson Context Card */}
-              <div className="wp-course-context rounded-2xl border border-border bg-card p-3 sm:p-4 shadow-wp-xs">
-                <header>
-                  <p className="text-xs sm:text-sm font-semibold text-primary">
-                    {t("pronunciation.badge", {
-                      current: lessonIndex + 1,
-                      total: FIGMA_PRONUNCIATION_LESSONS.length,
+              {activity.items.length > 8 && (
+                <details className="group rounded-2xl border border-border bg-muted/30 p-3">
+                  <summary className="min-h-11 cursor-pointer py-3 text-base font-bold text-primary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary">
+                    +{activity.items.length - 8} {t("pronunciation.picturePreview")}
+                  </summary>
+                  <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                    {activity.items.slice(8).map((item) => (
+                      <button
+                        key={`${item.label}-${item.imageRef}`}
+                        type="button"
+                        onClick={() =>
+                          speak(
+                            item.label,
+                            undefined,
+                            getPronunciationAudioClip(item.label)?.objectKey
+                          )
+                        }
+                        aria-label={t("pronunciation.playWord", { word: item.label })}
+                        className="group overflow-hidden rounded-2xl border border-border bg-muted text-start hover:border-primary focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                      >
+                        <img
+                          src={imageFor(item)}
+                          alt={item.label}
+                          className="aspect-square w-full object-cover transition-transform group-hover:scale-105"
+                          loading="lazy"
+                        />
+                        <span
+                          className="flex min-h-11 items-center justify-center gap-2 p-2 text-center text-base font-bold"
+                          lang="en"
+                          dir="ltr"
+                        >
+                          <Volume2 className="size-4 text-primary" aria-hidden />
+                          {item.label}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </details>
+              )}
+            </div>
+          </section>
+        )}
+        <section className="rounded-3xl border border-border bg-card p-5 shadow-sm sm:p-7">
+          <p className="text-base font-black text-primary">
+            {t("pronunciation.stage", { number: stage + 1, name: STAGES[stage] })}
+          </p>
+          {answerable && (
+            <p
+              className="wp-quiz-progress sticky top-[var(--wp-course-nav-height,4.5rem)] z-30 mt-1 bg-background py-2 text-sm font-bold text-foreground"
+              role="status"
+            >
+              {t("pronunciation.checkProgress", {
+                current: trial + 1,
+                total: TRIALS_PER_STAGE,
+              })}
+            </p>
+          )}
+          <h2 className="mt-1 text-2xl font-black">
+            {stage === 0 ? t("pronunciation.readyTitle") : t("pronunciation.testTitle")}
+          </h2>
+          <button
+            type="button"
+            onClick={() => speak(target?.label ?? activity.model, undefined, audioClip?.objectKey)}
+            className="mt-5 flex min-h-14 w-full items-center justify-center gap-3 rounded-2xl bg-primary px-5 font-black text-primary-foreground focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          >
+            <Play className="size-5" aria-hidden />
+            {isPlaying ? t("pronunciation.playing") : t("pronunciation.play")}
+          </button>
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 border-b border-border py-3">
+            <span className="inline-flex items-center gap-2 text-base font-bold">
+              <Gauge className="size-4 text-primary" aria-hidden />
+              {t("pronunciation.playbackSpeed")}
+            </span>
+            <div className="flex gap-2" role="group" aria-label={t("pronunciation.playbackSpeed")}>
+              {[false, true].map((slow) => (
+                <button
+                  key={String(slow)}
+                  type="button"
+                  aria-pressed={slowPlayback === slow}
+                  onClick={() => setSlowPlayback(slow)}
+                  className={`min-h-11 rounded-xl border px-4 text-base font-black focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary ${slowPlayback === slow ? "border-primary bg-primary text-primary-foreground" : "border-border bg-card"}`}
+                >
+                  {slow ? t("pronunciation.slowSpeed") : t("pronunciation.normalSpeed")}
+                </button>
+              ))}
+            </div>
+          </div>
+          {stage === 0 && (
+            <div className="mt-4 space-y-3">
+              <p className="rounded-2xl bg-muted p-4 text-base leading-6">
+                {t("pronunciation.previewPrompt", { count: activity.items.length })}
+              </p>
+              <div className="rounded-2xl border border-primary/25 bg-secondary p-4">
+                <h3 className="text-base font-black text-foreground">
+                  {t("pronunciation.soundFocus")}
+                </h3>
+                <p
+                  className="mt-1 whitespace-pre-line text-base leading-6 text-muted-foreground"
+                  lang="en"
+                  dir="ltr"
+                >
+                  {activity.focus}
+                </p>
+                {activity.articulationCues.length > 0 && (
+                  <div className="mt-4 border-t border-primary/20 pt-4">
+                    <h4 className="text-base font-black text-foreground">
+                      {t("pronunciation.articulationTitle")}
+                    </h4>
+                    <ul className="mt-2 grid gap-2" lang="en" dir="ltr">
+                      {activity.articulationCues.map((cue) => {
+                        const badge = getCueBadge(cue);
+                        return (
+                          <li
+                            key={cue}
+                            className="flex flex-col gap-2 rounded-xl border border-border bg-card p-3 text-base leading-6 text-foreground"
+                          >
+                            <div className="flex items-center justify-between gap-2">
+                              {badge ? (
+                                <span className="inline-flex items-center gap-1.5 text-sm font-black text-primary">
+                                  <span aria-hidden>{badge.icon}</span>
+                                  <span>{t(badge.labelKey)}</span>
+                                </span>
+                              ) : (
+                                <span
+                                  className="size-2 shrink-0 rounded-full bg-primary"
+                                  aria-hidden
+                                />
+                              )}
+                              <button
+                                type="button"
+                                onClick={() => speak(cue)}
+                                className="inline-flex min-h-11 items-center gap-1.5 rounded-lg px-2.5 py-1 text-sm font-bold text-primary hover:bg-secondary focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-1 focus-visible:outline-primary"
+                              >
+                                <Volume2 className="size-4" aria-hidden />
+                                {t("pronunciation.listenToContrast")}
+                              </button>
+                            </div>
+                            <span>{cue}</span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                )}
+                {activity.contrastPairs.length > 0 && (
+                  <ul
+                    className="mt-3 flex flex-wrap gap-2"
+                    aria-label={t("pronunciation.contrastPairs")}
+                  >
+                    {activity.contrastPairs.slice(0, 10).map(([first, second]) => (
+                      <li
+                        key={`${first}-${second}`}
+                        className="rounded-xl border border-border bg-card px-3 py-2 text-base font-black text-foreground"
+                        lang="en"
+                        dir="ltr"
+                      >
+                        {first} / {second}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {activity.arabicSpeakerTip && (
+                  <div className="mt-4 rounded-2xl border border-feedback-warning-border bg-feedback-warning-surface p-4">
+                    <div className="flex items-center justify-between gap-2 text-sm font-black uppercase tracking-wider text-feedback-warning-foreground">
+                      <div className="flex items-center gap-1.5">
+                        <Lightbulb className="size-4" aria-hidden />
+                        <span>
+                          {t("pronunciation.modalArabicSpeakerFocus") || "Arabic Speaker Focus"}
+                        </span>
+                      </div>
+                      <span
+                        className="font-arabic text-sm font-bold text-feedback-warning-foreground"
+                        dir="rtl"
+                        lang="ar"
+                      >
+                        {activity.arabicSpeakerTip.titleAr}
+                      </span>
+                    </div>
+                    <p
+                      className="mt-2 text-base font-medium leading-relaxed text-foreground"
+                      lang="en"
+                      dir="ltr"
+                    >
+                      {activity.arabicSpeakerTip.tipEn}
+                    </p>
+                    <p
+                      className="mt-2 border-t border-feedback-warning-border/50 pt-2 font-arabic text-sm sm:text-base font-semibold leading-relaxed text-foreground"
+                      dir="rtl"
+                      lang="ar"
+                    >
+                      {activity.arabicSpeakerTip.tipAr}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+          {answerable && (
+            <>
+              <p className="mt-5 text-base font-bold">
+                {stage === 2
+                  ? t("pronunciation.choosePicture")
+                  : stage === 3
+                    ? t("pronunciation.chooseUsage")
+                    : t("pronunciation.chooseHeard")}
+              </p>
+              <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                {visibleChoices.map((item, choiceIndex) => (
+                  <button
+                    key={item.label}
+                    type="button"
+                    onClick={() => selectAnswer(item.label)}
+                    aria-pressed={answer === item.label}
+                    aria-label={t("pronunciation.choiceLabel", {
+                      number: choiceIndex + 1,
+                      word: item.label,
                     })}
-                  </p>
-                  <h1
-                    ref={headingRef}
-                    tabIndex={-1}
-                    id="pronunciation-title"
-                    className={`mt-0.5 text-base sm:text-2xl font-bold text-foreground break-words ${focusRing}`}
+                    disabled={passed}
+                    className={`min-h-14 overflow-hidden rounded-2xl border-2 p-0 text-start font-black transition-colors focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:cursor-not-allowed ${answer === item.label ? (item.label === target?.label ? "border-feedback-success bg-feedback-success-surface" : "border-destructive bg-destructive/10") : "border-border hover:border-primary disabled:opacity-70"}`}
                     lang="en"
                     dir="ltr"
                   >
-                    {activity.title}
-                  </h1>
-                </header>
-
-                <div className="wp-course-sticky mt-3 pt-3 border-t border-border">
-                  <CourseLessonNavigation
-                    stages={STAGES.map((name, index) => ({
-                      id: name,
-                      label: t(`lessonShell.stages.${name}`),
-                      group: ([0, 0, 1, 2, 3] as const)[index],
-                      completed: index < session.unlockedStage,
-                      locked: index > session.unlockedStage,
-                    }))}
-                    currentIndex={stage}
-                    onSelect={(index) => {
-                      if (index === stage || index > session.unlockedStage) return;
-                      clearPending();
-                      save(index as Stage, {
-                        ...sessionRef.current,
-                        currentTargetId: undefined,
-                        trial: 0,
-                        attempts: 0,
-                        answer: null,
-                      });
-                    }}
-                  />
-                </div>
-              </div>
-            </aside>
-
-            {/* Main Focus Stage: dedicated exclusively to the question, prompt, audio, and choices */}
-            <div className="min-w-0 flex flex-col justify-between gap-4 lg:col-start-2 lg:row-start-1 lg:row-span-2">
-              {progress?.status === "in-progress" && progress.session?.version !== 2 && (
-                <p role="status" className="text-sm text-foreground">
-                  {t("lessonShell.legacyResume")}
-                </p>
-              )}
-
-              {/* Focused Question Header & Audio Controls */}
-              <section
-                className="flex-1 min-h-0 flex flex-col gap-4"
-                aria-labelledby="pronunciation-instruction"
-              >
-                <div className="space-y-3 shrink-0">
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <h2
-                      id="pronunciation-instruction"
-                      data-question-prompt
-                      className="wp-question-prompt"
-                    >
-                      {instruction}
-                    </h2>
-                    {stage > 0 && (
-                      <div className="flex items-center gap-2">
-                        <span
-                          role="status"
-                          className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs sm:text-sm font-bold text-primary"
-                        >
-                          {t("pronunciation.checkProgress", {
-                            current: session.trial + 1,
-                            total: trials,
-                          })}
-                        </span>
-                        {stage === 3 && state.accessibility.includeSpeaking !== false && (
-                          <button
-                            type="button"
-                            onClick={skipEntireSpeakingSection}
-                            className={`min-h-11 ${buttonClass} text-sm`}
-                          >
-                            <FastForward
-                              className="size-4 rtl:rotate-180 text-primary"
-                              aria-hidden
-                            />
-                            <span>{t("pronunciationEnhancements.skipSpeakingSection")}</span>
-                          </button>
-                        )}
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Top Control Bar: Audio, Speed, Persistent Auto-Advance toggle, and Next button — strictly ONE single line */}
-                  <div className="flex items-center justify-between gap-2 pt-1 w-full min-w-0 flex-nowrap overflow-x-auto no-scrollbar">
-                    {/* Left controls */}
-                    <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-                      {stage === 0 && previewPairs.length > 1 && (
-                        <div className="inline-flex items-center gap-1.5 shrink-0">
-                          <button
-                            type="button"
-                            disabled={previewPairIndex === 0}
-                            onClick={() => setPreviewPairIndex((prev) => Math.max(0, prev - 1))}
-                            className={`min-h-11 px-3 py-2 rounded-xl border border-border bg-card font-semibold text-foreground hover:bg-muted disabled:opacity-40 disabled:cursor-not-allowed inline-flex items-center gap-1 shrink-0 ${focusRing}`}
-                            aria-label={t("action.previous")}
-                          >
-                            <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-                            <span className="hidden sm:inline">{t("action.previous")}</span>
-                          </button>
-                          <span className="text-sm font-bold text-muted-foreground whitespace-nowrap px-1">
-                            {previewPairIndex + 1} / {previewPairs.length}
-                          </span>
-                          <button
-                            type="button"
-                            disabled={previewPairIndex === previewPairs.length - 1}
-                            onClick={() => setPreviewPairIndex((prev) => prev + 1)}
-                            className={`min-h-11 px-3 py-2 rounded-xl border border-border bg-card font-semibold text-foreground hover:bg-muted disabled:opacity-40 disabled:cursor-not-allowed inline-flex items-center gap-1 shrink-0 ${focusRing}`}
-                            aria-label={t("action.next")}
-                          >
-                            <span className="hidden sm:inline">{t("action.next")}</span>
-                            <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
-                          </button>
-                        </div>
+                    <img
+                      src={imageFor(item)}
+                      alt=""
+                      className="block aspect-[16/9] w-full object-cover transition-opacity duration-300"
+                      aria-hidden
+                    />
+                    <span className="flex min-h-11 items-center justify-center gap-2 px-3 py-2 text-center text-base font-black">
+                      {answer === item.label && passed && (
+                        <Check className="size-5 shrink-0" aria-hidden />
                       )}
-
-                      {stage !== 3 && (
-                        <>
-                          <button
-                            type="button"
-                            disabled={clipUnavailable || status === "unsupported"}
-                            aria-busy={status === "loading"}
-                            aria-label={
-                              status === "playing"
-                                ? t("lessonShell.stopAudio")
-                                : isError && !clipUnavailable
-                                  ? t("readingPlayer.retry")
-                                  : t("pronunciation.play")
-                            }
-                            className={`min-h-11 px-2.5 sm:px-3.5 rounded-xl border-2 border-primary bg-primary/10 text-primary hover:bg-primary/20 font-bold inline-flex items-center gap-1.5 sm:gap-2 shrink-0 ${focusRing}`}
-                            onClick={() =>
-                              status === "playing"
-                                ? stop()
-                                : speak(target?.label ?? activity.model, undefined, clip?.objectKey)
-                            }
-                          >
-                            <Volume2 className="size-5 shrink-0" aria-hidden />
-                            <span className="text-sm sm:text-base">
-                              {status === "playing"
-                                ? t("lessonShell.stopAudio")
-                                : isError && !clipUnavailable
-                                  ? t("readingPlayer.retry")
-                                  : t("pronunciation.play")}
-                            </span>
-                          </button>
-                          <button
-                            type="button"
-                            className={`min-h-11 px-2.5 sm:px-3 rounded-xl border border-border bg-card hover:bg-muted font-semibold text-foreground inline-flex items-center gap-1 sm:gap-1.5 shrink-0 text-sm ${focusRing}`}
-                            aria-pressed={slowPlayback}
-                            onClick={() => setSlowPlayback(!slowPlayback)}
-                            title={t("lessonShell.playback", {
-                              speed: t(
-                                slowPlayback
-                                  ? "pronunciation.slowSpeed"
-                                  : "pronunciation.normalSpeed"
-                              ),
-                            })}
-                          >
-                            <span className="hidden md:inline">
-                              {t("lessonShell.playback", {
-                                speed: t(
-                                  slowPlayback
-                                    ? "pronunciation.slowSpeed"
-                                    : "pronunciation.normalSpeed"
-                                ),
-                              })}
-                            </span>
-                            <span className="md:hidden">{slowPlayback ? "0.75x" : "1.0x"}</span>
-                          </button>
-                          {stage === 4 &&
-                            clip?.speaker ===
-                              getPronunciationAudioClip(target?.label ?? activity.model)
-                                ?.speaker && (
-                              <span className="hidden 2xl:inline text-xs text-muted-foreground font-medium shrink-0">
-                                {t("pronunciationEnhancements.sameSpeaker")}
-                              </span>
-                            )}
-                        </>
-                      )}
-
-                      {/* Auto-advance persistent toggle (always in header, never intermittent) */}
-                      {stage > 0 && (
-                        <button
-                          type="button"
-                          aria-pressed={isAutoAdvance}
-                          aria-label={
-                            autoAdvance.isPending
-                              ? t("lessonShell.pauseAdvance")
-                              : `${t("lessonShell.autoAdvance")}: ${t(isAutoAdvance ? "settings.enabled" : "settings.disabled")}`
-                          }
-                          title={
-                            autoAdvance.isPending
-                              ? t("lessonShell.pauseAdvance")
-                              : `${t("lessonShell.autoAdvance")}: ${t(isAutoAdvance ? "settings.enabled" : "settings.disabled")}`
-                          }
-                          onClick={() => {
-                            if (autoAdvance.isPending) {
-                              clearPending();
-                              setAccessibility({ autoAdvance: false });
-                              setDrillAutoAdvance(false);
-                            } else {
-                              const next = !isAutoAdvance;
-                              setAccessibility({ autoAdvance: next });
-                              setDrillAutoAdvance(next);
-                            }
-                          }}
-                          className={`min-h-11 px-2.5 sm:px-3 rounded-xl border font-semibold inline-flex items-center gap-1 sm:gap-1.5 shrink-0 text-sm transition-colors ${focusRing} ${
-                            autoAdvance.isPending
-                              ? "border-primary bg-primary/10 text-primary animate-pulse"
-                              : isAutoAdvance
-                                ? "border-border bg-card text-foreground hover:bg-muted"
-                                : "border-border/60 bg-muted/40 text-muted-foreground hover:bg-muted"
-                          }`}
-                        >
-                          {autoAdvance.isPending ? (
-                            <span
-                              className="size-2 rounded-full bg-primary animate-ping shrink-0"
-                              aria-hidden
-                            />
-                          ) : (
-                            <Zap
-                              className={`size-4 shrink-0 ${isAutoAdvance ? "text-primary" : "text-muted-foreground"}`}
-                              aria-hidden
-                            />
-                          )}
-                          <span>
-                            {autoAdvance.isPending ? (
-                              <>
-                                <span className="hidden md:inline">
-                                  {t("lessonShell.autoAdvancing")}
-                                </span>
-                                <span className="md:hidden">{t("lessonShell.pauseAdvance")}</span>
-                              </>
-                            ) : (
-                              <>
-                                <span className="hidden 2xl:inline">
-                                  {t(isAutoAdvance ? "lessonShell.autoOn" : "lessonShell.autoOff")}
-                                </span>
-                                <span className="2xl:hidden">
-                                  {t(
-                                    isAutoAdvance
-                                      ? "lessonShell.autoShortOn"
-                                      : "lessonShell.autoShortOff"
-                                  )}
-                                </span>
-                              </>
-                            )}
-                          </span>
-                        </button>
-                      )}
-                    </div>
-
-                    {/* Right action: Next Question button (inline, never full-width, single line) */}
-                    <div className="flex items-center gap-2 shrink-0 ms-auto">
-                      {canAdvance && (
-                        <button
-                          type="button"
-                          onClick={advance}
-                          className={`inline-flex min-h-11 shrink-0 items-center gap-1.5 sm:gap-2 rounded-xl bg-primary px-3 sm:px-4 py-2 text-sm sm:text-base font-bold text-primary-foreground shadow-wp-xs hover:bg-primary/90 transition-all ${focusRing}`}
-                        >
-                          <span>
-                            {stage === 0
-                              ? t("lessonShell.startListening")
-                              : session.trial < trials - 1
-                                ? t("lessonShell.nextQuestion")
-                                : stage === 4
-                                  ? t("lessonShell.seeResults")
-                                  : t("lessonShell.nextStep", {
-                                      name: t(`lessonShell.stages.${STAGES[stage + 1]}`),
-                                    })}
-                          </span>
-                          <ArrowRight className="size-4 rtl:rotate-180 shrink-0" aria-hidden />
-                        </button>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                {stage !== 0 && stage !== 3 && audioUnavailable && (
-                  <div className="space-y-2 rounded-xl border border-border bg-muted p-4">
-                    <p role="status">{t("pronunciationEnhancements.audioPending")}</p>
-                    <button
-                      type="button"
-                      className={buttonClass}
-                      onClick={() => {
-                        clearPending();
-                        save(stage, { ...sessionRef.current, answer: "__unavailable__" });
-                      }}
-                    >
-                      {t("pronunciationEnhancements.audioContinue")}
-                    </button>
-                  </div>
-                )}
-                {recoveryMessage && (
-                  <p role="alert" className="text-base text-foreground">
-                    {recoveryMessage}
-                  </p>
-                )}
-
-                {/* Stage Exercise Area */}
-                {stage === 0 ? (
-                  <div className="flex-1 min-h-0 flex flex-col justify-between gap-4">
-                    <div className="grid grid-cols-2 gap-3 sm:gap-4 flex-1 min-h-0 items-stretch auto-rows-fr">
-                      {currentPair.map((item) => (
-                        <button
-                          key={item.label}
-                          type="button"
-                          aria-label={t("pronunciation.playWord", { word: item.label })}
-                          disabled={hasReportedPronunciationAudioIssue(item.label)}
-                          title={
-                            hasReportedPronunciationAudioIssue(item.label)
-                              ? t("pronunciationEnhancements.audioPending")
-                              : undefined
-                          }
-                          onClick={() => play(item.label)}
-                          className={`group flex flex-col h-full min-h-0 w-full overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-border bg-card transition-all hover:border-primary hover:shadow-wp-sm justify-between ${focusRing}`}
-                        >
-                          <div className="wp-pronunciation-choice-media relative w-full flex-1 min-h-0 overflow-hidden bg-muted flex items-center justify-center">
-                            <WordImage
-                              item={item}
-                              className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
-                            />
-                          </div>
+                      <span>{item.label}</span>
+                      {(() => {
+                        const beat = getStressBeatPattern(lessonNumber, item.label);
+                        return beat ? (
                           <span
-                            className="flex min-h-12 shrink-0 items-center justify-center px-4 py-3 text-base font-bold text-foreground border-t border-border/70 bg-card"
-                            lang="en"
-                            dir="ltr"
+                            className="ms-1 rounded-md bg-secondary px-2 py-0.5 font-mono text-sm font-bold text-primary"
+                            aria-label={t("pronunciation.rhythmBeatAria", { beat })}
                           >
-                            {item.label}
+                            {beat}
                           </span>
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                ) : stage === 3 ? (
-                  state.accessibility.includeSpeaking === false ? (
-                    <div className="flex flex-col items-center justify-center rounded-3xl border border-border bg-card p-6 text-center sm:p-10 space-y-4 shadow-wp-xs">
-                      <div className="flex size-14 items-center justify-center rounded-2xl bg-muted text-muted-foreground">
-                        <MicOff className="size-7" aria-hidden />
-                      </div>
-                      <h3 className="text-xl font-bold text-foreground">
-                        {t("pronunciationEnhancements.speakingDisabledInSettings")}
-                      </h3>
-                      <div className="flex flex-wrap justify-center gap-3 pt-2">
-                        <button
-                          type="button"
-                          className={`min-h-11 ${buttonClass} bg-primary text-primary-foreground hover:bg-primary/90`}
-                          onClick={() => setAccessibility({ includeSpeaking: true })}
-                        >
-                          {t("settings.enabled")}
-                        </button>
-                        <button
-                          type="button"
-                          className={buttonClass}
-                          onClick={skipEntireSpeakingSection}
-                        >
-                          {t("lessonShell.nextStep", {
-                            name: t("lessonShell.stages.transfer"),
-                          })}
-                        </button>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="space-y-4">
-                      {/* Hero Prompt Card */}
-                      <div className="flex flex-col items-center gap-4 rounded-3xl border border-border bg-card p-6 sm:p-8 text-center shadow-wp-xs">
-                        {target && target.imageRef && (
-                          <div className="w-full max-w-md sm:max-w-xl overflow-hidden rounded-2xl border border-border/80 bg-muted/20 shadow-wp-xs">
-                            <WordImage
-                              item={target}
-                              className="aspect-[16/10] sm:aspect-[16/9] w-full object-cover object-center"
-                            />
-                          </div>
-                        )}
-                        <div className="flex flex-col items-center gap-2">
-                          <h3
-                            className="text-3xl sm:text-4xl font-black tracking-tight text-foreground"
-                            lang="en"
-                            dir="ltr"
-                          >
-                            {target?.label}
-                          </h3>
-                          {getStressBeatPattern(lessonNumber, target?.label ?? "") && (
-                            <span
-                              className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-bold text-primary"
-                              aria-label={t("pronunciation.rhythmBeatAria", {
-                                beat: getStressBeatPattern(lessonNumber, target?.label ?? "")!,
-                              })}
-                            >
-                              {getStressBeatPattern(lessonNumber, target?.label ?? "")}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-
-                      {/* Recording Interface */}
-                      <PrivateRecordCompare
-                        key={questionId}
-                        target={target?.label ?? activity.model}
-                        defaultOpen
-                        noDetails
-                        onEvidence={recordSpeaking}
-                      />
-
-                      {/* Actions and status */}
-                      {!speakingDone && (
-                        <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
-                          <button
-                            type="button"
-                            className={buttonClass}
-                            onClick={() => recordSpeaking("unassessed")}
-                          >
-                            {t("pronunciationEnhancements.skipSpeaking")}
-                          </button>
-                          <button
-                            type="button"
-                            className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-border px-3 py-2 text-base font-bold text-foreground hover:bg-muted ${focusRing}`}
-                            onClick={skipEntireSpeakingSection}
-                          >
-                            <FastForward
-                              className="size-4 rtl:rotate-180 text-primary"
-                              aria-hidden
-                            />
-                            <span>{t("pronunciationEnhancements.skipSpeakingSection")}</span>
-                          </button>
-                        </div>
-                      )}
-                      {speakingDone && (
-                        <div className="rounded-2xl border border-border bg-secondary/40 p-4">
-                          <p role="status" className="text-sm font-bold text-foreground">
-                            {t(`pronunciationEnhancements.evidence.${speakingEvidence}`)}
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                  )
+                        ) : null;
+                      })()}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+          {(stage === 3 || stage === 4) && (
+            <PrivateRecordCompare target={target?.label ?? activity.model} />
+          )}
+          {answer && (
+            <div
+              role={passed ? "status" : "alert"}
+              className={`mt-5 flex min-h-14 items-center justify-between gap-3 rounded-2xl border px-4 py-3 font-bold ${passed ? "border-feedback-success-border bg-feedback-success-surface" : "border-feedback-error-border bg-feedback-error-surface"}`}
+            >
+              <span>
+                {passed ? (
+                  <>
+                    <Check className="me-2 inline size-5 text-feedback-success" aria-hidden />
+                    {t("pronunciation.correct")}
+                  </>
+                ) : attempts >= 2 ? (
+                  t("pronunciation.support")
                 ) : (
-                  <div className="flex-1 min-h-0 flex flex-col">
-                    <div
-                      className={`grid min-h-0 w-full flex-1 gap-3 sm:gap-4 items-stretch auto-rows-fr ${
-                        question?.choices.length === 2 ? "grid-cols-2" : "grid-cols-2 grid-rows-2"
-                      }`}
-                    >
-                      {question?.choices.map((item, index) => (
-                        <button
-                          key={item.label}
-                          type="button"
-                          tabIndex={0}
-                          aria-pressed={session.answer === item.label}
-                          aria-disabled={passed || audioUnavailable}
-                          aria-invalid={session.answer === item.label && !passed ? true : undefined}
-                          aria-label={t("pronunciation.choiceLabel", {
-                            number: index + 1,
-                            word: item.label,
-                          })}
-                          onClick={() => selectAnswer(item.label)}
-                          className={`group flex flex-col h-full min-h-[160px] sm:min-h-0 w-full overflow-hidden rounded-2xl sm:rounded-3xl border-2 bg-card text-start font-bold transition-all justify-between ${focusRing} ${
-                            session.answer === item.label
-                              ? passed
-                                ? "border-feedback-success bg-feedback-success-surface"
-                                : "border-feedback-error-border bg-feedback-error-surface"
-                              : "border-border hover:border-primary hover:shadow-wp-sm"
-                          }`}
-                          dir="ltr"
-                        >
-                          {Boolean(item.imageRef) && (
-                            <div className="wp-pronunciation-choice-media relative w-full flex-1 min-h-0 overflow-hidden bg-muted flex items-center justify-center">
-                              <WordImage
-                                item={item}
-                                className="size-full object-cover object-center transition-transform duration-200 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
-                              />
-                            </div>
-                          )}
-                          <div
-                            className={`flex min-h-12 shrink-0 items-center justify-between gap-2 px-4 py-3 border-t border-border/70 transition-colors ${
-                              session.answer === item.label
-                                ? passed
-                                  ? "bg-feedback-success-surface"
-                                  : "bg-feedback-error-surface"
-                                : "bg-card"
-                            }`}
-                          >
-                            <span className="flex items-center gap-2">
-                              {session.answer === item.label &&
-                                (passed ? (
-                                  <Check
-                                    className="size-5 text-feedback-success shrink-0"
-                                    aria-hidden
-                                  />
-                                ) : (
-                                  <X className="size-5 text-feedback-error shrink-0" aria-hidden />
-                                ))}
-                              <span
-                                lang="en"
-                                dir="ltr"
-                                className="min-w-0 break-words text-base font-bold text-foreground"
-                              >
-                                {item.label}
-                              </span>
-                              {getStressBeatPattern(lessonNumber, item.label) && (
-                                <span
-                                  className="rounded bg-secondary/80 px-2 py-0.5 text-xs font-bold text-primary"
-                                  aria-label={t("pronunciation.rhythmBeatAria", {
-                                    beat: getStressBeatPattern(lessonNumber, item.label)!,
-                                  })}
-                                >
-                                  {getStressBeatPattern(lessonNumber, item.label)}
-                                </span>
-                              )}
-                            </span>
-                            <kbd className="hidden sm:inline-flex h-6 min-w-6 items-center justify-center rounded-lg border border-border bg-muted px-2 font-mono text-xs font-bold text-muted-foreground shadow-wp-xs">
-                              {index + 1}
-                            </kbd>
-                          </div>
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+                  t("pronunciation.retry")
                 )}
-
-                {/* Screen-reader-only feedback announcement to preserve WCAG 2.2 AAA without visual clutter or layout shifts */}
-                {stage !== 3 && session.answer && session.answer !== "__unavailable__" && (
-                  <div role="status" className="sr-only">
-                    {passed
-                      ? t("pronunciation.correct")
-                      : session.attempts >= 2
-                        ? t("lessonShell.supportContinue")
-                        : t("pronunciation.retry")}
-                  </div>
-                )}
-              </section>
+              </span>
+              <button
+                type="button"
+                onClick={replayFeedback}
+                className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-xl px-3 text-base font-black text-foreground hover:bg-background/70 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <Volume2 className="size-5" aria-hidden />
+                {t("pronunciation.replayFeedback")}
+              </button>
             </div>
-            <div className="flex flex-col gap-3 lg:col-start-1 lg:row-start-2 lg:self-start">
-              <HelpDisclosure label={t("lessonShell.soundTips")}>{soundTipsContent}</HelpDisclosure>
-              <HelpDisclosure label={t("lessonShell.aboutLesson")}>
-                {aboutLessonContent}
-              </HelpDisclosure>
+          )}
+          {answer && !passed && (activity.recoveryCue || activity.articulationCues.length > 0) && (
+            <aside
+              className="mt-3 rounded-2xl border border-primary/30 bg-secondary p-4"
+              role="note"
+            >
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-base font-black text-primary">
+                  {t("pronunciation.recoveryCueTitle")}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => speak(activity.recoveryCue ?? activity.articulationCues[0])}
+                  className="inline-flex min-h-11 items-center gap-1.5 rounded-lg border border-primary/30 bg-background px-2.5 py-1 text-sm font-bold text-primary hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-primary"
+                >
+                  <Volume2 className="size-3.5" aria-hidden />
+                  {t("pronunciation.listenToContrast")}
+                </button>
+              </div>
+              <p className="mt-1 text-base font-bold leading-6">
+                {t("pronunciation.confusionPair", {
+                  heard: answer,
+                  target: target?.label ?? activity.model,
+                })}
+              </p>
+              <p className="mt-1 text-base leading-6" lang="en" dir="ltr">
+                {activity.recoveryCue ?? activity.articulationCues[0]}
+              </p>
+            </aside>
+          )}
+        </section>
+
+        {stage === 4 && (
+          <section className="grid gap-3 sm:grid-cols-3" aria-label={t("courseLesson.apply")}>
+            {["soundRecall", "soundContrast", "soundTransfer"].map((key) => (
+              <article key={key} className="rounded-2xl border border-primary/25 bg-secondary p-4">
+                <Lightbulb className="mb-3 size-6 text-primary" aria-hidden />
+                <h3 className="text-base font-bold leading-7 text-foreground">
+                  {t(`courseLesson.${key}`, { word: target?.label ?? activity.model })}
+                </h3>
+              </article>
+            ))}
+          </section>
+        )}
+
+        {/* Sticky Accessible Footer Navigation Bar */}
+        <div className="wp-sticky-controls sticky bottom-0 z-30 mt-6 border-t border-border bg-background py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+          <div className="w-full flex flex-wrap items-center justify-between gap-3">
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                disabled={lessonNumber === 1}
+                onClick={() => go(lessonNumber - 1)}
+                aria-label={t("pronunciation.previousLesson") || "Previous lesson"}
+                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-border bg-card px-3.5 text-sm font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.98] disabled:opacity-40 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+                <span>{t("pronunciation.previous")}</span>
+              </button>
+
+              <button
+                type="button"
+                disabled={lessonNumber === 68}
+                onClick={() => go(lessonNumber + 1)}
+                aria-label={t("pronunciation.nextLesson") || "Next lesson"}
+                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-border bg-card px-3.5 text-sm font-bold text-foreground hover:bg-muted motion-safe:active:scale-[0.98] disabled:opacity-40 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <span>{t("pronunciation.next")}</span>
+                <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+              </button>
+
+              <button
+                type="button"
+                onClick={reset}
+                className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-3 text-sm font-bold text-muted-foreground hover:bg-muted hover:text-foreground motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <RotateCcw className="size-3.5" aria-hidden />
+                <span>{t("pronunciation.reset")}</span>
+              </button>
+            </div>
+
+            <div>
+              {stage === 0 || (passed && !state.accessibility.autoAdvance) || attempts >= 2 ? (
+                <button
+                  type="button"
+                  onClick={advance}
+                  className="inline-flex min-h-11 w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-primary px-6 text-base font-black text-primary-foreground shadow-sm transition-all hover:bg-primary motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+                >
+                  <span>
+                    {stage === 4 ? t("pronunciation.finish") : t("pronunciation.continue")}
+                  </span>
+                  <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+                </button>
+              ) : (
+                <span className="text-sm font-bold text-muted-foreground">
+                  {answerable
+                    ? t("pronunciation.answerPrompt") || "Select an option to advance"
+                    : null}
+                </span>
+              )}
             </div>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

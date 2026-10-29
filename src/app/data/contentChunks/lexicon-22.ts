@@ -31,8 +31,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Sunny Spot",
-        en: "He smiled as the ginger cat purred softly while basking in the warm morning sun.",
-        ar: "ابتسم وهو يسمع خرخرة القط البرتقالي الذي يستلقي في شمس الصباح الدافئة.",
+        en: "She smiled as the ginger cat purred softly while basking in the warm morning sun.",
+        ar: "ابْتَسَمَتْ بَيْنَمَا كَانَتِ القِطَّةُ تَخْرْخِرُ بِهُدُوءٍ تَحْتَ أَشِعَّةِ شَمْسِ الصَّبَاحِ.",
       },
       {
         context: "Agility",
@@ -75,8 +75,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Breakfast Treat",
-        en: "He spread a generous spoonful of homemade strawberry jam onto his buttered toast.",
-        ar: "دهن شريحة الخبز المحمص بالزبدة بكمية سخية من مربى الفراولة المنزلي.",
+        en: "She spread a generous spoonful of homemade strawberry jam onto her buttered toast.",
+        ar: "دَهَنَتْ مِلْعَقَةً وَفِيرَةً مِنْ مُرَبَّى الفَرَاوِلَةِ المَنْزِلِيِّ عَلَى خُبْزِهَا المَحْمُوصِ بِالزُّبْدَةِ.",
       },
       {
         context: "Canning & Preserves",
@@ -90,8 +90,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He spread a generous spoonful of homemade strawberry jam onto his buttered toast.",
-    exampleArabic: "دهن شريحة الخبز المحمص بالزبدة بكمية سخية من مربى الفراولة المنزلي.",
+      "She spread a generous spoonful of homemade strawberry jam onto her buttered toast.",
+    exampleArabic:
+      "دَهَنَتْ مِلْعَقَةً وَفِيرَةً مِنْ مُرَبَّى الفَرَاوِلَةِ المَنْزِلِيِّ عَلَى خُبْزِهَا المَحْمُوصِ بِالزُّبْدَةِ.",
   },
   "measuring-spoon": {
     id: "measuring-spoon",
@@ -168,8 +169,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Serving Dinner",
-        en: "He served the steaming roast chicken on a large white ceramic plate.",
-        ar: "قدم الدجاج المشوي الساخن على طبق خزفي أبيض كبير.",
+        en: "She served the steaming roast chicken on a large white ceramic plate.",
+        ar: "قَدَّمَتِ الدَّجَاجَ المَشْوِيَّ السَّاخِنَ عَلَى طَبَقٍ خَزَفِيٍّ أَبْيَضَ كَبِيرٍ.",
       },
       {
         context: "Table Setting",
@@ -182,8 +183,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "سَاعَدَ الأَطْفَالُ فِي رَفْعِ الأَطْبَاقِ المُتَّسِخَةِ وَحَمْلِهَا إِلَى حَوْضِ الجَلِي.",
       },
     ],
-    exampleSentence: "He served the steaming roast chicken on a large white ceramic plate.",
-    exampleArabic: "قدم الدجاج المشوي الساخن على طبق خزفي أبيض كبير.",
+    exampleSentence: "She served the steaming roast chicken on a large white ceramic plate.",
+    exampleArabic:
+      "قَدَّمَتِ الدَّجَاجَ المَشْوِيَّ السَّاخِنَ عَلَى طَبَقٍ خَزَفِيٍّ أَبْيَضَ كَبِيرٍ.",
   },
   salt: {
     id: "salt",
@@ -313,8 +315,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Kitchen Preserves",
-        en: "He boiled freshly harvested berries with sugar to make delicious homemade jam.",
-        ar: "غلى التوت الطازج مع السكر ليصنع مربى منزلية لذيذة.",
+        en: "She boiled freshly harvested berries with sugar to make delicious homemade jam.",
+        ar: "غَلَتْ حَبَّاتِ التُّوتِ المَقْطُوفَةِ طَازَجَةً مَعَ السُّكَّرِ لِصُنْعِ المُرَبَّى المَنْزِلِيِّ.",
       },
     ],
     exampleSentence: "He popped a plump ripe blackberry into his mouth.",
@@ -345,8 +347,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Park Stroll",
-        en: "The baby smiled warmly from his shaded stroller under the oak trees.",
-        ar: "ابتسم الرضيع من عربته المظللة تحت أشجار البلوط.",
+        en: "The baby smiled warmly from her shaded stroller under the oak trees.",
+        ar: "ابْتَسَمَتِ الرَّضِيعَةُ بِدِفْءٍ مِنْ عَرَبَتِهَا المُظَلَّلَةِ تَحْتَ أَشْجَارِ البَلُّوطِ.",
       },
       {
         context: "Infant Care",
@@ -359,8 +361,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "ضَحِكَ الرَّضِيعُ المَفْتُونُ عَلَى البَالُونَاتِ المُلَوَّنَةِ العَابِرَةِ.",
       },
     ],
-    exampleSentence: "The baby smiled warmly from his shaded stroller under the oak trees.",
-    exampleArabic: "ابتسم الرضيع من عربته المظللة تحت أشجار البلوط.",
+    exampleSentence: "The baby smiled warmly from her shaded stroller under the oak trees.",
+    exampleArabic:
+      "ابْتَسَمَتِ الرَّضِيعَةُ بِدِفْءٍ مِنْ عَرَبَتِهَا المُظَلَّلَةِ تَحْتَ أَشْجَارِ البَلُّوطِ.",
   },
   textbook: {
     id: "textbook",
@@ -435,8 +438,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Art Sketch",
-        en: "He sketched a quick flower diagram on a blank sheet of paper.",
-        ar: "رسم مخططا سريعا لزهرة على ورقة بيضاء.",
+        en: "She sketched a quick flower diagram on a blank sheet of paper.",
+        ar: "رَسَمَتْ مُخَطَّطًا سَرِيعًا لِزَهْرَةٍ عَلَى وَرَقَةٍ بَيْضَاءَ فَارِغَةٍ.",
       },
       {
         context: "Printing",
@@ -474,8 +477,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Vocabulary Lookup",
-        en: "He opened the comprehensive English dictionary to verify the exact spelling of the word.",
-        ar: "فتح القاموس الإنجليزي الشامل ليتحقق من التهجئة الدقيقة للكلمة.",
+        en: "She opened the comprehensive English dictionary to verify the exact spelling of the word.",
+        ar: "فَتَحَتِ القَامُوسَ الإِنْجِلِيزِيَّ الشَّامِلَ لِلتَّأَكُّدِ مِنَ التَّهْجِئَةِ الدَّقِيقَةِ لِلْكَلِمَةِ.",
       },
       {
         context: "Language Learning",
@@ -489,8 +492,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He opened the comprehensive English dictionary to verify the exact spelling of the word.",
-    exampleArabic: "فتح القاموس الإنجليزي الشامل ليتحقق من التهجئة الدقيقة للكلمة.",
+      "She opened the comprehensive English dictionary to verify the exact spelling of the word.",
+    exampleArabic:
+      "فَتَحَتِ القَامُوسَ الإِنْجِلِيزِيَّ الشَّامِلَ لِلتَّأَكُّدِ مِنَ التَّهْجِئَةِ الدَّقِيقَةِ لِلْكَلِمَةِ.",
   },
   "cash-register": {
     id: "cash-register",
@@ -591,7 +595,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "power through",
         meaning: "endure long-distance race through stamina",
         arabic: "يُوَاصِلُ الجَرْيَ بِعَزِيمَة",
-        example: "He powered through the final miles of the race.",
+        example: "She powered through the final miles of the race.",
       },
     ],
     sentences: [

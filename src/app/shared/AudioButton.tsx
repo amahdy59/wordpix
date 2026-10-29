@@ -1,6 +1,5 @@
 import { memo } from "react";
 import { Volume2, Loader2, VolumeX } from "lucide-react";
-import { useI18n } from "../../i18n";
 
 interface Props {
   onPlay: () => void;
@@ -29,22 +28,20 @@ export const AudioButton = memo(function AudioButton({
   isPlaying = false,
   isLoading = false,
   isError = false,
-  label,
+  label = "Play pronunciation",
   size = "md",
   className = "",
 }: Props) {
-  const { t } = useI18n();
-  const actionLabel = label ?? t("audioRecovery.play");
   const isActive = isPlaying || isLoading;
   const audioState = isError ? "error" : isActive ? "active" : "idle";
 
   const computedLabel = isError
-    ? t("audioRecovery.retryLabel", { label: actionLabel })
+    ? `${label} (retry audio)`
     : isLoading
-      ? t("audioRecovery.loadingLabel", { label: actionLabel })
+      ? `${label} (loading audio)`
       : isPlaying
-        ? t("audioRecovery.playingLabel", { label: actionLabel })
-        : actionLabel;
+        ? `${label} (playing)`
+        : label;
 
   return (
     <button
@@ -70,7 +67,7 @@ export const AudioButton = memo(function AudioButton({
       ) : isLoading ? (
         <Loader2 className={`${ICON_CLASSES[size]} motion-safe:animate-spin`} aria-hidden="true" />
       ) : isPlaying ? (
-        <Volume2 className={`${ICON_CLASSES[size]} motion-safe:animate-pulse`} aria-hidden="true" />
+        <Volume2 className={ICON_CLASSES[size]} aria-hidden="true" />
       ) : (
         <Volume2 className={ICON_CLASSES[size]} aria-hidden="true" />
       )}

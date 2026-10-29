@@ -66,39 +66,37 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
     }
 
     // 2. Pronunciation
-    if (learnerState.accessibility?.includePronunciation !== false) {
-      const pronunciation = learnerState.pronunciationProgress || {};
-      for (const [lessonKey, p] of Object.entries(pronunciation)) {
-        if (!p?.updatedAt || !Number.isFinite(Date.parse(p.updatedAt))) continue;
-        const canonicalNumber = /^lesson-(\d{2})$/.exec(lessonKey)?.[1];
-        const lessonNumber = canonicalNumber
-          ? Number(canonicalNumber)
-          : LEGACY_PRONUNCIATION_LESSON_NUMBERS[lessonKey];
-        if (
-          !lessonNumber ||
-          !specialistSummaries.pronunciation.some((lesson) => lesson.number === lessonNumber)
-        )
-          continue;
-        const activity = specialistSummaries.pronunciation.find(
-          (lesson) => lesson.number === lessonNumber
-        );
-        if (!activity) continue;
-        const currentStage = Math.min(5, Math.max(1, p.currentStage + 1));
-        const pct = p.status === "mastered" ? 100 : Math.round((currentStage / 5) * 100);
-        candidates.push({
-          type: "pronunciation",
-          id: lessonKey,
-          title: activity.title,
-          badge: t("learn.pronunciationScope"),
-          progressPercent: pct,
-          statusText:
-            p.status === "mastered"
-              ? t("mastery.mastered")
-              : t("pronunciation.stageProgress", { current: currentStage, total: 5 }),
-          updatedAt: p.updatedAt,
-          onResume: () => dispatch({ type: "OPEN_FIGMA_PRONUNCIATION", lessonNumber }),
-        });
-      }
+    const pronunciation = learnerState.pronunciationProgress || {};
+    for (const [lessonKey, p] of Object.entries(pronunciation)) {
+      if (!p?.updatedAt || !Number.isFinite(Date.parse(p.updatedAt))) continue;
+      const canonicalNumber = /^lesson-(\d{2})$/.exec(lessonKey)?.[1];
+      const lessonNumber = canonicalNumber
+        ? Number(canonicalNumber)
+        : LEGACY_PRONUNCIATION_LESSON_NUMBERS[lessonKey];
+      if (
+        !lessonNumber ||
+        !specialistSummaries.pronunciation.some((lesson) => lesson.number === lessonNumber)
+      )
+        continue;
+      const activity = specialistSummaries.pronunciation.find(
+        (lesson) => lesson.number === lessonNumber
+      );
+      if (!activity) continue;
+      const currentStage = Math.min(5, Math.max(1, p.currentStage + 1));
+      const pct = p.status === "mastered" ? 100 : Math.round((currentStage / 5) * 100);
+      candidates.push({
+        type: "pronunciation",
+        id: lessonKey,
+        title: activity.title,
+        badge: t("learn.pronunciationScope"),
+        progressPercent: pct,
+        statusText:
+          p.status === "mastered"
+            ? t("mastery.mastered")
+            : t("pronunciation.stageProgress", { current: currentStage, total: 5 }),
+        updatedAt: p.updatedAt,
+        onResume: () => dispatch({ type: "OPEN_FIGMA_PRONUNCIATION", lessonNumber }),
+      });
     }
 
     // 3. Conversation
@@ -173,17 +171,13 @@ export const SpecializedTracksCard = memo(function SpecializedTracksCard({ dispa
   };
 
   const tracks = [
-    ...(learnerState.accessibility?.includePronunciation !== false
-      ? [
-          {
-            id: "pronunciation",
-            title: t("pronunciation.curriculumTitle"),
-            badge: t("learn.pronunciationScope"),
-            icon: <Headphones className="size-4 text-primary" aria-hidden />,
-            onClick: () => dispatch({ type: "GO", to: "pronunciation-curriculum" }),
-          },
-        ]
-      : []),
+    {
+      id: "pronunciation",
+      title: t("pronunciation.curriculumTitle"),
+      badge: t("learn.pronunciationScope"),
+      icon: <Headphones className="size-4 text-primary" aria-hidden />,
+      onClick: () => dispatch({ type: "GO", to: "pronunciation-curriculum" }),
+    },
     {
       id: "hadith",
       title: t("hadith.curriculumTitle"),

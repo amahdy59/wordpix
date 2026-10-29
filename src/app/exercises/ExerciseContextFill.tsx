@@ -6,8 +6,7 @@ import { resolveGroup, type VocabularyItem } from "../data/courseCatalog";
 import { ExerciseShell } from "../shared/ExerciseShell";
 import { Button, ExerciseFamilyTemplate, FeedbackPanel } from "../shared";
 import { getAuthoredSentence } from "./content/authoredLessonContent";
-import { SentenceQuestionSupport, SentenceMeaningSupport } from "../shared/SentenceQuestionSupport";
-import { resolveSentenceMedia } from "../content/sentenceMedia";
+import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { getRichSentence } from "./exerciseContent";
 import { sentenceCloze } from "./sentenceCloze";
@@ -20,7 +19,7 @@ import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
 import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
-import { useKeyboardShortcutsActive } from "../shared/devicePreferences";
+import { answerLayout } from "../shared/answerLayout";
 
 interface Props {
   step: number;
@@ -39,7 +38,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   const reduceMotion = useReducedMotion();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
-  const shortcutsActive = useKeyboardShortcutsActive();
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const spoken = useSpokenFeedback();
@@ -96,8 +94,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         },
         () => {
           autoAdvance.schedule(
-            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect,
-            correct
+            spoken.enabled ? 200 : correct ? ADVANCE_DELAY_MS.correct : ADVANCE_DELAY_MS.incorrect
           );
         }
       );
@@ -136,7 +133,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
   useExerciseHotkeys({
     optionCount: options.length,
     onSelectIndex: selectByIndex,
-    onContinue: feedback !== null ? handleContinue : undefined,
     disabled: feedback !== null,
   });
 
@@ -149,13 +145,6 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
     [lessonId, words]
   );
 
-  const [imageUnavailable, setImageUnavailable] = useState(false);
-  const [lastTargetId, setLastTargetId] = useState(currentTargetWord.id);
-  if (lastTargetId !== currentTargetWord.id) {
-    setLastTargetId(currentTargetWord.id);
-    setImageUnavailable(false);
-  }
-
   return (
     <ExerciseShell
       step={step}
@@ -166,7 +155,7 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
       progress={{ current: queue.position, total: queue.total }}
       subtitle={
         <>
-          <span className="hidden sm:inline uppercase tracking-wider">{group.name}</span>
+          <span className="uppercase tracking-wider">{group.name}</span>
           <span className="rounded-full border border-primary/20 bg-secondary px-2.5 py-0.5 font-semibold text-primary">
             {t("exercise.sentenceOf", { current: queue.position, total: queue.total })}
           </span>
@@ -177,23 +166,11 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
         family="visual-choice"
         instruction={t("exercise.chooseCorrectWord")}
         helper={
-          shortcutsActive ? (
-            <span>{t("exercise.pressNumberToChooseWord", { count: options.length })}</span>
-          ) : undefined
+          <span className="hidden sm:inline">
+            {t("exercise.pressNumberToChooseWord", { count: options.length })}
+          </span>
         }
         activityLabel={t("exercise.wordChoicesAria")}
-        prompt={
-          <div className="flex flex-col gap-3 w-full">
-            <SentenceMeaningSupport
-              targetWord={currentTargetWord}
-              sentence={answerSentence}
-              prompt={sentenceCloze(answerSentence, currentTargetWord.label)}
-              answered={feedback !== null}
-              hasImage={!imageUnavailable && Boolean(media || currentTargetWord.img)}
-              defaultOpen={imageUnavailable}
-            />
-          </div>
-        }
         media={
           <SentenceQuestionSupport
             key={currentTargetWord.id}
@@ -202,93 +179,51 @@ export const ExerciseContextFill = memo(function ExerciseContextFill({
             prompt={sentenceCloze(answerSentence, currentTargetWord.label)}
             media={media}
             answered={feedback !== null}
-            showClue={false}
-            onImageExhausted={() => setImageUnavailable(true)}
           />
         }
         activity={
-          <div
-            className="flex flex-col gap-2 sm:gap-2.5 w-full"
-            role="group"
-            aria-label={t("exercise.wordChoicesAria")}
-            dir="ltr"
-            lang="en"
-          >
-            {options.map((option, index) => {
-              const isSelected = selectedId === option.id;
-              const isCorrect = option.id === currentTargetWord.id;
-              const showRevealed = feedback === "incorrect" && isCorrect;
-
-              let stateClasses =
-                "border-border bg-wp-card text-foreground hover:border-primary/70 hover:bg-secondary/40 shadow-wp-xs hover:shadow-wp-sm";
-              if (isSelected) {
-                if (feedback === "correct") {
-                  stateClasses =
-                    "border-wp-green bg-wp-green-light/40 dark:bg-wp-green/20 text-foreground shadow-wp-sm";
-                } else if (feedback === "incorrect") {
-                  stateClasses =
-                    "border-wp-rose bg-wp-rose-light/40 dark:bg-wp-rose/20 text-foreground shadow-wp-sm";
-                } else {
-                  stateClasses = "border-primary bg-secondary text-primary shadow-wp-sm";
-                }
-              } else if (showRevealed) {
-                stateClasses =
-                  "border-wp-green bg-wp-green-light/20 dark:bg-wp-green/10 text-foreground";
-              }
-
-              return (
-                <motion.button
-                  key={option.id}
-                  type="button"
-                  whileTap={!reduceMotion && feedback === null ? { scale: 0.98 } : {}}
-                  transition={{ duration: 0.1 }}
-                  aria-pressed={isSelected}
-                  aria-disabled={feedback !== null || undefined}
-                  onClick={() => handleSelect(option.id)}
-                  className={`wp-question-option group flex w-full items-center justify-between gap-3 border font-sans font-semibold transition-all motion-reduce:transition-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${stateClasses}`}
-                >
-                  <span className="flex items-center gap-3">
-                    {isSelected && feedback === "correct" && (
-                      <CheckCircle2 className="size-5 text-wp-green shrink-0" aria-hidden="true" />
-                    )}
-                    {isSelected && feedback === "incorrect" && (
-                      <XCircle className="size-5 text-destructive shrink-0" aria-hidden="true" />
-                    )}
-                    {showRevealed && (
-                      <CheckCircle2 className="size-5 text-wp-green shrink-0" aria-hidden="true" />
-                    )}
-                    <span className="capitalize">{option.label.toLowerCase()}</span>
-                  </span>
-                  {shortcutsActive && (
-                    <span className="rounded-lg border border-border/80 bg-muted px-2.5 py-1 text-xs font-mono font-bold text-muted-foreground group-hover:border-primary/40 group-hover:text-primary inline-block">
-                      {index + 1}
-                    </span>
-                  )}
-                </motion.button>
-              );
-            })}
+          <div className={answerLayout(options.map((option) => option.label))} dir="ltr" lang="en">
+            {options.map((option, index) => (
+              <motion.button
+                key={option.id}
+                type="button"
+                whileTap={!reduceMotion && feedback === null ? { scale: 0.95 } : {}}
+                transition={{ duration: 0.1 }}
+                aria-pressed={selectedId === option.id}
+                aria-disabled={feedback !== null || undefined}
+                onClick={() => handleSelect(option.id)}
+                className="flex min-h-[48px] items-center justify-between rounded-xl border-2 border-border bg-wp-card p-2.5 font-sans text-base font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary motion-reduce:transition-none sm:min-h-[52px] sm:p-3 sm:text-lg"
+              >
+                <span className="capitalize">{option.label.toLowerCase()}</span>
+                <span className="hidden rounded-md bg-muted px-2 py-0.5 text-xs font-bold text-muted-foreground sm:inline-block">
+                  {index + 1}
+                </span>
+              </motion.button>
+            ))}
           </div>
         }
         feedback={
-          feedback === "incorrect" ? (
+          feedback ? (
             <FeedbackPanel
-              tone="error"
-              live="polite"
-              title={t("exercise.notQuiteTitle")}
+              tone={feedback === "correct" ? "success" : "error"}
+              title={
+                feedback === "correct" ? t("exercise.correctTitle") : t("exercise.notQuiteTitle")
+              }
               description={answerSentence}
-              icon={<XCircle className="size-6 text-destructive" aria-hidden />}
+              icon={
+                feedback === "correct" ? (
+                  <CheckCircle2 className="size-6 text-wp-green" aria-hidden />
+                ) : (
+                  <XCircle className="size-6 text-destructive" aria-hidden />
+                )
+              }
             />
-          ) : feedback === "correct" ? (
-            <p className="sr-only" role="status" aria-live="polite">
-              {t("exercise.correctTitle")}
-            </p>
           ) : undefined
         }
         action={
-          feedback === "incorrect" && !accessibility.autoAdvance ? (
+          feedback !== null && !accessibility.autoAdvance ? (
             <Button
               size="lg"
-              hotkey="↵ Enter"
               iconRight={<ArrowRight className="size-4 rtl:rotate-180" aria-hidden />}
               onClick={handleContinue}
             >

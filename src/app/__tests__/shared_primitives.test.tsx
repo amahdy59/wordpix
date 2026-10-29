@@ -66,17 +66,6 @@ describe("Shared UI Primitives", () => {
       render(<Button type="submit">Submit Form</Button>);
       expect(screen.getByRole("button", { name: "Submit Form" })).toHaveAttribute("type", "submit");
     });
-
-    it("renders aria-hidden hotkey badge while preserving accessible name", () => {
-      const { container } = render(<Button hotkey="↵ Enter">Continue</Button>);
-      const btn = screen.getByRole("button", { name: "Continue" });
-      expect(btn).toBeInTheDocument();
-
-      const kbd = container.querySelector("kbd");
-      expect(kbd).not.toBeNull();
-      expect(kbd).toHaveTextContent("↵ Enter");
-      expect(kbd).toHaveAttribute("aria-hidden", "true");
-    });
   });
 
   describe("IconButton", () => {
@@ -213,7 +202,7 @@ describe("Shared UI Primitives", () => {
       expect(screen.getByRole("heading", { name: "Put the words in order." })).toBeInTheDocument();
       expect(screen.getByRole("group", { name: "Sentence building activity" })).toBeInTheDocument();
       expect(container.querySelector('[data-exercise-family="text-construction"]')).toHaveClass(
-        "wp-container-wide"
+        "wp-container-content"
       );
       expect(container.querySelector('[data-exercise-zone="feedback"]')).toBeInTheDocument();
       expect(container.querySelector('[data-exercise-zone="action"]')).toBeInTheDocument();

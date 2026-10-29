@@ -52,8 +52,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Kitchen Drawer",
-        en: "He retrieved the corkscrew from the drawer to open a bottle of sparkling juice.",
-        ar: "أخرج فتاحة الفلين من الدرج ليفتح زجاجة عصير فوار.",
+        en: "She retrieved the corkscrew from the drawer to open a bottle of sparkling juice.",
+        ar: "أَخْرَجَتْ مِفْتَاحَ الفِلِّينِ مِنَ الدُّرْجِ لِفَتْحِ زُجَاجَةِ عَصِيرٍ فَوَّارٍ.",
       },
     ],
     exampleSentence: "He twisted the corkscrew into the wine bottle and pulled the cork smoothly.",
@@ -97,8 +97,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Dinner Service",
-        en: "He tossed the penne pasta with homemade basil pesto and toasted pine nuts.",
-        ar: "قلب معكرونة البيني مع صلصة البيستو المنزلية وحبوب الصنوبر المحمصة.",
+        en: "She tossed the penne pasta with homemade basil pesto and toasted pine nuts.",
+        ar: "قَلَّبَتْ مَعْكَرُونَةَ البِنِّي مَعَ صَلْصَةِ الرَّيْحَانِ المَنْزِلِيَّةِ وَالصَّنَوْبَرِ المُحَمَّصِ.",
       },
       {
         context: "Comfort Food",
@@ -141,8 +141,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Gift Giving",
-        en: "A friend gave him a single red rose to celebrate his graduation.",
-        ar: "أهداه صديق وردة حمراء واحدة احتفالا بتخرجه.",
+        en: "He gave her a single red rose for her graduation anniversary.",
+        ar: "أَهْدَاهَا وَرْدَةً حَمْرَاءَ وَاحِدَةً بِمُنَاسَبَةِ ذِكْرَى تَخَرُّجِهَا.",
       },
       {
         context: "Aromatics",
@@ -150,8 +150,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "مَلَأَتِ الرَّائِحَةُ الزَّكِيَّةُ لِلْوَرْدَةِ المُتَفَتِّحَةِ الفِنَاءَ كُلَّهُ.",
       },
     ],
-    exampleSentence: "He clipped a fresh rose to place inside the ceramic vase.",
-    exampleArabic: "قص وردة نضرة ليضعها في المزهرية الخزفية.",
+    exampleSentence: "She clipped a fresh rose to place inside the ceramic vase.",
+    exampleArabic: "قَطَفَتْ وَرْدَةً نَضِرَةً لِتَضَعَهَا دَاخِلَ المَزْهَرِيَّةِ الخَزَفِيَّةِ.",
   },
   "colored-pencil": {
     id: "colored-pencil",

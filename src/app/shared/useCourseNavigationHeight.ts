@@ -10,15 +10,13 @@ export function useCourseNavigationHeight() {
     const update = () =>
       session.style.setProperty(
         "--wp-course-nav-height",
-        `${getComputedStyle(rail).position === "sticky" ? rail.getBoundingClientRect().height : 0}px`
+        `${rail.getBoundingClientRect().height}px`
       );
     update();
     const observer = new ResizeObserver(update);
     observer.observe(rail);
-    window.addEventListener("resize", update);
     return () => {
       observer.disconnect();
-      window.removeEventListener("resize", update);
       session.style.removeProperty("--wp-course-nav-height");
     };
   }, []);

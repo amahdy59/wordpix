@@ -31,10 +31,8 @@ export function MediaFrame({
 }: MediaFrameProps) {
   return (
     <Component
-      className={`relative min-w-0 overflow-hidden rounded-2xl border border-border bg-muted/40 shadow-wp-xs flex items-center justify-center [&>img]:object-center ${
-        fit === "cover"
-          ? "[&>img]:size-full [&>img]:object-cover"
-          : "[&>img]:w-auto [&>img]:h-auto [&>img]:max-w-full [&>img]:max-h-full [&>img]:object-contain"
+      className={`relative min-w-0 overflow-hidden rounded-2xl border border-border bg-muted/40 shadow-wp-xs [&>img]:size-full ${
+        fit === "cover" ? "[&>img]:object-cover" : "[&>img]:object-contain"
       } ${aspectStyles[aspect]} ${className}`}
       {...rest}
     >

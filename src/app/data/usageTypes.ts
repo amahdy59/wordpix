@@ -34,35 +34,10 @@ export const usageSceneChunkSchema = z
     scenario: z.string().trim().min(1),
     check: usageCheckSchema,
     imageBrief: z.string(),
-    /** Editorial hold: keep the written task, exclude the scene from paid generation. */
-    imageGenerationHold: z.string().trim().min(1).optional(),
-    /** Reject historical readable-glyph exceptions in current authoring data. */
-    imageSymbols: z.never().optional(),
-    /** Explicit labels approved for a particular educational illustration. */
-    imageLabels: z
-      .array(z.string().trim().min(1).max(80))
-      .min(1)
-      .max(5)
-      .refine((labels) => new Set(labels).size === labels.length, "Image labels must be unique.")
-      .optional(),
-    /** Written-task repair anchored to the preserved, read-only media evidence. */
-    learningContext: z
-      .object({
-        sourceScenario: z.string().trim().min(1),
-        sourceQuestion: z.string().trim().min(1),
-        sourceAnswer: z.string().trim().min(1),
-        scenario: z.string().trim().min(1),
-        question: z.string().trim().min(1),
-        imageBrief: z.string().trim().min(1),
-      })
-      .strict()
-      .optional(),
     /** Optional scene-specific visual; R2 vocabulary mappings remain untouched. */
     imagePath: z.string().trim().min(1).optional(),
     /** Describes the scene without spelling out an assessed answer. */
     imageAlt: z.string().trim().min(1).optional(),
-    /** A vocabulary reference is not evidence for an entire sentence or scene. */
-    imagePurpose: z.enum(["word-reference"]).optional(),
     imageFallbacks: z
       .array(
         z.object({
@@ -73,13 +48,6 @@ export const usageSceneChunkSchema = z
       .optional(),
   })
   .superRefine((scene, context) => {
-    if (scene.imagePurpose && (!scene.imagePath || !scene.imageAlt)) {
-      context.addIssue({
-        code: "custom",
-        path: ["imagePurpose"],
-        message: "A vocabulary reference requires an image and a visible-content description.",
-      });
-    }
     if (!scene.check.options.includes(scene.check.expectedAnswer)) {
       context.addIssue({
         code: "custom",
@@ -167,9 +135,6 @@ export const usagePhraseSchema = z
       reviewer: z.string().trim().min(1),
       revision: z.string().trim().min(1),
     }),
-    /** Optional visual reference for phrase concepts and action idioms */
-    imagePath: z.string().trim().min(1).optional(),
-    imageAlt: z.string().trim().min(1).optional(),
   })
   .strict();
 

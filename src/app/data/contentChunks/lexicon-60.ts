@@ -279,8 +279,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Bathroom Routine",
-        en: "He keeps his favorite tea tree face wash right on the shelf inside the shower.",
-        ar: "يحتفظ بغسول وجهه المفضل بزيت شجرة الشاي على الرف داخل الدش.",
+        en: "She keeps her favorite tea tree face wash right on the shelf inside the shower.",
+        ar: "تَحْتَفِظُ بِغَسُولِ الوَجْهِ المُفَضَّلِ لَدَيْهَا بِشَجَرَةِ الشَّايِ عَلَى الرَّفِّ دَاخِلَ الدُّش.",
       },
     ],
     exampleSentence:
@@ -362,8 +362,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Document Display",
-        en: "He connected his laptop to the projector to share his group research project.",
-        ar: "وصل حاسوبه المحمول بجهاز العرض ليشارك مشروع البحث الجماعي.",
+        en: "She connected her laptop to the projector to share her group research project.",
+        ar: "رَبَطَتْ حَاسُوبَهَا المَحْمُولَ بِجِهَازِ العَرْضِ الضَّوْئِيِّ لِمُشَارَكَةِ مَشْرُوعِ بَحْثِ مَجْمُوعَتِهَا.",
       },
       {
         context: "Movie Day",
@@ -395,7 +395,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "curl up with",
         meaning: "settle comfortably to read a book",
         arabic: "يَنْزَوِي مُسْتَمْتِعًا بِقِرَاءَةِ رِوَايَة",
-        example: "He loves to curl up with an engaging mystery novel by the fireplace.",
+        example: "She loves to curl up with an engaging mystery novel by the fireplace.",
       },
     ],
     sentences: [

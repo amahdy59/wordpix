@@ -185,7 +185,8 @@ export const COMPUTER_LAB_LEARNING: UnitLearningMaterials = {
       kind: "phrasal-verb",
       kindInferred: true,
       meaning: "look through content quickly without deep engagement",
-      example: "He scrolled through the search engine results but couldn't find the right article.",
+      example:
+        "She scrolled through the search engine results but couldn't find the right article.",
     },
     {
       id: "computer-lab-crash-of-a-system",

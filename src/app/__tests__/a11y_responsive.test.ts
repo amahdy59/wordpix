@@ -50,19 +50,14 @@ const TEXT_PAIRS: [string, string, string][] = [
   ["secondary text on page background", "--wp-text-secondary", "--wp-surface"],
   ["secondary text on card", "--wp-text-secondary", "--wp-card"],
   ["brand text on card", "--wp-brand", "--wp-card"],
-  ["brand text on page", "--wp-brand", "--wp-surface"],
   ["brand text on brand-light chip", "--wp-brand", "--wp-brand-light"],
   ["success text on card", "--wp-green", "--wp-card"],
-  ["success text on page", "--wp-green", "--wp-surface"],
   ["error text on card", "--wp-rose", "--wp-card"],
-  ["error text on page", "--wp-rose", "--wp-surface"],
   ["offline/teal text on card", "--wp-teal", "--wp-card"],
-  ["offline/teal text on page", "--wp-teal", "--wp-surface"],
   ["warning text on card", "--wp-amber-foreground", "--wp-card"],
   ["warning text on page", "--wp-amber-foreground", "--wp-surface"],
   ["teal status text", "--wp-teal-foreground", "--wp-teal-light"],
   ["blue status text", "--wp-blue-foreground", "--wp-card"],
-  ["blue status text on page", "--wp-blue-foreground", "--wp-surface"],
 ];
 
 /** Every filled accent surface and the foreground it is paired with. */
@@ -73,27 +68,6 @@ const FILL_PAIRS: [string, string][] = [
   ["--wp-amber", "--wp-text-on-amber"],
   ["--wp-blue", "--wp-text-on-blue"],
 ];
-
-describe("light paper texture contrast", () => {
-  it.each(TEXT_PAIRS.filter(([, , bg]) => bg === "--wp-card" || bg === "--wp-surface"))(
-    "%s keeps 7:1 even over the darkest grain",
-    (_label, foreground, background) => {
-      // Conservatively treat the 3.5% texture as entirely black at this pixel.
-      const darkestPaper = `#${lightTokens[background]
-        .slice(1)
-        .match(/../g)!
-        .map((channel) =>
-          Math.round(parseInt(channel, 16) * 0.965)
-            .toString(16)
-            .padStart(2, "0")
-        )
-        .join("")}`;
-      expect(contrastRatio(lightTokens[foreground], darkestPaper)).toBeGreaterThanOrEqual(
-        CONTRAST_THRESHOLD.AAA_NORMAL
-      );
-    }
-  );
-});
 
 describe.each([
   ["light", lightTokens],

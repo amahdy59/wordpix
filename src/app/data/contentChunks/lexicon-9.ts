@@ -26,8 +26,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Prepping Potatoes",
-        en: "He peeled five large russet potatoes quickly using a sharp swivel peeler.",
-        ar: "قشر خمس حبات بطاطس كبيرة بسرعة باستخدام مقشرة حادة ذات شفرة متحركة.",
+        en: "She peeled five large russet potatoes quickly using a sharp swivel peeler.",
+        ar: "قَشَّرَتْ خَمْسَ حَبَّاتِ بَطَاطِسَ كَبِيرَةٍ سَرِيعاً بِاسْتِخْدَامِ قَشَّارَةٍ حَادَّةٍ.",
       },
       {
         context: "Carrot Ribbons",
@@ -40,8 +40,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "انْزِعْ شَرَائِطَ عَرِيضَةً مِنْ قِشْرِ اللَّيْمُونِ بِالقَشَّارَةِ لِتَنْكِيهِ القَطْرِ.",
       },
     ],
-    exampleSentence: "He peeled five large russet potatoes quickly using a sharp swivel peeler.",
-    exampleArabic: "قشر خمس حبات بطاطس كبيرة بسرعة باستخدام مقشرة حادة ذات شفرة متحركة.",
+    exampleSentence: "She peeled five large russet potatoes quickly using a sharp swivel peeler.",
+    exampleArabic:
+      "قَشَّرَتْ خَمْسَ حَبَّاتِ بَطَاطِسَ كَبِيرَةٍ سَرِيعاً بِاسْتِخْدَامِ قَشَّارَةٍ حَادَّةٍ.",
   },
   rake: {
     id: "rake",
@@ -112,7 +113,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "set down on",
         meaning: "place a cup safely on its saucer",
         arabic: "يَضَعُ الفِنْجَانَ عَلَى صَحْنِهِ",
-        example: "He set down his teacup gently on the matching saucer.",
+        example: "She set down her teacup gently on the matching saucer.",
       },
     ],
     sentences: [
@@ -156,7 +157,7 @@ export const entries: Record<string, LexiconEntry> = {
         meaning: "(figurative) originate or arise from",
         arabic: "يَنْبُعُ مِنْ",
         example:
-          "His passion for botanicals stems from childhood visits to his grandmother's garden.",
+          "Her passion for botanicals stems from childhood visits to her grandmother's garden.",
       },
     ],
     sentences: [
@@ -251,8 +252,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Refilling Supplies",
-        en: "He opened the metal hinge to reload a fresh row of wire staples.",
-        ar: "فتح المفصلة المعدنية ليضع صفا جديدا من الدبابيس السلكية.",
+        en: "She opened the metal hinge to reload a fresh row of wire staples.",
+        ar: "فَتَحَتِ المِفْصَلَةَ المَعْدَنِيَّةَ لِإِعَادَةِ تَعْبِئَةِ صَفٍّ جَدِيدٍ مِنْ دَبَابِيسِ السِّلْكِ.",
       },
       {
         context: "Desk Setup",
@@ -289,8 +290,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Book Check-In",
-        en: "He dropped his borrowed novels into the padded slot at the library return desk.",
-        ar: "وضع رواياته المستعارة في فتحة الإرجاع المبطنة عند مكتب الإعارة بالمكتبة.",
+        en: "She dropped her borrowed novels into the padded slot at the library return desk.",
+        ar: "وَضَعَتْ رِوَايَاتِهَا المُسْتَعَارَةَ فِي الفَتْحَةِ المُبَطَّنَةِ عِنْدَ مَكْتَبِ إِعَادَةِ الكُتُبِ فِي المَكْتَبَةِ.",
       },
       {
         context: "Automated Check-in",
@@ -304,8 +305,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He dropped his borrowed novels into the padded slot at the library return desk.",
-    exampleArabic: "وضع رواياته المستعارة في فتحة الإرجاع المبطنة عند مكتب الإعارة بالمكتبة.",
+      "She dropped her borrowed novels into the padded slot at the library return desk.",
+    exampleArabic:
+      "وَضَعَتْ رِوَايَاتِهَا المُسْتَعَارَةَ فِي الفَتْحَةِ المُبَطَّنَةِ عِنْدَ مَكْتَبِ إِعَادَةِ الكُتُبِ فِي المَكْتَبَةِ.",
   },
   onion: {
     id: "onion",
@@ -400,8 +402,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Home Baked",
-        en: "He baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
-        ar: "خبز دفعة دافئة من بسكويت الشوفان والزبيب الطري المتبل بالقرفة وجوزة الطيب.",
+        en: "She baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
+        ar: "خَبَزَتْ دُفْعَةً دَافِئَةً مِنْ كُوكِيز الشُّوفَانِ وَالزَّبِيبِ المَطَّاطِيِّ المُتَبَّلِ بِالقِرْفَةِ.",
       },
       {
         context: "Wholesome Snack",
@@ -415,8 +417,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
-    exampleArabic: "خبز دفعة دافئة من بسكويت الشوفان والزبيب الطري المتبل بالقرفة وجوزة الطيب.",
+      "She baked a warm batch of chewy oatmeal raisin cookies spiced with cinnamon and nutmeg.",
+    exampleArabic:
+      "خَبَزَتْ دُفْعَةً دَافِئَةً مِنْ كُوكِيز الشُّوفَانِ وَالزَّبِيبِ المَطَّاطِيِّ المُتَبَّلِ بِالقِرْفَةِ.",
   },
   wafer: {
     id: "wafer",
@@ -490,8 +493,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Whipping Cream",
-        en: "He switched the mixer to high speed to whip egg whites into stiff glossy meringue peaks.",
-        ar: "شغل الخلاط على سرعة عالية ليخفق بياض البيض حتى تتشكل قمم ميرينغ متماسكة ولامعة.",
+        en: "She switched the mixer to high speed to whip egg whites into stiff glossy meringue peaks.",
+        ar: "شَغَّلَتِ الخَفَّاقَةَ عَلَى سُرْعَةٍ عَالِيَةٍ لِخَفْقِ بَيَاضِ البَيْضِ إِلَى مِيرَانْغ بَرَّاقٍ.",
       },
       {
         context: "Bakery Workstation",

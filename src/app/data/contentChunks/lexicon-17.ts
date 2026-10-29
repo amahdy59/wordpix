@@ -20,7 +20,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "slip on",
         meaning: "put a pillowcase onto a pillow",
         arabic: "يُلْبِسُ الغِطَاءَ لِلْوِسَادَة",
-        example: "He slipped a clean silk pillowcase onto his pillow.",
+        example: "She slipped a clean silk pillowcase onto her pillow.",
       },
       {
         phrase: "pull off",
@@ -37,8 +37,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Cleaning Routine",
-        en: "He washes his pillowcases every week in warm soapy water.",
-        ar: "يغسل أغطية وساداته كل أسبوع بالماء الدافئ والصابون.",
+        en: "She washes her pillowcases every week in warm soapy water.",
+        ar: "تَغْسِلُ أَكْيَاسَ الوِسَادَاتِ أُسْبُوعِيّاً فِي مَاءٍ دَافِئٍ وَصَابُونٍ.",
       },
       {
         context: "Bedding Set",
@@ -69,7 +69,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "spoon out",
         meaning: "serve food using a large spoon",
         arabic: "يَغْرِفُ بِالمِلْعَقَة",
-        example: "He spooned out generous portions of rice for the guests.",
+        example: "She spooned out generous portions of rice for the guests.",
       },
       {
         phrase: "stir in",
@@ -86,8 +86,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Cooking Soup",
-        en: "He tasted the broth with a wooden spoon to check the seasoning.",
-        ar: "تذوق المرق بملعقة خشبية ليتحقق من التتبيل.",
+        en: "She tasted the broth with a wooden spoon to check the seasoning.",
+        ar: "تَذَوَّقَتِ المَرَقَ بِمِلْعَقَةٍ خَشَبِيَّةٍ لِلتَّأَكُّدِ مِنْ ضَبْطِ البَهَارَاتِ.",
       },
       {
         context: "Table Manners",

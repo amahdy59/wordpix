@@ -139,7 +139,7 @@ export const CAMPING_SITE_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "be the first to do something; create a path",
       example:
-        "He blazed a trail through the forest — following the trail marker and checking the compass at every turn.",
+        "She blazed a trail through the forest — following the trail marker and checking the compass at every turn.",
     },
     {
       id: "camping-site-in-the-same-boat",

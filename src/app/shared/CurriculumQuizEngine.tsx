@@ -14,7 +14,6 @@ import { useI18n, type TranslationValues } from "../../i18n";
 import { ChoiceOptionGroup, type ChoiceOption } from "./ChoiceOptionGroup";
 import { playCorrectSound, playIncorrectSound } from "./useSound";
 import { useAudio } from "./useAudio";
-import { ClozeText } from "./SentenceBlank";
 import { getCanDoScenarioForUnit, type CanDoTransferChallenge } from "../data/canDoScenarios";
 
 // ─── Public Types ────────────────────────────────────────────────────────────
@@ -112,13 +111,12 @@ function QuestionCard({
   const feedbackId = `${engineId}-feedback-${question.id}`;
 
   return (
-    <article className="min-w-0" aria-labelledby={questionHeadingId}>
+    <article
+      className="rounded-2xl border border-border bg-card"
+      aria-labelledby={questionHeadingId}
+    >
       <div
-        className={
-          question.media
-            ? "grid items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(12rem,30%)]"
-            : ""
-        }
+        className={`p-4 sm:p-5 ${question.media ? "grid items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(12rem,30%)]" : ""}`}
       >
         <div className="min-w-0">
           {/* Counter label (single-question mode) */}
@@ -135,9 +133,8 @@ function QuestionCard({
           <h2
             ref={headingRef}
             id={questionHeadingId}
-            data-question-prompt
             tabIndex={-1}
-            className="wp-question-prompt focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="text-lg font-bold leading-snug text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:text-xl"
           >
             {/* Question number badge in desktop multi-question mode */}
             {!showCounter && (
@@ -145,7 +142,7 @@ function QuestionCard({
                 {index + 1}
               </span>
             )}
-            <ClozeText text={question.stem} />
+            {question.stem}
           </h2>
 
           {/* Optional media */}
@@ -186,7 +183,7 @@ function QuestionCard({
           role="status"
           aria-live="polite"
           aria-atomic="true"
-          className={`wp-question-feedback mt-3 border transition-all duration-200 motion-reduce:transition-none ${
+          className={`border-t px-6 py-5 transition-all duration-200 ${
             isCorrect
               ? "border-feedback-success-border bg-feedback-success-surface"
               : "border-feedback-error-border bg-feedback-error-surface"

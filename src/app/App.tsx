@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useCallback, useRef } from "react";
+import { useEffect, useReducer, useCallback } from "react";
 import type { Screen } from "./types";
 import type { RouteIntent } from "./router/useHashRouter";
 import { ErrorBoundary } from "./shared/ErrorBoundary";
@@ -17,10 +17,7 @@ import { RouterView } from "./router/RouterView";
 import { UpdatePrompt } from "./shared/UpdatePrompt";
 import { MotionConfig } from "framer-motion";
 import { purgeLegacyAudioCredentials } from "./shared/audioSecurity";
-import { saveLessonResume } from "./lesson/lessonResume";
-import { buildInterleavedLessonPlan } from "./lesson/lessonSequence";
-import { useLearningDiagnostics } from "./analytics/useLearningDiagnostics";
-import { parseNavigationState } from "./router/navigationState";
+import { getLessonSequence } from "./lesson/lessonSequence";
 
 function AppInner() {
   const { t } = useI18n();
@@ -38,14 +35,16 @@ function AppInner() {
       try {
         const saved = localStorage.getItem(STORAGE_KEY);
         if (!saved) return fallback;
-        return parseNavigationState(JSON.parse(saved)) ?? { id: "home" };
+        const parsed = JSON.parse(saved) as { id?: string };
+        if (!parsed || typeof parsed !== "object" || typeof parsed.id !== "string") return fallback;
+        if (parsed.id === "foundation-lesson") return { id: "learn" };
+        return parsed as Screen;
       } catch {
         return fallback;
       }
     }
   );
 
-  useLearningDiagnostics(state);
   const handleRoute = useCallback((intent: RouteIntent) => {
     if (intent.kind === "lesson-step") {
       dispatch({ type: "LESSON_GOTO_STEP", step: intent.step });
@@ -75,19 +74,8 @@ function AppInner() {
     // it, and nothing passed it along. Every shared or bookmarked link to a
     // unit — #/learn/bathroom, #/learn/bakery/study — therefore opened The
     // Bedroom, because the reducer fell back to DEFAULT_UNIT_ID.
-    if (screen.id === "lesson-entry") {
-      dispatch({ type: "GO", to: screen.id, unitId: screen.unitId, returnTo: screen.returnTo });
-      return;
-    }
-    if (screen.id === "learning-materials") {
-      dispatch({
-        type: "GO",
-        to: screen.id,
-        unitId: screen.unitId,
-        area: screen.area,
-        nodeId: screen.nodeId,
-        returnTo: screen.returnTo,
-      });
+    if (screen.id === "lesson-entry" || screen.id === "learning-materials") {
+      dispatch({ type: "GO", to: screen.id, unitId: screen.unitId });
       return;
     }
     if (screen.id === "figma-pronunciation-lesson") {
@@ -139,47 +127,26 @@ function AppInner() {
   }, []);
 
   useApplyAccessibilityPreferences();
-  const lastAnnouncement = useRef("");
 
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-      saveLessonResume(
-        state.id === "lesson"
-          ? {
-              ...state,
-              totalSteps:
-                state.totalSteps ??
-                buildInterleavedLessonPlan(
-                  state.wordQueue,
-                  learnerState.preferences.englishLevel,
-                  learnerState.accessibility.includeListening
-                ).length,
-            }
-          : state
-      );
     } catch (error) {
       console.warn("Could not persist navigation state.", error);
     }
-  }, [state, learnerState.preferences.englishLevel, learnerState.accessibility.includeListening]);
+  }, [state]);
 
   useEffect(() => {
     const lessonStageCount =
       state.id === "lesson"
         ? state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT"
           ? 1
-          : (state.totalSteps ??
-            buildInterleavedLessonPlan(
-              state.wordQueue,
+          : getLessonSequence(
               learnerState.preferences.englishLevel,
               learnerState.accessibility.includeListening
-            ).length)
+            ).length
         : undefined;
-    const announcement = describeScreen(state, t, lessonStageCount);
-    if (announcement !== lastAnnouncement.current) {
-      lastAnnouncement.current = announcement;
-      ariaLiveAnnounce(announcement);
-    }
+    ariaLiveAnnounce(describeScreen(state, t, lessonStageCount));
   }, [
     learnerState.accessibility.includeListening,
     learnerState.preferences.englishLevel,
@@ -193,11 +160,7 @@ function AppInner() {
         reducedMotion={reduceMotion ? "always" : "user"}
         transition={{ type: "spring", bounce: 0, duration: 0.4 }}
       >
-        <UpdatePrompt
-          defer={
-            !["home", "learn", "explore", "profile", "library", "release-notes"].includes(state.id)
-          }
-        />
+        <UpdatePrompt />
         {/*
           `role="status"` rather than a bare div.
           The element is visually hidden but is still page content, so axe's
@@ -229,16 +192,14 @@ const queryClient = new QueryClient({
 
 export default function App() {
   return (
-    <ErrorBoundary>
-      <QueryClientProvider client={queryClient}>
-        <AuthProvider>
-          <LearnerProvider>
-            <I18nProvider>
-              <AppInner />
-            </I18nProvider>
-          </LearnerProvider>
-        </AuthProvider>
-      </QueryClientProvider>
-    </ErrorBoundary>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <LearnerProvider>
+          <I18nProvider>
+            <AppInner />
+          </I18nProvider>
+        </LearnerProvider>
+      </AuthProvider>
+    </QueryClientProvider>
   );
 }

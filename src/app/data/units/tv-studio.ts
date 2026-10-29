@@ -511,7 +511,6 @@ export const VOCABULARY: VocabularyItem[] = [
     description:
       "Adjusting video colours to create a consistent visual style across different shots.",
     topic: "tv-studio",
-    exampleUsage: "Color grading gives the finished video a consistent appearance.",
   },
   {
     id: "subtitle",
@@ -548,7 +547,6 @@ export const VOCABULARY: VocabularyItem[] = [
     img: "/word-images/tv-studio/export.avif",
     description: "To save a finished project in a chosen file format.",
     topic: "tv-studio",
-    exampleUsage: "I export the finished video as a new file.",
   },
   {
     id: "monitor",

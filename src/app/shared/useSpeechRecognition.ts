@@ -58,7 +58,7 @@ export interface SpeechAttempt {
   /** The engine's own confidence, 0–1. */
   confidence: number;
   matched: boolean;
-  /** Legacy binary transcription-match indicator. Does not measure pronunciation. */
+  /** Normalized accuracy score between 0 and 100 based on phonetic/string similarity. */
   accuracy: number;
   /** Qualitative pronunciation grade */
   grade: PronunciationGrade;
@@ -93,7 +93,7 @@ export function editDistance(a: string, b: string): number {
 }
 
 /**
- * Legacy recognition indicator (0 or 100), never a pronunciation score.
+ * Computes accuracy score (0-100) between transcript and target word.
  */
 export function calculateAccuracy(heard: string, target: string): number {
   const normHeard = normaliseTranscript(heard);
@@ -101,8 +101,21 @@ export function calculateAccuracy(heard: string, target: string): number {
   if (!normHeard || !normTarget) return 0;
   if (normHeard === normTarget) return 100;
 
-  // A transcription match is recognition evidence, not acoustic accuracy.
-  return transcriptMatches(normHeard, normTarget) ? 100 : 0;
+  // If heard contains target exactly
+  if (normHeard.includes(normTarget)) return 95;
+
+  const tokens = normHeard.split(" ");
+  let minDistance = Infinity;
+  for (const token of tokens) {
+    const dist = editDistance(token, normTarget);
+    if (dist < minDistance) {
+      minDistance = dist;
+    }
+  }
+
+  const maxLen = Math.max(normTarget.length, 1);
+  const ratio = Math.max(0, 1 - minDistance / maxLen);
+  return Math.round(ratio * 100);
 }
 
 export function getPronunciationGrade(accuracy: number): PronunciationGrade {
@@ -113,14 +126,17 @@ export function getPronunciationGrade(accuracy: number): PronunciationGrade {
 }
 
 /**
- * Does the transcript contain the complete target word or phrase?
+ * Does the transcript contain the target word, allowing for small engine slips?
  */
 export function transcriptMatches(transcript: string, target: string): boolean {
   const heard = normaliseTranscript(transcript);
   const want = normaliseTranscript(target);
   if (!heard || !want) return false;
-  // Match complete tokens/phrases. Never accept pin as part of pinned or pen.
-  return ` ${heard} `.includes(` ${want} `);
+  if (heard === want || heard.includes(want)) return true;
+
+  // Allow one edit per four characters, minimum one.
+  const tolerance = Math.max(1, Math.floor(want.length / 4));
+  return heard.split(" ").some((token) => editDistance(token, want) <= tolerance);
 }
 
 interface Options {

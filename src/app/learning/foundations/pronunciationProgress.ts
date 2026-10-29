@@ -1,131 +1,15 @@
 export type PronunciationLessonStatus = "in-progress" | "needs-practice" | "mastered";
 
-export interface PronunciationSession {
-  version?: 2;
-  contentRevision?: string;
-  currentTargetId?: string;
-  targetEvidence?: Record<string, PronunciationTargetEvidence>;
-  trial: number;
-  attempts: number;
-  answer: string | null;
-  unlockedStage: number;
-  /** First-attempt evidence, keyed by stable stage/trial identity. */
-  outcomes: Record<string, boolean>;
-}
-
-export interface PronunciationTargetEvidence {
-  listening?: boolean;
-  speaking?: "unassessed" | "reflected" | "assessed";
-  updatedAt: string;
-  nextReviewAt?: string;
-}
-
-function normalizeTargetEvidence(value: unknown): Record<string, PronunciationTargetEvidence> {
-  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
-  return Object.fromEntries(
-    Object.entries(value).flatMap(([key, raw]) => {
-      if (!/^target:\S+$/.test(key) || !raw || typeof raw !== "object" || Array.isArray(raw))
-        return [];
-      const item = raw as Partial<PronunciationTargetEvidence>;
-      if (typeof item.updatedAt !== "string" || !Number.isFinite(Date.parse(item.updatedAt)))
-        return [];
-      return [
-        [
-          key,
-          {
-            ...(typeof item.listening === "boolean" ? { listening: item.listening } : {}),
-            ...(["unassessed", "reflected", "assessed"].includes(item.speaking ?? "")
-              ? { speaking: item.speaking }
-              : {}),
-            updatedAt: item.updatedAt,
-            ...(typeof item.nextReviewAt === "string" &&
-            Number.isFinite(Date.parse(item.nextReviewAt))
-              ? { nextReviewAt: item.nextReviewAt }
-              : {}),
-          },
-        ],
-      ];
-    })
-  );
-}
-
-export function normalizePronunciationSession(value: unknown): PronunciationSession | undefined {
-  if (!value || typeof value !== "object" || Array.isArray(value)) return undefined;
-  const item = value as Partial<PronunciationSession>;
-  if (
-    (item.version !== undefined && item.version !== 2) ||
-    (item.contentRevision !== undefined && typeof item.contentRevision !== "string") ||
-    (item.currentTargetId !== undefined &&
-      (typeof item.currentTargetId !== "string" || !/^target:\S+$/.test(item.currentTargetId))) ||
-    !Number.isInteger(item.trial) ||
-    item.trial! < 0 ||
-    item.trial! > (item.version === 2 ? 500 : 2) ||
-    !Number.isSafeInteger(item.attempts) ||
-    item.attempts! < 0 ||
-    !Number.isInteger(item.unlockedStage) ||
-    item.unlockedStage! < 0 ||
-    item.unlockedStage! > 4 ||
-    !(item.answer === null || typeof item.answer === "string") ||
-    !item.outcomes ||
-    typeof item.outcomes !== "object" ||
-    Array.isArray(item.outcomes)
-  )
-    return undefined;
-  const outcomes = Object.fromEntries(
-    Object.entries(item.outcomes).filter(
-      ([key, outcome]) =>
-        (item.version === 2 ? /^[1-4]:target:.+$/.test(key) : /^[1-4]:[0-2]$/.test(key)) &&
-        typeof outcome === "boolean"
-    )
-  );
-  return {
-    ...(item.version === 2
-      ? {
-          version: 2,
-          ...(item.contentRevision ? { contentRevision: item.contentRevision } : {}),
-          targetEvidence: normalizeTargetEvidence(item.targetEvidence),
-          ...(typeof item.currentTargetId === "string" && item.currentTargetId.startsWith("target:")
-            ? { currentTargetId: item.currentTargetId }
-            : {}),
-        }
-      : {}),
-    trial: item.trial!,
-    attempts: item.attempts!,
-    answer: item.answer!,
-    unlockedStage: item.unlockedStage!,
-    outcomes,
-  };
-}
-
 export interface PronunciationLessonProgress {
-  targetEvidence?: Record<string, PronunciationTargetEvidence>;
   status: PronunciationLessonStatus;
   currentStage: number;
   bestScorePercent: number;
   sessions: number;
   nextReviewAt?: string;
   updatedAt: string;
-  session?: PronunciationSession;
 }
 
 export type PronunciationProgress = Record<string, PronunciationLessonProgress>;
-
-export function getDuePronunciationReviews(progress: PronunciationProgress, now: Date) {
-  const todayEnd = new Date(now);
-  todayEnd.setHours(23, 59, 59, 999);
-  return Object.entries(progress).flatMap(([lessonId, lesson]) => {
-    if (!/^lesson-\d{2}$/.test(lessonId)) return [];
-    const lessonNumber = Number(lessonId.slice(7));
-    if (lessonNumber < 1 || lessonNumber > 68) return [];
-    const evidence = { ...lesson.targetEvidence, ...lesson.session?.targetEvidence };
-    const targets = Object.entries(evidence).filter(
-      ([, item]) => item.nextReviewAt && Date.parse(item.nextReviewAt) <= todayEnd.getTime()
-    );
-    return targets.length
-      ? [{ lessonId, lessonNumber, targets: targets.map(([targetId]) => targetId) }]
-      : [];
-  });
-}
 
 export const LEGACY_PRONUNCIATION_LESSON_NUMBERS: Readonly<Record<string, number>> = {
   "pronunciation-goals": 59,
@@ -146,50 +30,24 @@ export const LEGACY_PRONUNCIATION_LESSON_NUMBERS: Readonly<Record<string, number
   "pronunciation-communication-repair": 59,
 };
 
-const clamp = (value: number) =>
-  Number.isFinite(value) ? Math.max(0, Math.min(100, Math.round(value))) : 0;
-const stageIndex = (value: unknown) =>
-  typeof value === "number" && Number.isFinite(value)
-    ? Math.max(0, Math.min(4, Math.floor(value)))
-    : 0;
-const sessionCount = (value: unknown) =>
-  typeof value === "number" && Number.isFinite(value)
-    ? Math.max(0, Math.min(Number.MAX_SAFE_INTEGER, Math.floor(value)))
-    : 0;
-const validDate = (value: unknown): value is string =>
-  typeof value === "string" && Number.isFinite(Date.parse(value));
+const clamp = (value: number) => Math.max(0, Math.min(100, Math.round(value)));
 
 export function checkpointPronunciationLesson(
   progress: PronunciationProgress,
   lessonId: string,
   currentStage: number,
-  now = new Date(),
-  session?: PronunciationSession
+  now = new Date()
 ): PronunciationProgress {
   const previous = progress[lessonId];
-  const normalizedSession = normalizePronunciationSession(session ?? previous?.session);
-  const nextStage = stageIndex(currentStage);
-  // Discard only a contradictory attempt; retain historical scores and review evidence.
-  const resumableSession =
-    normalizedSession && nextStage <= normalizedSession.unlockedStage
-      ? normalizedSession
-      : undefined;
-  const targetEvidence = {
-    ...normalizeTargetEvidence(previous?.targetEvidence),
-    ...normalizeTargetEvidence(previous?.session?.targetEvidence),
-    ...normalizeTargetEvidence(session?.targetEvidence),
-  };
   return {
     ...progress,
     [lessonId]: {
-      ...(Object.keys(targetEvidence).length ? { targetEvidence } : {}),
       status: previous?.status === "mastered" ? "mastered" : "in-progress",
-      currentStage: nextStage,
-      bestScorePercent: clamp(previous?.bestScorePercent ?? 0),
-      sessions: sessionCount(previous?.sessions),
+      currentStage: Math.max(0, Math.floor(currentStage)),
+      bestScorePercent: previous?.bestScorePercent ?? 0,
+      sessions: previous?.sessions ?? 0,
       ...(previous?.nextReviewAt ? { nextReviewAt: previous.nextReviewAt } : {}),
       updatedAt: now.toISOString(),
-      ...(resumableSession ? { session: resumableSession } : {}),
     },
   };
 }
@@ -200,39 +58,16 @@ export function normalizePronunciationProgress(value: unknown): PronunciationPro
   for (const [id, raw] of Object.entries(value)) {
     if (!raw || typeof raw !== "object" || Array.isArray(raw)) continue;
     const item = raw as Partial<PronunciationLessonProgress>;
-    if (
-      typeof item.status !== "string" ||
-      !["in-progress", "needs-practice", "mastered"].includes(item.status)
-    )
-      continue;
-    const currentStage = stageIndex(item.currentStage);
-    const normalizedSession = normalizePronunciationSession(item.session);
-    const session =
-      normalizedSession &&
-      Number.isInteger(item.currentStage) &&
-      item.currentStage! >= 0 &&
-      item.currentStage! <= 4 &&
-      currentStage <= normalizedSession.unlockedStage
-        ? normalizedSession
-        : undefined;
-    const targetEvidence = {
-      ...normalizeTargetEvidence(item.targetEvidence),
-      ...normalizeTargetEvidence(
-        item.session && typeof item.session === "object"
-          ? (item.session as Partial<PronunciationSession>).targetEvidence
-          : undefined
-      ),
-    };
+    if (!["in-progress", "needs-practice", "mastered"].includes(String(item.status))) continue;
     output[id] = {
-      ...(Object.keys(targetEvidence).length ? { targetEvidence } : {}),
       status: item.status as PronunciationLessonStatus,
-      currentStage,
+      currentStage:
+        typeof item.currentStage === "number" ? Math.max(0, Math.floor(item.currentStage)) : 0,
       bestScorePercent:
         typeof item.bestScorePercent === "number" ? clamp(item.bestScorePercent) : 0,
-      sessions: sessionCount(item.sessions),
-      ...(validDate(item.nextReviewAt) ? { nextReviewAt: item.nextReviewAt } : {}),
-      updatedAt: validDate(item.updatedAt) ? item.updatedAt : new Date(0).toISOString(),
-      ...(session ? { session } : {}),
+      sessions: typeof item.sessions === "number" ? Math.max(0, Math.floor(item.sessions)) : 0,
+      ...(typeof item.nextReviewAt === "string" ? { nextReviewAt: item.nextReviewAt } : {}),
+      updatedAt: typeof item.updatedAt === "string" ? item.updatedAt : new Date(0).toISOString(),
     };
   }
   return output;
@@ -262,17 +97,19 @@ export function migrateLegacyPronunciationProgress(
     const targetId = `lesson-${String(lessonNumber).padStart(2, "0")}`;
     if (output[targetId]) continue;
     const item = raw as { status?: unknown; sessions?: unknown; updatedAt?: unknown };
-    if (
-      typeof item.status !== "string" ||
-      !["in-progress", "needs-practice", "mastered"].includes(item.status)
-    )
-      continue;
+    if (!["in-progress", "needs-practice", "mastered"].includes(String(item.status))) continue;
     output[targetId] = {
       status: "in-progress",
       currentStage: 0,
       bestScorePercent: 0,
-      sessions: sessionCount(item.sessions),
-      updatedAt: validDate(item.updatedAt) ? item.updatedAt : new Date(0).toISOString(),
+      sessions:
+        typeof item.sessions === "number" && Number.isFinite(item.sessions)
+          ? Math.max(0, Math.floor(item.sessions))
+          : 0,
+      updatedAt:
+        typeof item.updatedAt === "string" && item.updatedAt
+          ? item.updatedAt
+          : new Date(0).toISOString(),
     };
   }
   return output;
@@ -288,21 +125,13 @@ export function completePronunciationLesson(
   const previous = progress[lessonId];
   const score = clamp(scorePercent);
   const nextReviewAt = new Date(now.getTime() + (score >= 80 ? 3 : 1) * 86400000).toISOString();
-  const targetEvidence = { ...previous?.targetEvidence, ...previous?.session?.targetEvidence };
   return {
     ...progress,
     [lessonId]: {
-      // Word coverage and acoustic feedback are distinct from validated speaking mastery.
-      status:
-        previous?.session?.version === 2
-          ? "needs-practice"
-          : score >= 80
-            ? "mastered"
-            : "needs-practice",
-      ...(Object.keys(targetEvidence).length ? { targetEvidence } : {}),
-      currentStage: stageIndex(currentStage),
-      bestScorePercent: Math.max(clamp(previous?.bestScorePercent ?? 0), score),
-      sessions: Math.min(Number.MAX_SAFE_INTEGER, sessionCount(previous?.sessions) + 1),
+      status: score >= 80 ? "mastered" : "needs-practice",
+      currentStage: Math.max(0, Math.floor(currentStage)),
+      bestScorePercent: Math.max(previous?.bestScorePercent ?? 0, score),
+      sessions: (previous?.sessions ?? 0) + 1,
       nextReviewAt,
       updatedAt: now.toISOString(),
     },

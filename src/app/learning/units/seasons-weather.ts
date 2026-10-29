@@ -110,7 +110,7 @@ export const SEASONS_WEATHER_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Feeling slightly ill.",
       example:
-        "He's been under the weather all week — probably caught a cold in the freezing rain.",
+        "She's been under the weather all week — probably caught a cold in the freezing rain.",
     },
     {
       id: "seasons-weather-every-cloud-has-a-silver-lining",
@@ -140,7 +140,7 @@ export const SEASONS_WEATHER_LEARNING: UnitLearningMaterials = {
       phrase: "save for a rainy day",
       kind: "idiom",
       meaning: "Save money for future difficulties.",
-      example: "He puts aside £50 every month — saving for a rainy day.",
+      example: "She puts aside £50 every month — saving for a rainy day.",
     },
     {
       id: "seasons-weather-break-the-ice",
@@ -162,7 +162,7 @@ export const SEASONS_WEATHER_LEARNING: UnitLearningMaterials = {
       phrase: "on cloud nine",
       kind: "idiom",
       meaning: "Extremely happy.",
-      example: "He was on cloud nine after the sunny holiday — completely refreshed.",
+      example: "She was on cloud nine after the sunny holiday — completely refreshed.",
     },
     {
       id: "seasons-weather-snowed-under",

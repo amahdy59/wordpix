@@ -30,9 +30,6 @@ export function findLessonContextSentences(
   if (!usage) return [];
   const sources = [
     ...usage.usage.scenes.flatMap((scene) => sentenceCandidates(scene.scenario)),
-    ...usage.usage.scenes.flatMap((scene) =>
-      scene.learningContext?.scenario ? sentenceCandidates(scene.learningContext.scenario) : []
-    ),
     ...sentenceCandidates(usage.reading.text),
     ...(usage.contextExtensions ?? []).flatMap((context) => sentenceCandidates(context.text)),
   ];

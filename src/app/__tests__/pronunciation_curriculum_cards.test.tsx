@@ -168,7 +168,7 @@ describe("PronunciationLessonInfoModal Component", () => {
       </I18nProvider>
     );
 
-    fireEvent.keyDown(document, { key: "Escape" });
+    fireEvent.keyDown(window, { key: "Escape" });
     expect(onClose).toHaveBeenCalled();
   });
 });

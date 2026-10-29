@@ -134,7 +134,7 @@ export const BUTTERFLY_GARDEN_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "a person who enjoys socialising and moves easily between groups",
-      example: "He's a real social butterfly — he knows everyone at the party.",
+      example: "She's a real social butterfly — she knows everyone at the party.",
     },
     {
       id: "butterfly-garden-the-butterfly-effect",
@@ -150,7 +150,7 @@ export const BUTTERFLY_GARDEN_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "become more confident and outgoing",
-      example: "Since starting university, he's really come out of his shell.",
+      example: "Since starting university, she's really come out of her shell.",
     },
     {
       id: "butterfly-garden-crawl-before-you-walk",
@@ -166,7 +166,7 @@ export const BUTTERFLY_GARDEN_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "become more independent; try new things",
-      example: "After years at the same job, he decided to spread his wings.",
+      example: "After years at the same job, she decided to spread her wings.",
     },
     {
       id: "butterfly-garden-float-like-a-butterfly",
@@ -174,7 +174,7 @@ export const BUTTERFLY_GARDEN_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       kindInferred: true,
       meaning: "move gracefully and lightly",
-      example: "He dances beautifully — he floats like a butterfly.",
+      example: "She dances beautifully — she floats like a butterfly.",
     },
   ],
   dialogue: {

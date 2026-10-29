@@ -20,7 +20,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "look through",
         meaning: "browse books on a shelf",
         arabic: "يَتَصَفَّحُ",
-        example: "He looked through the bookshelf to find a dictionary.",
+        example: "She looked through the bookshelf to find a dictionary.",
       },
       {
         phrase: "take down",
@@ -37,8 +37,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Maintenance",
-        en: "He spent Sunday afternoon dusting and organizing his bookshelf.",
-        ar: "أمضى عصر الأحد في تنظيف رف كتبه من الغبار وترتيبه.",
+        en: "She spent Sunday afternoon dusting and organizing her bookshelf.",
+        ar: "قَضَتْ بَعْدَ ظُهْرِ يَوْمِ الأَحَدِ فِي تَنْظِيفِ وَتَرْتِيبِ رَفِّ الكُتُبِ.",
       },
       {
         context: "Decor",
@@ -69,7 +69,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "lean against",
         meaning: "rest your back against a cushion",
         arabic: "يَسْتَنِدُ عَلَى",
-        example: "He leaned against the soft velvet cushion while watching TV.",
+        example: "She leaned against the soft velvet cushion while watching TV.",
       },
       {
         phrase: "plump up",
@@ -124,7 +124,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "prop up",
         meaning: "support with pillows",
         arabic: "يَسْنِدُ بِالوِسَادَة",
-        example: "He propped himself up with two cushions to read in bed.",
+        example: "She propped herself up with two cushions to read in bed.",
       },
     ],
     sentences: [
@@ -174,8 +174,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Study Session",
-        en: "He used a neon yellow highlighter to emphasize key vocabulary in his textbook.",
-        ar: "استخدم قلم تمييز أصفر فاقعا لإبراز المفردات المهمة في كتابه الدراسي.",
+        en: "She used a neon yellow highlighter to emphasize key vocabulary in her textbook.",
+        ar: "اسْتَخْدَمَتْ قَلَمَ تَمْيِيزٍ نِيُونِيًّا أَصْفَرَ لِلتَّأْكِيدِ عَلَى المُفْرَدَاتِ الرَّئِيسِيَّةِ فِي كِتَابِهَا المَدْرَسِيِّ.",
       },
       {
         context: "Exam Preparation",
@@ -189,8 +189,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He used a neon yellow highlighter to emphasize key vocabulary in his textbook.",
-    exampleArabic: "استخدم قلم تمييز أصفر فاقعا لإبراز المفردات المهمة في كتابه الدراسي.",
+      "She used a neon yellow highlighter to emphasize key vocabulary in her textbook.",
+    exampleArabic:
+      "اسْتَخْدَمَتْ قَلَمَ تَمْيِيزٍ نِيُونِيًّا أَصْفَرَ لِلتَّأْكِيدِ عَلَى المُفْرَدَاتِ الرَّئِيسِيَّةِ فِي كِتَابِهَا المَدْرَسِيِّ.",
   },
   "mri-scan": {
     id: "mri-scan",

@@ -57,17 +57,10 @@
       "sourceNode": "1581:228"
     },
     "eight": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Empty desks do not depict eight students.",
       "reviewedSentence": "Eight students are here.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-1-eight-students.webp",
       "imageAlt": "Adult students seated together in a bright classroom.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-1-eight-students.avif",
-          "imageAlt": "Adult students seated together in a bright classroom."
-        }
-      ],
       "sourceNode": "1581:229"
     },
     "nine": {
@@ -103,17 +96,10 @@
       "sourceNode": "1581:233"
     },
     "thirteen": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Fourteen figures do not depict thirteen people.",
       "reviewedSentence": "Thirteen people are waiting.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-1-thirteen-people.webp",
       "imageAlt": "Adults waiting in an orderly queue.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-1-thirteen-people.avif",
-          "imageAlt": "Adults waiting in an orderly queue."
-        }
-      ],
       "sourceNode": "1581:234"
     },
     "fourteen": {
@@ -149,87 +135,45 @@
       "sourceNode": "1581:238"
     },
     "eighteen": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Twelve plates do not depict eighteen plates.",
       "reviewedSentence": "We need eighteen plates.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-eighteen-plates.webp",
       "imageAlt": "Plain plates arranged in equal rows on a long table.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-eighteen-plates.avif",
-          "imageAlt": "Plain plates arranged in equal rows on a long table."
-        }
-      ],
       "sourceNode": "1581:239"
     },
     "nineteen": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Twenty-one figures do not depict nineteen people.",
       "reviewedSentence": "Nineteen people are here.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-nineteen-people.webp",
       "imageAlt": "Adults gathered together in a bright community room.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-nineteen-people.avif",
-          "imageAlt": "Adults gathered together in a bright community room."
-        }
-      ],
       "sourceNode": "1581:240"
     },
     "twenty": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "The full seat count cannot be established from this view.",
       "reviewedSentence": "The bus has twenty seats.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-twenty-seats.webp",
       "imageAlt": "Paired passenger seats inside a small bus.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-twenty-seats.avif",
-          "imageAlt": "Paired passenger seats inside a small bus."
-        }
-      ],
       "sourceNode": "1581:241"
     },
     "thirty": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "The student count cannot be established unambiguously.",
       "reviewedSentence": "The class has thirty students.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-thirty-students.webp",
       "imageAlt": "Student figures seated at desks in an orderly classroom.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-thirty-students.avif",
-          "imageAlt": "Student figures seated at desks in an orderly classroom."
-        }
-      ],
       "sourceNode": "1581:242"
     },
     "forty": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "An open book does not establish forty pages.",
       "reviewedSentence": "This book has forty pages.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-forty-pages.webp",
       "imageAlt": "An open slim book showing a block of blank pages.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-forty-pages.avif",
-          "imageAlt": "An open slim book showing a block of blank pages."
-        }
-      ],
       "sourceNode": "1581:243"
     },
     "fifty": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Unlabelled coin stacks do not establish fifty pounds.",
       "reviewedSentence": "I have fifty pounds.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-fifty-pounds.webp",
       "imageAlt": "Equal stacks of pound coins arranged on a wooden table.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-fifty-pounds.avif",
-          "imageAlt": "Equal stacks of pound coins arranged on a wooden table."
-        }
-      ],
       "sourceNode": "1581:244"
     },
     "sixty": {
@@ -241,143 +185,73 @@
       "sourceNode": "1581:245"
     },
     "seventy": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "An age numeral reveals the assessed answer; no grandfather is shown.",
       "reviewedSentence": "My grandfather is seventy.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-seventy-grandfather.webp",
       "imageAlt": "An elderly grandfather seated at a family table.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-seventy-grandfather.avif",
-          "imageAlt": "An elderly grandfather seated at a family table."
-        }
-      ],
       "sourceNode": "1581:246"
     },
     "eighty": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Overlapping cards do not establish eighty cards.",
       "reviewedSentence": "The box holds eighty cards.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-eighty-cards.webp",
       "imageAlt": "An orderly stack of blank cards inside a box.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-eighty-cards.avif",
-          "imageAlt": "An orderly stack of blank cards inside a box."
-        }
-      ],
       "sourceNode": "1581:247"
     },
     "ninety": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Unlabelled coin stacks do not establish ninety pounds.",
       "reviewedSentence": "The trip costs ninety pounds.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-ninety-pounds.webp",
       "imageAlt": "Grouped stacks of pound coins arranged for a travel payment.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-ninety-pounds.avif",
-          "imageAlt": "Grouped stacks of pound coins arranged for a travel payment."
-        }
-      ],
       "sourceNode": "1581:248"
     },
     "hundred": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "The figure count cannot be established unambiguously at phone size.",
       "reviewedSentence": "One hundred people came.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-one-hundred-people.webp",
       "imageAlt": "Wooden people arranged in an even square formation.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-one-hundred-people.avif",
-          "imageAlt": "Wooden people arranged in an even square formation."
-        }
-      ],
       "sourceNode": "1581:249"
     },
     "thousand": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "The model does not establish one thousand homes.",
       "reviewedSentence": "The town has one thousand homes.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-one-thousand-homes.webp",
       "imageAlt": "Grouped trays containing a large planned collection of miniature homes.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-one-thousand-homes.avif",
-          "imageAlt": "Grouped trays containing a large planned collection of miniature homes."
-        }
-      ],
       "sourceNode": "1581:250"
     },
     "million": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "A model crowd does not establish one million people.",
       "reviewedSentence": "The city has one million people.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-one-million-people.webp",
       "imageAlt": "An immense crowd of wooden people filling a model city.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-2-one-million-people.avif",
-          "imageAlt": "An immense crowd of wooden people filling a model city."
-        }
-      ],
       "sourceNode": "1581:251"
     },
     "first": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Cars do not represent the people in the queue.",
       "reviewedSentence": "I am first in line.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-first-in-line.webp",
       "imageAlt": "A queue of adults with the front person approaching a counter.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-first-in-line.avif",
-          "imageAlt": "A queue of adults with the front person approaching a counter."
-        }
-      ],
       "sourceNode": "1581:252"
     },
     "second": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Cars do not represent the people in the queue.",
       "reviewedSentence": "Mona is second in line.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-second-in-line.webp",
       "imageAlt": "A woman standing directly behind the front person in a queue.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-second-in-line.avif",
-          "imageAlt": "A woman standing directly behind the front person in a queue."
-        }
-      ],
       "sourceNode": "1581:253"
     },
     "third": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Cars do not represent the people in the queue.",
       "reviewedSentence": "Ali is third in line.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-third-in-line.webp",
       "imageAlt": "A man standing behind two people in a queue.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-third-in-line.avif",
-          "imageAlt": "A man standing behind two people in a queue."
-        }
-      ],
       "sourceNode": "1581:254"
     },
     "fourth": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Printed page number reveals the assessed answer.",
       "reviewedSentence": "This is the fourth page.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-fourth-page.webp",
       "imageAlt": "A hand selecting one sheet from a small ordered stack.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-fourth-page.avif",
-          "imageAlt": "A hand selecting one sheet from a small ordered stack."
-        }
-      ],
       "sourceNode": "1581:255"
     },
     "fifth": {
@@ -389,73 +263,38 @@
       "sourceNode": "1581:256"
     },
     "sixth": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Award rosettes do not represent a woman finishing a race.",
       "reviewedSentence": "She finished in sixth place.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-sixth-place.webp",
       "imageAlt": "A woman finishing a race behind several runners.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-sixth-place.avif",
-          "imageAlt": "A woman finishing a race behind several runners."
-        }
-      ],
       "sourceNode": "1581:257"
     },
     "seventh": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "The floor count and person position are ambiguous.",
       "reviewedSentence": "He lives on the seventh floor.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-seventh-floor.webp",
       "imageAlt": "A man visible at the top window of a multi-storey building.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-seventh-floor.avif",
-          "imageAlt": "A man visible at the top window of a multi-storey building."
-        }
-      ],
       "sourceNode": "1581:258"
     },
     "eighth": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Printed lesson number reveals the assessed answer.",
       "reviewedSentence": "This is my eighth lesson.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-eighth-lesson.webp",
       "imageAlt": "An adult learner opening the final card in a sequence.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-eighth-lesson.avif",
-          "imageAlt": "An adult learner opening the final card in a sequence."
-        }
-      ],
       "sourceNode": "1581:259"
     },
     "ninth": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Labelled cards reveal the assessed ordinal.",
       "reviewedSentence": "She chose the ninth card.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-ninth-card.webp",
       "imageAlt": "A woman choosing the final blank card from a row.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-ninth-card.avif",
-          "imageAlt": "A woman choosing the final blank card from a row."
-        }
-      ],
       "sourceNode": "1581:260"
     },
     "tenth": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Overlapping cards do not establish the final lesson position.",
       "reviewedSentence": "Today is the tenth lesson.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-tenth-lesson.webp",
       "imageAlt": "The final blank lesson card open on a desk.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-tenth-lesson.avif",
-          "imageAlt": "The final blank lesson card open on a desk."
-        }
-      ],
       "sourceNode": "1581:261"
     },
     "addition": {
@@ -491,17 +330,10 @@
       "sourceNode": "1581:265"
     },
     "equals": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "The combined apple count is visually ambiguous.",
       "reviewedSentence": "Two plus three equals five.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-two-plus-three-equals-five.webp",
       "imageAlt": "Two groups of apples combined into one complete group.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-3-two-plus-three-equals-five.avif",
-          "imageAlt": "Two groups of apples combined into one complete group."
-        }
-      ],
       "sourceNode": "1581:266"
     },
     "plus": {
@@ -513,17 +345,10 @@
       "sourceNode": "1581:267"
     },
     "minus": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Two groups of oranges do not demonstrate removal.",
       "reviewedSentence": "Five minus two equals three.",
-      "imagePath": "learning-scenes/numbers-counting/numbers-counting-4-minus-five-and-two.webp",
       "imageAlt": "A hand taking oranges away from a small group.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/numbers-counting/numbers-counting-4-minus-five-and-two.avif",
-          "imageAlt": "A hand taking oranges away from a small group."
-        }
-      ],
       "sourceNode": "1581:268"
     },
     "times": {
@@ -655,17 +480,10 @@
       "sourceNode": "1581:336"
     },
     "indigo": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "Fabric samples do not show the rainbow specified in the sentence.",
       "reviewedSentence": "Indigo appears in the rainbow.",
-      "imagePath": "learning-scenes/colors/colors-1-indigo-rainbow.webp",
       "imageAlt": "Three ribbons progress from blue through deep blue-violet to purple.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/colors/colors-1-indigo-rainbow.avif",
-          "imageAlt": "Three ribbons progress from blue through deep blue-violet to purple."
-        }
-      ],
       "sourceNode": "1581:337"
     },
     "violet": {
@@ -709,17 +527,10 @@
       "sourceNode": "1581:342"
     },
     "light": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "A mug does not support a sentence about light walls.",
       "reviewedSentence": "This room has light walls.",
-      "imagePath": "learning-scenes/colors/colors-2-light-walls.webp",
       "imageAlt": "A bright room with near-white walls and darker furniture.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/colors/colors-2-light-walls.avif",
-          "imageAlt": "A bright room with near-white walls and darker furniture."
-        }
-      ],
       "sourceNode": "1581:343"
     },
     "dark": {
@@ -843,17 +654,10 @@
       "sourceNode": "1581:358"
     },
     "gradient": {
-      "status": "approved",
-      "reason": "Visible objects and visual clues support the current question.",
+      "status": "withheld",
+      "reason": "A sky does not represent the poster specified in the sentence.",
       "reviewedSentence": "The poster has a smooth gradient.",
-      "imagePath": "learning-scenes/colors/colors-3-smooth-gradient.webp",
       "imageAlt": "A poster transitioning smoothly from dark blue to pale blue.",
-      "imageFallbacks": [
-        {
-          "imagePath": "learning-scenes/colors/colors-3-smooth-gradient.avif",
-          "imageAlt": "A poster transitioning smoothly from dark blue to pale blue."
-        }
-      ],
       "sourceNode": "1581:359"
     },
     "rainbow": {

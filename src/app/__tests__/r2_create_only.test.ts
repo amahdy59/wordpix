@@ -37,36 +37,4 @@ describe("create-only R2 uploads", () => {
     expect(request).toHaveBeenCalledTimes(1);
     expect(request.mock.calls[0][1].method).toBe("PUT");
   });
-
-  it("verifies the server's immutable upload receipt and signs the content checksum", async () => {
-    const { createHash } = await import("node:crypto");
-    const body = Buffer.from("verified recording");
-    const md5 = createHash("md5").update(body);
-    const request = vi
-      .fn()
-      .mockResolvedValue({ status: 200, headers: new Headers({ etag: `"${md5.digest("hex")}"` }) });
-    vi.stubGlobal("fetch", request);
-    expect(
-      await createClient(configuration).putIfAbsent("audio/new.mp3", body, { verifyChecksum: true })
-    ).toBe(true);
-    const options = request.mock.calls[0][1];
-    expect(options.headers["content-md5"]).toBe(createHash("md5").update(body).digest("base64"));
-    expect(options.headers.Authorization).toContain("content-md5");
-    expect(options.headers["if-none-match"]).toBe("*");
-    expect(request).toHaveBeenCalledTimes(1);
-  });
-
-  it("rejects a mismatched server checksum without replacing or deleting anything", async () => {
-    const request = vi
-      .fn()
-      .mockResolvedValue({ status: 200, headers: new Headers({ etag: '"wrong"' }) });
-    vi.stubGlobal("fetch", request);
-    await expect(
-      createClient(configuration).putIfAbsent("audio/new.mp3", Buffer.from("recording"), {
-        verifyChecksum: true,
-      })
-    ).rejects.toThrow("checksum mismatch");
-    expect(request).toHaveBeenCalledTimes(1);
-    expect(request.mock.calls[0][1].method).toBe("PUT");
-  });
 });

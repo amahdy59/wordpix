@@ -86,7 +86,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "put in",
         meaning: "insert a photograph into a frame",
         arabic: "يَضَعُ الصُّورَةَ فِي البِرْوَاز",
-        example: "He put his graduation photo in a silver picture frame.",
+        example: "She put her graduation photo in a silver picture frame.",
       },
     ],
     sentences: [
@@ -97,8 +97,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Wall Decoration",
-        en: "He hung three matching black picture frames along the hallway wall.",
-        ar: "علق ثلاثة إطارات صور سوداء متناسقة على جدار الممر.",
+        en: "She hung three matching black picture frames along the hallway wall.",
+        ar: "عَلَّقَتْ ثَلاثَةَ إِطَارَاتِ صُوَرٍ سَوْدَاءَ مُتَطَابِقَةٍ عَلَى جِدَارِ المَمَرِّ.",
       },
       {
         context: "Gifting",
@@ -135,8 +135,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Fine Dining Storage",
-        en: "He stores his best crystal glasses and holiday tablecloths inside the oak sideboard.",
-        ar: "يحتفظ بأفضل كؤوسه البلورية ومفارش المناسبات داخل خزانة الطعام المصنوعة من البلوط.",
+        en: "She stores her best crystal glasses and holiday tablecloths inside the oak sideboard.",
+        ar: "تَحْفَظُ أَفْضَلَ كُؤُوسِ الكِرِيسْتَالِ وَمَفَارِشِ المَائِدَةِ دَاخِلَ البُوفَيْهِ الخَشَبِيِّ.",
       },
       {
         context: "Holiday Buffet",
@@ -150,9 +150,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He stores his best crystal glasses and holiday tablecloths inside the oak sideboard.",
+      "She stores her best crystal glasses and holiday tablecloths inside the oak sideboard.",
     exampleArabic:
-      "يحتفظ بأفضل كؤوسه البلورية ومفارش المناسبات داخل خزانة الطعام المصنوعة من البلوط.",
+      "تَحْفَظُ أَفْضَلَ كُؤُوسِ الكِرِيسْتَالِ وَمَفَارِشِ المَائِدَةِ دَاخِلَ البُوفَيْهِ الخَشَبِيِّ.",
   },
   "garden-gloves": {
     id: "garden-gloves",
@@ -184,8 +184,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Weeding",
-        en: "He pulled tough weeds from the damp soil with rubber-coated garden gloves.",
-        ar: "اقتلع الأعشاب القوية من التربة الرطبة بقفازي حديقة مطليين بالمطاط.",
+        en: "She pulled tough weeds from the damp soil with rubber-coated garden gloves.",
+        ar: "اقْتَلَعَتِ الأَعْشَابَ الضَّارَّةَ مِنَ التُّرْبَةِ الرَّطْبَةِ بِقُفَّازَاتِ حَدِيقَةٍ مَطَّاطِيَّةٍ.",
       },
       {
         context: "Grip",
@@ -222,8 +222,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Seafood Section",
-        en: "He ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
-        ar: "طلب رطلا من الروبيان النيئ الكبير من واجهة المأكولات البحرية المملوءة بالثلج.",
+        en: "She ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
+        ar: "طَلَبَتْ رَطْلًا مِنْ جَمْبَرِي الحَجْمِ الكَبِيرِ النِّيءِ مِنْ مَعْرَضِ المَأْكُولَاتِ البَحْرِيَّةِ.",
       },
       {
         context: "Garlic Sauté",
@@ -236,8 +236,10 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يُشَكِّلُ الجَمْبَرِي الطَّرِيُّ مَعَ مَعْكَرُونَةِ الفِيتُوتْشِينِي وَصَلْصَةِ الكْرِيمَةِ عَشَاءً فَاخِرًا.",
       },
     ],
-    exampleSentence: "He ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
-    exampleArabic: "طلب رطلا من الروبيان النيئ الكبير من واجهة المأكولات البحرية المملوءة بالثلج.",
+    exampleSentence:
+      "She ordered a pound of raw jumbo shrimp from the ice-filled seafood showcase.",
+    exampleArabic:
+      "طَلَبَتْ رَطْلًا مِنْ جَمْبَرِي الحَجْمِ الكَبِيرِ النِّيءِ مِنْ مَعْرَضِ المَأْكُولَاتِ البَحْرِيَّةِ.",
   },
   bagel: {
     id: "bagel",
@@ -307,8 +309,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Bakery Counter",
-        en: "He bought a freshly baked loaf of soft white bread for making morning toast.",
-        ar: "اشترى رغيف خبز أبيض طازجا وطريا ليعد الخبز المحمص صباحا.",
+        en: "She bought a freshly baked loaf of soft white bread for making morning toast.",
+        ar: "اشْتَرَتْ رَغِيفًا مَخْبُوزًا حَدِيثًا مِنْ خُبْزٍ أَبْيَضَ طَرِيٍّ لِإِعْدَادِ التُّوسْتِ الصَّبَاحِيِّ.",
       },
       {
         context: "Breakfast Toast",
@@ -321,8 +323,10 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يُوَفِّرُ الخُبْزُ الأَبْيَضُ الطَّرِيُّ قَوَامًا نَاعِمًا يُلَائِمُ شَطَائِرَ الدِّيكِ الرُّومِيِّ وَالجُبْنِ.",
       },
     ],
-    exampleSentence: "He bought a freshly baked loaf of soft white bread for making morning toast.",
-    exampleArabic: "اشترى رغيف خبز أبيض طازجا وطريا ليعد الخبز المحمص صباحا.",
+    exampleSentence:
+      "She bought a freshly baked loaf of soft white bread for making morning toast.",
+    exampleArabic:
+      "اشْتَرَتْ رَغِيفًا مَخْبُوزًا حَدِيثًا مِنْ خُبْزٍ أَبْيَضَ طَرِيٍّ لِإِعْدَادِ التُّوسْتِ الصَّبَاحِيِّ.",
   },
   boardwalk: {
     id: "boardwalk",

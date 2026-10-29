@@ -31,22 +31,22 @@
       "قلم حبر",
       "ممحاة",
       "مسطرة",
-      "قلم تحديد",
-      "قلم شمعي",
-      "قلم تلوين",
-      "قلم تظليل",
-      "مبراة",
-      "مقلمة",
-      "دفتر ملاحظات",
-      "كتاب دراسي",
-      "كتاب تمارين",
-      "حافظة أوراق",
-      "ملف ذو حلقات"
+      "قلم تخطيط (ماركر)",
+      "قلم تلوين شمعي (ألوان شمع)",
+      "قلم تلوين خشبي",
+      "قلم تمييز بصري (هايلايتر)",
+      "مبراة (براية أقلام)",
+      "مقلمة (حقيبة أقلام)",
+      "دفتر (كراسة ملاحظات)",
+      "كتاب مدرسي (مقرر دراسي)",
+      "كراسة تمارين (دفتر الأنشطة)",
+      "ملف (مجلد حفظ الأوراق)",
+      "ملف حلقي (بايندر)"
     ],
     "usage": {
       "goal": "Learn to recognize and use key the classroom 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a classroom object or role and ask for help.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to the classroom in very simple everyday situations.",
+      "textType": "narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -58,16 +58,8 @@
             "options": ["Pencil", "Pen", "Eraser"],
             "expectedAnswer": "Pencil"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: On a clean seminar table, an instructor sets down a sharpened wooden pencil beside a blank notebook and an eraser. Question: Which writing instrument rests beside the notebook for taking quick notes? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Pencil, Pen, Eraser in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "On a clean seminar table, an instructor sets down a sharpened wooden pencil beside a blank notebook and an eraser.",
-            "sourceQuestion": "Which writing instrument rests beside the notebook for taking quick notes?",
-            "sourceAnswer": "Pencil",
-            "scenario": "Rami writes with a sharpened pencil beside a pen and eraser. The eraser removes pencil marks.",
-            "question": "Which writing tool has the sharpened solid core?",
-            "imageBrief": "Adult study desk with sharpened wooden pencil, capped pen and eraser. Blank notebook, no readable writing or labels."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: Before the evening class begins, pencil, pen, eraser are ready for use. The pencil is beside the instructor’s notebook. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Pencil, Pen, Eraser in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -78,16 +70,8 @@
             "options": ["Marker", "Crayon", "Ruler"],
             "expectedAnswer": "Ruler"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: To measure paper margins accurately, an architect places a clear plastic ruler along the edge of a drafting sheet. Question: Which tool is placed along the edge of the sheet to measure straight lines? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Ruler, Marker, Crayon in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "To measure paper margins accurately, an architect places a clear plastic ruler along the edge of a drafting sheet.",
-            "sourceQuestion": "Which tool is placed along the edge of the sheet to measure straight lines?",
-            "sourceAnswer": "Ruler",
-            "scenario": "Rami uses a ruler to draw a straight line. A marker writes broad marks; a crayon adds wax colour.",
-            "question": "Which tool guides the straight line?",
-            "imageBrief": "Adult hand drawing along plain unlabelled ruler edge on blank paper. Marker and crayon set aside; no digits or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In the training room, ruler, marker, crayon are ready for use. The ruler is beside the instructor’s notebook. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Ruler, Marker, Crayon in a natural setting."
         },
         {
           "chunkNumber": 3,
@@ -98,16 +82,8 @@
             "options": ["Pencil Sharpener", "Colored Pencil", "Highlighter"],
             "expectedAnswer": "Colored Pencil"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: On a design workshop table, a fine colored pencil lies ready beside a neat sketchpad for adding color accents. Question: Which tool is selected to draw and color fine details on the sketchpad? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Colored Pencil, Highlighter, Pencil Sharpener in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "On a design workshop table, a fine colored pencil lies ready beside a neat sketchpad for adding color accents.",
-            "sourceQuestion": "Which tool is selected to draw and color fine details on the sketchpad?",
-            "sourceAnswer": "Colored Pencil",
-            "scenario": "Rami adds colour using a colored pencil. His highlighter marks text, and a pencil sharpener sharpens the pencil.",
-            "question": "Which tool does Rami use to add colour?",
-            "imageBrief": "Adult using coloured-core pencil on simple drawing. Highlighter and sharpener nearby, no readable writing or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: During a short adult course, colored pencil, highlighter, pencil sharpener are ready for use. The colored pencil is beside the instructor’s notebook. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Colored Pencil, Highlighter, Pencil Sharpener in a natural setting."
         },
         {
           "chunkNumber": 4,
@@ -118,16 +94,8 @@
             "options": ["Pencil Case", "Notebook", "Textbook"],
             "expectedAnswer": "Pencil Case"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: Before the lecture starts, a student unzips a neat fabric pencil case to organize pens, pencils, and erasers. Question: Which pouch keeps all the loose writing tools organized together? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Pencil Case, Notebook, Textbook in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "Before the lecture starts, a student unzips a neat fabric pencil case to organize pens, pencils, and erasers.",
-            "sourceQuestion": "Which pouch keeps all the loose writing tools organized together?",
-            "sourceAnswer": "Pencil Case",
-            "scenario": "Rami stores pens in a pencil case. He opens a notebook for notes and a textbook for the lesson.",
-            "question": "Which item stores the pens?",
-            "imageBrief": "Adult unzipping pencil pouch containing pens. Closed unlabelled textbook and blank notebook nearby, no text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a community course, adults use or interact with pencil case, notebook, and textbook. The highlighted item or person is the pencil case. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Pencil Case, Notebook, Textbook in a natural setting."
         },
         {
           "chunkNumber": 5,
@@ -138,86 +106,54 @@
             "options": ["Folder", "Binder", "Workbook"],
             "expectedAnswer": "Workbook"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: For the professional training session, each attendee receives a spiral-bound printed workbook containing practical exercises. Question: Which document holds the course exercises and practice tasks? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Workbook, Folder, Binder in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "For the professional training session, each attendee receives a spiral-bound printed workbook containing practical exercises.",
-            "sourceQuestion": "Which document holds the course exercises and practice tasks?",
-            "sourceAnswer": "Workbook",
-            "scenario": "Rami completes exercises in a workbook. He keeps loose papers in a folder and a ring binder.",
-            "question": "Which book contains the practice exercises?",
-            "imageBrief": "Adult study desk with open workbook showing empty ruled exercise spaces, closed folder and ring binder. Context identifies purpose; no readable text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: At an adult evening course, adults use or interact with workbook, folder, and binder. The highlighted item or person is the workbook. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Workbook, Folder, Binder in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "Getting Ready for an Evening Class",
-      "text": "Rami prepares for an adult evening class. He puts a pencil, pen, eraser, ruler and marker on his desk. A crayon, colored pencil and highlighter are ready for colour work. A pencil sharpener and pencil case hold supplies. Rami opens his notebook, textbook and workbook. He keeps loose pages in a folder and ring binder.",
-      "imageBrief": "Adult evening-class desk with pencil, pen, eraser and closed course books. Blank pages, no readable titles or forced depiction of all supplies."
+      "text": "Before an adult evening class begins, learners prepare their materials. Rami puts a pencil, pen, eraser, ruler, and marker on his desk. For a colour task, the teacher provides a crayon, colored pencil, and highlighter. A pencil sharpener and pencil case are on the supply table. Rami opens his notebook and textbook, keeps the workbook beside them, and places completed pages in a folder inside his binder.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "On a clean seminar table, an instructor sets down a sharpened wooden pencil beside a blank notebook and an eraser.\nWhich writing instrument rests beside the notebook for taking quick notes?",
-        "answer": "Pencil",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pencil"
       },
       {
-        "prompt": "To measure paper margins accurately, an architect places a clear plastic ruler along the edge of a drafting sheet.\nWhich tool is placed along the edge of the sheet to measure straight lines?",
-        "answer": "Ruler",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Ruler"
       },
       {
-        "prompt": "On a design workshop table, a fine colored pencil lies ready beside a neat sketchpad for adding color accents.\nWhich tool is selected to draw and color fine details on the sketchpad?",
-        "answer": "Colored Pencil",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Colored Pencil"
       },
       {
-        "prompt": "Before the lecture starts, a student unzips a neat fabric pencil case to organize pens, pencils, and erasers.\nWhich pouch keeps all the loose writing tools organized together?",
-        "answer": "Pencil Case",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Pencil Case"
       },
       {
-        "prompt": "For the professional training session, each attendee receives a spiral-bound printed workbook containing practical exercises.\nWhich document holds the course exercises and practice tasks?",
-        "answer": "Workbook",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Workbook"
       },
       {
-        "prompt": "Read the passage: Rami prepares for an adult evening class. He puts a pencil, pen, eraser, ruler and marker on his desk. A crayon, colored pencil and highlighter are ready for colour work. A pencil sharpener and pencil case hold supplies. Rami opens his notebook, textbook and workbook. He keeps loose pages in a folder and ring binder.\nWhere does Rami keep loose pages?",
-        "answer": "In a folder and ring binder",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Pencil"
       },
       {
-        "prompt": "Ask to borrow a pencil.",
-        "answer": "May I borrow a pencil?",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Pen"
       },
       {
-        "prompt": "You need somewhere to keep loose pages. Ask for a folder.",
-        "answer": "May I have a folder for these pages?",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Crayon"
       }
     ],
     "video": {
-      "title": "Adult Learning Spaces",
-      "idea": "Adult evening classes, practical workshops and parent meetings. Show one object or action at a time. Narration identifies staff roles and reference-book purposes instead of inferring them from appearance. Blank documents, screens and labels; drawing compass instead of navigation compass.",
-      "scriptStarter": "Rami writes with a sharpened pencil beside a pen and eraser. The eraser removes pencil marks."
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show pencil, pen, eraser, ruler, and marker naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: Before the evening class begins, pencil, pen, eraser are ready for use. The pencil is beside the instructor’s notebook."
     },
     "spacedReview": "1 lesson(s) back: Clean House, Do Laundry from daily-routines-4\n3 lesson(s) back: Have a Meeting, Lunch Break from daily-routines-2\n7 lesson(s) back: In, On from prepositions-of-place-1"
   },
@@ -249,26 +185,26 @@
       "Bulletin Board"
     ],
     "targetWordsArabic": [
-      "ورقة",
-      "ورقة ملاحظات لاصقة",
-      "بطاقة فهرسة",
-      "قاموس",
-      "موسوعة",
+      "ورقة (فرخ ورق)",
+      "ورقة ملاحظات لاصقة (ستيكي نوت)",
+      "بطاقة فهرسة (بطاقة استذكار)",
+      "قاموس (معجم)",
+      "موسوعة (دائرة معارف)",
       "مكتب",
       "كرسي",
-      "سبورة بيضاء",
-      "جهاز عرض",
+      "لوح أبيض (سبورة بيضاء)",
+      "جهاز عرض ضوئي (بروجكتور)",
       "شاشة عرض",
-      "ساعة",
+      "ساعة حائط / ساعة",
       "مجسم الكرة الأرضية",
       "رف",
-      "خزانة قابلة للقفل",
-      "لوحة إعلانات"
+      "خزانة مدرسية (لوكر)",
+      "لوحة إعلانات (لوحة معلومات)"
     ],
     "usage": {
       "goal": "Learn to recognize and use key the classroom 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a classroom object or role and ask for help.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to the classroom in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -280,16 +216,8 @@
             "options": ["Sticky Note", "Index Card", "Sheet of Paper"],
             "expectedAnswer": "Sheet of Paper"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: During the lecture, a participant takes a crisp white sheet of paper from the stack to jot down main takeaways. Question: What surface is taken from the stack to write down lecture notes? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Sheet of Paper, Sticky Note, Index Card in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "During the lecture, a participant takes a crisp white sheet of paper from the stack to jot down main takeaways.",
-            "sourceQuestion": "What surface is taken from the stack to write down lecture notes?",
-            "sourceAnswer": "Sheet of Paper",
-            "scenario": "Rami takes a sheet of paper from a stack for notes. A sticky note has adhesive; an index card is stiffer.",
-            "question": "Which item does he take from the stack?",
-            "imageBrief": "Adult taking single blank paper sheet from stack. Plain sticky note and stiff blank card separate; no writing or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: Before the evening class begins, sheet of paper, sticky note, index card are ready for use. The sheet of paper is beside the instructor’s notebook. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Sheet of Paper, Sticky Note, Index Card in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -300,16 +228,8 @@
             "options": ["Desk", "Dictionary", "Encyclopedia"],
             "expectedAnswer": "Dictionary"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: On the reference library table, a thick hardcover dictionary stands ready for students looking up advanced vocabulary. Question: Which reference volume provides definitions and pronunciations for unfamiliar words? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Dictionary, Encyclopedia, Desk in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "On the reference library table, a thick hardcover dictionary stands ready for students looking up advanced vocabulary.",
-            "sourceQuestion": "Which reference volume provides definitions and pronunciations for unfamiliar words?",
-            "sourceAnswer": "Dictionary",
-            "scenario": "Rami looks up a word’s meaning in a dictionary. An encyclopedia gives information about subjects; both books are on his desk.",
-            "question": "Which reference work explains the word’s meaning?",
-            "imageBrief": "Adult with open reference book on desk. Printed content is not legible; context names dictionary, no title or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a computer workshop, adults use or interact with dictionary, encyclopedia, and desk. The highlighted item or person is the dictionary. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Dictionary, Encyclopedia, Desk in a natural setting."
         },
         {
           "chunkNumber": 3,
@@ -320,16 +240,8 @@
             "options": ["Chair", "Whiteboard", "Projector"],
             "expectedAnswer": "Chair"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: In the training room, an ergonomic wooden and metal chair is neatly tucked under each individual study desk. Question: Which piece of furniture provides comfortable seating for learners during class? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Chair, Whiteboard, Projector in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "In the training room, an ergonomic wooden and metal chair is neatly tucked under each individual study desk.",
-            "sourceQuestion": "Which piece of furniture provides comfortable seating for learners during class?",
-            "sourceAnswer": "Chair",
-            "scenario": "Rami sits on a chair to look at the whiteboard. A projector casts the lesson image onto a screen.",
-            "question": "Which item does Rami sit on?",
-            "imageBrief": "Adult seated on chair at study desk. Blank whiteboard and screen in background, no readable text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: During a short adult course, chair, whiteboard, projector are ready for use. The chair is beside the instructor’s notebook. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Chair, Whiteboard, Projector in a natural setting."
         },
         {
           "chunkNumber": 4,
@@ -340,16 +252,8 @@
             "options": ["Clock", "Globe", "Screen"],
             "expectedAnswer": "Screen"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: At the front of the presentation hall, a large white projection screen displays high-definition slides for the audience. Question: Which wide surface displays the projected digital slides to the whole room? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Screen, Clock, Globe in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "At the front of the presentation hall, a large white projection screen displays high-definition slides for the audience.",
-            "sourceQuestion": "Which wide surface displays the projected digital slides to the whole room?",
-            "sourceAnswer": "Screen",
-            "scenario": "The projector casts images onto a screen. A clock shows time, and a globe models the Earth.",
-            "question": "Which surface receives the projected images?",
-            "imageBrief": "Training-room projection screen with simple abstract colour image, unlabelled clock and Earth globe. No slide text or invented place labels."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: At an adult evening course, adults use or interact with screen, clock, and globe. The highlighted item or person is the screen. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Screen, Clock, Globe in a natural setting."
         },
         {
           "chunkNumber": 5,
@@ -360,86 +264,54 @@
             "options": ["Bulletin Board", "Shelf", "Locker"],
             "expectedAnswer": "Shelf"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: Along the classroom wall, a solid oak shelf neatly holds reference volumes, course folders, and neat storage bins. Question: Which wall unit holds the organized books and reference materials off the floor? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Shelf, Locker, Bulletin Board in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "Along the classroom wall, a solid oak shelf neatly holds reference volumes, course folders, and neat storage bins.",
-            "sourceQuestion": "Which wall unit holds the organized books and reference materials off the floor?",
-            "sourceAnswer": "Shelf",
-            "scenario": "A shelf holds the books. Rami’s bag is in a locker, while notices go on the bulletin board.",
-            "question": "Which item holds the books?",
-            "imageBrief": "Training-room book shelf beside closed locker and noticeboard with blank pinned papers. No titles, notices or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a workplace training room, adults use or interact with shelf, locker, and bulletin board. The highlighted item or person is the shelf. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Shelf, Locker, Bulletin Board in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "Setting Up the Training Room",
-      "text": "The trainer puts a sheet of paper, sticky note, index card, dictionary and encyclopedia on a desk. A chair is beside it. A whiteboard, projector and screen are at the front. A clock shows time, and a globe models the Earth. A shelf holds books, a locker stores bags, and a bulletin board displays notices.",
-      "imageBrief": "Adult training room with desk, chair, blank whiteboard and Earth globe. No readable labels or notices."
+      "text": "The trainer places a sheet of paper, sticky note, index card, dictionary, and encyclopedia on a reference table. The room has a desk and chair for each learner, plus a whiteboard, projector, and screen at the front. A clock and globe are easy to see, while a shelf, locker, and bulletin board hold shared materials.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "During the lecture, a participant takes a crisp white sheet of paper from the stack to jot down main takeaways.\nWhat surface is taken from the stack to write down lecture notes?",
-        "answer": "Sheet of Paper",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Sheet of Paper"
       },
       {
-        "prompt": "On the reference library table, a thick hardcover dictionary stands ready for students looking up advanced vocabulary.\nWhich reference volume provides definitions and pronunciations for unfamiliar words?",
-        "answer": "Dictionary",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Dictionary"
       },
       {
-        "prompt": "In the training room, an ergonomic wooden and metal chair is neatly tucked under each individual study desk.\nWhich piece of furniture provides comfortable seating for learners during class?",
-        "answer": "Chair",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Chair"
       },
       {
-        "prompt": "At the front of the presentation hall, a large white projection screen displays high-definition slides for the audience.\nWhich wide surface displays the projected digital slides to the whole room?",
-        "answer": "Screen",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Screen"
       },
       {
-        "prompt": "Along the classroom wall, a solid oak shelf neatly holds reference volumes, course folders, and neat storage bins.\nWhich wall unit holds the organized books and reference materials off the floor?",
-        "answer": "Shelf",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Shelf"
       },
       {
-        "prompt": "Read the passage: The trainer puts a sheet of paper, sticky note, index card, dictionary and encyclopedia on a desk. A chair is beside it. A whiteboard, projector and screen are at the front. A clock shows time, and a globe models the Earth. A shelf holds books, a locker stores bags, and a bulletin board displays notices.\nWhich object models the Earth?",
-        "answer": "A globe",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Sheet of Paper"
       },
       {
-        "prompt": "Ask where the dictionary is.",
-        "answer": "Where is the dictionary?",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Sticky Note"
       },
       {
-        "prompt": "You want a model showing the Earth. Ask for the globe.",
-        "answer": "May I see the globe?",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Desk"
       }
     ],
     "video": {
-      "title": "Adult Learning Spaces",
-      "idea": "Adult evening classes, practical workshops and parent meetings. Show one object or action at a time. Narration identifies staff roles and reference-book purposes instead of inferring them from appearance. Blank documents, screens and labels; drawing compass instead of navigation compass.",
-      "scriptStarter": "Rami takes a sheet of paper from a stack for notes. A sticky note has adhesive; an index card is stiffer."
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show sheet of paper, sticky note, index card, dictionary, and encyclopedia naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: Before the evening class begins, sheet of paper, sticky note, index card are ready for use. The sheet of paper is beside the instructor’s notebook."
     },
     "spacedReview": "1 lesson(s) back: Pencil, Pen from classroom-1\n3 lesson(s) back: Eat Dinner, Wash Dishes from daily-routines-3\n7 lesson(s) back: Against, Around from prepositions-of-place-2"
   },
@@ -473,24 +345,24 @@
     "targetWordsArabic": [
       "حقيبة ظهر",
       "مقص",
-      "قلم صمغ",
+      "أصبوع صمغ (غراء لاصق)",
       "شريط لاصق",
-      "دباسة",
+      "دباسة (دباسة أوراق)",
       "مشبك ورق",
-      "رباط مطاطي",
-      "دبوس تثبيت",
+      "رباط مطاطي (مطاط)",
+      "دبوس لوحة (دبوس ضغط)",
       "آلة حاسبة",
-      "فرجار",
-      "حاسوب",
-      "حاسوب محمول",
-      "حاسوب لوحي",
+      "فرجار (برجل)",
+      "حاسوب (كمبيوتر)",
+      "حاسوب محمول (لابتوب)",
+      "جهاز لوحي (تابلت)",
       "لوحة مفاتيح",
-      "فأرة حاسوب"
+      "فأرة حاسوب (ماوس)"
     ],
     "usage": {
       "goal": "Learn to recognize and use key the classroom 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a classroom object or role and ask for help.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to the classroom in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -502,16 +374,8 @@
             "options": ["Glue Stick", "Backpack", "Scissors"],
             "expectedAnswer": "Backpack"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: Arriving at the adult training center, a professional sets down a sleek waterproof commuter backpack beside the desk. Question: Which bag is used to carry laptops, notes, and personal supplies to class? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Backpack, Scissors, Glue Stick in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "Arriving at the adult training center, a professional sets down a sleek waterproof commuter backpack beside the desk.",
-            "sourceQuestion": "Which bag is used to carry laptops, notes, and personal supplies to class?",
-            "sourceAnswer": "Backpack",
-            "scenario": "Rami carries supplies in a backpack. At the workshop he uses scissors and a glue stick for a paper task.",
-            "question": "Which bag carries his supplies on his back?",
-            "imageBrief": "Adult with two-strap backpack beside workshop table. Closed scissors and capped glue stick; no unsafe cutting, brands or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: Before the evening class begins, backpack, scissors, glue stick are ready for use. The backpack is beside the instructor’s notebook. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Backpack, Scissors, Glue Stick in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -522,36 +386,20 @@
             "options": ["Tape", "Stapler", "Paper Clip"],
             "expectedAnswer": "Tape"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: To post an announcement on the board, an assistant cuts a neat strip of clear adhesive tape from a heavy desktop dispenser. Question: Which adhesive strip is pulled from the dispenser to fasten notices cleanly? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Tape, Stapler, Paper Clip in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "To post an announcement on the board, an assistant cuts a neat strip of clear adhesive tape from a heavy desktop dispenser.",
-            "sourceQuestion": "Which adhesive strip is pulled from the dispenser to fasten notices cleanly?",
-            "sourceAnswer": "Tape",
-            "scenario": "Rami fastens a notice with tape, an adhesive strip. A stapler and paper clip can hold other papers together.",
-            "question": "Which item is the adhesive strip?",
-            "imageBrief": "Adult pulling plain adhesive tape from dispenser, closed stapler and paper clip beside blank paper. No text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a community course, adults use or interact with tape, stapler, and paper clip. The highlighted item or person is the tape. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Tape, Stapler, Paper Clip in a natural setting."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Rubber Band", "Thumbtack", "Calculator"],
-          "scenario": "To keep the weekly handouts bundled securely, the trainer wraps a thick elastic rubber band around the paper stack. A thumbtack is ready to pin a separate notice to the board.",
+          "scenario": "To keep the weekly handouts bundled securely, the trainer wraps a thick elastic rubber band around the paper stack.",
           "check": {
             "question": "Which flexible loop holds the stack of paper handouts neatly together?",
             "options": ["Thumbtack", "Calculator", "Rubber Band"],
             "expectedAnswer": "Rubber Band"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: To keep the weekly handouts bundled securely, the trainer wraps a thick elastic rubber band around the paper stack. A thumbtack is ready to pin a separate notice to the board. Question: Which flexible loop holds the stack of paper handouts neatly together? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Rubber Band, Thumbtack, Calculator in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "To keep the weekly handouts bundled securely, the trainer wraps a thick elastic rubber band around the paper stack. A thumbtack is ready to pin a separate notice to the board.",
-            "sourceQuestion": "Which flexible loop holds the stack of paper handouts neatly together?",
-            "sourceAnswer": "Rubber Band",
-            "scenario": "A rubber band is an elastic loop around the cards. A thumbtack pins a notice; a calculator helps with sums.",
-            "question": "Which item is the elastic loop?",
-            "imageBrief": "Stack of blank cards secured with rubber band, thumbtack safely in tray and calculator with blank display. No digits or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: At an adult evening course, adults use or interact with rubber band, thumbtack, and calculator. The highlighted item or person is the rubber band. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Rubber Band, Thumbtack, Calculator in a natural setting."
         },
         {
           "chunkNumber": 4,
@@ -562,16 +410,8 @@
             "options": ["Laptop", "Compass", "Computer"],
             "expectedAnswer": "Compass"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: In the technical drawing workshop, a draftsman uses a precision brass compass to draw a perfect geometric circle. Question: Which instrument is used to scribe accurate circles and arcs on technical plans? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Compass, Computer, Laptop in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "In the technical drawing workshop, a draftsman uses a precision brass compass to draw a perfect geometric circle.",
-            "sourceQuestion": "Which instrument is used to scribe accurate circles and arcs on technical plans?",
-            "sourceAnswer": "Compass",
-            "scenario": "Rami draws a circle with a compass, the two-legged drawing tool. A computer and laptop are used for other tasks.",
-            "question": "Which tool draws the circle?",
-            "imageBrief": "Adult hand using drawing compass with two legs on paper. One simple circle, no navigation compass, readable computer screens or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a workplace training room, adults use or interact with compass, computer, and laptop. The highlighted item or person is the compass. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Compass, Computer, Laptop in a natural setting."
         },
         {
           "chunkNumber": 5,
@@ -582,86 +422,54 @@
             "options": ["Tablet", "Keyboard", "Mouse"],
             "expectedAnswer": "Tablet"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: During the interactive language lab, a learner uses a slim digital tablet with a stylus to complete grammar drills. Question: Which touchscreen mobile device displays digital exercises and accepts stylus input? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Tablet, Keyboard, Mouse in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "During the interactive language lab, a learner uses a slim digital tablet with a stylus to complete grammar drills.",
-            "sourceQuestion": "Which touchscreen mobile device displays digital exercises and accepts stylus input?",
-            "sourceAnswer": "Tablet",
-            "scenario": "Rami uses a tablet with a touchscreen. A keyboard and mouse are connected to the desktop computer.",
-            "question": "Which portable device has the touchscreen?",
-            "imageBrief": "Adult holding generic tablet with blank screen. Desktop keyboard and mouse aside, no app labels or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a language class, adults use or interact with tablet, keyboard, and mouse. The highlighted item or person is the tablet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Tablet, Keyboard, Mouse in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "Tools for a Practical Workshop",
-      "text": "Rami brings a backpack to the workshop. He uses scissors, a glue stick, tape, a stapler, paper clips and rubber bands for paper tasks. Thumbtacks pin notices. A calculator checks sums; a compass draws circles. The room also has a computer, laptop and tablet for digital tasks, with a keyboard and mouse at the desktop.",
-      "imageBrief": "Adult workshop desk with closed scissors, capped glue stick, calculator and drawing compass. Blank displays and paper, no digits or text."
+      "text": "For a practical workshop, learners bring a backpack and use scissors, a glue stick, tape, a stapler, paper clips, rubber bands, and thumbtacks. A calculator and compass are available for number and drawing tasks. For digital work, the room has a computer, laptop, tablet, keyboard, and mouse. The vocabulary is used in a realistic the classroom context that an adult could meet at home, at work, or in the community.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Arriving at the adult training center, a professional sets down a sleek waterproof commuter backpack beside the desk.\nWhich bag is used to carry laptops, notes, and personal supplies to class?",
-        "answer": "Backpack",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Backpack"
       },
       {
-        "prompt": "To post an announcement on the board, an assistant cuts a neat strip of clear adhesive tape from a heavy desktop dispenser.\nWhich adhesive strip is pulled from the dispenser to fasten notices cleanly?",
-        "answer": "Tape",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tape"
       },
       {
-        "prompt": "To keep the weekly handouts bundled securely, the trainer wraps a thick elastic rubber band around the paper stack. A thumbtack is ready to pin a separate notice to the board.\nWhich flexible loop holds the stack of paper handouts neatly together?",
-        "answer": "Rubber Band",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Rubber Band"
       },
       {
-        "prompt": "In the technical drawing workshop, a draftsman uses a precision brass compass to draw a perfect geometric circle.\nWhich instrument is used to scribe accurate circles and arcs on technical plans?",
-        "answer": "Compass",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Compass"
       },
       {
-        "prompt": "During the interactive language lab, a learner uses a slim digital tablet with a stylus to complete grammar drills.\nWhich touchscreen mobile device displays digital exercises and accepts stylus input?",
-        "answer": "Tablet",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Tablet"
       },
       {
-        "prompt": "Read the passage: Rami brings a backpack to the workshop. He uses scissors, a glue stick, tape, a stapler, paper clips and rubber bands for paper tasks. Thumbtacks pin notices. A calculator checks sums; a compass draws circles. The room also has a computer, laptop and tablet for digital tasks, with a keyboard and mouse at the desktop.\nWhich tool draws circles?",
-        "answer": "A compass",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Backpack"
       },
       {
-        "prompt": "Ask to use the calculator.",
-        "answer": "May I use the calculator?",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Scissors"
       },
       {
-        "prompt": "You need to draw a circle. Ask to borrow a drawing compass.",
-        "answer": "May I borrow a compass to draw a circle?",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Paper Clip"
       }
     ],
     "video": {
-      "title": "Adult Learning Spaces",
-      "idea": "Adult evening classes, practical workshops and parent meetings. Show one object or action at a time. Narration identifies staff roles and reference-book purposes instead of inferring them from appearance. Blank documents, screens and labels; drawing compass instead of navigation compass.",
-      "scriptStarter": "Rami carries supplies in a backpack. At the workshop he uses scissors and a glue stick for a paper task."
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show backpack, scissors, glue stick, tape, and stapler naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: Before the evening class begins, backpack, scissors, glue stick are ready for use. The backpack is beside the instructor’s notebook."
     },
     "spacedReview": "1 lesson(s) back: Sheet of Paper, Sticky Note from classroom-2\n3 lesson(s) back: Clean House, Do Laundry from daily-routines-4\n7 lesson(s) back: Top, Bottom from prepositions-of-place-3"
   },
@@ -694,25 +502,25 @@
     ],
     "targetWordsArabic": [
       "طابعة",
-      "وحدة تخزين يو إس بي",
-      "سماعات رأس",
-      "جهاز تحكم عن بُعد لجهاز العرض",
+      "ذاكرة فلاش (فلاشة يو إس بي)",
+      "سماعات الرأس (هيدفونز)",
+      "جهاز التحكم عن بعد لجهاز العرض (ريموت البروجكتور)",
       "شاحن",
-      "معلّم",
-      "طالب",
-      "مدير مدرسة",
-      "أمين مكتبة",
-      "عامل نظافة وصيانة",
-      "ممرّض المدرسة",
-      "معلّم بديل",
-      "مساعد تدريس",
-      "مرشد أو مستشار",
-      "حارس أمن"
+      "معلم (معلمة)",
+      "طالب (تلميذ)",
+      "مدير المدرسة",
+      "أمين المكتبة",
+      "عامل نظافة مدرسي (حارس مبنى)",
+      "ممرضة المدرسة",
+      "معلم بديل (مدرس منتدب)",
+      "مساعد معلم",
+      "مرشد طلابي (مرشد نفسي)",
+      "حارس أمن مدرسي"
     ],
     "usage": {
       "goal": "Learn to recognize and use key the classroom 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a classroom object or role and ask for help.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to the classroom in very simple everyday situations.",
+      "textType": "dialogue",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -724,16 +532,8 @@
             "options": ["Printer", "USB Drive", "Headphones"],
             "expectedAnswer": "Printer"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: Beside the instructor's workstation, a compact laser printer smoothly delivers newly printed course syllabi into the output tray. Question: Which machine produces physical paper copies of digital documents? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Printer, USB Drive, Headphones in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "Beside the instructor's workstation, a compact laser printer smoothly delivers newly printed course syllabi into the output tray.",
-            "sourceQuestion": "Which machine produces physical paper copies of digital documents?",
-            "sourceAnswer": "Printer",
-            "scenario": "The printer makes paper copies. Rami stores files on a USB drive and uses headphones to listen.",
-            "question": "Which machine makes the paper copies?",
-            "imageBrief": "Printer delivering blank-looking page beside USB storage stick and headphones. No readable pages, logos or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: Before the evening class begins, printer, usb drive, headphones are ready for use. The printer is beside the instructor’s notebook. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Printer, USB Drive, Headphones in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -744,16 +544,8 @@
             "options": ["Charger", "Teacher", "Projector Remote"],
             "expectedAnswer": "Projector Remote"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: To advance slides smoothly without returning to the podium, the presenter holds a compact black projector remote in hand. Question: Which handheld device controls the presentation slides from across the room? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Projector Remote, Charger, Teacher in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "To advance slides smoothly without returning to the podium, the presenter holds a compact black projector remote in hand.",
-            "sourceQuestion": "Which handheld device controls the presentation slides from across the room?",
-            "sourceAnswer": "Projector Remote",
-            "scenario": "The teacher uses a projector remote to control the display. A charger supplies power to recharge a device’s battery.",
-            "question": "Which handheld device controls the projector display?",
-            "imageBrief": "Adult teacher holding generic projector remote beside blank screen. Context confirms compatible equipment, no labels, button text or logos."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: At an adult evening course, adults use or interact with projector remote, charger, and teacher. The highlighted item or person is the projector remote. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Projector Remote, Charger, Teacher in a natural setting."
         },
         {
           "chunkNumber": 3,
@@ -764,16 +556,8 @@
             "options": ["Librarian", "Student", "Principal"],
             "expectedAnswer": "Student"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: In an evening adult seminar, a focused adult student sits at his desk taking careful notes in a journal. Question: Who is the adult attendee actively participating in the learning session? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Student, Principal, Librarian in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "In an evening adult seminar, a focused adult student sits at his desk taking careful notes in a journal.",
-            "sourceQuestion": "Who is the adult attendee actively participating in the learning session?",
-            "sourceAnswer": "Student",
-            "scenario": "Rami is the student learning in the class. The principal leads the school, and a librarian helps with library materials.",
-            "question": "Who is the learner in the class?",
-            "imageBrief": "Adult learner seated at evening class desk. Context supplies roles, no role labels or stereotype-based identification."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a workplace training room, adults use or interact with student, principal, and librarian. The highlighted item or person is the student. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Student, Principal, Librarian in a natural setting."
         },
         {
           "chunkNumber": 4,
@@ -784,16 +568,8 @@
             "options": ["Janitor", "School Nurse", "Substitute Teacher"],
             "expectedAnswer": "Janitor"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: After the day's classes end, a dependable maintenance worker mops and polishes the wide hallway floor to keep the facility clean. Question: Who ensures the school facilities and corridors remain clean and sanitized? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Janitor, School Nurse, Substitute Teacher in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "After the day's classes end, a dependable maintenance worker mops and polishes the wide hallway floor to keep the facility clean.",
-            "sourceQuestion": "Who ensures the school facilities and corridors remain clean and sanitized?",
-            "sourceAnswer": "Janitor",
-            "scenario": "The janitor cleans the hall. The school nurse supports health needs; a substitute teacher takes another teacher’s place.",
-            "question": "Who cleans the hall in this situation?",
-            "imageBrief": "Adult building worker mopping empty hallway. Context supplies job title, no chemical mixing, medical activity, labels or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a language class, adults use or interact with janitor, school nurse, and substitute teacher. The highlighted item or person is the janitor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Janitor, School Nurse, Substitute Teacher in a natural setting."
         },
         {
           "chunkNumber": 5,
@@ -804,86 +580,54 @@
             "options": ["Counselor", "Security Guard", "Teaching Assistant"],
             "expectedAnswer": "Teaching Assistant"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: Supporting the lead instructor, a dedicated teaching assistant distributes supplementary exercise handouts to students. Question: Who assists the professor by managing handouts and supporting learners? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Teaching Assistant, Counselor, Security Guard in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "Supporting the lead instructor, a dedicated teaching assistant distributes supplementary exercise handouts to students.",
-            "sourceQuestion": "Who assists the professor by managing handouts and supporting learners?",
-            "sourceAnswer": "Teaching Assistant",
-            "scenario": "The teaching assistant helps the teacher distribute worksheets. A counselor discusses choices; the security guard works at the entrance.",
-            "question": "Who helps distribute the worksheets?",
-            "imageBrief": "Adult assistant handing blank worksheets to adult learners beside teacher. Context supplies roles, no readable sheets, role labels or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a computer workshop, adults use or interact with teaching assistant, counselor, and security guard. The highlighted item or person is the teaching assistant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Teaching Assistant, Counselor, Security Guard in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "Technology and People in the Learning Centre",
-      "text": "The centre has a printer, USB drive, headphones, projector remote and charger. Rami is a student; a teacher leads his class. The school principal and librarian welcome visitors. A janitor cleans the hall, and a school nurse supports health needs. A substitute teacher covers a class. A teaching assistant helps learners; a counselor discusses choices, and a security guard watches the entrance.",
-      "imageBrief": "Adult learning-centre corridor with one staff member cleaning and adult learner at desk in background. Narration identifies staff roles; no role labels or stereotypes."
+      "text": "The learning centre has a printer, USB drive, headphones, projector remote, and charger for shared technology. During the course, a teacher works with each student. Other staff may include the principal, librarian, janitor, school nurse, substitute teacher, teaching assistant, counselor, and security guard. Learners know who to ask when they need academic, technical, or practical help.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "Beside the instructor's workstation, a compact laser printer smoothly delivers newly printed course syllabi into the output tray.\nWhich machine produces physical paper copies of digital documents?",
-        "answer": "Printer",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Printer"
       },
       {
-        "prompt": "To advance slides smoothly without returning to the podium, the presenter holds a compact black projector remote in hand.\nWhich handheld device controls the presentation slides from across the room?",
-        "answer": "Projector Remote",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Projector Remote"
       },
       {
-        "prompt": "In an evening adult seminar, a focused adult student sits at his desk taking careful notes in a journal.\nWho is the adult attendee actively participating in the learning session?",
-        "answer": "Student",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-3"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Student"
       },
       {
-        "prompt": "After the day's classes end, a dependable maintenance worker mops and polishes the wide hallway floor to keep the facility clean.\nWho ensures the school facilities and corridors remain clean and sanitized?",
-        "answer": "Janitor",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-4"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Janitor"
       },
       {
-        "prompt": "Supporting the lead instructor, a dedicated teaching assistant distributes supplementary exercise handouts to students.\nWho assists the professor by managing handouts and supporting learners?",
-        "answer": "Teaching Assistant",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-5"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Teaching Assistant"
       },
       {
-        "prompt": "Read the passage: The centre has a printer, USB drive, headphones, projector remote and charger. Rami is a student; a teacher leads his class. The school principal and librarian welcome visitors. A janitor cleans the hall, and a school nurse supports health needs. A substitute teacher covers a class. A teaching assistant helps learners; a counselor discusses choices, and a security guard watches the entrance.\nWho cleans the hall?",
-        "answer": "A janitor",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Printer"
       },
       {
-        "prompt": "Tell someone that you are a student in an adult class.",
-        "answer": "I am a student in an adult class.",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "USB Drive"
       },
       {
-        "prompt": "You need help finding a library book. Say whom you will ask.",
-        "answer": "I will ask the librarian.",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Teacher"
       }
     ],
     "video": {
-      "title": "Adult Learning Spaces",
-      "idea": "Adult evening classes, practical workshops and parent meetings. Show one object or action at a time. Narration identifies staff roles and reference-book purposes instead of inferring them from appearance. Blank documents, screens and labels; drawing compass instead of navigation compass.",
-      "scriptStarter": "The printer makes paper copies. Rami stores files on a USB drive and uses headphones to listen."
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show printer, usb drive, headphones, projector remote, and charger naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: Before the evening class begins, printer, usb drive, headphones are ready for use. The printer is beside the instructor’s notebook."
     },
     "spacedReview": "1 lesson(s) back: Backpack, Scissors from classroom-3\n3 lesson(s) back: Pencil, Pen from classroom-1\n7 lesson(s) back: Wake Up, Alarm Clock from daily-routines-1"
   },
@@ -899,17 +643,17 @@
     "stageName": "Pre-A1 Starter",
     "targetWordsEnglish": ["Homework", "Test", "Recess", "Bell", "Grade", "Uniform"],
     "targetWordsArabic": [
-      "واجب منزلي",
-      "اختبار",
-      "استراحة بين الدروس",
-      "جرس",
-      "درجة تقييم",
-      "زي موحّد"
+      "واجب منزلي (فرض مدرسي)",
+      "اختبار (امتحان)",
+      "فسحة (استراحة مدرسية)",
+      "جرس الملعب",
+      "درجة (علامة تقييمية)",
+      "زي مدرسي (زي موحد)"
     ],
     "usage": {
       "goal": "Learn to recognize and use key the classroom 5 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "With the supplied context, can identify a classroom object or role and ask for help.",
-      "textType": "short-narrative",
+      "canDoStatement": "Can recognize and use a few familiar words related to the classroom in very simple everyday situations.",
+      "textType": "service-notice",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -921,16 +665,8 @@
             "options": ["Test", "Recess", "Homework"],
             "expectedAnswer": "Homework"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: After attending the evening session, the learner finishes his assigned homework at his home desk before the next class. Question: What assigned study tasks does a student complete independently outside class hours? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Homework, Test, Recess in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "After attending the evening session, the learner finishes his assigned homework at his home desk before the next class.",
-            "sourceQuestion": "What assigned study tasks does a student complete independently outside class hours?",
-            "sourceAnswer": "Homework",
-            "scenario": "Rami completes homework outside class. A test checks his knowledge; the school notice also mentions recess, a break between lessons.",
-            "question": "Which word names the work completed outside class?",
-            "imageBrief": "Adult learner studying at home with blank notebook. No child classroom, test score, readable writing or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: At an adult evening course, adults use or interact with homework, test, and recess. The highlighted item or person is the homework. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Homework, Test, Recess in a natural setting."
         },
         {
           "chunkNumber": 2,
@@ -941,65 +677,42 @@
             "options": ["Uniform", "Bell", "Grade"],
             "expectedAnswer": "Bell"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: On the front reception counter, a polished brass bell sits ready for visitors who need assistance from the office staff. Question: Which metal chime is tapped to signal for reception staff at the front desk? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Bell, Grade, Uniform in a natural setting.",
-          "learningContext": {
-            "sourceScenario": "On the front reception counter, a polished brass bell sits ready for visitors who need assistance from the office staff.",
-            "sourceQuestion": "Which metal chime is tapped to signal for reception staff at the front desk?",
-            "sourceAnswer": "Bell",
-            "scenario": "Rami taps a metal bell at reception. A grade is an assessment mark; a uniform is a set of clothes identifying a group.",
-            "question": "Which object rings when tapped at reception?",
-            "imageBrief": "Metal reception bell on plain counter. No readable notices, scores, clothing labels or text."
-          }
+          "imageBrief": "Photorealistic adult real-world scene in a the classroom context illustrating this situation: In a workplace training room, adults use or interact with bell, grade, and uniform. The highlighted item or person is the bell. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
+          "imageAlt": "Adult the classroom scene showing lesson-related items or actions including Bell, Grade, Uniform in a natural setting."
         }
       ]
     },
     "reading": {
       "title": "Reading a School Notice",
-      "text": "An adult parent reads a school notice. It mentions homework, a test and recess, the break between lessons. A bell signals the start of class. The parent asks about the test grade and school uniform. Later the parent meets the teacher to discuss the notice.",
-      "imageBrief": "Adult parent holding blank-looking school notice beside teacher at meeting. Context supplies recess, grade and uniform; no readable notice or child assessment labels."
+      "text": "An adult parent reads a school notice before a meeting. It mentions homework, an upcoming test, recess times, the school bell, each student's grade, and the required uniform. The parent writes down two questions to ask the teacher and checks the meeting time before leaving home. The vocabulary is used in a realistic the classroom context that an adult could meet at home, at work, or in the community.",
+      "imageBrief": "One uncluttered the classroom scene supporting the reading and showing the first six target words."
     },
     "exercises": [
       {
-        "prompt": "After attending the evening session, the learner finishes his assigned homework at his home desk before the next class.\nWhat assigned study tasks does a student complete independently outside class hours?",
-        "answer": "Homework",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-1"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Homework"
       },
       {
-        "prompt": "On the front reception counter, a polished brass bell sits ready for visitors who need assistance from the office staff.\nWhich metal chime is tapped to signal for reception staff at the front desk?",
-        "answer": "Bell",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "scene-2"
+        "prompt": "Image Recognition: Which word best matches the picture?",
+        "answer": "Bell"
       },
       {
-        "prompt": "Read the passage: An adult parent reads a school notice. It mentions homework, a test and recess, the break between lessons. A bell signals the start of class. The parent asks about the test grade and school uniform. Later the parent meets the teacher to discuss the notice.\nWhat does recess mean in the notice?",
-        "answer": "The break between lessons",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
+        "answer": "Homework"
       },
       {
-        "prompt": "Ask the teacher what homework is due.",
-        "answer": "What homework is due?",
-        "questionType": "production",
-        "responseMode": "spoken",
-        "contextTag": "personal-use"
+        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
+        "answer": "Test"
       },
       {
-        "prompt": "The notice mentions an assessment mark. Ask about the test grade.",
-        "answer": "What grade did the learner receive for the test?",
-        "questionType": "transfer",
-        "responseMode": "spoken",
-        "contextTag": "new-setting"
+        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
+        "answer": "Uniform"
       }
     ],
     "video": {
-      "title": "Adult Learning Spaces",
-      "idea": "Adult evening classes, practical workshops and parent meetings. Show one object or action at a time. Narration identifies staff roles and reference-book purposes instead of inferring them from appearance. Blank documents, screens and labels; drawing compass instead of navigation compass.",
-      "scriptStarter": "Rami completes homework outside class. A test checks his knowledge; the school notice also mentions recess, a break between lessons."
+      "title": "The Classroom: See It, Say It",
+      "idea": "30–50 second contextual video set in a classroom. Show homework, test, recess, bell, and grade naturally, pause once for the learner to identify a word, then reveal the answer.",
+      "scriptStarter": "Watch the situation: At an adult evening course, adults use or interact with homework, test, and recess. The highlighted item or person is the homework."
     },
     "spacedReview": "1 lesson(s) back: Printer, USB Drive from classroom-4\n3 lesson(s) back: Sheet of Paper, Sticky Note from classroom-2\n7 lesson(s) back: Have a Meeting, Lunch Break from daily-routines-2"
   }

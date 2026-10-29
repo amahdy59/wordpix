@@ -129,8 +129,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Pie Crust",
-        en: "He dusted the wooden rolling pin with flour before rolling out the pastry dough.",
-        ar: "رش الشوبك الخشبي بالدقيق قبل فرد عجينة المعجنات.",
+        en: "She dusted the wooden rolling pin with flour before rolling out the pastry dough.",
+        ar: "رَشَّتِ النَّشَّابَةَ الخَشَبِيَّةَ بِالطَّحِينِ قَبْلَ فَرْدِ عَجِينَةِ الفَطِيرَةِ.",
       },
       {
         context: "Pizza Making",
@@ -144,8 +144,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He dusted the wooden rolling pin with flour before rolling out the pastry dough.",
-    exampleArabic: "رش الشوبك الخشبي بالدقيق قبل فرد عجينة المعجنات.",
+      "She dusted the wooden rolling pin with flour before rolling out the pastry dough.",
+    exampleArabic:
+      "رَشَّتِ النَّشَّابَةَ الخَشَبِيَّةَ بِالطَّحِينِ قَبْلَ فَرْدِ عَجِينَةِ الفَطِيرَةِ.",
   },
   window: {
     id: "window",
@@ -166,7 +167,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "look out",
         meaning: "gaze through a window",
         arabic: "يَنْظُرُ مِنَ النَّافِذَة",
-        example: "He loved to look out the window and watch the falling rain.",
+        example: "She loved to look out the window and watch the falling rain.",
       },
       {
         phrase: "open up",
@@ -271,8 +272,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Skating Gear",
-        en: "He fastened cushioned knee pads over his jeans before rollerblading.",
-        ar: "ثبت واقيي الركبتين المبطنين فوق سرواله الجينز قبل التزلج بالعجلات.",
+        en: "She fastened cushioned knee pads over her jeans before rollerblading.",
+        ar: "ثَبَّتَتْ وَاقِيَاتِ الرُّكَبِ المُبَطَّنَةَ فَوْقَ بِنْطَالِهَا الجِينْزِ قَبْلَ التَّزَلُّجِ.",
       },
       {
         context: "Safety",
@@ -285,8 +286,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يَنْبَغِي لِلْمُتَزَلِّجِينَ المُبْتَدِئِينَ ارْتِدَاءُ وَاقِيَاتِ الكُوعِ وَالرُّكْبَةِ دَائِمًا.",
       },
     ],
-    exampleSentence: "He fastened cushioned knee pads over his jeans before rollerblading.",
-    exampleArabic: "ثبت واقيي الركبتين المبطنين فوق سرواله الجينز قبل التزلج بالعجلات.",
+    exampleSentence: "She fastened cushioned knee pads over her jeans before rollerblading.",
+    exampleArabic:
+      "ثَبَّتَتْ وَاقِيَاتِ الرُّكَبِ المُبَطَّنَةَ فَوْقَ بِنْطَالِهَا الجِينْزِ قَبْلَ التَّزَلُّجِ.",
   },
   "rubber-mat": {
     id: "rubber-mat",
@@ -558,8 +560,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Patient Scan",
-        en: "The patient went down to radiology to get an ultrasound of his abdomen.",
-        ar: "نزل المريض إلى قسم الأشعة لإجراء فحص بالموجات فوق الصوتية لبطنه.",
+        en: "The patient went down to radiology to get an ultrasound of her abdomen.",
+        ar: "ذَهَبَتِ المَرِيضَةُ إِلَى قِسْمِ الأَشِعَّةِ لِإِجْرَاءِ فَحْصِ السُّونَارِ عَلَى البَطْنِ.",
       },
       {
         context: "Safety Protocols",

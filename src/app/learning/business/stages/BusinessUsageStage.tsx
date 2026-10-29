@@ -78,20 +78,23 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
   );
 
   return (
-    <div className="wp-container-content wp-stage-flow flex flex-col gap-4 py-2">
+    <div className="wp-stage-flow wp-container-content flex flex-col gap-4 py-2">
       {/* Header Tag */}
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-black uppercase tracking-wider text-primary">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
           <Layers className="size-4" aria-hidden />
           {t("business.usage.stageTag")}
         </span>
-        <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">
+        <span className="text-sm font-semibold text-muted-foreground">
           {t("business.usage.functionalPatternTag", { level: unit.level })}
         </span>
       </div>
 
       {/* Hero Card */}
-      <section className="space-y-2" aria-labelledby="usage-focus-title">
+      <section
+        className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-wp-sm"
+        aria-labelledby="usage-focus-title"
+      >
         <p className="text-sm font-semibold text-primary">
           {t("business.usage.linguisticFramework")}
         </p>
@@ -110,7 +113,10 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
       </section>
 
       {/* Framework Matrix Grid / Cards */}
-      <section className="min-w-0" aria-labelledby="usage-focus-title">
+      <section
+        className="rounded-3xl border border-border bg-card p-5 sm:p-8 shadow-wp-sm"
+        aria-label="Framework Matrix Rules"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {matrixCards.map((card, idx) => (
             <div
@@ -135,11 +141,7 @@ export function BusinessUsageStage({ unit, onNext }: Props) {
                 )}
               </div>
 
-              <div
-                className="border-t border-border pt-3 text-base text-foreground leading-relaxed"
-                lang="en"
-                dir="ltr"
-              >
+              <div className="rounded-xl bg-card p-3.5 border border-border/70 text-base font-medium text-foreground italic font-serif leading-relaxed">
                 {`“${card.example}”`}
               </div>
             </div>

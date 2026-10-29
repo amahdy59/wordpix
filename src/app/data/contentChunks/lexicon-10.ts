@@ -58,7 +58,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "sort through",
         meaning: "examine items in a drawer",
         arabic: "يَفْرِزُ وَيُفَتِّشُ",
-        example: "He sorted through the chest of drawers for warm socks.",
+        example: "She sorted through the chest of drawers for warm socks.",
       },
     ],
     sentences: [
@@ -120,8 +120,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Entering a Room",
-        en: "He reached out in the dark and flipped the light switch beside the door.",
-        ar: "مد يده في الظلام وقلب مفتاح الإضاءة بجوار الباب.",
+        en: "She reached out in the dark and flipped the light switch beside the door.",
+        ar: "مَدَّتْ يَدَهَا فِي الظَّلامِ وَضَغَطَتْ مِفْتَاحَ الإِضَاءَةِ بِجِوَارِ البَابِ.",
       },
       {
         context: "Energy Conservation",
@@ -134,8 +134,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يَتَّصِلُ مِفْتَاحُ الإِضَاءَةِ الذَّكِيُّ بِالشَّبَكَةِ لِلتَّحَكُّمِ فِيهِ عَبْرَ هَاتِفِكَ.",
       },
     ],
-    exampleSentence: "He reached out in the dark and flipped the light switch beside the door.",
-    exampleArabic: "مد يده في الظلام وقلب مفتاح الإضاءة بجوار الباب.",
+    exampleSentence: "She reached out in the dark and flipped the light switch beside the door.",
+    exampleArabic:
+      "مَدَّتْ يَدَهَا فِي الظَّلامِ وَضَغَطَتْ مِفْتَاحَ الإِضَاءَةِ بِجِوَارِ البَابِ.",
   },
   "reading-light": {
     id: "reading-light",
@@ -156,7 +157,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "clip onto",
         meaning: "attach a clip-on light to a book or headboard",
         arabic: "يُثَبِّتُ بِالمِشْبَك",
-        example: "He clipped the reading light onto his novel.",
+        example: "She clipped the reading light onto her novel.",
       },
       {
         phrase: "switch on",
@@ -168,8 +169,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Night Reading",
-        en: "He attached a small clip-on reading light to his book so he wouldn't wake his roommate.",
-        ar: "ثبت مصباح قراءة صغيرا على كتابه حتى لا يوقظ زميله في الغرفة.",
+        en: "She attached a small clip-on reading light to her book so she wouldn't wake her roommate.",
+        ar: "ثَبَّتَتْ مِصْبَاحَ قِرَاءَةٍ صَغِيرَاً بِمِشْبَكٍ عَلَى كِتَابِهَا حَتَّى لا تُوقِظَ زَمِيلَتَهَا.",
       },
       {
         context: "Bedside Fixture",
@@ -183,8 +184,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He attached a small clip-on reading light to his book so he wouldn't wake his roommate.",
-    exampleArabic: "ثبت مصباح قراءة صغيرا على كتابه حتى لا يوقظ زميله في الغرفة.",
+      "She attached a small clip-on reading light to her book so she wouldn't wake her roommate.",
+    exampleArabic:
+      "ثَبَّتَتْ مِصْبَاحَ قِرَاءَةٍ صَغِيرَاً بِمِشْبَكٍ عَلَى كِتَابِهَا حَتَّى لا تُوقِظَ زَمِيلَتَهَا.",
   },
   tapestry: {
     id: "tapestry",
@@ -260,8 +262,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Indoor Plant",
-        en: "He placed a potted peace lily in the corner of the shaded living room.",
-        ar: "وضع زنبق سلام في أصيص في زاوية غرفة المعيشة المظللة.",
+        en: "She placed a potted peace lily in the corner of the shaded living room.",
+        ar: "وَضَعَتْ نَبْتَةَ زَنْبَقِ السَّلامِ فِي زَاوِيَةِ غُرْفَةِ المَعِيشَةِ الظَّلِيلَةِ.",
       },
       {
         context: "Perfume",
@@ -298,8 +300,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Floral Aesthetics",
-        en: "The velvety rose petal felt exceptionally soft between his fingertips.",
-        ar: "شعر بنعومة بتلة الورد المخملية بين أطراف أصابعه.",
+        en: "The velvety rose petal felt exceptionally soft between her fingertips.",
+        ar: "كَانَتْ بَتَلَةُ الوَرْدِ المَخْمَلِيَّةُ نَاعِمَةً لِلْغَايَةِ بَيْنَ أَطْرَافِ أَصَابِعِهَا.",
       },
       {
         context: "Wedding Decoration",
@@ -341,7 +343,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "reach for",
         meaning: "grab the medical box quickly",
         arabic: "يَتَنَاوَلُ الحَقِيبَة",
-        example: "He reached for the first-aid kit after accidentally cutting his finger.",
+        example: "She reached for the first-aid kit after accidentally cutting her finger.",
       },
     ],
     sentences: [
@@ -485,8 +487,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Farmers Market",
-        en: "He picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
-        ar: "قطف سلة من الطماطم الحمراء الناضجة لسلطة المساء.",
+        en: "She picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
+        ar: "اخْتَارَتْ سَلَّةً مِنْ طَمَاطِمَ حَمْرَاءَ مُمْتَلِئَةٍ نَاضِجَةٍ عَلَى الكَرْمَةِ لِسَلَطَةِ اللَّيْلَةِ.",
       },
       {
         context: "Sauce Making",
@@ -499,8 +501,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَتَكَامَلُ شَرَائِحُ الطَّمَاطِمِ الحَمْرَاءِ العَصِيرِيَّةِ السَّمِيكَةِ مَعَ الجُبْنِ الذَّائِبِ فِي الشَّطِيرَةِ.",
       },
     ],
-    exampleSentence: "He picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
-    exampleArabic: "قطف سلة من الطماطم الحمراء الناضجة لسلطة المساء.",
+    exampleSentence: "She picked a basket of plump vine-ripened red tomatoes for tonight's salad.",
+    exampleArabic:
+      "اخْتَارَتْ سَلَّةً مِنْ طَمَاطِمَ حَمْرَاءَ مُمْتَلِئَةٍ نَاضِجَةٍ عَلَى الكَرْمَةِ لِسَلَطَةِ اللَّيْلَةِ.",
   },
   lamb: {
     id: "lamb",
@@ -645,7 +648,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "pull on",
         meaning: "stretch rubber cover over hair",
         arabic: "يَرْتَدِي قُبَّعَةَ السِّبَاحَة",
-        example: "He pulled on his silicone swim cap.",
+        example: "She pulled on her silicone swim cap.",
       },
     ],
     sentences: [

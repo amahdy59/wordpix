@@ -132,134 +132,126 @@ export function ConversationLessonScreen({ unitId, initialStage, dispatch }: Pro
       <p className="sr-only" aria-live="polite">
         {stageAnnouncement}
       </p>
-      {/* Responsive Workspace Layout */}
-      <div className="wp-container-shell wp-layout-gutter py-3 sm:py-5">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
-          {/* Side-Rail Workspace on Desktop (lg+) / Navigation Header on Mobile */}
-          <div className="wp-course-sidebar w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
-            {/* Top Bar with Back and Unit Metadata */}
-            <div className="flex items-center justify-between gap-3">
-              <button
-                type="button"
-                onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-                className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-border bg-card px-3.5 py-1 text-sm font-bold text-foreground hover:bg-muted shadow-wp-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-              >
-                <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-                <span>{t("ux.backToCourse")}</span>
-              </button>
+      {/* Sticky Header & Stepper */}
+      <div className="shrink-0">
+        <div className="wp-container-content wp-layout-gutter flex flex-col gap-3">
+          {/* Top Bar with Back and Unit Metadata */}
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <button
+              type="button"
+              onClick={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-xl px-2.5 py-1 text-sm font-bold text-foreground hover:bg-muted focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            >
+              <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
+              <span>{t("conversation.allUnits")}</span>
+            </button>
 
+            <div className="flex items-center gap-2">
               <span className="rounded-lg bg-secondary px-2.5 py-1 text-sm font-black text-primary">
                 {t("conversation.level", { level: unit.level })}
               </span>
+              <span className="text-sm font-bold text-muted-foreground hidden sm:inline">
+                {t("conversation.unitOfTotal", { number: unit.unitNumber, total: 40 })}
+              </span>
             </div>
-
-            {/* Unit Context Card */}
-            <div className="wp-course-context rounded-2xl border border-border bg-card p-4 shadow-wp-xs space-y-3">
-              <header>
-                <p className="text-xs sm:text-sm font-semibold text-primary">
-                  {t("conversation.unitOfTotal", { number: unit.unitNumber, total: 40 })}
-                </p>
-                <h2 className="mt-1 text-lg sm:text-xl font-bold text-foreground">{unit.title}</h2>
-              </header>
-
-              <div className="wp-course-sticky pt-2 border-t border-border">
-                <CourseLessonNavigation
-                  stages={STAGE_CONFIG.map((stage, idx) => ({
-                    id: stage.id,
-                    label: t(`conversation.stages.${stage.id}`),
-                    group: ([0, 0, 1, 1, 2, 3, 3] as const)[idx],
-                    completed: completedStages.has(stage.id) || isMastered,
-                    locked: idx > maxUnlockedIndex,
-                  }))}
-                  currentIndex={activeStageIdx}
-                  onSelect={navigateToStage}
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Main Stage Content */}
-          <div
-            ref={stagePanelRef}
-            id={`panel-${currentStageId}`}
-            role="region"
-            aria-label={t(`conversation.stages.${currentStageId}`)}
-            tabIndex={-1}
-            className="flex-1 min-w-0 flex flex-col gap-6 py-1 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
-          >
-            {currentStageId === "warmup" && (
-              <WarmupStage
-                unit={unit}
-                savedVote={progress?.selectedVoteOption}
-                onVote={handleVote}
-                onNext={() =>
-                  progress?.selectedVoteOption ? completeStageAndAdvance(1) : navigateToStage(1)
-                }
-              />
-            )}
-
-            {currentStageId === "reading" && (
-              <ReadingStage
-                unit={unit}
-                onNext={() => completeStageAndAdvance(2)}
-                onPrev={() => navigateToStage(0)}
-              />
-            )}
-
-            {currentStageId === "vocabulary" && (
-              <LanguageBankStage
-                unit={unit}
-                onNext={() => completeStageAndAdvance(3)}
-                onPrev={() => navigateToStage(1)}
-              />
-            )}
-
-            {currentStageId === "toolkit" && (
-              <ToolkitStage
-                unit={unit}
-                onNext={() => completeStageAndAdvance(4)}
-                onPrev={() => navigateToStage(2)}
-              />
-            )}
-
-            {currentStageId === "quiz" && (
-              <QuizStage
-                unit={unit}
-                savedScore={progress?.quizBestScore}
-                onSaveScore={handleSaveQuizScore}
-                onNext={() => completeStageAndAdvance(5)}
-                onSkip={() => navigateToStage(5)}
-                onPrev={() => navigateToStage(3)}
-              />
-            )}
-
-            {currentStageId === "discussion" && (
-              <DiscussionStage
-                unit={unit}
-                initialNotes={progress?.notes ?? ""}
-                onSaveNotes={(notes) => saveConversationReflection(unit.id, notes)}
-                onNext={() => completeStageAndAdvance(6)}
-                onPrev={() => navigateToStage(4)}
-              />
-            )}
-
-            {currentStageId === "challenge" && (
-              <ChallengeStage
-                unit={unit}
-                isMastered={isMastered}
-                prerequisitesComplete={canCompleteConversationUnit(
-                  learnerState.conversationProgress,
-                  unit.id
-                )}
-                initialResponse={progress?.challengeResponse ?? ""}
-                onSaveResponse={(response) => saveConversationChallenge(unit.id, response)}
-                onComplete={handleCompleteUnit}
-                onPrev={() => navigateToStage(5)}
-                onExit={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
-              />
-            )}
           </div>
         </div>
+      </div>
+
+      <div className="wp-course-sticky wp-layout-gutter sticky top-0 z-40 border-b border-border bg-background py-2">
+        <CourseLessonNavigation
+          stages={STAGE_CONFIG.map((stage, idx) => ({
+            id: stage.id,
+            label: t(`conversation.stages.${stage.id}`),
+            group: ([0, 0, 1, 1, 2, 3, 3] as const)[idx],
+            completed: completedStages.has(stage.id) || isMastered,
+            locked: idx > maxUnlockedIndex,
+          }))}
+          currentIndex={activeStageIdx}
+          onSelect={navigateToStage}
+        />
+      </div>
+
+      {/* Main Stage Content */}
+      <div
+        ref={stagePanelRef}
+        id={`panel-${currentStageId}`}
+        role="region"
+        aria-label={t(`conversation.stages.${currentStageId}`)}
+        tabIndex={-1}
+        className="wp-container-content wp-layout-gutter py-6 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-primary"
+      >
+        {currentStageId === "warmup" && (
+          <WarmupStage
+            unit={unit}
+            savedVote={progress?.selectedVoteOption}
+            onVote={handleVote}
+            onNext={() =>
+              progress?.selectedVoteOption ? completeStageAndAdvance(1) : navigateToStage(1)
+            }
+          />
+        )}
+
+        {currentStageId === "reading" && (
+          <ReadingStage
+            unit={unit}
+            onNext={() => completeStageAndAdvance(2)}
+            onPrev={() => navigateToStage(0)}
+          />
+        )}
+
+        {currentStageId === "vocabulary" && (
+          <LanguageBankStage
+            unit={unit}
+            onNext={() => completeStageAndAdvance(3)}
+            onPrev={() => navigateToStage(1)}
+          />
+        )}
+
+        {currentStageId === "toolkit" && (
+          <ToolkitStage
+            unit={unit}
+            onNext={() => completeStageAndAdvance(4)}
+            onPrev={() => navigateToStage(2)}
+          />
+        )}
+
+        {currentStageId === "quiz" && (
+          <QuizStage
+            unit={unit}
+            savedScore={progress?.quizBestScore}
+            onSaveScore={handleSaveQuizScore}
+            onNext={() => completeStageAndAdvance(5)}
+            onSkip={() => navigateToStage(5)}
+            onPrev={() => navigateToStage(3)}
+          />
+        )}
+
+        {currentStageId === "discussion" && (
+          <DiscussionStage
+            unit={unit}
+            initialNotes={progress?.notes ?? ""}
+            onSaveNotes={(notes) => saveConversationReflection(unit.id, notes)}
+            onNext={() => completeStageAndAdvance(6)}
+            onPrev={() => navigateToStage(4)}
+          />
+        )}
+
+        {currentStageId === "challenge" && (
+          <ChallengeStage
+            unit={unit}
+            isMastered={isMastered}
+            prerequisitesComplete={canCompleteConversationUnit(
+              learnerState.conversationProgress,
+              unit.id
+            )}
+            initialResponse={progress?.challengeResponse ?? ""}
+            onSaveResponse={(response) => saveConversationChallenge(unit.id, response)}
+            onComplete={handleCompleteUnit}
+            onPrev={() => navigateToStage(5)}
+            onExit={() => dispatch({ type: "GO", to: "conversation-curriculum" })}
+          />
+        )}
       </div>
     </div>
   );

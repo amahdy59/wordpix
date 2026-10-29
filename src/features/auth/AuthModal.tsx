@@ -83,18 +83,14 @@ export function AuthModal({ onClose }: AuthModalProps) {
   // modal is open, so rendering inside it would make this visible form
   // impossible to click or focus in browsers that implement inert.
   return createPortal(
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/60 backdrop-blur-sm p-0 sm:p-4 animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
       <div
         ref={containerRef}
-        className="bg-background rounded-t-[28px] sm:rounded-2xl p-6 w-full max-w-md shadow-2xl border-t sm:border border-border relative max-h-[92dvh] overflow-y-auto pb-[calc(env(safe-area-inset-bottom)+1.5rem)] sm:pb-6"
+        className="bg-background rounded-2xl p-6 w-full max-w-md shadow-xl border border-border relative max-h-[92dvh] overflow-y-auto"
         role="dialog"
         aria-modal="true"
         aria-labelledby="auth-title"
       >
-        <div
-          className="sm:hidden w-10 h-1 bg-muted-foreground/30 rounded-full mx-auto -mt-2 mb-3 shrink-0"
-          aria-hidden="true"
-        />
         <IconButton
           icon={<X className="size-5" aria-hidden />}
           aria-label="Close authentication modal"
@@ -140,7 +136,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
               id="email"
               type="email"
               required
-              className="min-h-11 w-full px-4 py-2 rounded-xl border border-border bg-background text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               disabled={isLoading || !!syncUserId}
@@ -154,7 +150,7 @@ export function AuthModal({ onClose }: AuthModalProps) {
               id="password"
               type="password"
               required
-              className="min-h-11 w-full px-4 py-2 rounded-xl border border-border bg-background text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="w-full px-4 py-2 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary text-foreground"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               disabled={isLoading || !!syncUserId}

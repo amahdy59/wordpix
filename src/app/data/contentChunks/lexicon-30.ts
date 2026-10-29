@@ -70,7 +70,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "leaf through",
         meaning: "flip through pages quickly",
         arabic: "يَتَصَفَّحُ",
-        example: "He leafed through the colorful gardening catalog looking for bulb ideas.",
+        example: "She leafed through the colorful gardening catalog looking for bulb ideas.",
       },
     ],
     sentences: [
@@ -119,8 +119,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Socializing",
-        en: "He ran across the grass to greet his best friend by the swing set.",
-        ar: "ركض عبر العشب ليحيي أفضل أصدقائه قرب الأرجوحة.",
+        en: "She ran across the grass to greet her best friend by the swing set.",
+        ar: "رَكَضَتْ عَبْرَ العُشْبِ لِتُحَيِّيَ صَدِيقَتَهَا المُفَضَّلَةَ عِنْدَ الأَرَاجِيحِ.",
       },
       {
         context: "Making Connections",
@@ -133,8 +133,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تَعَاوَنَ صَدِيقَانِ لِبِنَاءِ أَكْبَرِ قَلْعَةٍ رَمْلِيَّةٍ فِي الحُفْرَةِ.",
       },
     ],
-    exampleSentence: "He ran across the grass to greet his best friend by the swing set.",
-    exampleArabic: "ركض عبر العشب ليحيي أفضل أصدقائه قرب الأرجوحة.",
+    exampleSentence: "She ran across the grass to greet her best friend by the swing set.",
+    exampleArabic:
+      "رَكَضَتْ عَبْرَ العُشْبِ لِتُحَيِّيَ صَدِيقَتَهَا المُفَضَّلَةَ عِنْدَ الأَرَاجِيحِ.",
   },
   "poetry-book": {
     id: "poetry-book",
@@ -154,7 +155,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "recite aloud",
         meaning: "speak verses with expression",
         arabic: "يُلْقِي الشِّعْرَ بِصَوْتٍ مَسْمُوع",
-        example: "He opened the poetry book and recited aloud a lyrical sonnet.",
+        example: "She opened the poetry book and recited aloud a lyrical sonnet.",
       },
     ],
     sentences: [
@@ -213,8 +214,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Event Setup",
-        en: "He arranged seating and distributed handouts for the evening guest author lecture.",
-        ar: "رتب المقاعد ووزع النشرات استعدادا لمحاضرة المؤلف الزائر مساء.",
+        en: "She arranged seating and distributed handouts for the evening guest author lecture.",
+        ar: "رَتَّبَتِ المَقَاعِدَ وَوَزَّعَتِ المَنْشُورَاتِ لِمُحَاضَرَةِ المُؤَلِّفِ الضَّيْفِ المَسَائِيَّةِ.",
       },
     ],
     exampleSentence:
@@ -241,7 +242,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "flake off",
         meaning: "break into delicate crisp layers",
         arabic: "تَتَسَاقَطُ طَبَقَاتُهُ الهَشَّة",
-        example: "Delicate golden buttery layers flaked off as he bit into the warm croissant.",
+        example: "Delicate golden buttery layers flaked off as she bit into the warm croissant.",
       },
     ],
     sentences: [
@@ -295,8 +296,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Beach Style",
-        en: "He wore stylish tortoiseshell sunglasses with tinted UV400 protective lenses.",
-        ar: "ارتدى نظارة شمسية أنيقة بنقشة صدفة السلحفاة وعدسات ملونة واقية من الأشعة فوق البنفسجية.",
+        en: "She wore stylish tortoiseshell sunglasses with tinted UV400 protective lenses.",
+        ar: "ارْتَدَتْ نَظَّارَةً شَمْسِيَّةً أَنِيقَةً مَعَ عَدَسَاتٍ وَاقِيَةٍ مِنَ الأَشِعَّةِ فَوْقَ البَنَفْسَجِيَّةِ.",
       },
       {
         context: "Care and Storage",

@@ -185,7 +185,7 @@ export const GIVING_DIRECTIONS_LEARNING: UnitLearningMaterials = {
       phrase: "know your way around",
       kind: "idiom",
       meaning: "To be familiar with a place.",
-      example: "He knows his way around London like the back of his hand.",
+      example: "She knows her way around London like the back of her hand.",
     },
   ],
   dialogue: {

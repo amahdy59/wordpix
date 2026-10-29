@@ -1,122 +1,8 @@
 import { defineConfig, type PluginOption } from "vite";
 import { execFileSync } from "node:child_process";
-import fs from "node:fs";
-import type { IncomingMessage, ServerResponse } from "node:http";
 import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
-
-/** Keep fresh verification builds usable offline without copying any media directories. */
-function readOnlyPublicShell(): PluginOption {
-  return {
-    name: "read-only-public-shell",
-    apply: "build",
-    generateBundle() {
-      if (process.env.WORDPIX_READ_ONLY_MEDIA !== "1") return;
-      for (const fileName of [
-        "sw.js",
-        "manifest.json",
-        "release-notes.json",
-        "icon.svg",
-        "icon-maskable.svg",
-        "listening-scenarios-player.html",
-      ]) {
-        this.emitFile({
-          type: "asset",
-          fileName,
-          source: fs.readFileSync(path.resolve(__dirname, "public", fileName)),
-        });
-      }
-    },
-  };
-}
-
-function scenarioAudioServer(): PluginOption {
-  const handler = (req: IncomingMessage, res: ServerResponse, next: (err?: unknown) => void) => {
-    const rawUrl = req.url || "";
-    const cleanUrl = rawUrl.split("?")[0];
-    const prefix1 = "/wordpix/assets/audio/scenarios/";
-    const prefix2 = "/assets/audio/scenarios/";
-    let subPath: string | null = null;
-    if (cleanUrl.startsWith(prefix1)) {
-      subPath = cleanUrl.slice(prefix1.length);
-    } else if (cleanUrl.startsWith(prefix2)) {
-      subPath = cleanUrl.slice(prefix2.length);
-    }
-    if (!subPath) return next();
-
-    const decoded = decodeURIComponent(subPath);
-    const filePath = path.resolve(__dirname, "assets/audio/scenarios", decoded);
-    if (!fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) {
-      return next();
-    }
-
-    if (req.method === "OPTIONS") {
-      res.writeHead(204, {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
-        "Access-Control-Allow-Headers": "Range, Content-Type, Accept",
-      });
-      res.end();
-      return;
-    }
-
-    const stat = fs.statSync(filePath);
-    let contentType = "application/octet-stream";
-    if (filePath.endsWith(".mp3")) contentType = "audio/mpeg";
-    else if (filePath.endsWith(".vtt")) contentType = "text/vtt";
-    else if (filePath.endsWith(".srt")) contentType = "text/plain";
-
-    const commonHeaders: Record<string, string | number> = {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
-      "Access-Control-Allow-Headers": "Range, Content-Type, Accept",
-      "Access-Control-Expose-Headers": "Content-Range, Content-Length, Accept-Ranges",
-      "Accept-Ranges": "bytes",
-      "Cache-Control": "public, max-age=3600",
-      "Content-Type": contentType,
-    };
-
-    if (req.method === "HEAD") {
-      res.writeHead(200, {
-        ...commonHeaders,
-        "Content-Length": stat.size,
-      });
-      res.end();
-      return;
-    }
-
-    const range = req.headers.range;
-    if (range) {
-      const parts = range.replace(/bytes=/, "").split("-");
-      const start = parseInt(parts[0], 10);
-      const end = parts[1] ? parseInt(parts[1], 10) : stat.size - 1;
-      const chunksize = end - start + 1;
-      res.writeHead(206, {
-        ...commonHeaders,
-        "Content-Range": `bytes ${start}-${end}/${stat.size}`,
-        "Content-Length": chunksize,
-      });
-      fs.createReadStream(filePath, { start, end }).pipe(res);
-    } else {
-      res.writeHead(200, {
-        ...commonHeaders,
-        "Content-Length": stat.size,
-      });
-      fs.createReadStream(filePath).pipe(res);
-    }
-  };
-
-  return {
-    name: "scenario-audio-server",
-    configureServer(server) {
-      server.middlewares.use(handler);
-    },
-    configurePreviewServer(server) {
-      server.middlewares.use(handler);
-    },
-  };
-}
 
 function figmaAssetResolver() {
   return {
@@ -166,21 +52,8 @@ export default defineConfig(async () => {
     }
   }
   return {
-    base:
-      process.env.VITE_BASE_PATH ||
-      process.env.BASE_PATH ||
-      (process.env.CF_PAGES || process.env.CLOUDFLARE || process.env.HOME === "/opt/buildhome"
-        ? "/"
-        : "/wordpix/"),
-    plugins: [
-      buildProvenance(),
-      readOnlyPublicShell(),
-      figmaAssetResolver(),
-      scenarioAudioServer(),
-      react(),
-      tailwindcss(),
-      ...extraPlugins,
-    ],
+    base: "/wordpix/",
+    plugins: [buildProvenance(), figmaAssetResolver(), react(), tailwindcss(), ...extraPlugins],
     // Must stay in step with the "paths" block in tsconfig.json. Three of the
     // previous six aliases (@shared, @types, @constants) pointed at directories
     // that do not exist — the real locations are src/app/shared, src/app/types.ts,
@@ -196,19 +69,14 @@ export default defineConfig(async () => {
       },
     },
     build: {
-      manifest: true,
       // Opt-in for release sessions that must preserve every existing local file.
-      emptyOutDir:
-        process.env.WORDPIX_PRESERVE_BUILD_FILES !== "1" &&
-        process.env.WORDPIX_READ_ONLY_MEDIA !== "1",
-      copyPublicDir: process.env.WORDPIX_READ_ONLY_MEDIA !== "1",
+      emptyOutDir: process.env.WORDPIX_PRESERVE_BUILD_FILES !== "1",
       chunkSizeWarningLimit: 600,
       rollupOptions: {
         output: {
           manualChunks(rawId) {
             const id = rawId.replace(/\\/g, "/");
             if (id.includes("node_modules")) {
-              if (id.includes("/web-vitals/")) return "vendor-vitals";
               if (
                 id.includes("/react/") ||
                 id.includes("/react-dom/") ||
@@ -256,18 +124,6 @@ export default defineConfig(async () => {
             }
             if (id.includes("curriculumAudioManifest")) {
               return "curriculum-audio-manifest";
-            }
-            if (id.includes("curriculumScenarios.units-001-050")) {
-              return "curriculum-scenarios-001-050";
-            }
-            if (id.includes("curriculumScenarios.units-051-100")) {
-              return "curriculum-scenarios-051-100";
-            }
-            if (id.includes("curriculumScenarios.units-101-150")) {
-              return "curriculum-scenarios-101-150";
-            }
-            if (id.includes("curriculumScenarios.units-151-200")) {
-              return "curriculum-scenarios-151-200";
             }
             if (id.includes("src/i18n/")) {
               // en.json ships synchronously (default + fallback locale); ar.json

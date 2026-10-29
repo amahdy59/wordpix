@@ -4,7 +4,6 @@ import { useI18n } from "../context/I18nContext";
 import { ChoiceOptionGroup, type ChoiceOption } from "./ChoiceOptionGroup";
 import { playCorrectSound, playIncorrectSound } from "./useSound";
 import { answerLayout } from "./answerLayout";
-import { ClozeText } from "./SentenceBlank";
 
 interface Props<T extends string> {
   id: string;
@@ -37,19 +36,24 @@ export function QuizQuestionCard<T extends string>({
   const headingId = `quiz-question-${id.replace(/[^a-zA-Z0-9_-]/g, "-")}`;
 
   return (
-    <article data-quiz-question className="min-w-0" aria-labelledby={headingId}>
+    <article
+      data-quiz-question
+      className="rounded-2xl border border-border bg-card"
+      aria-labelledby={headingId}
+    >
       <div
-        className={
-          media ? "grid items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(12rem,30%)]" : ""
-        }
+        className={`p-4 sm:p-5 ${media ? "grid items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(12rem,30%)]" : ""}`}
       >
         <div className="contents">
           <div className="flex items-start gap-3 md:col-start-1">
             <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-secondary text-sm font-black text-primary">
               {index + 1}
             </span>
-            <h3 id={headingId} data-question-prompt className="wp-question-prompt">
-              {typeof question === "string" ? <ClozeText text={question} /> : question}
+            <h3
+              id={headingId}
+              className="pt-1 text-base font-black leading-6 text-foreground sm:text-lg"
+            >
+              {question}
             </h3>
           </div>
 
@@ -80,32 +84,31 @@ export function QuizQuestionCard<T extends string>({
             {media}
           </div>
         )}
-        {answered && (
-          <div
-            role="status"
-            aria-live="polite"
-            className={`wp-question-feedback mt-3 flex flex-wrap gap-3 border text-sm font-semibold leading-6 ${
-              media ? "md:col-start-1" : ""
-            } ${
-              correct
-                ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
-                : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"
-            }`}
-          >
-            {correct ? (
-              <CheckCircle2 className="mt-0.5 size-5 shrink-0" aria-hidden />
-            ) : (
-              <XCircle className="mt-0.5 size-5 shrink-0" aria-hidden />
-            )}
-            <p>
-              <span className="font-black">
-                {correct ? t("practice.correct") : t("practice.notYet")}
-              </span>
-            </p>
-            {feedback && <div className="w-full text-sm leading-relaxed">{feedback}</div>}
-          </div>
-        )}
       </div>
+
+      {answered && (
+        <div
+          role="status"
+          aria-live="polite"
+          className={`flex flex-wrap gap-3 border-t px-4 py-3 text-sm font-semibold leading-6 sm:px-5 ${
+            correct
+              ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
+              : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"
+          }`}
+        >
+          {correct ? (
+            <CheckCircle2 className="mt-0.5 size-5 shrink-0" aria-hidden />
+          ) : (
+            <XCircle className="mt-0.5 size-5 shrink-0" aria-hidden />
+          )}
+          <p>
+            <span className="font-black">
+              {correct ? t("practice.correct") : t("practice.notYet")}
+            </span>
+          </p>
+          {feedback && <div className="w-full text-sm leading-relaxed">{feedback}</div>}
+        </div>
+      )}
     </article>
   );
 }

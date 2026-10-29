@@ -154,21 +154,21 @@ export const PHYSICAL_APPEARANCE_LEARNING: UnitLearningMaterials = {
       phrase: "put on a brave face",
       kind: "idiom",
       meaning: "Pretend to be confident despite being worried.",
-      example: "Despite his pale complexion from the illness, he put on a brave face.",
+      example: "Despite her pale complexion from the illness, she put on a brave face.",
     },
     {
       id: "physical-appearance-beauty-is-only-skin-deep",
       phrase: "beauty is only skin deep",
       kind: "idiom",
       meaning: "Physical attractiveness is superficial.",
-      example: "He knows beauty is only skin deep — complexion and features aren't everything.",
+      example: "She knows beauty is only skin deep — complexion and features aren't everything.",
     },
     {
       id: "physical-appearance-a-sight-to-behold",
       phrase: "a sight to behold",
       kind: "idiom",
       meaning: "An impressive or remarkable thing to see.",
-      example: "With his auburn hair flowing in the wind, he was a sight to behold.",
+      example: "With her auburn hair flowing in the wind, she was a sight to behold.",
     },
     {
       id: "physical-appearance-not-a-hair-out-of-place",
@@ -176,14 +176,14 @@ export const PHYSICAL_APPEARANCE_LEARNING: UnitLearningMaterials = {
       kind: "idiom",
       meaning: "Perfectly groomed.",
       example:
-        "Even after the storm, not a hair was out of place — his straight, shoulder-length hair stayed perfect.",
+        "Even after the storm, not a hair was out of place — her straight, shoulder-length hair stayed perfect.",
     },
     {
       id: "physical-appearance-turn-heads",
       phrase: "turn heads",
       kind: "idiom",
       meaning: "Attract a lot of attention.",
-      example: "His striking appearance and curly red hair turn heads wherever he goes.",
+      example: "Her striking appearance and curly red hair turn heads wherever she goes.",
     },
     {
       id: "physical-appearance-the-spitting-image",

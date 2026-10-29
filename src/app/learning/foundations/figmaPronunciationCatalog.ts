@@ -327,27 +327,15 @@ export function getFigmaPronunciationActivityData(number: number): FigmaPronunci
     teachItems[0]?.label ??
     items[0]?.label ??
     title;
-  const contrastLines = lesson.text.filter((line) => line.includes("|") && /(?:\/|–|—)/.test(line));
-  const contrastPairs = contrastLines
-    .flatMap((line) =>
-      line.split("|").map((pair) =>
-        pair
-          .trim()
-          .replace(
-            /^(?:Initial|Final|Review|Fresh transfer|Transfer|Unseen testing targets|Production bank):\s*/i,
-            ""
-          )
-          .replace(/\s*\([^)]*\)/g, "")
-          .replace(/\s*\[[^\]]*\]/g, "")
-          .split(/\s*(?:\/|–|—)\s*/)
-          .map((item) => item.trim())
-          .filter(Boolean)
-      )
+  const contrastLine = lesson.text.find((line) => line.includes("|") && /(?:\/|–|—)/.test(line));
+  const contrastPairs = (contrastLine?.split("|") ?? [])
+    .map((pair) =>
+      pair
+        .trim()
+        .split(/\s*(?:\/|–|—)\s*/)
+        .filter(Boolean)
     )
-    .filter(
-      (pair): pair is [string, string] =>
-        pair.length === 2 && pair[0].toLowerCase() !== pair[1].toLowerCase()
-    )
+    .filter((pair): pair is [string, string] => pair.length === 2)
     .map(([first, second]) => [first, second] as const);
   const focus =
     valueAfter(lesson.text, /^(?:Linguistic Focus|Acoustic Cue|Contrast Focus|Focus):/i) ??
@@ -408,51 +396,29 @@ export function getPronunciationQuestion(
   number: number,
   stage: 1 | 2 | 3 | 4,
   trial: number,
-  childMode: boolean = false,
-  savedTargetId?: string
+  childMode: boolean = false
 ) {
   const activity = getFigmaPronunciationActivityData(number);
-  const authoredPool =
+  const pool =
     stage === 4 && activity.transferItems.length
       ? activity.transferItems
       : [...activity.teachItems, ...activity.guidedItems, ...activity.independentItems];
-  // Meaning is a short supported check; listening and speaking cover every target.
-  const pool = stage === 2 ? authoredPool.slice(0, 3) : authoredPool;
-  const target =
-    pool.find(
-      (item) =>
-        savedTargetId ===
-        `target:${encodeURIComponent(item.label.trim().toLocaleLowerCase("en-US"))}`
-    ) ?? pool[(number * 7 + (stage - 1) * 5 + trial) % pool.length];
+  const target = pool[(number * 7 + (stage - 1) * 5 + trial * 3) % pool.length];
   if (!target) throw new Error(`Pronunciation lesson ${number} has no question targets`);
   const partner = getPronunciationContrastPartner(activity, target.label);
   const normalized = (label: string) => label.trim().toLocaleLowerCase("en-US");
   const partnerItem = activity.items.find(
-    (item) =>
-      partner &&
-      normalized(item.label) === normalized(partner) &&
-      normalized(item.label) !== normalized(target.label)
+    (item) => partner && normalized(item.label) === normalized(partner)
   );
-  const count = childMode || stage <= 2 ? 2 : 4;
-  const remainingCandidates = uniqueItems(
-    [...pool, ...activity.items].filter((item) => {
-      const norm = normalized(item.label);
-      return (
-        norm !== normalized(target.label) &&
-        (!partnerItem || norm !== normalized(partnerItem.label))
-      );
-    })
-  );
-  // Shuffled candidate pool seeded dynamically per trial so distractors vary across questions
-  const distractorSeed = number * 10007 + stage * 1009 + trial * 97 + 11;
-  const shuffledCandidates = seededPronunciationShuffle(remainingCandidates, distractorSeed);
-  const needed = count - 1 - (partnerItem ? 1 : 0);
-  const selectedDistractors = [
+  const candidates = uniqueItems([
+    target,
     ...(partnerItem ? [partnerItem] : []),
-    ...shuffledCandidates.slice(0, needed),
-  ];
+    ...pool,
+    ...activity.items,
+  ]);
+  const count = childMode || stage <= 2 ? 2 : 4;
   const choices = seededPronunciationShuffle(
-    [target, ...selectedDistractors],
+    candidates.slice(0, count),
     number * 31 + stage * 17 + trial * 13
   );
   if (choices.length < 2) throw new Error(`Pronunciation lesson ${number} needs a distractor`);

@@ -35,8 +35,8 @@
       "مفتش حرائق",
       "منسق استجابة للطوارئ",
       "مسعف",
-      "سيارة إطفاء",
-      "شاحنة إطفاء",
+      "محرك حريق",
+      "شاحنة حريق",
       "شاحنة سلّم",
       "سيارة إسعاف",
       "مركبة إنقاذ",
@@ -47,112 +47,129 @@
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the safety-critical workplace.",
       "textType": "service-notice",
-      "readingTarget": "102-132 words",
+      "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["firefighter", "fire chief", "fire captain", "volunteer"],
-          "scenario": "During a station visit, a firefighter explains the crew’s roles. The fire chief leads the department, and a fire captain supervises a unit. A volunteer contributes without being paid for the role.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare firefighter, fire chief, fire captain, and volunteer and choose the option that fits the situation.",
           "check": {
-            "question": "Which role contributes without being paid?",
-            "options": ["volunteer", "firefighter", "fire chief"],
-            "expectedAnswer": "volunteer"
+            "question": "Which option identifies the person or role central to the situation shown?",
+            "options": ["firefighter", "fire chief", "fire captain"],
+            "expectedAnswer": "firefighter"
           },
-          "imageBrief": "Photorealistic vocabulary reference for volunteer in a fire station context. Use the written scenario as the source of meaning: During a station visit, a firefighter explains the crew’s roles. The fire chief leads the department, and a fire captain supervises a unit. A volunteer contributes without being paid for the role. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult working with or speaking to the firefighter; include firefighter, fire chief, and fire captain naturally where visually appropriate, but make the real-world use of firefighter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["rescue team", "fire inspector", "dispatcher", "paramedic"],
-          "scenario": "The rescue team handles rescue work, and a fire inspector checks fire-safety compliance. A dispatcher receives emergency calls and sends response teams; a paramedic provides emergency medical care.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rescue team, fire inspector, dispatcher, and paramedic and choose the option that fits the situation.",
           "check": {
-            "question": "Who receives calls and sends response teams?",
-            "options": ["dispatcher", "rescue team", "fire inspector"],
-            "expectedAnswer": "dispatcher"
+            "question": "Which option identifies the person or role central to the situation shown?",
+            "options": ["rescue team", "fire inspector", "dispatcher"],
+            "expectedAnswer": "rescue team"
           },
-          "imageBrief": "Photorealistic vocabulary reference for dispatcher in a fire station context. Use the written scenario as the source of meaning: The rescue team handles rescue work, and a fire inspector checks fire-safety compliance. A dispatcher receives emergency calls and sends response teams; a paramedic provides emergency medical care. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult working with or speaking to the rescue team; include rescue team, fire inspector, and dispatcher naturally where visually appropriate, but make the real-world use of rescue team the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["fire engine", "fire truck", "ladder truck", "ambulance"],
-          "scenario": "A guide distinguishes the fire engine, fire truck, ladder truck, and ambulance. The ladder truck carries equipment for reaching high places, while the ambulance transports patients.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fire engine, fire truck, ladder truck, and ambulance and choose the option that fits the situation.",
           "check": {
-            "question": "Which vehicle is equipped to reach high places?",
-            "options": ["ladder truck", "fire engine", "fire truck"],
-            "expectedAnswer": "ladder truck"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["fire engine", "fire truck", "ladder truck"],
+            "expectedAnswer": "fire engine"
           },
-          "imageBrief": "Photorealistic vocabulary reference for ladder truck in a fire station context. Use the written scenario as the source of meaning: A guide distinguishes the fire engine, fire truck, ladder truck, and ambulance. The ladder truck carries equipment for reaching high places, while the ambulance transports patients. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the fire engine as the central item; include fire engine, fire truck, and ladder truck naturally where visually appropriate, but make the real-world use of fire engine the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["rescue vehicle", "water tanker", "helicopter"],
-          "scenario": "The guide shows a rescue vehicle, a water tanker, and a helicopter. The water tanker carries a large supply of water where that resource is needed.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rescue vehicle, water tanker, and helicopter and choose the option that fits the situation.",
           "check": {
-            "question": "Which vehicle carries a large supply of water?",
-            "options": ["water tanker", "rescue vehicle", "helicopter"],
-            "expectedAnswer": "water tanker"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["rescue vehicle", "water tanker", "helicopter"],
+            "expectedAnswer": "rescue vehicle"
           },
-          "imageBrief": "Photorealistic vocabulary reference for water tanker in a fire station context. Use the written scenario as the source of meaning: The guide shows a rescue vehicle, a water tanker, and a helicopter. The water tanker carries a large supply of water where that resource is needed. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the rescue vehicle as the central item; include rescue vehicle, water tanker, and helicopter naturally where visually appropriate, but make the real-world use of rescue vehicle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Fire Station: A visitor’s questions",
-      "text": "During a station visit, a firefighter explains the crew’s roles. The fire chief leads the department, and a fire captain supervises a unit. A volunteer contributes without being paid for the role. The rescue team handles rescue work, and a fire inspector checks fire-safety compliance. A dispatcher receives emergency calls and sends response teams; a paramedic provides emergency medical care. A guide distinguishes the fire engine, fire truck, ladder truck, and ambulance. The ladder truck carries equipment for reaching high places, while the ambulance transports patients. The guide shows a rescue vehicle, a water tanker, and a helicopter. The water tanker carries a large supply of water where that resource is needed.",
-      "imageBrief": "One uncluttered fire station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
+      "title": "Fire Station: Practical Information",
+      "text": "At the fire station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers firefighter, fire chief, fire captain, and volunteer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers rescue team, fire inspector, dispatcher, and paramedic. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers fire engine, fire truck, ladder truck, and ambulance. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers rescue vehicle, water tanker, and helicopter. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Fire Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "During a station visit, a firefighter explains the crew’s roles. The fire chief leads the department, and a fire captain supervises a unit. A volunteer contributes without being paid for the role.\nWhich role contributes without being paid?",
-        "answer": "volunteer",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare firefighter, fire chief, fire captain, and volunteer and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "firefighter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The rescue team handles rescue work, and a fire inspector checks fire-safety compliance. A dispatcher receives emergency calls and sends response teams; a paramedic provides emergency medical care.\nWho receives calls and sends response teams?",
-        "answer": "dispatcher",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rescue team, fire inspector, dispatcher, and paramedic and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "answer": "rescue team",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "A guide distinguishes the fire engine, fire truck, ladder truck, and ambulance. The ladder truck carries equipment for reaching high places, while the ambulance transports patients.\nWhich vehicle is equipped to reach high places?",
-        "answer": "ladder truck",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fire engine, fire truck, ladder truck, and ambulance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "fire engine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "The guide shows a rescue vehicle, a water tanker, and a helicopter. The water tanker carries a large supply of water where that resource is needed.\nWhich vehicle carries a large supply of water?",
-        "answer": "water tanker",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rescue vehicle, water tanker, and helicopter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "rescue vehicle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a station visit, a firefighter explains the crew’s roles. The fire chief leads the department, and a fire captain supervises a unit. A volunteer contributes without being paid for the role. The rescue team handles rescue work, and a fire inspector checks fire-safety compliance. A dispatcher receives emergency calls and sends response teams; a paramedic provides emergency medical care. A guide distinguishes the fire engine, fire truck, ladder truck, and ambulance. The ladder truck carries equipment for reaching high places, while the ambulance transports patients. The guide shows a rescue vehicle, a water tanker, and a helicopter. The water tanker carries a large supply of water where that resource is needed.\nExplain the difference between firefighter and fire chief using the account above.",
-        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
       },
       {
-        "prompt": "Use the terms firefighter, fire chief, fire captain, volunteer, rescue team, fire inspector, dispatcher, paramedic, fire engine, fire truck, ladder truck, ambulance, rescue vehicle, water tanker, helicopter to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
-        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "firefighter"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "volunteer"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “Bricklayer” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the l5 fire station task. Use firefighter, fire chief, fire captain, volunteer, rescue team, fire inspector, dispatcher, paramedic, fire engine, fire truck, ladder truck, ambulance, rescue vehicle, water tanker, and helicopter in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Fire Station: A guided discussion",
-      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between firefighter and fire chief, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
-      "scriptStarter": "Listen to the guide's account: During a station visit, a firefighter explains the crew’s roles. The fire chief leads the department, and a fire captain supervises a unit. A volunteer contributes without being paid for the role. Pause and answer: Which role contributes without being paid?"
+      "title": "L5 Fire Station: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: Bricklayer, Painter from construction-site-5\n3 lesson(s) back: Chisel, Utility Knife from construction-site-3\n7 lesson(s) back: Lift, Diagnostic Scanner from mechanic-3"
   },
@@ -195,7 +212,7 @@
       "جهاز تنفس مستقل",
       "أسطوانة أكسجين",
       "كاميرا حرارية",
-      "جهاز اتصال لاسلكي",
+      "إذاعة",
       "صفارة إنذار",
       "خوذة",
       "سترة إطفاء واقية"
@@ -204,112 +221,129 @@
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the safety-critical workplace.",
       "textType": "instructional-guide",
-      "readingTarget": "119-149 words",
+      "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["fire boat", "fire hose", "nozzle", "fire extinguisher"],
-          "scenario": "A fire boat supports operations near water. On the equipment display, a fire hose has a nozzle at its outlet to direct the flow. A fire extinguisher is a separate device.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fire boat, fire hose, nozzle, and fire extinguisher and choose the option that fits the situation.",
           "check": {
-            "question": "What part at the hose outlet directs the flow?",
-            "options": ["nozzle", "fire boat", "fire hose"],
-            "expectedAnswer": "nozzle"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["fire boat", "fire hose", "nozzle"],
+            "expectedAnswer": "fire boat"
           },
-          "imageBrief": "Photorealistic vocabulary reference for nozzle in a fire station context. Use the written scenario as the source of meaning: A fire boat supports operations near water. On the equipment display, a fire hose has a nozzle at its outlet to direct the flow. A fire extinguisher is a separate device. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the fire boat as the central item; include fire boat, fire hose, and nozzle naturally where visually appropriate, but make the real-world use of fire boat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["ladder", "axe", "pike pole", "hydrant"],
-          "scenario": "The guide shows a ladder, an axe, and a pike pole as professional equipment. Outside the station, a hydrant provides a water connection for firefighters. Visitors do not handle the tools.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ladder, axe, pike pole, and hydrant and choose the option that fits the situation.",
           "check": {
-            "question": "Which street fixture provides a firefighting water connection?",
-            "options": ["hydrant", "ladder", "axe"],
-            "expectedAnswer": "hydrant"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["ladder", "axe", "pike pole"],
+            "expectedAnswer": "ladder"
           },
-          "imageBrief": "Photorealistic vocabulary reference for hydrant in a fire station context. Use the written scenario as the source of meaning: The guide shows a ladder, an axe, and a pike pole as professional equipment. Outside the station, a hydrant provides a water connection for firefighters. Visitors do not handle the tools. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the ladder as the central item; include ladder, axe, and pike pole naturally where visually appropriate, but make the real-world use of ladder the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["breathing apparatus", "oxygen tank", "thermal camera", "radio"],
-          "scenario": "The guide distinguishes breathing apparatus supplying breathable air from an oxygen tank used in approved medical or specialist systems. A thermal camera displays heat patterns. A radio carries spoken crew communications.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare breathing apparatus, oxygen tank, thermal camera, and radio and choose the option that fits the situation.",
           "check": {
-            "question": "Which device carries spoken communications?",
-            "options": ["radio", "breathing apparatus", "oxygen tank"],
-            "expectedAnswer": "radio"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["breathing apparatus", "oxygen tank", "thermal camera"],
+            "expectedAnswer": "breathing apparatus"
           },
-          "imageBrief": "Photorealistic vocabulary reference for radio in a fire station context. Use the written scenario as the source of meaning: The guide distinguishes breathing apparatus supplying breathable air from an oxygen tank used in approved medical or specialist systems. A thermal camera displays heat patterns. A radio carries spoken crew communications. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the breathing apparatus as the central item; include breathing apparatus, oxygen tank, and thermal camera naturally where visually appropriate, but make the real-world use of breathing apparatus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["siren", "helmet", "turnout coat"],
-          "scenario": "A siren makes a warning sound. A helmet protects the head, and a turnout coat forms part of the firefighter’s protective clothing. None of these items makes entering a dangerous area safe for an untrained visitor.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare siren, helmet, and turnout coat and choose the option that fits the situation.",
           "check": {
-            "question": "Which item protects the head?",
-            "options": ["helmet", "siren", "turnout coat"],
-            "expectedAnswer": "helmet"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["siren", "helmet", "turnout coat"],
+            "expectedAnswer": "siren"
           },
-          "imageBrief": "Photorealistic vocabulary reference for helmet in a fire station context. Use the written scenario as the source of meaning: A siren makes a warning sound. A helmet protects the head, and a turnout coat forms part of the firefighter’s protective clothing. None of these items makes entering a dangerous area safe for an untrained visitor. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the siren as the central item; include siren, helmet, and turnout coat naturally where visually appropriate, but make the real-world use of siren the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Fire Station: Understanding the different roles",
-      "text": "A fire boat supports operations near water. On the equipment display, a fire hose has a nozzle at its outlet to direct the flow. A fire extinguisher is a separate device. The guide shows a ladder, an axe, and a pike pole as professional equipment. Outside the station, a hydrant provides a water connection for firefighters. Visitors do not handle the tools. The guide distinguishes breathing apparatus supplying breathable air from an oxygen tank used in approved medical or specialist systems. A thermal camera displays heat patterns. A radio carries spoken crew communications. A siren makes a warning sound. A helmet protects the head, and a turnout coat forms part of the firefighter’s protective clothing. None of these items makes entering a dangerous area safe for an untrained visitor.",
-      "imageBrief": "One uncluttered fire station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
+      "title": "A Practical Guide: Fire Station",
+      "text": "At the fire station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers fire boat, fire hose, nozzle, and fire extinguisher. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers ladder, axe, pike pole, and hydrant. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers breathing apparatus, oxygen tank, thermal camera, and radio. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers siren, helmet, and turnout coat. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Fire Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "A fire boat supports operations near water. On the equipment display, a fire hose has a nozzle at its outlet to direct the flow. A fire extinguisher is a separate device.\nWhat part at the hose outlet directs the flow?",
-        "answer": "nozzle",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fire boat, fire hose, nozzle, and fire extinguisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "fire boat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The guide shows a ladder, an axe, and a pike pole as professional equipment. Outside the station, a hydrant provides a water connection for firefighters. Visitors do not handle the tools.\nWhich street fixture provides a firefighting water connection?",
-        "answer": "hydrant",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ladder, axe, pike pole, and hydrant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "ladder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "The guide distinguishes breathing apparatus supplying breathable air from an oxygen tank used in approved medical or specialist systems. A thermal camera displays heat patterns. A radio carries spoken crew communications.\nWhich device carries spoken communications?",
-        "answer": "radio",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare breathing apparatus, oxygen tank, thermal camera, and radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "breathing apparatus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "A siren makes a warning sound. A helmet protects the head, and a turnout coat forms part of the firefighter’s protective clothing. None of these items makes entering a dangerous area safe for an untrained visitor.\nWhich item protects the head?",
-        "answer": "helmet",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare siren, helmet, and turnout coat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "siren",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "A fire boat supports operations near water. On the equipment display, a fire hose has a nozzle at its outlet to direct the flow. A fire extinguisher is a separate device. The guide shows a ladder, an axe, and a pike pole as professional equipment. Outside the station, a hydrant provides a water connection for firefighters. Visitors do not handle the tools. The guide distinguishes breathing apparatus supplying breathable air from an oxygen tank used in approved medical or specialist systems. A thermal camera displays heat patterns. A radio carries spoken crew communications. A siren makes a warning sound. A helmet protects the head, and a turnout coat forms part of the firefighter’s protective clothing. None of these items makes entering a dangerous area safe for an untrained visitor.\nExplain the difference between fire boat and fire hose using the account above.",
-        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
       },
       {
-        "prompt": "Use the terms fire boat, fire hose, nozzle, fire extinguisher, ladder, axe, pike pole, hydrant, breathing apparatus, oxygen tank, thermal camera, radio, siren, helmet, turnout coat to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
-        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "fire boat"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "fire extinguisher"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “firefighter” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the l5 fire station task. Use fire boat, fire hose, nozzle, fire extinguisher, ladder, axe, pike pole, hydrant, breathing apparatus, oxygen tank, thermal camera, radio, siren, helmet, and turnout coat in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Fire Station: A guided discussion",
-      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between fire boat and fire hose, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
-      "scriptStarter": "Listen to the guide's account: A fire boat supports operations near water. On the equipment display, a fire hose has a nozzle at its outlet to direct the flow. A fire extinguisher is a separate device. Pause and answer: What part at the hose outlet directs the flow?"
+      "title": "L5 Fire Station: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: firefighter, fire chief from fire-station-1\n3 lesson(s) back: Foundation, Frame from construction-site-4\n7 lesson(s) back: Gasket, Bolt from mechanic-4"
   },
@@ -342,13 +376,13 @@
     ],
     "targetWordsArabic": [
       "أحذية إطفاء",
-      "قفازات واقية",
+      "قفازات",
       "قناع وجه واقٍ",
-      "واقي الوجه",
+      "واقٍ للعين",
       "حمالات بنطال",
       "بدلة مقاومة للحريق",
       "حريق",
-      "دخان",
+      "يدخّن الطعام",
       "ألسنة لهب",
       "شرارة",
       "جمرة",
@@ -361,112 +395,129 @@
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the safety-critical workplace.",
       "textType": "dialogue",
-      "readingTarget": "104-134 words",
+      "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["fire boots", "gloves", "face mask", "visor"],
-          "scenario": "The clothing display includes fire boots, gloves, a face mask, and a visor. The visor is the protective screen attached to the helmet.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fire boots, gloves, face mask, and visor and choose the option that fits the situation.",
           "check": {
-            "question": "Which item is the protective screen on the helmet?",
-            "options": ["visor", "fire boots", "gloves"],
-            "expectedAnswer": "visor"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["fire boots", "gloves", "face mask"],
+            "expectedAnswer": "fire boots"
           },
-          "imageBrief": "Photorealistic vocabulary reference for visor in a fire station context. Use the written scenario as the source of meaning: The clothing display includes fire boots, gloves, a face mask, and a visor. The visor is the protective screen attached to the helmet. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the fire boots as the central item; include fire boots, gloves, and face mask naturally where visually appropriate, but make the real-world use of fire boots the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["suspenders", "fire-resistant suit", "fire", "smoke"],
-          "scenario": "The guide points out suspenders and a fire-resistant suit, then discusses a photograph of a fire. Smoke is the airborne mixture from burning; it is not simply harmless steam.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare suspenders, fire-resistant suit, fire, and smoke and choose the option that fits the situation.",
           "check": {
-            "question": "What airborne mixture comes from burning?",
-            "options": ["smoke", "suspenders", "fire-resistant suit"],
-            "expectedAnswer": "smoke"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["suspenders", "fire-resistant suit", "fire"],
+            "expectedAnswer": "suspenders"
           },
-          "imageBrief": "Photorealistic vocabulary reference for smoke in a fire station context. Use the written scenario as the source of meaning: The guide points out suspenders and a fire-resistant suit, then discusses a photograph of a fire. Smoke is the airborne mixture from burning; it is not simply harmless steam. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the suspenders as the central item; include suspenders, fire-resistant suit, and fire naturally where visually appropriate, but make the real-world use of suspenders the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["flames", "spark", "ember", "explosion"],
-          "scenario": "The guide contrasts flames, a spark, an ember, and an explosion. An ember is a hot glowing fragment remaining from burned material, even when no large flame is visible.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare flames, spark, ember, and explosion and choose the option that fits the situation.",
           "check": {
-            "question": "Which term names a glowing fragment remaining from a fire?",
-            "options": ["ember", "flames", "spark"],
-            "expectedAnswer": "ember"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["flames", "spark", "ember"],
+            "expectedAnswer": "flames"
           },
-          "imageBrief": "Photorealistic vocabulary reference for ember in a fire station context. Use the written scenario as the source of meaning: The guide contrasts flames, a spark, an ember, and an explosion. An ember is a hot glowing fragment remaining from burned material, even when no large flame is visible. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the flames as the central item; include flames, spark, and ember naturally where visually appropriate, but make the real-world use of flames the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["alarm", "evacuation", "rescue"],
-          "scenario": "During a demonstration, an alarm signals a practice evacuation. Everyone leaves the building along the instructed route. The guide explains that a rescue is a separate operation to bring someone out of danger.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare alarm, evacuation, and rescue and choose the option that fits the situation.",
           "check": {
-            "question": "What is the organized movement of people out of the building called?",
-            "options": ["evacuation", "alarm", "rescue"],
-            "expectedAnswer": "evacuation"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["alarm", "evacuation", "rescue"],
+            "expectedAnswer": "alarm"
           },
-          "imageBrief": "Photorealistic vocabulary reference for evacuation in a fire station context. Use the written scenario as the source of meaning: During a demonstration, an alarm signals a practice evacuation. Everyone leaves the building along the instructed route. The guide explains that a rescue is a separate operation to bring someone out of danger. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the alarm as the central item; include alarm, evacuation, and rescue naturally where visually appropriate, but make the real-world use of alarm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Fire Station: Comparing the equipment",
-      "text": "The clothing display includes fire boots, gloves, a face mask, and a visor. The visor is the protective screen attached to the helmet. The guide points out suspenders and a fire-resistant suit, then discusses a photograph of a fire. Smoke is the airborne mixture from burning; it is not simply harmless steam. The guide contrasts flames, a spark, an ember, and an explosion. An ember is a hot glowing fragment remaining from burned material, even when no large flame is visible. During a demonstration, an alarm signals a practice evacuation. Everyone leaves the building along the instructed route. The guide explains that a rescue is a separate operation to bring someone out of danger.",
-      "imageBrief": "One uncluttered fire station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
+      "title": "Getting the Information You Need: Fire Station",
+      "text": "At the fire station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers fire boots, gloves, face mask, and visor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers suspenders, fire-resistant suit, fire, and smoke. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers flames, spark, ember, and explosion. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers alarm, evacuation, and rescue. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Fire Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "The clothing display includes fire boots, gloves, a face mask, and a visor. The visor is the protective screen attached to the helmet.\nWhich item is the protective screen on the helmet?",
-        "answer": "visor",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare fire boots, gloves, face mask, and visor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "fire boots",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The guide points out suspenders and a fire-resistant suit, then discusses a photograph of a fire. Smoke is the airborne mixture from burning; it is not simply harmless steam.\nWhat airborne mixture comes from burning?",
-        "answer": "smoke",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare suspenders, fire-resistant suit, fire, and smoke and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "suspenders",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "The guide contrasts flames, a spark, an ember, and an explosion. An ember is a hot glowing fragment remaining from burned material, even when no large flame is visible.\nWhich term names a glowing fragment remaining from a fire?",
-        "answer": "ember",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare flames, spark, ember, and explosion and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "flames",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a demonstration, an alarm signals a practice evacuation. Everyone leaves the building along the instructed route. The guide explains that a rescue is a separate operation to bring someone out of danger.\nWhat is the organized movement of people out of the building called?",
-        "answer": "evacuation",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare alarm, evacuation, and rescue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "alarm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "The clothing display includes fire boots, gloves, a face mask, and a visor. The visor is the protective screen attached to the helmet. The guide points out suspenders and a fire-resistant suit, then discusses a photograph of a fire. Smoke is the airborne mixture from burning; it is not simply harmless steam. The guide contrasts flames, a spark, an ember, and an explosion. An ember is a hot glowing fragment remaining from burned material, even when no large flame is visible. During a demonstration, an alarm signals a practice evacuation. Everyone leaves the building along the instructed route. The guide explains that a rescue is a separate operation to bring someone out of danger.\nExplain the difference between fire boots and gloves using the account above.",
-        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
       },
       {
-        "prompt": "Use the terms fire boots, gloves, face mask, visor, suspenders, fire-resistant suit, fire, smoke, flames, spark, ember, explosion, alarm, evacuation, rescue to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
-        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "fire boots"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "visor"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “fire boat” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the l5 fire station task. Use fire boots, gloves, face mask, visor, suspenders, fire-resistant suit, fire, smoke, flames, spark, ember, explosion, alarm, evacuation, and rescue in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Fire Station: A guided discussion",
-      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between fire boots and gloves, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
-      "scriptStarter": "Listen to the guide's account: The clothing display includes fire boots, gloves, a face mask, and a visor. The visor is the protective screen attached to the helmet. Pause and answer: Which item is the protective screen on the helmet?"
+      "title": "L5 Fire Station: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: fire boat, fire hose from fire-station-2\n3 lesson(s) back: Bricklayer, Painter from construction-site-5\n7 lesson(s) back: Crane, Bulldozer from construction-site-1"
   },
@@ -502,11 +553,11 @@
       "حظيرة مركبات الإطفاء",
       "أماكن نوم",
       "مطبخ",
-      "عمود نزول في محطة الإطفاء",
+      "عمود",
       "جرس إنذار",
       "برج تدريب الإطفاء",
       "خزانة",
-      "غرفة تحكم",
+      "غرفة عامل ضابط",
       "غرفة اجتماع",
       "علم"
     ],
@@ -514,112 +565,129 @@
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the safety-critical workplace.",
       "textType": "service-notice",
-      "readingTarget": "102-132 words",
+      "readingTarget": "90-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["emergency exit", "fire escape", "sprinkler", "garage bay"],
-          "scenario": "The visitor identifies an emergency exit and an external fire escape. Overhead, a sprinkler is part of the building’s fire-control system. The garage bay holds the station’s vehicles.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare emergency exit, fire escape, sprinkler, and garage bay and choose the option that fits the situation.",
           "check": {
-            "question": "Which overhead device can spray water to help control a fire?",
-            "options": ["sprinkler", "emergency exit", "fire escape"],
-            "expectedAnswer": "sprinkler"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["emergency exit", "fire escape", "sprinkler"],
+            "expectedAnswer": "emergency exit"
           },
-          "imageBrief": "Photorealistic vocabulary reference for sprinkler in a fire station context. Use the written scenario as the source of meaning: The visitor identifies an emergency exit and an external fire escape. Overhead, a sprinkler is part of the building’s fire-control system. The garage bay holds the station’s vehicles. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the emergency exit as the central item; include emergency exit, fire escape, and sprinkler naturally where visually appropriate, but make the real-world use of emergency exit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["sleeping quarters", "kitchen", "pole", "alarm bell"],
-          "scenario": "The station’s sleeping quarters and kitchen support staff on long shifts. The guide points to the vertical pole used by trained personnel to descend between floors. An alarm bell alerts the crew.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare sleeping quarters, kitchen, pole, and alarm bell and choose the option that fits the situation.",
           "check": {
-            "question": "What vertical station feature can trained personnel use to descend?",
-            "options": ["pole", "sleeping quarters", "kitchen"],
-            "expectedAnswer": "pole"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["sleeping quarters", "kitchen", "pole"],
+            "expectedAnswer": "sleeping quarters"
           },
-          "imageBrief": "Photorealistic vocabulary reference for pole in a fire station context. Use the written scenario as the source of meaning: The station’s sleeping quarters and kitchen support staff on long shifts. The guide points to the vertical pole used by trained personnel to descend between floors. An alarm bell alerts the crew. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the sleeping quarters as the central item; include sleeping quarters, kitchen, and pole naturally where visually appropriate, but make the real-world use of sleeping quarters the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["training tower", "locker", "control room", "meeting room"],
-          "scenario": "After viewing the training tower, the visitor sees a locker for storing clothing and equipment. The control room handles monitoring, and the meeting room is used for briefings.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare training tower, locker, control room, and meeting room and choose the option that fits the situation.",
           "check": {
-            "question": "Which compartment stores personal clothing and equipment?",
-            "options": ["locker", "training tower", "control room"],
-            "expectedAnswer": "locker"
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["training tower", "locker", "control room"],
+            "expectedAnswer": "training tower"
           },
-          "imageBrief": "Photorealistic vocabulary reference for locker in a fire station context. Use the written scenario as the source of meaning: After viewing the training tower, the visitor sees a locker for storing clothing and equipment. The control room handles monitoring, and the meeting room is used for briefings. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the training tower as the central item; include training tower, locker, and control room naturally where visually appropriate, but make the real-world use of training tower the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["flag"],
-          "scenario": "Outside the station, a flag hangs from a pole as a symbol of the service or community. The guide ends the visit beside it.",
+          "scenario": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare flag and choose the option that fits the situation.",
           "check": {
-            "question": "What cloth symbol hangs outside the station?",
-            "options": ["flag"],
+            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "options": ["flag", "emergency exit", "fire escape"],
             "expectedAnswer": "flag"
           },
-          "imageBrief": "Photorealistic vocabulary reference for flag in a fire station context. Use the written scenario as the source of meaning: Outside the station, a flag hangs from a pole as a symbol of the service or community. The guide ends the visit beside it. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
-          "imageAlt": "Illustration supporting the written fire station situation; the accompanying text gives the details needed for the question."
+          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the flag as the central item; include flag, emergency exit, and fire escape naturally where visually appropriate, but make the real-world use of flag the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
+          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Fire Station: A guided walk",
-      "text": "The visitor identifies an emergency exit and an external fire escape. Overhead, a sprinkler is part of the building’s fire-control system. The garage bay holds the station’s vehicles. The station’s sleeping quarters and kitchen support staff on long shifts. The guide points to the vertical pole used by trained personnel to descend between floors. An alarm bell alerts the crew. After viewing the training tower, the visitor sees a locker for storing clothing and equipment. The control room handles monitoring, and the meeting room is used for briefings. Outside the station, a flag hangs from a pole as a symbol of the service or community. The guide ends the visit beside it.",
-      "imageBrief": "One uncluttered fire station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
+      "title": "Fire Station: Practical Information",
+      "text": "At the fire station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers emergency exit, fire escape, sprinkler, and garage bay. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers sleeping quarters, kitchen, pole, and alarm bell. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers training tower, locker, control room, and meeting room. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers flag. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
+      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Fire Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
     },
     "exercises": [
       {
-        "prompt": "The visitor identifies an emergency exit and an external fire escape. Overhead, a sprinkler is part of the building’s fire-control system. The garage bay holds the station’s vehicles.\nWhich overhead device can spray water to help control a fire?",
-        "answer": "sprinkler",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare emergency exit, fire escape, sprinkler, and garage bay and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "emergency exit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The station’s sleeping quarters and kitchen support staff on long shifts. The guide points to the vertical pole used by trained personnel to descend between floors. An alarm bell alerts the crew.\nWhat vertical station feature can trained personnel use to descend?",
-        "answer": "pole",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare sleeping quarters, kitchen, pole, and alarm bell and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "sleeping quarters",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "After viewing the training tower, the visitor sees a locker for storing clothing and equipment. The control room handles monitoring, and the meeting room is used for briefings.\nWhich compartment stores personal clothing and equipment?",
-        "answer": "locker",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare training tower, locker, control room, and meeting room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "answer": "training tower",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Outside the station, a flag hangs from a pole as a symbol of the service or community. The guide ends the visit beside it.\nWhat cloth symbol hangs outside the station?",
+        "prompt": "In the l5 fire station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare flag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
         "answer": "flag",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "The visitor identifies an emergency exit and an external fire escape. Overhead, a sprinkler is part of the building’s fire-control system. The garage bay holds the station’s vehicles. The station’s sleeping quarters and kitchen support staff on long shifts. The guide points to the vertical pole used by trained personnel to descend between floors. An alarm bell alerts the crew. After viewing the training tower, the visitor sees a locker for storing clothing and equipment. The control room handles monitoring, and the meeting room is used for briefings. Outside the station, a flag hangs from a pole as a symbol of the service or community. The guide ends the visit beside it.\nExplain the difference between emergency exit and fire escape using the account above.",
-        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
-        "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "reading-comparison"
+        "prompt": "Gist: What is the main situation in the reading?",
+        "answer": "A practical situation related to the unit"
       },
       {
-        "prompt": "Use the terms emergency exit, fire escape, sprinkler, garage bay, sleeping quarters, kitchen, pole, alarm bell, training tower, locker, control room, meeting room, flag to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
-        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
+        "prompt": "Detail: Which target term is important early in the situation?",
+        "answer": "emergency exit"
+      },
+      {
+        "prompt": "Detail: Which other term supports the task?",
+        "answer": "garage bay"
+      },
+      {
+        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
+        "answer": "The task or situation described"
+      },
+      {
+        "prompt": "Production: Explain the situation using two target words.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Spaced retrieval: Use the earlier word “fire boots” in a sentence connected to this lesson.",
+        "answer": "Open response"
+      },
+      {
+        "prompt": "Apply the lesson vocabulary in the l5 fire station task. Use emergency exit, fire escape, sprinkler, garage bay, sleeping quarters, kitchen, pole, alarm bell, training tower, locker, control room, meeting room, and flag in a connected response and explain one choice.",
+        "answer": "Open response: use each target term accurately and explain the choice.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Fire Station: A guided discussion",
-      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between emergency exit and fire escape, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
-      "scriptStarter": "Listen to the guide's account: The visitor identifies an emergency exit and an external fire escape. Overhead, a sprinkler is part of the building’s fire-control system. The garage bay holds the station’s vehicles. Pause and answer: Which overhead device can spray water to help control a fire?"
+      "title": "L5 Fire Station: In Context",
+      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
+      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
     },
     "spacedReview": "1 lesson(s) back: fire boots, gloves from fire-station-3\n3 lesson(s) back: firefighter, fire chief from fire-station-1\n7 lesson(s) back: Pipe, Cable from construction-site-2"
   }

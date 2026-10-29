@@ -137,14 +137,17 @@ describe("Sound effects", () => {
   });
 });
 
-describe("Recorded audio policy and stall handling", () => {
-  it("bounds media startup without reintroducing browser or device speech", async () => {
+describe("Speech synthesis stall handling", () => {
+  it("declares a timeout for utterances that never start", async () => {
     const { readFileSync } = await import("node:fs");
     const { resolve } = await import("node:path");
     const source = readFileSync(resolve(__dirname, "../shared/useAudio.ts"), "utf8");
 
-    expect(source).toContain("MEDIA_STREAM_TIMEOUT_MS");
-    expect(source).not.toMatch(/speechSynthesis|SpeechSynthesisUtterance/);
+    // With no installed voice, speak() can resolve to silence: neither onstart
+    // nor onerror fires, leaving status pinned at "loading" — which isPlaying
+    // counts, so the UI showed "Playing sound…" forever.
+    expect(source).toContain("SPEECH_START_TIMEOUT_MS");
+    expect(source).toMatch(/setStatus\(\(current\) => \(current === "loading" \? "error" : current\)\)/);
   });
 
   it("clears the stall timer on start, end, error, stop, and unmount", async () => {

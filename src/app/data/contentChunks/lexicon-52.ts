@@ -42,7 +42,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "crawl under",
         meaning: "get underneath a warm duvet",
         arabic: "يَخْلُدُ تَحْتَ اللِّحَاف",
-        example: "He crawled under the duvet and fell asleep instantly.",
+        example: "She crawled under the duvet and fell asleep instantly.",
       },
     ],
     sentences: [
@@ -53,8 +53,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Linen Care",
-        en: "He selected a blue floral duvet cover to brighten the bedroom.",
-        ar: "اختار غطاء لحاف أزرق مزينا بالزهور ليضفي البهجة على غرفة النوم.",
+        en: "She selected a blue floral duvet cover to brighten the bedroom.",
+        ar: "اخْتَارَتْ غِطَاءَ لِحَافٍ مُزَيَّناً بِزُهُورٍ زَرْقَاءَ لِإِضْفَاءِ بَهْجَةٍ عَلَى الغُرْفَةِ.",
       },
       {
         context: "Everyday Use",
@@ -233,8 +233,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Neat Appearance",
-        en: "He pressed his uniform blazer neatly each Sunday evening for the week ahead.",
-        ar: "يكوي سترة زيه بعناية مساء كل أحد استعدادا للأسبوع القادم.",
+        en: "She pressed her uniform blazer neatly each Sunday evening for the week ahead.",
+        ar: "كَمَتْ سُتْرَةَ زِيِّهَا المَدْرَسِيِّ بِتَرْتِيبٍ كُلَّ مَسَاءِ أَحَدٍ لِلأُسْبُوعِ القَادِمِ.",
       },
       {
         context: "School Identity",
@@ -313,8 +313,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Digital Research",
-        en: "He sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
-        ar: "جلس إلى مكتب حاسوب المكتبة ليبحث في الفهرس الإلكتروني عن مقالات بحثية محكمة.",
+        en: "She sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
+        ar: "جَلَسَتْ عَلَى مَكْتَبِ حَاسُوبِ المَكْتَبَةِ لِلْبَحْثِ فِي فِهْرِسِ الأَبْحَاثِ عَبْرَ الإِنْتِرْنِتِ عَنْ مَقَالَاتٍ مُحَكَّمَةٍ.",
       },
       {
         context: "Ergonomics",
@@ -328,8 +328,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
-    exampleArabic: "جلس إلى مكتب حاسوب المكتبة ليبحث في الفهرس الإلكتروني عن مقالات بحثية محكمة.",
+      "She sat at the library computer desk to search the online research catalog for peer-reviewed articles.",
+    exampleArabic:
+      "جَلَسَتْ عَلَى مَكْتَبِ حَاسُوبِ المَكْتَبَةِ لِلْبَحْثِ فِي فِهْرِسِ الأَبْحَاثِ عَبْرَ الإِنْتِرْنِتِ عَنْ مَقَالَاتٍ مُحَكَّمَةٍ.",
   },
   label: {
     id: "label",
@@ -405,8 +406,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Lunch Preparation",
-        en: "He mixed canned tuna with olive oil, diced celery, and Dijon mustard for lunch.",
-        ar: "خلط التونة المعلبة بزيت الزيتون والكرفس المقطع وخردل ديجون لوجبة الغداء.",
+        en: "She mixed canned tuna with olive oil, diced celery, and Dijon mustard for lunch.",
+        ar: "خَلَطَتْ تُونَةً مُعَلَّبَةً مَعَ زَيْتِ الزَّيْتُونِ وَالكَرَفْسِ وَالخَرْدَلِ لِوَجْبَةِ الغَدَاءِ.",
       },
       {
         context: "Japanese Cuisine",

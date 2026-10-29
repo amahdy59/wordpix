@@ -1,3 +1,4 @@
+import { HelpDisclosure } from "../shared/HelpDisclosure";
 import { memo, useState } from "react";
 import { createPortal } from "react-dom";
 import {
@@ -19,7 +20,6 @@ import { useTheme } from "../shared/ThemeToggle";
 import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useAudio } from "../shared/useAudio";
-import { AudioRecoveryStatus } from "../shared/AudioRecoveryStatus";
 import { useModalA11y } from "../shared/useModalA11y";
 import { Button } from "../shared/Button";
 import { IconButton } from "../shared/IconButton";
@@ -40,7 +40,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
   const { state, setPreferences, resetToZero } = useLearner();
   const { theme, resolvedTheme, toggleTheme } = useTheme();
   const { t, interfaceLang, setInterfaceLang } = useI18n();
-  const { speak, isError: previewAudioFailed, isSupported: previewAudioSupported } = useAudio();
+  const { speak } = useAudio();
 
   // These six were local useState that nothing read: the controls moved when
   // clicked and changed nothing, then discarded the value on close. They are
@@ -53,12 +53,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
     numeralSystem,
     includeSpeaking,
     includeListening,
-    includePronunciation,
     timedExercises,
     autoAdvance,
     spokenFeedback,
     reduceMotion,
-    autoPlayAudio,
   } = accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
   const [isPreloading, setIsPreloading] = useState(false);
@@ -120,13 +118,8 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
         tabIndex={-1}
         className="bg-wp-card border-t sm:border border-border rounded-t-[28px] sm:rounded-3xl w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col my-0 sm:my-auto max-h-[92dvh] pb-[env(safe-area-inset-bottom)] sm:pb-0 outline-none"
       >
-        <div
-          className="sm:hidden w-10 h-1 bg-muted-foreground/30 rounded-full mx-auto my-2 shrink-0"
-          aria-hidden="true"
-        />
-
         {/* Modal Header */}
-        <div className="p-4 sm:p-5 md:p-6 border-b border-border flex items-center justify-between bg-muted/40 shrink-0">
+        <div className="p-5 md:p-6 border-b border-border flex items-center justify-between bg-muted/40 shrink-0">
           <div className="flex items-center gap-3">
             <div className="size-10 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center shadow-xs">
               <Sliders className="size-5" />
@@ -216,10 +209,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       onClick={() => setInterfaceLang(lang)}
                       aria-pressed={interfaceLang === lang}
                       lang={lang}
-                      className={`px-3.5 py-1.5 min-h-[44px] rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                      className={`px-3 py-1.5 min-h-[44px] rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                         interfaceLang === lang
                           ? "bg-primary text-primary-foreground shadow-xs"
-                          : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                          : "text-muted-foreground hover:text-foreground"
                       }`}
                     >
                       {lang === "ar" ? t("settings.arabic") : t("settings.english")}
@@ -248,10 +241,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     setting: t("settings.highContrast"),
                     state: highContrast ? t("settings.enabled") : t("settings.disabled"),
                   })}
-                  className={`px-3.5 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
+                  className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                     highContrast
-                      ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
-                      : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
+                      ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                      : "bg-muted text-muted-foreground border-border"
                   }`}
                 >
                   {highContrast ? t("settings.enabledContrast") : t("settings.disabled")}
@@ -278,10 +271,10 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     setting: t("settings.reduceMotion"),
                     state: reduceMotion ? t("settings.enabled") : t("settings.disabled"),
                   })}
-                  className={`px-3.5 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer shadow-wp-xs ${
+                  className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
                     reduceMotion
-                      ? "bg-wp-green text-wp-text-on-green border-wp-green hover:opacity-95"
-                      : "bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 border-border"
+                      ? "bg-wp-green text-wp-text-on-green border-wp-green"
+                      : "bg-muted text-muted-foreground border-border"
                   }`}
                 >
                   {reduceMotion ? t("settings.enabled") : t("settings.disabled")}
@@ -447,13 +440,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     </button>
                   </div>
                 </div>
-                <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                  {t("settings.audioEngineDesc")}
-                </p>
-                <AudioRecoveryStatus
-                  failed={previewAudioFailed}
-                  supported={previewAudioSupported}
-                />
+                <HelpDisclosure label={t("help.howItWorks")}>
+                  <p>{t("settings.audioEngineDesc")}</p>
+                </HelpDisclosure>
               </div>
 
               <hr className="border-border/60" />
@@ -465,9 +454,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.speakingDrills")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                      {t("settings.speakingDrillsHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.speakingDrillsHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"
@@ -490,40 +479,11 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
-                      {t("settings.pronunciationExercises")}
-                    </span>
-                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                      {t("settings.pronunciationExercisesHint")}
-                    </p>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setAccessibility({ includePronunciation: !includePronunciation })
-                    }
-                    aria-pressed={includePronunciation}
-                    aria-label={t("settings.toggleLabel", {
-                      setting: t("settings.pronunciationExercises"),
-                      state: includePronunciation ? t("settings.enabled") : t("settings.disabled"),
-                    })}
-                    className={`px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                      includePronunciation
-                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                        : "bg-muted text-muted-foreground border-border"
-                    }`}
-                  >
-                    {includePronunciation ? t("settings.enabled") : t("settings.disabled")}
-                  </button>
-                </div>
-
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.timedExercises")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                      {t("settings.timedExercisesHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.timedExercisesHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"
@@ -548,9 +508,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.autoAdvance")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                      {t("settings.autoAdvanceHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.autoAdvanceHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"
@@ -575,9 +535,9 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                     <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.speakAnswers")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                      {t("settings.speakAnswersHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.speakAnswersHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"
@@ -600,38 +560,11 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <div>
                     <span className="font-sans font-bold text-foreground text-sm">
-                      {t("settings.autoPlayAudio")}
-                    </span>
-                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                      {t("settings.autoPlayAudioHint")}
-                    </p>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => setAccessibility({ autoPlayAudio: !autoPlayAudio })}
-                    aria-pressed={autoPlayAudio}
-                    aria-label={t("settings.toggleLabel", {
-                      setting: t("settings.autoPlayAudio"),
-                      state: autoPlayAudio ? t("settings.enabled") : t("settings.disabled"),
-                    })}
-                    className={`shrink-0 px-3 py-1.5 min-h-[44px] rounded-full font-sans font-bold text-xs transition-all border focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
-                      autoPlayAudio
-                        ? "bg-wp-green text-wp-text-on-green border-wp-green"
-                        : "bg-muted text-muted-foreground border-border"
-                    }`}
-                  >
-                    {autoPlayAudio ? t("settings.enabled") : t("settings.disabled")}
-                  </button>
-                </div>
-
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <span className="font-sans font-bold text-foreground text-sm">
                       {t("settings.listeningDrills")}
                     </span>
-                    <p className="font-sans text-xs text-muted-foreground mt-0.5">
-                      {t("settings.listeningDrillsHint")}
-                    </p>
+                    <HelpDisclosure label={t("help.howItWorks")}>
+                      <p>{t("settings.listeningDrillsHint")}</p>
+                    </HelpDisclosure>
                   </div>
                   <button
                     type="button"

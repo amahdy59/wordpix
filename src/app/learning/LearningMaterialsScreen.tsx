@@ -1,6 +1,6 @@
 import { ReferenceTable } from "../shared/ReferenceTable";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
-import { Volume2, Eye, EyeOff, CheckCircle2, XCircle } from "lucide-react";
+import { Volume2, Eye, EyeOff } from "lucide-react";
 import { useAudio } from "../shared/useAudio";
 import type { Action } from "../types";
 import { StatusBar } from "../shared/StatusBar";
@@ -9,7 +9,6 @@ import { Select } from "../shared/Select";
 import { StudyShell } from "./study/StudyShell";
 import { COURSE_UNITS, DEFAULT_UNIT_ID, type VocabularyItem } from "../data/courseCatalog";
 import { loadLearningMaterials } from "./registry";
-import { loadUnitVocabulary } from "../data/vocabulary";
 import { BLANK_TOKEN, type PhraseKind, type UnitLearningMaterials } from "./types";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { InteractiveText } from "./study/InteractiveText";
@@ -21,7 +20,6 @@ interface Props {
   unitId?: string;
   area?: string;
   nodeId?: string;
-  returnTo?: "home" | "explore" | "library" | "learn" | "profile" | "practice" | "lesson-entry";
   dispatch: React.Dispatch<Action>;
 }
 
@@ -44,7 +42,6 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   unitId,
   area,
   nodeId,
-  returnTo,
   dispatch,
 }: Props) {
   const { t } = useI18n();
@@ -56,8 +53,8 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   // RouterView keys this screen by unit id, so a different unit remounts with fresh state.
   useEffect(() => {
     let cancelled = false;
-    Promise.all([loadLearningMaterials(unit.id), loadUnitVocabulary(unit.id)])
-      .then(([loaded]) => {
+    loadLearningMaterials(unit.id)
+      .then((loaded) => {
         if (cancelled) return;
         if (!loaded) {
           setStatus("empty");
@@ -75,12 +72,8 @@ export const LearningMaterialsScreen = memo(function LearningMaterialsScreen({
   }, [unit.id, loadAttempt]);
 
   const handleBack = useCallback(() => {
-    if (returnTo && returnTo !== "lesson-entry") {
-      dispatch({ type: "GO", to: returnTo });
-    } else {
-      dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
-    }
-  }, [dispatch, returnTo, unit.id]);
+    dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id });
+  }, [dispatch, unit.id]);
 
   if (status === "loading") {
     return (
@@ -430,24 +423,9 @@ export function PhrasesSection({ materials }: { materials: UnitLearningMaterials
                 </span>
               </div>
               <p className="text-base text-foreground mt-1.5 leading-relaxed">{phrase.meaning}</p>
-              <div className="flex items-center justify-between gap-2 mt-1.5 border-s-2 border-primary/30 ps-2.5">
-                <p className="text-sm sm:text-base text-muted-foreground italic flex-1 min-w-0">
-                  &ldquo;{phrase.example}&rdquo;
-                </p>
-                {phrase.example && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      stop();
-                      speak(phrase.example);
-                    }}
-                    className="size-11 shrink-0 rounded-xl bg-secondary/80 text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] min-w-[44px]"
-                    aria-label={`Listen to example: ${phrase.example}`}
-                  >
-                    <Volume2 className="size-4" aria-hidden />
-                  </button>
-                )}
-              </div>
+              <p className="text-sm sm:text-base text-muted-foreground italic mt-1.5 border-s-2 border-primary/30 ps-2.5">
+                &ldquo;{phrase.example}&rdquo;
+              </p>
             </div>
             <button
               type="button"
@@ -710,8 +688,6 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
             <li
               key={item.id}
               className="text-foreground p-3.5 rounded-2xl border border-border bg-background"
-              lang="en"
-              dir="ltr"
             >
               <label className="flex flex-wrap items-center gap-2 text-base sm:text-base font-medium">
                 <span>
@@ -724,37 +700,20 @@ export function PracticeSection({ materials }: { materials: UnitLearningMaterial
                     setAnswers((prev) => ({ ...prev, [item.id]: e.target.value }));
                     setChecked(false);
                   }}
-                  aria-label={t("learningMaterials.sentenceAnswerLabel", { number: index + 1 })}
-                  aria-invalid={checked && !isCorrect ? true : undefined}
-                  aria-describedby={checked && !isCorrect ? `guidance-${item.id}` : undefined}
-                  className={`wp-question-blank w-36 min-w-0 border-0 border-b-2 px-3 py-1.5 text-base font-bold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px] motion-safe:transition-colors ${
+                  aria-label={`Answer for sentence ${index + 1}`}
+                  className={`min-w-36 rounded-xl border px-3 py-1.5 bg-background text-foreground text-base font-bold outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px] transition-colors ${
                     checked
                       ? isCorrect
-                        ? "border-feedback-success-border bg-feedback-success-surface text-feedback-success-foreground"
-                        : "border-feedback-error-border bg-feedback-error-surface text-feedback-error-foreground"
-                      : "border-primary"
+                        ? "border-wp-green bg-wp-green-light/20 text-wp-green"
+                        : "border-destructive bg-destructive/10 text-destructive"
+                      : "border-border hover:border-primary/50"
                   }`}
                 />
                 <span>{after}</span>
-                {checked && isCorrect && (
-                  <span className="inline-flex items-center gap-1 text-feedback-success-foreground font-bold ms-1">
-                    <CheckCircle2 className="size-4 shrink-0" aria-hidden="true" />
-                    <span className="sr-only">{t("exercise.correctTitle")}</span>
-                  </span>
-                )}
                 {checked && !isCorrect && (
-                  <span
-                    id={`guidance-${item.id}`}
-                    className="inline-flex items-center gap-1 text-sm sm:text-base text-muted-foreground font-bold ms-1"
-                  >
-                    <XCircle
-                      className="size-4 shrink-0 text-feedback-error-foreground"
-                      aria-hidden="true"
-                    />
-                    <span>
-                      {t("learningMaterials.correctAnswerPrefix")}{" "}
-                      <span className="text-feedback-error-foreground">{item.answer}</span>
-                    </span>
+                  <span className="text-sm sm:text-base text-muted-foreground font-bold ms-1">
+                    {t("learningMaterials.correctAnswerPrefix")}{" "}
+                    <span className="text-wp-green">{item.answer}</span>
                   </span>
                 )}
               </label>
@@ -872,7 +831,6 @@ export function ReferenceSection({ materials }: { materials: UnitLearningMateria
               {t("learningMaterials.posLabel")}
             </label>
             <Select
-              id="pos-filter"
               ariaLabel={t("learningMaterials.posLabel")}
               value={posFilter}
               onChange={(value) => setPosFilter(value)}

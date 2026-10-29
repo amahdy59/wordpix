@@ -93,7 +93,7 @@ export const COLORS_LEARNING: UnitLearningMaterials = {
       phrase: "see red",
       kind: "idiom",
       meaning: "To become very angry.",
-      example: "He saw red when he discovered the mess — his face turned crimson.",
+      example: "She saw red when she discovered the mess — her face turned crimson.",
     },
     {
       id: "colors-feeling-blue",
@@ -107,7 +107,7 @@ export const COLORS_LEARNING: UnitLearningMaterials = {
       phrase: "green with envy",
       kind: "idiom",
       meaning: "Very jealous.",
-      example: "He was green with envy when his friend wore that gorgeous emerald dress.",
+      example: "She was green with envy when her friend wore that gorgeous emerald dress.",
     },
     {
       id: "colors-in-the-pink",
@@ -121,7 +121,7 @@ export const COLORS_LEARNING: UnitLearningMaterials = {
       phrase: "a golden opportunity",
       kind: "idiom",
       meaning: "An excellent chance.",
-      example: "The scholarship was a golden opportunity — he couldn't let it pass.",
+      example: "The scholarship was a golden opportunity — she couldn't let it pass.",
     },
     {
       id: "colors-once-in-a-blue-moon",
@@ -142,14 +142,14 @@ export const COLORS_LEARNING: UnitLearningMaterials = {
       phrase: "paint the town red",
       kind: "idiom",
       meaning: "To go out and celebrate wildly.",
-      example: "It's his birthday — let's paint the town red tonight!",
+      example: "It's her birthday — let's paint the town red tonight!",
     },
     {
       id: "colors-with-flying-colours",
       phrase: "with flying colours",
       kind: "idiom",
       meaning: "With great success.",
-      example: "He passed the exam with flying colours — top marks across the board.",
+      example: "She passed the exam with flying colours — top marks across the board.",
     },
     {
       id: "colors-show-one-s-true-colours",

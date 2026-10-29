@@ -5,8 +5,6 @@ import { useI18n } from "../../../context/I18nContext";
 import { formatNumber } from "../../../shared/useAccessibilityPreferences";
 import { useLearner } from "../../../context/LearnerContext";
 import { playCorrectSound, playIncorrectSound } from "../../../shared/useSound";
-import { useDevicePreference } from "../../../shared/devicePreferences";
-import { ClozeText } from "../../../shared/SentenceBlank";
 
 interface Props {
   itemId: string;
@@ -32,7 +30,6 @@ export function MultipleChoiceQuiz({
   onRetry,
 }: Props) {
   const { t } = useI18n();
-  const shortcutsEnabled = useDevicePreference("character-shortcuts");
   const { state: learnerState } = useLearner();
   const { numeralSystem, reduceMotion } = learnerState.accessibility;
 
@@ -72,7 +69,7 @@ export function MultipleChoiceQuiz({
   // Number-key shortcuts (1–4) scoped to this exercise
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (!shortcutsEnabled || e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+      if (e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
       const target = e.target;
       if (
         target instanceof HTMLElement &&
@@ -88,23 +85,24 @@ export function MultipleChoiceQuiz({
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [options.length, handlePick, shortcutsEnabled]);
+  }, [options.length, handlePick]);
 
   const questionId = `question-label-${itemId}`;
 
   return (
     <div
-      className={`min-w-0 flex flex-col ${reduceMotion ? "" : "animate-in fade-in duration-200"}`}
+      className={`rounded-2xl border border-border p-4 sm:p-5 bg-card min-w-0 flex flex-col ${
+        reduceMotion ? "" : "animate-in fade-in duration-200"
+      }`}
     >
       {/* Question — English learning content always carries explicit lang+dir */}
       <div
         id={questionId}
-        data-question-prompt
-        className="wp-question-prompt mb-4"
+        className="mb-4 font-bold text-lg sm:text-xl text-foreground leading-relaxed"
         lang="en"
         dir="ltr"
       >
-        {typeof question === "string" ? <ClozeText text={question} /> : question}
+        {question}
       </div>
 
       {/* Answer choices — grouped for screen readers */}
@@ -204,7 +202,7 @@ export function MultipleChoiceQuiz({
           <button
             type="button"
             onClick={onGiveUp}
-            className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-bold text-foreground border border-border bg-card hover:bg-secondary rounded-xl transition-colors focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary min-h-[44px]"
+            className="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-bold text-muted-foreground hover:text-foreground hover:bg-secondary rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary min-h-[44px]"
           >
             <HelpCircle className="size-4" aria-hidden />
             <span>{t("practice.iDontKnow")}</span>

@@ -70,7 +70,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "put away",
         meaning: "place groceries inside the fridge",
         arabic: "يَحْفَظُ فِي الثَّلَّاجَة",
-        example: "He put away the fresh vegetables into the refrigerator crisper.",
+        example: "She put away the fresh vegetables into the refrigerator crisper.",
       },
       {
         phrase: "take out",
@@ -87,8 +87,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Cooking Prep",
-        en: "He took out fresh butter and eggs from the refrigerator to bake a cake.",
-        ar: "أخرج الزبدة والبيض الطازجين من الثلاجة ليخبز كعكة.",
+        en: "She took out fresh butter and eggs from the refrigerator to bake a cake.",
+        ar: "أَخْرَجَتِ الزُّبْدَةَ الطَّازَجَةَ وَالبَيْضَ مِنَ الثَّلَّاجَةِ لِخَبْزِ الكَعْكَةِ.",
       },
       {
         context: "Cleaning",
@@ -392,8 +392,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Bagging Station",
-        en: "He packed his fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
-        ar: "وضع الخضراوات الطازجة ومستلزمات المطبخ في حقائب تسوق قماشية متينة قابلة لإعادة الاستخدام.",
+        en: "She packed her fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
+        ar: "عَبَّأَتْ خُضْرَاوَاتِهَا وَمُؤَنَهَا فِي أَكْيَاسِ تَسَوُّقٍ قُمَاشِيَّةٍ مَتِينَةٍ قَابِلَةٍ لِإِعَادَةِ الاسْتِخْدَامِ.",
       },
       {
         context: "Eco-Friendly Choice",
@@ -407,9 +407,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He packed his fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
+      "She packed her fresh produce and pantry goods into sturdy canvas reusable shopping bags.",
     exampleArabic:
-      "وضع الخضراوات الطازجة ومستلزمات المطبخ في حقائب تسوق قماشية متينة قابلة لإعادة الاستخدام.",
+      "عَبَّأَتْ خُضْرَاوَاتِهَا وَمُؤَنَهَا فِي أَكْيَاسِ تَسَوُّقٍ قُمَاشِيَّةٍ مَتِينَةٍ قَابِلَةٍ لِإِعَادَةِ الاسْتِخْدَامِ.",
   },
   cliff: {
     id: "cliff",
@@ -581,14 +581,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "stretch out on",
         meaning: "perform body floor exercises upon cushioned pad",
         arabic: "يَسْتَلْقِي عَلَى بِسَاطِ التَّمَارِين",
-        example: "He stretched out on his non-slip yoga mat.",
+        example: "She stretched out on her non-slip yoga mat.",
       },
     ],
     sentences: [
       {
         context: "Yoga & Pilates",
-        en: "He unrolled his non-slip purple yoga mat on the studio floor for morning stretches.",
-        ar: "فرد بساط اليوغا الأرجواني غير القابل للانزلاق على أرضية الاستوديو لتمارين الصباح.",
+        en: "She unrolled her non-slip purple yoga mat on the studio floor for morning stretches.",
+        ar: "فَرَدَتْ بِسَاطَ اليُوغَا البَنَفْسَجِيَّ عَلَى الأَرْضِ لِتَمَارِينِ الإِطَالَةِ الصَّبَاحِيَّةِ.",
       },
       {
         context: "Gymnastics Safety",
@@ -602,9 +602,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He unrolled his non-slip purple yoga mat on the studio floor for morning stretches.",
+      "She unrolled her non-slip purple yoga mat on the studio floor for morning stretches.",
     exampleArabic:
-      "فرد بساط اليوغا الأرجواني غير القابل للانزلاق على أرضية الاستوديو لتمارين الصباح.",
+      "فَرَدَتْ بِسَاطَ اليُوغَا البَنَفْسَجِيَّ عَلَى الأَرْضِ لِتَمَارِينِ الإِطَالَةِ الصَّبَاحِيَّةِ.",
   },
   referee: {
     id: "referee",
@@ -697,7 +697,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "stay in",
         meaning: "reside as an admitted inpatient",
         arabic: "يَمْكُثُ فِي غُرْفَةِ المَرِيض",
-        example: "He stayed in a sunny patient room for three days.",
+        example: "She stayed in a sunny patient room for three days.",
       },
     ],
     sentences: [

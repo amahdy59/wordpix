@@ -1,14 +1,10 @@
-import { waitForStyles } from "./waitForStyles";
-import { expect, test } from "./offlineTest";
-import { reloadOffline } from "./offlineReload";
-import { disableNarrationForContentTest } from "./audioFixture";
+import { expect, test } from "@playwright/test";
 
 test("word details fetch bounded shards and survive a cached offline reload", async ({
   page,
-  offlineServer,
+  context,
 }) => {
   test.setTimeout(60_000);
-  await disableNarrationForContentTest(page);
   const scripts = new Set<string>();
   const errors: string[] = [];
   page.on("request", (request) => {
@@ -18,23 +14,26 @@ test("word details fetch bounded shards and survive a cached offline reload", as
   page.on("console", (message) => {
     if (message.type() === "error") errors.push(message.text());
   });
-  await page.goto("/wordpix/#/learn/construction-site", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/wordpix/#/home");
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
   });
-  await reloadOffline(page);
+  await page.reload();
   await expect
     .poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller)))
     .toBe(true);
-  await expect(page.getByRole("button", { name: /^Start: group/ }).first()).toBeVisible({
-    timeout: 30_000,
+  // Service-worker control can precede React mounting and hash-router listeners.
+  // Wait for the lazy Home screen before performing same-document navigation.
+  await expect(page.getByRole("main").getByRole("heading", { level: 1 })).toBeVisible();
+  await page.goto("/wordpix/#/learn/construction-site");
+  await expect(page.getByRole("button", { name: /^Start lesson:/ }).first()).toBeVisible({
+    timeout: 15_000,
   });
   expect([...scripts].filter((url) => /\/lexicon-\d+-/.test(url))).toHaveLength(0);
   expect([...scripts].some((url) => /\/story-.*-groups-/.test(url))).toBe(false);
 
   await page
-    .getByRole("button", { name: /^Start: group/ })
+    .getByRole("button", { name: /^Start lesson:/ })
     .first()
     .click();
   await page.getByRole("button", { name: "Word details", exact: true }).click();
@@ -45,25 +44,20 @@ test("word details fetch bounded shards and survive a cached offline reload", as
   expect([...scripts].some((url) => url.includes("lexicon-dictionary"))).toBe(false);
   await expect
     .poll(() =>
-      page.evaluate(
-        async (urls) => {
-          // Inspect stored URLs without inventing the Origin headers of module requests.
-          const cached = await Promise.all(
-            urls.map((url) => caches.match(url, { ignoreVary: true }))
-          );
-          return cached.every(Boolean);
-        },
-        [...scripts]
-      )
+      page.evaluate(async (urls) => {
+        // Inspect stored URLs without inventing the Origin headers of module requests.
+        const cached = await Promise.all(
+          urls.map((url) => caches.match(url, { ignoreVary: true }))
+        );
+        return cached.every(Boolean);
+      }, shards)
     )
     .toBe(true);
 
-  offlineServer.setOffline(true);
-  await reloadOffline(page);
-  const wordDetails = page.getByRole("button", { name: "Word details", exact: true });
-  await expect(wordDetails).toBeVisible({ timeout: 30_000 });
-  await wordDetails.click();
-  await expect(page.getByRole("region", { name: /^Examples/ })).toBeVisible({ timeout: 15_000 });
-  offlineServer.setOffline(false);
+  await context.setOffline(true);
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.getByRole("button", { name: "Word details", exact: true }).click();
+  await expect(page.getByRole("region", { name: /^Examples/ })).toBeVisible();
+  await context.setOffline(false);
   expect(errors).toEqual([]);
 });

@@ -1,27 +1,17 @@
-import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import path from "node:path";
-import sharp from "sharp";
 import AxeBuilder from "@axe-core/playwright";
 import { FOCUSED_LESSON_WORD_LIMIT } from "../src/app/lesson/lessonSequence";
-import { disableNarrationForContentTest } from "./audioFixture";
 
 // Layout checks decode the real local image corpus without relying on live R2.
 // Keep the service worker from bypassing these deterministic request fixtures.
 test.use({ viewport: { width: 390, height: 844 }, serviceWorkers: "block" });
-test.beforeEach(async ({ page, browserName }) => {
-  await disableNarrationForContentTest(page);
+test.beforeEach(async ({ page }) => {
   await page.route("**/word-images/construction-site/*.avif", async (route) => {
     const filename = new URL(route.request().url()).pathname.split("/").pop()!;
     await route.fulfill({
-      ...(browserName === "webkit"
-        ? {
-            body: await sharp(path.resolve("public/word-images/construction-site", filename))
-              .png()
-              .toBuffer(),
-          }
-        : { path: path.resolve("public/word-images/construction-site", filename) }),
-      contentType: browserName === "webkit" ? "image/png" : "image/avif",
+      path: path.resolve("public/word-images/construction-site", filename),
+      contentType: "image/avif",
     });
   });
 });
@@ -37,15 +27,13 @@ const seedStorage = async (page: import("@playwright/test").Page) => {
 
 test("mobile listen-and-repeat keeps one focused learning path", async ({ page }) => {
   await seedStorage(page);
-  await page.goto("/", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/");
   await page.waitForLoadState("networkidle");
 
-  await page.goto("/#/learn/construction-site", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/#/learn/construction-site");
   await page.getByRole("heading", { name: /Construction Site/i }).waitFor({ timeout: 15000 });
   await page
-    .getByRole("button", { name: /^Start: group/ })
+    .getByRole("button", { name: /^Start lesson:/ })
     .first()
     .click();
 
@@ -92,19 +80,11 @@ for (const viewport of [
   test(`listen layout uses available space at ${viewport.width}px`, async ({ page }, testInfo) => {
     await page.setViewportSize(viewport);
     await page.goto("/#/learn/construction-site", { waitUntil: "domcontentloaded" });
-    await waitForStyles(page);
     await page
-      .getByRole("button", { name: /^Start: group/ })
+      .getByRole("button", { name: /^Start lesson:/ })
       .first()
       .click();
     await page.getByRole("heading", { name: "Listen & repeat" }).waitFor({ timeout: 15_000 });
-    await expect(page.getByRole("radio", { name: "Automatic", exact: true })).toHaveAttribute(
-      "aria-checked",
-      "true"
-    );
-    // Keep layout/keyboard assertions on one card while automatic playback is
-    // covered separately by the playback regression tests.
-    await page.getByRole("radio", { name: "Manual", exact: true }).click();
     const hero = page.locator('img[fetchpriority="high"]');
     const listen = page.getByRole("button", { name: /Play audio pronunciation/ });
     await expect(hero).toBeVisible();
@@ -133,8 +113,7 @@ for (const viewport of [
     );
     await page.keyboard.press("ArrowLeft");
     const details = page.getByRole("button", { name: "Word details", exact: true });
-    await details.focus();
-    await details.press("Enter");
+    await details.click();
     const detailsSurface =
       viewport.width >= 1280
         ? page.getByRole("complementary", { name: /^Details for / })
@@ -149,9 +128,7 @@ for (const viewport of [
         })
         .toBeLessThan(1);
     }
-    await expect(
-      detailsSurface.getByRole("button", { name: /^(Close|Close word details)$/ })
-    ).toBeVisible();
+    await expect(detailsSurface.getByRole("button", { name: "Close word details" })).toBeVisible();
     await page.keyboard.press("Escape");
     await expect(detailsSurface).toHaveCount(0);
     await expect(details).toBeFocused();

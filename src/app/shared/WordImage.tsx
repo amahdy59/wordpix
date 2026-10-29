@@ -1,12 +1,10 @@
 import { imageObjectPosition } from "./imageObjectPosition";
-import { emitLearningEvent } from "../analytics/learningAnalytics";
 import { memo, useCallback, useEffect, useMemo, useState } from "react";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { useI18n } from "../context/I18nContext";
 import { ImageOff } from "lucide-react";
 import { PLACEHOLDER_DESCRIPTION } from "../data/placeholderDescription";
-import { getTopicTokens } from "../../styles/topicTokens";
 
 export type ImageAltMode = "learning" | "assessment" | "decorative";
 export type ImageSizePreset = "thumb" | "card" | "hero";
@@ -27,6 +25,21 @@ interface Props {
 }
 
 const OPTION_LABELS = ["A", "B", "C", "D", "E", "F"];
+
+const TOPIC_COLORS: Record<string, [string, string]> = {
+  furniture: ["#ede9fe", "#5b21b6"],
+  bedding: ["#dbeafe", "#1d4ed8"],
+  features: ["#ccfbf1", "#0f766e"],
+  objects: ["#fef3c7", "#92400e"],
+  personal: ["#fce7f3", "#9d174d"],
+  electronics: ["#e2e8f0", "#334155"],
+  flowers: ["#fce7f3", "#be123c"],
+  "trees-shrubs": ["#dcfce7", "#15803d"],
+  "garden-tools": ["#fef3c7", "#b45309"],
+  "parts-of-a-plant": ["#ecfdf5", "#047857"],
+  "garden-creatures": ["#fae8ff", "#a21caf"],
+  "garden-features": ["#d1fae5", "#065f46"],
+};
 
 const PRESET_WIDTH: Record<ImageSizePreset, number> = { thumb: 160, hero: 800, card: 400 };
 
@@ -71,7 +84,10 @@ export function getWordFallbackDataUrl(
   altMode: ImageAltMode = "learning",
   placeholderLabel = "Image placeholder"
 ) {
-  const token = getTopicTokens(word.topic);
+  const [background] = TOPIC_COLORS[word.topic] ?? ["#f1f5f9", "#0f172a"];
+  // The shared dark neutral keeps small placeholder labels above 7:1 on
+  // every pastel fallback surface; topic accents were too light at this size.
+  const foreground = TOPIC_COLORS.electronics[1];
   const label = escapeXml(word.label);
   const placeholder = escapeXml(placeholderLabel);
 
@@ -80,25 +96,15 @@ export function getWordFallbackDataUrl(
 
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img">
-      <style>
-        .topic-bg { fill: ${token.bgLight}; }
-        .topic-circle { fill: ${token.fgLight}; opacity: .12; }
-        .topic-fg { fill: ${token.fgLight}; }
-        @media (prefers-color-scheme: dark) {
-          .topic-bg { fill: ${token.bgDark}; }
-          .topic-circle { fill: ${token.fgDark}; opacity: .15; }
-          .topic-fg { fill: ${token.fgDark}; }
-        }
-      </style>
-      <rect width="800" height="600" rx="48" class="topic-bg"/>
-      <circle cx="400" cy="220" r="112" class="topic-circle"/>
-      <text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="112" font-weight="800" class="topic-fg">
+      <rect width="800" height="600" rx="48" fill="${background}"/>
+      <circle cx="400" cy="220" r="112" fill="${foreground}" opacity=".12"/>
+      <text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="112" font-weight="800" fill="${foreground}">
         ${centerText}
       </text>
-      <text x="400" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="800" class="topic-fg">
+      <text x="400" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="800" fill="${foreground}">
         ${bottomText}
       </text>
-      <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" class="topic-fg">
+      <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="${foreground}">
         ${placeholder}
       </text>
     </svg>`;
@@ -188,7 +194,6 @@ export const WordImage = memo(function WordImage({
     setRetryToken((current) => {
       if (current >= 1) {
         setFailed(true);
-        emitLearningEvent({ name: "media_failed", properties: { category: "image" } });
         return current;
       }
       return current + 1;

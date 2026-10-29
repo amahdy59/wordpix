@@ -36,7 +36,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "cuddle up with",
         meaning: "hold closely in bed",
         arabic: "يَحْتَضِنُ بِحَنَان",
-        example: "The toddler cuddled up with his favorite teddy bear at bedtime.",
+        example: "The toddler cuddled up with her favorite teddy bear at bedtime.",
       },
       {
         phrase: "hold onto",

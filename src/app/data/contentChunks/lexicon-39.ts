@@ -329,8 +329,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Produce Bin",
-        en: "He loaded a heavy five-pound sack of russet potatoes into his market cart.",
-        ar: "وضع كيس بطاطس ثقيلا يزن خمسة أرطال في عربة التسوق.",
+        en: "She loaded a heavy five-pound sack of russet potatoes into her market cart.",
+        ar: "حَمَّلَتْ كِيسًا ثَقِيلًا يَزِنُ خَمْسَةَ أَرْطَالٍ مِنْ بَطَاطِسِ الرُّوسِيت فِي عَرَبَتِهَا.",
       },
       {
         context: "Comfort Food",
@@ -343,8 +343,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "تُشَكِّلُ البَطَاطِسُ المَخْبُوزَةُ السَّاخِنَةُ مَعَ الكْرِيمَةِ الحَامِضَةِ وَالجُبْنِ وَجْبَةً مُشْبِعَةً.",
       },
     ],
-    exampleSentence: "He loaded a heavy five-pound sack of russet potatoes into his market cart.",
-    exampleArabic: "وضع كيس بطاطس ثقيلا يزن خمسة أرطال في عربة التسوق.",
+    exampleSentence: "She loaded a heavy five-pound sack of russet potatoes into her market cart.",
+    exampleArabic:
+      "حَمَّلَتْ كِيسًا ثَقِيلًا يَزِنُ خَمْسَةَ أَرْطَالٍ مِنْ بَطَاطِسِ الرُّوسِيت فِي عَرَبَتِهَا.",
   },
   ciabatta: {
     id: "ciabatta",

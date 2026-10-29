@@ -116,7 +116,7 @@ export const FOOTWEAR_LEARNING: UnitLearningMaterials = {
       phrase: "fill someone's shoes",
       kind: "idiom",
       meaning: "To take over someone's role successfully.",
-      example: "It'll be hard to fill his shoes — he was an amazing manager.",
+      example: "It'll be hard to fill her shoes — she was an amazing manager.",
     },
     {
       id: "footwear-if-the-shoe-fits-wear-it",

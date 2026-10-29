@@ -1,15 +1,12 @@
-import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 
 test("Hadith curriculum exposes all 42 lessons and opens the canonical source", async ({
   page,
 }) => {
-  test.setTimeout(60_000);
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
 
-  await page.goto("/#/hadith", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/#/hadith");
 
   await expect(page.getByRole("heading", { name: "Hadith English curriculum" })).toBeVisible();
   const results = page.getByRole("tabpanel");
@@ -38,20 +35,9 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
   await expect(finalHadithLesson).toBeVisible();
   await page.getByRole("button", { name: /Actions and Intentions/ }).click();
   await expect(page).toHaveURL(/#\/hadith\/lesson-1$/);
-  await expect(page.getByText("All steps", { exact: true })).toBeVisible({ timeout: 30_000 });
-  await page.getByText("All steps", { exact: true }).click();
-  await page.getByRole("button", { name: /Read & Listen/ }).click();
-  await expect(page.getByRole("heading", { name: "Read and listen", exact: true })).toHaveCount(1);
-  const translation = page.getByRole("article").filter({
-    has: page.getByRole("heading", { name: "English Translation", exact: true }),
-  });
-  await expect(translation).toHaveCount(1);
-  await expect(
-    translation.locator("p").filter({ hasText: /Actions are \(judged\) by motives/ })
-  ).toHaveCount(1);
-  await expect(
-    translation.getByRole("button", { name: "Listen to translation", exact: true })
-  ).toBeVisible();
+  await page.getByRole("tab", { name: "Read & Listen" }).click();
+  await expect(page.getByText("Complete Hadith", { exact: true })).toHaveCount(1);
+  await expect(page.getByText(/Actions are \(judged\) by motives/)).toHaveCount(1);
   expect(errors).toEqual([]);
 });
 
@@ -65,21 +51,15 @@ test("pronunciation curriculum is grouped, searchable, and uses R2-backed artwor
     if (request.url().includes("/pronunciation/v1/")) imageRequests.push(request.url());
   });
 
-  await page.goto("/#/pronunciation", { waitUntil: "domcontentloaded" });
-  await waitForStyles(page);
+  await page.goto("/#/pronunciation");
 
   await expect(page.getByRole("heading", { name: "Pronunciation curriculum" })).toBeVisible();
   await expect(page.getByRole("heading", { name: /Sound contrasts/i })).toBeVisible();
   const chapterNavigation = page.getByRole("navigation", {
     name: "Jump to a pronunciation chapter",
   });
-  if (await chapterNavigation.getByRole("combobox").isVisible()) {
-    await expect(chapterNavigation.locator("option")).toHaveCount(9);
-    await chapterNavigation.getByRole("combobox").selectOption("pronunciation-chapter-8");
-  } else {
-    await expect(chapterNavigation.getByRole("button")).toHaveCount(8);
-    await chapterNavigation.getByRole("button", { name: "Chapter 8" }).click();
-  }
+  await expect(chapterNavigation.getByRole("button")).toHaveCount(8);
+  await chapterNavigation.getByRole("button", { name: "Chapter 8" }).click();
   await expect(page.getByRole("heading", { name: /Transfer/i }).last()).toBeVisible();
   const pronunciationScroller = page.getByRole("main");
   await expect(pronunciationScroller).toHaveCount(1);
@@ -92,19 +72,10 @@ test("pronunciation curriculum is grouped, searchable, and uses R2-backed artwor
   await page.getByRole("button", { name: /Sheep or Ship/ }).click();
 
   await expect(page).toHaveURL(/#\/pronunciation\/lesson-02$/);
-  await expect(page.getByRole("heading", { name: /Sheep or Ship/ })).toBeVisible({
-    timeout: 30_000,
-  });
-  await page.getByText("Sound tips", { exact: true }).click();
-  const tips = page
-    .locator("details")
-    .filter({ has: page.getByText("Sound tips", { exact: true }) });
-  await expect(
-    tips.getByRole("button", { name: "Play pronunciation for sheep", exact: true })
-  ).toBeVisible();
-  await expect(
-    tips.getByRole("button", { name: "Play pronunciation for ship", exact: true })
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: /Sheep or Ship/ })).toBeVisible();
+  await expect(page.getByRole("list", { name: "Target sound contrasts" })).toContainText(
+    "sheep / ship"
+  );
   await expect.poll(() => imageRequests.length).toBeGreaterThan(0);
   const appOrigin = new URL(page.url()).origin;
   expect(

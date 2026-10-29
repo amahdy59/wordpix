@@ -39,9 +39,8 @@ describe("ExitConfirmModal accessibility", () => {
 
     const dialog = await screen.findByRole("alertdialog");
     expect(dialog).toHaveAttribute("aria-modal", "true");
-    expect(dialog).toHaveAccessibleName("Leave this lesson?");
-    expect(dialog).toHaveAccessibleDescription(/Completed learning remains saved/i);
-    expect(dialog).toHaveAccessibleDescription(/Unfinished review sessions restart/i);
+    expect(dialog).toHaveAccessibleName("Quit Lesson Session?");
+    expect(dialog).toHaveAccessibleDescription(/will not be saved/i);
   });
 
   it("focuses the non-destructive action first", async () => {
@@ -160,7 +159,7 @@ const modalCases: ModalCase[] = [
   },
   {
     name: "PlacementQuizModal",
-    expectedName: "Find a starting point",
+    expectedName: "Test Your Level",
     renderModal: (onClose) => <PlacementQuizModal isOpen onClose={onClose} onComplete={vi.fn()} />,
   },
 ];

@@ -173,7 +173,7 @@ export const CAR_PARTS_MECHANICS_LEARNING: UnitLearningMaterials = {
       kind: "phrasal-verb",
       meaning: "To stop at the side of the road.",
       example:
-        "A warning light came on, so he pulled over immediately and called his breakdown service.",
+        "A warning light came on, so she pulled over immediately and called her breakdown service.",
     },
     {
       id: "car-parts-mechanics-under-the-weather",

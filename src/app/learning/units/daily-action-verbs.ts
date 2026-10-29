@@ -98,7 +98,7 @@ export const DAILY_ACTION_VERBS_LEARNING: UnitLearningMaterials = {
       phrase: "burn the midnight oil",
       kind: "idiom",
       meaning: "To work or study late into the night.",
-      example: "He's been burning the midnight oil preparing for his final exams.",
+      example: "She's been burning the midnight oil preparing for her final exams.",
     },
     {
       id: "daily-action-verbs-sleep-like-a-log",
@@ -119,7 +119,7 @@ export const DAILY_ACTION_VERBS_LEARNING: UnitLearningMaterials = {
       phrase: "put your feet up",
       kind: "idiom",
       meaning: "To relax.",
-      example: "After a long day at work, he just wanted to put his feet up and watch TV.",
+      example: "After a long day at work, she just wanted to put her feet up and watch TV.",
     },
     {
       id: "daily-action-verbs-have-a-lot-on-your-plate",

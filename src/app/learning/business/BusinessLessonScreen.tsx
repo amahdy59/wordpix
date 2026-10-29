@@ -16,6 +16,7 @@ import { BusinessExerciseStage } from "./stages/BusinessExerciseStage";
 import { BusinessDiscussionStage } from "./stages/BusinessDiscussionStage";
 import { BusinessSpeakingStage } from "./stages/BusinessSpeakingStage";
 import { BusinessReviewStage } from "./stages/BusinessReviewStage";
+import { resolveAssetUrl } from "../../../utils/assetUrl";
 
 interface Props {
   unitId: string;
@@ -145,6 +146,54 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
       aria-labelledby="lesson-header-title"
     >
       {/* Top Banner Navigation */}
+      <header className="shrink-0 flex items-center justify-between border-b border-border bg-card px-4 sm:px-8 py-3.5 shadow-wp-xs">
+        <div className="flex items-center gap-3 min-w-0">
+          <button
+            type="button"
+            onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
+            className="inline-flex min-h-11 min-w-11 items-center justify-center gap-1.5 rounded-xl px-2.5 font-bold text-muted-foreground hover:bg-muted hover:text-foreground transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
+            aria-label="Back to Business English Curriculum"
+          >
+            <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
+            <span className="hidden sm:inline text-base">{t("business.curriculumNavLabel")}</span>
+          </button>
+
+          <div className="h-4 w-px bg-border hidden sm:block" aria-hidden />
+
+          <div className="flex items-center gap-2.5 min-w-0">
+            {unit.heroImageSrc && (
+              <div className="size-8 shrink-0 overflow-hidden rounded-lg border border-border/80 bg-muted/40 relative hidden sm:block">
+                <img
+                  src={resolveAssetUrl(unit.heroImageSrc)}
+                  alt=""
+                  aria-hidden="true"
+                  className="size-full object-cover"
+                  loading="lazy"
+                  onError={(e) => {
+                    (e.currentTarget as HTMLElement).style.display = "none";
+                  }}
+                />
+              </div>
+            )}
+            <span className="shrink-0 rounded-lg bg-secondary px-2 py-0.5 text-sm font-black text-primary uppercase">
+              {unit.level}
+            </span>
+            <h1
+              id="lesson-header-title"
+              className="min-w-0 break-words text-base sm:text-lg font-bold text-foreground"
+            >
+              {t("business.unitColonTitle", { number: unit.unitNumber, title: unit.title })}
+            </h1>
+          </div>
+        </div>
+
+        {isMastered && (
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-feedback-success-surface px-3 py-1 text-sm font-black text-feedback-success-foreground">
+            <CheckCircle2 className="size-4" aria-hidden />
+            <span className="hidden sm:inline">{t("business.masteredBadge")}</span>
+          </span>
+        )}
+      </header>
 
       {/* Screen Reader Announcement */}
       <div className="sr-only" aria-live="polite">
@@ -155,168 +204,123 @@ export function BusinessLessonScreen({ unitId, initialStage, dispatch }: Props) 
         })}
       </div>
 
-      {/* Responsive Workspace Layout */}
-      <div className="wp-container-shell wp-layout-gutter py-3 sm:py-5">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
-          {/* Side-Rail Workspace on Desktop (lg+) / Navigation Header on Mobile */}
-          <aside className="wp-course-sidebar w-full lg:w-80 lg:shrink-0 lg:sticky lg:top-6 flex flex-col gap-4">
-            {/* Top Bar with Back and Mastery Badge */}
-            <div className="flex items-center justify-between gap-3">
-              <button
-                type="button"
-                onClick={() => dispatch({ type: "GO", to: "business-curriculum" })}
-                className="inline-flex min-h-11 items-center gap-1.5 rounded-xl border border-border bg-card px-3.5 py-1 text-sm font-bold text-foreground hover:bg-muted shadow-wp-xs focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
-                aria-label={t("business.curriculumNavLabel")}
-              >
-                <ArrowLeft className="size-4 rtl:rotate-180" aria-hidden />
-                <span>{t("ux.backToCourse")}</span>
-              </button>
+      {/* Workspace Area: Stepper + Content */}
+      <div className="wp-lesson-workspace shrink-0 flex flex-col">
+        {/* Four course sections with detailed stages inside the active section */}
+        <div className="wp-course-sticky wp-layout-gutter sticky top-0 z-40 shrink-0 border-b border-border bg-background py-2">
+          <BusinessStageStepper
+            activeStageIdx={activeStageIdx}
+            completedStages={completedStages}
+            availableStages={availableStages}
+            isMastered={isMastered}
+            maxUnlockedIndex={maxUnlockedIndex}
+            onSelectStage={navigateToStage}
+          />
+        </div>
 
-              {isMastered && (
-                <span className="inline-flex items-center gap-1 rounded-full bg-feedback-success-surface px-2.5 py-0.5 text-xs font-black text-feedback-success-foreground">
-                  <CheckCircle2 className="size-3.5" aria-hidden />
-                  <span>{t("business.masteredBadge")}</span>
-                </span>
+        {/* Stage Content Panel */}
+        <div
+          ref={stagePanelRef}
+          tabIndex={-1}
+          className="wp-lesson-panel wp-layout-gutter py-4 sm:py-8 outline-none"
+        >
+          {currentStageId === "recall" && (
+            <BusinessRecallStage
+              key={unit.id}
+              unit={unit}
+              savedAnswers={Object.fromEntries(
+                (unit.recall?.prompts ?? []).flatMap((prompt) => {
+                  const answer = progress?.reflectionNotes?.[`recall-answer-${prompt.id}`];
+                  return answer === undefined ? [] : [[prompt.id, answer]];
+                })
               )}
-            </div>
+              onSaveAnswer={(id, answer) =>
+                saveBusinessReflection(unit.id, `recall-answer-${id}`, answer)
+              }
+              onNext={() => navigateToStage(activeStageIdx + 1)}
+              onComplete={() => checkpointBusiness(unit.id, activeStageIdx, "recall")}
+            />
+          )}
 
-            {/* Unit Context Card */}
-            <div className="wp-course-context rounded-2xl border border-border bg-card p-4 shadow-wp-xs space-y-3">
-              <header>
-                <div className="flex items-center gap-2">
-                  <span className="rounded-lg bg-secondary px-2 py-0.5 text-xs font-black text-primary uppercase">
-                    {unit.level}
-                  </span>
-                  <p className="text-xs sm:text-sm font-semibold text-muted-foreground">
-                    {t("business.unitNumber", { number: unit.unitNumber }) ||
-                      `Unit ${unit.unitNumber} of 40`}
-                  </p>
-                </div>
-                <h1
-                  id="lesson-header-title"
-                  className="mt-1 break-words text-lg sm:text-xl font-bold text-foreground"
-                >
-                  {t("business.unitColonTitle", { number: unit.unitNumber, title: unit.title })}
-                </h1>
-              </header>
+          {currentStageId === "warmup" && (
+            <BusinessWarmupStage
+              key={unit.id}
+              unit={unit}
+              savedNotes={progress?.reflectionNotes}
+              onSaveNote={(id, note) => saveBusinessReflection(unit.id, id, note)}
+              onComplete={() => checkpointBusiness(unit.id, activeStageIdx, "warmup")}
+              onNext={() => navigateToStage(activeStageIdx + 1)}
+            />
+          )}
 
-              <div className="wp-course-sticky pt-2 border-t border-border">
-                <BusinessStageStepper
-                  activeStageIdx={activeStageIdx}
-                  completedStages={completedStages}
-                  availableStages={availableStages}
-                  isMastered={isMastered}
-                  maxUnlockedIndex={maxUnlockedIndex}
-                  onSelectStage={navigateToStage}
-                />
-              </div>
-            </div>
-          </aside>
+          {currentStageId === "input" && <BusinessInputStage unit={unit} onNext={handleNext} />}
 
-          {/* Stage Content Panel */}
-          <div
-            ref={stagePanelRef}
-            tabIndex={-1}
-            className="flex-1 min-w-0 flex flex-col gap-6 outline-none"
-          >
-            {currentStageId === "recall" && (
-              <BusinessRecallStage
-                key={unit.id}
-                unit={unit}
-                savedAnswers={Object.fromEntries(
-                  (unit.recall?.prompts ?? []).flatMap((prompt) => {
-                    const answer = progress?.reflectionNotes?.[`recall-answer-${prompt.id}`];
-                    return answer === undefined ? [] : [[prompt.id, answer]];
-                  })
-                )}
-                onSaveAnswer={(id, answer) =>
-                  saveBusinessReflection(unit.id, `recall-answer-${id}`, answer)
+          {currentStageId === "vocabulary" && (
+            <BusinessVocabularyStage unit={unit} onNext={handleNext} />
+          )}
+
+          {currentStageId === "usage" && <BusinessUsageStage unit={unit} onNext={handleNext} />}
+
+          {currentStageId === "exercises" && (
+            <BusinessExerciseStage
+              unit={unit}
+              onSkip={() => navigateToStage(activeStageIdx + 1)}
+              savedScore={progress?.quizBestScore}
+              onCompleteExercises={(score) =>
+                checkpointBusiness(unit.id, activeStageIdx, "exercises", score)
+              }
+              onNext={() => navigateToStage(activeStageIdx + 1)}
+            />
+          )}
+
+          {currentStageId === "discussion" && (
+            <BusinessDiscussionStage
+              unit={unit}
+              savedNotes={progress?.reflectionNotes}
+              onSaveNote={(id, note) => saveBusinessReflection(unit.id, id, note)}
+              onNext={() => navigateToStage(activeStageIdx + 1)}
+            />
+          )}
+
+          {currentStageId === "speaking" && (
+            <BusinessSpeakingStage
+              unit={unit}
+              savedChecklist={progress?.checklistCompleted}
+              onSaveChecklist={(checklist) => saveBusinessChecklist(unit.id, checklist)}
+              onNext={() => {
+                const checklist = unit.speakingTask.checklist;
+                if (
+                  checklist.length > 0 &&
+                  checklist.every((item) => progress?.checklistCompleted?.includes(item))
+                ) {
+                  handleNext();
+                } else {
+                  navigateToStage(activeStageIdx + 1);
                 }
-                onNext={() => navigateToStage(activeStageIdx + 1)}
-                onComplete={() => checkpointBusiness(unit.id, activeStageIdx, "recall")}
-              />
-            )}
+              }}
+            />
+          )}
 
-            {currentStageId === "warmup" && (
-              <BusinessWarmupStage
-                key={unit.id}
-                unit={unit}
-                savedNotes={progress?.reflectionNotes}
-                onSaveNote={(id, note) => saveBusinessReflection(unit.id, id, note)}
-                onComplete={() => checkpointBusiness(unit.id, activeStageIdx, "warmup")}
-                onNext={() => navigateToStage(activeStageIdx + 1)}
-              />
-            )}
-
-            {currentStageId === "input" && <BusinessInputStage unit={unit} onNext={handleNext} />}
-
-            {currentStageId === "vocabulary" && (
-              <BusinessVocabularyStage unit={unit} onNext={handleNext} />
-            )}
-
-            {currentStageId === "usage" && <BusinessUsageStage unit={unit} onNext={handleNext} />}
-
-            {currentStageId === "exercises" && (
-              <BusinessExerciseStage
-                unit={unit}
-                onSkip={() => navigateToStage(activeStageIdx + 1)}
-                savedScore={progress?.quizBestScore}
-                onCompleteExercises={(score) =>
-                  checkpointBusiness(unit.id, activeStageIdx, "exercises", score)
+          {currentStageId === "review" && (
+            <BusinessReviewStage
+              unit={unit}
+              nextUnitId={nextUnit?.id}
+              savedConfidence={progress?.confidenceRating}
+              onSaveConfidence={(rating) => saveBusinessConfidence(unit.id, rating)}
+              onCompleteUnit={() => {
+                if (canCompleteBusinessUnit(learnerState.businessProgress, unit.id)) {
+                  recordBusinessCompletion(unit.id);
                 }
-                onNext={() => navigateToStage(activeStageIdx + 1)}
-              />
-            )}
-
-            {currentStageId === "discussion" && (
-              <BusinessDiscussionStage
-                unit={unit}
-                savedNotes={progress?.reflectionNotes}
-                onSaveNote={(id, note) => saveBusinessReflection(unit.id, id, note)}
-                onNext={() => navigateToStage(activeStageIdx + 1)}
-              />
-            )}
-
-            {currentStageId === "speaking" && (
-              <BusinessSpeakingStage
-                unit={unit}
-                savedChecklist={progress?.checklistCompleted}
-                onSaveChecklist={(checklist) => saveBusinessChecklist(unit.id, checklist)}
-                onNext={() => {
-                  const checklist = unit.speakingTask.checklist;
-                  if (
-                    checklist.length > 0 &&
-                    checklist.every((item) => progress?.checklistCompleted?.includes(item))
-                  ) {
-                    handleNext();
-                  } else {
-                    navigateToStage(activeStageIdx + 1);
-                  }
-                }}
-              />
-            )}
-
-            {currentStageId === "review" && (
-              <BusinessReviewStage
-                unit={unit}
-                nextUnitId={nextUnit?.id}
-                savedConfidence={progress?.confidenceRating}
-                onSaveConfidence={(rating) => saveBusinessConfidence(unit.id, rating)}
-                onCompleteUnit={() => {
-                  if (canCompleteBusinessUnit(learnerState.businessProgress, unit.id)) {
-                    recordBusinessCompletion(unit.id);
-                  }
-                  dispatch({ type: "GO", to: "business-curriculum" });
-                }}
-                onGoToUnit={(nextId) => {
-                  if (canCompleteBusinessUnit(learnerState.businessProgress, unit.id)) {
-                    recordBusinessCompletion(unit.id);
-                  }
-                  dispatch({ type: "OPEN_BUSINESS_LESSON", unitId: nextId });
-                }}
-              />
-            )}
-          </div>
+                dispatch({ type: "GO", to: "business-curriculum" });
+              }}
+              onGoToUnit={(nextId) => {
+                if (canCompleteBusinessUnit(learnerState.businessProgress, unit.id)) {
+                  recordBusinessCompletion(unit.id);
+                }
+                dispatch({ type: "OPEN_BUSINESS_LESSON", unitId: nextId });
+              }}
+            />
+          )}
         </div>
       </div>
     </div>

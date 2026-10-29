@@ -30,8 +30,7 @@ export interface StudyNode {
     | "mistakes"
     | "culture"
     | "assessment"
-    | "reference"
-    | "scenario";
+    | "reference";
 
   source?: string;
   wordIds?: string[];

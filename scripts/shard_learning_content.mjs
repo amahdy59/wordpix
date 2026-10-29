@@ -68,10 +68,6 @@ await emit("lexiconCore.ts", core);
 const lessonSource = await readFile(`${directory}/lessons.ts`, "utf8");
 const lessonFile = parse("lessons.ts", lessonSource);
 const removals = [];
-const replacements = [];
-const groupedWordIds = new Map();
-const groupedDetails = new Map();
-const unitDetails = {};
 const storyIndex = {};
 for (const statement of lessonFile.statements) {
   if (!ts.isVariableStatement(statement)) continue;
@@ -83,35 +79,10 @@ for (const statement of lessonFile.statements) {
     )
       continue;
     const stories = {};
-    const wordIds = [];
-    const descriptions = {};
     const shard = value.name.getText(lessonFile).toLowerCase().replaceAll("_", "-");
     for (const group of value.initializer.elements) {
       if (!ts.isObjectLiteralExpression(group)) throw new Error("Expected literal lesson");
-      const words = group.properties.find(
-        (property) => property.name?.getText(lessonFile) === "wordIds"
-      );
-      if (words && ts.isArrayLiteralExpression(words.initializer))
-        wordIds.push(
-          ...words.initializer.elements.map((item) => (ts.isStringLiteral(item) ? item.text : null))
-        );
       const id = group.properties.find((p) => p.name?.getText(lessonFile) === "id");
-      const description = group.properties.find(
-        (p) => p.name?.getText(lessonFile) === "description"
-      );
-      if (
-        id &&
-        description &&
-        ts.isStringLiteral(id.initializer) &&
-        ts.isStringLiteral(description.initializer)
-      ) {
-        descriptions[id.initializer.text] = description.initializer.text;
-        replacements.push([
-          description.initializer.getStart(lessonFile),
-          description.initializer.end,
-          '""',
-        ]);
-      }
       const story = group.properties.find((p) => p.name?.getText(lessonFile) === "story");
       if (!story) continue;
       if (!ts.isStringLiteral(id.initializer) || !ts.isStringLiteral(story.initializer))
@@ -124,8 +95,6 @@ for (const statement of lessonFile.statements) {
       if (lessonSource[end] === ",") end++;
       removals.push([story.getStart(lessonFile), end]);
     }
-    groupedWordIds.set(value.name.getText(lessonFile), wordIds);
-    groupedDetails.set(value.name.getText(lessonFile), descriptions);
     if (Object.keys(stories).length)
       await emit(
         `contentChunks/story-${shard}.ts`,
@@ -133,87 +102,10 @@ for (const statement of lessonFile.statements) {
       );
   }
 }
-// Reuse an identical group's ID list rather than shipping every ID twice.
-// Values and ordering are proved equal before replacing; media fields are untouched.
-const units = declaration(lessonFile, "COURSE_UNITS").value.initializer;
-if (!ts.isObjectLiteralExpression(units)) throw new Error("Expected literal curriculum units");
-for (const property of units.properties) {
-  if (!ts.isPropertyAssignment(property) || !ts.isObjectLiteralExpression(property.initializer))
-    continue;
-  const fields = property.initializer.properties;
-  const groups = fields.find((field) => field.name?.getText(lessonFile) === "groups");
-  const words = fields.find((field) => field.name?.getText(lessonFile) === "wordIds");
-  if (groups && ts.isPropertyAssignment(groups) && ts.isIdentifier(groups.initializer)) {
-    const unitId = property.name.text;
-    unitDetails[unitId] = groupedDetails.get(groups.initializer.text) ?? {};
-  }
-  if (
-    !groups ||
-    !words ||
-    !ts.isPropertyAssignment(groups) ||
-    !ts.isPropertyAssignment(words) ||
-    !ts.isIdentifier(groups.initializer) ||
-    !ts.isArrayLiteralExpression(words.initializer)
-  )
-    continue;
-  const original = words.initializer.elements.map((item) =>
-    ts.isStringLiteral(item) ? item.text : null
-  );
-  const grouped = groupedWordIds.get(groups.initializer.text);
-  if (!grouped || original.includes(null) || JSON.stringify(original) !== JSON.stringify(grouped))
-    continue;
-  replacements.push([
-    words.initializer.getStart(lessonFile),
-    words.initializer.end,
-    `${groups.initializer.text}.flatMap((group) => group.wordIds)`,
-  ]);
-}
 let catalogue = lessonSource;
-for (const [start, end, replacement] of [
-  ...removals.map(([start, end]) => [start, end, ""]),
-  ...replacements,
-].sort((a, b) => b[0] - a[0]))
-  catalogue = catalogue.slice(0, start) + replacement + catalogue.slice(end);
-catalogue = 'import { loadGroupDescriptions } from "./catalogDetailLoader";\n' + catalogue;
-catalogue += `\nconst loadedCatalogDetails=new Set<string>();
-const pendingCatalogDetails=new Map<string,Promise<void>>();
-export const areUnitCatalogDetailsLoaded=(unitId:string)=>loadedCatalogDetails.has(unitId);
-export function loadUnitCatalogDetails(unitId:string):Promise<void> {
-  if(loadedCatalogDetails.has(unitId))return Promise.resolve();
-  const cached=pendingCatalogDetails.get(unitId);if(cached)return cached;
-  const pending=loadGroupDescriptions(unitId).then(descriptions=>{
-    const unit=COURSE_UNITS[unitId];
-    if(!unit)throw new Error("Unknown curriculum unit");
-    for(const group of unit.groups) {
-      if(typeof descriptions[group.id]!=="string")throw new Error("Incomplete curriculum details");
-      group.description=descriptions[group.id];
-    }
-    loadedCatalogDetails.add(unitId);
-  }).catch(error=>{pendingCatalogDetails.delete(unitId);throw error;});
-  pendingCatalogDetails.set(unitId,pending);return pending;
-}\n`;
+for (const [start, end] of removals.sort((a, b) => b[0] - a[0]))
+  catalogue = catalogue.slice(0, start) + catalogue.slice(end);
 await emit("courseCatalog.ts", catalogue);
-if (!check) await mkdir(`${directory}/catalogDetails`, { recursive: true });
-for (const [unitId, descriptions] of Object.entries(unitDetails)) {
-  const target = `${directory}/catalogDetails/${unitId}.json`;
-  const output = await format(JSON.stringify(descriptions), { ...formatting, parser: "json" });
-  const existing = await readFile(target, "utf8").catch(() => "");
-  if (existing.replace(/\r\n/g, "\n") === output) continue;
-  if (check) throw new Error(`Stale catalog details: ${target}`);
-  await writeFile(target, output, "utf8");
-}
-await emit(
-  "catalogDetailRegistry.ts",
-  `export const catalogDetailLoaders:Record<string,()=>Promise<Record<string,string>>> = {${Object.keys(
-    unitDetails
-  )
-    .sort()
-    .map(
-      (unitId) =>
-        `${JSON.stringify(unitId)}:()=>import(${JSON.stringify(`./catalogDetails/${unitId}.json`)}).then(module=>module.default)`
-    )
-    .join(",\n")}};`
-);
 await emit(
   "lessonStoryIndex.ts",
   `export const lessonStoryIndex: Record<string, string> = ${JSON.stringify(storyIndex)};`

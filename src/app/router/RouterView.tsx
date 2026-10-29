@@ -1,5 +1,4 @@
-import { lazy, Suspense, useMemo, useCallback, useEffect } from "react";
-import { emitLearningEvent } from "../analytics/learningAnalytics";
+import { lazy, Suspense, useMemo } from "react";
 import { motion } from "framer-motion";
 import type { Screen, Action, TabId } from "../types";
 import { resolveGroup, resolveUnitForLesson, DEFAULT_UNIT_ID } from "../data/courseCatalog";
@@ -8,22 +7,14 @@ import type { VocabularyItem } from "../data/lessons";
 import { UnitVocabularyGate } from "./UnitVocabularyGate";
 import { useI18n } from "../context/I18nContext";
 import { useLearner } from "../context/LearnerContext";
-import { LessonSessionContext } from "../shared/LessonSessionContext";
-import { getLessonScaffolding } from "../lesson/lessonScaffolding";
 import { AppShell } from "../shared/AppShell";
-import { Button } from "../shared/Button";
-import { FeedbackPanel } from "../shared/FeedbackPanel";
+import { Button, FeedbackPanel } from "../shared";
 import { TABBED_IDS } from "../store/reducer";
 import { NetworkStatusBanner } from "../shared/NetworkStatusBanner";
-import { PersistenceStatus } from "../shared/PersistenceStatus";
-import { unitWordMemory, reviewWordMemory } from "../learning/wordIdentity";
 
 // Synchronous core onboarding screens
 import { SplashWelcome } from "../onboarding/SplashWelcome";
-import { PartnersWelcome } from "../onboarding/PartnersWelcome";
-const LanguageSelect = lazy(() =>
-  import("../onboarding/LanguageSelect").then((module) => ({ default: module.LanguageSelect }))
-);
+import { LanguageSelect } from "../onboarding/LanguageSelect";
 import { ReadyCelebration } from "../onboarding/ReadyCelebration";
 
 // Synchronous core tab views (home is the default tab and stays eager)
@@ -44,9 +35,6 @@ const ReleaseNotesPage = lazy(() =>
 );
 const SkillExerciseHub = lazy(() =>
   import("../core/SkillExerciseHub").then((m) => ({ default: m.SkillExerciseHub }))
-);
-const SettingsPage = lazy(() =>
-  import("../core/SettingsPage").then((m) => ({ default: m.SettingsPage }))
 );
 
 // Lazy-loaded lesson and exercise screens
@@ -133,63 +121,22 @@ const ExerciseReadingContext = lazy(() =>
 );
 
 import { SKILL_EXERCISES } from "../exercises/registry";
-import {
-  buildInterleavedLessonPlan,
-  type ExerciseStep,
-  type InterleavedStep,
-} from "../lesson/lessonSequence";
+import { getLessonSequence, type ExerciseStep } from "../lesson/lessonSequence";
 import { getAuthoredLessonContent } from "../exercises/content/authoredLessonContent";
 
 const LoadingFallback = () => {
   const { t } = useI18n();
-  useEffect(() => {
-    const start = performance.now();
-    return () => {
-      emitLearningEvent({
-        name: "route_timing",
-        properties: { milliseconds: Math.round(performance.now() - start) },
-      });
-    };
-  }, []);
   return (
     <div
-      className="flex-1 w-full max-w-full flex flex-col gap-4 py-2"
+      className="flex-1 flex items-center justify-center min-h-[300px] p-6 text-center"
       aria-live="polite"
-      aria-label={t("app.loading")}
     >
-      <span className="sr-only">{t("app.loading")}</span>
-
-      {/* Skeleton Header */}
-      <div className="flex flex-col gap-2 pb-3 border-b border-border/40">
+      <div className="flex flex-col items-center gap-3">
         <div
-          className="h-4 w-28 rounded-full bg-muted/70 motion-safe:animate-pulse"
-          aria-hidden="true"
+          className="size-10 rounded-full border-4 border-primary border-t-transparent motion-safe:animate-spin"
+          aria-hidden
         />
-        <div
-          className="h-8 w-56 rounded-xl bg-muted motion-safe:animate-pulse"
-          aria-hidden="true"
-        />
-      </div>
-
-      {/* Skeleton Primary Card */}
-      <div
-        className="rounded-2xl border border-border/50 bg-card p-5 flex flex-col gap-3 motion-safe:animate-pulse"
-        aria-hidden="true"
-      >
-        <div className="flex items-center justify-between gap-3">
-          <div className="h-5 w-32 rounded-full bg-muted" />
-          <div className="h-5 w-20 rounded-full bg-muted" />
-        </div>
-        <div className="h-7 w-3/4 rounded-xl bg-muted mt-2" />
-        <div className="h-4 w-full rounded-md bg-muted/60" />
-        <div className="h-4 w-2/3 rounded-md bg-muted/60" />
-        <div className="h-12 w-full rounded-2xl bg-muted mt-2" />
-      </div>
-
-      {/* Skeleton Secondary Row Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-1" aria-hidden="true">
-        <div className="h-28 rounded-2xl border border-border/40 bg-card/60 p-4 motion-safe:animate-pulse" />
-        <div className="h-28 rounded-2xl border border-border/40 bg-card/60 p-4 motion-safe:animate-pulse" />
+        <p className="font-sans font-semibold text-muted-foreground text-sm">{t("app.loading")}</p>
       </div>
     </div>
   );
@@ -315,6 +262,13 @@ function LessonRoute({
   const { state: learnerState } = useLearner();
   const isAssessment = state.mode === "UNIT_ASSESSMENT" || state.mode === "PRE_LESSON_ASSESSMENT";
 
+  const exSequence = isAssessment
+    ? (["quiz"] as const)
+    : getLessonSequence(
+        learnerState.preferences.englishLevel,
+        learnerState.accessibility.includeListening
+      );
+
   const { lessonId, wordQueue } = state;
   // Joined, not the array itself: `wordQueue` is rebuilt by the reducer on
   // every attempt, so depending on its identity would defeat the memo.
@@ -323,75 +277,15 @@ function LessonRoute({
     // Resolve within the lesson's own unit. Word ids repeat across the
     // course — "mirror" belongs to fifteen units — so an unscoped lookup
     // can hand this drill another unit's photograph of the same thing.
-    const lessonUnitId = state.unitId ?? resolveUnitForLesson(lessonId).id;
+    const lessonUnitId = resolveUnitForLesson(lessonId).id;
     const ids = wordQueueKey ? wordQueueKey.split("|") : [];
-    const groupWords = state.reviewItems
-      ? state.reviewItems.flatMap((item) => getWords([item.wordId], item.unitId))
-      : getWords(ids, lessonUnitId);
-    if (groupWords.length === ids.length && ids.length > 0) return groupWords;
-    if (ids.length > 0) return NO_WORDS;
+    const groupWords = getWords(ids, lessonUnitId);
+    if (groupWords.length > 0) return groupWords;
     const fallback = getWords(resolveGroup(lessonId).wordIds, lessonUnitId);
     return fallback.length > 0 ? fallback : NO_WORDS;
-  }, [lessonId, wordQueueKey, state.unitId, state.reviewItems]);
+  }, [lessonId, wordQueueKey]);
 
-  const interleavedPlan = useMemo(() => {
-    if (isAssessment) {
-      const assessmentStep: InterleavedStep = {
-        stepIndex: 0,
-        exercise: "quiz",
-        wordIds: activeGroupWords.map((w) => w.id),
-        chunkIndex: 0,
-        totalChunks: 1,
-        isSynthesis: true,
-      };
-      return [assessmentStep];
-    }
-    const ids = activeGroupWords.map((w) => w.id);
-    return buildInterleavedLessonPlan(
-      ids,
-      learnerState.preferences.englishLevel,
-      learnerState.accessibility.includeListening
-    );
-  }, [
-    isAssessment,
-    activeGroupWords,
-    learnerState.preferences.englishLevel,
-    learnerState.accessibility.includeListening,
-  ]);
-
-  const handleLessonNext = useCallback(() => {
-    if (state.step >= interleavedPlan.length - 1) {
-      dispatch({ type: "GO", to: "lesson-complete" });
-    } else {
-      dispatch({ type: "LESSON_NEXT" });
-    }
-  }, [state.step, interleavedPlan.length, dispatch]);
-
-  const wrappedDispatch = useCallback(
-    (action: Action) => {
-      if (action.type === "LESSON_NEXT") {
-        handleLessonNext();
-      } else {
-        dispatch(action);
-      }
-    },
-    [handleLessonNext, dispatch]
-  );
-
-  const currentPlanStep = interleavedPlan[state.step];
-  const stepWords = useMemo(() => {
-    if (!currentPlanStep) return NO_WORDS;
-    if (currentPlanStep.isSynthesis) return activeGroupWords;
-    const wordIdSet = new Set(currentPlanStep.wordIds);
-    const chunkWords = activeGroupWords.filter((w) => wordIdSet.has(w.id));
-    return chunkWords.length > 0 ? chunkWords : activeGroupWords;
-  }, [currentPlanStep, activeGroupWords]);
-
-  if (activeGroupWords.length === 0) {
-    return <LessonRouteError dispatch={dispatch} />;
-  }
-
-  if (state.step >= interleavedPlan.length) {
+  if (state.step >= exSequence.length) {
     return (
       <LessonCompleteResults
         sessionId={state.sessionId}
@@ -399,77 +293,39 @@ function LessonRoute({
         unitId={state.unitId}
         mode={state.mode}
         attempts={state.attempts}
-        reviewItems={state.reviewItems}
         wordQueue={state.wordQueue}
         dispatch={dispatch}
       />
     );
   }
 
-  const ex: ExerciseStep = currentPlanStep.exercise;
+  if (activeGroupWords.length === 0) {
+    return <LessonRouteError dispatch={dispatch} />;
+  }
+
+  const ex: ExerciseStep = exSequence[state.step];
   const drillProps = {
-    words: stepWords,
+    words: activeGroupWords,
     step: state.step,
     lessonId: state.lessonId,
-    dispatch: wrappedDispatch,
+    dispatch,
   };
 
-  const renderExercise = () => {
-    if (ex === "listen") return <ExerciseListenRepeat {...drillProps} />;
-    if (ex === "recall") return <ExerciseRecallMatch {...drillProps} />;
-    if (ex === "fill") {
-      return <ExerciseContextGapFill {...drillProps} />;
-    }
-    if (ex === "builder") return <ExerciseSentenceBuilder {...drillProps} />;
-    if (ex === "quiz") return <ExerciseQuickQuiz {...drillProps} />;
-    if (ex === "story") {
-      return getAuthoredLessonContent(lessonId) ? (
-        <ExerciseReadingContext {...drillProps} />
-      ) : (
-        <ExerciseStory {...drillProps} />
-      );
-    }
-    return null;
-  };
-  return (
-    <LessonSessionContext.Provider
-      value={{
-        sessionId: state.sessionId,
-        unitId:
-          state.reviewItems?.find(
-            (item) => item.wordId === (state.activeItemId ?? stepWords[0]?.id)
-          )?.unitId ??
-          state.unitId ??
-          resolveUnitForLesson(state.lessonId).id,
-        attempts: state.attempts,
-        activeItemId: state.activeItemId,
-        onActiveItem: (wordId) => dispatch({ type: "LESSON_SET_ITEM", wordId }),
-        scaffolding: getLessonScaffolding(
-          learnerState.preferences.englishLevel,
-          stepWords.map((word) => word.id),
-          state.reviewItems
-            ? reviewWordMemory(learnerState.wordMemory, state.reviewItems)
-            : unitWordMemory(
-                learnerState.wordMemory,
-                state.unitId ?? resolveUnitForLesson(state.lessonId).id
-              )
-        ),
-        current: state.step + 1,
-        total: interleavedPlan.length,
-        nextExercise: interleavedPlan[state.step + 1]?.exercise ?? "complete",
-        onExit: () =>
-          state.mode === "SMART_REVIEW" || state.mode === "SKILL_PRACTICE"
-            ? dispatch({ type: "GO", to: "practice" })
-            : dispatch({
-                type: "GO",
-                to: "lesson-entry",
-                unitId: state.unitId ?? resolveUnitForLesson(state.lessonId).id,
-              }),
-      }}
-    >
-      {renderExercise()}
-    </LessonSessionContext.Provider>
-  );
+  if (ex === "listen") return <ExerciseListenRepeat {...drillProps} />;
+  if (ex === "recall") return <ExerciseRecallMatch {...drillProps} />;
+  if (ex === "fill") {
+    return <ExerciseContextGapFill {...drillProps} />;
+  }
+  if (ex === "builder") return <ExerciseSentenceBuilder {...drillProps} />;
+  if (ex === "quiz") return <ExerciseQuickQuiz {...drillProps} />;
+  if (ex === "story") {
+    return getAuthoredLessonContent(lessonId) ? (
+      <ExerciseReadingContext {...drillProps} />
+    ) : (
+      <ExerciseStory {...drillProps} />
+    );
+  }
+  return null;
 }
 
 export interface RouterViewProps {
@@ -484,7 +340,6 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
   function renderContent() {
     if (state.id === "onboarding") {
       if (state.step === "splash") return <SplashWelcome dispatch={dispatch} />;
-      if (state.step === "partners") return <PartnersWelcome dispatch={dispatch} />;
       if (state.step === "language") return <LanguageSelect dispatch={dispatch} />;
       if (state.step === "ready") return <ReadyCelebration dispatch={dispatch} />;
     }
@@ -494,16 +349,9 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     if (state.id === "practice") return <SkillExerciseHub dispatch={dispatch} />;
     if (state.id === "review") return <ReviewMasteryReview dispatch={dispatch} />;
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
-    if (state.id === "settings") return <SettingsPage dispatch={dispatch} />;
     if (state.id === "release-notes") return <ReleaseNotesPage dispatch={dispatch} />;
     if (state.id === "lesson-entry")
-      return (
-        <LessonWorldEntry
-          unitId={state.unitId ?? DEFAULT_UNIT_ID}
-          dispatch={dispatch}
-          returnTo={state.returnTo}
-        />
-      );
+      return <LessonWorldEntry unitId={state.unitId ?? DEFAULT_UNIT_ID} dispatch={dispatch} />;
     if (state.id === "learn-words")
       return <LearnWordsScreen lessonId={state.lessonId} dispatch={dispatch} />;
     if (state.id === "learning-materials")
@@ -513,7 +361,6 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
           unitId={state.unitId ?? DEFAULT_UNIT_ID}
           area={state.area}
           nodeId={state.nodeId}
-          returnTo={state.returnTo}
           dispatch={dispatch}
         />
       );
@@ -569,7 +416,6 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
           mode={state.mode}
           attempts={state.attempts}
           wordQueue={state.wordQueue}
-          reviewItems={state.reviewItems}
           dispatch={dispatch}
         />
       );
@@ -596,13 +442,8 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
       transition={{ duration: 0.2, ease: "easeInOut" }}
       className="flex-1 flex flex-col w-full min-h-full"
     >
-      <PersistenceStatus />
       <Suspense fallback={<LoadingFallback />}>
-        <UnitVocabularyGate
-          screen={state}
-          fallback={<LoadingFallback />}
-          onBackToPath={() => dispatch({ type: "GO", to: "learn" })}
-        >
+        <UnitVocabularyGate screen={state} fallback={<LoadingFallback />}>
           {renderContent}
         </UnitVocabularyGate>
       </Suspense>
@@ -632,13 +473,11 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
           <SkipLink />
           <AppShell
             activeTab={
-              (state.id === "review" || state.id === "skill-hub"
+              (state.id === "review"
                 ? "practice"
                 : state.id === "explore"
                   ? "learn"
-                  : state.id === "settings"
-                    ? "profile"
-                    : state.id) as TabId
+                  : state.id) as TabId
             }
             dispatch={dispatch}
           >

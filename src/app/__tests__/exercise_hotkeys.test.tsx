@@ -1,8 +1,7 @@
 import { describe, expect, it, vi, beforeEach } from "vitest";
-import { act, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
-import { setDevicePreference } from "../shared/devicePreferences";
 
 interface HarnessProps {
   onSelectIndex: (i: number) => void;
@@ -26,20 +25,6 @@ beforeEach(() => {
 });
 
 describe("Exercise number-key shortcuts", () => {
-  it("respects the device shortcut preference and responds to changes without reloading", async () => {
-    const user = userEvent.setup();
-    const select = vi.fn();
-    const replay = vi.fn();
-    setDevicePreference("character-shortcuts", false);
-    render(<Harness onSelectIndex={select} onReplayAudio={replay} />);
-    await user.keyboard("2r");
-    expect(select).not.toHaveBeenCalled();
-    expect(replay).not.toHaveBeenCalled();
-    act(() => setDevicePreference("character-shortcuts", true));
-    await user.keyboard("2r");
-    expect(select).toHaveBeenCalledExactlyOnceWith(1);
-    expect(replay).toHaveBeenCalledOnce();
-  });
   it("selects the matching option by number key", async () => {
     const user = userEvent.setup();
     const onSelectIndex = vi.fn();
@@ -144,65 +129,5 @@ describe("Replay-audio shortcut", () => {
 
     expect(onReplayAudio).not.toHaveBeenCalled();
     expect(onClick).toHaveBeenCalledTimes(1);
-  });
-});
-
-describe("Continue shortcut", () => {
-  function ContinueHarness({
-    onContinue,
-    disabled = true,
-    withInput = false,
-  }: {
-    onContinue: () => void;
-    disabled?: boolean;
-    withInput?: boolean;
-  }) {
-    useExerciseHotkeys({
-      optionCount: 3,
-      onSelectIndex: vi.fn(),
-      onContinue,
-      disabled,
-    });
-    return (
-      <div>
-        <button type="button">Continue</button>
-        {withInput && <input aria-label="Text field" />}
-      </div>
-    );
-  }
-
-  it("calls onContinue when Enter is pressed even when option selection is disabled", async () => {
-    const user = userEvent.setup();
-    const onContinue = vi.fn();
-    render(<ContinueHarness onContinue={onContinue} disabled />);
-
-    await user.keyboard("{Enter}");
-    expect(onContinue).toHaveBeenCalledTimes(1);
-  });
-
-  it("does not call onContinue when typing Enter inside an input field", async () => {
-    const user = userEvent.setup();
-    const onContinue = vi.fn();
-    render(<ContinueHarness onContinue={onContinue} disabled withInput />);
-
-    await user.click(screen.getByLabelText("Text field"));
-    await user.keyboard("{Enter}");
-    expect(onContinue).not.toHaveBeenCalled();
-  });
-
-  it("does not call onContinue when a modal dialog is open in the DOM", async () => {
-    const user = userEvent.setup();
-    const onContinue = vi.fn();
-    render(
-      <div>
-        <ContinueHarness onContinue={onContinue} disabled />
-        <div role="dialog" aria-modal="true">
-          Modal
-        </div>
-      </div>
-    );
-
-    await user.keyboard("{Enter}");
-    expect(onContinue).not.toHaveBeenCalled();
   });
 });

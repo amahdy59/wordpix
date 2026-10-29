@@ -91,8 +91,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "Cake Batter",
-        en: "He combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
-        ar: "جمع الدقيق والسكر والكاكاو في وعاء خلط كبير من الفولاذ المقاوم للصدأ.",
+        en: "She combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
+        ar: "خَلَطَتِ الطَّحِينَ وَالسُّكَّرَ وَالكَاكَاوَ دَاخِلَ وِعَاءِ الخَلْطِ السْتَانْلِس الكَبِيرِ.",
       },
       {
         context: "Salad Tossing",
@@ -106,8 +106,9 @@ export const entries: Record<string, LexiconEntry> = {
       },
     ],
     exampleSentence:
-      "He combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
-    exampleArabic: "جمع الدقيق والسكر والكاكاو في وعاء خلط كبير من الفولاذ المقاوم للصدأ.",
+      "She combined flour, sugar, and baking cocoa inside the large stainless steel mixing bowl.",
+    exampleArabic:
+      "خَلَطَتِ الطَّحِينَ وَالسُّكَّرَ وَالكَاكَاوَ دَاخِلَ وِعَاءِ الخَلْطِ السْتَانْلِس الكَبِيرِ.",
   },
   bush: {
     id: "bush",
@@ -144,8 +145,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Pruning",
-        en: "He carefully pruned dead branches from the hydrangea bush before spring arrived.",
-        ar: "قلم الأغصان الميتة من شجيرة الكوبية بعناية قبل حلول الربيع.",
+        en: "She carefully pruned dead branches from the hydrangea bush before spring arrived.",
+        ar: "قَلَّمَتْ بِعِنَايَةٍ الأَغْصَانَ المَيِّتَةَ مِنْ شُجَيْرَةِ الهَيْدِرَانْجِيَا قَبْلَ حُلُولِ الرَّبِيعِ.",
       },
     ],
     exampleSentence: "Bright red berries decorated the wild bush along the path.",
@@ -257,14 +258,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "spin around",
         meaning: "whirl on the hips",
         arabic: "يَدُورُ حَوْلَ الوَسَط",
-        example: "He spun the bright plastic hoop around his waist.",
+        example: "She spun the bright plastic hoop around her waist.",
       },
     ],
     sentences: [
       {
         context: "Gymnastics & Play",
-        en: "He skillfully twirled the glittery hula hoop around his hips.",
-        ar: "أدار طوق الهولا اللامع بمهارة حول وركيه.",
+        en: "She skillfully twirled the glittery hula hoop around her hips.",
+        ar: "دَوَّرَتْ طَوْقَ الهُولاهُوبِ اللَّامِعَ بِمَهَارَةٍ حَوْلَ خَصْرِهَا.",
       },
       {
         context: "Obstacle Course",
@@ -277,8 +278,8 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "يَتَطَلَّبُ الحِفَاظُ عَلَى دَوَرَانِ الطَّوْقِ الخَفِيفِ إِيقَاعًا وَتَوَازُنًا.",
       },
     ],
-    exampleSentence: "He skillfully twirled the glittery hula hoop around his hips.",
-    exampleArabic: "أدار طوق الهولا اللامع بمهارة حول وركيه.",
+    exampleSentence: "She skillfully twirled the glittery hula hoop around her hips.",
+    exampleArabic: "دَوَّرَتْ طَوْقَ الهُولاهُوبِ اللَّامِعَ بِمَهَارَةٍ حَوْلَ خَصْرِهَا.",
   },
   corn: {
     id: "corn",
@@ -395,8 +396,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Hobbyist Treasure",
-        en: "He preserved his prized beach finds in a decorative glass jar after an afternoon of shell collecting.",
-        ar: "حفظ مقتنياته المميزة من الشاطئ في مرطبان زجاجي للزينة بعد عصر قضاه في جمع الأصداف.",
+        en: "She preserved her prized beach finds in a decorative glass jar after an afternoon of shell collecting.",
+        ar: "حَفِظَتْ مَا جَمَعَتْهُ مِنَ الأَصْدَافِ فِي جَرَّةٍ زُجَاجِيَّةٍ زُخْرُفِيَّةٍ بَعْدَ الجَوْلَةِ.",
       },
       {
         context: "Educational Habit",

@@ -143,7 +143,7 @@ export const SPACE_STATION_LEARNING: UnitLearningMaterials = {
       kindInferred: true,
       meaning: "extremely happy",
       example:
-        "The astronaut was over the moon — literally — when he floated through the hatch into the cupola for the first time.",
+        "The astronaut was over the moon — literally — when she floated through the hatch into the cupola for the first time.",
     },
     {
       id: "space-station-launch-into-something",

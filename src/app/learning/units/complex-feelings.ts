@@ -127,7 +127,7 @@ export const COMPLEX_FEELINGS_LEARNING: UnitLearningMaterials = {
       phrase: "green with envy",
       kind: "idiom",
       meaning: "Extremely jealous.",
-      example: "His colleagues were green with envy when he got the promotion.",
+      example: "Her colleagues were green with envy when she got the promotion.",
     },
     {
       id: "complex-feelings-have-a-soft-spot-for",
@@ -141,7 +141,7 @@ export const COMPLEX_FEELINGS_LEARNING: UnitLearningMaterials = {
       phrase: "eat your heart out",
       kind: "idiom",
       meaning: "To suffer from longing or envy.",
-      example: "He's eating his heart out over his ex — he can't stop thinking about him.",
+      example: "She's eating her heart out over her ex — she can't stop thinking about him.",
     },
     {
       id: "complex-feelings-a-love-hate-relationship",
@@ -164,7 +164,7 @@ export const COMPLEX_FEELINGS_LEARNING: UnitLearningMaterials = {
       phrase: "have a heavy heart",
       kind: "idiom",
       meaning: "To feel deep sadness or regret.",
-      example: "He left his hometown with a heavy heart, knowing he might never return.",
+      example: "She left her hometown with a heavy heart, knowing she might never return.",
     },
     {
       id: "complex-feelings-swallow-your-pride",

@@ -1,5 +1,4 @@
 import { memo, useEffect } from "react";
-import { motion, useReducedMotion } from "framer-motion";
 import type { Action, AnswerAttempt, LearnerMode } from "../types";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
@@ -14,12 +13,9 @@ import { getWords } from "../data/vocabulary";
 import { useProgress } from "../data/progress";
 import { useSound } from "../shared/useSound";
 import { useI18n } from "../../i18n";
-import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { ASSESSMENT_PASS_PERCENT } from "./assessmentBlueprint";
-import { useLearnerSaveStatus } from "../shared/PersistenceStatus";
 
 interface Props {
-  reviewItems?: import("../learning/wordIdentity").ReviewWord[];
   sessionId?: string;
   attempts: AnswerAttempt[];
   lessonId?: string;
@@ -37,13 +33,10 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   mode = "NEW_LESSON",
   wordQueue = ["bed", "nightstand", "dresser", "wardrobe", "desk"],
   dispatch,
-  reviewItems,
 }: Props) {
   const { progress, recordSessionCompletion, recordUnitAssessmentCompletion } = useProgress();
   const { playLevelUp } = useSound();
   const { t } = useI18n();
-  const reduceMotion = useReducedMotion();
-  const saveStatus = useLearnerSaveStatus();
 
   const group = resolveGroup(lessonId, wordQueue);
 
@@ -63,49 +56,16 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
     hasFullCoverage;
 
   useEffect(() => {
-    if (
-      wordQueue.length === 0 ||
-      attempts.length === 0 ||
-      (!isAssessment && !isPreLessonAssessment && !hasFullCoverage)
-    )
-      return;
     if (isAssessment) {
-      if (assessmentPassed)
-        recordUnitAssessmentCompletion(
-          true,
-          wordQueue,
-          unitId ?? resolveUnitForLesson(lessonId).id
-        );
-      recordSessionCompletion(
-        sessionId,
-        attempts,
-        wordQueue,
-        unitId ?? resolveUnitForLesson(lessonId).id,
-        reviewItems
-      );
+      if (assessmentPassed) recordUnitAssessmentCompletion(true, wordQueue);
+      recordSessionCompletion(sessionId, attempts, wordQueue);
     } else if (isPreLessonAssessment) {
       if (assessmentPassed) {
-        recordUnitAssessmentCompletion(
-          true,
-          wordQueue,
-          unitId ?? resolveUnitForLesson(lessonId).id
-        );
+        recordUnitAssessmentCompletion(true, wordQueue);
       }
-      recordSessionCompletion(
-        sessionId,
-        attempts,
-        wordQueue,
-        unitId ?? resolveUnitForLesson(lessonId).id,
-        reviewItems
-      );
+      recordSessionCompletion(sessionId, attempts, wordQueue);
     } else {
-      recordSessionCompletion(
-        sessionId,
-        attempts,
-        wordQueue,
-        unitId ?? resolveUnitForLesson(lessonId).id,
-        reviewItems
-      );
+      recordSessionCompletion(sessionId, attempts, wordQueue);
     }
 
     if ((isAssessment || isPreLessonAssessment) && !assessmentPassed) {
@@ -124,9 +84,6 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
     isPreLessonAssessment,
     assessmentPassed,
     unitId,
-    lessonId,
-    reviewItems,
-    hasFullCoverage,
   ]);
 
   // Read the credited amount back out of the ledger rather than recomputing it.
@@ -137,39 +94,8 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const xpBreakdown = sessionRecord?.xp;
   const xp = xpBreakdown?.total ?? 0;
 
-  const groupWords = reviewItems
-    ? reviewItems.flatMap((item) => getWords([item.wordId], item.unitId))
-    : getWords(wordQueue, unitId ?? resolveUnitForLesson(lessonId).id);
+  const groupWords = getWords(wordQueue, resolveUnitForLesson(lessonId).id);
   const nextGroup = getNextGroupChronological(lessonId);
-
-  const { accessibility } = useAccessibility();
-  const num = (v: number) => formatNumber(v, accessibility.numeralSystem);
-
-  const badgeLabel = isAssessment
-    ? assessmentPassed
-      ? t("lesson.unitTestPassed")
-      : t("lesson.morePracticeNeeded")
-    : isStrongSession
-      ? t("lesson.strongSession")
-      : t("lesson.sessionComplete");
-
-  const titleText = isAssessment
-    ? assessmentPassed
-      ? t("lesson.passedTitle")
-      : t("lesson.keepPracticingTitle")
-    : isStrongSession
-      ? t("lesson.groupPracticedWell", { group: group.name })
-      : t("lesson.groupCompleted", { group: group.name });
-
-  const descText = isAssessment
-    ? assessmentPassed
-      ? t("lesson.assessmentPassedDesc")
-      : t("lesson.assessmentFailedDesc", { percent: num(ASSESSMENT_PASS_PERCENT) })
-    : isStrongSession
-      ? t("lesson.strongSessionDesc", { count: num(groupWords.length) })
-      : t("lesson.completedSessionDesc", { count: num(groupWords.length) });
-
-  const starsAriaLabel = t("lesson.starsLabel", { count: num(stars.filter(Boolean).length) });
 
   return (
     <div className="bg-secondary min-h-dvh flex flex-col lg:flex-row lg:overflow-hidden relative">
@@ -178,37 +104,39 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
         <div className="absolute -top-24 -end-24 size-72 rounded-full bg-secondary blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -start-24 size-72 rounded-full bg-wp-amber/20 blur-3xl pointer-events-none" />
         <div className="relative z-10 flex flex-col items-center gap-6 text-center">
-          <motion.div
-            initial={reduceMotion ? false : { scale: 0.7, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={
-              reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 350, damping: 20 }
-            }
-            className="size-32 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center shadow-2xl"
-          >
+          <div className="size-32 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center shadow-2xl">
             <Trophy className="size-16 text-wp-amber-foreground" aria-hidden />
-          </motion.div>
+          </div>
           <div>
             <span className="font-sans font-bold text-xs text-wp-amber-foreground bg-wp-amber/10 border border-wp-amber/20 px-3 py-1 rounded-full uppercase tracking-wider">
-              {badgeLabel}
+              {isAssessment
+                ? assessmentPassed
+                  ? "Unit Test Passed"
+                  : "More Practice Needed"
+                : isStrongSession
+                  ? "Strong Session"
+                  : "Session Complete"}
             </span>
             <h1 className="font-sans font-black text-white text-4xl xl:text-5xl leading-tight tracking-tight mt-2">
-              {titleText}
+              {isAssessment
+                ? assessmentPassed
+                  ? "Passed!"
+                  : "Keep Practicing!"
+                : `${group.name} ${isStrongSession ? "Practiced Well!" : "Completed!"}`}
             </h1>
             <p className="font-sans font-semibold text-wp-text-on-panel-muted text-base mt-2">
-              {descText}
+              {isAssessment
+                ? assessmentPassed
+                  ? `You demonstrated the sampled objectives. They are scheduled for spaced review.`
+                  : `Reach ${ASSESSMENT_PASS_PERCENT}% across the sampled objectives to pass this checkpoint.`
+                : isStrongSession
+                  ? `You recalled these ${groupWords.length} words well in this session.`
+                  : `You completed practice for ${groupWords.length} words.`}
             </p>
           </div>
-          <motion.div
-            initial={reduceMotion ? false : { y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={
-              reduceMotion
-                ? { duration: 0 }
-                : { delay: 0.2, type: "spring", stiffness: 300, damping: 20 }
-            }
+          <div
             className="flex gap-3 items-center"
-            aria-label={starsAriaLabel}
+            aria-label={`${stars.filter(Boolean).length} out of 3 stars`}
           >
             {stars.map((filled, i) => (
               <Star
@@ -217,7 +145,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                 aria-hidden
               />
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
 
@@ -226,33 +154,35 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
         <div className="flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto px-6 gap-6 py-8 overflow-y-auto">
           {/* Mobile header */}
           <div className="lg:hidden flex flex-col items-center gap-3 text-center">
-            <motion.div
-              initial={reduceMotion ? false : { scale: 0.7, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={
-                reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 350, damping: 20 }
-              }
-              className="size-20 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center"
-            >
+            <div className="size-20 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center">
               <Trophy className="size-10 text-wp-amber-foreground" aria-hidden />
-            </motion.div>
+            </div>
             <div>
               <span className="font-sans font-bold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full uppercase tracking-wider">
-                {badgeLabel}
+                {isAssessment
+                  ? assessmentPassed
+                    ? "Unit Test Passed"
+                    : "More Practice Needed"
+                  : isStrongSession
+                    ? "Strong Session"
+                    : "Session Complete"}
               </span>
-              <h1 className="font-sans font-black text-foreground text-3xl mt-1">{titleText}</h1>
+              <h1 className="font-sans font-black text-foreground text-3xl mt-1">
+                {isAssessment ? (assessmentPassed ? "Passed!" : "Keep Practicing!") : group.name}
+              </h1>
             </div>
-            <p className="font-sans font-semibold text-muted-foreground text-sm">{descText}</p>
-            <motion.div
-              initial={reduceMotion ? false : { y: 10, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={
-                reduceMotion
-                  ? { duration: 0 }
-                  : { delay: 0.2, type: "spring", stiffness: 300, damping: 20 }
-              }
+            <p className="font-sans font-semibold text-muted-foreground text-sm">
+              {isAssessment
+                ? assessmentPassed
+                  ? `You demonstrated the sampled objectives. They are scheduled for spaced review.`
+                  : `Reach ${ASSESSMENT_PASS_PERCENT}% across the sampled objectives to pass this checkpoint.`
+                : isStrongSession
+                  ? `Recalled ${groupWords.length} vocabulary words well in this session.`
+                  : `Completed session for ${groupWords.length} words.`}
+            </p>
+            <div
               className="flex gap-2 items-center"
-              aria-label={starsAriaLabel}
+              aria-label={`${stars.filter(Boolean).length} out of 3 stars`}
             >
               {stars.map((filled, i) => (
                 <Star
@@ -261,7 +191,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                   aria-hidden
                 />
               ))}
-            </motion.div>
+            </div>
           </div>
 
           <div className="hidden lg:block text-center">
@@ -285,23 +215,15 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
               </div>
               <div className="text-start min-w-0">
                 <p className="font-sans text-xs font-bold text-foreground truncate">
-                  {t(
-                    saveStatus === "saved"
-                      ? "lesson.progressSavedTitle"
-                      : `reliability.${saveStatus}`
-                  )}
+                  {t("lesson.progressSavedTitle")}
                 </p>
                 <p className="font-sans text-[11px] text-muted-foreground truncate">
-                  {t(
-                    saveStatus === "saved"
-                      ? "lesson.progressSavedDevice"
-                      : `reliability.${saveStatus}Description`
-                  )}
+                  {t("lesson.progressSavedDevice")}
                 </p>
               </div>
             </div>
             <span className="font-sans text-[10px] font-black uppercase tracking-wider text-wp-green bg-wp-green-light px-2.5 py-1 rounded-full shrink-0">
-              {t(saveStatus === "saved" ? "lesson.savedStatus" : `reliability.${saveStatus}`)}
+              {t("lesson.savedStatus")}
             </span>
           </div>
 
@@ -309,20 +231,20 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
           <div className="grid grid-cols-3 gap-3 w-full">
             {[
               {
-                value: num(groupWords.length),
-                label: t("lesson.groupWords"),
+                value: `${groupWords.length}`,
+                label: "Group Words",
                 color: "text-primary",
                 bg: "bg-secondary",
               },
               {
-                value: `${num(accuracy)}%`,
-                label: t("lesson.accuracy"),
+                value: `${accuracy}%`,
+                label: "Accuracy",
                 color: "text-wp-blue-foreground",
                 bg: "bg-wp-blue/10",
               },
               {
-                value: `+${num(xp)}`,
-                label: t("lesson.xpEarned"),
+                value: `+${xp}`,
+                label: "XP Earned",
                 color: "text-wp-green",
                 bg: "bg-wp-green-light",
               },
@@ -345,23 +267,17 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
             <div className="w-full bg-wp-card border border-border rounded-2xl p-4 flex flex-col gap-1.5 shadow-wp-xs">
               <div className="flex items-center gap-2 text-primary font-sans font-bold text-xs uppercase tracking-wider mb-0.5">
                 <Sparkles className="size-4 text-wp-amber-foreground" aria-hidden />
-                <span>{t("lesson.howEarnedXp", { xp: num(xp) })}</span>
+                <span>{t("lesson.howEarnedXp", { xp })}</span>
               </div>
               <dl className="flex flex-col gap-1">
                 {[
                   {
-                    label:
-                      correct === 1
-                        ? t("lesson.correctAnswerSingular")
-                        : t("lesson.correctAnswersCount", { count: num(correct) }),
+                    label: `${correct} correct answer${correct === 1 ? "" : "s"}`,
                     value: xpBreakdown.correctAnswers,
                   },
-                  { label: t("lesson.lessonCompletedBonus"), value: xpBreakdown.lessonComplete },
-                  { label: t("lesson.perfectSessionBonus"), value: xpBreakdown.perfectSession },
-                  {
-                    label: t("lesson.streakBonus", { streak: num(progress.streak) }),
-                    value: xpBreakdown.streak,
-                  },
+                  { label: "Lesson completed", value: xpBreakdown.lessonComplete },
+                  { label: "Perfect session", value: xpBreakdown.perfectSession },
+                  { label: `${progress.streak}-day streak`, value: xpBreakdown.streak },
                 ]
                   .filter((row) => row.value > 0)
                   .map((row) => (
@@ -370,7 +286,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                       className="flex items-center justify-between font-sans text-xs"
                     >
                       <dt className="text-muted-foreground font-medium">{row.label}</dt>
-                      <dd className="text-foreground font-bold">+{num(row.value)}</dd>
+                      <dd className="text-foreground font-bold">+{row.value}</dd>
                     </div>
                   ))}
               </dl>
@@ -453,7 +369,6 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                       dispatch({
                         type: "START_LESSON",
                         lessonId: nextGroup.id,
-                        unitId: resolveUnitForLesson(nextGroup.id).id,
                         mode: "NEW_LESSON",
                         wordQueue: nextGroup.wordIds,
                       })

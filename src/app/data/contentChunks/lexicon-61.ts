@@ -165,7 +165,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "warm over",
         meaning: "reheat food",
         arabic: "يُعِيدُ التَّسْخِين",
-        example: "He warmed over the coffee in the microwave.",
+        example: "She warmed over the coffee in the microwave.",
       },
     ],
     sentences: [
@@ -214,7 +214,7 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "flip through",
         meaning: "turn pages quickly",
         arabic: "يُقَلِّبُ الصَّفَحَات",
-        example: "He flipped through the photo album to show his childhood pictures.",
+        example: "She flipped through the photo album to show her childhood pictures.",
       },
     ],
     sentences: [
@@ -308,14 +308,14 @@ export const entries: Record<string, LexiconEntry> = {
         phrase: "set down",
         meaning: "place a vase on a table",
         arabic: "يَضَعُ الزَّهْرِيَّةَ عَلَى طَاوِلَة",
-        example: "He set down the delicate ceramic vase on the dining table.",
+        example: "She set down the delicate ceramic vase on the dining table.",
       },
     ],
     sentences: [
       {
         context: "Floral Arrangement",
-        en: "He arranged a bouquet of fresh yellow roses inside the tall glass vase.",
-        ar: "رتب باقة من الورود الصفراء النضرة داخل المزهرية الزجاجية الطويلة.",
+        en: "She arranged a bouquet of fresh yellow roses inside the tall glass vase.",
+        ar: "رَتَّبَتْ بَاقَةً مِنْ زُهُورِ الجُورِيِّ الصَّفْرَاءِ دَاخِلَ زَهْرِيَّةٍ زُجَاجِيَّةٍ طَوِيلَةٍ.",
       },
       {
         context: "Home Centerpiece",
@@ -328,8 +328,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "احْذَرْ مِنْ إِسْقَاطِ زَهْرِيَّةِ الكِرِيسْتَالِ الرَّقِيقَةِ القَرِيبَةِ مِنَ الحَافَّةِ.",
       },
     ],
-    exampleSentence: "He arranged a bouquet of fresh yellow roses inside the tall glass vase.",
-    exampleArabic: "رتب باقة من الورود الصفراء النضرة داخل المزهرية الزجاجية الطويلة.",
+    exampleSentence: "She arranged a bouquet of fresh yellow roses inside the tall glass vase.",
+    exampleArabic:
+      "رَتَّبَتْ بَاقَةً مِنْ زُهُورِ الجُورِيِّ الصَّفْرَاءِ دَاخِلَ زَهْرِيَّةٍ زُجَاجِيَّةٍ طَوِيلَةٍ.",
   },
   sign: {
     id: "sign",
@@ -399,8 +400,8 @@ export const entries: Record<string, LexiconEntry> = {
     sentences: [
       {
         context: "School Morning",
-        en: "He unzipped his floral pencil case to retrieve a blue pen and a ruler.",
-        ar: "فتح سحاب مقلمته المزينة بالزهور ليخرج قلما أزرق ومسطرة.",
+        en: "She unzipped her floral pencil case to retrieve a blue pen and a ruler.",
+        ar: "فَتَحَتْ سَحَّابَ مِقْلَمَتِهَا المُزَهَّرَةِ لِإِخْرَاجِ قَلَمِ حِبْرٍ أَزْرَقَ وَمِسْطَرَةٍ.",
       },
       {
         context: "Desk Organization",
@@ -413,8 +414,9 @@ export const entries: Record<string, LexiconEntry> = {
         ar: "دَسَّ مِقْلَمَتَهُ المُدْمَجَةَ ذَاتَ السَّحَّابِ فِي الجَيْبِ الأَمَامِيِّ لِحَقِيبَةِ ظَهْرِهِ.",
       },
     ],
-    exampleSentence: "He unzipped his floral pencil case to retrieve a blue pen and a ruler.",
-    exampleArabic: "فتح سحاب مقلمته المزينة بالزهور ليخرج قلما أزرق ومسطرة.",
+    exampleSentence: "She unzipped her floral pencil case to retrieve a blue pen and a ruler.",
+    exampleArabic:
+      "فَتَحَتْ سَحَّابَ مِقْلَمَتِهَا المُزَهَّرَةِ لِإِخْرَاجِ قَلَمِ حِبْرٍ أَزْرَقَ وَمِسْطَرَةٍ.",
   },
   roll: {
     id: "roll",
@@ -446,8 +448,8 @@ export const entries: Record<string, LexiconEntry> = {
       },
       {
         context: "Dinner Table",
-        en: "He broke open a soft bread roll and spread melted butter across its warm center.",
-        ar: "فتح لفافة خبز طرية ودهن قلبها الدافئ بالزبدة المذابة.",
+        en: "She broke open a soft bread roll and spread melted butter across its warm center.",
+        ar: "فَتَحَتْ رَغِيفَ خُبْزٍ صَغِيرًا طَرِيًّا وَدَهَنَتِ الزُّبْدَةَ الذَّائِبَةَ فِي مُنْتَصَفِهِ.",
       },
       {
         context: "Sweet Variety",
