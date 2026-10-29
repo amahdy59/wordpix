@@ -160,23 +160,33 @@ for (const viewport of [
     await expect(prompt).not.toContainText("____");
     const media = page.locator(".wp-question-media").first();
     await expect(media.locator("img")).toBeVisible();
-    const mediaBox = (await media.boundingBox())!;
-    const imageBox = (await media.locator("img").boundingBox())!;
-    expect(imageBox.width).toBeGreaterThanOrEqual(100);
-    expect(imageBox.height).toBeGreaterThanOrEqual(100);
-    expect(Math.abs(imageBox.width - imageBox.height)).toBeLessThanOrEqual(2);
-    const mediaColumn = (await page.locator('[data-exercise-zone="media"]').boundingBox())!;
-    expect(mediaBox.width).toBeLessThanOrEqual(mediaColumn.width + 1);
-    if (viewport.width < 768) {
-      expect(mediaBox.width).toBeGreaterThan(viewport.width - 50);
-    }
-    if (viewport.width >= 768) {
-      const promptBox = (await prompt.boundingBox())!;
-      const promptZoneBox = (await page.locator('[data-exercise-zone="prompt"]').boundingBox())!;
-      const choicesBox = (await choices.boundingBox())!;
-      expect(Math.abs(promptBox.y - mediaBox.y)).toBeLessThanOrEqual(2);
-      expect(choicesBox.y - (promptZoneBox.y + promptZoneBox.height)).toBeLessThanOrEqual(24);
-    }
+    // Late content enrichment can replace the visible image between measurements.
+    // Retry the complete geometry assertion rather than dereferencing a stale node.
+    await expect(async () => {
+      const mediaBox = await media.boundingBox();
+      const imageBox = await media.locator("img").boundingBox();
+      const mediaColumn = await page.locator('[data-exercise-zone="media"]').boundingBox();
+      expect(mediaBox).not.toBeNull();
+      expect(imageBox).not.toBeNull();
+      expect(mediaColumn).not.toBeNull();
+      expect(imageBox!.width).toBeGreaterThanOrEqual(100);
+      expect(imageBox!.height).toBeGreaterThanOrEqual(100);
+      expect(Math.abs(imageBox!.width - imageBox!.height)).toBeLessThanOrEqual(2);
+      expect(mediaBox!.width).toBeLessThanOrEqual(mediaColumn!.width + 1);
+      if (viewport.width < 768) {
+        expect(mediaBox!.width).toBeGreaterThan(viewport.width - 50);
+      }
+      if (viewport.width >= 768) {
+        const promptBox = await prompt.boundingBox();
+        const promptZoneBox = await page.locator('[data-exercise-zone="prompt"]').boundingBox();
+        const choicesBox = await choices.boundingBox();
+        expect(promptBox).not.toBeNull();
+        expect(promptZoneBox).not.toBeNull();
+        expect(choicesBox).not.toBeNull();
+        expect(Math.abs(promptBox!.y - mediaBox!.y)).toBeLessThanOrEqual(2);
+        expect(choicesBox!.y - (promptZoneBox!.y + promptZoneBox!.height)).toBeLessThanOrEqual(24);
+      }
+    }).toPass({ timeout: 5000 });
     const region = page.getByRole("region", {
       name: "The Five Senses 1: Complete the sentence exercise",
       exact: true,
