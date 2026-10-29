@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "status": "published",
+  "authorization": "Human reply: Allow these three image mappings and six new files",
+  "verifiedAt": "2026-10-29T17:42:33.159Z",
+  "creates": 6,
+  "overwrites": 0,
+  "deletes": 0,
+  "proposals": [
+    {
+      "contentId": "coverage-28da4039c0bc3dbaff5edaa5",
+      "contentSha256": "28da4039c0bc3dbaff5edaa59a1e09d276d533e08b6e3631aceb5a9bd6265b85",
+      "term": "establish the daily prayers",
+      "lesson": "hadith-03",
+      "purpose": "helpful",
+      "originalKey": "hadith/v1/images/7f20af1b3cfebcbb48a6ddf96b4c18d02b45db2c.png",
+      "originalAssetSha256": "d1986ce46a76ac9d8f0d07b858c1f559b624e6a25a1c10b0ce668dda44bbc48a",
+      "imageAlt": "An adult stands on a carpet in a mosque with his hands folded in front of his chest.",
+      "evidence": "Inspected hadith-candidates.png tile 1 and served PNG bytes. Standing prayer posture in a mosque supports the context. A still image does not establish a daily frequency; the written phrase remains necessary.",
+      "variants": [
+        {
+          "width": 480,
+          "height": 480,
+          "bytes": 21724,
+          "sha256": "d268252458478abdeebfc0dc12099eb57742dc93e60047aaf2c57958eac0e73a",
+          "key": "question-images/v2/hadith-reviewed-media/d268252458478abdeebfc0dc12099eb57742dc93e60047aaf2c57958eac0e73a.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 60250,
+          "sha256": "ccef6747fc5665837afabae691d75b2aceb6b2f735eb5a255c269c3e49eb5fcd",
+          "key": "question-images/v2/hadith-reviewed-media/ccef6747fc5665837afabae691d75b2aceb6b2f735eb5a255c269c3e49eb5fcd.webp"
+        }
+      ]
+    },
+    {
+      "contentId": "coverage-234632e8b0c5bb6e7908ccbb",
+      "contentSha256": "234632e8b0c5bb6e7908ccbbdef8cc3a7cb4ee6cb15c20ce5078281c78ec13e9",
+      "term": "perform Hajj or go on pilgrimage",
+      "lesson": "hadith-03",
+      "purpose": "helpful",
+      "originalKey": "hadith/v1/images/fe0f3c6a173b830df3821f8cdbe11a22c5ca685e.png",
+      "originalAssetSha256": "1ee00d0f277765deec4db1605d540b7321db9679d6f711ef250824298ec4f435",
+      "imageAlt": "An adult in white pilgrimage clothing stands in a mosque courtyard, with the Kaaba behind him.",
+      "evidence": "Inspected hadith-candidates.png tile 2 and served PNG bytes. Pilgrimage clothing and the Kaaba support the setting. This is contextual reference, not proof that a person completed all pilgrimage rituals.",
+      "variants": [
+        {
+          "width": 480,
+          "height": 480,
+          "bytes": 17034,
+          "sha256": "c2783eec16f66a4d07f52947c7aab3311efac8f72d803fd15272ae08cda92b78",
+          "key": "question-images/v2/hadith-reviewed-media/c2783eec16f66a4d07f52947c7aab3311efac8f72d803fd15272ae08cda92b78.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 38140,
+          "sha256": "77bf650363d0377aa6def15baa17d09203b0fd84e81295f5e49a44b591086e3e",
+          "key": "question-images/v2/hadith-reviewed-media/77bf650363d0377aa6def15baa17d09203b0fd84e81295f5e49a44b591086e3e.webp"
+        }
+      ]
+    },
+    {
+      "contentId": "coverage-6047733e72c39420020683e2",
+      "contentSha256": "6047733e72c39420020683e26191240a2d6c7e88bd744e08ecd9478f8c3050e0",
+      "term": "joint",
+      "lesson": "hadith-26",
+      "purpose": "helpful",
+      "originalKey": "images/v1/word-images/skeleton/knee-joint.avif",
+      "originalAssetSha256": "4f8c388cdf7065041c514b28fc1c71bf38770a98ad8f6cbb597138d3311c33b9",
+      "imageAlt": "A simplified knee diagram shows the connection between the upper and lower leg bones, with a small round bone at the front.",
+      "evidence": "Inspected joint-candidates.png tile 3, with no printed answer labels. Public served AVIF digest equals the inspected local source. This supports the concrete body-connection sense in the lesson example; it is not medical teaching material.",
+      "variants": [
+        {
+          "width": 480,
+          "height": 480,
+          "bytes": 5856,
+          "sha256": "e3c6c18a22f71d9c355fc9085494619f5189dec354b279bc0302a21f55877499",
+          "key": "question-images/v2/hadith-reviewed-media/e3c6c18a22f71d9c355fc9085494619f5189dec354b279bc0302a21f55877499.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 15234,
+          "sha256": "3413e64fc902ae9a80e90952f1dc7a36fae500797f4691c34d55dc1836c938ba",
+          "key": "question-images/v2/hadith-reviewed-media/3413e64fc902ae9a80e90952f1dc7a36fae500797f4691c34d55dc1836c938ba.webp"
+        }
+      ]
+    }
+  ]
+}

@@ -57,12 +57,19 @@ or duplicate decisions. Previewing an image or changing a crop is not approval.
 
 ## Reviewed purpose decisions
 
-All 29 currently unassigned specialist Hadith vocabulary uses have individual
+The 29 initially unassigned specialist Hadith vocabulary uses have individual
 purpose rationales in `visual-purpose-decisions.json`: 23 are text-only and six
-would benefit from contextual visual support. This is a purpose review, not an
-approval of any candidate image. Abstract faith, intention, obligation and
+would benefit from contextual visual support. This purpose review alone does
+not approve a candidate image. Abstract faith, intention, obligation and
 figurative meanings must not be inferred from a person's appearance or a
-literal scene. The six helpful cases remain in the artwork review queue.
+literal scene. Three helpful cases now have individually reviewed contextual
+references: establishing daily prayers, performing Hajj and a knee joint.
+Their exact content revisions, source evidence, six content-hashed responsive
+WebP keys, served-byte checks and the user's narrow authorization are recorded
+in `APPROVED_HADITH_REUSE.json`. The other three helpful cases and 23 text-only
+uses remain without images by design; the specialist audit reports 26 without
+assignments. Written definitions still carry frequency, ritual
+completion and meaning that a still image cannot prove.
 
 The 370 business and 400 conversation quiz prompts also have individual
 revision-pinned text-only purpose decisions. Their actual quiz stages pass
@@ -84,14 +91,15 @@ The source audit remains intentionally explicit about incomplete work:
 - Specialist vocabulary, course cards and any future image-choice assessments
   still need separate visual-purpose and semantic reviews. The current quiz
   classification must be rechecked when the prompts or their renderer change.
-- Responsive R2 variants need actual source-byte review, local encoding,
-  immutable candidate names, verification and an explicit permitted deployment
-  path. No invented `srcset` paths are shipped.
+- Responsive R2 variants for other candidates still need source-byte review,
+  local encoding, immutable names, verification and permitted deployment. The
+  three approved Hadith references use six verified 480/960-pixel WebP files.
 - The project's current AGENTS.md media constraint keeps image R2 references
-  read-only. The only media write in this release is the two new audio objects
-  expressly authorized by the user. No image object or source image mapping was
-  changed. Any future approved image batch must preserve existing objects and
-  separately record exact content, served-byte and authorization evidence.
+  read-only except for the user's explicit authorization of these six new
+  Hadith image files and three corresponding mappings. The earlier two new
+  audio objects were also expressly authorized. No existing object was
+  overwritten or deleted. Any future image batch needs its own scope, exact
+  content and served-byte evidence.
 
 ## Validation record
 
@@ -108,7 +116,7 @@ matrix for the final commit. Local verification receipts are saved under
 `output/image-quality/`. The independently cached sentence table is about
 11.5 MB (2.36 MB gzip), compared with about 22.4 MB (2.91 MB gzip) in the previous
 combined exercise bundle. Budget ceilings were not raised. Source mappings
-remain unchanged; the compact table is a checked derivative.
+remain unchanged for sentence media; the compact table is a checked derivative.
 
 The two corrected identification sentences have new recordings totalling
 14,728 bytes. The user expressly allowed these two create-only uploads. Their

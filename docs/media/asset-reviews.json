@@ -380,6 +380,54 @@
       "reviewer": "Codex visual audit",
       "reviewedAt": "2026-10-29",
       "evidence": "The candidate shows a drawing compass rather than the navigation instrument intended in this camping context."
+    },
+    {
+      "key": "question-images/v2/hadith-reviewed-media/d268252458478abdeebfc0dc12099eb57742dc93e60047aaf2c57958eac0e73a.webp",
+      "displayName": "An adult stands on a carpet in a mosque with his hands folded in front of his chest",
+      "reviewer": "Codex visual review",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Original hadith/v1/images/7f20af1b3cfebcbb48a6ddf96b4c18d02b45db2c.png inspected. Inspected hadith-candidates.png tile 1 and served PNG bytes. Standing prayer posture in a mosque supports the context. A still image does not establish a daily frequency; the written phrase remains necessary. Final 480px WebP public R2 GET returned identical 21724 bytes with image/webp and CORS. Contextual support only; definition remains in text.",
+      "inspectedSha256": "d268252458478abdeebfc0dc12099eb57742dc93e60047aaf2c57958eac0e73a"
+    },
+    {
+      "key": "question-images/v2/hadith-reviewed-media/ccef6747fc5665837afabae691d75b2aceb6b2f735eb5a255c269c3e49eb5fcd.webp",
+      "displayName": "An adult stands on a carpet in a mosque with his hands folded in front of his chest",
+      "reviewer": "Codex visual review",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Original hadith/v1/images/7f20af1b3cfebcbb48a6ddf96b4c18d02b45db2c.png inspected. Inspected hadith-candidates.png tile 1 and served PNG bytes. Standing prayer posture in a mosque supports the context. A still image does not establish a daily frequency; the written phrase remains necessary. Final 960px WebP public R2 GET returned identical 60250 bytes with image/webp and CORS. Contextual support only; definition remains in text.",
+      "inspectedSha256": "ccef6747fc5665837afabae691d75b2aceb6b2f735eb5a255c269c3e49eb5fcd"
+    },
+    {
+      "key": "question-images/v2/hadith-reviewed-media/c2783eec16f66a4d07f52947c7aab3311efac8f72d803fd15272ae08cda92b78.webp",
+      "displayName": "An adult in white pilgrimage clothing stands in a mosque courtyard, with the Kaaba behind him",
+      "reviewer": "Codex visual review",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Original hadith/v1/images/fe0f3c6a173b830df3821f8cdbe11a22c5ca685e.png inspected. Inspected hadith-candidates.png tile 2 and served PNG bytes. Pilgrimage clothing and the Kaaba support the setting. This is contextual reference, not proof that a person completed all pilgrimage rituals. Final 480px WebP public R2 GET returned identical 17034 bytes with image/webp and CORS. Contextual support only; definition remains in text.",
+      "inspectedSha256": "c2783eec16f66a4d07f52947c7aab3311efac8f72d803fd15272ae08cda92b78"
+    },
+    {
+      "key": "question-images/v2/hadith-reviewed-media/77bf650363d0377aa6def15baa17d09203b0fd84e81295f5e49a44b591086e3e.webp",
+      "displayName": "An adult in white pilgrimage clothing stands in a mosque courtyard, with the Kaaba behind him",
+      "reviewer": "Codex visual review",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Original hadith/v1/images/fe0f3c6a173b830df3821f8cdbe11a22c5ca685e.png inspected. Inspected hadith-candidates.png tile 2 and served PNG bytes. Pilgrimage clothing and the Kaaba support the setting. This is contextual reference, not proof that a person completed all pilgrimage rituals. Final 960px WebP public R2 GET returned identical 38140 bytes with image/webp and CORS. Contextual support only; definition remains in text.",
+      "inspectedSha256": "77bf650363d0377aa6def15baa17d09203b0fd84e81295f5e49a44b591086e3e"
+    },
+    {
+      "key": "question-images/v2/hadith-reviewed-media/e3c6c18a22f71d9c355fc9085494619f5189dec354b279bc0302a21f55877499.webp",
+      "displayName": "A simplified knee diagram shows the connection between the upper and lower leg bones, with a small round bone at the front",
+      "reviewer": "Codex visual review",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Original images/v1/word-images/skeleton/knee-joint.avif inspected. Inspected joint-candidates.png tile 3, with no printed answer labels. Public served AVIF digest equals the inspected local source. This supports the concrete body-connection sense in the lesson example; it is not medical teaching material. Final 480px WebP public R2 GET returned identical 5856 bytes with image/webp and CORS. Contextual support only; definition remains in text.",
+      "inspectedSha256": "e3c6c18a22f71d9c355fc9085494619f5189dec354b279bc0302a21f55877499"
+    },
+    {
+      "key": "question-images/v2/hadith-reviewed-media/3413e64fc902ae9a80e90952f1dc7a36fae500797f4691c34d55dc1836c938ba.webp",
+      "displayName": "A simplified knee diagram shows the connection between the upper and lower leg bones, with a small round bone at the front",
+      "reviewer": "Codex visual review",
+      "reviewedAt": "2026-10-29",
+      "evidence": "Original images/v1/word-images/skeleton/knee-joint.avif inspected. Inspected joint-candidates.png tile 3, with no printed answer labels. Public served AVIF digest equals the inspected local source. This supports the concrete body-connection sense in the lesson example; it is not medical teaching material. Final 960px WebP public R2 GET returned identical 15234 bytes with image/webp and CORS. Contextual support only; definition remains in text.",
+      "inspectedSha256": "3413e64fc902ae9a80e90952f1dc7a36fae500797f4691c34d55dc1836c938ba"
     }
   ],
   "bindings": [

@@ -19,6 +19,9 @@ export interface VocabularyTableItem {
   example: string;
   exampleAr?: string;
   imageSrc?: string;
+  imageSrcSet?: string;
+  imageAlt?: string;
+  imageFit?: "contain" | "cover";
   fallbackLabel?: string;
   register?: WordRegister;
   collocations?: string[];
@@ -211,14 +214,19 @@ export function CurriculumVocabularyTable({
                           {hasImg ? (
                             <img
                               src={item.imageSrc}
+                              srcSet={item.imageSrcSet}
+                              sizes="96px"
                               alt=""
                               aria-hidden="true"
                               loading="lazy"
                               onError={() => handleImageError(item.id)}
-                              className="size-full object-cover object-center transition-transform duration-300 motion-safe:group-hover/thumb:scale-105"
+                              className={`size-full object-center transition-transform duration-300 motion-safe:group-hover/thumb:scale-105 ${item.imageFit === "contain" ? "object-contain" : "object-cover"}`}
                             />
                           ) : (
                             <VocabularyImagePlaceholder term={item.term} />
+                          )}
+                          {hasImg && item.imageAlt && (
+                            <span className="sr-only">{item.imageAlt}</span>
                           )}
 
                           {/* Enlarge Overlay Button */}
@@ -334,11 +342,13 @@ export function CurriculumVocabularyTable({
                       {hasImg ? (
                         <img
                           src={item.imageSrc}
+                          srcSet={item.imageSrcSet}
+                          sizes="56px"
                           alt=""
                           aria-hidden="true"
                           loading="lazy"
                           onError={() => handleImageError(item.id)}
-                          className="size-full object-cover object-center"
+                          className={`size-full object-center ${item.imageFit === "contain" ? "object-contain" : "object-cover"}`}
                         />
                       ) : (
                         <div className="flex size-full items-center justify-center text-foreground">
@@ -346,6 +356,7 @@ export function CurriculumVocabularyTable({
                           <span className="sr-only">{t("story.imagePending")}</span>
                         </div>
                       )}
+                      {hasImg && item.imageAlt && <span className="sr-only">{item.imageAlt}</span>}
 
                       {hasImg && (
                         <button
@@ -448,13 +459,16 @@ export function CurriculumVocabularyTable({
                     <>
                       <img
                         src={item.imageSrc}
+                        srcSet={item.imageSrcSet}
+                        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                         alt=""
                         aria-hidden="true"
                         loading="lazy"
                         decoding="async"
                         onError={() => handleImageError(item.id)}
-                        className="size-full object-cover object-center transition-transform duration-300 motion-safe:group-hover/thumb:scale-105"
+                        className={`size-full object-center transition-transform duration-300 motion-safe:group-hover/thumb:scale-105 ${item.imageFit === "contain" ? "object-contain" : "object-cover"}`}
                       />
+                      {item.imageAlt && <span className="sr-only">{item.imageAlt}</span>}
                       {/* Enlarge Overlay Button */}
                       <button
                         type="button"
@@ -617,14 +631,21 @@ export function CurriculumVocabularyTable({
                 {activeModalItem.imageSrc && !imageErrors[activeModalItem.id] ? (
                   <img
                     src={activeModalItem.imageSrc}
+                    srcSet={activeModalItem.imageSrcSet}
+                    sizes="(min-width: 960px) 960px, 100vw"
                     alt=""
                     aria-hidden="true"
                     onError={() => handleImageError(activeModalItem.id)}
-                    className="size-full object-cover object-center"
+                    className={`size-full object-center ${activeModalItem.imageFit === "contain" ? "object-contain" : "object-cover"}`}
                   />
                 ) : (
                   <VocabularyImagePlaceholder term={activeModalItem.term} />
                 )}
+                {activeModalItem.imageSrc &&
+                  !imageErrors[activeModalItem.id] &&
+                  activeModalItem.imageAlt && (
+                    <span className="sr-only">{activeModalItem.imageAlt}</span>
+                  )}
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-black/30" />
 
                 <div className="absolute bottom-4 start-6 end-6 flex items-end justify-between gap-3">

@@ -8,6 +8,7 @@ import { useI18n } from "../../../../i18n";
 import { useAudio } from "../../../shared/useAudio";
 import { AudioButton } from "../../../shared/AudioButton";
 import { getHadithVisualVocabulary, FIGMA_HADITH_LESSONS } from "../figmaHadithCatalog";
+import { getReviewedHadithVocabularyMedia } from "../reviewedVocabularyMedia";
 import { getCurriculumAudioKey, cleanCurriculumTerm } from "../../shared/curriculumAudioManifest";
 import {
   CurriculumVocabularyTable,
@@ -226,7 +227,12 @@ export function HadithVocabularyStage({
         const normCand = normalizeVisualLabel(candidate.label.split("·")[0]);
         return normCand === normItem;
       });
-      const assetUrl = visual ? resolveAssetUrl(`hadith/v1/images/${visual.imageRef}.png`) : "";
+      const reviewed = getReviewedHadithVocabularyMedia(lessonNumber, item.term);
+      const assetUrl = reviewed
+        ? resolveAssetUrl(reviewed.image480)
+        : visual
+          ? resolveAssetUrl(`hadith/v1/images/${visual.imageRef}.png`)
+          : "";
       return {
         id: item.term,
         term: item.term,
@@ -238,6 +244,11 @@ export function HadithVocabularyStage({
         definition: item.definition,
         example: item.example ?? "",
         imageSrc: assetUrl,
+        imageSrcSet: reviewed
+          ? `${resolveAssetUrl(reviewed.image480)} 480w, ${resolveAssetUrl(reviewed.image960)} 960w`
+          : undefined,
+        imageAlt: reviewed?.alt,
+        imageFit: reviewed ? "contain" : undefined,
         fallbackLabel: item.term,
       };
     });

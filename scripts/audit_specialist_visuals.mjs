@@ -93,6 +93,9 @@ try {
   const { FIGMA_HADITH_LESSONS, getHadithVisualVocabulary } = await load(
     "app/learning/hadith/figmaHadithCatalog.ts"
   );
+  const { getReviewedHadithVocabularyMedia } = await load(
+    "app/learning/hadith/reviewedVocabularyMedia.ts"
+  );
   const { parseHadithVocabulary } = await load("app/learning/hadith/hadithVocabularyContent.ts");
   const normalizeLabel = (label) =>
     label
@@ -113,6 +116,7 @@ try {
       lesson.number
     );
     for (const term of vocabulary) {
+      const reviewed = getReviewedHadithVocabularyMedia(lesson.number, term.term);
       const image = visuals.find(
         (candidate) => normalizeLabel(candidate.label.split("·")[0]) === normalizeLabel(term.term)
       );
@@ -121,8 +125,10 @@ try {
         `${lesson.id}/${term.term}`,
         "vocabulary",
         term.term,
-        image ? `hadith/v1/images/${image.imageRef}.png` : null,
-        "Uses the active HadithVocabularyStage parser, lesson-specific text and exact normalized visual-label matching."
+        reviewed?.image480 ?? (image ? `hadith/v1/images/${image.imageRef}.png` : null),
+        reviewed
+          ? "Individually reviewed contextual reference with a pinned vocabulary revision and a larger responsive variant."
+          : "Uses the active HadithVocabularyStage parser, lesson-specific text and exact normalized visual-label matching."
       );
     }
   }

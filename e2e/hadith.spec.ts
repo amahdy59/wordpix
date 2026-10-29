@@ -35,6 +35,39 @@ test("Hadith lesson is accessible and contained on mobile", async ({ page }) => 
   expect(results.violations).toEqual([]);
 });
 
+test("reviewed Hadith references are readable and fit their vocabulary cards", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const [lesson, altStart, key] of [
+    [
+      "3",
+      "An adult stands on a carpet",
+      "d268252458478abdeebfc0dc12099eb57742dc93e60047aaf2c57958eac0e73a",
+    ],
+    [
+      "3",
+      "An adult in white pilgrimage clothing",
+      "c2783eec16f66a4d07f52947c7aab3311efac8f72d803fd15272ae08cda92b78",
+    ],
+    [
+      "26",
+      "A simplified knee diagram",
+      "e3c6c18a22f71d9c355fc9085494619f5189dec354b279bc0302a21f55877499",
+    ],
+  ] as const) {
+    await page.goto(`/#/hadith/lesson-${lesson}`, { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
+    await page.getByText("All steps", { exact: true }).click();
+    await page.getByRole("button", { name: /Vocabulary/ }).click();
+    const description = page.getByText(new RegExp(`^${altStart}`)).first();
+    await expect(description).toHaveClass(/sr-only/);
+    const picture = page.locator(`img[src$="${key}.webp"]:visible`).first();
+    await expect(picture).toBeVisible();
+    await expect(picture).toHaveAttribute("src", new RegExp(`${key}\\.webp$`));
+    await expect(picture).toHaveAttribute("srcset", /480w, .* 960w$/);
+    await expect(picture).toHaveClass(/object-contain/);
+  }
+});
+
 test("Hadith 2 practice provides ten questions and restores the next stage", async ({ page }) => {
   await page.goto("/#/hadith/lesson-2", { waitUntil: "domcontentloaded" });
   await waitForStyles(page);

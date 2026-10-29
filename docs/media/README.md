@@ -5,6 +5,8 @@ rejected matches, source-content repair and generation-request/naming plans.
 The [implementation record](IMPLEMENTATION_2026-10-29.md) documents the user-authorized
 exception that applied exactly twenty verified assignments. Catalog refreshes and
 review commands themselves remain read-only with respect to the app and R2.
+The [Hadith reuse receipt](APPROVED_HADITH_REUSE.json) records a later, separately
+authorized batch of three vocabulary mappings and six new responsive images.
 
 The catalog organizes existing R2 assets without changing their keys, bytes, URLs,
 or live content mappings. A descriptive name is catalog metadata. It is never a

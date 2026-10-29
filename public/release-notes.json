@@ -1,16 +1,29 @@
 {
-  "version": "0.1.99",
+  "version": "0.1.100",
   "notes": [
-    "Optionally save a unit’s vocabulary and selected lesson images for offline use, with size estimates, retry, cancellation and removal that keeps your progress.",
-    "Flag an unclear, mismatched or cropped image. Reports stay on your device and can be exported or cleared from Settings; they are not sent automatically.",
-    "The corrected firewood and sunscreen sentences now have recorded audio."
+    "Three Hadith vocabulary expressions—daily prayers, Hajj and joint—now have reviewed contextual pictures with descriptions and responsive sizes."
   ],
   "notesAr": [
-    "يمكنك اختيارياً حفظ صور مفردات الوحدة وسياقات دروسها المختارة للاستخدام دون إنترنت، مع تقدير الحجم وإعادة المحاولة والإلغاء والإزالة دون المساس بتقدمك.",
-    "أبلغ عن صورة غير واضحة أو غير مطابقة أو مقصوصة. تبقى البلاغات على جهازك ويمكن تصديرها أو مسحها من الإعدادات؛ لا تُرسل تلقائياً.",
-    "أصبحت لجملتي الحطب وواقي الشمس المصححتين تسجيلات صوتية."
+    "أصبحت لثلاثة تعبيرات في مفردات الحديث، وهي الصلوات اليومية والحج والمفصل، صور سياقية مراجَعة مع أوصاف وأحجام متجاوبة."
   ],
   "releases": [
+    {
+      "id": "0.1.100",
+      "version": "0.1.100",
+      "date": "2026-10-29",
+      "title": {
+        "en": "Reviewed Hadith vocabulary pictures",
+        "ar": "صور مراجَعة لمفردات الحديث"
+      },
+      "changes": [
+        {
+          "id": "reviewed-hadith-vocabulary-images",
+          "category": "improved",
+          "en": "Three Hadith vocabulary expressions—daily prayers, Hajj and joint—now have reviewed contextual pictures with descriptions and responsive sizes.",
+          "ar": "أصبحت لثلاثة تعبيرات في مفردات الحديث، وهي الصلوات اليومية والحج والمفصل، صور سياقية مراجَعة مع أوصاف وأحجام متجاوبة."
+        }
+      ]
+    },
     {
       "id": "0.1.99",
       "version": "0.1.99",
