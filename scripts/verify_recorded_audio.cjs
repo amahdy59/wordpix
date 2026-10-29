@@ -78,9 +78,24 @@ async function verifyRecordedAudio({ requireComplete = false } = {}) {
   const base = (
     process.env.VITE_ASSET_BASE_URL || "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev"
   ).replace(/\/$/, "");
-  for (const item of unique
-    .filter((_, index) => index % Math.max(1, Math.floor(unique.length / 12)) === 0)
-    .slice(0, 12)) {
+  const sampleCandidates = [
+    unique.find((item) => item.key.startsWith("audio/edge-v1/ar-SA-ZariyahNeural/")),
+    unique.find((item) => item.key.startsWith("audio/edge-v1/en-US-JennyNeural/")),
+    ...unique.filter((_, index) => index % Math.max(1, Math.floor(unique.length / 12)) === 0),
+  ].filter(Boolean);
+  const arabicReference = plan.rows.find(
+    (item) => item.language === "ar" && keys.has(item.existingKey)
+  );
+  if (arabicReference) {
+    const head = await client.head(arabicReference.existingKey);
+    const md5 = head?.etag?.replaceAll('"', "");
+    const bytes = Number(head?.["content-length"]);
+    if (bytes <= 512 || !/^[a-f0-9]{32}$/.test(md5 ?? ""))
+      throw Error("Arabic reference has invalid audio metadata");
+    sampleCandidates.unshift({ key: arabicReference.existingKey, bytes, md5, language: "ar" });
+  }
+  const selectedSamples = [...new Map(sampleCandidates.map((item) => [item.key, item])).values()];
+  for (const item of selectedSamples.slice(0, 12)) {
     const head = await client.head(item.key);
     if (
       Number(head?.["content-length"]) !== item.bytes ||
@@ -101,6 +116,7 @@ async function verifyRecordedAudio({ requireComplete = false } = {}) {
       throw Error("Public audio bytes/CORS mismatch: " + item.key);
     samples.push({
       key: item.key,
+      language: item.language ?? (item.key.includes("/ar-SA-ZariyahNeural/") ? "ar" : "en"),
       bytes: bytes.length,
       checksumVerified: true,
       corsVerified: true,
