@@ -6392,6 +6392,94 @@
       "rationale": "This conversation task is rendered as a text stem with written choices, a correct value and an explanation. Its prompt has no image-dependent reference. Keep the authored language/reading assessment text-only; adding an illustration could supply the tested meaning instead of testing the wording.",
       "reviewer": "Codex task-modality policy review",
       "reviewedAt": "2026-10-29T15:37:36.315Z"
+    },
+    {
+      "contentId": "demand-8962f6f064bdbe58b6d17a55",
+      "contentSha256": "8962f6f064bdbe58b6d17a55216e4f16c0abf98595a2f635215dd0a9d0c8670d",
+      "purpose": "helpful",
+      "rationale": "A correctly reviewed image can support the meaning of rock-climbing in this exact sentence. The written stem remains necessary; this helpful-purpose decision does not approve the currently assigned picture or require new artwork.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.519Z"
+    },
+    {
+      "contentId": "demand-ab347eecedc5bcf3991f1021",
+      "contentSha256": "ab347eecedc5bcf3991f10219600d4d8a915048b7c23670d80c3a11c8dbfaeed",
+      "purpose": "helpful",
+      "rationale": "A correctly reviewed image can support the meaning of stock in this exact sentence. The written stem remains necessary; this helpful-purpose decision does not approve the currently assigned picture or require new artwork.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
+    },
+    {
+      "contentId": "demand-760e6444ed363f3fee97d0ba",
+      "contentSha256": "760e6444ed363f3fee97d0ba01ecf7b68fe91f6c07efc3fd5f4213e1912d1dd0",
+      "purpose": "helpful",
+      "rationale": "The written sentence supplies seasonal movement and the tracking study; a correctly reviewed butterfly image may support the subject but cannot prove season, species or migration by itself.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
+    },
+    {
+      "contentId": "demand-2884029adf439f14daaaeb4e",
+      "contentSha256": "2884029adf439f14daaaeb4e78e64189ce25204891bee7a0b30a03a7315114d2",
+      "purpose": "helpful",
+      "rationale": "A correctly reviewed image can support the meaning of dry-riverbed in this exact sentence. The written stem remains necessary; this helpful-purpose decision does not approve the currently assigned picture or require new artwork.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
+    },
+    {
+      "contentId": "demand-1c3c6665bf5eaf1d826b98a0",
+      "contentSha256": "1c3c6665bf5eaf1d826b98a0bd55a2b4b4bbf7e928b591833f59163ea7f83a37",
+      "purpose": "helpful",
+      "rationale": "A botanically verified subject image may help learners recognize the shrub. The present candidate still requires specialist identification and this purpose decision does not approve it.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
+    },
+    {
+      "contentId": "demand-92e9f3f0b0f0fd4d04f9ccbf",
+      "contentSha256": "92e9f3f0b0f0fd4d04f9ccbf665ec8f0d83a5693f408e84d86ceb7385aa02938",
+      "purpose": "helpful",
+      "rationale": "A correctly reviewed image can support the meaning of cliff in this exact sentence. The written stem remains necessary; this helpful-purpose decision does not approve the currently assigned picture or require new artwork.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
+    },
+    {
+      "contentId": "demand-79279a168975df10b29a8cc5",
+      "contentSha256": "79279a168975df10b29a8cc5d4e96cfb9cf874b062b205efc10f073da161b363",
+      "purpose": "helpful",
+      "rationale": "A correctly reviewed image can support the meaning of brain-coral in this exact sentence. The written stem remains necessary; this helpful-purpose decision does not approve the currently assigned picture or require new artwork.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
+    },
+    {
+      "contentId": "demand-093e3a763b9c3b616b5633bb",
+      "contentSha256": "093e3a763b9c3b616b5633bb919257d73942e7596a3ed6b7fd39ae87e48c969d",
+      "purpose": "helpful",
+      "rationale": "A correctly reviewed image can support the meaning of sandy-bottom in this exact sentence. The written stem remains necessary; this helpful-purpose decision does not approve the currently assigned picture or require new artwork.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
+    },
+    {
+      "contentId": "demand-20c3b7b6cd76e5faba65773b",
+      "contentSha256": "20c3b7b6cd76e5faba65773b8932b1ffe178fe11a6245a7a857b41036af44ade",
+      "purpose": "helpful",
+      "rationale": "A correctly reviewed image can support the meaning of sea-urchin in this exact sentence. The written stem remains necessary; this helpful-purpose decision does not approve the currently assigned picture or require new artwork.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
+    },
+    {
+      "contentId": "demand-969a624a5ff57ea99f239593",
+      "contentSha256": "969a624a5ff57ea99f23959372d49bdf03a74b23b38bcb88a7613b21ed0562a8",
+      "purpose": "helpful",
+      "rationale": "A correctly reviewed image can support the meaning of fossil in this exact sentence. The written stem remains necessary; this helpful-purpose decision does not approve the currently assigned picture or require new artwork.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
+    },
+    {
+      "contentId": "demand-219637d4622ae5c68325e7ba",
+      "contentSha256": "219637d4622ae5c68325e7ba0762827146a21e48473170ac40330d8f68734184",
+      "purpose": "helpful",
+      "rationale": "The written sentence states warming and causality; a sunlit resting butterfly may support the situation but cannot prove a body-temperature change.",
+      "reviewer": "Codex task-modality and visual-support review",
+      "reviewedAt": "2026-10-30T03:44:10.521Z"
     }
   ]
 }

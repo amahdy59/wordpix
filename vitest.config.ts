@@ -21,6 +21,8 @@ export default defineConfig({
       "tests/**",
       "e2e/**",
       "scratch/**",
+      "output/**",
+      "outputs/**",
       ".codex-integration-backup/**",
     ],
     coverage: {

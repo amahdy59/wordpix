@@ -220,8 +220,10 @@ export default defineConfig(async () => {
         output: {
           manualChunks(rawId) {
             const id = rawId.replace(/\\/g, "/");
-            // Cache immutable sentence media independently of exercise code.
-            if (id.endsWith("/generated/sentenceMediaRuntime.json")) return "sentenceMedia";
+            if (id.endsWith("/generated/sentenceMediaRuntime.json"))
+              throw Error("The all-course sentence-media table must not enter the browser bundle.");
+            const sentenceMediaUnit = id.match(/\/generated\/sentenceMediaUnits\/([^/]+)\.json$/);
+            if (sentenceMediaUnit) return `sentence-media-unit-${sentenceMediaUnit[1]}`;
             if (id.includes("node_modules")) {
               if (id.includes("/web-vitals/")) return "vendor-vitals";
               if (

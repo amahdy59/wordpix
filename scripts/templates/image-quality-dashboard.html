@@ -190,6 +190,9 @@
             <option value="">All uses</option>
             <option value="missing">Unassigned</option>
             <option value="mismatch">Confirmed mismatch</option>
+            <option value="replacement">Replacement proposals</option>
+            <option value="keep">Reviewed keep cases</option>
+            <option value="safety">Assessment answer-safety review</option>
             <option value="reference">Reference only</option>
             <option value="hold">Content held</option>
             <option value="purpose">Purpose undecided</option>
@@ -271,6 +274,9 @@
                 {
                   missing: !row.url,
                   mismatch: row.semantic === "confirmed mismatch",
+                  replacement: row.action?.startsWith("replace-"),
+                  keep: row.action?.startsWith("keep-"),
+                  safety: row.action === "review-assessment-answer-safety",
                   reference: row.referenceOnly,
                   hold: !!row.hold,
                   purpose: row.purpose === "needs review",
@@ -314,6 +320,7 @@
               );
             for (const label of [
               row.semantic,
+              row.action,
               row.referenceOnly ? "word reference only" : null,
               row.hold ? "content hold" : null,
               row.purpose,
@@ -333,6 +340,7 @@
               hold: row.hold,
               candidates: row.candidateCount,
               purposeRationale: row.rationale,
+              visualReview: row.visualReview,
             })) {
               element("dt", key, dl);
               element("dd", String(value ?? "Not recorded"), dl);

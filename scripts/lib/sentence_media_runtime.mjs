@@ -60,3 +60,23 @@ export function compileSentenceMedia(registry, rejections) {
     rows,
   };
 }
+
+/** Keep the original first-match pairs; only change their delivery boundary. */
+export function scopeSentenceMedia(runtime, wordIds) {
+  const allowed = new Set(wordIds);
+  const strings = [];
+  const indexes = new Map();
+  const rows = runtime.rows
+    .filter((row) => allowed.has(runtime.strings[row[0]]))
+    .map((row) =>
+      row.map((original) => {
+        const value = runtime.strings[original];
+        if (!indexes.has(value)) {
+          indexes.set(value, strings.length);
+          strings.push(value);
+        }
+        return indexes.get(value);
+      })
+    );
+  return { schemaVersion: 1, strings, rows };
+}

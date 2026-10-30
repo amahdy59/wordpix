@@ -4,6 +4,7 @@ export interface PilotSentenceMedia {
   imagePath: string;
   /** Describes the visual clue without spelling out the assessed word. */
   imageAlt: string;
+  responsiveSources?: ReadonlyArray<{ url: string; width: number }>;
   imageFallbacks?: Array<{ imagePath: string; imageAlt: string }>;
 }
 

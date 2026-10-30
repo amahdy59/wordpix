@@ -16,7 +16,7 @@ Run from the repository root:
 
 ```powershell
 python -m pip install -r scripts/requirements-recorded-audio.txt
-npx tsx scripts/plan_recorded_audio.ts
+node scripts/build_recording_plan.mjs
 if (-not (Test-Path output/recorded-audio/upload-receipts.jsonl)) {
   Copy-Item assets/edge-recording-receipts.jsonl output/recorded-audio/upload-receipts.jsonl
 }

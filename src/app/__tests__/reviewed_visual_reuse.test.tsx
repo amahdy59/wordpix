@@ -1,9 +1,14 @@
-import { describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import applied from "../../../docs/media/applied-assignments.json";
 import { resolveSentenceMedia } from "../content/sentenceMedia";
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { QuestionImage } from "../shared/QuestionImage";
+import { loadUnitVocabulary } from "../data/vocabulary";
+
+beforeAll(() =>
+  Promise.all([...new Set(applied.assignments.map((a) => a.unitId))].map(loadUnitVocabulary))
+);
 
 describe("authorized visual reuse", () => {
   it("keeps the batch restricted to twenty exact content identities", () => {

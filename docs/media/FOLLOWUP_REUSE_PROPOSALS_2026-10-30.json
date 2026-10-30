@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-30T03:30:09.641Z",
+  "sourceMappingsChanged": 0,
+  "r2Writes": 0,
+  "proposals": [
+    {
+      "decision": "reuse-proposal",
+      "content": {
+        "demandId": "demand-8962f6f064bdbe58b6d17a55",
+        "kind": "sentence",
+        "unitId": "camping-site",
+        "lessonId": "camping-site-5",
+        "wordId": "rock-climbing",
+        "text": "Rock climbing ascends stone, and biking rides trails.",
+        "expectedResolvedUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/question-images/v2/sentence-camping-site-5-rock-climbing-2ddba02eb5/1de99c0a9c3e7c827e72a411e00ba0f3ceb71db32b3fbf3c1f6ddaf8632af0cb.webp",
+        "contentSha256": "8962f6f064bdbe58b6d17a55216e4f16c0abf98595a2f635215dd0a9d0c8670d"
+      },
+      "originalImageSha256": "1de99c0a9c3e7c827e72a411e00ba0f3ceb71db32b3fbf3c1f6ddaf8632af0cb",
+      "key": "images/v1/word-images/camping-site/rock-climbing.avif",
+      "url": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/camping-site/rock-climbing.avif",
+      "assetSha256": "d522fe1f5bfa8383a16d4dfea0ede95378f3ebd7604417d998f9182e0cc6394c",
+      "imageAlt": "A helmeted adult raises one hand to a hold on a vertical sandstone face, with feet braced against the wall.",
+      "purpose": "support the assessed action",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": "no assessed count",
+        "context": true,
+        "assessmentSafety": true,
+        "altText": true
+      },
+      "limitation": "The climbing action is depicted. The separate biking clause remains conveyed by text; this is not a claim that every clause is pictured.",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "status": "reviewed-existing-art; application requires scoped mapping authorization"
+    },
+    {
+      "decision": "reuse-proposal",
+      "content": {
+        "demandId": "demand-ab347eecedc5bcf3991f1021",
+        "kind": "sentence",
+        "unitId": "supermarket",
+        "lessonId": "supermarket-21",
+        "wordId": "stock",
+        "text": "Staff stock the shelves.",
+        "expectedResolvedUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/question-images/v2/sentence-supermarket-21-stock-fd4281a7ff/1219e3c901f7f3abe2a0778031274fbbf61923ed4424dac13b78b1a3c13e2b61.webp",
+        "contentSha256": "ab347eecedc5bcf3991f10219600d4d8a915048b7c23670d80c3a11c8dbfaeed"
+      },
+      "originalImageSha256": "1219e3c901f7f3abe2a0778031274fbbf61923ed4424dac13b78b1a3c13e2b61",
+      "key": "question-images/v2/sentence-supermarket-22-stock-clerk-51eb79d141/4873bdab09e3e7273bed9df2ea1302f0788c1d56376334ebbbaa9c8a39a47f95.webp",
+      "url": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/question-images/v2/sentence-supermarket-22-stock-clerk-51eb79d141/4873bdab09e3e7273bed9df2ea1302f0788c1d56376334ebbbaa9c8a39a47f95.webp",
+      "assetSha256": "4873bdab09e3e7273bed9df2ea1302f0788c1d56376334ebbbaa9c8a39a47f95",
+      "imageAlt": "A shop worker places a can onto a shelf beside an open carton on a trolley.",
+      "purpose": "support the assessed action",
+      "checks": {
+        "subject": true,
+        "action": true,
+        "quantity": "no assessed count",
+        "context": true,
+        "assessmentSafety": true,
+        "altText": true
+      },
+      "limitation": null,
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "status": "reviewed-existing-art; application requires scoped mapping authorization"
+    }
+  ]
+}

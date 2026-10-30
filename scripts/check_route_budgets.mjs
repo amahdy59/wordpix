@@ -13,6 +13,8 @@ for (const [key, limit] of [
   ["index.html", 490 * 1024],
   ["src/app/core/ExploreWorlds.tsx", 520 * 1024],
   ["src/app/learning/foundations/FigmaPronunciationLessonScreen.tsx", 720 * 1024],
+  ["src/app/exercises/ExerciseContextGapFill.tsx", 1200 * 1024],
+  ["src/app/exercises/ExerciseSentenceBuilder.tsx", 1200 * 1024],
 ]) {
   if (!manifest[key]) throw new Error(`Missing budgeted entry: ${key}`);
   const files = [

@@ -1,12 +1,83 @@
 {
-  "version": "0.1.100",
+  "version": "0.1.103",
   "notes": [
-    "Three Hadith vocabulary expressions—daily prayers, Hajj and joint—now have reviewed contextual pictures with descriptions and responsive sizes."
+    "Selected sentence pictures now use smaller images on suitable screens, with the original picture available as a fallback.",
+    "Rock-climbing and shelf-stocking sentences now show pictures that depict the actions."
   ],
   "notesAr": [
-    "أصبحت لثلاثة تعبيرات في مفردات الحديث، وهي الصلوات اليومية والحج والمفصل، صور سياقية مراجَعة مع أوصاف وأحجام متجاوبة."
+    "تستخدم صور جمل مختارة نسخاً أصغر على الشاشات المناسبة، مع الاحتفاظ بالصورة الأصلية كخيار بديل.",
+    "تعرض جمل تسلّق الصخور وترتيب البضائع على الرفوف صوراً توضح هذه الأفعال."
   ],
   "releases": [
+    {
+      "id": "0.1.103",
+      "version": "0.1.103",
+      "date": "2026-10-30",
+      "title": {
+        "en": "Reviewed sentence pictures",
+        "ar": "صور الجمل بعد المراجعة"
+      },
+      "changes": [
+        {
+          "id": "reviewed-picture-delivery",
+          "category": "improved",
+          "en": "Selected sentence pictures now use smaller images on suitable screens, with the original picture available as a fallback.",
+          "ar": "تستخدم صور جمل مختارة نسخاً أصغر على الشاشات المناسبة، مع الاحتفاظ بالصورة الأصلية كخيار بديل."
+        },
+        {
+          "id": "reviewed-action-pictures",
+          "category": "fixed",
+          "en": "Rock-climbing and shelf-stocking sentences now show pictures that depict the actions.",
+          "ar": "تعرض جمل تسلّق الصخور وترتيب البضائع على الرفوف صوراً توضح هذه الأفعال."
+        }
+      ]
+    },
+    {
+      "id": "0.1.102",
+      "version": "0.1.102",
+      "date": "2026-10-30",
+      "title": {
+        "en": "Recorded-audio recovery and offline playback",
+        "ar": "استعادة تشغيل التسجيلات والصوت دون اتصال"
+      },
+      "changes": [
+        {
+          "id": "audio-buffering-recovery",
+          "category": "fixed",
+          "en": "If a recording stalls for too long, WordPix now offers recovery instead of remaining on buffering.",
+          "ar": "إذا تعثّر تشغيل تسجيل لفترة طويلة، تظهر إمكانية إعادة المحاولة بدلاً من الانتظار بلا نهاية."
+        },
+        {
+          "id": "saved-audio-after-reload",
+          "category": "fixed",
+          "en": "Previously saved recordings remain available offline after reloading the app.",
+          "ar": "يمكن تشغيل التسجيلات المحفوظة سابقاً دون اتصال بعد إعادة تحميل التطبيق."
+        },
+        {
+          "id": "recording-startup",
+          "category": "improved",
+          "en": "Reduced waiting when starting recorded audio.",
+          "ar": "قُلِّص انتظار بدء تشغيل التسجيلات الصوتية."
+        }
+      ]
+    },
+    {
+      "id": "0.1.101",
+      "version": "0.1.101",
+      "date": "2026-10-29",
+      "title": {
+        "en": "Faster sentence exercises",
+        "ar": "تمارين جمل أسرع"
+      },
+      "changes": [
+        {
+          "id": "unit-scoped-sentence-pictures",
+          "category": "improved",
+          "en": "Sentence exercises now load picture information for the selected unit, reducing the download needed to begin learning.",
+          "ar": "تُحمّل تمارين الجمل الآن معلومات الصور الخاصة بالوحدة المختارة، مما يقلل التنزيل المطلوب لبدء التعلّم."
+        }
+      ]
+    },
     {
       "id": "0.1.100",
       "version": "0.1.100",
