@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { applyImageCheckupReviews, imageReviewAction } from "./lib/image_health.mjs";
 import {
   buildQualityRows,
   parseLearnerImageReports,
@@ -24,7 +25,8 @@ const rows = buildQualityRows({
   catalog,
   decisions,
   purposes,
-});
+}).map((row) => ({ ...row, action: imageReviewAction(row) }));
+applyImageCheckupReviews(rows, await read("docs/media/image-checkup-reviews.json"));
 const reports = args.includes("--reports")
   ? parseLearnerImageReports(await read(args[args.indexOf("--reports") + 1]))
   : [];

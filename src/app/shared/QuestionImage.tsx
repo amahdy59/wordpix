@@ -6,6 +6,7 @@ import type { ImageReportContext } from "../media/imageReports";
 export interface QuestionImageMedia {
   imagePath: string;
   imageAlt: string;
+  responsiveSources?: ReadonlyArray<{ url: string; width: number }>;
   imageFallbacks?: ReadonlyArray<{ imagePath: string; imageAlt: string }>;
 }
 
@@ -21,6 +22,7 @@ export function QuestionImage({
   reportContext?: ImageReportContext;
 } & Omit<ImgHTMLAttributes<HTMLImageElement>, "src" | "alt" | "onError">) {
   const [failed, setFailed] = useState<ReadonlySet<string>>(() => new Set());
+  const [responsiveFailed, setResponsiveFailed] = useState(false);
   const candidates = [media, ...(media.imageFallbacks ?? [])].filter(
     (candidate, index, all) =>
       all.findIndex((item) => item.imagePath === candidate.imagePath) === index
@@ -37,8 +39,22 @@ export function QuestionImage({
         {...props}
         key={current.imagePath}
         src={resolveAssetUrl(current.imagePath)}
+        srcSet={
+          current === media && !responsiveFailed && media.responsiveSources?.length
+            ? media.responsiveSources
+                .map((source) => `${resolveAssetUrl(source.url)} ${source.width}w`)
+                .join(", ")
+            : undefined
+        }
+        sizes={media.responsiveSources?.length ? "(max-width: 640px) 100vw, 640px" : undefined}
         alt={current.imageAlt}
         onError={() => {
+          // A missing offline/responsive variant must retry the retained original
+          // before moving to another image or exhausting the question's support.
+          if (current === media && media.responsiveSources?.length && !responsiveFailed) {
+            setResponsiveFailed(true);
+            return;
+          }
           const next = new Set(failed).add(current.imagePath);
           setFailed(next);
           if (candidates.every((candidate) => next.has(candidate.imagePath))) onExhausted();

@@ -164,11 +164,20 @@ for (const text of [
   add(text, "settings-preview");
 const dictionary: Record<string, LexiconEntry> = {};
 const stories: Record<string, string> = {};
+const lexiconModules = import.meta.glob<{ entries: Record<string, LexiconEntry> }>(
+  "../src/app/data/contentChunks/lexicon-*.ts"
+);
+const storyModules = import.meta.glob<{ stories: Record<string, string> }>(
+  "../src/app/data/contentChunks/story-*.ts"
+);
 for (const name of fs.readdirSync("src/app/data/contentChunks")) {
   if (/^lexicon-\d+\.ts$/.test(name))
-    Object.assign(dictionary, (await import(`../src/app/data/contentChunks/${name}`)).entries);
+    Object.assign(
+      dictionary,
+      (await lexiconModules[`../src/app/data/contentChunks/${name}`]()).entries
+    );
   if (/^story-.*\.ts$/.test(name))
-    Object.assign(stories, (await import(`../src/app/data/contentChunks/${name}`)).stories);
+    Object.assign(stories, (await storyModules[`../src/app/data/contentChunks/${name}`]()).stories);
 }
 for (const unit of Object.values(COURSE_UNITS)) {
   const words = await loadUnitVocabulary(unit.id);

@@ -152,6 +152,13 @@ test("manual pronunciation feedback preserves focus and survives reload", async 
   await page.goto("/#/pronunciation/lesson-03", { waitUntil: "domcontentloaded" });
   await waitForStyles(page);
   await page.getByRole("button", { name: "Start listening", exact: true }).click();
+  await page.getByLabel("Lesson options", { exact: true }).click();
+  await page.getByRole("button", { name: "Automatic next question: on" }).click();
+  await expect(page.getByRole("button", { name: "Automatic next question: off" })).toHaveAttribute(
+    "aria-pressed",
+    "false"
+  );
+  await page.keyboard.press("Escape");
   const answer = page.getByRole("button", { name: new RegExp(`^Option \\d+: ${firstTarget(3)}$`) });
   await answer.focus();
   if (info.project.name === "mobile-webkit") {

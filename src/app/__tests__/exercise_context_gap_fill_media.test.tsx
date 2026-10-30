@@ -1,10 +1,13 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { beforeAll, beforeEach, describe, expect, it, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import type { ReactNode } from "react";
 import { LearnerProvider } from "../context/LearnerContext";
 import { I18nProvider } from "../context/I18nContext";
 import type { VocabularyItem } from "../data/lessons";
 import { ExerciseContextGapFill } from "../exercises/ExerciseContextGapFill";
+import { loadUnitVocabulary } from "../data/vocabulary";
+
+beforeAll(() => loadUnitVocabulary("colors"));
 
 const words: VocabularyItem[] = [
   {

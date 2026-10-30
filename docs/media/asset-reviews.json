@@ -428,6 +428,492 @@
       "reviewedAt": "2026-10-29",
       "evidence": "Original images/v1/word-images/skeleton/knee-joint.avif inspected. Inspected joint-candidates.png tile 3, with no printed answer labels. Public served AVIF digest equals the inspected local source. This supports the concrete body-connection sense in the lesson example; it is not medical teaching material. Final 960px WebP public R2 GET returned identical 15234 bytes with image/webp and CORS. Contextual support only; definition remains in text.",
       "inspectedSha256": "3413e64fc902ae9a80e90952f1dc7a36fae500797f4691c34d55dc1836c938ba"
+    },
+    {
+      "key": "question-images/v2/sentence-mountain-reading-passage-dd7cba6a0c/fa4b53e3d11f35215b78f445ee495caad56f767c2585eb3010d78f13c7cec2c7.webp",
+      "displayName": "Laboratory glassware and equipment inside a fume cupboard",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 1. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: fa4b53e3d11f35215b78f445ee495caad56f767c2585eb3010d78f13c7cec2c7.",
+      "inspectedSha256": "fa4b53e3d11f35215b78f445ee495caad56f767c2585eb3010d78f13c7cec2c7",
+      "tags": ["laboratory", "glassware", "equipment", "inside", "fume", "cupboard"]
+    },
+    {
+      "key": "question-images/v2/sentence-footwear-4-specialty-shoes-house-comfort-29d9e9f540/8e57c9cb9470bef9895b4cffe83870fae803fcc95666d1e299fc0aaeb75552c0.webp",
+      "displayName": "Pharmacy dialogue scene with a customer and pharmacist and overlaid teaching text",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 2. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 8e57c9cb9470bef9895b4cffe83870fae803fcc95666d1e299fc0aaeb75552c0.",
+      "inspectedSha256": "8e57c9cb9470bef9895b4cffe83870fae803fcc95666d1e299fc0aaeb75552c0",
+      "tags": ["pharmacy", "dialogue", "scene", "customer", "pharmacist", "teaching", "text"]
+    },
+    {
+      "key": "images/v1/word-images/mountain/rope.avif",
+      "displayName": "Coiled blue and green rope",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 3. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: e37cbc7ed6b55a6ab1852a06379d9f51338829b8e625e690a6361934d4c8324a.",
+      "inspectedSha256": "e37cbc7ed6b55a6ab1852a06379d9f51338829b8e625e690a6361934d4c8324a",
+      "tags": ["coiled", "blue", "green", "rope"]
+    },
+    {
+      "key": "question-images/v2/library-images/2041f9fb2857c98baf4d7ab6a7d9d76dedc5bc0d.webp",
+      "displayName": "Traveler holding a document beside a baggage carousel",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 4. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 3789db83b87958b441bfce1d5e79c5ab78c1e5d7d1362f9df09f82b06bc32107.",
+      "inspectedSha256": "3789db83b87958b441bfce1d5e79c5ab78c1e5d7d1362f9df09f82b06bc32107",
+      "tags": ["traveler", "holding", "document", "baggage", "carousel"]
+    },
+    {
+      "key": "question-images/v2/library-images/7d6f085003c737431fc491c7c125c0928f0276ea.webp",
+      "displayName": "Multicolored abstract fractal pattern",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 5. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 6108142495cb3a3dbcb01e06adeaafaaa72b9187677f00b35165fba4e69ef180.",
+      "inspectedSha256": "6108142495cb3a3dbcb01e06adeaafaaa72b9187677f00b35165fba4e69ef180",
+      "tags": ["multicolored", "abstract", "fractal", "pattern"]
+    },
+    {
+      "key": "question-images/v2/sentence-mountain-4-alpine-sports-e5ee2cf944/c0f379f8bbec9ddb56dc465365cfc43b652ece30b33136aab0f6400b466108e1.webp",
+      "displayName": "Clothing shop interior with racks and folded garments",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 6. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: c0f379f8bbec9ddb56dc465365cfc43b652ece30b33136aab0f6400b466108e1.",
+      "inspectedSha256": "c0f379f8bbec9ddb56dc465365cfc43b652ece30b33136aab0f6400b466108e1",
+      "tags": ["clothing", "shop", "interior", "racks", "folded", "garments"]
+    },
+    {
+      "key": "question-images/v2/sentence-mountain-4-rope-de32b6c3d6/eb91adeaef7bb9dbfb47bbfb2829dd3e40f5c4ef774aa9641010a93fdbf88f98.webp",
+      "displayName": "Radio studio equipment with an overlaid reading title",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 7. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: eb91adeaef7bb9dbfb47bbfb2829dd3e40f5c4ef774aa9641010a93fdbf88f98.",
+      "inspectedSha256": "eb91adeaef7bb9dbfb47bbfb2829dd3e40f5c4ef774aa9641010a93fdbf88f98",
+      "tags": ["radio", "studio", "equipment", "reading", "title"]
+    },
+    {
+      "key": "question-images/v2/playground-3-usage-scene-5/20c9c616355d60dc1077c98c688926867979a96a29adf75c29c8f4ff640ab81a.webp",
+      "displayName": "Adult ascending a metal ladder outdoors",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 8. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 20c9c616355d60dc1077c98c688926867979a96a29adf75c29c8f4ff640ab81a.",
+      "inspectedSha256": "20c9c616355d60dc1077c98c688926867979a96a29adf75c29c8f4ff640ab81a",
+      "tags": ["adult", "ascending", "metal", "ladder", "outdoors"]
+    },
+    {
+      "key": "question-images/v2/sentence-river-reading-passage-f98358b73b/5e143923fb92be408d6cb0dc9f2dd9fe0e04d07248dad64acc3f872bb5fde19e.webp",
+      "displayName": "Damaged masonry column and rubble inside an office",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 9. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 5e143923fb92be408d6cb0dc9f2dd9fe0e04d07248dad64acc3f872bb5fde19e.",
+      "inspectedSha256": "5e143923fb92be408d6cb0dc9f2dd9fe0e04d07248dad64acc3f872bb5fde19e",
+      "tags": ["damaged", "masonry", "column", "rubble", "inside", "office"]
+    },
+    {
+      "key": "images/v1/word-images/camping-site/photography.avif",
+      "displayName": "Adult photographing a mountain valley",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 10. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 8533195372356650d0379dc73d8d17ac4ef5affda26b83af5460b507415e7288.",
+      "inspectedSha256": "8533195372356650d0379dc73d8d17ac4ef5affda26b83af5460b507415e7288",
+      "tags": ["adult", "photographing", "mountain", "valley"]
+    },
+    {
+      "key": "images/v1/word-images/camping-site/rock-climbing.avif",
+      "displayName": "Helmeted adult ascending a sandstone rock face",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 11. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: d522fe1f5bfa8383a16d4dfea0ede95378f3ebd7604417d998f9182e0cc6394c.",
+      "inspectedSha256": "d522fe1f5bfa8383a16d4dfea0ede95378f3ebd7604417d998f9182e0cc6394c",
+      "tags": ["helmeted", "adult", "ascending", "sandstone", "rock", "face"]
+    },
+    {
+      "key": "question-images/v2/sentence-camping-site-5-photography-e75a1e2cc7/f0b46b6c6d6af71d620f29ac7d9a23d143752c8a83811359d565149f9f910889.webp",
+      "displayName": "Bicycle and camera beside a forest camping setup",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-1.png, tile 12. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: f0b46b6c6d6af71d620f29ac7d9a23d143752c8a83811359d565149f9f910889.",
+      "inspectedSha256": "f0b46b6c6d6af71d620f29ac7d9a23d143752c8a83811359d565149f9f910889",
+      "tags": ["bicycle", "camera", "forest", "camping", "setup"]
+    },
+    {
+      "key": "question-images/v2/sentence-camping-site-5-rock-climbing-2ddba02eb5/1de99c0a9c3e7c827e72a411e00ba0f3ceb71db32b3fbf3c1f6ddaf8632af0cb.webp",
+      "displayName": "Climbing harness, shoes and chalk bag on stone",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 1. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 1de99c0a9c3e7c827e72a411e00ba0f3ceb71db32b3fbf3c1f6ddaf8632af0cb.",
+      "inspectedSha256": "1de99c0a9c3e7c827e72a411e00ba0f3ceb71db32b3fbf3c1f6ddaf8632af0cb",
+      "tags": ["climbing", "harness", "shoes", "chalk", "stone"]
+    },
+    {
+      "key": "question-images/v2/sentence-camping-site-5-wilderness-skills-campfire-evenings-5d12ea1f2e/ce4313e60462f095334342d442c6ccf2fba7dd3d50f2c87d0f304994d75950c1.webp",
+      "displayName": "Student writing at a crowded study desk",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 2. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: ce4313e60462f095334342d442c6ccf2fba7dd3d50f2c87d0f304994d75950c1.",
+      "inspectedSha256": "ce4313e60462f095334342d442c6ccf2fba7dd3d50f2c87d0f304994d75950c1",
+      "tags": ["student", "writing", "crowded", "study", "desk"]
+    },
+    {
+      "key": "question-images/v2/sentence-reptile-house-3-reptilian-anatomy-vivarium-husbandry-26695aba7a/f24b306b974f59863ff5f90468e1d41ff387e586b17327e6745cb98a79b93f67.webp",
+      "displayName": "Dentist and patient dialogue scene with overlaid teaching text",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 3. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: f24b306b974f59863ff5f90468e1d41ff387e586b17327e6745cb98a79b93f67.",
+      "inspectedSha256": "f24b306b974f59863ff5f90468e1d41ff387e586b17327e6745cb98a79b93f67",
+      "tags": ["dentist", "patient", "dialogue", "scene", "teaching", "text"]
+    },
+    {
+      "key": "question-images/v2/sentence-gym-reading-passage-cf42b8dea4/da6aea6095f474e1d711df7633184316d41263bcc7a5a394f38884480f0fef31.webp",
+      "displayName": "Two adults consulting a device outside an office",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 4. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: da6aea6095f474e1d711df7633184316d41263bcc7a5a394f38884480f0fef31.",
+      "inspectedSha256": "da6aea6095f474e1d711df7633184316d41263bcc7a5a394f38884480f0fef31",
+      "tags": ["adults", "consulting", "device", "outside", "office"]
+    },
+    {
+      "key": "question-images/v2/sentence-camping-site-3-trail-gear-338e08e8a3/9facab9f6713deb3b82577ae522ab6c9f79f3f79e44c0c931b386cad4afaa7d4.webp",
+      "displayName": "Student sleeping over books at a desk",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 5. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 9facab9f6713deb3b82577ae522ab6c9f79f3f79e44c0c931b386cad4afaa7d4.",
+      "inspectedSha256": "9facab9f6713deb3b82577ae522ab6c9f79f3f79e44c0c931b386cad4afaa7d4",
+      "tags": ["student", "sleeping", "over", "books", "desk"]
+    },
+    {
+      "key": "question-images/v2/sentence-jungle-4-jungle-settlements-2a6d3596fb/2ed4112045ff4908d04f19876b2ae754defa3fa6d00a517d08ef772173132687.webp",
+      "displayName": "Home exercise equipment with an overlaid reading passage",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 6. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 2ed4112045ff4908d04f19876b2ae754defa3fa6d00a517d08ef772173132687.",
+      "inspectedSha256": "2ed4112045ff4908d04f19876b2ae754defa3fa6d00a517d08ef772173132687",
+      "tags": ["home", "exercise", "equipment", "reading", "passage"]
+    },
+    {
+      "key": "question-images/v2/sentence-pharmacy-6-delivery-driver-e5698870eb/a9e3948a47bb42a70bf49655074cdb8002ca7f74f916b4f46bfb93bb64799c5d.webp",
+      "displayName": "Pharmacy staff member handling a delivery carton",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 7. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: a9e3948a47bb42a70bf49655074cdb8002ca7f74f916b4f46bfb93bb64799c5d.",
+      "inspectedSha256": "a9e3948a47bb42a70bf49655074cdb8002ca7f74f916b4f46bfb93bb64799c5d",
+      "tags": ["pharmacy", "staff", "member", "handling", "delivery", "carton"]
+    },
+    {
+      "key": "question-images/v2/sentence-supermarket-22-stock-clerk-51eb79d141/4873bdab09e3e7273bed9df2ea1302f0788c1d56376334ebbbaa9c8a39a47f95.webp",
+      "displayName": "Shop worker placing a can on a supermarket shelf",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 8. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 4873bdab09e3e7273bed9df2ea1302f0788c1d56376334ebbbaa9c8a39a47f95.",
+      "inspectedSha256": "4873bdab09e3e7273bed9df2ea1302f0788c1d56376334ebbbaa9c8a39a47f95",
+      "tags": ["shop", "worker", "placing", "supermarket", "shelf"]
+    },
+    {
+      "key": "question-images/v2/sentence-market-6-stock-clerk-e44dd4b88d/43d0613c440cea76a9732845e094ca9f8c68b1f5ab0821fdc1862269955f8fc3.webp",
+      "displayName": "Shop worker arranging packaged goods beside a cart",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 9. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 43d0613c440cea76a9732845e094ca9f8c68b1f5ab0821fdc1862269955f8fc3.",
+      "inspectedSha256": "43d0613c440cea76a9732845e094ca9f8c68b1f5ab0821fdc1862269955f8fc3",
+      "tags": ["shop", "worker", "arranging", "packaged", "goods", "cart"]
+    },
+    {
+      "key": "question-images/v2/sentence-market-6-stock-clerk-e44dd4b88d/df794e6c8cfe2e344ded492bd0a54bfd8675d7ac838aa5701c8f445d07bb7e75.webp",
+      "displayName": "Shop worker arranging packaged goods beside a cart",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 10. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: df794e6c8cfe2e344ded492bd0a54bfd8675d7ac838aa5701c8f445d07bb7e75.",
+      "inspectedSha256": "df794e6c8cfe2e344ded492bd0a54bfd8675d7ac838aa5701c8f445d07bb7e75",
+      "tags": ["shop", "worker", "arranging", "packaged", "goods", "cart"]
+    },
+    {
+      "key": "question-images/v2/sentence-grains-dairy-reading-passage-21e0281ebc/d702d3dc878eb53b98f297ef8c38068182cdae84176dde465be2a9f5845ca81e.webp",
+      "displayName": "Wedding scene with two men exchanging rings",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 11. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: d702d3dc878eb53b98f297ef8c38068182cdae84176dde465be2a9f5845ca81e.",
+      "inspectedSha256": "d702d3dc878eb53b98f297ef8c38068182cdae84176dde465be2a9f5845ca81e",
+      "tags": ["wedding", "scene", "exchanging", "rings"]
+    },
+    {
+      "key": "question-images/v2/sentence-supermarket-21-shopping-actions-product-quantities-4a7de683b6/3230a6e5da8c0d7d41140a22eb5de229cb77c0cb6b89f35a66c3a4b557b755d4.webp",
+      "displayName": "Tailoring workshop with a sewing machine and suits",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-2.png, tile 12. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 3230a6e5da8c0d7d41140a22eb5de229cb77c0cb6b89f35a66c3a4b557b755d4.",
+      "inspectedSha256": "3230a6e5da8c0d7d41140a22eb5de229cb77c0cb6b89f35a66c3a4b557b755d4",
+      "tags": ["tailoring", "workshop", "sewing", "machine", "suits"]
+    },
+    {
+      "key": "question-images/v2/sentence-supermarket-21-stock-fd4281a7ff/1219e3c901f7f3abe2a0778031274fbbf61923ed4424dac13b78b1a3c13e2b61.webp",
+      "displayName": "Supermarket shelves filled with packaged food",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 1. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 1219e3c901f7f3abe2a0778031274fbbf61923ed4424dac13b78b1a3c13e2b61.",
+      "inspectedSha256": "1219e3c901f7f3abe2a0778031274fbbf61923ed4424dac13b78b1a3c13e2b61",
+      "tags": ["supermarket", "shelves", "filled", "packaged", "food"]
+    },
+    {
+      "key": "question-images/v2/sentence-supermarket-22-supermarket-personnel-customer-roles-d01f43d213/916580846d89aeb601ea6ce7a73666a77ee2442e400d56bb02b79196c2779cd1.webp",
+      "displayName": "Suit rack in a tailoring workshop with a reading sign",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 2. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 916580846d89aeb601ea6ce7a73666a77ee2442e400d56bb02b79196c2779cd1.",
+      "inspectedSha256": "916580846d89aeb601ea6ce7a73666a77ee2442e400d56bb02b79196c2779cd1",
+      "tags": ["suit", "rack", "tailoring", "workshop", "reading", "sign"]
+    },
+    {
+      "key": "question-images/v2/sentence-supermarket-reading-passage-5bdb7149fe/dc947a6deb57243d28410079bbd03029aa947845b0eaf369c1f89e51c9fe6617.webp",
+      "displayName": "Crew working among cables and control equipment",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 3. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: dc947a6deb57243d28410079bbd03029aa947845b0eaf369c1f89e51c9fe6617.",
+      "inspectedSha256": "dc947a6deb57243d28410079bbd03029aa947845b0eaf369c1f89e51c9fe6617",
+      "tags": ["crew", "working", "cables", "control", "equipment"]
+    },
+    {
+      "key": "question-images/v2/sentence-beverages-3-carbonated-sodas-b6c6ec98c9/0804cc446cd081f65e7ab2415ccad404e0fe2c0403862b9edd42c3d3a174a6c2.webp",
+      "displayName": "Adults playing a board game in a cafe",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 4. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 0804cc446cd081f65e7ab2415ccad404e0fe2c0403862b9edd42c3d3a174a6c2.",
+      "inspectedSha256": "0804cc446cd081f65e7ab2415ccad404e0fe2c0403862b9edd42c3d3a174a6c2",
+      "tags": ["adults", "playing", "board", "game", "cafe"]
+    },
+    {
+      "key": "question-images/v2/sentence-market-6-the-marketplace-people-community-hub-462ff81def/7f0c2a81b7905fa9383d91f45d16b95123f3e5b17d0151b201baf6237fd5cde0.webp",
+      "displayName": "Office discussion beside a whiteboard",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 5. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 7f0c2a81b7905fa9383d91f45d16b95123f3e5b17d0151b201baf6237fd5cde0.",
+      "inspectedSha256": "7f0c2a81b7905fa9383d91f45d16b95123f3e5b17d0151b201baf6237fd5cde0",
+      "tags": ["office", "discussion", "whiteboard"]
+    },
+    {
+      "key": "question-images/v2/sentence-pharmacy-4-remedies-f6addd105f/5fa0ff875d930c16a301ca4df7c69ce63628b47e692ef4865cb83cd01b55549c.webp",
+      "displayName": "Two adults discussing a newspaper in a cafe",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 6. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 5fa0ff875d930c16a301ca4df7c69ce63628b47e692ef4865cb83cd01b55549c.",
+      "inspectedSha256": "5fa0ff875d930c16a301ca4df7c69ce63628b47e692ef4865cb83cd01b55549c",
+      "tags": ["adults", "discussing", "newspaper", "cafe"]
+    },
+    {
+      "key": "question-images/v2/shopping-mall-4-usage-scene-4/536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.webp",
+      "displayName": "Cash register and folded garments on a shop counter",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 7. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.",
+      "inspectedSha256": "536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33",
+      "tags": ["cash", "register", "folded", "garments", "shop", "counter"]
+    },
+    {
+      "key": "question-images/v2/library-images/324a03f4d9f722d7a0221ea0bb055d125ce192d5.webp",
+      "displayName": "Wooden model boat under construction on a workbench",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 8. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: c8d15b9d307de361d7dd132f9ed4a9956a4f869a58bb1e2fc8551d1c28b7d878.",
+      "inspectedSha256": "c8d15b9d307de361d7dd132f9ed4a9956a4f869a58bb1e2fc8551d1c28b7d878",
+      "tags": ["wooden", "model", "boat", "under", "construction", "workbench"]
+    },
+    {
+      "key": "question-images/v2/sentence-supermarket-8-wholesome-grains-artisan-loaves-e2bdf48c87/229b62993baf8d2f4bef2633e6f68273760018df951c5c4325a872e609419c86.webp",
+      "displayName": "Professionals posing with a certificate",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 9. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 229b62993baf8d2f4bef2633e6f68273760018df951c5c4325a872e609419c86.",
+      "inspectedSha256": "229b62993baf8d2f4bef2633e6f68273760018df951c5c4325a872e609419c86",
+      "tags": ["professionals", "posing", "certificate"]
+    },
+    {
+      "key": "question-images/v2/sentence-supermarket-20-pharmacy-counter-packaging-containers-6bdb793643/4671668d25dfcdf43113b63aaa6fe70f4138fb0e16d5e0112620403f2df79047.webp",
+      "displayName": "Stadium refreshments and tickets with an overlaid reading title",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 10. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 4671668d25dfcdf43113b63aaa6fe70f4138fb0e16d5e0112620403f2df79047.",
+      "inspectedSha256": "4671668d25dfcdf43113b63aaa6fe70f4138fb0e16d5e0112620403f2df79047",
+      "tags": ["stadium", "refreshments", "tickets", "reading", "title"]
+    },
+    {
+      "key": "images/v1/word-images/supermarket/stock-clerk.avif",
+      "displayName": "Illustration of a worker placing goods on shelves beside a cart",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 11. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 99dd9a872bc4771b2eb801bb0acadcaa134dfc6a1f4fab49dadd4c0ad1c92f08.",
+      "inspectedSha256": "99dd9a872bc4771b2eb801bb0acadcaa134dfc6a1f4fab49dadd4c0ad1c92f08",
+      "tags": ["illustration", "worker", "placing", "goods", "shelves", "cart"]
+    },
+    {
+      "key": "images/v1/word-images/supermarket/stock.avif",
+      "displayName": "Shelf-stocking illustration with the visible heading Fresh Stock",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-3.png, tile 12. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: e8000d373aba4c06d24d3f89908e062fb2f30c1d0e230ce1883dac2d2d878b41.",
+      "inspectedSha256": "e8000d373aba4c06d24d3f89908e062fb2f30c1d0e230ce1883dac2d2d878b41",
+      "tags": ["shelf", "stocking", "illustration", "visible", "heading", "fresh", "stock"]
+    },
+    {
+      "key": "question-images/v2/sentence-jungle-5-jungle-elements-3c99b039e8/1864610c2910149c39d0499807970bf6cb4ecfd2b0e51ec9f683f9ab02000c94.webp",
+      "displayName": "Exercise machines in a gym",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 1. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 1864610c2910149c39d0499807970bf6cb4ecfd2b0e51ec9f683f9ab02000c94.",
+      "inspectedSha256": "1864610c2910149c39d0499807970bf6cb4ecfd2b0e51ec9f683f9ab02000c94",
+      "tags": ["exercise", "machines"]
+    },
+    {
+      "key": "question-images/v2/sentence-data-center-reading-passage-a67bf2e048/615cfa51391b012053e382dc9d30b720de5dac680162d5fc17d09a07566370c9.webp",
+      "displayName": "Adult writing at a desk beside books",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 2. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 615cfa51391b012053e382dc9d30b720de5dac680162d5fc17d09a07566370c9.",
+      "inspectedSha256": "615cfa51391b012053e382dc9d30b720de5dac680162d5fc17d09a07566370c9",
+      "tags": ["adult", "writing", "desk", "books"]
+    },
+    {
+      "key": "question-images/v2/spa-3-usage-scene-2/50986292648c7ac21408c2d37a7b58218068ddb2e7dd0008fa4bb7c8c58e888b.webp",
+      "displayName": "Steam rising around a tiled room and wooden bench",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 3. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 50986292648c7ac21408c2d37a7b58218068ddb2e7dd0008fa4bb7c8c58e888b.",
+      "inspectedSha256": "50986292648c7ac21408c2d37a7b58218068ddb2e7dd0008fa4bb7c8c58e888b",
+      "tags": ["steam", "rising", "around", "tiled", "room", "wooden", "bench"]
+    },
+    {
+      "key": "question-images/v2/library-images/df1d15926f3b270e54d9d04faa53fda555afdf98.webp",
+      "displayName": "Adult and children around a kitchen table",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 4. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 9042f0ab1da731e495df0da74816cbef41bc26f0c6e7ef54507cf4c62f1d63fb.",
+      "inspectedSha256": "9042f0ab1da731e495df0da74816cbef41bc26f0c6e7ef54507cf4c62f1d63fb",
+      "tags": ["adult", "children", "around", "kitchen", "table"]
+    },
+    {
+      "key": "question-images/v2/sentence-reptile-house-4-substrates-6ad5ad6fcb/2e0a8f475b4ba2646bcfd481e2454820944dfd2bb6cad81303ad57b2b11bce49.webp",
+      "displayName": "Two professionals reviewing documents across a desk",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 5. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 2e0a8f475b4ba2646bcfd481e2454820944dfd2bb6cad81303ad57b2b11bce49.",
+      "inspectedSha256": "2e0a8f475b4ba2646bcfd481e2454820944dfd2bb6cad81303ad57b2b11bce49",
+      "tags": ["professionals", "reviewing", "documents", "across", "desk"]
+    },
+    {
+      "key": "question-images/v2/sentence-jungle-1-rainforest-primates-9d58185857/ddb7211e7bc386fa83439a6e0334b4eeeb6a32c44242493e7b0d6d04554f8eaa.webp",
+      "displayName": "Doctor and patient scene with an overlaid hospital story title",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 6. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: ddb7211e7bc386fa83439a6e0334b4eeeb6a32c44242493e7b0d6d04554f8eaa.",
+      "inspectedSha256": "ddb7211e7bc386fa83439a6e0334b4eeeb6a32c44242493e7b0d6d04554f8eaa",
+      "tags": ["doctor", "patient", "scene", "hospital", "story", "title"]
+    },
+    {
+      "key": "question-images/v2/sentence-butterfly-garden-4-adaptation-f2fd34cd18/3cf97957dd1d81c0c4ef9a8ec23c6fe767e8b93b1547365b09c738773dd5932d.webp",
+      "displayName": "Television production control room",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 7. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 3cf97957dd1d81c0c4ef9a8ec23c6fe767e8b93b1547365b09c738773dd5932d.",
+      "inspectedSha256": "3cf97957dd1d81c0c4ef9a8ec23c6fe767e8b93b1547365b09c738773dd5932d",
+      "tags": ["television", "production", "control", "room"]
+    },
+    {
+      "key": "question-images/v2/sentence-data-center-3-hvac-chillers-ee60ebe702/ecbdd1aa797527a210785be705ba2d5e4554707919c4d8f3b1f27757dd442f12.webp",
+      "displayName": "Art studio filled with paintings and brushes",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 8. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: ecbdd1aa797527a210785be705ba2d5e4554707919c4d8f3b1f27757dd442f12.",
+      "inspectedSha256": "ecbdd1aa797527a210785be705ba2d5e4554707919c4d8f3b1f27757dd442f12",
+      "tags": ["studio", "filled", "paintings", "brushes"]
+    },
+    {
+      "key": "question-images/v2/sentence-data-center-3-water-cooling-ee11b8dc01/2291eaa776a64ae573276026b049d538b64b19d3b3f6695fc766cb4cf4b7ca43.webp",
+      "displayName": "Computing rack with visible liquid-cooling pipes",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 9. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 2291eaa776a64ae573276026b049d538b64b19d3b3f6695fc766cb4cf4b7ca43.",
+      "inspectedSha256": "2291eaa776a64ae573276026b049d538b64b19d3b3f6695fc766cb4cf4b7ca43",
+      "tags": ["computing", "rack", "visible", "liquid", "cooling", "pipes"]
+    },
+    {
+      "key": "question-images/v2/sentence-reptile-house-4-moss-8f3006e4bc/a3e86e148b99acd57800a75be3377fbc11d717460b1762d5b24c327b3d47685c.webp",
+      "displayName": "Moss in a glass terrarium with visible condensation",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 10. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: a3e86e148b99acd57800a75be3377fbc11d717460b1762d5b24c327b3d47685c.",
+      "inspectedSha256": "a3e86e148b99acd57800a75be3377fbc11d717460b1762d5b24c327b3d47685c",
+      "tags": ["moss", "glass", "terrarium", "visible", "condensation"]
+    },
+    {
+      "key": "question-images/v2/sentence-smart-home-3-climate-automation-3326ca2cf6/87efd43f0fcd60762e4e8cd70c1acc8abbf5be6cbad56b9eb12b0782dc6c5d88.webp",
+      "displayName": "Books and historical objects with an overlaid reading title",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 11. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 87efd43f0fcd60762e4e8cd70c1acc8abbf5be6cbad56b9eb12b0782dc6c5d88.",
+      "inspectedSha256": "87efd43f0fcd60762e4e8cd70c1acc8abbf5be6cbad56b9eb12b0782dc6c5d88",
+      "tags": ["books", "historical", "objects", "reading", "title"]
+    },
+    {
+      "key": "question-images/v2/sentence-weather-station-4-upper-air-telemetry-3f1d1ac7b4/fba3851d83e1005c6ce567fdd2cd60f95b49fa81f5efb40452d319110db66bd3.webp",
+      "displayName": "Customer and salesperson beside a sofa",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-4.png, tile 12. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: fba3851d83e1005c6ce567fdd2cd60f95b49fa81f5efb40452d319110db66bd3.",
+      "inspectedSha256": "fba3851d83e1005c6ce567fdd2cd60f95b49fa81f5efb40452d319110db66bd3",
+      "tags": ["customer", "salesperson", "sofa"]
+    },
+    {
+      "key": "question-images/v2/sentence-wine-cellar-the-wine-collector-s-cellar-185ddb8451/7ac3c260889e461903ee9d8c9f93a791f011ab2dd2e89d40a397c01f79f7be68.webp",
+      "displayName": "Rum bottle on a bar counter",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-5.png, tile 1. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 7ac3c260889e461903ee9d8c9f93a791f011ab2dd2e89d40a397c01f79f7be68.",
+      "inspectedSha256": "7ac3c260889e461903ee9d8c9f93a791f011ab2dd2e89d40a397c01f79f7be68",
+      "tags": ["bottle", "counter"]
+    },
+    {
+      "key": "images/v1/word-images/jungle/mosquito.avif",
+      "displayName": "Mosquito resting on a green leaf",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-5.png, tile 2. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: a53046c377586632e83c90524d3840423ab2f50bd9771824f82d599b360be46b.",
+      "inspectedSha256": "a53046c377586632e83c90524d3840423ab2f50bd9771824f82d599b360be46b",
+      "tags": ["mosquito", "resting", "green", "leaf"]
+    },
+    {
+      "key": "question-images/v2/library-images/b308b71a6953ad7ed236ea4b08c962e31dbaac9b.webp",
+      "displayName": "Sewing scissors, needles and fabric on a work surface",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-5.png, tile 3. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 10fd1fb2ad4cd298173b2d24613369178f15e6248d32c17d96c5a330e43c432f.",
+      "inspectedSha256": "10fd1fb2ad4cd298173b2d24613369178f15e6248d32c17d96c5a330e43c432f",
+      "tags": ["sewing", "scissors", "needles", "fabric", "work", "surface"]
+    },
+    {
+      "key": "question-images/v2/sentence-jungle-2-mosquito-5928f3517b/ac69540bd25238fa952fd78894804079fa02770e8e61593417a89e934397334e.webp",
+      "displayName": "Four panels showing different small arthropods",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-5.png, tile 4. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: ac69540bd25238fa952fd78894804079fa02770e8e61593417a89e934397334e.",
+      "inspectedSha256": "ac69540bd25238fa952fd78894804079fa02770e8e61593417a89e934397334e",
+      "tags": ["four", "panels", "different", "small", "arthropods"]
+    },
+    {
+      "key": "question-images/v2/sentence-jungle-2-mosquito-5a2e4c772b/4efc3a7e25ae67f7888b38854281df9b5e55a3d76d4445f0e068b23632809a8e.webp",
+      "displayName": "Mosquito resting on a green leaf",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-5.png, tile 5. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 4efc3a7e25ae67f7888b38854281df9b5e55a3d76d4445f0e068b23632809a8e.",
+      "inspectedSha256": "4efc3a7e25ae67f7888b38854281df9b5e55a3d76d4445f0e068b23632809a8e",
+      "tags": ["mosquito", "resting", "green", "leaf"]
+    },
+    {
+      "key": "question-images/v2/sentence-jungle-2-mosquito-7f5dd9a5a1/9ec4cf631b434bc034ca09853fe42d9fb9804751ba06539190671ad2ecdd4086.webp",
+      "displayName": "Mosquito resting on a green leaf",
+      "reviewer": "Codex visual inspection",
+      "reviewedAt": "2026-10-30T03:30:09.641Z",
+      "evidence": "Inspected complete served pixels in replacement-review/sheet-5.png, tile 6. Name describes the visible artwork; it does not approve a historic assignment. Public GET SHA-256: 9ec4cf631b434bc034ca09853fe42d9fb9804751ba06539190671ad2ecdd4086.",
+      "inspectedSha256": "9ec4cf631b434bc034ca09853fe42d9fb9804751ba06539190671ad2ecdd4086",
+      "tags": ["mosquito", "resting", "green", "leaf"]
     }
   ],
   "bindings": [

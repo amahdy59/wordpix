@@ -1,5 +1,6 @@
 import type { VocabularyItem } from "./lessons";
 import { isGenericLearningExample } from "../content/learningExampleQuality";
+import { isUnitSentenceMediaLoaded, loadUnitSentenceMedia } from "../content/sentenceMediaStore";
 import { areUnitCatalogDetailsLoaded, loadUnitCatalogDetails } from "./courseCatalog";
 import { VOCABULARY as BEDROOM_VOCABULARY } from "./units/bedroom";
 import {
@@ -288,13 +289,15 @@ function applyBilingualContent(
 register("bedroom", applyBilingualContent(BEDROOM_VOCABULARY, BEDROOM_BILINGUAL_CONTENT));
 
 export function isUnitLoaded(unitId: string): boolean {
-  return byUnit.has(unitId) && areUnitCatalogDetailsLoaded(unitId);
+  return (
+    byUnit.has(unitId) && areUnitCatalogDetailsLoaded(unitId) && isUnitSentenceMediaLoaded(unitId)
+  );
 }
 
 export async function loadUnitVocabulary(unitId: string): Promise<VocabularyItem[]> {
   const loaded = byUnit.get(unitId);
   if (loaded) {
-    await loadUnitCatalogDetails(unitId);
+    await Promise.all([loadUnitCatalogDetails(unitId), loadUnitSentenceMedia(unitId)]);
     return loaded;
   }
   const loader = LOADERS[unitId];
@@ -303,6 +306,7 @@ export async function loadUnitVocabulary(unitId: string): Promise<VocabularyItem
     loader(),
     loadBilingualUnit(unitId),
     loadUnitCatalogDetails(unitId),
+    loadUnitSentenceMedia(unitId),
   ]);
   return register(unitId, applyBilingualContent(words, bilingualContent));
 }

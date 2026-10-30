@@ -7,6 +7,10 @@ exception that applied exactly twenty verified assignments. Catalog refreshes an
 review commands themselves remain read-only with respect to the app and R2.
 The [Hadith reuse receipt](APPROVED_HADITH_REUSE.json) records a later, separately
 authorized batch of three vocabulary mappings and six new responsive images.
+The [performance fix and image checkup](PERFORMANCE_AND_IMAGE_CHECKUP_2026-10-29.md)
+records the unit-scoped sentence table, current technical flags and twelve-image
+semantic triage. Run `pnpm run media:checkup` after refreshing the catalog and
+specialist audit to export technical flags and exact-context review actions.
 
 The catalog organizes existing R2 assets without changing their keys, bytes, URLs,
 or live content mappings. A descriptive name is catalog metadata. It is never a
@@ -109,7 +113,7 @@ Literal JSON references from specialist catalogs are indexed as provenance, not
 claimed as a complete runtime coverage audit. All remote object kinds are listed;
 local duplicate hashing currently covers images.
 
-The exact-sentence resolver now uses a compact, checked runtime derivative and
+The exact-sentence resolver now uses compact, checked per-unit runtime derivatives and
 retains fallback arrays with their own descriptions. The source registry remains
 unchanged. It excludes the 27 associations already visually confirmed as wrong;
 this does not approve replacement artwork. No new-art count should be reported
@@ -126,3 +130,8 @@ open artwork work and release blockers.
 Run `pnpm run media:catalog:test` for catalog invariants, then the project's
 TypeScript, Vitest and ESLint gates for changes to these tools. These are internal
 audit tools; no learner-facing release or new upload is performed by running them.
+
+The [30 October follow-up](FOLLOWUP_CHECKUP_2026-10-30.md) records the latest
+playback fixes, sampled audio findings, local responsive candidates and the
+exact publication review batch. Running the checkup or preparation scripts does
+not authorize R2 writes or mapping changes.

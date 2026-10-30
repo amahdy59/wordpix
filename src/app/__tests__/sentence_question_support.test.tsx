@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeAll, describe, expect, it, vi } from "vitest";
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import { I18nProvider } from "../context/I18nContext";
 import { SentenceQuestionSupport } from "../shared/SentenceQuestionSupport";
@@ -7,6 +7,9 @@ import { AUTHORED_LESSON_CONTENT } from "../exercises/content/authoredLessonCont
 import { loadLessonUsageForEditorial } from "../data/usageRegistry";
 import type { VocabularyItem } from "../data/courseCatalog";
 import { sentenceCloze } from "../exercises/sentenceCloze";
+import { loadUnitVocabulary } from "../data/vocabulary";
+
+beforeAll(() => loadUnitVocabulary("numbers-counting"));
 
 const speak = vi.fn();
 const stop = vi.fn();

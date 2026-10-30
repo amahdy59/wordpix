@@ -1,0 +1,6 @@
+# Optional isolated Python 3.12 review tools; no application runtime dependency.
+# Faster-whisper 1.2.1's filename decoder is incompatible with PyAV 19.
+faster-whisper==1.2.1
+av==16.0.1
+numpy==2.5.4
+ctranslate2==4.8.4

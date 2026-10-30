@@ -280,7 +280,12 @@ export function useAudio({
           reportProgress(audio);
         };
         audio.onloadedmetadata = () => reportProgress(audio);
-        audio.onwaiting = () => publish("buffering");
+        audio.onwaiting = () => {
+          if (!isCurrent() || currentAudioRef.current !== audio) return;
+          publish("buffering");
+          if (stallTimerRef.current !== null) return;
+          stallTimerRef.current = window.setTimeout(reportUnavailable, MEDIA_STREAM_TIMEOUT_MS);
+        };
         audio.onplaying = () => {
           if (!isCurrent()) {
             audio.pause();
@@ -334,13 +339,34 @@ export function useAudio({
           if (localExplicitUrl) urls.push(localExplicitUrl);
         } else {
           if (hasAssetHost() && !usesPronunciationOverride) {
-            const additional = await additionalRecordingKey(text, targetLang).catch(() => null);
+            // Overlap independent index downloads; retain the established alias priority.
+            const [additional, edge] = await Promise.all([
+              additionalRecordingKey(text, targetLang).catch(() => null),
+              edgeRecordingKey(text, targetLang)
+                .then(async (key) => {
+                  if (!key) return null;
+                  const url = assetUrl(key);
+                  if (url) {
+                    const cacheKey = `cdn:${url}`;
+                    if (audioCache.has(cacheKey)) return key;
+                    const stored = await getCachedAudio(cacheKey).catch(() => null);
+                    if (stored && stored.size > 0) {
+                      cacheAudioUrl(cacheKey, URL.createObjectURL(stored));
+                      return key;
+                    }
+                  }
+                  // A persisted exact clip is its own availability evidence.
+                  // Only network playback needs the generated upload index.
+                  return (await isEdgeRecordingAvailable(key)) ? key : null;
+                })
+                .catch(() => null),
+            ]);
+            if (!isCurrent()) return true;
             if (additional) {
               const url = assetUrl(additional);
               if (url) urls.push(url);
             }
-            const edge = await edgeRecordingKey(text, targetLang).catch(() => null);
-            if (edge && (await isEdgeRecordingAvailable(edge).catch(() => false))) {
+            if (edge) {
               const url = assetUrl(edge);
               if (url) urls.push(url);
             }
@@ -451,7 +477,12 @@ export function useAudio({
           };
           audio.onloadedmetadata = () => reportProgress(audio);
           audio.onwaiting = () => {
-            if (ownsMedia() && started) publish("buffering");
+            if (!ownsMedia() || !started) return;
+            publish("buffering");
+            if (stallTimerRef.current !== null) return;
+            stallTimerRef.current = window.setTimeout(() => {
+              if (ownsMedia()) reportUnavailable();
+            }, MEDIA_STREAM_TIMEOUT_MS);
           };
           audio.onended = () => {
             if (!ownsMedia()) return;
@@ -548,6 +579,10 @@ export function useAudio({
 
   const pause = useCallback(() => {
     if (status !== "playing" && status !== "buffering") return;
+    if (stallTimerRef.current !== null) {
+      window.clearTimeout(stallTimerRef.current);
+      stallTimerRef.current = null;
+    }
     if (currentAudioRef.current) currentAudioRef.current.pause();
     setStatus("paused");
   }, [status]);
