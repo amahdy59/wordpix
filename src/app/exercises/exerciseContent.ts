@@ -536,6 +536,16 @@ export function getRichSentence(
   usage?: LessonUsageData | null,
   contextIndex = 0
 ): RichSentence {
+  // Reviewed verb usage, using recordings already present in the immutable corpus.
+  // The old noun frame ("This is a sit down") is ungrammatical for this sense.
+  if (word.id === "sit-down" && word.img === "/word-images/park/sit-down.avif") {
+    return {
+      full: "Please sit down.",
+      clozeBefore: "Please",
+      clozeAfter: ".",
+      words: ["Please", "sit", "down"],
+    };
+  }
   const authoredSentence = getAuthoredSentence(word.id);
   const curatedSentence = RICH_CONTEXT_SENTENCES[word.id];
   const lessonContextSentences = findLessonContextSentences(word, usage);

@@ -11,6 +11,7 @@ import { Button } from "./Button";
 import { useLessonSession } from "./LessonSessionContext";
 import { MediaFrame } from "./MediaFrame";
 import { ImageReportButton } from "./ImageReportButton";
+import { isReviewedImageHeld } from "../content/reviewedImageHolds";
 
 export function ScenePlaceholder({ clue, className = "" }: { clue?: string; className?: string }) {
   const { t } = useI18n();
@@ -220,7 +221,10 @@ export function SentenceQuestionSupport({
   }
 
   const fallbackMedia: PilotSentenceMedia | undefined =
-    word.img && !failedImages.has(word.img)
+    media?.fallbackToVocabulary !== false &&
+    word.img &&
+    !failedImages.has(word.img) &&
+    !isReviewedImageHeld("sentence", word.id, sentence, word.img)
       ? {
           imagePath: word.img,
           imageAlt:
@@ -280,11 +284,12 @@ export function SentenceQuestionSupport({
           )}
         </div>
       )}
-      {activeMedia === fallbackMedia && hasImage && (
-        <p className="text-xs leading-relaxed text-foreground">
-          {t("imageQuality.wordReferenceHint")}
-        </p>
-      )}
+      {(activeMedia === fallbackMedia || activeMedia?.imagePurpose === "word-reference") &&
+        hasImage && (
+          <p className="text-xs leading-relaxed text-foreground">
+            {t("imageQuality.wordReferenceHint")}
+          </p>
+        )}
       {showClue && (
         <SentenceMeaningSupport
           word={word}

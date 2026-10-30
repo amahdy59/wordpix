@@ -1,16 +1,43 @@
 {
-  "version": "0.1.105",
+  "version": "0.1.106",
   "notes": [
-    "Selected shopping examples now show jacket assistance and store tasks instead of unrelated objects.",
-    "Two coffee-liqueur examples now use an unlabeled product and stock-list illustration instead of unrelated scenes.",
-    "The jungle humidity example now uses natural wording, with matching recordings for the sentence, activities and passages."
+    "34 reviewed lesson pictures now load in responsive sizes, with clearer visual references and descriptions.",
+    "142 reviewed picture and lesson pairings now omit unrelated or answer-revealing artwork while keeping the lesson text and recordings."
   ],
   "notesAr": [
-    "تعرض أمثلة مختارة عن التسوق الآن المساعدة في اختيار سترة ومهام العاملين في المتجر بدلاً من صور غير مرتبطة.",
-    "يستخدم مثالان عن مشروب الليكيور بنكهة القهوة رسماً للمنتج وقائمة المخزون دون كلمات تكشف الإجابة، بدلاً من مشاهد غير مرتبطة.",
-    "أصبح مثال الرطوبة في درس الغابة أكثر طبيعية، مع تسجيلات مطابقة للجملة والأنشطة والنصوص."
+    "تُحمّل الآن 34 صورة دروس تمت مراجعتها بأحجام متجاوبة، مع مراجع بصرية وأوصاف أوضح.",
+    "تحذف الآن 142 حالة اقتران تمت مراجعتها بين الصور والدروس رسوماً غير مرتبطة أو تكشف الإجابة، مع الحفاظ على نص الدرس والتسجيلات."
   ],
   "releases": [
+    {
+      "id": "0.1.106",
+      "version": "0.1.106",
+      "date": "2026-10-30",
+      "title": {
+        "en": "Reviewed lesson pictures",
+        "ar": "صور دروس تمت مراجعتها"
+      },
+      "changes": [
+        {
+          "id": "reviewed-responsive-lesson-pictures",
+          "category": "improved",
+          "en": "34 reviewed lesson pictures now load in responsive sizes, with clearer visual references and descriptions.",
+          "ar": "تُحمّل الآن 34 صورة دروس تمت مراجعتها بأحجام متجاوبة، مع مراجع بصرية وأوصاف أوضح."
+        },
+        {
+          "id": "park-sit-down-example",
+          "category": "fixed",
+          "en": "The park lesson now uses “Please sit down.” with a matching recording.",
+          "ar": "يستخدم درس الحديقة الآن الجملة «Please sit down.» مع تسجيل مطابق."
+        },
+        {
+          "id": "exact-context-image-holds",
+          "category": "fixed",
+          "en": "142 reviewed picture and lesson pairings now omit unrelated or answer-revealing artwork while keeping the lesson text and recordings.",
+          "ar": "تحذف الآن 142 حالة اقتران تمت مراجعتها بين الصور والدروس رسوماً غير مرتبطة أو تكشف الإجابة، مع الحفاظ على نص الدرس والتسجيلات."
+        }
+      ]
+    },
     {
       "id": "0.1.105",
       "version": "0.1.105",

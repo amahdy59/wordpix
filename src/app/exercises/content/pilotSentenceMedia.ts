@@ -4,6 +4,9 @@ export interface PilotSentenceMedia {
   imagePath: string;
   /** Describes the visual clue without spelling out the assessed word. */
   imageAlt: string;
+  imagePurpose?: "word-reference";
+  /** A reviewed replacement may forbid an unreviewed vocabulary-picture fallback. */
+  fallbackToVocabulary?: boolean;
   responsiveSources?: ReadonlyArray<{ url: string; width: number }>;
   imageFallbacks?: Array<{ imagePath: string; imageAlt: string }>;
 }

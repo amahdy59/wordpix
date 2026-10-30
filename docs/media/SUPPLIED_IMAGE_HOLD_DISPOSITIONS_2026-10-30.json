@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-30",
+  "scope": "Final disposition of all 12 withheld supplied files after contact-sheet reinspection. Source review, immutable approved batch and historical mappings preserved. No production writes.",
+  "files": [
+    {
+      "sourceIndex": 0,
+      "sourceSha256": "bbfd1cfb7741d8182ff89763e9748870896dc1525e9a9e647d5008bc3115acd2",
+      "disposition": "superseded-duplicate",
+      "action": "Use the published clean shopper variant; preserve the source only as historical evidence.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 16,
+      "sourceSha256": "b8980c55ad0464e4a9fdd28a4fa53a5e322ab0db08ef2a7521e75623a0e693bd",
+      "disposition": "reject-for-assessment",
+      "action": "Keep the existing lesson picture. Search existing text-free property/services art before commissioning a replacement; synthetic documents and labels are unsuitable for scored prompts.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 18,
+      "sourceSha256": "bb66ad081cb654a40306a421e71ececf441f24471b40c49ac3d592c4d4a4044d",
+      "disposition": "reject-non-illustration",
+      "action": "Caption strip; the full humidity picture is already published.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 21,
+      "sourceSha256": "d408cacc8f1aed38d949dce39cabcae8811619b003714db23b5430676a4bb56f",
+      "disposition": "superseded-answer-revealing",
+      "action": "Keep the existing unlabeled coffee-product/stock illustration; do not assign this labeled image.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 23,
+      "sourceSha256": "f4c300d1a781ea2fb19c24888837d0001661dcbbcb2e1927cc7ab889e1d35a23",
+      "disposition": "archive-unassigned-reference",
+      "action": "Airport setting can be retained in the source archive. No active specialist text matches; do not create a live binding.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 24,
+      "sourceSha256": "5173c2d4092852a0bdc586b5e25df4ed74402db53ff4bcbb8c34e94ada8df7a6",
+      "disposition": "archive-unassigned-reference",
+      "action": "Neighbor setting can be retained in the source archive. No active specialist text matches; do not create a live binding.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 25,
+      "sourceSha256": "22c2697bf9b8ecd7a7aff4d0d533cfdc6d6c847ac9ddc5021b8ef20f4de75074",
+      "disposition": "superseded-duplicate",
+      "action": "The full-size climbing-wall variant is published; no regeneration needed.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 28,
+      "sourceSha256": "9cc015c9e32b3905d1baa7ce1d04fce16f19985b1aee844f4be1854bda22d722",
+      "disposition": "reject-for-assessment",
+      "action": "Keep existing conditional lesson wording and illustration. Any future replacement must be text-free and must not imply guaranteed lending.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 30,
+      "sourceSha256": "721bef5d634a5c370cdde83c1a2783d82af800971bfe4eb203c1e40019994386",
+      "disposition": "reject-non-illustration",
+      "action": "Solid-color strip; retain the current reviewed geometry drawing.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 32,
+      "sourceSha256": "adfbcf3f202d0a367b48c0028fb7d1dad26f95d6b831d51068b9f467a61063bb",
+      "disposition": "reject-unverified-subject",
+      "action": "Do not use this illustration to teach a specific plant species. A future candidate needs verifiable botanical provenance; retain current runtime selection.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 33,
+      "sourceSha256": "06c8edc17122b1dbff43fb2435dc6cd438094aa7fdf5438491a801d8e70cf9f6",
+      "disposition": "reject-non-illustration",
+      "action": "32-pixel placeholder; use the published full-size retail illustration.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    },
+    {
+      "sourceIndex": 41,
+      "sourceSha256": "798b76b0a1ab91889979d2194313e653feebf7138cf38b38580fd8a368f1f8dd",
+      "disposition": "reject-for-assessment",
+      "action": "Keep current lesson illustration; synthetic tax labels reveal the answer. Search existing text-free property-calculation art first.",
+      "assignToRuntime": false,
+      "regenerationApproved": false
+    }
+  ]
+}

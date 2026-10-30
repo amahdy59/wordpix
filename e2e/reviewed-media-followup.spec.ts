@@ -7,6 +7,14 @@ import { disableNarrationForContentTest } from "./audioFixture";
 const batch = JSON.parse(
   fs.readFileSync("docs/media/PUBLICATION_REVIEW_BATCH_2026-10-30.json", "utf8")
 );
+const supplied: Array<{
+  kind: string;
+  lessonId: string;
+  wordId: string;
+  imagePath: string;
+  imageAlt: string;
+  responsiveSources: Array<{ url: string; width: number }>;
+}> = JSON.parse(fs.readFileSync("src/app/generated/suppliedMedia.json", "utf8"));
 const assignments = [
   ...batch.responsiveAssociations.map(
     (row: {
@@ -37,7 +45,22 @@ const assignments = [
       responsiveSources: undefined,
     })
   ),
-];
+].map((assignment) => {
+  const latest = supplied.find(
+    (row) =>
+      row.kind === "sentence" &&
+      row.wordId === assignment.wordId &&
+      row.lessonId === assignment.lessonId
+  );
+  return latest
+    ? {
+        ...assignment,
+        imagePath: latest.imagePath,
+        imageAlt: latest.imageAlt,
+        responsiveSources: latest.responsiveSources,
+      }
+    : assignment;
+});
 // A fixed density exercises the smaller variant; high-density screens may
 // correctly select the retained original from the same width-descriptor set.
 test.use({ serviceWorkers: "block", deviceScaleFactor: 1 });
@@ -57,7 +80,11 @@ for (const language of ["en", "ar"] as const) {
       // The real CDN bytes have separate GET/SHA-256 review evidence.
       await page.route("**/*", (route) =>
         route.request().resourceType() === "image"
-          ? language === "ar" && /\/responsive-(480|960)\//.test(route.request().url())
+          ? language === "ar" &&
+            (assignment.responsiveSources ?? []).some(
+              (source: { url: string }) =>
+                source.url === route.request().url() && source.url !== assignment.imagePath
+            )
             ? route.abort("failed")
             : route.fulfill({
                 contentType: "image/svg+xml",
@@ -111,7 +138,10 @@ for (const language of ["en", "ar"] as const) {
         );
         await expect
           .poll(() => image.evaluate((element) => (element as HTMLImageElement).currentSrc))
-          .toMatch(/\/responsive-(480|960)\//);
+          .toBeTruthy();
+        expect(assignment.responsiveSources.map((source: { url: string }) => source.url)).toContain(
+          await image.evaluate((element) => (element as HTMLImageElement).currentSrc)
+        );
       } else if (assignment.responsiveSources) {
         await expect(image).not.toHaveAttribute("srcset");
         await expect(image).toHaveAttribute("src", assignment.imagePath);

@@ -1,3 +1,4 @@
+import holds from "../content/reviewedImageHolds.json";
 import { afterEach, beforeAll, describe, expect, it, vi } from "vitest";
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import { I18nProvider } from "../context/I18nContext";
@@ -38,6 +39,46 @@ const word: VocabularyItem = {
 };
 
 describe("sentence question evidence", () => {
+  it("does not resurrect a held scene as the vocabulary fallback and retains listening support", () => {
+    const hold = holds.find((row) => row.kind === "sentence")!;
+    render(
+      <I18nProvider>
+        <SentenceQuestionSupport
+          word={{ ...word, id: hold.wordId, img: hold.sourceKey }}
+          sentence={hold.text}
+          prompt="A missing word."
+          answered={true}
+        />
+      </I18nProvider>
+    );
+    expect(screen.queryByRole("img")).not.toBeInTheDocument();
+    expect(screen.getByText(/We’re updating this image/i)).toBeVisible();
+    fireEvent.click(screen.getByRole("button", { name: /Listen to the sentence/i }));
+    expect(speak).toHaveBeenLastCalledWith(hold.text);
+  });
+
+  it("does not restore an unreviewed vocabulary picture when a supplied replacement fails", () => {
+    render(
+      <I18nProvider>
+        <SentenceQuestionSupport
+          word={word}
+          sentence="A reviewed sentence."
+          prompt="A reviewed _____."
+          answered={false}
+          showClue={false}
+          media={{
+            imagePath: "https://example.test/reviewed.webp",
+            imageAlt: "Reviewed picture",
+            imagePurpose: "word-reference",
+            fallbackToVocabulary: false,
+          }}
+        />
+      </I18nProvider>
+    );
+    fireEvent.error(screen.getByRole("img", { name: "Reviewed picture" }));
+    expect(screen.queryByRole("img")).not.toBeInTheDocument();
+    expect(document.querySelector(`img[src*="five.avif"]`)).toBeNull();
+  });
   it("matches the approved folder image only to its exact word and sentence", () => {
     const sentence = "Maya puts two folders beside the notebook.";
     expect(resolveSentenceMedia("two", sentence)?.imageAlt).toMatch(/folders/i);
