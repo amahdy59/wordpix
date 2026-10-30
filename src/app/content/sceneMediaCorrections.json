@@ -11,8 +11,8 @@
     "wordId": "scene-4",
     "sentence": "A knowledgeable retail sales clerk answers customer sizing questions, retrieves stock sizes from backroom shelves, and folds displays. Cashiers ring sales, and janitors polish floors. The sales clerk assists the shopper in locating the correct jacket size.",
     "originalKey": "question-images/v2/shopping-mall-4-usage-scene-4/536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.webp",
-    "replacementKey": null,
-    "imageAlt": "",
-    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+    "replacementKey": "retail-workflow",
+    "imageAlt": "Four panels show jacket assistance, taking a garment from shelves, folding clothes, and staff at a checkout and sweeping the floor.",
+    "reason": "Authored unlabeled vector teaching support, visually checked against the exact context. Product names and conversation details remain in the written source."
   }
 ]

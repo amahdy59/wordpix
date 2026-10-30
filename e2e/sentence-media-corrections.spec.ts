@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { resolveGroup } from "../src/app/data/courseCatalog";
+import { COURSE_UNITS, resolveGroup } from "../src/app/data/courseCatalog";
 import { waitForStyles } from "./waitForStyles";
 import { disableNarrationForContentTest } from "./audioFixture";
 
@@ -8,13 +8,25 @@ const corrections: Array<{ wordId: string; sentence: string; imageAlt: string }>
   fs.readFileSync("src/app/content/sentenceMediaCorrections.json", "utf8")
 );
 const assignments = corrections
-  .filter((row) => ["triangle", "oval"].includes(row.wordId))
-  .map((row) => ({
-    ...row,
-    stage: row.sentence.startsWith("He chooses") ? 2 : 3,
-    unitId: "shapes-geometry",
-    lessonId: "shapes-geometry-1",
-  }));
+  .filter((row) => ["triangle", "oval", "sales-clerk", "shopper", "kahl-a"].includes(row.wordId))
+  .map((row) => {
+    const unitId =
+      row.wordId === "kahl-a"
+        ? "spirits-liqueurs"
+        : ["sales-clerk", "shopper"].includes(row.wordId)
+          ? "shopping-mall"
+          : "shapes-geometry";
+    const stage =
+      row.sentence.startsWith("He chooses") ||
+      row.sentence.startsWith("A knowledgeable") ||
+      row.sentence.startsWith("Kahlúa is")
+        ? 2
+        : 3;
+    const lessonId = Object.values(COURSE_UNITS[unitId].groups).find((group) =>
+      group.wordIds.includes(row.wordId)
+    )!.id;
+    return { ...row, stage, unitId, lessonId };
+  });
 // Match the fourth-stage phrase builder shown in the learner's screenshots.
 test.use({ serviceWorkers: "block", deviceScaleFactor: 1 });
 
@@ -67,7 +79,10 @@ for (const language of ["en", "ar"] as const) {
       await waitForStyles(page);
       const image = page.getByRole("img", { name: assignment.imageAlt, exact: true });
       await expect(image).toBeVisible();
-      await expect(image).toHaveAttribute("src", /^data:image\/svg\+xml/);
+      await expect(image).toHaveAttribute(
+        "src",
+        /^(?:data:image\/svg\+xml|.*\/assets\/[^/]+\.svg$)/
+      );
       await expect
         .poll(() => image.evaluate((element) => (element as HTMLImageElement).naturalWidth))
         .toBeGreaterThan(0);

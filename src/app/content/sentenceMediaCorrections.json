@@ -19,25 +19,25 @@
     "wordId": "shopper",
     "sentence": "The sales clerk assists the shopper in locating the correct jacket size.",
     "originalKey": "question-images/v2/shopping-mall-4-usage-scene-4/536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.webp",
-    "replacementKey": null,
-    "imageAlt": "",
-    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+    "replacementKey": "retail-assistance",
+    "imageAlt": "A staff member with a blank badge holds up a jacket beside an adult customer and a clothes rack.",
+    "reason": "Authored unlabeled vector teaching support, visually checked against the exact context. Product names and conversation details remain in the written source."
   },
   {
     "wordId": "sales-clerk",
     "sentence": "A knowledgeable retail sales clerk answers customer sizing questions, retrieves stock sizes from backroom shelves, and folds displays.",
     "originalKey": "question-images/v2/shopping-mall-4-usage-scene-4/536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.webp",
-    "replacementKey": null,
-    "imageAlt": "",
-    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+    "replacementKey": "retail-workflow",
+    "imageAlt": "Four panels show jacket assistance, taking a garment from shelves, folding clothes, and staff at a checkout and sweeping the floor.",
+    "reason": "Authored unlabeled vector teaching support, visually checked against the exact context. Product names and conversation details remain in the written source."
   },
   {
     "wordId": "sales-clerk",
     "sentence": "The sales clerk assists the shopper in locating the correct jacket size.",
     "originalKey": "question-images/v2/shopping-mall-4-usage-scene-4/536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.webp",
-    "replacementKey": null,
-    "imageAlt": "",
-    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+    "replacementKey": "retail-assistance",
+    "imageAlt": "A staff member with a blank badge holds up a jacket beside an adult customer and a clothes rack.",
+    "reason": "Authored unlabeled vector teaching support, visually checked against the exact context. Product names and conversation details remain in the written source."
   },
   {
     "wordId": "climbing",
@@ -99,9 +99,9 @@
     "wordId": "kahl-a",
     "sentence": "The stock list records Kahlúa separately from the other coffee-flavored products.",
     "originalKey": "question-images/v2/library-images/324a03f4d9f722d7a0221ea0bb055d125ce192d5.webp",
-    "replacementKey": null,
-    "imageAlt": "",
-    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+    "replacementKey": "stock-record",
+    "imageAlt": "An unlabeled dark bottle and coffee beans sit beside a stock sheet with separate bottle, chocolate and cup entries.",
+    "reason": "Authored unlabeled vector teaching support, visually checked against the exact context. Product names and conversation details remain in the written source."
   },
   {
     "wordId": "oval",
@@ -110,5 +110,13 @@
     "replacementKey": "oval",
     "imageAlt": "A tall curved mirror hangs above a console table.",
     "reason": "Visually inspected original depicts a compass. The unlabeled mirror supplies a clear example of the assessed shape."
+  },
+  {
+    "wordId": "kahl-a",
+    "sentence": "Kahlúa is a branded coffee-flavored liqueur name.",
+    "originalKey": "question-images/v2/library-images/06a06bb1845ffb1ed2ca9cfd9b1794230d519a41.webp",
+    "replacementKey": "stock-record",
+    "imageAlt": "An unlabeled dark bottle and coffee beans sit beside a stock sheet with separate bottle, chocolate and cup entries.",
+    "reason": "Visually inspected alternate original showed a resting man beside a fireplace; replace with checked product-category reference support."
   }
 ]

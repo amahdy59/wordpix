@@ -1,14 +1,45 @@
 {
-  "version": "0.1.104",
+  "version": "0.1.105",
   "notes": [
-    "The first geometry lesson now shows clear, unlabeled pictures matching its signs, mirrors, tiles and drawing examples.",
-    "Selected climbing and sensor examples have more relevant picture support. Confirmed unrelated pictures are omitted from selected shopping and stock-list examples."
+    "Selected shopping examples now show jacket assistance and store tasks instead of unrelated objects.",
+    "Two coffee-liqueur examples now use an unlabeled product and stock-list illustration instead of unrelated scenes.",
+    "The jungle humidity example now uses natural wording, with matching recordings for the sentence, activities and passages."
   ],
   "notesAr": [
-    "تعرض الآن أول دروس الأشكال الهندسية صوراً واضحة دون كلمات تكشف الإجابة، وتطابق أمثلة اللافتات والمرايا والبلاط والرسم.",
-    "حُسّنت الصور الداعمة لأمثلة مختارة عن التسلق وأجهزة الاستشعار، وأُزيلت الصور غير المرتبطة من أمثلة مختارة عن التسوق وقوائم المخزون."
+    "تعرض أمثلة مختارة عن التسوق الآن المساعدة في اختيار سترة ومهام العاملين في المتجر بدلاً من صور غير مرتبطة.",
+    "يستخدم مثالان عن مشروب الليكيور بنكهة القهوة رسماً للمنتج وقائمة المخزون دون كلمات تكشف الإجابة، بدلاً من مشاهد غير مرتبطة.",
+    "أصبح مثال الرطوبة في درس الغابة أكثر طبيعية، مع تسجيلات مطابقة للجملة والأنشطة والنصوص."
   ],
   "releases": [
+    {
+      "id": "0.1.105",
+      "version": "0.1.105",
+      "date": "2026-10-30",
+      "title": {
+        "en": "Clearer examples and matching pictures",
+        "ar": "أمثلة أوضح وصور مطابقة"
+      },
+      "changes": [
+        {
+          "id": "retail-teaching-pictures",
+          "category": "fixed",
+          "en": "Selected shopping examples now show jacket assistance and store tasks instead of unrelated objects.",
+          "ar": "تعرض أمثلة مختارة عن التسوق الآن المساعدة في اختيار سترة ومهام العاملين في المتجر بدلاً من صور غير مرتبطة."
+        },
+        {
+          "id": "stock-list-teaching-pictures",
+          "category": "fixed",
+          "en": "Two coffee-liqueur examples now use an unlabeled product and stock-list illustration instead of unrelated scenes.",
+          "ar": "يستخدم مثالان عن مشروب الليكيور بنكهة القهوة رسماً للمنتج وقائمة المخزون دون كلمات تكشف الإجابة، بدلاً من مشاهد غير مرتبطة."
+        },
+        {
+          "id": "natural-humidity-example",
+          "category": "improved",
+          "en": "The jungle humidity example now uses natural wording, with matching recordings for the sentence, activities and passages.",
+          "ar": "أصبح مثال الرطوبة في درس الغابة أكثر طبيعية، مع تسجيلات مطابقة للجملة والأنشطة والنصوص."
+        }
+      ]
+    },
     {
       "id": "0.1.104",
       "version": "0.1.104",

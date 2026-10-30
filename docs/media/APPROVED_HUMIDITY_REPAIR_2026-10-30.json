@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "status": "approved-by-user",
+  "approvedAt": "2026-10-30",
+  "authorization": "User explicitly selected: Allow these eight new recordings and the text repair. Limited exception to the AGENTS.md R2 read-only constraint for these exact eight new immutable keys and five linked wording changes. Existing objects and recordings must be retained.",
+  "source": "src/app/data/usage/jungle.usage.json",
+  "originalSha256": "d62f08f4e522ff5436d2a7be418ac7dcc3c2de1607336a14c7e6d77524366f72",
+  "draftSha256": "2a7e021b5231ff552065e4c43c7912bed38aa9349944fa7d95a3aef757ec6781",
+  "oldText": "Echoes fade, and humidity swelters.",
+  "newText": "The echoes fade. High humidity makes the air feel damp.",
+  "replacements": 5,
+  "files": [
+    {
+      "key": "audio/edge-v1/en-US-JennyNeural/d8676014f40e0ba951dd6beb1463a3e0c3a3aff8a2062554c7c24122e8fc722f.mp3",
+      "text": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred. Deep dappled canopy shadow conceals stalking predators and resting reptiles from the scorching tropical midday sun. Heat radiates, and bananas grow. The jaguar rests unnoticed within the cool jungle shadow. A torrential tropical rainfall pours down through dense tree canopies, soaking foliage and replenishing vibrant rainforest ecosystems. Rubber trees drip, and bridges sway. The expedition shelters beneath giant leaves during the heavy rainfall.",
+      "file": "output/content-repair-2026-10-30/humidity-migration/recordings/d8676014f40e0ba951dd6beb1463a3e0c3a3aff8a2062554c7c24122e8fc722f.mp3",
+      "bytes": 267984,
+      "sha256": "d201ff195ef4f565feb8ab118742af80b590f92c9048972b6dc317e4d3b51873",
+      "durationSeconds": 44.664
+    },
+    {
+      "key": "audio/edge-v1/en-US-JennyNeural/f9078f9e38a0e28e11c4d5ed0e34f82d88a1786c5371a5865bd5caaaa221acce.mp3",
+      "text": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred.",
+      "file": "output/content-repair-2026-10-30/humidity-migration/recordings/f9078f9e38a0e28e11c4d5ed0e34f82d88a1786c5371a5865bd5caaaa221acce.mp3",
+      "bytes": 91008,
+      "sha256": "db9edf32a83ab11156d136948c7e7b505c6bdd994f9b0adc8ece49400443fb50",
+      "durationSeconds": 15.168
+    },
+    {
+      "key": "audio/edge-v1/en-US-JennyNeural/81fcc188e4cab810a6fc7b240bd81c42dd5cf5f9ea3d5fce3e365fcb76b0e46e.mp3",
+      "text": "High humidity makes the air feel damp.",
+      "file": "output/content-repair-2026-10-30/humidity-migration/recordings/81fcc188e4cab810a6fc7b240bd81c42dd5cf5f9ea3d5fce3e365fcb76b0e46e.mp3",
+      "bytes": 18288,
+      "sha256": "af7912a825d124bbabbd200180dfe348744962af9c41842d8d74be95d8cbb4da",
+      "durationSeconds": 3.048
+    },
+    {
+      "key": "audio/edge-v1/en-US-JennyNeural/654938729632b3eb8ed5956dcb93261f6720d922602f59f4479b3fdab3478a78.mp3",
+      "text": "makes the air feel damp.",
+      "file": "output/content-repair-2026-10-30/humidity-migration/recordings/654938729632b3eb8ed5956dcb93261f6720d922602f59f4479b3fdab3478a78.mp3",
+      "bytes": 13968,
+      "sha256": "9cd9ac56189ed63196ce55ba288a0e0223b5d483133c2d483311d981b49fcd01",
+      "durationSeconds": 2.328
+    },
+    {
+      "key": "audio/edge-v1/en-US-JennyNeural/b5f68bc20635fe02dab491b767cd80e7d0ea431b950741076da1e7a4452181e6.mp3",
+      "text": "the air feel damp.",
+      "file": "output/content-repair-2026-10-30/humidity-migration/recordings/b5f68bc20635fe02dab491b767cd80e7d0ea431b950741076da1e7a4452181e6.mp3",
+      "bytes": 12240,
+      "sha256": "77d394b7234534431533bd69c9bc81acd483d19284cf1548e92ca1acd4c58658",
+      "durationSeconds": 2.04
+    },
+    {
+      "key": "audio/edge-v1/en-US-JennyNeural/b1dcfbcddc63ee3de808242e32b4a15a96874fe5347e5b9be89a2070e0ad6645.mp3",
+      "text": "Forest hydrology, tropical humidity and equatorial downpours. A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred. Deep dappled canopy shadow conceals stalking predators and resting reptiles from the scorching tropical midday sun. Heat radiates, and bananas grow. The jaguar rests unnoticed within the cool jungle shadow. A torrential tropical rainfall pours down through dense tree canopies, soaking foliage and replenishing vibrant rainforest ecosystems. Rubber trees drip, and bridges sway. The expedition shelters beneath giant leaves during the heavy rainfall.",
+      "file": "output/content-repair-2026-10-30/humidity-migration/recordings/b1dcfbcddc63ee3de808242e32b4a15a96874fe5347e5b9be89a2070e0ad6645.mp3",
+      "bytes": 298656,
+      "sha256": "3b5a5e4f9be09d6a14d8c2db44b37de96585b6460e33326fc8b1133cd2b03ea9",
+      "durationSeconds": 49.776
+    },
+    {
+      "key": "audio/edge-v1/en-US-JennyNeural/d87a7411766e09e95b3b3bb9c0ff1d555d5be05389ef6c7daee995690a3192e7.mp3",
+      "text": "The situation in action. A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred. Deep dappled canopy shadow conceals stalking predators and resting reptiles from the scorching tropical midday sun. Heat radiates, and bananas grow. The jaguar rests unnoticed within the cool jungle shadow.",
+      "file": "output/content-repair-2026-10-30/humidity-migration/recordings/d87a7411766e09e95b3b3bb9c0ff1d555d5be05389ef6c7daee995690a3192e7.mp3",
+      "bytes": 187776,
+      "sha256": "7c78ecd6435800227872af34f2397a29be2e78e374ae1fb465de0b2cbee6612b",
+      "durationSeconds": 31.296
+    },
+    {
+      "key": "audio/edge-v1/en-US-JennyNeural/88cf107f307cac85b96b9929a111a9f9554c548b3c56d5a798ecb0339556d7a6.mp3",
+      "text": "Forest hydrology, tropical humidity and equatorial downpours. A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred. Deep dappled canopy shadow conceals stalking predators and resting reptiles from the scorching tropical midday sun. Heat radiates, and bananas grow. The jaguar rests unnoticed within the cool jungle shadow. A torrential tropical rainfall pours down through dense tree canopies, soaking foliage and replenishing vibrant rainforest ecosystems. Rubber trees drip, and bridges sway. The expedition shelters beneath giant leaves during the heavy rainfall.. The situation in action. A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred. Deep dappled canopy shadow conceals stalking predators and resting reptiles from the scorching tropical midday sun. Heat radiates, and bananas grow. The jaguar rests unnoticed within the cool jungle shadow.. Transfer to a new context. A torrential tropical rainfall pours down through dense tree canopies, soaking foliage and replenishing vibrant rainforest ecosystems. Rubber trees drip, and bridges sway. The expedition shelters beneath giant leaves during the heavy rainfall.",
+      "file": "output/content-repair-2026-10-30/humidity-migration/recordings/88cf107f307cac85b96b9929a111a9f9554c548b3c56d5a798ecb0339556d7a6.mp3",
+      "bytes": 595152,
+      "sha256": "a065e4d2ef30ba3c18cda0eda7bd6665d3cc6f3b623984d2bc00d1cf075cd01d",
+      "durationSeconds": 99.192
+    }
+  ]
+}

@@ -668,7 +668,7 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Splash", "Echo", "Humidity", "Heat"],
-          "scenario": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. Echoes fade, and humidity swelters. The guide looks toward the river where the loud splash occurred.",
+          "scenario": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred.",
           "check": {
             "question": "Which sudden sound and spray of water is made when an animal dives into a river?",
             "options": ["Splash", "Echo", "Humidity"],
@@ -706,12 +706,12 @@
     },
     "reading": {
       "title": "Forest hydrology, tropical humidity and equatorial downpours",
-      "text": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. Echoes fade, and humidity swelters. The guide looks toward the river where the loud splash occurred. Deep dappled canopy shadow conceals stalking predators and resting reptiles from the scorching tropical midday sun. Heat radiates, and bananas grow. The jaguar rests unnoticed within the cool jungle shadow. A torrential tropical rainfall pours down through dense tree canopies, soaking foliage and replenishing vibrant rainforest ecosystems. Rubber trees drip, and bridges sway. The expedition shelters beneath giant leaves during the heavy rainfall.",
+      "text": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred. Deep dappled canopy shadow conceals stalking predators and resting reptiles from the scorching tropical midday sun. Heat radiates, and bananas grow. The jaguar rests unnoticed within the cool jungle shadow. A torrential tropical rainfall pours down through dense tree canopies, soaking foliage and replenishing vibrant rainforest ecosystems. Rubber trees drip, and bridges sway. The expedition shelters beneath giant leaves during the heavy rainfall.",
       "imageBrief": "Use independently inspected word references to support Forest hydrology, tropical humidity and equatorial downpours; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. Echoes fade, and humidity swelters. The guide looks toward the river where the loud splash occurred.\nWhich sudden sound and spray of water is made when an animal dives into a river?",
+        "prompt": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred.\nWhich sudden sound and spray of water is made when an animal dives into a river?",
         "answer": "Splash",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -732,7 +732,7 @@
         "contextTag": "scene-3"
       },
       {
-        "prompt": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. Echoes fade, and humidity swelters. The guide looks toward the river where the loud splash occurred. Deep dappled canopy shadow conceals stalking predators and resting reptiles from the scorching tropical midday sun. Heat radiates, and bananas grow. The jaguar rests unnoticed within the cool jungle shadow. A torrential tropical rainfall pours down through dense tree canopies, soaking foliage and replenishing vibrant rainforest ecosystems. Rubber trees drip, and bridges sway. The expedition shelters beneath giant leaves during the heavy rainfall.\nCompare “Splash” and “Echo” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "prompt": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred. Deep dappled canopy shadow conceals stalking predators and resting reptiles from the scorching tropical midday sun. Heat radiates, and bananas grow. The jaguar rests unnoticed within the cool jungle shadow. A torrential tropical rainfall pours down through dense tree canopies, soaking foliage and replenishing vibrant rainforest ecosystems. Rubber trees drip, and bridges sway. The expedition shelters beneath giant leaves during the heavy rainfall.\nCompare “Splash” and “Echo” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
         "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
         "questionType": "comparison",
         "responseMode": "extended-response",
@@ -749,7 +749,7 @@
     "video": {
       "title": "Forest hydrology, tropical humidity and equatorial downpours",
       "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
-      "scriptStarter": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. Echoes fade, and humidity swelters. The guide looks toward the river where the loud splash occurred. Which sudden sound and spray of water is made when an animal dives into a river?"
+      "scriptStarter": "A sudden heavy water splash echoes through the flooded forest as a startled river caiman plunges off the muddy bank. The echoes fade. High humidity makes the air feel damp. The guide looks toward the river where the loud splash occurred. Which sudden sound and spray of water is made when an animal dives into a river?"
     },
     "spacedReview": "1 lesson(s) back: Lagoon, Understory from jungle-4\n3 lesson(s) back: Mosquito, Dragonfly from jungle-2\n7 lesson(s) back: Crater, Basin from desert-3"
   }

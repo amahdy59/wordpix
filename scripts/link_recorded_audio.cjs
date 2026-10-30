@@ -77,6 +77,24 @@ async function main() {
     if (!shards.has(prefix)) shards.set(prefix, new Set());
     shards.get(prefix).add(match[1]);
   }
+  // Retain previously published verified indexes even if this workstation's
+  // historical receipt log is incomplete. Never silently unindex old takes.
+  for (const name of fs.readdirSync("src/app/generated/edgeRecordings")) {
+    if (!/^[a-f0-9]{2}\.json$/.test(name)) continue;
+    const prefix = name.slice(0, 2);
+    if (!shards.has(prefix)) shards.set(prefix, new Set());
+    for (const entry of JSON.parse(
+      fs.readFileSync(`src/app/generated/edgeRecordings/${name}`, "utf8")
+    )) {
+      if (
+        !/^(?:en-US-JennyNeural|ar-SA-ZariyahNeural)\/[a-f0-9]{64}$/.test(entry) ||
+        entry.split("/")[1].slice(0, 2) !== prefix ||
+        !keys.has(`audio/edge-v1/${entry}.mp3`)
+      )
+        throw Error("Existing recording index needs read-only reconciliation: " + entry);
+      shards.get(prefix).add(entry);
+    }
+  }
   fs.writeFileSync(
     aliasPath,
     JSON.stringify(Object.fromEntries(Object.entries(aliases).sort()), null, 2) + "\n"

@@ -1,5 +1,9 @@
 # Content and image repairs after the learner screenshots
 
+The pending statuses below describe the first batch. See
+`CONTENT_REPAIRS_COMPLETION_2026-10-30.md` for the completed retail, stock-list and
+humidity repairs.
+
 The screenshots prove that the triangle sentence showed fishing equipment and
 the oval sentence showed shipping containers. The exact sentence registry
 contained those unrelated library references under a reviewed filename. That

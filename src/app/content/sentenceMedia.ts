@@ -44,10 +44,15 @@ export function resolveSentenceMedia(
         Boolean(candidate.learningContext?.scenario?.includes(sentence)))
   );
   return scene?.imagePath && scene.imageAlt
-    ? applySentenceMediaCorrection(wordId, sentence, {
-        imagePath: scene.imagePath,
-        imageAlt: scene.imageAlt,
-        imageFallbacks: scene.imageFallbacks,
-      })
+    ? applySentenceMediaCorrection(
+        wordId,
+        sentence,
+        {
+          imagePath: scene.imagePath,
+          imageAlt: scene.imageAlt,
+          imageFallbacks: scene.imageFallbacks,
+        },
+        scene.reviewedOriginalImagePath
+      )
     : undefined;
 }

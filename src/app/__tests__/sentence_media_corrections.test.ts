@@ -8,11 +8,14 @@ import retail from "../data/usage/shopping-mall.usage.json";
 import { unitUsageDataSchema } from "../data/usageTypes";
 
 describe("visually checked sentence corrections", () => {
-  it("preserves selection of an existing recorded sentence when its wrong image is held", async () => {
+  it("preserves selection of an existing recorded sentence when its picture is corrected", async () => {
     await loadUnitVocabulary("spirits-liqueurs");
     const row = corrections.find((item) => item.wordId === "kahl-a")!;
     expect(hasSentenceMediaCandidate(row.wordId, row.sentence)).toBe(true);
-    expect(resolveSentenceMedia(row.wordId, row.sentence)).toBeUndefined();
+    expect(resolveSentenceMedia(row.wordId, row.sentence)?.imageAlt).toBe(row.imageAlt);
+    expect(resolveSentenceMedia(row.wordId, row.sentence)?.imagePath).not.toContain(
+      "library-images"
+    );
   });
   it("replaces the screenshot mismatches through the real lazy sentence resolver", async () => {
     await loadUnitVocabulary("shapes-geometry");
@@ -40,13 +43,30 @@ describe("visually checked sentence corrections", () => {
     }
   });
 
-  it("holds the unrelated retail scene instead of silently restoring a word-image fallback", () => {
+  it("replaces the unrelated retail scene without restoring the old picture or fallback", () => {
     const lessons = attachReviewedUsageIllustrations(unitUsageDataSchema.parse(retail));
     const scene = lessons
       .find((item) => item.lessonId === "shopping-mall-4")!
       .usage.scenes.find((item) => item.chunkNumber === 4)!;
-    expect(scene.imageReviewHold).toBeTruthy();
-    expect(scene.imagePath).toBeUndefined();
+    expect(scene.imageReviewHold).toBeUndefined();
+    expect(scene.imagePath).toBeTruthy();
+    expect(scene.imagePath).not.toContain("536bc8a4");
     expect(scene.imageFallbacks).toBeUndefined();
+  });
+
+  it("uses the focused jacket illustration even when its containing scene has been corrected", async () => {
+    await loadUnitVocabulary("shopping-mall");
+    const usage = attachReviewedUsageIllustrations(unitUsageDataSchema.parse(retail)).find(
+      (lesson) => lesson.lessonId === "shopping-mall-4"
+    )!;
+    for (const wordId of ["sales-clerk", "shopper"]) {
+      const row = corrections.find(
+        (item) => item.wordId === wordId && item.sentence.startsWith("The sales clerk assists")
+      )!;
+      const media = resolveSentenceMedia(wordId, row.sentence, usage);
+      expect(media?.imageAlt).toBe(row.imageAlt);
+      expect(media?.imagePath).not.toContain("536bc8a4");
+      expect(media?.imageFallbacks).toBeUndefined();
+    }
   });
 });

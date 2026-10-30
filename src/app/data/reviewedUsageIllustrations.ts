@@ -4,6 +4,7 @@ import objectManifest from "../generated/reviewedFigmaObjectScenes.json";
 import generatedManifest from "../generated/reviewedGeneratedSceneMedia.json";
 import type { UnitUsageData } from "./usageTypes";
 import corrections from "../content/sceneMediaCorrections.json";
+import { resolveTeachingVisual } from "../content/teachingVisuals";
 
 function correctScene(scene: UnitUsageData[number]["usage"]["scenes"][number]) {
   const correction = corrections.find(
@@ -13,7 +14,9 @@ function correctScene(scene: UnitUsageData[number]["usage"]["scenes"][number]) {
   return correction.replacementKey
     ? {
         ...scene,
-        imagePath: correction.replacementKey,
+        imagePath: resolveTeachingVisual(correction.replacementKey),
+        reviewedOriginalImagePath: scene.imagePath,
+        imageReviewHold: undefined,
         imageAlt: correction.imageAlt,
         imageFallbacks: undefined,
       }
