@@ -1,14 +1,37 @@
 {
-  "version": "0.1.103",
+  "version": "0.1.104",
   "notes": [
-    "Selected sentence pictures now use smaller images on suitable screens, with the original picture available as a fallback.",
-    "Rock-climbing and shelf-stocking sentences now show pictures that depict the actions."
+    "The first geometry lesson now shows clear, unlabeled pictures matching its signs, mirrors, tiles and drawing examples.",
+    "Selected climbing and sensor examples have more relevant picture support. Confirmed unrelated pictures are omitted from selected shopping and stock-list examples."
   ],
   "notesAr": [
-    "تستخدم صور جمل مختارة نسخاً أصغر على الشاشات المناسبة، مع الاحتفاظ بالصورة الأصلية كخيار بديل.",
-    "تعرض جمل تسلّق الصخور وترتيب البضائع على الرفوف صوراً توضح هذه الأفعال."
+    "تعرض الآن أول دروس الأشكال الهندسية صوراً واضحة دون كلمات تكشف الإجابة، وتطابق أمثلة اللافتات والمرايا والبلاط والرسم.",
+    "حُسّنت الصور الداعمة لأمثلة مختارة عن التسلق وأجهزة الاستشعار، وأُزيلت الصور غير المرتبطة من أمثلة مختارة عن التسوق وقوائم المخزون."
   ],
   "releases": [
+    {
+      "id": "0.1.104",
+      "version": "0.1.104",
+      "date": "2026-10-30",
+      "title": {
+        "en": "Pictures that match the lesson",
+        "ar": "صور تطابق محتوى الدرس"
+      },
+      "changes": [
+        {
+          "id": "matching-geometry-scenes",
+          "category": "fixed",
+          "en": "The first geometry lesson now shows clear, unlabeled pictures matching its signs, mirrors, tiles and drawing examples.",
+          "ar": "تعرض الآن أول دروس الأشكال الهندسية صوراً واضحة دون كلمات تكشف الإجابة، وتطابق أمثلة اللافتات والمرايا والبلاط والرسم."
+        },
+        {
+          "id": "checked-sentence-support",
+          "category": "fixed",
+          "en": "Selected climbing and sensor examples have more relevant picture support. Confirmed unrelated pictures are omitted from selected shopping and stock-list examples.",
+          "ar": "حُسّنت الصور الداعمة لأمثلة مختارة عن التسلق وأجهزة الاستشعار، وأُزيلت الصور غير المرتبطة من أمثلة مختارة عن التسوق وقوائم المخزون."
+        }
+      ]
+    },
     {
       "id": "0.1.103",
       "version": "0.1.103",

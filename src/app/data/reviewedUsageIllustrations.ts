@@ -3,6 +3,28 @@ import figmaManifest from "../generated/reviewedFigmaQuestionMedia.json";
 import objectManifest from "../generated/reviewedFigmaObjectScenes.json";
 import generatedManifest from "../generated/reviewedGeneratedSceneMedia.json";
 import type { UnitUsageData } from "./usageTypes";
+import corrections from "../content/sceneMediaCorrections.json";
+
+function correctScene(scene: UnitUsageData[number]["usage"]["scenes"][number]) {
+  const correction = corrections.find(
+    (row) => row.sentence === scene.scenario && scene.imagePath?.endsWith(row.originalKey)
+  );
+  if (!correction) return scene;
+  return correction.replacementKey
+    ? {
+        ...scene,
+        imagePath: correction.replacementKey,
+        imageAlt: correction.imageAlt,
+        imageFallbacks: undefined,
+      }
+    : {
+        ...scene,
+        imagePath: undefined,
+        imageAlt: undefined,
+        imageFallbacks: undefined,
+        imageReviewHold: correction.reason,
+      };
+}
 
 /** Only content-hashed R2 images that passed media review and remote verification. */
 type ReviewedSceneMedia = {
@@ -39,14 +61,14 @@ export function attachReviewedUsageIllustrations(lessons: UnitUsageData): UnitUs
             media.reviewedQuestion !== scene.check.question) ||
           (media.imagePurpose !== undefined && media.imagePurpose !== "word-reference")
         )
-          return scene;
-        return {
+          return correctScene(scene);
+        return correctScene({
           ...scene,
           imagePath: media.imagePath,
           imageAlt: media.imageAlt,
           imagePurpose: media.imagePurpose,
           imageFallbacks: media.imageFallbacks,
-        };
+        });
       }),
     },
   }));

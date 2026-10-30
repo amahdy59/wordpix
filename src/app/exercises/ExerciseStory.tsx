@@ -932,21 +932,24 @@ export const ExerciseStory = memo(function ExerciseStory({
                                 .replace(/[^a-z0-9]+/g, "-")
                                 .replace(/^-+|-+$/g, "");
                             const targetNorm = normalize(currentChunk.check.expectedAnswer);
-                            const matchingWord = !currentChunk.imagePath
-                              ? words.find((w) => {
-                                  const labelNorm = normalize(w.label);
-                                  const idNorm = normalize(w.id);
-                                  return (
-                                    labelNorm === targetNorm ||
-                                    idNorm === targetNorm ||
-                                    w.label.toLowerCase() ===
-                                      currentChunk.check.expectedAnswer.toLowerCase() ||
-                                    w.id.toLowerCase() ===
-                                      currentChunk.check.expectedAnswer.toLowerCase()
-                                  );
-                                })
-                              : undefined;
-                            const effectiveImagePath = currentChunk.imagePath ?? matchingWord?.img;
+                            const matchingWord =
+                              !currentChunk.imagePath && !currentChunk.imageReviewHold
+                                ? words.find((w) => {
+                                    const labelNorm = normalize(w.label);
+                                    const idNorm = normalize(w.id);
+                                    return (
+                                      labelNorm === targetNorm ||
+                                      idNorm === targetNorm ||
+                                      w.label.toLowerCase() ===
+                                        currentChunk.check.expectedAnswer.toLowerCase() ||
+                                      w.id.toLowerCase() ===
+                                        currentChunk.check.expectedAnswer.toLowerCase()
+                                    );
+                                  })
+                                : undefined;
+                            const effectiveImagePath = currentChunk.imageReviewHold
+                              ? undefined
+                              : (currentChunk.imagePath ?? matchingWord?.img);
                             const isWordRef =
                               currentChunk.imagePurpose === "word-reference" ||
                               Boolean(!currentChunk.imagePath && matchingWord);

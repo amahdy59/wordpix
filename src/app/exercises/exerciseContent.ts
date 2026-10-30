@@ -7,7 +7,7 @@ import type { LessonUsageData } from "../data/usageTypes";
 import { findLessonContextSentences } from "../data/lessonContext";
 import { findSentenceTarget, sentenceCloze } from "./sentenceCloze";
 import { isGenericLearningExample } from "../content/learningExampleQuality";
-import { resolveSentenceMedia } from "../content/sentenceMedia";
+import { hasSentenceMediaCandidate } from "../content/sentenceMedia";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -593,7 +593,7 @@ export function getRichSentence(
     fallback,
   ].filter(
     (sentence): sentence is string =>
-      filterCandidate(sentence, false) && Boolean(resolveSentenceMedia(word.id, sentence, usage))
+      filterCandidate(sentence, false) && hasSentenceMediaCandidate(word.id, sentence, usage)
   );
   const uniqueCandidates = [
     ...new Set(

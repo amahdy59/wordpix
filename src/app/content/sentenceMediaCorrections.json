@@ -1,0 +1,114 @@
+[
+  {
+    "wordId": "climbing",
+    "sentence": "Kids demonstrate nimble strength while climbing up the synthetic rock wall with rubber footholds.",
+    "originalKey": "question-images/v2/playground-3-usage-scene-5/20c9c616355d60dc1077c98c688926867979a96a29adf75c29c8f4ff640ab81a.webp",
+    "replacementKey": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/playground/climbing.avif",
+    "imageAlt": "A helmeted child grips colored holds on an artificial climbing wall.",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  },
+  {
+    "wordId": "climbing",
+    "sentence": "Gripping holds while climbing develops motor skills.",
+    "originalKey": "question-images/v2/playground-3-usage-scene-5/20c9c616355d60dc1077c98c688926867979a96a29adf75c29c8f4ff640ab81a.webp",
+    "replacementKey": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/playground/climbing.avif",
+    "imageAlt": "A helmeted child grips colored holds on an artificial climbing wall.",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  },
+  {
+    "wordId": "shopper",
+    "sentence": "The sales clerk assists the shopper in locating the correct jacket size.",
+    "originalKey": "question-images/v2/shopping-mall-4-usage-scene-4/536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.webp",
+    "replacementKey": null,
+    "imageAlt": "",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  },
+  {
+    "wordId": "sales-clerk",
+    "sentence": "A knowledgeable retail sales clerk answers customer sizing questions, retrieves stock sizes from backroom shelves, and folds displays.",
+    "originalKey": "question-images/v2/shopping-mall-4-usage-scene-4/536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.webp",
+    "replacementKey": null,
+    "imageAlt": "",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  },
+  {
+    "wordId": "sales-clerk",
+    "sentence": "The sales clerk assists the shopper in locating the correct jacket size.",
+    "originalKey": "question-images/v2/shopping-mall-4-usage-scene-4/536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.webp",
+    "replacementKey": null,
+    "imageAlt": "",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  },
+  {
+    "wordId": "climbing",
+    "sentence": "A certified dynamic climbing rope stretches elastically under load to safely arrest a mountaineer’s fall on vertical rock faces.",
+    "originalKey": "question-images/v2/library-images/2041f9fb2857c98baf4d7ab6a7d9d76dedc5bc0d.webp",
+    "replacementKey": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/mountain/climbing.avif",
+    "imageAlt": "A helmeted climber grips a steep rock face with a rope trailing below.",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  },
+  {
+    "wordId": "humidity-sensor",
+    "sentence": "The humidity sensor showed that the bathroom air was very humid.",
+    "originalKey": "question-images/v2/library-images/df1d15926f3b270e54d9d04faa53fda555afdf98.webp",
+    "replacementKey": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/smart-home/humidity-sensor.avif",
+    "imageAlt": "A small wall-mounted sensing device with a circular grille.",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  },
+  {
+    "wordId": "circle",
+    "sentence": "Draw a circle around the correct answer.",
+    "originalKey": "question-images/v2/library-images/01cd047e036d62467fcf069b7a3223280e75b40f.webp",
+    "replacementKey": "circle",
+    "imageAlt": "A ring surrounds a check mark on a sheet of paper.",
+    "reason": "Unlabeled exact-context teaching scene."
+  },
+  {
+    "wordId": "square",
+    "sentence": "The tile is a square with equal sides.",
+    "originalKey": "question-images/v2/library-images/e47bb9040d318f427fdad091fdc792a50431c233.webp",
+    "replacementKey": "square",
+    "imageAlt": "An even tile is highlighted within a wall grid.",
+    "reason": "Unlabeled exact-context teaching scene."
+  },
+  {
+    "wordId": "triangle",
+    "sentence": "The sign has the shape of a triangle.",
+    "originalKey": "question-images/v2/library-images/b82b7c0eefca48a57fbc61cf04a97bf5a6389e57.webp",
+    "replacementKey": "triangle",
+    "imageAlt": "A blank three-sided warning sign stands on a post.",
+    "reason": "Unlabeled exact-context teaching scene."
+  },
+  {
+    "wordId": "rectangle",
+    "sentence": "Draw a rectangle around the address.",
+    "originalKey": "question-images/v2/library-images/deeeea264f6da0ddbb51b1e98d14df284b751dad.webp",
+    "replacementKey": "rectangle",
+    "imageAlt": "A straight-sided outline surrounds address lines on an envelope.",
+    "reason": "Unlabeled exact-context teaching scene."
+  },
+  {
+    "wordId": "oval",
+    "sentence": "The mirror has an oval frame.",
+    "originalKey": "question-images/v2/library-images/d2491a5c1d07d458994b6ba0f319ab05be4a6210.webp",
+    "replacementKey": "oval",
+    "imageAlt": "A tall curved mirror hangs above a console table.",
+    "reason": "Unlabeled exact-context teaching scene."
+  },
+  {
+    "wordId": "kahl-a",
+    "sentence": "The stock list records Kahlúa separately from the other coffee-flavored products.",
+    "originalKey": "question-images/v2/library-images/324a03f4d9f722d7a0221ea0bb055d125ce192d5.webp",
+    "replacementKey": null,
+    "imageAlt": "",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  },
+  {
+    "wordId": "oval",
+    "sentence": "He chooses the oval, a rounded shape longer in one direction.",
+    "originalKey": "question-images/v2/library-images/21ca4a8aa25a7bb0c11b6bc5d89a23858300680c.webp",
+    "replacementKey": "oval",
+    "imageAlt": "A tall curved mirror hangs above a console table.",
+    "reason": "Visually inspected original depicts a compass. The unlabeled mirror supplies a clear example of the assessed shape."
+  }
+]

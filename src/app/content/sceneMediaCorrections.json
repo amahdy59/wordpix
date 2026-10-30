@@ -1,0 +1,18 @@
+[
+  {
+    "wordId": "scene-5",
+    "sentence": "Kids demonstrate nimble strength while climbing up the synthetic rock wall with rubber footholds. Slides and swings sit nearby. Gripping holds while climbing develops motor skills.",
+    "originalKey": "question-images/v2/playground-3-usage-scene-5/20c9c616355d60dc1077c98c688926867979a96a29adf75c29c8f4ff640ab81a.webp",
+    "replacementKey": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/playground/climbing.avif",
+    "imageAlt": "A helmeted child grips colored holds on an artificial climbing wall.",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  },
+  {
+    "wordId": "scene-4",
+    "sentence": "A knowledgeable retail sales clerk answers customer sizing questions, retrieves stock sizes from backroom shelves, and folds displays. Cashiers ring sales, and janitors polish floors. The sales clerk assists the shopper in locating the correct jacket size.",
+    "originalKey": "question-images/v2/shopping-mall-4-usage-scene-4/536bc8a4e44926773002f826614967c8fda5b02f7c836a34c5463683e68aaa33.webp",
+    "replacementKey": null,
+    "imageAlt": "",
+    "reason": "Visually inspected; retain the spoken text and replace unrelated art with subject/action support, or omit when no valid candidate was found."
+  }
+]
