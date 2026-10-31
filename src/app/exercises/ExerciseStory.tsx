@@ -1,4 +1,6 @@
 import React, { memo, useRef, useEffect, useMemo, useState, useCallback } from "react";
+import { getSuppliedSceneMedia } from "../content/suppliedMedia";
+import { isReviewedImageHeld } from "../content/reviewedImageHolds";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveGroup, getNextGroupChronological } from "../data/courseCatalog";
@@ -925,6 +927,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                             accessible context and a useful fallback when no image exists. */}
                         {currentChunk.imageBrief &&
                           (() => {
+                            const supplied = getSuppliedSceneMedia(lessonId, currentChunk);
                             const normalize = (s: string) =>
                               s
                                 .toLowerCase()
@@ -932,31 +935,48 @@ export const ExerciseStory = memo(function ExerciseStory({
                                 .replace(/[^a-z0-9]+/g, "-")
                                 .replace(/^-+|-+$/g, "");
                             const targetNorm = normalize(currentChunk.check.expectedAnswer);
-                            const matchingWord = !currentChunk.imagePath
-                              ? words.find((w) => {
-                                  const labelNorm = normalize(w.label);
-                                  const idNorm = normalize(w.id);
-                                  return (
-                                    labelNorm === targetNorm ||
-                                    idNorm === targetNorm ||
-                                    w.label.toLowerCase() ===
-                                      currentChunk.check.expectedAnswer.toLowerCase() ||
-                                    w.id.toLowerCase() ===
-                                      currentChunk.check.expectedAnswer.toLowerCase()
-                                  );
-                                })
-                              : undefined;
-                            const effectiveImagePath = currentChunk.imagePath ?? matchingWord?.img;
+                            const matchingWord =
+                              !currentChunk.imagePath && !currentChunk.imageReviewHold
+                                ? words.find((w) => {
+                                    const labelNorm = normalize(w.label);
+                                    const idNorm = normalize(w.id);
+                                    return (
+                                      labelNorm === targetNorm ||
+                                      idNorm === targetNorm ||
+                                      w.label.toLowerCase() ===
+                                        currentChunk.check.expectedAnswer.toLowerCase() ||
+                                      w.id.toLowerCase() ===
+                                        currentChunk.check.expectedAnswer.toLowerCase()
+                                    );
+                                  })
+                                : undefined;
+                            const candidateImagePath =
+                              supplied?.imagePath ??
+                              (currentChunk.imageReviewHold
+                                ? undefined
+                                : (currentChunk.imagePath ?? matchingWord?.img));
+                            const effectiveImagePath = isReviewedImageHeld(
+                              "usage-scene",
+                              `scene-${currentChunk.chunkNumber}`,
+                              currentChunk.scenario,
+                              candidateImagePath,
+                              lessonId
+                            )
+                              ? undefined
+                              : candidateImagePath;
                             const isWordRef =
+                              supplied?.imagePurpose === "word-reference" ||
                               currentChunk.imagePurpose === "word-reference" ||
                               Boolean(!currentChunk.imagePath && matchingWord);
-                            const effectiveAlt = isWordRef
-                              ? !currentChunk.imagePath && matchingWord?.description
-                                ? matchingWord.description
-                                : (currentChunk.imageAlt ??
-                                  matchingWord?.description ??
-                                  currentChunk.imageBrief)
-                              : (currentChunk.imageAlt ?? currentChunk.imageBrief);
+                            const effectiveAlt =
+                              supplied?.imageAlt ??
+                              (isWordRef
+                                ? !currentChunk.imagePath && matchingWord?.description
+                                  ? matchingWord.description
+                                  : (currentChunk.imageAlt ??
+                                    matchingWord?.description ??
+                                    currentChunk.imageBrief)
+                                : (currentChunk.imageAlt ?? currentChunk.imageBrief));
 
                             return (
                               <figure className="relative overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
@@ -971,7 +991,10 @@ export const ExerciseStory = memo(function ExerciseStory({
                                     media={{
                                       imagePath: effectiveImagePath,
                                       imageAlt: effectiveAlt,
-                                      imageFallbacks: currentChunk.imageFallbacks,
+                                      imageFallbacks: supplied
+                                        ? undefined
+                                        : currentChunk.imageFallbacks,
+                                      responsiveSources: supplied?.responsiveSources,
                                     }}
                                     loading="eager"
                                     className="w-full max-h-[28dvh] object-contain"

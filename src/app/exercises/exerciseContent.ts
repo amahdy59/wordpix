@@ -7,7 +7,7 @@ import type { LessonUsageData } from "../data/usageTypes";
 import { findLessonContextSentences } from "../data/lessonContext";
 import { findSentenceTarget, sentenceCloze } from "./sentenceCloze";
 import { isGenericLearningExample } from "../content/learningExampleQuality";
-import { resolveSentenceMedia } from "../content/sentenceMedia";
+import { hasSentenceMediaCandidate } from "../content/sentenceMedia";
 
 export const CONFUSION_PAIRS: Record<string, string[]> = {
   pillow: ["blanket", "nightstand", "bed", "dresser"],
@@ -536,6 +536,16 @@ export function getRichSentence(
   usage?: LessonUsageData | null,
   contextIndex = 0
 ): RichSentence {
+  // Reviewed verb usage, using recordings already present in the immutable corpus.
+  // The old noun frame ("This is a sit down") is ungrammatical for this sense.
+  if (word.id === "sit-down" && word.img === "/word-images/park/sit-down.avif") {
+    return {
+      full: "Please sit down.",
+      clozeBefore: "Please",
+      clozeAfter: ".",
+      words: ["Please", "sit", "down"],
+    };
+  }
   const authoredSentence = getAuthoredSentence(word.id);
   const curatedSentence = RICH_CONTEXT_SENTENCES[word.id];
   const lessonContextSentences = findLessonContextSentences(word, usage);
@@ -593,7 +603,7 @@ export function getRichSentence(
     fallback,
   ].filter(
     (sentence): sentence is string =>
-      filterCandidate(sentence, false) && Boolean(resolveSentenceMedia(word.id, sentence, usage))
+      filterCandidate(sentence, false) && hasSentenceMediaCandidate(word.id, sentence, usage)
   );
   const uniqueCandidates = [
     ...new Set(

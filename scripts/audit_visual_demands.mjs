@@ -17,6 +17,8 @@ try {
   const { loadLessonUsage } = await load("app/data/usageRegistry.ts");
   const { getRichSentence } = await load("app/exercises/exerciseContent.ts");
   const { resolveSentenceMedia } = await load("app/content/sentenceMedia.ts");
+  const { getSuppliedSceneMedia } = await load("app/content/suppliedMedia.ts");
+  const { isReviewedImageHeld } = await load("app/content/reviewedImageHolds.ts");
   const { resolveAssetUrl } = await load("utils/assetUrl.ts");
   const demands = [];
   const add = (item, imagePath) =>
@@ -44,6 +46,7 @@ try {
           );
       }
       for (const scene of usage?.usage.scenes ?? []) {
+        const supplied = getSuppliedSceneMedia(group.id, scene);
         const support = sceneVisualSupport(
           scene,
           group.wordIds.map((id) => words.get(id))
@@ -56,10 +59,18 @@ try {
             wordId: `scene-${scene.chunkNumber}`,
             text: scene.scenario,
             generationHold: scene.imageGenerationHold ?? null,
-            referenceOnly: support.referenceOnly,
-            imageSupport: support.imageSupport,
+            referenceOnly: supplied ? true : support.referenceOnly,
+            imageSupport: supplied ? "word-reference" : support.imageSupport,
           },
-          support.imagePath
+          isReviewedImageHeld(
+            "usage-scene",
+            `scene-${scene.chunkNumber}`,
+            scene.scenario,
+            supplied?.imagePath ?? support.imagePath,
+            group.id
+          )
+            ? undefined
+            : (supplied?.imagePath ?? support.imagePath)
         );
       }
     }

@@ -36,6 +36,10 @@ export const usageSceneChunkSchema = z
     imageBrief: z.string(),
     /** Editorial hold: keep the written task, exclude the scene from paid generation. */
     imageGenerationHold: z.string().trim().min(1).optional(),
+    /** Confirmed visual mismatch: also prevent an unreviewed word-image fallback. */
+    imageReviewHold: z.string().trim().min(1).optional(),
+    /** Retained source identity when a checked local drawing replaces scene support. */
+    reviewedOriginalImagePath: z.string().trim().min(1).optional(),
     /** Reject historical readable-glyph exceptions in current authoring data. */
     imageSymbols: z.never().optional(),
     /** Explicit labels approved for a particular educational illustration. */
