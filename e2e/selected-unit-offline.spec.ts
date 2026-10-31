@@ -41,6 +41,12 @@ test("selected unit preparation saves text modules and reopens vocabulary offlin
   );
   expect(prepared.some((url) => /lexicon-\d+-/.test(url))).toBe(true);
   expect(prepared.some((url) => /story-.*-groups-/.test(url))).toBe(true);
+  expect(prepared.some((url) => /usage-media-unit-numbers-counting-/.test(url))).toBe(true);
+  expect(
+    prepared
+      .filter((url) => /usage-media-unit-/.test(url))
+      .every((url) => /usage-media-unit-numbers-counting-/.test(url))
+  ).toBe(true);
   offlineServer.setOffline(true);
   await page.goto("/wordpix/#/learn/numbers-counting", { waitUntil: "domcontentloaded" });
   await expect(

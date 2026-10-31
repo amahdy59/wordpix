@@ -35,16 +35,18 @@ describe("independently reviewed generated scene media", () => {
       /^question-images\/v3\/shared\/blouse-cream-long-sleeves-hanger\//
     );
   });
-  it("attaches reviewed imagery through the current classroom curriculum", () => {
+  it("attaches reviewed imagery through the current classroom curriculum", async () => {
     const source = unitUsageDataSchema.parse(classroom);
-    const result = attachReviewedUsageIllustrations(source);
+    const result = await attachReviewedUsageIllustrations(source);
     const scenes = result.flatMap((l) => l.usage.scenes);
     expect(scenes.filter((s) => s.imagePath?.startsWith("question-images/v2/"))).toHaveLength(22);
     expect(source[0].usage.scenes[0].imagePath).toBeUndefined();
   });
-  it("withholds a generated image after only the question changes", () => {
+  it("withholds a generated image after only the question changes", async () => {
     const source = unitUsageDataSchema.parse(classroom);
     source[0].usage.scenes[0].check.question = "Which unrelated object is being requested?";
-    expect(attachReviewedUsageIllustrations(source)[0].usage.scenes[0].imagePath).toBeUndefined();
+    expect(
+      (await attachReviewedUsageIllustrations(source))[0].usage.scenes[0].imagePath
+    ).toBeUndefined();
   });
 });

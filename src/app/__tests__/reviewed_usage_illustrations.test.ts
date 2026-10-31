@@ -56,23 +56,23 @@ describe("reviewed usage illustration integration", () => {
     }
   });
 
-  it("withholds a stale picture when the scenario or assessed answer changes", () => {
+  it("withholds a stale picture when the scenario or assessed answer changes", async () => {
     for (const change of ["scenario", "answer"] as const) {
       const lessons = unitUsageDataSchema.parse(numbers);
       const scene = lessons[0].usage.scenes[0];
       scene.imagePath = "https://example.com/original-scene.webp";
       if (change === "scenario") scene.scenario = "A completely different task with travel bags.";
       else scene.check.expectedAnswer = "One";
-      const result = attachReviewedUsageIllustrations(lessons);
+      const result = await attachReviewedUsageIllustrations(lessons);
       expect(result[0].usage.scenes[0].imagePath).toBe("https://example.com/original-scene.webp");
       expect(lessons[0].usage.scenes[0].imagePath).toBe("https://example.com/original-scene.webp");
     }
   });
 
-  it("does not mutate the authored source media or approve unreleased lessons", () => {
+  it("does not mutate the authored source media or approve unreleased lessons", async () => {
     const lessons = unitUsageDataSchema.parse(numbers);
     const previous = structuredClone(lessons);
-    const result = attachReviewedUsageIllustrations(lessons);
+    const result = await attachReviewedUsageIllustrations(lessons);
     expect(lessons).toEqual(previous);
     expect(result.map((lesson) => lesson.lessonId)).toEqual(
       lessons.map((lesson) => lesson.lessonId)

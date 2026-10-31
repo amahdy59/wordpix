@@ -1,8 +1,5 @@
-import mediaManifest from "../generated/reviewedUsageIllustrations.json";
-import figmaManifest from "../generated/reviewedFigmaQuestionMedia.json";
-import objectManifest from "../generated/reviewedFigmaObjectScenes.json";
-import generatedManifest from "../generated/reviewedGeneratedSceneMedia.json";
 import type { UnitUsageData } from "./usageTypes";
+import { createContentRequestCache } from "./contentRequestCache";
 import corrections from "../content/sceneMediaCorrections.json";
 import { resolveTeachingVisual } from "../content/teachingVisuals";
 
@@ -40,22 +37,38 @@ type ReviewedSceneMedia = {
   imageFallbacks?: Array<{ imagePath: string; imageAlt: string }>;
 };
 
-const reviewedMedia: Readonly<Record<string, ReviewedSceneMedia>> = {
-  ...mediaManifest,
-  ...figmaManifest.scenes,
-  ...objectManifest,
-  ...generatedManifest,
-};
+type ReviewedUnitMedia = Readonly<Record<string, ReviewedSceneMedia>>;
+const loaders = import.meta.glob<{ default: ReviewedUnitMedia }>(
+  "../generated/usageMediaUnits/*.json"
+);
+const requestUnit = createContentRequestCache<string, ReviewedUnitMedia>();
+
+/** A failed chunk must fail the content load, never silently remove imagery. */
+export function loadReviewedUnitMedia(unitId: string): Promise<ReviewedUnitMedia> {
+  return requestUnit(unitId, async () => {
+    const loader = loaders[`../generated/usageMediaUnits/${unitId}.json`];
+    if (!loader) throw Error(`Reviewed usage media unavailable for unit: ${unitId}`);
+    return (await loader()).default;
+  });
+}
 
 /** Fail closed if editorial changes make an illustration's visual evidence stale. */
-export function attachReviewedUsageIllustrations(lessons: UnitUsageData): UnitUsageData {
+export async function attachReviewedUsageIllustrations(
+  lessons: UnitUsageData
+): Promise<UnitUsageData> {
+  const units = [...new Set(lessons.map((lesson) => lesson.unitId))];
+  const reviewedMedia = new Map(
+    await Promise.all(
+      units.map(async (unitId) => [unitId, await loadReviewedUnitMedia(unitId)] as const)
+    )
+  );
   return lessons.map((lesson) => ({
     ...lesson,
     usage: {
       ...lesson.usage,
       scenes: lesson.usage.scenes.map((scene) => {
         const key = `${lesson.lessonId}-usage-scene-${scene.chunkNumber}`;
-        const media = reviewedMedia[key];
+        const media = reviewedMedia.get(lesson.unitId)?.[key];
         if (
           !media ||
           media.reviewedScenario !== scene.scenario ||

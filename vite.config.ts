@@ -224,6 +224,14 @@ export default defineConfig(async () => {
               throw Error("The all-course sentence-media table must not enter the browser bundle.");
             const sentenceMediaUnit = id.match(/\/generated\/sentenceMediaUnits\/([^/]+)\.json$/);
             if (sentenceMediaUnit) return `sentence-media-unit-${sentenceMediaUnit[1]}`;
+            if (
+              /\/generated\/reviewed(?:UsageIllustrations|FigmaQuestionMedia|FigmaObjectScenes|GeneratedSceneMedia)\.json$/.test(
+                id
+              )
+            )
+              throw Error("Combined usage-media manifests must not enter the browser bundle.");
+            const usageMediaUnit = id.match(/\/generated\/usageMediaUnits\/([^/]+)\.json$/);
+            if (usageMediaUnit) return `usage-media-unit-${usageMediaUnit[1]}`;
             if (id.includes("node_modules")) {
               if (id.includes("/web-vitals/")) return "vendor-vitals";
               if (

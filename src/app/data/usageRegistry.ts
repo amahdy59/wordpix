@@ -86,8 +86,11 @@ export async function loadUnitUsageForEditorial(unitId: string): Promise<UnitUsa
   try {
     const mod = await loader();
     const parsed = unitUsageDataSchema.parse(mod.default ?? mod).map(enrichReferenceLesson);
-    const phrases = await loadApprovedUnitPhrases(unitId);
-    return attachApprovedPhrases(attachReviewedUsageIllustrations(parsed), phrases);
+    const [illustrated, phrases] = await Promise.all([
+      attachReviewedUsageIllustrations(parsed),
+      loadApprovedUnitPhrases(unitId),
+    ]);
+    return attachApprovedPhrases(illustrated, phrases);
   } catch {
     return null;
   }

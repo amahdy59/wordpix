@@ -63,6 +63,12 @@ export function OfflineUnitDownload() {
       const unit = COURSE_UNITS[unitId];
       const tasks = [
         () => loadUnitVocabulary(unitId),
+        // Previously the combined scene manifests came with ExerciseStory.
+        // Explicitly warm the selected table before collecting pinned modules.
+        () =>
+          import("../data/reviewedUsageIllustrations").then(({ loadReviewedUnitMedia }) =>
+            loadReviewedUnitMedia(unitId)
+          ),
         () =>
           Promise.all([
             import("../lesson/LessonWorldEntry"),
