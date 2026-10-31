@@ -97,5 +97,29 @@ Local evidence is under `output/usage-loading-2026-10-31/`: `before.json`,
 `after.json`, `summary.json`, both bundle records, `source-hashes.json`,
 `final-build.log`, budget logs, and `browser-final.log` / `browser-final/`.
 
-No push or deployment is part of this task. Local main was fast-forwarded to
-the existing content-repair branch with user approval before the optimization.
+The optimization was initially verified locally. Local main was fast-forwarded
+to the content-repair branch with user approval before the change.
+
+## Subsequent release preparation
+
+The user subsequently requested publication and a clear audio/visual quality
+plan. Release preparation integrates the newer supplied-image release from
+remote main and advances this release to 0.1.107, preserving its 34 supplied
+contexts and exact reviewed image holds. The next work is recorded in
+`NEXT_STEPS_AUDIO_VISUAL_QUALITY_2026-10-31.md`.
+
+Fresh read-only audio planning and reconciliation found 96,358/96,358 playback
+transcripts available, with no missing recordings, unlinked new recordings,
+broken aliases, broken pronunciation references or removed originals. No audio
+objects, aliases or image mappings were written by the optimization release.
+
+The integrated test run exposed Windows CRLF conversion of the supplied-image
+approval manifest. Its committed bytes already match the approved SHA-256.
+A targeted `.gitattributes` rule now preserves LF on checkout; the original hash
+assertion and approval are unchanged, and all four supplied-media tests pass.
+
+Release checks run in a clean managed checkout, excluding unrelated local
+capture scripts, profiles and scratch files. The deployment doctor reported no
+failures or warnings. Secret hygiene passes in that clean checkout. A dependency
+audit found one moderate advisory and no high-severity finding. Full pre-push,
+CI and exact deployed-revision checks remain mandatory before reporting live.
