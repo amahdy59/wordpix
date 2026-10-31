@@ -1,16 +1,33 @@
 {
-  "version": "0.1.105",
+  "version": "0.1.106",
   "notes": [
-    "Selected shopping examples now show jacket assistance and store tasks instead of unrelated objects.",
-    "Two coffee-liqueur examples now use an unlabeled product and stock-list illustration instead of unrelated scenes.",
-    "The jungle humidity example now uses natural wording, with matching recordings for the sentence, activities and passages."
+    "Lesson picture information loads for the selected unit, reducing the download needed to begin practice."
   ],
-  "notesAr": [
-    "تعرض أمثلة مختارة عن التسوق الآن المساعدة في اختيار سترة ومهام العاملين في المتجر بدلاً من صور غير مرتبطة.",
-    "يستخدم مثالان عن مشروب الليكيور بنكهة القهوة رسماً للمنتج وقائمة المخزون دون كلمات تكشف الإجابة، بدلاً من مشاهد غير مرتبطة.",
-    "أصبح مثال الرطوبة في درس الغابة أكثر طبيعية، مع تسجيلات مطابقة للجملة والأنشطة والنصوص."
-  ],
+  "notesAr": ["تُحمّل معلومات صور الدروس للوحدة المختارة، مما يقلل التنزيل المطلوب لبدء التدريب."],
   "releases": [
+    {
+      "id": "0.1.106",
+      "version": "0.1.106",
+      "date": "2026-10-31",
+      "title": {
+        "en": "Lighter lesson loading",
+        "ar": "تحميل أخف للدروس"
+      },
+      "changes": [
+        {
+          "id": "unit-usage-picture-loading",
+          "category": "improved",
+          "en": "Practice loads reviewed scene information for the selected unit instead of all units. Existing pictures, descriptions and lesson choices stay the same.",
+          "ar": "يُحمّل التدريب معلومات المشاهد المراجَعة للوحدة المختارة بدلاً من جميع الوحدات. وتظل الصور والأوصاف وخيارات الدروس كما هي."
+        },
+        {
+          "id": "offline-unit-scene-information",
+          "category": "improved",
+          "en": "Preparing a unit for offline reading also saves its scene information for later use.",
+          "ar": "يحفظ إعداد الوحدة للقراءة دون اتصال معلومات مشاهدها أيضاً لاستخدامها لاحقاً."
+        }
+      ]
+    },
     {
       "id": "0.1.105",
       "version": "0.1.105",

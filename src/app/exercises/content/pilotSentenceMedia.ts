@@ -1,4 +1,4 @@
-import figmaReview from "../../generated/reviewedFigmaQuestionMedia.json";
+import figmaReview from "../../generated/pilotMediaReviews.json";
 
 export interface PilotSentenceMedia {
   imagePath: string;

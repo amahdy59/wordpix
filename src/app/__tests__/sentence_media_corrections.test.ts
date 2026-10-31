@@ -43,8 +43,8 @@ describe("visually checked sentence corrections", () => {
     }
   });
 
-  it("replaces the unrelated retail scene without restoring the old picture or fallback", () => {
-    const lessons = attachReviewedUsageIllustrations(unitUsageDataSchema.parse(retail));
+  it("replaces the unrelated retail scene without restoring the old picture or fallback", async () => {
+    const lessons = await attachReviewedUsageIllustrations(unitUsageDataSchema.parse(retail));
     const scene = lessons
       .find((item) => item.lessonId === "shopping-mall-4")!
       .usage.scenes.find((item) => item.chunkNumber === 4)!;
@@ -56,7 +56,7 @@ describe("visually checked sentence corrections", () => {
 
   it("uses the focused jacket illustration even when its containing scene has been corrected", async () => {
     await loadUnitVocabulary("shopping-mall");
-    const usage = attachReviewedUsageIllustrations(unitUsageDataSchema.parse(retail)).find(
+    const usage = (await attachReviewedUsageIllustrations(unitUsageDataSchema.parse(retail))).find(
       (lesson) => lesson.lessonId === "shopping-mall-4"
     )!;
     for (const wordId of ["sales-clerk", "shopper"]) {
