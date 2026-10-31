@@ -4,6 +4,7 @@ import { resolveSentenceMedia, hasSentenceMediaCandidate } from "../content/sent
 import { applySentenceMediaCorrection } from "../content/sentenceMediaCorrections";
 import { attachReviewedUsageIllustrations } from "../data/reviewedUsageIllustrations";
 import corrections from "../content/sentenceMediaCorrections.json";
+import supplied from "../generated/suppliedMedia.json";
 import retail from "../data/usage/shopping-mall.usage.json";
 import { unitUsageDataSchema } from "../data/usageTypes";
 
@@ -24,7 +25,10 @@ describe("visually checked sentence corrections", () => {
       const media = resolveSentenceMedia(wordId, row.sentence);
       expect(media?.imagePath).toBeTruthy();
       expect(media?.imagePath).not.toContain("library-images");
-      expect(media?.imageAlt).toBe(row.imageAlt);
+      const latest = supplied.find(
+        (item) => item.kind === "sentence" && item.wordId === wordId && item.text === row.sentence
+      );
+      expect(media?.imageAlt).toBe(latest?.imageAlt ?? row.imageAlt);
       expect(media?.imageFallbacks).toBeUndefined();
     }
   });
@@ -64,7 +68,10 @@ describe("visually checked sentence corrections", () => {
         (item) => item.wordId === wordId && item.sentence.startsWith("The sales clerk assists")
       )!;
       const media = resolveSentenceMedia(wordId, row.sentence, usage);
-      expect(media?.imageAlt).toBe(row.imageAlt);
+      const latest = supplied.find(
+        (item) => item.kind === "sentence" && item.wordId === wordId && item.text === row.sentence
+      );
+      expect(media?.imageAlt).toBe(latest?.imageAlt ?? row.imageAlt);
       expect(media?.imagePath).not.toContain("536bc8a4");
       expect(media?.imageFallbacks).toBeUndefined();
     }

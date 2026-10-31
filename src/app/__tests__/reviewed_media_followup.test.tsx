@@ -5,6 +5,7 @@ import { resolveSentenceMedia } from "../content/sentenceMedia";
 import { applyReviewedMediaFollowup } from "../content/reviewedMediaFollowup";
 import { loadUnitVocabulary } from "../data/vocabulary";
 import approved from "../generated/reviewedMediaFollowup.json";
+import supplied from "../generated/suppliedMedia.json";
 
 vi.mock("../shared/ImageReportButton", () => ({ ImageReportButton: () => null }));
 
@@ -16,8 +17,11 @@ describe("approved image integration", () => {
     expect(approved).toHaveLength(8);
     for (const review of approved) {
       const actual = resolveSentenceMedia(review.wordId, review.sentence);
-      expect(actual?.imagePath).toBe(review.imagePath);
-      expect(actual?.imageAlt).toBe(review.imageAlt);
+      const latest = supplied.find(
+        (row) => row.wordId === review.wordId && row.text === review.sentence
+      );
+      expect(actual?.imagePath).toBe(latest?.imagePath ?? review.imagePath);
+      expect(actual?.imageAlt).toBe(latest?.imageAlt ?? review.imageAlt);
       const original = { imagePath: review.originalUrl, imageAlt: "Original description" };
       expect(
         applyReviewedMediaFollowup(review.wordId, review.sentence + " Changed.", original)

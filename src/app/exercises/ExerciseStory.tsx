@@ -1,4 +1,6 @@
 import React, { memo, useRef, useEffect, useMemo, useState, useCallback } from "react";
+import { getSuppliedSceneMedia } from "../content/suppliedMedia";
+import { isReviewedImageHeld } from "../content/reviewedImageHolds";
 import type { Action } from "../types";
 import type { VocabularyItem } from "../data/lessons";
 import { resolveGroup, getNextGroupChronological } from "../data/courseCatalog";
@@ -925,6 +927,7 @@ export const ExerciseStory = memo(function ExerciseStory({
                             accessible context and a useful fallback when no image exists. */}
                         {currentChunk.imageBrief &&
                           (() => {
+                            const supplied = getSuppliedSceneMedia(lessonId, currentChunk);
                             const normalize = (s: string) =>
                               s
                                 .toLowerCase()
@@ -947,19 +950,33 @@ export const ExerciseStory = memo(function ExerciseStory({
                                     );
                                   })
                                 : undefined;
-                            const effectiveImagePath = currentChunk.imageReviewHold
+                            const candidateImagePath =
+                              supplied?.imagePath ??
+                              (currentChunk.imageReviewHold
+                                ? undefined
+                                : (currentChunk.imagePath ?? matchingWord?.img));
+                            const effectiveImagePath = isReviewedImageHeld(
+                              "usage-scene",
+                              `scene-${currentChunk.chunkNumber}`,
+                              currentChunk.scenario,
+                              candidateImagePath,
+                              lessonId
+                            )
                               ? undefined
-                              : (currentChunk.imagePath ?? matchingWord?.img);
+                              : candidateImagePath;
                             const isWordRef =
+                              supplied?.imagePurpose === "word-reference" ||
                               currentChunk.imagePurpose === "word-reference" ||
                               Boolean(!currentChunk.imagePath && matchingWord);
-                            const effectiveAlt = isWordRef
-                              ? !currentChunk.imagePath && matchingWord?.description
-                                ? matchingWord.description
-                                : (currentChunk.imageAlt ??
-                                  matchingWord?.description ??
-                                  currentChunk.imageBrief)
-                              : (currentChunk.imageAlt ?? currentChunk.imageBrief);
+                            const effectiveAlt =
+                              supplied?.imageAlt ??
+                              (isWordRef
+                                ? !currentChunk.imagePath && matchingWord?.description
+                                  ? matchingWord.description
+                                  : (currentChunk.imageAlt ??
+                                    matchingWord?.description ??
+                                    currentChunk.imageBrief)
+                                : (currentChunk.imageAlt ?? currentChunk.imageBrief));
 
                             return (
                               <figure className="relative overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
@@ -974,7 +991,10 @@ export const ExerciseStory = memo(function ExerciseStory({
                                     media={{
                                       imagePath: effectiveImagePath,
                                       imageAlt: effectiveAlt,
-                                      imageFallbacks: currentChunk.imageFallbacks,
+                                      imageFallbacks: supplied
+                                        ? undefined
+                                        : currentChunk.imageFallbacks,
+                                      responsiveSources: supplied?.responsiveSources,
                                     }}
                                     loading="eager"
                                     className="w-full max-h-[28dvh] object-contain"

@@ -7,6 +7,14 @@ import fs from "node:fs";
 const corrections: Array<{ wordId: string; sentence: string; imageAlt: string }> = JSON.parse(
   fs.readFileSync("src/app/content/sentenceMediaCorrections.json", "utf8")
 );
+const supplied: Array<{
+  kind: string;
+  lessonId: string;
+  wordId: string;
+  text: string;
+  imageAlt: string;
+  imagePath: string;
+}> = JSON.parse(fs.readFileSync("src/app/generated/suppliedMedia.json", "utf8"));
 const assignments = corrections
   .filter((row) => ["triangle", "oval", "sales-clerk", "shopper", "kahl-a"].includes(row.wordId))
   .map((row) => {
@@ -25,7 +33,21 @@ const assignments = corrections
     const lessonId = Object.values(COURSE_UNITS[unitId].groups).find((group) =>
       group.wordIds.includes(row.wordId)
     )!.id;
-    return { ...row, stage, unitId, lessonId };
+    const latest = supplied.find(
+      (item) =>
+        item.kind === "sentence" &&
+        item.wordId === row.wordId &&
+        item.lessonId === lessonId &&
+        item.text === row.sentence
+    );
+    return {
+      ...row,
+      stage,
+      unitId,
+      lessonId,
+      imageAlt: latest?.imageAlt ?? row.imageAlt,
+      imagePath: latest?.imagePath,
+    };
   });
 // Match the fourth-stage phrase builder shown in the learner's screenshots.
 test.use({ serviceWorkers: "block", deviceScaleFactor: 1 });
@@ -41,6 +63,15 @@ for (const language of ["en", "ar"] as const) {
       page.on("pageerror", (error) => errors.push(error.message));
       await disableNarrationForContentTest(page);
       await page.emulateMedia({ reducedMotion: "reduce" });
+      // Keep display assertions independent of CDN timing; publication checks verify remote bytes.
+      await page.route("https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/**", (route) =>
+        route.request().resourceType() === "image"
+          ? route.fulfill({
+              contentType: "image/svg+xml",
+              body: '<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180"><rect width="320" height="180" fill="gray"/></svg>',
+            })
+          : route.continue()
+      );
       await page.addInitScript(
         ({ assignment, lesson, language }) => {
           localStorage.setItem("wordpix:interface-lang", language);
@@ -79,10 +110,12 @@ for (const language of ["en", "ar"] as const) {
       await waitForStyles(page);
       const image = page.getByRole("img", { name: assignment.imageAlt, exact: true });
       await expect(image).toBeVisible();
-      await expect(image).toHaveAttribute(
-        "src",
-        /^(?:data:image\/svg\+xml|.*\/assets\/[^/]+\.svg$)/
-      );
+      if (assignment.imagePath) await expect(image).toHaveAttribute("src", assignment.imagePath);
+      else
+        await expect(image).toHaveAttribute(
+          "src",
+          /^(?:data:image\/svg\+xml|.*\/assets\/[^/]+\.svg$)/
+        );
       await expect
         .poll(() => image.evaluate((element) => (element as HTMLImageElement).naturalWidth))
         .toBeGreaterThan(0);

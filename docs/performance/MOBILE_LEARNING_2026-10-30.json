@@ -1,0 +1,227 @@
+{
+  "generatedAt": "2026-10-30T21:22:10.966Z",
+  "configuration": {
+    "cpuSlowdown": 4,
+    "latencyMs": 150,
+    "downloadMbps": 1.6,
+    "viewport": "390x844",
+    "dpr": 1,
+    "serviceWorkers": "blocked",
+    "samplesPerLocaleAndCache": 1
+  },
+  "limitations": "Lab sample on this host, not field INP or physical-device certification. Real CDN GETs; local preview; no production writes. Click time includes Playwright actionability checks.",
+  "runs": [
+    {
+      "language": "en",
+      "cache": "cold",
+      "readyMs": 11696.399999976158,
+      "responseMs": 558.1402999999991,
+      "transferredBytes": 1247346,
+      "currentImage": {
+        "currentSrc": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/question-images/v2/supplied-20261030/892a7162c4ec9fe85a64c9db34301a366af6705c54bb0e109f00a5be8c9bfe13.webp",
+        "naturalWidth": 390
+      },
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 1240
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 1240
+        }
+      ],
+      "longTasks": [
+        {
+          "startTime": 2908.300000011921,
+          "duration": 572
+        },
+        {
+          "startTime": 3784.599999964237,
+          "duration": 99
+        },
+        {
+          "startTime": 3883.699999988079,
+          "duration": 61
+        },
+        {
+          "startTime": 3955.5,
+          "duration": 76
+        },
+        {
+          "startTime": 4347.599999964237,
+          "duration": 68
+        },
+        {
+          "startTime": 7272.199999988079,
+          "duration": 89
+        },
+        {
+          "startTime": 7366.599999964237,
+          "duration": 55
+        },
+        {
+          "startTime": 7943.699999988079,
+          "duration": 97
+        },
+        {
+          "startTime": 8042.899999976158,
+          "duration": 141
+        },
+        {
+          "startTime": 11821.099999964237,
+          "duration": 430
+        }
+      ],
+      "lcp": [3696, 3952, 11692]
+    },
+    {
+      "language": "en",
+      "cache": "warm",
+      "readyMs": 3256.399999976158,
+      "responseMs": 146.35280000000057,
+      "transferredBytes": 10509,
+      "currentImage": {
+        "currentSrc": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/question-images/v2/supplied-20261030/892a7162c4ec9fe85a64c9db34301a366af6705c54bb0e109f00a5be8c9bfe13.webp",
+        "naturalWidth": 390
+      },
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 620
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 620
+        }
+      ],
+      "longTasks": [
+        {
+          "startTime": 636.5,
+          "duration": 252
+        },
+        {
+          "startTime": 899.1999999880791,
+          "duration": 173
+        },
+        {
+          "startTime": 1471.800000011921,
+          "duration": 52
+        },
+        {
+          "startTime": 2608.099999964237,
+          "duration": 108
+        },
+        {
+          "startTime": 3328.099999964237,
+          "duration": 84
+        }
+      ],
+      "lcp": [1088, 1252, 2872]
+    },
+    {
+      "language": "ar",
+      "cache": "cold",
+      "readyMs": 9744.299999952316,
+      "responseMs": 198.4899000000005,
+      "transferredBytes": 1418360,
+      "currentImage": {
+        "currentSrc": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/question-images/v2/supplied-20261030/892a7162c4ec9fe85a64c9db34301a366af6705c54bb0e109f00a5be8c9bfe13.webp",
+        "naturalWidth": 390
+      },
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 1232
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 1232
+        }
+      ],
+      "longTasks": [
+        {
+          "startTime": 2910.5,
+          "duration": 532
+        },
+        {
+          "startTime": 3447.899999976158,
+          "duration": 65
+        },
+        {
+          "startTime": 3808.5,
+          "duration": 72
+        },
+        {
+          "startTime": 3881.2999999523163,
+          "duration": 55
+        },
+        {
+          "startTime": 3944.099999964237,
+          "duration": 71
+        },
+        {
+          "startTime": 4647.299999952316,
+          "duration": 51
+        },
+        {
+          "startTime": 8424.099999964237,
+          "duration": 54
+        },
+        {
+          "startTime": 8986.5,
+          "duration": 63
+        },
+        {
+          "startTime": 9051.399999976158,
+          "duration": 141
+        },
+        {
+          "startTime": 9815.5,
+          "duration": 125
+        }
+      ],
+      "lcp": [3708, 3944, 9744]
+    },
+    {
+      "language": "ar",
+      "cache": "warm",
+      "readyMs": 3043.900000035763,
+      "responseMs": 160.70540000000256,
+      "transferredBytes": 10688,
+      "currentImage": {
+        "currentSrc": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/question-images/v2/supplied-20261030/892a7162c4ec9fe85a64c9db34301a366af6705c54bb0e109f00a5be8c9bfe13.webp",
+        "naturalWidth": 390
+      },
+      "paint": [
+        {
+          "name": "first-paint",
+          "startTime": 576
+        },
+        {
+          "name": "first-contentful-paint",
+          "startTime": 576
+        }
+      ],
+      "longTasks": [
+        {
+          "startTime": 589.8000000119209,
+          "duration": 177
+        },
+        {
+          "startTime": 781.8000000119209,
+          "duration": 132
+        },
+        {
+          "startTime": 2458.400000035763,
+          "duration": 79
+        },
+        {
+          "startTime": 3126.600000023842,
+          "duration": 89
+        }
+      ],
+      "lcp": [932, 1112, 2696]
+    }
+  ]
+}

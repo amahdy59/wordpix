@@ -1,13 +1,13 @@
 {
-  "version": "0.1.106",
+  "version": "0.1.107",
   "notes": [
     "Lesson picture information loads for the selected unit, reducing the download needed to begin practice."
   ],
   "notesAr": ["تُحمّل معلومات صور الدروس للوحدة المختارة، مما يقلل التنزيل المطلوب لبدء التدريب."],
   "releases": [
     {
-      "id": "0.1.106",
-      "version": "0.1.106",
+      "id": "0.1.107",
+      "version": "0.1.107",
       "date": "2026-10-31",
       "title": {
         "en": "Lighter lesson loading",
@@ -25,6 +25,35 @@
           "category": "improved",
           "en": "Preparing a unit for offline reading also saves its scene information for later use.",
           "ar": "يحفظ إعداد الوحدة للقراءة دون اتصال معلومات مشاهدها أيضاً لاستخدامها لاحقاً."
+        }
+      ]
+    },
+    {
+      "id": "0.1.106",
+      "version": "0.1.106",
+      "date": "2026-10-30",
+      "title": {
+        "en": "Reviewed lesson pictures",
+        "ar": "صور دروس تمت مراجعتها"
+      },
+      "changes": [
+        {
+          "id": "reviewed-responsive-lesson-pictures",
+          "category": "improved",
+          "en": "34 reviewed lesson pictures now load in responsive sizes, with clearer visual references and descriptions.",
+          "ar": "تُحمّل الآن 34 صورة دروس تمت مراجعتها بأحجام متجاوبة، مع مراجع بصرية وأوصاف أوضح."
+        },
+        {
+          "id": "park-sit-down-example",
+          "category": "fixed",
+          "en": "The park lesson now uses “Please sit down.” with a matching recording.",
+          "ar": "يستخدم درس الحديقة الآن الجملة «Please sit down.» مع تسجيل مطابق."
+        },
+        {
+          "id": "exact-context-image-holds",
+          "category": "fixed",
+          "en": "142 reviewed picture and lesson pairings now omit unrelated or answer-revealing artwork while keeping the lesson text and recordings.",
+          "ar": "تحذف الآن 142 حالة اقتران تمت مراجعتها بين الصور والدروس رسوماً غير مرتبطة أو تكشف الإجابة، مع الحفاظ على نص الدرس والتسجيلات."
         }
       ]
     },
