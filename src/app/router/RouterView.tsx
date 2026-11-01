@@ -203,7 +203,7 @@ export const SkipLink = () => {
     <nav aria-label={t("app.skipToContent")}>
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:start-4 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-sans font-semibold text-sm z-50 motion-safe:transition-none"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:start-4 focus:inline-flex focus:min-h-[44px] focus:min-w-[44px] focus:items-center focus:outline focus:outline-[3px] focus:outline-offset-2 focus:outline-primary bg-primary text-primary-foreground px-4 py-2 rounded-lg font-sans font-semibold text-sm z-50 motion-safe:transition-none"
       >
         {t("app.skipToContent")}
       </a>

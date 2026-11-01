@@ -1,3 +1,4 @@
+import { CourseActionFooter } from "../../../shared/CourseActionFooter";
 import { useState } from "react";
 import { MessageSquareText, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
@@ -96,7 +97,7 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
       </div>
 
       {/* Stage Navigation Footer */}
-      <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
+      <CourseActionFooter>
         <button
           type="button"
           onClick={onPrev}
@@ -116,7 +117,7 @@ export function DiscussionStage({ unit, onNext, onPrev }: Props) {
           <span>{t("conversation.continueChallenge")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
-      </div>
+      </CourseActionFooter>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { CourseActionFooter } from "../../../shared/CourseActionFooter";
 import { useState } from "react";
 import { MessageSquare, Vote, ArrowRight } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
@@ -143,7 +144,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
       </section>
 
       {/* Action Footer */}
-      <div className="mt-2 flex justify-end">
+      <CourseActionFooter>
         <button
           type="button"
           onClick={onNext}
@@ -153,7 +154,7 @@ export function WarmupStage({ unit, savedVote, onVote, onNext }: Props) {
           <span>{t("conversation.continueReading")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
-      </div>
+      </CourseActionFooter>
       <p
         id="warmup-vote-guidance"
         className="text-end text-base font-semibold text-muted-foreground"

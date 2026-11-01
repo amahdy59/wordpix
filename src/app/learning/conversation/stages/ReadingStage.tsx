@@ -1,3 +1,4 @@
+import { CourseActionFooter } from "../../../shared/CourseActionFooter";
 import { useState, useMemo } from "react";
 import { Pause, Volume2, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
@@ -197,7 +198,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
         isOpen={Boolean(selectedVocabItem)}
         onClose={() => setActiveTerm(null)}
       />
-      <div className="flex flex-wrap items-center justify-between gap-3">
+      <CourseActionFooter>
         <button
           type="button"
           onClick={() => {
@@ -220,7 +221,7 @@ export function ReadingStage({ unit, onNext, onPrev }: Props) {
           {t("conversation.continueLanguageBank")}
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
-      </div>
+      </CourseActionFooter>
     </div>
   );
 }

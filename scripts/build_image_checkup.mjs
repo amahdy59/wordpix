@@ -1,12 +1,14 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
+import { loadPublishedImageReviews } from "./lib/published_image_reviews.mjs";
 import { buildQualityRows } from "./lib/image_quality_dashboard.mjs";
 import { csvText } from "./lib/media_catalog.mjs";
 import {
   applyImageCheckupReviews,
   imageHealthFlags,
   imageReviewAction,
+  partitionImageCheckupReviews,
 } from "./lib/image_health.mjs";
 
 if (process.argv.length > 2)
@@ -27,7 +29,13 @@ const rows = buildQualityRows({
   decisions,
   purposes,
 }).map((row) => ({ ...row, action: imageReviewAction(row) }));
-applyImageCheckupReviews(rows, await read("docs/media/image-checkup-reviews.json"));
+const published = await loadPublishedImageReviews();
+const checkups = partitionImageCheckupReviews(
+  rows,
+  await read("docs/media/image-checkup-reviews.json"),
+  published
+);
+applyImageCheckupReviews(rows, checkups.current, published);
 const activeKeys = new Set(rows.map((row) => row.key).filter(Boolean));
 const localAssets = new Map();
 for (const asset of catalog.assets.filter((asset) => asset.kind === "image")) {
@@ -76,6 +84,8 @@ const summary = {
   inventoryCapturedAt: catalog.summary.inventoryCapturedAt,
   inventoryMode: catalog.summary.inventoryMode,
   runtimeUses: runtime.demands.length,
+  historicalCheckupsOutsideCurrentScope: checkups.historical,
+  staleCurrentCheckups: checkups.stale,
   additionalUses: additional.uses.length,
   actions: countBy(rows, "action"),
   sourceAssociationsAlreadyRejected: reviews.bindings.filter((row) => row.status === "mismatch")

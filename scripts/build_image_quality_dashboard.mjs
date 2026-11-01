@@ -1,5 +1,10 @@
 import fs from "node:fs/promises";
-import { applyImageCheckupReviews, imageReviewAction } from "./lib/image_health.mjs";
+import { loadPublishedImageReviews } from "./lib/published_image_reviews.mjs";
+import {
+  applyImageCheckupReviews,
+  imageReviewAction,
+  partitionImageCheckupReviews,
+} from "./lib/image_health.mjs";
 import {
   buildQualityRows,
   parseLearnerImageReports,
@@ -26,7 +31,13 @@ const rows = buildQualityRows({
   decisions,
   purposes,
 }).map((row) => ({ ...row, action: imageReviewAction(row) }));
-applyImageCheckupReviews(rows, await read("docs/media/image-checkup-reviews.json"));
+const published = await loadPublishedImageReviews();
+const checkups = partitionImageCheckupReviews(
+  rows,
+  await read("docs/media/image-checkup-reviews.json"),
+  published
+);
+applyImageCheckupReviews(rows, checkups.current, published);
 const reports = args.includes("--reports")
   ? parseLearnerImageReports(await read(args[args.indexOf("--reports") + 1]))
   : [];
@@ -67,6 +78,18 @@ const html = template.replace(
   `const data = ${safeInlineJson({ generatedAt: new Date().toISOString(), inventoryAt: catalog.summary.inventoryCapturedAt, rows, reports })};`
 );
 await fs.mkdir("output/image-quality", { recursive: true });
+await fs.writeFile(
+  "output/image-quality/historical-checkups.json",
+  JSON.stringify(
+    {
+      reason: "Not in the current audited content scope; no current approval inferred",
+      proposals: checkups.historical,
+      staleCurrentReviews: checkups.stale,
+    },
+    null,
+    2
+  ) + "\n"
+);
 await fs.writeFile("output/image-quality/index.html", html);
 await fs.writeFile(
   "output/image-quality/summary.json",
@@ -78,6 +101,8 @@ await fs.writeFile(
       confirmedMismatches: rows.filter((row) => row.semantic === "confirmed mismatch").length,
       purposeUnreviewed: rows.filter((row) => row.purpose === "needs review").length,
       importedReports: reports.length,
+      historicalCheckupsOutsideCurrentScope: checkups.historical.length,
+      staleCurrentCheckups: checkups.stale.length,
       r2Writes: 0,
     },
     null,
