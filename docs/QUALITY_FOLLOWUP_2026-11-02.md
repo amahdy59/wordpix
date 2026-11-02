@@ -241,3 +241,20 @@ screen-reader, listening, editorial and learner-transfer evidence remains
 pending. Read-only inspection also confirmed that GitHub currently has only the
 github-pages environment: the dedicated staging environment and its six auth
 test secrets are still absent.
+
+The next full run passed 566 / 567 browser cases, including all 189 mobile
+WebKit cases. A Chromium sentence-builder check lost keyboard focus. A focused
+trace showed real transient controls: before authored usage arrived, the
+network-switch answer offered `a`, `network`, `switch`; the authored lesson then
+replaced them with `network`, `switch`, `routes`, rebuilding and reshuffling the
+tiles. Repeating the original case alone passed, so that result alone would not
+establish a repair.
+
+The sentence builder now shows the existing localized loading status until the
+usage lookup finishes. Pending controls and media are withheld; Skip to reading
+remains available. A completed lookup with no approved usage still exposes the
+existing fallback. The content loader, approval rules, recordings and image
+bindings are unchanged. A component regression and a browser check that holds
+the real usage-chunk response both failed against the previous implementation.
+The browser check then releases that response and retains its image-hold,
+keyboard-focus and tile-activation assertions in both languages.

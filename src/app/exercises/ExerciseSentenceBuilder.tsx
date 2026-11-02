@@ -202,150 +202,169 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
       <ExerciseFamilyTemplate
         family="text-construction"
         instruction={t("exercise.buildSentence")}
-        helper={t("exercise.wordsRemaining", { count: remaining })}
+        helper={
+          usageState.status === "ready"
+            ? t("exercise.wordsRemaining", { count: remaining })
+            : undefined
+        }
         activityLabel={t("exercise.sentenceBuilderActivityAria")}
         media={
-          <SentenceQuestionSupport
-            key={currentTargetWord.id}
-            word={currentTargetWord}
-            sentence={sentence}
-            prompt={completionPrompt}
-            media={sentenceMedia}
-            answered={feedback !== null}
-            showClue={false}
-          />
-        }
-        activity={
-          <div className="flex min-w-0 flex-1 flex-col gap-2.5 sm:gap-4">
-            <div className="flex w-full flex-col gap-1.5 sm:gap-2">
-              <div className="flex items-center justify-between gap-2 sm:gap-3">
-                <span className="flex items-center gap-1.5 font-sans text-xs font-bold text-primary">
-                  {t("exercise.sentenceAssemblyCanvas")}
-                  {feedback === "correct" && (
-                    <CheckCircle2 className="size-4 text-wp-green" aria-hidden />
-                  )}
-                  {feedback === "incorrect" && (
-                    <XCircle className="size-4 text-destructive" aria-hidden />
-                  )}
-                </span>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  iconLeft={<Undo2 className="size-4" aria-hidden />}
-                  onClick={() => handleRemoveTile(placed.length - 1)}
-                  disabled={placed.length === 0 || feedback !== null}
-                  className="min-h-[44px] py-1 px-2.5 text-xs sm:text-sm"
-                >
-                  {t("exercise.undo")}
-                </Button>
-              </div>
-              <div
-                data-question-prompt
-                className={`flex min-h-10 sm:min-h-11 flex-wrap items-center gap-x-1.5 sm:gap-x-2 gap-y-1.5 sm:gap-y-3 rounded-xl border px-2.5 py-1.5 sm:p-3 font-sans text-base font-bold leading-relaxed transition-colors motion-reduce:transition-none sm:text-lg ${
-                  feedback === "correct"
-                    ? "border-wp-green bg-wp-green-light/30"
-                    : feedback === "incorrect"
-                      ? "border-destructive bg-destructive/10"
-                      : "border-primary/40 bg-secondary/40"
-                }`}
-                aria-label={t("exercise.sentenceWithMissingWordsAria")}
-                dir="ltr"
-                lang="en"
-              >
-                {completion.tokens.map((token, tokenIndex) => {
-                  const blankIndex = tokenIndex - completion.blankStart;
-                  const isBlank = blankIndex >= 0 && blankIndex < answer.length;
-                  if (!isBlank) {
-                    return <span key={`${token}-${tokenIndex}`}>{token}</span>;
-                  }
-
-                  const placedWord = placed[blankIndex];
-                  const trailingPunctuation = token.match(/[.,!?;:]+$/u)?.[0] ?? "";
-                  return (
-                    <span key={`blank-${tokenIndex}`} className="inline-flex items-center gap-0.5">
-                      {placedWord ? (
-                        <motion.button
-                          type="button"
-                          whileTap={!reduceMotion && feedback === null ? { scale: 0.95 } : {}}
-                          transition={{ duration: 0.1 }}
-                          disabled={feedback !== null}
-                          aria-label={t("exercise.removePlacedWord", {
-                            word: placedWord,
-                            position: blankIndex + 1,
-                          })}
-                          onClick={() => handleRemoveTile(blankIndex)}
-                          className="min-h-[44px] rounded-lg sm:rounded-xl bg-primary px-3 py-1 sm:px-3.5 sm:py-2 font-sans text-xs sm:text-sm font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-70 sm:text-base"
-                        >
-                          {placedWord}
-                        </motion.button>
-                      ) : (
-                        <SentenceBlank
-                          className="min-h-8 min-w-14 sm:min-h-11 sm:min-w-20"
-                          label={t("exercise.sentenceBlank", {
-                            position: blankIndex + 1,
-                            total: answer.length,
-                          })}
-                        />
-                      )}
-                      {trailingPunctuation && <span aria-hidden>{trailingPunctuation}</span>}
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
-            <div
-              role="group"
-              aria-label={t("exercise.availableWordsAria")}
-              className="flex w-full flex-wrap items-stretch justify-center gap-1.5 sm:gap-2.5"
-              dir="ltr"
-              lang="en"
-            >
-              {shuffled.map((item, index) => {
-                const usedCount = placed.filter((placedItem) => placedItem === item).length;
-                const availableCount = shuffled
-                  .slice(0, index + 1)
-                  .filter((tile) => tile === item).length;
-                const used = usedCount >= availableCount;
-                return (
-                  <motion.button
-                    key={`${item}-${index}`}
-                    type="button"
-                    whileTap={!reduceMotion && !used && feedback === null ? { scale: 0.95 } : {}}
-                    transition={{ duration: 0.1 }}
-                    disabled={used || feedback !== null}
-                    aria-label={t("exercise.placeWord", {
-                      word: item,
-                      position: placed.length + 1,
-                    })}
-                    onClick={() => handleTileClick(item)}
-                    className="min-h-11 min-w-[5rem] sm:min-w-[5.5rem] flex-1 sm:flex-initial rounded-xl border-2 border-border bg-wp-card px-3 py-2 sm:px-4 sm:py-2.5 font-sans text-sm font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-30 sm:text-base break-words text-center"
-                  >
-                    {item}
-                  </motion.button>
-                );
-              })}
-            </div>
-            <SentenceMeaningSupport
-              className="mt-auto pt-1 sm:pt-2"
+          usageState.status === "ready" && (
+            <SentenceQuestionSupport
+              key={currentTargetWord.id}
               word={currentTargetWord}
               sentence={sentence}
               prompt={completionPrompt}
+              media={sentenceMedia}
               answered={feedback !== null}
-              hasImage={Boolean(sentenceMedia || currentTargetWord.img)}
+              showClue={false}
             />
-            <span aria-live="polite" aria-atomic="true" className="sr-only">
-              {feedback === "correct"
-                ? t("exercise.correctSentence", { sentence })
-                : feedback === "incorrect"
-                  ? t("exercise.incorrectSentence", { sentence })
-                  : placed.length === 0
-                    ? t("exercise.noWordsPlaced")
-                    : t("exercise.sentenceProgress", {
-                        sentence: placed.join(" "),
-                        count: remaining,
+          )
+        }
+        activity={
+          usageState.status === "loading" ? (
+            <div
+              role="status"
+              aria-busy="true"
+              className="rounded-xl border border-border bg-card p-4 text-foreground"
+            >
+              {t("app.loading")}
+            </div>
+          ) : (
+            <div className="flex min-w-0 flex-1 flex-col gap-2.5 sm:gap-4">
+              <div className="flex w-full flex-col gap-1.5 sm:gap-2">
+                <div className="flex items-center justify-between gap-2 sm:gap-3">
+                  <span className="flex items-center gap-1.5 font-sans text-xs font-bold text-primary">
+                    {t("exercise.sentenceAssemblyCanvas")}
+                    {feedback === "correct" && (
+                      <CheckCircle2 className="size-4 text-wp-green" aria-hidden />
+                    )}
+                    {feedback === "incorrect" && (
+                      <XCircle className="size-4 text-destructive" aria-hidden />
+                    )}
+                  </span>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    iconLeft={<Undo2 className="size-4" aria-hidden />}
+                    onClick={() => handleRemoveTile(placed.length - 1)}
+                    disabled={placed.length === 0 || feedback !== null}
+                    className="min-h-[44px] py-1 px-2.5 text-xs sm:text-sm"
+                  >
+                    {t("exercise.undo")}
+                  </Button>
+                </div>
+                <div
+                  data-question-prompt
+                  className={`flex min-h-10 sm:min-h-11 flex-wrap items-center gap-x-1.5 sm:gap-x-2 gap-y-1.5 sm:gap-y-3 rounded-xl border px-2.5 py-1.5 sm:p-3 font-sans text-base font-bold leading-relaxed transition-colors motion-reduce:transition-none sm:text-lg ${
+                    feedback === "correct"
+                      ? "border-wp-green bg-wp-green-light/30"
+                      : feedback === "incorrect"
+                        ? "border-destructive bg-destructive/10"
+                        : "border-primary/40 bg-secondary/40"
+                  }`}
+                  aria-label={t("exercise.sentenceWithMissingWordsAria")}
+                  dir="ltr"
+                  lang="en"
+                >
+                  {completion.tokens.map((token, tokenIndex) => {
+                    const blankIndex = tokenIndex - completion.blankStart;
+                    const isBlank = blankIndex >= 0 && blankIndex < answer.length;
+                    if (!isBlank) {
+                      return <span key={`${token}-${tokenIndex}`}>{token}</span>;
+                    }
+
+                    const placedWord = placed[blankIndex];
+                    const trailingPunctuation = token.match(/[.,!?;:]+$/u)?.[0] ?? "";
+                    return (
+                      <span
+                        key={`blank-${tokenIndex}`}
+                        className="inline-flex items-center gap-0.5"
+                      >
+                        {placedWord ? (
+                          <motion.button
+                            type="button"
+                            whileTap={!reduceMotion && feedback === null ? { scale: 0.95 } : {}}
+                            transition={{ duration: 0.1 }}
+                            disabled={feedback !== null}
+                            aria-label={t("exercise.removePlacedWord", {
+                              word: placedWord,
+                              position: blankIndex + 1,
+                            })}
+                            onClick={() => handleRemoveTile(blankIndex)}
+                            className="min-h-[44px] rounded-lg sm:rounded-xl bg-primary px-3 py-1 sm:px-3.5 sm:py-2 font-sans text-xs sm:text-sm font-black text-primary-foreground shadow-wp-xs transition-colors hover:bg-primary/90 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-70 sm:text-base"
+                          >
+                            {placedWord}
+                          </motion.button>
+                        ) : (
+                          <SentenceBlank
+                            className="min-h-8 min-w-14 sm:min-h-11 sm:min-w-20"
+                            label={t("exercise.sentenceBlank", {
+                              position: blankIndex + 1,
+                              total: answer.length,
+                            })}
+                          />
+                        )}
+                        {trailingPunctuation && <span aria-hidden>{trailingPunctuation}</span>}
+                      </span>
+                    );
+                  })}
+                </div>
+              </div>
+              <div
+                role="group"
+                aria-label={t("exercise.availableWordsAria")}
+                className="flex w-full flex-wrap items-stretch justify-center gap-1.5 sm:gap-2.5"
+                dir="ltr"
+                lang="en"
+              >
+                {shuffled.map((item, index) => {
+                  const usedCount = placed.filter((placedItem) => placedItem === item).length;
+                  const availableCount = shuffled
+                    .slice(0, index + 1)
+                    .filter((tile) => tile === item).length;
+                  const used = usedCount >= availableCount;
+                  return (
+                    <motion.button
+                      key={`${item}-${index}`}
+                      type="button"
+                      whileTap={!reduceMotion && !used && feedback === null ? { scale: 0.95 } : {}}
+                      transition={{ duration: 0.1 }}
+                      disabled={used || feedback !== null}
+                      aria-label={t("exercise.placeWord", {
+                        word: item,
+                        position: placed.length + 1,
                       })}
-            </span>
-          </div>
+                      onClick={() => handleTileClick(item)}
+                      className="min-h-11 min-w-[5rem] sm:min-w-[5.5rem] flex-1 sm:flex-initial rounded-xl border-2 border-border bg-wp-card px-3 py-2 sm:px-4 sm:py-2.5 font-sans text-sm font-bold text-foreground shadow-wp-xs transition-colors hover:border-primary hover:bg-secondary/50 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transition-none disabled:cursor-not-allowed disabled:opacity-30 sm:text-base break-words text-center"
+                    >
+                      {item}
+                    </motion.button>
+                  );
+                })}
+              </div>
+              <SentenceMeaningSupport
+                className="mt-auto pt-1 sm:pt-2"
+                word={currentTargetWord}
+                sentence={sentence}
+                prompt={completionPrompt}
+                answered={feedback !== null}
+                hasImage={Boolean(sentenceMedia || currentTargetWord.img)}
+              />
+              <span aria-live="polite" aria-atomic="true" className="sr-only">
+                {feedback === "correct"
+                  ? t("exercise.correctSentence", { sentence })
+                  : feedback === "incorrect"
+                    ? t("exercise.incorrectSentence", { sentence })
+                    : placed.length === 0
+                      ? t("exercise.noWordsPlaced")
+                      : t("exercise.sentenceProgress", {
+                          sentence: placed.join(" "),
+                          count: remaining,
+                        })}
+              </span>
+            </div>
+          )
         }
         feedback={
           feedback === "incorrect" ? (
