@@ -210,3 +210,34 @@ change. The complete pre-push pipeline (including the full 567-case browser
 suite), clean release packaging, review and publication are still required
 before a production release; the focused 36-case browser result above does not
 claim those additional gates passed.
+
+## Continuation review — 2 November 2026
+
+The interrupted Node 22 pre-push run completed after the earlier chat ended.
+TypeScript, all 204 files / 3,278 unit tests, lint, audio readiness, media guards,
+generated-data checks, complete production packaging and bundle budgets passed.
+The final browser gate failed: 565 / 567 cases passed, with Conversation and
+Hadith curriculum-to-lesson navigation timing out in Windows mobile WebKit.
+The hook blocked the push; no PR, merge or deployment occurred in that attempt.
+
+Fresh traces reproduced a roughly 28-second delay for local lesson scripts while
+many live curriculum thumbnails were downloading. The same journeys passed in
+isolation, but Hadith came within two seconds of its existing assertion timeout.
+Using a numeric loopback address did not remove the delay; that experiment was
+reverted. The evidence does not establish a DNS-only explanation or a production
+application regression.
+
+The two navigation/content cases now use valid, fixed-size thumbnail fixtures.
+They retain their existing route, stage-navigation, progress, canonical-source
+and browser-health assertions and timeouts. The fixture covers only Hadith
+thumbnails and conversation hero images, including versioned filenames. It
+preserves requested URLs and does not change production resolvers or R2 objects.
+These cases do not verify remote image availability, semantic suitability or
+native artwork decoding. The pronunciation URL check and the dedicated image,
+audio and offline suites retain their existing coverage.
+
+The full release gate must pass on the final commit before publication. Human
+screen-reader, listening, editorial and learner-transfer evidence remains
+pending. Read-only inspection also confirmed that GitHub currently has only the
+github-pages environment: the dedicated staging environment and its six auth
+test secrets are still absent.

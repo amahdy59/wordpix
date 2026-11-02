@@ -1,10 +1,12 @@
 import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
+import { installCurriculumThumbnailFixture } from "./curriculumThumbnailFixture";
 
 test("Hadith curriculum exposes all 42 lessons and opens the canonical source", async ({
   page,
 }) => {
   test.setTimeout(60_000);
+  await installCurriculumThumbnailFixture(page);
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
 
