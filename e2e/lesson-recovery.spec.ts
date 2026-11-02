@@ -52,9 +52,11 @@ for (const locale of [
     expect(results.violations).toEqual([]);
     await page.keyboard.press("Enter");
     await expect(page).toHaveURL(/#\/learn$/);
+    // The URL changes before the lazy LearningPath chunk finishes loading.
+    // Recovery is complete when its heading appears, as on other course routes.
     await expect(
       page.getByRole("heading", { level: 1, name: locale.heading, exact: true })
-    ).toBeVisible();
+    ).toBeVisible({ timeout: 20_000 });
     expect(errors).toEqual([]);
   });
 }

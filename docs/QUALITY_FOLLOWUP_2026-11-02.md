@@ -258,3 +258,13 @@ bindings are unchanged. A component regression and a browser check that holds
 the real usage-chunk response both failed against the previous implementation.
 The browser check then releases that response and retains its image-hold,
 keyboard-focus and tile-activation assertions in both languages.
+
+The full rerun also exposed two Windows WebKit recovery cases that reached
+`#/learn` and remained in the lazy route's loading state at their generic
+five-second assertion deadline. Six unchanged focused runs passed with successful
+script responses. The destination-heading assertion now uses the same explicit
+20-second readiness allowance as other lazy curriculum routes; the total test
+budget, recovery controls, keyboard sequence, axe checks and final heading/URL
+requirements remain. This is test synchronization evidence, not a claim about
+production startup speed. Standard release verification retains its configured
+CI-aligned retries, with any flaky attempts reported separately.
