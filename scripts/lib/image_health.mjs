@@ -1,3 +1,5 @@
+import { findPublishedSupersession } from "./published_image_reviews.mjs";
+
 /** Technical evidence alone never approves an image's meaning or a replacement. */
 export function imageHealthFlags({ bytes, width, height, format, extension, error }) {
   if (error) return ["unreadable-local-copy"];
@@ -33,19 +35,62 @@ export function imageReviewAction(row) {
 }
 
 /** Sampled visual triage is revision-pinned and never changes runtime media. */
-export function applyImageCheckupReviews(rows, ledger) {
+export function applyImageCheckupReviews(rows, ledger, published = []) {
   const byId = new Map(rows.map((row) => [row.id, row]));
   const seen = new Set();
   for (const review of ledger.proposals) {
     const row = byId.get(review.demandId);
     if (seen.has(review.demandId)) throw Error(`Duplicate image checkup: ${review.demandId}`);
     seen.add(review.demandId);
-    if (!row || row.revision !== review.contentSha256 || row.url !== review.url)
+    if (!row || row.revision !== review.contentSha256)
       throw Error(`Stale image checkup: ${review.demandId}`);
+    if (row.url !== review.url) {
+      const replacement = findPublishedSupersession(row.revision, review.url, row.url, published);
+      if (!replacement) throw Error(`Stale image checkup: ${review.demandId}`);
+      row.historicalVisualReview = review;
+      row.semantic = "published supplied reference";
+      row.action = "keep-published-supplied-reference";
+      row.reviewedAssetSha256 = replacement.servedSha256;
+      row.byteEvidence = `Previously published batch ${replacement.batchSha256}; not re-fetched by this local check`;
+      continue;
+    }
     row.action = review.disposition;
     row.visualReview = review.rationale;
     row.reviewedAssetSha256 = review.servedSha256;
     row.byteEvidence = `Public GET bytes recorded at ${review.reviewedAt ?? ledger.reviewedAt}; not re-fetched by this local check`;
   }
   return rows;
+}
+
+/** Missing current content retains its review as history, never as a current approval. */
+export function partitionImageCheckupReviews(rows, ledger, published = []) {
+  const byId = new Map(rows.map((row) => [row.id, row]));
+  const seen = new Set();
+  const current = [],
+    historical = [],
+    stale = [];
+  for (const review of ledger.proposals) {
+    if (seen.has(review.demandId)) throw Error(`Duplicate image checkup: ${review.demandId}`);
+    seen.add(review.demandId);
+    const row = byId.get(review.demandId);
+    if (!row) {
+      historical.push(review);
+    } else if (
+      row.revision === review.contentSha256 &&
+      (row.url === review.url ||
+        findPublishedSupersession(row.revision, review.url, row.url, published))
+    ) {
+      current.push(review);
+    } else {
+      stale.push({ review, currentRevision: row.revision, currentUrl: row.url });
+      row.action = "recheck-stale-approval";
+      row.reviewedAssetSha256 = null;
+      row.byteEvidence = "Historical review does not verify the current content or image";
+    }
+  }
+  return {
+    current: { ...ledger, proposals: current },
+    historical,
+    stale,
+  };
 }

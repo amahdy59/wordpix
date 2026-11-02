@@ -343,7 +343,7 @@ export function HadithLessonScreen({ dispatch, lessonId }: Props) {
             {/* Keep bottom navigation in flow so it cannot obscure review controls.
               The compact course rail remains available at the top while scrolling. */}
             <div className="mt-3 border-t border-border bg-background py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
-              <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(min(100%,8rem),1fr))] items-stretch gap-2 sm:flex sm:items-center sm:justify-between">
+              <div className="w-full grid grid-cols-1 min-[360px]:grid-cols-[repeat(auto-fit,minmax(min(100%,8rem),1fr))] items-stretch gap-2 sm:flex sm:items-center sm:justify-between">
                 <div className="flex">
                   <button
                     type="button"

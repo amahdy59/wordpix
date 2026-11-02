@@ -1,3 +1,4 @@
+import { CourseActionFooter } from "../../../shared/CourseActionFooter";
 import { HelpCircle, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
 import { useI18n } from "../../../../i18n";
@@ -81,7 +82,7 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev, onSki
         {t("quiz.continueLesson")}
       </button>
       {/* Stage Navigation Footer */}
-      <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
+      <CourseActionFooter>
         <button
           type="button"
           onClick={onPrev}
@@ -90,7 +91,7 @@ export function QuizStage({ unit, savedScore, onSaveScore, onNext, onPrev, onSki
           <ArrowLeft className="size-5 rtl:rotate-180" aria-hidden />
           <span>{t("conversation.previous")}</span>
         </button>
-      </div>
+      </CourseActionFooter>
     </div>
   );
 }

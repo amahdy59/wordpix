@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { assetId, digest, normalizeText, CDN } from "./media_catalog.mjs";
+import { findPublishedSupersession } from "./published_image_reviews.mjs";
 
 const text = z.string().trim().min(1);
 const sha256 = z.string().regex(/^[a-f0-9]{64}$/);
@@ -121,11 +122,12 @@ export function prospectiveImageKey(collection, bytes) {
   return `question-images/v2/${collection}/${digest(bytes)}.webp`;
 }
 
-export function validateVisualDecisions(data, demands, assets) {
+export function validateVisualDecisions(data, demands, assets, published = []) {
   const parsed = visualDecisionsSchema.parse(data);
   const byDemand = new Map(demands.map((d) => [d.demandId, d]));
   const byAsset = new Map(assets.map((a) => [a.assetId, a]));
   const seen = new Set();
+  const superseded = new Set();
   const search = createCandidateSearch(assets);
   for (const decision of parsed.decisions) {
     const id = decision.content.demandId;
@@ -151,6 +153,19 @@ export function validateVisualDecisions(data, demands, assets) {
     const snapshot = demand ? contentSnapshot(demand) : null;
     const appliedReuse =
       decision.decision === "reuse" && snapshot?.expectedResolvedUrl === `${CDN}/${decision.key}`;
+    const publishedReplacement =
+      decision.decision === "reuse" &&
+      snapshot &&
+      findPublishedSupersession(
+        snapshot.contentSha256,
+        decision.content.expectedResolvedUrl,
+        snapshot.expectedResolvedUrl,
+        published
+      );
+    if (publishedReplacement) {
+      snapshot.expectedResolvedUrl = decision.content.expectedResolvedUrl;
+      superseded.add(id);
+    }
     if (appliedReuse) snapshot.expectedResolvedUrl = decision.content.expectedResolvedUrl;
     if (!demand || JSON.stringify(snapshot) !== JSON.stringify(decision.content))
       throw new Error(`Stale or unknown content decision: ${id}`);
@@ -187,7 +202,8 @@ export function validateVisualDecisions(data, demands, assets) {
           throw new Error(`Unknown rejected asset: ${candidate.assetId}`);
     }
   }
-  return parsed.decisions;
+  // Historical proposals are validated above but never emitted for reapplication.
+  return parsed.decisions.filter((decision) => !superseded.has(decision.content.demandId));
 }
 
 export function validateCandidateRejections(data, demands, assets) {

@@ -220,7 +220,7 @@ export const RichPassageText = memo(function RichPassageText({
                   `Learn more about ${token.term}`
                 }
                 className={[
-                  "inline rounded px-1 py-0.5 -mx-0.5 align-baseline cursor-pointer touch-manipulation",
+                  "inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded px-1 py-0.5 -mx-0.5 align-baseline cursor-pointer touch-manipulation",
                   isAudioActive ? "bg-transparent" : "bg-primary/8",
                   "font-semibold text-foreground",
                   "underline decoration-primary decoration-2 underline-offset-4",

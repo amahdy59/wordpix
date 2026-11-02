@@ -1,10 +1,43 @@
 {
-  "version": "0.1.107",
-  "notes": [
-    "Lesson picture information loads for the selected unit, reducing the download needed to begin practice."
-  ],
-  "notesAr": ["تُحمّل معلومات صور الدروس للوحدة المختارة، مما يقلل التنزيل المطلوب لبدء التدريب."],
+  "version": "0.1.108",
+  "notes": ["Course actions fit narrow screens more comfortably, including with larger text."],
+  "notesAr": ["تظهر أزرار الدورات بشكل أوضح على الشاشات الضيقة، بما في ذلك عند تكبير النص."],
   "releases": [
+    {
+      "id": "0.1.108",
+      "version": "0.1.108",
+      "date": "2026-11-02",
+      "title": {
+        "en": "Clearer course controls",
+        "ar": "أزرار دورات أكثر وضوحاً"
+      },
+      "changes": [
+        {
+          "id": "narrow-course-actions",
+          "category": "improved",
+          "en": "Conversation and Hadith navigation gives long action labels more space on narrow phones.",
+          "ar": "تمنح أزرار التنقل في المحادثة والحديث مساحة أكبر للنصوص الطويلة على الهواتف ذات الشاشات الضيقة."
+        },
+        {
+          "id": "skip-link-focus-target",
+          "category": "fixed",
+          "en": "The keyboard shortcut link to page content has a larger target and a clear focus outline.",
+          "ar": "أصبح لرابط تخطي التنقل إلى محتوى الصفحة هدف أكبر وحدود تركيز واضحة عند استخدام لوحة المفاتيح."
+        },
+        {
+          "id": "passage-vocabulary-targets",
+          "category": "fixed",
+          "en": "Highlighted words in reading passages have larger buttons for opening their meanings.",
+          "ar": "أصبحت أزرار الكلمات المميزة في نصوص القراءة أكبر لتسهيل فتح معانيها."
+        },
+        {
+          "id": "sentence-builder-content-readiness",
+          "category": "fixed",
+          "en": "Sentence practice waits for its lesson content before showing word tiles, keeping the words stable when you start answering.",
+          "ar": "ينتظر تدريب الجمل تحميل محتوى الدرس قبل عرض بطاقات الكلمات، لتبقى الكلمات ثابتة عند بدء الإجابة."
+        }
+      ]
+    },
     {
       "id": "0.1.107",
       "version": "0.1.107",

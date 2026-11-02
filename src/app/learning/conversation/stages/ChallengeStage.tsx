@@ -1,3 +1,4 @@
+import { CourseActionFooter } from "../../../shared/CourseActionFooter";
 import { useState } from "react";
 import { Award, CheckSquare, Sparkles, ExternalLink, ArrowLeft, CheckCircle2 } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
@@ -235,7 +236,7 @@ export function ChallengeStage({
       )}
 
       {/* Stage Navigation Footer */}
-      <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
+      <CourseActionFooter>
         <button
           type="button"
           onClick={onPrev}
@@ -265,7 +266,7 @@ export function ChallengeStage({
             <span>{t("conversation.backToUnits")}</span>
           </button>
         )}
-      </div>
+      </CourseActionFooter>
       {!isMastered && !justCompleted && (
         <p
           id="challenge-completion-requirements"

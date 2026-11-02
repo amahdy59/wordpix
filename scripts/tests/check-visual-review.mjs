@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { assetId, digest } from "../lib/media_catalog.mjs";
 import {
   contentSnapshot,
@@ -53,6 +54,47 @@ const reuse = () => ({
 });
 const run = (decisions, demands = [demand], assets = [asset]) =>
   validateVisualDecisions({ schemaVersion: 1, decisions }, demands, assets);
+
+test("published supplied image supersedes a historical proposal without rewriting its approval", () => {
+  const read = (file) => JSON.parse(readFileSync(file, "utf8"));
+  const decisions = read("docs/media/visual-decisions.json");
+  const id = "demand-ab347eecedc5bcf3991f1021";
+  const original = decisions.decisions.find((row) => row.content.demandId === id);
+  const binding = read("src/app/generated/suppliedMedia.json").find(
+    (row) => row.lessonId === "supermarket-21" && row.wordId === "stock"
+  );
+  const current = { ...original.content, resolvedUrl: binding.imagePath };
+  const assets = [
+    { ...asset, assetId: original.assetId, key: original.key, localSha256: original.assetSha256 },
+  ];
+  const before = JSON.stringify(original);
+  const published = [
+    {
+      contentSha256: original.content.contentSha256,
+      previousUrl: original.content.expectedResolvedUrl,
+      currentUrl: current.resolvedUrl,
+    },
+  ];
+  const result = validateVisualDecisions(
+    { schemaVersion: 1, decisions: [original] },
+    [current],
+    assets,
+    published
+  );
+  assert.equal(result.length, 0, "the old proposal must never be emitted for application again");
+  assert.equal(JSON.stringify(original), before);
+  for (const change of [{ text: "Changed text." }, { resolvedUrl: "unapproved.webp" }])
+    assert.throws(
+      () =>
+        validateVisualDecisions(
+          { schemaVersion: 1, decisions: [original] },
+          [{ ...current, ...change }],
+          assets,
+          published
+        ),
+      /Stale/
+    );
+});
 test("resolved content repair preserves the old review and pins the real replacement", () => {
   const previous = { ...demand, demandId: "demand-old", text: "This is a firewood." };
   const current = { ...demand, demandId: "demand-new", text: "This is firewood." };

@@ -1,3 +1,4 @@
+import { CourseActionFooter } from "../../../shared/CourseActionFooter";
 import { Sparkles, ArrowRight, ArrowLeft } from "lucide-react";
 import type { ConversationUnit } from "../conversationTypes";
 import { useI18n } from "../../../../i18n";
@@ -100,7 +101,7 @@ export function LanguageBankStage({ unit, onNext, onPrev }: Props) {
       </span>
 
       {/* Stage Navigation Footer */}
-      <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+      <CourseActionFooter>
         <button
           type="button"
           onClick={onPrev}
@@ -118,7 +119,7 @@ export function LanguageBankStage({ unit, onNext, onPrev }: Props) {
           <span>{t("conversation.continueToolkit")}</span>
           <ArrowRight className="size-5 rtl:rotate-180" aria-hidden />
         </button>
-      </div>
+      </CourseActionFooter>
     </div>
   );
 }

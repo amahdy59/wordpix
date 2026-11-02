@@ -12,18 +12,18 @@
       "lesson_cefr": "A2",
       "stage_name": "A2 Everyday Life",
       "current_goal": "Use the vocabulary from The Library to understand and communicate in a realistic A2-appropriate context.",
-      "updated_goal": "Learn to locate resources and ask about borrowing or reference services in a clear, practical adult-life situation.",
+      "updated_goal": "Identify a stated library request, resource, action or role.",
       "current_can_do": "I can use key the library vocabulary in connected everyday context.",
-      "updated_can_do": "Can ask and answer simple questions and understand short practical information related to the library.",
+      "updated_can_do": "Can follow a supported library visit and explain a practical distinction. Specialist collection terms extend the supported task level; access, copying and borrowing rules are local.",
       "current_text_type": "email",
-      "updated_text_type": "dialogue",
+      "updated_text_type": "library-visit-account",
       "current_reading_title": "The Library: Email",
-      "updated_reading_title": "A Practical Conversation: The Library",
+      "updated_reading_title": "Choosing a book and a place",
       "current_reading_text": "Omar has an everyday task connected to the library. The new vocabulary helps him follow the situation and respond clearly. The student or researcher works with novel, picture book, and reference book. Each term supports a different part of study, research, or campus life. The student or researcher works with comic book, magazine, and newspaper. Each term supports a different part of study, research, or campus life. The student or researcher works with encyclopedia, atlas, and biography. Each term supports a different part of study, research, or campus life. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
-      "updated_reading_text": "Rania visits the library after work because she needs to find, borrow, and use library resources. She compares the novel with the picture book, then asks a staff member about the reference book. The explanation connects the comic book with the magazine and makes the next step clear. Before leaving, she confirms the key information so she can complete the task with confidence.",
+      "updated_reading_text": "Maya visits the library for a novel, while Omar chooses a comic book. They compare these stories with a picture book and reference book. A magazine and newspaper offer other reading. Maya later consults an encyclopedia, atlas and biography for a course. Omar takes a poetry book from the bookshelf to a reading table. Maya wants to take notes, so she chooses a study desk and chair rather than the bean bag. They ask staff which items may be borrowed before taking anything home.",
       "reading_evidence_url": "https://dictionary.cambridge.org/",
-      "editor_notes": "A2 objective, Can-Do statement, approved text type, and 50–90 word adult-facing reading reviewed for coherence, practical relevance, lexical integration, and CEFR-appropriate language.",
-      "approval_status": "Approved",
+      "editor_notes": "2026-11-02: Editorial export aligned with the existing runtime lesson. New vocabulary examples are drafts pending bilingual human review; complete lesson approval and learner transfer evidence remain pending.",
+      "approval_status": "Needs review",
       "reviewer": "Editorial Agent - GPT-5.6 Sol",
       "review_date": "2026-10-06"
     },
@@ -641,11 +641,12 @@
       "updated_arabic": "رواية",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Novel” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the novel while looking for the right library resource.",
-      "collocation_or_pattern": "check the novel",
+      "natural_example": "I borrowed a novel to read on the train.",
+      "collocation_or_pattern": "borrow a novel",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/novel",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "استعرت رواية لأقرأها في القطار."
     },
     {
       "word_id": "library-1-word-02",
@@ -661,11 +662,12 @@
       "updated_arabic": "كتاب مصور",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Picture Book” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the picture book while looking for the right library resource.",
-      "collocation_or_pattern": "check the picture book",
+      "natural_example": "He chose a picture book to read with his daughter.",
+      "collocation_or_pattern": "read a picture book",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/picture-book",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "اختار كتاباً مصوراً ليقرأه مع ابنته."
     },
     {
       "word_id": "library-1-word-03",
@@ -681,11 +683,12 @@
       "updated_arabic": "كتاب مرجعي",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Reference Book” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the reference book while looking for the right library resource.",
-      "collocation_or_pattern": "check the reference book",
+      "natural_example": "I used a reference book to check a date.",
+      "collocation_or_pattern": "consult a reference book",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/reference-book",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "استخدمت كتاباً مرجعياً للتحقق من تاريخ."
     },
     {
       "word_id": "library-1-word-04",
@@ -701,11 +704,12 @@
       "updated_arabic": "كتاب قصص مصورة",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Comic Book” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the comic book while looking for the right library resource.",
-      "collocation_or_pattern": "check the comic book",
+      "natural_example": "She reads a comic book on the bus.",
+      "collocation_or_pattern": "read a comic book",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/comic-book",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "تقرأ كتاب قصص مصورة في الحافلة."
     },
     {
       "word_id": "library-1-word-05",
@@ -721,11 +725,12 @@
       "updated_arabic": "مجلة",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Magazine” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the magazine while looking for the right library resource.",
-      "collocation_or_pattern": "check the magazine",
+      "natural_example": "I bought a magazine about cooking.",
+      "collocation_or_pattern": "buy a magazine",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/magazine",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "اشتريت مجلة عن الطهي."
     },
     {
       "word_id": "library-1-word-06",
@@ -741,11 +746,12 @@
       "updated_arabic": "صحيفة",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Newspaper” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the newspaper while looking for the right library resource.",
-      "collocation_or_pattern": "check the newspaper",
+      "natural_example": "He reads the newspaper before work.",
+      "collocation_or_pattern": "read the newspaper",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/newspaper",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "يقرأ الصحيفة قبل العمل."
     },
     {
       "word_id": "library-1-word-07",
@@ -761,11 +767,12 @@
       "updated_arabic": "موسوعة",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Encyclopedia” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the encyclopedia while looking for the right library resource.",
-      "collocation_or_pattern": "check the encyclopedia",
+      "natural_example": "We used an encyclopedia to learn about planets.",
+      "collocation_or_pattern": "look something up in an encyclopedia",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/encyclopedia",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "استخدمنا موسوعة لنتعلم عن الكواكب."
     },
     {
       "word_id": "library-1-word-08",
@@ -781,11 +788,12 @@
       "updated_arabic": "أطلس خرائط",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Atlas” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the atlas while looking for the right library resource.",
-      "collocation_or_pattern": "check the atlas",
+      "natural_example": "She used an atlas to find the country.",
+      "collocation_or_pattern": "use an atlas",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/atlas",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "استخدمت أطلس خرائط لتحديد موقع الدولة."
     },
     {
       "word_id": "library-1-word-09",
@@ -801,11 +809,12 @@
       "updated_arabic": "سيرة شخص",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Biography” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the biography while looking for the right library resource.",
-      "collocation_or_pattern": "check the biography",
+      "natural_example": "I borrowed a biography of a famous scientist.",
+      "collocation_or_pattern": "a biography of someone",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/biography",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "استعرت كتاب سيرة حياة عالم مشهور."
     },
     {
       "word_id": "library-1-word-10",
@@ -821,11 +830,12 @@
       "updated_arabic": "كتاب شعر",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Poetry Book” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the poetry book while looking for the right library resource.",
-      "collocation_or_pattern": "check the poetry book",
+      "natural_example": "He read a poem from a poetry book.",
+      "collocation_or_pattern": "read a poetry book",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/poetry-book",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "قرأ قصيدة من ديوان شعر."
     },
     {
       "word_id": "library-1-word-11",
@@ -841,11 +851,12 @@
       "updated_arabic": "رف الكتب / مكتبة حائطية",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Bookshelf” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the bookshelf while looking for the right library resource.",
-      "collocation_or_pattern": "check the bookshelf",
+      "natural_example": "She put the novel back on the bookshelf.",
+      "collocation_or_pattern": "on the bookshelf",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/bookshelf",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "أعادت الرواية إلى رف الكتب."
     },
     {
       "word_id": "library-1-word-12",
@@ -861,11 +872,12 @@
       "updated_arabic": "طاولة قراءة",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Reading Table” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the reading table while looking for the right library resource.",
-      "collocation_or_pattern": "check the reading table",
+      "natural_example": "We sat at the reading table to take notes.",
+      "collocation_or_pattern": "sit at a reading table",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/reading-table",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "جلسنا إلى طاولة القراءة لتدوين الملاحظات."
     },
     {
       "word_id": "library-1-word-13",
@@ -881,11 +893,12 @@
       "updated_arabic": "مكتب دراسة",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Study Desk” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the study desk while looking for the right library resource.",
-      "collocation_or_pattern": "check the study desk",
+      "natural_example": "I used a study desk near the window.",
+      "collocation_or_pattern": "sit at a study desk",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/study-desk",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "استخدمت مكتب دراسة بالقرب من النافذة."
     },
     {
       "word_id": "library-1-word-14",
@@ -901,11 +914,12 @@
       "updated_arabic": "كرسي",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Chair” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the chair while looking for the right library resource.",
-      "collocation_or_pattern": "check the chair",
+      "natural_example": "He moved a chair closer to the table.",
+      "collocation_or_pattern": "move a chair",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/chair",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "نقل كرسياً بالقرب من الطاولة."
     },
     {
       "word_id": "library-1-word-15",
@@ -921,11 +935,12 @@
       "updated_arabic": "مقعد مملوء بحبيبات",
       "word_cefr": "A2",
       "meaning_note": "In this lesson, “Bean Bag” is used in the library setting as an object, feature, or named item; this fixes the intended domain sense and excludes unrelated meanings.",
-      "natural_example": "The learner checked the bean bag while looking for the right library resource.",
-      "collocation_or_pattern": "check the bean bag",
+      "natural_example": "She sat on a bean bag and read her book.",
+      "collocation_or_pattern": "sit on a bean bag",
       "evidence_url": "https://dictionary.cambridge.org/dictionary/english/bean-bag",
-      "editor_notes": "Sense, contextual MSA translation, lexical CEFR label, adult-life example, collocation/pattern, and learner-dictionary evidence reviewed.",
-      "approval_status": "Approved"
+      "editor_notes": "2026-11-02: Replaced boilerplate in the editorial export. English/Arabic draft; human bilingual review pending. Runtime lesson text, recordings and image bindings are unchanged. No CEFR approval inferred.",
+      "approval_status": "Needs review",
+      "natural_example_arabic": "جلست على مقعد محشو بحبيبات وقرأت كتابها."
     },
     {
       "word_id": "library-2-word-01",

@@ -24,6 +24,21 @@ for (const language of ["en", "ar"]) {
       page.on("pageerror", (error) => errors.push(error.message));
       await disableNarrationForContentTest(page);
       await page.emulateMedia({ reducedMotion: "reduce" });
+      // Hold the real authored-content response so the loading contract is
+      // deterministic. Temporary fallback tiles must never accept input.
+      let releaseUsage!: () => void;
+      const usageGate = new Promise<void>((resolve) => {
+        releaseUsage = resolve;
+      });
+      let usageRequested!: () => void;
+      const usageRequest = new Promise<void>((resolve) => {
+        usageRequested = resolve;
+      });
+      await page.route(new RegExp(`/${row.unitId}\\.usage-[^/]+\\.js$`), async (route) => {
+        usageRequested();
+        await usageGate;
+        await route.continue();
+      });
       await page.addInitScript(
         ({ row, language }) => {
           localStorage.setItem("wordpix:interface-lang", language);
@@ -62,6 +77,15 @@ for (const language of ["en", "ar"]) {
         name: language === "en" ? "Available words" : "الكلمات المتاحة",
         exact: true,
       });
+      await usageRequest;
+      try {
+        await expect(
+          page.getByRole("status").and(page.locator('[aria-busy="true"]'))
+        ).toBeVisible();
+        await expect(words).toHaveCount(0);
+      } finally {
+        releaseUsage();
+      }
       await expect(words).toBeVisible();
       const imageSources = await page
         .getByRole("img")

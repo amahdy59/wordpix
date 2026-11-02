@@ -32,7 +32,7 @@
     "content:images:readiness": "node scripts/audit_image_generation_readiness.mjs",
     "media:catalog": "node scripts/audit_visual_demands.mjs && node scripts/build_media_catalog.mjs",
     "media:catalog:offline": "node scripts/audit_visual_demands.mjs && node scripts/build_media_catalog.mjs --offline",
-    "media:catalog:test": "node scripts/build_usage_media_runtime.mjs --check && node scripts/build_sentence_media_runtime.mjs --check && node --test scripts/tests/check-media-catalog.mjs scripts/tests/check-visual-review.mjs scripts/tests/check-image-quality-dashboard.mjs scripts/tests/check-sentence-media-runtime.mjs scripts/tests/check-image-health.mjs scripts/tests/check-responsive-image-candidates.mjs scripts/tests/check-usage-media-runtime.mjs",
+    "media:catalog:test": "node scripts/build_usage_media_runtime.mjs --check && node scripts/build_sentence_media_runtime.mjs --check && node --test scripts/tests/check-media-catalog.mjs scripts/tests/check-visual-review.mjs scripts/tests/check-image-quality-dashboard.mjs scripts/tests/check-sentence-media-runtime.mjs scripts/tests/check-image-health.mjs scripts/tests/check-responsive-image-candidates.mjs scripts/tests/check-usage-media-runtime.mjs scripts/tests/check-published-image-reviews.mjs scripts/tests/check-quality-audit.mjs",
     "media:review": "node scripts/audit_visual_demands.mjs && node scripts/reconcile_visual_reviews.mjs",
     "media:review:check": "node scripts/check_visual_assignment_proposals.mjs",
     "media:asset:plan": "node scripts/plan_visual_asset.mjs",
@@ -84,7 +84,9 @@
     "media:checkup": "node scripts/build_image_checkup.mjs",
     "media:responsive:prepare": "node scripts/prepare_responsive_image_candidates.mjs",
     "audio:recordings:plan": "node scripts/build_recording_plan.mjs",
-    "audio:quality:sample": "node scripts/prepare_audio_quality_sample.mjs"
+    "audio:quality:sample": "node scripts/prepare_audio_quality_sample.mjs",
+    "quality:handoff:audit": "node scripts/audit_quality_followup.mjs",
+    "quality:readiness": "node scripts/measure_quality_readiness.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",

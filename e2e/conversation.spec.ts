@@ -1,9 +1,11 @@
 import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
+import { installCurriculumThumbnailFixture } from "./curriculumThumbnailFixture";
 
 test("conversation curriculum is discoverable and allows browsing without answering", async ({
   page,
 }) => {
+  await installCurriculumThumbnailFixture(page);
   const errors: string[] = [];
   page.on("console", (message) => {
     if (message.type() === "error" && !message.text().includes("Failed to load resource")) {

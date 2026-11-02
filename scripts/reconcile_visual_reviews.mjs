@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { loadPublishedImageReviews } from "./lib/published_image_reviews.mjs";
 import {
   csvText,
   assetId,
@@ -39,7 +40,10 @@ const rejected = new Set();
 for (const r of validateCandidateRejections(rejectedData, demands, assets)) {
   rejected.add(JSON.stringify([r.demandId, r.key]));
 }
-const decisions = validateVisualDecisions(data, demands, assets);
+const published = await loadPublishedImageReviews();
+const decisions = validateVisualDecisions(data, demands, assets, published);
+const activeIds = new Set(decisions.map((row) => row.content.demandId));
+const superseded = data.decisions.filter((row) => !activeIds.has(row.content.demandId));
 const search = createCandidateSearch(assets);
 const decided = new Set(decisions.map((d) => d.content.demandId));
 const byKey = new Map(assets.map((a) => [a.key, a]));
@@ -120,6 +124,12 @@ const write = (name, value) =>
     path.join(root, name),
     typeof value === "string" ? value : JSON.stringify(value, null, 2) + "\n"
   );
+await write("superseded-visual-decisions.json", {
+  schemaVersion: 1,
+  appliesLiveMappings: false,
+  reason: "Historical proposals superseded by the approved published supplied-image batch",
+  decisions: superseded,
+});
 await write("expanded-candidates.json", { schemaVersion: 1, scope, demands: candidates });
 await write(
   "expanded-candidates.csv",
@@ -193,6 +203,7 @@ const result = {
   inventoryCapturedAt: summary.inventoryCapturedAt,
   demandsGeneratedAt: current.generatedAt,
   auditedUses: demands.length,
+  supersededHistoricalDecisions: superseded.length,
   referenceOnlyUses: demands.filter((d) => d.referenceOnly).length,
   validatedReuseProposals: reuse.length,
   authorizedAssignmentsAlreadyApplied: reuse.filter(
