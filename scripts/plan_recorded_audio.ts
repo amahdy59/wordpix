@@ -46,6 +46,8 @@ import {
 import { FIGMA_PRONUNCIATION_LESSONS } from "../src/app/learning/foundations/figmaPronunciationCatalog";
 import { getPronunciationAudioClip } from "../src/app/learning/foundations/pronunciationAudioManifest";
 import { getAuthoredWord } from "../src/app/exercises/content/authoredLessonContent";
+import { additionalRecordingKey } from "../src/app/shared/additionalRecording";
+import recordedReferenceExamples from "../src/app/data/recordedReferenceExamples.json";
 
 const require = createRequire(import.meta.url);
 const { audioHash } = require("./lib/assetKey.cjs");
@@ -376,6 +378,15 @@ for (const domain of ["business", "conversation"]) {
       if (entry) add(entry.text, `${domain}-recording`, "en", entry.key);
   }
 }
+for (const [unitId, words] of Object.entries(recordedReferenceExamples)) {
+  for (const { en } of Object.values(words)) {
+    const key = await additionalRecordingKey(en);
+    if (!key?.startsWith("audio/heygen-v1/nadine/"))
+      throw Error(`Missing Nadine recording for vocabulary reference in ${unitId}: ${en}`);
+    add(en, `recorded-reference:${unitId}`, "en", key);
+  }
+}
+
 const feedback = JSON.parse(fs.readFileSync("src/app/exercises/feedbackPhrases.json", "utf8"));
 for (const text of [...feedback.correct, ...feedback.incorrect]) add(text, "feedback");
 
