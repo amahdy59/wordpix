@@ -6,6 +6,11 @@ import type { LexiconEntry } from "../data/lexiconDictionary";
 import { useAudio } from "./useAudio";
 import { useI18n } from "../context/I18nContext";
 import { getAuthoredWord } from "../exercises/content/authoredLessonContent";
+import recordedExamples from "../data/recordedReferenceExamples.json";
+
+const referenceExamples: Readonly<
+  Record<string, Readonly<Record<string, { en: string; ar: string }>>>
+> = recordedExamples;
 
 export function WordDetailsContent({
   word,
@@ -22,7 +27,8 @@ export function WordDetailsContent({
   const { speak } = useAudio();
   const { lexicon, lexiconFailed, retryLexicon } = useLexicon([word.id]);
   const authored = getAuthoredWord(word.id);
-  const immediateExample = authored?.sentence.full ?? word.exampleUsage;
+  const recordedExample = unitId ? referenceExamples[unitId]?.[word.id] : undefined;
+  const immediateExample = authored?.sentence.full ?? word.exampleUsage ?? recordedExample?.en;
 
   const loaded = lexicon
     ? { mod: lexicon, base: lexicon.getLexiconEntry(word.id, word.label, unitId) }
@@ -120,21 +126,25 @@ export function WordDetailsContent({
   const resolvedArabic = authored?.arabic ?? word.arabicTranslation ?? baseEntry.arabic;
   const resolvedExample = authored?.sentence.full ?? word.exampleUsage ?? baseEntry.exampleSentence;
 
+  const sentences = resolvedExample
+    ? [
+        {
+          context: "Example",
+          en: resolvedExample,
+          ar: baseEntry.sentences.find((sentence) => sentence.en === resolvedExample)?.ar ?? "",
+        },
+      ]
+    : word.arabicTranslation !== undefined
+      ? []
+      : baseEntry.sentences;
   const entry = {
     ...baseEntry,
     collocations: loaded.mod.getReviewedCollocations(baseEntry),
     arabic: resolvedArabic,
-    sentences: resolvedExample
-      ? [
-          {
-            context: "Example",
-            en: resolvedExample,
-            ar: baseEntry.sentences.find((sentence) => sentence.en === resolvedExample)?.ar ?? "",
-          },
-        ]
-      : word.arabicTranslation !== undefined
-        ? []
-        : baseEntry.sentences,
+    sentences:
+      recordedExample && !sentences.some((sentence) => sentence.en === recordedExample.en)
+        ? [...sentences, { context: "", ...recordedExample }]
+        : sentences,
     exampleSentence: resolvedExample,
   };
   return (
