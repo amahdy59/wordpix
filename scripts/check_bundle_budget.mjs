@@ -21,6 +21,7 @@ const budgets = [
   { pattern: /^usage-media-unit-/, limit: 64 * 1024, label: "unit usage media" },
   { pattern: /^sentenceMedia-/, limit: 0, label: "forbidden all-course sentence media" },
   { pattern: /^sentence-media-unit-/, limit: 320 * 1024, label: "unit sentence media" },
+  { pattern: /^pronunciationTargets-/, limit: 950 * 1024, label: "pronunciation content shard" },
   { pattern: /\.js$/, limit: 600_000, label: "runtime chunk" },
 ];
 
