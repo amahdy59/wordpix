@@ -123,6 +123,29 @@ describe("Lexicon Dictionary & Inspector", () => {
     expect(dialog.closest("[inert]")).toBeNull();
   });
 
+  it("shows a Nadine example only for its vocabulary unit", async () => {
+    const word: VocabularyItem = {
+      id: "baguette",
+      label: "Baguette",
+      phonetic: "",
+      img: "/word-images/bakery/baguette.avif",
+      topic: "bakery",
+      description: "A long, thin loaf of bread.",
+      exampleUsage: "The baguette is still warm.",
+    };
+    const { rerender } = render(
+      <WordInspectorModal word={word} unitId="bakery" isOpen onClose={() => {}} />
+    );
+
+    const recorded = /Could you cut the baguette in half, please/;
+    expect(await screen.findByText(recorded)).toBeInTheDocument();
+    expect(screen.getByText("هل يمكنك قطع خبز الباغيت إلى نصفين؟")).toBeInTheDocument();
+    expect(screen.getByText(/The baguette is still warm/)).toBeInTheDocument();
+
+    rerender(<WordInspectorModal word={word} unitId="market" isOpen onClose={() => {}} />);
+    expect(screen.queryByText(recorded)).not.toBeInTheDocument();
+  });
+
   it("uses reviewed authored content in WordInspectorModal when available", async () => {
     const mockWord: VocabularyItem = {
       id: "red",

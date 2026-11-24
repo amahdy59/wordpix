@@ -70,6 +70,18 @@ describe("immutable prerecorded audio", () => {
     ).toBeNull();
   });
 
+  it("resolves the exact Nadine recordings used in the vocabulary reference", async () => {
+    const { default: examples } = await import("../data/recordedReferenceExamples.json");
+    const texts = Object.values(examples).flatMap((words) =>
+      Object.values(words).map(({ en }) => en)
+    );
+    expect(texts.length).toBeGreaterThan(0);
+    for (const text of texts) {
+      const key = await additionalRecordingKey(text);
+      expect(key).toMatch(/^audio\/heygen-v1\/nadine\/[a-f0-9]{64}\.mp3$/);
+    }
+  });
+
   it("only prioritizes uploaded Edge clips included in the verified index", async () => {
     const verified = await edgeRecordingKey("Hello! Welcome to WordPix.");
     expect(await isEdgeRecordingAvailable(verified!)).toBe(true);

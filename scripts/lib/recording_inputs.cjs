@@ -25,6 +25,7 @@ function recordingInputsDigest() {
     "src/app/learning",
     "src/app/shared",
     "src/app/onboarding",
+    "src/app/generated/additionalRecordings",
   ])
     visit(directory);
   const digest = crypto.createHash("sha256");

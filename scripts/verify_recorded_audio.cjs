@@ -48,6 +48,17 @@ async function verifyRecordedAudio({ requireComplete = false } = {}) {
   const aliases = JSON.parse(
     fs.readFileSync("src/app/generated/additionalAudioRecordings.json", "utf8")
   );
+  for (const name of fs.readdirSync("src/app/generated/additionalRecordings")) {
+    if (!/^[0-9a-f]{2}\.json$/.test(name)) continue;
+    const shard = JSON.parse(
+      fs.readFileSync(`src/app/generated/additionalRecordings/${name}`, "utf8")
+    );
+    for (const [id, key] of Object.entries(shard)) {
+      if (Object.hasOwn(aliases, id) && aliases[id] !== key)
+        throw Error("Conflicting recording alias: " + id);
+      aliases[id] = key;
+    }
+  }
   const brokenAliases = Object.values(aliases).filter((key) => !keys.has(key));
   // These corrected takes bypass general text lookup in the browser.
   const { audioKey } = require("./lib/assetKey.cjs");

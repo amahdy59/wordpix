@@ -1,8 +1,25 @@
 {
-  "version": "0.1.108",
-  "notes": ["Course actions fit narrow screens more comfortably, including with larger text."],
-  "notesAr": ["تظهر أزرار الدورات بشكل أوضح على الشاشات الضيقة، بما في ذلك عند تكبير النص."],
+  "version": "0.1.113",
+  "notes": ["Listen to Nadine read 164 vocabulary examples across five units."],
+  "notesAr": ["استمع إلى ١٦٤ مثالاً على استخدام المفردات بصوت نادين في خمس وحدات."],
   "releases": [
+    {
+      "id": "0.1.113",
+      "version": "0.1.113",
+      "date": "2026-11-06",
+      "title": {
+        "en": "More English audio with Nadine",
+        "ar": "مزيد من التسجيلات الإنجليزية بصوت نادين"
+      },
+      "changes": [
+        {
+          "id": "nadine-vocabulary-and-example-audio",
+          "category": "added",
+          "en": "Listen to Nadine read 164 vocabulary examples across five units.",
+          "ar": "استمع إلى ١٦٤ مثالاً على استخدام المفردات بصوت نادين في خمس وحدات."
+        }
+      ]
+    },
     {
       "id": "0.1.108",
       "version": "0.1.108",

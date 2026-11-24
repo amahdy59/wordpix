@@ -1,0 +1,668 @@
+{
+  "bakery": {
+    "baguette": {
+      "en": "Could you cut the baguette in half, please?",
+      "ar": "هل يمكنك قطع خبز الباغيت إلى نصفين؟"
+    },
+    "sourdough": {
+      "en": "The bakery sells sourdough on Saturday mornings.",
+      "ar": "يبيع المخبز خبز العجين المخمّر صباح السبت."
+    },
+    "danish": {
+      "en": "She chose a fruit danish from the bakery counter.",
+      "ar": "اختارت معجّنة دنماركية بالفواكه من منضدة المخبز."
+    },
+    "cinnamon-roll": {
+      "en": "Would you like to share a cinnamon roll?",
+      "ar": "هل تود مشاركتي لفافة قرفة؟"
+    },
+    "clair": {
+      "en": "The baker put the éclair in a box so the icing would not stick.",
+      "ar": "وضع الخباز الإكلير في علبة حتى لا يلتصق الغطاء الحلو."
+    },
+    "scone": {
+      "en": "He spread jam on a scone and poured some tea.",
+      "ar": "دهن كعكة سكون بالمربى وصبّ بعض الشاي."
+    },
+    "strudel": {
+      "en": "The café serves warm apple strudel in the afternoon.",
+      "ar": "يقدم المقهى فطيرة شترودل بالتفاح دافئة بعد الظهر."
+    },
+    "profiterole": {
+      "en": "She left the last profiterole for her brother.",
+      "ar": "تركت آخر قطعة بروفيترول لأخيها."
+    },
+    "birthday-cake": {
+      "en": "We ordered a birthday cake for our colleague.",
+      "ar": "طلبنا كعكة عيد ميلاد لزميلنا."
+    },
+    "cupcake": {
+      "en": "The cupcake fell over in the box on the way home.",
+      "ar": "انقلبت الكعكة الصغيرة داخل العلبة في طريق العودة."
+    },
+    "cheesecake": {
+      "en": "Could we have two spoons for the cheesecake?",
+      "ar": "هل يمكننا الحصول على ملعقتين لكعكة الجبن؟"
+    },
+    "carrot-cake": {
+      "en": "My neighbour brought a carrot cake to the meeting.",
+      "ar": "أحضر جاري كعكة جزر إلى الاجتماع."
+    },
+    "apple-pie": {
+      "en": "The apple pie needs a few minutes to cool.",
+      "ar": "تحتاج فطيرة التفاح بضع دقائق لتبرد."
+    },
+    "lemon-tart": {
+      "en": "I chose a lemon tart because I wanted something small.",
+      "ar": "اخترت فطيرة ليمون صغيرة لأنني أردت شيئاً صغيراً."
+    },
+    "brownie": {
+      "en": "He packed a brownie in his lunch box.",
+      "ar": "وضع قطعة براوني في علبة غدائه."
+    },
+    "sugar-cookie": {
+      "en": "She put a sugar cookie beside each cup.",
+      "ar": "وضعت بسكويتة سكر بجوار كل كوب."
+    },
+    "oatmeal-cookie": {
+      "en": "I found an oatmeal cookie at the bottom of my bag.",
+      "ar": "وجدت بسكويتة شوفان في قاع حقيبتي."
+    },
+    "wafer": {
+      "en": "The ice cream came with a crisp wafer on top.",
+      "ar": "قُدّمت المثلجات مع رقاقة ويفر مقرمشة فوقها."
+    },
+    "pretzel": {
+      "en": "We bought a warm pretzel at the station.",
+      "ar": "اشترينا كعك بريتزل دافئاً في المحطة."
+    },
+    "cracker": {
+      "en": "He put a slice of cheese on a cracker.",
+      "ar": "وضع شريحة جبن على بسكويت مالح."
+    },
+    "yeast": {
+      "en": "We cannot make this bread because we have run out of yeast.",
+      "ar": "لا نستطيع صنع هذا الخبز لأن الخميرة نفدت."
+    },
+    "oven": {
+      "en": "The oven is too small for this baking tray.",
+      "ar": "الفرن صغير جداً لهذه الصينية."
+    },
+    "mixer": {
+      "en": "The baker switched off the mixer before answering the phone.",
+      "ar": "أوقف الخباز الخلّاط قبل الرد على الهاتف."
+    },
+    "rolling-pin": {
+      "en": "The rolling pin was too long to fit in the drawer.",
+      "ar": "كانت النشّابة أطول من أن تتسع في الدرج."
+    },
+    "baking-tray": {
+      "en": "The baking tray will not fit on this shelf.",
+      "ar": "صينية الخبز لا تتسع لها هذه الرفّة."
+    },
+    "whisk": {
+      "en": "Please pass me the whisk so I can beat the eggs.",
+      "ar": "ناولني المضرب اليدوي كي أخفق البيض."
+    },
+    "spatula": {
+      "en": "He used a spatula to turn the pancake.",
+      "ar": "استخدم ملعقة مسطحة لقلب الفطيرة."
+    },
+    "piping-bag": {
+      "en": "The baker filled a piping bag with icing.",
+      "ar": "ملأ الخباز كيس تزيين بالكريمة السكرية."
+    },
+    "muffin-tin": {
+      "en": "She washed the muffin tin after the cakes had cooled.",
+      "ar": "غسلت قالب الكعك الصغير بعد أن بردت الكعكات."
+    },
+    "bread-basket": {
+      "en": "The waiter brought a bread basket while we chose our meals.",
+      "ar": "أحضر النادل سلة خبز بينما كنا نختار وجباتنا."
+    },
+    "apron": {
+      "en": "He hung his apron behind the kitchen door.",
+      "ar": "علّق مئزره خلف باب المطبخ."
+    }
+  },
+  "camping-site": {
+    "tent": {
+      "en": "Our tent has enough space for two people.",
+      "ar": "تتسع خيمتنا لشخصين."
+    },
+    "sleeping-bag": {
+      "en": "I borrowed a sleeping bag for the camping trip.",
+      "ar": "استعرت كيس نوم لرحلة التخييم."
+    },
+    "air-mattress": {
+      "en": "The air mattress lost air during the night.",
+      "ar": "فقد الفراش الهوائي بعض الهواء أثناء الليل."
+    },
+    "tarp": {
+      "en": "We put a tarp over the bags when it started to rain.",
+      "ar": "وضعنا غطاءً مشمعاً فوق الحقائب عندما بدأ المطر."
+    },
+    "tent-pole": {
+      "en": "One tent pole was missing from the bag.",
+      "ar": "كان أحد أعمدة الخيمة مفقوداً من الحقيبة."
+    },
+    "tent-peg": {
+      "en": "He found a bent tent peg while packing the equipment.",
+      "ar": "وجد وتداً معوجاً للخيمة أثناء جمع المعدات."
+    },
+    "rain-fly": {
+      "en": "The rain fly was still wet when we packed the tent.",
+      "ar": "كان غطاء المطر لا يزال مبتلاً عندما جمعنا الخيمة."
+    },
+    "campfire": {
+      "en": "We sat around the campfire and talked about the walk.",
+      "ar": "جلسنا حول نار المخيم وتحدثنا عن المشي."
+    },
+    "firewood": {
+      "en": "The campsite sells bags of firewood at reception.",
+      "ar": "يبيع المخيم أكياس حطب عند الاستقبال."
+    },
+    "lighter": {
+      "en": "He checked his bag but could not find the lighter.",
+      "ar": "فتش حقيبته ولم يجد القداحة."
+    },
+    "grill": {
+      "en": "The restaurant's grill is being cleaned this afternoon.",
+      "ar": "تجري عملية تنظيف شواية المطعم بعد ظهر اليوم."
+    },
+    "cooler": {
+      "en": "We carried our lunch to the campsite in a cooler.",
+      "ar": "حملنا غداءنا إلى المخيم في صندوق تبريد."
+    },
+    "water-jug": {
+      "en": "Could you bring the water jug to the table?",
+      "ar": "هل يمكنك إحضار إبريق الماء إلى الطاولة؟"
+    },
+    "thermos": {
+      "en": "My thermos leaked inside my backpack.",
+      "ar": "تسرّب السائل من حافظتي الحرارية داخل حقيبة ظهري."
+    },
+    "marshmallow": {
+      "en": "He dropped a marshmallow into his hot chocolate.",
+      "ar": "أسقط قطعة مارشميلو في الشوكولاتة الساخنة."
+    },
+    "skewer": {
+      "en": "The waiter brought a skewer of grilled vegetables.",
+      "ar": "أحضر النادل سيخاً من الخضراوات المشوية."
+    },
+    "compass": {
+      "en": "She checked her compass before choosing the path.",
+      "ar": "راجعت بوصلتها قبل اختيار الممر."
+    },
+    "map": {
+      "en": "Could you show me our hotel on the map?",
+      "ar": "هل يمكنك أن تريني فندقنا على الخريطة؟"
+    },
+    "gps-device": {
+      "en": "The guide carried a GPS device as well as a paper map.",
+      "ar": "حمل الدليل جهاز تحديد مواقع وخريطة ورقية أيضاً."
+    },
+    "flashlight": {
+      "en": "The flashlight stopped working, so we changed the batteries.",
+      "ar": "توقف المصباح اليدوي عن العمل، فغيّرنا البطاريات."
+    },
+    "headlamp": {
+      "en": "He wore a headlamp to keep his hands free.",
+      "ar": "ارتدى مصباح رأس ليبقي يديه حرتين."
+    },
+    "binoculars": {
+      "en": "Can I borrow your binoculars to look at that bird?",
+      "ar": "هل يمكنني استعارة منظارك لرؤية ذلك الطائر؟"
+    },
+    "trail-marker": {
+      "en": "We stopped at the trail marker to check our route.",
+      "ar": "توقفنا عند علامة المسار لمراجعة طريقنا."
+    },
+    "hiking-boots": {
+      "en": "My hiking boots are still muddy from yesterday.",
+      "ar": "لا تزال أحذية المشي لدي موحلة منذ أمس."
+    },
+    "water-bottle": {
+      "en": "I left my water bottle on the bus.",
+      "ar": "تركت زجاجة الماء في الحافلة."
+    },
+    "pocket-knife": {
+      "en": "The guide kept a pocket knife in a closed case.",
+      "ar": "احتفظ الدليل بسكين جيب في علبة مغلقة."
+    },
+    "rope": {
+      "en": "They tied the empty boxes together with rope.",
+      "ar": "ربطوا الصناديق الفارغة ببعضها بحبل."
+    },
+    "dry-bag": {
+      "en": "I put my notebook in a dry bag before the boat trip.",
+      "ar": "وضعت دفتري في حقيبة مقاومة للماء قبل رحلة القارب."
+    },
+    "sunscreen": {
+      "en": "I left my sunscreen in the hotel room.",
+      "ar": "تركت واقي الشمس في غرفة الفندق."
+    },
+    "trail": {
+      "en": "The trail leads from the car park to the lake.",
+      "ar": "يمتد المسار من موقف السيارات إلى البحيرة."
+    },
+    "river": {
+      "en": "The bus crossed the river on an old stone bridge.",
+      "ar": "عبرت الحافلة النهر فوق جسر حجري قديم."
+    },
+    "waterfall": {
+      "en": "We could hear the waterfall before we could see it.",
+      "ar": "كنا نسمع الشلال قبل أن نراه."
+    },
+    "valley": {
+      "en": "Our train followed the river through the valley.",
+      "ar": "تبِع قطارنا مجرى النهر عبر الوادي."
+    },
+    "wildflower": {
+      "en": "She took a photograph of a wildflower beside the path.",
+      "ar": "التقطت صورة لزهرة برية بجوار الممر."
+    },
+    "rock": {
+      "en": "We stopped beside a large rock to check the map.",
+      "ar": "توقفنا بجوار صخرة كبيرة لمراجعة الخريطة."
+    },
+    "cliff": {
+      "en": "The hotel has a view of the cliff across the bay.",
+      "ar": "يطل الفندق على الجرف في الجهة المقابلة للخليج."
+    },
+    "cook": {
+      "en": "I usually cook dinner when I get home.",
+      "ar": "عادةً أطبخ العشاء عندما أصل إلى البيت."
+    },
+    "paddle": {
+      "en": "She lifted the paddle out of the water and rested.",
+      "ar": "رفعت المجداف من الماء واستراحت."
+    }
+  },
+  "coffee-shop": {
+    "latte": {
+      "en": "Could I have a small latte to take away?",
+      "ar": "هل يمكنني الحصول على لاتيه صغير للسفري؟"
+    },
+    "cappuccino": {
+      "en": "He ordered a cappuccino while he waited for his colleague.",
+      "ar": "طلب كابتشينو أثناء انتظار زميله."
+    },
+    "mocha": {
+      "en": "She asked whether the mocha could be made without cream.",
+      "ar": "سألت إن كان يمكن تحضير الموكا دون كريمة."
+    },
+    "chai": {
+      "en": "The café serves chai with or without milk.",
+      "ar": "يقدم المقهى شاي تشاي بالحليب أو بدونه."
+    },
+    "iced-coffee": {
+      "en": "I ordered an iced coffee because the afternoon was hot.",
+      "ar": "طلبت قهوة مثلجة لأن الجو كان حاراً بعد الظهر."
+    },
+    "iced-tea": {
+      "en": "Would you like lemon in your iced tea?",
+      "ar": "هل تريد ليموناً في الشاي المثلج؟"
+    },
+    "frappe": {
+      "en": "The barista put a lid on my frappe.",
+      "ar": "وضع معدّ القهوة غطاءً على مشروب الفرابيه."
+    },
+    "juice": {
+      "en": "The waiter asked whether I wanted juice or water.",
+      "ar": "سألني النادل إن كنت أريد عصيراً أم ماءً."
+    },
+    "soda": {
+      "en": "I ordered a soda with my lunch.",
+      "ar": "طلبت مشروباً غازياً مع غدائي."
+    },
+    "water": {
+      "en": "Could we have some water for the table, please?",
+      "ar": "هل يمكن إحضار بعض الماء إلى الطاولة؟"
+    },
+    "sandwich": {
+      "en": "I made a sandwich to take to work.",
+      "ar": "حضّرت شطيرة لآخذها إلى العمل."
+    },
+    "quiche": {
+      "en": "The café had one slice of spinach quiche left.",
+      "ar": "تبقت في المقهى قطعة واحدة من كيش السبانخ."
+    },
+    "grinder": {
+      "en": "The coffee grinder made too much noise during the interview.",
+      "ar": "أصدرت مطحنة القهوة ضوضاء كثيرة أثناء المقابلة."
+    },
+    "kettle": {
+      "en": "The kettle is empty; would you fill it, please?",
+      "ar": "الغلاية فارغة؛ هل تملؤها من فضلك؟"
+    },
+    "blender": {
+      "en": "The server rinsed the blender after making our drinks.",
+      "ar": "شطف البائع الخلّاط بعد تحضير مشروباتنا."
+    },
+    "lid": {
+      "en": "Could I have a lid so I can take this home?",
+      "ar": "هل يمكنني الحصول على غطاء لآخذ هذا إلى البيت؟"
+    },
+    "napkin": {
+      "en": "Could you bring an extra napkin, please?",
+      "ar": "هل يمكنك إحضار منديل إضافي؟"
+    },
+    "creamer": {
+      "en": "The café keeps the creamer beside the sugar.",
+      "ar": "يضع المقهى مبيّض القهوة بجوار السكر."
+    },
+    "stirrer": {
+      "en": "He used a wooden stirrer to mix his coffee.",
+      "ar": "استخدم عود تحريك خشبياً لخلط القهوة."
+    },
+    "barista": {
+      "en": "The barista called my name when the coffee was ready.",
+      "ar": "نادى معدّ القهوة اسمي عندما أصبحت القهوة جاهزة."
+    },
+    "table": {
+      "en": "Could we have a table near the window?",
+      "ar": "هل يمكننا الجلوس إلى طاولة قرب النافذة؟"
+    }
+  },
+  "garden": {
+    "tulip": {
+      "en": "She put a yellow tulip in a vase on the table.",
+      "ar": "وضعت زهرة توليب صفراء في مزهرية على الطاولة."
+    },
+    "lily": {
+      "en": "He bought a white lily for his mother's garden.",
+      "ar": "اشترى زهرة زنبق بيضاء لحديقة والدته."
+    },
+    "daffodil": {
+      "en": "The first daffodil opened outside our kitchen window.",
+      "ar": "تفتحت أول زهرة نرجس خارج نافذة مطبخنا."
+    },
+    "orchid": {
+      "en": "My orchid has a new flower this week.",
+      "ar": "ظهرت زهرة جديدة على نبتة الأوركيد عندي هذا الأسبوع."
+    },
+    "carnation": {
+      "en": "She added a pink carnation to the bunch of flowers.",
+      "ar": "أضافت زهرة قرنفل وردية إلى باقة الزهور."
+    },
+    "oak-tree": {
+      "en": "We sat under the oak tree to eat our lunch.",
+      "ar": "جلسنا تحت شجرة البلوط لتناول الغداء."
+    },
+    "pine-tree": {
+      "en": "A pine tree stands beside the entrance to the campsite.",
+      "ar": "تقف شجرة صنوبر بجوار مدخل المخيم."
+    },
+    "palm-tree": {
+      "en": "We waited in the shade of a palm tree.",
+      "ar": "انتظرنا في ظل نخلة."
+    },
+    "bush": {
+      "en": "A ball rolled under the bush beside the gate.",
+      "ar": "تدحرجت كرة تحت الشجيرة بجوار البوابة."
+    },
+    "ivy": {
+      "en": "Ivy had grown around the old window frame.",
+      "ar": "نمت اللبلابة حول إطار النافذة القديم."
+    },
+    "vine": {
+      "en": "A vine had grown across the old garden wall.",
+      "ar": "نمت نبتة متسلقة عبر جدار الحديقة القديم."
+    },
+    "fern": {
+      "en": "She moved the fern away from the sunny window.",
+      "ar": "نقلت نبتة السرخس بعيداً عن النافذة المشمسة."
+    },
+    "garden-gloves": {
+      "en": "I keep my garden gloves on a hook in the shed.",
+      "ar": "أحتفظ بقفازات البستنة على خطاف في المخزن."
+    },
+    "pruner": {
+      "en": "The gardener put the pruner back in its case.",
+      "ar": "أعاد البستاني مقص التقليم إلى علبته."
+    },
+    "lawn-mower": {
+      "en": "Our lawn mower is being repaired, so the grass is long.",
+      "ar": "آلة جز العشب لدينا قيد الإصلاح، لذلك طال العشب."
+    },
+    "spade": {
+      "en": "He left the spade beside the hole he had dug.",
+      "ar": "ترك المِعول الزراعي المسطح بجوار الحفرة التي حفرها."
+    },
+    "sprinkler": {
+      "en": "The sprinkler is watering the lawn behind the house.",
+      "ar": "يسقي رشاش الماء العشب خلف المنزل."
+    },
+    "root": {
+      "en": "A tree root had lifted part of the path.",
+      "ar": "رفع جذر شجرة جزءاً من الممر."
+    },
+    "leaf": {
+      "en": "A dry leaf fell onto my notebook.",
+      "ar": "سقطت ورقة شجر جافة على دفتري."
+    },
+    "petal": {
+      "en": "A pink petal floated on the water.",
+      "ar": "طفت بتلة وردية على الماء."
+    },
+    "bark": {
+      "en": "The old tree has rough bark on its trunk.",
+      "ar": "للشجرة القديمة لحاء خشن على جذعها."
+    },
+    "bud": {
+      "en": "A green bud appeared on the rose bush this morning.",
+      "ar": "ظهر برعم أخضر على شجيرة الورد هذا الصباح."
+    },
+    "thorn": {
+      "en": "A thorn caught on my sleeve as I passed the roses.",
+      "ar": "علقت شوكة بكُمّي وأنا أمر بجوار الورد."
+    },
+    "ladybug": {
+      "en": "A ladybug landed on the sleeve of my jacket.",
+      "ar": "حطت دعسوقة على كُمّ سترتي."
+    },
+    "bee": {
+      "en": "A bee flew from one flower to another.",
+      "ar": "طارت نحلة من زهرة إلى أخرى."
+    },
+    "snail": {
+      "en": "We stopped to watch a snail cross the wet path.",
+      "ar": "توقفنا لنشاهد حلزوناً يعبر الممر المبتل."
+    },
+    "ant": {
+      "en": "An ant was carrying a crumb across the step.",
+      "ar": "كانت نملة تحمل فتاتاً عبر الدرجة."
+    },
+    "spider": {
+      "en": "A spider built a web in the corner of the shed.",
+      "ar": "نسج عنكبوت شبكة في زاوية المخزن."
+    },
+    "dragonfly": {
+      "en": "A dragonfly hovered above the pond.",
+      "ar": "حلّق يعسوب فوق البركة."
+    },
+    "flower-bed": {
+      "en": "Please keep the dog out of the flower bed.",
+      "ar": "يرجى إبعاد الكلب عن حوض الزهور."
+    },
+    "path": {
+      "en": "This path leads to the station.",
+      "ar": "يؤدي هذا الممر إلى المحطة."
+    },
+    "gate": {
+      "en": "Please close the gate when you leave.",
+      "ar": "يرجى إغلاق البوابة عند المغادرة."
+    },
+    "bird-feeder": {
+      "en": "We can see the bird feeder from the kitchen.",
+      "ar": "نستطيع رؤية معلف الطيور من المطبخ."
+    },
+    "garden-shed": {
+      "en": "The spare plant pots are in the garden shed.",
+      "ar": "أصص النباتات الاحتياطية في مخزن الحديقة."
+    },
+    "compost-bin": {
+      "en": "The council delivered a new compost bin yesterday.",
+      "ar": "سلّمت البلدية حاوية سماد جديدة أمس."
+    },
+    "flower": {
+      "en": "He picked a flower from his own garden for the vase.",
+      "ar": "قطف زهرة من حديقته لوضعها في المزهرية."
+    },
+    "grass": {
+      "en": "The grass is still wet after this morning's rain.",
+      "ar": "لا يزال العشب مبتلاً بعد مطر هذا الصباح."
+    },
+    "gloves": {
+      "en": "I left my gloves beside the garden tools.",
+      "ar": "تركت قفازاتي بجوار أدوات الحديقة."
+    }
+  },
+  "park": {
+    "bench": {
+      "en": "We sat on a bench while we waited for the bus.",
+      "ar": "جلسنا على مقعد طويل أثناء انتظار الحافلة."
+    },
+    "fountain": {
+      "en": "We agreed to meet beside the fountain at two.",
+      "ar": "اتفقنا على اللقاء بجوار النافورة في الثانية."
+    },
+    "gazebo": {
+      "en": "We waited in the gazebo until the rain stopped.",
+      "ar": "انتظرنا في المظلة المسقوفة حتى توقف المطر."
+    },
+    "bridge": {
+      "en": "The new bridge connects the village to the main road.",
+      "ar": "يربط الجسر الجديد القرية بالطريق الرئيسي."
+    },
+    "statue": {
+      "en": "The statue outside the museum shows a seated musician.",
+      "ar": "يُظهر التمثال خارج المتحف موسيقياً جالساً."
+    },
+    "trash-can": {
+      "en": "Please put the empty cup in the trash can.",
+      "ar": "يرجى وضع الكوب الفارغ في سلة المهملات."
+    },
+    "picnic-table": {
+      "en": "There is room for two more people at our picnic table.",
+      "ar": "توجد مساحة لشخصين آخرين على طاولة النزهة."
+    },
+    "drinking-fountain": {
+      "en": "The drinking fountain near the entrance is not working.",
+      "ar": "نافورة مياه الشرب قرب المدخل لا تعمل."
+    },
+    "stream": {
+      "en": "We crossed the stream on a small wooden bridge.",
+      "ar": "عبرنا الجدول على جسر خشبي صغير."
+    },
+    "hill": {
+      "en": "I got off my bicycle at the bottom of the steep hill.",
+      "ar": "نزلت عن دراجتي أسفل التل الشديد الانحدار."
+    },
+    "meadow": {
+      "en": "The footpath crosses a meadow before it reaches the village.",
+      "ar": "يعبر ممر المشاة مرجاً قبل الوصول إلى القرية."
+    },
+    "pebble": {
+      "en": "A small pebble got inside my shoe.",
+      "ar": "دخلت حصاة صغيرة في حذائي."
+    },
+    "acorn": {
+      "en": "An acorn fell from the oak tree onto the path.",
+      "ar": "سقطت ثمرة بلوط من الشجرة على الممر."
+    },
+    "squirrel": {
+      "en": "A squirrel ran up the tree beside our bench.",
+      "ar": "ركض سنجاب صاعداً الشجرة بجوار مقعدنا."
+    },
+    "pigeon": {
+      "en": "A pigeon landed on the station roof.",
+      "ar": "حطت حمامة على سقف المحطة."
+    },
+    "frog": {
+      "en": "We heard a frog near the water after dark.",
+      "ar": "سمعنا ضفدعاً قرب الماء بعد حلول الظلام."
+    },
+    "turtle": {
+      "en": "The turtle disappeared beneath the surface of the pond.",
+      "ar": "اختفت السلحفاة تحت سطح البركة."
+    },
+    "sparrow": {
+      "en": "A sparrow picked up a crumb beside the café.",
+      "ar": "التقط عصفور دوري فتاتاً بجوار المقهى."
+    },
+    "picnic": {
+      "en": "We brought enough food for a picnic by the river.",
+      "ar": "أحضرنا طعاماً يكفي لنزهة بجوار النهر."
+    },
+    "photography": {
+      "en": "He took a course in photography before buying a new camera.",
+      "ar": "التحق بدورة في التصوير الفوتوغرافي قبل شراء كاميرا جديدة."
+    },
+    "kite": {
+      "en": "The wind caught our kite and lifted it above the trees.",
+      "ar": "حملت الرياح طائرتنا الورقية ورفعتها فوق الأشجار."
+    },
+    "frisbee": {
+      "en": "We threw a frisbee to each other in the park.",
+      "ar": "رمينا قرصاً طائراً لبعضنا في الحديقة."
+    },
+    "jump-rope": {
+      "en": "I bought a jump rope to use for exercise at home.",
+      "ar": "اشتريت حبل قفز للتمرين في المنزل."
+    },
+    "skateboard": {
+      "en": "He carried his skateboard onto the train.",
+      "ar": "حمل لوح التزلج إلى داخل القطار."
+    },
+    "badminton": {
+      "en": "Would you like to play badminton after work?",
+      "ar": "هل ترغب في لعب الريشة الطائرة بعد العمل؟"
+    },
+    "tennis-ball": {
+      "en": "A tennis ball rolled under the bench.",
+      "ar": "تدحرجت كرة تنس تحت المقعد."
+    },
+    "yoga-mat": {
+      "en": "I left my yoga mat in the changing room.",
+      "ar": "تركت بساط اليوغا في غرفة تبديل الملابس."
+    },
+    "bicycle": {
+      "en": "I lock my bicycle outside the office.",
+      "ar": "أقفل دراجتي خارج المكتب."
+    },
+    "park-map": {
+      "en": "We checked the park map to find the nearest exit.",
+      "ar": "راجعنا خريطة الحديقة للعثور على أقرب مخرج."
+    },
+    "no-swimming-sign": {
+      "en": "Visitors noticed the clear no swimming sign beside the lake.",
+      "ar": "لاحظ الزوار لافتة ممنوع السباحة الواضحة بجوار البحيرة."
+    },
+    "crosswalk": {
+      "en": "The driver stopped to let us use the crosswalk.",
+      "ar": "توقف السائق ليسمح لنا باستخدام معبر المشاة."
+    },
+    "speed-bump": {
+      "en": "The bus slowed down before the speed bump.",
+      "ar": "خفّفت الحافلة سرعتها قبل المطب."
+    },
+    "information-board": {
+      "en": "The information board lists the park's opening hours.",
+      "ar": "تعرض لوحة المعلومات مواعيد فتح الحديقة."
+    },
+    "recycling-bin": {
+      "en": "The office has a recycling bin for paper beside the printer.",
+      "ar": "يوجد في المكتب صندوق لإعادة تدوير الورق بجوار الطابعة."
+    },
+    "walk": {
+      "en": "I walk to the station every morning.",
+      "ar": "أمشي إلى المحطة كل صباح."
+    },
+    "jog": {
+      "en": "We jog around the park before work.",
+      "ar": "نهرول حول الحديقة قبل العمل."
+    }
+  }
+}
