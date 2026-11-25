@@ -47,40 +47,45 @@ audio/heygen-v1/nadine/<sha256(text)>.mp3
 
 ## 3. Campaign Status & Multi-Day Batch Plan
 
-Total campaign: **5,960 audio clips** across 5 curriculum batches.
+Total campaign: **5,960 audio clips** across curriculum batches.
 
-| Batch           | Description                            | Total Clips |           Status            | Day & Schedule                                       |
-| :-------------- | :------------------------------------- | :---------: | :-------------------------: | :--------------------------------------------------- |
-| **Batch 1**     | Core Vocabulary & Contextual Sentences |    1,761    |   ✅ **Published to R2**    | Completed                                            |
-| **Batch 2**     | Contextual Cloze Blanks (Part 1)       |    1,323    |   ✅ **Published to R2**    | Completed (Receipt: `batch-02-publish-receipt.json`) |
-| **Batch 3**     | Contextual Cloze Blanks (Part 2)       |    1,322    |       ⏸️ **Pending**        | **Day 2** (1,322 API calls)                          |
-| **Batch 4 & 5** | Sentence Builder Chunks (All Units)    |    1,554    |       ⏸️ **Pending**        | **Day 3** (1,554 API calls)                          |
-| **Total**       |                                        |  **5,960**  | **3,084 Published (51.7%)** | **2,876 Remaining**                                  |
+| Batch                | Description                                     | Total Clips |                Status                | Day & Schedule                                                        |
+| :------------------- | :---------------------------------------------- | :---------: | :----------------------------------: | :-------------------------------------------------------------------- |
+| **Batch 1**          | Core Vocabulary & Contextual Sentences          |    1,761    |        ✅ **Published to R2**        | Completed                                                             |
+| **Batch 2**          | Contextual Cloze Blanks (Part 1)                |    1,323    |        ✅ **Published to R2**        | Completed (Receipt: `batch-02-publish-receipt.json`)                  |
+| **Batch 3**          | Contextual Cloze Blanks (Part 2)                |    1,322    |        ✅ **Published to R2**        | Completed (Receipt: `batch-03-publish-receipt.json`)                  |
+| **Batch 4 (Part 1)** | Sentence Builder Chunks (First 543 clips)       |     543     |        ✅ **Published to R2**        | Completed (Receipt: `batch-04-construction-all-publish-receipt.json`) |
+| **Batch 4 (Part 2)** | Sentence Builder Chunks (Remaining 1,011 clips) |    1,011    | ⏸️ **Pending Next 24h Quota Window** | Resume when quota resets (1,011 API calls)                            |
+| **Total**            |                                                 |  **5,960**  |     **4,949 Published (83.0%)**      | **1,011 Remaining (17.0%)**                                           |
 
 ---
 
 ## 4. Instructions for Future Agents (How to Resume Work)
 
-When resuming this workflow in a new conversation or session, execute the designated day's batch following this two-step procedure:
+When resuming this workflow in a new conversation or session (after the 24-hour quota reset):
 
-### Day 2: Contextual Cloze Blanks (Part 2)
-
-```powershell
-# Step 1: Synthesize all 1,322 clips (stops automatically at daily limit)
-python scripts/synthesize_heygen_batch.py --batch=batch-03 --limit=0
-
-# Step 2: Upload new clips to R2 (create-only putIfAbsent) and update shards
-node scripts/publish_heygen_batch.cjs --batch=batch-03
-```
-
-### Day 3: Sentence Builder Chunks (All Units)
+### Final Step: Synthesize & Publish Remaining 1,011 Construction Chunks
 
 ```powershell
-# Step 1: Synthesize all 1,554 clips
-python scripts/synthesize_heygen_batch.py --batch=batch-04-construction-all --limit=0
+# Step 1: Synthesize the remaining 1,011 clips (automatically skips the 543 already cached/completed)
+python scripts/synthesize_heygen_batch.py --batch=batch-04-construction-all --limit=0 --delay=1.2
 
-# Step 2: Upload new clips to R2 (create-only putIfAbsent) and update shards
+# Step 2: Upload remaining clips to Cloudflare R2 (idempotent create-only putIfAbsent) and update app shards
 node scripts/publish_heygen_batch.cjs --batch=batch-04-construction-all
+
+# Step 3: Verify zero deletions and check search index
+python -c "
+import json, subprocess
+head = subprocess.check_output(['git', 'ls-tree', '-r', '--name-only', 'HEAD', 'src/app/generated/additionalRecordings'], text=True).strip().splitlines()
+total = sum(len(json.load(open(f))) for f in head)
+print('Total additional recordings takes:', total)
+"
+node scripts/build_search_index.mjs --check
+
+# Step 4: Commit and push
+git add src/app/generated/additionalRecordings/*.json docs/HEYGEN_AUDIO_WORKFLOW.md
+git commit -m "feat(audio): complete HeyGen Batch 4 sentence builder audio (100% curriculum coverage)"
+git push origin codex/experience-review-2026-11-02
 ```
 
 ---
