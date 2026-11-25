@@ -76,6 +76,7 @@ def request_heygen_audio(text: str, api_key: str, voice_id: str = DEFAULT_VOICE,
         headers={"X-Api-Key": api_key, "Content-Type": "application/json"},
         method="POST",
     )
+    last_error = None
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=45) as resp:
@@ -85,6 +86,7 @@ def request_heygen_audio(text: str, api_key: str, voice_id: str = DEFAULT_VOICE,
                     raise ValueError(f"No audio_url returned from HeyGen: {body}")
                 return data
         except urllib.error.HTTPError as error:
+            last_error = error
             if error.code == 429 or error.code >= 500:
                 wait_sec = min(60, 10 * (2 ** attempt))
                 print(f"    [HeyGen HTTP {error.code}] Rate limited or server busy. Backing off for {wait_sec}s...", flush=True)
@@ -92,13 +94,14 @@ def request_heygen_audio(text: str, api_key: str, voice_id: str = DEFAULT_VOICE,
                 continue
             raise
         except (urllib.error.URLError, TimeoutError, OSError) as error:
+            last_error = error
             if attempt < retries - 1:
                 wait_sec = 5 * (attempt + 1)
                 print(f"    [Network glitch] {error}. Retrying in {wait_sec}s...", flush=True)
                 time.sleep(wait_sec)
                 continue
             raise
-    raise RuntimeError(f"Failed to request HeyGen audio after {retries} attempts.")
+    raise RuntimeError(f"Failed to request HeyGen audio after {retries} attempts (last error: {last_error}).")
 
 
 def convert_wav_to_mp3(wav_path: Path, mp3_path: Path):
@@ -453,6 +456,10 @@ def main():
                 api_calls_count += 1
                 time.sleep(args.delay)
             except Exception as e:
+                if "429" in str(e):
+                    print(f"\n[!] HeyGen API daily rate limit reached (HTTP 429). Checkpointing all progress and stopping gracefully.", file=sys.stderr, flush=True)
+                    quota_reached = True
+                    break
                 print(f"    [Error on '{text[:30]}']: {e}", file=sys.stderr, flush=True)
                 continue
 
