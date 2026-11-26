@@ -47,24 +47,28 @@ audio/heygen-v1/nadine/<sha256(text)>.mp3
 
 ## 3. Campaign Status & Multi-Day Batch Plan
 
-Total campaign: **5,960 audio clips** across curriculum batches.
+Initial campaign: **5,960 audio clips** across curriculum batches, plus an ongoing site-wide expansion across Tiers 1–4 (**7,905 total published clips** to date).
 
-| Batch                | Description                                     | Total Clips |           Status           | Receipt / Notes                                                       |
-| :------------------- | :---------------------------------------------- | :---------: | :------------------------: | :-------------------------------------------------------------------- |
-| **Batch 1**          | Core Vocabulary & Contextual Sentences          |    1,761    |   ✅ **Published to R2**   | Completed                                                             |
-| **Batch 2**          | Contextual Cloze Blanks (Part 1)                |    1,323    |   ✅ **Published to R2**   | Completed (Receipt: `batch-02-publish-receipt.json`)                  |
-| **Batch 3**          | Contextual Cloze Blanks (Part 2)                |    1,322    |   ✅ **Published to R2**   | Completed (Receipt: `batch-03-publish-receipt.json`)                  |
-| **Batch 4 (Part 1)** | Sentence Builder Chunks (First 543 clips)       |     543     |   ✅ **Published to R2**   | Completed                                                             |
-| **Batch 4 (Part 2)** | Sentence Builder Chunks (Remaining 1,011 clips) |    1,011    |   ✅ **Published to R2**   | Completed (Receipt: `batch-04-construction-all-publish-receipt.json`) |
-| **Total**            |                                                 |  **5,960**  | **5,960 Published (100%)** | **0 Remaining — Campaign Complete**                                   |
+| Batch                | Description                                          | Total Clips |         Status         | Receipt / Notes                                                       |
+| :------------------- | :--------------------------------------------------- | :---------: | :--------------------: | :-------------------------------------------------------------------- |
+| **Batch 1**          | Core Vocabulary & Contextual Sentences               |    1,761    | ✅ **Published to R2** | Completed                                                             |
+| **Batch 2**          | Contextual Cloze Blanks (Part 1)                     |    1,323    | ✅ **Published to R2** | Completed (Receipt: `batch-02-publish-receipt.json`)                  |
+| **Batch 3**          | Contextual Cloze Blanks (Part 2)                     |    1,322    | ✅ **Published to R2** | Completed (Receipt: `batch-03-publish-receipt.json`)                  |
+| **Batch 4 (Part 1)** | Sentence Builder Chunks (First 543 clips)            |     543     | ✅ **Published to R2** | Completed                                                             |
+| **Batch 4 (Part 2)** | Sentence Builder Chunks (Remaining 1,011 clips)      |    1,011    | ✅ **Published to R2** | Completed (Receipt: `batch-04-construction-all-publish-receipt.json`) |
+| **Expansion Tier 1** | Core Tracks (`recordedReferenceExamples`, etc.)      |     929     |  🔄 **844 Published**  | 85 remaining                                                          |
+| **Expansion Tier 2** | Specialist & Details (`recordedHadithContent`, etc.) |    8,339    | 🔄 **1,101 Published** | 7,238 remaining                                                       |
+| **Expansion Tier 3** | Mid-frequency Exercises & Cloze Sentences            |   27,766    |     ⏳ **Queued**      | 27,766 remaining                                                      |
+| **Expansion Tier 4** | Extended Curriculum & Long-tail Sentences            |   59,282    |     ⏳ **Queued**      | 59,282 remaining                                                      |
+| **Published Total**  |                                                      |  **7,905**  |  **7,905 Published**   | **94,371 remaining across Tiers 1–4**                                 |
 
 ---
 
 ## 4. Campaign Completion & Resumption Reference
 
-All **5,960 / 5,960** HeyGen (_Nadine_) clips across Batches 1–4 have been synthesized, stored locally under `output/recorded-audio/heygen/clips/`, uploaded to Cloudflare R2 via create-only `putIfAbsent`, and registered as secondary takes in `src/app/generated/additionalRecordings/`.
+All **5,960 / 5,960** initial HeyGen (_Nadine_) clips across Batches 1–4 and **1,945** Tier 1–2 expansion clips (**7,905** total) have been synthesized, stored locally under `output/recorded-audio/heygen/clips/`, uploaded to Cloudflare R2 via create-only `putIfAbsent`, and registered in `src/app/generated/heygenRecordings/*.json` (with `--secondary-only` leaving `additionalRecordings/` untouched).
 
-If future curriculum units add new English sentences or chunks, re-run the idempotent workflow:
+To resume site-wide expansion across Tiers 1–4 or add new curriculum units, re-run the idempotent workflow:
 
 ```powershell
 # 1. Re-run batch synthesis (uses HEYGEN_API_KEY from environment; skips cached clips)
@@ -73,7 +77,12 @@ python scripts/synthesize_heygen_batch.py --batch=<batch-id> --limit=0 --delay=1
 # 2. Upload any new clips to Cloudflare R2 (create-only putIfAbsent) into heygenRecordings only
 node scripts/publish_heygen_batch.cjs --batch=<batch-id> --secondary-only
 
-# 3. Verify search index and shard integrity (0 deletions)
+# 3. Format shards before updating coverage plan and reconciling R2
+npx prettier --write src/app/generated/heygenRecordings/*.json
+pnpm run audio:recordings:plan
+node scripts/verify_recorded_audio.cjs --require-complete
+
+# 4. Verify search index and shard integrity (0 deletions)
 node scripts/build_search_index.mjs --check
 ```
 

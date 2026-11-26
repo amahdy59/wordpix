@@ -1,12 +1,29 @@
 {
-  "version": "0.1.114",
+  "version": "0.1.115",
   "notes": [
-    "Added 5,960 secondary English recordings with Nadine across vocabulary, cloze, and sentence-building drills, plus a Voice Style setting to switch voices anytime."
+    "Added 1,945 more secondary English recordings with Nadine across pronunciation, hadith, business, conversation, and word-detail lessons."
   ],
   "notesAr": [
-    "إضافة ٥٩٦٠ تسجيلاً إنجليزياً ثانوياً بصوت نادين عبر تدريبات المفردات وملء الفراغات وبناء الجمل، مع خيار لنمط الصوت للتبديل في أي وقت."
+    "إضافة ١٩٤٥ تسجيلاً إنجليزياً ثانوياً بصوت نادين عبر دروس النطق والحديث والأعمال والمحادثة وتفاصيل الكلمات."
   ],
   "releases": [
+    {
+      "id": "0.1.115",
+      "version": "0.1.115",
+      "date": "2026-11-26",
+      "title": {
+        "en": "Expanded Nadine voice across specialist lessons",
+        "ar": "توسيع صوت نادين عبر الدروس التخصصية"
+      },
+      "changes": [
+        {
+          "id": "nadine-tier1-tier2-expansion",
+          "category": "added",
+          "en": "Added 1,945 optional English recordings by Nadine across pronunciation, hadith, placement, business, conversation, and word-detail entries while keeping default audio unchanged.",
+          "ar": "أُضيف ١٩٤٥ تسجيلاً إنجليزياً اختيارياً بصوت نادين للنطق والحديث وتحديد المستوى والأعمال والمحادثة وتفاصيل الكلمات مع بقاء الصوت الافتراضي دون تغيير."
+        }
+      ]
+    },
     {
       "id": "0.1.114",
       "version": "0.1.114",
