@@ -15,12 +15,15 @@ import json
 import os
 from pathlib import Path
 import shutil
+import socket
 import socketserver
 import subprocess
 import sys
 import time
 import urllib.error
 import urllib.request
+
+socket.setdefaulttimeout(45)
 
 ROOT = Path(__file__).resolve().parents[1]
 BATCHES_DIR = ROOT / "output" / "recorded-audio" / "batches"
@@ -63,6 +66,51 @@ def resolve_batch_file(batch_arg: str) -> Path:
     return BATCHES_DIR / "batch-01-vocab-and-sentences.json"
 
 
+def load_env_local_heygen_keys() -> list[str]:
+    """Read HEYGEN_API_KEY* entries from gitignored .env.local without logging secrets."""
+    env_path = ROOT / ".env.local"
+    if not env_path.exists():
+        return []
+    keys = []
+    for raw_line in env_path.read_text(encoding="utf-8", errors="ignore").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        name, val = line.split("=", 1)
+        name = name.strip()
+        val = val.strip().strip('"').strip("'")
+        if val and (name == "HEYGEN_API_KEY" or name.startswith("HEYGEN_API_KEY_")):
+            keys.append(val)
+    return keys
+
+
+def resolve_api_keys(explicit_key_arg: str) -> list[str]:
+    """Resolve ordered, deduplicated HeyGen API keys from CLI, env, .env.local, and fallback."""
+    candidates: list[str] = []
+    if explicit_key_arg:
+        candidates.extend(k.strip() for k in explicit_key_arg.split(",") if k.strip())
+    else:
+        for env_name in ["HEYGEN_API_KEY"] + [f"HEYGEN_API_KEY_{i}" for i in range(1, 10)]:
+            val = os.environ.get(env_name, "").strip()
+            if val:
+                candidates.extend(k.strip() for k in val.split(",") if k.strip())
+        candidates.extend(load_env_local_heygen_keys())
+        if FALLBACK_KEY:
+            candidates.append(FALLBACK_KEY)
+
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for k in candidates:
+        if k and k not in seen:
+            seen.add(k)
+            deduped.append(k)
+    return deduped
+
+
+class HeyGenRateLimitError(RuntimeError):
+    """Raised immediately on HTTP 429 so multi-key rotation can switch keys without delay."""
+
+
 def request_heygen_audio(text: str, api_key: str, voice_id: str = DEFAULT_VOICE, model: str = DEFAULT_MODEL, retries: int = 3) -> dict:
     payload = {
         "model": model,
@@ -87,9 +135,11 @@ def request_heygen_audio(text: str, api_key: str, voice_id: str = DEFAULT_VOICE,
                 return data
         except urllib.error.HTTPError as error:
             last_error = error
-            if error.code == 429 or error.code >= 500:
+            if error.code == 429:
+                raise HeyGenRateLimitError(f"HTTP 429 rate limit exceeded for key ...{api_key[-4:]}") from error
+            if error.code >= 500:
                 wait_sec = min(60, 10 * (2 ** attempt))
-                print(f"    [HeyGen HTTP {error.code}] Rate limited or server busy. Backing off for {wait_sec}s...", flush=True)
+                print(f"    [HeyGen HTTP {error.code}] Server busy. Backing off for {wait_sec}s...", flush=True)
                 time.sleep(wait_sec)
                 continue
             raise
@@ -102,6 +152,29 @@ def request_heygen_audio(text: str, api_key: str, voice_id: str = DEFAULT_VOICE,
                 continue
             raise
     raise RuntimeError(f"Failed to request HeyGen audio after {retries} attempts (last error: {last_error}).")
+
+
+def download_audio_file(audio_url: str, wav_path: Path, timeout: int = 30, retries: int = 3) -> None:
+    """Download synthesized WAV audio with explicit socket timeout and atomic replacement."""
+    tmp_path = wav_path.with_suffix(".wav.tmp")
+    last_error = None
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(audio_url, timeout=timeout) as resp, open(tmp_path, "wb") as out:
+                shutil.copyfileobj(resp, out)
+            os.replace(tmp_path, wav_path)
+            return
+        except Exception as error:
+            last_error = error
+            if tmp_path.exists():
+                tmp_path.unlink(missing_ok=True)
+            if attempt < retries - 1:
+                wait_sec = 3 * (attempt + 1)
+                print(f"    [Download retry {attempt + 1}/{retries - 1}] {error}. Retrying in {wait_sec}s...", flush=True)
+                time.sleep(wait_sec)
+                continue
+            raise
+    raise RuntimeError(f"Failed to download audio after {retries} attempts: {last_error}")
 
 
 def convert_wav_to_mp3(wav_path: Path, mp3_path: Path):
@@ -372,15 +445,15 @@ def main():
     parser = argparse.ArgumentParser(description="HeyGen batch synthesis and comparison")
     parser.add_argument("--batch", default="batch-01", help="Batch ID or filename")
     parser.add_argument("--limit", type=int, default=15, help="Number of clips to synthesize (default: 15, use 0 for all)")
-    parser.add_argument("--daily-limit", type=int, default=1950, help="Maximum new API requests in one session to avoid 2000 quota limit (default: 1950)")
-    parser.add_argument("--key", default="", help="HeyGen API key")
+    parser.add_argument("--daily-limit", type=int, default=1950, help="Maximum new API requests per key in one session to avoid 2000 quota limit (default: 1950)")
+    parser.add_argument("--key", default="", help="HeyGen API key or comma-separated list of keys (defaults to env/.env.local HEYGEN_API_KEY* pool)")
     parser.add_argument("--serve", action="store_true", help="Start local comparison review server")
     parser.add_argument("--port", type=int, default=8768, help="Port for server")
     parser.add_argument("--delay", type=float, default=3.0, help="Delay between HeyGen requests (seconds)")
     args = parser.parse_args()
 
-    api_key = args.key or os.environ.get("HEYGEN_API_KEY") or FALLBACK_KEY
-    if not api_key:
+    api_keys = resolve_api_keys(args.key)
+    if not api_keys:
         print("Error: No HeyGen API key provided.", file=sys.stderr)
         sys.exit(1)
 
@@ -398,7 +471,7 @@ def main():
         return
 
     batch_path = resolve_batch_file(args.batch)
-    print(f"Loading batch: {batch_path.name}")
+    print(f"Loading batch: {batch_path.name} (key pool: {len(api_keys)} keys)")
     with open(batch_path, "r", encoding="utf-8") as f:
         items = json.load(f)
 
@@ -409,7 +482,7 @@ def main():
     results = []
     receipts_file = HEYGEN_DIR / f"{batch_path.stem}-heygen-results.json"
     existing_receipts = {}
-    
+
     # Preload from all previous HeyGen results to avoid any redundant API calls across batches
     for rf in sorted(HEYGEN_DIR.glob("*-heygen-results.json")):
         try:
@@ -426,7 +499,9 @@ def main():
 
     compare_html_path = HEYGEN_DIR / f"{batch_path.stem}-compare-player.html"
 
-    api_calls_count = 0
+    active_keys = list(api_keys)
+    key_usage = {k: 0 for k in api_keys}
+    rr_cursor = 0
     quota_reached = False
 
     for idx, item in enumerate(items, start=1):
@@ -439,29 +514,43 @@ def main():
         if (text in existing_receipts) and (wav_path.exists() or mp3_path.exists()):
             print(f"[{idx}/{len(items)}] Using existing HeyGen clip: {text[:45]}...", flush=True)
             heygen_duration = existing_receipts[text].get("heygenDuration", 0)
+        elif mp3_path.exists() and mp3_path.stat().st_size > 1024:
+            print(f"[{idx}/{len(items)}] Using existing cached MP3: {text[:45]}...", flush=True)
         else:
-            if api_calls_count >= args.daily_limit:
-                print(f"\n[!] Daily request safety limit of {args.daily_limit} reached (HeyGen ceiling is 2,000).")
-                print("    Stopping session gracefully. Checkpointing remaining items for tomorrow.", flush=True)
+            synthesized = False
+            fatal_clip_error = False
+            while active_keys and not synthesized and not fatal_clip_error:
+                rr_cursor %= len(active_keys)
+                current_key = active_keys[rr_cursor]
+                if key_usage[current_key] >= args.daily_limit:
+                    print(f"\n[!] Key ...{current_key[-4:]} reached daily safety limit ({args.daily_limit}). Rotating key...", flush=True)
+                    active_keys.pop(rr_cursor)
+                    continue
+
+                print(f"[{idx}/{len(items)}] Requesting HeyGen (...{current_key[-4:]}): {text[:45]}...", flush=True)
+                try:
+                    data = request_heygen_audio(text, current_key)
+                    audio_url = data["audio_url"]
+                    heygen_duration = data.get("duration", 0)
+                    download_audio_file(audio_url, wav_path)
+                    convert_wav_to_mp3(wav_path, mp3_path)
+                    key_usage[current_key] += 1
+                    rr_cursor += 1
+                    synthesized = True
+                    time.sleep(args.delay)
+                except HeyGenRateLimitError:
+                    print(f"    [Key ...{current_key[-4:]} rate limited (HTTP 429)] Switching to next active key...", file=sys.stderr, flush=True)
+                    active_keys.pop(rr_cursor)
+                except Exception as e:
+                    print(f"    [Error on '{text[:30]}']: {e}", file=sys.stderr, flush=True)
+                    fatal_clip_error = True
+
+            if fatal_clip_error:
+                continue
+            if not synthesized and not active_keys:
+                print("\n[!] All provided HeyGen API keys reached their daily quota/limit. Stopping gracefully.", file=sys.stderr, flush=True)
                 quota_reached = True
                 break
-
-            print(f"[{idx}/{len(items)}] Requesting HeyGen ({DEFAULT_MODEL}): {text[:45]}...", flush=True)
-            try:
-                data = request_heygen_audio(text, api_key)
-                audio_url = data["audio_url"]
-                heygen_duration = data.get("duration", 0)
-                urllib.request.urlretrieve(audio_url, str(wav_path))
-                convert_wav_to_mp3(wav_path, mp3_path)
-                api_calls_count += 1
-                time.sleep(args.delay)
-            except Exception as e:
-                if "429" in str(e):
-                    print(f"\n[!] HeyGen API daily rate limit reached (HTTP 429). Checkpointing all progress and stopping gracefully.", file=sys.stderr, flush=True)
-                    quota_reached = True
-                    break
-                print(f"    [Error on '{text[:30]}']: {e}", file=sys.stderr, flush=True)
-                continue
 
         # Find corresponding Edge TTS local recording
         edge_path = item.get("localPath")
@@ -482,6 +571,8 @@ def main():
             print(f"    [Checkpointed {len(results)} clips to receipts and live player]", flush=True)
 
     persist_state()
+    if quota_reached:
+        print("\n[+] Progress checkpointed before quota exhaustion.", flush=True)
     print(f"\n[+] Side-by-Side Comparison Player updated: {compare_html_path}", flush=True)
     print(f"    Web Preview URL: http://127.0.0.1:{args.port}/heygen/{compare_html_path.name}", flush=True)
 

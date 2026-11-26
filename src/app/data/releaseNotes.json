@@ -1,12 +1,29 @@
 {
-  "version": "0.1.115",
+  "version": "0.1.116",
   "notes": [
-    "Added 1,945 more secondary English recordings with Nadine across pronunciation, hadith, business, conversation, and word-detail lessons."
+    "Published 4,486 more secondary English recordings with Nadine (12,391 total), completing core tracks and expanding specialist word-detail lessons."
   ],
   "notesAr": [
-    "إضافة ١٩٤٥ تسجيلاً إنجليزياً ثانوياً بصوت نادين عبر دروس النطق والحديث والأعمال والمحادثة وتفاصيل الكلمات."
+    "نشر ٤٤٨٦ تسجيلاً إنجليزياً ثانوياً إضافياً بصوت نادين (بإجمالي ١٢٣٩١ تسجيلاً) لاستكمال المسارات الأساسية وتوسيع الدروس التخصصية وتفاصيل الكلمات."
   ],
   "releases": [
+    {
+      "id": "0.1.116",
+      "version": "0.1.116",
+      "date": "2026-11-26",
+      "title": {
+        "en": "Completed Tier 1 & expanded Tier 2 Nadine recordings",
+        "ar": "استكمال المستوى الأول وتوسيع المستوى الثاني من تسجيلات نادين"
+      },
+      "changes": [
+        {
+          "id": "nadine-tier1-complete-tier2-wave2",
+          "category": "added",
+          "en": "Added 4,486 optional English recordings by Nadine (84 completing Tier 1 core tracks and 4,402 across Tier 2 specialist and word-detail lessons) while keeping default primary audio unchanged.",
+          "ar": "أُضيف ٤٤٨٦ تسجيلاً إنجليزياً اختيارياً بصوت نادين (٨٤ لاستكمال المسارات الأساسية في المستوى الأول و٤٤٠٢ عبر الدروس التخصصية وتفاصيل الكلمات في المستوى الثاني) مع بقاء الصوت الأساسي الافتراضي دون تغيير."
+        }
+      ]
+    },
     {
       "id": "0.1.115",
       "version": "0.1.115",

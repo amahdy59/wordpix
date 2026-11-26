@@ -18,11 +18,7 @@ const HEYGEN_SHARDS_DIR = path.join(ROOT, "src/app/generated/heygenRecordings");
 const HEYGEN_KEY_PREFIX = "audio/heygen-v1/nadine";
 
 function normalizeRecordingText(text) {
-  return String(text)
-    .replace(/[‘’]/g, "'")
-    .replace(/[“”]/g, '"')
-    .replace(/\s+/g, " ")
-    .trim();
+  return String(text).replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
 }
 
 function computeAdditionalId(text, language = "en") {
@@ -36,9 +32,9 @@ function resolveResultsFile(batchId) {
     const direct = path.join(HEYGEN_DIR, batchId);
     if (fs.existsSync(direct)) return direct;
   }
-  const files = fs.readdirSync(HEYGEN_DIR).filter(
-    (f) => f.startsWith(batchId) && f.endsWith("-heygen-results.json")
-  );
+  const files = fs
+    .readdirSync(HEYGEN_DIR)
+    .filter((f) => f.startsWith(batchId) && f.endsWith("-heygen-results.json"));
   if (files.length > 0) {
     return path.join(HEYGEN_DIR, files[0]);
   }
@@ -46,8 +42,7 @@ function resolveResultsFile(batchId) {
 }
 
 async function main() {
-  const batchArg =
-    process.argv.find((a) => a.startsWith("--batch="))?.slice(8) || "batch-02";
+  const batchArg = process.argv.find((a) => a.startsWith("--batch="))?.slice(8) || "batch-02";
   const secondaryOnly = process.argv.includes("--secondary-only");
   const resultsFile = resolveResultsFile(batchArg);
   console.log(`Using results file: ${resultsFile}`);
@@ -84,15 +79,30 @@ async function main() {
   let alreadyCount = 0;
   let errorCount = 0;
 
+  async function putWithRetry(r2Key, buffer, maxAttempts = 3) {
+    let lastError;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      try {
+        return await client.putIfAbsent(r2Key, buffer, {
+          contentType: "audio/mpeg",
+        });
+      } catch (err) {
+        lastError = err;
+        if (attempt < maxAttempts) {
+          await new Promise((r) => setTimeout(r, 500 * attempt));
+        }
+      }
+    }
+    throw lastError;
+  }
+
   async function worker() {
     while (nextIdx < queue.length) {
       const idx = nextIdx++;
       const item = queue[idx];
       const buffer = fs.readFileSync(item.localMp3);
       try {
-        const created = await client.putIfAbsent(item.r2Key, buffer, {
-          contentType: "audio/mpeg",
-        });
+        const created = await putWithRetry(item.r2Key, buffer);
         if (created) {
           createdCount++;
         } else {
