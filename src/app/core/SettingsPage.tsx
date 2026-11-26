@@ -23,6 +23,7 @@ import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 import { useAccessibility, formatNumber } from "../shared/useAccessibilityPreferences";
 import { useAudio } from "../shared/useAudio";
 import { AudioRecoveryStatus } from "../shared/AudioRecoveryStatus";
+import { VOICE_OPTIONS } from "../shared/heygenRecording";
 import { Button } from "../shared/Button";
 import { PageContainer } from "../shared/PageContainer";
 import { PageHeader } from "../shared/PageHeader";
@@ -119,6 +120,13 @@ const SETTING_ITEMS: SettingItem[] = [
     titleKey: "settings.speechRate",
     descriptionKey: "settings.speechRateHint",
     keywords: ["speed", "audio", "speech", "rate", "playback", "slow", "fast", "pronunciation"],
+  },
+  {
+    id: "preferredVoice",
+    category: "audio",
+    titleKey: "settings.preferredVoice",
+    descriptionKey: "settings.preferredVoiceHint",
+    keywords: ["voice", "nadine", "heygen", "speaker", "secondary", "alternative", "audio"],
   },
   {
     id: "voiceEngine",
@@ -235,6 +243,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
     spokenFeedback,
     reduceMotion,
     autoPlayAudio,
+    preferredVoice,
   } = accessibility;
 
   const [searchQuery, setSearchQuery] = useState("");
@@ -735,6 +744,7 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
 
           {/* SECTION 3: AUDIO & PRONUNCIATION */}
           {(isVisible("speechRate") ||
+            isVisible("preferredVoice") ||
             isVisible("voiceEngine") ||
             isVisible("spokenFeedback") ||
             isVisible("autoPlayAudio")) && (
@@ -784,6 +794,46 @@ export const SettingsPage = memo(function SettingsPage({ dispatch }: Props) {
                 )}
 
                 {isVisible("speechRate") &&
+                  (isVisible("preferredVoice") ||
+                    isVisible("spokenFeedback") ||
+                    isVisible("autoPlayAudio")) && <hr className="border-border/60" />}
+
+                {/* Preferred Voice Style (Primary default / Nadine secondary) */}
+                {isVisible("preferredVoice") && (
+                  <div className="flex flex-wrap items-center justify-between gap-4">
+                    <div className="max-w-md">
+                      <span className="font-sans font-bold text-foreground text-sm sm:text-base">
+                        {t("settings.preferredVoice")}
+                      </span>
+                      <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-0.5">
+                        {t("settings.preferredVoiceHint")}
+                      </p>
+                    </div>
+                    <div
+                      className="flex flex-wrap items-center gap-1 bg-card border border-border p-1 rounded-xl"
+                      role="group"
+                      aria-label={t("settings.preferredVoice")}
+                    >
+                      {VOICE_OPTIONS.map((opt) => (
+                        <button
+                          key={opt.id}
+                          type="button"
+                          onClick={() => setAccessibility({ preferredVoice: opt.id })}
+                          aria-pressed={preferredVoice === opt.id}
+                          className={`min-h-[44px] min-w-[44px] px-3 py-1.5 rounded-lg text-xs sm:text-sm font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                            preferredVoice === opt.id
+                              ? "bg-primary text-primary-foreground shadow-wp-xs"
+                              : "text-muted-foreground hover:text-foreground hover:bg-muted/80"
+                          }`}
+                        >
+                          {t(opt.labelKey)}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {isVisible("preferredVoice") &&
                   (isVisible("spokenFeedback") || isVisible("autoPlayAudio")) && (
                     <hr className="border-border/60" />
                   )}

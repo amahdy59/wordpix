@@ -3,7 +3,7 @@
 > **CRITICAL GUARDRAIL FOR ALL AGENTS & OPERATORS**:
 >
 > 1. **Zero-Deletion Policy**: NEVER delete, overwrite, rename, or purge any audio files in Cloudflare R2 or local directories (`output/recorded-audio/heygen/clips/`).
-> 2. **Secondary Take Architecture**: HeyGen recordings are registered as a **secondary alternative take** in `src/app/generated/additionalRecordings/`. They **never override or replace** primary curriculum audio mappings (e.g. ElevenLabs or Edge TTS).
+> 2. **Secondary Take Architecture**: HeyGen recordings are indexed in `src/app/generated/heygenRecordings/` (`audio/heygen-v1/nadine/<sha256>.mp3`) and exposed via the Settings `preferredVoice` option (`"primary"` default vs `"nadine"` secondary). Future expansion batches use `--secondary-only` so they **never override or replace** primary curriculum audio mappings (`additionalRecordings`, `edgeRecordings`, ElevenLabs, or explicit scenario takes).
 > 3. **Idempotent Create-Only Operations**: All Cloudflare R2 uploads must use `putIfAbsent` (create-only). If a remote object exists, leave it unchanged.
 
 ---
@@ -70,8 +70,8 @@ If future curriculum units add new English sentences or chunks, re-run the idemp
 # 1. Re-run batch synthesis (uses HEYGEN_API_KEY from environment; skips cached clips)
 python scripts/synthesize_heygen_batch.py --batch=<batch-id> --limit=0 --delay=1.2
 
-# 2. Upload any new clips to Cloudflare R2 (create-only putIfAbsent) and update shards
-node scripts/publish_heygen_batch.cjs --batch=<batch-id>
+# 2. Upload any new clips to Cloudflare R2 (create-only putIfAbsent) into heygenRecordings only
+node scripts/publish_heygen_batch.cjs --batch=<batch-id> --secondary-only
 
 # 3. Verify search index and shard integrity (0 deletions)
 node scripts/build_search_index.mjs --check

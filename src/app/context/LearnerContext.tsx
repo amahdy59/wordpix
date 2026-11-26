@@ -100,6 +100,7 @@ export const DEFAULT_ACCESSIBILITY: AccessibilityPreferences = {
   spokenFeedback: true,
   reduceMotion: false,
   autoPlayAudio: true,
+  preferredVoice: "primary",
 };
 
 /** Root font-size multiplier per text-size step. */

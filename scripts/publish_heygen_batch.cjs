@@ -14,6 +14,7 @@ const { createClient } = require("./lib/r2.cjs");
 const ROOT = path.resolve(__dirname, "..");
 const HEYGEN_DIR = path.join(ROOT, "output/recorded-audio/heygen");
 const SHARDS_DIR = path.join(ROOT, "src/app/generated/additionalRecordings");
+const HEYGEN_SHARDS_DIR = path.join(ROOT, "src/app/generated/heygenRecordings");
 const HEYGEN_KEY_PREFIX = "audio/heygen-v1/nadine";
 
 function normalizeRecordingText(text) {
@@ -47,6 +48,7 @@ function resolveResultsFile(batchId) {
 async function main() {
   const batchArg =
     process.argv.find((a) => a.startsWith("--batch="))?.slice(8) || "batch-02";
+  const secondaryOnly = process.argv.includes("--secondary-only");
   const resultsFile = resolveResultsFile(batchArg);
   console.log(`Using results file: ${resultsFile}`);
 
@@ -59,14 +61,15 @@ async function main() {
   // 1. Prepare upload queue
   const queue = [];
   for (const item of items) {
-    const textHash = crypto.createHash("sha256").update(item.text, "utf8").digest("hex");
+    const normalized = normalizeRecordingText(item.text);
+    const textHash = crypto.createHash("sha256").update(normalized, "utf8").digest("hex");
     const r2Key = `${HEYGEN_KEY_PREFIX}/${textHash}.mp3`;
     const localMp3 = item.heygenMp3Path;
     if (!fs.existsSync(localMp3)) {
       throw new Error(`Local MP3 missing: ${localMp3}`);
     }
     queue.push({
-      text: item.text,
+      text: normalized,
       textHash,
       r2Key,
       localMp3,
@@ -119,52 +122,88 @@ async function main() {
     throw new Error(`Encountered ${errorCount} upload errors. Aborting shard mapping.`);
   }
 
-  // 2. Update additionalRecordings shards
-  console.log(`\nUpdating app additionalRecordings shards...`);
-  const shardUpdates = new Map(); // prefix -> { path, data }
-
-  let preservedCount = 0;
-  let newMappingsCount = 0;
+  // 2. Always update secondary HeyGen availability shards (heygenRecordings)
+  console.log(`\nUpdating app heygenRecordings secondary availability shards...`);
+  fs.mkdirSync(HEYGEN_SHARDS_DIR, { recursive: true });
+  const heygenShardUpdates = new Map(); // prefix -> { path, hashes: Set<string> }
+  let newHeygenIndexed = 0;
 
   for (const item of queue) {
-    const entryId = computeAdditionalId(item.text, "en");
-    const prefix = entryId.slice(0, 2);
-
-    if (!shardUpdates.has(prefix)) {
-      const shardPath = path.join(SHARDS_DIR, `${prefix}.json`);
+    const prefix = item.textHash.slice(0, 2);
+    if (!heygenShardUpdates.has(prefix)) {
+      const shardPath = path.join(HEYGEN_SHARDS_DIR, `${prefix}.json`);
       const existing = fs.existsSync(shardPath)
         ? JSON.parse(fs.readFileSync(shardPath, "utf8"))
-        : {};
-      shardUpdates.set(prefix, { path: shardPath, data: existing });
+        : [];
+      heygenShardUpdates.set(prefix, { path: shardPath, hashes: new Set(existing) });
     }
-
-    const shard = shardUpdates.get(prefix);
-    if (shard.data[entryId]) {
-      // PRESERVE existing take (e.g. ElevenLabs)
-      preservedCount++;
-    } else {
-      shard.data[entryId] = item.r2Key;
-      newMappingsCount++;
+    const shard = heygenShardUpdates.get(prefix);
+    if (!shard.hashes.has(item.textHash)) {
+      shard.hashes.add(item.textHash);
+      newHeygenIndexed++;
     }
   }
 
-  console.log(`  New HeyGen mappings to write: ${newMappingsCount}`);
-  console.log(`  Preserved existing takes: ${preservedCount}`);
+  for (const [, { path: shardPath, hashes }] of heygenShardUpdates) {
+    fs.writeFileSync(shardPath, JSON.stringify([...hashes].sort(), null, 2) + "\n", "utf8");
+  }
+  console.log(
+    `[+] Indexed ${newHeygenIndexed} new HeyGen hashes across ${heygenShardUpdates.size} shards in ${HEYGEN_SHARDS_DIR}`
+  );
 
-  // Write updated shards with sorted keys
-  for (const [, { path: shardPath, data }] of shardUpdates) {
-    const sorted = Object.keys(data)
-      .sort()
-      .reduce((acc, k) => {
-        acc[k] = data[k];
-        return acc;
-      }, {});
-    fs.writeFileSync(shardPath, JSON.stringify(sorted, null, 2) + "\n", "utf8");
+  // 3. Optionally update additionalRecordings shards (skipped under --secondary-only)
+  let preservedCount = 0;
+  let newMappingsCount = 0;
+  let updatedAdditionalShards = 0;
+
+  if (secondaryOnly) {
+    console.log(
+      `\n[--secondary-only] Skipping additionalRecordings updates; primary audio mappings left untouched.`
+    );
+  } else {
+    console.log(`\nUpdating app additionalRecordings shards...`);
+    const shardUpdates = new Map(); // prefix -> { path, data }
+
+    for (const item of queue) {
+      const entryId = computeAdditionalId(item.text, "en");
+      const prefix = entryId.slice(0, 2);
+
+      if (!shardUpdates.has(prefix)) {
+        const shardPath = path.join(SHARDS_DIR, `${prefix}.json`);
+        const existing = fs.existsSync(shardPath)
+          ? JSON.parse(fs.readFileSync(shardPath, "utf8"))
+          : {};
+        shardUpdates.set(prefix, { path: shardPath, data: existing });
+      }
+
+      const shard = shardUpdates.get(prefix);
+      if (shard.data[entryId]) {
+        // PRESERVE existing take (e.g. ElevenLabs)
+        preservedCount++;
+      } else {
+        shard.data[entryId] = item.r2Key;
+        newMappingsCount++;
+      }
+    }
+
+    console.log(`  New HeyGen mappings to write: ${newMappingsCount}`);
+    console.log(`  Preserved existing takes: ${preservedCount}`);
+
+    // Write updated shards with sorted keys
+    for (const [, { path: shardPath, data }] of shardUpdates) {
+      const sorted = Object.keys(data)
+        .sort()
+        .reduce((acc, k) => {
+          acc[k] = data[k];
+          return acc;
+        }, {});
+      fs.writeFileSync(shardPath, JSON.stringify(sorted, null, 2) + "\n", "utf8");
+    }
+    updatedAdditionalShards = shardUpdates.size;
+    console.log(`[+] Successfully updated ${updatedAdditionalShards} shard files in ${SHARDS_DIR}`);
   }
 
-  console.log(`[+] Successfully updated ${shardUpdates.size} shard files in ${SHARDS_DIR}`);
-
-  // 3. Write summary receipt
+  // 4. Write summary receipt
   const receiptPath = path.join(HEYGEN_DIR, `${batchArg}-publish-receipt.json`);
   fs.writeFileSync(
     receiptPath,
@@ -172,9 +211,11 @@ async function main() {
       {
         publishedAt: new Date().toISOString(),
         batch: batchArg,
+        secondaryOnly,
         totalItems: queue.length,
         createdR2Objects: createdCount,
         alreadyInR2: alreadyCount,
+        newHeygenIndexed,
         newMappings: newMappingsCount,
         preservedMappings: preservedCount,
         namespace: HEYGEN_KEY_PREFIX,

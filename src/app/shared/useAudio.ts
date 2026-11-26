@@ -6,8 +6,9 @@ import { assetUrl, audioKey, audioUrls, AUDIO_PROFILE_V4, hasAssetHost } from ".
 import { resolveAssetUrl } from "../../utils/assetUrl";
 import { getPronunciationAssetSpec, hasPronunciationOverride } from "./pronunciationOverrides";
 import { additionalRecordingKey } from "./additionalRecording";
-import { edgeRecordingKey } from "./edgeRecording";
+import { edgeRecordingKey, recordingLanguage } from "./edgeRecording";
 import { isEdgeRecordingAvailable } from "./edgeRecordingAvailability";
+import { heygenRecordingKey } from "./heygenRecording";
 
 export type AudioStatus =
   "idle" | "loading" | "buffering" | "playing" | "paused" | "error" | "unsupported";
@@ -78,6 +79,7 @@ export function isRecordingObjectKey(key: string): boolean {
   return (
     /^audio\/[a-f0-9]{2}\/[a-f0-9]{64}\.mp3$/.test(key) ||
     /^audio\/edge-v1\/(?:en-US-JennyNeural|ar-SA-ZariyahNeural)\/[a-f0-9]{64}\.mp3$/.test(key) ||
+    /^audio\/heygen-v1\/nadine\/[a-f0-9]{64}\.mp3$/.test(key) ||
     /^assets\/audio\/scenarios\/[a-z0-9_-]+(?:\/[a-z0-9_-]+)*\.mp3$/.test(key)
   );
 }
@@ -135,6 +137,7 @@ export function useAudio({
   // still wins so individual drills can slow playback further.
   const { state } = useLearner();
   const effectiveRate = rate ?? state.accessibility.speechRate;
+  const preferredVoice = state.accessibility.preferredVoice ?? "primary";
   // Support is knowable at first render, so it is the initial state rather than
   // a setState fired from inside an effect (which causes a cascading render).
   const [status, setStatus] = useState<AudioStatus>(() =>
@@ -160,6 +163,10 @@ export function useAudio({
     rateRef.current = effectiveRate;
     if (currentAudioRef.current) applyPlaybackRate(currentAudioRef.current, effectiveRate);
   }, [effectiveRate]);
+  const voiceRef = useRef(preferredVoice);
+  useEffect(() => {
+    voiceRef.current = preferredVoice;
+  }, [preferredVoice]);
 
   const stop = useCallback(() => {
     requestRef.current += 1;
@@ -327,79 +334,9 @@ export function useAudio({
         });
       };
 
-      /** Exact references win. Otherwise resolve verified takes before speculative hashes. */
-      const playPregenerated = async (): Promise<boolean> => {
-        const explicitKey = objectKey && isRecordingObjectKey(objectKey) ? objectKey : null;
-        const explicitUrl = explicitKey ? assetUrl(explicitKey) : null;
-        const localExplicitUrl = explicitKey ? resolveAssetUrl(`/${explicitKey}`) : null;
-        const urls: string[] = [];
-        if (explicitKey) {
-          if (preferLocal && localExplicitUrl) urls.push(localExplicitUrl);
-          if (explicitUrl) urls.push(explicitUrl);
-          if (localExplicitUrl) urls.push(localExplicitUrl);
-        } else {
-          if (hasAssetHost() && !usesPronunciationOverride) {
-            // Overlap independent index downloads; retain the established alias priority.
-            const [additional, edge] = await Promise.all([
-              additionalRecordingKey(text, targetLang).catch(() => null),
-              edgeRecordingKey(text, targetLang)
-                .then(async (key) => {
-                  if (!key) return null;
-                  const url = assetUrl(key);
-                  if (url) {
-                    const cacheKey = `cdn:${url}`;
-                    if (audioCache.has(cacheKey)) return key;
-                    const stored = await getCachedAudio(cacheKey).catch(() => null);
-                    if (stored && stored.size > 0) {
-                      cacheAudioUrl(cacheKey, URL.createObjectURL(stored));
-                      return key;
-                    }
-                  }
-                  // A persisted exact clip is its own availability evidence.
-                  // Only network playback needs the generated upload index.
-                  return (await isEdgeRecordingAvailable(key)) ? key : null;
-                })
-                .catch(() => null),
-            ]);
-            if (!isCurrent()) return true;
-            if (additional) {
-              const url = assetUrl(additional);
-              if (url) urls.push(url);
-            }
-            if (edge) {
-              const url = assetUrl(edge);
-              if (url) urls.push(url);
-            }
-          }
-          if (hasAssetHost()) {
-            urls.push(
-              ...(await audioUrls(text.includes(" ") ? text : pronunciationAsset.text, [
-                pronunciationAsset.profile,
-                AUDIO_PROFILE_V4,
-              ]))
-            );
-            if (cleanText !== text)
-              urls.push(
-                ...(await audioUrls(text.includes(" ") ? pronunciationAsset.text : text, [
-                  pronunciationAsset.profile,
-                  AUDIO_PROFILE_V4,
-                ]))
-              );
-            const capitalized =
-              pronunciationAsset.text.charAt(0).toUpperCase() + pronunciationAsset.text.slice(1);
-            if (capitalized !== pronunciationAsset.text)
-              urls.push(
-                ...(await audioUrls(capitalized, [pronunciationAsset.profile, AUDIO_PROFILE_V4]))
-              );
-          } else if (preferLocal || usesPronunciationOverride) {
-            urls.push(
-              resolveAssetUrl(
-                `/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`
-              )
-            );
-          }
-        }
-        for (const url of new Set(urls)) {
+      /** Try cached memory, IndexedDB, then streamed playback across candidate URLs. */
+      const playCandidateUrls = async (candidateUrls: Iterable<string>): Promise<boolean> => {
+        for (const url of candidateUrls) {
           if (!isCurrent()) return true;
           const cacheKey = `cdn:${url}`;
           const memory = audioCache.get(cacheKey);
@@ -420,6 +357,112 @@ export function useAudio({
           if (await playStreamed(url)) {
             cacheInBackground(url, cacheKey);
             return true;
+          }
+        }
+        return false;
+      };
+
+      /** Exact references win unless Nadine secondary voice is active; primary always remains fallback. */
+      const playPregenerated = async (): Promise<boolean> => {
+        const explicitKey = objectKey && isRecordingObjectKey(objectKey) ? objectKey : null;
+        const explicitUrl = explicitKey ? assetUrl(explicitKey) : null;
+        const localExplicitUrl = explicitKey ? resolveAssetUrl(`/${explicitKey}`) : null;
+        const preferNadine =
+          voiceRef.current === "nadine" &&
+          recordingLanguage(targetLang) === "en" &&
+          !usesPronunciationOverride;
+        const urls: string[] = [];
+        if (explicitKey) {
+          if (preferNadine && hasAssetHost()) {
+            const heygenKey = await heygenRecordingKey(text, targetLang).catch(() => null);
+            if (!isCurrent()) return true;
+            if (heygenKey) {
+              const heygenUrl = assetUrl(heygenKey);
+              if (heygenUrl) urls.push(heygenUrl);
+            }
+          }
+          if (preferLocal && localExplicitUrl) urls.push(localExplicitUrl);
+          if (explicitUrl) urls.push(explicitUrl);
+          if (localExplicitUrl) urls.push(localExplicitUrl);
+          return playCandidateUrls(new Set(urls));
+        }
+        if (hasAssetHost() && !usesPronunciationOverride) {
+          // Overlap independent index downloads; retain the established alias priority.
+          const [additional, edge, heygen] = await Promise.all([
+            additionalRecordingKey(text, targetLang).catch(() => null),
+            edgeRecordingKey(text, targetLang)
+              .then(async (key) => {
+                if (!key) return null;
+                const url = assetUrl(key);
+                if (url) {
+                  const cacheKey = `cdn:${url}`;
+                  if (audioCache.has(cacheKey)) return key;
+                  const stored = await getCachedAudio(cacheKey).catch(() => null);
+                  if (stored && stored.size > 0) {
+                    cacheAudioUrl(cacheKey, URL.createObjectURL(stored));
+                    return key;
+                  }
+                }
+                // A persisted exact clip is its own availability evidence.
+                // Only network playback needs the generated upload index.
+                return (await isEdgeRecordingAvailable(key)) ? key : null;
+              })
+              .catch(() => null),
+            preferNadine
+              ? heygenRecordingKey(text, targetLang).catch(() => null)
+              : Promise.resolve(null),
+          ]);
+          if (!isCurrent()) return true;
+          if (preferNadine && heygen) {
+            const heygenUrl = assetUrl(heygen);
+            if (heygenUrl) urls.push(heygenUrl);
+          }
+          if (additional) {
+            const url = assetUrl(additional);
+            if (url) urls.push(url);
+          }
+          if (edge) {
+            const url = assetUrl(edge);
+            if (url) urls.push(url);
+          }
+        }
+        if (hasAssetHost()) {
+          urls.push(
+            ...(await audioUrls(text.includes(" ") ? text : pronunciationAsset.text, [
+              pronunciationAsset.profile,
+              AUDIO_PROFILE_V4,
+            ]))
+          );
+          if (cleanText !== text)
+            urls.push(
+              ...(await audioUrls(text.includes(" ") ? pronunciationAsset.text : text, [
+                pronunciationAsset.profile,
+                AUDIO_PROFILE_V4,
+              ]))
+            );
+          const capitalized =
+            pronunciationAsset.text.charAt(0).toUpperCase() + pronunciationAsset.text.slice(1);
+          if (capitalized !== pronunciationAsset.text)
+            urls.push(
+              ...(await audioUrls(capitalized, [pronunciationAsset.profile, AUDIO_PROFILE_V4]))
+            );
+        } else if (preferLocal || usesPronunciationOverride) {
+          urls.push(
+            resolveAssetUrl(
+              `/${await audioKey(pronunciationAsset.text, pronunciationAsset.profile)}`
+            )
+          );
+        }
+        const uniquePrimary = new Set(urls);
+        if (await playCandidateUrls(uniquePrimary)) return true;
+        if (!preferNadine && hasAssetHost() && !usesPronunciationOverride) {
+          const fallbackHeygen = await heygenRecordingKey(text, targetLang).catch(() => null);
+          if (!isCurrent()) return true;
+          if (fallbackHeygen) {
+            const fallbackUrl = assetUrl(fallbackHeygen);
+            if (fallbackUrl && !uniquePrimary.has(fallbackUrl)) {
+              return playCandidateUrls([fallbackUrl]);
+            }
           }
         }
         return false;

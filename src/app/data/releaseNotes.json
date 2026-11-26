@@ -1,8 +1,29 @@
 {
-  "version": "0.1.113",
-  "notes": ["Listen to Nadine read 164 vocabulary examples across five units."],
-  "notesAr": ["استمع إلى ١٦٤ مثالاً على استخدام المفردات بصوت نادين في خمس وحدات."],
+  "version": "0.1.114",
+  "notes": [
+    "Added 5,960 secondary English recordings with Nadine across vocabulary, cloze, and sentence-building drills, plus a Voice Style setting to switch voices anytime."
+  ],
+  "notesAr": [
+    "إضافة ٥٩٦٠ تسجيلاً إنجليزياً ثانوياً بصوت نادين عبر تدريبات المفردات وملء الفراغات وبناء الجمل، مع خيار لنمط الصوت للتبديل في أي وقت."
+  ],
   "releases": [
+    {
+      "id": "0.1.114",
+      "version": "0.1.114",
+      "date": "2026-11-26",
+      "title": {
+        "en": "Optional Nadine voice across lessons and drills",
+        "ar": "خيار صوت نادين الثانوي عبر الدروس والتدريبات"
+      },
+      "changes": [
+        {
+          "id": "nadine-secondary-voice-option",
+          "category": "added",
+          "en": "Added 5,960 English recordings by Nadine across sentences, cloze items, and sentence-builder chunks, along with an English Voice Style toggle in Settings to use Nadine as an optional secondary voice without replacing default audio.",
+          "ar": "أُضيف ٥٩٦٠ تسجيلاً إنجليزياً بصوت نادين للجمل وتمارين ملء الفراغات وبناء الجمل، مع خيار في الإعدادات لاختيار نادين كصوت ثانوي بديل دون استبدال الصوت الافتراضي."
+        }
+      ]
+    },
     {
       "id": "0.1.113",
       "version": "0.1.113",

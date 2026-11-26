@@ -198,9 +198,36 @@ describe("SettingsModal drives persisted state", () => {
 
   it("exposes every accessibility control as a pressable toggle", () => {
     renderSettings();
-    ["100%", "125%", "150%", "1, 2, 3", "١, ٢, ٣", "0.5x", "0.75x", "1x"].forEach((label) => {
+    [
+      "100%",
+      "125%",
+      "150%",
+      "1, 2, 3",
+      "١, ٢, ٣",
+      "0.5x",
+      "0.75x",
+      "1x",
+      "Standard (Default)",
+      "Nadine (Secondary)",
+    ].forEach((label) => {
       expect(screen.getByRole("button", { name: label })).toHaveAttribute("aria-pressed");
     });
+  });
+
+  it("persists preferredVoice toggle across remount", async () => {
+    const user = userEvent.setup();
+    const { unmount } = renderSettings();
+    const nadineBtn = screen.getByRole("button", { name: "Nadine (Secondary)" });
+    expect(nadineBtn).toHaveAttribute("aria-pressed", "false");
+    await user.click(nadineBtn);
+    expect(nadineBtn).toHaveAttribute("aria-pressed", "true");
+    unmount();
+
+    renderSettings();
+    expect(screen.getByRole("button", { name: "Nadine (Secondary)" })).toHaveAttribute(
+      "aria-pressed",
+      "true"
+    );
   });
 
   it("exposes an autoPlayAudio toggle that updates persisted accessibility state", async () => {

@@ -20,6 +20,7 @@ import { useI18n, SUPPORTED_LANGS } from "../context/I18nContext";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useAudio } from "../shared/useAudio";
 import { AudioRecoveryStatus } from "../shared/AudioRecoveryStatus";
+import { VOICE_OPTIONS } from "../shared/heygenRecording";
 import { useModalA11y } from "../shared/useModalA11y";
 import { Button } from "../shared/Button";
 import { IconButton } from "../shared/IconButton";
@@ -59,6 +60,7 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
     spokenFeedback,
     reduceMotion,
     autoPlayAudio,
+    preferredVoice,
   } = accessibility;
   const [confirmReset, setConfirmReset] = useState(false);
   const [isPreloading, setIsPreloading] = useState(false);
@@ -401,6 +403,41 @@ export const SettingsModal = memo(function SettingsModal({ isOpen, onClose }: Pr
                       }`}
                     >
                       {`${sp}x`}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <hr className="border-border/60" />
+
+              {/* Preferred Voice Style (Primary default / Nadine secondary) */}
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div className="max-w-sm">
+                  <span className="font-sans font-bold text-foreground text-sm">
+                    {t("settings.preferredVoice")}
+                  </span>
+                  <p className="font-sans text-xs text-muted-foreground mt-0.5">
+                    {t("settings.preferredVoiceHint")}
+                  </p>
+                </div>
+                <div
+                  className="flex flex-wrap items-center gap-1 bg-wp-card border border-border p-1 rounded-xl"
+                  role="group"
+                  aria-label={t("settings.preferredVoice")}
+                >
+                  {VOICE_OPTIONS.map((opt) => (
+                    <button
+                      key={opt.id}
+                      type="button"
+                      onClick={() => setAccessibility({ preferredVoice: opt.id })}
+                      aria-pressed={preferredVoice === opt.id}
+                      className={`min-h-[44px] min-w-[44px] px-3 py-1.5 rounded-lg text-xs font-sans font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary cursor-pointer ${
+                        preferredVoice === opt.id
+                          ? "bg-primary text-primary-foreground shadow-xs"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
+                    >
+                      {t(opt.labelKey)}
                     </button>
                   ))}
                 </div>

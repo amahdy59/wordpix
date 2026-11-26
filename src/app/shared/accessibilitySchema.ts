@@ -15,5 +15,6 @@ export const accessibilitySchema = z
     spokenFeedback: z.boolean(),
     reduceMotion: z.boolean(),
     autoPlayAudio: z.boolean().default(true),
+    preferredVoice: z.enum(["primary", "nadine"]).default("primary"),
   })
   .strict();
