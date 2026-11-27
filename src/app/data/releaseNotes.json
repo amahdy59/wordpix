@@ -1,12 +1,29 @@
 {
-  "version": "0.1.117",
+  "version": "0.1.118",
   "notes": [
-    "Published 943 more secondary English recordings with Nadine across Tier 2 specialist and word-detail lessons (13,334 total)."
+    "Published 1,107 more secondary English recordings with Nadine across Tier 2 specialist lessons and initial Tier 3 items (14,441 total)."
   ],
   "notesAr": [
-    "نشر ٩٤٣ تسجيلاً إنجليزياً ثانوياً إضافياً بصوت نادين عبر الدروس التخصصية وتفاصيل الكلمات في المستوى الثاني (بإجمالي ١٣٣٣٤ تسجيلاً)."
+    "نشر ١١٠٧ تسجيلات إنجليزية ثانوية إضافية بصوت نادين عبر الدروس التخصصية في المستوى الثاني وبداية المستوى الثالث (بإجمالي ١٤٤٤١ تسجيلاً)."
   ],
   "releases": [
+    {
+      "id": "0.1.118",
+      "version": "0.1.118",
+      "date": "2026-11-27",
+      "title": {
+        "en": "Expanded Tier 2 & started Tier 3 Nadine recordings",
+        "ar": "توسيع المستوى الثاني وبدء المستوى الثالث من تسجيلات نادين"
+      },
+      "changes": [
+        {
+          "id": "nadine-tier2-wave4-tier3-start",
+          "category": "added",
+          "en": "Added 1,107 optional English recordings by Nadine (1,030 across Tier 2 specialist lessons reaching 7,476 of 8,339, plus the first 77 Tier 3 items for 14,441 total) without altering default audio.",
+          "ar": "أُضيف ١١٠٧ تسجيلات إنجليزية اختيارية بصوت نادين (١٠٣٠ عبر الدروس التخصصية في المستوى الثاني لتصل إلى ٧٤٧٦ من ٨٣٣٩ عنصراً، بالإضافة إلى أول ٧٧ عنصراً في المستوى الثالث بإجمالي ١٤٤٤١) دون تغيير الصوت الافتراضي."
+        }
+      ]
+    },
     {
       "id": "0.1.117",
       "version": "0.1.117",
