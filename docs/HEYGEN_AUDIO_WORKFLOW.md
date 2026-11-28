@@ -47,7 +47,7 @@ audio/heygen-v1/nadine/<sha256(text)>.mp3
 
 ## 3. Campaign Status & Multi-Day Batch Plan
 
-Initial campaign: **5,960 audio clips** across curriculum batches, plus an ongoing site-wide expansion across Tiers 1–4 (**20,867 total published clips** to date).
+Initial campaign: **5,960 audio clips** across curriculum batches, plus an ongoing site-wide expansion across Tiers 1–4 (**22,093 total published clips** to date).
 
 | Batch                | Description                                          | Total Clips |         Status         | Receipt / Notes                                                       |
 | :------------------- | :--------------------------------------------------- | :---------: | :--------------------: | :-------------------------------------------------------------------- |
@@ -58,15 +58,15 @@ Initial campaign: **5,960 audio clips** across curriculum batches, plus an ongoi
 | **Batch 4 (Part 2)** | Sentence Builder Chunks (Remaining 1,011 clips)      |    1,011    | ✅ **Published to R2** | Completed (Receipt: `batch-04-construction-all-publish-receipt.json`) |
 | **Expansion Tier 1** | Core Tracks (`recordedReferenceExamples`, etc.)      |     929     |  ✅ **928 Published**  | 1 SSML item excluded (`usesPronunciationOverride`)                    |
 | **Expansion Tier 2** | Specialist & Details (`recordedHadithContent`, etc.) |    8,339    | ✅ **8,339 Published** | **100% Completed**                                                    |
-| **Expansion Tier 3** | Mid-frequency Exercises & Cloze Sentences            |   27,766    | 🔄 **5,640 Published** | 22,126 remaining                                                      |
+| **Expansion Tier 3** | Mid-frequency Exercises & Cloze Sentences            |   27,766    | 🔄 **6,866 Published** | 20,900 remaining                                                      |
 | **Expansion Tier 4** | Extended Curriculum & Long-tail Sentences            |   59,282    |     ⏳ **Queued**      | 59,282 remaining                                                      |
-| **Published Total**  |                                                      | **20,867**  |  **20,867 Published**  | **81,409 remaining across Tiers 1–4**                                 |
+| **Published Total**  |                                                      | **22,093**  |  **22,093 Published**  | **80,183 remaining across Tiers 1–4**                                 |
 
 ---
 
 ## 4. Campaign Completion & Resumption Reference
 
-All **5,960 / 5,960** initial HeyGen (_Nadine_) clips across Batches 1–4 and **14,907** Tier 1–3 expansion clips (**20,867** total, completing **100%** of Tiers 1–2 and **5,640 / 27,766** of Tier 3) have been synthesized, stored locally under `output/recorded-audio/heygen/clips/`, uploaded to Cloudflare R2 via create-only `putIfAbsent`, and registered in `src/app/generated/heygenRecordings/*.json` (with `--secondary-only` leaving `additionalRecordings/` untouched).
+All **5,960 / 5,960** initial HeyGen (_Nadine_) clips across Batches 1–4 and **16,133** Tier 1–3 expansion clips (**22,093** total, completing **100%** of Tiers 1–2 and **6,866 / 27,766** of Tier 3) have been synthesized, stored locally under `output/recorded-audio/heygen/clips/`, uploaded to Cloudflare R2 via create-only `putIfAbsent`, and registered in `src/app/generated/heygenRecordings/*.json` (with `--secondary-only` leaving `additionalRecordings/` untouched).
 
 To resume site-wide expansion across Tiers 2–4 or add new curriculum units, re-run the idempotent workflow (which automatically rotates across `HEYGEN_API_KEY*` entries loaded from `.env.local` on `HTTP 429` or `--daily-limit`):
 
