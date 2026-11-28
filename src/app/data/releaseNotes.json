@@ -1,12 +1,29 @@
 {
-  "version": "0.1.119",
+  "version": "0.1.120",
   "notes": [
-    "Completed Tier 2 (8,339/8,339) and added 1,181 Tier 3 vocabulary and sentence recordings with Nadine (+2,044 total; 16,485 published)."
+    "Added 4,382 Tier 3 vocabulary and sentence recordings with Nadine across parallel 5-key synthesis (5,640/27,766 Tier 3; 20,867 published)."
   ],
   "notesAr": [
-    "استكمال المستوى الثاني بالكامل (٨٣٣٩/٨٣٣٩) وإضافة ١١٨١ تسجيلاً من المستوى الثالث بصوت نادين (+٢٠٤٤ تسجيلاً جديداً؛ بإجمالي ١٦٤٨٥ تسجيلاً منشوراً)."
+    "إضافة ٤٣٨٢ تسجيلاً جديداً من المستوى الثالث بصوت نادين للمفردات والجمل عبر التوليد المتوازي بالـ ٥ مفاتيح (٥٦٤٠/٢٧٧٦٦ من المستوى الثالث؛ بإجمالي ٢٠٨٦٧ تسجيلاً منشوراً)."
   ],
   "releases": [
+    {
+      "id": "0.1.120",
+      "version": "0.1.120",
+      "date": "2026-11-28",
+      "title": {
+        "en": "Expanded Tier 3 Nadine recordings (+4,382 clips)",
+        "ar": "توسيع تسجيلات نادين للمستوى الثالث (+٤٣٨٢ تسجيلاً)"
+      },
+      "changes": [
+        {
+          "id": "nadine-tier3-wave3",
+          "category": "added",
+          "en": "Added 4,382 optional English recordings by Nadine across Tier 3 vocabulary and sentences (reaching 5,640/27,766 in Tier 3 and 20,867 published clips total) while preserving default primary audio.",
+          "ar": "أُضيف ٤٣٨٢ تسجيلاً إنجليزياً اختيارياً بصوت نادين عبر مفردات وجمل المستوى الثالث (ليصل المستوى الثالث إلى ٥٦٤٠/٢٧٧٦٦ وإجمالي التسجيلات المنشورة إلى ٢٠٨٦٧ تسجيلاً) مع الحفاظ على الصوت الأساسي دون تغيير."
+        }
+      ]
+    },
     {
       "id": "0.1.119",
       "version": "0.1.119",
